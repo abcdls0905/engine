@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="form_common\form_input_name" init="main_form_init">
+        <prop IsGC="true" Left="53" Top="117" Width="270" Height="238" ShadowColor="0,0,0,0" Font="WRYH13" DrawMode="Expand" BackImage="gui\common\window\function_vein_042.png" />
+        <event on_open="main_form_open" />
+        <control name="info_label" entity="Label" script="" init="">
+            <prop Align="Center" RefCursor="WIN_HELP" Left="87" Top="69" Width="94" Height="24" ForeColor="255,150,232,255" ShadowColor="0,0,0,0" Text="@ui_input" Font="FZCY13" />
+        </control>
+        <control name="name_edit" entity="Edit" script="" init="">
+            <prop TextOffsetX="2" Caret="Default" Left="50" Top="113" Width="168" Height="24" ForeColor="255,255,255,255" BackColor="255,0,0,0" ShadowColor="0,0,0,0" Font="WRYH13" Cursor="WIN_IBEAM" TabStop="true" DrawMode="Center" BackImage="gui\common\button\beibao_jinqiankuang.png" />
+            <event on_enter="on_name_edit_enter" />
+        </control>
+        <control name="ok_btn" entity="Button" script="" init="">
+            <prop NormalImage="gui\common\button\anniu_nomal.png" FocusImage="gui\common\button\anniu_up.png" PushImage="gui\common\button\anniu_down.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="34" Top="164" Width="82" Height="37" ForeColor="255,150,232,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_ok" Font="FZCY13" TabIndex="100" TabStop="true" DrawMode="Center" ClickSound="ok_7" />
+            <event on_click="ok_btn_click" />
+        </control>
+        <control name="cancel_btn" entity="Button" script="" init="">
+            <prop NormalImage="gui\common\button\anniu_nomal.png" FocusImage="gui\common\button\anniu_up.png" PushImage="gui\common\button\anniu_down.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="147" Top="165" Width="82" Height="37" ForeColor="255,150,232,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_cancel" Font="FZCY13" TabStop="true" DrawMode="FitWindow" ClickSound="cancel_5" />
+            <event on_click="cancel_btn_click" />
+        </control>
+        <control name="lbl_title" entity="Label" script="" init="">
+            <prop Align="Center" RefCursor="WIN_HELP" Left="21" Top="19" Width="206" Height="26" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH13" DrawMode="FitWindow" />
+        </control>
+        <control name="btn_close" entity="Button" script="" init="">
+            <prop NormalImage="gui\common\button\xinhaoyou_guanbi_up.png" FocusImage="gui\common\button\xinhaoyou_guanbi_over.png" PushImage="gui\common\button\xinhaoyou_guanbi_down.png" DisableImage="gui\common\button\xinhaoyou_guanbi_disabili.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="231" Top="19" Width="27" Height="27" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" />
+        </control>
+    </control>
+</form>

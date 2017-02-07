@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<form>
+    <control name="main_form" entity="Form" script="form_set_color" init="main_form_init">
+        <property name="Left" value="109" />
+        <property name="Top" value="125" />
+        <property name="Width" value="446" />
+        <property name="Height" value="350" />
+        <property name="BackColor" value="255,150,150,255" />
+        <property name="Font" value="GE_FONT" />
+        <callback name="on_open" function="main_form_open" />
+        <control name="Label8" entity="Label" script="" init="">
+            <property name="Align" value="Center" />
+            <property name="Left" value="56" />
+            <property name="Top" value="72" />
+            <property name="Width" value="54" />
+            <property name="Height" value="22" />
+            <property name="Text" value="透明度" />
+        </control>
+        <control name="title_label" entity="Label" script="" init="">
+            <property name="Align" value="Center" />
+            <property name="Left" value="176" />
+            <property name="Top" value="8" />
+            <property name="Width" value="94" />
+            <property name="Height" value="24" />
+            <property name="Text" value="选择颜色" />
+        </control>
+        <control name="ok_btn" entity="Button" script="" init="">
+            <property name="Left" value="144" />
+            <property name="Top" value="312" />
+            <property name="Width" value="70" />
+            <property name="Height" value="24" />
+            <property name="Text" value="确定" />
+            <property name="TabStop" value="true" />
+            <callback name="on_click" function="ok_btn_click" />
+        </control>
+        <control name="cancel_btn" entity="Button" script="" init="">
+            <property name="Left" value="232" />
+            <property name="Top" value="312" />
+            <property name="Width" value="70" />
+            <property name="Height" value="24" />
+            <property name="Text" value="取消" />
+            <property name="TabStop" value="true" />
+            <callback name="on_click" function="cancel_btn_click" />
+        </control>
+        <control name="Label3" entity="Label" script="" init="">
+            <property name="Left" value="32" />
+            <property name="Top" value="40" />
+            <property name="Width" value="46" />
+            <property name="Height" value="24" />
+            <property name="Text" value="预览：" />
+        </control>
+        <control name="alpha_track" entity="TrackBar" script="" init="">
+            <property name="Orient" value="Horizon" />
+            <property name="Maximum" value="255" />
+            <property name="Left" value="152" />
+            <property name="Top" value="208" />
+            <property name="Width" value="262" />
+            <property name="Height" value="14" />
+            <callback name="on_value_changed" function="alpha_value_changed" />
+        </control>
+        <control name="red_track" entity="TrackBar" script="" init="">
+            <property name="Orient" value="Horizon" />
+            <property name="Maximum" value="255" />
+            <property name="Left" value="152" />
+            <property name="Top" value="232" />
+            <property name="Width" value="262" />
+            <property name="Height" value="14" />
+            <property name="BackColor" value="255,255,0,0" />
+            <callback name="on_value_changed" function="red_value_changed" />
+        </control>
+        <control name="green_track" entity="TrackBar" script="" init="">
+            <property name="Orient" value="Horizon" />
+            <property name="Maximum" value="255" />
+            <property name="Left" value="152" />
+            <property name="Top" value="256" />
+            <property name="Width" value="262" />
+            <property name="Height" value="14" />
+            <property name="BackColor" value="255,0,255,0" />
+            <callback name="on_value_changed" function="green_value_changed" />
+        </control>
+        <control name="blue_track" entity="TrackBar" script="" init="">
+            <property name="Orient" value="Horizon" />
+            <property name="Maximum" value="255" />
+            <property name="Left" value="152" />
+            <property name="Top" value="280" />
+            <property name="Width" value="262" />
+            <property name="Height" value="14" />
+            <property name="BackColor" value="255,0,0,255" />
+            <callback name="on_value_changed" function="blue_value_changed" />
+        </control>
+        <control name="Label4" entity="Label" script="" init="">
+            <property name="Left" value="32" />
+            <property name="Top" value="200" />
+            <property name="Width" value="46" />
+            <property name="Height" value="24" />
+            <property name="Text" value="透明：" />
+        </control>
+        <control name="Label5" entity="Label" script="" init="">
+            <property name="Left" value="32" />
+            <property name="Top" value="224" />
+            <property name="Width" value="46" />
+            <property name="Height" value="24" />
+            <property name="Text" value="红色：" />
+        </control>
+        <control name="Label6" entity="Label" script="" init="">
+            <property name="Left" value="32" />
+            <property name="Top" value="248" />
+            <property name="Width" value="46" />
+            <property name="Height" value="24" />
+            <property name="Text" value="绿色：" />
+        </control>
+        <control name="Label7" entity="Label" script="" init="">
+            <property name="Left" value="32" />
+            <property name="Top" value="272" />
+            <property name="Width" value="46" />
+            <property name="Height" value="24" />
+            <property name="Text" value="蓝色：" />
+        </control>
+        <control name="alpha_edit" entity="Edit" script="" init="">
+            <property name="Caret" value="Default" />
+            <property name="Left" value="80" />
+            <property name="Top" value="200" />
+            <property name="Width" value="54" />
+            <property name="Height" value="22" />
+            <property name="Cursor" value="WIN_IBEAM" />
+            <property name="TabStop" value="true" />
+            <callback name="on_lost_focus" function="alpha_edit_lost_focus" />
+        </control>
+        <control name="red_edit" entity="Edit" script="" init="">
+            <property name="Caret" value="Default" />
+            <property name="Left" value="80" />
+            <property name="Top" value="224" />
+            <property name="Width" value="54" />
+            <property name="Height" value="22" />
+            <property name="Cursor" value="WIN_IBEAM" />
+            <property name="TabStop" value="true" />
+            <callback name="on_lost_focus" function="red_edit_lost_focus" />
+        </control>
+        <control name="green_edit" entity="Edit" script="" init="">
+            <property name="Caret" value="Default" />
+            <property name="Left" value="80" />
+            <property name="Top" value="248" />
+            <property name="Width" value="54" />
+            <property name="Height" value="22" />
+            <property name="Cursor" value="WIN_IBEAM" />
+            <property name="TabStop" value="true" />
+            <callback name="on_lost_focus" function="green_edit_lost_focus" />
+        </control>
+        <control name="blue_edit" entity="Edit" script="" init="">
+            <property name="Caret" value="Default" />
+            <property name="Left" value="80" />
+            <property name="Top" value="272" />
+            <property name="Width" value="54" />
+            <property name="Height" value="22" />
+            <property name="Cursor" value="WIN_IBEAM" />
+            <property name="TabStop" value="true" />
+            <callback name="on_lost_focus" function="blue_edit_lost_focus" />
+        </control>
+        <control name="preview_label" entity="Label" script="" init="">
+            <property name="Solid" value="true" />
+            <property name="Left" value="32" />
+            <property name="Top" value="64" />
+            <property name="Width" value="102" />
+            <property name="Height" value="46" />
+            <property name="NoFrame" value="false" />
+        </control>
+        <control name="color_rect" entity="TrackRect" script="" init="">
+            <property name="HorizonMax" value="360" />
+            <property name="VerticalMax" value="100" />
+            <property name="Left" value="152" />
+            <property name="Top" value="40" />
+            <property name="Width" value="214" />
+            <property name="Height" value="150" />
+            <property name="DrawMode" value="FitWindow" />
+            <callback name="on_horizon_changed" function="color_horizon_changed" />
+            <callback name="on_vertical_changed" function="color_vertical_changed" />
+        </control>
+        <control name="bri_track" entity="TrackBar" script="" init="">
+            <property name="Orient" value="Vertical" />
+            <property name="Maximum" value="100" />
+            <property name="Left" value="392" />
+            <property name="Top" value="40" />
+            <property name="Width" value="22" />
+            <property name="Height" value="150" />
+            <property name="DrawMode" value="FitWindow" />
+            <callback name="on_value_changed" function="bri_value_changed" />
+        </control>
+        <control name="Label1" entity="Label" script="" init="">
+            <property name="Left" value="32" />
+            <property name="Top" value="120" />
+            <property name="Width" value="46" />
+            <property name="Height" value="22" />
+            <property name="Text" value="色调：" />
+        </control>
+        <control name="Label2" entity="Label" script="" init="">
+            <property name="Left" value="32" />
+            <property name="Top" value="144" />
+            <property name="Width" value="46" />
+            <property name="Height" value="22" />
+            <property name="Text" value="饱和：" />
+        </control>
+        <control name="Label9" entity="Label" script="" init="">
+            <property name="Left" value="32" />
+            <property name="Top" value="168" />
+            <property name="Width" value="46" />
+            <property name="Height" value="22" />
+            <property name="Text" value="亮度：" />
+        </control>
+        <control name="hue_edit" entity="Edit" script="" init="">
+            <property name="Caret" value="Default" />
+            <property name="Left" value="80" />
+            <property name="Top" value="120" />
+            <property name="Width" value="54" />
+            <property name="Height" value="22" />
+            <property name="Cursor" value="WIN_IBEAM" />
+            <property name="TabStop" value="true" />
+            <callback name="on_lost_focus" function="hue_edit_lost_focus" />
+        </control>
+        <control name="sat_edit" entity="Edit" script="" init="">
+            <property name="Caret" value="Default" />
+            <property name="Left" value="80" />
+            <property name="Top" value="144" />
+            <property name="Width" value="54" />
+            <property name="Height" value="22" />
+            <property name="Cursor" value="WIN_IBEAM" />
+            <property name="TabStop" value="true" />
+            <callback name="on_lost_focus" function="sat_edit_lost_focus" />
+        </control>
+        <control name="bri_edit" entity="Edit" script="" init="">
+            <property name="Caret" value="Default" />
+            <property name="Left" value="80" />
+            <property name="Top" value="168" />
+            <property name="Width" value="54" />
+            <property name="Height" value="22" />
+            <property name="Cursor" value="WIN_IBEAM" />
+            <property name="TabStop" value="true" />
+            <callback name="on_lost_focus" function="bri_edit_lost_focus" />
+        </control>
+    </control>
+</form>

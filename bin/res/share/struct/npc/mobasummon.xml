@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<object>
+    <internals />
+    <properties>
+         <property name="Camp" type="int" public="true" private="true" save="false" realtime="" desc="MOBA��Ӫ"/>
+	 <property name="NpcType" type="int" public="true" private="true" save="false" realtime="" desc="NPC�������"/>
+	 		<property name="AITemplate" type="int" public="false" private="false" save="false" desc="AI�ģ���" />
+		<property name="AICurProcType" type="int" public="false" private="false" save="false" desc="当前AI模板状态" />
+		<property name="AIPreProcType" type="int" public="false" private="false" save="false" desc="�ϸAI�ģ��״̬" />
+		<property name="AISubState" type="int" public="false" private="false" save="false" desc="AIģ����״̬" />
+		<property name="AttackFreq" type="int" public="false" private="false" save="false" desc="AI����Ƶ�" />
+		<property name="AIRulePara" type="float" public="false" private="false" save="false" desc="AI���Ϊ���Ʋ�� 12: ���NPCԼ�ⷶΧ 11: ���������� 10:�Ŀ��ˢ��ʱ��� 5:����Ѫ�ض�Զ��ʹ�ûس 2:�Ұ��ս���鴥����Χ" />
+		<property name="AIRulePara2" type="float" public="false" private="false" save="false" desc="AI��Ϊ���Ʋ�� 11:����뾶 5:��Χ��û�з������ʹ�ûس" />
+		
+		<property name="AIStop" type="int" public="false" private="false" save="false" desc="AI��Ƿ�ֹͣ��ʾ"/>
+		<property name="AIStopTime" type="int64" public="false" private="false" save="false" desc="AIֹͣ����ʱ�"/>
+		<property name="AINoticeTime" type="int64" public="false" private="false" save="false" desc="��ϴAI�֪ͨʱ�" />
+		
+		<property name="LastObject" type="object" public="true" private="false" save="false" desc="当前选择的对象" />
+		
+		<property name="AILastTarget" type="object" public="false" private="false" save="false" desc="最后一次攻击的目标对象" />
+		<property name="AIChaseRadiusMin" type="float" public="false" private="false" save="false" desc="AI�ģ����С׷��뾶" />
+		<property name="AIChaseRadiusMax" type="float" public="false" private="false" save="false" desc="AIģ�����׷��뾶" />
+		
+		<property name="AILastProcTime" type="int64" public="false" private="false" save="false" desc="�ϴAIν���ʱ�" />
+		<property name="AIForceAttackTime" type="int64" public="false" private="false" save="false" desc="��ϴ�ǿ��ת��Ŀ��ʱ�" />
+		
+		<property name="AIMotioning" type="int" public="false" private="false" save="false" desc="AIMotion��ж��б�ʶ"/>
+
+		<property name="BornX" type="float" public="false" private="false" save="false" desc="����λ�X" />
+		<property name="BornY" type="float" public="false" private="false" save="false" desc="ó���λ�Y" />
+		<property name="BornZ" type="float" public="false" private="false" save="false" desc="ó���λ�Z" />
+
+		<property name="BFX" type="float" public="false" private="false" save="false" desc="进入战斗位置X" />
+		<property name="BFY" type="float" public="false" private="false" save="false" desc="进入战斗位置Y" />
+		<property name="BFZ" type="float" public="false" private="false" save="false" desc="进入战斗位置Z" />
+		
+		<property name="PatrolMode" type="int" public="false" private="false" save="false" desc="�Ѳ��ģʽ" />
+		<property name="PatrolStep" type="int" public="false" private="false" save="false" desc="Ѳ��λ�����" />
+		<property name="PatrolBack" type="int" public="false" private="false" save="false" desc="�Ѳ�߻��߱�ʶ" />
+		<property name="PatrolLastX" type="float" public="false" private="false" save="false" desc="Ŀ�����ߵX" />
+		<property name="PatrolLastY" type="float" public="false" private="false" save="false" desc="�Ŀ�����ߵY" />
+		<property name="PatrolLastZ" type="float" public="false" private="false" save="false" desc="�Ŀ�����ߵZ" />
+		
+		<property name="AIPosiCheckX" type="float" public="false" private="false" save="false" desc="����һ��Ѳ�߶������ڵX" />
+		<property name="AIPosiCheckZ" type="float" public="false" private="false" save="false" desc="����һ��Ѳ�߶������ڵZ" />
+		
+		<property name="PathFindStep" type="int" public="false" private="false" save="false" desc="�Ѱ·λ�����" />
+		
+		<property name="WarnType" type="int" public="false" private="false" save="false" realtime="" desc="�����(0: ͱ���  1: ���򾯽  2: ���Բ��  3: �������  4: ����+�����)" />
+		<property name="ChaseRange" type="float" public="false" private="false" save="false" realtime="" desc="�׷��Χ" />
+		
+		<property name="AIOverlapState" type="int" public="false" private="false" save="false" desc="重叠检查状态" />
+		<property name="AIOverlapX" type="float" public="false" private="false" save="false" desc="重叠调整点X" />
+		<property name="AIOverlapZ" type="float" public="false" private="false" save="false" desc="重叠调整点Y" />
+		
+		<property name="AISkillObj" type="object" public="false" private="false" save="false" desc="��ʹ�õļ��ܶ��" />
+		<property name="AIMaster" type="object" public="false" private="false" save="false" desc="���AI������˱�־" />
+    </properties>
+    	<records>
+		<record name="PatrolPointRec" cols="3" maxrows="256" save="false" public="false" private="false" desc="Ѳ��·�����¼�">
+			<column type="float" desc="x"/>
+			<column type="float" desc="z"/>
+			<column type="dword" desc="rest time"/>
+		</record>
+
+		<record name="PathFindPointRec" cols="2" maxrows="256" save="false" public="false" private="false" desc="�Ѱ··�����¼�">
+			<column type="float" desc="x"/>
+			<column type="float" desc="z"/>
+		</record>
+
+		<record name="EnmityRec" cols="2" maxrows="48" save="false" public="false" private="false" desc="����б">
+			<column type="object" desc="���"/>
+			<column type="dword" desc="���ֵ"/>
+		</record>
+	</records>
+    <includes>
+    </includes>
+</object>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="gb2312"?>
+
+<!--
+	daily : 日常奖励
+	level : 等级奖励
+	percent : 等级奖励比例值
+	graduation : 出师后奖励
+
+	type  : 师徒类型 0 师傅 1 徒弟
+	items : 奖励的物品
+	tacit : 默契值	
+	rate  : 默契值比例区间
+	award_rate : 给物品奖励的比例区间
+	lev   : 等级
+	power : 战力
+-->
+
+<Object>
+	<daily type="1" items="Item_tl3:1,Tattoo_Green_Exp_001:5,Item_yt2:5" tacit="0"/>
+	<daily type="0" items="Item_nszl:10,Item_fss:2,Item_xzfc:1,Item_JingTieShi:10" tacit="6"/>
+
+	<percent rate="0,25,50,75,100" award_rate="0.125,0.375,0.625,0.875,1.0" />
+
+	<level lev="20" type="1" items="Orange_Equip_Bag:1,Item_JingTieShi:50,Item_jb20000L:1" tacit="0" mail="" />
+	<level lev="30" type="1" items="Orange_Equip_Bag:1,Tattoo_Blue_Exp_001:5,Item_jb50000L:1" tacit="0" mail="" />
+	<level lev="40" type="1" items="26_shipin_Bag:1,Item_JingTieShi:200,Item_yt3:10,Item_jb100000L:1" tacit="0" mail=""/>
+	<level lev="45" type="1" items="24_tattoo_Bag:1,Item_jxy:60,Item_lwd:60,Tattoo_Purple_Exp_001:10,Item_jb200000N:1" tacit="0" mail=""/>
+	<level lev="50" type="1" items="Item_nszl:200,Item_xzfc:50,Item_JingTieShi:500,Item_jb1000000N:1,26_shipin_Bag:1" tacit="0" mail=""/>
+
+	<level lev="20" type="0" items="Item_yt3:16,Item_jb20000:8" tacit="6" mail=""/>
+	<level lev="30" type="0" items="Tattoo_Purple_Exp_001:16,Item_jb20000:16" tacit="100" mail=""/>
+	<level lev="40" type="0" items="Orange_Equip_Bag:8,Item_jb20000:32" tacit="200" mail=""/>
+	<level lev="45" type="0" items="Item_smzx:24,Item_jb20000:48" tacit="350" mail=""/>
+	<level lev="50" type="0" items="Item_nszl:400,Item_xzfc:40,Item_JingTieShi:400,Item_jb20000:64" tacit="600" mail=""/>
+	
+	<graduation power="350000" items="Item_nszl:500,Item_xzfc:50,Item_jb1000000N:2" mail="" />
+	<graduation power="500000" items="Item_nszl:1500,Item_xzfc:150,Item_jb1000000N:4" mail="" />
+
+	
+</Object>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Width="1024" Height="720" BackColor="0,255,255,255" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" DrawMode="Expand" BackImage="gui\use\function\function_vein_096.png" />
+        <control name="groupbox_main" entity="GroupBox" script="" init="">
+            <prop Width="1024" Height="720" BackColor="0,255,255,255" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" DrawMode="Expand" />
+            <control name="groupbox_turncard" entity="GroupBox" script="" init="">
+                <prop Left="260" Top="69" Width="748" Height="646" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                <control name="lbl_1" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="1" Width="750" Height="550" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg_huikuang.png" />
+                </control>
+                <control name="groupscrollbox_card_list" entity="GroupScrollableBox" script="" init="">
+                    <prop ScrollSize="17" Left="1" Top="104" Width="726" Height="438" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                </control>
+                <control name="groupbox_card" entity="GroupBox" script="" init="">
+                    <prop Left="20" Top="139" Width="230" Height="134" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                    <control name="lbl_back_photo" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Width="248" Height="150" ShadowColor="0,0,0,0" Transparent="false" AutoSize="true" DrawMode="FitWindow" BackImage="gui\main\activity\sdfp.png,744,440,248,150" />
+                    </control>
+                    <control name="lbl_item_name" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="56" Top="128000" Width="142" Height="16" ForeColor="255,200,200,200" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK" />
+                    </control>
+                    <control name="lbl_item_photo" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="82" Top="34" Width="80" Height="80" ShadowColor="0,0,0,0" Transparent="false" TabStop="true" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_item_cover" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="80" Top="32" Width="90" Height="90" ShadowColor="0,0,0,0" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_chip_sign" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="72" Top="32" Width="94" Height="27" ShadowColor="0,0,0,0" BackImage="gui\use\bag\suipian.png" />
+                    </control>
+                    <control name="lbl_item_count" entity="Label" script="" init="">
+                        <prop Align="Right" RefCursor="WIN_HELP" Left="80" Top="98" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="1" Font="Default" />
+                    </control>
+                    <control name="lbl_card_cover" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Width="248" Height="150" ShadowColor="0,0,0,0" Transparent="false" TabStop="true" AutoSize="true" DrawMode="FitWindow" BackImage="gui\main\activity\sdfp.png,0,140,248,150" />
+                    </control>
+                </control>
+                <control name="groupbox_time_info" entity="GroupBox" script="" init="">
+                    <prop Left="8" Width="740" Height="140" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" BackImage="gui\main\activity\sdfp.png,0,0,740,140" />
+                    <control name="mltbox_activity_time" entity="MultiTextBox" script="" init="">
+                        <prop TextColor="255,74,39,4" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,710,38" LineHeight="25" HtmlText="活动时间：" ScrollSize="17" Left="92" Top="78" Width="710" Height="38" ShadowColor="0,0,0,0" Font="WRYH20" NoFrame="true" />
+                    </control>
+                </control>
+                <control name="btn_reset" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="404" Top="566" Width="160" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_turncard_7" Font="WRYH24_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+                <control name="btn_start" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="577" Top="566" Width="160" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_turncard_6" Font="WRYH24_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+                <control name="mltbox_free_count" entity="MultiTextBox" script="" init="">
+                    <prop TextColor="255,0,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,166,46" LineHeight="33" HtmlText="剩余免费次数：1" ScrollSize="17" Left="385" Top="536" Width="166" Height="46" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20_S_GRAY" NoFrame="true" />
+                </control>
+                <control name="groupbox_reset_price" entity="GroupBox" script="" init="">
+                    <prop Left="385" Top="536" Width="182" Height="46" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                    <control name="lbl_reset_price_photo" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="8" Top="1" Width="40" Height="40" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\common\window\zuanshi_da.jpg" />
+                    </control>
+                    <control name="lbl_reset_price_count" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="64" Top="4" Width="94" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="100" Font="WRYH20_S_GRAY" />
+                    </control>
+                </control>
+                <control name="mltbox_turncard_info" entity="MultiTextBox" script="" init="">
+                    <prop TextColor="255,0,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,286,38" LineHeight="33" HtmlText="第一次翻牌需要消耗：" ScrollSize="17" Left="20" Top="539" Width="286" Height="38" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20_S_GRAY" NoFrame="true" />
+                </control>
+                <control name="groupbox_turncard_consume" entity="GroupBox" script="" init="">
+                    <prop Left="12" Top="575" Width="350" Height="54" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                    <control name="lbl_turncard_consume_photo_1" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="8" Top="8" Width="40" Height="40" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\common\window\zuanshi_da.jpg" />
+                    </control>
+                    <control name="lbl_turncard_consume_count_1" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="48" Top="16" Width="70" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="100" Font="WRYH20_S_GRAY" />
+                    </control>
+                    <control name="lbl_turncard_consume_photo_2" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="128" Top="8" Width="40" Height="40" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\common\window\zuanshi_da.jpg" />
+                    </control>
+                    <control name="lbl_turncard_consume_photo_3" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="248" Top="8" Width="40" Height="40" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\common\window\zuanshi_da.jpg" />
+                    </control>
+                    <control name="lbl_turncard_consume_count_2" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="168" Top="16" Width="70" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="100" Font="WRYH20_S_GRAY" />
+                    </control>
+                    <control name="lbl_turncard_consume_count_3" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="296" Top="16" Width="70" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="100" Font="WRYH20_S_GRAY" />
+                    </control>
+                </control>
+                <control name="btn_help" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\pk\btn_help_normal.jpg" PushImage="gui\main\pk\btn_help_click.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="25" Top="16" Width="56" Height="56" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH24_S" TabStop="true" AutoSize="true" ClickSound="button_click" />
+                </control>
+            </control>
+        </control>
+    </control>
+</form>

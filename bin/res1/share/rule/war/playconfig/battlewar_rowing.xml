@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="gb2312"?>
+
+<!-- 赛艇玩法配置
+		BattleWarID="51"               // 战场ID
+		BoatConfig="com_boat_1"			// 船只NPC的configID
+		SuccessEffect="ck_sk100_01"		// 胜利烟花特效名字
+		
+		BoatMinSpeed="1.0"				// 船只最小速度
+		BoatMaxSpeed="6.0"				// 船只最大速度
+		
+		BoatSpeedUp="0.5"				// 每个选手正确划船时船只加速
+		BoatSpeedDown="0.5"				// 每个选手正确刹车时船只减速
+		
+		BoatHitLoseSpeed="1.0"			// 船只撞到障碍物掉头后减少的速度
+		BoatErrorLoseSpeed="0.25"		// 每个选手错误操作时船只减速
+		
+		BoatTurnAngle="0.125"			// 每个选手转弯时转的角度（弧度，PI*角度/180）
+		BoatOriginAngle="0"				// 船只的初始角度
+		
+		OperationResetTime="4"			// 船长发出指令后，有4s给船员操作
+		
+		DebugMode="0"		// 值为1则是测试模式，一个人就可以控制船只运动，正式发布时请设置为0，或者删除
+-->
+
+<Object>
+    <Property
+		BattleWarID="51"
+		BoatConfig="com_boat_1"
+		SuccessEffect="firework_1"
+		
+		BoatMinSpeed="1.0"
+		BoatMaxSpeed="6.0"
+		
+		BoatSpeedUp="0.5"
+		BoatSpeedDown="0.5"
+		
+		BoatHitLoseSpeed="1.0"
+		BoatErrorLoseSpeed="0.25"
+		
+		BoatTurnAngle="0.4"
+		BoatOriginAngle="-1.4"
+		
+		OperationResetTime="4"
+		
+		DebugMode="0"
+	/>
+</Object>
+

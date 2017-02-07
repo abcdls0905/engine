@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="form_main" init="main_form_init">
+        <prop LimitInScreen="true" IsGC="true" Width="1280" Height="720" BackColor="255,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" DrawMode="FitWindow" BackImage="gui\updater\new\loading_bg.jpg" />
+        <event on_open="main_form_open" />
+        <control name="lbl_background" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="-203" Top="-275" Width="453" Height="200" BackColor="0,0,0,0" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" AutoSize="true" DrawMode="Center" BackImage="gui\updater\new\logo.jpg" />
+        </control>
+        <control name="lbl_download_gaoguan" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="-515" Top="-243" Width="1024" Height="76" ForeColor="255,118,106,92" ShadowColor="0,1,0,0" VAnchor="Bottom" HAnchor="Center" Font="font_main" AutoSize="true" BackImage="gui\updater\new\loading_changtiao_1.png" />
+        </control>
+        <control name="pbar_download" entity="ProgressBar" script="" init="">
+            <prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui\updater\new\loading_changtiao_2.png" ProgressMode="LeftToRight" Left="-515" Top="-243" Width="1024" Height="76" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Center" />
+        </control>
+        <control name="lbl_download_prog" entity="Label" script="" init="">
+            <prop Align="Center" RefCursor="WIN_HELP" Left="-35" Top="-275" Width="78" Height="54" ForeColor="255,255,252,207" ShadowColor="0,1,0,0" VAnchor="Bottom" HAnchor="Center" Text="0%" Font="WRYH22_O" />
+        </control>
+        <control name="lbl_speed" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="397" Top="-211" Width="94" Height="22" ForeColor="255,255,206,74" ShadowColor="0,1,0,0" VAnchor="Bottom" HAnchor="Center" Transparent="false" Text="0 KB/s" Font="WRYH22_O" />
+        </control>
+        <control name="gbox_version" entity="GroupBox" script="" init="">
+            <prop Left="29" Top="-99" Width="934" Height="38" BackColor="0,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0" VAnchor="Bottom" NoFrame="true" AutoSize="true" />
+            <control name="lbl_ver_client_title" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="280" Top="10" Width="126" Height="16" ForeColor="255,255,255,255" ShadowColor="0,1,0,0" Text="@ui_version_cur" Font="WRYH22_O" />
+            </control>
+            <control name="lbl_ver_last_title" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="8" Top="10" Width="70" Height="16" ForeColor="255,255,255,255" ShadowColor="0,1,0,0" Text="@ui_version_last" Font="WRYH22_O" />
+            </control>
+            <control name="lbl_ver_client_num" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="416" Top="11" Width="118" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="1452" Font="WRYH22_O" />
+            </control>
+            <control name="lbl_ver_last_num" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="136" Top="11" Width="126" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="414" Font="WRYH22_O" />
+            </control>
+            <control name="lbl_ver_app_title" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="568" Top="10" Width="126" Height="16" ForeColor="255,255,255,255" ShadowColor="0,1,0,0" Text="@ui_version_app" Font="WRYH22_O" />
+            </control>
+            <control name="lbl_ver_app_num" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="720" Top="11" Width="126" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="414" Font="WRYH22_O" />
+            </control>
+        </control>
+        <control name="gbox_waiting" entity="GroupBox" script="" init="">
+            <prop Left="-147" Top="-67" Width="294" Height="158" BackColor="0,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" NoFrame="true" DrawMode="Expand" BackImage="gui\common\window\shurukuang3.png" />
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="24" Top="40" Width="86" Height="86" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\loading\taiji_di.png" />
+            </control>
+            <control name="lbl_title" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="96" Top="40" Width="133" Height="86" ShadowColor="0,0,0,0" Font="WRYH24" AutoSize="true" BackImage="gui\loading\loading.png" />
+            </control>
+            <control name="lbl_photo" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="24" Top="40" Width="86" Height="86" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\loading\taiji.png" />
+            </control>
+            <control name="lbl_2" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="224" Top="72" Width="30" Height="19" ShadowColor="0,0,0,0" AutoSize="true" BackImage="waiting" />
+            </control>
+        </control>
+        <control name="lbl_msg" entity="Label" script="" init="">
+            <prop Align="Center" RefCursor="WIN_HELP" Left="-155" Top="-235" Width="310" Height="76" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Center" Text="更新信息" Font="WRYH22_O" />
+        </control>
+    </control>
+</form>

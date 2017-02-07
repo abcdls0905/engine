@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!--流程相关属性-->
+<object>
+	<!-- 基本属性 -->
+	<properties>
+		<property name="FlowStorageTime" type="int" public="false" private="false" save="false" desc="蓄力时间"/>
+		<property name="FlowPrepareTime" type="int" public="false" private="false" save="false" desc="准备时间"/>
+		<property name="FlowHitTimes" type="int" public="false" private="false" save="false" desc="打击次数"/>
+		<property name="FlowLeadTime" type="int" public="false" private="false" save="false" desc="引导持续时间"/>
+		<property name="FlowLeadSepTime" type="int" public="false" private="false" save="false" desc="引导间隔时间"/>
+		<property name="FlowHits" type="int" public="false" private="false" save="false" desc="当前命中次数(准备开始命中心跳时，取flow_hittime_rec表中哪一行的时间数值)"/>
+		<property name="FlowCategory" type="int" public="false" private="false" save="false" desc="当前使用的流程的分类名称"/>
+		<property name="FlowType" type="int" public="false" private="false" save="false" desc="流程类型：0：普通技能流程，1：引导技能流程"/>
+		
+		<property name="FlowBeginTime" type="int" public="false" private="false" save="false" desc="流程开始的时间"/>
+		<property name="FlowPauseTime" type="int" public="false" private="false" save="false" desc="流程开始暂停的时间"/>
+		<property name="FlowResumeRestore" type="int" public="false" private="false" save="false" desc="流程暂停后恢复时是否重建准备心跳"/>
+		<property name="FlowPauseBreak" type="int" public="false" private="false" save="false" desc="流程暂停后到期后是否终止流程"/>
+		
+		<property name="Flowing" type="int" public="false" private="false" 	save="false" desc="是否在流程中"/>
+		<property name="FlowPausing" type="int" public="false" private="false" save="false" desc="是否在暂停中"/>
+		
+	</properties>
+	<records>
+		<!--命中时间列表（可以有多个命中，每次命中时间不等）-->
+		<record name="flow_hittime_rec" cols="2" maxrows="64" save="false" public="false" private="false" desc="">
+			<column type="word" desc=""/>
+			<column type="word" desc=""/>
+		</record>
+		<!--引导定时列表（为了避免引擎的时间误差累加，提高精度，用此方式）-->
+		<record name="flow_mutli_hit_timer_rec" cols="2" maxrows="64" save="false" public="false" private="false" desc="">
+			<column type="int64" desc="开始时间"/>
+			<column type="int64" desc="定时时间"/>
+		</record>
+	</records>
+</object>

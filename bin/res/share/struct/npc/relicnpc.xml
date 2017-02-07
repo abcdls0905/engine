@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object>
+	<internals/>
+	<properties>
+		<property name="RelicID" type="int" public="false" private="false" save="false" desc="遗迹ID"/>
+		<property name="IsFighting" type="byte" public="true" private="false" save="false" desc="是否遗迹战争夺中"/>
+		<property name="OwnerGuild" type="widestr" public="true" private="false" save="false" desc="遗迹拥有者公会"/>
+	</properties>
+	<records>
+		<record name="RelicRoomPlayerListAtk" cols="1" maxrows="25" save="false" public="false" private="false" desc="进攻方表格">
+			<column type="string" desc="uid"/>
+		</record>
+		<record name="RelicRoomPlayerListDef" cols="1" maxrows="25" save="false" public="false" private="false" desc="防守方表格">
+			<column type="string" desc="uid"/>
+		</record>
+	</records>
+	<includes>
+    </includes>
+</object>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="form_stage_main\form_main\form_main_message" init="on_main_form_init">
+		<prop Transparent="true" ShowGrid="true" Left="10" Top="10" Width="1024" Height="768" BackColor="0,255,255,255" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" Font="Default" NoFrame="true"/>
+		<event on_open="on_main_form_open" on_close="on_main_form_close"/>
+		<control name="groupbox_broadcast" entity="GroupBox" script="" init="">
+			<prop Transparent="true" Left="12" Top="80" Width="974" Height="58" ForeColor="255,255,255,0" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH24_S" NoFrame="true" DrawMode="ExpandH" BackImage="gui/tp2_main/war/jingjidi.png"/>
+			<control name="mltbox_broadcast" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,255,220,6" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="10,10,10000,54" LineHeight="32" HtmlText="广播消息" LineTextAlign="Center" TransNormalText="true" TransImage="true" TransHyperLink="true" ScrollSize="17" Left="8" Width="10000" Height="58" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH24_S" NoFrame="true" DrawMode="ExpandH"/>
+			</control>
+		</control>
+		<control name="groupbox_state_info" entity="GroupBox" script="" init="">
+			<prop Transparent="true" Left="261" Top="99" Width="502" Height="54" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Text="123" Font="WRYH26_O_BLACK" NoFrame="true" DrawMode="ExpandH" BackImage="gui/tp2_common/window/prompt.png"/>
+			<control name="mltbox_state" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,203,0,0" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="5,11,955,46" LineHeight="35" HtmlText="状态消息" LineTextAlign="Center" TransNormalText="true" TransImage="true" TransHyperLink="true" ScrollSize="17" Left="-208" Top="-3" Width="950" Height="46" ShadowColor="0,0,0,0" Font="WRYH26_O_BLACK" NoFrame="true" DrawMode="ExpandH"/>
+			</control>
+		</control>
+		<control name="groupbox_equip" entity="GroupBox" script="" init="">
+			<prop Transparent="true" Left="302" Top="131" Width="422" Height="55" ForeColor="255,255,255,255" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH26_O_BLACK" NoFrame="true" DrawMode="ExpandH" BackImage="gui/tp2_common/window/prompt.png"/>
+			<control name="mltbox_equip" entity="MultiTextBox" script="" init="">
+				<prop HAlign="Center" TextColor="255,225,225,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="5,15,900,50" LineHeight="33" TipMaxWidth="400" HtmlText="equip message" TransNormalText="true" TransImage="true" TransHyperLink="true" ScrollSize="17" Left="48" Top="-10" Width="326" Height="46" ForeColor="255,255,255,106" ShadowColor="0,0,0,0" Enabled="false" Font="WRYH26_O_BLACK" NoFrame="true" DrawMode="Expand" DisableEnter="true"/>
+			</control>
+		</control>
+		<control name="groupbox_kill" entity="GroupBox" script="" init="">
+			<prop Transparent="true" Left="-292" Top="163" Width="586" Height="74" ForeColor="255,255,255,255" BackColor="0,255,255,255" ShadowColor="0,0,0,0" HAnchor="Center" Font="WRYH26_O_BLACK" NoFrame="true" DrawMode="FitWindow" BackImage="gui/tp2_main/war/jingjidi.png"/>
+			<control name="mltbox_killer" entity="MultiTextBox" script="" init="">
+				<prop HAlign="Center" TextColor="255,8,250,0" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="5,10,646,50" LineHeight="33" TipMaxWidth="400" ScrollSize="17" Left="31" Top="8" Width="166" Height="30" ForeColor="255,51,250,61" ShadowColor="0,0,0,0" Enabled="false" Font="WRYH28_O_BLACK" NoFrame="true" DrawMode="Expand" DisableEnter="true"/>
+			</control>
+			<control name="mltbox_suffer" entity="MultiTextBox" script="" init="">
+				<prop HAlign="Center" TextColor="255,255,1,0" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="5,10,646,50" LineHeight="33" TipMaxWidth="400" ScrollSize="17" Left="343" Top="8" Width="158" Height="30" ForeColor="255,255,255,106" ShadowColor="0,0,0,0" Enabled="false" Font="WRYH28_O_BLACK" NoFrame="true" DrawMode="Expand" DisableEnter="true"/>
+			</control>
+			<control name="lbl_vs" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="255" Top="16" Width="76" Height="40" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/war/jisha.png"/>
+			</control>
+		</control>
+		<control name="groupbox_photo_tips" entity="GroupBox" script="" init="">
+			<prop ClipChildren="false" Left="307" Top="304" Width="446" Height="94" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true"/>
+			<control name="label_tips" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="109" Top="24" Width="478" Height="94" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+			</control>
+		</control>
+		<control name="groupbox_photo_tips_2" entity="GroupBox" script="" init="">
+			<prop ClipChildren="false" Left="-220" Top="-80" Width="413" Height="116" BackColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Visible="false" NoFrame="true"/>
+			<control name="label_tips_2" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="80" Top="10" Width="253" Height="64" ShadowColor="0,0,0,0"/>
+			</control>
+			<control name="lbl_particleeffects_1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="95" Width="222" Height="78" ShadowColor="0,0,0,0"/>
+			</control>
+			<control name="lbl_particleeffects_2" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="87" Width="238" Height="86" ShadowColor="0,0,0,0"/>
+			</control>
+		</control>
+		<control name="groupbox_exp_tips" entity="GroupBox" script="" init="">
+			<prop ClipChildren="false" Left="-717" Top="-288" Width="582" Height="116" BackColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Right" NoFrame="true"/>
+			<control name="lbl_add" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="400" Top="47" Width="25" Height="25" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH30_O_BLACK" AutoSize="true" BackImage="gui/xm2_quest/exp1.png"/>
+			</control>
+			<control name="lbl_tips0" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="171" Top="43" Width="20" Height="32" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH30_O_BLACK" BackImage="gui/tp2_team/team_num.png,24,0,19,32"/>
+			</control>
+			<control name="lbl_tips1" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="192" Top="43" Width="20" Height="32" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH30_O_BLACK" BackImage="gui/tp2_team/team_num.png,24,0,19,32"/>
+			</control>
+			<control name="lbl_tips2" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="208" Top="43" Width="20" Height="32" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH30_O_BLACK" BackImage="gui/tp2_team/team_num.png,44,0,19,32"/>
+			</control>
+			<control name="lbl_tips3" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="232" Top="43" Width="20" Height="32" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH30_O_BLACK" BackImage="gui/tp2_team/team_num.png,68,0,19,32"/>
+			</control>
+			<control name="lbl_tips4" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="256" Top="43" Width="20" Height="32" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH30_O_BLACK" BackImage="gui/tp2_team/team_num.png,92,0,20,32"/>
+			</control>
+			<control name="lbl_tips5" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="280" Top="43" Width="20" Height="32" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH30_O_BLACK" BackImage="gui/tp2_team/team_num.png,0,35,19,32"/>
+			</control>
+			<control name="lbl_tips6" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="304" Top="43" Width="20" Height="32" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH30_O_BLACK" BackImage="gui/tp2_team/team_num.png,25,35,19,32"/>
+			</control>
+			<control name="lbl_tips7" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="328" Top="43" Width="20" Height="32" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH30_O_BLACK" BackImage="gui/tp2_team/team_num.png,92,0,20,32"/>
+			</control>
+			<control name="lbl_tips8" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="352" Top="43" Width="20" Height="32" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH30_O_BLACK" BackImage="gui/tp2_team/team_num.png,0,35,19,32"/>
+			</control>
+			<control name="lbl_tips9" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="376" Top="43" Width="20" Height="32" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH30_O_BLACK" BackImage="gui/tp2_team/team_num.png,25,35,19,32"/>
+			</control>
+			<control name="lbl_exp_cpy" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="8" Top="43" Width="156" Height="32" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH30_O_BLACK" AutoSize="true" BackImage="gui/xm2_quest/exp.png"/>
+			</control>
+			<control name="lbl_exp_full" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="108" Top="43" Width="207" Height="37" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH30_O_BLACK" AutoSize="true" BackImage="gui/xm2_quest/exp_man.png"/>
+			</control>
+		</control>
+		<control name="groupbox_scene_goal" entity="GroupBox" script="" init="">
+			<prop ClipChildren="false" Left="320" Top="85" Width="500" Height="46" ForeColor="255,60,50,40" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="FitWindow" BackImage="gui/tp2_main/war/jingjidi.png"/>
+			<control name="mltbox_scene_goal" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,255,255,153" ViewRect="0,0,530,38" LineHeight="25" ScrollSize="17" Left="-15" Top="10" Width="530" Height="38" ForeColor="255,60,50,40" ShadowColor="0,0,0,0" Font="WRYH24_S" NoFrame="true"/>
+			</control>
+		</control>
+	</control>
+</form>
+

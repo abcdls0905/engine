@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by  () -->
+<!--每项Buffer的属性数据，附加IDMATCH.xml-->
+<object>
+    <internals>
+        <property name="LifeTime" type="int" public="false" private="true" save="true" desc="持续时间(ms) 如果为0,则持久有效"/>
+    </internals>
+
+    <!-- 基本属性 -->
+    <properties>
+        <!-- BUFFER的固定属性 -->
+        <property name="ConfigID" type="string" public="false" private="true" save="false" desc="技能编号"/>
+        <property name="Description" type="string" public="false" private="false" save="false" desc="技能描述，配置可否从移除该属性？"/>
+        <property name="CurBufferUUID" type="int64" public="false" private="false" save="false" desc="当前正在使用buffer的64位唯一标志"/>   
+        <property name="CurOverlays" type="int" public="false" private="false" save="false" desc="buff 当前的叠加层数"/>                                              
+        <!-- BUFFER的施加来源属性 -->
+        <property name="Sender" type="object" public="false" private="false" save="false" desc="BUFFER的施加者"/>
+        <property name="Skill" type="object" public="false" private="false" save="false" desc="产生BUFFER的技能"/>
+        <!-- BUFFER的过程管理属性 -->
+        <property name="AddTime" type="int64" public="false" private="false" save="true" desc="BUFFER添加的时间 单位s(time_t)"/>
+        <property name="Active" type="int" public="false" private="false" save="true" desc="BUFFER是否有效"/>
+        <property name="Suspend" type="int" public="false" private="false" save="true" desc="BUFFER是否暂停"/>
+        <property name="Counter" type="int" public="false" private="false" save="true" desc="BUFFER已计次的次数"/>
+        <property name="Timer" type="int" public="false" private="false" save="true" desc="BUFFER已存在的时间 单位ms"/>
+        <property name="Buff_Main" type="string" public="false" private="false" save="false" desc="Buff主包"/>		
+        <property name="Buff_Display" type="string" public="false" private="false" save="false" desc="表现包"/>
+    </properties>
+
+    <!-- 表属性 -->
+    <records>
+        <!-- 由技能添加的表格 -->
+        <record name="overlay_buff_time_rec" cols="2" maxrows="8" save="true" public="false" private="false" desc="叠加buffer时间列表，有需求要保存这个表">
+            <column type="word" desc="buffer已经过去的时间"/>
+            <column type="int64" desc="buffer添加的事件的时间(服务器时间 ms)"/>
+        </record>
+    </records>
+
+</object>

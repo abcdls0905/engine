@@ -1,0 +1,19 @@
+
+<!-- 死亡击飞效果参数配置 -->
+<Object>
+	<!-- 
+	HitOutSpeed:力度，打飞目标提供的初始速度，单位：m/s
+	HitOutAngle:力度与水平方向的夹角，单位：角度
+	FloatAngle:角度浮动大小，单位：角度
+	UpAccSpeed:上升阶段加速度，只能是负值，否则不能掉下来，单位: m/s^2
+	DownAccSpeed:下落运动阶段加速度，单位：m/s^2
+	HorizontalAccSpeed:落地之前的水平位移加速度，单位：m/s^2
+	HorizontalAccSpeed2:滑行阶段加速度，单位：m/s^2
+	-->
+	<Property ID="0" HitOutSpeed="30" HitOutAngle="40" FloatAngle="0" UpAccSpeed="-90.8" DownAccSpeed="-90.8" HorizontalAccSpeed="-30" HorizontalAccSpeed2="-21"/>
+	<Property ID="1" HitOutSpeed="20" HitOutAngle="30" FloatAngle="0" UpAccSpeed="-9.8" DownAccSpeed="-13" HorizontalAccSpeed="-5.2" HorizontalAccSpeed2="-15"/>
+	<Property ID="2" HitOutSpeed="20" HitOutAngle="30" FloatAngle="2.5" UpAccSpeed="-9.8" DownAccSpeed="-13" HorizontalAccSpeed="-5.2" HorizontalAccSpeed2="-15"/>
+	<Property ID="3" HitOutSpeed="30" HitOutAngle="40" FloatAngle="0" UpAccSpeed="-90.8" DownAccSpeed="-90.8" HorizontalAccSpeed="-30" HorizontalAccSpeed2="-21"/>
+	<Property ID="4" HitOutSpeed="13" HitOutAngle="45" FloatAngle="2.5" UpAccSpeed="-30" DownAccSpeed="-25" HorizontalAccSpeed="-5" HorizontalAccSpeed2="-30"/>
+</Object>
+

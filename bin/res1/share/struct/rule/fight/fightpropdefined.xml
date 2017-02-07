@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
+<!-- edited with XMLSpy v2010 (http://www.altova.com) by MESMERiZE (MiZE) -->
+<object>
+	<properties>
+		<!-- 基础初始属性 -->
+        <property name="HPBase" type="int" public="false" private="true" save="false" desc="基础生命"/>
+        <property name="AttackBase" type="int" public="false" private="true" save="false" desc="基础攻击"/>
+        <property name="HitBase" type="int" public="false" private="true" save="false" desc="基础命中"/>
+        <property name="MissBase" type="int" public="false" private="true" save="false" desc="基础闪避"/>
+        <property name="CritBase" type="int" public="false" private="true" save="false" desc="基础暴击几率"/>
+        <property name="TougBase" type="int" public="false" private="true" save="false" desc="基础抗暴击"/>
+        <property name="CritDamBase" type="int" public="false" private="true" save="false" desc="基础暴击伤害"/>
+        <property name="TougDamBase" type="int" public="false" private="true" save="false" desc="基础暴击免伤"/>
+        <property name="DefBase" type="int" public="false" private="true" save="false" desc="基础免伤"/>
+        <property name="RealDamBase" type="int" public="false" private="true" save="false" desc="基础真实伤害"/>
+        
+        <!-- 一级属性 -->
+        <property name="Str" type="int" public="false" private="true" save="false" desc="力量"/>
+        <property name="Atr" type="int" public="false" private="true" save="false" desc="残暴"/>
+        <property name="Ang" type="int" public="false" private="true" save="false" desc="愤怒"/>
+        <property name="Dex" type="int" public="false" private="true" save="false" desc="敏捷"/>
+        <property name="Sta" type="int" public="false" private="true" save="false" desc="耐力"/>
+        <property name="Con" type="int" public="false" private="true" save="false" desc="体质"/>
+        
+        <!-- 战斗属性，二级属性 -->
+		<property name="HPRate" type="int" public="false" private="true" save="false" desc="生命百分比"/>
+		<property name="MaxHP" type="int" public="true" private="true" save="true" realtime="true" desc="最大生命值"/>
+		<property name="MaxMP" type="int" public="true" private="true" save="false" desc="法力上限"/>
+		<property name="AttackRate" type="int" public="false" private="true" save="false" desc="攻击百分比"/>
+		<property name="TotalAttack" type="int" public="false" private="true" save="true" realtime="true" desc="基础攻击"/>
+    	<property name="FinalDamageRate" type="int" public="false" private="false" save="false" realtime="" desc="最终伤害百分比"/>
+    	<property name="Hit" type="int" public="false" private="true" save="false" desc="命中"/>
+		<property name="Miss" type="int" public="true" private="true" save="false" desc="闪避"/>
+		<property name="Crit" type="int" public="false" private="true" save="false" desc="暴击几率"/>
+		<property name="Toug" type="int" public="true" private="true" save="false" desc="抗暴击"/>
+		<property name="CritDam" type="int" public="false" private="true" save="false" desc="暴击伤害"/>
+		<property name="TougDam" type="int" public="true" private="true" save="false" desc="暴击免伤"/>
+		<property name="Def" type="int" public="true" private="true" save="false" desc="免伤"/>
+		<property name="RealDam" type="int" public="false" private="true" save="false" desc="真实伤害"/>
+		<property name="DamIncrease" type="int" public="false" private="true" save="false" desc="伤害增加"/>		
+		<property name="Dodge" type="int" public="true" private="true" save="false" desc="格挡"/>
+		<property name="HPReg" type="int" public="false" private="true" save="false" desc="命中回血"/>
+		<property name="MPReg" type="int" public="false" private="true" save="false" desc="命中回蓝"/>
+		<property name="HP" type="int" public="true" private="true" save="fasle" desc="血量当前值"/>
+		<property name="MP" type="int" public="true" private="true" save="false" desc="法力当前值"/>
+		<property name="DisCost1" type="int" public="false" private="true" save="false" desc="减少消耗1"/>
+		<property name="DisCost2" type="int" public="false" private="true" save="false" desc="减少消耗2"/>
+		<property name="DisCost3" type="int" public="false" private="true" save="false" desc="减少消耗3"/>
+		<property name="DisCost4" type="int" public="false" private="true" save="false" desc="减少消耗4"/>
+		<property name="DisCD1" type="int" public="false" private="true" save="false" desc="减CD1"/>
+		<property name="DisCD2" type="int" public="false" private="true" save="false" desc="减CD2"/>
+		<property name="DisCD3" type="int" public="false" private="true" save="false" desc="减CD3"/>
+		<property name="DisCD4" type="int" public="false" private="true" save="false" desc="减CD4"/>
+		<property name="DisCD56" type="int" public="false" private="true" save="false" desc="减CD56"/>
+		<property name="RemainRevive" type="int" public="false" private="true" save="false" desc="剩余复活次数"/>		
+		<property name="Revive" type="int" public="false" private="true" save="false" desc="复活次数"/>
+		<property name="Leech" type="int" public="false" private="true" save="false" desc="吸血"/>
+		<property name="Rebound" type="int" public="true" private="true" save="false" desc="反弹伤害"/>
+		<property name="Deadly" type="int" public="false" private="true" save="false" desc="必杀几率"/>
+		<property name="Dizzy" type="int" public="false" private="true" save="false" desc="眩晕几率"/>
+		<property name="DizzyAsist" type="int" public="true" private="true" save="false" desc="眩晕抗性"/>
+		<property name="Paraly" type="int" public="false" private="true" save="false" desc="麻痹几率"/>
+		<property name="ParalyAsist" type="int" public="true" private="true" save="false" desc="麻痹抗性"/>	
+		<property name="FireDam" type="int" public="false" private="true" save="false" desc="火伤害"/>
+		<property name="FireRate" type="int" public="false" private="true" save="false" desc="火伤害几率"/>
+		<property name="FireEffectRatio" type="int" public="false" private="true" save="false" desc="火伤害效果几率"/>
+		<property name="IceDam" type="int" public="false" private="true" save="false" desc="冰伤害"/>	
+		<property name="IceRate" type="int" public="false" private="true" save="false" desc="冰伤害几率"/>
+		<property name="IceEffectRatio" type="int" public="false" private="true" save="false" desc="冰伤害效果几率"/>
+		<property name="IceAsist" type="int" public="false" private="true" save="false" desc="冰冻抗性"/>
+    <property name="FireAsist" type="int" public="false" private="true" save="false" desc="火抗性"/>
+    <property name="LightningAsist" type="int" public="false" private="true" save="false" desc="冰抗性"/>
+    <property name="LightningDam" type="int" public="false" private="true" save="false" desc="雷伤害"/>
+		<property name="LightningRate" type="int" public="false" private="true" save="false" desc="雷伤害几率"/>
+		<property name="LightEffectRatio" type="int" public="false" private="true" save="false" desc="雷伤害效果几率"/>		
+		<property name="Break"  type="int" public="true" private="true" save="false" desc="当前破防值"/>
+		<property name="MaxBreak"  type="int" public="true" private="true" save="false" desc="当前破防上限"/>
+		<property name="BreakConsumeRatio"  type="int" public="false" private="false" save="false" desc="当前破防消耗"/>		
+		<property name="BreakReturn"  type="int" public="true" private="true" save="false" desc="当前破防回复速度"/>
+		<property name="BreakReturn2"  type="int" public="false" private="true" save="false" desc="当前破防回复速度"/>
+		<property name="HPReturnFactor" type="int" public="false" private="true" save="false" desc="角色回血回复因子"/>	
+		<property name="MPReturnFactor" type="int" public="false" private="true" save="false" desc="角色回蓝回复因子"/>
+		<property name="BufferTimeFactor" type="int" public="false" private="true" save="false" desc="角色Buffer时间影响因子"/>
+		<property name="FireDamAbsort" type="int" public="false" private="true" save="false" desc="火伤害吸收"/>
+		<property name="IceDamAbsort" type="int" public="=false" private="true" save="false" desc="冰伤害吸收"/>
+		<property name="LightningDamAbsort" type="int" public="false" private="true" save="false" desc="雷伤害吸收"/>
+		<property name="Skill1Effect" type="int" public="false" private="true" save="false" desc="技能1"/>
+    <property name="Skill2Effect" type="int" public="false" private="true" save="false" desc="技能2"/>
+    <property name="Skill3Effect" type="int" public="false" private="true" save="false" desc="技能3"/>
+    <property name="Skill4Effect" type="int" public="false" private="true" save="false" desc="技能4"/>
+	
+
+		<!-- 增加部分需要用到的属性-->
+	    <property name="IgnoreDef" type="int" public="false" private="true" save="false" desc="当前无视对方的免伤值"/>
+        <property name="DecRebound" type="int" public="false" private="true" save="false" desc="受到反弹时减少受到的伤害值"/>
+        <property name="DefFireDam" type="int" public="true" private="false" save="false" desc="受到火系伤害免疫值"/>
+        <property name="DefIceDam" type="int" public="true" private="false" save="false" desc="受到冰系伤害免疫值"/>
+        <property name="DefLiningDam" type="int" public="true" private="false" save="false" desc="受到雷系伤害免疫值"/>
+	    <property name="Slow" type="int" public="false" private="true" save="false" desc="减速几率"/>
+		<property name="SlowAsist" type="int" public="false" private="true" save="false" desc="减速抗性"/>	
+		
+		<!-- 增加5月版本所需要的属性 -->
+	    <property name="DamageCripplePercent" type="int" public="false" private="true" save="false" desc="伤害致残的百分比"/>
+		<property name="DamageCripplePercentDef" type="int" public="false" private="true" save="false" desc="伤害致残的免疫百分比"/>
+	    <property name="DamageBleedingRate" type="int" public="false" private="true" save="false" desc="流血几率"/>
+		<property name="DamageBleedingRateDef" type="int" public="false" private="true" save="false" desc="流血的免疫"/>
+	    <property name="DamageFirePetAdvancePercent" type="int" public="false" private="true" save="false" desc="火系武神提高伤害的百分比"/>
+	    <property name="DamageIcePetAdvancePercent" type="int" public="false" private="true" save="false" desc="冰系武神提高伤害的百分比"/>
+	    <property name="DamageLightningPetAdvancePercent" type="int" public="false" private="true" save="false" desc="雷系武神提高伤害的百分比"/>
+	    <property name="DamageFlyPetAdvancePercent" type="int" public="false" private="true" save="false" desc="飞行系武神提高伤害的百分比"/>
+	    <property name="DamagePlayerPetAdvancePercent" type="int" public="false" private="true" save="false" desc="人型系武神提高伤害的百分比"/>
+	    <property name="DamageChangeAdvancePercent" type="int" public="false" private="true" save="false" desc="目标变身之后提高伤害的百分比"/>
+	    <property name="MPDisCostValue" type="int" public="false" private="true" save="false" desc="普工减少目标法力值"/>
+	    <property name="MPDisCostValueDef" type="int" public="false" private="true" save="false" desc="免疫普工所要减少的法力值"/>
+        <property name="HitBossDamageRatio" type="int" public="false" private="false" save="false" desc="命中boss时的额外伤害比率"/>
+	</properties>
+</object>

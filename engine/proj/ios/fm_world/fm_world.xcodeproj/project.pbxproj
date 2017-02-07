@@ -1,0 +1,539 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		850EB2A61885C44600D29088 /* post_effect_fxaa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 850EB2A41885C44600D29088 /* post_effect_fxaa.cpp */; };
+		851FA1F519000FCB00AB06C4 /* whip_data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 851FA1EF19000FCB00AB06C4 /* whip_data.cpp */; };
+		851FA1F619000FCB00AB06C4 /* whip_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 851FA1F119000FCB00AB06C4 /* whip_manager.cpp */; };
+		851FA1F719000FCB00AB06C4 /* whip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 851FA1F319000FCB00AB06C4 /* whip.cpp */; };
+		85285E0417A1636C006F9F99 /* dynamic_weather.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85285E0117A1636C006F9F99 /* dynamic_weather.cpp */; };
+		856395B31745CED7002663EC /* action_control_info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 856395991745CED7002663EC /* action_control_info.cpp */; };
+		856395B41745CED7002663EC /* action_control.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563959A1745CED7002663EC /* action_control.cpp */; };
+		856395B51745CED7002663EC /* actor_action.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563959C1745CED7002663EC /* actor_action.cpp */; };
+		856395B61745CED7002663EC /* actor_foot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563959D1745CED7002663EC /* actor_foot.cpp */; };
+		856395B71745CED7002663EC /* actor_look.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563959E1745CED7002663EC /* actor_look.cpp */; };
+		856395B81745CED7002663EC /* actor_node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563959F1745CED7002663EC /* actor_node.cpp */; };
+		856395B91745CED7002663EC /* actor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 856395A11745CED7002663EC /* actor.cpp */; };
+		856395BA1745CED7002663EC /* broken_shadow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 856395A31745CED7002663EC /* broken_shadow.cpp */; };
+		856395BB1745CED7002663EC /* effect_model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 856395A51745CED7002663EC /* effect_model.cpp */; };
+		856395BC1745CED7002663EC /* post_debug.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 856395A71745CED7002663EC /* post_debug.cpp */; };
+		856395BD1745CED7002663EC /* post_effect_filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 856395A91745CED7002663EC /* post_effect_filter.cpp */; };
+		856395BE1745CED7002663EC /* post_effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 856395AB1745CED7002663EC /* post_effect.cpp */; };
+		856395BF1745CED7002663EC /* saber_arc_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 856395AD1745CED7002663EC /* saber_arc_manager.cpp */; };
+		856395C01745CED7002663EC /* saber_arc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 856395AF1745CED7002663EC /* saber_arc.cpp */; };
+		856395C11745CED7002663EC /* skin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 856395B11745CED7002663EC /* skin.cpp */; };
+		8576AC2516F1B1740012635A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8576AC2416F1B1740012635A /* Foundation.framework */; };
+		8576AC2C16F1B1740012635A /* fm_world.m in Sources */ = {isa = PBXBuildFile; fileRef = 8576AC2B16F1B1740012635A /* fm_world.m */; };
+		8576AD6816F1BA2A0012635A /* camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8576AD4816F1BA2A0012635A /* camera.cpp */; };
+		8576AD6916F1BA2A0012635A /* effect_data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8576AD4A16F1BA2A0012635A /* effect_data.cpp */; };
+		8576AD6A16F1BA2A0012635A /* lib_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8576AD4D16F1BA2A0012635A /* lib_main.cpp */; };
+		8576AD6B16F1BA2A0012635A /* light_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8576AD4E16F1BA2A0012635A /* light_manager.cpp */; };
+		8576AD6C16F1BA2A0012635A /* light_source.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8576AD5016F1BA2A0012635A /* light_source.cpp */; };
+		8576AD6D16F1BA2A0012635A /* model.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8576AD5216F1BA2A0012635A /* model.cpp */; };
+		8576AD6E16F1BA2A0012635A /* particle_data.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8576AD5416F1BA2A0012635A /* particle_data.cpp */; };
+		8576AD6F16F1BA2A0012635A /* particle_info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8576AD5616F1BA2A0012635A /* particle_info.cpp */; };
+		8576AD7016F1BA2A0012635A /* particle_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8576AD5816F1BA2A0012635A /* particle_manager.cpp */; };
+		8576AD7116F1BA2A0012635A /* particle_node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8576AD5A16F1BA2A0012635A /* particle_node.cpp */; };
+		8576AD7216F1BA2A0012635A /* particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8576AD5C16F1BA2A0012635A /* particle.cpp */; };
+		8576AD7316F1BA2A0012635A /* render_tex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8576AD5E16F1BA2A0012635A /* render_tex.cpp */; };
+		8576AD7416F1BA2A0012635A /* scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8576AD6016F1BA2A0012635A /* scene.cpp */; };
+		8576AD7516F1BA2A0012635A /* sky_box.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8576AD6216F1BA2A0012635A /* sky_box.cpp */; };
+		8576AD7616F1BA2A0012635A /* weather.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8576AD6416F1BA2A0012635A /* weather.cpp */; };
+		8576AD7716F1BA2A0012635A /* world.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8576AD6616F1BA2A0012635A /* world.cpp */; };
+		8593939218E1E3FD006D9B4B /* pssm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8593939018E1E3FD006D9B4B /* pssm.cpp */; };
+		85EB9C2F16FAB24E005F344E /* sun_glow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85EB9C2D16FAB24E005F344E /* sun_glow.cpp */; };
+		85FE1BC01827B5A300A37D31 /* shadow_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85FE1BBC1827B5A300A37D31 /* shadow_manager.cpp */; };
+		85FE1BC11827B5A300A37D31 /* shadow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85FE1BBE1827B5A300A37D31 /* shadow.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8576AC1F16F1B1740012635A /* Copy Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			name = "Copy Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		850EB2A41885C44600D29088 /* post_effect_fxaa.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = post_effect_fxaa.cpp; path = ../../../fm_world/post_effect_fxaa.cpp; sourceTree = "<group>"; };
+		850EB2A51885C44600D29088 /* post_effect_fxaa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = post_effect_fxaa.h; path = ../../../fm_world/post_effect_fxaa.h; sourceTree = "<group>"; };
+		851FA1EF19000FCB00AB06C4 /* whip_data.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = whip_data.cpp; path = ../../../fm_world/whip_data.cpp; sourceTree = "<group>"; };
+		851FA1F019000FCB00AB06C4 /* whip_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = whip_data.h; path = ../../../fm_world/whip_data.h; sourceTree = "<group>"; };
+		851FA1F119000FCB00AB06C4 /* whip_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = whip_manager.cpp; path = ../../../fm_world/whip_manager.cpp; sourceTree = "<group>"; };
+		851FA1F219000FCB00AB06C4 /* whip_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = whip_manager.h; path = ../../../fm_world/whip_manager.h; sourceTree = "<group>"; };
+		851FA1F319000FCB00AB06C4 /* whip.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = whip.cpp; path = ../../../fm_world/whip.cpp; sourceTree = "<group>"; };
+		851FA1F419000FCB00AB06C4 /* whip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = whip.h; path = ../../../fm_world/whip.h; sourceTree = "<group>"; };
+		85285E0117A1636C006F9F99 /* dynamic_weather.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dynamic_weather.cpp; path = ../../../fm_world/dynamic_weather.cpp; sourceTree = "<group>"; };
+		85285E0217A1636C006F9F99 /* dynamic_weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dynamic_weather.h; path = ../../../fm_world/dynamic_weather.h; sourceTree = "<group>"; };
+		85285E0317A1636C006F9F99 /* perlin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = perlin.h; path = ../../../fm_world/perlin.h; sourceTree = "<group>"; };
+		856395991745CED7002663EC /* action_control_info.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = action_control_info.cpp; path = ../../../fm_world/action_control_info.cpp; sourceTree = "<group>"; };
+		8563959A1745CED7002663EC /* action_control.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = action_control.cpp; path = ../../../fm_world/action_control.cpp; sourceTree = "<group>"; };
+		8563959B1745CED7002663EC /* action_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = action_control.h; path = ../../../fm_world/action_control.h; sourceTree = "<group>"; };
+		8563959C1745CED7002663EC /* actor_action.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = actor_action.cpp; path = ../../../fm_world/actor_action.cpp; sourceTree = "<group>"; };
+		8563959D1745CED7002663EC /* actor_foot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = actor_foot.cpp; path = ../../../fm_world/actor_foot.cpp; sourceTree = "<group>"; };
+		8563959E1745CED7002663EC /* actor_look.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = actor_look.cpp; path = ../../../fm_world/actor_look.cpp; sourceTree = "<group>"; };
+		8563959F1745CED7002663EC /* actor_node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = actor_node.cpp; path = ../../../fm_world/actor_node.cpp; sourceTree = "<group>"; };
+		856395A01745CED7002663EC /* actor_node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = actor_node.h; path = ../../../fm_world/actor_node.h; sourceTree = "<group>"; };
+		856395A11745CED7002663EC /* actor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = actor.cpp; path = ../../../fm_world/actor.cpp; sourceTree = "<group>"; };
+		856395A21745CED7002663EC /* actor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = actor.h; path = ../../../fm_world/actor.h; sourceTree = "<group>"; };
+		856395A31745CED7002663EC /* broken_shadow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = broken_shadow.cpp; path = ../../../fm_world/broken_shadow.cpp; sourceTree = "<group>"; };
+		856395A41745CED7002663EC /* broken_shadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = broken_shadow.h; path = ../../../fm_world/broken_shadow.h; sourceTree = "<group>"; };
+		856395A51745CED7002663EC /* effect_model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = effect_model.cpp; path = ../../../fm_world/effect_model.cpp; sourceTree = "<group>"; };
+		856395A61745CED7002663EC /* effect_model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = effect_model.h; path = ../../../fm_world/effect_model.h; sourceTree = "<group>"; };
+		856395A71745CED7002663EC /* post_debug.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = post_debug.cpp; path = ../../../fm_world/post_debug.cpp; sourceTree = "<group>"; };
+		856395A81745CED7002663EC /* post_debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = post_debug.h; path = ../../../fm_world/post_debug.h; sourceTree = "<group>"; };
+		856395A91745CED7002663EC /* post_effect_filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = post_effect_filter.cpp; path = ../../../fm_world/post_effect_filter.cpp; sourceTree = "<group>"; };
+		856395AA1745CED7002663EC /* post_effect_filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = post_effect_filter.h; path = ../../../fm_world/post_effect_filter.h; sourceTree = "<group>"; };
+		856395AB1745CED7002663EC /* post_effect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = post_effect.cpp; path = ../../../fm_world/post_effect.cpp; sourceTree = "<group>"; };
+		856395AC1745CED7002663EC /* post_effect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = post_effect.h; path = ../../../fm_world/post_effect.h; sourceTree = "<group>"; };
+		856395AD1745CED7002663EC /* saber_arc_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = saber_arc_manager.cpp; path = ../../../fm_world/saber_arc_manager.cpp; sourceTree = "<group>"; };
+		856395AE1745CED7002663EC /* saber_arc_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = saber_arc_manager.h; path = ../../../fm_world/saber_arc_manager.h; sourceTree = "<group>"; };
+		856395AF1745CED7002663EC /* saber_arc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = saber_arc.cpp; path = ../../../fm_world/saber_arc.cpp; sourceTree = "<group>"; };
+		856395B01745CED7002663EC /* saber_arc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = saber_arc.h; path = ../../../fm_world/saber_arc.h; sourceTree = "<group>"; };
+		856395B11745CED7002663EC /* skin.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = skin.cpp; path = ../../../fm_world/skin.cpp; sourceTree = "<group>"; };
+		856395B21745CED7002663EC /* skin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = skin.h; path = ../../../fm_world/skin.h; sourceTree = "<group>"; };
+		8576AC2116F1B1740012635A /* libfm_world.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfm_world.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8576AC2416F1B1740012635A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8576AC2816F1B1740012635A /* fm_world-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fm_world-Prefix.pch"; sourceTree = "<group>"; };
+		8576AC2916F1B1740012635A /* fm_world.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fm_world.h; sourceTree = "<group>"; };
+		8576AC2B16F1B1740012635A /* fm_world.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fm_world.m; sourceTree = "<group>"; };
+		8576AC3316F1B1740012635A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		8576AC3516F1B1740012635A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8576AC3D16F1B1740012635A /* fm_worldTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "fm_worldTests-Info.plist"; sourceTree = "<group>"; };
+		8576AC3F16F1B1740012635A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8576AC4116F1B1740012635A /* fm_worldTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fm_worldTests.h; sourceTree = "<group>"; };
+		8576AC4216F1B1740012635A /* fm_worldTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fm_worldTests.m; sourceTree = "<group>"; };
+		8576AD4816F1BA2A0012635A /* camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = camera.cpp; path = ../../../fm_world/camera.cpp; sourceTree = "<group>"; };
+		8576AD4916F1BA2A0012635A /* camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = camera.h; path = ../../../fm_world/camera.h; sourceTree = "<group>"; };
+		8576AD4A16F1BA2A0012635A /* effect_data.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = effect_data.cpp; path = ../../../fm_world/effect_data.cpp; sourceTree = "<group>"; };
+		8576AD4B16F1BA2A0012635A /* effect_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = effect_data.h; path = ../../../fm_world/effect_data.h; sourceTree = "<group>"; };
+		8576AD4C16F1BA2A0012635A /* fm_world.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = fm_world.vcproj; path = ../../../fm_world/fm_world.vcproj; sourceTree = "<group>"; };
+		8576AD4D16F1BA2A0012635A /* lib_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lib_main.cpp; path = ../../../fm_world/lib_main.cpp; sourceTree = "<group>"; };
+		8576AD4E16F1BA2A0012635A /* light_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = light_manager.cpp; path = ../../../fm_world/light_manager.cpp; sourceTree = "<group>"; };
+		8576AD4F16F1BA2A0012635A /* light_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = light_manager.h; path = ../../../fm_world/light_manager.h; sourceTree = "<group>"; };
+		8576AD5016F1BA2A0012635A /* light_source.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = light_source.cpp; path = ../../../fm_world/light_source.cpp; sourceTree = "<group>"; };
+		8576AD5116F1BA2A0012635A /* light_source.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = light_source.h; path = ../../../fm_world/light_source.h; sourceTree = "<group>"; };
+		8576AD5216F1BA2A0012635A /* model.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = model.cpp; path = ../../../fm_world/model.cpp; sourceTree = "<group>"; };
+		8576AD5316F1BA2A0012635A /* model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = model.h; path = ../../../fm_world/model.h; sourceTree = "<group>"; };
+		8576AD5416F1BA2A0012635A /* particle_data.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = particle_data.cpp; path = ../../../fm_world/particle_data.cpp; sourceTree = "<group>"; };
+		8576AD5516F1BA2A0012635A /* particle_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = particle_data.h; path = ../../../fm_world/particle_data.h; sourceTree = "<group>"; };
+		8576AD5616F1BA2A0012635A /* particle_info.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = particle_info.cpp; path = ../../../fm_world/particle_info.cpp; sourceTree = "<group>"; };
+		8576AD5716F1BA2A0012635A /* particle_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = particle_info.h; path = ../../../fm_world/particle_info.h; sourceTree = "<group>"; };
+		8576AD5816F1BA2A0012635A /* particle_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = particle_manager.cpp; path = ../../../fm_world/particle_manager.cpp; sourceTree = "<group>"; };
+		8576AD5916F1BA2A0012635A /* particle_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = particle_manager.h; path = ../../../fm_world/particle_manager.h; sourceTree = "<group>"; };
+		8576AD5A16F1BA2A0012635A /* particle_node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = particle_node.cpp; path = ../../../fm_world/particle_node.cpp; sourceTree = "<group>"; };
+		8576AD5B16F1BA2A0012635A /* particle_node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = particle_node.h; path = ../../../fm_world/particle_node.h; sourceTree = "<group>"; };
+		8576AD5C16F1BA2A0012635A /* particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = particle.cpp; path = ../../../fm_world/particle.cpp; sourceTree = "<group>"; };
+		8576AD5D16F1BA2A0012635A /* particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = particle.h; path = ../../../fm_world/particle.h; sourceTree = "<group>"; };
+		8576AD5E16F1BA2A0012635A /* render_tex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = render_tex.cpp; path = ../../../fm_world/render_tex.cpp; sourceTree = "<group>"; };
+		8576AD5F16F1BA2A0012635A /* render_tex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = render_tex.h; path = ../../../fm_world/render_tex.h; sourceTree = "<group>"; };
+		8576AD6016F1BA2A0012635A /* scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = scene.cpp; path = ../../../fm_world/scene.cpp; sourceTree = "<group>"; };
+		8576AD6116F1BA2A0012635A /* scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = scene.h; path = ../../../fm_world/scene.h; sourceTree = "<group>"; };
+		8576AD6216F1BA2A0012635A /* sky_box.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sky_box.cpp; path = ../../../fm_world/sky_box.cpp; sourceTree = "<group>"; };
+		8576AD6316F1BA2A0012635A /* sky_box.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sky_box.h; path = ../../../fm_world/sky_box.h; sourceTree = "<group>"; };
+		8576AD6416F1BA2A0012635A /* weather.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = weather.cpp; path = ../../../fm_world/weather.cpp; sourceTree = "<group>"; };
+		8576AD6516F1BA2A0012635A /* weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = weather.h; path = ../../../fm_world/weather.h; sourceTree = "<group>"; };
+		8576AD6616F1BA2A0012635A /* world.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = world.cpp; path = ../../../fm_world/world.cpp; sourceTree = "<group>"; };
+		8576AD6716F1BA2A0012635A /* world.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = world.h; path = ../../../fm_world/world.h; sourceTree = "<group>"; };
+		8593939018E1E3FD006D9B4B /* pssm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = pssm.cpp; path = ../../../fm_world/pssm.cpp; sourceTree = "<group>"; };
+		8593939118E1E3FD006D9B4B /* pssm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pssm.h; path = ../../../fm_world/pssm.h; sourceTree = "<group>"; };
+		85EB9C2D16FAB24E005F344E /* sun_glow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sun_glow.cpp; path = ../../../fm_world/sun_glow.cpp; sourceTree = "<group>"; };
+		85EB9C2E16FAB24E005F344E /* sun_glow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sun_glow.h; path = ../../../fm_world/sun_glow.h; sourceTree = "<group>"; };
+		85FE1BBC1827B5A300A37D31 /* shadow_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shadow_manager.cpp; path = ../../../fm_world/shadow_manager.cpp; sourceTree = "<group>"; };
+		85FE1BBD1827B5A300A37D31 /* shadow_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shadow_manager.h; path = ../../../fm_world/shadow_manager.h; sourceTree = "<group>"; };
+		85FE1BBE1827B5A300A37D31 /* shadow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shadow.cpp; path = ../../../fm_world/shadow.cpp; sourceTree = "<group>"; };
+		85FE1BBF1827B5A300A37D31 /* shadow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shadow.h; path = ../../../fm_world/shadow.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8576AC1E16F1B1740012635A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8576AC2516F1B1740012635A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8576AC1616F1B1740012635A = {
+			isa = PBXGroup;
+			children = (
+				8576AD4616F1BA060012635A /* src */,
+				8576AC2616F1B1740012635A /* fm_world */,
+				8576AC3B16F1B1740012635A /* fm_worldTests */,
+				8576AC2316F1B1740012635A /* Frameworks */,
+				8576AC2216F1B1740012635A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8576AC2216F1B1740012635A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8576AC2116F1B1740012635A /* libfm_world.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8576AC2316F1B1740012635A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8576AC2416F1B1740012635A /* Foundation.framework */,
+				8576AC3316F1B1740012635A /* SenTestingKit.framework */,
+				8576AC3516F1B1740012635A /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8576AC2616F1B1740012635A /* fm_world */ = {
+			isa = PBXGroup;
+			children = (
+				8576AC2916F1B1740012635A /* fm_world.h */,
+				8576AC2B16F1B1740012635A /* fm_world.m */,
+				8576AC2716F1B1740012635A /* Supporting Files */,
+			);
+			path = fm_world;
+			sourceTree = "<group>";
+		};
+		8576AC2716F1B1740012635A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8576AC2816F1B1740012635A /* fm_world-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8576AC3B16F1B1740012635A /* fm_worldTests */ = {
+			isa = PBXGroup;
+			children = (
+				8576AC4116F1B1740012635A /* fm_worldTests.h */,
+				8576AC4216F1B1740012635A /* fm_worldTests.m */,
+				8576AC3C16F1B1740012635A /* Supporting Files */,
+			);
+			path = fm_worldTests;
+			sourceTree = "<group>";
+		};
+		8576AC3C16F1B1740012635A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8576AC3D16F1B1740012635A /* fm_worldTests-Info.plist */,
+				8576AC3E16F1B1740012635A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8576AD4616F1BA060012635A /* src */ = {
+			isa = PBXGroup;
+			children = (
+				851FA1EF19000FCB00AB06C4 /* whip_data.cpp */,
+				851FA1F019000FCB00AB06C4 /* whip_data.h */,
+				851FA1F119000FCB00AB06C4 /* whip_manager.cpp */,
+				851FA1F219000FCB00AB06C4 /* whip_manager.h */,
+				851FA1F319000FCB00AB06C4 /* whip.cpp */,
+				851FA1F419000FCB00AB06C4 /* whip.h */,
+				8593939018E1E3FD006D9B4B /* pssm.cpp */,
+				8593939118E1E3FD006D9B4B /* pssm.h */,
+				850EB2A41885C44600D29088 /* post_effect_fxaa.cpp */,
+				850EB2A51885C44600D29088 /* post_effect_fxaa.h */,
+				85FE1BBC1827B5A300A37D31 /* shadow_manager.cpp */,
+				85FE1BBD1827B5A300A37D31 /* shadow_manager.h */,
+				85FE1BBE1827B5A300A37D31 /* shadow.cpp */,
+				85FE1BBF1827B5A300A37D31 /* shadow.h */,
+				85285E0117A1636C006F9F99 /* dynamic_weather.cpp */,
+				85285E0217A1636C006F9F99 /* dynamic_weather.h */,
+				85285E0317A1636C006F9F99 /* perlin.h */,
+				856395991745CED7002663EC /* action_control_info.cpp */,
+				8563959A1745CED7002663EC /* action_control.cpp */,
+				8563959B1745CED7002663EC /* action_control.h */,
+				8563959C1745CED7002663EC /* actor_action.cpp */,
+				8563959D1745CED7002663EC /* actor_foot.cpp */,
+				8563959E1745CED7002663EC /* actor_look.cpp */,
+				8563959F1745CED7002663EC /* actor_node.cpp */,
+				856395A01745CED7002663EC /* actor_node.h */,
+				856395A11745CED7002663EC /* actor.cpp */,
+				856395A21745CED7002663EC /* actor.h */,
+				856395A31745CED7002663EC /* broken_shadow.cpp */,
+				856395A41745CED7002663EC /* broken_shadow.h */,
+				856395A51745CED7002663EC /* effect_model.cpp */,
+				856395A61745CED7002663EC /* effect_model.h */,
+				856395A71745CED7002663EC /* post_debug.cpp */,
+				856395A81745CED7002663EC /* post_debug.h */,
+				856395A91745CED7002663EC /* post_effect_filter.cpp */,
+				856395AA1745CED7002663EC /* post_effect_filter.h */,
+				856395AB1745CED7002663EC /* post_effect.cpp */,
+				856395AC1745CED7002663EC /* post_effect.h */,
+				856395AD1745CED7002663EC /* saber_arc_manager.cpp */,
+				856395AE1745CED7002663EC /* saber_arc_manager.h */,
+				856395AF1745CED7002663EC /* saber_arc.cpp */,
+				856395B01745CED7002663EC /* saber_arc.h */,
+				856395B11745CED7002663EC /* skin.cpp */,
+				856395B21745CED7002663EC /* skin.h */,
+				85EB9C2D16FAB24E005F344E /* sun_glow.cpp */,
+				85EB9C2E16FAB24E005F344E /* sun_glow.h */,
+				8576AD4816F1BA2A0012635A /* camera.cpp */,
+				8576AD4916F1BA2A0012635A /* camera.h */,
+				8576AD4A16F1BA2A0012635A /* effect_data.cpp */,
+				8576AD4B16F1BA2A0012635A /* effect_data.h */,
+				8576AD4C16F1BA2A0012635A /* fm_world.vcproj */,
+				8576AD4D16F1BA2A0012635A /* lib_main.cpp */,
+				8576AD4E16F1BA2A0012635A /* light_manager.cpp */,
+				8576AD4F16F1BA2A0012635A /* light_manager.h */,
+				8576AD5016F1BA2A0012635A /* light_source.cpp */,
+				8576AD5116F1BA2A0012635A /* light_source.h */,
+				8576AD5216F1BA2A0012635A /* model.cpp */,
+				8576AD5316F1BA2A0012635A /* model.h */,
+				8576AD5416F1BA2A0012635A /* particle_data.cpp */,
+				8576AD5516F1BA2A0012635A /* particle_data.h */,
+				8576AD5616F1BA2A0012635A /* particle_info.cpp */,
+				8576AD5716F1BA2A0012635A /* particle_info.h */,
+				8576AD5816F1BA2A0012635A /* particle_manager.cpp */,
+				8576AD5916F1BA2A0012635A /* particle_manager.h */,
+				8576AD5A16F1BA2A0012635A /* particle_node.cpp */,
+				8576AD5B16F1BA2A0012635A /* particle_node.h */,
+				8576AD5C16F1BA2A0012635A /* particle.cpp */,
+				8576AD5D16F1BA2A0012635A /* particle.h */,
+				8576AD5E16F1BA2A0012635A /* render_tex.cpp */,
+				8576AD5F16F1BA2A0012635A /* render_tex.h */,
+				8576AD6016F1BA2A0012635A /* scene.cpp */,
+				8576AD6116F1BA2A0012635A /* scene.h */,
+				8576AD6216F1BA2A0012635A /* sky_box.cpp */,
+				8576AD6316F1BA2A0012635A /* sky_box.h */,
+				8576AD6416F1BA2A0012635A /* weather.cpp */,
+				8576AD6516F1BA2A0012635A /* weather.h */,
+				8576AD6616F1BA2A0012635A /* world.cpp */,
+				8576AD6716F1BA2A0012635A /* world.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8576AC2016F1B1740012635A /* fm_world */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8576AC4616F1B1740012635A /* Build configuration list for PBXNativeTarget "fm_world" */;
+			buildPhases = (
+				8576AC1D16F1B1740012635A /* Sources */,
+				8576AC1E16F1B1740012635A /* Frameworks */,
+				8576AC1F16F1B1740012635A /* Copy Files */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fm_world;
+			productName = fm_world;
+			productReference = 8576AC2116F1B1740012635A /* libfm_world.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8576AC1816F1B1740012635A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = SnailResearch;
+			};
+			buildConfigurationList = 8576AC1B16F1B1740012635A /* Build configuration list for PBXProject "fm_world" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8576AC1616F1B1740012635A;
+			productRefGroup = 8576AC2216F1B1740012635A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8576AC2016F1B1740012635A /* fm_world */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8576AC1D16F1B1740012635A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8576AC2C16F1B1740012635A /* fm_world.m in Sources */,
+				8576AD6816F1BA2A0012635A /* camera.cpp in Sources */,
+				8576AD6916F1BA2A0012635A /* effect_data.cpp in Sources */,
+				8576AD6A16F1BA2A0012635A /* lib_main.cpp in Sources */,
+				8576AD6B16F1BA2A0012635A /* light_manager.cpp in Sources */,
+				8576AD6C16F1BA2A0012635A /* light_source.cpp in Sources */,
+				8576AD6D16F1BA2A0012635A /* model.cpp in Sources */,
+				8576AD6E16F1BA2A0012635A /* particle_data.cpp in Sources */,
+				8576AD6F16F1BA2A0012635A /* particle_info.cpp in Sources */,
+				8576AD7016F1BA2A0012635A /* particle_manager.cpp in Sources */,
+				8576AD7116F1BA2A0012635A /* particle_node.cpp in Sources */,
+				8576AD7216F1BA2A0012635A /* particle.cpp in Sources */,
+				8576AD7316F1BA2A0012635A /* render_tex.cpp in Sources */,
+				8576AD7416F1BA2A0012635A /* scene.cpp in Sources */,
+				8576AD7516F1BA2A0012635A /* sky_box.cpp in Sources */,
+				8576AD7616F1BA2A0012635A /* weather.cpp in Sources */,
+				851FA1F719000FCB00AB06C4 /* whip.cpp in Sources */,
+				8576AD7716F1BA2A0012635A /* world.cpp in Sources */,
+				85EB9C2F16FAB24E005F344E /* sun_glow.cpp in Sources */,
+				856395B31745CED7002663EC /* action_control_info.cpp in Sources */,
+				851FA1F619000FCB00AB06C4 /* whip_manager.cpp in Sources */,
+				856395B41745CED7002663EC /* action_control.cpp in Sources */,
+				856395B51745CED7002663EC /* actor_action.cpp in Sources */,
+				856395B61745CED7002663EC /* actor_foot.cpp in Sources */,
+				851FA1F519000FCB00AB06C4 /* whip_data.cpp in Sources */,
+				856395B71745CED7002663EC /* actor_look.cpp in Sources */,
+				856395B81745CED7002663EC /* actor_node.cpp in Sources */,
+				856395B91745CED7002663EC /* actor.cpp in Sources */,
+				856395BA1745CED7002663EC /* broken_shadow.cpp in Sources */,
+				856395BB1745CED7002663EC /* effect_model.cpp in Sources */,
+				856395BC1745CED7002663EC /* post_debug.cpp in Sources */,
+				856395BD1745CED7002663EC /* post_effect_filter.cpp in Sources */,
+				856395BE1745CED7002663EC /* post_effect.cpp in Sources */,
+				856395BF1745CED7002663EC /* saber_arc_manager.cpp in Sources */,
+				856395C01745CED7002663EC /* saber_arc.cpp in Sources */,
+				8593939218E1E3FD006D9B4B /* pssm.cpp in Sources */,
+				856395C11745CED7002663EC /* skin.cpp in Sources */,
+				85285E0417A1636C006F9F99 /* dynamic_weather.cpp in Sources */,
+				85FE1BC01827B5A300A37D31 /* shadow_manager.cpp in Sources */,
+				85FE1BC11827B5A300A37D31 /* shadow.cpp in Sources */,
+				850EB2A61885C44600D29088 /* post_effect_fxaa.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8576AC3E16F1B1740012635A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8576AC3F16F1B1740012635A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8576AC4416F1B1740012635A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8576AC4516F1B1740012635A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8576AC4716F1B1740012635A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DSTROOT = /tmp/fm_world.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fm_world/fm_world-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					PERFORMANCE_DEBUG,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8576AC4816F1B1740012635A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DSTROOT = /tmp/fm_world.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fm_world/fm_world-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8576AC1B16F1B1740012635A /* Build configuration list for PBXProject "fm_world" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8576AC4416F1B1740012635A /* Debug */,
+				8576AC4516F1B1740012635A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8576AC4616F1B1740012635A /* Build configuration list for PBXNativeTarget "fm_world" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8576AC4716F1B1740012635A /* Debug */,
+				8576AC4816F1B1740012635A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8576AC1816F1B1740012635A /* Project object */;
+}

@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
+<Object>
+	<Property ID="boss_bati_buff" script="Buffer" LifeTime="2000000000" Buff_Main="boss_bati_buff" Buff_Display="batibuff"/>
+	<Property ID="bati_buff_2" script="Buffer"/>
+	<Property ID="control_common_buff_stun_1" Name="desc_common_buff_stun_1_1" script="Buffer" LifeTime="2000" Buff_Main="common_buff_stun_1" Buff_Display="common_buff_stun_01_per"/>
+	<Property ID="common_buff_kb_1" script="Buffer"/>
+	<Property ID="buff_dead" script="Buffer" LifeTime="1000" Buff_Main="buff_dead_main" Buff_Display="buff_dead_dis"/>
+	<Property ID="common_buff_zd_1" Name="desc_common_buff_zd_1_1" script="Buffer" LifeTime="100000" Buff_Main="common_buff_zd_1" Buff_Display="common_buff_zd_1_per"/>
+	<Property ID="common_buff_atk_01" Name="desc_common_buff_atk_01_1" script="Buffer" LifeTime="8000" Buff_Main="common_buff_atk_01" Buff_Display="common_buff_atk_01_per"/>
+	<Property ID="common_buff_def_01" Name="desc_common_buff_def_01_1" script="Buffer" LifeTime="10000" Buff_Main="common_buff_def_01" Buff_Display="common_buff_def_01_per"/>
+	<Property ID="buff_tongyong_sk06" Name="desc_buff_tongyong_sk06_1" script="Buffer" LifeTime="5000" Buff_Main="buff_tongyong_sk06" Buff_Display="buff_tongyong_sk06"/>
+	<Property ID="buff_boss_lsjs_001" Name="desc_buff_boss_lsjs_001_1" script="Buffer" LifeTime="3000" Buff_Main="buff_boss_lsjs_001" Buff_Display="buff_boss_lsjs_001"/>
+	<Property ID="buff_boss_hssz_002" Name="desc_boss_hssz_002_1" script="Buffer" LifeTime="3000" Buff_Main="buff_boss_hssz_002" Buff_Display="buff_boss_hssz_002"/>
+	<Property ID="buff_boss_jmlz_001" Name="desc_boss_jmlz_001_1" script="Buffer" LifeTime="5000" Buff_Main="buff_boss_jmlz_001" Buff_Display="buff_boss_jmlz_001"/>
+	<Property ID="buff_boss_jmdsls_001" Name="desc_buff_boss_jmdsls_001_1" script="Buffer" LifeTime="3000" Buff_Main="buff_boss_jmdsls_001" Buff_Display="buff_boss_jmdsls_001"/>
+	<Property ID="buff_item_jiaxue_001" Name="desc_buff_item_jiaxue_001_1" Description="desc_buff_item_jiaxue_001_2" script="Buffer" LifeTime="3000" Buff_Main="buff_item_jiaxue_001" Buff_Display="buff_item_jiaxue_001"/>
+	<Property ID="speeddown" Name="desc_speeddown_1" script="Buffer" LifeTime="5000" Buff_Main="speeddown" Buff_Display="speeddown"/>
+	<Property ID="buff_boss_xh_002" Name="desc_buff_boss_xh_002_1" Description="desc_buff_boss_xh_002_2" script="Buffer" LifeTime="3000" Buff_Main="buff_boss_xh_002" Buff_Display="buff_boss_xh_002"/>
+	<Property ID="sacrifice_halo1" script="Buffer" LifeTime="15000" Buff_Main="sacrifice_halo1" Buff_Display="sacrifice_halo1"/>
+	<Property ID="attack_up" Name="desc_attack_up_1" script="Buffer" Buff_Main="attack_up" Buff_Display="common_buff_atk_01_per"/>
+	<Property ID="defense_up" Name="desc_defense_up_1" script="Buffer" LifeTime="15000" Buff_Main="defense_up" Buff_Display="buff_boss_lsjs_001"/>
+	<Property ID="brokennpc_bati_buff" Name="desc_brokennpc_bati_buff_1" script="Buffer" LifeTime="10000000" Buff_Main="brokennpc_bati_buff" Buff_Display="brokennpc_bati_buff_per"/>
+	<Property ID="smdd_bati_buff" Name="desc_smdd_bati_buff_1" script="Buffer" LifeTime="5000" Buff_Main="smdd_bati_buff" Buff_Display="smdd_bati_buff_per"/>
+	<Property ID="xy_lv2_kb_buff_1" Name="desc_xy_lv2_kb_buff_1_1" script="Buffer" Buff_Main="xy_lv2_kb_buff_1" Buff_Display="xy_lv2_kb_buff_1_per"/>
+	<Property ID="common_buff_stun_2" Name="desc_common_buff_stun_2_1" script="Buffer" LifeTime="5000" Buff_Main="common_buff_stun_2" Buff_Display="common_buff_stun_01_per"/>
+	<Property ID="xy_lv3_kb_buff_1" Name="desc_xy_lv3_kb_buff_1_1" script="Buffer" LifeTime="10000" Buff_Main="xy_lv3_kb_buff_1" Buff_Display="xy_lv3_kb_buff_1_per"/>
+	<Property ID="xy_lv2_kb_buff_1_1" Name="desc_xy_lv2_kb_buff_1_1" script="Buffer" LifeTime="10000" Buff_Main="xy_lv2_kb_buff_1" Buff_Display="xy_lv2_kb_buff_1_per"/>
+	<Property ID="xy_lv3_kb_buff_2" Name="desc_xy_lv3_kb_buff_2_1" script="Buffer" LifeTime="10000" Buff_Main="xy_lv3_kb_buff_2" Buff_Display="xy_lv3_kb_buff_2_per"/>
+	<Property ID="kl_ss_lv3_zuzhou" Name="desc_kl_ss_lv3_zuzhou_1" script="Buffer" LifeTime="3500" Buff_Main="kl_ss_lv3_zuzhou" Buff_Display="kl_ss_lv3_zuzhou_per"/>
+	<Property ID="boss2_tanfei" Name="desc_boss2_tanfei_1" script="Buffer" LifeTime="8867" Buff_Main="boss2_tanfei_main" Buff_Display="boss2_tanfei_dis"/>
+	<Property ID="buff_health_1" Name="desc_buff_health_1_1" script="Buffer" LifeTime="2000" Buff_Main="buff_health_1" Buff_Display="buff_health_1_per"/>
+	<Property ID="buff_strom_speeddown" Name="desc_buff_strom_speeddown_1" Description="desc_buff_boss_xh_002_2" script="Buffer" LifeTime="5000" Buff_Main="buff_strom_speeddown" Buff_Display="buff_strom_speeddown"/>
+	<Property ID="desert_speeddown" Name="desc_desert_speeddown_1" script="Buffer" LifeTime="2000" Buff_Main="desert_speeddown" Buff_Display="desert_speeddown"/>
+	<Property ID="copy_common_buff_atk_01" Name="desc_copy_common_buff_atk_01_1" script="Buffer" LifeTime="10000" Buff_Main="copy_common_buff_atk_01" Buff_Display="common_buff_atk_01_per"/>
+	<Property ID="break_buff" Name="desc_break_buff_1" script="Buffer" LifeTime="5000" Buff_Main="break_buff" Buff_Display="break_buff"/>
+	<Property ID="buff_ws6_001" Name="desc_buff_ws6_001_1" Description="desc_buff_ws6_001_2" script="Buffer" LifeTime="5000" Buff_Main="buff_ws6_001" Buff_Display="buff_ws6_001"/>
+	<Property ID="buff_ws7_001" Name="desc_buff_ws7_001_1" script="Buffer" LifeTime="1000" Buff_Main="buff_ws7_001" Buff_Display="buff_ws7_001"/>
+	<Property ID="buff_ws14_001" Name="desc_buff_ws14_001_1" script="Buffer" LifeTime="3000" Buff_Main="buff_ws14_001" Buff_Display="buff_ws14_001"/>
+	<Property ID="buff_ws10_001" Name="desc_buff_ws10_001_1" Description="desc_buff_ws10_001_2" script="Buffer" LifeTime="5000" Buff_Main="buff_ws10_001" Buff_Display="buff_ws10_001"/>
+	<Property ID="buff_ws13_001" Name="desc_buff_ws13_001_1" script="Buffer" LifeTime="3000" Buff_Main="buff_ws13_001" Buff_Display="buff_ws13_001"/>
+	<Property ID="buff_ws9_001" Name="desc_buff_ws9_001_1" Description="desc_buff_ws9_001_2" script="Buffer" LifeTime="5000" Buff_Main="buff_ws9_001" Buff_Display="buff_ws9_001"/>
+	<Property ID="buff_50speeddown" Name="desc_buff_50speeddown_1" script="Buffer" LifeTime="2500" Buff_Main="buff_50speeddown" Buff_Display="buff_50speeddown"/>
+	<Property ID="buff_20cantmove" Name="desc_buff_20cantmove_1" script="Buffer" LifeTime="2500" Buff_Main="buff_20cantmove" Buff_Display="buff_20cantmove"/>
+	<Property ID="dy_spd_buff" Name="desc_dy_spd_buff_1" script="Buffer" LifeTime="5000" Buff_Main="dy_fengxingmain" Buff_Display="spd_dis"/>
+	<Property ID="buff_light_fanji_1" Name="desc_buff_light_fanji_1_1" script="Buffer" LifeTime="10000" Buff_Main="buff_light_fanji_1" Buff_Display="buff_light_fanji_1"/>
+	<Property ID="buff_fire_zhiliao_1" Name="desc_buff_fire_zhiliao_1_1" script="Buffer" LifeTime="10000" Buff_Main="buff_fire_zhiliao_1" Buff_Display="buff_fire_zhiliao_1"/>
+	<Property ID="buff_freeze_jiansu_1" Name="desc_buff_freeze_jiansu_1_1" script="Buffer" LifeTime="10000" Buff_Main="buff_freeze_jiansu_1" Buff_Display="buff_freeze_jiansu_1"/>
+	<Property ID="buff_fire_shaozhuo_1" Name="desc_buff_fire_shaozhuo_1_1" script="Buffer" LifeTime="5000" Buff_Main="buff_fire_shaozhuo_1" Buff_Display="buff_fire_shaozhuo_1"/>
+	<Property ID="buff_fire_zhiliao_2" Name="desc_buff_fire_zhiliao_2_1" script="Buffer" LifeTime="10000" Buff_Main="buff_fire_zhiliao_2" Buff_Display="buff_fire_zhiliao_2"/>
+	<Property ID="buff_ws_skill_20_3" Name="desc_buff_ws_skill_20_3_1" script="Buffer" LifeTime="3000" Buff_Main="buff_ws_skill_20_3" Buff_Display="buff_ws_skill_20_3"/>
+	<Property ID="buff_ws_skill_18_3" Name="desc_buff_ws_skill_18_3_1" script="Buffer" LifeTime="3000" Buff_Main="buff_ws_skill_18_3" Buff_Display="buff_ws_skill_18_3"/>
+	<Property ID="buff_firecare" Name="desc_buff_firecare_1" script="Buffer" LifeTime="500" Buff_Main="buff_firecare" Buff_Display="buff_firecare"/>
+	<Property ID="froster_slowdown" Name="desc_froster_slowdown_1" script="Buffer" LifeTime="5000" Buff_Main="froster_slowdown" Buff_Display="froster_slowdown"/>
+	<Property ID="buff_ws5_001" Name="desc_buff_ws5_001_1" script="Buffer" LifeTime="3000" Buff_Main="buff_ws5_001" Buff_Display="buff_ws5_001"/>
+	<Property ID="buff_ws11_001" Name="desc_buff_ws11_001_1" script="Buffer" LifeTime="3000" Buff_Main="buff_ws11_001" Buff_Display="buff_ws11_001"/>
+	<Property ID="buff_ws11_002" Name="desc_buff_ws11_002_1" Description="desc_buff_ws11_002_2" script="Buffer" LifeTime="500" Buff_Main="buff_ws11_002" Buff_Display="buff_ws11_002"/>
+	<Property ID="buff_ws19_001" Name="desc_buff_ws19_001_1" Description="desc_buff_ws19_001_2" script="Buffer" LifeTime="500" Buff_Main="buff_ws19_001" Buff_Display="buff_ws19_001"/>
+	<Property ID="buff_healball_1" Name="desc_buff_healball_1_1" script="Buffer" LifeTime="1000" Buff_Main="buff_healball_1" Buff_Display="buff_healball_1"/>
+	<Property ID="buff_timetodie" Name="desc_buff_timetodie_1" script="Buffer" LifeTime="60000" Buff_Main="buff_timetodie" Buff_Display="buff_timetodie"/>
+	<Property ID="buff_gold_zuzhou_1" Name="desc_kl_ss_lv3_zuzhou_1" script="Buffer" LifeTime="5000" Buff_Main="kl_ss_lv3_zuzhou" Buff_Display="kl_ss_lv3_zuzhou_per"/>
+	<Property ID="buff_gold_jidong_1" Name="desc_common_buff_freeze_1" script="Buffer" LifeTime="3000" Buff_Main="common_buff_freeze" Buff_Display="common_buff_freeze_per"/>
+	<Property ID="gold_zhanshen_buff" Name="desc_gold_zhanshen_buff_1" script="Buffer" LifeTime="10000" Buff_Main="gold_zhanshen_buff" Buff_Display="gold_zhanshen_buff"/>
+	<Property ID="buff_chest_destory_15s" Name="desc_buff_chest_destory_15s_1" script="Buffer" LifeTime="16000" Buff_Main="buff_chest_destory_15s" Buff_Display="buff_chest_destory_15s"/>
+	<Property ID="buff_chest_destory_12s" Name="desc_buff_chest_destory_12s_1" script="Buffer" LifeTime="13000" Buff_Main="buff_chest_destory_12s" Buff_Display="buff_chest_destory_12s"/>
+	<Property ID="buff_chest_destory_8s" Name="desc_buff_chest_destory_8s_1" script="Buffer" LifeTime="9000" Buff_Main="buff_chest_destory_8s" Buff_Display="buff_chest_destory_8s"/>
+	<Property ID="buff_ws17_001" Name="desc_buff_ws17_001_1" Description="desc_buff_ws17_001_2" script="Buffer" LifeTime="1000" Buff_Main="buff_ws17_001" Buff_Display="buff_ws17_001"/>
+	<Property ID="buff_ws_skill_20_1" Name="desc_buff_ws_skill_20_1_1" Description="desc_buff_ws_skill_20_1_2" script="Buffer" LifeTime="500" Buff_Main="buff_ws_skill_20_1" Buff_Display="buff_ws_skill_20_1"/>
+	<Property ID="wy_common_bati" Name="desc_wy_common_bati_1" script="Buffer" LifeTime="20000" Buff_Main="wy_common_bati" Buff_Display="wy_common_bati"/>
+	<Property ID="buff_ws23_001" Name="desc_buff_ws23_001_1" script="Buffer" LifeTime="3000" Buff_Main="buff_ws23_001" Buff_Display="buff_ws23_001"/>
+	<Property ID="copy_buff_dead" script="Buffer" LifeTime="5000" Buff_Main="copy_buff_dead" Buff_Display="buff_dead_dis"/>
+	<Property ID="stun_1" Name="desc_stun_1_1" script="Buffer" LifeTime="1000" Buff_Main="common_buff_stun_1" Buff_Display="common_buff_stun_01_per"/>
+	<Property ID="stun_3" Name="desc_stun_3_1" script="Buffer" LifeTime="3000" Buff_Main="common_buff_stun_1" Buff_Display="common_buff_stun_01_per"/>
+	<Property ID="stun_5" Name="desc_stun_5_1" script="Buffer" LifeTime="5000" Buff_Main="common_buff_stun_1" Buff_Display="common_buff_stun_01_per"/>
+	<Property ID="atk_up_100" Name="desc_atk_up_100_1" script="Buffer" LifeTime="10000" Buff_Main="common_buff_atk_01" Buff_Display="common_buff_atk_01_per"/>
+	<Property ID="spd_up_50" Name="desc_spd_up_50_1" script="Buffer" LifeTime="5000" Buff_Main="copy_dy_fengxingmain" Buff_Display="spd_dis"/>
+	<Property ID="ck_ns102_01b_Part1" Name="ck_ns102_01b_Part1" script="Buffer" LifeTime="-1.000" Type="1" Model="skill_swordlight_003" Self="false" Loop="false" InitAngleType="1" AngleZ="1.571" TargetPoint="Model::body_02" StopFellowTime="0.100" SoundDistance="25.000" VibrateName="ass_001"/>
+	<Property ID="ck_ns102_01b_Part2" Name="ck_ns102_01b_Part2" LifeTime="-1.000" Type="1" Model="skill_combat_002" Self="false" Loop="false" ScaleX="0.500" ScaleY="0.500" ScaleZ="0.500" TargetPoint="Model::body_02" StopFellowTime="0.100" CanValid="false"/>
+	<Property ID="slowdown1" Name="desc_slowdown_1" script="Buffer" LifeTime="1000" Buff_Main="speeddown" Buff_Display="speeddown"/>
+	<Property ID="slowdown3" Name="desc_slowdown_1" script="Buffer" LifeTime="3000" Buff_Main="speeddown" Buff_Display="speeddown"/>
+	<Property ID="slowdown5" Name="desc_slowdown_1" script="Buffer" LifeTime="5000" Buff_Main="speeddown" Buff_Display="speeddown"/>
+	<Property ID="tanfei" Name="desc_tanfei_1" script="Buffer" LifeTime="5000" Buff_Main="boss2_tanfei_main" Buff_Display="copy_boss2_tanfei_dis"/>
+	<Property ID="curse_1" Name="desc_new_data_item_1" script="Buffer" LifeTime="1000" Buff_Main="kl_ss_lv3_zuzhou" Buff_Display="kl_ss_lv3_zuzhou_per"/>
+	<Property ID="curse_3" Name="desc_new_data_item_1" script="Buffer" LifeTime="3000" Buff_Main="kl_ss_lv3_zuzhou" Buff_Display="kl_ss_lv3_zuzhou_per"/>
+	<Property ID="curse_5" Name="desc_new_data_item_1" script="Buffer" LifeTime="5000" Buff_Main="kl_ss_lv3_zuzhou" Buff_Display="kl_ss_lv3_zuzhou_per"/>
+	<Property ID="buff_ws10_002" Name="desc_buff_ws10_002_1" script="Buffer" LifeTime="500" Buff_Main="buff_ws10_002" Buff_Display="buff_ws10_002"/>
+	<Property ID="common_burn" Name="desc_common_burn_1" script="Buffer" LifeTime="2000" Buff_Main="common_burn_main" Buff_Display="common_burn_dis"/>
+	<Property ID="buff_ws24_001" Name="desc_buff_ws24_001_1" script="Buffer" LifeTime="3000" Buff_Main="buff_ws24_001" Buff_Display="buff_ws24_001"/>
+	<Property ID="buff_ws24_002" Name="desc_buff_ws24_002_1" script="Buffer" LifeTime="3000" Buff_Main="buff_ws24_002" Buff_Display="buff_ws24_002"/>
+	<Property ID="buff_ws24_003" Name="desc_buff_ws24_003_1" script="Buffer" LifeTime="5000" Buff_Main="buff_ws24_003" Buff_Display="buff_ws24_003"/>
+	<Property ID="buff_wsty_001" Name="desc_buff_wsty_001_1" Description="desc_buff_wsty_001_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_002" Name="desc_buff_wsty_002_1" Description="desc_buff_wsty_002_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_003" Name="desc_buff_wsty_003_1" Description="desc_buff_wsty_003_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_003"/>
+	<Property ID="buff_wsty_004" Name="desc_buff_wsty_004_1" Description="desc_buff_wsty_004_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_004"/>
+	<Property ID="buff_wsty_005" Name="desc_buff_wsty_005_1" Description="desc_buff_wsty_005_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_005"/>
+	<Property ID="buff_wsty_006" Name="desc_buff_wsty_006_1" Description="desc_buff_wsty_006_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_006"/>
+	<Property ID="buff_wsty_007" Name="desc_buff_wsty_007_1" Description="desc_buff_wsty_007_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_008" Name="desc_buff_wsty_008_1" Description="desc_buff_wsty_008_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_008"/>
+	<Property ID="buff_wsty_009" Name="desc_buff_wsty_009_1" Description="desc_buff_wsty_009_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_009"/>
+	<Property ID="buff_wsty_010" Name="desc_buff_wsty_010_1" Description="desc_buff_wsty_010_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_010"/>
+	<Property ID="buff_wsty_011" Name="desc_buff_wsty_011_1" Description="desc_buff_wsty_011_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_011"/>
+	<Property ID="buff_wsty_012" Name="desc_buff_wsty_012_1" Description="desc_buff_wsty_012_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_012"/>
+	<Property ID="buff_wsty_013" Name="desc_buff_wsty_013_1" Description="desc_buff_wsty_013_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_013"/>
+	<Property ID="buff_wsty_014" Name="desc_buff_wsty_014_1" Description="desc_buff_wsty_014_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_014"/>
+	<Property ID="buff_wsty_015" Name="desc_buff_wsty_015_1" Description="desc_buff_wsty_015_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_015"/>
+	<Property ID="buff_wsty_016" Name="desc_buff_wsty_016_1" Description="desc_buff_wsty_016_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_016"/>
+	<Property ID="buff_wsty_017" Name="desc_buff_wsty_017_1" Description="desc_buff_wsty_017_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_017"/>
+	<Property ID="buff_wsty_018" Name="desc_buff_wsty_018_1" Description="desc_buff_wsty_018_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_018"/>
+	<Property ID="buff_wsty_019" Name="desc_buff_wsty_019_1" Description="desc_buff_wsty_019_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_019"/>
+	<Property ID="buff_wsty_020" Name="desc_buff_wsty_020_1" Description="desc_buff_wsty_020_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_021" Name="desc_buff_wsty_021_1" Description="desc_buff_wsty_021_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_021"/>
+	<Property ID="buff_wsty_022" Name="desc_buff_wsty_022_1" Description="desc_buff_wsty_022_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_023" Name="desc_buff_wsty_023_1" Description="desc_buff_wsty_023_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_023"/>
+	<Property ID="buff_wsty_024" Name="desc_buff_wsty_024_1" Description="desc_buff_wsty_024_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_024"/>
+	<Property ID="buff_wsty_025" Name="desc_buff_wsty_025_1" Description="desc_buff_wsty_025_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_025"/>
+	<Property ID="buff_wsty_026" Name="desc_buff_wsty_026_1" Description="desc_buff_wsty_026_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_027" Name="desc_buff_wsty_027_1" Description="desc_buff_wsty_027_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_028" Name="desc_buff_wsty_028_1" Description="desc_buff_wsty_028_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_028"/>
+	<Property ID="buff_wsty_029" Name="desc_buff_wsty_029_1" Description="desc_buff_wsty_029_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_029"/>
+	<Property ID="buff_wsty_030" Name="desc_buff_wsty_030_1" Description="desc_buff_wsty_030_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_031" Name="desc_buff_wsty_031_1" Description="desc_buff_wsty_031_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_031"/>
+	<Property ID="buff_wsty_032" Name="desc_buff_wsty_032_1" Description="desc_buff_wsty_032_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_032"/>
+	<Property ID="buff_wsty_033" Name="desc_buff_wsty_033_1" Description="desc_buff_wsty_033_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_034" Name="desc_buff_wsty_034_1" Description="desc_buff_wsty_034_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_034"/>
+	<Property ID="buff_wsty_035" Name="desc_buff_wsty_035_1" Description="desc_buff_wsty_035_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_036" Name="desc_buff_wsty_036_1" Description="desc_buff_wsty_036_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_036"/>
+	<Property ID="buff_wsty_037" Name="desc_buff_wsty_037_1" Description="desc_buff_wsty_037_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_038" Name="desc_buff_wsty_038_1" Description="desc_buff_wsty_038_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_039" Name="desc_buff_wsty_039_1" Description="desc_buff_wsty_039_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_039"/>
+	<Property ID="buff_wsty_040" Name="desc_buff_wsty_040_1" Description="desc_buff_wsty_040_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_040"/>
+	<Property ID="buff_wsty_041" Name="desc_buff_wsty_041_1" Description="desc_buff_wsty_041_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_042" Name="desc_buff_wsty_042_1" Description="desc_buff_wsty_042_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_043" Name="desc_buff_wsty_043_1" Description="desc_buff_wsty_043_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_043"/>
+	<Property ID="buff_wsty_044" Name="desc_buff_wsty_044_1" Description="desc_buff_wsty_044_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_044"/>
+	<Property ID="buff_wsty_045" Name="desc_buff_wsty_045_1" Description="desc_buff_wsty_045_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_045"/>
+	<Property ID="buff_wsty_046" Name="desc_buff_wsty_046_1" Description="desc_buff_wsty_046_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_047" Name="desc_buff_wsty_047_1" Description="desc_buff_wsty_047_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_048" Name="desc_buff_wsty_048_1" Description="desc_buff_wsty_048_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_049" Name="desc_buff_wsty_049_1" Description="desc_buff_wsty_049_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_049"/>
+	<Property ID="buff_wsty_050" Name="desc_buff_wsty_050_1" Description="desc_buff_wsty_050_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_051" Name="desc_buff_wsty_051_1" Description="desc_buff_wsty_051_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_051"/>
+	<Property ID="buff_wsty_052" Name="desc_buff_wsty_052_1" Description="desc_buff_wsty_052_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_052"/>
+	<Property ID="buff_wsty_053" Name="desc_buff_wsty_053_1" Description="desc_buff_wsty_053_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_053"/>
+	<Property ID="buff_wsty_054" Name="desc_buff_wsty_054_1" Description="desc_buff_wsty_054_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_055" Name="desc_buff_wsty_055_1" Description="desc_buff_wsty_055_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_055"/>
+	<Property ID="buff_wsty_056" Name="desc_buff_wsty_056_1" Description="desc_buff_wsty_056_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_056"/>
+	<Property ID="buff_wsty_057" Name="desc_buff_wsty_057_1" Description="desc_buff_wsty_057_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_058" Name="desc_buff_wsty_058_1" Description="desc_buff_wsty_058_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_059" Name="desc_buff_wsty_059_1" Description="desc_buff_wsty_059_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_059"/>
+	<Property ID="buff_wsty_060" Name="desc_buff_wsty_060_1" Description="desc_buff_wsty_060_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_060"/>
+	<Property ID="buff_wsty_061" Name="desc_buff_wsty_061_1" Description="desc_buff_wsty_061_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_061"/>
+	<Property ID="buff_wsty_062" Name="desc_buff_wsty_062_1" Description="desc_buff_wsty_062_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_063" Name="desc_buff_wsty_063_1" Description="desc_buff_wsty_063_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_064" Name="desc_buff_wsty_064_1" Description="desc_buff_wsty_064_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_064"/>
+	<Property ID="buff_wsty_065" Name="desc_buff_wsty_065_1" Description="desc_buff_wsty_065_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_065"/>
+	<Property ID="buff_wsty_066" Name="desc_buff_wsty_066_1" Description="desc_buff_wsty_066_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_066"/>
+	<Property ID="buff_wsty_067" Name="desc_buff_wsty_067_1" Description="desc_buff_wsty_067_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_067"/>
+	<Property ID="buff_wsty_068" Name="desc_buff_wsty_068_1" Description="desc_buff_wsty_068_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_068"/>
+	<Property ID="buff_wsty_069" Name="desc_buff_wsty_069_1" Description="desc_buff_wsty_069_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_069"/>
+	<Property ID="buff_wsty_070" Name="desc_buff_wsty_070_1" Description="desc_buff_wsty_070_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_070"/>
+	<Property ID="buff_wsty_071" Name="desc_buff_wsty_071_1" Description="desc_buff_wsty_071_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_072" Name="desc_buff_wsty_072_1" Description="desc_buff_wsty_072_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_072"/>
+	<Property ID="buff_wsty_073" Name="desc_buff_wsty_073_1" Description="desc_buff_wsty_073_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_073"/>
+	<Property ID="buff_wsty_074" Name="desc_buff_wsty_074_1" Description="desc_buff_wsty_074_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_074"/>
+	<Property ID="buff_wsty_075" Name="desc_buff_wsty_075_1" Description="desc_buff_wsty_075_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_075"/>
+	<Property ID="buff_wsty_076" Name="desc_buff_wsty_076_1" Description="desc_buff_wsty_076_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_077" Name="desc_buff_wsty_077_1" Description="desc_buff_wsty_077_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_077"/>
+	<Property ID="buff_wsty_078" Name="desc_buff_wsty_078_1" Description="desc_buff_wsty_078_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_078"/>
+	<Property ID="buff_wsty_079" Name="desc_buff_wsty_079_1" Description="desc_buff_wsty_079_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_080" Name="desc_buff_wsty_080_1" Description="desc_buff_wsty_080_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_081" Name="desc_buff_wsty_081_1" Description="desc_buff_wsty_081_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_082" Name="desc_buff_wsty_082_1" Description="desc_buff_wsty_082_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_083" Name="desc_buff_wsty_083_1" Description="desc_buff_wsty_083_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_083"/>
+	<Property ID="buff_wsty_085" Name="desc_buff_wsty_085_1" Description="desc_buff_wsty_085_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_086" Name="desc_buff_wsty_086_1" Description="desc_buff_wsty_086_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_087" Name="desc_buff_wsty_087_1" Description="desc_buff_wsty_087_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_088" Name="desc_buff_wsty_088_1" Description="desc_buff_wsty_088_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_089" Name="desc_buff_wsty_089_1" Description="desc_buff_wsty_089_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_090" Name="desc_buff_wsty_090_1" Description="desc_buff_wsty_090_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_091" Name="desc_buff_wsty_091_1" Description="desc_buff_wsty_091_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_092" Name="desc_buff_wsty_092_1" Description="desc_buff_wsty_092_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_093" Name="desc_buff_wsty_093_1" Description="desc_buff_wsty_093_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_094" Name="desc_buff_wsty_094_1" Description="desc_buff_wsty_094_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_095" Name="desc_buff_wsty_095_1" Description="desc_buff_wsty_095_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_096" Name="desc_buff_wsty_096_1" Description="desc_buff_wsty_096_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_097" Name="desc_buff_wsty_097_1" Description="desc_buff_wsty_097_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_098" Name="desc_buff_wsty_098_1" Description="desc_buff_wsty_098_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_098"/>
+	<Property ID="buff_wsty_099" Name="desc_buff_wsty_099_1" Description="desc_buff_wsty_099_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_099"/>
+	<Property ID="buff_wsty_100" Name="desc_buff_wsty_100_1" Description="desc_buff_wsty_100_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_100"/>
+	<Property ID="buff_wsty_101" Name="desc_buff_wsty_101_1" Description="desc_buff_wsty_101_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_101"/>
+	<Property ID="buff_wsty_102" Name="desc_buff_wsty_102_1" Description="desc_buff_wsty_102_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_103" Name="desc_buff_wsty_103_1" Description="desc_buff_wsty_103_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_103"/>
+	<Property ID="buff_wsty_104" Name="desc_buff_wsty_104_1" Description="desc_buff_wsty_104_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_104"/>
+	<Property ID="buff_wsty_105" Name="desc_buff_wsty_105_1" Description="desc_buff_wsty_105_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_105"/>
+	<Property ID="buff_wsty_106" Name="desc_buff_wsty_106_1" Description="desc_buff_wsty_106_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_106"/>
+	<Property ID="buff_wsty_107" Name="desc_buff_wsty_107_1" Description="desc_buff_wsty_107_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_107"/>
+	<Property ID="buff_wsty_108" Name="desc_buff_wsty_108_1" Description="desc_buff_wsty_108_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_108"/>
+	<Property ID="buff_wsty_109" Name="desc_buff_wsty_109_1" Description="desc_buff_wsty_109_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_109"/>
+	<Property ID="buff_wsty_110" Name="desc_buff_wsty_110_1" Description="desc_buff_wsty_110_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_110"/>
+	<Property ID="buff_wsty_111" Name="desc_buff_wsty_111_1" Description="desc_buff_wsty_111_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_112" Name="desc_buff_wsty_112_1" Description="desc_buff_wsty_112_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_112"/>
+	<Property ID="buff_wsty_113" Name="desc_buff_wsty_113_1" Description="desc_buff_wsty_113_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_113"/>
+	<Property ID="buff_wsty_114" Name="desc_buff_wsty_114_1" Description="desc_buff_wsty_114_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_114"/>
+	<Property ID="buff_wsty_115" Name="desc_buff_wsty_115_1" Description="desc_buff_wsty_115_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_115"/>
+	<Property ID="buff_wsty_116" Name="desc_buff_wsty_116_1" Description="desc_buff_wsty_116_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_116"/>
+	<Property ID="buff_wsty_117" Name="desc_buff_wsty_117_1" Description="desc_buff_wsty_117_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_117"/>
+	<Property ID="buff_wsty_118" Name="desc_buff_wsty_118_1" Description="desc_buff_wsty_118_2" script="Buffer" LifeTime="999999999"/>
+	<Property ID="buff_wsty_119" Name="desc_buff_wsty_119_1" Description="desc_buff_wsty_119_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_119"/>
+	<Property ID="buff_wsty_120" Name="desc_buff_wsty_120_1" Description="desc_buff_wsty_120_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_120"/>
+	<Property ID="buff_wsty_121" Name="desc_buff_wsty_121_1" Description="desc_buff_wsty_121_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_121"/>
+	<Property ID="buff_wsty_122" Name="desc_buff_wsty_122_1" Description="desc_buff_wsty_122_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_122"/>
+	<Property ID="buff_wsty_123" Name="desc_buff_wsty_123_1" Description="desc_buff_wsty_123_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_123"/>
+	<Property ID="buff_wsty_124" Name="desc_buff_wsty_124_1" Description="desc_buff_wsty_124_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_124"/>
+	<Property ID="buff_wsty_125" Name="desc_buff_wsty_125_1" Description="desc_buff_wsty_125_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_125"/>
+	<Property ID="buff_wsty_126" Name="desc_buff_wsty_126_1" Description="desc_buff_wsty_126_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_126"/>
+	<Property ID="buff_wsty_127" Name="desc_buff_wsty_127_1" Description="desc_buff_wsty_127_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_127"/>
+	<Property ID="buff_wsty_128" Name="desc_buff_wsty_128_1" Description="desc_buff_wsty_128_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_128"/>
+	<Property ID="buff_wsty_129" Name="desc_buff_wsty_129_1" Description="desc_buff_wsty_129_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_129"/>
+	<Property ID="buff_wsty_130" Name="desc_buff_wsty_130_1" Description="desc_buff_wsty_130_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_130"/>
+	<Property ID="buff_wsty_131" Name="desc_buff_wsty_131_1" Description="desc_buff_wsty_131_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_131"/>
+	<Property ID="buff_wsty_132" Name="desc_buff_wsty_132_1" Description="desc_buff_wsty_132_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_132"/>
+	<Property ID="buff_wsty_133" Name="desc_buff_wsty_133_1" Description="desc_buff_wsty_133_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_133"/>
+	<Property ID="buff_wsty_134" Name="desc_buff_wsty_134_1" Description="desc_buff_wsty_134_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_134"/>
+	<Property ID="buff_wsty_135" Name="desc_buff_wsty_135_1" Description="desc_buff_wsty_135_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_135"/>
+	<Property ID="buff_wsty_136" Name="desc_buff_wsty_136_1" Description="desc_buff_wsty_136_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_136"/>
+	<Property ID="buff_wsty_137" Name="desc_buff_wsty_137_1" Description="desc_buff_wsty_137_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_137"/>
+	<Property ID="buff_wsty_138" Name="desc_buff_wsty_138_1" Description="desc_buff_wsty_138_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_138"/>
+	<Property ID="buff_wsty_139" Name="desc_buff_wsty_139_1" Description="desc_buff_wsty_139_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_139"/>
+	<Property ID="buff_wsty_140" Name="desc_buff_wsty_140_1" Description="desc_buff_wsty_140_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_140"/>
+	<Property ID="buff_wsty_141" Name="desc_buff_wsty_141_1" Description="desc_buff_wsty_141_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_141"/>
+	<Property ID="buff_wsty_142" Name="desc_buff_wsty_142_1" Description="desc_buff_wsty_142_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_142"/>
+	<Property ID="buff_wsty_143" Name="desc_buff_wsty_143_1" Description="desc_buff_wsty_143_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_143"/>
+	<Property ID="buff_wsty_144" Name="desc_buff_wsty_144_1" Description="desc_buff_wsty_144_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_144"/>
+	<Property ID="buff_wsty_145" Name="desc_buff_wsty_145_1" Description="desc_buff_wsty_145_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_145"/>
+	<Property ID="buff_wsty_146" Name="desc_buff_wsty_146_1" Description="desc_buff_wsty_146_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_146"/>
+	<Property ID="buff_wsty_147" Name="desc_buff_wsty_147_1" Description="desc_buff_wsty_147_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_147"/>
+	<Property ID="buff_wsty_148" Name="desc_buff_wsty_148_1" Description="desc_buff_wsty_148_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_148"/>
+	<Property ID="buff_wsty_149" Name="desc_buff_wsty_149_1" Description="desc_buff_wsty_149_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_149"/>
+	<Property ID="buff_wsty_150" Name="desc_buff_wsty_150_1" Description="desc_buff_wsty_150_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_150"/>
+	<Property ID="buff_wsty_151" Name="desc_buff_wsty_151_1" Description="desc_buff_wsty_151_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_151"/>
+	<Property ID="buff_wsty_152" Name="desc_buff_wsty_152_1" Description="desc_buff_wsty_152_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_152"/>
+	<Property ID="buff_wsty_153" Name="desc_buff_wsty_153_1" Description="desc_buff_wsty_153_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_153"/>
+	<Property ID="buff_wsty_154" Name="desc_buff_wsty_154_1" Description="desc_buff_wsty_154_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_154"/>
+	<Property ID="buff_wsty_155" Name="desc_buff_wsty_155_1" Description="desc_buff_wsty_155_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_155"/>
+	<Property ID="buff_wsty_156" Name="desc_buff_wsty_156_1" Description="desc_buff_wsty_156_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_156"/>
+	<Property ID="buff_wsty_157" Name="desc_buff_wsty_157_1" Description="desc_buff_wsty_157_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_157"/>
+	<Property ID="buff_wsty_158" Name="desc_buff_wsty_158_1" Description="desc_buff_wsty_158_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_158"/>
+	<Property ID="buff_wsty_159" Name="desc_buff_wsty_159_1" Description="desc_buff_wsty_159_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_159"/>
+	<Property ID="buff_wsty_160" Name="desc_buff_wsty_160_1" Description="desc_buff_wsty_160_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_160"/>
+	<Property ID="buff_wsty_161" Name="desc_buff_wsty_161_1" Description="desc_buff_wsty_161_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_161"/>
+	<Property ID="buff_wsty_162" Name="desc_buff_wsty_162_1" Description="desc_buff_wsty_162_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_162"/>
+	<Property ID="buff_wsty_163" Name="desc_buff_wsty_163_1" Description="desc_buff_wsty_163_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_163"/>
+	<Property ID="buff_wsty_164" Name="desc_buff_wsty_164_1" Description="desc_buff_wsty_164_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_164"/>
+	<Property ID="buff_wsty_165" Name="desc_buff_wsty_165_1" Description="desc_buff_wsty_165_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_165"/>
+	<Property ID="buff_wsty_166" Name="desc_buff_wsty_166_1" Description="desc_buff_wsty_166_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_166"/>
+	<Property ID="buff_wsty_167" Name="desc_buff_wsty_167_1" Description="desc_buff_wsty_167_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_167"/>
+	<Property ID="buff_wsty_168" Name="desc_buff_wsty_168_1" Description="desc_buff_wsty_168_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_168"/>
+	<Property ID="buff_wsty_169" Name="desc_buff_wsty_169_1" Description="desc_buff_wsty_169_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_169"/>
+	<Property ID="buff_wsty_170" Name="desc_buff_wsty_170_1" Description="desc_buff_wsty_170_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_170"/>
+	<Property ID="buff_wsty_171" Name="desc_buff_wsty_171_1" Description="desc_buff_wsty_171_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_171"/>
+	<Property ID="buff_wsty_172" Name="desc_buff_wsty_172_1" Description="desc_buff_wsty_172_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_172"/>
+	<Property ID="buff_wsty_173" Name="desc_buff_wsty_173_1" Description="desc_buff_wsty_173_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_173"/>
+	<Property ID="buff_wsty_174" Name="desc_buff_wsty_174_1" Description="desc_buff_wsty_174_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_174"/>
+	<Property ID="buff_wsty_175" Name="desc_buff_wsty_175_1" Description="desc_buff_wsty_175_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_175"/>
+	<Property ID="buff_wsty_176" Name="desc_buff_wsty_176_1" Description="desc_buff_wsty_176_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_176"/>
+	<Property ID="buff_wsty_177" Name="desc_buff_wsty_177_1" Description="desc_buff_wsty_177_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_177"/>
+	<Property ID="buff_wsty_178" Name="desc_buff_wsty_178_1" Description="desc_buff_wsty_178_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_178"/>
+	<Property ID="buff_wsty_179" Name="desc_buff_wsty_179_1" Description="desc_buff_wsty_179_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_179"/>
+	<Property ID="buff_wsty_180" Name="desc_buff_wsty_180_1" Description="desc_buff_wsty_180_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_180"/>
+	<Property ID="buff_wsty_181" Name="desc_buff_wsty_181_1" Description="desc_buff_wsty_181_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_181"/>
+	<Property ID="buff_wsty_182" Name="desc_buff_wsty_182_1" Description="desc_buff_wsty_182_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_182"/>
+	<Property ID="buff_wsty_183" Name="desc_buff_wsty_183_1" Description="desc_buff_wsty_183_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_183"/>
+	<Property ID="buff_wsty_184" Name="desc_buff_wsty_184_1" Description="desc_buff_wsty_184_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_184"/>
+	<Property ID="buff_wsty_185" Name="desc_buff_wsty_185_1" Description="desc_buff_wsty_185_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_185"/>
+	<Property ID="buff_wsty_186" Name="desc_buff_wsty_186_1" Description="desc_buff_wsty_186_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_186"/>
+	<Property ID="buff_wsty_187" Name="desc_buff_wsty_187_1" Description="desc_buff_wsty_187_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_187"/>
+	<Property ID="buff_wsty_188" Name="desc_buff_wsty_188_1" Description="desc_buff_wsty_188_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_188"/>
+	<Property ID="buff_wsty_189" Name="desc_buff_wsty_189_1" Description="desc_buff_wsty_189_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_189"/>
+	<Property ID="buff_wsty_190" Name="desc_buff_wsty_190_1" Description="desc_buff_wsty_190_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_190"/>
+	<Property ID="buff_wsty_191" Name="desc_buff_wsty_191_1" Description="desc_buff_wsty_191_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_191"/>
+	<Property ID="buff_wsty_192" Name="desc_buff_wsty_192_1" Description="desc_buff_wsty_192_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_192"/>
+	<Property ID="buff_wsty_193" Name="desc_buff_wsty_193_1" Description="desc_buff_wsty_193_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_193"/>
+	<Property ID="buff_wsty_194" Name="desc_buff_wsty_194_1" Description="desc_buff_wsty_194_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_194"/>
+	<Property ID="buff_wsty_195" Name="desc_buff_wsty_195_1" Description="desc_buff_wsty_195_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_195"/>
+	<Property ID="buff_wsty_196" Name="desc_buff_wsty_196_1" Description="desc_buff_wsty_196_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_196"/>
+	<Property ID="buff_wsty_197" Name="desc_buff_wsty_197_1" Description="desc_buff_wsty_197_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_197"/>
+	<Property ID="buff_wsty_198" Name="desc_buff_wsty_198_1" Description="desc_buff_wsty_198_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_198"/>
+	<Property ID="buff_wsty_199" Name="desc_buff_wsty_199_1" Description="desc_buff_wsty_199_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_199"/>
+	<Property ID="buff_wsty_200" Name="desc_buff_wsty_200_1" Description="desc_buff_wsty_200_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_200"/>
+	<Property ID="buff_wsty_201" Name="desc_buff_wsty_201_1" Description="desc_buff_wsty_201_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_201"/>
+	<Property ID="buff_wsty_202" Name="desc_buff_wsty_202_1" Description="desc_buff_wsty_202_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_202"/>
+	<Property ID="buff_wsty_203" Name="desc_buff_wsty_203_1" Description="desc_buff_wsty_203_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_203"/>
+	<Property ID="buff_wsty_204" Name="desc_buff_wsty_204_1" Description="desc_buff_wsty_204_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_204"/>
+	<Property ID="buff_wsty_205" Name="desc_buff_wsty_205_1" Description="desc_buff_wsty_205_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_205"/>
+	<Property ID="buff_wsty_206" Name="desc_buff_wsty_206_1" Description="desc_buff_wsty_206_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_206"/>
+	<Property ID="buff_wsty_207" Name="desc_buff_wsty_207_1" Description="desc_buff_wsty_207_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_207"/>
+	<Property ID="buff_wsty_208" Name="desc_buff_wsty_208_1" Description="desc_buff_wsty_208_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_208"/>
+	<Property ID="buff_wsty_209" Name="desc_buff_wsty_209_1" Description="desc_buff_wsty_209_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_209"/>
+	<Property ID="buff_wsty_210" Name="desc_buff_wsty_210_1" Description="desc_buff_wsty_210_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_210"/>
+	<Property ID="buff_wsty_211" Name="desc_buff_wsty_211_1" Description="desc_buff_wsty_211_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_211"/>
+	<Property ID="buff_wsty_212" Name="desc_buff_wsty_212_1" Description="desc_buff_wsty_212_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_212"/>
+	<Property ID="buff_wsty_213" Name="desc_buff_wsty_213_1" Description="desc_buff_wsty_213_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_213"/>
+	<Property ID="buff_wsty_214" Name="desc_buff_wsty_214_1" Description="desc_buff_wsty_214_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_214"/>
+	<Property ID="buff_wsty_215" Name="desc_buff_wsty_215_1" Description="desc_buff_wsty_215_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_215"/>
+	<Property ID="buff_wsty_216" Name="desc_buff_wsty_216_1" Description="desc_buff_wsty_216_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_216"/>
+	<Property ID="buff_wsty_217" Name="desc_buff_wsty_217_1" Description="desc_buff_wsty_217_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_217"/>
+	<Property ID="buff_wsty_218" Name="desc_buff_wsty_218_1" Description="desc_buff_wsty_218_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_218"/>
+	<Property ID="buff_wsty_219" Name="desc_buff_wsty_219_1" Description="desc_buff_wsty_219_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_219"/>
+	<Property ID="buff_wsty_220" Name="desc_buff_wsty_220_1" Description="desc_buff_wsty_220_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_220"/>
+	<Property ID="buff_wsty_221" Name="desc_buff_wsty_221_1" Description="desc_buff_wsty_221_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_221"/>
+	<Property ID="buff_wsty_222" Name="desc_buff_wsty_222_1" Description="desc_buff_wsty_222_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_222"/>
+	<Property ID="buff_wsty_223" Name="desc_buff_wsty_223_1" Description="desc_buff_wsty_223_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_223"/>
+	<Property ID="buff_wsty_224" Name="desc_buff_wsty_224_1" Description="desc_buff_wsty_224_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_224"/>
+	<Property ID="buff_wsty_225" Name="desc_buff_wsty_225_1" Description="desc_buff_wsty_225_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_225"/>
+	<Property ID="buff_wsty_226" Name="desc_buff_wsty_226_1" Description="desc_buff_wsty_226_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_226"/>
+	<Property ID="buff_wsty_227" Name="desc_buff_wsty_227_1" Description="desc_buff_wsty_227_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_227"/>
+	<Property ID="buff_wsty_228" Name="desc_buff_wsty_228_1" Description="desc_buff_wsty_228_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_228"/>
+	<Property ID="buff_wsty_229" Name="desc_buff_wsty_229_1" Description="desc_buff_wsty_229_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_229"/>
+	<Property ID="buff_wsty_230" Name="desc_buff_wsty_230_1" Description="desc_buff_wsty_230_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_230"/>
+	<Property ID="buff_wsty_231" Name="desc_buff_wsty_231_1" Description="desc_buff_wsty_231_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_231"/>
+	<Property ID="buff_wsty_232" Name="desc_buff_wsty_232_1" Description="desc_buff_wsty_232_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_232"/>
+	<Property ID="buff_wsty_233" Name="desc_buff_wsty_233_1" Description="desc_buff_wsty_233_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_233"/>
+	<Property ID="buff_wsty_234" Name="desc_buff_wsty_234_1" Description="desc_buff_wsty_234_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_234"/>
+	<Property ID="buff_wsty_235" Name="desc_buff_wsty_235_1" Description="desc_buff_wsty_235_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_235"/>
+	<Property ID="buff_wsty_236" Name="desc_buff_wsty_236_1" Description="desc_buff_wsty_236_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_236"/>
+	<Property ID="buff_wsty_237" Name="desc_buff_wsty_237_1" Description="desc_buff_wsty_237_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_237"/>
+	<Property ID="buff_wsty_238" Name="desc_buff_wsty_238_1" Description="desc_buff_wsty_238_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_238"/>
+	<Property ID="buff_wsty_239" Name="desc_buff_wsty_239_1" Description="desc_buff_wsty_239_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_239"/>
+	<Property ID="buff_wsty_240" Name="desc_buff_wsty_240_1" Description="desc_buff_wsty_240_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_240"/>
+	<Property ID="buff_wsty_241" Name="desc_buff_wsty_241_1" Description="desc_buff_wsty_241_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_241"/>
+	<Property ID="buff_wsty_242" Name="desc_buff_wsty_242_1" Description="desc_buff_wsty_242_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_242"/>
+	<Property ID="buff_wsty_243" Name="desc_buff_wsty_243_1" Description="desc_buff_wsty_243_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_243"/>
+	<Property ID="buff_wsty_244" Name="desc_buff_wsty_244_1" Description="desc_buff_wsty_244_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_244"/>
+	<Property ID="buff_wsty_245" Name="desc_buff_wsty_245_1" Description="desc_buff_wsty_245_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_245"/>
+	<Property ID="buff_wsty_246" Name="desc_buff_wsty_246_1" Description="desc_buff_wsty_246_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_246"/>
+	<Property ID="buff_wsty_247" Name="desc_buff_wsty_247_1" Description="desc_buff_wsty_247_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_247"/>
+	<Property ID="buff_wsty_248" Name="desc_buff_wsty_248_1" Description="desc_buff_wsty_248_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_248"/>
+	<Property ID="buff_wsty_249" Name="desc_buff_wsty_249_1" Description="desc_buff_wsty_249_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_249"/>
+	<Property ID="buff_wsty_250" Name="desc_buff_wsty_250_1" Description="desc_buff_wsty_250_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_250"/>
+	<Property ID="buff_wsty_251" Name="desc_buff_wsty_251_1" Description="desc_buff_wsty_251_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_251"/>
+	<Property ID="buff_wsty_252" Name="desc_buff_wsty_252_1" Description="desc_buff_wsty_252_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_252"/>
+	<Property ID="buff_wsty_253" Name="desc_buff_wsty_253_1" Description="desc_buff_wsty_253_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_253"/>
+	<Property ID="buff_wsty_254" Name="desc_buff_wsty_254_1" Description="desc_buff_wsty_254_2" script="Buffer" LifeTime="999999" Buff_Main="buff_wsty_254"/>
+	<Property ID="buff_goldenhit" Name="desc_buff_goldenhit_1" script="Buffer" LifeTime="1000" Buff_Main="buff_goldenhit" Buff_Display="buff_goldenhit"/>
+	<Property ID="buff_dead_nor_1" script="Buffer" LifeTime="1000" Buff_Main="buff_dead_nor_1" Buff_Display="buff_dead_dis"/>
+	<Property ID="buff_ws_skill_7_1" Name="desc_buff_ws_skill_7_1_1" Description="desc_buff_ws_skill_7_1_2" script="Buffer" LifeTime="2000" Buff_Main="buff_ws_skill_7_1" Buff_Display="buff_ws_skill_7_1"/>
+	<Property ID="buff_ws_skill_17_1" Name="desc_buff_ws_skill_17_1_1" Description="desc_buff_ws_skill_17_1_2" script="Buffer" LifeTime="1000" Buff_Main="buff_ws_skill_17_1" Buff_Display="buff_ws_skill_17_1"/>
+	<Property ID="buff_ws_skill_15_1" Name="desc_buff_ws_skill_15_1_1" Description="desc_buff_ws_skill_15_1_2" script="Buffer" LifeTime="500" Buff_Main="buff_ws_skill_15_1" Buff_Display="buff_ws_skill_15_1"/>
+	<Property ID="buff_heal_133" Name="desc_buff_heal_133_1" script="Buffer" LifeTime="1000" Buff_Main="buff_heal_133" Buff_Display="buff_healball_1"/>
+	<Property ID="buff_gbldef_133" Name="desc_buff_gbldef_133_1" script="Buffer" LifeTime="5000" Buff_Main="buff_gbldef_133" Buff_Display="buff_gbldef_133"/>
+	<Property ID="buff_gbl_atk_133" Name="desc_buff_gbl_atk_133_1" script="Buffer" LifeTime="6000000" Buff_Main="buff_gbl_atk_133" Buff_Display="buff_gbl_atk_133"/>
+	<Property ID="buff_gbl_def_133" Name="desc_buff_gbl_def_133_1" script="Buffer" LifeTime="6000000" Buff_Main="buff_gbl_def_133" Buff_Display="buff_gbl_def_133"/>
+	<Property ID="w_sk04_bati" script="Buffer" LifeTime="3700" Buff_Main="player_bati_buff" Buff_Display="batibuff"/>
+	<Property ID="buff_ws_skill_26_1" Name="desc_buff_ws_skill_26_1_1" Description="desc_buff_ws_skill_26_1_2" script="Buffer" LifeTime="500" Buff_Main="buff_ws_skill_26_1" Buff_Display="buff_ws_skill_26_1"/>
+	<Property ID="buff_ws_skill_26_2" Name="desc_buff_ws_skill_26_2_1" Description="desc_buff_ws_skill_26_2_2" script="Buffer" LifeTime="1000" Buff_Main="buff_ws_skill_26_2" Buff_Display="buff_ws_skill_26_2"/>
+	<Property ID="buff_wsty_255" Name="desc_buff_wsty_255_1" Description="desc_buff_wsty_255_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_255"/>
+	<Property ID="buff_wsty_256" Name="desc_buff_wsty_256_1" Description="desc_buff_wsty_256_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_256"/>
+	<Property ID="buff_wsty_257" Name="desc_buff_wsty_257_1" Description="desc_buff_wsty_257_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_257"/>
+	<Property ID="buff_wsty_258" Name="desc_buff_wsty_258_1" Description="desc_buff_wsty_258_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_258"/>
+	<Property ID="buff_wsty_259" Name="desc_buff_wsty_259_1" Description="desc_buff_wsty_259_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_259"/>
+	<Property ID="m_sk03_bati" script="Buffer" LifeTime="500" Buff_Main="player_bati_buff" Buff_Display="batibuff"/>
+	<Property ID="w_tzbati" script="Buffer" LifeTime="400" Buff_Main="player_bati_buff" Buff_Display="batibuff"/>
+	<Property ID="control_common_buff_freeze_2s" Name="desc_control_common_buff_freeze_2s_1" script="Buffer" LifeTime="2000" Buff_Main="buff_tongyong_sk06" Buff_Display="buff_tongyong_sk06"/>
+	<Property ID="deepfrozen" Name="desc_deepfrozen_1" script="Buffer" LifeTime="20000" Buff_Main="deepfrozen" Buff_Display="deepfrozen"/>
+	<Property ID="st_blood_buff" Name="desc_st_blood_buff_1" script="Buffer" LifeTime="2000" Buff_Main="st_blood_buff" Buff_Display="buff_ws19_001"/>
+	<Property ID="st_healself_buff" Name="desc_st_healself_buff_1" script="Buffer" LifeTime="500" Buff_Main="st_healself_buff" Buff_Display="st_healself_buff"/>
+	<Property ID="axiuluo" Name="desc_axiuluo_1" script="Buffer" LifeTime="20000" Buff_Main="axiuluo" Buff_Display="axiuluo"/>
+	<Property ID="defdown" Name="desc_defdown_1" script="Buffer" LifeTime="8000" Buff_Main="defdown" Buff_Display="defdown"/>
+	<Property ID="bati_buff_blq" Name="desc_bati_buff_blq_1" script="Buffer" LifeTime="2200" Buff_Main="boss_bati_buff" Buff_Display="batibuff"/>
+	<Property ID="bati_buff_brz" Name="desc_bati_buff_brz_1" script="Buffer" LifeTime="2100" Buff_Main="boss_bati_buff" Buff_Display="batibuff"/>
+	<Property ID="bati_buff_aoyi" Name="desc_bati_buff_aoyi_1" script="Buffer" LifeTime="4100" Buff_Main="boss_bati_buff" Buff_Display="batibuff"/>
+	<Property ID="11sdead" script="Buffer" LifeTime="11000" Buff_Main="copy_buff_dead" Buff_Display="buff_dead_dis"/>
+	<Property ID="nec162_heal" Name="desc_buff_healball_1_1" script="Buffer" LifeTime="1000" Buff_Main="nec162_heal" Buff_Display="buff_healball_1"/>
+	<Property ID="deeppoison" Name="desc_deeppoison_1" script="Buffer" LifeTime="8000" Buff_Main="deeppoison" Buff_Display="deeppoison"/>
+	<Property ID="buff_end" Name="desc_buff_end_1" script="Buffer" LifeTime="5000" Buff_Main="copy_buff_dead" Buff_Display="buff_end"/>
+	<Property ID="buff_wsty_260" Name="desc_buff_wsty_260_1" Description="desc_buff_wsty_260_2" script="Buffer"/>
+	<Property ID="buff_wsty_261" Name="desc_buff_wsty_261_1" Description="desc_buff_wsty_261_2" script="Buffer"/>
+	<Property ID="buff_wsty_262" Name="desc_buff_wsty_262_1" Description="desc_buff_wsty_262_2" script="Buffer"/>
+	<Property ID="buff_wsty_263" Name="desc_buff_wsty_263_1" Description="desc_buff_wsty_263_2" script="Buffer"/>
+	<Property ID="buff_wsty_264" Name="desc_buff_wsty_264_1" Description="desc_buff_wsty_264_2" script="Buffer"/>
+	<Property ID="buff_wsty_265" Name="desc_buff_wsty_265_1" Description="desc_buff_wsty_265_2" script="Buffer"/>
+	<Property ID="buff_wsty_266" Name="desc_buff_wsty_266_1" Description="desc_buff_wsty_266_2" script="Buffer"/>
+	<Property ID="buff_wsty_267" Name="desc_buff_wsty_267_1" Description="desc_buff_wsty_267_2" script="Buffer"/>
+	<Property ID="buff_wsty_268" Name="desc_buff_wsty_268_1" Description="desc_buff_wsty_268_2" script="Buffer"/>
+	<Property ID="buff_wsty_269" Name="desc_buff_wsty_269_1" Description="desc_buff_wsty_269_2" script="Buffer"/>
+	<Property ID="buff_wsty_270" Name="desc_buff_wsty_270_1" Description="desc_buff_wsty_270_2" script="Buffer"/>
+	<Property ID="buff_wsty_271" Name="desc_buff_wsty_271_1" Description="desc_buff_wsty_271_2" script="Buffer"/>
+	<Property ID="buff_wsty_272" Name="desc_buff_wsty_272_1" Description="desc_buff_wsty_272_2" script="Buffer"/>
+	<Property ID="huoquan_buff" Name="desc_huoquan_buff_1" script="Buffer" LifeTime="10000" Buff_Main="hq_buff_main" Buff_Display="hq_buff_dis"/>
+	<Property ID="relive_sk_1" Name="desc_relive_sk_1_1" script="Buffer" LifeTime="6000" Buff_Main="relive_sk_1" Buff_Display="relive_sk_1"/>
+	<Property ID="relive_sk_2" Name="desc_relive_sk_2_1" script="Buffer" LifeTime="500" Buff_Main="relive_sk_2" Buff_Display="relive_sk_2"/>
+	<Property ID="relive_sk_3" Name="desc_relive_sk_3_1" script="Buffer" LifeTime="6000000" Buff_Main="relive_sk_3" Buff_Display="relive_sk_3"/>
+	<Property ID="souleater" Name="desc_souleater_1" script="Buffer" LifeTime="2000" Buff_Main="common_buff_stun_1" Buff_Display="souleater"/>
+	<Property ID="vampire_buff" Name="desc_vampire_buff_1" script="Buffer" LifeTime="100000" Buff_Main="vampire_buff" Buff_Display="defdown"/>
+	<Property ID="nec182_heal" Name="desc_nec182_heal_1" script="Buffer" LifeTime="1000" Buff_Main="nec182_heal" Buff_Display="buff_healball_1"/>
+	<Property ID="buff_ws_skill_28_2" Name="desc_buff_ws_skill_28_2_1" Description="desc_buff_ws_skill_28_2_2" script="Buffer" LifeTime="500" Buff_Main="buff_ws_skill_28_2" Buff_Display="buff_ws_skill_28_2"/>
+	<Property ID="buff_ws_skill_28_3" Name="desc_buff_ws_skill_28_3_1" Description="desc_buff_ws_skill_28_3_2" script="Buffer" LifeTime="3000" Buff_Main="buff_ws_skill_28_3" Buff_Display="buff_ws_skill_28_3"/>
+	<Property ID="relive_sk_4" Name="desc_relive_sk_4_1" script="Buffer" LifeTime="99999999" Buff_Main="relive_sk_4" Buff_Display="common_buff_atk_01_per"/>
+	<Property ID="relive_sk_5" Name="desc_relive_sk_5_1" script="Buffer" LifeTime="99999999" Buff_Main="relive_sk_5" Buff_Display="common_buff_atk_01_per"/>
+	<Property ID="relive_sk_6" Name="desc_relive_sk_5_1" script="Buffer" LifeTime="99999999" Buff_Main="relive_sk_6" Buff_Display="common_buff_atk_01_per"/>
+	<Property ID="control_speeddown193" Name="desc_speeddown193_1" script="Buffer" LifeTime="200" Buff_Main="speeddown193" Buff_Display="speeddown193"/>
+	<Property ID="damage_halo" Name="desc_damage_halo_1" script="Buffer" LifeTime="99999999" Buff_Main="damage_halo" Buff_Display="kl_ss_lv3_zuzhou_per"/>
+	<Property ID="forever" Name="desc_forever_1" script="Buffer" LifeTime="99999999" Buff_Main="forever" Buff_Display="forever"/>
+	<Property ID="team3_lzwk" Name="desc_team3_lzwk_1" script="Buffer" LifeTime="15000" Buff_Main="team3_lzwk_main" Buff_Display="team3_lzwk1_dis"/>
+	<Property ID="team3_lzwk_m" Name="desc_team3_lzwk_m_1" script="Buffer" LifeTime="15000" Buff_Main="team3_lzwk_m_main" Buff_Display="team3_lzwk_dis"/>
+	<Property ID="team4_freeze" Name="desc_team4_freeze_1" script="Buffer" LifeTime="10000" Buff_Main="team_buff_freeze_main" Buff_Display="batibuff"/>
+	<Property ID="team4_hbjs" Name="desc_team4_hbjs_1" script="Buffer" LifeTime="6500" Buff_Main="team4_buff_hbjs_main" Buff_Display="team4_hbjs_dis"/>
+	<Property ID="team4_jhzz_buff" Name="desc_team4_jhzz_buff_1" script="Buffer" LifeTime="5000" Buff_Main="team4_jhzz_buff_main" Buff_Display="deepfrozen"/>
+	<Property ID="buff_sk_atkup75" Name="desc_buff_sk_atkup75_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_sk_atkup75" Buff_Display="buff_sk_atkup"/>
+	<Property ID="buff_sk_atkup150" Name="desc_buff_sk_atkup150_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_sk_atkup150" Buff_Display="buff_sk_atkup"/>
+	<Property ID="buff_sk_atkup225" Name="desc_buff_sk_atkup225_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_sk_atkup225" Buff_Display="buff_sk_atkup"/>
+	<Property ID="buff_team2_atkup" Name="desc_buff_team2_atkup_1" script="Buffer" LifeTime="10000" Buff_Main="buff_team2_atkup" Buff_Display="buff_sk_atkup"/>
+	<Property ID="buff_team2_atkdown" Name="desc_buff_team2_atkdown_1" script="Buffer" LifeTime="500" Buff_Main="buff_team2_atkdown" Buff_Display="buff_team2_atkdown"/>
+	<Property ID="buff_team2_nd" Name="desc_buff_team2_nd_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_team2_nd" Buff_Display="buff_team2_nd"/>
+	<Property ID="copy_st_blood_buff" Name="desc_st_blood_buff_1" script="Buffer" LifeTime="500" Buff_Main="copy_st_blood_buff" Buff_Display="buff_ws19_001"/>
+	<Property ID="copy_deepfrozen" Name="desc_copy_deepfrozen_1" script="Buffer" LifeTime="20000" Buff_Main="copy_deepfrozen" Buff_Display="deepfrozen"/>
+	<Property ID="copy_st_blood_buff_2" Name="desc_st_blood_buff_1" script="Buffer" LifeTime="500" Buff_Main="copy_st_blood_buff_2" Buff_Display="buff_ws19_001"/>
+	<Property ID="hteam1_halo" Name="desc_hteam1_halo_1" script="Buffer" LifeTime="600000" Buff_Main="hteam1_halo_main" Buff_Display="hteam1_halo_buff_dis"/>
+	<Property ID="hteam1_halo_atk" Name="desc_hteam1_halo_atk_1" script="Buffer" LifeTime="3000" Buff_Main="hteam1_halo1_main" Buff_Display="hteam1_halo_atk_buff"/>
+	<Property ID="team4_hbxw_buff" Name="desc_team4_hbxw_buff_1" script="Buffer" LifeTime="60000" Buff_Main="team4_hbxw_buff_main" Buff_Display="team4_hbxw_buff_dis"/>
+	<Property ID="team4_hbxw1_buff" Name="desc_team4_hbxw1_buff_1" script="Buffer" LifeTime="3000" Buff_Main="team4_hbxw1_buff_main" Buff_Display="team4_hbxw11_buff_dis"/>
+	<Property ID="buff_mianyi_1" Name="desc_buff_mianyi_1_1" script="Buffer" LifeTime="9999999" Buff_Main="buff_mianyi_1" Buff_Display="batibuff"/>
+	<Property ID="buff_wudi_1" Name="desc_buff_wudi_1_1" script="Buffer" LifeTime="999999999" Buff_Main="buff_wudi_1" Buff_Display="batibuff"/>
+	<Property ID="buff_ws_skill_29_2b" Name="desc_buff_ws_skill_29_2b_1" Description="desc_buff_ws_skill_29_2b_2" script="Buffer" LifeTime="2000" Buff_Main="buff_ws_skill_26_2" Buff_Display="buff_ws_skill_26_2"/>
+	<Property ID="buff_ws_skill_30_2" Name="desc_buff_ws_skill_30_2_1" Description="desc_buff_ws_skill_30_2_2" script="Buffer" LifeTime="3000" Buff_Main="buff_ws_skill_30_2" Buff_Display="buff_ws_skill_30_2"/>
+	<Property ID="buff_ws_skill_30_3" Name="desc_buff_ws_skill_30_3_1" Description="desc_buff_ws_skill_30_3_2" script="Buffer" LifeTime="3000" Buff_Main="buff_ws_skill_26_2" Buff_Display="buff_ws_skill_30_3"/>
+	<Property ID="hteam4_hbjs" Name="desc_team4_hbjs_1" script="Buffer" LifeTime="6500" Buff_Main="hteam4_buff_hbjs_main" Buff_Display="team4_hbjs_dis"/>
+	<Property ID="hteam3_zj_buff" Name="desc_hteam3_zj_buff_1" script="Buffer" LifeTime="2000" Buff_Main="hteam4_zj_buff_main" Buff_Display="hteam3_zj_buff_dis"/>
+	<Property ID="buff_soulblade" Name="desc_buff_soulblade_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_soulblade" Buff_Display="buff_soulblade"/>
+	<Property ID="buff_soulup_1" Name="desc_buff_soulup_1_1" script="Buffer" LifeTime="999999" Buff_Main="buff_soulup_1" Buff_Display="buff_soulup_1"/>
+	<Property ID="buff_soulup_2" Name="desc_buff_soulup_2_1" script="Buffer" LifeTime="1000" Buff_Main="buff_soulup_2" Buff_Display="buff_soulup_2"/>
+	<Property ID="buff_souldef" Name="desc_buff_souldef_1" script="Buffer" LifeTime="1000" Buff_Main="buff_souldef" Buff_Display="buff_souldef"/>
+	<Property ID="buff_soulspeed" Name="desc_buff_soulspeed_1" script="Buffer" LifeTime="1000" Buff_Main="buff_soulspeed" Buff_Display="buff_soulspeed"/>
+	<Property ID="buff_tomb_atk_1" Name="desc_buff_tomb_atk_1_1" script="Buffer" LifeTime="999999999" Buff_Main="buff_tomb_atk_1" Buff_Display="buff_tomb_atk_1"/>
+	<Property ID="buff_tomb_def_1" Name="desc_buff_tomb_def_1_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_tomb_def_1" Buff_Display="buff_tomb_def_1"/>
+	<Property ID="buff_tomb_speed_1" Name="desc_buff_tomb_speed_1_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_tomb_speed_1" Buff_Display="buff_tomb_speed_1"/>
+	<Property ID="buff_tomb_heal_1" Name="desc_buff_tomb_heal_1_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_tomb_heal_1" Buff_Display="buff_tomb_heal_1"/>
+	<Property ID="buff_soulheal" Name="desc_buff_soulheal_1" script="Buffer" LifeTime="500" Buff_Main="buff_soulheal" Buff_Display="st_healself_buff"/>
+	<Property ID="buff_soulup_1_per" Name="desc_buff_soulup_1_per_1" script="Buffer" LifeTime="500" Buff_Main="buff_soulup_1_per" Buff_Display="buff_soulup_1"/>
+	<Property ID="buff_wsty_273" Name="desc_buff_wsty_273_1" Description="desc_buff_wsty_273_2" script="Buffer"/>
+	<Property ID="buff_wsty_274" Name="desc_buff_wsty_274_1" Description="desc_buff_wsty_274_2" script="Buffer"/>
+	<Property ID="buff_wsty_275" Name="desc_buff_wsty_275_1" Description="desc_buff_wsty_275_2" script="Buffer"/>
+	<Property ID="buff_wsty_276" Name="desc_buff_wsty_276_1" Description="desc_buff_wsty_276_2" script="Buffer"/>
+	<Property ID="buff_wsty_277" Name="desc_buff_wsty_277_1" Description="desc_buff_wsty_277_2" script="Buffer"/>
+	<Property ID="buff_wsty_278" Name="desc_buff_wsty_278_1" Description="desc_buff_wsty_278_2" script="Buffer"/>
+	<Property ID="buff_wsty_279" Name="desc_buff_wsty_279_1" Description="desc_buff_wsty_279_2" script="Buffer"/>
+	<Property ID="buff_wsty_280" Name="desc_buff_wsty_280_1" Description="desc_buff_wsty_280_2" script="Buffer"/>
+	<Property ID="buff_wsty_281" Name="desc_buff_wsty_281_1" Description="desc_buff_wsty_281_2" script="Buffer"/>
+	<Property ID="buff_wsty_282" Name="desc_buff_wsty_282_1" Description="desc_buff_wsty_282_2" script="Buffer"/>
+	<Property ID="buff_wsty_283" Name="desc_buff_wsty_283_1" Description="desc_buff_wsty_283_2" script="Buffer"/>
+	<Property ID="buff_wsty_284" Name="desc_buff_wsty_284_1" Description="desc_buff_wsty_284_2" script="Buffer"/>
+	<Property ID="buff_wsty_285" Name="desc_buff_wsty_285_1" Description="desc_buff_wsty_285_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_238"/>
+	<Property ID="buff_wsty_286" Name="desc_buff_wsty_286_1" Description="desc_buff_wsty_286_2" script="Buffer"/>
+	<Property ID="buff_wsty_287" Name="desc_buff_wsty_287_1" Description="desc_buff_wsty_287_2" script="Buffer"/>
+	<Property ID="buff_wsty_288" Name="desc_buff_wsty_288_1" Description="desc_buff_wsty_288_2" script="Buffer"/>
+	<Property ID="buff_wsty_289" Name="desc_buff_wsty_289_1" Description="desc_buff_wsty_289_2" script="Buffer"/>
+	<Property ID="buff_wsty_290" Name="desc_buff_wsty_290_1" Description="desc_buff_wsty_290_2" script="Buffer"/>
+	<Property ID="buff_ht5_slow" Name="desc_buff_ht5_slow_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_ht5_slow" Buff_Display="buff_ht5_slow"/>
+	<Property ID="buff_ht5_dead" Name="desc_buff_ht5_dead_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_ht5_dead" Buff_Display="buff_ht5_dead"/>
+	<Property ID="buff_ht5_atk" Name="desc_buff_ht5_atk_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_ht5_atk" Buff_Display="buff_ht5_atk"/>
+	<Property ID="buff_busi_1" Name="desc_buff_busi_1_1" script="Buffer" LifeTime="9999999999" Buff_Main="buff_busi_1" Buff_Display="buff_common_nodis"/>
+	<Property ID="buff_busijinhua_1" Name="desc_buff_busijinhua_1_1" script="Buffer" LifeTime="500" Buff_Main="buff_busijinhua_1" Buff_Display="buff_common_nodis"/>
+	<Property ID="buff_momian" Name="desc_buff_momian_1" script="Buffer" LifeTime="5000" Buff_Main="buff_momian_main" Buff_Display="batibuff"/>
+	<Property ID="buff_wsty_291" Name="desc_buff_wsty_291_1" Description="desc_buff_wsty_291_2" script="Buffer"/>
+	<Property ID="buff_wsty_292" Name="desc_buff_wsty_292_1" Description="desc_buff_wsty_292_2" script="Buffer"/>
+	<Property ID="buff_wsty_293" Name="desc_buff_wsty_293_1" Description="desc_buff_wsty_293_2" script="Buffer"/>
+	<Property ID="buff_wsty_294" Name="desc_buff_wsty_294_1" Description="desc_buff_wsty_294_2" script="Buffer"/>
+	<Property ID="buff_wsty_295" Name="desc_buff_wsty_295_1" Description="desc_buff_wsty_295_2" script="Buffer"/>
+	<Property ID="buff_wsty_296" Name="desc_buff_wsty_296_1" Description="desc_buff_wsty_296_2" script="Buffer" LifeTime="9999999999" Buff_Main="buff_wsty_296"/>
+	<Property ID="buff_wsty_297" Name="desc_buff_wsty_297_1" Description="desc_buff_wsty_297_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_297"/>
+	<Property ID="buff_wsty_298" Name="desc_buff_wsty_298_1" Description="desc_buff_wsty_298_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_298"/>
+	<Property ID="buff_wsty_299" Name="desc_buff_wsty_299_1" Description="desc_buff_wsty_299_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_299"/>
+	<Property ID="buff_wsty_300" Name="desc_buff_wsty_300_1" Description="desc_buff_wsty_300_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_300"/>
+	<Property ID="buff_wsty_301" Name="desc_buff_wsty_301_1" Description="desc_buff_wsty_301_2" script="Buffer"/>
+	<Property ID="buff_wsty_302" Name="desc_buff_wsty_302_1" Description="desc_buff_wsty_302_2" script="Buffer"/>
+	<Property ID="buff_wsty_303" Name="desc_buff_wsty_303_1" Description="desc_buff_wsty_303_2" script="Buffer"/>
+	<Property ID="buff_wsty_304" Name="desc_buff_wsty_304_1" Description="desc_buff_wsty_304_2" script="Buffer"/>
+	<Property ID="buff_wsty_305" Name="desc_buff_wsty_305_1" Description="desc_buff_wsty_305_2" script="Buffer"/>
+	<Property ID="buff_wsty_306" Name="desc_buff_wsty_306_1" Description="desc_buff_wsty_306_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_306"/>
+	<Property ID="buff_wsty_307" Name="desc_buff_wsty_307_1" Description="desc_buff_wsty_307_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_307"/>
+	<Property ID="buff_wsty_308" Name="desc_buff_wsty_308_1" Description="desc_buff_wsty_308_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_308"/>
+	<Property ID="buff_wsty_309" Name="desc_buff_wsty_309_1" Description="desc_buff_wsty_309_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_309"/>
+	<Property ID="buff_wsty_310" Name="desc_buff_wsty_310_1" Description="desc_buff_wsty_310_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_310"/>
+	<Property ID="buff_wsty_311" Name="desc_buff_wsty_311_1" Description="desc_buff_wsty_311_2" script="Buffer"/>
+	<Property ID="buff_wsty_312" Name="desc_buff_wsty_312_1" Description="desc_buff_wsty_312_2" script="Buffer"/>
+	<Property ID="buff_wsty_313" Name="desc_buff_wsty_313_1" Description="desc_buff_wsty_313_2" script="Buffer"/>
+	<Property ID="buff_wsty_314" Name="desc_buff_wsty_314_1" Description="desc_buff_wsty_314_2" script="Buffer"/>
+	<Property ID="buff_wsty_315" Name="desc_buff_wsty_315_1" Description="desc_buff_wsty_315_2" script="Buffer"/>
+	<Property ID="buff_wsty_316" Name="desc_buff_wsty_316_1" Description="desc_buff_wsty_316_2" script="Buffer" LifeTime="9999999999" Buff_Main="buff_wsty_316"/>
+	<Property ID="buff_wsty_317" Name="desc_buff_wsty_317_1" Description="desc_buff_wsty_317_2" script="Buffer" LifeTime="9999999999" Buff_Main="buff_wsty_317"/>
+	<Property ID="buff_wsty_318" Name="desc_buff_wsty_318_1" Description="desc_buff_wsty_318_2" script="Buffer" LifeTime="9999999999" Buff_Main="buff_wsty_318"/>
+	<Property ID="buff_wsty_319" Name="desc_buff_wsty_319_1" Description="desc_buff_wsty_319_2" script="Buffer" LifeTime="9999999999" Buff_Main="buff_wsty_319"/>
+	<Property ID="buff_wsty_320" Name="desc_buff_wsty_320_1" Description="desc_buff_wsty_320_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_320"/>
+	<Property ID="buff_wsty_321" Name="desc_buff_wsty_321_1" Description="desc_buff_wsty_321_2" script="Buffer"/>
+	<Property ID="buff_wsty_322" Name="desc_buff_wsty_322_1" Description="desc_buff_wsty_322_2" script="Buffer"/>
+	<Property ID="buff_wsty_323" Name="desc_buff_wsty_323_1" Description="desc_buff_wsty_323_2" script="Buffer"/>
+	<Property ID="buff_wsty_324" Name="desc_buff_wsty_324_1" Description="desc_buff_wsty_324_2" script="Buffer"/>
+	<Property ID="buff_wsty_325" Name="desc_buff_wsty_325_1" Description="desc_buff_wsty_325_2" script="Buffer"/>
+	<Property ID="buff_wsty_326" Name="desc_buff_wsty_326_1" Description="desc_buff_wsty_326_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_326"/>
+	<Property ID="buff_wsty_327" Name="desc_buff_wsty_327_1" Description="desc_buff_wsty_327_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_327"/>
+	<Property ID="buff_wsty_328" Name="desc_buff_wsty_328_1" Description="desc_buff_wsty_328_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_328"/>
+	<Property ID="buff_wsty_329" Name="desc_buff_wsty_329_1" Description="desc_buff_wsty_329_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_329"/>
+	<Property ID="buff_wsty_330" Name="desc_buff_wsty_330_1" Description="desc_buff_wsty_330_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_wsty_330"/>
+	<Property ID="buff_wsty_331" Name="desc_buff_wsty_331_1" Description="desc_buff_wsty_324_2" script="Buffer"/>
+	<Property ID="buff_ws_skill_14_2" Name="desc_buff_ws_skill_14_2_1" script="Buffer" LifeTime="3000" Buff_Main="buff_ws_skill_14_2" Buff_Display="buff_ws_skill_14_2"/>
+	<Property ID="buff_ws_skill_27_3" Name="desc_buff_ws_skill_27_3_1" Description="desc_buff_ws_skill_27_3_2" script="Buffer" LifeTime="10000" Buff_Main="buff_ws_skill_27_3" Buff_Display="buff_ws_skill_27_3"/>
+	<Property ID="buff_ws_skill_27_3a" Name="desc_buff_ws_skill_27_3A_1" Description="desc_buff_ws_skill_27_3A_2" script="Buffer" LifeTime="1000" Buff_Main="buff_ws_skill_27_3a" Buff_Display="buff_ws_skill_27_3a"/>
+	<Property ID="titan273_buff_1" Name="desc_titan273_buff_1_1" script="Buffer" LifeTime="20000" Buff_Main="titan273_buff_1" Buff_Display="titan273_buff_1"/>
+	<Property ID="titan273_buff_2" Name="desc_titan273_buff_2_1" script="Buffer" LifeTime="5000" Buff_Main="titan273_buff_2" Buff_Display="titan273_buff_2"/>
+	<Property ID="titan273_buff_3" Name="desc_titan273_buff_3_1" script="Buffer" LifeTime="100" Buff_Main="titan273_buff_3" Buff_Display="titan273_buff_3"/>
+	<Property ID="titan273_buff_4" Name="desc_titan273_buff_4_1" script="Buffer" LifeTime="5000" Buff_Main="titan273_buff_4" Buff_Display="titan273_buff_4"/>
+	<Property ID="buff_ws_skill_33_2" Name="desc_buff_ws_skill_33_2_1" Description="desc_buff_ws_skill_33_2_2" script="Buffer" LifeTime="2000" Buff_Main="buff_ws_skill_33_2" Buff_Display="buff_ws_skill_33_2"/>
+	<Property ID="rdevent_buff_1" Name="desc_rdevent_buff_1_1" script="Buffer" LifeTime="40000" Buff_Main="rdevent_buff_1" Buff_Display="rdevent_buff_1"/>
+	<Property ID="rdevent_buff_2" Name="desc_rdevent_buff_2_1" script="Buffer" LifeTime="15000" Buff_Main="rdevent_buff_2" Buff_Display="rdevent_buff_2"/>
+	<Property ID="rdevent_buff_3" Name="desc_rdevent_buff_3_1" script="Buffer" LifeTime="10000" Buff_Main="rdevent_buff_3" Buff_Display="rdevent_buff_3"/>
+	<Property ID="rdevent_buff_4" Name="desc_rdevent_buff_4_1" script="Buffer" LifeTime="10000" Buff_Main="rdevent_buff_4" Buff_Display="rdevent_buff_4"/>
+	<Property ID="rdevent_buff_5" Name="desc_rdevent_buff_5_1" script="Buffer" LifeTime="10000" Buff_Main="rdevent_buff_5" Buff_Display="rdevent_buff_5"/>
+	<Property ID="rdevent_buff_6" Name="desc_rdevent_buff_6_1" script="Buffer" LifeTime="10000" Buff_Main="rdevent_buff_6" Buff_Display="rdevent_buff_6"/>
+	<Property ID="rdevent_buff_7" Name="desc_rdevent_buff_7_1" script="Buffer" LifeTime="1000" Buff_Main="rdevent_buff_7" Buff_Display="buff_dead_dis"/>
+	<Property ID="rdevent_buff_8" Name="desc_rdevent_buff_8_1" script="Buffer" LifeTime="20000" Buff_Main="rdevent_buff_8" Buff_Display="rdevent_buff_1"/>
+	<Property ID="rdevent_buff_9" Name="desc_rdevent_buff_9_1" script="Buffer" LifeTime="20000" Buff_Main="rdevent_buff_9" Buff_Display="rdevent_buff_1"/>
+	<Property ID="rdevent_buff_10" Name="desc_rdevent_buff_10_1" script="Buffer" LifeTime="15000" Buff_Main="rdevent_buff_10" Buff_Display="rdevent_buff_2"/>
+	<Property ID="rdevent_buff_11" Name="desc_rdevent_buff_11_1" script="Buffer" LifeTime="15000" Buff_Main="rdevent_buff_11" Buff_Display="rdevent_buff_2"/>
+	<Property ID="rdevent_buff_12" Name="desc_rdevent_buff_12_1" script="Buffer" LifeTime="10000" Buff_Main="rdevent_buff_12" Buff_Display="rdevent_buff_3"/>
+	<Property ID="rdevent_buff_13" Name="desc_rdevent_buff_13_1" script="Buffer" LifeTime="10000" Buff_Main="rdevent_buff_13" Buff_Display="rdevent_buff_3"/>
+	<Property ID="rdevent_buff_14" Name="desc_rdevent_buff_14_1" script="Buffer" LifeTime="10000" Buff_Main="rdevent_buff_14" Buff_Display="rdevent_buff_5"/>
+	<Property ID="Demo_shitoubuff" Name="desc_Demo_shitoubuff_1" Description="desc_Demo_shitoubuff_2" script="Buffer" LifeTime="50000" Buff_Main="Demo_shitoubuff_001"/>
+	<Property ID="Demo_shitoubuff2" Name="desc_Demo_shitoubuff2_1" script="Buffer" LifeTime="30000" Buff_Main="Demo_shitoubuff_002"/>
+	<Property ID="Demo_shitoubuff3" Name="desc_Demo_shitoubuff3_1" script="Buffer" LifeTime="6000" Buff_Main="Demo_shitoubuff_003"/>
+	<Property ID="Demo_shitoubuff4" Name="desc_Demo_shitoubuff4_1" script="Buffer" LifeTime="1500" Buff_Main="Demo_shitoubuff_004"/>
+	<Property ID="Demo_shitoubuff5" Name="desc_Demo_shitoubuff5_1" script="Buffer" LifeTime="2000" Buff_Main="Demo_shitoubuff_005"/>
+	<Property ID="Demo_wq_001" Name="desc_Demo_wq_001_1" script="Buffer" LifeTime="30000" Buff_Main="Demo_wq_001_a" Buff_Display="Demo_wq_001_b"/>
+	<Property ID="Demo_wq_002" Name="desc_Demo_wq_002_1" script="Buffer" LifeTime="30000" Buff_Main="Demo_wq_002_a" Buff_Display="Demo_wq_002_b"/>
+	<Property ID="Demo_wq_003" Name="desc_Demo_wq_002_1" script="Buffer" LifeTime="30000" Buff_Main="Demo_wq_003_a" Buff_Display="Demo_wq_003_b"/>
+	<Property ID="buff_bh_001" Name="desc_buff_ws14_001_1" Description="desc_buff_bh_001_2" script="Buffer" LifeTime="3000" Buff_Main="buff_bh_001" Buff_Display="buff_weapon_bing001"/>
+	<Property ID="xixuebuff_001f" Name="desc_xixuebuff_001f_1" script="Buffer" LifeTime="500" Buff_Main="xixuebuff_001f" Buff_Display="xixuebuff_001f"/>
+	<Property ID="new_data_item" script="Buffer"/>
+	<Property ID="control_speeddown_001f" Name="desc_control_speeddown_001f_1" Description="desc_control_speeddown_001f_2" script="Buffer" LifeTime="3000" Buff_Main="speeddown_001f" Buff_Display="speeddown_001f"/>
+	<Property ID="control_xuanyun_3s" Name="desc_xuanyun_3s_1" Description="desc_xuanyun_3s_2" script="Buffer" LifeTime="3000" Buff_Main="buff_tongyong_sk01" Buff_Display="xuanyun_001"/>
+	<Property ID="control_xuanyun_5s" Name="desc_control_xuanyun_5s_1" Description="desc_xuanyun_5s_2" script="Buffer" LifeTime="5000" Buff_Main="buff_tongyong_sk01" Buff_Display="buff_tongyong_sk01"/>
+	<Property ID="jiangshi_jiangshi_skill05_01" Name="desc_jiangshi_jiangshi_skill05_01_1" Description="desc_jiangshi_jiangshi_skill05_01_2" script="Buffer" LifeTime="5000" Buff_Main="jiangshi_jiangshi_skill05_01" Buff_Display="jiangshi_jiangshi_skill05_01"/>
+	<Property ID="buff_lgt_skill_4" Name="desc_buff_lgt_skill_4_1" script="Buffer" LifeTime="15000" Buff_Main="buff_lgt_skill_4" Buff_Display="buff_lgt_skill_4"/>
+	<Property ID="klw_xixuebuff" Name="desc_klw_xixuebuff_001f_1" script="Buffer" LifeTime="500" Buff_Main="klw_xixuebuff"/>
+	<Property ID="buff_klw_skill_10" Name="desc_buff_klw_skill_10_1" script="Buffer" LifeTime="500" Buff_Main="buff_klw_skill_10" Buff_Display="buff_klw_skill_10"/>
+	<Property ID="buff_klw_skill_9" Name="desc_buff_klw_skill_9_1" script="Buffer" LifeTime="1000" Buff_Main="buff_klw_skill_9"/>
+	<Property ID="buff_klw_skill_9_2" Name="desc_buff_klw_skill_9_2_1" script="Buffer" LifeTime="1000" Buff_Main="buff_klw_skill_9_2"/>
+	<Property ID="buff_klw_skill_9_3" Name="desc_buff_klw_skill_9_3_1" script="Buffer" LifeTime="1000" Buff_Main="buff_klw_skill_9_3"/>
+	<Property ID="buff_klw_skill_9_4" Name="desc_buff_klw_skill_9_4_1" script="Buffer" LifeTime="1000" Buff_Main="buff_klw_skill_9_4"/>
+	<Property ID="klw_kouxuebuff" Name="desc_klw_kouxuebuff_1" script="Buffer" LifeTime="1500" Buff_Main="klw_kouxuebuff"/>
+	<Property ID="klw_huixuebuff" Name="desc_klw_huixuebuff_1" script="Buffer" LifeTime="10000" Buff_Main="klw_huixuebuff" Buff_Display="klw_huixuebuff"/>
+	<Property ID="buff_pangzi_skill_7" Name="desc_buff_pangzi_skill_7_1" script="Buffer" LifeTime="600000" Buff_Main="buff_pangzi_skill_7"/>
+	<Property ID="buff_pangzi_skill_8" Name="desc_buff_pangzi_skill_8_1" script="Buffer" LifeTime="600000" Buff_Main="buff_pangzi_skill_8" Buff_Display="buff_pangzi_skill_7"/>
+	<Property ID="control_xuruobuff_001" Name="desc_xuruobuff_001_1" script="Buffer" LifeTime="5000" Buff_Main="xuruobuff_001" Buff_Display="xuruobuff_001"/>
+	<Property ID="control_buff_jiaohui_fs_skill_006" Name="desc_buff_jiaohui_fs_skill_006_1" script="Buffer" LifeTime="3000" Buff_Main="buff_jiaohui_fs_skill_006" Buff_Display="buff_jiaohui_fs_skill_006"/>
+	<Property ID="buff_lgt_skill_5a" Name="desc_buff_lgt_skill_5a_1" script="Buffer" LifeTime="500" Buff_Main="buff_lgt_skill_5a" Buff_Display="buff_lgt_skill_5a"/>
+	<Property ID="control_lgt_skill_5b" Name="desc_lgt_skill_5b_1" script="Buffer" LifeTime="500" Buff_Main="lgt_skill_5b" Buff_Display="lgt_skill_5b"/>
+	<Property ID="buff_lgt_skill_5c" Name="desc_control_lgt_skill_5c_1" script="Buffer" LifeTime="500" Buff_Main="buff_lgt_skill_5c" Buff_Display="buff_lgt_skill_5c"/>
+	<Property ID="buff_lgt_skill_5d" Name="desc_buff_lgt_skill_5d_1" script="Buffer" LifeTime="20000" Buff_Main="buff_lgt_skill_5d" Buff_Display="buff_lgt_skill_5d"/>
+	<Property ID="control_yiji_fashi_skill08a" Name="desc_yiji_fashi_skill08a_1" script="Buffer" LifeTime="5000" Buff_Main="yiji_fashi_skill08a" Buff_Display="yiji_fashi_skill08a"/>
+	<Property ID="control_buff_jmdp_skill_4" Name="desc_buff_jmdp_skill_4_1" script="Buffer" LifeTime="5000" Buff_Main="buff_tongyong_sk02" Buff_Display="buff_tongyong_sk02"/>
+	<Property ID="jiaohui_nvzhujiao_skill04c" Name="desc_jiaohui_nvzhujiao_skill03c_1" script="Buffer" LifeTime="500" Buff_Main="jiaohui_nvzhujiao_skill04c" Buff_Display="jiaohui_nvzhujiao_skill04c"/>
+	<Property ID="control_buff_team1_bd_skill_8" Name="desc_buff_team1_bd_skill_8_1" script="Buffer" LifeTime="6000" Buff_Main="buff_team1_bd_skill_8" Buff_Display="speeddown_001f"/>
+	<Property ID="buff_team1_bd_skill_10" Name="desc_buff_team1_bd_skill_10_1" script="Buffer" LifeTime="1000" Buff_Main="buff_team1_bd_skill_10"/>
+	<Property ID="control_buff_team1_bd_skill_13" Name="desc_buff_team1_bd_skill_13_1" script="Buffer" LifeTime="7000" Buff_Main="buff_tongyong_sk06" Buff_Display="buff_tongyong_sk06"/>
+	<Property ID="control_buff_team1_bd_skill_14" Name="desc_buff_team1_bd_skill_14_1" script="Buffer" LifeTime="5000" Buff_Main="buff_tongyong_sk02" Buff_Display="buff_tongyong_sk02"/>
+	<Property ID="buff_team1_bd_skill_15" Name="desc_buff_team1_bd_skill_15_1" script="Buffer" LeaveHaloAreaNoDel="1" LifeTime="30000" Buff_Main="buff_team1_bd_skill_15"/>
+	<Property ID="buff_team1_bianshen_skill_2" Name="desc_buff_team1_bianshen_skill_2_1" script="Buffer" LifeTime="4000" Buff_Main="buff_team1_bianshen_skill_2" Buff_Display="buff_team1_bianshen_skill_2"/>
+	<Property ID="buff_team1_bianshen_skill_3" Name="desc_buff_team1_bianshen_skill_3_1" script="Buffer" LifeTime="5000" Buff_Main="buff_team1_bianshen_skill_3" Buff_Display="buff_team1_bianshen_skill_3"/>
+	<Property ID="buff_team1_bianshen_skill_4" Name="desc_buff_team1_bianshen_skill_4_1" script="Buffer" LifeTime="1000" Buff_Main="buff_team1_bianshen_skill_4"/>
+	<Property ID="control_gbl_xdfashi_skill04" Name="desc_gbl_xdfashi_skill04_1" script="Buffer" LifeTime="5000" Buff_Main="gbl_xdfashi_skill04" Buff_Display="gbl_xdfashi_skill04"/>
+	<Property ID="buff_shandianbs_skill_1" Name="desc_buff_team1_bd_skill_15_1" script="Buffer" LifeTime="120000" Buff_Main="buff_shandianbs_skill_1"/>
+	<Property ID="buff_huoliquankai_skill_1" Name="desc_buff_huoliquankai_skill_1_1" script="Buffer" LifeTime="15000" Buff_Main="buff_huoliquankai_skill_1" Buff_Display="buff_lgt_skill_4"/>
+	<Property ID="buff_ganzhu_skill_1" Name="desc_buff_ganzhu_skill_1_1" script="Buffer" LifeTime="950000" Buff_Main="buff_ganzhu_skill_1"/>
+	<Property ID="buff_ganzhu_skill_2" Name="desc_buff_ganzhu_skill_2_1" script="Buffer" LifeTime="500" Buff_Main="buff_ganzhu_skill_2"/>
+	<Property ID="buff_ganzhu_skill_3" Name="desc_buff_ganzhu_skill_3_1" script="Buffer" LifeTime="900500" Buff_Main="buff_ganzhu_skill_3"/>
+	<Property ID="buff_ganzhu2_skill_1" Name="desc_buff_ganzhu2_skill_1_1" script="Buffer" LifeTime="950000" Buff_Main="buff_ganzhu2_skill_1"/>
+	<Property ID="buff_ganzhu2_skill_2" Name="desc_buff_ganzhu2_skill_2_1" script="Buffer" LifeTime="500" Buff_Main="buff_ganzhu2_skill_2"/>
+	<Property ID="buff_ganzhu2_skill_3" Name="desc_buff_ganzhu2_skill_3_1" script="Buffer" LifeTime="900500" Buff_Main="buff_ganzhu2_skill_3"/>
+	<Property ID="buff_ganzhu3_skill_1" Name="desc_buff_ganzhu3_skill_1_1" script="Buffer" LifeTime="950000" Buff_Main="buff_ganzhu3_skill_1"/>
+	<Property ID="buff_ganzhu3_skill_2" Name="desc_buff_ganzhu3_skill_2_1" script="Buffer" LifeTime="500" Buff_Main="buff_ganzhu3_skill_2"/>
+	<Property ID="buff_ganzhu3_skill_3" Name="desc_buff_ganzhu3_skill_3_1" script="Buffer" LifeTime="900500" Buff_Main="buff_ganzhu3_skill_3"/>
+	<Property ID="buff_ganzhubs_skill_1" Name="desc_buff_ganzhubs_skill_1_1" script="Buffer" LifeTime="12000000" Buff_Main="buff_ganzhubs_skill_1"/>
+	<Property ID="control_buff_jinbi_pk_skill_3" Name="desc_buff_jinbi_pk_skill_3_1" script="Buffer" LifeTime="3000" Buff_Main="buff_tongyong_sk06" Buff_Display="buff_tongyong_sk06"/>
+	<Property ID="control_buff_jiaohui_fs_skill_010" Name="desc_buff_jiaohui_fs_skill_010_1" script="Buffer" LifeTime="2500" Buff_Main="buff_jiaohui_fs_skill_010" Buff_Display="buff_jiaohui_fs_skill_010"/>
+	<Property ID="buff_jbxiaogui_skill_1" Name="desc_buff_jbxiaogui_skill_1_1" script="Buffer" LifeTime="900000" Buff_Main="buff_jbxiaogui_skill_1"/>
+	<Property ID="buff_jbxiaogui_skill_2" Name="desc_buff_jbxiaogui_skill_2_1" script="Buffer" LifeTime="900000" Buff_Main="buff_jbxiaogui_skill_2"/>
+	<Property ID="buff_jbzisha_skill_1" Name="desc_buff_jbzisha_skill_1_1" script="Buffer" LifeTime="1000" Buff_Main="buff_jbzisha_skill_1"/>
+	<Property ID="buff_jinbi_pk_skill_4" Name="desc_buff_jinbi_pk_skill_4_1" script="Buffer" LifeTime="6000000" Buff_Main="buff_jinbi_pk_skill_4"/>
+	<Property ID="buff_jinbi_pk_skill_4_1" Name="desc_buff_jinbi_pk_skill_4_1_1" script="Buffer" LifeTime="60000" Buff_Main="buff_jinbi_pk_skill_4_1" Buff_Display="buff_jinbi_pk_skill_4_1"/>
+	<Property ID="buff_jinbi_pk_skill_5" Name="desc_buff_jinbi_pk_skill_5_1" script="Buffer" LifeTime="1000" Buff_Main="buff_jinbi_pk_skill_5"/>
+	<Property ID="buff_jinbi_pk_skill_5_2" Name="desc_buff_jinbi_pk_skill_5_2_1" script="Buffer" LifeTime="1000" Buff_Main="buff_jinbi_pk_skill_5_2"/>
+	<Property ID="buff_jinbi_pk_skill_5_3" Name="desc_buff_jinbi_pk_skill_5_3_1" script="Buffer" LifeTime="1000" Buff_Main="buff_jinbi_pk_skill_5_3"/>
+	<Property ID="buff_jinbi_pk_skill_5_4" Name="desc_buff_jinbi_pk_skill_5_4_1" script="Buffer" LifeTime="1000" Buff_Main="buff_jinbi_pk_skill_5_4"/>
+	<Property ID="buff_jinbi_pk_skill_6" Name="desc_buff_jinbi_pk_skill_6_1" script="Buffer" LifeTime="1000" Buff_Main="buff_jinbi_pk_skill_6"/>
+	<Property ID="buff_jinbi_pk_skill_6_2" Name="desc_buff_jinbi_pk_skill_6_2_1" script="Buffer" LifeTime="1000" Buff_Main="buff_jinbi_pk_skill_6_2"/>
+	<Property ID="buff_jinbi_pk_skill_6_3" Name="desc_buff_jinbi_pk_skill_6_3_1" script="Buffer" LifeTime="1000" Buff_Main="buff_jinbi_pk_skill_6_3"/>
+	<Property ID="buff_gbl_xdzhanshi_skill09" Name="desc_buff_gbl_xdzhanshi_skill09_1" script="Buffer" LifeTime="10000" Buff_Main="buff_gbl_xdzhanshi_skill09" Buff_Display="buff_gbl_xdzhanshi_skill09"/>
+	<Property ID="buff_gbl_xdzhanshi_skill10" Name="desc_buff_gbl_xdzhanshi_skill10_1" script="Buffer" LifeTime="10000" Buff_Main="buff_gbl_xdzhanshi_skill10" Buff_Display="buff_gbl_xdzhanshi_skill10"/>
+	<Property ID="debuff_du" Name="desc_debuff_du_1" script="Buffer" LifeTime="10000" Buff_Main="debuff_du" Buff_Display="debuff_du"/>
+	<Property ID="control_buff_judunvw_skill_7" Name="desc_control_buff_judunvw_skill_7_1" script="Buffer" LifeTime="4000" Buff_Main="buff_tongyong_sk06" Buff_Display="buff_judunvw_skill_7"/>
+	<Property ID="buff_judunvw_skill_12" Name="desc_buff_judunvw_skill_12_1" script="Buffer" LifeTime="5000" Buff_Main="buff_judunvw_skill_12" Buff_Display="deeppoison"/>
+	<Property ID="buff_judunvw_skill_8" Name="desc_buff_judunvw_skill_8_1" script="Buffer" LifeTime="6000" Buff_Main="buff_judunvw_skill_8" Buff_Display="deeppoison"/>
+	<Property ID="control_zhizhu_xiao_skill03" Name="desc_control_zhizhu_xiao_skill03_1" script="Buffer" LifeTime="1500" Buff_Main="buff_tongyong_sk06" Buff_Display="buff_judunvw_skill_7"/>
+	<Property ID="buff_gongji_50" Name="desc_buff_gongji_50_1" script="Buffer" LifeTime="15000" Buff_Main="buff_gongji_50" Buff_Display="buff_gongji_50"/>
+	<Property ID="super_bati_buff" script="Buffer" LifeTime="2000000000" Buff_Main="super_bati_buff" Buff_Display="batibuff"/>
+	<Property ID="buff_mianyi_datou" script="Buffer" LifeTime="10000000" Buff_Main="buff_mianyi_datou" Buff_Display="batibuff"/>
+	<Property ID="control_speeddown_002f" Name="desc_control_speeddown_002f_1" Description="desc_control_speeddown_002f_2" script="Buffer" LifeTime="5000" Buff_Main="speeddown_001f" Buff_Display="speeddown_001f"/>
+	<Property ID="jingyan_zhadan" Name="desc_jingyan_zhadan_1" script="Buffer" LifeTime="5000" Buff_Main="jingyan_zhadan" Buff_Display="jingyan_zhadan"/>
+	<Property ID="buff_jingyan_huoli" Name="desc_jingyan_huoli_1" script="Buffer" LifeTime="10000" Buff_Main="buff_jingyan_huoli" Buff_Display="buff_jingyan_huoli"/>
+	<Property ID="jingyan_shuaiguai_001" Name="desc_jingyan_shuaiguai_001_1" script="Buffer" Buff_Main="jingyan_shuaiguai_001"/>
+	<Property ID="jingyan_shuaiguai_002" Name="desc_jingyan_shuaiguai_002_1" script="Buffer" Buff_Main="jingyan_shuaiguai_002"/>
+	<Property ID="buff_rikishi_05" Name="desc_buff_rikishi_05_1" script="Buffer" LifeTime="5000" Buff_Main="buff_rikishi_05" Buff_Display="buff_rikishi_05"/>
+	<Property ID="buff_blackman_05" Name="desc_buff_blackman_05_1" script="Buffer" LifeTime="5000" Buff_Main="buff_blackman_05" Buff_Display="buff_blackman_05"/>
+	<Property ID="buff_tamer_05" Name="desc_buff_tamer_05_1" script="Buffer" LifeTime="2000" Buff_Main="buff_tamer_05" Buff_Display="buff_tamer_05"/>
+	<Property ID="buff_winebibber_05" Name="desc_buff_winebibber_05_1" script="Buffer" LifeTime="5000" Buff_Main="buff_winebibber_05" Buff_Display="buff_winebibber_05"/>
+	<Property ID="buff_shibao50" Name="desc_buff_shibao50_1" script="Buffer" LifeTime="10000" Buff_Main="buff_shibao50" Buff_Display="buff_shibao50"/>
+	<Property ID="control_speeddown_003f" Name="desc_control_speeddown_003f_1" Description="desc_control_speeddown_003f_2" script="Buffer" LifeTime="1000" Buff_Main="speeddown_002f" Buff_Display="speeddown_001f"/>
+	<Property ID="buff_azrael_skill_07_2" Name="desc_buff_azrael_skill_07_2_1" script="Buffer" LifeTime="5000" Buff_Main="buff_azrael_skill_07_2" Buff_Display="buff_azrael_skill_07_2"/>
+	<Property ID="buff_dianju_skill_7" Name="desc_buff_dianju_skill_7_1" script="Buffer" LifeTime="20000" Buff_Main="buff_dianju_skill_7"/>
+	<Property ID="buff_dianju_skill_7b" Name="desc_buff_dianju_skill_7b_1" script="Buffer" LifeTime="20000" Buff_Main="buff_dianju_skill_7b"/>
+	<Property ID="buff_dianju_skill_7c" Name="desc_buff_dianju_skill_7c_1" script="Buffer" LifeTime="20000" Buff_Main="buff_dianju_skill_7c"/>
+	<Property ID="buff_shooter_skill_04" Name="desc_buff_shooter_skill_04_1" script="Buffer" LifeTime="8000" Buff_Main="buff_shooter_skill_04" Buff_Display="buff_shooter_skill_04"/>
+	<Property ID="yw_super_bati_buff" script="Buffer" LifeTime="2000000000" Buff_Main="yw_super_bati_buff" Buff_Display="batibuff"/>
+	<Property ID="yw_boss_bati_buff" script="Buffer" LifeTime="2000000000" Buff_Main="yw_boss_bati_buff" Buff_Display="batibuff"/>
+	<Property ID="buff_gouzisha_skill_1" Name="desc_buff_gouzisha_skill_1_1" script="Buffer" LifeTime="5000" Buff_Main="buff_jbzisha_skill_1"/>
+	<Property ID="buff_niutou_bianshen_01" Name="desc_buff_niutou_bianshen_01_1" script="Buffer" LifeTime="999999999" Buff_Main="buff_niutou_bianshen_01" Buff_Display="buff_niutou_bianshen_01"/>
+	<Property ID="control_buff_chenmo_001" Name="desc_control_buff_chenmo_001_1" script="Buffer" LifeTime="3000" Buff_Main="buff_tongyong_sk02" Buff_Display="buff_tongyong_sk02"/>
+	<Property ID="control_xuanyun_1s" Name="desc_control_xuanyun_1s_1" script="Buffer" LifeTime="1000" Buff_Main="buff_tongyong_sk01" Buff_Display="xuanyun_001"/>
+	<Property ID="buff_jingzhi_01" Name="desc_buff_jingzhi_01_1" script="Buffer" LifeTime="50000000" Buff_Main="buff_jingzhi_01" Buff_Display="buff_ws_skill_18_3"/>
+	<Property ID="buff_jumo_shuangdao_skill_06" Name="desc_buff_jumo_shuangdao_skill_06_1" script="Buffer" LifeTime="15000" Buff_Main="buff_gongji_50" Buff_Display="buff_jumo_shuangdao_skill_06"/>
+	<Property ID="buff_yzr_zhanshi_skill05" Name="desc_buff_tongyong_sk06_1" script="Buffer" LifeTime="2000" Buff_Main="buff_tongyong_sk06" Buff_Display="buff_tongyong_sk06"/>
+	<Property ID="buff_bingniao_bianshen" Name="desc_buff_bingniao_bianshen_1" script="Buffer" LifeTime="9000000" Buff_Main="buff_bingniao_bianshen"/>
+	<Property ID="buff_judunvw_skill_15a" Name="desc_buff_judunvw_skill_15a_1" script="Buffer" LifeTime="8500" Buff_Main="buff_judunvw_skill_15"/>
+	<Property ID="buff_judunvw_skill_15b" Name="desc_buff_judunvw_skill_15b_1" script="Buffer" LifeTime="11000" Buff_Main="buff_judunvw_skill_15"/>
+	<Property ID="buff_judunvw_skill_15c" Name="desc_buff_judunvw_skill_15c_1" script="Buffer" LifeTime="14000" Buff_Main="buff_judunvw_skill_15"/>
+	<Property ID="buff_mubeilx_skill_1" Name="desc_buff_mubeilx_skill_1_1" script="Buffer" LifeTime="900000" Buff_Main="buff_mubeilx_skill_1"/>
+	<Property ID="buff_mubeilx_skill_2" Name="desc_buff_mubeilx_skill_2_1" script="Buffer" LifeTime="60000" Buff_Main="buff_mubeilx_skill_2" Buff_Display="buff_mubeilx_skill_2"/>
+	<Property ID="buff_mubeilx_skill_b1" Name="desc_buff_mubeilx_skill_1_1" script="Buffer" LifeTime="900000" Buff_Main="buff_mubeilx_skill_b1"/>
+	<Property ID="buff_mubeilx_skill_b2" Name="desc_buff_mubeilx_skill_2_1" script="Buffer" LifeTime="60000" Buff_Main="buff_mubeilx_skill_b2" Buff_Display="buff_mubeilx_skill_2"/>
+	<Property ID="buff_mubeilx_skill_c1" Name="desc_buff_mubeilx_skill_1_1" script="Buffer" LifeTime="900000" Buff_Main="buff_mubeilx_skill_c1"/>
+	<Property ID="buff_mubeilx_skill_c2" Name="desc_buff_mubeilx_skill_2_1" script="Buffer" LifeTime="60000" Buff_Main="buff_mubeilx_skill_c2" Buff_Display="buff_mubeilx_skill_2"/>
+	<Property ID="buff_mubeilx_skill_d1" Name="desc_buff_mubeilx_skill_1_1" script="Buffer" LifeTime="900000" Buff_Main="buff_mubeilx_skill_d1"/>
+	<Property ID="buff_mubeilx_skill_d2" Name="desc_buff_mubeilx_skill_2_1" script="Buffer" LifeTime="60000" Buff_Main="buff_mubeilx_skill_d2" Buff_Display="buff_mubeilx_skill_2"/>
+	<Property ID="buff_yiji_fashi_skill17" Name="desc_buff_yiji_fashi_skill17_1" script="Buffer" LifeTime="2500" Buff_Main="buff_yiji_fashi_skill17"/>
+	<Property ID="Buff_goblin_quicksand_01" Name="desc_Buff_goblin_quicksand_01_1" script="Buffer" LifeTime="2000" Buff_Main="Buff_goblin_quicksand_01" Buff_Display="batibuff"/>
+	<Property ID="Buff_goblin_viper_01" Name="desc_Buff_goblin_viper_01_1" script="Buffer" LifeTime="2000" Buff_Main="Buff_goblin_viper_01" Buff_Display="batibuff"/>
+	<Property ID="Buff_goblin_fete_01" Name="desc_Buff_goblin_fete_01_1" script="Buffer" LifeTime="2000" Buff_Main="Buff_goblin_fete_01" Buff_Display="batibuff"/>
+	<Property ID="Buff_quicksand_halo_01" Name="desc_Buff_quicksand_halo_01_1" script="Buffer" LifeTime="99999999" Buff_Main="Buff_quicksand_halo_01" Buff_Display="Buff_quicksand_halo_01"/>
+	<Property ID="Buff_fete_halo_01" Name="desc_Buff_fete_halo_01_1" script="Buffer" LifeTime="99999999" Buff_Main="Buff_fete_halo_01" Buff_Display="Buff_fete_halo_01"/>
+	<Property ID="control_speeddown_004f" Name="desc_control_speeddown_004f_1" Description="desc_control_speeddown_004f_2" script="Buffer" LifeTime="1000" Buff_Main="speeddown_002f" Buff_Display="speeddown_001f"/>
+	<Property ID="Buff_fete_halo_02" Name="desc_Buff_fete_halo_02_1" script="Buffer" LifeTime="99999999" Buff_Main="Buff_fete_halo_02" Buff_Display="batibuff"/>
+	<Property ID="Buff_fete_01" Name="desc_Buff_fete_01_1" script="Buffer" LifeTime="1000" Buff_Main="Buff_fete_01" Buff_Display="Buff_fete_01"/>
+	<Property ID="Buff_fete_02" Name="desc_Buff_fete_02_1" script="Buffer" LifeTime="1000" Buff_Main="Buff_fete_02" Buff_Display="batibuff"/>
+	<Property ID="buff_mgn_texiao" Name="desc_buff_mgn_texiao_1" script="Buffer" LifeTime="9000000" Buff_Main="buff_mgn_texiao"/>
+	<Property ID="buff_mgn_zitexiao" Name="desc_buff_mgn_texiao_1" script="Buffer" LeaveHaloAreaNoDel="1" LifeTime="3000" Buff_Main="buff_mgn_zitexiao" Buff_Display="buff_mgn_zitexiao"/>
+	<Property ID="halo_kljk_TimeStatic" Name="desc_halo_kljk_TimeStatic_1" script="Buffer" LifeTime="10000" Buff_Main="halo_kljk_TimeStatic_01" Buff_Display="halo_kljk_TimeStatic_01"/>
+	<Property ID="buff_kljk_TimeStatic" Name="desc_buff_kljk_TimeStatic_1" script="Buffer" LifeTime="1000" Buff_Main="buff_kljk_TimeStatic_01" Buff_Display="buff_kljk_TimeStatic_01"/>
+	<Property ID="buff_mgn_tieqiao" Name="desc_buff_mgn_tieqiao_1" script="Buffer" LifeTime="700" Buff_Main="xuanyun_001"/>
+	<Property ID="control_speeddown_005f" Name="desc_control_speeddown_005f_1" Description="desc_control_speeddown_005f_2" script="Buffer" LifeTime="1000" Buff_Main="speeddown_001f" Buff_Display="speeddown_001f"/>
+	<Property ID="buff_roudan_skill_5" Name="desc_buff_roudan_skill_5_1" script="Buffer" LifeTime="990000" Buff_Main="buff_roudan_skill_5"/>
+	<Property ID="buff_xixue_001" Name="desc_buff_xixue_001_1" script="Buffer" LifeTime="2000" Buff_Main="buff_xixue_001" Buff_Display="buff_xixue_001"/>
+	<Property ID="buff_yanlang_skill_5" Name="desc_buff_yanlang_skill_5_1" script="Buffer" LifeTime="990000" Buff_Main="buff_yanlang_skill_5"/>
+	<Property ID="buff_yanlang_skill_6" Name="desc_buff_yanlang_skill_6_1" script="Buffer" LifeTime="60000" Buff_Main="buff_yanlang_skill_6" Buff_Display="buff_yanlang_skill_6"/>
+	<Property ID="buff_pojia_001" Name="desc_buff_pojia_001_1" Description="desc_buff_pojia_001_2" script="Buffer" LifeTime="5000" Buff_Main="buff_pojia_001" Buff_Display="buff_pojia_001"/>
+	<Property ID="buff_zhimang_001" Name="desc_buff_zhimang_001_1" script="Buffer" LifeTime="5000" Buff_Main="buff_zhimang_001" Buff_Display="buff_zhimang_001"/>
+	<Property ID="buff_yewaiwudi_skill_1" Name="desc_buff_yewaiwudi_skill_1_1" script="Buffer" LifeTime="60000000000" Buff_Main="buff_yewaiwudi_skill_1"/>
+	<Property ID="buff_gongji_50_5s" Name="desc_buff_gongji_50_5s_1" Description="desc_buff_gongji_50_5s_2" script="Buffer" LifeTime="5000" Buff_Main="buff_gongji_50" Buff_Display="buff_gongji_50"/>
+	<Property ID="control_buff_chenmo_002" Name="desc_control_buff_chenmo_002_1" Description="desc_control_buff_chenmo_002_2" script="Buffer" LifeTime="1500" Buff_Main="buff_tongyong_sk02" Buff_Display="buff_tongyong_sk02"/>
+	<Property ID="buff_lutanist_04" Name="desc_buff_lutanist_04_1" script="Buffer" LifeTime="1500" Buff_Main="buff_Main_lutanist_04" Buff_Display="buff_Display_lutanist_04"/>
+	<Property ID="buff_wupao_fashi_04" Name="desc_buff_wupao_fashi_04_1" script="Buffer" LifeTime="5000" Buff_Main="buff_Main_wupao_fashi_04" Buff_Display="buff_Display_wupao_fashi_04"/>
+	<Property ID="buff_halo_zhenfen" Name="desc_buff_halo_zhenfen_1" script="Buffer" LifeTime="10000" Buff_Main="buff_halo_zhenfen" Buff_Display="buff_halo_zhenfen"/>
+	<Property ID="buff_skjiaren_skill_1" Name="desc_buff_skjiaren_skill_1_1" script="Buffer" LeaveHaloAreaNoDel="0" LifeTime="900000000" Buff_Main="buff_skjiaren_skill_1"/>
+	<Property ID="buff_skjiaren_skill_2" Name="desc_buff_skjiaren_skill_2_1" script="Buffer" LifeTime="7000" Buff_Main="buff_skjiaren_skill_2" Buff_Display="buff_skjiaren_skill_2"/>
+	<Property ID="bluebase_buff_1" Name="desc_bluebase_buff_1_1" script="Buffer" LifeTime="999999999" Buff_Main="bluebase_buff_1" Buff_Display="bluebase_buff_1"/>
+	<Property ID="redbase_buff_1" Name="desc_redbase_buff_1_1" script="Buffer" LifeTime="999999999" Buff_Main="redbase_buff_1" Buff_Display="redbase_buff_1"/>
+	<Property ID="normalbase_buff_1" Name="desc_normalbase_buff_1_1" script="Buffer" LifeTime="999999999" Buff_Main="normalbase_buff_1" Buff_Display="normalbase_buff_1"/>
+	<Property ID="buff_hujia_1" Name="desc_buff_hujia_1_1" script="Buffer" LifeTime="5000" Buff_Main="buff_hujia_1" Buff_Display="buff_hujia_1"/>
+	<Property ID="buff_mokang_1" Name="desc_buff_mokang_1_1" script="Buffer" LifeTime="5000" Buff_Main="buff_mokang_1" Buff_Display="buff_mokang_1"/>
+	<Property ID="buff_yhfs_skill2" Name="desc_buff_yhfs_skill2_1" script="Buffer" LifeTime="10000" Buff_Main="buff_yhfs_skill2" Buff_Display="buff_yhfs_skill2"/>
+	<Property ID="buff_skjiaren_skill_3" Name="desc_buff_skjiaren_skill_3_1" script="Buffer" LeaveHaloAreaNoDel="1" LifeTime="10000" Buff_Main="buff_skjiaren_skill_3" Buff_Display="buff_skjiaren_skill_3"/>
+	<Property ID="buff_xixue_002" Name="desc_buff_xixue_002_1" script="Buffer" LifeTime="700" Buff_Main="buff_xixue_002" Buff_Display="buff_xixue_001"/>
+	<Property ID="buff_ghost_skill_04" Name="desc_buff_ghost_skill_04_1" script="Buffer" LifeTime="600" Buff_Main="buff_ghost_skill_04" Buff_Display="buff_ghost_skill_04"/>
+	<Property ID="buff_ghost_skill_13" Name="desc_buff_ghost_skill_13_1" script="Buffer" LifeTime="9999999" Buff_Main="buff_ghost_skill_13" Buff_Display="buff_ghost_skill_13"/>
+	<Property ID="buff_jiebei01" Name="desc_buff_jiebei01_1" script="Buffer" LifeTime="9999999" Buff_Main="buff_jiebei01" Buff_Display="buff_jiebei01"/>
+	<Property ID="buff_fanshang_001" Name="desc_buff_fanshang_001_1" script="Buffer" LifeTime="5000" Buff_Main="buff_fanshang_001" Buff_Display="buff_fanshang_001"/>
+	<Property ID="halo_zhuoshao_001" Name="desc_halo_zhuoshao_001_1" script="Buffer" LifeTime="10000" Buff_Main="halo_zhuoshao_001" Buff_Display="halo_zhuoshao_001"/>
+	<Property ID="buff_zhuoshao_001" Name="desc_buff_zhuoshao_001_1" script="Buffer" LifeTime="3000" Buff_Main="buff_zhuoshao_001" Buff_Display="buff_zhuoshao_001"/>
+	<Property ID="buff_chaofeng_001" Name="desc_buff_chaofeng_001_1" script="Buffer" LifeTime="3500" Buff_Main="buff_chaofeng_001" Buff_Display="buff_chaofeng_001"/>
+	<Property ID="control_buff_chaofeng_001" Name="desc_control_buff_chaofeng_001_1" script="Buffer" LifeTime="3500" Buff_Main="control_buff_chaofeng_001" Buff_Display="control_buff_chaofeng_001"/>
+	<Property ID="buff_nianshouwudi_skill_1" Name="desc_buff_yewaiwudi_skill_1_1" script="Buffer" LifeTime="300000" Buff_Main="buff_yewaiwudi_skill_1"/>
+	<Property ID="buff_skjiaren_skill_4" Name="desc_buff_skjiaren_skill_4_1" script="Buffer" LifeTime="5000" Buff_Main="buff_skjiaren_skill_4" Buff_Display="buff_skjiaren_skill_4"/>
+	<Property ID="buff_mgn_skill_7_1" Name="desc_buff_mgn_skill_7_1_1" script="Buffer" LifeTime="4500" Buff_Main="buff_mgn_skill_7_1" Buff_Display="buff_mgn_skill_7_1"/>
+	<Property ID="buff_zhimang_002" Name="desc_buff_zhimang_002_1" script="Buffer" LifeTime="1000" Buff_Main="buff_zhimang_001" Buff_Display="buff_zhimang_001"/>
+	<Property ID="buff_wuopao_sishen_skill20" Name="desc_buff_wuopao_sishen_skill20_1" script="Buffer" LifeTime="10000" Buff_Main="buff_wuopao_sishen_skill20" Buff_Display="buff_wuopao_sishen_skill20"/>
+	<Property ID="buff_wuopao_sishen_skill20a" Name="desc_buff_zhuoshao_001_1" script="Buffer" LifeTime="2000" Buff_Main="buff_wuopao_sishen_skill20a" Buff_Display="buff_wuopao_sishen_skill20a"/>
+	<Property ID="control_speeddown_006f" Name="desc_control_speeddown_006f_1" Description="desc_control_speeddown_006f_2" script="Buffer" LifeTime="10000" Buff_Main="speeddown_003f"/>
+	<Property ID="control_speeddown_006f_a" Name="desc_control_speeddown_006f_a_1" Description="desc_control_speeddown_006f_a_2" script="Buffer" LifeTime="10000" Buff_Main="speeddown_003f_a" Buff_Display="speeddown_001f"/>
+	<Property ID="buff_shitu_002" Name="desc_buff_shitu_002_1" Description="desc_buff_shitu_002_2" script="Buffer" LifeTime="9999999" Buff_Main="buff_shitu_002" Buff_Display="buff_shitu_002"/>
+	<Property ID="buff_shitu_003" Name="desc_buff_shitu_003_1" Description="desc_buff_shitu_003_2" script="Buffer" LifeTime="9999999" Buff_Main="buff_shitu_003" Buff_Display="buff_shitu_003"/>
+	<Property ID="buff_shitu_004" Name="desc_buff_shitu_004_1" Description="desc_buff_shitu_004_2" script="Buffer" LifeTime="9999999" Buff_Main="buff_shitu_004" Buff_Display="buff_shitu_004"/>
+	<Property ID="buff_shitu_005" Name="desc_buff_shitu_005_1" Description="desc_buff_shitu_005_2" script="Buffer" LifeTime="9999999" Buff_Main="buff_shitu_005" Buff_Display="buff_shitu_005"/>
+	<Property ID="battle_3v3_buff_1" Name="desc_battle_3v3_buff_1_1" script="Buffer" LifeTime="30000" Buff_Main="battle_3v3_buff_1" Buff_Display="battle_3v3_buff_1"/>
+	<Property ID="battle_3v3_buff_1b" Name="desc_battle_3v3_buff_1b_1" script="Buffer" LifeTime="1000" Buff_Main="battle_3v3_buff_1b" Buff_Display="battle_3v3_buff_1b"/>
+	<Property ID="battle_3v3_buff_2" Name="desc_battle_3v3_buff_2_1" script="Buffer" LifeTime="30000" Buff_Main="battle_3v3_buff_2" Buff_Display="battle_3v3_buff_2"/>
+	<Property ID="battle_3v3_buff_2b" Name="desc_battle_3v3_buff_2b_1" script="Buffer" LifeTime="20000" Buff_Main="battle_3v3_buff_2b" Buff_Display="battle_3v3_buff_2b"/>
+	<Property ID="battle_3v3_buff_3" Name="desc_battle_3v3_buff_3_1" script="Buffer" LifeTime="30000" Buff_Main="battle_3v3_buff_3" Buff_Display="battle_3v3_buff_3"/>
+	<Property ID="battle_3v3_buff_3b" Name="desc_battle_3v3_buff_3b_1" script="Buffer" LifeTime="1000" Buff_Main="battle_3v3_buff_3b" Buff_Display="battle_3v3_buff_3b"/>
+	<Property ID="buff_team7_yishang_01" Name="desc_buff_team7_yishang_01_1" script="Buffer" LifeTime="10000" Buff_Main="buff_team7_yishang_01" Buff_Display="buff_team7_yishang_01"/>
+	<Property ID="buff_team7_ningshi_01" Name="desc_buff_team7_ningshi_01_1" script="Buffer" LifeTime="30000" Buff_Main="buff_team7_ningshi_01" Buff_Display="buff_team7_ningshi_01"/>
+	<Property ID="buff_team7_ningshi_02" Name="desc_buff_team7_ningshi_02_1" script="Buffer" LifeTime="30000" Buff_Main="buff_team7_ningshi_02" Buff_Display="buff_team7_ningshi_02"/>
+	<Property ID="buff_team7_ningshi_03" Name="desc_buff_team7_ningshi_03_1" script="Buffer" LifeTime="3000" Buff_Main="buff_team7_ningshi_03" Buff_Display="buff_team7_ningshi_03"/>
+	<Property ID="buff_team7_fazhen_01" Name="desc_buff_team7_fazhen_01_1" script="Buffer" LifeTime="999999999" Buff_Main="buff_team7_fazhen_01" Buff_Display="buff_team7_fazhen_01"/>
+	<Property ID="buff_team7_fazhen_02" Name="desc_buff_team7_fazhen_02_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_team7_fazhen_02" Buff_Display="buff_team7_fazhen_02"/>
+	<Property ID="buff_team7_fazhen_03" Name="desc_buff_team7_fazhen_03_1" script="Buffer" LifeTime="9999999" Buff_Main="buff_team7_fazhen_03" Buff_Display="buff_team7_fazhen_03"/>
+	<Property ID="buff_team7_zhuoshao_01" Name="desc_buff_team7_zhuoshao_01_1" script="Buffer" LifeTime="5000" Buff_Main="buff_team7_zhuoshao_01" Buff_Display="buff_team7_zhuoshao_01"/>
+	<Property ID="buff_team7_fazhen_02a" Name="desc_buff_team7_fazhen_02a_1" script="Buffer" LifeTime="5000" Buff_Main="buff_team7_fazhen_02a" Buff_Display="buff_team7_fazhen_02a"/>
+	<Property ID="buff_team7_fazhen_03a" Name="desc_buff_team7_fazhen_03a_1" script="Buffer" LifeTime="5000" Buff_Main="buff_team7_fazhen_03a" Buff_Display="buff_team7_fazhen_03a"/>
+	<Property ID="control_speeddown_007f" Name="desc_control_speeddown_001f_1" Description="desc_control_speeddown_007f_2" script="Buffer" LifeTime="3000" Buff_Main="speeddown_007f" Buff_Display="speeddown_007f"/>
+	<Property ID="debuff_du_1" Name="desc_debuff_du_1_1" script="Buffer" LifeTime="5000000" Buff_Main="debuff_du_1" Buff_Display="debuff_du_1"/>
+	<Property ID="buff_yewaiwudi_skill_1a" Name="desc_buff_yewaiwudi_skill_1a_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_yewaiwudi_skill_1a" Buff_Display="buff_yewaiwudi_skill_1a"/>
+	<Property ID="control_common_buff_freeze_1s" Name="desc_control_common_buff_freeze_2s_1" script="Buffer" LifeTime="1000" Buff_Main="buff_tongyong_sk06" Buff_Display="buff_tongyong_sk06"/>
+	<Property ID="buff_xueruo_01" Name="desc_buff_xueruo_01_1" script="Buffer" LifeTime="999999999" Buff_Main="buff_xueruo_01" Buff_Display="buff_xueruo_01"/>
+	<Property ID="buff_xueruo_01a" Name="desc_buff_xueruo_01a_1" script="Buffer" Buff_Main="buff_xueruo_01a" Buff_Display="buff_xueruo_01a"/>
+	<Property ID="control_speeddown_008f" Name="desc_control_speeddown_008f_1" Description="desc_control_speeddown_008f_2" script="Buffer" LifeTime="2000" Buff_Main="speeddown_008f" Buff_Display="speeddown_001f"/>
+	<Property ID="halo_jiasu_1" Name="desc_halo_jiasu_1_1" script="Buffer" LifeTime="99999999" Buff_Main="halo_jiasu_1" Buff_Display="halo_jiasu_1"/>
+	<Property ID="buff_jiasu_1" Name="desc_buff_jiasu_1_1" script="Buffer" LifeTime="3000" Buff_Main="buff_jiasu_1" Buff_Display="buff_jiasu_1"/>
+	<Property ID="control_speeddown_009f" Name="desc_control_speeddown_009f_1" script="Buffer" LifeTime="3000" Buff_Main="speeddown_009f" Buff_Display="speeddown_001f"/>
+	<Property ID="halo_jiansu_1" Name="desc_halo_jiansu_1_1" script="Buffer" LifeTime="99999999" Buff_Main="halo_jiansu_1" Buff_Display="halo_jiansu_1"/>
+	<Property ID="control_common_buff_freeze_3s" Name="desc_control_common_buff_freeze_2s_1" script="Buffer" LifeTime="3000" Buff_Main="buff_tongyong_sk06" Buff_Display="buff_tongyong_sk06"/>
+	<Property ID="halo_bingdong_1" Name="desc_halo_bingdong_1_1" script="Buffer" Buff_Main="halo_bingdong_1" Buff_Display="halo_bingdong_1"/>
+	<Property ID="buff_25_def_1" Name="desc_buff_25_def_1_1" script="Buffer" LifeTime="999999999" Buff_Main="buff_25_def_1" Buff_Display="buff_25_def_1"/>
+	<Property ID="buff_25_def_2" Name="desc_buff_25_def_2_1" script="Buffer" LifeTime="1000" Buff_Main="buff_25_def_2" Buff_Display="buff_25_def_2"/>
+	<Property ID="buff_25_def_3" Name="desc_buff_25_def_3_1" script="Buffer" LifeTime="999999999" Buff_Main="buff_25_def_3" Buff_Display="buff_25_def_3"/>
+	<Property ID="buff_25_def_4" Name="desc_buff_25_def_4_1" script="Buffer" LifeTime="1200000" Buff_Main="buff_25_def_4" Buff_Display="buff_25_def_4"/>
+	<Property ID="buff_25_tower_1" Name="desc_buff_25_tower_1_1" script="Buffer" LifeTime="999999999" Buff_Main="buff_25_tower_1" Buff_Display="buff_25_tower_1"/>
+	<Property ID="buff_team7_zhaohuan_01" Name="desc_buff_team7_zhaohuan_01_1" script="Buffer" LifeTime="1000" Buff_Main="buff_team7_zhaohuan_01"/>
+	<Property ID="buff_team7_zhaohuan_02" Name="desc_buff_team7_zhaohuan_02_1" script="Buffer" LifeTime="1000" Buff_Main="buff_team7_zhaohuan_02"/>
+	<Property ID="buff_team7_zhaohuan_03" Name="desc_buff_team7_zhaohuan_03_1" script="Buffer" LifeTime="1000" Buff_Main="buff_team7_zhaohuan_03"/>
+	<Property ID="buff_team7_zhaohuan_04" Name="desc_buff_team7_zhaohuan_04_1" script="Buffer" LifeTime="1000" Buff_Main="buff_team7_zhaohuan_04"/>
+	<Property ID="buff_saima_cd_01" Name="desc_buff_saima_cd_1" script="Buffer" LifeTime="7000" Buff_Main="buff_saima_cd_01" Buff_Display="buff_jiasu_1"/>
+	<Property ID="buff_saima_cd_02" Name="desc_buff_saima_cd_02_1" script="Buffer" LifeTime="7000" Buff_Main="buff_saima_cd_02"/>
+	<Property ID="buff_saima_cd_03" Name="desc_buff_saima_cd_03_1" script="Buffer" LifeTime="7000" Buff_Main="buff_saima_cd_03"/>
+	<Property ID="bf_zhenfen_buff_1" Name="desc_bf_zhenfen_buff_1_1" script="Buffer" LifeTime="60000" Buff_Main="bf_zhenfen_buff_1" Buff_Display="bf_zhenfen_buff_1"/>
+	<Property ID="bf_zhenfen_buff_2" Name="desc_bf_zhenfen_buff_2_1" script="Buffer" LifeTime="60000" Buff_Main="bf_zhenfen_buff_2" Buff_Display="bf_zhenfen_buff_1"/>
+	<Property ID="buff_ReduceHarm_30" Name="desc_buff_ReduceHarm_30_1" script="Buffer" LifeTime="9999999999" Buff_Main="buff_ReduceHarm_30" Buff_Display="batibuff"/>
+	<Property ID="buff_ReduceHarm_35" Name="desc_buff_ReduceHarm_35_1" script="Buffer" LifeTime="9999999999" Buff_Main="buff_ReduceHarm_35" Buff_Display="batibuff"/>
+	<Property ID="buff_ReduceHarm_40" Name="desc_buff_ReduceHarm_40_1" script="Buffer" LifeTime="9999999999" Buff_Main="buff_ReduceHarm_40" Buff_Display="batibuff"/>
+	<Property ID="buff_ReduceHarm_45" Name="desc_buff_ReduceHarm_45_1" script="Buffer" LifeTime="9999999999" Buff_Main="buff_ReduceHarm_45" Buff_Display="batibuff"/>
+	<Property ID="buff_ReduceHarm_50" Name="desc_buff_ReduceHarm_50_1" script="Buffer" LifeTime="9999999999" Buff_Main="buff_ReduceHarm_50" Buff_Display="batibuff"/>
+	<Property ID="buff_ReduceHarm_55" Name="desc_buff_ReduceHarm_55_1" script="Buffer" LifeTime="9999999999" Buff_Main="buff_ReduceHarm_55" Buff_Display="batibuff"/>
+	<Property ID="buff_ReduceHarm_60" Name="desc_buff_ReduceHarm_60_1" script="Buffer" LifeTime="9999999999" Buff_Main="buff_ReduceHarm_60" Buff_Display="batibuff"/>
+	<Property ID="buff_ReduceHarm_65" Name="desc_buff_ReduceHarm_65_1" script="Buffer" LifeTime="9999999999" Buff_Main="buff_ReduceHarm_65" Buff_Display="batibuff"/>
+	<Property ID="buff_ReduceHarm_70" Name="desc_buff_ReduceHarm_70_1" script="Buffer" LifeTime="9999999999" Buff_Main="buff_ReduceHarm_70" Buff_Display="batibuff"/>
+	<Property ID="buff_ReduceHarm_75" Name="desc_buff_ReduceHarm_75_1" Description="desc_buff_ReduceHarm_75_2" script="Buffer" LifeTime="9999999999" Buff_Main="buff_ReduceHarm_75" Buff_Display="batibuff"/>
+	<Property ID="buff_ReduceHarm_80" Name="desc_buff_ReduceHarm_80_1" script="Buffer" LifeTime="9999999999" Buff_Main="buff_ReduceHarm_80" Buff_Display="batibuff"/>
+	<Property ID="buff_ReduceHarm_85" Name="desc_buff_ReduceHarm_85_1" script="Buffer" LifeTime="9999999999" Buff_Main="buff_ReduceHarm_85" Buff_Display="batibuff"/>
+	<Property ID="buff_ReduceHarm_90" Name="desc_buff_ReduceHarm_90_1" script="Buffer" LifeTime="9999999999" Buff_Main="buff_ReduceHarm_90" Buff_Display="batibuff"/>
+	<Property ID="buff_ReduceHarm_95" Name="desc_buff_ReduceHarm_95_1" script="Buffer" LifeTime="9999999999" Buff_Main="buff_ReduceHarm_95" Buff_Display="batibuff"/>
+	<Property ID="buff_gongji_20" Name="desc_buff_gongji_25_1" script="Buffer" LifeTime="15000" Buff_Main="buff_gongji_20" Buff_Display="buff_gongji_50"/>
+	<Property ID="buff_ReduceHarm_20" Name="desc_buff_ReduceHarm_20_1" script="Buffer" LifeTime="9999999999" Buff_Main="buff_ReduceHarm_20" Buff_Display="batibuff"/>
+	<Property ID="buff_zym832_boss_01" Name="desc_buff_zym832_boss_01_1" script="Buffer" LifeTime="9999999" Buff_Main="buff_zym832_boss_01" Buff_Display="batibuff"/>
+	<Property ID="buff_zym832_boss_01a" Name="desc_buff_zym832_boss_01a_1" script="Buffer" LifeTime="100000" Buff_Main="buff_zym832_boss_01a" Buff_Display="batibuff"/>
+	<Property ID="buff_zym832_boss_03" Name="desc_buff_zym832_boss_03_1" script="Buffer" LifeTime="3000" Buff_Main="buff_zym832_boss_03" Buff_Display="buff_zym832_boss_03"/>
+	<Property ID="buff_huanxiang_01" Name="desc_buff_huanxiang_01_1" Description="desc_buff_huanxiang_01_2" script="Buffer" LifeTime="999999" Buff_Main="buff_huanxiang_01" Buff_Display="buff_huanxiang_01"/>
+	<Property ID="buff_zym833_boss_01" Name="desc_buff_zym833_boss_01_1" script="Buffer" LifeTime="16000" Buff_Main="buff_zym833_boss_01" Buff_Display="batibuff"/>
+	<Property ID="buff_zym833_boss_01a" Name="desc_buff_zym833_boss_01a_1" script="Buffer" LifeTime="16000" Buff_Main="buff_zym833_boss_01a" Buff_Display="buff_zym833_boss_01a"/>
+	<Property ID="buff_zym833_boss_02" Name="desc_buff_zym833_boss_02_1" script="Buffer" LifeTime="5000" Buff_Main="buff_zym833_boss_02" Buff_Display="buff_zym833_boss_02"/>
+	<Property ID="buff_zym833_boss_03" Name="desc_buff_zym833_boss_03_1" script="Buffer" LifeTime="9999999" Buff_Main="buff_zym833_boss_03" Buff_Display="batibuff"/>
+	<Property ID="buff_zym833_boss_03a" Name="desc_buff_zym833_boss_03a_1" script="Buffer" LifeTime="1000" Buff_Main="buff_zym833_boss_03a" Buff_Display="buff_zym833_boss_03a"/>
+	<Property ID="buff_zym834_02" Name="desc_buff_zym834_02_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_zym834_02" Buff_Display="buff_mon_shu_0028a_02"/>
+	<Property ID="buff_zym834_02a" Name="desc_buff_zym834_02a_1" script="Buffer" LifeTime="9999" Buff_Main="buff_zym834_02a" Buff_Display="buff_mon_shu_0028a_03"/>
+	<Property ID="buff_zym834_boss_03" Name="desc_buff_zym834_boss_03_1" script="Buffer" LifeTime="15000" Buff_Main="buff_zym834_boss_03" Buff_Display="buff_zym834_boss_03"/>
+	<Property ID="buff_zym834_boss_04" Name="desc_buff_zym834_boss_04_1" script="Buffer" LifeTime="20000" Buff_Main="buff_zym834_boss_04" Buff_Display="buff_zym834_boss_04"/>
+	<Property ID="buff_zym836_boss_02" Name="desc_buff_zym836_boss_02_1" script="Buffer" LifeTime="12000" Buff_Main="buff_zym836_boss_02" Buff_Display="batibuff"/>
+	<Property ID="buff_mon_ani_0014_01" Name="desc_buff_mon_ani_0014_01_1" script="Buffer" LifeTime="8000" Buff_Main="buff_mon_ani_0014_01" Buff_Display="buff_mon_ani_0014_01"/>
+	<Property ID="buff_mon_ani_0014_02" Name="desc_buff_mon_ani_0014_02_1" script="Buffer" LifeTime="8000" Buff_Main="buff_mon_ani_0014_02" Buff_Display="buff_mon_ani_0014_02"/>
+	<Property ID="buff_mon_ani_0014_03" Name="desc_buff_mon_ani_0014_03_1" script="Buffer" LifeTime="9999999" Buff_Main="buff_mon_ani_0014_03" Buff_Display="buff_mon_ani_0014_03"/>
+	<Property ID="buff_mon_ani_0014_04" Name="desc_buff_mon_ani_0014_04_1" script="Buffer" LifeTime="999999" Buff_Main="buff_mon_ani_0014_04" Buff_Display="buff_mon_ani_0014_04"/>
+	<Property ID="buff_mon_ani_0014_01a" Name="desc_buff_mon_ani_0014_01a_1" script="Buffer" LifeTime="1000" Buff_Main="buff_mon_ani_0014_01a" Buff_Display="buff_mon_ani_0014_01a"/>
+	<Property ID="buff_mon_shu_0028a_02" Name="desc_buff_mon_shu_0028a_02_1" script="Buffer" LifeTime="9999999" Buff_Main="buff_mon_shu_0028a_02" Buff_Display="buff_mon_shu_0028a_02"/>
+	<Property ID="buff_mon_shu_0028a_03" Name="desc_buff_mon_shu_0028a_03_1" script="Buffer" LifeTime="9999999" Buff_Main="buff_mon_shu_0028a_03" Buff_Display="buff_mon_shu_0028a_03"/>
+	<Property ID="buff_mon_shu_0028a_04" Name="desc_buff_mon_shu_0028a_04_1" script="Buffer" LifeTime="9999999" Buff_Main="buff_mon_shu_0028a_04" Buff_Display="buff_mon_shu_0028a_04"/>
+	<Property ID="buff_mon_shu_0028a_06" Name="desc_buff_mon_shu_0028a_06_1" script="Buffer" LifeTime="10000" Buff_Main="buff_mon_shu_0028a_06" Buff_Display="buff_mon_shu_0028a_06"/>
+	<Property ID="buff_mon_shu_0028a_07" Name="desc_buff_mon_shu_0028a_07_1" script="Buffer" LifeTime="5000" Buff_Main="buff_mon_shu_0028a_07" Buff_Display="buff_mon_shu_0028a_07"/>
+	<Property ID="buff_mon_shu_0028a_08" Name="desc_buff_mon_shu_0028a_08_1" script="Buffer" LifeTime="5000" Buff_Main="buff_mon_shu_0028a_08" Buff_Display="buff_mon_shu_0028a_08"/>
+	<Property ID="buff_mon_shu_0028a_07a" Name="desc_buff_mon_shu_0028a_07a_1" script="Buffer" LifeTime="3000" Buff_Main="buff_mon_shu_0028a_07a" Buff_Display="buff_mon_shu_0028a_07a"/>
+	<Property ID="buff_mon_shu_0028a_09" Name="desc_buff_mon_shu_0028a_09_1" script="Buffer" LifeTime="2000" Buff_Main="buff_mon_shu_0028a_09" Buff_Display="buff_mon_shu_0028a_09"/>
+	<Property ID="buff_fanshang_002" Name="desc_buff_fanshang_001_1" script="Buffer" LifeTime="4000" Buff_Main="buff_fanshang_002" Buff_Display="buff_fanshang_001"/>
+	<Property ID="buff_pet" Name="desc_buff_pet_1" script="Buffer" LifeTime="9999999" Buff_Main="buff_pet" Buff_Display="batibuff"/>
+	<Property ID="buff_pet_01" Name="desc_buff_pet_01_1" script="Buffer" LifeTime="10000" Buff_Main="buff_pet_01" Buff_Display="buff_pet_01"/>
+	<Property ID="halo_zhuoshao_002" Name="desc_halo_zhuoshao_002_1" script="Buffer" LifeTime="10000" Buff_Main="halo_zhuoshao_002" Buff_Display="halo_zhuoshao_002"/>
+	<Property ID="buff_zhuoshao_002" Name="desc_buff_zhuoshao_002_1" script="Buffer" LifeTime="2000" Buff_Main="buff_zhuoshao_002" Buff_Display="buff_zhuoshao_002"/>
+	<Property ID="buff_ReduceHarm_99" Name="desc_buff_ReduceHarm_99_1" script="Buffer" LifeTime="9999999999" Buff_Main="buff_ReduceHarm_99" Buff_Display="batibuff"/>
+	<Property ID="buff_lastblood_01" Name="desc_buff_lastblood_01_1" script="Buffer" LifeTime="1000" Buff_Main="buff_lastblood_01" Buff_Display="buff_lastblood_01"/>
+	<Property ID="buff_lastblood_02" Name="desc_buff_lastblood_02_1" script="Buffer" LifeTime="1000" Buff_Main="buff_lastblood_02" Buff_Display="buff_lastblood_01"/>
+	<Property ID="buff_lastblood_03" Name="desc_buff_lastblood_03_1" script="Buffer" LifeTime="1000" Buff_Main="buff_lastblood_03" Buff_Display="buff_lastblood_01"/>
+	<Property ID="buff_lastblood_04" Name="desc_buff_lastblood_04_1" script="Buffer" LifeTime="1000" Buff_Main="buff_lastblood_04" Buff_Display="buff_lastblood_01"/>
+	<Property ID="buff_lastblood_05" Name="desc_buff_lastblood_05_1" script="Buffer" LifeTime="1000" Buff_Main="buff_lastblood_05" Buff_Display="buff_lastblood_01"/>
+	<Property ID="buff_lastblood_06" Name="desc_buff_lastblood_06_1" script="Buffer" LifeTime="1000" Buff_Main="buff_lastblood_06" Buff_Display="buff_lastblood_01"/>
+	<Property ID="buff_lastblood_07" Name="desc_buff_lastblood_07_1" script="Buffer" LifeTime="1000" Buff_Main="buff_lastblood_07" Buff_Display="buff_lastblood_01"/>
+	<Property ID="buff_lastblood_08" Name="desc_buff_lastblood_08_1" script="Buffer" LifeTime="1000" Buff_Main="buff_lastblood_08" Buff_Display="buff_lastblood_01"/>
+	<Property ID="buff_lastblood_09" Name="desc_buff_lastblood_09_1" script="Buffer" LifeTime="1000" Buff_Main="buff_lastblood_09" Buff_Display="buff_lastblood_01"/>
+	<Property ID="buff_lastblood_10" Name="desc_buff_lastblood_10_1" script="Buffer" LifeTime="1000" Buff_Main="buff_lastblood_10" Buff_Display="buff_lastblood_01"/>
+	<Property ID="buff_clean_1" Name="desc_buff_clean_1_1" script="Buffer" LifeTime="1000" Buff_Main="buff_clean_1" Buff_Display="buff_lastblood_01"/>
+	<Property ID="saima_bingdong_01" Name="desc_buff_tongyong_sk06_1" script="Buffer" LifeTime="3000" Buff_Main="buff_tongyong_sk06" Buff_Display="buff_tongyong_sk06"/>
+	<Property ID="control_speeddown_saima" Name="desc_control_speeddown_009f_1" script="Buffer" LifeTime="3000" Buff_Main="speeddown_009f" Buff_Display="speeddown_001f"/>
+	<Property ID="saima_jiasu_01" Name="desc_copy_buff_saima_cd_01_1" script="Buffer" LifeTime="7000" Buff_Main="buff_saima_cd_01" Buff_Display="buff_jiasu_1"/>
+	<Property ID="saima_buff_jiasu_1" Name="desc_saima_buff_jiasu_1_1" script="Buffer" LifeTime="5000" Buff_Main="buff_jiasu_1" Buff_Display="buff_jiasu_1"/>
+	<Property ID="saima_buff_jiasu_2" Name="desc_buff_jiasu_1_1" script="Buffer" LifeTime="3000" Buff_Main="buff_jiasu_1" Buff_Display="buff_jiasu_1"/>
+	<Property ID="buff_com_flags_1" Name="desc_buff_com_flags_1_1" script="Buffer" LifeTime="60000000" Buff_Main="buff_com_flags_1" Buff_Display="buff_com_flags_1"/>
+	<Property ID="buff_com_flags_2" Name="desc_buff_com_flags_2_1" script="Buffer" LifeTime="60000000" Buff_Main="buff_com_flags_2" Buff_Display="buff_com_flags_2"/>
+	<Property ID="buff_zhenying_bianshen1" Name="desc_buff_zhenying_bianshen1_1" script="Buffer" LifeTime="180000" Buff_Main="buff_zhenying_bianshen1" Buff_Display="buff_zhenying_bianshen1"/>
+	<Property ID="buff_zhenying_bianshen2" Name="desc_buff_zhenying_bianshen2_1" script="Buffer" LifeTime="180000" Buff_Main="buff_zhenying_bianshen2" Buff_Display="buff_zhenying_bianshen1"/>
+	<Property ID="buff_jiasu_2" Name="desc_buff_jiasu_2_1" script="Buffer" LifeTime="10000" Buff_Main="buff_jiasu_2" Buff_Display="buff_jiasu_2"/>
+	<Property ID="buff_yewaiwudi_skill_2" Name="desc_buff_yewaiwudi_skill_2_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_yewaiwudi_skill_2" Buff_Display="buff_yewaiwudi_skill_1a"/>
+	<Property ID="buff_attackup_df" Name="desc_buff_attackup_df_1" script="Buffer" LifeTime="600000" Buff_Main="buff_attackup_df" Buff_Display="buff_attackup_ws"/>
+	<Property ID="buff_attackup_ws" Name="desc_buff_attackup_ws_1" script="Buffer" LifeTime="180000" Buff_Main="buff_attackup_ws" Buff_Display="buff_attackup_ws"/>
+	<Property ID="buff_zhenying_bianshen0a" Name="desc_buff_zhenying_bianshen0a_1" script="Buffer" LifeTime="100" Buff_Main="buff_zhenying_bianshen0a" Buff_Display="buff_zhenying_bianshen0a"/>
+	<Property ID="buff_zhenying_bianshen0b" Name="desc_buff_zhenying_bianshen0b_1" script="Buffer" LifeTime="100" Buff_Main="buff_zhenying_bianshen0b" Buff_Display="buff_zhenying_bianshen0a"/>
+	<Property ID="buff_zym851_boss_01" Name="desc_buff_zym851_boss_01_1" script="Buffer" Buff_Main="buff_zym851_boss_1" Buff_Display="buff_zym851_boss_1"/>
+	<Property ID="buff_yuxue2_bianshen0a" Name="desc_buff_yuxue2_bianshen0a_1" script="Buffer" LifeTime="100" Buff_Main="buff_yuxue2_bianshen0a" Buff_Display="buff_zhenying_bianshen0a"/>
+	<Property ID="buff_yuxue2_bianshen0b" Name="desc_buff_yuxue2_bianshen0b_1" script="Buffer" LifeTime="100" Buff_Main="buff_yuxue2_bianshen0b" Buff_Display="buff_zhenying_bianshen0a"/>
+	<Property ID="buff_yuxue2_bianshen1" Name="desc_buff_yuxue2_bianshen1_1" script="Buffer" LifeTime="180000" Buff_Main="buff_yuxue2_bianshen1" Buff_Display="buff_zhenying_bianshen1"/>
+	<Property ID="buff_yuxue2_bianshen2" Name="desc_buff_yuxue2_bianshen2_1" script="Buffer" LifeTime="180000" Buff_Main="buff_yuxue2_bianshen2" Buff_Display="buff_zhenying_bianshen1"/>
+	<Property ID="buff_zym858_boss_02" Name="desc_buff_zym858_boss_02_1" script="Buffer" LifeTime="60000" Buff_Main="buff_zym858_boss_2" Buff_Display="buff_zym858_boss_2"/>
+	<Property ID="buff_zym858_boss_02a" Name="desc_buff_zym858_boss_02a_1" script="Buffer" LifeTime="1000" Buff_Main="buff_zym858_boss_2a" Buff_Display="buff_zym858_boss_2a"/>
+	<Property ID="buff_zym858_boss_02b_01" Name="desc_buff_zym858_boss_02b_01_1" script="Buffer" LifeTime="1500" Buff_Main="buff_zym858_boss_2b_1" Buff_Display="buff_zym858_boss_2b"/>
+	<Property ID="buff_zym858_boss_02b_02" Name="desc_buff_zym858_boss_02b_02_1" script="Buffer" LifeTime="1500" Buff_Main="buff_zym858_boss_2b_2" Buff_Display="buff_zym858_boss_2b"/>
+	<Property ID="buff_zym858_boss_02b_03" Name="desc_buff_zym858_boss_02b_03_1" script="Buffer" LifeTime="1500" Buff_Main="buff_zym858_boss_2b_3" Buff_Display="buff_zym858_boss_2b"/>
+	<Property ID="buff_zuoqi_sea" Name="desc_buff_zuoqi_sea_1" Description="desc_buff_zuoqi_sea_2" script="Buffer" LifeTime="999999999" Buff_Main="buff_zuoqi_sea" Buff_Display="buff_zhenying_bianshen1"/>
+	<Property ID="buff_zym864_boss_01" Name="desc_buff_zym864_boss_01_1" script="Buffer" LifeTime="8000" Buff_Main="buff_zym864_boss_01" Buff_Display="buff_zym864_boss_01"/>
+	<Property ID="buff_zym865_boss_01" Name="desc_buff_zym865_boss_01_1" script="Buffer" LifeTime="5000" Buff_Main="buff_zym865_boss_01" Buff_Display="buff_zym865_boss_01"/>
+	<Property ID="buff_zym869_boss_01" Name="desc_buff_zym869_boss_01_1" script="Buffer" LifeTime="3500" Buff_Main="buff_zym869_boss_01" Buff_Display="buff_zym869_boss_01"/>
+	<Property ID="digong_yaoji_1" Name="desc_digong_yaoji_1_1" script="Buffer" LifeTime="300" Buff_Main="digong_yaoji_1" Buff_Display="buff_lastblood_01"/>
+	<Property ID="digong_yaoji_2" Name="desc_digong_yaoji_2_1" script="Buffer" LifeTime="10000" Buff_Main="digong_yaoji_2" Buff_Display="buff_lastblood_01"/>
+	<Property ID="digong_yaoji_3" Name="desc_digong_yaoji_3_1" script="Buffer" LifeTime="10000" Buff_Main="digong_yaoji_3" Buff_Display="buff_lastblood_01"/>
+	<Property ID="buff_gongji_100" Name="desc_buff_gongji_100_1" script="Buffer" LifeTime="20000" Buff_Main="buff_gongji_100" Buff_Display="buff_gongji_100"/>
+	<Property ID="buff_boss_ani_0002_05" Name="desc_buff_boss_ani_0002_05_1" script="Buffer" LifeTime="15000" Buff_Main="buff_boss_ani_0002_05" Buff_Display="buff_boss_ani_0002_05"/>
+	<Property ID="digong_bati" Name="desc_digong_bati_1" script="Buffer" LifeTime="-1" Buff_Main="buff_digong_bati" Buff_Display="batibuff"/>
+	<Property ID="debuff_daofeng_jingu" Name="desc_debuff_daofeng_jingu_1" script="Buffer" LifeTime="5000" Buff_Main="debuff_daofeng_jingu" Buff_Display="debuff_daofeng_jingu"/>
+	<Property ID="debuff_chuxue" Name="desc_debuff_chuxue_1" script="Buffer" LifeTime="10000" Buff_Main="debuff_du" Buff_Display="debuff_chuxue"/>
+	<Property ID="digong_buff_at" Name="desc_battle_3v3_buff_1b_1" script="Buffer" LifeTime="60000" Buff_Main="digong_buff_at" Buff_Display="battle_3v3_buff_1b"/>
+	<Property ID="digong_buff_js" Name="desc_battle_3v3_buff_2b_1" script="Buffer" LifeTime="60000" Buff_Main="digong_buff_js" Buff_Display="battle_3v3_buff_2b"/>
+	<Property ID="digong_buff_zl" Name="desc_battle_3v3_buff_3b_1" script="Buffer" LifeTime="60000" Buff_Main="digong_buff_zl" Buff_Display="battle_3v3_buff_3b"/>
+	<Property ID="buff_digong_bianshen_1" Name="desc_buff_digong_bianshen_1_1" script="Buffer" LifeTime="100" Buff_Main="buff_digong_bianshen_1" Buff_Display="buff_zhenying_bianshen0a"/>
+	<Property ID="buff_digong_bianshen_2" Name="desc_buff_digong_bianshen_2_1" script="Buffer" LifeTime="100" Buff_Main="buff_digong_bianshen_2" Buff_Display="buff_zhenying_bianshen0a"/>
+	<Property ID="buff_digong_bianshen_3" Name="desc_buff_digong_bianshen_3_1" script="Buffer" LifeTime="100" Buff_Main="buff_digong_bianshen_3" Buff_Display="buff_zhenying_bianshen0a"/>
+	<Property ID="buff_digong_bianshen_4" Name="desc_buff_digong_bianshen_4_1" script="Buffer" LifeTime="100" Buff_Main="buff_digong_bianshen_4" Buff_Display="buff_zhenying_bianshen0a"/>
+	<Property ID="buff_digong_bianshen_1a" Name="desc_buff_digong_bianshen_1a_1" script="Buffer" LifeTime="300000" Buff_Main="buff_digong_bianshen_1a" Buff_Display="buff_zhenying_bianshen1"/>
+	<Property ID="buff_digong_bianshen_2a" Name="desc_buff_digong_bianshen_2a_1" script="Buffer" LifeTime="300000" Buff_Main="buff_digong_bianshen_2a" Buff_Display="buff_zhenying_bianshen1"/>
+	<Property ID="buff_digong_bianshen_3a" Name="desc_buff_digong_bianshen_3a_1" script="Buffer" LifeTime="300000" Buff_Main="buff_digong_bianshen_3a" Buff_Display="buff_zhenying_bianshen1"/>
+	<Property ID="buff_digong_bianshen_4a" Name="desc_buff_digong_bianshen_4a_1" script="Buffer" LifeTime="300000" Buff_Main="buff_digong_bianshen_4a" Buff_Display="buff_zhenying_bianshen1"/>
+	<Property ID="buff_miss_flage" Name="desc_buff_miss_flage_1" script="Buffer" LifeTime="9999999" Buff_Main="buff_miss_flage" Buff_Display="batibuff"/>
+	<Property ID="buff_miss_flage_01" Name="desc_buff_miss_flage_01_1" script="Buffer" LifeTime="1200" Buff_Main="buff_miss_flage_01" Buff_Display="batibuff"/>
+	<Property ID="buff_addHurt_01" Name="desc_buff_addHurt_01_1" Description="desc_buff_addHurt_01_2" script="Buffer" LifeTime="5000" Buff_Main="buff_addHurt_01" Buff_Display="buff_display_addHurt_01"/>
+	<Property ID="buff_Shaojiepao_01" Name="desc_buff_Shaojiepao_01_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_Shaojiepao_01"/>
+	<Property ID="buff_Shaojiepao_02" Name="desc_buff_Shaojiepao_02_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_Shaojiepao_02"/>
+	<Property ID="buff_Shaojiepao_03" Name="desc_buff_Shaojiepao_03_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_Shaojiepao_03"/>
+	<Property ID="buff_Shaojiepao_04" Name="desc_buff_Shaojiepao_04_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_Shaojiepao_04"/>
+	<Property ID="buff_Shaojiepao_05" Name="desc_buff_Shaojiepao_05_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_Shaojiepao_05"/>
+	<Property ID="buff_Shaojiepao_06" Name="desc_buff_Shaojiepao_06_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_Shaojiepao_06"/>
+	<Property ID="buff_ShaoJP_01" Name="desc_buff_ShaoJP_01_1" script="Buffer" LifeTime="2000" Buff_Main="buff_ShaoJP_01" Buff_Display="buff_ShaoJP_01"/>
+	<Property ID="buff_ShaoJP_02" Name="desc_buff_ShaoJP_02_1" script="Buffer" LifeTime="2000" Buff_Main="buff_ShaoJP_02" Buff_Display="buff_ShaoJP_01"/>
+	<Property ID="buff_ShaoJP_03" Name="desc_buff_ShaoJP_03_1" script="Buffer" LifeTime="2000" Buff_Main="buff_ShaoJP_03" Buff_Display="buff_ShaoJP_01"/>
+	<Property ID="buff_ShaoJP_04" Name="desc_buff_ShaoJP_04_1" script="Buffer" LifeTime="2000" Buff_Main="buff_ShaoJP_04" Buff_Display="buff_ShaoJP_01"/>
+	<Property ID="buff_ShaoJP_05" Name="desc_buff_ShaoJP_05_1" script="Buffer" LifeTime="2000" Buff_Main="buff_ShaoJP_05" Buff_Display="buff_ShaoJP_01"/>
+	<Property ID="buff_ShaoJP_06" Name="desc_buff_ShaoJP_06_1" script="Buffer" LifeTime="2000" Buff_Main="buff_ShaoJP_06" Buff_Display="buff_ShaoJP_01"/>
+	<Property ID="buff_ChuanSong_01" Name="desc_buff_ChuanSong_01_1" script="Buffer" LifeTime="2000" Buff_Main="buff_ChuanSong_01" Buff_Display="batibuff"/>
+	<Property ID="buff_zym887_boss_03" Name="desc_buff_zym887_boss_03_1" script="Buffer" LifeTime="7000" Buff_Main="buff_zym887_boss_03" Buff_Display="buff_zym887_boss_03"/>
+	<Property ID="buff_zym887_boss_05" Name="desc_buff_zym887_boss_05_1" script="Buffer" LeaveHaloAreaNoDel="0" LifeTime="20000" Buff_Main="buff_zym887_boss_05" Buff_Display="buff_mon_shu_0028a_03"/>
+	<Property ID="buff_Treat_3s" Name="desc_buff_Treat_3s_1" Description="desc_buff_Treat_3s_2" script="Buffer" LifeTime="3000" Buff_Main="buff_Treat_3s" Buff_Display="buff_Treat_01"/>
+	<Property ID="buff_digong_xueruo" Name="desc_buff_digong_xueruo_1" script="Buffer" LifeTime="1999999999" Buff_Main="buff_digong_xueruo" Buff_Display="batibuff"/>
+	<Property ID="buff_zym887_boss_05_gh" Name="desc_buff_zym887_boss_05_gh_1" script="Buffer" LeaveHaloAreaNoDel="0" LifeTime="99999999" Buff_Main="buff_zym887_boss_05_gh"/>
+	<Property ID="buff_zhanchang_xueruo" Name="desc_buff_zhanchang_xueruo_1" script="Buffer" LifeTime="1999999999" Buff_Main="buff_zhanchang_xueruo" Buff_Display="batibuff"/>
+	<Property ID="buff_wushuang_xueruo_yys" Name="desc_buff_wushuang_xueruo_yys_1" script="Buffer" LifeTime="1999999999" Buff_Main="buff_wushuang_xueruo_yys" Buff_Display="batibuff"/>
+	<Property ID="buff_invincible_1800s" Name="desc_buff_invincible_1800s_1" script="Buffer" Buff_Main="buff_invincible_1800s" Buff_Display="batibuff"/>
+	<Property ID="buff_jidijiaxue_l" Name="desc_buff_jidijiaxue_l_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_jidijiaxue" Buff_Display="buff_jidijiaxue"/>
+	<Property ID="buff_jidijiaxue_h" Name="desc_buff_jidijiaxue_h_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_jidijiaxue" Buff_Display="buff_jidijiaxue"/>
+	<Property ID="buff_jidijiasu_l" Name="desc_buff_jidijiasu_l_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_jidijiasu" Buff_Display="buff_jiasu_1"/>
+	<Property ID="buff_jidijiasu_h" Name="desc_buff_jidijiasu_h_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_jidijiasu" Buff_Display="buff_jiasu_1"/>
+	<Property ID="buff_jididiaoxue_l" Name="desc_buff_jididiaoxue_l_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_jididiaoxue" Buff_Display="buff_jididiaoxue"/>
+	<Property ID="buff_jididiaoxue_h" Name="desc_buff_jididiaoxue_h_1" script="Buffer" LifeTime="99999999" Buff_Main="buff_jididiaoxue" Buff_Display="buff_jididiaoxue"/>
+</Object>
+
+

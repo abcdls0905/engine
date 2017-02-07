@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='gb2312' ?>
+<object>
+	<records>
+		<record name="be_damage_share_rec" cols="2" maxrows="32" save="false" public="true" private="true" realtime="true" desc="伤害被分担表">
+			<column type="object" desc="分担给的对象id"/>
+			<column type="object" desc="分担伤害buffer的persistid"/>
+		</record>
+		<record name="damage_share_rec" cols="2" maxrows="32" save="false" public="true" private="true" realtime="true" desc="伤害分担表">
+			<column type="object" desc="替谁分担的对象id"/>
+			<column type="object" desc="分担伤害buffer的persistid"/>
+		</record>
+	</records>
+</object>
+

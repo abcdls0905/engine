@@ -1,0 +1,66 @@
+
+//这里是用于解释一些D3D 和GL之间库函数差异函数的具体实现方法
+   
+funtion
+
+hlsl  to glsl              
+saturate(x)
+==>
+clamp(x,0.0,1.0)
+
+lit(n_dot_l, n_dot_h, m)
+==>
+mediump vec4 mylit(in mediump float NdotL,in mediump float NdotH,in mediump float m)
+{
+ mediump float ambient = 1.0;
+ mediump float diffuse = max(NdotL,0.0);
+ mediump float specular = step(0.0,NdotL)*max(NdotH*m,0.0);
+ return vec4(ambient,diffuse,specular,1.0);
+}
+
+
+lerp(x, y, s)
+==>
+x*(1-s) + y*s 
+or
+mix(x,y,s)
+
+
+clip(x)
+==>
+if(x<0.0)
+{
+  discard;
+}
+
+
+
+//关于shader的一点经验分享
+
+1>
+颜色使用 lowp 精度
+UV  使用 mediump 精度
+只有个别深度的地方使用mediump 一般使用mediump足够了
+
+
+
+
+遇到的一些坑爹问题总结
+
+MTK 芯片SGX 544MP2 芯片
+目前发现
+在VS中
+自身+ 操作有问题
+比如说
+   mediump vec3 tcd = pos_in_world.xyz;
+   tcd += c_vReferPos.xyz;
+应该修改为
+   mediump vec3 tcd = pos_in_world.xyz;
+   tcd = tcd + c_vReferPos.xyz;
+   
+   
+关于部分机器优化的参考值
+
+在T3芯片上，
+PS平均8个cycle一下
+   

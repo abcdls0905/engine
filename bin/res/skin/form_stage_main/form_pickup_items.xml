@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="form_pickup_items" entity="Form" script="" init="">
+		<prop Transparent="true" ClipChildren="false" ShowGrid="true" ClipChildren="false" Left="25" Top="25" Width="1024" Height="768" BackColor="0,255,255,255" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+		<control name="groupbox_reward_tmp" entity="GroupBox" script="" init="">
+			<prop Fixed="false" Transparent="true" ClipChildren="false" Left="308" Top="100" Width="282" Height="100" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Visible="false" AutoSize="true" BackImage="gui/tp2_battle/scene_select/bg_icon.png"/>
+			<control name="lbl_1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="15" Top="10" Width="82" Height="82" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="Center" BackImage="gui/tp2_common/window/item.png"/>
+			</control>
+			<control name="lbl_name" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="113" Top="38" Width="94" Height="25" ForeColor="255,204,255,204" ShadowColor="0,0,0,0" Text="items_name" Font="WRYH24_O_BLACK"/>
+			</control>
+			<control name="imagegrid_reward" entity="Label" script="" init="">
+				<prop Align="Center" Transparent="false" ClickEvent="true" RefCursor="WIN_HELP" Left="18" Top="12" Width="76" Height="76" ForeColor="0,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+			</control>
+			<control name="lbl_colorLevel" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="16" Top="11" Width="80" Height="80" ForeColor="255,200,200,200" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+			</control>
+			<control name="lbl_sui" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="9" Top="20" Width="94" Height="27" ForeColor="255,200,200,200" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+			</control>
+			<control name="lbl_wuhun" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="9" Top="21" Width="94" Height="50" ForeColor="255,200,200,200" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+			</control>
+			<control name="lbl_num" entity="Label" script="" init="">
+				<prop Align="Right" RefCursor="WIN_HELP" Left="24" Top="67" Width="70" Height="22" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="x2" Font="WRYH16_O_BLACK"/>
+			</control>
+		</control>
+	</control>
+</form>
+

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop IsGC="true" Width="1024" Height="720" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+        <control name="grp_max" entity="GroupBox" script="" init="">
+            <prop Width="1024" Height="720" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" BackImage="gui\use\function\function_vein_096.png" />
+            <control name="grp_fore" entity="GroupBox" script="" init="">
+                <prop Width="1024" Height="718" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" DrawMode="FitWindow" />
+                <control name="sb_show" entity="SceneBox" script="" init="">
+                    <prop Left="205" Top="149" Width="638" Height="390" BackColor="0,255,255,255" ShadowColor="0,0,0,0" />
+                </control>
+                <control name="lbl_shine0" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="-259" Top="-243" Width="222" Height="222" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Right" DrawMode="FitWindow" BackImage="gui\main\tavern\quanquan_donghua.png" />
+                </control>
+                <control name="lbl_shine1" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="-211" Top="-107" Width="102" Height="102" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Right" DrawMode="FitWindow" BackImage="gui\main\tavern\quanquan_donghua.png" />
+                </control>
+                <control name="lbl_shine2" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="69" Top="-211" Width="214" Height="216" ShadowColor="0,0,0,0" VAnchor="Bottom" DrawMode="FitWindow" BackImage="gui\main\tavern\quanquan_donghua.png" />
+                </control>
+                <control name="lbl_shine3" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="-315" Top="29" Width="182" Height="174" ShadowColor="0,0,0,0" HAnchor="Right" DrawMode="FitWindow" BackImage="gui\main\tavern\quanquan_donghua.png" />
+                </control>
+                <control name="lbl_shine4" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="221" Top="-59" Width="126" Height="126" ShadowColor="0,0,0,0" VAnchor="Center" DrawMode="FitWindow" BackImage="gui\main\tavern\quanquan_donghua.png" />
+                </control>
+                <control name="lbl_shine5" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="21" Top="37" Width="214" Height="216" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\main\tavern\quanquan_donghua.png" />
+                </control>
+                <control name="lbl_shine6" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="-19" Top="-35" Width="142" Height="150" ShadowColor="0,0,0,0" VAnchor="Center" DrawMode="FitWindow" BackImage="gui\main\tavern\quanquan_donghua.png" />
+                </control>
+                <control name="lbl_shine7" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="301" Top="85" Width="86" Height="86" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\main\tavern\quanquan_donghua.png" />
+                </control>
+                <control name="lbl_shine8" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="621" Top="509" Width="102" Height="102" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\main\tavern\quanquan_donghua.png" />
+                </control>
+                <control name="lbl_title" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="-283" Top="53" Width="563" Height="65" ShadowColor="0,0,0,0" HAnchor="Center" AutoSize="true" BackImage="gui\main\tavern\tishizi.png" />
+                </control>
+                <control name="lbl_title_practice" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="-283" Top="53" Width="558" Height="62" ForeColor="255,255,0,0" ShadowColor="0,0,0,0" HAnchor="Center" Text="@ui_pet_practice_open_successing" Font="WRYH30_O" AutoSize="true" />
+                </control>
+                <control name="lbl_silk" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="-243" Top="-217" Width="484" Height="213" ForeColor="255,51,205,255" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Center" Font="WRYH30_S" AutoSize="true" BackImage="gui\main\tavern\wushenzhanshi_dikuang.png" />
+                </control>
+                <control name="btn_sure" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\tavern\quedinganniu_1.png" PushImage="gui\main\tavern\quedinganniu_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-171" Top="-89" Width="346" Height="76" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Center" Font="WRYH26" TabIndex="100" TabStop="true" AutoSize="true" DrawMode="ExpandH" ClickSound="ui_close" />
+                </control>
+                <control name="lbl_name" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="-155" Top="-161" Width="313" Height="52" ForeColor="255,51,205,255" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Center" Text="火龙" Font="WRYH30" DrawMode="ExpandH" BackImage="gui\main\tavern\wushenmingzi_-di.png" />
+                </control>
+            </control>
+        </control>
+    </control>
+</form>

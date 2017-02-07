@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!--耐力系统-->
+<object>
+	<properties>
+		<property name="StayPower" type="dword" public="false" private="true" save="true" realtime="true" desc="StayPower值"/>		
+		<property name="MaxStayPower" type="dword" public="false" private="true" save="true" realtime="true" desc="最大StayPower值"/>		
+		
+		<property name="StayPowerEx" type="dword" public="false" private="true" save="true" realtime="true"   desc="PhyPower溢出部分"/>		
+		<property name="MaxStayPowerEx" type="dword" public="false" private="true" save="true"  realtime="true"  desc="PhyPower溢出最大容量"/>		
+		
+		<!--property name="MaxAPAdd" type="dword" public="false" private="true" save="true" desc="额外活力值"/-->		
+		<property name="RestoreStayPowerTime" type="int64" public="false" private="false" save="true"  desc="记录回复StayPower的时间"/>	
+		<property name="RestoreStayPowerMoment" type="int64" public="false" private="false" save="false" desc="记录回复StayPower的时刻"/>
+		<property name="SpecialRestoreStayPowerTime" type="string" public="false" private="false" save="true" desc="记录StayPower特殊回复时间"/>		
+	</properties>
+</object>

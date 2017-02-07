@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Width="646" Height="470" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" />
+        <control name="groupbox_role_info" entity="GroupBox" script="" init="">
+            <prop ClipChildren="true" Left="-152" Top="-66" Width="304" Height="132" LineColor="0,0,0,0" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Text="groupbox_1" AutoSize="true" DrawMode="FitWindow" BackImage="gui\login\bg_xjs_namelv.png" />
+            <control name="lbl_name" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="-73" Top="-41" Width="150" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Text="克里斯丁" Font="WRYH30_O" DrawMode="FitWindow" />
+            </control>
+            <control name="lbl_grade" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="-73" Top="7" Width="150" Height="22" ForeColor="255,186,186,189" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" DataSource="@Player_none" Font="WRYH20_O_BLACK" DrawMode="FitWindow" />
+            </control>
+            <control name="lbl_lv" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="-52" Top="7" Width="158" Height="22" ForeColor="255,253,217,3" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Text="Lv" Font="WRYH24_O_BLACK" DrawMode="FitWindow" />
+            </control>
+        </control>
+        <control name="group_create_flag" entity="GroupBox" script="" init="">
+            <prop Left="269" Top="181" Width="100" Height="104" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\login\icon_xjs_cj.png" />
+        </control>
+    </control>
+</form>

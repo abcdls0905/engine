@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="gb2312"?>
+
+<!--
+游戏中播放的漫画配置，漫画用于替代过场动画
+实现思想是由程序控制控件的位移、缩放、透明渐变、声音等
+
+一个漫画体系（comic）由多幕（act）动画组成，
+幕的概念相当于电影中的一个场景，该场景由窗口（form）提供，包含多个需要显示的漫画部件（控件）
+一幕由多帧（frame）组成，帧需要制定在某个时刻播放（Frame ID = "2000" 意思是第2000毫秒开始播放）
+一帧内有多个精灵（spirit），精灵的概念来自2D游戏，意思是场景中的一个物件，在这里表示窗口上的一个控件
+一帧内的所有精灵同时播放其界面效果（effect）
+
+界面效果在gui_effect.xml及gui_sub_effect.xml中配置
+
+这种没有精灵的空帧，只是为了占位，意思是此幕到此（第4000毫秒）才算结束
+<Frame ID = "4000" desc="第10000 ms"/>
+
+comic和act都可以设置音乐，当act的音乐播放的时候会屏蔽comic的音乐直到本act结束。
+后一个act的音乐会屏蔽前一个act的。
+-->
+
+<Root>
+	<Comic ID="intro_movie" music="sound/backmusic/music_forest_001.ogg" stage_color="255,0,0,0" desc="剧情动画">
+		<Act ID = "1" form="skin/form_comic/form_comic_1_1.xml" music="" desc="第1幕" >
+			<Frame ID = "500"  desc="第0 ms">
+				<Spirit ID = "lbl_left" effect="comic_move_111" />
+			</Frame>
+			
+			<Frame ID = "2000" desc="第3000 ms">
+				<Spirit ID = "lbl_top" effect="comic_move_121" />
+			</Frame>
+			
+			<Frame ID = "3000" desc="第6000 ms">
+				<Spirit ID = "lbl_bottom" effect="comic_move_131" />
+			</Frame>
+			
+			<Frame ID = "4000" desc="第10000 ms"/>
+		</Act>
+		
+		<Act ID = "2" form="skin/form_comic/form_comic_1_2.xml" music="sound/backmusic/music_desert_001.ogg" desc="第2幕" >
+			<Frame ID = "0"  desc="第0 ms">
+				<Spirit ID = "lbl_bg" effect="comic_splash_fade_in" />
+			</Frame>
+			<Frame ID = "4000" desc="第2000 ms" />
+		</Act>
+	</Comic>
+	
+	<Comic ID="cloud_close_movie" music="" stage_color="0,0,0,0" desc="云关闭动画">
+		<Act ID = "1" form="skin/form_comic/form_comic_cloud.xml" music="" desc="第1幕" >
+			<Frame ID = "0"  desc="第0 ms">
+				<Spirit ID = "groupbox_up" effect="cloud_close_movie_grpup_move" />
+				<Spirit ID = "groupbox_down" effect="cloud_close_movie_grpdown_move" />
+			</Frame>			
+			<Frame ID = "600" desc="结束"/>
+		</Act>
+	</Comic>
+	
+	<Comic ID="cloud_open_movie" music="" stage_color="0,0,0,0" desc="云打开动画">
+		<Act ID = "1" form="skin/form_comic/form_comic_cloud.xml" music="" desc="第1幕" >
+			<Frame ID = "0"  desc="第0 ms">
+				<Spirit ID = "groupbox_up" effect="cloud_open_movie_grpup_move" />
+				<Spirit ID = "groupbox_down" effect="cloud_open_movie_grpdown_move" />
+			</Frame>			
+			<Frame ID = "1600" desc="结束"/>
+		</Act>
+	</Comic>
+</Root>	
+	

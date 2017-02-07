@@ -1,0 +1,820 @@
+<!--
+	Index  引导顺序
+	Type	引导类型，有3种(dialog, mask_form, hide_form)，
+			dialog 意思是使用对话方式引导
+			mask_form 使用遮罩窗口引导
+			hide_form 隐藏掉遮罩窗口
+	Form, Control, Event，Params意思是某个窗口的某个控件响应了某个事件时，触发此引导消息。Params是消息参数
+			Form 窗口的文件名， Control 控件名，
+			Event 事件名，Form上有 on_open, on_show, on_hide, on_close等事件
+						  Button上有on_click等
+						  ImageGrid上有on_leftclick_down等，可以参考界面编辑器
+			Params 消息参数，如等级改变消息，参数就是具体等级
+			on_joystick_touch_begin，on_joystick_touch_end是摇杆按下及抬起事件，
+			on_trigger_npc_creator 是触发了刷怪器消息，参数是第几个刷怪器（刷怪器序号相等时触发）
+			on_level_changed 是等级改变消息，参数是等级（大于等于此等级时触发）
+			
+			这些消息不需要配置界面及控件
+			
+			
+	MaskForm, MaskControl, GridIndex 意思是遮罩这个窗口上的这个控件（除此之外全部遮住，不可点击）
+						只有MaskControl为ImageGrid类型时，GridIndex才有效，表示第几个格子（从0开始）
+	DialogID, DialogType 任务系统配置的对话ID、类型
+	
+	每个引导界面都会使用默认的属性及控件，默认配在这里：
+	GuideParams Index="default_mask_form"...
+	
+	如果想要改变、增加属性及子控件，子要在每个引导条目里修改同名的控件及属性即可。
+	
+	Index必须要按照顺序来（从 1 开始）
+	
+	RestoreIndex: 配置在关键帧上（默认为1），表示如果此步骤未引导至此关键帧，则再次登录回到主界面时，
+					从RestoreIndex开始重新引导
+					
+					
+	SrvEvent 服务端事件号，在当前引导步骤，当服务端检测到此事件发生时，会自动设置此引导步骤（防止网络卡，有消息丢失）
+	SrvParam 服务端事件参数，可不配
+-->
+<!-->
+
+// 任务目标类型
+enum QuestCriteriaTypes
+{
+												// 说明			消息参数
+    CRITERIA_TYPE_NONE					= 0,    // 无类型
+
+    CRITERIA_TYPE_KILLNPC				= 1,    // 击杀怪物
+    CRITERIA_TYPE_SCENECLEAR			= 2,    // 通关副本		次数
+    CRITERIA_TYPE_DEPRIVE				= 3,    // 进行夺宝		次数
+    CRITERIA_TYPE_TREASURE				= 4,    // 抽取宝藏		次数
+    CRITERIA_TYPE_PET					= 5,	// 培养武神		提升等级（变化值）
+    CRITERIA_TYPE_UPGRADE				= 6,    // 升级技能		提升等级（变化值）
+    CRITERIA_TYPE_TALENT				= 7,	// 炼化星位		星位个数（变化值）
+    CRITERIA_TYPE_ENHANCE				= 8,    // 强化装备		强化等级（变化值）
+    CRITERIA_TYPE_ARENA					= 9,	// 挑战竞技场	挑战次数
+	CRITERIA_TYPE_USEITEM				= 10,	// 使用物品		id,次数
+	CRITERIA_TYPE_EQUIP					= 11,	// 穿戴橙装	    个数变化（穿+1，脱-1）
+	CRITERIA_TYPE_ENHANCE_TOTAL			= 12,	// 累计强化		uid,强化等级（当前值）
+	CRITERIA_TYPE_EQUIP_UPGRADE_TOTAL	= 13,	// 累计精炼		uid,精炼等级（当前值）
+	CRITERIA_TYPE_PET_COLLECT			= 14,	// 收集武神(紫)	个数变化（获得时+1）
+	CRITERIA_TYPE_PET_LEVEL				= 15,	// 武神等级		uid,武神等级（当前值）
+	CRITERIA_TYPE_PET_TUPO				= 16,	// 武神突破		uid,突破等级（当前值）
+	CRITERIA_TYPE_TATOO					= 17,	// 镶嵌符文		uid,镶嵌个数（当前值）
+	CRITERIA_TYPE_SKILL_LEVEL			= 18,	// 技能等级		configid,技能等级（当前值）
+    CRITERIA_TYPE_TALK					= 19,   // 对话任务     对话id
+    CRITERIA_TYPE_PATHFIND				= 20,   // 寻路任务
+    CRITERIA_TYPE_VIP_DIAMOND			= 21,   // VIP钻石投放
+	CRITERIA_TYPE_TEAM_SCENECLEAR		= 22,   // 组队副本
+	CRITERIA_TYPE_PVP_BATTLEWAR			= 23,   // 实时战场
+    CRITERIA_TYPE_TATOO_UPGRADE         = 24,   // 符文升级
+    CRITERIA_TYPE_SINGLE_BATTLE         = 25,   // 单人战场
+	CRITERIA_TYPE_VIP_DIAMOND_SEASON    = 26,   // 月卡任务
+	CRITERIA_TYPE_VIP_DIAMOND_YEAR      = 27,   // 年卡任务
+
+
+	CRITERIA_TYPE_PET_GOTO_WAR			= 28,	// 宠物上阵
+	CRITERIA_TYPE_QUEST_CANSUBMIT		= 31,	// 任务可提交
+	CRITERIA_TYPE_QUEST_COMPLETE		= 32,   // 任务完成
+	CRITERIA_TYPE_SCENE_COMPLETE		= 33,   // 告诉引导通关副本	副本ID
+
+    CRITERIA_TYPE_TOTAL,                        // 类型总数
+};
+
+<!-->
+<Root>
+	<GuideParams Index="default_mask_form" Type="mask_form" SrvEvent="" SrvParam="" desc="默认参数设置">
+		<prop BackColor="0,0,0,0" MaskForm="" MaskControl="" GridIndex="" MaskEnabled="true"/>
+
+
+		<control Name="btn_exit" Type="Button" Left="1000" Top="0" AutoSize="true" Font="WRYH10" ForeColor="255,255,255,255" Text="退出引导" NormalImage="" PushImage=""/>
+<!-->
+		<control Name="debug_info" Type="MultiTextBox" HAnchor="Right" Left="-200" Top="10" Width="200" Height="200" Font="WRYH20" TextColor="255,255,0,0" ViewRect="0,0,200,200" BackColor="0,0,0,0"/>
+		<control Name="btn_test_prev" Type="Button" Left="200" Top="10" AutoSize="true" Font="WRYH20" ForeColor="255,255,255,255" Text="测试上一条" NormalImage="gui/common/button/button2.png" PushImage="gui/common/button/button2_up.png"/>
+		<control Name="btn_test_next" Type="Button" Left="350" Top="10" AutoSize="true" Font="WRYH20" ForeColor="255,255,255,255" Text="测试下一条" NormalImage="gui/common/button/button2.png" PushImage="gui/common/button/button2_up.png"/>
+		<control Name="btn_test_prev_step" Type="Button" Left="530" Top="10" AutoSize="true" Font="WRYH20" ForeColor="255,255,255,255" Text="测试上一步" NormalImage="gui/common/button/button2.png" PushImage="gui/common/button/button2_up.png"/>
+		<control Name="btn_test_next_step" Type="Button" Left="680" Top="10" AutoSize="true" Font="WRYH20" ForeColor="255,255,255,255" Text="测试下一步" NormalImage="gui/common/button/button2.png" PushImage="gui/common/button/button2_up.png"/>
+
+		<control Name="btn_test_reload" Type="Button" Left="850" Top="10" AutoSize="true" Font="WRYH20" ForeColor="255,255,255,255" Text="重载" NormalImage="gui/common/button/button2.png" PushImage="gui/common/button/button2_up.png"/>
+<!-->
+
+		<control Name="net_warning" Type="MultiTextBox" Alpha="0" HAnchor="Center" VAnchor="Center" Transparent="true" Left="3000" Top="-50" AutoSize="true" Font="WRYH22_O" NoFrame="true" SelectBarColor="0,0,0,0" MouseInBarColor="0,0,0,0" ViewRect="30,40,300,300" TipAutoSize="true" DrawMode="Tile" BackImage="gui/login/xinxilan.png" HtmlText=""/>
+		<control Name="show_gril" Type="Label" Transparent="true" Left="200" Top="0" AutoSize="true" Rotate="true" BackImage="gui\xm2_quest\yindaomeizi.png"/>
+		<control Name="arrow" Type="Label" Transparent="true" Left="10" Top="0" AutoSize="true" Rotate="true" AngleZ="0" BackImage="gui/guide/jiantou.png" Effect="guide_move_arrow"/>
+		<control Name="text_left" Type="MultiTextBox" Transparent="true" Left="-150" Top="-100" AutoSize="true" Font="WRYH22_O" NoFrame="true" SelectBarColor="0,0,0,0" MouseInBarColor="0,0,0,0" TextColor="255,253,246,191" ViewRect="5,35,450,108" TipAutoSize="true" BackImage="gui/xm2_quest/xinshouyindao_2.png" HtmlText="this is left" Alpha="255"/>
+		<control Name="text_right" Type="MultiTextBox" Transparent="true" Left="150" Top="-100" AutoSize="true" Font="WRYH22_O" NoFrame="true" SelectBarColor="0,0,0,0" MouseInBarColor="0,0,0,0" TextColor="255,253,246,191" ViewRect="55,35,504,108" TipAutoSize="true" BackImage="gui/xm2_quest/xinshouyindao_1.png" HtmlText="this is right" Alpha="255"/>
+	</GuideParams>
+	<GuideQuestPatch desc="为任务系统打的补丁">
+		<!-->
+		<QuestGuide QuestId="20001" GuideStep="1" GuideIndex="9"/>
+		<QuestGuide QuestId="20002" GuideStep="5" GuideIndex="0"/>
+		<QuestGuide QuestId="20003" GuideStep="8" GuideIndex="0"/>
+		<QuestGuide QuestId="20004" GuideStep="13" GuideIndex="0"/>
+	
+        <QuestGuide QuestId="20001" GuideStep="1" GuideIndex="9"/>
+        <QuestGuide QuestId="20002" GuideStep="4" GuideIndex="6"/>
+        <QuestGuide QuestId="20003" GuideStep="7" GuideIndex="6"/>
+        <QuestGuide QuestId="20004" GuideStep="12" GuideIndex="12"/>
+		
+        <QuestGuide QuestId="21001" GuideStep="3" GuideIndex="7"/>
+        <QuestGuide QuestId="21002" GuideStep="6" GuideIndex="7"/>
+        <QuestGuide QuestId="21003" GuideStep="11" GuideIndex="7"/>
+        <QuestGuide QuestId="21004" GuideStep="16" GuideIndex="7"/>
+		<!-->
+	</GuideQuestPatch>
+	<GuideNotice ID="0" desc="一些提示用的引导提示放在这里定义">
+		<Guide Index="1" Type="notice_form" desc="提示有新功能开启">
+			<prop BackColor="100,0,0,0"/>
+			<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="-300" Top="-100"/>
+			<control Name="text_left" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+			<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="-30" Top="-120" HtmlText="@xinshouyindaoA01"/>
+			<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="2000" Top="0" AngleZ="1.57"/>
+		</Guide>
+	</GuideNotice>
+	<GuideOrdered desc="按顺序的引导步骤">
+		<GuideStep ID="1" KeyIndex="9" desc="第一个副本中的摇杆、技能释放、翻牌等基础引导">
+			<Guide Index="1" Type="mask_form" Form="form_curtain_cartoon" Control="main_curtain_form" Event="on_close" desc="初生黑幕结束；NPC说话1开始，需要点击任意位置">
+				<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="-300" Top="-100"/>
+				<control Name="text_left" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+				<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="-120" Top="-100" HtmlText="@xinshouyindaoB0101"/>"/>
+				<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="8888"/>
+			</Guide>
+			<Guide Index="2" Type="mask_form" Form="form_guide" Control="main_form" Event="on_click" desc="NPC说话1结束；NPC说话2开始，需要点击任意位置">
+				<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="-300" Top="-100"/>
+				<control Name="text_left" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+				<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="-120" Top="-100" HtmlText="@xinshouyindaoB0102"/>"/>
+				<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="8888"/>
+			</Guide>
+			<Guide Index="3" Type="mask_form" Form="form_guide" Control="main_form" Event="on_click" desc="NPC说话2结束；NPC说话3开始，需要点击摇杆">
+				<prop BackColor="100,0,0,0" MaskForm="form_joystick" MaskControl="main_form"/>
+				<control Name="joystick_back" Type="Label" Left="0" Top="0" AutoSize="true" BackImage="gui/tp2_joystick/yaogandi.png"/>
+				<control Name="joystick_front" Type="Label" Left="100" Top="100" AutoSize="true" BackImage="gui/guide/shou.png" Effect="guide_move_joystick"/>
+				<control Name="show_gril" Left="480" Top="-300" AngleY="3.14"/>
+				<control Name="arrow" Alpha="0"/>
+				<control Name="text_left" Left="100" Top="-300" HtmlText="@xinshouyindaoB0103"/>
+				<control Name="text_right" Alpha="0"/>
+			</Guide>
+			<Guide Index="4" Type="hide_form" Event="on_joystick_touch_begin" desc="摇杆按下后，隐藏引导界面">
+			</Guide>
+			<Guide Index="5" Type="mask_form" Event="on_trigger_npc_creator" Params="1" desc="第一波刷怪器刷怪时触发；需要点击普攻技能">
+				<prop BackColor="100,0,0,0" MaskForm="form_main_clone" MaskControl="imagegrid_common_attack" GridIndex="0"/>
+				<control Name="show_gril" Left="-800" Top="-300"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="-620" Top="-300" HtmlText="@xinshouyindaoB0105"/>
+				<control Name="arrow" Left="-170" Top="-120" AngleZ="4.2"/>
+				<control Name="finger" Type="Label" Left="540" Top="620" AutoSize="true" BackImage="finger_touch"/>
+			</Guide>
+			<Guide Index="6" Type="hide_form" Form="form_main_clone" Control="imagegrid_common_attack" Event="on_leftclick_down" desc="点击普攻技能后，隐藏引导界面">
+			</Guide>
+			<Guide Index="7" Type="mask_form" Form="form_clone_finish" Control="groupbox_content" Event="on_show" desc="副本结算界面显示时触发；需要点击确定按钮">
+				<prop MaskForm="form_clone_finish" MaskControl="btn_continue"/>
+				<control Name="show_gril" Left="-620" Top="-320"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="-440" Top="-320" HtmlText="@xinshouyindaoB0109"/>
+				<control Name="arrow" Left="10" Top="-150" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="8" Type="hide_form" Form="form_clone_finish" Control="btn_continue" Event="on_click" desc="点击确定按钮时，隐藏引导界面">
+			</Guide>
+		</GuideStep>
+		<GuideStep ID="2" KeyIndex="" desc="第一次回主城，学习2技能">
+			<Guide Index="1" Type="mask_form" Form="form_curtain" Control="main_form" Event="on_gui_effect_finish" desc="结束第1个副本，回到主城时触发；需要点击角色按钮">
+				<prop BackColor="100,0,0,0" MaskForm="form_main_hall" MaskControl="btn_role_npc"/>
+				<control Name="show_gril" Left="-650" Top="-400"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="-470" Top="-400" HtmlText="@xinshouyindaoB0501"/>
+				<control Name="arrow" Left="0" Top="-150" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="2" Type="mask_form" Form="form_bag_copy" Control="main_form" Event="on_show" desc="角色界面打开时触发；需要点击“技能”按钮">
+				<prop BackColor="100,0,0,0" MaskForm="form_role_npc_base" MaskControl="rbtn_3"/>
+				<control Name="show_gril" Left="-550" Top="-200" AngleY=""/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="-370" Top="-200" HtmlText="@xinshouyindaoB0502"/>
+				<control Name="arrow" Left="-150" Top="-20" AngleZ="-1.57"/>
+			</Guide>
+			<Guide Index="3" Type="mask_form" Form="form_role_npc_base" Control="rbtn_3" Event="on_click" desc="点击“技能”按钮时触发；需要点击第2个技能">
+				<prop BackColor="100,0,0,0" MaskForm="form_role_npc_base" MaskControl="lbl_skill_pic_1"/>
+				<control Name="show_gril" Left="400" Top="-100" AngleY="3.14"/>
+				<control Name="text_left" Left="20" Top="-100" HtmlText="@xinshouyindaoB0503"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="-150" Top="-10" AngleZ="-1.57"/>
+			</Guide>
+			<Guide Index="4" Type="mask_form" Form="form_role_npc_skill" Control="lbl_skill_back_image_1" Event="on_click" desc="点击第2个技能按钮时触发；需要点击“升级”按钮">
+				<prop BackColor="100,0,0,0" MaskForm="form_role_npc_base" MaskControl="btn_skill_up"/>
+				<control Name="show_gril" Left="0" Top="-400" AngleY="3.14"/>
+				<control Name="text_left" Left="-380" Top="-400" HtmlText="@xinshouyindaoB0504"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="0" Top="-150" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="5" Type="mask_form" Form="form_role_npc_skill" Control="btn_skill_up" Event="on_click" desc="学习第2个技能后触发；进行技能升级说明，需要鼠标任意点击一下">
+				<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="0" Top="-200" AngleY="3.14"/>
+				<control Name="text_left" HAnchor="Center" VAnchor="Center" Left="-380" Top="-200" HtmlText="@xinshouyindaoB0505"/>
+				<control Name="text_right" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+				<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="3000" Top="0" AngleZ="0"/>
+			</Guide>
+			<Guide Index="6" Type="mask_form" Form="form_guide" Control="main_form" Event="on_click" desc="任意点击后触发；需要关闭技能界面">
+				<prop BackColor="100,0,0,0" MaskForm="form_role_npc_base" MaskControl="btn_close"/>
+				<control Name="show_gril" Left="-650" Top="200"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="-470" Top="200" HtmlText="@xinshouyindaoB0204"/>
+				<control Name="arrow" Left="-100" Top="120" AngleZ="-0.5"/>
+			</Guide>
+		</GuideStep>
+		<GuideStep ID="3" KeyIndex="4" desc="第一次回主城，提示打开任务面板，接受任务">
+			<Guide Index="1" Type="mask_form" Form="form_role_npc_base" Control="main_form" Event="on_close" desc="角色界面被关闭后触发；需要点击任务追踪">
+				<prop BackColor="100,0,0,0" MaskForm="form_quest_trace" MaskControl="btn_bg1"/>
+				<control Name="show_gril" Left="700" Top="-100" AngleY="3.14"/>
+				<control Name="text_left" Left="320" Top="-100" HtmlText="@xinshouyindaoB0301"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="370" Top="-13" AngleZ="1.57"/>
+			</Guide>
+			<Guide Index="2" Type="mask_form" Form="form_quest_trace" Control="btn_bg1" Event="on_click" desc="点击任务追踪后开始自动寻路">
+				<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="9200" Top="240"/>
+				<control Name="text_left" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+				<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="-250" Top="150" ViewRect="10,27,450,81" BackImage="gui/xm2_quest/zidongxunlu_1.png" HtmlText="@xinshouyindaoB0302"/>
+				<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="-1400" Top="50" AngleZ="5.2"/>
+			</Guide>
+			<Guide Index="3" Type="hide_form" Form="form_talk_face_npc" Control="main_form" Event="on_show" desc="开始对话后，隐藏引导界面">
+				<prop RestoreIndex="4"/>
+			</Guide>
+			<Guide Index="4" Type="mask_form" Form="form_talk_face_npc" Control="groupbox_function" Event="on_show" desc="对话界面出现“接受”按钮后触发；需要点击“接受”按钮">
+				<prop BackColor="100,0,0,0" MaskForm="form_talk_face_npc" MaskControl="btn_do"/>
+				<control Name="show_gril" Left="-400" Top="-500"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="-220" Top="-500" HtmlText="@xinshouyindaoB0304"/>
+				<control Name="arrow" Left="30" Top="-160" AngleZ="3.14"/>
+			</Guide>
+		</GuideStep>
+		<GuideStep ID="4" KeyIndex="" desc="第一次回主城，提示进入战役">
+			<Guide Index="1" Type="mask_form" Form="form_talk_face_npc" Control="main_form" Event="on_close" desc="NPC对话界面被关闭后触发；需要点击任务追踪">
+				<prop BackColor="100,0,0,0" MaskForm="form_quest_trace" MaskControl="btn_bg1"/>
+				<control Name="show_gril" Left="700" Top="-100" AngleY="3.14"/>
+				<control Name="text_left" Left="320" Top="-100" HtmlText="@xinshouyindaoB0401"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="370" Top="-13" AngleZ="1.57"/>
+			</Guide>
+			<Guide Index="2" Type="mask_form" Form="form_quest_trace" Control="btn_bg1" Event="on_click" desc="点击任务追踪后开始自动寻路">
+				<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="9200" Top="240"/>
+				<control Name="text_left" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+				<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="-250" Top="150" ViewRect="10,27,450,81" BackImage="gui/xm2_quest/zidongxunlu_1.png" HtmlText="@xinshouyindaoB0402"/>
+				<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="3000" Top="" AngleZ="5.2"/>
+			</Guide>
+			<Guide Index="3" Type="hide_form" Form="form_talk_face_npc" Control="main_form" Event="on_show" desc="开始对话后，隐藏引导界面">
+				<prop RestoreIndex="4"/>
+			</Guide>
+			<Guide Index="4" Type="mask_form" Form="form_talk_face_npc" Control="groupbox_function" Event="on_show" desc="对话界面出现“提交”按钮后触发；需要点击“提交”按钮">
+				<prop BackColor="100,0,0,0" MaskForm="form_talk_face_npc" MaskControl="btn_do"/>
+				<control Name="show_gril" Left="-400" Top="-500"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="-220" Top="-500" HtmlText="@xinshouyindaoB0404"/>
+				<control Name="arrow" Left="30" Top="-160" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="5" Type="mask_form" Form="form_talk_face_npc" Control="main_form" Event="on_close" desc="NPC对话界面被关闭后触发；需要点击任务追踪">
+				<prop BackColor="100,0,0,0" MaskForm="form_quest_trace" MaskControl="btn_bg1"/>
+				<control Name="show_gril" Left="3000" Top="" AngleY="3.14"/>
+				<control Name="text_left" Left="3000" Top="" HtmlText="@xinshouyindaoB0401"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="370" Top="-13" AngleZ="1.57"/>
+			</Guide>
+			<Guide Index="6" Type="mask_form" Form="form_quest_trace" Control="btn_bg1" Event="on_click" desc="点击任务追踪后开始自动寻路">
+				<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="3000" Top=""/>
+				<control Name="text_left" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+				<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="-250" Top="150" ViewRect="10,27,450,81" BackImage="gui/xm2_quest/zidongxunlu_1.png" HtmlText="@xinshouyindaoB0402"/>
+				<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="3000" Top="" AngleZ="5.2"/>
+			</Guide>
+			<Guide Index="7" Type="hide_form" Form="form_talk_face_npc" Control="main_form" Event="on_show" desc="开始对话后，隐藏引导界面">
+				<prop RestoreIndex="4"/>
+			</Guide>
+			<Guide Index="8" Type="mask_form" Form="form_talk_face_npc" Control="groupbox_function" Event="on_show" desc="对话界面出现“接受”按钮后触发；需要点击“接受”按钮">
+				<prop BackColor="100,0,0,0" MaskForm="form_talk_face_npc" MaskControl="btn_do"/>
+				<control Name="show_gril" Left="3000" Top=""/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="3000" Top="" HtmlText="@xinshouyindaoB0304"/>
+				<control Name="arrow" Left="30" Top="-160" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="9" Type="mask_form" Form="form_talk_face_npc" Control="main_form" Event="on_close" desc="NPC对话界面被关闭后触发；需要点击任务追踪">
+				<prop BackColor="100,0,0,0" MaskForm="form_quest_trace" MaskControl="btn_bg1"/>
+				<control Name="show_gril" Left="3000" Top="" AngleY="3.14"/>
+				<control Name="text_left" Left="3000" Top="" HtmlText="@xinshouyindaoB0401"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="370" Top="-13" AngleZ="1.57"/>
+			</Guide>
+			<Guide Index="10" Type="mask_form" Form="form_quest_trace" Control="btn_bg1" Event="on_click" desc="点击任务追踪后开始自动寻路">
+				<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="3000" Top=""/>
+				<control Name="text_left" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+				<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="-250" Top="150" ViewRect="10,27,450,81" BackImage="gui/xm2_quest/zidongxunlu_1.png" HtmlText="@xinshouyindaoB0402"/>
+				<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="3000" Top="" AngleZ="5.2"/>
+			</Guide>
+			<Guide Index="11" Type="mask_form" Form="form_clone_select" Control="main_form" Event="on_show" desc="副本扫荡界面打开时触发；需要点击箭头指向关卡">
+				<prop BackColor="100,0,0,0" MaskForm="form_clone_select" MaskControl="lbl_ring"/>
+				<control Name="show_gril" Left="3000" Top=""/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="3000" Top="" HtmlText="@xinshouyindaoB0421"/>
+				<control Name="arrow" Left="3000" Top="" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="12" Type="mask_form" Form="form_clone_scene_info" Control="btn_begin" Event="on_show" desc="副本扫荡界面打开时触发；需要点击进入">
+				<prop BackColor="100,0,0,0" MaskForm="form_clone_scene_info" MaskControl="btn_begin"/>
+				<control Name="show_gril" Left="-550" Top="-300"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="-370" Top="-300" HtmlText="@xinshouyindaoB0421"/>
+				<control Name="arrow" Left="10" Top="-150" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="13" Type="hide_form" Form="form_clone_select" Control="btn_begin" Event="on_click" desc="点击进入按钮后，隐藏引导界面">
+			</Guide>
+			<Guide Index="14" Type="hide_form" Form="form_curtain" Control="main_form" Event="on_gui_effect_finish" desc="副本界面打开">
+			</Guide>
+			<Guide Index="15" Type="hide_form" Form="form_clone_finish" Control="main_form" Event="on_show" SrvEvent="33" desc="副本结算界面出现判定该副本已通过？">
+			</Guide>
+		</GuideStep>
+		<GuideStep ID="5" KeyIndex="" desc="第二次回主城，学习3技能">
+			<Guide Index="1" Type="mask_form" Form="form_curtain" Control="main_form" Event="on_gui_effect_finish" desc="结束第2个副本，回到主城时触发；需要点击角色按钮">
+				<prop BackColor="100,0,0,0" MaskForm="form_main_hall" MaskControl="btn_role_npc"/>
+				<control Name="show_gril" Left="-650" Top="-400"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="-430" Top="-420" HtmlText="@xinshouyindaoB0506"/>
+				<control Name="arrow" Left="0" Top="-150" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="2" Type="mask_form" Form="form_bag_copy" Control="main_form" Event="on_show" desc="角色界面打开时触发；需要点击“技能”按钮">
+				<prop BackColor="100,0,0,0" MaskForm="form_role_npc_base" MaskControl="rbtn_3"/>
+				<control Name="show_gril" Left="3000" Top="" AngleY="3.14"/>
+				<control Name="text_left" Left="3000" Top="" HtmlText="@xinshouyindaoB0502"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="-150" Top="-20" AngleZ="-1.57"/>
+			</Guide>
+			<Guide Index="3" Type="mask_form" Form="form_role_npc_base" Control="rbtn_3" Event="on_click" desc="点击“技能”按钮时触发；需要点击第3个技能">
+				<prop BackColor="100,0,0,0" MaskForm="form_role_npc_base" MaskControl="lbl_skill_pic_2"/>
+				<control Name="show_gril" Left="3000" Top="" AngleY="3.14"/>
+				<control Name="text_left" Left="3000" Top="" HtmlText="@xinshouyindaoB0503"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="-150" Top="-10" AngleZ="-1.57"/>
+			</Guide>
+			<Guide Index="4" Type="mask_form" Form="form_role_npc_skill" Control="lbl_skill_back_image_2" Event="on_click" desc="点击第3个技能按钮时触发；需要点击“升级”按钮">
+				<prop BackColor="100,0,0,0" MaskForm="form_role_npc_base" MaskControl="btn_skill_up"/>
+				<control Name="show_gril" Left="3000" Top="" AngleY="3.14"/>
+				<control Name="text_left" Left="3000" Top="" HtmlText="@xinshouyindaoB0504"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="0" Top="-150" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="5" Type="mask_form" Form="form_role_npc_skill" Control="btn_skill_up" Event="on_click" desc="学习第3个技能后触发；进行技能升级说明，需要鼠标任意点击一下">
+				<prop BackColor="100,0,0,0" MaskForm="form_role_npc_base" MaskControl="btn_close"/>
+				<control Name="show_gril" Left="3000" Top="" AngleY="3.14"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="3000" Top="" HtmlText="@xinshouyindaoB0204"/>
+				<control Name="arrow" Left="-100" Top="120" AngleZ="-0.5"/>
+			</Guide>
+		</GuideStep>
+		<GuideStep ID="6" KeyIndex="" desc="第二次回主城，继续进行任务">
+			<Guide Index="1" Type="mask_form" Form="form_role_npc_base" Control="main_form" Event="on_close" desc="角色界面被关闭后触发；需要点击任务追踪">
+				<prop BackColor="100,0,0,0" MaskForm="form_quest_trace" MaskControl="btn_bg1"/>
+				<control Name="show_gril" Left="700" Top="-100" AngleY="3.14"/>
+				<control Name="text_left" Left="320" Top="-100" HtmlText="@xinshouyindaoB0601"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="370" Top="-13" AngleZ="1.57"/>
+			</Guide>
+			<Guide Index="2" Type="mask_form" Form="form_quest_trace" Control="btn_bg1" Event="on_click" desc="点击任务追踪后开始自动寻路">
+				<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="3000" Top=""/>
+				<control Name="text_left" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+				<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="-250" Top="150" ViewRect="10,27,450,81" BackImage="gui/xm2_quest/zidongxunlu_1.png" HtmlText="@xinshouyindaoB0602"/>
+				<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="3000" Top="" AngleZ="5.2"/>
+			</Guide>
+			<Guide Index="3" Type="hide_form" Form="form_talk_face_npc" Control="main_form" Event="on_show" desc="开始对话后，隐藏引导界面">
+				<prop RestoreIndex="4"/>
+			</Guide>
+			<Guide Index="4" Type="mask_form" Form="form_talk_face_npc" Control="groupbox_function" Event="on_show" desc="对话界面出现“提交”按钮后触发；需要点击“提交”按钮">
+				<prop BackColor="100,0,0,0" MaskForm="form_talk_face_npc" MaskControl="btn_do"/>
+				<control Name="show_gril" Left="3000" Top="0"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="3000" Top="0" HtmlText="@xinshouyindaoB0604"/>
+				<control Name="arrow" Left="30" Top="-160" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="5" Type="mask_form" Form="form_talk_face_npc" Control="main_form" Event="on_close" desc="NPC对话界面被关闭后触发；需要点击任务追踪">
+				<prop BackColor="100,0,0,0" MaskForm="form_quest_trace" MaskControl="btn_bg1"/>
+				<control Name="show_gril" Left="3000" Top="" AngleY="3.14"/>
+				<control Name="text_left" Left="3000" Top="" HtmlText="@xinshouyindaoB0401"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="370" Top="-13" AngleZ="1.57"/>
+			</Guide>
+			<Guide Index="6" Type="mask_form" Form="form_quest_trace" Control="btn_bg1" Event="on_click" desc="点击任务追踪后开始自动寻路">
+				<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="3000" Top=""/>
+				<control Name="text_left" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+				<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="-250" Top="150" ViewRect="10,27,450,81" BackImage="gui/xm2_quest/zidongxunlu_1.png" HtmlText="@xinshouyindaoB0402"/>
+				<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="3000" Top="" AngleZ="5.2"/>
+			</Guide>
+			<Guide Index="7" Type="hide_form" Form="form_talk_face_npc" Control="main_form" Event="on_show" desc="开始对话后，隐藏引导界面">
+				<prop RestoreIndex="4"/>
+			</Guide>
+			<Guide Index="8" Type="mask_form" Form="form_talk_face_npc" Control="groupbox_function" Event="on_show" desc="对话界面出现“接受”按钮后触发；需要点击“接受”按钮">
+				<prop BackColor="100,0,0,0" MaskForm="form_talk_face_npc" MaskControl="btn_do"/>
+				<control Name="show_gril" Left="3000" Top=""/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="3000" Top="" HtmlText="@xinshouyindaoB0304"/>
+				<control Name="arrow" Left="30" Top="-160" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="9" Type="mask_form" Form="form_talk_face_npc" Control="main_form" Event="on_close" desc="NPC对话界面被关闭后触发；需要点击任务追踪">
+				<prop BackColor="100,0,0,0" MaskForm="form_quest_trace" MaskControl="btn_bg1"/>
+				<control Name="show_gril" Left="3000" Top="" AngleY="3.14"/>
+				<control Name="text_left" Left="3000" Top="" HtmlText="@xinshouyindaoB0401"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="370" Top="-13" AngleZ="1.57"/>
+			</Guide>
+			<Guide Index="10" Type="mask_form" Form="form_quest_trace" Control="btn_bg1" Event="on_click" desc="点击任务追踪后开始自动寻路">
+				<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="3000" Top=""/>
+				<control Name="text_left" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+				<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="-250" Top="150" ViewRect="10,27,450,81" BackImage="gui/xm2_quest/zidongxunlu_1.png" HtmlText="@xinshouyindaoB0602"/>
+				<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="3000" Top="" AngleZ="5.2"/>
+			</Guide>
+			<Guide Index="11" Type="hide_form" Form="form_talk_face_npc" Control="main_form" Event="on_show" desc="开始对话后，隐藏引导界面">
+				<prop RestoreIndex="4"/>
+			</Guide>
+			<Guide Index="12" Type="mask_form" Form="form_talk_face_npc" Control="groupbox_function" Event="on_show" desc="对话界面出现“提交”按钮后触发；需要点击“提交”按钮">
+				<prop BackColor="100,0,0,0" MaskForm="form_talk_face_npc" MaskControl="btn_do"/>
+				<control Name="show_gril" Left="3000" Top="0"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="3000" Top="0" HtmlText="@xinshouyindaoB0604"/>
+				<control Name="arrow" Left="30" Top="-160" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="13" Type="hide_form" Form="form_talk_face_npc" Control="btn_do" Event="on_click" desc="点击“提交”按钮后，隐藏引导界面">
+			</Guide>
+			<Guide Index="14" Type="mask_form" Form="form_talk_face_npc" Control="groupbox_function" Event="on_show" desc="对话界面出现“接受”按钮后触发；需要点击“接受”按钮">
+				<prop BackColor="100,0,0,0" MaskForm="form_talk_face_npc" MaskControl="btn_do"/>
+				<control Name="show_gril" Left="3000" Top=""/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="3000" Top="" HtmlText="@xinshouyindaoB0304"/>
+				<control Name="arrow" Left="30" Top="-160" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="15" Type="mask_form" Form="form_talk_face_npc" Control="main_form" Event="on_close" desc="NPC对话界面被关闭后触发；需要点击任务追踪">
+				<prop BackColor="100,0,0,0" MaskForm="form_quest_trace" MaskControl="btn_bg1"/>
+				<control Name="show_gril" Left="3000" Top="" AngleY="3.14"/>
+				<control Name="text_left" Left="3000" Top="" HtmlText="@xinshouyindaoB0401"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="370" Top="-13" AngleZ="1.57"/>
+			</Guide>
+			<Guide Index="16" Type="mask_form" Form="form_quest_trace" Control="btn_bg1" Event="on_click" desc="点击任务追踪后开始自动寻路">
+				<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="3000" Top=""/>
+				<control Name="text_left" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+				<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="-250" Top="150" ViewRect="10,27,450,81" BackImage="gui/xm2_quest/zidongxunlu_1.png" HtmlText="@xinshouyindaoB0402"/>
+				<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="3000" Top="" AngleZ="5.2"/>
+			</Guide>
+			<Guide Index="17" Type="mask_form" Form="form_clone_select" Control="main_form" Event="on_show" desc="副本扫荡界面打开时触发；需要点击箭头指向关卡">
+				<prop BackColor="100,0,0,0" MaskForm="form_clone_select" MaskControl="lbl_ring"/>
+				<control Name="show_gril" Left="3000" Top=""/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="3000" Top="" HtmlText="@xinshouyindaoB0421"/>
+				<control Name="arrow" Left="3000" Top="" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="18" Type="mask_form" Form="form_clone_scene_info" Control="btn_begin" Event="on_show" desc="副本扫荡界面打开时触发；需要点击进入">
+				<prop BackColor="100,0,0,0" MaskForm="form_clone_scene_info" MaskControl="btn_begin"/>
+				<control Name="show_gril" Left="3000" Top="0"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="3000" Top="0" HtmlText="@xinshouyindaoB0421"/>
+				<control Name="arrow" Left="10" Top="-150" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="19" Type="hide_form" Form="form_clone_select" Control="btn_begin" Event="on_click" desc="点击进入按钮后，隐藏引导界面">
+			</Guide>
+			<Guide Index="20" Type="hide_form" Form="form_curtain" Control="main_form" Event="on_gui_effect_finish" desc="副本界面打开">
+			</Guide>
+			<Guide Index="21" Type="hide_form" Form="form_clone_finish" Control="main_form" Event="on_show" SrvEvent="33" desc="副本结算界面出现判定该副本已通过？">
+			</Guide>
+		</GuideStep>
+		<GuideStep ID="7" KeyIndex="" desc="第三次回主城，领取等级礼包">
+			<Guide Index="1" Type="mask_form" Form="form_curtain" Control="main_form" Event="on_gui_effect_finish" desc="第三个副本结束，回到主城时触发；需要点击缤纷礼包">
+				<prop BackColor="100,0,0,0" MaskForm="form_main_hall" MaskControl="btn_gift"/>
+				<control Name="show_gril" Left="50" Top="200"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="230" Top="200" HtmlText="@xinshouyindaoB0801"/>
+				<control Name="arrow" Left="0" Top="150" AngleZ="0"/>
+			</Guide>
+			<Guide Index="2" Type="mask_form" Form="form_gift" Control="main_form" Event="on_show" desc="缤纷礼包界面打开时触发；需要点击等级礼包">
+				<prop MaskForm="form_gift" MaskControl="btn_activity_1"/>
+				<control Name="show_gril" Left="600" Top="100" AngleY="3.14"/>
+				<control Name="text_left" Left="220" Top="100" HtmlText="@xinshouyindaoB0802"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="250" Top="-20" AngleZ="1.57"/>
+			</Guide>
+			<Guide Index="3" Type="mask_form" Form="form_gift" Control="btn_activity_1" Event="on_click" desc="等级礼包打开时触发；需要点击领取">
+				<prop MaskForm="form_gift" MaskControl="btn_example_gift_1"/>
+				<control Name="show_gril" Left="-750" Top="-150"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="-570" Top="-150" HtmlText="@xinshouyindaoB0803"/>
+				<control Name="arrow" Left="20" Top="100" AngleZ="0"/>
+			</Guide>
+			<Guide Index="4" Type="mask_form" Form="form_gift_package" Control="main_form" Event="on_show" desc="点击领取后触发；需要点击确定">
+				<prop MaskForm="form_gift_package" MaskControl="btn_ok"/>
+				<control Name="show_gril" Left="3000" Top=""/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="20" Top="-140" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="5" Type="mask_form" Form="form_gift_package" Control="btn_ok" Event="on_click" desc="点击确定后触发；需要点击关闭">
+				<prop MaskForm="form_gift" MaskControl="btn_close"/>
+				<control Name="show_gril" Left="3000" Top=""/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="-140" Top="60" AngleZ="5.2"/>
+			</Guide>
+		</GuideStep>
+		<GuideStep ID="8" KeyIndex="" desc="第三次回主城，提示宝藏系统">
+			<Guide Index="1" Type="mask_form" Form="form_gift" Control="main_form" Event="on_hide" desc="等级礼包界面关闭时触发；需要点击宝藏">
+				<prop BackColor="100,0,0,0" MaskForm="form_main_hall" MaskControl="btn_treasure"/>
+				<control Name="show_gril" Left="-200" Top="250"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="-20" Top="250" HtmlText="@xinshouyindaoB0901"/>
+				<control Name="arrow" Left="0" Top="150" AngleZ="0"/>
+			</Guide>
+			<Guide Index="2" Type="mask_form" Form="form_treasure_main" Control="main_form" Event="on_show" desc="宝藏界面打开时触发；需要点击精良宝藏">
+				<prop MaskForm="form_treasure_main" MaskControl="btn_jl_fp_1"/>
+				<control Name="show_gril" Left="600" Top="80" AngleY="3.14"/>
+				<control Name="text_left" Left="220" Top="80" HtmlText="@xinshouyindaoB0902"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="300" Top="180" AngleZ="1.57"/>
+			</Guide>
+			<Guide Index="3" Type="mask_form" Form="form_treasure_main" Control="btn_jl_fp_1" Event="on_click" desc="点击精良宝藏后触发；需要点击“抽一次”">
+				<prop MaskForm="form_treasure_main" MaskControl="btn_jl_open_once"/>
+				<control Name="show_gril" Left="500" Top="-150" AngleY="3.14"/>
+				<control Name="text_left" Left="120" Top="-150" HtmlText="@xinshouyindaoB0903"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="200" Top="-20" AngleZ="1.57"/>
+			</Guide>
+			<Guide Index="4" Type="hide_form" Form="form_treasure_main" Control="btn_jl_open_once" Event="on_click" desc="点击“抽一次”后触发；隐藏引导界面">
+			</Guide>
+			<Guide Index="5" Type="mask_form" Form="form_treasure_main" Control="groupbox_award_end" Event="on_show" desc="“返回”按钮出现时触发；开启引导界面，需要点击返回按钮">
+				<prop BackColor="100,0,0,0" MaskForm="form_treasure_main" MaskControl="btn_award_back"/>
+				<control Name="show_gril" Left="100" Top="-550" AngleY="3.14"/>
+				<control Name="text_left" Left="-280" Top="-550" HtmlText="@xinshouyindaoB0905"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="20" Top="-150" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="6" Type="mask_form" Form="form_treasure_main" Control="btn_award_back" Event="on_click" desc="点击返回按钮后触发；需要离开宝藏界面">
+				<prop MaskForm="form_treasure_main" MaskControl="btn_return"/>
+				<control Name="show_gril" Left="700" Top="200" AngleY="3.14"/>
+				<control Name="text_left" Left="320" Top="200" HtmlText="@xinshouyindaoB0906"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="20" Top="100" AngleZ="0"/>
+			</Guide>
+		</GuideStep>
+		<GuideStep ID="9" KeyIndex="" desc="第三次回主城，提示装备强化">
+			<Guide Index="1" Type="mask_form" Form="form_treasure_main" Control="main_form" Event="on_hide" desc="离开宝藏界面时触发；需要点击角色界面">
+				<prop BackColor="100,0,0,0" MaskForm="form_main_hall" MaskControl="btn_role_npc"/>
+				<control Name="show_gril" Left="-650" Top="-400"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="-470" Top="-400" HtmlText="@xinshouyindaoB1001"/>
+				<control Name="arrow" Left="5" Top="-150" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="2" Type="mask_form" Form="form_bag_copy" Control="main_form" Event="on_show" desc="角色界面打开后；需要选中第13个格子">
+				<prop BackColor="100,0,0,0" MaskForm="form_bag_copy" MaskControl="imagegrid_goods" GridIndex="12"/>
+				<control Name="show_gril" Left="-550" Top="-200"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="-370" Top="-200" HtmlText="@xinshouyindaoB1003"/>
+				<control Name="arrow" Left="-15" Top="120" AngleZ="0"/>
+			</Guide>
+			<Guide Index="3" Type="mask_form" Form="form_equip_tips" Control="main_form" Event="on_show" desc="选中第11个格子的装备时触发；需要点击“装备”按钮">
+				<prop MaskForm="form_equip_tips" MaskControl="btn_equip"/>
+				<control Name="show_gril" Left="400" Top="-400" AngleY="3.14"/>
+				<control Name="text_left" Left="20" Top="-400" HtmlText="@xinshouyindaoB1004"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="15" Top="-150" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="4" Type="mask_form" Form="form_equip_tips" Control="main_form" Event="on_hide" desc="装备TIPS消失时触发；需要选中已装备的武器">
+				<prop MaskForm="form_bag_copy" MaskControl="imagegrid_equip" GridIndex="4"/>
+				<control Name="show_gril" Left="400" Top="-150" AngleY="3.14"/>
+				<control Name="text_left" Left="20" Top="-150" HtmlText="@xinshouyindaoB1005"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="130" Top="-20" AngleZ="1.57"/>
+			</Guide>
+			<Guide Index="5" Type="mask_form" Form="form_equip_tips" Control="main_form" Event="on_show" desc="选中装备后触发；需要点击Tips的“升级”按钮">
+				<prop MaskForm="form_equip_tips" MaskControl="btn_level_up"/>
+				<control Name="show_gril" Left="3000" Top=""/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="3000" Top="" HtmlText="@xinshouyindaoB1006"/>
+				<control Name="arrow" Left="15" Top="-150" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="6" Type="mask_form" Form="form_strengthen_upgrade" Control="main_form" Event="on_show" desc="装备强化界面出现时触发；需要点击“强化所有装备”按钮">
+				<prop BackColor="100,0,0,0" MaskForm="form_strengthen_upgrade" MaskControl="btn_all_strengthen"/>
+				<control Name="show_gril" Left="-400" Top="-400"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="-220" Top="-400" HtmlText="@xinshouyindaoB1006"/>
+				<control Name="arrow" Left="20" Top="-170" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="7" Type="mask_form" Form="form_strengthen_upgrade" Control="btn_all_strengthen" Event="on_click" desc="点击“强化所有装备”按钮后触发；需要点击“返回”按钮">
+				<prop MaskForm="form_strengthen_upgrade" MaskControl="btn_return"/>
+				<control Name="show_gril" Left="600" Top="200" AngleY="3.14"/>
+				<control Name="text_left" Left="220" Top="200" HtmlText="@xinshouyindaoB1011"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="20" Top="100" AngleZ="0"/>
+			</Guide>
+			<Guide Index="8" Type="mask_form" Form="form_strengthen_upgrade" Control="main_form" Event="on_hide" desc="关闭背包">
+				<prop MaskForm="form_role_npc_base" MaskControl="btn_close"/>
+				<control Name="show_gril" Left="3000" Top=""/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="-130" Top="60" AngleZ="5.2"/>
+			</Guide>
+			<Guide Index="9" Type="mask_form" Form="form_role_npc_base" Control="main_form" Event="on_close" desc="角色界面关闭后触发；需要点击任务追踪">
+				<prop BackColor="100,0,0,0" MaskForm="form_quest_trace" MaskControl="btn_bg1"/>
+				<control Name="show_gril" Left="3000" Top="" AngleY="3.14"/>
+				<control Name="text_left" Left="3000" Top="" HtmlText="@xinshouyindaoB0401"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="370" Top="-13" AngleZ="1.57"/>
+			</Guide>
+			<Guide Index="10" Type="mask_form" Form="form_quest_trace" Control="btn_bg1" Event="on_click" desc="点击任务追踪后开始自动寻路">
+				<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="3000" Top=""/>
+				<control Name="text_left" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+				<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="-250" Top="150" ViewRect="10,27,450,81" BackImage="gui/xm2_quest/zidongxunlu_1.png" HtmlText="@xinshouyindaoB0602"/>
+				<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="-1400" Top="50" AngleZ="5.2"/>
+			</Guide>
+			<Guide Index="11" Type="hide_form" Form="form_talk_face_npc" Control="main_form" Event="on_show" desc="开始对话后，隐藏引导界面">
+				<prop RestoreIndex="4"/>
+			</Guide>
+			<Guide Index="12" Type="mask_form" Form="form_talk_face_npc" Control="groupbox_function" Event="on_show" desc="对话界面出现“提交”按钮后触发；需要点击“提交”按钮">
+				<prop BackColor="100,0,0,0" MaskForm="form_talk_face_npc" MaskControl="btn_do"/>
+				<control Name="show_gril" Left="3000" Top=""/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="3000" Top="" HtmlText="@xinshouyindaoB0604"/>
+				<control Name="arrow" Left="30" Top="-160" AngleZ="3.14"/>
+			</Guide>
+		</GuideStep>
+		<GuideStep ID="10" KeyIndex="" desc="第三次回主城，领取并装备阶段奖励">
+			<Guide Index="1" Type="mask_form" Form="form_talk_face_npc" Control="main_form" Event="on_close" desc="NPC对话界面被关闭后触发；需要点击阶段奖励领取按钮">
+				<prop BackColor="100,0,0,0" MaskForm="form_chapter_trace" MaskControl="btn_submit"/>
+				<control Name="show_gril" Left="200" Top="0"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="380" Top="0" HtmlText="@xinshouyindaoB0412"/>
+				<control Name="arrow" Left="120" Top="-35" AngleZ="1.57"/>
+			</Guide>
+			<Guide Index="2" Type="mask_form" Form="form_gift_package" Control="main_form" Event="on_show" desc="奖励界面弹出时触发；需要点击“确定”按钮">
+				<prop MaskForm="form_gift_package" MaskControl="btn_ok"/>
+				<control Name="show_gril" Left="-400" Top="-250"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="-220" Top="-250" HtmlText="@xinshouyindaoB0413"/>
+				<control Name="arrow" Left="20" Top="100" AngleZ="0"/>
+			</Guide>
+			<Guide Index="3" Type="mask_form" Form="form_gift_package" Control="btn_ok" Event="on_click" desc="阶段奖励领取按钮点击后触发；需要点击角色界面">
+				<prop BackColor="100,0,0,0" MaskForm="form_main_hall" MaskControl="btn_role_npc"/>
+				<control Name="show_gril" Left="-650" Top="-400"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="-470" Top="-400" HtmlText="@xinshouyindaoB0414"/>
+				<control Name="arrow" Left="0" Top="-150" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="4" Type="mask_form" Form="form_bag_copy" Control="main_form" Event="on_show" desc="打开角色界面后触发；需要选中第14个格子">
+				<prop BackColor="100,0,0,0" MaskForm="form_bag_copy" MaskControl="imagegrid_goods" GridIndex="13"/>
+				<control Name="show_gril" Left="-550" Top="-200"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="-370" Top="-200" HtmlText="@xinshouyindaoB0416"/>
+				<control Name="arrow" Left="-15" Top="120" AngleZ="0"/>
+			</Guide>
+			<Guide Index="5" Type="mask_form" Form="form_equip_tips" Control="main_form" Event="on_show" desc="选中第1个格子的装备时触发；需要点击“装备”按钮">
+				<prop MaskForm="form_equip_tips" MaskControl="btn_equip"/>
+				<control Name="show_gril" Left="300" Top="-400" AngleY="3.14"/>
+				<control Name="text_left" Left="-80" Top="-400" HtmlText="@xinshouyindaoB0417"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="35" Top="-150" AngleZ="3.14"/>
+			</Guide>
+			<Guide Index="6" Type="mask_form" Form="form_equip_tips" Control="main_form" Event="on_hide" desc="装备后触发；需要关闭角色界面">
+				<prop MaskForm="form_role_npc_base" MaskControl="btn_close"/>
+				<control Name="show_gril" Left="-650" Top="200"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="-470" Top="200" HtmlText="@xinshouyindaoB0418"/>
+				<control Name="arrow" Left="-100" Top="120" AngleZ="-0.5"/>
+			</Guide>			
+			<Guide Index="7" Type="mask_form" Form="form_role_npc_base" Control="main_form" Event="on_close" desc="角色界面关闭后触发；需要点击任务追踪">
+				<prop BackColor="100,0,0,0" MaskForm="form_quest_trace" MaskControl="btn_bg1"/>
+				<control Name="show_gril" Left="3000" Top="" AngleY="3.14"/>
+				<control Name="text_left" Left="3000" Top="" HtmlText="@xinshouyindaoB0419"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="370" Top="-13" AngleZ="1.57"/>
+			</Guide>
+			<Guide Index="8" Type="hide_form" Form="form_quest_trace" Control="btn_bg1" Event="on_click" desc="需要点击任务追踪后结束引导">
+				<prop RestoreIndex="4"/>
+			</Guide>
+		</GuideStep>
+	</GuideOrdered>
+	<GuideDisorder desc="无序的触发式引导">
+		<GuideSection ID="1" Form="form_main_clone" Control="btn_start_auto_skill" Event="on_click" desc="玩家第一次点击了托管">
+			<Guide Index="1" Type="mask_form" Form="form_main_clone" Control="btn_start_auto_skill" Event="on_click" desc="介绍托管">
+				<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="-300" Top="-100"/>
+				<control Name="text_left" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+				<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="-120" Top="-100" HtmlText="@xinshouyindaoC0101"/>
+				<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="8888"/>
+			</Guide>
+			<Guide Index="2" Type="mask_form" Form="form_guide" Control="main_form" Event="on_click" desc="点击以后弹出第二段话">
+				<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="-300" Top="-100"/>
+				<control Name="text_left" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+				<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="-120" Top="-100" HtmlText="@xinshouyindaoC0102"/>
+				<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="-2140" Top="-20" AngleZ="1.57"/>
+			</Guide>
+			<Guide Index="3" Type="mask_form" Form="form_guide" Control="main_form" Event="on_click" desc="点击以后弹出第二段话">
+				<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="-300" Top="-100"/>
+				<control Name="text_left" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+				<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="-120" Top="-100" HtmlText="@xinshouyindaoC0103"/>
+				<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="-2140" Top="-20" AngleZ="1.57"/>
+			</Guide>
+			<Guide Index="4" Type="hide_form" Form="form_guide" Control="main_form" Event="on_click" desc="点击关闭">
+			</Guide>
+		</GuideSection>
+		<GuideSection ID="2" Event="on_stage_passed" Params="12" desc="金币副本引导">
+			<Guide Index="1" Type="mask_form" Event="on_stage_passed" Params="12" desc="开启了第一个金币副本">
+				<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="-300" Top="-100"/>
+				<control Name="text_left" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+				<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="-120" Top="-100" HtmlText="@xinshouyindaoC0201"/>
+				<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="8888"/>
+			</Guide>
+			<Guide Index="2" Type="mask_form" Form="form_guide" Control="main_form" Event="on_click" desc="点击NPC对话">
+				<prop MaskForm="form_main_hall" MaskControl="btn_war"/>
+				<control Name="show_gril" Left="600" Top="50" AngleY="3.14"/>
+				<control Name="text_left" Left="220" Top="50" HtmlText="@xinshouyindaoC0202"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="150" Top="0" AngleZ="1.57"/>
+			</Guide>
+			<Guide Index="3" Type="mask_form" Form="form_clone_select" Control="main_form" Event="on_show" desc="副本选择界面打开">
+				<prop MaskForm="form_clone_select" MaskControl="btn_clone_icon_1_1_112" MaskEnabled="false"/>
+				<control Name="show_gril" Left="300" Top="-40" AngleY="3.14"/>
+				<control Name="text_left" Left="-80" Top="-40" HtmlText="@xinshouyindaoC0203"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="-20" Top="120" AngleZ="0"/>
+			</Guide>
+			<Guide Index="4" Type="hide_form" Form="form_guide" Control="main_form" Event="on_click" desc="点击NPC对话后关闭">
+			</Guide>
+		</GuideSection>
+		<GuideSection ID="3" Event="on_stage_passed" Params="13" desc="精英副本引导">
+			<Guide Index="1" Type="mask_form" Event="on_stage_passed" Params="13" desc="第一个精英副本">
+				<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="-300" Top="-100"/>
+				<control Name="text_left" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+				<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="-30" Top="-120" HtmlText="@xinshouyindaoC0301"/>
+				<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="8888"/>
+			</Guide>
+			<Guide Index="2" Type="mask_form" Form="form_guide" Control="main_form" Event="on_click" desc="点击NPC对话">
+				<prop MaskForm="form_main_hall" MaskControl="btn_war"/>
+				<control Name="show_gril" Left="600" Top="50" AngleY="3.14"/>
+				<control Name="text_left" Left="420" Top="30" HtmlText="@xinshouyindaoC0302"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="170" Top="0" AngleZ="1.57"/>
+			</Guide>
+			<Guide Index="3" Type="mask_form" Form="form_clone_select" Control="main_form" Event="on_show" desc="副本选择界面打开">
+				<prop MaskForm="form_clone_select" MaskControl="btn_5_1_133" MaskEnabled="false"/>
+				<control Name="show_gril" Left="350" Top="-250" AngleY="3.14"/>
+				<control Name="text_left" Left="170" Top="-270" HtmlText="@xinshouyindaoC0303"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="100" Top="-10" AngleZ="1.57"/>
+			</Guide>
+			<Guide Index="4" Type="hide_form" Form="form_guide" Control="main_form" Event="on_click" desc="点击NPC对话后关闭">
+			</Guide>
+		</GuideSection>
+		<GuideSection ID="4" Event="on_stage_passed" Params="22" desc="生存副本引导">
+			<Guide Index="1" Type="mask_form" Event="on_stage_passed" Params="22" desc="第一个生存副本">
+				<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="-300" Top="-100"/>
+				<control Name="text_left" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+				<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="-30" Top="-120" HtmlText="@xinshouyindaoC0401"/>
+				<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="8888"/>
+			</Guide>
+			<Guide Index="2" Type="mask_form" Form="form_guide" Control="main_form" Event="on_click" desc="点击NPC对话">
+				<prop MaskForm="form_main_hall" MaskControl="btn_war"/>
+				<control Name="show_gril" Left="600" Top="50" AngleY="3.14"/>
+				<control Name="text_left" Left="420" Top="30" HtmlText="@xinshouyindaoC0402"/>
+				<control Name="text_right" Alpha="0"/>
+				<control Name="arrow" Left="170" Top="0" AngleZ="1.57"/>
+			</Guide>
+			<Guide Index="3" Type="mask_form" Form="form_clone_select" Control="main_form" Event="on_show" desc="副本选择界面打开">
+				<prop MaskForm="form_clone_select" MaskControl="btn_6_1_122" MaskEnabled="false"/>
+				<control Name="show_gril" Left="-520" Top="-250"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="-250" Top="-270" HtmlText="@xinshouyindaoC0403"/>
+				<control Name="arrow" Left="-20" Top="120" AngleZ="0"/>
+			</Guide>
+			<Guide Index="4" Type="hide_form" Form="form_guide" Control="main_form" Event="on_click" desc="点击NPC对话后关闭">
+			</Guide>
+		</GuideSection>
+		<GuideSection ID="5" Event="on_boss_break" desc="BOSS破防引导">
+			<Guide Index="1" Type="mask_form" Event="on_boss_break" desc="怪物被破防了">
+				<prop MaskForm="form_main_clone_head" MaskControl="lbl_bg_boss"/>
+				<control Name="show_gril" Left="-220" Top="290"/>
+				<control Name="text_left" Alpha="0"/>
+				<control Name="text_right" Left="30" Top="250" HtmlText="@xinshouyindaoC0501"/>
+				<control Name="arrow" Left="290" Top="120" AngleZ="0"/>
+			</Guide>
+			<Guide Index="2" Type="mask_form" Form="form_main_clone_head" Control="lbl_bg_boss" Event="on_click" desc="怪物被破防了2">
+				<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="-500" Top="-100"/>
+				<control Name="text_left" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+				<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="-230" Top="-120" HtmlText="@xinshouyindaoC0502"/>
+				<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="8888"/>
+			</Guide>
+			<Guide Index="3" Type="mask_form" Form="form_guide" Control="main_form" Event="on_click" desc="怪物被破防了3">
+				<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="-500" Top="-100"/>
+				<control Name="text_left" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+				<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="-230" Top="-120" HtmlText="@xinshouyindaoC0503"/>
+				<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="8888"/>
+			</Guide>
+			<Guide Index="4" Type="mask_form" Form="form_guide" Control="main_form" Event="on_click" desc="怪物被破防了4">
+				<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="-500" Top="-100"/>
+				<control Name="text_left" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+				<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="-230" Top="-120" HtmlText="@xinshouyindaoC0504"/>
+				<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="8888"/>
+			</Guide>
+			<Guide Index="5" Type="mask_form" Form="form_guide" Control="main_form" Event="on_click" desc="怪物被破防了5">
+				<control Name="show_gril" HAnchor="Center" VAnchor="Center" Left="-500" Top="-100"/>
+				<control Name="text_left" HAnchor="Center" VAnchor="Center" Alpha="0"/>
+				<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="-230" Top="-120" HtmlText="@xinshouyindaoC0505"/>
+				<control Name="arrow" HAnchor="Center" VAnchor="Center" Left="8888"/>
+			</Guide>
+			<Guide Index="6" Type="hide_form" Form="form_guide" Control="main_form" Event="on_click" desc="点击关闭">
+			</Guide>
+		</GuideSection>
+	</GuideDisorder>
+</Root>

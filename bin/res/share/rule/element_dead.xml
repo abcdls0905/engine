@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 
+ElementType 元素类型(0:无 1:火 2:冰 3:电 4:毒 5:土 6:风)
+Material 材质贴图属性名(死亡效果配置里的属性名)
+Effect 特效属性名(死亡效果配置里的属性名)
+Postfix 元素类型所追加的后缀(如原动作配置的是AAA，则在有元素效果情况下需要变成AAA_XXX)
+记得将DDS文件放入客户端obj\commonality文件夹内
+Color 死亡后尸体变色
+HorizontalSpeed 风元素死亡后，击飞水平方向平移速度
+-->
+<Object>
+	<Property ID = "1" ElementType = "0" Material="" Effect="" Postfix="" Color="" HorizontalSpeed="" />
+	<Property ID = "2" ElementType = "1" Material="FireMaterial" Effect="FireEffect" Postfix="_fire"  Color="" HorizontalSpeed="" />
+	<Property ID = "3" ElementType = "2" Material="" Effect="" Postfix="_ice"  Color="" HorizontalSpeed="" />
+	<Property ID = "4" ElementType = "3" Material="LightMaterial" Effect="LightEffect" Postfix="_light"  Color="" HorizontalSpeed="" />
+	<Property ID = "5" ElementType = "4" Material="" Effect="" Postfix="_poison"  Color="PoisonColor" HorizontalSpeed="" />
+	<Property ID = "6" ElementType = "5" Material="" Effect="SoilEffect" Postfix="_soil"  Color="" HorizontalSpeed="" />
+	<Property ID = "7" ElementType = "6" Material="" Effect="" Postfix="_wind"  Color="" HorizontalSpeed="WindHorizontalSpeed" />
+</Object>

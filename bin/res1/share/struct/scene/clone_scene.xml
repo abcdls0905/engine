@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by  () -->
+<!--场景副本属性-->
+<object>
+	<!-- 基本属性 -->
+	<properties>
+		<property name="CloneSceneID" type="int" public="true" private="false" save="false" desc="副本场景编号"/>
+		<property name="CloneDifficulty" type="int" public="true" private="false" save="false" desc="副本难度(0-初级 1-中级 2-高级)"/>
+		<property name="PassStageTime" type="int64" public="false" private="false" save="false" desc="通关时间" />
+		<property name="ScenePlayer" type="object" public="false" private="false" save="false" desc="副本中的玩家对象（用于本地副本）"/>
+		<property name="SceneBuff" type="string" public="false" private="false" save="false" desc="PVP战场的buff"/>
+		<property name="FighterBorn" type="string" public="false" private="false" save="false" desc="PVP离线玩家出生点"/>
+		<property name="HeroHPRatio" type="float" public="false" private="false" save="false" desc="PVP玩家血量系数"/>
+		<property name="PetHPRatio" type="float" public="false" private="false" save="false" desc="PVP宠物血量系数"/>
+		<property name="HeroHPAdd" type="int" public="false" private="false" save="false" desc="玩家血量增量"/>
+		<property name="PetHPAdd" type="int" public="false" private="false" save="false" desc="宠物血量增量"/>
+		<property name="HeroAttackRatio" type="float" public="false" private="false" save="false" desc="玩家攻击系数"/>
+		<property name="HeroAttackAdd" type="int" public="false" private="false" save="false" desc="玩家攻击增加"/>
+		<property name="PetAttackRatio" type="float" public="false" private="false" save="false" desc="宠物攻击系数"/>
+		<property name="PetAttackAdd" type="int" public="false" private="false" save="false" desc="宠物攻击增量"/>
+	</properties>
+	<records>
+		<record name="clone_all_per_dec" cols="4" maxrows="50" save="false" public="false" private="false" desc="战役副本队友信息_伤害统计">
+		  <column type="string" desc="角色名"/>
+		  <column type="widestr" desc="主人角色名"/>
+		  <column type="int64" desc="伤害值"/>
+		  <column type="dword" desc="类型"/>
+		</record>
+		<record name="clone_get_item_rec" cols="3" maxrows="10000" save="false" public="false" private="false" desc="组队副本掉落物品信息">
+		  <column type="dword" desc="类型"/>
+		  <column type="string" desc="物品config"/>
+		  <column type="dword" desc="物品数量"/>
+		</record>
+	</records>
+</object>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Left="69" Top="61" Width="734" Height="710" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" BackImage="gui\use\function\function_vein_096.png" />
+        <control name="group_main" entity="GroupBox" script="" init="">
+            <prop Left="32" Top="8" Width="1024" Height="720" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+            <control name="lbl_beijing" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="12" Top="72" Width="1000" Height="638" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\coolsummer\map_qlyx_shui.jpg" />
+            </control>
+            <control name="lbl_13" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="228" Top="349" Width="136" Height="170" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\main\boss\qmlz_black50_yuanjiao.png" />
+            </control>
+            <control name="lbl_12" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="664" Top="524" Width="136" Height="170" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\main\boss\qmlz_black50_yuanjiao.png" />
+            </control>
+            <control name="lbl_11" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="519" Top="524" Width="136" Height="170" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\main\boss\qmlz_black50_yuanjiao.png" />
+            </control>
+            <control name="lbl_10" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="374" Top="524" Width="136" Height="170" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\main\boss\qmlz_black50_yuanjiao.png" />
+            </control>
+            <control name="lbl_5" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="374" Top="349" Width="136" Height="170" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\main\boss\qmlz_black50_yuanjiao.png" />
+            </control>
+            <control name="lbl_8" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="228" Top="524" Width="136" Height="170" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\main\boss\qmlz_black50_yuanjiao.png" />
+            </control>
+            <control name="lbl_7" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="664" Top="349" Width="136" Height="170" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\main\boss\qmlz_black50_yuanjiao.png" />
+            </control>
+            <control name="lbl_6" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="519" Top="349" Width="136" Height="170" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\main\boss\qmlz_black50_yuanjiao.png" />
+            </control>
+            <control name="lbl_2" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="960" Top="10" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_youshang.png" />
+            </control>
+            <control name="btn_close" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="945" Top="-13" Width="89" Height="93" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" DrawMode="Center" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+            </control>
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="10" Top="10" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_zuoshang.png" />
+            </control>
+            <control name="btn_left" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\jiantou_zuo1.png" PushImage="gui\common\button\jiantou_zuo2.png" DisableImage="gui\common\button\jiantou_zuo2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="96" Top="352" Width="46" Height="93" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="button_click" HandleShortcut="BUTTON_L1" />
+            </control>
+            <control name="btn_right" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\jiantou_you1.png" PushImage="gui\common\button\jiantou_you2.png" DisableImage="gui\common\button\jiantou_you2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="888" Top="352" Width="46" Height="93" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" DrawMode="Center" ClickSound="button_click" HandleShortcut="BUTTON_R1" />
+            </control>
+            <control name="groupsbox_exchange_list" entity="GroupScrollableBox" script="" init="">
+                <prop ScrollSize="17" IsEditMode="false" fAnchorX="1.000000" Left="192" Top="88" Width="598" Height="622" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+            </control>
+            <control name="groupbox_exchange_event" entity="GroupBox" script="" init="">
+                <prop Left="192" Top="88" Width="622" Height="630" BackColor="0,255,255,255" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" DrawMode="Expand" />
+                <control name="lbl_3" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="-38" Top="21" Width="720" Height="610" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\main\coolsummer\bg_qlyx_djdh.png" />
+                </control>
+                <control name="groupbox_item" entity="GroupBox" script="" init="">
+                    <prop Left="12" Top="244" Width="582" Height="358" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Text="groupbox_1" NoFrame="true" DrawMode="FitWindow" />
+                </control>
+                <control name="lbl_4" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="80" Top="40" Width="490" Height="174" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\coolsummer\bottom_qlyx_duihuan.png" />
+                </control>
+                <control name="groupbox_exchange_item" entity="GroupBox" script="" init="">
+                    <prop Left="142" Top="56" Width="382" Height="190" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" DrawMode="Expand" />
+                    <control name="lbl_item_photo_ex" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="26" Top="12" Width="112" Height="112" ShadowColor="0,0,0,0" Transparent="false" TabStop="true" DrawMode="FitWindow" BackImage="gui\common\window\gold_big.jpg" />
+                    </control>
+                    <control name="lbl_item_count_ex" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="-56" Top="156" Width="476" Height="44" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="1/1" Font="Default" DrawMode="Expand" BackImage="gui\relic\bg_yijiname.png" />
+                    </control>
+                    <control name="btn_exchange" entity="Button" script="" init="">
+                        <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="186" Top="48" Width="158" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_summer_exchange_02" Font="WRYH26_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                    </control>
+                    <control name="lbl_item_cover_ex" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="24" Top="8" Width="118" Height="118" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\zhuangbeikuang_09.png" />
+                    </control>
+                    <control name="lbl_item_count2_ex" entity="Label" script="" init="">
+                        <prop Align="Right" RefCursor="WIN_HELP" Left="32" Top="88" Width="102" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="1" Font="Default" DrawMode="Expand" />
+                    </control>
+                    <control name="lbl_item_name_ex" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="218" Top="16" Width="102" Height="22" ForeColor="255,0,58,255" ShadowColor="0,0,0,0" Text="name" Font="WRYH20" />
+                    </control>
+                </control>
+            </control>
+            <control name="lbl_dlg_name" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="130" Top="-8" Width="778" Height="162" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\coolsummer\titlebar_qlyx_mubu.png" />
+            </control>
+            <control name="lbl_9" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="224" Top="24" Width="602" Height="64" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\coolsummer\picword_qlyx_djdh.png" />
+            </control>
+            <control name="groupbox_need_item" entity="GroupBox" script="" init="">
+                <prop Left="216" Top="336" Width="134" Height="176" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" DrawMode="Expand" />
+                <control name="lbl_item_backimage" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="24" Top="16" Width="136" Height="170" ShadowColor="0,0,0,0" DrawMode="Expand" />
+                </control>
+                <control name="lbl_item_photo" entity="Label" script="" init="">
+                    <prop ClickEvent="true" RefCursor="WIN_HELP" Left="53" Top="36" Width="80" Height="80" ShadowColor="0,0,0,0" Transparent="false" TabStop="true" DrawMode="FitWindow" BackImage="gui\common\window\gold_big.jpg" />
+                </control>
+                <control name="lbl_item_cover" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="48" Top="32" Width="90" Height="90" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\zhuangbeikuang_33.png" />
+                </control>
+                <control name="lbl_item_count" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="56" Top="152" Width="70" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="1/1" Font="Default" DrawMode="Expand" />
+                </control>
+                <control name="lbl_item_name" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="56" Top="128" Width="70" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="name" Font="Default" />
+                </control>
+            </control>
+        </control>
+    </control>
+</form>

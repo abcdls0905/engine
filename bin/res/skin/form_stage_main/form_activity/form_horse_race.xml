@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop ShowGrid="true" Left="50" Top="40" Width="1280" Height="720" BackColor="0,255,255,255" ShadowColor="0,0,0,0" TestTrans="true"/>
+		<control name="lbl_10s" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="-30" Top="96" Width="59" Height="74" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" AutoSize="true"/>
+		</control>
+		<control name="lbl_finish" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="-136" Top="-145" Width="271" Height="83" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" AutoSize="true"/>
+		</control>
+		<control name="lbl_rank" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="-53" Top="-57" Width="105" Height="84" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" AutoSize="true"/>
+		</control>
+		<control name="group_box_start" entity="GroupBox" script="" init="">
+			<prop Left="-279" Top="-59" Width="558" Height="126" BackColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" NoFrame="true" AutoSize="true"/>
+			<control name="lbl_start" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="-207" Top="-33" Width="414" Height="65" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" DrawMode="ExpandH" BackImage="gui/tp2_main/arena/arena_di_01.png"/>
+			</control>
+			<control name="multibox_text" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,255,255,123" MouseInBarColor="0,255,255,0" ViewRect="0,0,666,28" LineHeight="24" ScrollSize="17" Left="-54" Top="51" Width="666" Height="28" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK" NoFrame="true" DrawMode="ExpandH"/>
+			</control>
+		</control>
+	</control>
+</form>
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="form_common\form_minkeyboard" init="main_form_init">
+        <prop ShowGrid="true" Left="13" Top="29" Width="480" Height="124" BackColor="0,255,255,255" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\mainform_BG\聊天窗口_底.png" />
+        <event on_close="on_main_form_close" on_open="on_main_form_open" on_get_capture="on_main_form_get_capture" />
+        <control name="btn_caps" entity="Button" script="" init="">
+            <prop NormalImage="gui\mainform_BG\按钮2_01.png" FocusImage="gui\mainform_BG\按钮2_02.png" PushImage="gui\mainform_BG\按钮2_03.png" Left="8" Top="8" Width="86" Height="20" ForeColor="255,255,237,0" ShadowColor="0,0,0,0" Text="@ui_jp_dxx" Font="FZHTJT16" TabStop="true" DrawMode="FitWindow" />
+            <event on_click="on_btn_caps_click" />
+        </control>
+        <control name="btn_backspace" entity="Button" script="" init="">
+            <prop NormalImage="gui\mainform_BG\按钮2_01.png" FocusImage="gui\mainform_BG\按钮2_02.png" PushImage="gui\mainform_BG\按钮2_03.png" Left="112" Top="8" Width="94" Height="20" ForeColor="255,255,237,0" ShadowColor="0,0,0,0" Text="@ui_jp_sc" Font="FZHTJT16" TabStop="true" DrawMode="FitWindow" />
+            <event on_click="on_btn_backspace_click" />
+        </control>
+        <control name="btn_space" entity="Button" script="" init="">
+            <prop Left="968" Top="24" Width="70" Height="20" ShadowColor="0,0,0,0" Text="space" TabStop="true" />
+            <event on_click="on_btn_space_click" />
+        </control>
+        <control name="btn_enter" entity="Button" script="" init="">
+            <prop NormalImage="gui\common\button\jp-b-out.png" FocusImage="gui\common\button\jp-b-on.png" PushImage="gui\common\button\jp-b-down.png" Left="848" Top="88" Width="70" Height="20" ForeColor="255,10,133,211" ShadowColor="0,0,0,0" Text="enter" Font="FZHTJT16" TabStop="true" DrawMode="FitWindow" />
+            <event on_click="on_btn_enter_click" />
+        </control>
+        <control name="btn_close" entity="Button" script="" init="">
+            <prop NormalImage="gui\mainform_BG\按钮2_01.png" FocusImage="gui\mainform_BG\按钮2_02.png" PushImage="gui\mainform_BG\按钮2_02.png" Left="416" Top="8" Width="54" Height="20" ForeColor="255,255,237,0" ShadowColor="0,0,0,0" Text="@ui_guanbi" Font="FZHTJT16" TabStop="true" DrawMode="FitWindow" />
+            <event on_click="on_btn_close_click" />
+        </control>
+    </control>
+</form>

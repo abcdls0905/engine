@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<object>
+	<properties>
+		<property name="RHInitFlag" type="byte" public="false" private="false" save="true" realtime="" desc="家园数据初始化"/>
+		<property name="RHAttackCount" type="int" public="false" private="true" save="true" realtime="" desc="攻打次数(每日刷新)"/>
+		<property name="RHNormalMoney" type="int64" public="false" private="true" save="true" realtime="" desc="家园币"/>
+		<property name="RHAdvMoney" type="int64" public="false" private="true" save="true" realtime="" desc="特殊家园币"/>
+		<property name="RHProtectedTime" type="int64" public="false" private="true" save="true" realtime="" desc="受保护时间"/>
+		<property name="RHProtectedDuration" type="int" public="false" private="true" save="true" realtime="" desc="受保护时长"/>
+		<property name="RHSearchCount" type="int" public="false" private="true" save="true" realtime="" desc="搜索次数(每日重置，每日前n次免费)"/>
+	</properties>
+    <records>
+        <record name="rh_ride_state_rec" cols="4" maxrows="500" save="true" public="false" private="true" desc="玩家坐骑状态表(每日重置)">
+			<column type="string" desc="坐骑id" />
+			<column type="dword" desc="坐骑生产状态" />
+			<column type="byte" desc="已完成生产次数" />
+			<column type="int64" desc="开始生产时间" />
+        </record>
+        <record name="rh_building_rec" cols="11" maxrows="16" save="true" public="false" private="true" desc="玩家建筑表">
+			<column type="int" desc="建筑ID" />
+			<column type="word" desc="建筑等级" />
+			<column type="byte" desc="是否已解锁" />
+			<column type="word" desc="当前正在生产的坐骑索引" />
+			<column type="string" desc="第1个槽位坐骑ID" />
+			<column type="string" desc="第2个槽位坐骑ID" />
+			<column type="string" desc="第3个槽位坐骑ID" />
+			<column type="dword" desc="第1个槽位持续生产时间" />
+			<column type="dword" desc="第2个槽位持续生产时间" />
+			<column type="dword" desc="第3个槽位持续生产时间" />
+			<column type="word" desc="每日已生产次数" />
+        </record>
+        <record name="rh_history_rec" cols="12" maxrows="50" save="true" public="false" private="false" desc="玩家历史记录表">
+			<column type="string" desc="玩家uid" />
+			<column type="string" desc="对方主控NPC" />
+			<column type="string" desc="对方1号坐骑" />
+			<column type="string" desc="对方2号坐骑" />
+			<column type="string" desc="对方3号坐骑" />
+			<column type="byte" desc="胜败：1抢夺成功，防守失败；0抢夺失败，防守成功" />
+			<column type="word" desc="对方战力" />
+			<column type="word" desc="对方胜率" />
+			<column type="int64" desc="被抢家园币,0表示胜利" />
+			<column type="int64" desc="被抢特殊家园币" />
+			<column type="int64" desc="被抢时间" />
+			<column type="byte" desc="是否已阅读" />
+		</record>
+		<record name="rh_ride_stroe_rec" cols="3" maxrows="500" save="true" public="false" private="true" desc="坐骑家园商店表(部分每日重置)">
+			<column type="byte" desc="物品index" />
+			<column type="string" desc="物品id" />
+			<column type="word" desc="每日购买次数" />
+			<column type="word" desc="刷新状态 " />
+        </record>
+		<record name="rh_search_rec" cols="5" maxrows="32" save="false" public="false" private="false" desc="玩家搜索表">
+			<column type="string" desc="玩家uid" />
+			<column type="int" desc="胜率(0~100)" />
+			<column type="int64" desc="可抢夺家园币" />
+			<column type="int64" desc="可抢夺特殊家园币 " />
+			<column type="int" desc="被搜索排除次数" />
+        </record>
+	</records>
+</object>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<object>
+	<properties>
+		<property name="FestivalLastLoginDate" type="string" public="false" private="false" save="true" realtime="" desc="最后一次登陆的时间" />
+		<property name="PetActivityCount" type="int" public="false" private="true" save="true" realtime="" desc="限时武神抽取次数" />
+		<property name="PetActivityFreeOpenTime" type="int64" public="false" private="false" save="true" realtime="" desc="限时武神最后一次免费开启的时间" />
+		<property name="SevenDaysBeginTime" type="int64" public="false" private="true" save="true" realtime="" desc="七天活动开始时间" />
+		<property name="SevenDaysBuyDiamondCount" type="int" public="false" private="true" save="true" realtime="" desc="七天活动累计充钻数值" />
+		<property name="CoolSummerLoginAwardTime" type="double" public="false" private="true" save="true" realtime="" desc="清凉一下登录领取"/>
+		<property name="CoolSummerLoginAward" type="int" public="false" private="true" save="true" realtime="" desc="清凉一下登录领取"/>
+		<property name="SummerExchagneDate" type="int64" public="false" private="false" save="true" realtime="" desc="上次兑换的时间点" />
+		<property name="CoolSummerState" type="int" public="false" private="true" save="false" realtime="" desc="清凉一夏活动开启状态" />
+		<property name="CoolSummerGetGiftTime" type="double" public="false" private="true" save="true" realtime="" desc="奇遇获取礼包的时间" />
+		<property name="CoolSummerGetGiftCount" type="int" public="false" private="true" save="true" realtime="" desc="奇遇获取礼包的次数" />		
+		<property name="AnniversaryState" type="int" public="false" private="true" save="false" realtime="" desc="周年庆活动开启状态" />
+		<property name="FreeRedPacketTime" type="int64" public="false" private="false" save="true" realtime="" desc="免费红包时间参数"/>
+		<property name="CollectBuyCount" type="int" public="false" private="true" save="true" realtime="" desc="集字兑换次数"/>
+		<property name="CollectBuyDay" type="double" public="false" private="false" save="true" realtime="" desc="集字兑换日期"/>
+		<property name="CollectRefreshTime" type="int64" public="false" private="true" save="true" realtime="" desc="集字刷新时间"/>
+		<property name="TCResetDate" type="int64" public="false" private="false" save="true" realtime="" desc="翻牌活动重置次数的日期" />
+		<property name="TCFreeResetCount" type="int" public="false" private="true" save="true" realtime="" desc="当天免费重置次数" />
+		<property name="TCCardState" type="int" public="false" private="true" save="true" realtime="" desc="翻牌活动牌的状态" />
+		<property name="TurnCardOrder" type="string" public="false" private="false" save="true" realtime="" desc="翻牌产出道具类型的次序" />
+		<property name="TCOutputMultiple" type="int" public="false" private="false" save="true" realtime="" desc="下次翻牌产出倍数" />
+		<property name="FestivalLastLoginDateD" type="double" public="false" private="false" save="true" realtime="" desc="最后一次登陆的时间" />
+		<property name="DropActivityState" type="int" public="false" private="false" save="false" realtime="" desc="影响room掉落的活动状态" />
+		<property name="RPLastRobSystemTime" type="int64" public="false" private="false" save="true" realtime="" desc="最后一次抢系统红包的时间" />
+		<property name="RPLastRobGuildTime" type="int64" public="false" private="false" save="true" realtime="" desc="最后一次抢公会红包的时间" />
+		<property name="RPLastRobServerTime" type="int64" public="false" private="false" save="true" realtime="" desc="最后一次抢全服红包的时间" />
+		<property name="RPActivityState" type="int" public="false" private="true" save="false" realtime="" desc="新年抢红包活动状态" />
+		<property name="RPActivityVersion" type="string" public="false" private="false" save="true" realtime="" desc="新年抢红包活动版本号" />
+		<property name="RPBuyTotalCount" type="int" public="false" private="true" save="true" realtime="" desc="发红包的总个数" />
+		<property name="RPBuyTotalPrice" type="int" public="false" private="true" save="true" realtime="" desc="发红包的总价值" />
+		<property name="RPRobTotalCount" type="int" public="false" private="true" save="true" realtime="" desc="抢到红包的总个数" />
+		<property name="RPRobTotalPrice" type="int" public="false" private="true" save="true" realtime="" desc="抢到红包的总价值" />
+		<property name="TTWishTurnTableDate" type="int64" public="false" private="false" save="true" realtime="" desc="记录本次许愿的日期" />
+		<property name="TTOnlineWishTimes" type="int" public="false" private="true" save="true" realtime="" desc="累计在线时间许愿的次数" />
+		<property name="TTOnlineWishMaxTimes" type="int" public="false" private="true" save="true" realtime="" desc="累计在线时间许愿的最大次数" />
+		<property name="TTOnlineTickCount" type="int" public="false" private="true" save="true" realtime="" desc="累计在线时间计数器" />
+		<property name="TTDiamondWishTimes" type="int" public="false" private="true" save="true" realtime="" desc="消费钻石许愿的次数" />
+		<property name="TTDiamondWishMaxTimes" type="int" public="false" private="true" save="true" realtime="" desc="消费钻石许愿的最大次数" />
+		<property name="TTConsumeDiamondNum" type="int" public="false" private="true" save="true" realtime="" desc="消费钻石数" />
+		<property name="TTWishActivityState" type="int" public="false" private="true" save="false" realtime="" desc="心愿转盘活动状态" />
+		<property name="TTWishActivityVersion" type="string" public="false" private="false" save="true" realtime="" desc="心愿转盘活动版本号" />
+		<property name="RowingActivityState" type="int" public="false" private="true" save="false" realtime="" desc="极限漂流活动状态" />
+		<property name="RowingActivityVersion" type="string" public="false" private="false" save="true" realtime="" desc="极限漂流活动版本号" />
+		<property name="GlobalGiftActivityState" type="int" public="false" private="true" save="false" realtime="" desc="全服礼包活动状态" />
+		<property name="GlobalGiftActivityVersion" type="string" public="false" private="false" save="true" realtime="" desc="全服礼包活动版本号" />
+		<property name="GlobalGiftBuyCount" type="int" public="false" private="true" save="true" desc="全服礼包购买次数" />
+		<property name="GlobalGiftGetList" type="string" public="false" private="true" save="true" desc="全服礼包全服奖励获取列表" />
+		<property name="ActivityInviteGiftState" type="int" public="false" private="true" save="false" realtime="" desc="邀请礼包活动状态" />
+		<property name="ActivityInviteGiftVersion" type="string" public="false" private="false" save="true" realtime="" desc="邀请礼包活动版本号" />		
+		<property name="ActivityFriendShareState" type="int" public="false" private="true" save="false" realtime="" desc="好友分享动状态" />
+		<property name="ActivityFriendShareVersion" type="string" public="false" private="false" save="true" realtime="" desc="好友分享活动版本号" />
+		<property name="OldPlayerReturnState" type="int" public="false" private="true" save="true" realtime="" desc="老玩家回归状态" />
+		<property name="ActivityOldFdBkGiftState" type="int" public="false" private="true" save="false" realtime="" desc="好友召回活动状态" />
+		<property name="ActivityOldFdBkGiftVersion" type="string" public="false" private="false" save="true" realtime="" desc="好友召回活动版本号" />
+		<property name="QuickMatchActivityState" type="int" public="false" private="true" save="false" realtime="" desc="手眼大赛活动状态" />
+		<property name="QuickMatchActivityVersion" type="string" public="false" private="false" save="true" realtime="" desc="手眼大赛活动版本号" />
+		<property name="TaijiAdventureTicket" type="int" public="false" private="true" save="true" realtime="" desc="太极冒险入场券" />
+		<property name="TaijiAdventureState" type="int" public="false" private="true" save="true" realtime="" desc="太极冒险状态" />
+		<property name="TaijiAdventureActivityState" type="int" public="false" private="true" save="true" realtime="" desc="太极冒险活动状态" />
+		
+		
+	</properties>
+    <records>
+
+    <record name="summer_exchange_rec" cols="6" maxrows="50" save="true" public="false" private="true" desc="夏日兑换表格">
+    	<column type="dword" desc="活动ID"/>
+			<column type="dword" desc="版本号"/>
+			<column type="dword" desc="兑换规则ID"/>
+			<column type="dword" desc="每天兑换数量"/>
+			<column type="dword" desc="活动周期兑换数量"/>
+			<column type="dword" desc="是否是活动周期限购物品"/>
+		</record>
+        <record name="festival_sub_rec" cols="7" maxrows="500" save="true" public="false" private="true" desc="节日活动子包表格">
+			<column type="dword" desc="所属活动ID" />
+			<column type="dword" desc="活动子包ID" />
+            <column type="dword" desc="解锁条件数值"/>
+			<column type="dword" desc="是否已经领取了奖励"/>
+			<column type="dword" desc="活动版本号"/>
+			<column type="dword" desc="活动类型"/>
+			<column type="int64" desc="最后一次刷新记录的日期"/>
+        </record>
+		<record name="seven_days_rec" cols="4" maxrows="50" save="true" public="false" private="true" desc="七天活动表格">
+			<column type="dword" desc="天数"/>
+			<column type="dword" desc="累计充值领奖状态"/>
+			<column type="dword" desc="每日登陆领奖状态"/>
+			<column type="dword" desc="半价礼包购买状态"/>
+		</record>
+		<record name="cs_play_every_day" cols="6" maxrows="50" save="true" public="false" private="true" desc="每日畅玩奖励领取表格">
+			<column type="dword" desc="活动id"/>
+			<column type="dword" desc="活动版本号"/>
+			<column type="dword" desc="任务id"/>
+			<column type="string" desc="任务完成记录"/>
+			<column type="dword" desc="奖励领取状态"/>
+			<column type="int64" desc="最后一次奖励刷新日期"/>
+		</record>
+		<record name="treasure_shop_rec" cols="5" maxrows="100" save="true" public="false" private="true" desc="宝藏积分商店表">
+		    <column type="dword"  desc="物品编号" />
+		    <column type="string" desc="物品ID" />
+            <column type="dword"  desc="物品剩余个数" />
+            <column type="dword"  desc="消耗" />
+			<column type="dword"  desc="是否刷新" />
+        </record>
+		<record name="word_collect_record" cols="1" maxrows="5" save="true" public="false" private="true" desc="集字活动表">
+		    <column type="string"  desc="礼包编号" />
+        </record>
+		<record name="turn_card_rec" cols="5" maxrows="50" save="true" public="false" private="true" desc="翻牌表格">
+		    <column type="dword"  desc="牌的位置" />
+			<column type="dword"  desc="牌的类型" />
+		    <column type="string" desc="物品ID" />
+            <column type="dword"  desc="物品数量" />
+            <column type="dword"  desc="是否翻开" />
+        </record>
+		<record name="login_date_rec" cols="1" maxrows="7" save="true" public="false" private="false" desc="玩家最近7天的登陆记录">
+		    <column type="double"  desc="每天首次登陆时间" />
+        </record>
+		<record name="rp_self_trends_rec" cols="6" maxrows="20" save="true" public="false" private="true" desc="新年抢红包动态信息">
+		    <column type="int64"  desc="记录时间" />
+			<column type="dword"  desc="信息类型" />
+		    <column type="string" desc="红包id" />
+			<column type="widestr" desc="抢红包玩家名称" />
+			<column type="widestr" desc="发红包玩家名称" />
+            <column type="dword"  desc="抢红包点赞类型" />
+        </record>
+		<record name="adventure_member_rec" cols="4" maxrows="20" save="true" public="false" private="true" desc="太极冒险成员列表">
+            <column type="string" desc="对方UID" />
+            <column type="widestr" desc="对方名称" />
+            <column type="dword" desc="对方等级" />
+            <column type="dword" desc="对方头像索引" />
+        </record>
+	</records>
+</object>

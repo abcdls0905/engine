@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="NsightTegraProject">
+    <NsightTegraProjectRevisionNumber>5</NsightTegraProjectRevisionNumber>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Tegra-Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Tegra-Android">
+      <Configuration>Release</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Tegra-Android">
+      <Configuration>Profile</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\custom_handler.cpp" />
+    <ClCompile Include="..\game_client.cpp" />
+    <ClCompile Include="..\game_encoder.cpp" />
+    <ClCompile Include="..\game_object.cpp" />
+    <ClCompile Include="..\game_object_set.cpp" />
+    <ClCompile Include="..\game_prop_set.cpp" />
+    <ClCompile Include="..\game_receiver.cpp" />
+    <ClCompile Include="..\game_record.cpp" />
+    <ClCompile Include="..\game_record_set.cpp" />
+    <ClCompile Include="..\game_rec_client.cpp" />
+    <ClCompile Include="..\game_rec_common.cpp" />
+    <ClCompile Include="..\game_scene.cpp" />
+    <ClCompile Include="..\game_scene_obj.cpp" />
+    <ClCompile Include="..\game_sender.cpp" />
+    <ClCompile Include="..\game_sock.cpp" />
+    <ClCompile Include="..\game_view.cpp" />
+    <ClCompile Include="..\game_view_obj.cpp" />
+    <ClCompile Include="..\lib_main.cpp" />
+    <ClCompile Include="..\sock_buf.cpp" />
+    <ClCompile Include="..\win_socket.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\custom_handler.h" />
+    <ClInclude Include="..\game_client.h" />
+    <ClInclude Include="..\game_encoder.h" />
+    <ClInclude Include="..\game_object.h" />
+    <ClInclude Include="..\game_object_set.h" />
+    <ClInclude Include="..\game_prop_set.h" />
+    <ClInclude Include="..\game_receiver.h" />
+    <ClInclude Include="..\game_record.h" />
+    <ClInclude Include="..\game_record_set.h" />
+    <ClInclude Include="..\game_scene.h" />
+    <ClInclude Include="..\game_scene_obj.h" />
+    <ClInclude Include="..\game_sender.h" />
+    <ClInclude Include="..\game_sock.h" />
+    <ClInclude Include="..\game_view.h" />
+    <ClInclude Include="..\game_view_obj.h" />
+    <ClInclude Include="..\len_type.h" />
+    <ClInclude Include="..\outer_err.h" />
+    <ClInclude Include="..\outer_msg.h" />
+    <ClInclude Include="..\sock_buf.h" />
+    <ClInclude Include="..\win_socket.h" />
+    <ClInclude Include="c:\nvpack\android-ndk-r8e\platforms\android-14\arch-arm\usr\include\android\api-level.h" />
+    <ClInclude Include="c:\nvpack\android-ndk-r8e\platforms\android-14\arch-arm\usr\include\linux\capability.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{121BA45E-FF45-4252-98CF-4F7471BBD766}</ProjectGuid>
+    <RootNamespace>fm_net</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Profile|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings"></ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+      <GccExceptionHandling>true</GccExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <AdditionalOptions>-fpermissive %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+      <GccExceptionHandling>true</GccExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets"></ImportGroup>
+</Project>

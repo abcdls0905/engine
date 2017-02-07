@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop ClipChildren="false" Width="1126" Height="726" BackColor="0,255,255,255" ShadowColor="0,0,0,0"/>
+		<control name="groupbox_main" entity="GroupBox" script="" init="">
+			<prop ClipChildren="false" Top="72" Width="1128" Height="548" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+			<control name="Label1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="-30" Width="1414" Height="104" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/nine/shangbiankuang.png"/>
+			</control>
+			<control name="lbl_back_drop" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Width="1128" Height="548" ShadowColor="0,0,0,0" DrawMode="ExpandTile" BackImage="gui/tp2_common/backdrop/bg_004.png"/>
+			</control>
+			<control name="groupbox_title" entity="GroupBox" script="" init="">
+				<prop Fixed="false" ClipChildren="false" Transparent="true" Width="1414" Height="102" BackColor="0,255,255,255" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="FitWindow"/>
+				<control name="btn_close" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_main/roles/rolenpcdiwen_7.png" PushImage="gui/tp2_main/roles/rolenpcdiwen_8.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="35" Top="8" Width="164" Height="66" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_close"/>
+				</control>
+				<control name="Label2" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="-295" Top="-3" Width="590" Height="100" ShadowColor="0,0,0,0" HAnchor="Center" AutoSize="true" BackImage="gui/tp2_main/exercise/piaodai.png"/>
+				</control>
+				<control name="Label3" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="-57" Top="4" Width="114" Height="64" ShadowColor="0,0,0,0" HAnchor="Center" AutoSize="true" BackImage="gui/tp2_main/exercise/lilian.png"/>
+				</control>
+			</control>
+			<control name="groupbox_exercise" entity="GroupBox" script="" init="">
+				<prop ClipChildren="false" Left="-514" Top="-274" Width="1030" Height="548" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" AutoSize="true" DrawMode="FitWindow"/>
+				<control name="groupbox_num_page" entity="GroupBox" script="" init="">
+					<prop ClipChildren="false" Left="192" Top="18" Width="100" Height="38" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+					<control name="lbl_page_show" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="120" Top="42" Width="49" Height="48" ShadowColor="0,0,0,0" AutoSize="true"/>
+					</control>
+				</control>
+				<control name="groupscrollbox_page" entity="GroupScrollableBox" script="" init="">
+					<prop ScrollSize="17" ClipChildren="false" Left="10" Top="27" Width="1206" Height="530" ForeColor="0,0,0,0" BackColor="0,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+					<subor name="TitleBar">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="1196" Height="20" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<control name="groupbox_page" entity="GroupBox" script="" init="">
+						<prop ClipChildren="false" Left="19" Top="23" Width="966" Height="598" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+						<control name="groupbox_show" entity="GroupBox" script="" init="">
+							<prop ClipChildren="false" Top="5" Width="334" Height="262" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+							<control name="btn_enter" entity="Button" script="" init="">
+								<prop NormalImage="gui/tp2_main/exercise/ll_di.png" PushImage="gui/tp2_main/exercise/ll_di1.png" DisableImage="gui/tp2_main/exercise/ll_di2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-3" Top="-17" Width="333" Height="263" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Enabled="false" TabStop="true" AutoSize="true" ClickSound="ui_open"/>
+							</control>
+							<control name="lbl_active_image" entity="Label" script="" init="">
+								<prop Align="Center" RefCursor="WIN_HELP" Left="13" Top="44" Width="301" Height="178" ForeColor="255,255,0,255" ShadowColor="0,0,0,0" Font="WRYH28" AutoSize="true" BackImage="gui/tp2_main/exercise/zudui.png"/>
+							</control>
+							<control name="lbl_enter_level" entity="Label" script="" init="">
+								<prop Align="Center" RefCursor="WIN_HELP" Left="115" Top="203" Width="97" Height="25" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH22_O" AutoSize="true"/>
+							</control>
+							<control name="lbl_active_name" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Left="96" Top="-1" Width="139" Height="36" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/exercise/zuduifuben.png"/>
+							</control>
+							<control name="lbl_left_image" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Left="1" Top="-38" Width="76" Height="81" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/exercise/image_2.png"/>
+							</control>
+							<control name="Group_open_time" entity="GroupBox" script="" init="">
+								<prop ClipChildren="false" Transparent="true" Left="10" Top="62" Width="143" Height="39" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/exercise/di1.png"/>
+								<control name="lbl_open_time_1" entity="Label" script="" init="">
+									<prop Align="Center" RefCursor="WIN_HELP" Left="33" Top="21" Width="80" Height="16" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH18"/>
+								</control>
+								<control name="lbl_open_time" entity="Label" script="" init="">
+									<prop RefCursor="WIN_HELP" Left="28" Top="-4" Width="80" Height="16" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="@ui_exercise_tishi1" Font="WRYH18"/>
+								</control>
+							</control>
+							<control name="Label4" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Left="44" Top="164" Width="238" Height="30" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/exercise/di3.png"/>
+							</control>
+							<control name="lbl_lock" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Left="143" Top="113" Width="42" Height="55" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/exercise/suo.png"/>
+							</control>
+							<control name="Group_double_time" entity="GroupBox" script="" init="">
+								<prop ClipChildren="false" Transparent="true" Left="174" Top="62" Width="143" Height="39" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/exercise/di2.png"/>
+								<control name="lbl_double_time1" entity="Label" script="" init="">
+									<prop RefCursor="WIN_HELP" Left="16" Top="21" Width="80" Height="16" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH18"/>
+								</control>
+								<control name="lbl_double_time" entity="Label" script="" init="">
+									<prop RefCursor="WIN_HELP" Left="28" Top="-4" Width="80" Height="16" ForeColor="255,255,138,0" ShadowColor="0,0,0,0" Text="@ui_exercise_tishi2" Font="WRYH18"/>
+								</control>
+							</control>
+							<control name="Label5" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Left="86" Top="166" Width="80" Height="20" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="@ui_exercise_tishi" Font="WRYH20"/>
+							</control>
+							<control name="lbl_join_count" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Left="190" Top="166" Width="80" Height="20" ForeColor="255,255,0,0" ShadowColor="0,0,0,0" Font="WRYH20"/>
+							</control>
+						</control>
+					</control>
+					<control name="lbl_page_tab" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="120" Top="42" Width="49" Height="48" ShadowColor="0,0,0,0" AutoSize="true"/>
+					</control>
+				</control>
+			</control>
+			<control name="lbl_right" entity="Label" script="" init="">
+				<prop ClickEvent="true" RefCursor="WIN_HELP" Transparent="false" Left="-66" Top="-29" Width="64" Height="110" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Right" AutoSize="true" BackImage="gui/tp2_common/backdrop/right_1.png" Particles2d="particleeffects_013e"/>
+			</control>
+			<control name="lbl_left" entity="Label" script="" init="">
+				<prop ClickEvent="true" RefCursor="WIN_HELP" Transparent="false" Left="2" Top="-29" Width="64" Height="110" ShadowColor="0,0,0,0" VAnchor="Center" AutoSize="true" BackImage="gui/tp2_common/backdrop/left_1.png" Particles2d="particleeffects_013d"/>
+			</control>
+		</control>
+	</control>
+</form>
+

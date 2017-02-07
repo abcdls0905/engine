@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<object>
+    <internals />
+    <properties>
+        <property name="MotionMode" type="byte" public="false" private="false" save="false" realtime="true" desc="移动模式" />
+        <property name="MoveSpeed" type="float" public="true" private="true" save="false" realtime="true" desc="移动速度" />
+        <property name="MoveType" type="byte" public="false" private="false" save="false" realtime="" desc="移动类型0：跑步，1：走路" />
+        <property name="WalkSpeed" type="float" public="false" private="false" save="false" realtime="" desc="行走速度" />
+        <property name="RunSpeedBase" type="float" public="false" private="true" save="true" realtime="" desc="跑动速度" />
+        <property name="RunSpeedMul" type="float" public="false" private="false" save="false" realtime="" desc="跑动速度" />
+        <property name="RunSpeed" type="float" public="false" private="true" save="true" realtime="" desc="跑动速度" />
+        <property name="WalkSpeedAdd" type="float" public="false" private="false" save="false" realtime="" desc="移动速度的改变" />
+        <property name="RunSpeedAdd" type="float" public="false" private="true" save="false" realtime="" desc="移动速度的改变" />
+        <property name="SpeedRatio" type="int" public="true" private="true" save="false" realtime="" desc="动作速率,百分数,负数为减慢,正数为加快,受他人内功影响,可影响念咒\命中\冷却的时间以及移动速度" />
+        <property name="CantRun" type="byte" public="false" private="false" save="false" realtime="" desc="不能跑路" />
+        <property name="RollSpeed" type="float" public="true" private="true" save="true" realtime="true" desc="旋转速度" />
+        <property name="MotionNoRotate" type="byte" public="true" private="true" save="false" realtime="" desc="NPC移动时方向是否不变" />
+    </properties>
+    <records />
+    <includes />
+</object>

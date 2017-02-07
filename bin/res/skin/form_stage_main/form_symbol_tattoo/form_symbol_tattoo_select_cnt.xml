@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop Left="45" Top="34" Width="545" Height="420" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+		<control name="lbl_4" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="24" Top="30" Width="482" Height="362" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/nine/tankuang.png"/>
+		</control>
+		<control name="lbl_1" entity="Label" script="" init="">
+			<prop Align="Center" RefCursor="WIN_HELP" Left="48" Top="16" Width="433" Height="54" ForeColor="255,250,232,194" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_10.png"/>
+		</control>
+		<control name="btn_sub" entity="Button" script="" init="">
+			<prop NormalImage="gui/tp2_main/tattoo/an_1.png" PushImage="gui/tp2_main/tattoo/an_4.png" DisableImage="gui/tp2_main/tattoo/an_6.PNG" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="123" Top="175" Width="58" Height="53" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow"/>
+		</control>
+		<control name="btn_add" entity="Button" script="" init="">
+			<prop NormalImage="gui/tp2_main/tattoo/an_2.png" PushImage="gui/tp2_main/tattoo/an_5.png" DisableImage="gui/tp2_main/tattoo/an_7.PNG" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="347" Top="174" Width="58" Height="53" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow"/>
+		</control>
+		<control name="lbl_2" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="72" Top="299" Width="46" Height="35" ForeColor="255,255,204,0" ShadowColor="0,0,0,0" Text="@ui_fuwen_xiaohao" Font="WRYH22_O_BLACK"/>
+		</control>
+		<control name="btn_ok" entity="Button" script="" init="">
+			<prop NormalImage="gui/tp2_common/window/affirm.png" PushImage="gui/tp2_common/window/affirm1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="108" Top="354" Width="150" Height="60" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_fuwen_queding" Font="WRYH18" AutoSize="true" DrawMode="FitWindow"/>
+		</control>
+		<control name="btn_close" entity="Button" script="" init="">
+			<prop NormalImage="gui/tp2_common/window/cancel.png" PushImage="gui/tp2_common/window/cancel1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="291" Top="354" Width="150" Height="60" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_fuwen_quxiao" Font="WRYH18" AutoSize="true" DrawMode="FitWindow"/>
+		</control>
+		<control name="ipt_cnt" entity="Edit" script="" init="">
+			<prop OnlyDigit="true" ChangedEvent="true" TextOffsetX="2" Align="Center" Caret="Default" Left="190" Top="176" Width="144" Height="50" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH28_O_BLACK" Cursor="WIN_IBEAM" TabStop="true" DrawMode="FitWindow" BackImage="gui/tp2_main/tattoo/fw_8.png"/>
+		</control>
+		<control name="groupbox_1" entity="GroupBox" script="" init="">
+			<prop Left="112" Top="246" Width="362" Height="103" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+			<control name="groupbox_ticket" entity="GroupBox" script="" init="">
+				<prop Left="199" Top="4" Width="160" Height="43" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="FitWindow" BackImage="gui/xm2_main/treasure/huobikuang.png"/>
+				<control name="lbl_ticket_icon" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="6" Top="1" Width="40" Height="40" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/common/window/fuwentidai.png"/>
+				</control>
+				<control name="lbl_ticket_num" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="54" Top="6" Width="92" Height="30" ForeColor="255,0,204,255" ShadowColor="0,0,0,0" Font="WRYH18" DrawMode="FitWindow"/>
+				</control>
+			</control>
+			<control name="groupbox_3" entity="GroupBox" script="" init="">
+				<prop Left="199" Top="50" Width="160" Height="43" BackColor="0,255,255,255" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/xm2_main/treasure/huobikuang.png"/>
+				<control name="lbl_5" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="4" Top="-4" Width="46" Height="46" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/xm2_main/hall/zhuanshi_bang.png"/>
+				</control>
+				<control name="lbl_diamond" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="54" Top="6" Width="92" Height="30" ForeColor="255,0,204,255" ShadowColor="0,0,0,0"/>
+				</control>
+			</control>
+			<control name="groupbox_2" entity="GroupBox" script="" init="">
+				<prop Left="35" Top="50" Width="160" Height="42" BackColor="0,255,255,255" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/xm2_main/treasure/huobikuang.png"/>
+				<control name="lbl_3" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="3" Top="-4" Width="46" Height="46" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/xm2_main/hall/jingbi.png"/>
+				</control>
+				<control name="lbl_gold" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="55" Top="6" Width="92" Height="30" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="0" Font="WRYH18"/>
+				</control>
+			</control>
+		</control>
+		<control name="lbl_6" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="187" Top="114" Width="134" Height="16" ForeColor="255,255,204,0" ShadowColor="0,0,0,0" Text="@ui_fuwen_xuanze" Font="WRYH22_O_BLACK"/>
+		</control>
+		<control name="Label1" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="152" Top="-1" Width="224" Height="62" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_battle/scene_account/pilianghecheng.png"/>
+		</control>
+	</control>
+</form>
+

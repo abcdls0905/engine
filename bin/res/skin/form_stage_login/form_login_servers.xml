@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop ShowGrid="true" Left="42" Top="50" Width="1366" Height="768" BackColor="0,255,255,255" ShadowColor="0,0,0,0"/>
+		<control name="group_form_cpy" entity="GroupBox" script="" init="">
+			<prop Left="174" Top="40" Width="1014" Height="684" BackColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+		</control>
+		<control name="group_main" entity="GroupBox" script="" init="">
+			<prop Left="174" Top="40" Width="1014" Height="684" BackColor="0,120,120,120" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+			<control name="Label1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Top="40" Width="1014" Height="605" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/zuhe/di.jpg"/>
+			</control>
+			<control name="lbl_list" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="40" Top="84" Width="304" Height="550" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+			</control>
+			<control name="group_right" entity="GroupBox" script="" init="">
+				<prop Left="350" Top="84" Width="624" Height="550" BackColor="0,200,200,200" LineColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+				<control name="lbl_server_back" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="20" Top="108" Width="582" Height="416" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/nine/ditu1.png"/>
+				</control>
+				<control name="group_server_cur" entity="GroupBox" script="" init="">
+					<prop Left="20" Top="18" Width="582" Height="84" BackColor="255,200,200,200" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="ExpandH" BackImage="gui/tp2_login/server_ui.png"/>
+					<control name="lbl_cur_server" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="62" Top="22" Width="182" Height="38" ForeColor="255,255,255,102" ShadowColor="0,0,0,0" Text="@ui_stage_login_22" Font="WRYH22_O_BLACK"/>
+					</control>
+					<control name="btn_server_cur" entity="Button" script="" init="">
+						<prop NormalImage="gui/tp2_login/server_tiao.png" PushImage="gui/tp2_login/server_tiao.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="328" Top="10" Width="238" Height="64" ForeColor="255,255,255,202" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK" TabIndex="100" TabStop="true" DrawMode="ExpandH" ClickSound="button_click"/>
+					</control>
+					<control name="lbl_cur_role_head" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Left="520" Top="8" Width="48" Height="48" ForeColor="255,255,255,202" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_login/juesechuangjian.png"/>
+					</control>
+					<control name="lbl_server_type_def" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="288" Top="9" Width="91" Height="66" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/xm2_login/fwq_xinfu.png"/>
+					</control>
+					<control name="lbl_cur_sever_name" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Left="371" Top="14" Width="190" Height="56" ForeColor="255,255,255,202" ShadowColor="0,0,0,0" Text="998服 质检测试服" Font="WRYH22_O_BLACK"/>
+					</control>
+				</control>
+				<control name="sgroup_servers" entity="GroupScrollableBox" script="" init="">
+					<prop ScrollSize="17" Left="20" Top="124" Width="582" Height="386" BackColor="0,200,200,200" ShadowColor="0,0,0,0" NoFrame="true"/>
+				</control>
+			</control>
+			<control name="lbl_3_left" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="42" Top="608" Width="298" Height="28" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_03.png"/>
+			</control>
+			<control name="lbl_3_right" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="352" Top="608" Width="618" Height="28" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_03.png"/>
+			</control>
+			<control name="lbl_server_list" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="9998" Top="160" Width="252" Height="16" ForeColor="178,153,204,204" ShadowColor="0,0,0,0"/>
+			</control>
+			<control name="scroll_server_group" entity="GroupScrollableBox" script="" init="">
+				<prop ScrollSize="17" Left="46" Top="88" Width="290" Height="542" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true"/>
+			</control>
+			<control name="lbl_4" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="260" Top="26" Width="493" Height="54" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_04.png"/>
+			</control>
+			<control name="lbl_title" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="366" Top="7" Width="281" Height="64" ForeColor="255,153,255,255" ShadowColor="0,0,0,0" Font="WRYH30_S" AutoSize="true" BackImage="gui/tp2_login/server.png"/>
+			</control>
+			<control name="btn_close" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/clos.png" PushImage="gui/tp2_common/window/clos1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-90" Top="20" Width="70" Height="70" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Right" NoFrame="true" AutoSize="true" ClickSound="ui_close"/>
+			</control>
+		</control>
+		<control name="group_server" entity="GroupBox" script="" init="">
+			<prop Left="5000" Top="290" Width="281" Height="70" BackColor="0,120,120,120" ShadowColor="0,0,0,0" Visible="false" NoFrame="true"/>
+			<control name="btn_server" entity="Button" script="" init="">
+				<prop Align="Right" NormalImage="gui/tp2_login/server_tiao.png" PushImage="gui/tp2_login/server_tiao.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="44" Top="2" Width="234" Height="64" ForeColor="178,153,255,255" BackColor="0,192,192,192" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK" TabStop="true" DrawMode="ExpandH" ClickSound="button_click"/>
+			</control>
+			<control name="lbl_server_type" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Top="1" Width="91" Height="66" ShadowColor="0,0,0,0" Font="WRYH24_O2_BLACK" AutoSize="true" BackImage="gui/xm2_login/fwq_huobao.png"/>
+			</control>
+			<control name="lbl_role_head" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="232" Width="48" Height="48" ForeColor="255,255,255,202" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_login/juesechuangjian.png"/>
+			</control>
+			<control name="lbl_server_name" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="83" Top="6" Width="190" Height="56" ForeColor="255,255,255,202" ShadowColor="0,0,0,0" Text="998服 质检测试服" Font="WRYH22_O_BLACK"/>
+			</control>
+		</control>
+		<control name="rbtn_server_group" entity="RadioButton" script="" init="">
+			<prop HideBox="true" BoxSize="12" NormalImage="gui/tp2_common/nine/mop_up_29.png" CheckedImage="gui/tp2_common/nine/mop_up_01.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="9998" Top="180" Width="256" Height="66" ForeColor="255,255,255,202" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="123123123" Font="WRYH24_O_BLACK" TabStop="true" NoFrame="true" DrawMode="ExpandH" ClickSound="button_click"/>
+		</control>
+	</control>
+</form>
+

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop ShowGrid="true" Width="1366" Height="768" BackColor="100,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+		<control name="group_form" entity="GroupBox" script="" init="">
+			<prop Transparent="true" ClipChildren="false" Left="-507" Top="-343" Width="1013" Height="685" BackColor="0,200,200,200" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" NoFrame="true"/>
+			<control name="groupbox_quickly_reply" entity="GroupBox" script="" init="">
+				<prop Left="132" Top="128" Width="748" Height="429" BackColor="0,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+				<control name="Label1" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="51" Top="7" Width="645" Height="415" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_001.png"/>
+				</control>
+				<control name="Label2" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="56" Top="47" Width="635" Height="370" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_002.png"/>
+				</control>
+				<control name="Label3" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="66" Top="52" Width="615" Height="360" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+				</control>
+				<control name="Label4" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="67" Top="382" Width="614" Height="30" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_03.png"/>
+				</control>
+				<control name="btn_change_reply_1" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/activate_1.png" PushImage="gui/tp2_common/window/activate_2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="534" Top="63" Width="140" Height="50" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_change_quickly" Font="WRYH24" DrawMode="FitWindow"/>
+				</control>
+				<control name="btn_change_reply_2" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/activate_1.png" PushImage="gui/tp2_common/window/activate_2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="534" Top="120" Width="140" Height="50" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_change_quickly" Font="WRYH24" TabIndex="1" DrawMode="FitWindow"/>
+				</control>
+				<control name="btn_change_reply_3" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/activate_1.png" PushImage="gui/tp2_common/window/activate_2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="534" Top="178" Width="140" Height="50" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_change_quickly" Font="WRYH24" TabIndex="2" DrawMode="FitWindow"/>
+				</control>
+				<control name="btn_change_reply_4" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/activate_1.png" PushImage="gui/tp2_common/window/activate_2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="534" Top="236" Width="140" Height="50" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_change_quickly" Font="WRYH24" TabIndex="3" DrawMode="FitWindow"/>
+				</control>
+				<control name="btn_change_reply_5" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/activate_1.png" PushImage="gui/tp2_common/window/activate_2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="534" Top="294" Width="140" Height="50" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_change_quickly" Font="WRYH24" TabIndex="4" DrawMode="FitWindow"/>
+				</control>
+				<control name="lbl_reply_1" entity="Label" script="" init="">
+					<prop Align="Center" Transparent="false" ClickEvent="true" RefCursor="WIN_HELP" IsLimitWidth="true" Left="78" Top="61" Width="450" Height="54" ForeColor="255,255,255,204" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Text="1" Font="WRYH22_O_BLACK" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/pvp_di.png"/>
+				</control>
+				<control name="lbl_reply_2" entity="Label" script="" init="">
+					<prop Align="Center" Transparent="false" ClickEvent="true" RefCursor="WIN_HELP" IsLimitWidth="true" Left="78" Top="118" Width="450" Height="54" ForeColor="255,255,255,204" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Text="2" Font="WRYH22_O_BLACK" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/pvp_di.png"/>
+				</control>
+				<control name="lbl_reply_3" entity="Label" script="" init="">
+					<prop Align="Center" Transparent="false" ClickEvent="true" RefCursor="WIN_HELP" IsLimitWidth="true" Left="78" Top="176" Width="450" Height="54" ForeColor="255,255,255,204" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Text="3" Font="WRYH22_O_BLACK" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/pvp_di.png"/>
+				</control>
+				<control name="lbl_reply_4" entity="Label" script="" init="">
+					<prop Align="Center" Transparent="false" ClickEvent="true" RefCursor="WIN_HELP" IsLimitWidth="true" Left="78" Top="234" Width="450" Height="54" ForeColor="255,255,255,204" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Text="4" Font="WRYH22_O_BLACK" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/pvp_di.png"/>
+				</control>
+				<control name="lbl_reply_5" entity="Label" script="" init="">
+					<prop Align="Center" Transparent="false" ClickEvent="true" RefCursor="WIN_HELP" IsLimitWidth="true" Left="78" Top="292" Width="450" Height="54" ForeColor="255,255,255,204" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Text="5" Font="WRYH22_O_BLACK" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/pvp_di.png"/>
+				</control>
+				<control name="lbl_remaind_info" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" IsLimitWidth="true" Left="91" Top="369" Width="566" Height="26" ForeColor="255,255,255,102" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Text="@ui_chat_tishi" Font="WRYH24_O_BLACK"/>
+				</control>
+			</control>
+			<control name="groupbox_change_quick_talk" entity="GroupBox" script="" init="">
+				<prop ClipChildren="false" Left="123" Top="92" Width="766" Height="500" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Visible="false" NoFrame="true" DrawMode="Expand"/>
+				<control name="lbl_change_bg" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="70" Top="75" Width="625" Height="355" ShadowColor="0,0,0,0" DrawMode="ExpandTile" BackImage="gui/tp2_common/backdrop/bg_001.png"/>
+				</control>
+				<control name="lbl_change_bg2" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="75" Top="115" Width="615" Height="310" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_002.png"/>
+				</control>
+				<control name="lbl_change_bg3" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="85" Top="120" Width="595" Height="300" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+				</control>
+				<control name="lbl_change_bg4" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="136" Top="60" Width="493" Height="54" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_04.png"/>
+				</control>
+				<control name="lbl_change_bg6" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="81" Top="334" Width="603" Height="94" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_common/backdrop/decorate_08.png"/>
+				</control>
+				<control name="lbl_change_bg7" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="88" Top="392" Width="589" Height="28" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/decorate_03.png"/>
+				</control>
+				<control name="lbl_change_title" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="321" Top="34" Width="123" Height="64" ForeColor="255,153,102,51" ShadowColor="0,0,0,0" Font="Default" AutoSize="true" BackImage="gui/tp2_battle/scene_account/mop_up_09.png"/>
+				</control>
+				<control name="ipt_change_text" entity="Edit" script="" init="">
+					<prop TextOffsetX="2" Align="Center" Caret="Default" Left="101" Top="184" Width="563" Height="132" ForeColor="255,255,255,204" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH24_O_BLACK" Cursor="WIN_IBEAM" TabStop="true" NoFrame="true" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_006.png"/>
+				</control>
+				<control name="btn_confirm_change" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/affirm.png" PushImage="gui/tp2_common/window/affirm.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="172" Top="350" Width="150" Height="60" ForeColor="255,255,255,202" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_guild_38" Font="WRYH22_O" DrawMode="ExpandH" ClickSound="button_click"/>
+				</control>
+				<control name="btn_cancel_change" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/cancel.png" PushImage="gui/tp2_common/window/cancel1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="470" Top="350" Width="150" Height="60" ForeColor="255,255,255,202" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_guild_39" Font="WRYH22_O_BLACK" DrawMode="ExpandH" ClickSound="button_click"/>
+				</control>
+				<control name="Label5" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="175" Top="141" Width="414" Height="22" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="@ui_chat_tishi_1" Font="WRYH24_O_BLACK"/>
+				</control>
+			</control>
+		</control>
+	</control>
+</form>
+

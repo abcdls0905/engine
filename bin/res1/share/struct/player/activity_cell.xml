@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<object>
+    <properties>
+		<property name="DayOnlineMinute" type="int64" public="false" private="true" save="true" realtime="" desc="每日在线时间" />
+		<property name="BigAwardStep" type="dword" public="false" private="true" save="true" realtime="" desc="大奖领取标记" />
+		<property name="ActivityCellState" type="dword" public="false" private="true" save="false" realtime="" desc="活动状态" />
+		<property name="ActivityCellVersion" type="string" public="false" private="false" save="true" realtime="" desc="活动版本号"  />
+		
+		<property name="DayGetDiceState" type="dword" public="false" private="true" save="true" realtime="" desc="骰子领取标记" />
+		<property name="ActiveResetCount" type="dword" public="false" private="true" save="true" realtime="" desc="重置次数" />
+	</properties>
+    <records>
+        <record name="ac_cell_data_rec" cols="5" maxrows="5" save="true" public="false" private="true" desc="表格数据">
+            <column type="dword" desc="" />
+            <column type="dword" desc=""/>
+			<column type="dword" desc=""/>
+			<column type="dword" desc=""/>
+			<column type="dword" desc=""/>
+        </record>
+        <record name="ac_award_data_rec" cols="2" maxrows="12" save="true" public="false" private="true" desc="表格数据">
+            <column type="string" desc="" />
+			<column type="dword" desc="" />
+        </record>
+	</records>
+</object>

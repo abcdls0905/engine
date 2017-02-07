@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
+<!-- 交易行商品配置 -->
+<!--
+	ID - 可售卖商品的ConfigID
+	
+	ClassifiedIndex - 分类索引串 前两位01-99主类
+								 中两位01-99子类
+								 后两位01-99筛选类型
+								 
+	Type - 商品类型，0 - 普通物品 （上架后直接处于可售卖状态）
+					 1 - 贵重物品 （上架后要经过公示期）
+					 2 - 属性随机类商品 （根据具体品质判定属性来判断道具是否贵重）
+					 
+	PropName - 品质判断属性名 
+	
+	PropValueSet - 贵重物品的品质判断属性值集合(属性值必须为整数)
+	DefaultPrice - 默认价格(第一次上架，无成交记录) 必须大于最低推荐价格 小于最高推荐价格 （必须大于 MinSellPrice 2倍）
+	MinSellPrice -  最低上架价格 （最低推荐价格为 MinSellPrice / MinSellPriceRate）
+	MaxSellPrice -  最高上架价格 （最高推荐价格为 MaxSellPrice / MaxSellPriceRate） 必须大于 MinSellPrice 的3倍 （1/ MinSellPriceRate * MaxSellPriceRate）
+-->
+<Object>
+	<Property ID="Item_fwys_001" ClassifiedIndex="010100" Type="0" DefaultPrice="40" MinSellPrice="5" MaxSellPrice="120" MinPriceRate="0.125" MaxPriceRate="3"/>
+	<Property ID="Item_gjfwys_001" ClassifiedIndex="010200" Type="0" DefaultPrice="400" MinSellPrice="50" MaxSellPrice="1200" MinPriceRate="0.125" MaxPriceRate="3"/>
+	<Property ID="tattoo_center_4_A1" ClassifiedIndex="020100" Type="0" DefaultPrice="400" MinSellPrice="50" MaxSellPrice="1200" MinPriceRate="0.125" MaxPriceRate="3"/>
+	<Property ID="tattoo_center_4_A2" ClassifiedIndex="020200" Type="0" DefaultPrice="400" MinSellPrice="50" MaxSellPrice="1200" MinPriceRate="0.125" MaxPriceRate="3"/>
+	<Property ID="tattoo_center_4_B1" ClassifiedIndex="020300" Type="0" DefaultPrice="400" MinSellPrice="50" MaxSellPrice="1200" MinPriceRate="0.125" MaxPriceRate="3"/>
+	<Property ID="tattoo_center_4_B2" ClassifiedIndex="020400" Type="0" DefaultPrice="400" MinSellPrice="50" MaxSellPrice="1200" MinPriceRate="0.125" MaxPriceRate="3"/>
+	<Property ID="tattoo_center_4_C1" ClassifiedIndex="020500" Type="0" DefaultPrice="400" MinSellPrice="50" MaxSellPrice="1200" MinPriceRate="0.125" MaxPriceRate="3"/>
+	<Property ID="tattoo_center_4_C2" ClassifiedIndex="020600" Type="0" DefaultPrice="400" MinSellPrice="50" MaxSellPrice="1200" MinPriceRate="0.125" MaxPriceRate="3"/>
+	<Property ID="tattoo_center_4_D1" ClassifiedIndex="020700" Type="0" DefaultPrice="400" MinSellPrice="50" MaxSellPrice="1200" MinPriceRate="0.125" MaxPriceRate="3"/>
+	<Property ID="tattoo_center_4_D2" ClassifiedIndex="020800" Type="0" DefaultPrice="400" MinSellPrice="50" MaxSellPrice="1200" MinPriceRate="0.125" MaxPriceRate="3"/>
+	<Property ID="tattoo_center_4_E1" ClassifiedIndex="020900" Type="0" DefaultPrice="400" MinSellPrice="50" MaxSellPrice="1200" MinPriceRate="0.125" MaxPriceRate="3"/>
+	<Property ID="tattoo_center_4_E2" ClassifiedIndex="021000" Type="0" DefaultPrice="400" MinSellPrice="50" MaxSellPrice="1200" MinPriceRate="0.125" MaxPriceRate="3"/>
+	<Property ID="tattoo_center_4_F1" ClassifiedIndex="021100" Type="0" DefaultPrice="400" MinSellPrice="50" MaxSellPrice="1200" MinPriceRate="0.125" MaxPriceRate="3"/>
+	<Property ID="tattoo_center_4_F2" ClassifiedIndex="021200" Type="0" DefaultPrice="400" MinSellPrice="50" MaxSellPrice="1200" MinPriceRate="0.125" MaxPriceRate="3"/>
+	<Property ID="sp_Talisman01" ClassifiedIndex="030100" Type="0" DefaultPrice="80" MinSellPrice="40" MaxSellPrice="240" MinPriceRate="0.5" MaxPriceRate="3"/>
+	<Property ID="Talisman_01" ClassifiedIndex="030200" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_02" ClassifiedIndex="030300" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_03" ClassifiedIndex="030400" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_04" ClassifiedIndex="030500" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_05" ClassifiedIndex="030600" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_06" ClassifiedIndex="030700" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_07" ClassifiedIndex="030800" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_08" ClassifiedIndex="030900" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_09" ClassifiedIndex="031000" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_10" ClassifiedIndex="031100" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_11" ClassifiedIndex="031200" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_12" ClassifiedIndex="031300" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_13" ClassifiedIndex="031400" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_14" ClassifiedIndex="031500" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_15" ClassifiedIndex="031600" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_16" ClassifiedIndex="031700" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_17" ClassifiedIndex="031800" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_18" ClassifiedIndex="031900" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_19" ClassifiedIndex="032000" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_20" ClassifiedIndex="032100" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_21" ClassifiedIndex="032200" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_22" ClassifiedIndex="032300" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_23" ClassifiedIndex="032400" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_24" ClassifiedIndex="032500" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_25" ClassifiedIndex="032600" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_26" ClassifiedIndex="032700" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_27" ClassifiedIndex="032800" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_28" ClassifiedIndex="032900" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_29" ClassifiedIndex="033000" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="Talisman_30" ClassifiedIndex="033100" Type="0" DefaultPrice="800" MinSellPrice="400" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="125"/>
+	<Property ID="sp_hzwl01" ClassifiedIndex="040100" Type="0" DefaultPrice="200" MinSellPrice="100" MaxSellPrice="5000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="sp_hzfs02" ClassifiedIndex="040200" Type="0" DefaultPrice="200" MinSellPrice="100" MaxSellPrice="5000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40FYAD_Weapon" ClassifiedIndex="040300" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40FYAP_Weapon" ClassifiedIndex="040400" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40PHAD_Weapon" ClassifiedIndex="040500" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40PHAP_Weapon" ClassifiedIndex="040600" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40GJAD_Weapon" ClassifiedIndex="040700" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40GJAP_Weapon" ClassifiedIndex="040800" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40FYAD_Ring" ClassifiedIndex="040900" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40FYAP_Ring" ClassifiedIndex="041000" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40PHAD_Ring" ClassifiedIndex="041100" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40PHAP_Ring" ClassifiedIndex="041200" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40GJAD_Ring" ClassifiedIndex="041300" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40GJAP_Ring" ClassifiedIndex="041400" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40FYAD_Bangle" ClassifiedIndex="041500" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40FYAP_Bangle" ClassifiedIndex="041600" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40PHAD_Bangle" ClassifiedIndex="041700" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40PHAP_Bangle" ClassifiedIndex="041800" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40GJAD_Bangle" ClassifiedIndex="041900" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40GJAP_Bangle" ClassifiedIndex="042000" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40FYAD_Helmet" ClassifiedIndex="042100" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40FYAP_Helmet" ClassifiedIndex="042200" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40PHAD_Helmet" ClassifiedIndex="042300" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40PHAP_Helmet" ClassifiedIndex="042400" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40GJAD_Helmet" ClassifiedIndex="042500" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40GJAP_Helmet" ClassifiedIndex="042600" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40FYAD_Necklace" ClassifiedIndex="042700" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40FYAP_Necklace" ClassifiedIndex="042800" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40PHAD_Necklace" ClassifiedIndex="042900" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40PHAP_Necklace" ClassifiedIndex="043000" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40GJAD_Necklace" ClassifiedIndex="043100" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40GJAP_Necklace" ClassifiedIndex="043200" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40FYAD_Shoes" ClassifiedIndex="043300" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40FYAP_Shoes" ClassifiedIndex="043400" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40PHAD_Shoes" ClassifiedIndex="043500" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40PHAP_Shoes" ClassifiedIndex="043600" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40GJAD_Shoes" ClassifiedIndex="043700" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Equip_R_40GJAP_Shoes" ClassifiedIndex="043800" Type="0" DefaultPrice="4000" MinSellPrice="2000" MaxSellPrice="100000" MinPriceRate="0.5" MaxPriceRate="25"/>
+	<Property ID="Item_yljjbx01" ClassifiedIndex="050100" Type="0" DefaultPrice="200" MinSellPrice="50" MaxSellPrice="1000" MinPriceRate="0.25" MaxPriceRate="5"/>
+	<Property ID="Item_cellar_potion1" ClassifiedIndex="060100" Type="0" DefaultPrice="10" MinSellPrice="1" MaxSellPrice="500" MinPriceRate="0.1" MaxPriceRate="50"/>
+	<Property ID="Item_cellar_potion2" ClassifiedIndex="060200" Type="0" DefaultPrice="50" MinSellPrice="1" MaxSellPrice="500" MinPriceRate="0.02" MaxPriceRate="10"/>
+	<Property ID="sp_mount_horse_004" ClassifiedIndex="070100" Type="0" DefaultPrice="200" MinSellPrice="50" MaxSellPrice="10000" MinPriceRate="0.25" MaxPriceRate="50"/>
+	<Property ID="sp_mount_horse_005" ClassifiedIndex="070200" Type="0" DefaultPrice="200" MinSellPrice="50" MaxSellPrice="10000" MinPriceRate="0.25" MaxPriceRate="50"/>
+	<Property ID="mount_ship_001" ClassifiedIndex="070400" Type="0" DefaultPrice="4000" MinSellPrice="1000" MaxSellPrice="100000" MinPriceRate="0.25" MaxPriceRate="25"/>
+	<Property ID="mount_dragon_002" ClassifiedIndex="070500" Type="0" DefaultPrice="4000" MinSellPrice="1000" MaxSellPrice="100000" MinPriceRate="0.25" MaxPriceRate="25"/>
+	<Property ID="mount_horse_002" ClassifiedIndex="070600" Type="0" DefaultPrice="4000" MinSellPrice="1000" MaxSellPrice="100000" MinPriceRate="0.25" MaxPriceRate="25"/>
+	<Property ID="mount_rabbit_001" ClassifiedIndex="070700" Type="0" DefaultPrice="4000" MinSellPrice="1000" MaxSellPrice="100000" MinPriceRate="0.25" MaxPriceRate="25"/>
+	<Property ID="mount_rabbit_002" ClassifiedIndex="070800" Type="0" DefaultPrice="4000" MinSellPrice="1000" MaxSellPrice="100000" MinPriceRate="0.25" MaxPriceRate="25"/>
+	<Property ID="Item_tattoo_skillbzT" ClassifiedIndex="010300" Type="0" DefaultPrice="100" MinSellPrice="20" MaxSellPrice="10000" MinPriceRate="0.2" MaxPriceRate="100"/>
+	<Property ID="Item_tattoo_skillbzD" ClassifiedIndex="010400" Type="0" DefaultPrice="100" MinSellPrice="20" MaxSellPrice="10000" MinPriceRate="0.2" MaxPriceRate="100"/>
+	<Property ID="Item_tattoo_skillbzR" ClassifiedIndex="010500" Type="0" DefaultPrice="100" MinSellPrice="20" MaxSellPrice="10000" MinPriceRate="0.2" MaxPriceRate="100"/>
+	<Property ID="sp_mount_phoenix_001" ClassifiedIndex="070300" Type="0" DefaultPrice="200" MinSellPrice="50" MaxSellPrice="10000" MinPriceRate="0.25" MaxPriceRate="50"/>
+	<Property ID="Item_sjdj01" ClassifiedIndex="080100" Type="0" DefaultPrice="100" MinSellPrice="30" MaxSellPrice="10000" MinPriceRate="0.3" MaxPriceRate="100"/>
+	<Property ID="Item_sjdj02" ClassifiedIndex="080200" Type="0" DefaultPrice="100" MinSellPrice="30" MaxSellPrice="10000" MinPriceRate="0.3" MaxPriceRate="100"/>
+	<Property ID="Item_sjdj03" ClassifiedIndex="080300" Type="0" DefaultPrice="100" MinSellPrice="30" MaxSellPrice="10000" MinPriceRate="0.3" MaxPriceRate="100"/>
+	<Property ID="Item_sjdj04" ClassifiedIndex="080400" Type="0" DefaultPrice="100" MinSellPrice="30" MaxSellPrice="10000" MinPriceRate="0.3" MaxPriceRate="100"/>
+	<Property ID="Item_sjdj05" ClassifiedIndex="080500" Type="0" DefaultPrice="100" MinSellPrice="30" MaxSellPrice="10000" MinPriceRate="0.3" MaxPriceRate="100"/>
+	<Property ID="Item_sjxz01" ClassifiedIndex="080600" Type="0" DefaultPrice="200" MinSellPrice="50" MaxSellPrice="10000" MinPriceRate="0.25" MaxPriceRate="50"/>
+	<Property ID="Item_sjxz02" ClassifiedIndex="080700" Type="0" DefaultPrice="200" MinSellPrice="50" MaxSellPrice="10000" MinPriceRate="0.25" MaxPriceRate="50"/>
+	<Property ID="Item_sjxz03" ClassifiedIndex="080800" Type="0" DefaultPrice="200" MinSellPrice="50" MaxSellPrice="10000" MinPriceRate="0.25" MaxPriceRate="50"/>
+	<Property ID="Item_sjxz04" ClassifiedIndex="080900" Type="0" DefaultPrice="200" MinSellPrice="50" MaxSellPrice="10000" MinPriceRate="0.25" MaxPriceRate="50"/>
+	<Property ID="Item_sjxz05" ClassifiedIndex="081000" Type="0" DefaultPrice="200" MinSellPrice="50" MaxSellPrice="10000" MinPriceRate="0.25" MaxPriceRate="50"/>
+	<Property ID="Item_sjxz06" ClassifiedIndex="081100" Type="0" DefaultPrice="200" MinSellPrice="50" MaxSellPrice="10000" MinPriceRate="0.25" MaxPriceRate="50"/>
+	<Property ID="Item_sjxz07" ClassifiedIndex="081200" Type="0" DefaultPrice="200" MinSellPrice="50" MaxSellPrice="10000" MinPriceRate="0.25" MaxPriceRate="50"/>
+	<Property ID="Item_sjxz08" ClassifiedIndex="081300" Type="0" DefaultPrice="200" MinSellPrice="50" MaxSellPrice="10000" MinPriceRate="0.25" MaxPriceRate="50"/>
+	<Property ID="Item_sjxz09" ClassifiedIndex="081400" Type="0" DefaultPrice="200" MinSellPrice="50" MaxSellPrice="10000" MinPriceRate="0.25" MaxPriceRate="50"/>
+	<Property ID="Item_sjxz10" ClassifiedIndex="081500" Type="0" DefaultPrice="200" MinSellPrice="50" MaxSellPrice="10000" MinPriceRate="0.25" MaxPriceRate="50"/>
+	<Property ID="Item_sjxz11" ClassifiedIndex="081600" Type="0" DefaultPrice="200" MinSellPrice="50" MaxSellPrice="10000" MinPriceRate="0.25" MaxPriceRate="50"/>
+	<Property ID="Item_sjxz12" ClassifiedIndex="081700" Type="0" DefaultPrice="200" MinSellPrice="50" MaxSellPrice="10000" MinPriceRate="0.25" MaxPriceRate="50"/>
+	<Property ID="Item_pfdj31" ClassifiedIndex="090100" Type="0" DefaultPrice="100" MinSellPrice="30" MaxSellPrice="10000" MinPriceRate="0.3" MaxPriceRate="100"/>
+	<Property ID="Item_pfdj30" ClassifiedIndex="090200" Type="0" DefaultPrice="50" MinSellPrice="1" MaxSellPrice="500" MinPriceRate="0.02" MaxPriceRate="10"/>
+</Object>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!--
+名词解释：
+	PetUnShowBattleId: 武神不显示的战场
+	BattleIdList: 战场Id
+	PetSkillCoolTime: 切换到第三组VIP对应稀有技冷却时间
+	VipCoolTimeInfo: vip0,cool0;vip1,cool1;vip2,cool2
+	ClientPetCopyProp: 武神进入本地副本需同步的属性
+	ServerPetCopyProp: 武神进入远程副本需同步的属性
+	PropList: 属性名
+-->
+<Object>
+	<Property ID="PetPriceRatio" Base="100" LevelRatio="50" EvoRatio="3000" PeneRatio="2000" SkillRatio="1000" desc="雇佣武神价格系数"/>
+	<Property ID="PetUnShowBattleId" BattleIdList="4,11,17,18,19,20,21,22,50,51,60,61,63,64,65,67" desc="武神不显示的战场"/>
+	<Property ID="PetUnShowCloneId" CloneIdList="805,911,902,912,903" desc="武神不显示的副本"/>
+	<Property ID="PetUnKillBattleId" BattleIdList="41,42,43" desc="武神不随玩家死亡而被杀死的战场"/>
+	<Property ID="PetSkillCoolTime" VipCoolTimeInfo="10,10" desc="切换到第三组VIP对应稀有技冷却时间"/>
+	<Property ID="ClientPetCopyProp" PropList="TotalAttack,TotalAttackAdd,Crit,CritAdd,Toug,TougAdd,CritDam,CritDamAdd,TougDam,TougDamAdd,Hit,HitAdd,RealDam,RealDamAdd,Def,DefAdd,Rebound,ReboundAdd,Miss,MissAdd,Dizzy,DizzyAdd,DizzyAsist,DizzyAsistAdd,ParalyAdd,ParalyAsist,ParalyAsistAdd,FireDam,FireDamAdd,IceDam,IceDamAdd,LightningDam,LightningDamAdd,Leech,LeechAdd,MaxHP,MaxHPAdd,PeneLevel,EvoLevel,PropEffect,IgnoreDef,IgnoreDefAdd,DecRebound,DecReboundAdd,DefFireDam,DefFireDamAdd,DefIceDam,DefIceDamAdd,DefLiningDam,DefLiningDamAdd,Slow,SlowAdd,SlowAsist,SlowAsistAdd,Revive,ReviveAdd,FireDamAbsort,FireDamAbsortAdd,IceDamAbsort,IceDamAbsortAdd,LightningDamAbsort,LightningDamAbsortAdd,HpPercent,SkinID,Turn,DamageFlyPetAdvancePercent,DamageFlyPetAdvancePercentAdd,DamageFirePetAdvancePercent,DamageFirePetAdvancePercentAdd,DamageIcePetAdvancePercent,DamageIcePetAdvancePercentAdd,DamageLightningPetAdvancePercent,DamageLightningPetAdvancePercentAdd,DamagePlayerPetAdvancePercent,DamagePlayerPetAdvancePercentAdd,Dodge,DodgeAdd,DeployID,DamageChosePetAdvancePercentAdd,DamagePhysicalPetAdvancePercentAdd,DamageBeastPetAdvancePercentAdd,DamageAncientPetAdvancePercentAdd,DamageFightPetAdvancePercentAdd,DamageShootingPetAdvancePercentAdd,DamageMagePetAdvancePercentAdd,DamageDefensePetAdvancePercentAdd,DamageCripplePercent,DamageCripplePercentAdd" desc="武神进入本地副本需同步的属性"/>
+	<Property ID="ServerPetCopyProp" PropList="TotalAttack,TotalAttackAdd,Crit,CritAdd,Toug,TougAdd,CritDam,CritDamAdd,TougDam,TougDamAdd,Hit,HitAdd,RealDam,RealDamAdd,Def,DefAdd,Rebound,ReboundAdd,Miss,MissAdd,Dizzy,DizzyAdd,DizzyAsist,DizzyAsistAdd,ParalyAdd,ParalyAsist,ParalyAsistAdd,FireDam,FireDamAdd,IceDam,IceDamAdd,LightningDam,LightningDamAdd,Leech,LeechAdd,MaxHP,MaxHPAdd,PeneLevel,EvoLevel,PropEffect,IgnoreDef,IgnoreDefAdd,DecRebound,DecReboundAdd,DefFireDam,DefFireDamAdd,DefIceDam,DefIceDamAdd,DefLiningDam,DefLiningDamAdd,Slow,SlowAdd,SlowAsist,SlowAsistAdd,Revive,ReviveAdd,FireDamAbsort,FireDamAbsortAdd,IceDamAbsort,IceDamAbsortAdd,LightningDamAbsort,LightningDamAbsortAdd,SkinID,Turn,DamageFlyPetAdvancePercent,DamageFlyPetAdvancePercentAdd,DamageFirePetAdvancePercent,DamageFirePetAdvancePercentAdd,DamageIcePetAdvancePercent,DamageIcePetAdvancePercentAdd,DamageLightningPetAdvancePercent,DamageLightningPetAdvancePercentAdd,DamagePlayerPetAdvancePercent,DamagePlayerPetAdvancePercentAdd,Dodge,DodgeAdd,DeployID,DamageChosePetAdvancePercentAdd,DamagePhysicalPetAdvancePercentAdd,DamageBeastPetAdvancePercentAdd,DamageAncientPetAdvancePercentAdd,DamageFightPetAdvancePercentAdd,DamageShootingPetAdvancePercentAdd,DamageMagePetAdvancePercentAdd,DamageDefensePetAdvancePercentAdd,DamageCripplePercent,DamageCripplePercentAdd" desc="武神进入远程副本需同步的属性"/>
+</Object>

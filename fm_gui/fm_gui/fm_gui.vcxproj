@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="NsightTegraProject">
+    <NsightTegraProjectRevisionNumber>5</NsightTegraProjectRevisionNumber>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Tegra-Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Tegra-Android">
+      <Configuration>Release</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Tegra-Android">
+      <Configuration>Profile</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\action_track.cpp" />
+    <ClCompile Include="..\adjuster.cpp" />
+    <ClCompile Include="..\animation.cpp" />
+    <ClCompile Include="..\animation_path.cpp" />
+    <ClCompile Include="..\balloon.cpp" />
+    <ClCompile Include="..\balloon_set.cpp" />
+    <ClCompile Include="..\button.cpp" />
+    <ClCompile Include="..\caret.cpp" />
+    <ClCompile Include="..\check_button.cpp" />
+    <ClCompile Include="..\color_data.cpp" />
+    <ClCompile Include="..\combo_box.cpp" />
+    <ClCompile Include="..\control_box.cpp" />
+    <ClCompile Include="..\cool_manager.cpp" />
+    <ClCompile Include="..\cursor.cpp" />
+    <ClCompile Include="..\data_image.cpp" />
+    <ClCompile Include="..\designer.cpp" />
+    <ClCompile Include="..\design_info.cpp" />
+    <ClCompile Include="..\design_loader.cpp" />
+    <ClCompile Include="..\design_res.cpp" />
+    <ClCompile Include="..\design_saver.cpp" />
+    <ClCompile Include="..\edit.cpp" />
+    <ClCompile Include="..\ellipse_progress_bar.cpp" />
+    <ClCompile Include="..\eventmanager.cpp" />
+    <ClCompile Include="..\flexstring.cpp" />
+    <ClCompile Include="..\float_edit.cpp" />
+    <ClCompile Include="..\font.cpp" />
+    <ClCompile Include="..\form.cpp" />
+    <ClCompile Include="..\grid.cpp" />
+    <ClCompile Include="..\group_box.cpp" />
+    <ClCompile Include="..\group_map.cpp" />
+    <ClCompile Include="..\group_scrollable_box.cpp" />
+    <ClCompile Include="..\gui.cpp" />
+    <ClCompile Include="..\gui_msg_proc.cpp" />
+    <ClCompile Include="..\gui_scroll.cpp" />
+    <ClCompile Include="..\gui_utils.cpp" />
+    <ClCompile Include="..\hyperlinkstyle_manager.cpp" />
+    <ClCompile Include="..\imageanimation_manager.cpp" />
+    <ClCompile Include="..\image_control_grid.cpp" />
+    <ClCompile Include="..\image_data.cpp" />
+    <ClCompile Include="..\image_grid.cpp" />
+    <ClCompile Include="..\image_list.cpp" />
+    <ClCompile Include="..\image_player.cpp" />
+    <ClCompile Include="..\i_container.cpp" />
+    <ClCompile Include="..\i_control.cpp" />
+    <ClCompile Include="..\i_scrollable.cpp" />
+    <ClCompile Include="..\label.cpp" />
+    <ClCompile Include="..\lib_main.cpp" />
+    <ClCompile Include="..\list_box.cpp" />
+    <ClCompile Include="..\main_menu.cpp" />
+    <ClCompile Include="..\mark_string.cpp" />
+    <ClCompile Include="..\mempool2.cpp" />
+    <ClCompile Include="..\menu.cpp" />
+    <ClCompile Include="..\menu_item.cpp" />
+    <ClCompile Include="..\multitext_box.cpp" />
+    <ClCompile Include="..\picture.cpp" />
+    <ClCompile Include="..\progress_bar.cpp" />
+    <ClCompile Include="..\radio_button.cpp" />
+    <ClCompile Include="..\rich_edit.cpp" />
+    <ClCompile Include="..\rich_input_box.cpp" />
+    <ClCompile Include="..\round_box.cpp" />
+    <ClCompile Include="..\scene_box.cpp" />
+    <ClCompile Include="..\scroll_bar.cpp" />
+    <ClCompile Include="..\selector.cpp" />
+    <ClCompile Include="..\splitter.cpp" />
+    <ClCompile Include="..\sprite.cpp" />
+    <ClCompile Include="..\spritemanager.cpp" />
+    <ClCompile Include="..\string_util.cpp" />
+    <ClCompile Include="..\text.cpp" />
+    <ClCompile Include="..\text_box.cpp" />
+    <ClCompile Include="..\tinyhtml.cpp" />
+    <ClCompile Include="..\track_bar.cpp" />
+    <ClCompile Include="..\track_rect.cpp" />
+    <ClCompile Include="..\tree_node.cpp" />
+    <ClCompile Include="..\tree_node_ex.cpp" />
+    <ClCompile Include="..\tree_view.cpp" />
+    <ClCompile Include="..\tree_view_ex.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\action_track.h" />
+    <ClInclude Include="..\adjuster.h" />
+    <ClInclude Include="..\animation.h" />
+    <ClInclude Include="..\animation_path.h" />
+    <ClInclude Include="..\balloon.h" />
+    <ClInclude Include="..\balloon_set.h" />
+    <ClInclude Include="..\button.h" />
+    <ClInclude Include="..\caret.h" />
+    <ClInclude Include="..\check_button.h" />
+    <ClInclude Include="..\color_data.h" />
+    <ClInclude Include="..\combo_box.h" />
+    <ClInclude Include="..\control_box.h" />
+    <ClInclude Include="..\cool_manager.h" />
+    <ClInclude Include="..\cursor.h" />
+    <ClInclude Include="..\data_image.h" />
+    <ClInclude Include="..\designer.h" />
+    <ClInclude Include="..\design_info.h" />
+    <ClInclude Include="..\design_loader.h" />
+    <ClInclude Include="..\design_res.h" />
+    <ClInclude Include="..\design_saver.h" />
+    <ClInclude Include="..\edit.h" />
+    <ClInclude Include="..\ellipse_progress_bar.h" />
+    <ClInclude Include="..\eventmanager.h" />
+    <ClInclude Include="..\flexstring.h" />
+    <ClInclude Include="..\float_edit.h" />
+    <ClInclude Include="..\font.h" />
+    <ClInclude Include="..\form.h" />
+    <ClInclude Include="..\grid.h" />
+    <ClInclude Include="..\group_box.h" />
+    <ClInclude Include="..\group_map.h" />
+    <ClInclude Include="..\group_scrollable_box.h" />
+    <ClInclude Include="..\gui.h" />
+    <ClInclude Include="..\gui_const.h" />
+    <ClInclude Include="..\gui_input.h" />
+    <ClInclude Include="..\gui_scroll.h" />
+    <ClInclude Include="..\gui_utils.h" />
+    <ClInclude Include="..\hyperlinkstyle_manager.h" />
+    <ClInclude Include="..\imageanimation_manager.h" />
+    <ClInclude Include="..\image_control_grid.h" />
+    <ClInclude Include="..\image_data.h" />
+    <ClInclude Include="..\image_grid.h" />
+    <ClInclude Include="..\image_list.h" />
+    <ClInclude Include="..\image_player.h" />
+    <ClInclude Include="..\i_container.h" />
+    <ClInclude Include="..\i_control.h" />
+    <ClInclude Include="..\i_design_info.h" />
+    <ClInclude Include="..\i_scrollable.h" />
+    <ClInclude Include="..\label.h" />
+    <ClInclude Include="..\list_box.h" />
+    <ClInclude Include="..\main_menu.h" />
+    <ClInclude Include="..\mark_string.h" />
+    <ClInclude Include="..\mempool2.h" />
+    <ClInclude Include="..\menu.h" />
+    <ClInclude Include="..\menu_item.h" />
+    <ClInclude Include="..\multitext_box.h" />
+    <ClInclude Include="..\name_list.h" />
+    <ClInclude Include="..\picture.h" />
+    <ClInclude Include="..\progress_bar.h" />
+    <ClInclude Include="..\radio_button.h" />
+    <ClInclude Include="..\rich_edit.h" />
+    <ClInclude Include="..\rich_input_box.h" />
+    <ClInclude Include="..\round_box.h" />
+    <ClInclude Include="..\scene_box.h" />
+    <ClInclude Include="..\scroll_bar.h" />
+    <ClInclude Include="..\selector.h" />
+    <ClInclude Include="..\splitter.h" />
+    <ClInclude Include="..\sprite.h" />
+    <ClInclude Include="..\spritemanager.h" />
+    <ClInclude Include="..\string_util.h" />
+    <ClInclude Include="..\text.h" />
+    <ClInclude Include="..\text_box.h" />
+    <ClInclude Include="..\tinyhtml.h" />
+    <ClInclude Include="..\track_bar.h" />
+    <ClInclude Include="..\track_rect.h" />
+    <ClInclude Include="..\tree_node.h" />
+    <ClInclude Include="..\tree_node_ex.h" />
+    <ClInclude Include="..\tree_view.h" />
+    <ClInclude Include="..\tree_view_ex.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\fm_gui.vcproj" />
+    <None Include="..\fm_gui_vs2008.vcproj" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D0219DBA-0B29-4399-BD60-FDA0A3C4725D}</ProjectGuid>
+    <RootNamespace>fm_gui</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Profile|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL;PERFORMANCE_DEBUG</PreprocessorDefinitions>
+      <GccExceptionHandling>true</GccExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+      <GccExceptionHandling>true</GccExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

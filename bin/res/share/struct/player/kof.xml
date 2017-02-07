@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<object>
+	<properties>
+		<property name="KofScore" type="int" public="false" private="true" save="true" realtime="" desc="当前kof积分"/>
+	</properties>
+    <records>
+       <record name="kof_rolenpc_rec" cols="4" maxrows="7" save="true" public="false" private="true" desc="kof英雄出战表">
+			<column type="byte" desc="挑选出战位置" />
+			<column type="string" desc="出战英雄configid" />
+			<column type="byte" desc="实际出战次序" />
+			<column type="byte" desc="是否死亡" />
+      </record>
+	</records>
+</object>

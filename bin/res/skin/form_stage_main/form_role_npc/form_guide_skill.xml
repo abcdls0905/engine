@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop ShowGrid="true" Width="815" Height="685" BackColor="100,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="ExpandH"/>
+		<control name="groupbox_main" entity="GroupBox" script="" init="">
+			<prop Width="815" Height="685" BackColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+			<control name="Label1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="164" Top="63" Width="486" Height="550" ShadowColor="0,0,0,0" DrawMode="ExpandTile" BackImage="gui/tp2_common/backdrop/bg_001.png"/>
+			</control>
+			<control name="lbl_top_back" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="167" Top="109" Width="480" Height="500" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_002.png"/>
+			</control>
+			<control name="lbl_title_back" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="199" Top="49" Width="417" Height="54" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_04.png"/>
+			</control>
+			<control name="lbl_4bk" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="172" Top="117" Width="470" Height="490" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+			</control>
+			<control name="lbl_4" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="172" Top="579" Width="470" Height="28" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_03.png"/>
+			</control>
+			<control name="group_skill" entity="GroupBox" script="" init="">
+				<prop Left="157" Top="113" Width="498" Height="477" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+			</control>
+			<control name="btn_close" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/clos.png" PushImage="gui/tp2_common/window/clos1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="616" Top="45" Width="70" Height="70" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" ClickSound="ui_close"/>
+			</control>
+		</control>
+	</control>
+</form>
+

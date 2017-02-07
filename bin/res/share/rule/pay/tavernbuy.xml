@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- DiscountUI UI资源路径，折扣,路径  （当折扣是-1表示该UI是删除线资源）-->
+<!--SpecialDiscount 特殊折扣率，索引商品的数量，并调用折扣包ID，多个数量用分号隔开-->
+<!--RefreshCount	每日消耗道具刷新次数上限	-->
+<!--CapitalType	兑换商品需要的货币类型，与其相对概率，兑换比例。多个货币类型用分号隔开-->
+<!--SpecialDiscount	特殊折扣率，索引商品的数量，并调用折扣包ID，多个数量用分号隔开-->
+<!--BasicDiscount	常规折扣率，在商品数量不满足SpecialDiscount中配置的值时有效，调用折扣包ID-->
+<!--RefreshItem 刷新道具-->
+<Object>
+	<Property ID="0" Name="DropID" Value="tavern"/>
+	<Property ID="1" Name="RefreshCount" Value="50"/>
+	<Property ID="2" Name="RefreshItem" Value="Item_jg"/>
+	<Property ID="3" Name="CapitalType" Value="3,96,1,100;1,4,1500,100"/>
+	<Property ID="4" Name="SpecialDiscount" Value="11,10001;12,10001;13,10001;14,10001;15,10001;16,10002;17,10002;18,10002;19,10002;20,10002"/>
+	<Property ID="5" Name="BasicDiscount" Value="10000"/>
+</Object>

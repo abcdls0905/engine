@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="gb2312"?>
+
+<object>
+    <properties>
+	    <property name="ServerCurrentDayTime" type="string" public="false" private="true" save="false" realtime="" desc="服务器当前日期" />   
+	    <property name="ShareWithFriendsTimes" type="dword" public="false" private="true" save="true" realtime="true" desc="记录分享到朋友圈的次数" />   
+        <property name="ShareWithFriendsMoment" type="int64" public="false" private="true" save="true" realtime="true" desc="记录上次分享到朋友圈的时刻" />
+		<property name="PhoneBindState" type="int" public="false" private="true" save="true" realtime="true" desc="绑定手机状态（0未绑定；1已绑定）" />
+		<property name="PhoneBindGiftState" type="int" public="false" private="true" save="true" realtime="true" desc="绑定手机状态礼品领取状态（0未领取；1已领取）" />
+        <property name="SignInMoment" type="int" public="false" private="true" save="true" realtime="true" desc="月签每日签到时刻" />
+		<property name="SignInVersion" type="int" public="false" private="false" save="true" realtime="" desc="月签版本号" />
+		<property name="CreatePlayerTime" type="int" public="false" private="false" save="true" realtime="" desc="玩家创建日期" />
+        <property name="SignInTime" type="int" public="false" private="false" save="true" realtime="" desc="月签到大循环时间" />
+	</properties>
+    <records>
+        <record name="level_gift_rec" cols="2" maxrows="100" save="true" public="false" private="true" desc="等级礼包表">
+            <column type="dword" desc="解锁等级" />
+            <column type="dword" desc="是否已领取"/>
+        </record>
+		<record name="new_server_gift_rec" cols="2" maxrows="100" save="true" public="false" private="true" desc="新服礼包表">
+            <column type="dword"  desc="领取个数" />
+			<column type="string" desc="领取日期"/>
+        </record>
+		<record name="online_gift_rec" cols="2" maxrows="100" save="true" public="false" private="true" desc="在线礼包">
+			<column type="dword"  desc="当前剩余秒数"/>
+			<column type="dword"  desc="是否已领取" />
+        </record>
+		<record name="everyday_gift_rec" cols="2" maxrows="100" save="true" public="false" private="true" desc="签到礼包">
+			<column type="dword"   desc="解锁天数"/>
+			<column type="string"  desc="领取的日期" />
+        </record>
+                <record name="sign_in_rec" cols="3" maxrows="100" save="true" public="false" private="true" desc="月签表">
+			<column type="word" desc="第几天"/>
+			<column type="word" desc="签到时VIP等级"/>
+			<column type="byte" desc="是否是补签"/>
+		</record>
+      <record name="sign_in_gift_rec" cols="2" maxrows="10" save="true" public="false" private="true" desc="月签奖励包表">
+        <column type="byte" desc="奖励包ID"/>
+        <column type="byte" desc="是否领取"/>
+      </record>
+	</records>
+</object>

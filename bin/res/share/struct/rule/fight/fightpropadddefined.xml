@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
+<!-- edited with XMLSpy v2010 (http://www.altova.com) by MESMERiZE (MiZE) -->
+<object>
+	<properties>		
+		<!-- 最新技能流程计算所需配置字段 -->
+		<property name="MaxHPAdd" type="int" public="true" private="true" save="false" realtime="" desc="血量额外上限"/>
+		<property name="MaxMPAdd" type="int" public="false" private="true" save="false" desc="法力额外上限"/>
+    		<property name="MaxRCAdd" type="int" public="false" private="true" save="false" desc="怒气额外上限"/>
+    		<property name="MaxECAdd" type="int" public="false" private="true" save="false" desc="能量额外上限"/>
+    		<property name="MaxGPAdd" type="int" public="false" private="true" save="false" desc="气力额外上限"/>    		
+		<property name="MaxDFAdd" type="int" public="false" private="true" save="false" desc="护盾额外上限"/>
+		<property name="AttackBaseAdd" type="int" public="false" private="true" save="false" desc="攻击基础值"/>		
+		<property name="AttackRateAdd" type="int" public="false" private="true" save="false" desc="攻击百分比"/>
+		<property name="TotalAttackAdd" type="int" public="false" private="true" save="false" desc="总攻击力"/>
+		<property name="ADTotalAdd" type="int" public="false" private="true" save="false" realtime="true" desc="物理总攻击"/>
+		<property name="ADDefBaseAdd" type="int" public="false" private="true" save="false" desc="物理防御值"/>
+		<property name="ADDefRateAdd" type="int" public="false" private="true" save="false" desc="物理减伤率"/>
+		<property name="TwiceADDefAdd" type="int" public="false" private="true" save="false" desc="物理额外减伤率"/>
+    <property name="TJADDefAdd" type="int" public="false" private="true" save="false" realtime="" desc="太极技物理二次减伤率"/>
+    <property name="TJAPDefAdd" type="int" public="false" private="true" save="false" realtime="" desc="太极技法术二次减伤率"/>
+		<property name="ADDefRiftAdd" type="int" public="false" private="true" save="false" desc="物理穿透率"/>
+		<property name="APBaseAdd" type="int" public="false" private="true" save="false" desc="法术攻击"/>
+		<property name="APRateAdd" type="int" public="false" private="true" save="false" desc="法术攻击百分比"/>
+		<property name="APTotalAdd" type="int" public="false" private="true" save="false" realtime="" desc="法术攻击"/>
+		<property name="APDefBaseAdd" type="int" public="false" private="true" save="false" realtime="" desc="法术防御值"/>
+		<property name="APDefRateAdd" type="int" public="false" private="true" save="false" realtime="" desc="法术减伤率"/>
+		<property name="TwiceAPDefAdd" type="int" public="false" private="true" save="false" realtime="" desc="法术额外减伤率"/>
+	  	<property name="APDefRiftAdd" type="int" public="false" private="true" save="false" desc="法术穿透率"/>
+		<property name="HitAdd" type="int" public="false" private="true" save="false" desc="命中"/>
+		<property name="MissAdd" type="int" public="true" private="true" save="false" desc="闪避"/>
+		<property name="CritAdd" type="int" public="false" private="true" save="false" desc="暴击几率"/>
+		<property name="TougAdd" type="int" public="true" private="true" save="false" desc="抗暴击"/>
+		<property name="CritDamAdd" type="int" public="false" private="true" save="false" desc="暴击伤害"/>
+		<property name="TougDamAdd" type="int" public="true" private="true" save="false" desc="暴击免伤"/>
+		<property name="DefAdd" type="int" public="true" private="true" save="false" desc="免伤"/>
+		<property name="RealDamAdd" type="int" public="false" private="true" save="false" desc="真实伤害"/>
+		<property name="DamTotalAdd" type="int" public="true" private="true" save="false" desc="伤害加成"/>
+		<property name="DodgeAdd" type="int" public="true" private="true" save="false" desc="格挡"/>
+		<property name="HPRegAdd" type="int" public="false" private="true" save="false" desc="命中回血"/>
+		<property name="MPRegAdd" type="int" public="false" private="true" save="false" desc="命中回蓝"/>
+    		<property name="DFRegAdd" type="int" public="false" private="true" save="false" desc="命中回护盾值"/>
+		<property name="RCRegAdd" type="int" public="false" private="true" save="false" desc="命中回怒气值"/>
+		<property name="ECRegAdd" type="int" public="false" private="true" save="false" desc="命中回能量值"/>
+		<property name="GPRegAdd" type="int" public="false" private="true" save="false" desc="命中回气力值"/>
+		<property name="DisCost1Add" type="int" public="false" private="true" save="false" desc="减少消耗1"/>
+		<property name="DisCost2Add" type="int" public="false" private="true" save="false" desc="减少消耗2"/>
+		<property name="DisCost3Add" type="int" public="false" private="true" save="false" desc="减少消耗3"/>
+		<property name="DisCost4Add" type="int" public="false" private="true" save="false" desc="减少消耗4"/>
+		<property name="DisCD1Add" type="int" public="false" private="true" save="false" desc="减CD1"/>
+		<property name="DisCD2Add" type="int" public="false" private="true" save="false" desc="减CD2"/>
+		<property name="DisCD3Add" type="int" public="false" private="true" save="false" desc="减CD3"/>
+		<property name="DisCD4Add" type="int" public="false" private="true" save="false" desc="减CD4"/>
+		<property name="ReviveAdd" type="int" public="false" private="true" save="false" desc="复活次数"/>
+		<property name="LeechAdd" type="int" public="false" private="true" save="false" desc="吸血"/>
+		<property name="ReboundAdd" type="int" public="true" private="true" save="false" desc="反弹伤害"/>
+		<property name="DeadlyAdd" type="int" public="false" private="true" save="false" desc="必几率"/>
+		<property name="DizzyAdd" type="int" public="false" private="true" save="false" desc="眩晕几率"/>
+		<property name="DizzyAsistAdd" type="int" public="true" private="true" save="false" desc="眩晕抗性"/>
+		<property name="ParalyAdd" type="int" public="false" private="true" save="false" desc="麻痹几率"/>
+		<property name="ParalyAsistAdd" type="int" public="true" private="true" save="false" desc="麻痹抗性"/>		
+		<property name="FireDamAdd" type="int" public="false" private="true" save="false" desc="火伤害"/>
+		<property name="FireRateAdd" type="int" public="false" private="true" save="false" desc="火伤害几率"/>
+		<property name="IceDamAdd" type="int" public="false" private="true" save="false" desc="冰伤害"/>	
+		<property name="IceRateAdd" type="int" public="false" private="true" save="false" desc="冰伤害几率"/>
+		<property name="LightningDamAdd" type="int" public="false" private="true" save="false" desc="雷伤害"/>
+		<property name="LightningRateAdd" type="int" public="false" private="true" save="false" desc="雷伤害几率"/>
+    		<property name="WindDamAdd" type="int" public="false" private="true" save="false" desc="风伤害"/>
+    		<property name="WindRateAdd" type="int" public="false" private="true" save="false" desc="风伤害几率"/>
+    		<property name="SoilDamAdd" type="int" public="false" private="true" save="false" desc="风伤害"/>
+    		<property name="SoilRateAdd" type="int" public="false" private="true" save="false" desc="风伤害几率"/>
+    		<property name="PoisonDamAdd" type="int" public="false" private="true" save="false" desc="风伤害"/>
+    		<property name="PoisonRateAdd" type="int" public="false" private="true" save="false" desc="风伤害几率"/>
+    <property name="CureRateAdd"  type="int" public="true" private="true" save="false" desc="治疗属性比值"/>
+    <property name="MaxBreakAdd"  type="int" public="false" private="true" save="false" desc="破防值"/>
+    <property name="LeechAsistAdd" type="int" public="false" private="true" save="false" desc="吸血抗性"/>
+    <property name="ReboundAsistAdd" type="int" public="false" private="true" save="false" desc="反伤抗性"/>
+  	</properties>
+</object>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<object>
+    <internals>
+        <property name="Type" type="byte" public="true" private="true" save="false" realtime="" desc="类型: TYPE_ITEM" />
+    </internals>
+    <properties>
+        <property name="QName" type="widestr" public="false" private="false" save="false" realtime="" desc="查询用名称" />
+        <property name="QTypeID" type="int" public="false" private="false" save="false" realtime="" desc="查询用编号" />
+        <property name="ConfigID" type="string" public="true" private="true" save="false" realtime="" desc="编号" />
+        <property name="Level" type="int" public="false" private="true" save="false" realtime="" desc="道具等级" />
+        <property name="Resource" type="string" public="true" private="false" save="false" realtime="" desc="资源" />
+        <property name="ItemType" type="int" public="false" private="true" save="false" realtime="" desc="物品类型" />
+        <property name="ItemUseMany" type="int" public="false" private="true" save="false" realtime="" desc="多次使用类型，1为多次使用需消耗别的物品，2为多次使用不需消耗别的物品" />
+        <property name="ColorLevel" type="Word" public="false" private="true" save="false" realtime="" desc="颜色等级" />
+        <property name="PropPack" type="string" public="false" private="false" save="true" realtime="" desc="属性包" />
+        <property name="UniqueID" type="string" public="false" private="true" save="true" realtime="" desc="唯一编号" />
+        <property name="Amount" type="int" public="true" private="true" save="true" realtime="true" desc="当前数量" />
+        <property name="MaxAmount" type="int" public="false" private="false" save="false" realtime="" desc="最大数量" />
+        <property name="MaxCount" type="int" public="false" private="false" save="false" realtime="" desc="可拥有最大数量"/>
+        <property name="BindStatus" type="int" public="false" private="false" save="true" realtime="" desc="绑定状态, 0:未绑定, 1:已绑定" />
+        <property name="IsNewItem" type="int" public="false" private="true" save="true" realtime="true" desc="是否为新物品, 0:新物品, 1:非新物品" />
+		<property name="SellPrice0" type="int" public="false" private="false" save="false" realtime="" desc="售价0" />
+        <property name="SellPrice1" type="int" public="false" private="true" save="false" realtime="" desc="售价1" />
+        <property name="SellPrice2" type="int" public="false" private="true" save="false" realtime="" desc="售价2" />
+        <property name="SellPrice3" type="int" public="false" private="true" save="false" realtime="" desc="售价3" />
+        <property name="SellPrice4" type="int" public="false" private="true" save="false" realtime="" desc="售价4" />
+        <property name="SellPrice5" type="int" public="false" private="true" save="false" realtime="" desc="售价4" />
+        <property name="BuyPrice0" type="int" public="false" private="false" save="false" realtime="" desc="买价0" />
+        <property name="BuyPrice1" type="int" public="false" private="false" save="false" realtime="" desc="买价1" />
+        <property name="BuyPrice2" type="int" public="false" private="false" save="false" realtime="" desc="买价2" />
+        <property name="BuyPrice3" type="int" public="false" private="false" save="false" realtime="" desc="买价3" />
+        <property name="BuyPrice4" type="int" public="false" private="false" save="false" realtime="" desc="买价4" />
+		<property name="BuyPrice5" type="int" public="false" private="false" save="false" realtime="" desc="冰晶石" />
+		<property name="BuyPrice6" type="int" public="false" private="false" save="false" realtime="" desc="声望" />
+		<property name="BuyPrice7" type="int" public="false" private="false" save="false" realtime="" desc="消耗战场荣誉值" />
+		<property name="BuyPrice8" type="int" public="false" private="false" save="false" realtime="" desc="消耗巅峰令牌" />
+		<property name="BuyPrice9" type="int" public="false" private="false" save="false" realtime="" desc="勇者之证" />
+		<property name="BuyPrice10" type="int" public="false" private="false" save="false" realtime="" desc="擂台之证" />
+		<property name="BuyPrice11" type="int" public="false" private="false" save="false" realtime="" desc="圣魔之血" />
+		<property name="BuyPrice12" type="int" public="false" private="false" save="false" realtime="" desc="宝藏积分" />
+		<property name="BuyPrice13" type="int" public="false" private="false" save="false" realtime="" desc="活跃度" />
+		<property name="BuyPrice14" type="int" public="false" private="false" save="false" realtime="" desc="技能符文点" />
+		<property name="BuyPrice15" type="int" public="false" private="false" save="false" realtime="" desc="军功" />
+		<property name="BuyPrice16" type="int" public="false" private="false" save="false" realtime="" desc="能量池" />
+		<property name="BuyPrice17" type="int" public="false" private="false" save="false" realtime="" desc="好友度" />
+        <property name="Skill1" type="string" public="false" private="false" save="false" realtime="" desc="技能1" />
+        <property name="Skill2" type="string" public="false" private="false" save="false" realtime="" desc="技能2" />
+        <property name="Skill3" type="string" public="false" private="false" save="false" realtime="" desc="技能3" />
+        <property name="Skill4" type="string" public="false" private="false" save="false" realtime="" desc="技能4" />
+        <property name="Buffer" type="string" public="false" private="false" save="false" realtime="" desc="角色穿上装备就被加上该buffer，卸除装备就删除该buffer"/>
+        <property name="LimitedPack" type="int" public="false" private="false" save="false" realtime="" desc="装备条件包" />
+        <property name="ArtPack" type="int" public="false" private="false" save="false" realtime="" desc="美术静态数据包" />
+	    <property name="ArtPackList" type="string" public="false" private="false" save="false" realtime="" desc="美术包列表（不同角色使用不同的美术包）" />
+        <property name="FuncPack" type="int" public="false" private="false" save="false" realtime="" desc="功能静态数据包" />
+        <property name="SaveLogLevel" type="int" public="false" private="false" save="false" realtime="" desc="日志等级静态数据" />
+        <property name="SoulChainingList" type="string" public="false" private="false" save="false" desc="灵魂链接包链表"/>
+        <property name="PropDamList" type="int" public="false" private="false" save="false" desc="属性伤害包"/>
+        <property name="CantSell" type="byte" public="false" private="false" save="false" realtime="" desc="能否贩卖" />
+        <property name="CantDelete" type="byte" public="false" private="false" save="false" realtime="" desc="是否能删除,大于0时不可" />
+        <property name="CantMove" type="int" public="false" private="false" save="false" realtime="" desc="是否能移动,大于0时不可" />
+        <property name="Droper" type="object" public="false" private="false" save="false" realtime="" desc="物品是谁掉的" />
+        <property name="ItemOwner" type="object" public="false" private="false" save="false" realtime="" desc="物品归属者" />
+        <property name="ItemDropX" type="float" public="true" private="false" save="false" realtime="" desc="物品掉落起始点X坐标" />
+        <property name="ItemDropZ" type="float" public="true" private="false" save="false" realtime="" desc="物品掉落起始点Z坐标" />
+        <property name="Scale" type="string" public="true" private="false" save="false" realtime="" desc="模型缩放比例" />
+        <property name="ItemDropped" type="byte" public="false" private="false" save="false" realtime="" desc="出生动画是否允许播放" />
+        <property name="OwnerName" type="widestr" public="true" private="false" save="false" realtime="" desc="归属者名称"/>
+        <property name="Quality" type="int" public="true" private="true" save="false" realtime="" desc="装备品质"/>
+		<property name="AwakeEquipTeam" type="string" public="false" private="true" save="false" realtime="" desc="装备觉醒"/>
+		<property name="WingArtPack" type="string" public="false" private="false" save="false" realtime="" desc="时装翅膀"/>
+		<property name="ShowWing" type="string" public="false" private="false" save="false" realtime="" desc="显示时装翅膀"/>
+		<property name="PropSkillID" type="string" public="false" private="true" save="false" realtime="" desc="技能或属性ID"/>
+		<property name="ItemList" type="string" public="false" private="false" save="false" realtime="" desc="包含的物品列表"/>
+    </properties>
+    <records>
+        <record name="pickup_member_rec" cols="2" maxrows="50" save="false" public="false" private="false" desc="记录可拾取者的表格">
+            <column type="widestr" desc="玩家名" />
+            <column type="byte" desc="" />
+        </record>
+        <record name="dice_member_rec" cols="2" maxrows="50" save="false" public="false" private="false" desc="记录可掷骰的成员名单的表格">
+            <column type="widestr" desc="玩家名" />
+            <column type="byte" desc="投掷的点数" />
+        </record>
+    </records>
+    <includes />
+</object>

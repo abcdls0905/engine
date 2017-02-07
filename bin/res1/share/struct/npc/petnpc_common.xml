@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--定义武神共用属性，在member、room中配置相同的属性定义在这里-->
+<object>
+	<internals />
+	<properties>
+        <property name="BornAction" type="string" public="false" private="false" save="false" realtime="" desc="出生动作" />
+        <property name="BornProtectTime" type="int" public="false" private="false" save="false" desc="保护时间（可跟进动作时间来设定）"/>
+        <property name="FightAction" type="string" public="false" private="true" save="false" realtime="" desc="npc进入战斗动作" />
+        <property name="FightProtectTime" type="int" public="false" private="true" save="false" realtime="" desc="npc进入战斗保护时间" />
+        <property name="KeDamageRadius" type="float" public="false" private="false" save="false" desc="受伤害半径"/>
+        <property name="ColorLevel" type="int" public="false" private="true" save="true" realtime="" desc="宠物颜色" />
+        <property name="EvoLevel"   type="int" public="true" private="true" save="true" realtime="true" desc="进化等级" />
+        <property name="PeneLevel"  type="int" public="true" private="true" save="true" realtime="true" desc="突破等级" />
+        <property name="PeneCount"  type="int" public="false" private="true" save="true" realtime="true" desc="突破次数" />
+        <property name="Quality" type="int" public="false" private="false" save="false" realtime="" desc="宠物品质" />
+        <property name="Skill" type="string" public="false" private="false" save="false" realtime="" desc="技能详细"/>
+        <property name="Tupo" type="string" public="true" private="true" save="false" realtime="" desc="突破详细"/>
+        <property name="PetBuffer" type="string" public="false" private="false" save="false" realtime="" desc="给宠物加的buffer。格式：颜色,buff列表;[颜色,buffs]..."/>
+        <property name="MasterSkill" type="string" public="false" private="false" save="false" realtime="" desc="宠物给主人提供的技能"/>
+        <property name="MasterSkillLevel" type="int" public="false" private="true" save="true" realtime="true" desc="宠物给主人提供的技能等级(雇佣用)"/>
+        <property name="ChangeSkill" type="string" public="false" private="false" save="false" realtime="" desc="宠物切换释放的技能"/>
+        <property name="IsGotoWar" type="int" public="false" private="true" save="true" realtime="true" desc="是否出征"/>
+        <property name="PetIsNew" type="int" public="false" private="true" save="true" realtime="true" desc="新获得宠物"/>
+        <property name="PropUpGradePackID" type="string" public="false" private="true" save="false" realtime="" desc="宠物属性成长包"/>
+        <property name="BattleAbility" type="int" public="false" private="true" save="true" realtime="true" desc="宠物战斗力"/>
+        <property name="UniqueID" type="string" public="false" private="true" save="true" realtime="" desc="宠物唯一标识"/>
+        <property name="Transparency" type="int" public="true" private="false" save="false" realtime="" desc="透明度"/>
+        <property name="IsClonePetData" type="int" public="false" private="false" save="false" realtime="" desc="是否是召唤宠物"/>
+		<property name="PropEffect" type="string" public="true" private="true" save="false" realtime="true" desc="属性提升效果"/>
+		<property name="DefencePropEffect" type="string" public="true" private="true" save="false" realtime="true" desc="擂台武神属性提升效果"/>
+		<property name="UnlockSkillCount" type="int" public="false" private="false" save="false" realtime="" desc="品质对应解锁技能数量"/>
+		<property name="HpPercent" type="int" public="false" private="true" save="true" realtime="true" desc="擂台武神剩余血量%"/>
+		<property name="MasterName" type="widestr" public="false" private="true" save="true" realtime="true" desc="提供该擂台武神玩家名字"/>
+		<property name="IsDefenceGotoWar" type="int" public="false" private="true" save="true" realtime="true" desc="擂台武神是否出征"/>
+		<property name="PetType" type="string" public="false" private="false" save="false" realtime="" desc="武神类型"/>
+        <property name="GraspSkillTeam" type="string" public="true" private="true" save="true" realtime="true" desc="领悟技能组"/>
+        <property name="GraspSkillName" type="string" public="true" private="true" save="true" realtime="true" desc="领悟技能名"/>
+        <property name="GraspSkillType" type="int" public="true" private="true" save="true" realtime="true" desc="领悟技能类型"/>
+        <property name="GraspSkillQuality" type="int" public="true" private="true" save="true" realtime="true" desc="领悟技能品质颜色"/>
+		<property name="Revive" type="int" public="true" private="true" save="false" desc="复活次数"/>
+		<property name="ReviveAdd" type="int" public="true" private="true" save="false" desc="复活次数附加"/>		
+		<property name="RemainRevive" type="int" public="true" private="false" save="false" desc="剩余复活次数"/>
+        <property name="SkillDepositOpenLock" type="int" public="true" private="true" save="true" realtime="true" desc="技能寄存栏解锁数量"/>
+        <property name="Turn" type="byte" public="true" private="true" save="true" realtime="true" desc="武神转生"/>
+        <property name="TurnSkill" type="string" public="false" private="false" save="false" desc="武神转生技能"/>
+        <property name="TurnSpecialSkill" type="string" public="false" private="false" save="false" desc="武神转生专属技能"/>
+        <property name="SkinViewIndex" type="int" public="false" private="true" save="true" realtime="true" desc="武神皮肤对应容器位置"/>
+        <property name="Skin" type="string" public="false" private="false" save="false" desc="武神皮肤"/>
+        <property name="SkinID" type="string" public="true" private="true" save="true" realtime="true" desc="武神皮肤"/>
+		<property name="TurnAISkillSequenceID" type="string" public="false" private="true" save="false" desc="AI-转生武神技能队列"/>
+		<property name="FightTime" type="int64" public="false" private="false" save="false" realtime="" desc="参战时间"/>
+		<property name="PetRelate" type="string" public="false" private="true" save="true" realtime="" desc="武神羁绊"/>
+		<property name="DeployID" type="byte" public="false" private="true" save="true" desc="当前阵法ID"/>
+		<property name="EnterDeployID" type="byte" public="false" private="true" save="true" desc="武神所在阵法ID"/>
+		<property name="PracticeState" type="byte" public="false" private="true" save="true" desc="武神修炼状态"/>
+		<property name="PracticeLevel" type="int" public="false" private="true" save="true" realtime="true" desc="武神修炼,0表示没有开启修炼，1表示开启修炼，11表示一重修炼，21表示2重修炼，31表示三重修炼"/>
+    </properties>
+    <records>
+	      <record name="pet_equipment_rec" cols="3" maxrows="10" save="true" public="true" private="true" desc="宠物装备列表">
+            <column type="string" desc="装备config" />
+            <column type="dword" desc="装备在容器中位置" />
+            <column type="byte" desc="装备在装备栏中位置" />
+          </record>
+	      <record name="petequip_suit_prop" cols="3" maxrows="100" save="true" public="true" private="true" desc="宠物装备套装属性列表">
+            <column type="dword" desc="套装属性ID" />
+			<column type="byte" desc="具备的附加属性类型，0表示技能，1表示Buff" />
+            <column type="string" desc="该套装属性具备的技能或者BUFF" />
+          </record>
+    	  <record name="pet_skill_rec" cols="2" maxrows="32" save="true" public="false" private="true" desc="宠物技能列表">
+            <column type="string" desc="技能名称" />
+            <column type="dword" desc="技能等级" />
+          </record>
+		  <record name="pet_grasp_skill_rec" cols="4" maxrows="32" save="true" public="true" private="true" desc="宠物领悟技能列表">
+            <column type="string" desc="技能名称" />
+            <column type="dword" desc="技能等级" />
+			<column type="dword" desc="技能类型" />
+            <column type="dword" desc="技能品质" />
+          </record>
+          <record name="pet_grasp_deposit_rec" cols="4" maxrows="32" save="true" public="true" private="true" desc="宠物领悟技能寄存列表">
+            <column type="string" desc="技能名称" />
+            <column type="dword" desc="技能等级" />
+            <column type="dword" desc="技能类型" />
+            <column type="dword" desc="技能品质" />
+          </record>
+		  <record name="pet_prop_rec" cols="3" maxrows="300" save="false" public="false" private="false" desc="宠物至尊切磋属性">
+            <column type="string" desc="属性名" />
+            <column type="dword" desc="属性值" />
+            <column type="string" desc="属性值" />
+          </record>
+		  <record name="pet_turn_rec" cols="2" maxrows="8" save="true" public="false" private="true" desc="武神转生专属">
+            <column type="string" desc="专属ID" />
+            <column type="dword" desc="专属等级" />
+          </record>
+		  <record name="pet_advance_prop_rec" cols="2" maxrows="32" save="false" public="false" private="false" realtime="false" desc="武神转生被动">
+			<column type="string" desc="属性名" />
+			<column type="int" desc="属性值"/>
+		  </record>
+		  <record name="pet_practice_type_rec" cols="3" maxrows="3" save="true" public="false" private="true" desc="武神修炼类型列表">
+			<column type="byte" desc="修炼类型" />
+			<column type="dword" desc="修炼等级"/>
+			<column type="byte" desc="修炼是否完成" />
+		  </record>
+		  <record name="pet_practice_prop_rec" cols="2" maxrows="300" save="true" public="false" private="true" desc="武神修炼技能表">
+			<column type="string" desc="修炼属性" />
+			<column type="dword" desc="属性值"/>
+		  </record>
+    </records>
+    <includes>
+        <path name="struct\npc\rule\modifybase.xml" desc="属性 技能 buff修正表" />
+        <path name="struct\npc\rule\graspproperty.xml" desc="宠物领悟相关表" />        
+		<path name="struct\ai\ai_npc_data.xml" desc="AI属性" />
+        <path name="struct\ai\ai_motion.xml" desc="AI属性" />
+		<path name="struct\npc\npcproperty\evo.xml" desc="NPC进阶配置" />
+		<path name="struct\npc\verify\verify.xml" desc="NPC进阶配置" />
+    </includes>
+</object>

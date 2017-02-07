@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="form_common\form_error" init="main_form_init">
+        <prop IsGC="true" Left="13" Top="133" Width="62" Height="54" ForeColor="0,0,0,0" LineColor="0, 0, 0, 0" ShadowColor="0,0,0,0" Transparent="true" DrawMode="Expand" />
+        <event on_open="main_form_open" />
+        <control name="btn_start" entity="Button" script="" init="">
+            <prop NormalImage="gui\gm\btn_start.png" FocusImage="gui\gm\btn_start.png" PushImage="gui\gm\btn_start.png" DisableImage="gui\gm\btn_start.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="54" Height="54" ForeColor="255,150,232,255" BackColor="255, 255, 255, 255" ShadowColor="0,0,0,0" TabStop="true" DrawMode="FitWindow" InSound="ui_open" ClickSound="ok_7" />
+            <event on_click="on_btn_start_click" />
+        </control>
+    </control>
+</form>

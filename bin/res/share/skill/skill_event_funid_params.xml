@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- edited with XMLSpy v2013 (http://www.altova.com) by  () -->
+<!-- VTYPE_BOOL:1 VTYPE_INT:2 VTYPE_INT64:3 VTYPE_FLOAT:4 VTYPE_DOUBLE:5 VTYPE_STRING:6 VTYPE_WIDESTR:7 VTYPE_OBJECT:8 VTYPE_POINTER:9-->
+<Object>
+	<!--通用功能执行:1~200 -->
+	<Property ID="1" Params="BuffID,BuffTargetRatio,BuffTimeModifyRatio,AwakeBuffRatio,AwakeBuffTime" des="参数1：添加BUFF;参数2：命中几率,此参数取值0~100,表示产生buffer的概率,不配置表示命中概率为100%,参数3:修正buffer的时间修正倍率,参数4:觉醒影响buffer成功率,参数5:觉醒影响buffer时间"/>
+	<Property ID="2" Params="NPCConfigID,NPCCreateCount,NPCTargetPosType,NPCCreatePosX,NPCCreatePosY,NPCCreatePosZ,NPCCreateOrient,NPCCreateRadiusRange,IsLimitNPCCreateNumber,NPCCreateNumberLimit" des="创建NPC 参数1:NPC ConfigID 参数2:创建数量 参数3:目标基点类型 参数4:创建NPC坐标点(X) 参数5:创建NPC坐标点(Y) 参数6:创建NPC坐标点(Z) 参数7:创建NPC的出生朝向 参数8:NPC创建半径范围 参数9:是否受到数量的限制 参数10:怪物的数量限制"/>
+	<Property ID="5" Params="HitBack2MoveSpeed,HitBack2MoveDistance,HitBack2Action,HitBackType,HitBack2MoveType" des="击退目标 参数1:击退速度 参数2:击退减速速度，让击退停下来的加速度，不区分正负值 参数3:击退动作 参数4:击退类型(0:连线方向 1:攻击者面向) 参数5:击退位移类型(0:相对受击者位移 1:相对攻击者位移)"/>
+	<Property ID="6" Params="UPSpeed,UPAccMaxHeight,AccMinHeight,DownAccSpeed,FloatHitStopTime,FloatHitActionStopTime,FloatUpAction,FloatHitAction,FloatingAction,FloatDownAction,FloatExecuteRateTime,FloatExecuteRate,MaxFloatingTime,FloatType,OffsetDis,XZSpeed,UPMaxHeight,IsForceFloating" des="浮空目标。参数1：浮空的起始上升速度；参数2：浮空的最大上升高度(单次高度)；参数3：可以进行浮空打击的最低高度；参数4：浮空后落地的加速度；参数5：浮空受击时停顿在空中让受击动作播完的保护时间；参数6：浮空动作最大可打断时间；参数7：浮空起身动作；参数8：浮空受击动作；参数9：浮空循环动作；参数10：浮空倒地起身动作; 参数11:浮空倾角，与垂直方向的夹角范围0~90。参数13:浮空状态持续的最大时长 参数14:浮空类型(0=原地浮空 1=带xz位移浮空_点中心 2=带xz位移浮空2_线中心 3=带xz位移浮空_攻击者面向) 参数15:浮空中心点偏移量 参数16:浮空xz位移速度(下限值,上限值) 参数17：浮空的最大高度(总高度) 参数18：是否强制未破防浮空"/>
+	<Property ID="7" Params="HitOut2Time,HitOut2Action,OutDeathAction,HitOut2Distance,HitOutType,UesAdvEffect,OutFlyFrames,OutUpAction,OutDownOrient" des="击飞目标 参数1:击飞时间 参数2:击飞动作 参数3:死亡动作 参数4:击飞距离 参数5:击飞方向(0:连线方向 1:攻击者面向) 参数6:是否使用新增类型击飞 参数7：击飞距离 参数8：空中飞行帧数 参数9：起身动作 参数10:掉落方向"/>
+	<Property ID="8" Params="HitDownTime,HitDownUpSpeed,MaxHeight,HitDownAccSpeed,FloatUpActID,FloatDownActID,DownEffID,DownLoopActID,UpActID,IsCanConnect" des="击倒目标 参数1：倒地循环时间；参数2：浮空的起始上升速度；参数3：浮空的最大上升高度；参数4：浮空后落地的加速度；参数5：浮空动作；参数6：浮空掉地弹跳工作 参数7：掉地特效；参数8：倒地循环动作；参数9：起身动作 参数10：是否允许倒地再接倒地效果"/>
+	<Property ID="9" Params="ImplicateScope,ImplicatePara1,ImplicatePara2,ImplicatePara3,FstEffectID,SndEffectID,ImplicateQuantity,SelectNear,SelectFragility,DamageRatio" des="连带效果 参数1:连带范围(2:圆柱 3:矩形) 参数2:范围参数1(圆柱:最小有效范围 矩形:宽) 参数3:范围参数2(圆柱:最大有效范围 矩形:长) 参数4:范围参数3(圆柱:有效转角度) 参数5:主效果包ID 参数6:次效果包ID 参数7:连带目标个数 参数8 目标是否按远到近筛选(1:是 0:否) 参数9 目标是否按血量少到多筛选(1:是 0:否) 参数10 次目标伤害倍率(负值:伤害衰减 正值:伤害增加)"/>
+	<Property ID="10" Params="LineRadius,RushSpeed,RushDistance,JumpTargetCount,JumpHitAction,RushEffect,EffectStepDistance,AwakeDistance" des="冲锋伤害心跳检测. 参数1:冲锋时搜索的半径;参数2:冲锋时的速度;参数3:冲锋时的最大距离;参数6:冲锋路径上放置的特效;参数8:觉醒影响冲锋距离"/>
+	<Property ID="11" Params="JumpTargetPis,JumpStandRadius,JumpHitRadius,JumpTargetCount,JumpHitAction,JumpDelayTime,JumpHitLastAction,JumpDownDelayTime,SelectType,JumpUseTime,JumpStandAngle,OverPosType,NoJumpHitHurt,DelayEffectHurt,DelayEffectTime,DelayEffectName,CrossEffectName,LockCrossTarget,IsCrossAllTarget" des="参数9:目标选择方式(0:随机 1:距离最近且非上次目标) 参数10:每次穿梭消耗时间 参数11:穿梭角度范围  参数12:穿梭结束后站立点位置类型(0:回到开始点 1:保持最后点不变)，参数13：是否启用跳打时伤害 参数14：是否启用延迟伤害 参数15：每个延迟特效时间ms 参数16：延迟特效名称 参数17：穿梭时特效名 参数18：是否锁定一个对象 参数19：是否穿梭范围内的所有目标，0否1是" />
+	<Property ID="12" Params="CollideSpeed,CollideDistance,CollideBackDistance" des="冲锋伤害心跳检测. 参数1：推怪时的速度;参数2：推到终点的偏移值；参数3：推怪距离"/>
+	<Property ID="13" Params="UpDownFrontDis,UpDownSpeed,UpDownMoveSpeed,UpDownStayTime,UpDownCheckHeight,UpDownSearchRange, PosType, DontDamage" des="上升下降参数，1离胸前距离，2下落速度，3到胸前速度, 4胸前停留时间, 5检测高度, 6搜索范围, 7落点位置类型(0聚拢 1原地); 8不要造成伤害(0要造成伤害 1不要造成伤害)"/>
+	<Property ID="14" Params="DragSpeed,DragOrient,DragDistance,ForchDrag" des="牵引 参数1：牵引速度 参数2：牵引点角度 参数3：牵引点离释放者的距离 参数4：是否强制牵引"/>
+	<Property ID="15" Params="BuffConfigID" des="bufferID"/>
+	<Property ID="19" Params="" des="强行一个技能冷却时间的开始"/>
+	<Property ID="20" Params="HPTranslatePercent,HPTranslateEffect,HPTransSkillAdd,LastDestroyTime,DestroyUseSkill" des="杀死目标 参数1：将杀死的目标HP按此百分比转换到施法者身上,参数2：链接特效名 参数3：技能等级附加转移 参数4：销毁时间 参数5：死亡播放机能"/>
+	<Property ID="21" Params="LinkType,LinkPetID,LinkBufferID,ModifyLinkBufferTimeRatio" des="连接目标, 参数1:连接的类型(1为连接,2为解绑) 参数2:连接的宠物ID 参数3:链接的BuffID 参数4:修正buffer的时间赔率"/>
+	<Property ID="22" Params="ClonePetNpcID,ClonePropRatio,CloneCount,AddPetBuffer,CreatToPlayerPos,SkillAddRatio,CloneConfigID,IsOneselfModel,NoCopySkillList,CreateOrient,CreateDistance,CreateAfterEffectDelete,IntervalDis" des="克隆一个武神，攻击力和血量按比例拷贝 参数7:副将ID 参数8：以自己模型克隆 参数9：克隆类型宠物不拷贝主人的技能列表 参数10：相对玩家角度 参数11：相对玩家距离 参数12：特效删除后创建在特效点 参数13:多个宠物间隔距离"/>
+	<Property ID="23" Params="TotalFrames,LinkBeginFrame,LinkEndFrame,GrabAction,LinkPoint,OffsetX,OffsetY,OffsetZ,AngleX,AngleY,AngleZ,HurtAction,TargetMoveDistance,IsFaceOrient" des="总帧数,参数2：开始帧，参数3：link结束解绑帧，参数4：擒拿动作参数5：link点，参数6-8：x，y，z的偏移,参数12：受击动作,参数13：对象擒拿过程中的位移，参数14：对象是否在身后解绑（默认0在身前，1在身后）"/>
+	<Property ID="24" Params="UpFrames,DownFrames,DownDis,DownUpHeight,ThrowStepAction,FlyStepAction,HitStepAction,DownStepAction,UpStepAction" des="飞向空中总帧数，落下总帧数，落下距离，落下之前先跳起的高度，扔武器动作，飞向目标动作，击打目标动作，落下动作，起身动作"/>
+	<Property ID="25" Params="IsLinkTarget,LinkEffectID,IsShowByBuff,BufferID" des="参数1:是否连接到锁定对象(0为连接到主控NPC或者辅助NPC,1为是) 参数2：连接特效ID 参数3：是否通过buff显示，0否1是 参数4：bufferID"/>
+	<Property ID="98" Params="AttackEffectType, AttackEffectRatio" des="宠物攻击效果(按照当前宠物的攻击力) 参数1:宠物攻击效果类型 1表示提高攻击力 2表示减少攻击力 3表示提高回血 参数2:攻击力影响系数(0-100)"/>
+	<Property ID="99" Params="HPPercent,HPFirmValue,HPEffectID,BufferMaxHPFirm" des="给目标HP处理, 参数1:添加的HP百分比 参数2:添加的目标HP固定值 参数3:添加的回血特效 参数4:buff回血最大量"/>
+	<Property ID="100" Params="Attribute,AttributeIncValue" des="增加目标的属性值, 参数1:添加的属性名 参数2:添加的属性值"/>
+	<Property ID="101" Params="CapitalType,CapitalIncValue" des="增加资产值, 参数1:资产的类型 参数2:资产增加的值"/>
+	<Property ID="102" Params="TriggerSkillConfigID" des="让技能触发对象释放一个技能"/>
+	<Property ID="103" Params="TurnOrientType,TurnTime,TurnCount,TurnAngle,TurnSkill" des="选择目标后，扫射。参数1:旋转方向类型 0表示顺时针,1表示逆时针 参数2:转动间隔时间ms 参数3:转动次数;参数4:每次旋转的角度;参数5:每次旋转释放的技能;"/>
+	<Property ID="104" Params="ConnectSqurtDistance,ConnectSqurtSpeed,ConnectSkillID,ConnectSqurtPlayFrame,ModifyHitFrame" des="4连击第一下 参数1:冲锋速度 参数2:冲锋最大距离 参数3：触发技能ID 参数4:动作跳帧参数 参数5:修正命中时间帧数"/>
+	<Property ID="105" Params="TauntSearchRadius,TauntTimes,TauntBuffID,TauntRelationType,TauntTargetType,TauntAddRadius,TauntAddTimes" des="参数1:半径 参数2:数量,参数3：给别人的BUFFID,参数4:关系类型,参数5:作用类型,参数6:增加半径,参数7:增加时间"/>
+	<Property ID="106" Params="PetID,PetBufferID,PetBufferTime,IsAddToSelf" des="宠物ID,参数2：给宠物加的BUFFID,参数3:宠物升级的时间,参数4:找不到宠物或副将时候是否加给释放者自身"/>
+	<Property ID="107" Params="ChangePropName,ChangePropValue" des="参数1：修改属性的名称 参数2：修改属性的值"/>
+	<Property ID="108" Params="TyphoonRadius,TyphoonRollSpeed,TyphoonUpSpeed,TyphoonUpAction,TyphoonCombat,TyphoonDis,TyphoonSpeed,HorizontalSpeed" des="参数1：距离台风半径 参数2：台风环绕速度 参数3：台风上升速度 参数4：落地起身动作 参数5: 受击动作 参数6: 台风距离 参数8：死亡后怪物水平方向飞行速度"/>
+	<Property ID="109" Params="DeductBloodFormulaAD,DeductBloodFormulaAP,DeductBloodFormulaHoly,DeductBloodFormulaRadio,DeductBloodFormulaValue,configID,IsAbsoluteDamage" des="给予目标额外伤害效果 参数1:物理伤害公式 参数2:魔法伤害公式 参数3:神圣伤害公式 参数4：伤害影响系数 参数5：伤害影响值 参数6：副将configID 参数7：是否是绝对伤害，不再参与暴击等共计计算"/>
+	<Property ID="110" Params="ActionName" des="技能触发动作 参数1：触发动作"/>
+	<Property ID="111" Params="AddDataName,AddDataMaxValue" des="设置int类型临时属性，没有则增加，为保证安全性会在增加的临时属性加前缀EffectAdd 参数1：属性名（会自动加前缀EffectAdd） 参数2：最大值"/>
+	<Property ID="112" Params="AssaultAction,AssaultSpeed,AssaultDistance,HitAction,BackAction,BackSpeed,BackDistance,AttackRadius" des="冲锋击打，后退一定距离 参数1：冲锋动作 参数2：冲锋速度 参数3：冲锋最大距离 参数4：击打动作 参数5：后退动作 参数6：后退速度 参数7：后退最大距离 参数8：冲锋时攻击半径"/>
+	<Property ID="113" Params="ReplyType,DistanceTime,ReplyValueType,EnergyValue,TotalReplyEnergy" des="能量回复 参数1：能量类型(魔法/怒气等) 参数2：回复间隔时间 参数3：回复类型(2:值恢复，4:比例恢复) 参数4：回复值(比例) 参数5：回复能量总数"/>
+	<Property ID="114" Params="" des="清除目标仇恨"/>
+	<Property ID="115" Params="HideTarget,SeeHideTarget" des="隐身与反隐（远程本，多人战场起作用） 参数1：是否隐身（0,1） 参数2：是否反隐（0,1）"/>
+	<Property ID="116" Params="IsTaichClearCD" des="参数1：是否需要清除稀有技CD"/>
+	<Property ID="117" Params="AddHPPercent,AddHPValue,SubHPPercent,SubHPValue,AddHPEffectID" des="参数1:加血百分比 参数2:加血固定值 参数3:扣血百分比 参数4:扣血固定值 参数5:回血特效"/>
+	<Property ID="118" Params="RestoreEnergyPercent,RestoreBeatTime,ResstoreTotalTime,ResstoreSkillAddPercent,IsRestoreTarget" des="参数1:增加百分比 参数2:增加心跳时间 参数3:增加总时间 参数4:技能等级附加比例 参数5:是否还原目标的能量"/>
+	<Property ID="119" Params="SpecialSkillConfig,SpecialCoolDownTime" des="参数1:指定技能id 参数2:指定的冷却时间"/>
+	<Property ID="120" Params="AddDamagePercent" des="增加伤害 参数1：增加比例（如需加10%填写10）"/>
+	<Property ID="121" Params="NoCDSkillConfig,NoCDTime" des="技能在某段时间内不进入CD 参数1：不进入CD的技能ID 参数2：不进入CD的时间（ms）"/>
+  <!--技能独有功能执行300~500 -->
+	<Property ID="300" Params="DefaultHitFormula,FirstDamageFormula,SecondDamageFormula,ThirdDamageFormula,LastDamageFormula" des="获取伤害（该编号没有对应的事件函数，在代码中是调用了SkillEventManager::GetDamage函数来获取伤害值）"/>
+	<Property ID="301" Params="BulletNpcConfigID,BulletNum,BulletSpeed,BulletEffect,BulletDistance,BulletRandom,BulletDoubleAngle,Through" des="创建真实子弹, 参数1:子弹npc configid 参数2:子弹数量 参数3:子弹飞行速度 参数4:子弹特效 参数5:子弹的飞行距离 参数6:是否是随机角度；参数7:创建多个子弹 每两个子弹之间的夹角 参数8:子弹是否穿透"/>
+	<Property ID="302" Params="StiffTime,IsPlayStiff" des="给目标添加硬值, 参数1:硬值时间ms参数2：硬直是否触发，1触发，0否"/>
+	<Property ID="303" Params="TransFormAction,BeginFrame,EndFrame,TransFormDistance,MoveType,CanCrossNpc,CanMotionDamage,SkillPosType,TransRequestMove,IsSkillBackUse,IsKeepCheckMotion" des="位移技能  参数1:动作名称 参数2:开始帧 参数3:结束帧 参数4:位移大小 参数5:位移的方式:0表示按照一般的位移移动,1表示动作位移 参数6:能否穿怪 参数7：能否移动检测伤害 参数8: 是否取技能目标位置 参数9：是否在位移中还能操作移动 参数10：动作位移方向是否朝玩家当前方向的后方,0否1是 参数11：是否持续检测移动100ms一次"/>
+	<Property ID="304" Params="FlashDistance,FlashHurtRange,FlashDelayTime,FlashEffectName,FlashRotateAngle,FlashToPlayer" des="闪现 参数1:闪现的一段距离 参数2: 闪现到目的点的伤害范围 参数3：闪现停留时间4：闪现落地特效"/>
+	<Property ID="305" Params="ConsumeBreak,BreakBufferConfig,BreakType,BreakBufferSportConfig,BossBreakRate,AddBreakValue,ReboundBreakBuffer,ReboundBreakRatio" des="破防 参数1:Break值消耗 参数2:破防buffer名称 参数3:破防类别 参数4:竞技场破防buffer名称 参数5:BOSS破防衰减系数 参数6：技能跟buff影响破防速度基础值 参数7：反弹破防的BUFF 参数8：反弹的比例"/>
+	<Property ID="310" Params="FireEffectName,IceAddBufferID,ChainType,ChainCount,ChainRadius,ChainEffectName,ConfirmEffectDamageType,FireAddBufferID,SoilAddBufferID,PoisonAddEffectID,EnTyphoonRadius,EnTyphoonRollSpeed,EnTyphoonUpSpeed,EnTyphoonUpAction,EnTyphoonCombat,EnTyphoonDis,EnTyphoonSpeed,HorizontalSpeed,EnTyphoonEffect,PoisonAddBufferID,IsRollTarget,WindBufferID,IceCD,FireCD,LightingCD,PoisonCD,SoilCD,WindCD,ElementUPSpeed,ElementUPAccMaxHeight,ElementAccMinHeight,ElementDownAccSpeed,ElementFloatHitStopTime,ElementFloatHitActionStopTime,ElementFloatUpAction,ElementFloatHitAction,ElementFloatingAction,ElementFloatDownAction,ElementFloatExecuteRateTime,ElementFloatExecuteRate,ElementMaxFloatingTime,ElementUPMaxHeight,SoilFloatingCD,SoilFloatingEffect,RepeatChain,SoilEffectRange,SoilEffectCount,WindHPReg" des="火,冰,雷引起伤害的处理 参数1:火引起特效名称 参数2:冰引起的添加BufferID 参数3:雷引起的闪电链类型 参数4:闪电链数量 参数5:闪电链搜索半径 参数6:闪电链特效名字 参数7:指定的伤害类型 1表示火,2表示冰,3表示雷 参数8:火伤害BUFF ID参数9:土伤害BUFF ID 参数10:毒伤害BUFF ID 参数11：距离台风半径 参数12：台风环绕速度 参数13：台风上升速度 参数14：落地起身动作 参数15: 受击动作 参数16: 台风距离17:台风速度18:怪物死亡后，水平方向平移速度19:台风特效20:毒buffID21:是否把对象卷起来，0是1否22:风或者风元素伤害给对象加的buff,23-28:冰火雷毒土风元素CD......参数45：闪电链是否可以重复弹射 参数46：土元素波及范围 参数47：土元素波及人数 参数48：风元素吸血比例"/>
+	<Property ID="311" Params="IceSplitType,IceMoveSpeed,IceSearchRadius,IceSearchCount,IceSearchEffect" des="分裂处理 参数1:分裂类型 参数2:位移速度 参数3:搜索半径 参数4:搜索数量 参数5:特效名字"/>
+	<Property ID="312" Params="BombTime,BombEffect" des="爆炸时间ms，爆炸特效"/>
+	<Property ID="313" Params="LightningCount,LightningRadius,LightningEffectName,LightningWaitTime,IsLightningEffect" des="链接攻击目标数量，搜索半径，特效名称，每个命中之间等待时间，是否类似雷链接效果"/>
+	<Property ID="314" Params="EffectName,EffectModelName" des="瞬移效果"/>
+	<Property ID="316" Params="ExtraDamageFormula" des="给予目标额外伤害效果 参数1:额外伤害公式"/>
+	<Property ID="317" Params="FlashSpeed,FlashMaxDistance,FlashTime" des="远程模拟子弹特效到某个位置 参数1:子弹特效移动的速度 参数2:子弹特效瞬移的生命周期超过后不能发动瞬移 参数3:速度为0时取时间"/>
+	<Property ID="318" Params="ExtraBufferIncDamage,OverLayBuff" des="根据buff叠加层次增加伤害 参数1:buff加层伤害值 参数2:buff名字"/>
+	<Property ID="319" Params="TransFormAction,BeginFrame,EndFrame,TransFormDistance,MoveType,CanCrossNpc,CanMotionDamage,SkillPosType,TransRequestMove" des="位移技能  参数1:动作名称 参数2:开始帧 参数3:结束帧 参数4:位移大小 参数5:位移的方式:0表示按照一般的位移移动,1表示动作位移 参数6:能否穿怪 参数7：能否移动检测伤害 参数8: 是否取技能目标位置 参数9：是否在位移中还能操作移动"/>
+	<Property ID="320" Params="PhsicsBuffer,MagicBuffer,MixtureBuffer,AttackNpcBuffer" des="参数1:物理类型buff,参数2:魔法类型buff,参数3:混合类型buff,参数4:非RoleNpc添加buff"/>
+	<Property ID="321" Params="AddBufferID,PetConfigID,IsFlashToPet" des="参数1:添加的bufferID,参数2:闪现到的宠物ID,参数3:是否删除宠物"/>
+	<Property ID="322" Params="DragBackFriend,DragBackSpeed,DragBackDistance,DragBackEffectRadisu" des="参数1:是否拉队友（0否1是）,参数2:拉拽速度,参数3:拉拽特效距离,参数4:拉拽特效搜索半径"/>
+	<Property ID="323" Params="CardEffectSkill,CardEffectReplaceTime,CardEffectPauseTime,CardEffectTotalTime,CardEffectReplaceEffect" des="参数1:卡牌效果技能ID, 参数2:替换效果时间, 参数3:卡牌选中后等待还原时间 参数4：卡牌技能循环替换时间 参数5：卡牌特效替换时的特效"/>
+	<!--BUffer独有功能执行600~800 -->
+	<Property ID="601" Params="PRebound,ReBoundConfirmValue,ReBoundEffectName,BoundSkillLevelRatio,BoundEvoRatio,BoundSkillLevelValue,BoundAttackType" des="反弹伤害  参数1:反弹伤害百分比  参数2:反弹伤害固定值  参数3:反弹伤害的特效名称  参数4:反弹伤害技能等级系数 参数5:反弹伤害副将等级影响系数 参数6：反弹伤害技能等级固定值系数 参数7：反弹类型"/>
+	<Property ID="602" Params="ImmunityPercent,ModifyImmunityPercentRatio,ImmunityConfirmValue" des="免疫伤害 参数1:免疫百分比 参数2:修正免疫百分的倍率 参数3:免疫固定值"/>
+	<Property ID="603" Params="AbsorbPercent,ModifyAbsorbPercentRatio,AbsorbPercentConfirmValue,AbsorbEffectName" des="攻击时吸收血量值 参数1:吸血百分比 参数2:修正吸血百分比倍率 参数3:吸血固定值 参数4:吸血特效名"/>
+	<Property ID="604" Params="HitBack2MoveSpeed,HitBack2MoveDistance,HitBack2Action" des="BUFF击退 参数1:击退速度 参数2:击退减速速度，让击退停下来的加速度，不区分正负值 参数3:锁定时间 参数4:锁定buffer（可选）"/>
+	<Property ID="605" Params="AbsorbRate,ModifyAbsorbRate,AbsorbRateConfirmValue,AbsorbEffect,RestoreType,RestorePercent,ModifyRsetorePercentRatio,RestoreValue" des="新攻击时吸收血量 参数1:吸血百分比 参数2:修正吸血百分比倍率 参数3:吸血固定值(公式) 参数4:吸血特效名 参数5:消耗恢复类型 参数6:消耗恢复百分比 参数7:消耗恢复百分比倍率 参数8:消耗恢复固定值(公式)"/>
+	<Property ID="610" Params="LostHPPercent,ModifyLostHPPercentRatio" des="Buffer回血效果 参数1:已失去的血量百分比 参数2:修正已失去的血量百分比倍率"/>
+	<Property ID="611" Params="AdvanceHPPercent,ModifyAdvenceHPPercentRatio,AttackPercent,ModifyAttackPercentRatio,ModifyAttackTime,ModifyAttackCount" des="Buffer提高攻击力属性, 参数1:表示血量百分比较值，参数2:修正血量百分比的倍率 参数3:表示攻击力提高的百分比 参数4:修正攻击力百分比的倍率 参数5:叠加频率ms 参数6:最大叠加层数"/>
+	<Property ID="612" Params="SustainAttackBufferID,ModifyBufferTimeRatio" des="Buffer持续提高攻击力 参数1:提高持续攻击力的bufferID 参数2:修正buffer时间倍率"/>
+	<Property ID="614" Params="BufferFunctionType,FunctionSearchRadius,FunctionRelationType,FunctionTargetType,ModifySinkSearchRadiusRatio,SinkBufferID,ModifySinkBufferTimeRatio,ReturnHPPercent,MofifyReturnPercentRatio" des="Buffer沉默对象或者给对象加血 参数1:Buffer的功能类别 1表示沉默对象 2表示给对象加血 参数2:功能搜索的目标半径 参数3:关系类型 参数4:作用类型 参数5:修正沉默搜索半径倍率 参数6:沉默添加的BuffID 参数7:沉默修正的buffer时间倍率 参数8:恢复的血量百分比 参数9:修正恢复血量百分比的倍率"/>
+	<Property ID="615" Params="SharedDamagePercent,ModifyShareDamagePercentRatio" des="Buffer转移部分伤害， 参数1:转移伤害百分比 参数2:修正转移伤害百分比倍率"/>
+	<Property ID="616" Params="BufferCreateName" des="Buffer创建特效， 参数1:特效名字"/>
+	<Property ID="618" Params="BreakEffectType,BreakEffectBase,BreakEffectImprove" des="破防效果 参数1:Break效果类型 参数2:效果初始几率 参数3:效果提升几率 参数8：是否隐藏武器"/>
+	<Property ID="619" Params="ChangeModelPath,ChangeModelSkillID,ChangeModelScale,ChangeModelAction,ChangeModelEffect,SkillSequenceID,ChangeFshion,HideWeapon" des="破防效果 参数1:模型路径 参数2:替换技能ID 参数3:模型的缩放比例 参数4:  变身时刻的招式 参数5：结束时的特效 参数6：技能队列ID 参数7:：是否跟换时装 参数8：隐藏武器"/>
+	<Property ID="620" Params="FirmDamagePercent,DamagePercentRatio" des="buffer伤害扣血 参数1:固定伤害百分比,参数2:伤害百分比倍率"/>
+	<Property ID="621" Params="EventBlowWarFog,EventWarFogRadius" des="驱散迷雾 参数1:是否驱散,参数2:驱散半径"/>
+	<Property ID="622" Params="AbsorbDamageFormula,DestroyAddBuffer1,DestroyAddBuffer2,AbsorbFullEffect,AbsorbFullReplaceSkill,NewReplaceSkillAddCD" des="吸收伤害并在BUFF销毁时增加另外一个BUFF，参数1:吸收伤害公式,参数2:吸收值消耗完后增加BUFFER,参数3:吸收值未消耗完增加BUFF,参数4::吸收值满特效名,参数5:替换当前使用的技能 参数6：替换的新技能立刻进入CD时间"/>
+	<Property ID="623" Params="ActionFloat" des="Buff触发效果"/>
+	<Property ID="626" Params="Iconpath,SillId" des="Buff中改变技能图标 参数1:新图标的位置，参数2:需要替换的技能"/>
+	<Property ID="627" Params="IsNoCD,IsNoConsume" des="技能是否无CD跟消耗 参数1:技能是否无CD(0有1无)，参数2:技能是否无消耗(0有1无)"/>
+	<Property ID="628" Params="TougCount,TougEffect,DodgeCount" des="参数1:暴击抵抗次数,参数2:暴击抵抗特效，参数3:免伤次数"/>
+	<Property ID="629" Params="PhsicsBuffer,MagicBuffer" des="参数1:物理类型buff,参数2:魔法类型buff"/>
+	<Property ID="643" Params="PromoteBufferID,PromoteType,PromoteValue,PromoteExtra" des="BUFF提升ID，提升类型，提升值,额外提升值"/>
+	<Property ID="664" Params="SlowActivePetID,SlowFixValue,SlowEvoRatio,TriggerEffectPoint,EffectBufferID" des="触发减速效果 参数1:太极技技能ID,参数2:减速固定值,参数3:影响减速效果系数(太极技技能等级),参数4:减速效果触发点,参数5:效果所要添加的bufferId"/>
+	<Property ID="665" Params="AnotherBufferID,IsLeaveHaloAddBuffer,LeaveHaloAddBufferID" des="在光环buff内持续多长时间，则加另一buff 参数1:要加的buffID列表 参数2:是否离开光环添加buff 参数3:离开光环添加的buffID"/>
+	<Property ID="666" Params="ImmuneType" des="Buff触发效果，解除664效果包状态，恢复减速速度 参数1：免疫类型（1：解除；2：霸体）"/>
+	<Property ID="699" Params="AdvancePropName,AdvanceFixValue,AdvanceSkillRatio" des="太极技影响玩家属性 参数1:强化属性字段 参数2:强化提升固定值 参数3:强化提升技能系数"/>
+	<Property ID="700" Params="AdvanceAttackPercentFixValue,AdvanceAttackPercentRatio,LifePercentFixValue,LifePercentRatio" des="攻防一体 参数1:提高攻击力百分比固定值 参数2:提高攻击力百分比系数 参数3:最大生命百分比固定值 参数4:最大生命百分比系数"/>
+	<Property ID="701" Params="CanImmunityBreak" des="Buff触发效果"/>
+	<Property ID="702" Params="BindModel,BindPoint,InitScaleX,InitScaleY,InitScaleZ,BindModelConfig" des="Buff触发效果"/>
+	<Property ID="703" Params="TalentBaseAddHP,TalentLevelAddHP" des="天赋回春效果 参数1：基础增加比例（1-100）参数2：天赋等级附加增加比例（1-100）"/>
+	<Property ID="704" Params="TalentSkillCDValue,TalentLevelDecCD" des="天赋设置太极技CD 参数1：基础CD 参数2：天赋等级减少CD"/>
+	<Property ID="705" Params="" des="免疫吸血"/>
+	<Property ID="706" Params="" des="免疫反弹伤害"/>
+</Object>

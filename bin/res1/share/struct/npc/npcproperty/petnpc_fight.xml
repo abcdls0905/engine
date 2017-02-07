@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<object>
+    <internals />
+    <properties>
+        <property name="FightID" type="string" public="true" private="false" save="false" realtime="" desc="战斗包ID" />
+        <property name="NormalAttackID" type="string" public="false" private="false" save="false" realtime="" desc="普通攻击战斗包ID" />
+        <property name="AttackTime" type="int" public="true" private="false" save="false" desc="攻击间隔时间"/>
+        <property name="ClonePetNpcNum" type="int" public="true" private="false" save="false" desc="创建PetNpc分身的数量"/>
+        <property name="BossCountTime" type="int" public="true" private="true" save="false" realtime="" desc="boss战计时" />
+        <property name="LogicState" type="byte" public="false" private="false" save="false" realtime="true" desc="逻辑状态"/>
+        <property name="Dead" type="byte" public="true" private="true" save="false" desc="死亡状态0:未死亡,1:已死亡"/>
+        <property name="HPBase" type="int" public="true" private="true" save="false" desc="基础生命"/>
+        <property name="HPRate" type="int" public="true" private="true" save="false" desc="生命百分比"/>
+        <property name="MaxHP" type="int" public="true" private="true" save="false" realtime="true" desc="最大生命值"/>
+        <property name="MaxMP" type="int" public="true" private="true" save="false" desc="法力上限"/>
+        <property name="AttackBase" type="int" public="true" private="true" save="false" realtime="true" desc="基础攻击"/>
+        <property name="AttackRate" type="int" public="true" private="true" save="false" desc="攻击百分比"/>
+        <property name="TotalAttack" type="int" public="true" private="true" save="false" realtime="true" desc="基础攻击"/>
+        <property name="FinalDamageRate" type="int" public="false" private="false" save="false" realtime="" desc="最终伤害百分比"/>
+        <property name="HPBaseAdd" type="int" public="true" private="true" save="false" desc="血量基础值"/>      
+        <property name="HPRateAdd" type="int" public="true" private="true" save="false" desc="生命百分比"/>
+        <property name="MaxHPAdd" type="int" public="true" private="true" save="false" realtime="true" desc="血量额外上限"/>
+        <property name="AttackBaseAdd" type="int" public="true" private="true" save="false" desc="攻击基础值"/>      
+        <property name="AttackRateAdd" type="int" public="true" private="true" save="false" desc="攻击百分比"/>
+        <property name="TotalAttackAdd" type="int" public="true" private="true" save="false" realtime="true" desc="总攻击力"/>
+        <property name="FinalDamageRateAdd" type="int" public="false" private="false" save="false" realtime="" desc="最终伤害百分比"/>
+        <property name="Crit" type="int" public="true" private="true" save="false" desc="暴击几率"/>
+        <property name="CritAdd" type="int" public="true" private="true" save="false" desc="暴击几率附加"/>
+        <property name="CritDam" type="int" public="true" private="true" save="true" desc="暴击伤害"/>
+        <property name="CritDamAdd" type="int" public="true" private="true" save="false" desc="暴击伤害附加"/>
+        <property name="Toug" type="int" public="true" private="true" save="false" desc="抗暴击"/>
+        <property name="TougAdd" type="int" public="true" private="true" save="false" desc="抗暴击附加"/>
+        <property name="TougDam" type="int" public="true" private="true" save="false" desc="暴击免伤"/>
+        <property name="TougDamAdd" type="int" public="true" private="true" save="false" desc="暴击免伤附加"/>
+        <property name="Def" type="int" public="true" private="true" save="false" desc="免伤"/>
+        <property name="DefAdd" type="int" public="true" private="true" save="false" desc="免伤附加"/>
+		<property name="RealDam" type="int" public="true" private="true" save="false" desc="真实伤害"/>
+        <property name="RealDamAdd" type="int" public="true" private="true" save="false" desc="真实伤害附加"/>
+		<property name="Dodge" type="int" public="true" private="true" save="false" desc="格挡"/>
+        <property name="DodgeAdd" type="int" public="true" private="true" save="false" desc="格挡附加"/>
+        <property name="Hit" type="int" public="true" private="true" save="false" desc="命中"/>
+        <property name="HitAdd" type="int" public="true" private="true" save="false" desc="命中"/>
+        <property name="Miss" type="int" public="true" private="true" save="false" desc="闪避"/>
+        <property name="MissAdd" type="int" public="true" private="true" save="false" desc="闪避"/>
+        <property name="Leech" type="int" public="true" private="true" save="false" desc="吸血"/>
+        <property name="LeechAdd" type="int" public="true" private="true" save="false" desc="吸血附加"/>
+		<property name="Rebound" type="int" public="true" private="true" save="false" desc="反弹伤害"/>
+        <property name="ReboundAdd" type="int" public="true" private="true" save="false" desc="反弹伤害附加"/>
+		<property name="Deadly" type="int" public="true" private="true" save="false" desc="必杀几率"/>
+        <property name="DeadlyAdd" type="int" public="true" private="true" save="false" desc="必杀几率附加"/>
+        <property name="HP" type="int" public="true" private="true" save="fasle" desc="血量当前值"/>
+        <property name="MP" type="int" public="true" private="true" save="false" desc="法力当前值"/>
+        <property name="Break"  type="int" public="true" private="true" save="false" desc="当前破防值"/>
+        <property name="MaxBreak"  type="int" public="true" private="true" save="false" desc="当前破防上限"/>
+        <property name="BreakReturn"  type="int" public="true" private="true" save="false" desc="当前破防回复速度"/>
+	<property name="BreakReturn2"  type="int" public="true" private="true" save="false" desc="当前破防回复速度2"/>
+	<property name="IceAsist" type="int" public="true" private="true" save="false" desc="冰冻抗性"/>
+      <property name="FireAsist" type="int" public="true" private="true" save="false" desc="火抗性"/>
+      <property name="LightningAsist" type="int" public="true" private="true" save="false" desc="雷抗性"/>
+      <property name="IceAsistAdd" type="int" public="true" private="true" save="false" desc="冰冻抗性附加"/>
+      <property name="FireAsistAdd" type="int" public="true" private="true" save="false" desc="火抗性附加"/>
+      <property name="LightningAsistAdd" type="int" public="true" private="true" save="false" desc="雷抗性附加"/>
+      <property name="FireDamAbsort" type="int" public="true" private="true" save="false" desc="火伤害吸收"/>
+      <property name="FireDamAbsortAdd" type="int" public="true" private="true" save="false" desc="火伤害额外吸收"/>
+      <property name="IceDamAbsort" type="int" public="=true" private="true" save="false" desc="冰伤害吸收"/>
+      <property name="IceDamAbsortAdd" type="int" public="=true" private="true" save="false" desc="冰伤害额外吸收"/>
+      <property name="LightningDamAbsort" type="int" public="true" private="true" save="false" desc="雷伤害吸收"/>
+      <property name="LightningDamAbsortAdd" type="int" public="true" private="true" save="false" desc="雷伤害额外吸收"/>
+      <property name="HitBossDamageRatio" type="int" public="false" private="false" save="false" desc="命中boss时的额外伤害比率"/>
+      <property name="HitBossDamageRatioAdd" type="int" public="false" private="false" save="false" desc="命中boss时的额外伤害比率"/>
+
+      <!-- 增加部分NPC需要用到的属性，这些属性目前是不需要Add属性值的 -->
+        <property name="IgnoreDef" type="int" public="true" private="true" save="false" desc="当前无视对方的免伤值"/>
+		<property name="IgnoreDefAdd" type="int" public="true" private="true" save="false" desc="当前无视对方的免伤附加值"/>
+        <property name="DecRebound" type="int" public="true" private="true" save="false" desc="受到反弹时减少受到的伤害值"/>
+		<property name="DecReboundAdd" type="int" public="true" private="true" save="false" desc="受到反弹时减少受到的伤害附加值"/>
+        <property name="DefFireDam" type="int" public="true" private="true" save="false" desc="受到火系伤害免疫值"/>
+		<property name="DefFireDamAdd" type="int" public="true" private="true" save="false" desc="受到火系伤害免疫附加值"/>
+        <property name="DefIceDam" type="int" public="true" private="true" save="false" desc="受到冰系伤害免疫值"/>
+		<property name="DefIceDamAdd" type="int" public="true" private="true" save="false" desc="受到冰系伤害免疫附加值"/>
+        <property name="DefLiningDam" type="int" public="true" private="true" save="false" desc="受到雷系伤害免疫值"/>
+        <property name="DefLiningDamAdd" type="int" public="true" private="true" save="false" desc="受到雷系伤害免附加疫值"/>
+		<property name="Dizzy" type="int" public="true" private="true" save="false" desc="眩晕几率"/>
+		<property name="DizzyAdd" type="int" public="true" private="true" save="false" desc="眩晕几率附加值"/>
+		<property name="DizzyAsist" type="int" public="true" private="true" save="false" desc="眩晕抗性"/>
+		<property name="DizzyAsistAdd" type="int" public="true" private="true" save="false" desc="眩晕抗性附加值"/>		
+		<property name="Slow" type="int" public="true" private="true" save="false" desc="减速几率"/>
+		<property name="SlowAdd" type="int" public="true" private="true" save="false" desc="减速几率附加值"/>			
+		<property name="SlowAsist" type="int" public="true" private="true" save="false" desc="减速抗性"/>	
+		<property name="SlowAsistAdd" type="int" public="true" private="true" save="false" desc="减速几率附加值"/>		
+	<!-- 增加致残值属性-------------------------------------------- -->	
+	    <property name="Cripple" type="int" public="true" private="true" save="false" realtime="" desc="致残值" />
+
+    <!-- 增加的伤害属性-------------------------------------------- -->	
+		<property name="DamageFirePetAdvancePercent" type="int" public="false" private="true" save="false" desc="火系武神提高伤害的百分比"/>
+	    <property name="DamageFirePetAdvancePercentAdd" type="int" public="false" private="true" save="false" desc="火系武神提高伤害的百分比附加值"/>
+	    <property name="DamageIcePetAdvancePercent" type="int" public="false" private="true" save="false" desc="冰系武神提高伤害的百分比"/>
+	    <property name="DamageIcePetAdvancePercentAdd" type="int" public="false" private="true" save="false" desc="冰系武神提高伤害的百分比附加值"/>
+	    <property name="DamageLightningPetAdvancePercent" type="int" public="false" private="true" save="false" desc="雷系武神提高伤害的百分比"/>
+	    <property name="DamageLightningPetAdvancePercentAdd" type="int" public="false" private="true" save="false" desc="雷系武神提高伤害的百分比附加值"/>
+	    <property name="DamageFlyPetAdvancePercent" type="int" public="false" private="true" save="false" desc="飞行系武神提高伤害的百分比"/>
+	    <property name="DamageFlyPetAdvancePercentAdd" type="int" public="false" private="true" save="false" desc="飞行系武神提高伤害的百分比附加值"/>
+	    <property name="DamagePlayerPetAdvancePercent" type="int" public="false" private="true" save="false" desc="人型系武神提高伤害的百分比"/>
+	    <property name="DamagePlayerPetAdvancePercentAdd" type="int" public="false" private="true" save="false" desc="人型系武神提高伤害的百分比附加值"/>
+		
+	    <property name="DamageChosePetAdvancePercent" type="int" public="false" private="true" save="false" desc="混乱系武神提高伤害的百分比"/>
+	    <property name="DamageChosePetAdvancePercentAdd" type="int" public="false" private="true" save="false" desc="混乱系武神提高伤害的百分比附加值"/>
+	    <property name="DamagePhysicalPetAdvancePercent" type="int" public="false" private="true" save="false" desc="物理系武神提高伤害的百分比"/>
+	    <property name="DamagePhysicalPetAdvancePercentAdd" type="int" public="false" private="true" save="false" desc="物理系武神提高伤害的百分比附加值"/>
+	    <property name="DamageBeastPetAdvancePercent" type="int" public="false" private="true" save="false" desc="兽型系武神提高伤害的百分比"/>
+	    <property name="DamageBeastPetAdvancePercentAdd" type="int" public="false" private="true" save="false" desc="兽型系武神提高伤害的百分比附加值"/>
+	    <property name="DamageAncientPetAdvancePercent" type="int" public="false" private="true" save="false" desc="远古系武神提高伤害的百分比"/>
+	    <property name="DamageAncientPetAdvancePercentAdd" type="int" public="false" private="true" save="false" desc="远古系武神提高伤害的百分比附加值"/>
+	    <property name="DamageFightPetAdvancePercent" type="int" public="false" private="true" save="false" desc="战士系武神提高伤害的百分比"/>
+	    <property name="DamageFightPetAdvancePercentAdd" type="int" public="false" private="true" save="false" desc="战士系武神提高伤害的百分比附加值"/>
+	    <property name="DamageShootingPetAdvancePercent" type="int" public="false" private="true" save="false" desc="射手系武神提高伤害的百分比附加值"/>
+	    <property name="DamageShootingPetAdvancePercentAdd" type="int" public="false" private="true" save="false" desc="射手系武神提高伤害的百分比附加值"/>
+	    <property name="DamageMagePetAdvancePercent" type="int" public="false" private="true" save="false" desc="法师系武神提高伤害的百分比"/>
+	    <property name="DamageMagePetAdvancePercentAdd" type="int" public="false" private="true" save="false" desc="法师系武神提高伤害的百分比附加值"/>
+	    <property name="DamageDefensePetAdvancePercent" type="int" public="false" private="true" save="false" desc="防御系武神提高伤害的百分比"/>
+	    <property name="DamageDefensePetAdvancePercentAdd" type="int" public="false" private="true" save="false" desc="防御系武神提高伤害的百分比附加值"/>
+
+      
+      <!-- 添加回血因子-------------------------------------------- -->
+      <property name="HPReturnFactor" type="int" public="false" private="false" save="false" desc="角色回血回复因子"/>
+      <property name="HPReturnFactorAdd" type="int" public="false" private="false" save="false" desc="角色回血回复因子附加值"/>
+
+      <!-- 添加宠物致残效果-------------------------------------------- -->
+	  <property name="DamageCripplePercent" type="int" public="false" private="true" save="false" desc="伤害致残的百分比"/>
+	  <property name="DamageCripplePercentAdd" type="int" public="false" private="true" save="false" desc="伤害致残的百分比附加值"/>
+	  
+    </properties>
+    <includes>
+        <path name="struct\npc\rule\flow.xml" desc=""/>
+        <path name="struct\npc\rule\skilluse.xml" desc=""/>
+        <path name="struct\rule\fight\fightpropbuffdefined.xml" desc="副本中buff附加属性"/>
+    </includes>
+</object>

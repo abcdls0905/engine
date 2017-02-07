@@ -1,0 +1,318 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85170AE318A513BF0031D38C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85170AE218A513BF0031D38C /* Foundation.framework */; };
+		85170AEA18A513BF0031D38C /* fm_physics_bullet.m in Sources */ = {isa = PBXBuildFile; fileRef = 85170AE918A513BF0031D38C /* fm_physics_bullet.m */; };
+		85170AFF18A5142C0031D38C /* collision_shape.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85170AF218A5142C0031D38C /* collision_shape.cpp */; };
+		85170B0018A5142C0031D38C /* constraint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85170AF518A5142C0031D38C /* constraint.cpp */; };
+		85170B0118A5142C0031D38C /* debug_drawer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85170AF718A5142C0031D38C /* debug_drawer.cpp */; };
+		85170B0218A5142C0031D38C /* lib_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85170AF918A5142C0031D38C /* lib_main.cpp */; };
+		85170B0318A5142C0031D38C /* physics_bullet.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85170AFB18A5142C0031D38C /* physics_bullet.cpp */; };
+		85170B0418A5142C0031D38C /* rigid_body.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85170AFD18A5142C0031D38C /* rigid_body.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		85170ADD18A513BF0031D38C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		85170ADF18A513BF0031D38C /* libfm_physics_bullet.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfm_physics_bullet.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		85170AE218A513BF0031D38C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		85170AE618A513BF0031D38C /* fm_physics_bullet-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fm_physics_bullet-Prefix.pch"; sourceTree = "<group>"; };
+		85170AE718A513BF0031D38C /* fm_physics_bullet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fm_physics_bullet.h; sourceTree = "<group>"; };
+		85170AE918A513BF0031D38C /* fm_physics_bullet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fm_physics_bullet.m; sourceTree = "<group>"; };
+		85170AF218A5142C0031D38C /* collision_shape.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = collision_shape.cpp; path = ../../../fm_physics_bullet/collision_shape.cpp; sourceTree = "<group>"; };
+		85170AF318A5142C0031D38C /* collision_shape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = collision_shape.h; path = ../../../fm_physics_bullet/collision_shape.h; sourceTree = "<group>"; };
+		85170AF418A5142C0031D38C /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = common.h; path = ../../../fm_physics_bullet/common.h; sourceTree = "<group>"; };
+		85170AF518A5142C0031D38C /* constraint.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = constraint.cpp; path = ../../../fm_physics_bullet/constraint.cpp; sourceTree = "<group>"; };
+		85170AF618A5142C0031D38C /* constraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = constraint.h; path = ../../../fm_physics_bullet/constraint.h; sourceTree = "<group>"; };
+		85170AF718A5142C0031D38C /* debug_drawer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = debug_drawer.cpp; path = ../../../fm_physics_bullet/debug_drawer.cpp; sourceTree = "<group>"; };
+		85170AF818A5142C0031D38C /* debug_drawer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = debug_drawer.h; path = ../../../fm_physics_bullet/debug_drawer.h; sourceTree = "<group>"; };
+		85170AF918A5142C0031D38C /* lib_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lib_main.cpp; path = ../../../fm_physics_bullet/lib_main.cpp; sourceTree = "<group>"; };
+		85170AFA18A5142C0031D38C /* my_motion_state.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = my_motion_state.h; path = ../../../fm_physics_bullet/my_motion_state.h; sourceTree = "<group>"; };
+		85170AFB18A5142C0031D38C /* physics_bullet.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = physics_bullet.cpp; path = ../../../fm_physics_bullet/physics_bullet.cpp; sourceTree = "<group>"; };
+		85170AFC18A5142C0031D38C /* physics_bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = physics_bullet.h; path = ../../../fm_physics_bullet/physics_bullet.h; sourceTree = "<group>"; };
+		85170AFD18A5142C0031D38C /* rigid_body.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rigid_body.cpp; path = ../../../fm_physics_bullet/rigid_body.cpp; sourceTree = "<group>"; };
+		85170AFE18A5142C0031D38C /* rigid_body.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rigid_body.h; path = ../../../fm_physics_bullet/rigid_body.h; sourceTree = "<group>"; };
+		85170B3418A52DB40031D38C /* bt_bullet_collision_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bt_bullet_collision_common.h; path = ../../../fm_physics_bullet/bullet/bt_bullet_collision_common.h; sourceTree = "<group>"; };
+		85170B3518A52DB40031D38C /* bt_bullet_dynamics_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bt_bullet_dynamics_common.h; path = ../../../fm_physics_bullet/bullet/bt_bullet_dynamics_common.h; sourceTree = "<group>"; };
+		85170B3618A52DB40031D38C /* bullet_collision */ = {isa = PBXFileReference; lastKnownFileType = folder; name = bullet_collision; path = ../../../fm_physics_bullet/bullet/bullet_collision; sourceTree = "<group>"; };
+		85170B3718A52DB40031D38C /* bullet_dynamics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = bullet_dynamics; path = ../../../fm_physics_bullet/bullet/bullet_dynamics; sourceTree = "<group>"; };
+		85170B3818A52DB40031D38C /* bullet-c-api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "bullet-c-api.h"; path = "../../../fm_physics_bullet/bullet/bullet-c-api.h"; sourceTree = "<group>"; };
+		85170B3918A52DB40031D38C /* linear_math */ = {isa = PBXFileReference; lastKnownFileType = folder; name = linear_math; path = ../../../fm_physics_bullet/bullet/linear_math; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		85170ADC18A513BF0031D38C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85170AE318A513BF0031D38C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		85170AD418A513BF0031D38C = {
+			isa = PBXGroup;
+			children = (
+				85170AF018A513CF0031D38C /* src */,
+				85170AE418A513BF0031D38C /* fm_physics_bullet */,
+				85170AE118A513BF0031D38C /* Frameworks */,
+				85170AE018A513BF0031D38C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		85170AE018A513BF0031D38C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				85170ADF18A513BF0031D38C /* libfm_physics_bullet.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		85170AE118A513BF0031D38C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85170AE218A513BF0031D38C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		85170AE418A513BF0031D38C /* fm_physics_bullet */ = {
+			isa = PBXGroup;
+			children = (
+				85170AE718A513BF0031D38C /* fm_physics_bullet.h */,
+				85170AE918A513BF0031D38C /* fm_physics_bullet.m */,
+				85170AE518A513BF0031D38C /* Supporting Files */,
+			);
+			path = fm_physics_bullet;
+			sourceTree = "<group>";
+		};
+		85170AE518A513BF0031D38C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				85170AE618A513BF0031D38C /* fm_physics_bullet-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		85170AF018A513CF0031D38C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				85170AF218A5142C0031D38C /* collision_shape.cpp */,
+				85170AF318A5142C0031D38C /* collision_shape.h */,
+				85170AF418A5142C0031D38C /* common.h */,
+				85170AF518A5142C0031D38C /* constraint.cpp */,
+				85170AF618A5142C0031D38C /* constraint.h */,
+				85170AF718A5142C0031D38C /* debug_drawer.cpp */,
+				85170AF818A5142C0031D38C /* debug_drawer.h */,
+				85170AF918A5142C0031D38C /* lib_main.cpp */,
+				85170AFA18A5142C0031D38C /* my_motion_state.h */,
+				85170AFB18A5142C0031D38C /* physics_bullet.cpp */,
+				85170AFC18A5142C0031D38C /* physics_bullet.h */,
+				85170AFD18A5142C0031D38C /* rigid_body.cpp */,
+				85170AFE18A5142C0031D38C /* rigid_body.h */,
+				85170AF118A5140C0031D38C /* bullet */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		85170AF118A5140C0031D38C /* bullet */ = {
+			isa = PBXGroup;
+			children = (
+				85170B3418A52DB40031D38C /* bt_bullet_collision_common.h */,
+				85170B3518A52DB40031D38C /* bt_bullet_dynamics_common.h */,
+				85170B3618A52DB40031D38C /* bullet_collision */,
+				85170B3718A52DB40031D38C /* bullet_dynamics */,
+				85170B3818A52DB40031D38C /* bullet-c-api.h */,
+				85170B3918A52DB40031D38C /* linear_math */,
+			);
+			name = bullet;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		85170ADE18A513BF0031D38C /* fm_physics_bullet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85170AED18A513BF0031D38C /* Build configuration list for PBXNativeTarget "fm_physics_bullet" */;
+			buildPhases = (
+				85170ADB18A513BF0031D38C /* Sources */,
+				85170ADC18A513BF0031D38C /* Frameworks */,
+				85170ADD18A513BF0031D38C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fm_physics_bullet;
+			productName = fm_physics_bullet;
+			productReference = 85170ADF18A513BF0031D38C /* libfm_physics_bullet.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		85170AD618A513BF0031D38C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = SnailResearch;
+			};
+			buildConfigurationList = 85170AD918A513BF0031D38C /* Build configuration list for PBXProject "fm_physics_bullet" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 85170AD418A513BF0031D38C;
+			productRefGroup = 85170AE018A513BF0031D38C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				85170ADE18A513BF0031D38C /* fm_physics_bullet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		85170ADB18A513BF0031D38C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85170AEA18A513BF0031D38C /* fm_physics_bullet.m in Sources */,
+				85170AFF18A5142C0031D38C /* collision_shape.cpp in Sources */,
+				85170B0018A5142C0031D38C /* constraint.cpp in Sources */,
+				85170B0118A5142C0031D38C /* debug_drawer.cpp in Sources */,
+				85170B0218A5142C0031D38C /* lib_main.cpp in Sources */,
+				85170B0318A5142C0031D38C /* physics_bullet.cpp in Sources */,
+				85170B0418A5142C0031D38C /* rigid_body.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		85170AEB18A513BF0031D38C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		85170AEC18A513BF0031D38C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		85170AEE18A513BF0031D38C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DSTROOT = /tmp/fm_physics_bullet.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fm_physics_bullet/fm_physics_bullet-Prefix.pch";
+				HEADER_SEARCH_PATHS = ../../../fm_physics_bullet/bullet;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		85170AEF18A513BF0031D38C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DSTROOT = /tmp/fm_physics_bullet.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fm_physics_bullet/fm_physics_bullet-Prefix.pch";
+				HEADER_SEARCH_PATHS = ../../../fm_physics_bullet/bullet;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		85170AD918A513BF0031D38C /* Build configuration list for PBXProject "fm_physics_bullet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85170AEB18A513BF0031D38C /* Debug */,
+				85170AEC18A513BF0031D38C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		85170AED18A513BF0031D38C /* Build configuration list for PBXNativeTarget "fm_physics_bullet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85170AEE18A513BF0031D38C /* Debug */,
+				85170AEF18A513BF0031D38C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 85170AD618A513BF0031D38C /* Project object */;
+}

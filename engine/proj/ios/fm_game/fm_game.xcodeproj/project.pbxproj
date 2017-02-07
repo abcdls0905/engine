@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8563965617460FB6002663EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8563965517460FB6002663EC /* Foundation.framework */; };
+		8563965D17460FB6002663EC /* fm_game.m in Sources */ = {isa = PBXBuildFile; fileRef = 8563965C17460FB6002663EC /* fm_game.m */; };
+		8563968F17460FF8002663EC /* camera_3rd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563966417460FF8002663EC /* camera_3rd.cpp */; };
+		8563969017460FF8002663EC /* camera_control.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563966717460FF8002663EC /* camera_control.cpp */; };
+		8563969117460FF8002663EC /* fight_net.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563966A17460FF8002663EC /* fight_net.cpp */; };
+		8563969217460FF8002663EC /* form_gmcommand.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563966C17460FF8002663EC /* form_gmcommand.cpp */; };
+		8563969317460FF8002663EC /* form_login.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563966E17460FF8002663EC /* form_login.cpp */; };
+		8563969517460FF8002663EC /* game_scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563967217460FF8002663EC /* game_scene.cpp */; };
+		8563969617460FF8002663EC /* game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563967417460FF8002663EC /* game.cpp */; };
+		8563969717460FF8002663EC /* global.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563967617460FF8002663EC /* global.cpp */; };
+		8563969817460FF8002663EC /* gui_utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563967817460FF8002663EC /* gui_utility.cpp */; };
+		8563969917460FF8002663EC /* helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563967917460FF8002663EC /* helper.cpp */; };
+		8563969A17460FF8002663EC /* lib_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563967B17460FF8002663EC /* lib_main.cpp */; };
+		8563969B17460FF8002663EC /* net.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563967C17460FF8002663EC /* net.cpp */; };
+		8563969C17460FF8002663EC /* object_motion.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563967E17460FF8002663EC /* object_motion.cpp */; };
+		8563969D17460FF8002663EC /* role_composite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563968017460FF8002663EC /* role_composite.cpp */; };
+		8563969E17460FF8002663EC /* stage_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563968217460FF8002663EC /* stage_client.cpp */; };
+		8563969F17460FF8002663EC /* stage_login.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563968417460FF8002663EC /* stage_login.cpp */; };
+		856396A017460FF8002663EC /* stage_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563968617460FF8002663EC /* stage_main.cpp */; };
+		856396A117460FF8002663EC /* stage_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563968817460FF8002663EC /* stage_manager.cpp */; };
+		856396A217460FF8002663EC /* stage_testmodel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563968A17460FF8002663EC /* stage_testmodel.cpp */; };
+		856396A317460FF8002663EC /* utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563968D17460FF8002663EC /* utility.cpp */; };
+		85DF22FB17AB9A6B00F143E3 /* form_mbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85DF22F317AB9A6B00F143E3 /* form_mbox.cpp */; };
+		85DF22FC17AB9A6B00F143E3 /* form_qbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85DF22F517AB9A6B00F143E3 /* form_qbox.cpp */; };
+		85DF22FE17AB9A6B00F143E3 /* stage_switchscene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85DF22F917AB9A6B00F143E3 /* stage_switchscene.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8563965017460FB6002663EC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8563965217460FB6002663EC /* libfm_game.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfm_game.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8563965517460FB6002663EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8563965917460FB6002663EC /* fm_game-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fm_game-Prefix.pch"; sourceTree = "<group>"; };
+		8563965A17460FB6002663EC /* fm_game.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fm_game.h; sourceTree = "<group>"; };
+		8563965C17460FB6002663EC /* fm_game.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fm_game.m; sourceTree = "<group>"; };
+		8563966417460FF8002663EC /* camera_3rd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = camera_3rd.cpp; path = ../../../fm_game/camera_3rd.cpp; sourceTree = "<group>"; };
+		8563966517460FF8002663EC /* camera_3rd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = camera_3rd.h; path = ../../../fm_game/camera_3rd.h; sourceTree = "<group>"; };
+		8563966617460FF8002663EC /* camera_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = camera_base.h; path = ../../../fm_game/camera_base.h; sourceTree = "<group>"; };
+		8563966717460FF8002663EC /* camera_control.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = camera_control.cpp; path = ../../../fm_game/camera_control.cpp; sourceTree = "<group>"; };
+		8563966817460FF8002663EC /* camera_control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = camera_control.h; path = ../../../fm_game/camera_control.h; sourceTree = "<group>"; };
+		8563966917460FF8002663EC /* defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = defines.h; path = ../../../fm_game/defines.h; sourceTree = "<group>"; };
+		8563966A17460FF8002663EC /* fight_net.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = fight_net.cpp; path = ../../../fm_game/fight_net.cpp; sourceTree = "<group>"; };
+		8563966B17460FF8002663EC /* fight_net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fight_net.h; path = ../../../fm_game/fight_net.h; sourceTree = "<group>"; };
+		8563966C17460FF8002663EC /* form_gmcommand.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = form_gmcommand.cpp; path = ../../../fm_game/form_gmcommand.cpp; sourceTree = "<group>"; };
+		8563966D17460FF8002663EC /* form_gmcommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = form_gmcommand.h; path = ../../../fm_game/form_gmcommand.h; sourceTree = "<group>"; };
+		8563966E17460FF8002663EC /* form_login.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = form_login.cpp; path = ../../../fm_game/form_login.cpp; sourceTree = "<group>"; };
+		8563966F17460FF8002663EC /* form_login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = form_login.h; path = ../../../fm_game/form_login.h; sourceTree = "<group>"; };
+		8563967217460FF8002663EC /* game_scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game_scene.cpp; path = ../../../fm_game/game_scene.cpp; sourceTree = "<group>"; };
+		8563967317460FF8002663EC /* game_scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game_scene.h; path = ../../../fm_game/game_scene.h; sourceTree = "<group>"; };
+		8563967417460FF8002663EC /* game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game.cpp; path = ../../../fm_game/game.cpp; sourceTree = "<group>"; };
+		8563967517460FF8002663EC /* game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game.h; path = ../../../fm_game/game.h; sourceTree = "<group>"; };
+		8563967617460FF8002663EC /* global.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = global.cpp; path = ../../../fm_game/global.cpp; sourceTree = "<group>"; };
+		8563967717460FF8002663EC /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = global.h; path = ../../../fm_game/global.h; sourceTree = "<group>"; };
+		8563967817460FF8002663EC /* gui_utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = gui_utility.cpp; path = ../../../fm_game/gui_utility.cpp; sourceTree = "<group>"; };
+		8563967917460FF8002663EC /* helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = helper.cpp; path = ../../../fm_game/helper.cpp; sourceTree = "<group>"; };
+		8563967A17460FF8002663EC /* helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = helper.h; path = ../../../fm_game/helper.h; sourceTree = "<group>"; };
+		8563967B17460FF8002663EC /* lib_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lib_main.cpp; path = ../../../fm_game/lib_main.cpp; sourceTree = "<group>"; };
+		8563967C17460FF8002663EC /* net.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = net.cpp; path = ../../../fm_game/net.cpp; sourceTree = "<group>"; };
+		8563967D17460FF8002663EC /* net.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = net.h; path = ../../../fm_game/net.h; sourceTree = "<group>"; };
+		8563967E17460FF8002663EC /* object_motion.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = object_motion.cpp; path = ../../../fm_game/object_motion.cpp; sourceTree = "<group>"; };
+		8563967F17460FF8002663EC /* object_motion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = object_motion.h; path = ../../../fm_game/object_motion.h; sourceTree = "<group>"; };
+		8563968017460FF8002663EC /* role_composite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = role_composite.cpp; path = ../../../fm_game/role_composite.cpp; sourceTree = "<group>"; };
+		8563968117460FF8002663EC /* role_composite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = role_composite.h; path = ../../../fm_game/role_composite.h; sourceTree = "<group>"; };
+		8563968217460FF8002663EC /* stage_client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stage_client.cpp; path = ../../../fm_game/stage_client.cpp; sourceTree = "<group>"; };
+		8563968317460FF8002663EC /* stage_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stage_client.h; path = ../../../fm_game/stage_client.h; sourceTree = "<group>"; };
+		8563968417460FF8002663EC /* stage_login.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stage_login.cpp; path = ../../../fm_game/stage_login.cpp; sourceTree = "<group>"; };
+		8563968517460FF8002663EC /* stage_login.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stage_login.h; path = ../../../fm_game/stage_login.h; sourceTree = "<group>"; };
+		8563968617460FF8002663EC /* stage_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stage_main.cpp; path = ../../../fm_game/stage_main.cpp; sourceTree = "<group>"; };
+		8563968717460FF8002663EC /* stage_main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stage_main.h; path = ../../../fm_game/stage_main.h; sourceTree = "<group>"; };
+		8563968817460FF8002663EC /* stage_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stage_manager.cpp; path = ../../../fm_game/stage_manager.cpp; sourceTree = "<group>"; };
+		8563968917460FF8002663EC /* stage_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stage_manager.h; path = ../../../fm_game/stage_manager.h; sourceTree = "<group>"; };
+		8563968A17460FF8002663EC /* stage_testmodel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stage_testmodel.cpp; path = ../../../fm_game/stage_testmodel.cpp; sourceTree = "<group>"; };
+		8563968B17460FF8002663EC /* stage_testmodel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stage_testmodel.h; path = ../../../fm_game/stage_testmodel.h; sourceTree = "<group>"; };
+		8563968C17460FF8002663EC /* stage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stage.h; path = ../../../fm_game/stage.h; sourceTree = "<group>"; };
+		8563968D17460FF8002663EC /* utility.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = utility.cpp; path = ../../../fm_game/utility.cpp; sourceTree = "<group>"; };
+		8563968E17460FF8002663EC /* utility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = utility.h; path = ../../../fm_game/utility.h; sourceTree = "<group>"; };
+		85DF22F317AB9A6B00F143E3 /* form_mbox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = form_mbox.cpp; path = ../../../fm_game/form_mbox.cpp; sourceTree = "<group>"; };
+		85DF22F417AB9A6B00F143E3 /* form_mbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = form_mbox.h; path = ../../../fm_game/form_mbox.h; sourceTree = "<group>"; };
+		85DF22F517AB9A6B00F143E3 /* form_qbox.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = form_qbox.cpp; path = ../../../fm_game/form_qbox.cpp; sourceTree = "<group>"; };
+		85DF22F617AB9A6B00F143E3 /* form_qbox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = form_qbox.h; path = ../../../fm_game/form_qbox.h; sourceTree = "<group>"; };
+		85DF22F917AB9A6B00F143E3 /* stage_switchscene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = stage_switchscene.cpp; path = ../../../fm_game/stage_switchscene.cpp; sourceTree = "<group>"; };
+		85DF22FA17AB9A6B00F143E3 /* stage_switchscene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stage_switchscene.h; path = ../../../fm_game/stage_switchscene.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8563964F17460FB6002663EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8563965617460FB6002663EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8563964717460FB6002663EC = {
+			isa = PBXGroup;
+			children = (
+				8563966317460FC0002663EC /* src */,
+				8563965717460FB6002663EC /* fm_game */,
+				8563965417460FB6002663EC /* Frameworks */,
+				8563965317460FB6002663EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8563965317460FB6002663EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8563965217460FB6002663EC /* libfm_game.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8563965417460FB6002663EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8563965517460FB6002663EC /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8563965717460FB6002663EC /* fm_game */ = {
+			isa = PBXGroup;
+			children = (
+				8563965A17460FB6002663EC /* fm_game.h */,
+				8563965C17460FB6002663EC /* fm_game.m */,
+				8563965817460FB6002663EC /* Supporting Files */,
+			);
+			path = fm_game;
+			sourceTree = "<group>";
+		};
+		8563965817460FB6002663EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8563965917460FB6002663EC /* fm_game-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8563966317460FC0002663EC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				85DF22F317AB9A6B00F143E3 /* form_mbox.cpp */,
+				85DF22F417AB9A6B00F143E3 /* form_mbox.h */,
+				85DF22F517AB9A6B00F143E3 /* form_qbox.cpp */,
+				85DF22F617AB9A6B00F143E3 /* form_qbox.h */,
+				85DF22F917AB9A6B00F143E3 /* stage_switchscene.cpp */,
+				85DF22FA17AB9A6B00F143E3 /* stage_switchscene.h */,
+				8563966417460FF8002663EC /* camera_3rd.cpp */,
+				8563966517460FF8002663EC /* camera_3rd.h */,
+				8563966617460FF8002663EC /* camera_base.h */,
+				8563966717460FF8002663EC /* camera_control.cpp */,
+				8563966817460FF8002663EC /* camera_control.h */,
+				8563966917460FF8002663EC /* defines.h */,
+				8563966A17460FF8002663EC /* fight_net.cpp */,
+				8563966B17460FF8002663EC /* fight_net.h */,
+				8563966C17460FF8002663EC /* form_gmcommand.cpp */,
+				8563966D17460FF8002663EC /* form_gmcommand.h */,
+				8563966E17460FF8002663EC /* form_login.cpp */,
+				8563966F17460FF8002663EC /* form_login.h */,
+				8563967217460FF8002663EC /* game_scene.cpp */,
+				8563967317460FF8002663EC /* game_scene.h */,
+				8563967417460FF8002663EC /* game.cpp */,
+				8563967517460FF8002663EC /* game.h */,
+				8563967617460FF8002663EC /* global.cpp */,
+				8563967717460FF8002663EC /* global.h */,
+				8563967817460FF8002663EC /* gui_utility.cpp */,
+				8563967917460FF8002663EC /* helper.cpp */,
+				8563967A17460FF8002663EC /* helper.h */,
+				8563967B17460FF8002663EC /* lib_main.cpp */,
+				8563967C17460FF8002663EC /* net.cpp */,
+				8563967D17460FF8002663EC /* net.h */,
+				8563967E17460FF8002663EC /* object_motion.cpp */,
+				8563967F17460FF8002663EC /* object_motion.h */,
+				8563968017460FF8002663EC /* role_composite.cpp */,
+				8563968117460FF8002663EC /* role_composite.h */,
+				8563968217460FF8002663EC /* stage_client.cpp */,
+				8563968317460FF8002663EC /* stage_client.h */,
+				8563968417460FF8002663EC /* stage_login.cpp */,
+				8563968517460FF8002663EC /* stage_login.h */,
+				8563968617460FF8002663EC /* stage_main.cpp */,
+				8563968717460FF8002663EC /* stage_main.h */,
+				8563968817460FF8002663EC /* stage_manager.cpp */,
+				8563968917460FF8002663EC /* stage_manager.h */,
+				8563968A17460FF8002663EC /* stage_testmodel.cpp */,
+				8563968B17460FF8002663EC /* stage_testmodel.h */,
+				8563968C17460FF8002663EC /* stage.h */,
+				8563968D17460FF8002663EC /* utility.cpp */,
+				8563968E17460FF8002663EC /* utility.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8563965117460FB6002663EC /* fm_game */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8563966017460FB6002663EC /* Build configuration list for PBXNativeTarget "fm_game" */;
+			buildPhases = (
+				8563964E17460FB6002663EC /* Sources */,
+				8563964F17460FB6002663EC /* Frameworks */,
+				8563965017460FB6002663EC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fm_game;
+			productName = fm_game;
+			productReference = 8563965217460FB6002663EC /* libfm_game.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8563964917460FB6002663EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = SnailResearch;
+			};
+			buildConfigurationList = 8563964C17460FB6002663EC /* Build configuration list for PBXProject "fm_game" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8563964717460FB6002663EC;
+			productRefGroup = 8563965317460FB6002663EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8563965117460FB6002663EC /* fm_game */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8563964E17460FB6002663EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8563965D17460FB6002663EC /* fm_game.m in Sources */,
+				8563968F17460FF8002663EC /* camera_3rd.cpp in Sources */,
+				8563969017460FF8002663EC /* camera_control.cpp in Sources */,
+				8563969117460FF8002663EC /* fight_net.cpp in Sources */,
+				8563969217460FF8002663EC /* form_gmcommand.cpp in Sources */,
+				8563969317460FF8002663EC /* form_login.cpp in Sources */,
+				8563969517460FF8002663EC /* game_scene.cpp in Sources */,
+				8563969617460FF8002663EC /* game.cpp in Sources */,
+				8563969717460FF8002663EC /* global.cpp in Sources */,
+				8563969817460FF8002663EC /* gui_utility.cpp in Sources */,
+				8563969917460FF8002663EC /* helper.cpp in Sources */,
+				8563969A17460FF8002663EC /* lib_main.cpp in Sources */,
+				8563969B17460FF8002663EC /* net.cpp in Sources */,
+				8563969C17460FF8002663EC /* object_motion.cpp in Sources */,
+				8563969D17460FF8002663EC /* role_composite.cpp in Sources */,
+				8563969E17460FF8002663EC /* stage_client.cpp in Sources */,
+				8563969F17460FF8002663EC /* stage_login.cpp in Sources */,
+				856396A017460FF8002663EC /* stage_main.cpp in Sources */,
+				856396A117460FF8002663EC /* stage_manager.cpp in Sources */,
+				856396A217460FF8002663EC /* stage_testmodel.cpp in Sources */,
+				856396A317460FF8002663EC /* utility.cpp in Sources */,
+				85DF22FB17AB9A6B00F143E3 /* form_mbox.cpp in Sources */,
+				85DF22FC17AB9A6B00F143E3 /* form_qbox.cpp in Sources */,
+				85DF22FE17AB9A6B00F143E3 /* stage_switchscene.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8563965E17460FB6002663EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8563965F17460FB6002663EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8563966117460FB6002663EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DSTROOT = /tmp/fm_game.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fm_game/fm_game-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8563966217460FB6002663EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DSTROOT = /tmp/fm_game.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fm_game/fm_game-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8563964C17460FB6002663EC /* Build configuration list for PBXProject "fm_game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8563965E17460FB6002663EC /* Debug */,
+				8563965F17460FB6002663EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8563966017460FB6002663EC /* Build configuration list for PBXNativeTarget "fm_game" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8563966117460FB6002663EC /* Debug */,
+				8563966217460FB6002663EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8563964917460FB6002663EC /* Project object */;
+}

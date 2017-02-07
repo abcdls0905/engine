@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<object>
+    <internals />
+    <properties>
+        <property name="FightGroup" type="dword" public="false" private="true" save="true" realtime="true" desc="当前战斗组" />
+        <property name="PetBattleGroup" type="byte" public="false" private="true" save="true" realtime="true" desc="当前使用的武神阵型" />
+        <property name="PetBattleUnlockNum" type="byte" public="false" private="true" save="true" realtime="true" desc="当前解锁的武神阵型数" />
+        <property name="ReturnUnlockDiaomnd" type="byte" public="false" private="false" save="true" realtime="" desc="是否返还了解锁的钻石" />
+		<property name="PropEffect" type="string" public="false" private="true" save="false" realtime="" desc="属性提升效果"/>
+		<property name="CantChangePet" type="dword" public="false" private="true" save="false" realtime="" desc="不能切换宠物"/>
+		<property name="GraspForMoneyTime" type="dword" public="false" private="true" save="true" realtime="true" desc="用金钱领悟次数"/>
+		<property name="GraspForDiamondTime" type="dword" public="false" private="true" save="true" realtime="true" desc="用钻石领悟次数"/>
+        <property name="GraspSkillLevelExp" type="int64" public="false" private="true" save="true" realtime="true" desc="领悟技能经验"/>
+		<property name="SkinID" type="string" public="true" private="true" save="false" realtime="true" desc="武神皮肤"/>
+		<property name="IsUnlockForthGrid" type="byte" public="false" private="true" save="true" realtime="true" desc="第四组武神格子是否解锁"/>
+    </properties>
+    <records>
+        <record name="sold_pet_rec" cols="4" maxrows="4" save="true" public="false" private="true" desc="出售宠物列表">
+            <column type="string" desc="宠物名称" />
+            <column type="dword" desc="刷新数量" />
+            <column type="word" desc="是否已经购买" />
+            <column type="word" desc="是否是丹药" />
+        </record>
+        <record name="fight_pet_rec" cols="5" maxrows="32" save="true" public="false" private="true" realtime="true" desc="出征宠物列表">
+            <column type="string" desc="宠物名称" />
+            <column type="dword" desc="宠物分组" />
+            <column type="dword" desc="组内index" />
+            <column type="dword" desc="容器index" />
+            <column type="object" desc="宠物persistid" />
+        </record>
+        <record name="fight1_pet_rec" cols="5" maxrows="32" save="true" public="false" private="true" realtime="true" desc="出征宠物列表1">
+            <column type="string" desc="宠物名称" />
+            <column type="dword" desc="宠物分组" />
+            <column type="dword" desc="组内index" />
+            <column type="dword" desc="容器index" />
+            <column type="object" desc="宠物persistid" />
+        </record>
+        <record name="fight2_pet_rec" cols="5" maxrows="32" save="true" public="false" private="true" realtime="true" desc="出征宠物列表2">
+            <column type="string" desc="宠物名称" />
+            <column type="dword" desc="宠物分组" />
+            <column type="dword" desc="组内index" />
+            <column type="dword" desc="容器index" />
+            <column type="object" desc="宠物persistid" />
+        </record>
+		<record name="fight3_pet_rec" cols="5" maxrows="32" save="true" public="false" private="true" realtime="true" desc="出征宠物列表3">
+            <column type="string" desc="宠物名称" />
+            <column type="dword" desc="宠物分组" />
+            <column type="dword" desc="组内index" />
+            <column type="dword" desc="容器index" />
+            <column type="object" desc="宠物persistid" />
+        </record>
+		<record name="fight_defence_pet_rec" cols="7" maxrows="32" save="true" public="false" private="true" realtime="true" desc="擂台出征宠物列表">
+            <column type="string" desc="宠物名称" />
+            <column type="dword" desc="宠物分组" />
+            <column type="dword" desc="组内index" />
+            <column type="dword" desc="容器index" />
+            <column type="object" desc="宠物persistid" />
+			<column type="byte" desc="是否是雇佣的" />
+			<column type="word" desc="剩余血量%" />
+        </record>
+		<record name="give_guild_pet_rec" cols="14" maxrows="32" save="true" public="false" private="true" realtime="true" desc="给予雇佣的武神">
+			<column type="string" desc="武神id" />
+			<column type="string" desc="武神uniqueid" />
+			<column type="word" desc="武神等级" />
+			<column type="word" desc="武神进化等级" />
+			<column type="word" desc="武神突破等级" />
+			<column type="word" desc="武神突破次数" />
+			<column type="word" desc="该武神对应的稀有技等级" />
+			<column type="string" desc="领悟技能" />
+			<column type="string" desc="武神皮肤" />
+			<column type="string" desc="武神技能" />
+			<column type="word" desc="武神技能" />
+			<column type="string" desc="武神羁绊" />
+			<column type="string" desc="武神装备信息" />
+			<column type="word" desc="武神修炼等级" />
+		</record>
+		<record name="pet_turn_rec" cols="2" maxrows="32" save="false" public="false" private="false" realtime="false" desc="武神转生">
+			<column type="string" desc="被动ID" />
+			<column type="word" desc="被动等级"/>
+		</record>
+        <record name="pet_advance_prop_rec" cols="2" maxrows="32" save="false" public="false" private="false" realtime="false" desc="武神转生">
+            <column type="string" desc="属性名" />
+            <column type="int" desc="属性值"/>
+        </record>
+		<record name="fight_group_unlock_rec" cols="1" maxrows="32" save="true" public="false" private="true" realtime="true" desc="解锁的格子表">
+			<column type="int" desc="解锁的格子"/>
+		</record>	
+    </records>
+    <includes />
+</object>

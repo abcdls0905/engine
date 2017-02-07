@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop IsGC="true" Width="1190" Height="768" BackColor="0,255,255,255" ShadowColor="0,0,0,0" BackImage="gui\use\function\function_vein_096.png" />
+        <control name="group_main" entity="GroupBox" script="" init="">
+            <prop Left="5" Top="5" Width="1190" Height="768" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+            <control name="group_hit" entity="GroupBox" script="" init="">
+                <prop Left="736" Top="88" Width="270" Height="142" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                <control name="lbl_hit" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="40" Top="56" Width="190" Height="27" ForeColor="255,255,255,205" ShadowColor="0,0,0,0" Text="@ui_guild_activity_2" Font="WRYH20" AutoSize="true" />
+                </control>
+                <control name="lbl_hit_count" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="139" Top="59" Width="102" Height="30" ForeColor="255,0,254,246" ShadowColor="0,0,0,0" Text="+100" Font="WRYH30_S" />
+                </control>
+            </control>
+            <control name="group_content" entity="GroupBox" script="" init="">
+                <prop Top="248" Width="910" Height="494" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                <control name="lbl_1" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="29" Top="50" Width="862" Height="430" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\main\war\bottom_jiesuan.jpg" />
+                </control>
+                <control name="groupbox_col" entity="GroupBox" script="" init="">
+                    <prop Left="109" Top="10" Width="766" Height="62" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                    <control name="lbl_col_name" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="75" Top="22" Width="78" Height="30" ShadowColor="0,0,0,0" NoFrame="false" DrawMode="FitWindow" BackImage="gui\main\war\picword_name.jpg" />
+                    </control>
+                    <control name="lbl_col_3" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="395" Top="22" Width="78" Height="30" ShadowColor="0,0,0,0" NoFrame="false" DrawMode="FitWindow" BackImage="gui\main\guild\picword_jls.png" />
+                    </control>
+                    <control name="lbl_col_4" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="475" Top="22" Width="78" Height="30" ShadowColor="0,0,0,0" NoFrame="false" DrawMode="FitWindow" BackImage="gui\main\guild\picword_fd.png" />
+                    </control>
+                    <control name="lbl_col_1" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="232" Top="22" Width="78" Height="30" ShadowColor="0,0,0,0" NoFrame="false" DrawMode="FitWindow" BackImage="gui\main\guild\picword_jb.png" />
+                    </control>
+                    <control name="lbl_col_2" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="307" Top="22" Width="78" Height="30" ShadowColor="0,0,0,0" NoFrame="false" DrawMode="FitWindow" BackImage="gui\main\guild\picword_yt.png" />
+                    </control>
+                </control>
+            </control>
+            <control name="btn_leave" entity="Button" script="" init="">
+                <prop NormalImage="gui\battle\scene_account\button_jiesuan1.png" PushImage="gui\battle\scene_account\button_jiesuan2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="912" Top="640" Width="226" Height="94" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_ok" Font="WRYH26_S" TabIndex="100" TabStop="true" AutoSize="true" DrawMode="ExpandH" ClickSound="button_click" />
+            </control>
+            <control name="groupbox_example" entity="GroupBox" script="" init="">
+                <prop Left="117" Top="332" Width="774" Height="46" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\main\war\bg_jiesuan_ct.jpg" />
+                <control name="lbl_item_name" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="3" Top="12" Width="222" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="dgfrrgrth" Font="WRYH20_S_GRAY" />
+                </control>
+                <control name="lbl_item_2" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="291" Top="12" Width="102" Height="35" ForeColor="255,0,254,246" ShadowColor="0,0,0,0" Text="0" Font="WRYH22_O" />
+                </control>
+                <control name="lbl_item_3" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="403" Top="12" Width="46" Height="35" ForeColor="255,0,254,246" ShadowColor="0,0,0,0" Text="0" Font="WRYH22_O" />
+                </control>
+                <control name="lbl_item_4" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="483" Top="12" Width="46" Height="35" ForeColor="255,0,254,246" ShadowColor="0,0,0,0" Text="0" Font="WRYH22_O" />
+                </control>
+                <control name="lbl_item_1" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="235" Top="12" Width="54" Height="35" ForeColor="255,0,254,246" ShadowColor="0,0,0,0" Text="0" Font="WRYH22_O" />
+                </control>
+            </control>
+        </control>
+    </control>
+</form>

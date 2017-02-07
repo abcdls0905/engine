@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Left="20" Top="30" Width="374" Height="134" BackColor="0,255,255,255" ShadowColor="0,0,0,0" />
+        <control name="groupbox_progress" entity="GroupBox" script="" init="">
+            <prop Left="41" Top="23" Width="294" Height="78" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+            <control name="lbl_bk" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="32" Top="34" Width="198" Height="25" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\xm2_common\window\bjk_3.png" />
+            </control>
+            <control name="pBar" entity="ProgressBar" script="" init="">
+                <prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui\xm2_loading\loadingtiao2.png" ProgressMode="LeftToRight" Left="32" Top="40" Width="180" Height="15" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="FitWindow" />
+            </control>
+            <control name="lbl_tip" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="96" Top="8" Width="74" Height="24" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH22_O" />
+            </control>
+            <control name="lbl_tip2" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="207" Top="36" Width="22" Height="22" ShadowColor="0,0,0,0" BackImage="gui\main\heedbar\clone2.png,338,911,20,22" />
+            </control>
+        </control>
+    </control>
+</form>

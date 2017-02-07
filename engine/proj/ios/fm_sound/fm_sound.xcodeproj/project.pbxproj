@@ -1,0 +1,282 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70C84536179747D10028396E /* lib_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70C8452E179747D10028396E /* lib_main.cpp */; };
+		70C84537179747D10028396E /* regclass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70C8452F179747D10028396E /* regclass.cpp */; };
+		70C84538179747D10028396E /* soudsystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 70C84530179747D10028396E /* soudsystem.cpp */; };
+		8576AC9116F1B1DE0012635A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8576AC9016F1B1DE0012635A /* Foundation.framework */; };
+		8576AC9816F1B1DE0012635A /* fm_sound.m in Sources */ = {isa = PBXBuildFile; fileRef = 8576AC9716F1B1DE0012635A /* fm_sound.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8576AC8B16F1B1DE0012635A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		70C8452E179747D10028396E /* lib_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lib_main.cpp; path = ../../../fm_sound/lib_main.cpp; sourceTree = "<group>"; };
+		70C8452F179747D10028396E /* regclass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = regclass.cpp; path = ../../../fm_sound/regclass.cpp; sourceTree = "<group>"; };
+		70C84530179747D10028396E /* soudsystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = soudsystem.cpp; path = ../../../fm_sound/soudsystem.cpp; sourceTree = "<group>"; };
+		70C84531179747D10028396E /* soundcore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = soundcore.h; path = ../../../fm_sound/soundcore.h; sourceTree = "<group>"; };
+		70C84532179747D10028396E /* soundeffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = soundeffect.h; path = ../../../fm_sound/soundeffect.h; sourceTree = "<group>"; };
+		70C84533179747D10028396E /* soundimp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = soundimp.h; path = ../../../fm_sound/soundimp.h; sourceTree = "<group>"; };
+		70C84534179747D10028396E /* soundres.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = soundres.h; path = ../../../fm_sound/soundres.h; sourceTree = "<group>"; };
+		70C84535179747D10028396E /* soundsystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = soundsystem.h; path = ../../../fm_sound/soundsystem.h; sourceTree = "<group>"; };
+		8576AC8D16F1B1DE0012635A /* libfm_sound.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfm_sound.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8576AC9016F1B1DE0012635A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8576AC9416F1B1DE0012635A /* fm_sound-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fm_sound-Prefix.pch"; sourceTree = "<group>"; };
+		8576AC9516F1B1DE0012635A /* fm_sound.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fm_sound.h; sourceTree = "<group>"; };
+		8576AC9716F1B1DE0012635A /* fm_sound.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fm_sound.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8576AC8A16F1B1DE0012635A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8576AC9116F1B1DE0012635A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70C8452C179747D10028396E /* src */ = {
+			isa = PBXGroup;
+			children = (
+				70C8452E179747D10028396E /* lib_main.cpp */,
+				70C8452F179747D10028396E /* regclass.cpp */,
+				70C84530179747D10028396E /* soudsystem.cpp */,
+				70C84531179747D10028396E /* soundcore.h */,
+				70C84532179747D10028396E /* soundeffect.h */,
+				70C84533179747D10028396E /* soundimp.h */,
+				70C84534179747D10028396E /* soundres.h */,
+				70C84535179747D10028396E /* soundsystem.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		8576AC8216F1B1DE0012635A = {
+			isa = PBXGroup;
+			children = (
+				70C8452C179747D10028396E /* src */,
+				8576AC9216F1B1DE0012635A /* fm_sound */,
+				8576AC8F16F1B1DE0012635A /* Frameworks */,
+				8576AC8E16F1B1DE0012635A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8576AC8E16F1B1DE0012635A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8576AC8D16F1B1DE0012635A /* libfm_sound.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8576AC8F16F1B1DE0012635A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8576AC9016F1B1DE0012635A /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8576AC9216F1B1DE0012635A /* fm_sound */ = {
+			isa = PBXGroup;
+			children = (
+				8576AC9516F1B1DE0012635A /* fm_sound.h */,
+				8576AC9716F1B1DE0012635A /* fm_sound.m */,
+				8576AC9316F1B1DE0012635A /* Supporting Files */,
+			);
+			path = fm_sound;
+			sourceTree = "<group>";
+		};
+		8576AC9316F1B1DE0012635A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8576AC9416F1B1DE0012635A /* fm_sound-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8576AC8C16F1B1DE0012635A /* fm_sound */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8576AC9B16F1B1DE0012635A /* Build configuration list for PBXNativeTarget "fm_sound" */;
+			buildPhases = (
+				8576AC8916F1B1DE0012635A /* Sources */,
+				8576AC8A16F1B1DE0012635A /* Frameworks */,
+				8576AC8B16F1B1DE0012635A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fm_sound;
+			productName = fm_sound;
+			productReference = 8576AC8D16F1B1DE0012635A /* libfm_sound.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8576AC8416F1B1DE0012635A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = SnailResearch;
+			};
+			buildConfigurationList = 8576AC8716F1B1DE0012635A /* Build configuration list for PBXProject "fm_sound" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8576AC8216F1B1DE0012635A;
+			productRefGroup = 8576AC8E16F1B1DE0012635A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8576AC8C16F1B1DE0012635A /* fm_sound */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8576AC8916F1B1DE0012635A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8576AC9816F1B1DE0012635A /* fm_sound.m in Sources */,
+				70C84536179747D10028396E /* lib_main.cpp in Sources */,
+				70C84537179747D10028396E /* regclass.cpp in Sources */,
+				70C84538179747D10028396E /* soudsystem.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8576AC9916F1B1DE0012635A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8576AC9A16F1B1DE0012635A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8576AC9C16F1B1DE0012635A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DSTROOT = /tmp/fm_sound.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fm_sound/fm_sound-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8576AC9D16F1B1DE0012635A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DSTROOT = /tmp/fm_sound.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fm_sound/fm_sound-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8576AC8716F1B1DE0012635A /* Build configuration list for PBXProject "fm_sound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8576AC9916F1B1DE0012635A /* Debug */,
+				8576AC9A16F1B1DE0012635A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8576AC9B16F1B1DE0012635A /* Build configuration list for PBXNativeTarget "fm_sound" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8576AC9C16F1B1DE0012635A /* Debug */,
+				8576AC9D16F1B1DE0012635A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8576AC8416F1B1DE0012635A /* Project object */;
+}

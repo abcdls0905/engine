@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+	MainSort: 物品分类大类型 
+	 	type: 类型id 取值[1,99]
+	 	name: 类型名字key 对应interface文本
+	 	desc: 描述，不读取，表示作用
+
+	SubSort : 物品分类子类型
+		type: 类型id 取值[1,99]
+	 	name: 类型名字key 对应interface文本
+	 	desc: 描述，不读取，表示作用	
+-->
+
+<Object>
+
+	<MainSort type="1" name="1" desc="道具" >
+		<SubSort type="1" name="1-1" desc="觉醒印" />
+		<SubSort type="2" name="1-2" desc="觉醒印" />
+	</MainSort>
+
+	<MainSort type="2" name="2" desc="道具" >
+		<SubSort type="1" name="2-1" desc="觉醒印" />
+		<SubSort type="2" name="2-2" desc="觉醒印" />
+	</MainSort>
+
+</Object>

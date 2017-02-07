@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop IsGC="true" Width="530" Height="510" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+        <control name="groupbox_tips" entity="GroupBox" script="" init="">
+            <prop Left="13" Top="26" Width="495" Height="478" BackColor="0,255,255,255" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="8" Top="411" Width="55" Height="57" ShadowColor="0,0,0,0" BackImage="gui\common\window\zhuangshi_zuoxia.png" />
+            </control>
+            <control name="lbl_9" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="432" Top="411" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshiyouxia.png" />
+            </control>
+            <control name="lbl_13" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="16" Top="51" Width="460" Height="358" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg_huikuang.png" />
+            </control>
+            <control name="mltbox_condition" entity="MultiTextBox" script="" init="">
+                <prop SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,438,150" LineHeight="20" ScrollSize="17" Left="24" Top="67" Width="438" Height="150" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" Text="mltbox_1" DisableEnter="true" />
+            </control>
+            <control name="mltbox_info" entity="MultiTextBox" script="" init="">
+                <prop SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,446,198" LineHeight="20" HtmlText="@ui_pet_tips_50" ScrollSize="17" Left="24" Top="203" Width="446" Height="198" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" Text="mltbox_2" DisableEnter="true" />
+            </control>
+            <control name="groupbox_need_photo" entity="GroupBox" script="" init="">
+                <prop Left="344" Top="67" Width="110" Height="110" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" DrawMode="FitWindow" />
+                <control name="lbl_need_frame" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="3" Top="7" Width="100" Height="100" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\common\window\tubiaokuang_3.png" />
+                </control>
+                <control name="lbl_need_photo" entity="Label" script="" init="">
+                    <prop ClickEvent="true" RefCursor="WIN_HELP" Left="10" Top="12" Width="90" Height="90" ShadowColor="0,0,0,0" Transparent="false" DrawMode="FitWindow" />
+                </control>
+                <control name="lbl_need_colorLevel" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="3" Top="8" Width="100" Height="100" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\common\window\zhuangbeikuang_33.png" />
+                </control>
+            </control>
+        </control>
+        <control name="groupbox_btn" entity="GroupBox" script="" init="">
+            <prop Left="21" Top="429" Width="470" Height="70" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+            <control name="btn_comfire" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\anniu.png" PushImage="gui\common\button\anniu_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="44" Width="174" Height="74" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_pet_tips_48" Font="WRYH24_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+            </control>
+            <control name="btn_cancel" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\anniu.png" PushImage="gui\common\button\anniu_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="256" Width="174" Height="74" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_pet_tips_49" Font="WRYH24_S" TabStop="true" DrawMode="ExpandH" ClickSound="ui_open" HandleShortcut="BUTTON_Y" />
+            </control>
+        </control>
+    </control>
+</form>

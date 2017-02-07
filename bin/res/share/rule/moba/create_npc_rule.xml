@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="gb2312"?>
+<Object>
+	<!--此标准配置每个场景的刷兵包ID
+	 <Scene
+		<Property ID="0" SceneId="场景ID" PacketId="场景刷兵包ID(599)" CommonID="1:蓬莱,2:清风涧,3:幽兰谷,4:冰封桥,5:门派,6:竹林,7:沙漠,8:遗迹,9:地牢,10:火山,11:赤壁"/>
+	 </Scene>
+	-->
+	<!--
+	 <PacketId>
+		<Property ID="0" PacketFlag="包ID标识，如果是红方ID;则在PacketId后加1(5991)，如果是蓝方ID，则在PacketId后加2(5992)" 
+		NearNpcId="近程兵Id" NearNpcNum="近程兵数量"  
+		FarNpcId="远程兵ID" FarNpcNum="远程兵数量" 
+		SuperNpcId="超级兵ID" SuperNpcNum="超级兵数量" 
+		MechNpcId="攻城机械兵ID" MechNpcNum="攻城机械兵数量" />
+	</PacketId>
+	-->
+	<!--
+	<Common>
+		<Property ID="0" PacketFlag="" RoadIndex="路径索引，下标从0开始" 
+	    EachWaveTime="每波时间" 	BornPos="出生坐标x,出生坐标y,出生坐标z;出生坐标x,出生坐标y,出生坐标z" 
+		SuperNpcUpTime="超级兵成长时间间隔，单位:s" FirstSuperNpcBornTime="第一波超级兵强刷时间，单位:s" SuperNpcPropRatio="超级兵成长属性比例，用逗号分隔"
+		 MechNpcUpTime="攻城机械兵成长时间间隔，单位:s" FirstMechNpcBornTime="第一波跑兵强刷时间，单位:s" MechNpcPropRatio="攻城机械兵成长属性比例，用逗号分隔"
+		 MechNpcPeriod="每出几波小兵才出跑兵"/>
+	</Common>
+	-->
+	<Scene>
+		<Property ID="0" SceneId="113" PacketId="1" CommonId="8"/>
+	</Scene>
+	<Packet>
+		<Property ID="0" PacketFlag="11" NearNpcId="NaturalDisasters_01" NearNpcNum="2" SuperNpcId="NaturalDisasters_04" SuperNpcNum="1" FarNpcId="NaturalDisasters_02" FarNpcNum="2" MechNpcId="NaturalDisasters_03" MechNpcNum="1"/>
+		<Property ID="1" PacketFlag="12" NearNpcId="NaturalDisasters_01" NearNpcNum="2" SuperNpcId="NaturalDisasters_04" SuperNpcNum="1" FarNpcId="NaturalDisasters_02" FarNpcNum="2" MechNpcId="NaturalDisasters_03" MechNpcNum="1"/>
+	</Packet>
+	<Common>
+		<Property ID="0" PacketFlag="81" EachWaveTime="25" FirstWaveTime="13" RoadIndex="0,1,2" BornPos="40,10.77,40;40,10.77,40;40,10.77,40" FirstSuperNpcBornTime="420" SuperNpcUpTime="20" SuperNpcPropRatio="0.8,0.9,1" FirstMechNpcBornTime="30" MechNpcUpTime="40" MechNpcPropRatio="0.8,0.9,1" MechNpcPeriod="3"/>
+		<Property ID="1" PacketFlag="82" EachWaveTime="25" FirstWaveTime="13" RoadIndex="0,1,2" BornPos="-40,10.77,-40;-40,10.77,-40;-40,10.77,-40" FirstSuperNpcBornTime="420" SuperNpcUpTime="20" SuperNpcPropRatio="0.8,0.9,1" FirstMechNpcBornTime="30" MechNpcUpTime="40" MechNpcPropRatio="0.8,0.9,1" MechNpcPeriod="3"/>
+	</Common>
+</Object>

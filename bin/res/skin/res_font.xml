@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by  () -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 字体配置 -->
+<fonts>
+	<!--可配置项name,sys_font,font_file,font_tex,tex_width,tex_height,height,interval,weight,smooth,italic,underline,strikeout,var_extent,shadow_color,shadow_offset_x,shadow_offset_y-->
+	<!--注意事项:
+		1.描边设置:shadow_color>0并且shadow_offset_x,shadow_offset_y同时为0时认为以shadow_color描边
+		2.字体加粗
+		/* Font Weights */
+		#define FW_DONTCARE         0        不处理
+		#define FW_THIN             100      细
+		#define FW_EXTRALIGHT       200      非常轻
+		#define FW_LIGHT            300      轻
+		#define FW_NORMAL           400      一般
+		#define FW_MEDIUM           500      中度
+		#define FW_SEMIBOLD         600      半粗体
+		#define FW_BOLD             700      粗体
+		#define FW_EXTRABOLD        800      非常粗
+		#define FW_HEAVY            900      极度粗厚
+		需配后面的值
+		3.命令规范
+		2014-4-15 太极熊猫更新
+		1，描边设置：outline_num 描边宽度 描边颜色 outline_color 其中第一个透明度暂无效果。
+		2，渐变设置：fade_type 渐变类型，0，不渐变；1，由上至下；2，由下至上；3，从中间往两边渐变。
+		3，描边配置需要额外的将var_extent置为true，防止字体无法对齐。
+		
+		-->
+	<!--字体名后缀 M 表示smooth开启,O表示描边,S表示阴	影,W表示加粗-->
+	<!--默认，微软雅黑 13-->
+	<font name="Default" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="16" shadow_color="155,0,0,0" shadow_offset_x="1.3" shadow_offset_y="1.8" var_extent="true" tex_width="2048" tex_height="2048"/>
+	<font name="WRYH14" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="14" tex_width="1024" tex_height="1024"/>
+	<font name="WRYH16" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="16" tex_width="1024" tex_height="1024"/>
+	<font name="WRYH18" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="18" tex_width="1024" tex_height="1024"/>
+	<font name="WRYH20" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="20" tex_width="1024" tex_height="1024"/>
+	<font name="WRYH22" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="22" tex_width="1024" tex_height="1024"/>
+	<font name="WRYH24" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="24" tex_width="1024" tex_height="1024"/>
+	<font name="WRYH26" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="26" tex_width="1024" tex_height="1024"/>
+	<font name="WRYH28" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="28" tex_width="1024" tex_height="1024"/>
+	<font name="WRYH30" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="30" offsety="-2.5"/>
+	<font name="WRYH36" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="36" tex_width="1024" tex_height="1024"/>
+	<font name="WRYH30_S" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="30" shadow_color="155,0,0,0" shadow_offset_x="1.9" shadow_offset_y="3.4" offsety="-4.5"/>
+	<font name="WRYH26_S" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="26" shadow_color="155,0,0,0" shadow_offset_x="1.9" shadow_offset_y="3.4" offsety="-2.5" tex_width="1024" tex_height="1024"/>
+	<font name="WRYH20_S" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="20" shadow_color="155,0,0,0" shadow_offset_x="1.9" shadow_offset_y="3.4" offsety="-2.5"/>
+	<font name="WRYH22_S" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="22" shadow_color="155,0,0,0" shadow_offset_x="1.9" shadow_offset_y="3.4" offsety="-2.5"/>
+	<font name="WRYH20_O_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="20" var_extent="true" outline_num="1" outline_color="255,60,50,40" tex_width="1024" tex_height="1024"/>
+	<font name="WRYH19_O_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="19" var_extent="true" outline_num="1" outline_color="255,60,50,40"/>
+	<font name="WRYH18_O_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="18" var_extent="true" outline_num="1" outline_color="255,60,50,40" tex_width="1024" tex_height="1024"/>
+	<font name="WRYH17_O_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="17" var_extent="true" outline_num="1" outline_color="255,60,50,40"/>
+	<font name="WRYH16_O_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="16" var_extent="true" outline_num="1" outline_color="255,60,50,40" tex_width="1024" tex_height="1024"/>
+	<font name="WRYH15_O_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="15" var_extent="true" outline_num="1" outline_color="255,60,50,40"/>
+	<font name="WRYH14_O_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="14" var_extent="true" outline_num="1" outline_color="255,60,50,40"/>
+	<font name="WRYH12_O_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="12" var_extent="true" outline_num="1" outline_color="255,60,50,40"/>
+	<font name="WRYH10_O_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="10" var_extent="true" outline_num="1" outline_color="255,60,50,40"/>
+	<font name="WRYH18_S" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="18" var_extent="true" shadow_color="155,0,0,0" shadow_offset_x="1.9" shadow_offset_y="3.4"/>
+	<font name="WRYH24_O_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="24" var_extent="true" outline_num="1" outline_color="255,60,50,40" tex_width="1024" tex_height="1024"/>
+	<font name="WRYH22_O_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="22" var_extent="true" outline_num="1" outline_color="255,60,50,40" tex_width="2048" tex_height="2048"/>
+	<font name="WRYH26_O_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="26" var_extent="true" outline_num="1" outline_color="255,60,50,40"/>
+	<font name="WRYH28_O_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="28" var_extent="true" outline_num="1" outline_color="255,60,50,40"/>
+	<font name="WRYH30_O_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="30" var_extent="true" outline_num="1" outline_color="255,60,50,40" tex_width="1024" tex_height="1024"/>
+	<font name="WRYH36_O_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="36" var_extent="true" outline_num="1" outline_color="255,60,50,40"/>
+	<font name="WRYH45_O_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="45" var_extent="true" outline_num="1" outline_color="255,60,50,40"/>
+	<font name="WRYH50_O_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="50" var_extent="true" outline_num="1" outline_color="255,60,50,40"/>
+	<font name="WRYH20_S_GRAY" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="20" shadow_color="155,0,0,0" shadow_offset_x="1.9" shadow_offset_y="3.4" offsety="-2.5"/>
+	<font name="WRYH22_S_GRAY" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="22" shadow_color="155,0,0,0" shadow_offset_x="1.9" shadow_offset_y="3.4" offsety="-2.5"/>
+	<font name="WRYH24_S" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="24" shadow_color="255,0,0,0" shadow_offset_x="1.9" shadow_offset_y="3.4" offsety="-2.5" tex_width="1024" tex_height="1024"/>
+	<font name="WRYH30_O" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="30" var_extent="true" outline_num="2" outline_color="255,0,0,0"/>
+	<font name="WRYH22_O" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="22" shadow_color="255,0,0,0" shadow_offset_x="1.9" shadow_offset_y="2.4" offsety="-2" tex_width="1024" tex_height="1024"/>
+	<font name="WRYH16_O2_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="16" var_extent="true" outline_num="2" outline_color="255,60,50,40"/>
+	<font name="WRYH18_O2_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="18" var_extent="true" outline_num="2" outline_color="255,60,50,40"/>
+	<font name="WRYH20_O2_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="20" var_extent="true" outline_num="2" outline_color="255,60,50,40"/>
+	<font name="WRYH22_O2_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="22" var_extent="true" outline_num="2" outline_color="255,60,50,40"/>
+	<font name="WRYH24_O2_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="24" var_extent="true" outline_num="2" outline_color="255,60,50,40"/>
+	<font name="WRYH26_O2_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="26" var_extent="true" outline_num="2" outline_color="255,60,50,40"/>
+	<font name="WRYH40_O2_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="40" var_extent="true" outline_num="2" outline_color="255,40,18,15"/>
+	<font name="WRYH20_O_WHITE" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="20" var_extent="true" outline_num="1" outline_color="255,250,229,185"/>
+	<font name="WRYH22_O_WHITE" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="22" var_extent="true" outline_num="1" outline_color="255,250,229,185"/>
+	<font name="WRYH24_O_WHITE" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="24" var_extent="true" outline_num="1" outline_color="255,250,229,185"/>
+	<font name="WRYH30_O_WHITE" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="30" var_extent="true" outline_num="1" outline_color="255,250,229,185"/>
+	<font name="scene_info_show" font_tex="font\shuzi.png" tex_width="128" tex_height="64" height="17">
+		<image name="0" left="0" top="0" width="23" height="31"/>
+		<image name="1" left="23" top="0" width="19" height="31"/>
+		<image name="2" left="42" top="0" width="24" height="31"/>
+		<image name="3" left="66" top="0" width="22" height="31"/>
+		<image name="4" left="88" top="0" width="25" height="31"/>
+		<image name="5" left="0" top="31" width="23" height="31"/>
+		<image name="6" left="23" top="31" width="23" height="31"/>
+		<image name="7" left="46" top="31" width="23" height="31"/>
+		<image name="8" left="69" top="31" width="23" height="31"/>
+		<image name="9" left="92" top="31" width="23" height="31"/>
+	</font>
+	<font name="hall" font_tex="font\shuzi1.png" tex_width="128" tex_height="64" height="17">
+		<image name="0" left="0" top="0" width="9" height="12"/>
+		<image name="1" left="12" top="0" width="6" height="12"/>
+		<image name="2" left="23" top="0" width="10" height="12"/>
+		<image name="3" left="35" top="0" width="10" height="12"/>
+		<image name="4" left="47" top="0" width="10" height="12"/>
+		<image name="5" left="0" top="13" width="10" height="12"/>
+		<image name="6" left="12" top="13" width="9" height="12"/>
+		<image name="7" left="24" top="13" width="9" height="12"/>
+		<image name="8" left="35" top="13" width="10" height="12"/>
+		<image name="9" left="47" top="13" width="10" height="12"/>
+		<image name="/" left="68" top="0" width="7" height="12"/>
+	</font>
+	<font name="scene_attzk" font_tex="font\scene_attzk.png" tex_width="128" tex_height="64" height="17">
+		<image name="0" left="75" top="32" width="19" height="32"/>
+		<image name="1" left="0" top="0" width="14" height="32"/>
+		<image name="2" left="14" top="0" width="19" height="32"/>
+		<image name="3" left="33" top="0" width="18" height="32"/>
+		<image name="4" left="51" top="0" width="19" height="32"/>
+		<image name="5" left="70" top="0" width="18" height="32"/>
+		<image name="6" left="0" top="32" width="19" height="32"/>
+		<image name="7" left="19" top="32" width="18" height="32"/>
+		<image name="8" left="37" top="32" width="19" height="32"/>
+		<image name="9" left="56" top="32" width="19" height="32"/>
+		<image name=":" left="88" top="0" width="11" height="32"/>
+	</font>
+	<font name="scene_zdl" font_tex="font\scene_zdl.png" tex_width="256" tex_height="128" height="17">
+		<image name="0" left="139" top="40" width="22" height="36"/>
+		<image name="1" left="0" top="0" width="18" height="36"/>
+		<image name="2" left="33" top="0" width="20" height="36"/>
+		<image name="3" left="68" top="0" width="20" height="36"/>
+		<image name="4" left="103" top="0" width="21" height="36"/>
+		<image name="5" left="138" top="0" width="20" height="36"/>
+		<image name="6" left="0" top="40" width="21" height="36"/>
+		<image name="7" left="35" top="40" width="21" height="36"/>
+		<image name="8" left="70" top="40" width="21" height="36"/>
+		<image name="9" left="105" top="40" width="21" height="36"/>
+	</font>
+	<font name="rank" font_tex="font\rank.png" tex_width="128" tex_height="256" height="17">
+		<image name="0" left="1.5" top="1.5" width="38" height="48"/>
+		<image name="1" left="40.5" top="1.5" width="38" height="48"/>
+		<image name="2" left="79.5" top="1.5" width="38" height="48"/>
+		<image name="3" left="1.5" top="50.5" width="38" height="48"/>
+		<image name="4" left="40.5" top="50.5" width="38" height="48"/>
+		<image name="5" left="79.5" top="50.5" width="38" height="48"/>
+		<image name="6" left="1.5" top="99.5" width="38" height="48"/>
+		<image name="7" left="40.5" top="99.5" width="38" height="48"/>
+		<image name="8" left="79.5" top="99.5" width="38" height="48"/>
+		<image name="9" left="1.5" top="148.5" width="38" height="48"/>
+	</font>
+	<font name="vip" font_tex="font\vip.png" tex_width="128" tex_height="64" height="17">
+		<image name="0" left="3" top="3" width="15" height="18"/>
+		<image name="1" left="20" top="3" width="15" height="18"/>
+		<image name="2" left="37" top="3" width="15" height="18"/>
+		<image name="3" left="54" top="3" width="15" height="18"/>
+		<image name="4" left="71" top="3" width="15" height="18"/>
+		<image name="5" left="88" top="3" width="15" height="18"/>
+		<image name="6" left="105" top="3" width="15" height="18"/>
+		<image name="7" left="3" top="23" width="15" height="18"/>
+		<image name="8" left="20" top="23" width="15" height="18"/>
+		<image name="9" left="37" top="23" width="15" height="18"/>
+	</font>
+	<font name="chongzi" font_tex="font\chongzi.png" tex_width="128" tex_height="128" height="17">
+		<image name="0" left="1.5" top="42.5" width="29" height="40"/>
+		<image name="1" left="30.5" top="83.5" width="23" height="40"/>
+		<image name="2" left="1.5" top="1.5" width="31" height="40"/>
+		<image name="3" left="33.5" top="1.5" width="30" height="40"/>
+		<image name="4" left="31.5" top="42.5" width="29" height="40"/>
+		<image name="5" left="61.5" top="42.5" width="29" height="40"/>
+		<image name="6" left="64.5" top="1.5" width="30" height="40"/>
+		<image name="7" left="1.5" top="83.5" width="28" height="40"/>
+		<image name="8" left="95.5" top="1.5" width="30" height="40"/>
+		<image name="9" left="91.5" top="42.5" width="29" height="40"/>
+	</font>
+	<font name="gdmuisc" font_tex="font\gdmuisc.png" tex_width="302" tex_height="99" height="17">
+		<image name="0" left="40" top="39" width="14" height="17"/>
+		<image name="1" left="65" top="39" width="14" height="17"/>
+		<image name="2" left="89" top="39" width="14" height="17"/>
+		<image name="3" left="113" top="39" width="14" height="17"/>
+		<image name="4" left="137" top="39" width="14" height="17"/>
+		<image name="5" left="162" top="39" width="14" height="17"/>
+		<image name="6" left="186" top="39" width="14" height="17"/>
+		<image name="7" left="211" top="39" width="14" height="17"/>
+		<image name="8" left="235" top="39" width="14" height="17"/>
+		<image name="9" left="259" top="39" width="14" height="17"/>
+	</font>
+</fonts>

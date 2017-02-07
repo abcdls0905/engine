@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop Transparent="true" ShowGrid="true" Width="1280" Height="720" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0"/>
+		<control name="gpb_tip" entity="GroupBox" script="" init="">
+			<prop Left="-467" Top="183" Width="94" Height="150" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" HAnchor="Right"/>
+			<control name="lbl_donghua" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="2" Top="6" Width="90" Height="91" ForeColor="255,102,0,0" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="boss"/>
+			</control>
+			<control name="btn_accept" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_main/pvp/juedou_tuisong1.png" PushImage="gui/tp2_main/pvp/juedou_tuisong2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="4" Top="8" Width="86" Height="87" BackColor="0,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" ClickSound="ui_open"/>
+			</control>
+			<control name="lbl_number" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="11" Top="96" Width="70" Height="46" ForeColor="255,102,0,0" ShadowColor="0,0,0,0" Font="WRYH24" DrawMode="Expand" BackImage="gui/tp2_common/nine/active_39.png"/>
+			</control>
+		</control>
+		<control name="gpb_cool_time" entity="GroupBox" script="" init="">
+			<prop Left="-353" Top="146" Width="706" Height="80" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" HAnchor="Center" Visible="false" DrawMode="ExpandH" BackImage="gui/tp2_main/war/jingjidi.png"/>
+			<control name="lbl_cool_info" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="97" Top="11" Width="455" Height="54" ForeColor="255,255,255,127" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" Text="@ui_pk_invite_06" Font="WRYH22"/>
+			</control>
+			<control name="lbl_cool_time" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="526" Top="11" Width="62" Height="54" ForeColor="255,206,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH22"/>
+			</control>
+		</control>
+	</control>
+</form>
+

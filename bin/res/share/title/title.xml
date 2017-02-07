@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- ID				称号Id(从 1 开始 ) -->
+<!-- TitlePic		称号图片 -->
+<!-- TitleType		称号类型(从 1 开始 ) -->
+<!-- SubType		称号子类型(从 1 开始 ) -->
+<!-- ConditionList	获取条件 -->
+<!-- AddPropList	获得属性 -->
+<!-- ShowType		称号显示地方 -->
+<!-- DefaultShow	是否默认显示(为false时获得该称号才会在称号界面显示) -->
+<!-- Permanent	    是否是永久的(为true获得之后不删除) -->
+<!-- desc			称号描述 -->
+<!-- 获取条件译文id	common_title + id(common译文包中)  -->
+<!-- TitleType  (enum)-->
+<!-- 1			排行榜
+     2			全民乱战首杀
+	 3			装备品质
+	 4			巅峰联赛
+	 5			关卡通关章节
+	 6			组队副本首杀
+	 7			VIP等级
+	 8			无条件称号
+	 10          世界boss伤害排名
+	 11            遗迹称号
+	 12          限时
+-->
+<!-- SubType    (enum)-->
+<!-- 1			等级排行榜
+	 2			战斗力排行榜
+	 3			巅峰排行榜
+	 4			副本排行榜
+	 5			擂台排行榜
+	 6			全民乱战排行榜
+-->
+<!-- ShowType   (enum)-->
+<!-- 0			本地、远程服都显示
+	 1			只在本地显示
+-->
+<!-- appendInformation  附加条件 -->
+<Object>
+	<!-- 等级排行榜称号 -->
+	<Property ID="1" TitleType="1" SubType="1" ConditionList="1" sx="510001" AddPropList="MaxHP:5000;Hit:5;Miss:5" ShowType="0" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,1.5,102.5,192,96" desc="等级排行第一"/>
+	<Property ID="2" TitleType="1" SubType="1" ConditionList="2" sx="510002" AddPropList="MaxHP:3000;Hit:3;Miss:3" ShowType="0" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,580.5,296.5,192,96" desc="等级排行第二"/>
+	<Property ID="3" TitleType="1" SubType="1" ConditionList="3" sx="510003" AddPropList="MaxHP:2000;Hit:2;Miss:2" ShowType="0" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,1.5,393.5,192,96" desc="等级排行第三"/>
+	<Property ID="4" TitleType="1" SubType="2" ConditionList="1" sx="510004" AddPropList="DamTotal:5;ADTotal:500;APTotal:500" ShowType="0" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,580.5,781.5,192,96" desc="战斗力排行第一"/>
+	<Property ID="5" TitleType="1" SubType="2" ConditionList="2" sx="510005" AddPropList="DamTotal:3;ADTotal:300;APTotal:300" ShowType="0" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,773.5,195.5,192,96" desc="战斗力排行第二"/>
+	<Property ID="6" TitleType="1" SubType="2" ConditionList="3" sx="510006" AddPropList="DamTotal:2;ADTotal:200;APTotal:200" ShowType="0" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,1.5,296.5,192,96" desc="战斗力排行第三"/>
+	<Property ID="7" TitleType="1" SubType="3" ConditionList="1" sx="510007" AddPropList="Crit:10;ADTotal:500;APTotal:500" ShowType="0" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,805.5,98.5,192,96" desc="巅峰排行第一"/>
+	<Property ID="8" TitleType="1" SubType="3" ConditionList="2" sx="510008" AddPropList="Crit:6;ADTotal:300;APTotal:300" ShowType="0" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,194.5,393.5,192,96" desc="巅峰排行第二"/>
+	<Property ID="9" TitleType="1" SubType="3" ConditionList="3" sx="510009" AddPropList="Crit:4;ADTotal:200;APTotal:200" ShowType="0" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,773.5,486.5,192,96" desc="巅峰排行第三"/>
+	<Property ID="10" TitleType="1" SubType="4" ConditionList="1" sx="510010" AddPropList="MaxHP:8000;ADTotal:400;APTotal:400" ShowType="0" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,387.5,102.5,192,96" desc="副本排行第一"/>
+	<Property ID="11" TitleType="1" SubType="4" ConditionList="2" sx="510011" AddPropList="MaxHP:5000;ADTotal:250;APTotal:250" ShowType="0" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,387.5,199.5,192,96" desc="副本排行第二"/>
+	<Property ID="12" TitleType="1" SubType="4" ConditionList="3" sx="510012" AddPropList="MaxHP:3000;ADTotal:150;APTotal:150" ShowType="0" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,194.5,199.5,192,96" desc="副本排行第三"/>
+	<Property ID="16" TitleType="10" ConditionList="1" sx="510013" AddPropList="MaxHP:1500;ADTotal:150;APTotal:150" ShowType="0" DefaultShow="true" Permanent="true" TitlePic="gui\main\title\123.jpg,580.5,199.5,192,96" desc="世界BOSS伤害第一"/>
+	<Property ID="17" TitleType="10" ConditionList="2" sx="510014" AddPropList="MaxHP:1000;ADTotal:100;APTotal:100" ShowType="0" DefaultShow="true" Permanent="true" TitlePic="gui\main\title\123.jpg,580.5,393.5,192,96" desc="世界BOSS伤害第二"/>
+	<Property ID="18" TitleType="10" ConditionList="3" sx="510015" AddPropList="MaxHP:500;ADTotal:50;APTotal:50" ShowType="0" DefaultShow="true" Permanent="true" TitlePic="gui\main\title\123.jpg,805.5,1.5,192,96" desc="世界BOSS伤害第三"/>
+	<Property ID="31" TitleType="5" ConditionList="0" sx="510016" AddPropList="MaxHP:200" ShowType="1" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,194.5,102.5,192,96" desc="序章"/>
+	<Property ID="34" TitleType="5" ConditionList="1" sx="510017" AddPropList="MaxHP:400" ShowType="1" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,773.5,971.5,192,96" desc="通关第1章"/>
+	<Property ID="35" TitleType="5" ConditionList="2" sx="510018" AddPropList="MaxHP:600" ShowType="1" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,387.5,975.5,192,96" desc="通关第2章"/>
+	<Property ID="36" TitleType="5" ConditionList="3" sx="510019" AddPropList="MaxHP:800" ShowType="1" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,580.5,102.5,192,96" desc="通关第3章"/>
+	<Property ID="37" TitleType="5" ConditionList="4" sx="510020" AddPropList="MaxHP:1000" ShowType="1" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,194.5,296.5,192,96" desc="通关第4章"/>
+	<Property ID="38" TitleType="5" ConditionList="5" sx="510021" AddPropList="MaxHP:1200" ShowType="1" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,387.5,296.5,192,96" desc="通关第5章"/>
+	<Property ID="39" TitleType="5" ConditionList="6" sx="510022" AddPropList="MaxHP:1400" ShowType="1" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,773.5,292.5,192,96" desc="通关第6章"/>
+	<Property ID="40" TitleType="5" ConditionList="7" sx="510023" AddPropList="MaxHP:1600" ShowType="1" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,194.5,975.5,192,96" desc="通关第7章"/>
+	<Property ID="41" TitleType="5" ConditionList="8" sx="510024" AddPropList="MaxHP:2000" ShowType="1" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,1.5,490.5,192,96" desc="通关第8章"/>
+	<Property ID="61" TitleType="6" ConditionList="404" sx="510025" AddPropList="ADTotal:50;APTotal:50" ShowType="0" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,387.5,393.5,192,96" desc="毒丝地穴(困难)首杀"/>
+	<Property ID="62" TitleType="6" ConditionList="402" sx="510026" AddPropList="ADTotal:100;APTotal:100" ShowType="0" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,773.5,389.5,192,96" desc="邪龙之地(困难)首杀"/>
+	<Property ID="63" TitleType="6" ConditionList="406" sx="510027" AddPropList="ADTotal:150;APTotal:150" ShowType="0" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,1.5,199.5,192,96" desc="野兽之灵(困难)首杀"/>
+	<Property ID="64" TitleType="6" ConditionList="408" sx="510028" AddPropList="ADTotal:200;APTotal:200" ShowType="0" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,194.5,490.5,192,96" desc="烈炎灼心(困难)首杀"/>
+	<Property ID="81" TitleType="7" ConditionList="2" sx="510029" AddPropList="MaxHP:2000;ADTotal:150;APTotal:150" ShowType="0" Permanent="false" DefaultShow="true" TitlePic="gui\main\title\123.jpg,1.5,1.5,200,100" desc="达到VIP4"/>
+	<Property ID="82" TitleType="7" ConditionList="5" sx="510030" AddPropList="MaxHP:4000;ADTotal:200;APTotal:200" ShowType="0" Permanent="false" DefaultShow="true" TitlePic="gui\main\title\123.jpg,604.5,1.5,200,100" desc="达到VIP7"/>
+	<Property ID="83" TitleType="7" ConditionList="10" sx="510031" AddPropList="MaxHP:6000;ADTotal:300;APTotal:300" ShowType="0" Permanent="false" DefaultShow="true" TitlePic="gui\main\title\123.jpg,403.5,1.5,200,100" desc="达到VIP10"/>
+	<Property ID="84" TitleType="7" ConditionList="15" sx="510032" AddPropList="MaxHP:10000;ADTotal:500;APTotal:500" ShowType="0" Permanent="false" DefaultShow="true" TitlePic="gui\main\title\123.jpg,202.5,1.5,200,100" desc="达到VIP15"/>
+	<Property ID="91" TitleType="3" ConditionList="30" sx="510033" AddPropList="Crit:3;CritDam:3;Hit:3;Miss:3" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,1.5,975.5,192,96" desc="全身0品质"/>
+	<Property ID="100" TitleType="11" ConditionList="3" sx="730062" AddPropList="MaxHP:6000;Dodge:3" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,387.5,490.5,192,96" desc="冰川领主"/>
+	<Property ID="101" TitleType="11" ConditionList="2" sx="730064" AddPropList="MaxHP:6000;Dodge:3" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,387.5,587.5,192,96" desc="天劫领主"/>
+	<Property ID="102" TitleType="11" ConditionList="4" sx="730066" AddPropList="MaxHP:8000;Dodge:3" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,580.5,490.5,192,96" desc="寂静岭领主"/>
+	<Property ID="103" TitleType="11" ConditionList="1" sx="730068" AddPropList="MaxHP:10000;Dodge:3" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,773.5,583.5,192,96" desc="空岛领主"/>
+	<Property ID="104" TitleType="3" ConditionList="19" sx="730070" AddPropList="MaxHP:4000;ADTotal:200;APTotal:200" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,1.5,684.5,192,96" desc="情人节"/>
+	<Property ID="105" TitleType="5" ConditionList="9" sx="730056" AddPropList="MaxHP:2500" ShowType="1" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,194.5,587.5,192,96" desc="通关第9章"/>
+	<Property ID="106" TitleType="5" ConditionList="10" sx="730057" AddPropList="MaxHP:3000" ShowType="1" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,773.5,680.5,192,96" desc="通关第10章"/>
+	<Property ID="107" TitleType="6" ConditionList="410" sx="730058" AddPropList="ADTotal:300;APTotal:300" ShowType="0" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,1.5,587.5,192,96" desc="流沙君主(困难)首杀"/>
+	<Property ID="108" TitleType="6" ConditionList="412" sx="730060" AddPropList="ADTotal:400;APTotal:400" ShowType="0" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,580.5,587.5,192,96" desc="鲜血之役(困难)首杀"/>
+	<Property ID="109" TitleType="3" ConditionList="19" sx="720123" AddPropList="DisCD1:10" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,194.5,684.5,192,96" desc="元宵节"/>
+	<Property ID="110" TitleType="12" appendInformation="30" ConditionList="19" sx="720124" AddPropList="Crit:4;CritDam:4;Hit:4;Miss:4" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,387.5,684.5,192,96" desc="暴走吟游使"/>
+	<Property ID="111" TitleType="3" ConditionList="19" sx="720125" AddPropList="ADTotal:100;APTotal:100;Hit:10" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,580.5,684.5,192,96" desc="整蛊达人"/>
+	<Property ID="112" TitleType="5" ConditionList="11" sx="720126" AddPropList="MaxHP:3500" ShowType="1" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,1.5,781.5,192,96" desc="通关第11章"/>
+	<Property ID="113" TitleType="5" ConditionList="12" sx="720127" AddPropList="MaxHP:4000" ShowType="1" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,194.5,781.5,192,96" desc="通关第12章"/>
+	<Property ID="114" TitleType="6" ConditionList="414" sx="720128" AddPropList="ADTotal:500;APTotal:500" ShowType="0" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,773.5,777.5,192,96" desc="逐风秘境(困难)首杀"/>
+	<Property ID="115" TitleType="12" appendInformation="6" ConditionList="19" sx="730037" AddPropList="Crit:10;CritDam:20;DamTotal:5;Dodge:5" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\xm2_animation\wushuang\1.png" TitlePic01="wushuang" desc="巅峰联赛第一名"/>
+	<Property ID="116" TitleType="12" appendInformation="6" ConditionList="19" sx="730038" AddPropList="Crit:8;CritDam:16;DamTotal:4;Dodge:4" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,387.5,781.5,192,96" desc="巅峰联赛第二名"/>
+	<Property ID="117" TitleType="5" ConditionList="13" sx="730039" AddPropList="MaxHP:4500" ShowType="1" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,1.5,878.5,192,96" desc="通关第十三章"/>
+	<Property ID="118" TitleType="3" ConditionList="19" sx="730036" AddPropList="MaxHP:7000;ADTotal:350;APTotal:350" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,194.5,878.5,192,96" desc="纳哈克好声音"/>
+	<Property ID="119" TitleType="3" ConditionList="19" sx="730120" AddPropList="ADDefRift:5;APDefRift:5;Crit:5" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,387.5,878.5,192,96" desc="劳动节称号"/>
+	<Property ID="120" TitleType="3" ConditionList="19" sx="730119" AddPropList="Break:20;ADTotal:200;APTotal:200" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,580.5,878.5,192,96" desc="儿童节称号"/>
+	<Property ID="121" TitleType="3" ConditionList="19" sx="730121" AddPropList="Crit:5;CritDam:5;ADTotal:300;APTotal:300" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,0,1063,192,96" desc="乱世豪门"/>
+	<Property ID="122" TitleType="5" ConditionList="14" sx="730124" AddPropList="MaxHP:5000" ShowType="1" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,198,1062,192,96" desc="通关第14章"/>
+	<Property ID="123" TitleType="5" ConditionList="15" sx="730125" AddPropList="MaxHP:5500" ShowType="1" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,396,1068,192,96" desc="通关第15章"/>
+	<Property ID="124" TitleType="3" ConditionList="19" sx="730126" AddPropList="MaxHP:5000;Break:20" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,1,1154,192,96" desc="清凉女神"/>
+	<Property ID="125" TitleType="3" ConditionList="19" sx="730127" AddPropList="LeechAsist:3;ReboundAsist:3" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,195,1156,192,96" desc="世界见证者"/>
+	<Property ID="126" TitleType="3" ConditionList="19" sx="730137" AddPropList="ADDefRift:10;APDefRift:10;MaxHP:8000" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,771,1061,192,96" desc="纳哈克军魂"/>
+	<Property ID="127" TitleType="3" ConditionList="19" sx="730138" AddPropList="Break:50;ADTotal:300;APTotal:300" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,771,1156,192,96" desc="爱的信徒"/>
+	<Property ID="128" TitleType="3" ConditionList="19" sx="730139" AddPropList="Break:30;ADTotal:400;APTotal:300" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,387,1156,192,96" desc="24K纯帅"/>
+	<Property ID="129" TitleType="3" ConditionList="19" sx="730139" AddPropList="Break:30;ADTotal:400;APTotal:300" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,579,1156,192,96" desc="36D绝美"/>
+	<Property ID="130" TitleType="13" BroadCastCD="10800" ConditionList="19" sx="730140" AddPropList="ADDefRateAdd:5;ADDefTotalAdd:5;DamTotalAdd:5;DodgeAdd:5;ADTotalAdd:1000;APTotalAdd:1000;MaxHPAdd:10000" ShowType="0" Permanent="true" DefaultShow="false" TitlePic="gui\main\title\123.jpg,0,1252,192,96" desc="万夫莫当"/>
+	<Property ID="131" TitleType="13" BroadCastCD="10800" ConditionList="19" sx="730141" AddPropList="ADDefRateAdd:10;ADDefTotalAdd:10;DamTotalAdd:10;DodgeAdd:10;CritDamAdd:10;TougDamAdd:10;ADTotalAdd:2000;APTotalAdd:2000;MaxHPAdd:20000" ShowType="0" Permanent="true" DefaultShow="false" TitlePic="gui\main\title\123.jpg,192,1252,192,96" desc="只手遮天"/>
+	<Property ID="132" TitleType="13" BroadCastCD="10800" ConditionList="19" sx="730142" AddPropList="ADDefRateAdd:15;ADDefTotalAdd:15;DamTotalAdd:15;DodgeAdd:15;CritDamAdd:15;TougDamAdd:15;CritAdd:15;TougAdd:15;ADTotalAdd:3000;APTotalAdd:3000;MaxHPAdd:40000" ShowType="0" Permanent="true" DefaultShow="false" TitlePic="gui\main\title\123.jpg,384,1252,192,96" desc="独孤求败"/>
+	<Property ID="133" TitleType="13" BroadCastCD="10800" ConditionList="19" sx="730143" AddPropList="ADDefRateAdd:20;ADDefTotalAdd:20;DamTotalAdd:20;DodgeAdd:20;CritDamAdd:20;TougDamAdd:20;CritAdd:20;TougAdd:20;ADDefRiftAdd:20;APDefRiftAdd:20;ADTotalAdd:5000;APTotalAdd:5000;MaxHPAdd:100000" ShowType="0" Permanent="true" DefaultShow="false" TitlePic="gui\main\title\123.jpg,576,1252,192,96" desc="逆天侯"/>
+	<Property ID="134" TitleType="5" ConditionList="16" sx="730147" AddPropList="MaxHP:6000" ShowType="1" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,768,1252,192,96" desc="通关第16章"/>
+	<Property ID="135" TitleType="3" ConditionList="19" sx="730148" AddPropList="MaxHP:2000;RealDam:1000;Crit:2;APDefRift:2;ADDefRift:2" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,576,1348,192,96" desc="奥运先锋"/>
+	<Property ID="136" TitleType="3" ConditionList="19" sx="730149" AddPropList="MaxHP:10000;RealDam:5000;Crit:10;APDefRift:10;ADDefRift:10" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,384,1348,192,96" desc="金牌大神"/>
+	<Property ID="137" TitleType="3" ConditionList="19" sx="730150" AddPropList="MaxHP:8000;RealDam:4000;Crit:8;APDefRift:8;ADDefRift:8" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,192,1348,192,96" desc="银牌圣手"/>
+	<Property ID="138" TitleType="3" ConditionList="19" sx="730151" AddPropList="MaxHP:6000;RealDam:3000;Crit:6;APDefRift:6;ADDefRift:6" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,0,1348,192,96" desc="铜牌王者"/>
+	<Property ID="139" TitleType="3" ConditionList="19" sx="730152" AddPropList="MaxHP:4000;RealDam:2000;Crit:4;APDefRift:4;ADDefRift:4" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,768,1348,192,96" desc="五环超人"/>
+	<Property ID="140" TitleType="3" ConditionList="19" sx="730153" AddPropList="ADDefRiftAdd:10;ADDefRateAdd:10" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,0,1444,192,96" desc="金牌经纪人"/>
+	<Property ID="141" TitleType="3" ConditionList="19" sx="730154" AddPropList="DamTotalAdd:10;DodgeAdd:10" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,192,1444,192,96" desc="洪荒少女"/>
+	<Property ID="142" TitleType="3" ConditionList="19" sx="730155" AddPropList="LeechAsist:10;ReboundAsist:10" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,384,1444,192,96" desc="冷漠少年"/>
+	<Property ID="143" TitleType="5" ConditionList="17" sx="730159" AddPropList="MaxHP:6500" ShowType="1" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,574,1445,192,96" desc="通关第17章"/>
+	<Property ID="144" TitleType="3" ConditionList="19" sx="730160" AddPropList="MaxHP:10000;APDefRift:10;ADDefRift:10;Crit:10;Toug:10;Break:30" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,768,1444,192,96" desc="教师节称号"/>
+	<Property ID="145" TitleType="3" ConditionList="19" sx="730161" AddPropList="ADDefRift:10;APDefRift:10;ADDefBase:10;APDefRate:10" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,0,1544,192,96" desc="花好月圆"/>
+	<Property ID="146" TitleType="3" ConditionList="19" sx="730162" AddPropList="MaxHP:10000;DamTotal:10;Dodge:10;RealDam:5000" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,192,1540,192,96" desc="G20峰会"/>
+	<Property ID="147" TitleType="3" ConditionList="19" sx="730163" AddPropList="MaxHP:10000;RealDam:2000;Crit:10;Toug:10" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,384,1540,192,96" desc="盛世联欢"/>
+	<Property ID="148" TitleType="3" ConditionList="19" sx="730168" AddPropList="ADDefRift:10;APDefRift:10;DamTotal:10;Dodge:10" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,576,1540,192,96" desc="秘境奇遇"/>
+	<Property ID="149" TitleType="3" ConditionList="19" sx="730169" AddPropList="ADDefRate:10;APDefRate:10;LeechAsist:10;ReboundAsist:10" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,768,1540,192,96" desc="骨灰级贵族"/>
+	<Property ID="150" TitleType="3" ConditionList="19" sx="730170" AddPropList="ADDefRate:8;APDefRate:8;LeechAsist:8;ReboundAsist:8" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,0,1636,192,96" desc="璀璨级精英"/>
+	<Property ID="151" TitleType="3" ConditionList="19" sx="730171" AddPropList="ADDefRate:6;APDefRate:6;LeechAsist:6;ReboundAsist:6" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,192,1636,192,96" desc="不屈勇士"/>
+	<Property ID="152" TitleType="3" ConditionList="19" sx="730172" AddPropList="MaxHP:10000;ADDefRift:15;APDefRift:15" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,384,1636,192,96" desc="万圣节"/>
+	<Property ID="153" TitleType="5" ConditionList="18" sx="730202" AddPropList="MaxHP:7000" ShowType="1" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,768,1732,192,96" desc="通关第18章"/>
+	<Property ID="154" TitleType="12" appendInformation="6" ConditionList="19" sx="730037" AddPropList="Crit:10;CritDam:20;DamTotal:5;Dodge:5" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,576,1636,192,96" desc="平衡无双联赛第一名"/>
+	<Property ID="155" TitleType="12" appendInformation="6" ConditionList="19" sx="730038" AddPropList="Crit:8;CritDam:16;DamTotal:4;Dodge:4" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,0,1828,192,96" desc="平衡无双联赛第二名"/>
+	<Property ID="156" TitleType="3" ConditionList="19" sx="730203" AddPropList="MaxHP:12000;Crit:24;CritDam:24" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,192,1828,192,96" desc="金牌K歌达人"/>
+	<Property ID="157" TitleType="3" ConditionList="19" sx="730204" AddPropList="MaxHP:11000;Crit:22;CritDam:22" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,384,1828,192,96" desc="银牌K歌达人"/>
+	<Property ID="158" TitleType="3" ConditionList="19" sx="730205" AddPropList="MaxHP:10000;Crit:20;CritDam:20" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,576,1828,192,96" desc="铜牌K歌达人"/>
+	<Property ID="159" TitleType="3" ConditionList="19" sx="730206" AddPropList="Miss:17;Crit:16" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,384,1732,192,96" desc="浴血统领"/>
+	<Property ID="160" TitleType="3" ConditionList="19" sx="730207" AddPropList="MaxHP:10000;ADDefRift:10;APDefRift:10" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,0,1732,192,96" desc="哥布林统领"/>
+	<Property ID="162" TitleType="3" ConditionList="19" sx="730209" AddPropList="Dodge:15;ADDefRate:10;APDefRate:10" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,576,1732,192,96" desc="战无不胜"/>
+	<Property ID="163" TitleType="3" ConditionList="19" sx="730210" AddPropList="MaxHP:1000;Toug:10;TougDam:20;DamTotal:10" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,768,1636,192,96" desc="夺宝狂人"/>
+	<Property ID="164" TitleType="3" ConditionList="19" sx="730214" AddPropList="MaxHP:10000;ADTotal:500;APTotal:500;ADDefRift:15;APDefRift:15" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,192,1924,192,96" desc="周年黄金贵族"/>
+	<Property ID="165" TitleType="3" ConditionList="19" sx="730213" AddPropList="MaxHP:6000;ADTotal:300;APTotal:300;ADDefRift:10;APDefRift:10" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,0,1924,192,96" desc="周年白金贵族"/>
+	<Property ID="166" TitleType="3" ConditionList="19" sx="730212" AddPropList="MaxHP:4000;ADTotal:200;APTotal:200;ADDefRift:8;APDefRift:8" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,576,1924,192,96" desc="周年钻石贵族"/>
+	<Property ID="167" TitleType="3" ConditionList="19" sx="730211" AddPropList="MaxHP:2000;ADTotal:150;APTotal:150;ADDefRift:5;APDefRift:5" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,384,1924,192,96" desc="周年至尊贵族"/>
+	<Property ID="168" TitleType="3" ConditionList="19" sx="730215" AddPropList="ADDefRift:15;APDefRift:15;ADDefRate:15;APDefRate:15" ShowType="0" Permanent="true" DefaultShow="true" TitlePic="gui\main\title\123.jpg,768,1828,192,96" desc="圣诞狂欢"/>
+	<Property ID="169" TitleType="5" ConditionList="19" sx="730216" AddPropList="MaxHP:7500" ShowType="1" DefaultShow="true" Permanent="false" TitlePic="gui\main\title\123.jpg,768,1924,192,96" desc="通关第19章"/>
+</Object>

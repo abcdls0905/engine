@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="NsightTegraProject">
+    <NsightTegraProjectRevisionNumber>5</NsightTegraProjectRevisionNumber>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Tegra-Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Tegra-Android">
+      <Configuration>Release</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Tegra-Android">
+      <Configuration>Profile</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\alpha_loader.cpp" />
+    <ClCompile Include="..\alpha_map_compress.cpp" />
+    <ClCompile Include="..\blend_tex.cpp" />
+    <ClCompile Include="..\blend_tex_set.cpp" />
+    <ClCompile Include="..\block_alpha_map.cpp" />
+    <ClCompile Include="..\block_area.cpp" />
+    <ClCompile Include="..\block_base.cpp" />
+    <ClCompile Include="..\block_chunk.cpp" />
+    <ClCompile Include="..\block_dynamic_walk.cpp" />
+    <ClCompile Include="..\block_file.cpp" />
+    <ClCompile Include="..\block_grass.cpp" />
+    <ClCompile Include="..\block_height.cpp" />
+    <ClCompile Include="..\block_height2.cpp" />
+    <ClCompile Include="..\block_region.cpp" />
+    <ClCompile Include="..\block_walk.cpp" />
+    <ClCompile Include="..\block_water.cpp" />
+    <ClCompile Include="..\chunk_style.cpp" />
+    <ClCompile Include="..\chunk_vb.cpp" />
+    <ClCompile Include="..\dynamic_walkable.cpp" />
+    <ClCompile Include="..\dynamic_walkable_manager.cpp" />
+    <ClCompile Include="..\dynamic_walk_flag_compress.cpp" />
+    <ClCompile Include="..\dynamic_walk_generator.cpp" />
+    <ClCompile Include="..\dynamic_walk_loader.cpp" />
+    <ClCompile Include="..\grass_type.cpp" />
+    <ClCompile Include="..\height_compress.cpp" />
+    <ClCompile Include="..\height_loader.cpp" />
+    <ClCompile Include="..\lib_main.cpp" />
+    <ClCompile Include="..\lighter.cpp" />
+    <ClCompile Include="..\light_geometry.cpp" />
+    <ClCompile Include="..\light_info.cpp" />
+    <ClCompile Include="..\light_loader.cpp" />
+    <ClCompile Include="..\light_map_config.cpp" />
+    <ClCompile Include="..\light_oct_tree.cpp" />
+    <ClCompile Include="..\light_processor.cpp" />
+    <ClCompile Include="..\light_set.cpp" />
+    <ClCompile Include="..\math_3d.cpp" />
+    <ClCompile Include="..\quad_collide.cpp" />
+    <ClCompile Include="..\quad_ground.cpp" />
+    <ClCompile Include="..\quad_node.cpp" />
+    <ClCompile Include="..\quad_tree.cpp" />
+    <ClCompile Include="..\quad_visual.cpp" />
+    <ClCompile Include="..\region_loader.cpp" />
+    <ClCompile Include="..\rigid_loader.cpp" />
+    <ClCompile Include="..\sea_base.cpp" />
+    <ClCompile Include="..\sea_water.cpp" />
+    <ClCompile Include="..\terrain.cpp" />
+    <ClCompile Include="..\terrain_attr.cpp" />
+    <ClCompile Include="..\terrain_base.cpp" />
+    <ClCompile Include="..\terrain_brush.cpp" />
+    <ClCompile Include="..\terrain_chunk.cpp" />
+    <ClCompile Include="..\terrain_copy.cpp" />
+    <ClCompile Include="..\terrain_culling.cpp" />
+    <ClCompile Include="..\terrain_dump.cpp" />
+    <ClCompile Include="..\terrain_editor.cpp" />
+    <ClCompile Include="..\terrain_factory.cpp" />
+    <ClCompile Include="..\terrain_grass.cpp" />
+    <ClCompile Include="..\terrain_height.cpp" />
+    <ClCompile Include="..\terrain_light.cpp" />
+    <ClCompile Include="..\terrain_material.cpp" />
+    <ClCompile Include="..\terrain_painter.cpp" />
+    <ClCompile Include="..\terrain_region.cpp" />
+    <ClCompile Include="..\terrain_rigid.cpp" />
+    <ClCompile Include="..\terrain_visuals.cpp" />
+    <ClCompile Include="..\terrain_walkable.cpp" />
+    <ClCompile Include="..\terrain_water.cpp" />
+    <ClCompile Include="..\terrain_zone.cpp" />
+    <ClCompile Include="..\tex_alpha_map.cpp" />
+    <ClCompile Include="..\tex_light_map.cpp" />
+    <ClCompile Include="..\trigger.cpp" />
+    <ClCompile Include="..\visual_loader.cpp" />
+    <ClCompile Include="..\visual_manager.cpp" />
+    <ClCompile Include="..\walk_bit_compress.cpp" />
+    <ClCompile Include="..\walk_bit_map.cpp" />
+    <ClCompile Include="..\walk_flag_compress.cpp" />
+    <ClCompile Include="..\walk_flag_map.cpp" />
+    <ClCompile Include="..\walk_generator.cpp" />
+    <ClCompile Include="..\walk_generator_trace.cpp" />
+    <ClCompile Include="..\walk_height_compress.cpp" />
+    <ClCompile Include="..\walk_height_map.cpp" />
+    <ClCompile Include="..\walk_i_d_map.cpp" />
+    <ClCompile Include="..\walk_loader.cpp" />
+    <ClCompile Include="..\zone_manager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\alpha_loader.h" />
+    <ClInclude Include="..\alpha_map_compress.h" />
+    <ClInclude Include="..\blend_tex.h" />
+    <ClInclude Include="..\blend_tex_set.h" />
+    <ClInclude Include="..\block_alpha_map.h" />
+    <ClInclude Include="..\block_area.h" />
+    <ClInclude Include="..\block_base.h" />
+    <ClInclude Include="..\block_chunk.h" />
+    <ClInclude Include="..\block_dynamic_walk.h" />
+    <ClInclude Include="..\block_file.h" />
+    <ClInclude Include="..\block_grass.h" />
+    <ClInclude Include="..\block_height.h" />
+    <ClInclude Include="..\block_height2.h" />
+    <ClInclude Include="..\block_region.h" />
+    <ClInclude Include="..\block_walk.h" />
+    <ClInclude Include="..\block_water.h" />
+    <ClInclude Include="..\chunk_style.h" />
+    <ClInclude Include="..\chunk_vb.h" />
+    <ClInclude Include="..\dynamic_walkable.h" />
+    <ClInclude Include="..\dynamic_walkable_manager.h" />
+    <ClInclude Include="..\dynamic_walk_flag_compress.h" />
+    <ClInclude Include="..\dynamic_walk_generator.h" />
+    <ClInclude Include="..\dynamic_walk_loader.h" />
+    <ClInclude Include="..\grass_data.h" />
+    <ClInclude Include="..\grass_type.h" />
+    <ClInclude Include="..\height_compress.h" />
+    <ClInclude Include="..\height_loader.h" />
+    <ClInclude Include="..\i_block_reader.h" />
+    <ClInclude Include="..\i_block_writer.h" />
+    <ClInclude Include="..\lighter.h" />
+    <ClInclude Include="..\light_geometry.h" />
+    <ClInclude Include="..\light_info.h" />
+    <ClInclude Include="..\light_loader.h" />
+    <ClInclude Include="..\light_map_config.h" />
+    <ClInclude Include="..\light_oct_tree.h" />
+    <ClInclude Include="..\light_processor.h" />
+    <ClInclude Include="..\light_set.h" />
+    <ClInclude Include="..\light_types.h" />
+    <ClInclude Include="..\math_3d.h" />
+    <ClInclude Include="..\name_list.h" />
+    <ClInclude Include="..\quad_collide.h" />
+    <ClInclude Include="..\quad_ground.h" />
+    <ClInclude Include="..\quad_node.h" />
+    <ClInclude Include="..\quad_tree.h" />
+    <ClInclude Include="..\quad_visual.h" />
+    <ClInclude Include="..\region_loader.h" />
+    <ClInclude Include="..\rigid_loader.h" />
+    <ClInclude Include="..\sea_base.h" />
+    <ClInclude Include="..\sea_data.h" />
+    <ClInclude Include="..\sea_water.h" />
+    <ClInclude Include="..\terrain.h" />
+    <ClInclude Include="..\terrain_brush.h" />
+    <ClInclude Include="..\terrain_chunk.h" />
+    <ClInclude Include="..\terrain_copy.h" />
+    <ClInclude Include="..\terrain_culling.h" />
+    <ClInclude Include="..\terrain_cull_sort.h" />
+    <ClInclude Include="..\terrain_editor.h" />
+    <ClInclude Include="..\terrain_factory.h" />
+    <ClInclude Include="..\terrain_grass.h" />
+    <ClInclude Include="..\terrain_height.h" />
+    <ClInclude Include="..\terrain_light.h" />
+    <ClInclude Include="..\terrain_material.h" />
+    <ClInclude Include="..\terrain_painter.h" />
+    <ClInclude Include="..\terrain_region.h" />
+    <ClInclude Include="..\terrain_rigid.h" />
+    <ClInclude Include="..\terrain_visuals.h" />
+    <ClInclude Include="..\terrain_walkable.h" />
+    <ClInclude Include="..\terrain_water.h" />
+    <ClInclude Include="..\terrain_zone.h" />
+    <ClInclude Include="..\tex_alpha_map.h" />
+    <ClInclude Include="..\tex_light_map.h" />
+    <ClInclude Include="..\trigger.h" />
+    <ClInclude Include="..\visual_info.h" />
+    <ClInclude Include="..\visual_loader.h" />
+    <ClInclude Include="..\visual_manager.h" />
+    <ClInclude Include="..\walk_bit_compress.h" />
+    <ClInclude Include="..\walk_bit_map.h" />
+    <ClInclude Include="..\walk_flag_compress.h" />
+    <ClInclude Include="..\walk_flag_map.h" />
+    <ClInclude Include="..\walk_generator.h" />
+    <ClInclude Include="..\walk_height_compress.h" />
+    <ClInclude Include="..\walk_height_map.h" />
+    <ClInclude Include="..\walk_i_d_map.h" />
+    <ClInclude Include="..\walk_loader.h" />
+    <ClInclude Include="..\zone_manager.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{019A9367-389F-4EA9-BCF8-98A3F676AE3A}</ProjectGuid>
+    <RootNamespace>fm_terrain</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Profile|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings"></ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL;PERFORMANCE_DEBUG</PreprocessorDefinitions>
+      <GccExceptionHandling>true</GccExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+      <GccExceptionHandling>true</GccExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets"></ImportGroup>
+</Project>

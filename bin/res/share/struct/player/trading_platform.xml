@@ -1,0 +1,26 @@
+<object>
+    <records>
+		<record name="cur_sales_item_rec" cols="7" maxrows="200" save="true" public="false" private="true" desc="当前售卖道具记录">
+			<column type="dword" desc="商品编号" />
+            <column type="string" desc="道具ConfigID" />
+			<column type="dword" desc="道具数量" />
+			<column type="int64" desc="售价" />
+			<column type="byte" desc="道具状态" />
+			<column type="string" desc="道具随机属性编码串" />
+			<column type="int64" desc="上架时间" />
+        </record>
+        <record name="purchase_history_rec" cols="3" maxrows="300" save="true" public="false" private="false" desc="购买记录">
+            <column type="string" desc="道具ConfigID" />
+			<column type="dword" desc="道具数量" />
+			<column type="int64"  desc="购买价格" />
+        </record>
+		<record name="sales_history_rec" cols="3" maxrows="300" save="true" public="false" private="false" desc="出售记录">
+            <column type="string" desc="道具ConfigID" />
+			<column type="dword" desc="道具数量" />
+			<column type="int64"  desc="收入（除税）" />
+        </record>
+    </records>
+    <properties>
+    	<property name="AddSalesCount" type="int" public="false" private="true" save="true" realtime="true" desc="玩家在交易行出售栏位的扩展量"/>
+    </properties>
+</object>

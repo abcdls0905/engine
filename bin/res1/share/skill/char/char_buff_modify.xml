@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
+<Object>
+	<Property ID="Buff_CK_Sk102_01" Name="雾闪加速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="Buff_CK_suoding_01" Name="无法使用技能" ModifyTargetType="0" ModifyType="3" ModifyPropName="CantUseSkill" ModifyPropValue="1" ModifyCalType="0"/>
+	<Property ID="Buff_CK_suoding_02" Name="无法移动" ModifyTargetType="0" ModifyType="3" ModifyPropName="CantMove" ModifyPropValue="1" ModifyCalType="0"/>
+	<Property ID="Buff_CK_suoding_03" Name="无法普通攻击" ModifyTargetType="0" ModifyType="3" ModifyPropName="CantAttack" ModifyPropValue="1" ModifyCalType="0"/>
+	<Property ID="Buff_CK_Sk101_01B" Name="腾云加速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="1" ModifyCalType="1"/>
+	<Property ID="Buff_TY_001A" Name="无法移动" ModifyTargetType="0" ModifyType="3" ModifyPropName="CantMove" ModifyPropValue="1" ModifyCalType="0"/>
+	<Property ID="Buff_TY_001B" Name="无法使用技能" ModifyTargetType="1" ModifyType="3" ModifyPropName="CantUseSkill" ModifyPropValue="1" ModifyCalType="0"/>
+	<Property ID="Buff_TY_001C" Name="无法普通攻击" ModifyTargetType="1" ModifyType="3" ModifyPropName="CantAttack" ModifyPropValue="1" ModifyCalType="0"/>
+	<Property ID="Buff_TY_001D" Name="无法使用道具" ModifyTargetType="1" ModifyType="3" ModifyPropName="CantUseItem" ModifyPropValue="1" ModifyCalType="0"/>
+	<Property ID="Buff_TY_001E" Name="无法转向" ModifyTargetType="1" ModifyType="3" ModifyPropName="CantRotate" ModifyPropValue="1" ModifyCalType="0"/>
+	<Property ID="Buff_CK_Sk103_01_1" ModifyTargetType="0" ModifyType="3" ModifyPropName="CantMove" ModifyPropValue="1" ModifyCalType="0"/>
+	<Property ID="灼烧"/>
+	<Property ID="Buff_TY_001F" Name="无法有动作" ModifyTargetType="1" ModifyType="3" ModifyPropName="CantDoAction" ModifyPropValue="1" ModifyCalType="0"/>
+	<Property ID="new_data_item" ModifyTargetType="0" ModifyType="3" ModifyPropName="Break" ModifyPropValue="2" ModifyCalType="0"/>
+	<Property ID="buff_zc_001a" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="buff_zc_002"/>
+	<Property ID="buff_zc_003"/>
+	<Property ID="buff_pet_skill_011" Name="风影加速" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="30+($Level-1)*2" ModifyCalType="1"/>
+	<Property ID="buff_pet_skill_010" Name="生命汲取吸血"/>
+	<Property ID="buff_pet_skill_009" Name="治愈回血"/>
+	<Property ID="buff_pet_skill_002" Name="无懈可击免伤"/>
+	<Property ID="buff_pet_skill_001" Name="天神下凡霸体"/>
+	<Property ID="buff_pet_skill_012" Name="嘲讽"/>
+	<Property ID="buff_pet_skill_005A1" Name="提供攻击" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="26+$Level*4" ModifyCalType="0"/>
+	<Property ID="buff_pet_skill_014" Name="无法使用技能" ModifyTargetType="0" ModifyType="3" ModifyPropName="CantUseSkill" ModifyPropValue="1" ModifyCalType="0"/>
+	<Property ID="buff_pet_skill_018" Name="模糊" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="50+($Level-1)*10" ModifyCalType="0"/>
+	<Property ID="buff_pet_skill_017A" Name="大圣变身A" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="15+($Level-1)*5" ModifyCalType="0"/>
+	<Property ID="buff_pet_skill_015B" Name="剑客加攻击" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="40+($Level-1)*5" ModifyCalType="1"/>
+	<Property ID="buff_pet_skill_021" Name="死神契约提高免伤" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Def" ModifyPropValue="2000+($Level-1)*500" ModifyCalType="0"/>
+	<Property ID="buff_pet_skill_020B" Name="修改法身npc生命" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="20000+($Level-1)*40000" ModifyCalType="0"/>
+	<Property ID="buff_pet_skill_024" Name="弹无虚发提高命中" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="30+($Level-1)*5" ModifyCalType="1"/>
+	<Property ID="pet_normal_001_1"/>
+	<Property ID="pet_normal_001_2"/>
+	<Property ID="pet_normal_001_3"/>
+	<Property ID="pet_normal_001_4"/>
+	<Property ID="pet_normal_001_5"/>
+	<Property ID="pet_normal_002_1" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30" ModifyCalType="1"/>
+	<Property ID="pet_normal_002_2" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-40" ModifyCalType="1"/>
+	<Property ID="pet_normal_002_3" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-50" ModifyCalType="1"/>
+	<Property ID="pet_normal_002_4" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-60" ModifyCalType="1"/>
+	<Property ID="pet_normal_002_5" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-70" ModifyCalType="1"/>
+	<Property ID="pet_normal_003_1"/>
+	<Property ID="pet_normal_003_2"/>
+	<Property ID="pet_normal_003_3"/>
+	<Property ID="pet_normal_003_4"/>
+	<Property ID="pet_normal_003_5"/>
+	<Property ID="pet_normal_004_1"/>
+	<Property ID="pet_normal_004_2"/>
+	<Property ID="pet_normal_004_3"/>
+	<Property ID="pet_normal_004_4"/>
+	<Property ID="pet_normal_004_5"/>
+	<Property ID="buff_attack_001" Name="提高20%攻击" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="60+($GraspLevel-1)*10" ModifyPropValue1="60+($GraspMaxLevel-1)*10" ModifyCalType="1"/>
+	<Property ID="buff_attack_002" Name="提高5%攻击" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="23+($GraspLevel-1)*3" ModifyPropValue1="23+($GraspMaxLevel-1)*3" ModifyCalType="1"/>
+	<Property ID="buff_attack_003" Name="提高20%攻击" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_attack_007" Name="2300免伤" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="Def" ModifyPropValue="2300+($GraspLevel-1)*300" ModifyPropValue1="2300+($GraspMaxLevel-1)*300" ModifyCalType="0"/>
+	<Property ID="buff_attack_008_1" Name="提高攻击" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="3300+($GraspLevel-1)*300" ModifyPropValue1="3300+($GraspMaxLevel-1)*300"/>
+	<Property ID="buff_attack_008_2" Name="提高命中" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="10"/>
+	<Property ID="buff_attack_010_1" Name="暴击率" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="55+($GraspLevel-1)*5" ModifyPropValue1="55+($GraspMaxLevel-1)*5" ModifyCalType="1"/>
+	<Property ID="buff_attack_010_2" Name="暴击伤害" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="55+($GraspLevel-1)*5" ModifyPropValue1="55+($GraspMaxLevel-1)*5" ModifyCalType="1"/>
+	<Property ID="buff_attack_011" Name="提高23%攻击" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="23+($GraspLevel-1)*3" ModifyPropValue1="23+($GraspMaxLevel-1)*3" ModifyCalType="1"/>
+	<Property ID="buff_attack_012" Name="提高6%攻击" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="6+($GraspLevel-1)*1" ModifyPropValue1="6+($GraspMaxLevel-1)*1" ModifyCalType="1"/>
+	<Property ID="buff_attack_013" Name="攻击提高165%" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="165+($GraspLevel-1)*15" ModifyPropValue1="165+($GraspMaxLevel-1)*15" ModifyCalType="1"/>
+	<Property ID="buff_pet_skill_026" Name="使用技能双倍扣能量" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="MPReturnFactor" ModifyPropValue="50+($Level-1)*12.5" ModifyCalType="0"/>
+	<Property ID="buff_pet_skill_025" Name="暴击提高" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="40+($Level-1)*10" ModifyCalType="1"/>
+	<Property ID="buff_shuxing_001" Name="减少50%" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-50" ModifyCalType="1"/>
+	<Property ID="buff_shuxing_002"/>
+	<Property ID="buff_shuxing_003"/>
+	<Property ID="buff_nianshou_001" Name="打年兽加攻击" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="buff_npc_gun_sk_003_2A" Name="减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30" ModifyCalType="1"/>
+	<Property ID="buff_pet_skill_027A" Name="囚禁减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="80" ModifyCalType="1"/>
+	<Property ID="buff_pet_skill_005B" Name="击杀武神提供攻击" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="13+$Level*2" ModifyCalType="0"/>
+	<Property ID="buff_pet_skill_019" Name="净化减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-60" ModifyCalType="1"/>
+	<Property ID="buff_gun_speed_001" Name="加速30%" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="30" ModifyCalType="1"/>
+	<Property ID="buff_gun_speed_002" Name="减速30%" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-40" ModifyCalType="1"/>
+	<Property ID="Buff_TY_003" Name="减少吸血" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPReturnLeechFactor" ModifyPropValue="-50" ModifyCalType="0"/>
+	<Property ID="buff_baihu_skill_002a" Name="加速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="40+$GradeLevel*8" ModifyCalType="1"/>
+	<Property ID="buff_baihu_skill_002b" Name="加攻" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="40+$GradeLevel*8" ModifyCalType="1"/>
+	<Property ID="buff_attack_018" Name="减少治疗" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPReturnFactor" ModifyPropValue="-10-($GraspLevel-1)*10" ModifyPropValue1="-10-($GraspMaxLevel-1)*10" ModifyCalType="0"/>
+	<Property ID="buff_attack_020" Name="加50%攻击" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="buff_xiniu_skill_002" Name="减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-50" ModifyCalType="1"/>
+	<Property ID="buff_xiniu_skill_003A" Name="减速" ModifyFormulaTargetType="3" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-50-$GradeLevel*6" ModifyCalType="1"/>
+	<Property ID="buff_attack_021" Name="闪避加50点" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="50+($GraspLevel-1)*10" ModifyCalType="0"/>
+	<Property ID="buff_baihu_skill_003C" Name="闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="90+$GradeLevel*20" ModifyCalType="0"/>
+	<Property ID="buff_zhanshi_001" Name="战士旋风斩加速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="40" ModifyCalType="1"/>
+	<Property ID="buff_zhanshi_002" Name="跳斩减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30" ModifyCalType="1"/>
+	<Property ID="buff_feilong_skill_003A" Name="抗暴击增加" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="100+$GradeLevel*80" ModifyCalType="0"/>
+	<Property ID="buff_feilong_skill_003B" Name="移动速度提高" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="10+$GradeLevel*5" ModifyCalType="1"/>
+	<Property ID="buff_cike_001" Name="流萤伤害叠加" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="10" ModifyCalType="1"/>
+	<Property ID="buff_feijian_beidong_001_1" Name="减少伤害" ModifyFormulaTargetType="3" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="-10-$GradeLevel*5" ModifyCalType="1"/>
+	<Property ID="buff_zhuansheng_001_1" Name="皮特子buff" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="0+$Level*10" ModifyCalType="0"/>
+	<Property ID="buff_zhuansheng_002_1" Name="孙悟空子buff" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="0+$Level*4" ModifyCalType="1"/>
+	<Property ID="buff_xiniu_skill_003B" Name="减抗暴" ModifyFormulaTargetType="3" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="-10-$GradeLevel*10" ModifyCalType="0"/>
+	<Property ID="buff_xiniu_skill_003C" Name="减暴免" ModifyFormulaTargetType="3" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="-30-$GradeLevel*30" ModifyCalType="0"/>
+	<Property ID="buff_zhuansheng_006" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="0+$Level*20" ModifyCalType="0"/>
+	<Property ID="buff_zhuansheng_007_1" Name="守护战神子buff" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="$Level*2" ModifyCalType="0"/>
+	<Property ID="buff_zhuansheng_008_1" Name="烈焰凤凰子buff" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="$Level*20" ModifyCalType="1"/>
+	<Property ID="buff_zhuansheng_011_1" Name="幽灵船长子buff" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="-$Level*4" ModifyCalType="1"/>
+	<Property ID="buff_attack_022" Name="闪避加100%" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="10+($GraspLevel-1)*10" ModifyCalType="0"/>
+	<Property ID="buff_attack_023_1" Name="抗暴提高100%" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="10+($GraspLevel-1)*10" ModifyCalType="0"/>
+	<Property ID="buff_attack_023_2" Name="暴击免伤提高100%" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="10+($GraspLevel-1)*10" ModifyCalType="0"/>
+	<Property ID="buff_attack_024" Name="伤害反弹提高100%" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="Rebound" ModifyPropValue="5+($GraspLevel-1)*5" ModifyCalType="0"/>
+	<Property ID="buff_attack_025" Name="伤害减少10%" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="-$GraspLevel*1" ModifyCalType="1"/>
+	<Property ID="buff_attack_026" Name="伤害提高10%" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="1+($GraspLevel-1)*1" ModifyCalType="1"/>
+	<Property ID="buff_xiongmao_001" Name="熊猫技能1减少暴免" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="-100" ModifyCalType="0"/>
+	<Property ID="buff_cike_002" Name="刺客峰回轮转加速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="30" ModifyCalType="1"/>
+	<Property ID="panda_buff_008" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="buff_shitu_001_1" Name="伤害加3%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="3" ModifyCalType="1"/>
+	<Property ID="buff_shitu_001_2" Name="生命加3%" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="3" ModifyCalType="1"/>
+	<Property ID="buff_tianma_skill_002_1" Name="减速" ModifyFormulaTargetType="3" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30-$GradeLevel*10" ModifyCalType="1"/>
+	<Property ID="buff_tianma_skill_002_2" Name="减少命中" ModifyFormulaTargetType="3" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="-30-$GradeLevel*30" ModifyCalType="0"/>
+	<Property ID="buff_tianma_beidong_001_1" Name="加速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="2+$GradeLevel*1" ModifyCalType="1"/>
+	<Property ID="buff_zhanshi_004" Name="减速40%" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-40" ModifyCalType="1"/>
+	<Property ID="buff_xiongmao_002" Name="减速50%" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-50" ModifyCalType="1"/>
+	<Property ID="buff_zhuansheng_017" Name="冰炮神龟治疗效果提高" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPReturnFactor" ModifyPropValue="30" ModifyCalType="0"/>
+	<Property ID="buff_F1_cike_001" Name="刺客腾云加暴击" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="67+$Level*3" ModifyCalType="0"/>
+	<Property ID="buff_F1_xiongmao_002" Name="熊猫般若转提高暴伤" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="58+$Level*2" ModifyCalType="0"/>
+	<Property ID="buff_F1_fashi_001" Name="法师雷霆万钧减速" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-29-$Level*1" ModifyCalType="1"/>
+	<Property ID="buff_shitu_002_1" Name="伤害加2%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="2" ModifyCalType="1"/>
+	<Property ID="buff_shitu_002_2" Name="生命加2%" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="2" ModifyCalType="1"/>
+	<Property ID="buff_shitu_003_1" Name="伤害加3%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="3" ModifyCalType="1"/>
+	<Property ID="buff_shitu_003_2" Name="生命加3%" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="3" ModifyCalType="1"/>
+	<Property ID="buff_shitu_004_1" Name="伤害加4%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="4" ModifyCalType="1"/>
+	<Property ID="buff_shitu_004_2" Name="生命加4%" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="4" ModifyCalType="1"/>
+	<Property ID="buff_shitu_005_1" Name="伤害加5%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="5" ModifyCalType="1"/>
+	<Property ID="buff_shitu_005_2" Name="生命加5%" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="5" ModifyCalType="1"/>
+	<Property ID="F1_buff_gun_speed_002" Name="减速30%" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-39-$Level*1" ModifyCalType="1"/>
+	<Property ID="F2_buff_gun_speed_001" Name="加速30%" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="39+$Level*1" ModifyCalType="1"/>
+	<Property ID="buff_F2_panda_001" Name="太极阵减速" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-29-$Level*1" ModifyCalType="1"/>
+	<Property ID="yx_ws_buff_4a" Name="免伤，攻击增加50%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="buff_F2_zhanshi_002" Name="爆裂斩减速" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-49-$Level*1" ModifyCalType="1"/>
+	<Property ID="buff_F1_cike_002" Name="峰回轮转减速" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-17-$Level*0.5" ModifyCalType="1"/>
+	<Property ID="buff_pet_skill_034" Name="恶魔形态加伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_F1_zhanshi_003" Name="战士跳斩减速" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-29-$Level*1" ModifyCalType="1"/>
+	<Property ID="buff_F1_zhanshi_005" Name="战士旋风斩加暴伤" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="39+$Level*1" ModifyCalType="0"/>
+	<Property ID="buff_F1_cike_003" Name="刺客雾闪加速" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="50+$Level*1" ModifyCalType="1"/>
+	<Property ID="buff_F2_cike_003" Name="刺客雾闪加闪避" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="10+$Level*1" ModifyCalType="0"/>
+	<Property ID="buff_F1_cike_004" Name="刺客流萤加命中" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="28+$Level*2" ModifyCalType="0"/>
+	<Property ID="buff_F1_xiongmao_003" Name="熊猫翻滚减速" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-39-$Level*1" ModifyCalType="1"/>
+	<Property ID="buff_F2_xiongmao_002" Name="熊猫翻滚加暴免" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="58+$Level*2" ModifyCalType="0"/>
+	<Property ID="buff_F1_xiongmao_004" Name="熊猫般若转减闪避" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="-28-$Level*2" ModifyCalType="0"/>
+	<Property ID="buff_F2_xiongmao_003" Name="熊猫万物归一无法治疗" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPReturnFactor" ModifyPropValue="-49-$Level*1" ModifyCalType="0"/>
+	<Property ID="buff_F1_gun_002A" Name="减速" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-49-$Level*1" ModifyCalType="1"/>
+	<Property ID="buff_F2_gun_003A" Name="闪避" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="45+$Level*5" ModifyCalType="0"/>
+	<Property ID="buff_F1_panda_002" Name="加速" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="39+$Level*1" ModifyCalType="1"/>
+	<Property ID="buff_F2_panda_004" Name="形态切换加伤害" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="4.5+$Level*0.5" ModifyCalType="1"/>
+	<Property ID="buff_dizang_skill_002" Name="免暴击" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="999999" ModifyCalType="0"/>
+	<Property ID="buff_wszhenfa_005" Name="移动提高" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="25" ModifyCalType="1"/>
+	<Property ID="buff_zhanchang_001" Name="战旗buff减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-65" ModifyCalType="1"/>
+	<Property ID="buff_zhuansheng_021_1" Name="死亡收割者子buff" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="$Level*3" ModifyCalType="1"/>
+	<Property ID="buff_zhuansheng_023_1" Name="湮灭巫师子buff" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPReturnFactor" ModifyPropValue="0+$Level*10" ModifyCalType="0"/>
+	<Property ID="buff_zhuansheng_020_1" Name="哈迪斯子buff" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="RealDam" ModifyPropValue="$Level*1000" ModifyCalType="0"/>
+	<Property ID="buff_dizang_skill_003" Name="扣除免伤" ModifyFormulaTargetType="3" ModifyTargetType="0" ModifyType="3" ModifyPropName="Def" ModifyPropValue="-10-$GradeLevel*5" ModifyCalType="1"/>
+	<Property ID="buff_zhuansheng_024_1" Name="雷帝子buff" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPReturnFactor" ModifyPropValue="-$Level*16" ModifyCalType="0"/>
+	<Property ID="buff_attack_027" Name="伤害反弹减少" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="Rebound" ModifyPropValue="-$GraspLevel*9" ModifyPropValue1="-$GraspMaxLevel*9" ModifyCalType="0"/>
+	<Property ID="zhuoyue_buff_001"/>
+	<Property ID="zhuoyue_buff_002"/>
+	<Property ID="zhuoyue_buff_003"/>
+	<Property ID="zhuoyue_buff_004"/>
+	<Property ID="zhuoyue_buff_005"/>
+	<Property ID="zhuoyue_buff_006"/>
+	<Property ID="zhuoyue_buff_007"/>
+	<Property ID="zhuoyue_buff_008"/>
+	<Property ID="zhuoyue_buff_009"/>
+	<Property ID="zhuoyue_buff_010"/>
+	<Property ID="zhuoyue_buff_011"/>
+	<Property ID="zhuoyue_buff_012"/>
+	<Property ID="zhuoyue_buff_013"/>
+	<Property ID="zhuoyue_buff_008B" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="9999" ModifyCalType="0"/>
+	<Property ID="buff_zhuansheng_029" Name="伤害提升" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="$Level*4+10" ModifyCalType="0"/>
+	<Property ID="zhuoyue_buff_011A" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPReturnFactor" ModifyPropValue="-40" ModifyCalType="0"/>
+	<Property ID="zhuoyue_buff_012A" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="1" ModifyCalType="0"/>
+	<Property ID="zhuoyue_buff_009A" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="5" ModifyCalType="0"/>
+	<Property ID="longling_skill_004" Name="减速40%" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-40" ModifyCalType="1"/>
+	<Property ID="buff_gun_sk_02D" Name="增加暴击" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="5"/>
+	<Property ID="buff_pet_skill_036" Name="叠加属性" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="2+$Level*0.1" ModifyCalType="0"/>
+	<Property ID="buff_pet_skill_036_1" Name="属性叠加2" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="2+$Level*0.1" ModifyCalType="0"/>
+	<Property ID="buff_F1_sk01_1" Name="速度增加" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="25"/>
+	<Property ID="buff_F1_sk03_1" Name="减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30" ModifyCalType="1"/>
+	<Property ID="buff_F2_war_sk03_1" Name="减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-50" ModifyCalType="1"/>
+	<Property ID="buff_zhuansheng_034_1" Name="攻击力修正" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_zqjb_001_1" Name="增加1000点攻击" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="1000" ModifyCalType="0"/>
+	<Property ID="buff_zqjb_002_1" Name="增加40%暴击伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="40" ModifyCalType="0"/>
+	<Property ID="buff_zqjb_003_1" Name="增加40%暴击率" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="40" ModifyCalType="0"/>
+	<Property ID="buff_fabao_001" Name="初级伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_fabao_002" Name="初级伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_fabao_003" Name="初级伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_fabao_004" Name="初级伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_fabao_005" Name="重伤子buff" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPReturnFactor" ModifyPropValue="-30" ModifyCalType="0"/>
+	<Property ID="buff_fabao_006" Name="初级伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_fabao_007" Name="虚妄之眼减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30" ModifyCalType="1"/>
+	<Property ID="buff_fabao_008" Name="虚妄之眼减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30" ModifyCalType="1"/>
+	<Property ID="buff_fabao_009" Name="初级伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_fabao_010" Name="初级伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_fabao_011" Name="初级伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_fabao_012" Name="初级伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_leitai_001_d" Name="己方攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_001_z" Name="己方攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_001_g" Name="己方攻击增加100%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="40" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g" Name="攻击增加100%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="buff_leitai_003_d" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPReturnFactor" ModifyPropValue="20" ModifyCalType="0"/>
+	<Property ID="buff_leitai_003_z" Name="己方回血提升200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPReturnFactor" ModifyPropValue="200" ModifyCalType="0"/>
+	<Property ID="buff_leitai_003_g" Name="治疗效果提高100%" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPReturnFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_004_d" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPReturnFactor" ModifyPropValue="-100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_004_z" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPReturnFactor" ModifyPropValue="-20" ModifyCalType="0"/>
+	<Property ID="buff_leitai_004_g" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPReturnFactor" ModifyPropValue="-20" ModifyCalType="0"/>
+	<Property ID="buff_leitai_005_d_1" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="buff_leitai_005_z_1" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="buff_leitai_005_g_1" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_005_d_2" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_005_z_2" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="buff_leitai_005_g_2" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="buff_leitai_006_d" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="20" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="40" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_007_d" ModifyTargetType="0" ModifyType="3" ModifyPropName="MPReturnFactor" ModifyPropValue="200" ModifyCalType="0"/>
+	<Property ID="buff_leitai_007_z" ModifyTargetType="0" ModifyType="3" ModifyPropName="MPReturnFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_007_g" ModifyTargetType="0" ModifyType="3" ModifyPropName="MPReturnFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_002_d_1" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_1" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_1" Name="攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_2" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_2" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_2" Name="攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_3" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_3" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_3" Name="攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_4" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_4" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_4" Name="攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_5" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_5" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_5" Name="攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_6" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_6" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_6" Name="攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_7" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_7" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_7" Name="攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_8" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_8" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_8" Name="攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_9" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_9" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_9" Name="攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_10" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_10" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_10" Name="攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_11" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_11" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_11" Name="攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_12" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_12" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_12" Name="攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_13" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_13" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_13" Name="攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_14" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_14" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_14" Name="攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_15" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_15" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_15" Name="攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_16" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_16" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_16" Name="攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_17" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_17" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_17" Name="攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_18" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_18" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_18" Name="攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_19" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_19" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_19" Name="攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_20" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_20" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_20" Name="攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_21" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_21" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_21" Name="攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_22" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_22" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="40" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_22" Name="攻击增加100%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_23" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_23" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="40" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_23" Name="攻击增加100%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_d_24" Name="攻击增加20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_z_24" Name="攻击增加500%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="40" ModifyCalType="1"/>
+	<Property ID="buff_leitai_002_g_24" Name="攻击增加100%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="buff_leitai_006_d_1" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_1" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="75" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_1" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_2" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_2" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="75" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_2" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_3" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_3" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="75" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_3" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_4" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_4" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="75" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_4" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_5" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_5" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="75" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_5" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_6" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_6" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="75" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_6" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_7" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_7" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="75" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_7" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_8" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_8" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="75" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_8" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_9" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_9" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="75" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_9" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_10" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_10" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="75" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_10" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_11" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_11" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="75" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_11" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_12" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_12" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="75" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_12" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_13" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_13" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="75" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_13" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_14" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_14" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="75" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_14" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_15" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_15" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="75" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_15" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_16" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_16" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="75" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_16" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_17" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_17" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="75" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_17" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_18" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_18" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="75" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_18" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_19" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_19" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="75" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_19" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_20" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_20" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="75" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_20" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_21" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_21" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="75" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_21" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_22" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="30" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_22" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="40" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_22" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_23" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="30" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_23" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="40" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_23" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_d_24" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="30" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_z_24" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="40" ModifyCalType="0"/>
+	<Property ID="buff_leitai_006_g_24" Name="武神的稀有技能buff时间延长10倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="BufferTimeFactor" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_leitai_008_d_1" Name="攻击增加50%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="buff_leitai_008_z_1" Name="攻击增加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="150" ModifyCalType="1"/>
+	<Property ID="buff_leitai_008_g_1" Name="攻击增加100%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="buff_leitai_008_d_2" Name="血量减少30%" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="-20" ModifyCalType="1"/>
+	<Property ID="buff_leitai_008_z_2" Name="血量减少50%" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="-40" ModifyCalType="1"/>
+	<Property ID="buff_leitai_008_g_2" Name="血量减少70%" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="-60" ModifyCalType="1"/>
+	<Property ID="BUFF_leitai_enemy_01_1" Name="攻击增加38%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="38" ModifyCalType="1"/>
+	<Property ID="BUFF_leitai_enemy_02_1" Name="攻击增加75%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="BUFF_leitai_enemy_03_1" Name="攻击增加113%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="113" ModifyCalType="1"/>
+	<Property ID="BUFF_leitai_enemy_04_1" Name="攻击增加150%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="150" ModifyCalType="1"/>
+	<Property ID="BUFF_leitai_enemy_05_1" Name="攻击增加188%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="188" ModifyCalType="1"/>
+	<Property ID="BUFF_leitai_enemy_06_1" Name="攻击增加225%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="225" ModifyCalType="1"/>
+	<Property ID="BUFF_leitai_enemy_07_1" Name="攻击增加263%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="263" ModifyCalType="1"/>
+	<Property ID="BUFF_leitai_enemy_08_1" Name="攻击增加300%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="300" ModifyCalType="1"/>
+	<Property ID="BUFF_leitai_enemy_09_1" Name="攻击增加338%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="338" ModifyCalType="1"/>
+	<Property ID="BUFF_leitai_enemy_10_1" Name="攻击增加375%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="375" ModifyCalType="1"/>
+	<Property ID="BUFF_leitai_enemy_01_2" Name="血量增加460%" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="460" ModifyCalType="1"/>
+	<Property ID="BUFF_leitai_enemy_02_2" Name="血量增加520%" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="520" ModifyCalType="1"/>
+	<Property ID="BUFF_leitai_enemy_03_2" Name="血量增加580%" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="580" ModifyCalType="1"/>
+	<Property ID="BUFF_leitai_enemy_04_2" Name="血量增加640%" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="640" ModifyCalType="1"/>
+	<Property ID="BUFF_leitai_enemy_05_2" Name="血量增加700%" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="700" ModifyCalType="1"/>
+	<Property ID="BUFF_leitai_enemy_06_2" Name="血量增加760%" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="760" ModifyCalType="1"/>
+	<Property ID="BUFF_leitai_enemy_07_2" Name="血量增加820%" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="820" ModifyCalType="1"/>
+	<Property ID="BUFF_leitai_enemy_08_2" Name="血量增加880%" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="880" ModifyCalType="1"/>
+	<Property ID="BUFF_leitai_enemy_09_2" Name="血量增加940%" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="940" ModifyCalType="1"/>
+	<Property ID="BUFF_leitai_enemy_10_2" Name="血量增加1000%" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="1000" ModifyCalType="1"/>
+	<Property ID="buff_leitai_010_1" Name="攻击加400%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="400" ModifyCalType="1"/>
+	<Property ID="buff_leitai_010_2" Name="生命加200%" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_leitai_011_1" Name="攻击加800%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="800" ModifyCalType="1"/>
+	<Property ID="buff_leitai_011_2" Name="生命加400%" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="400" ModifyCalType="1"/>
+	<Property ID="buff_leitai_012_1" Name="攻击加2000%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="2000" ModifyCalType="1"/>
+	<Property ID="buff_leitai_012_2" Name="生命加1000%" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="1000" ModifyCalType="1"/>
+	<Property ID="pet7_xiyou_001_1"/>
+	<Property ID="pet7_xiyou_001_2"/>
+	<Property ID="pet7_xiyou_001_3"/>
+	<Property ID="pet7_xiyou_002_1"/>
+	<Property ID="pet7_xiyou_002_2"/>
+	<Property ID="pet7_xiyou_002_3"/>
+	<Property ID="pet7_xiyou_003_1"/>
+	<Property ID="pet7_xiyou_003_2"/>
+	<Property ID="pet7_xiyou_003_3"/>
+	<Property ID="pet7_xiyou_004_1"/>
+	<Property ID="pet7_xiyou_004_2"/>
+	<Property ID="pet7_xiyou_004_3"/>
+	<Property ID="pet7_xiyou_005_1"/>
+	<Property ID="pet7_xiyou_005_2"/>
+	<Property ID="pet7_xiyou_005_3"/>
+	<Property ID="pet9_xiyou_001_1"/>
+	<Property ID="pet9_xiyou_001_2"/>
+	<Property ID="pet9_xiyou_001_3"/>
+	<Property ID="pet9_xiyou_002_1"/>
+	<Property ID="pet9_xiyou_002_2"/>
+	<Property ID="pet9_xiyou_002_3"/>
+	<Property ID="pet9_xiyou_003_1"/>
+	<Property ID="pet9_xiyou_003_2"/>
+	<Property ID="pet9_xiyou_003_3"/>
+	<Property ID="pet9_xiyou_004_1"/>
+	<Property ID="pet9_xiyou_004_2"/>
+	<Property ID="pet9_xiyou_004_3"/>
+	<Property ID="pet9_xiyou_005_1"/>
+	<Property ID="pet9_xiyou_005_2"/>
+	<Property ID="pet9_xiyou_005_3"/>
+	<Property ID="pet10_xiyou_001_1"/>
+	<Property ID="pet10_xiyou_001_2"/>
+	<Property ID="pet10_xiyou_001_3"/>
+	<Property ID="pet10_xiyou_002_1"/>
+	<Property ID="pet10_xiyou_002_2"/>
+	<Property ID="pet10_xiyou_002_3"/>
+	<Property ID="pet10_xiyou_003_1"/>
+	<Property ID="pet10_xiyou_003_2"/>
+	<Property ID="pet10_xiyou_003_3"/>
+	<Property ID="pet10_xiyou_004_1"/>
+	<Property ID="pet10_xiyou_004_2"/>
+	<Property ID="pet10_xiyou_004_3"/>
+	<Property ID="pet10_xiyou_005_1"/>
+	<Property ID="pet10_xiyou_005_2"/>
+	<Property ID="pet10_xiyou_005_3"/>
+	<Property ID="pet11_xiyou_001_1"/>
+	<Property ID="pet11_xiyou_001_2"/>
+	<Property ID="pet11_xiyou_001_3"/>
+	<Property ID="pet11_xiyou_002_1"/>
+	<Property ID="pet11_xiyou_002_2"/>
+	<Property ID="pet11_xiyou_002_3"/>
+	<Property ID="pet11_xiyou_003_1"/>
+	<Property ID="pet11_xiyou_003_2"/>
+	<Property ID="pet11_xiyou_003_3"/>
+	<Property ID="pet11_xiyou_004_1"/>
+	<Property ID="pet11_xiyou_004_2"/>
+	<Property ID="pet11_xiyou_004_3"/>
+	<Property ID="pet11_xiyou_005_1"/>
+	<Property ID="pet11_xiyou_005_2"/>
+	<Property ID="pet11_xiyou_005_3"/>
+	<Property ID="pet12_xiyou_001_1" ModifyTargetType="0" ModifyType="3" ModifyPropName="Rebound" ModifyPropValue="30" ModifyCalType="1"/>
+	<Property ID="pet12_xiyou_001_2"/>
+	<Property ID="pet12_xiyou_001_3"/>
+	<Property ID="pet12_xiyou_002_1"/>
+	<Property ID="pet12_xiyou_002_2"/>
+	<Property ID="pet12_xiyou_002_3"/>
+	<Property ID="pet12_xiyou_003_1"/>
+	<Property ID="pet12_xiyou_003_2"/>
+	<Property ID="pet12_xiyou_003_3"/>
+	<Property ID="pet12_xiyou_004_1" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="10" ModifyCalType="1"/>
+	<Property ID="pet12_xiyou_004_2"/>
+	<Property ID="pet12_xiyou_004_3"/>
+	<Property ID="pet12_xiyou_005_1"/>
+	<Property ID="pet12_xiyou_005_2"/>
+	<Property ID="pet12_xiyou_005_3"/>
+	<Property ID="pet13_xiyou_001_1"/>
+	<Property ID="pet13_xiyou_001_2"/>
+	<Property ID="pet13_xiyou_001_3"/>
+	<Property ID="pet13_xiyou_002_1"/>
+	<Property ID="pet13_xiyou_002_2"/>
+	<Property ID="pet13_xiyou_002_3"/>
+	<Property ID="pet13_xiyou_003_1"/>
+	<Property ID="pet13_xiyou_003_2"/>
+	<Property ID="pet13_xiyou_003_3"/>
+	<Property ID="pet13_xiyou_004_1" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="1" ModifyCalType="1"/>
+	<Property ID="pet13_xiyou_004_2"/>
+	<Property ID="pet13_xiyou_004_3"/>
+	<Property ID="pet13_xiyou_005_1"/>
+	<Property ID="pet13_xiyou_005_2"/>
+	<Property ID="pet13_xiyou_005_3"/>
+	<Property ID="pet14_xiyou_001_1"/>
+	<Property ID="pet14_xiyou_001_2"/>
+	<Property ID="pet14_xiyou_001_3"/>
+	<Property ID="pet14_xiyou_002_1"/>
+	<Property ID="pet14_xiyou_002_2"/>
+	<Property ID="pet14_xiyou_002_3"/>
+	<Property ID="pet14_xiyou_003_1"/>
+	<Property ID="pet14_xiyou_003_2"/>
+	<Property ID="pet14_xiyou_003_3"/>
+	<Property ID="pet14_xiyou_004_1"/>
+	<Property ID="pet14_xiyou_004_2"/>
+	<Property ID="pet14_xiyou_004_3"/>
+	<Property ID="pet14_xiyou_005_1"/>
+	<Property ID="pet14_xiyou_005_2"/>
+	<Property ID="pet14_xiyou_005_3"/>
+	<Property ID="pet17_xiyou_001_1"/>
+	<Property ID="pet17_xiyou_001_2"/>
+	<Property ID="pet17_xiyou_001_3"/>
+	<Property ID="pet17_xiyou_002_1" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="55" ModifyCalType="1"/>
+	<Property ID="pet17_xiyou_002_2" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="55" ModifyCalType="1"/>
+	<Property ID="pet17_xiyou_002_3"/>
+	<Property ID="pet17_xiyou_003_1"/>
+	<Property ID="pet17_xiyou_003_2"/>
+	<Property ID="pet17_xiyou_003_3"/>
+	<Property ID="pet17_xiyou_004_1"/>
+	<Property ID="pet17_xiyou_004_2"/>
+	<Property ID="pet17_xiyou_004_3"/>
+	<Property ID="pet17_xiyou_005_1"/>
+	<Property ID="pet17_xiyou_005_2"/>
+	<Property ID="pet17_xiyou_005_3"/>
+	<Property ID="pet18_xiyou_001_1"/>
+	<Property ID="pet18_xiyou_001_2"/>
+	<Property ID="pet18_xiyou_001_3"/>
+	<Property ID="pet18_xiyou_002_1"/>
+	<Property ID="pet18_xiyou_002_2"/>
+	<Property ID="pet18_xiyou_002_3"/>
+	<Property ID="pet18_xiyou_003_1"/>
+	<Property ID="pet18_xiyou_003_2"/>
+	<Property ID="pet18_xiyou_003_3"/>
+	<Property ID="pet18_xiyou_004_1"/>
+	<Property ID="pet18_xiyou_004_2"/>
+	<Property ID="pet18_xiyou_004_3"/>
+	<Property ID="pet18_xiyou_005_1"/>
+	<Property ID="pet18_xiyou_005_2"/>
+	<Property ID="pet18_xiyou_005_3"/>
+	<Property ID="pet19_xiyou_001_1"/>
+	<Property ID="pet19_xiyou_001_2"/>
+	<Property ID="pet19_xiyou_001_3"/>
+	<Property ID="pet19_xiyou_002_1"/>
+	<Property ID="pet19_xiyou_002_2" ModifyFormulaTargetType="6" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPReturnFactor" ModifyPropValue="10+($GraspLevel-1)*10" ModifyCalType="0"/>
+	<Property ID="pet19_xiyou_002_3"/>
+	<Property ID="pet19_xiyou_003_1"/>
+	<Property ID="pet19_xiyou_003_2"/>
+	<Property ID="pet19_xiyou_003_3"/>
+	<Property ID="pet19_xiyou_004_1"/>
+	<Property ID="pet19_xiyou_004_2"/>
+	<Property ID="pet19_xiyou_004_3"/>
+	<Property ID="pet19_xiyou_005_1"/>
+	<Property ID="pet19_xiyou_005_2"/>
+	<Property ID="pet19_xiyou_005_3"/>
+	<Property ID="pet20_xiyou_001_1"/>
+	<Property ID="pet20_xiyou_001_2"/>
+	<Property ID="pet20_xiyou_001_3"/>
+	<Property ID="pet20_xiyou_002_1"/>
+	<Property ID="pet20_xiyou_002_2" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="Def" ModifyPropValue="$GraspLevel*2500" ModifyCalType="0"/>
+	<Property ID="pet20_xiyou_002_3"/>
+	<Property ID="pet20_xiyou_003_1"/>
+	<Property ID="pet20_xiyou_003_2"/>
+	<Property ID="pet20_xiyou_003_3"/>
+	<Property ID="pet20_xiyou_004_1"/>
+	<Property ID="pet20_xiyou_004_2"/>
+	<Property ID="pet20_xiyou_004_3"/>
+	<Property ID="pet20_xiyou_005_1"/>
+	<Property ID="pet20_xiyou_005_2"/>
+	<Property ID="pet20_xiyou_005_3"/>
+	<Property ID="pet21_xiyou_001_1"/>
+	<Property ID="pet21_xiyou_001_2"/>
+	<Property ID="pet21_xiyou_001_3"/>
+	<Property ID="pet21_xiyou_002_1"/>
+	<Property ID="pet21_xiyou_002_2"/>
+	<Property ID="pet21_xiyou_002_3"/>
+	<Property ID="pet21_xiyou_003_1"/>
+	<Property ID="pet21_xiyou_003_2"/>
+	<Property ID="pet21_xiyou_003_3"/>
+	<Property ID="pet21_xiyou_004_1"/>
+	<Property ID="pet21_xiyou_004_2"/>
+	<Property ID="pet21_xiyou_004_3"/>
+	<Property ID="pet21_xiyou_005_1"/>
+	<Property ID="pet21_xiyou_005_2"/>
+	<Property ID="pet21_xiyou_005_3"/>
+	<Property ID="pet22_xiyou_001_1"/>
+	<Property ID="pet22_xiyou_001_2"/>
+	<Property ID="pet22_xiyou_001_3"/>
+	<Property ID="pet22_xiyou_002_1"/>
+	<Property ID="pet22_xiyou_002_2"/>
+	<Property ID="pet22_xiyou_002_3"/>
+	<Property ID="pet22_xiyou_003_1"/>
+	<Property ID="pet22_xiyou_003_2"/>
+	<Property ID="pet22_xiyou_003_3"/>
+	<Property ID="pet22_xiyou_004_1"/>
+	<Property ID="pet22_xiyou_004_2"/>
+	<Property ID="pet22_xiyou_004_3"/>
+	<Property ID="pet22_xiyou_005_1"/>
+	<Property ID="pet22_xiyou_005_2"/>
+	<Property ID="pet22_xiyou_005_3"/>
+	<Property ID="pet23_xiyou_001_1"/>
+	<Property ID="pet23_xiyou_001_2"/>
+	<Property ID="pet23_xiyou_001_3"/>
+	<Property ID="pet23_xiyou_002_1"/>
+	<Property ID="pet23_xiyou_002_2"/>
+	<Property ID="pet23_xiyou_002_3"/>
+	<Property ID="pet23_xiyou_003_1"/>
+	<Property ID="pet23_xiyou_003_2"/>
+	<Property ID="pet23_xiyou_003_3"/>
+	<Property ID="pet23_xiyou_004_1"/>
+	<Property ID="pet23_xiyou_004_2"/>
+	<Property ID="pet23_xiyou_004_3"/>
+	<Property ID="pet23_xiyou_005_1"/>
+	<Property ID="pet23_xiyou_005_2"/>
+	<Property ID="pet23_xiyou_005_3"/>
+	<Property ID="pet26_xiyou_001_1"/>
+	<Property ID="pet26_xiyou_001_2"/>
+	<Property ID="pet26_xiyou_001_3"/>
+	<Property ID="pet26_xiyou_002_1" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-5" ModifyCalType="1"/>
+	<Property ID="pet26_xiyou_002_2"/>
+	<Property ID="pet26_xiyou_002_3"/>
+	<Property ID="pet26_xiyou_003_1" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="0.5" ModifyCalType="1"/>
+	<Property ID="pet26_xiyou_003_2"/>
+	<Property ID="pet26_xiyou_003_3"/>
+	<Property ID="pet26_xiyou_004_1"/>
+	<Property ID="pet26_xiyou_004_2"/>
+	<Property ID="pet26_xiyou_004_3"/>
+	<Property ID="pet26_xiyou_005_1"/>
+	<Property ID="pet26_xiyou_005_2"/>
+	<Property ID="pet26_xiyou_005_3"/>
+	<Property ID="pet27_xiyou_001_1"/>
+	<Property ID="pet27_xiyou_001_2"/>
+	<Property ID="pet27_xiyou_001_3"/>
+	<Property ID="pet27_xiyou_002_1"/>
+	<Property ID="pet27_xiyou_002_2"/>
+	<Property ID="pet27_xiyou_002_3"/>
+	<Property ID="pet27_xiyou_003_1"/>
+	<Property ID="pet27_xiyou_003_2"/>
+	<Property ID="pet27_xiyou_003_3"/>
+	<Property ID="pet27_xiyou_004_1" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="pet27_xiyou_004_2"/>
+	<Property ID="pet27_xiyou_004_3"/>
+	<Property ID="pet27_xiyou_005_1"/>
+	<Property ID="pet27_xiyou_005_2"/>
+	<Property ID="pet27_xiyou_005_3"/>
+	<Property ID="pet28_xiyou_001_1"/>
+	<Property ID="pet28_xiyou_001_2"/>
+	<Property ID="pet28_xiyou_001_3"/>
+	<Property ID="pet28_xiyou_002_1"/>
+	<Property ID="pet28_xiyou_002_2"/>
+	<Property ID="pet28_xiyou_002_3"/>
+	<Property ID="pet28_xiyou_003_1"/>
+	<Property ID="pet28_xiyou_003_2"/>
+	<Property ID="pet28_xiyou_003_3"/>
+	<Property ID="pet28_xiyou_004_1"/>
+	<Property ID="pet28_xiyou_004_2"/>
+	<Property ID="pet28_xiyou_004_3"/>
+	<Property ID="pet28_xiyou_005_1"/>
+	<Property ID="pet28_xiyou_005_2"/>
+	<Property ID="pet28_xiyou_005_3"/>
+	<Property ID="pet29_xiyou_001_1"/>
+	<Property ID="pet29_xiyou_001_2"/>
+	<Property ID="pet29_xiyou_001_3"/>
+	<Property ID="pet29_xiyou_002_1" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="300+($GraspLevel-1)*300" ModifyPropValue1="300+($GraspMaxLevel-1)*300" ModifyCalType="0"/>
+	<Property ID="pet29_xiyou_002_2" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="2+($GraspLevel-1)*2" ModifyPropValue1="2+($GraspMaxLevel-1)*2" ModifyCalType="0"/>
+	<Property ID="pet29_xiyou_002_3" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="4+($GraspLevel-1)*4" ModifyPropValue1="4+($GraspMaxLevel-1)*4" ModifyCalType="0"/>
+	<Property ID="pet29_xiyou_003_1" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-3" ModifyCalType="1"/>
+	<Property ID="pet29_xiyou_003_2"/>
+	<Property ID="pet29_xiyou_003_3"/>
+	<Property ID="pet29_xiyou_004_1" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="2" ModifyCalType="1"/>
+	<Property ID="pet29_xiyou_004_2"/>
+	<Property ID="pet29_xiyou_004_3"/>
+	<Property ID="pet29_xiyou_005_1"/>
+	<Property ID="pet29_xiyou_005_2"/>
+	<Property ID="pet29_xiyou_005_3"/>
+	<Property ID="pet30_xiyou_001_1"/>
+	<Property ID="pet30_xiyou_001_2"/>
+	<Property ID="pet30_xiyou_001_3"/>
+	<Property ID="pet30_xiyou_002_1" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="5" ModifyCalType="1"/>
+	<Property ID="pet30_xiyou_002_2"/>
+	<Property ID="pet30_xiyou_002_3"/>
+	<Property ID="pet30_xiyou_003_1"/>
+	<Property ID="pet30_xiyou_003_2"/>
+	<Property ID="pet30_xiyou_003_3"/>
+	<Property ID="pet30_xiyou_004_1" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="10" ModifyCalType="1"/>
+	<Property ID="pet30_xiyou_004_2"/>
+	<Property ID="pet30_xiyou_004_3"/>
+	<Property ID="pet30_xiyou_005_1"/>
+	<Property ID="pet30_xiyou_005_2"/>
+	<Property ID="pet30_xiyou_005_3"/>
+	<Property ID="pet31_xiyou_001_1"/>
+	<Property ID="pet31_xiyou_001_2"/>
+	<Property ID="pet31_xiyou_001_3"/>
+	<Property ID="pet31_xiyou_002_1" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="55+($GraspLevel-1)*5" ModifyPropValue1="55+($GraspMaxLevel-1)*5" ModifyCalType="1"/>
+	<Property ID="pet31_xiyou_002_2"/>
+	<Property ID="pet31_xiyou_002_3"/>
+	<Property ID="pet31_xiyou_003_1"/>
+	<Property ID="pet31_xiyou_003_2"/>
+	<Property ID="pet31_xiyou_003_3"/>
+	<Property ID="pet31_xiyou_004_1" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="@ClonePetNpcNum*(12+($GraspLevel-1)*2)" ModifyCalType="1"/>
+	<Property ID="pet31_xiyou_004_2"/>
+	<Property ID="pet31_xiyou_004_3"/>
+	<Property ID="pet31_xiyou_005_1"/>
+	<Property ID="pet31_xiyou_005_2"/>
+	<Property ID="pet31_xiyou_005_3"/>
+	<Property ID="pet32_xiyou_001_1" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="23" ModifyCalType="1"/>
+	<Property ID="pet32_xiyou_001_2"/>
+	<Property ID="pet32_xiyou_001_3"/>
+	<Property ID="pet32_xiyou_002_1"/>
+	<Property ID="pet32_xiyou_002_2"/>
+	<Property ID="pet32_xiyou_002_3"/>
+	<Property ID="pet32_xiyou_003_1"/>
+	<Property ID="pet32_xiyou_003_2"/>
+	<Property ID="pet32_xiyou_003_3"/>
+	<Property ID="pet32_xiyou_004_1" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="17" ModifyCalType="1"/>
+	<Property ID="pet32_xiyou_004_2" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="23" ModifyCalType="1"/>
+	<Property ID="pet32_xiyou_004_3" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="34" ModifyCalType="1"/>
+	<Property ID="pet32_xiyou_005_1"/>
+	<Property ID="pet32_xiyou_005_2" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="55" ModifyCalType="1"/>
+	<Property ID="pet32_xiyou_005_3"/>
+	<Property ID="pet33_xiyou_001_1"/>
+	<Property ID="pet33_xiyou_001_2"/>
+	<Property ID="pet33_xiyou_001_3"/>
+	<Property ID="pet33_xiyou_002_1"/>
+	<Property ID="pet33_xiyou_002_2"/>
+	<Property ID="pet33_xiyou_002_3"/>
+	<Property ID="pet33_xiyou_003_1"/>
+	<Property ID="pet33_xiyou_003_2"/>
+	<Property ID="pet33_xiyou_003_3"/>
+	<Property ID="pet33_xiyou_004_1"/>
+	<Property ID="pet33_xiyou_004_2"/>
+	<Property ID="pet33_xiyou_004_3"/>
+	<Property ID="pet33_xiyou_005_1"/>
+	<Property ID="pet33_xiyou_005_2"/>
+	<Property ID="pet33_xiyou_005_3"/>
+	<Property ID="pet34_xiyou_001_1"/>
+	<Property ID="pet34_xiyou_001_2"/>
+	<Property ID="pet34_xiyou_001_3"/>
+	<Property ID="pet34_xiyou_002_1"/>
+	<Property ID="pet34_xiyou_002_2"/>
+	<Property ID="pet34_xiyou_002_3"/>
+	<Property ID="pet34_xiyou_003_1" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="-$GraspLevel*3" ModifyCalType="1"/>
+	<Property ID="pet34_xiyou_003_2"/>
+	<Property ID="pet34_xiyou_003_3"/>
+	<Property ID="pet34_xiyou_004_1"/>
+	<Property ID="pet34_xiyou_004_2"/>
+	<Property ID="pet34_xiyou_004_3"/>
+	<Property ID="pet34_xiyou_005_1"/>
+	<Property ID="pet34_xiyou_005_2"/>
+	<Property ID="pet34_xiyou_005_3"/>
+	<Property ID="pet35_xiyou_001_1"/>
+	<Property ID="pet35_xiyou_001_2"/>
+	<Property ID="pet35_xiyou_001_3"/>
+	<Property ID="pet35_xiyou_002_1"/>
+	<Property ID="pet35_xiyou_002_2"/>
+	<Property ID="pet35_xiyou_002_3"/>
+	<Property ID="pet35_xiyou_003_1"/>
+	<Property ID="pet35_xiyou_003_2"/>
+	<Property ID="pet35_xiyou_003_3"/>
+	<Property ID="pet35_xiyou_004_1"/>
+	<Property ID="pet35_xiyou_004_2"/>
+	<Property ID="pet35_xiyou_004_3"/>
+	<Property ID="pet35_xiyou_005_1" ModifyFormulaTargetType="6" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="1+($GraspLevel-1)*1" ModifyCalType="0"/>
+	<Property ID="pet35_xiyou_005_2" ModifyFormulaTargetType="6" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="1+($GraspLevel-1)*1" ModifyCalType="0"/>
+	<Property ID="pet35_xiyou_005_3"/>
+	<Property ID="buff_fabao_003_1" Name="伤害增加50%" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_zhuansheng_035_1" Name="增加50%伤害反弹" ModifyTargetType="0" ModifyType="3" ModifyPropName="Rebound" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_fabao_021_1" Name="增加15%闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="15" ModifyCalType="0"/>
+	<Property ID="buff_fabao_021_2" Name="增加15%抗暴击几率" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="15" ModifyCalType="0"/>
+	<Property ID="buff_fabao_021_3" Name="增加15%暴击免伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="15" ModifyCalType="0"/>
+	<Property ID="buff_fabao_021_4" Name="增加5%伤害减免" ModifyTargetType="0" ModifyType="3" ModifyPropName="Dodge" ModifyPropValue="5" ModifyCalType="0"/>
+	<Property ID="buff_fabao_022_1" Name="增加15%闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="15" ModifyCalType="0"/>
+	<Property ID="buff_fabao_022_2" Name="增加15%抗暴击几率" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="15" ModifyCalType="0"/>
+	<Property ID="buff_fabao_022_3" Name="增加15%暴击免伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="15" ModifyCalType="0"/>
+	<Property ID="buff_fabao_022_4" Name="增加5%伤害减免" ModifyTargetType="0" ModifyType="3" ModifyPropName="Dodge" ModifyPropValue="5" ModifyCalType="0"/>
+	<Property ID="buff_moto_002_1" Name="减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30" ModifyCalType="1"/>
+	<Property ID="buff_moto_005_1" Name="减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-80" ModifyCalType="1"/>
+	<Property ID="buff_moto_beidong_001" Name="提速20%" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_pet_skill_037_1" Name="法力消耗翻倍" ModifyTargetType="0" ModifyType="3" ModifyPropName="MPReturnFactor" ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_ninja_sk_03_2" Name="减速30%" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30" ModifyCalType="1"/>
+	<Property ID="buff_F1_ninja_sk_01_1" Name="增加60%命中" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="20+$Level*1" ModifyCalType="0"/>
+	<Property ID="buff_F1_ninja_sk_01_2" Name="增加60%暴击率" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="20+$Level*1" ModifyCalType="0"/>
+	<Property ID="buff_F2_ninja_sk_01_3" Name="减速45%" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-3*$Level" ModifyCalType="1"/>
+	<Property ID="buff_F1_ninja_sk_02_1" Name="增加暴击伤害" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="32+2*$Level" ModifyCalType="0"/>
+	<Property ID="buff_F1_ninja_sk_03_1" Name="增加40%伤害" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="$Level*0.5" ModifyCalType="0"/>
+	<Property ID="buff_F1_ninja_sk_04_1" Name="降低伤害" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="-$Level*1" ModifyCalType="0"/>
+	<Property ID="buff_pet_skill_038_1" Name="伤害增加30%" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="30" ModifyCalType="0"/>
+	<Property ID="buff_ninja_sk_01_1" Name="减速70%" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-70" ModifyCalType="1"/>
+	<Property ID="buff_weapon_fire001" Name="火元素伤害减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30" ModifyCalType="1"/>
+	<Property ID="buff_weapon_flash001" Name="雷元素触发自身加速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_pet_skill_038_2" Name="免疫反弹伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="DecRebound" ModifyPropValue="9999" ModifyCalType="0"/>
+	<Property ID="buff_tank_005_1" Name="减速40%" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-40" ModifyCalType="1"/>
+	<Property ID="pet45_xiyou_001_1" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="-10-($GraspLevel-1)*10" ModifyCalType="0"/>
+	<Property ID="pet48_xiyou_001_1" Name="致残值" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="DamageCripplePercent" ModifyPropValue="3+($GraspLevel-1)*3" ModifyCalType="0"/>
+	<Property ID="buff_war_n_sk_04_1" Name="增加30%伤害" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="1*$Level" ModifyCalType="0"/>
+	<Property ID="buff_war_n_sk_04_2" Name="增加30%速度" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="1*$Level" ModifyCalType="1"/>
+	<Property ID="buff_war_n_sk_04_3" Name="增加30%命中" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="1*$Level" ModifyCalType="0"/>
+	<Property ID="buff_war_n_sk_04_4" Name="减速70%" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-70" ModifyCalType="1"/>
+	<Property ID="buff_war_sk_01_2" Name="减50%速度" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-50" ModifyCalType="1"/>
+	<Property ID="buff_zytf_003_1_1" Name="减少免伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="Def" ModifyPropValue="-100" ModifyCalType="1"/>
+	<Property ID="buff_pet9_xiyou_001B" Name="增加最终伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="RealDam" ModifyPropValue="10" ModifyCalType="1"/>
+	<Property ID="buff_F3_w_sk04e_1" Name="增加闪避" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="1.5*$Level" ModifyCalType="0"/>
+	<Property ID="buff_F3_fs_sk_004_2_1" Name="减速50%" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-50" ModifyCalType="1"/>
+	<Property ID="buff_F3_gun_sk_003_1_1" Name="减速40%" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-40" ModifyCalType="1"/>
+	<Property ID="buff_F3_gun_sk_003_2_1" Name="增加暴击" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="40+$Level*2" ModifyCalType="0"/>
+	<Property ID="buff_F3_monk_sk04_1_1" Name="减速60%" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-60" ModifyCalType="1"/>
+	<Property ID="buff_F3_ninja_sk_04_1_1" Name="降低命中" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="$Level*2" ModifyCalType="0"/>
+	<Property ID="buff_F3_ninja_sk_04_1_2" Name="降低伤害" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="-1*$Level" ModifyCalType="0"/>
+</Object>
+
+

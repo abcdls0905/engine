@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop Transparent="true" Width="1406" Height="806" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+		<control name="group_main" entity="GroupBox" script="" init="">
+			<prop ClipChildren="false" Transparent="true" Left="10" Top="66" Width="502" Height="140" BackColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true"/>
+			<control name="group_show" entity="GroupBox" script="" init="">
+				<prop Left="29" Top="4" Width="630" Height="140" BackColor="56,255,79,60" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/system/bg.png"/>
+				<control name="btn_play" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_main/system/shipin_1.png" PushImage="gui/tp2_main/system/shipin_3.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="94" Top="18" Width="98" Height="98" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" ClickSound="button_click"/>
+				</control>
+				<control name="btn_pause" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_main/system/zanting_1.png" PushImage="gui/tp2_main/system/zanting_3.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="94" Top="18" Width="98" Height="98" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TestTrans="true" AutoSize="true" ClickSound="button_click"/>
+				</control>
+				<control name="btn_stop" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_main/system/tingzhi_1.png" PushImage="gui/tp2_main/system/tingzhi_3.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="203" Top="18" Width="98" Height="98" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" ClickSound="button_click"/>
+				</control>
+				<control name="btn_shiping" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_main/system/zhibo_1.png" PushImage="gui/tp2_main/system/zhibo_3.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="422" Top="18" Width="98" Height="98" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" ClickSound="button_click"/>
+				</control>
+				<control name="btn_yuyin" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_main/system/yuyin_1.png" PushImage="gui/tp2_main/system/yuyin_3.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="312" Top="18" Width="98" Height="98" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" ClickSound="button_click"/>
+				</control>
+				<control name="texiao_yy" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="356" Top="62" Width="10" Height="10" ShadowColor="0,0,0,0" Particles2d="particleeffects_009l"/>
+				</control>
+				<control name="texiao_sp" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="466" Top="62" Width="10" Height="10" ShadowColor="0,0,0,0" Particles2d="particleeffects_009l"/>
+				</control>
+			</control>
+			<control name="group_btn" entity="GroupBox" script="" init="">
+				<prop Top="17" Width="114" Height="114" BackColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true"/>
+				<control name="btn_main" entity="Button" script="" init="">
+					<prop Align="Right" DragEvent="true" NormalImage="gui/tp2_main/system/live_1.png" PushImage="gui/tp2_main/system/live_3.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="114" Height="114" BackColor="0,0,0,0" ShadowColor="0,0,0,0" AutoSize="true" ClickSound="button_click"/>
+				</control>
+				<control name="zhibotexiao" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="47" Top="47" Width="20" Height="20" ShadowColor="0,0,0,0" Particles2d="particleeffects_009l"/>
+				</control>
+			</control>
+		</control>
+	</control>
+</form>
+

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
+<!-- SlotType 孔位类型（金，木，水，火，土 分别对应 1,2,3,4,5）-->
+<!-- TattooKind 符文类型（金1，金2）-->
+<!-- CompondGrade 符文等级-->
+<!-- FirstMaterial 合成所需要的主要材料-->
+<!-- SecondMaterial 合成所需要的保底材料-->
+<!-- NeedGold，NeedDiamond 合成所需要的金币，钻石-->
+<!-- GetItem 合成后的新物品-->
+<!-- Probability 成功率 此处必须填小于10000的整数（例如 8000 成功率为 8000/10000）-->
+<!--
+-->
+<Object>
+	<Property ID="1" TattooId="tattoo_gold_1_1" TattooNum="3" NeedGold="1000" GetItem="tattoo_gold_2_1" Probability="10000"/>
+	<Property ID="2" TattooId="tattoo_gold_2_1" TattooNum="3" NeedGold="10000" GetItem="tattoo_gold_3_1" Probability="10000"/>
+	<Property ID="3" TattooId="tattoo_gold_3_1" TattooNum="3" NeedGold="50000" GetItem="tattoo_gold_4_1" Probability="10000"/>
+	<Property ID="4" TattooId="tattoo_gold_4_1" TattooNum="3" NeedDiamond="100" GetItem="tattoo_gold_5_1" Probability="10000"/>
+	<Property ID="5" TattooId="tattoo_gold_5_1" TattooNum="3" NeedDiamond="200" GetItem="tattoo_gold_6_1" Probability="10000"/>
+	<Property ID="6" TattooId="tattoo_gold_6_1" TattooNum="3" NeedDiamond="500" GetItem="tattoo_gold_7_1" Probability="10000"/>
+	<Property ID="8" TattooId="tattoo_gold_1_2" TattooNum="3" NeedGold="1000" GetItem="tattoo_gold_2_2" Probability="10000"/>
+	<Property ID="9" TattooId="tattoo_gold_2_2" TattooNum="3" NeedGold="10000" GetItem="tattoo_gold_3_2" Probability="10000"/>
+	<Property ID="10" TattooId="tattoo_gold_3_2" TattooNum="3" NeedGold="50000" GetItem="tattoo_gold_4_2" Probability="10000"/>
+	<Property ID="11" TattooId="tattoo_gold_4_2" TattooNum="3" NeedDiamond="100" GetItem="tattoo_gold_5_2" Probability="10000"/>
+	<Property ID="12" TattooId="tattoo_gold_5_2" TattooNum="3" NeedDiamond="200" GetItem="tattoo_gold_6_2" Probability="10000"/>
+	<Property ID="13" TattooId="tattoo_gold_6_2" TattooNum="3" NeedDiamond="500" GetItem="tattoo_gold_7_2" Probability="10000"/>
+	<Property ID="15" TattooId="tattoo_wood_1_1" TattooNum="3" NeedGold="1000" GetItem="tattoo_wood_2_1" Probability="10000"/>
+	<Property ID="16" TattooId="tattoo_wood_2_1" TattooNum="3" NeedGold="10000" GetItem="tattoo_wood_3_1" Probability="10000"/>
+	<Property ID="17" TattooId="tattoo_wood_3_1" TattooNum="3" NeedGold="50000" GetItem="tattoo_wood_4_1" Probability="10000"/>
+	<Property ID="18" TattooId="tattoo_wood_4_1" TattooNum="3" NeedDiamond="100" GetItem="tattoo_wood_5_1" Probability="10000"/>
+	<Property ID="19" TattooId="tattoo_wood_5_1" TattooNum="3" NeedDiamond="200" GetItem="tattoo_wood_6_1" Probability="10000"/>
+	<Property ID="20" TattooId="tattoo_wood_6_1" TattooNum="3" NeedDiamond="500" GetItem="tattoo_wood_7_1" Probability="10000"/>
+	<Property ID="22" TattooId="tattoo_wood_1_2" TattooNum="3" NeedGold="1000" GetItem="tattoo_wood_2_2" Probability="10000"/>
+	<Property ID="23" TattooId="tattoo_wood_2_2" TattooNum="3" NeedGold="10000" GetItem="tattoo_wood_3_2" Probability="10000"/>
+	<Property ID="24" TattooId="tattoo_wood_3_2" TattooNum="3" NeedGold="50000" GetItem="tattoo_wood_4_2" Probability="10000"/>
+	<Property ID="25" TattooId="tattoo_wood_4_2" TattooNum="3" NeedDiamond="100" GetItem="tattoo_wood_5_2" Probability="10000"/>
+	<Property ID="26" TattooId="tattoo_wood_5_2" TattooNum="3" NeedDiamond="200" GetItem="tattoo_wood_6_2" Probability="10000"/>
+	<Property ID="27" TattooId="tattoo_wood_6_2" TattooNum="3" NeedDiamond="500" GetItem="tattoo_wood_7_2" Probability="10000"/>
+	<Property ID="29" TattooId="tattoo_water_1_1" TattooNum="3" NeedGold="1000" GetItem="tattoo_water_2_1" Probability="10000"/>
+	<Property ID="30" TattooId="tattoo_water_2_1" TattooNum="3" NeedGold="10000" GetItem="tattoo_water_3_1" Probability="10000"/>
+	<Property ID="31" TattooId="tattoo_water_3_1" TattooNum="3" NeedGold="50000" GetItem="tattoo_water_4_1" Probability="10000"/>
+	<Property ID="32" TattooId="tattoo_water_4_1" TattooNum="3" NeedDiamond="100" GetItem="tattoo_water_5_1" Probability="10000"/>
+	<Property ID="33" TattooId="tattoo_water_5_1" TattooNum="3" NeedDiamond="200" GetItem="tattoo_water_6_1" Probability="10000"/>
+	<Property ID="34" TattooId="tattoo_water_6_1" TattooNum="3" NeedDiamond="500" GetItem="tattoo_water_7_1" Probability="10000"/>
+	<Property ID="36" TattooId="tattoo_water_1_2" TattooNum="3" NeedGold="1000" GetItem="tattoo_water_2_2" Probability="10000"/>
+	<Property ID="37" TattooId="tattoo_water_2_2" TattooNum="3" NeedGold="10000" GetItem="tattoo_water_3_2" Probability="10000"/>
+	<Property ID="38" TattooId="tattoo_water_3_2" TattooNum="3" NeedGold="50000" GetItem="tattoo_water_4_2" Probability="10000"/>
+	<Property ID="39" TattooId="tattoo_water_4_2" TattooNum="3" NeedDiamond="100" GetItem="tattoo_water_5_2" Probability="10000"/>
+	<Property ID="40" TattooId="tattoo_water_5_2" TattooNum="3" NeedDiamond="200" GetItem="tattoo_water_6_2" Probability="10000"/>
+	<Property ID="41" TattooId="tattoo_water_6_2" TattooNum="3" NeedDiamond="500" GetItem="tattoo_water_7_2" Probability="10000"/>
+	<Property ID="43" TattooId="tattoo_fire_1_1" TattooNum="3" NeedGold="1000" GetItem="tattoo_fire_2_1" Probability="10000"/>
+	<Property ID="44" TattooId="tattoo_fire_2_1" TattooNum="3" NeedGold="10000" GetItem="tattoo_fire_3_1" Probability="10000"/>
+	<Property ID="45" TattooId="tattoo_fire_3_1" TattooNum="3" NeedGold="50000" GetItem="tattoo_fire_4_1" Probability="10000"/>
+	<Property ID="46" TattooId="tattoo_fire_4_1" TattooNum="3" NeedDiamond="100" GetItem="tattoo_fire_5_1" Probability="10000"/>
+	<Property ID="47" TattooId="tattoo_fire_5_1" TattooNum="3" NeedDiamond="200" GetItem="tattoo_fire_6_1" Probability="10000"/>
+	<Property ID="48" TattooId="tattoo_fire_6_1" TattooNum="3" NeedDiamond="500" GetItem="tattoo_fire_7_1" Probability="10000"/>
+	<Property ID="50" TattooId="tattoo_fire_1_2" TattooNum="3" NeedGold="1000" GetItem="tattoo_fire_2_2" Probability="10000"/>
+	<Property ID="51" TattooId="tattoo_fire_2_2" TattooNum="3" NeedGold="10000" GetItem="tattoo_fire_3_2" Probability="10000"/>
+	<Property ID="52" TattooId="tattoo_fire_3_2" TattooNum="3" NeedGold="50000" GetItem="tattoo_fire_4_2" Probability="10000"/>
+	<Property ID="53" TattooId="tattoo_fire_4_2" TattooNum="3" NeedDiamond="100" GetItem="tattoo_fire_5_2" Probability="10000"/>
+	<Property ID="54" TattooId="tattoo_fire_5_2" TattooNum="3" NeedDiamond="200" GetItem="tattoo_fire_6_2" Probability="10000"/>
+	<Property ID="55" TattooId="tattoo_fire_6_2" TattooNum="3" NeedDiamond="500" GetItem="tattoo_fire_7_2" Probability="10000"/>
+	<Property ID="57" TattooId="tattoo_soil_1_1" TattooNum="3" NeedGold="1000" GetItem="tattoo_soil_2_1" Probability="10000"/>
+	<Property ID="58" TattooId="tattoo_soil_2_1" TattooNum="3" NeedGold="10000" GetItem="tattoo_soil_3_1" Probability="10000"/>
+	<Property ID="59" TattooId="tattoo_soil_3_1" TattooNum="3" NeedGold="50000" GetItem="tattoo_soil_4_1" Probability="10000"/>
+	<Property ID="60" TattooId="tattoo_soil_4_1" TattooNum="3" NeedDiamond="100" GetItem="tattoo_soil_5_1" Probability="10000"/>
+	<Property ID="61" TattooId="tattoo_soil_5_1" TattooNum="3" NeedDiamond="200" GetItem="tattoo_soil_6_1" Probability="10000"/>
+	<Property ID="62" TattooId="tattoo_soil_6_1" TattooNum="3" NeedDiamond="500" GetItem="tattoo_soil_7_1" Probability="10000"/>
+	<Property ID="64" TattooId="tattoo_soil_1_2" TattooNum="3" NeedGold="1000" GetItem="tattoo_soil_2_2" Probability="10000"/>
+	<Property ID="65" TattooId="tattoo_soil_2_2" TattooNum="3" NeedGold="10000" GetItem="tattoo_soil_3_2" Probability="10000"/>
+	<Property ID="66" TattooId="tattoo_soil_3_2" TattooNum="3" NeedGold="50000" GetItem="tattoo_soil_4_2" Probability="10000"/>
+	<Property ID="67" TattooId="tattoo_soil_4_2" TattooNum="3" NeedDiamond="100" GetItem="tattoo_soil_5_2" Probability="10000"/>
+	<Property ID="68" TattooId="tattoo_soil_5_2" TattooNum="3" NeedDiamond="200" GetItem="tattoo_soil_6_2" Probability="10000"/>
+	<Property ID="69" TattooId="tattoo_soil_6_2" TattooNum="3" NeedDiamond="500" GetItem="tattoo_soil_7_2" Probability="10000"/>
+	<Property ID="70" TattooId="tattoo_center_4_A1" TattooNum="3" NeedDiamond="200" GetItem="tattoo_center_5_A1" Probability="10000"/>
+	<Property ID="71" TattooId="tattoo_center_5_A1" TattooNum="3" NeedDiamond="500" GetItem="tattoo_center_6_A1" Probability="10000"/>
+	<Property ID="72" TattooId="tattoo_center_6_A1" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_7_A1" Probability="10000"/>
+	<Property ID="74" TattooId="tattoo_center_4_A2" TattooNum="3" NeedDiamond="200" GetItem="tattoo_center_5_A2" Probability="10000"/>
+	<Property ID="75" TattooId="tattoo_center_5_A2" TattooNum="3" NeedDiamond="500" GetItem="tattoo_center_6_A2" Probability="10000"/>
+	<Property ID="76" TattooId="tattoo_center_6_A2" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_7_A2" Probability="10000"/>
+	<Property ID="78" TattooId="tattoo_center_4_B1" TattooNum="3" NeedDiamond="200" GetItem="tattoo_center_5_B1" Probability="10000"/>
+	<Property ID="79" TattooId="tattoo_center_5_B1" TattooNum="3" NeedDiamond="500" GetItem="tattoo_center_6_B1" Probability="10000"/>
+	<Property ID="80" TattooId="tattoo_center_6_B1" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_7_B1" Probability="10000"/>
+	<Property ID="82" TattooId="tattoo_center_4_B2" TattooNum="3" NeedDiamond="200" GetItem="tattoo_center_5_B2" Probability="10000"/>
+	<Property ID="83" TattooId="tattoo_center_5_B2" TattooNum="3" NeedDiamond="500" GetItem="tattoo_center_6_B2" Probability="10000"/>
+	<Property ID="84" TattooId="tattoo_center_6_B2" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_7_B2" Probability="10000"/>
+	<Property ID="86" TattooId="tattoo_center_4_C1" TattooNum="3" NeedDiamond="200" GetItem="tattoo_center_5_C1" Probability="10000"/>
+	<Property ID="87" TattooId="tattoo_center_5_C1" TattooNum="3" NeedDiamond="500" GetItem="tattoo_center_6_C1" Probability="10000"/>
+	<Property ID="88" TattooId="tattoo_center_6_C1" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_7_C1" Probability="10000"/>
+	<Property ID="90" TattooId="tattoo_center_4_C2" TattooNum="3" NeedDiamond="200" GetItem="tattoo_center_5_C2" Probability="10000"/>
+	<Property ID="91" TattooId="tattoo_center_5_C2" TattooNum="3" NeedDiamond="500" GetItem="tattoo_center_6_C2" Probability="10000"/>
+	<Property ID="92" TattooId="tattoo_center_6_C2" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_7_C2" Probability="10000"/>
+	<Property ID="94" TattooId="tattoo_center_4_D1" TattooNum="3" NeedDiamond="200" GetItem="tattoo_center_5_D1" Probability="10000"/>
+	<Property ID="95" TattooId="tattoo_center_5_D1" TattooNum="3" NeedDiamond="500" GetItem="tattoo_center_6_D1" Probability="10000"/>
+	<Property ID="96" TattooId="tattoo_center_6_D1" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_7_D1" Probability="10000"/>
+	<Property ID="98" TattooId="tattoo_center_4_D2" TattooNum="3" NeedDiamond="200" GetItem="tattoo_center_5_D2" Probability="10000"/>
+	<Property ID="99" TattooId="tattoo_center_5_D2" TattooNum="3" NeedDiamond="500" GetItem="tattoo_center_6_D2" Probability="10000"/>
+	<Property ID="100" TattooId="tattoo_center_6_D2" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_7_D2" Probability="10000"/>
+	<Property ID="102" TattooId="tattoo_center_4_E1" TattooNum="3" NeedDiamond="200" GetItem="tattoo_center_5_E1" Probability="10000"/>
+	<Property ID="103" TattooId="tattoo_center_5_E1" TattooNum="3" NeedDiamond="500" GetItem="tattoo_center_6_E1" Probability="10000"/>
+	<Property ID="104" TattooId="tattoo_center_6_E1" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_7_E1" Probability="10000"/>
+	<Property ID="106" TattooId="tattoo_center_4_E2" TattooNum="3" NeedDiamond="200" GetItem="tattoo_center_5_E2" Probability="10000"/>
+	<Property ID="107" TattooId="tattoo_center_5_E2" TattooNum="3" NeedDiamond="500" GetItem="tattoo_center_6_E2" Probability="10000"/>
+	<Property ID="108" TattooId="tattoo_center_6_E2" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_7_E2" Probability="10000"/>
+	<Property ID="109" TattooId="tattoo_gold_7_1" TattooNum="3" NeedDiamond="700" GetItem="tattoo_gold_8_1" Probability="10000"/>
+	<Property ID="110" TattooId="tattoo_gold_7_2" TattooNum="3" NeedDiamond="700" GetItem="tattoo_gold_8_2" Probability="10000"/>
+	<Property ID="111" TattooId="tattoo_wood_7_1" TattooNum="3" NeedDiamond="700" GetItem="tattoo_wood_8_1" Probability="10000"/>
+	<Property ID="112" TattooId="tattoo_wood_7_2" TattooNum="3" NeedDiamond="700" GetItem="tattoo_wood_8_2" Probability="10000"/>
+	<Property ID="113" TattooId="tattoo_water_7_1" TattooNum="3" NeedDiamond="700" GetItem="tattoo_water_8_1" Probability="10000"/>
+	<Property ID="114" TattooId="tattoo_water_7_2" TattooNum="3" NeedDiamond="700" GetItem="tattoo_water_8_2" Probability="10000"/>
+	<Property ID="115" TattooId="tattoo_fire_7_1" TattooNum="3" NeedDiamond="700" GetItem="tattoo_fire_8_1" Probability="10000"/>
+	<Property ID="116" TattooId="tattoo_fire_7_2" TattooNum="3" NeedDiamond="700" GetItem="tattoo_fire_8_2" Probability="10000"/>
+	<Property ID="117" TattooId="tattoo_soil_7_1" TattooNum="3" NeedDiamond="700" GetItem="tattoo_soil_8_1" Probability="10000"/>
+	<Property ID="118" TattooId="tattoo_soil_7_2" TattooNum="3" NeedDiamond="700" GetItem="tattoo_soil_8_2" Probability="10000"/>
+	<Property ID="119" TattooId="tattoo_center_7_A1" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_8_A1" Probability="10000"/>
+	<Property ID="120" TattooId="tattoo_center_7_A2" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_8_A2" Probability="10000"/>
+	<Property ID="121" TattooId="tattoo_center_7_B1" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_8_B1" Probability="10000"/>
+	<Property ID="122" TattooId="tattoo_center_7_B2" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_8_B2" Probability="10000"/>
+	<Property ID="123" TattooId="tattoo_center_7_C1" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_8_C1" Probability="10000"/>
+	<Property ID="124" TattooId="tattoo_center_7_C2" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_8_C2" Probability="10000"/>
+	<Property ID="125" TattooId="tattoo_center_7_D1" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_8_D1" Probability="10000"/>
+	<Property ID="126" TattooId="tattoo_center_7_D2" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_8_D2" Probability="10000"/>
+	<Property ID="127" TattooId="tattoo_center_7_E1" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_8_E1" Probability="10000"/>
+	<Property ID="128" TattooId="tattoo_center_7_E2" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_8_E2" Probability="10000"/>
+	<Property ID="129" TattooId="tattoo_center_4_F1" TattooNum="3" NeedDiamond="200" GetItem="tattoo_center_5_F1" Probability="10000"/>
+	<Property ID="130" TattooId="tattoo_center_5_F1" TattooNum="3" NeedDiamond="500" GetItem="tattoo_center_6_F1" Probability="10000"/>
+	<Property ID="131" TattooId="tattoo_center_6_F1" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_7_F1" Probability="10000"/>
+	<Property ID="132" TattooId="tattoo_center_7_F1" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_8_F1" Probability="10000"/>
+	<Property ID="133" TattooId="tattoo_center_4_F2" TattooNum="3" NeedDiamond="200" GetItem="tattoo_center_5_F2" Probability="10000"/>
+	<Property ID="134" TattooId="tattoo_center_5_F2" TattooNum="3" NeedDiamond="500" GetItem="tattoo_center_6_F2" Probability="10000"/>
+	<Property ID="135" TattooId="tattoo_center_6_F2" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_7_F2" Probability="10000"/>
+	<Property ID="136" TattooId="tattoo_center_7_F2" TattooNum="3" NeedDiamond="1000" GetItem="tattoo_center_8_F2" Probability="10000"/>
+	<Property ID="137" TattooId="tattoo_gold_8_1" TattooNum="1" GetItem="tattoo_gold_9_1" Probability="10000"/>
+	<Property ID="138" TattooId="tattoo_gold_8_2" TattooNum="1" GetItem="tattoo_gold_9_2" Probability="10000"/>
+	<Property ID="139" TattooId="tattoo_wood_8_1" TattooNum="1" GetItem="tattoo_wood_9_1" Probability="10000"/>
+	<Property ID="140" TattooId="tattoo_wood_8_2" TattooNum="1" GetItem="tattoo_wood_9_2" Probability="10000"/>
+	<Property ID="141" TattooId="tattoo_water_8_1" TattooNum="1" GetItem="tattoo_water_9_1" Probability="10000"/>
+	<Property ID="142" TattooId="tattoo_water_8_2" TattooNum="1" GetItem="tattoo_water_9_2" Probability="10000"/>
+	<Property ID="143" TattooId="tattoo_fire_8_1" TattooNum="1" GetItem="tattoo_fire_9_1" Probability="10000"/>
+	<Property ID="144" TattooId="tattoo_fire_8_2" TattooNum="1" GetItem="tattoo_fire_9_2" Probability="10000"/>
+	<Property ID="145" TattooId="tattoo_soil_8_1" TattooNum="1" GetItem="tattoo_soil_9_1" Probability="10000"/>
+	<Property ID="146" TattooId="tattoo_soil_8_2" TattooNum="1" GetItem="tattoo_soil_9_2" Probability="10000"/>
+	<Property ID="147" TattooId="tattoo_center_8_A1" TattooNum="1" GetItem="tattoo_center_9_A1" Probability="10000"/>
+	<Property ID="148" TattooId="tattoo_center_8_A2" TattooNum="1" GetItem="tattoo_center_9_A2" Probability="10000"/>
+	<Property ID="149" TattooId="tattoo_center_8_B1" TattooNum="1" GetItem="tattoo_center_9_B1" Probability="10000"/>
+	<Property ID="150" TattooId="tattoo_center_8_B2" TattooNum="1" GetItem="tattoo_center_9_B2" Probability="10000"/>
+	<Property ID="151" TattooId="tattoo_center_8_C1" TattooNum="1" GetItem="tattoo_center_9_C1" Probability="10000"/>
+	<Property ID="152" TattooId="tattoo_center_8_C2" TattooNum="1" GetItem="tattoo_center_9_C2" Probability="10000"/>
+	<Property ID="153" TattooId="tattoo_center_8_D1" TattooNum="1" GetItem="tattoo_center_9_D1" Probability="10000"/>
+	<Property ID="154" TattooId="tattoo_center_8_D2" TattooNum="1" GetItem="tattoo_center_9_D2" Probability="10000"/>
+	<Property ID="155" TattooId="tattoo_center_8_E1" TattooNum="1" GetItem="tattoo_center_9_E1" Probability="10000"/>
+	<Property ID="156" TattooId="tattoo_center_8_E2" TattooNum="1" GetItem="tattoo_center_9_E2" Probability="10000"/>
+	<Property ID="157" TattooId="tattoo_center_8_F1" TattooNum="1" GetItem="tattoo_center_9_F1" Probability="10000"/>
+	<Property ID="158" TattooId="tattoo_center_8_F2" TattooNum="1" GetItem="tattoo_center_9_F2" Probability="10000"/>
+</Object>

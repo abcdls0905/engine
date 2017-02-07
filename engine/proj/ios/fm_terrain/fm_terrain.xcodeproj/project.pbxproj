@@ -1,0 +1,761 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		850EB2B41885C46E00D29088 /* dynamic_walk_flag_compress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 850EB2A81885C46D00D29088 /* dynamic_walk_flag_compress.cpp */; };
+		850EB2B51885C46E00D29088 /* dynamic_walk_generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 850EB2AA1885C46D00D29088 /* dynamic_walk_generator.cpp */; };
+		850EB2B61885C46E00D29088 /* dynamic_walk_loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 850EB2AC1885C46D00D29088 /* dynamic_walk_loader.cpp */; };
+		850EB2B71885C46E00D29088 /* dynamic_walkable_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 850EB2AE1885C46E00D29088 /* dynamic_walkable_manager.cpp */; };
+		850EB2B81885C46E00D29088 /* dynamic_walkable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 850EB2B01885C46E00D29088 /* dynamic_walkable.cpp */; };
+		850EB2B91885C46E00D29088 /* walk_i_d_map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 850EB2B21885C46E00D29088 /* walk_i_d_map.cpp */; };
+		850EB2BD1885C4F100D29088 /* light_map_config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 850EB2BB1885C4F100D29088 /* light_map_config.cpp */; };
+		850EB2C01885C52200D29088 /* block_dynamic_walk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 850EB2BE1885C52200D29088 /* block_dynamic_walk.cpp */; };
+		852A36A616F1C01200455E63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 852A36A516F1C01200455E63 /* Foundation.framework */; };
+		852A36AD16F1C01200455E63 /* fm_terrain.m in Sources */ = {isa = PBXBuildFile; fileRef = 852A36AC16F1C01200455E63 /* fm_terrain.m */; };
+		852A374C16F1C03400455E63 /* alpha_loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36B416F1C03400455E63 /* alpha_loader.cpp */; };
+		852A374D16F1C03400455E63 /* alpha_map_compress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36B616F1C03400455E63 /* alpha_map_compress.cpp */; };
+		852A374E16F1C03400455E63 /* blend_tex_set.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36B816F1C03400455E63 /* blend_tex_set.cpp */; };
+		852A374F16F1C03400455E63 /* blend_tex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36BA16F1C03400455E63 /* blend_tex.cpp */; };
+		852A375016F1C03400455E63 /* block_alpha_map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36BC16F1C03400455E63 /* block_alpha_map.cpp */; };
+		852A375116F1C03400455E63 /* block_area.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36BE16F1C03400455E63 /* block_area.cpp */; };
+		852A375216F1C03400455E63 /* block_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36C016F1C03400455E63 /* block_base.cpp */; };
+		852A375316F1C03400455E63 /* block_chunk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36C216F1C03400455E63 /* block_chunk.cpp */; };
+		852A375416F1C03400455E63 /* block_file.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36C416F1C03400455E63 /* block_file.cpp */; };
+		852A375516F1C03400455E63 /* block_grass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36C616F1C03400455E63 /* block_grass.cpp */; };
+		852A375616F1C03400455E63 /* block_height.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36C816F1C03400455E63 /* block_height.cpp */; };
+		852A375716F1C03400455E63 /* block_height2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36CA16F1C03400455E63 /* block_height2.cpp */; };
+		852A375816F1C03400455E63 /* block_region.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36CC16F1C03400455E63 /* block_region.cpp */; };
+		852A375916F1C03400455E63 /* block_walk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36CE16F1C03400455E63 /* block_walk.cpp */; };
+		852A375A16F1C03400455E63 /* block_water.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36D016F1C03400455E63 /* block_water.cpp */; };
+		852A375B16F1C03400455E63 /* chunk_style.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36D216F1C03400455E63 /* chunk_style.cpp */; };
+		852A375C16F1C03400455E63 /* chunk_vb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36D416F1C03400455E63 /* chunk_vb.cpp */; };
+		852A375D16F1C03400455E63 /* grass_type.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36D816F1C03400455E63 /* grass_type.cpp */; };
+		852A375E16F1C03400455E63 /* height_compress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36DA16F1C03400455E63 /* height_compress.cpp */; };
+		852A375F16F1C03400455E63 /* height_loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36DC16F1C03400455E63 /* height_loader.cpp */; };
+		852A376016F1C03400455E63 /* lib_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36E016F1C03400455E63 /* lib_main.cpp */; };
+		852A376116F1C03400455E63 /* light_geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36E116F1C03400455E63 /* light_geometry.cpp */; };
+		852A376216F1C03400455E63 /* light_info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36E316F1C03400455E63 /* light_info.cpp */; };
+		852A376316F1C03400455E63 /* light_loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36E516F1C03400455E63 /* light_loader.cpp */; };
+		852A376416F1C03400455E63 /* light_oct_tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36E716F1C03400455E63 /* light_oct_tree.cpp */; };
+		852A376516F1C03400455E63 /* light_processor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36E916F1C03400455E63 /* light_processor.cpp */; };
+		852A376616F1C03400455E63 /* light_set.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36EB16F1C03400455E63 /* light_set.cpp */; };
+		852A376716F1C03400455E63 /* lighter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36EE16F1C03400455E63 /* lighter.cpp */; };
+		852A376816F1C03400455E63 /* math_3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36F016F1C03400455E63 /* math_3d.cpp */; };
+		852A376916F1C03400455E63 /* quad_collide.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36F316F1C03400455E63 /* quad_collide.cpp */; };
+		852A376A16F1C03400455E63 /* quad_ground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36F516F1C03400455E63 /* quad_ground.cpp */; };
+		852A376B16F1C03400455E63 /* quad_node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36F716F1C03400455E63 /* quad_node.cpp */; };
+		852A376C16F1C03400455E63 /* quad_tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36F916F1C03400455E63 /* quad_tree.cpp */; };
+		852A376D16F1C03400455E63 /* quad_visual.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36FB16F1C03400455E63 /* quad_visual.cpp */; };
+		852A376E16F1C03400455E63 /* region_loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36FD16F1C03400455E63 /* region_loader.cpp */; };
+		852A376F16F1C03400455E63 /* rigid_loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A36FF16F1C03400455E63 /* rigid_loader.cpp */; };
+		852A377016F1C03400455E63 /* sea_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A370116F1C03400455E63 /* sea_base.cpp */; };
+		852A377116F1C03400455E63 /* sea_water.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A370416F1C03400455E63 /* sea_water.cpp */; };
+		852A377216F1C03400455E63 /* terrain_attr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A370616F1C03400455E63 /* terrain_attr.cpp */; };
+		852A377316F1C03400455E63 /* terrain_base.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A370716F1C03400455E63 /* terrain_base.cpp */; };
+		852A377416F1C03400455E63 /* terrain_brush.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A370816F1C03400455E63 /* terrain_brush.cpp */; };
+		852A377516F1C03400455E63 /* terrain_chunk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A370A16F1C03400455E63 /* terrain_chunk.cpp */; };
+		852A377616F1C03400455E63 /* terrain_copy.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A370C16F1C03400455E63 /* terrain_copy.cpp */; };
+		852A377716F1C03400455E63 /* terrain_culling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A370F16F1C03400455E63 /* terrain_culling.cpp */; };
+		852A377816F1C03400455E63 /* terrain_dump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A371116F1C03400455E63 /* terrain_dump.cpp */; };
+		852A377916F1C03400455E63 /* terrain_editor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A371216F1C03400455E63 /* terrain_editor.cpp */; };
+		852A377A16F1C03400455E63 /* terrain_factory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A371416F1C03400455E63 /* terrain_factory.cpp */; };
+		852A377B16F1C03400455E63 /* terrain_grass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A371616F1C03400455E63 /* terrain_grass.cpp */; };
+		852A377C16F1C03400455E63 /* terrain_height.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A371816F1C03400455E63 /* terrain_height.cpp */; };
+		852A377D16F1C03400455E63 /* terrain_light.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A371A16F1C03400455E63 /* terrain_light.cpp */; };
+		852A377E16F1C03400455E63 /* terrain_material.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A371C16F1C03400455E63 /* terrain_material.cpp */; };
+		852A377F16F1C03400455E63 /* terrain_painter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A371E16F1C03400455E63 /* terrain_painter.cpp */; };
+		852A378016F1C03400455E63 /* terrain_region.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A372016F1C03400455E63 /* terrain_region.cpp */; };
+		852A378116F1C03400455E63 /* terrain_rigid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A372216F1C03400455E63 /* terrain_rigid.cpp */; };
+		852A378216F1C03400455E63 /* terrain_visuals.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A372416F1C03400455E63 /* terrain_visuals.cpp */; };
+		852A378316F1C03400455E63 /* terrain_walkable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A372616F1C03400455E63 /* terrain_walkable.cpp */; };
+		852A378416F1C03400455E63 /* terrain_water.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A372816F1C03400455E63 /* terrain_water.cpp */; };
+		852A378516F1C03400455E63 /* terrain_zone.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A372A16F1C03400455E63 /* terrain_zone.cpp */; };
+		852A378616F1C03400455E63 /* terrain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A372C16F1C03400455E63 /* terrain.cpp */; };
+		852A378716F1C03400455E63 /* tex_alpha_map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A372E16F1C03400455E63 /* tex_alpha_map.cpp */; };
+		852A378816F1C03400455E63 /* tex_light_map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A373016F1C03400455E63 /* tex_light_map.cpp */; };
+		852A378916F1C03400455E63 /* trigger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A373216F1C03400455E63 /* trigger.cpp */; };
+		852A378A16F1C03400455E63 /* visual_loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A373516F1C03400455E63 /* visual_loader.cpp */; };
+		852A378B16F1C03400455E63 /* visual_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A373716F1C03400455E63 /* visual_manager.cpp */; };
+		852A378C16F1C03400455E63 /* walk_bit_compress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A373916F1C03400455E63 /* walk_bit_compress.cpp */; };
+		852A378D16F1C03400455E63 /* walk_bit_map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A373B16F1C03400455E63 /* walk_bit_map.cpp */; };
+		852A378E16F1C03400455E63 /* walk_flag_compress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A373D16F1C03400455E63 /* walk_flag_compress.cpp */; };
+		852A378F16F1C03400455E63 /* walk_flag_map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A373F16F1C03400455E63 /* walk_flag_map.cpp */; };
+		852A379016F1C03400455E63 /* walk_generator_trace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A374116F1C03400455E63 /* walk_generator_trace.cpp */; };
+		852A379116F1C03400455E63 /* walk_generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A374216F1C03400455E63 /* walk_generator.cpp */; };
+		852A379216F1C03400455E63 /* walk_height_compress.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A374416F1C03400455E63 /* walk_height_compress.cpp */; };
+		852A379316F1C03400455E63 /* walk_height_map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A374616F1C03400455E63 /* walk_height_map.cpp */; };
+		852A379416F1C03400455E63 /* walk_loader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A374816F1C03400455E63 /* walk_loader.cpp */; };
+		852A379516F1C03400455E63 /* zone_manager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 852A374A16F1C03400455E63 /* zone_manager.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		852A36A016F1C01200455E63 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		850EB2A81885C46D00D29088 /* dynamic_walk_flag_compress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dynamic_walk_flag_compress.cpp; path = ../../../fm_terrain/dynamic_walk_flag_compress.cpp; sourceTree = "<group>"; };
+		850EB2A91885C46D00D29088 /* dynamic_walk_flag_compress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dynamic_walk_flag_compress.h; path = ../../../fm_terrain/dynamic_walk_flag_compress.h; sourceTree = "<group>"; };
+		850EB2AA1885C46D00D29088 /* dynamic_walk_generator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dynamic_walk_generator.cpp; path = ../../../fm_terrain/dynamic_walk_generator.cpp; sourceTree = "<group>"; };
+		850EB2AB1885C46D00D29088 /* dynamic_walk_generator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dynamic_walk_generator.h; path = ../../../fm_terrain/dynamic_walk_generator.h; sourceTree = "<group>"; };
+		850EB2AC1885C46D00D29088 /* dynamic_walk_loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dynamic_walk_loader.cpp; path = ../../../fm_terrain/dynamic_walk_loader.cpp; sourceTree = "<group>"; };
+		850EB2AD1885C46E00D29088 /* dynamic_walk_loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dynamic_walk_loader.h; path = ../../../fm_terrain/dynamic_walk_loader.h; sourceTree = "<group>"; };
+		850EB2AE1885C46E00D29088 /* dynamic_walkable_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dynamic_walkable_manager.cpp; path = ../../../fm_terrain/dynamic_walkable_manager.cpp; sourceTree = "<group>"; };
+		850EB2AF1885C46E00D29088 /* dynamic_walkable_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dynamic_walkable_manager.h; path = ../../../fm_terrain/dynamic_walkable_manager.h; sourceTree = "<group>"; };
+		850EB2B01885C46E00D29088 /* dynamic_walkable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = dynamic_walkable.cpp; path = ../../../fm_terrain/dynamic_walkable.cpp; sourceTree = "<group>"; };
+		850EB2B11885C46E00D29088 /* dynamic_walkable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = dynamic_walkable.h; path = ../../../fm_terrain/dynamic_walkable.h; sourceTree = "<group>"; };
+		850EB2B21885C46E00D29088 /* walk_i_d_map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = walk_i_d_map.cpp; path = ../../../fm_terrain/walk_i_d_map.cpp; sourceTree = "<group>"; };
+		850EB2B31885C46E00D29088 /* walk_i_d_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = walk_i_d_map.h; path = ../../../fm_terrain/walk_i_d_map.h; sourceTree = "<group>"; };
+		850EB2BB1885C4F100D29088 /* light_map_config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = light_map_config.cpp; path = ../../../fm_terrain/light_map_config.cpp; sourceTree = "<group>"; };
+		850EB2BC1885C4F100D29088 /* light_map_config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = light_map_config.h; path = ../../../fm_terrain/light_map_config.h; sourceTree = "<group>"; };
+		850EB2BE1885C52200D29088 /* block_dynamic_walk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = block_dynamic_walk.cpp; path = ../../../fm_terrain/block_dynamic_walk.cpp; sourceTree = "<group>"; };
+		850EB2BF1885C52200D29088 /* block_dynamic_walk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = block_dynamic_walk.h; path = ../../../fm_terrain/block_dynamic_walk.h; sourceTree = "<group>"; };
+		852A36A216F1C01200455E63 /* libfm_terrain.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfm_terrain.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		852A36A516F1C01200455E63 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		852A36A916F1C01200455E63 /* fm_terrain-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fm_terrain-Prefix.pch"; sourceTree = "<group>"; };
+		852A36AA16F1C01200455E63 /* fm_terrain.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fm_terrain.h; sourceTree = "<group>"; };
+		852A36AC16F1C01200455E63 /* fm_terrain.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fm_terrain.m; sourceTree = "<group>"; };
+		852A36B416F1C03400455E63 /* alpha_loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = alpha_loader.cpp; path = ../../../fm_terrain/alpha_loader.cpp; sourceTree = "<group>"; };
+		852A36B516F1C03400455E63 /* alpha_loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = alpha_loader.h; path = ../../../fm_terrain/alpha_loader.h; sourceTree = "<group>"; };
+		852A36B616F1C03400455E63 /* alpha_map_compress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = alpha_map_compress.cpp; path = ../../../fm_terrain/alpha_map_compress.cpp; sourceTree = "<group>"; };
+		852A36B716F1C03400455E63 /* alpha_map_compress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = alpha_map_compress.h; path = ../../../fm_terrain/alpha_map_compress.h; sourceTree = "<group>"; };
+		852A36B816F1C03400455E63 /* blend_tex_set.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = blend_tex_set.cpp; path = ../../../fm_terrain/blend_tex_set.cpp; sourceTree = "<group>"; };
+		852A36B916F1C03400455E63 /* blend_tex_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blend_tex_set.h; path = ../../../fm_terrain/blend_tex_set.h; sourceTree = "<group>"; };
+		852A36BA16F1C03400455E63 /* blend_tex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = blend_tex.cpp; path = ../../../fm_terrain/blend_tex.cpp; sourceTree = "<group>"; };
+		852A36BB16F1C03400455E63 /* blend_tex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = blend_tex.h; path = ../../../fm_terrain/blend_tex.h; sourceTree = "<group>"; };
+		852A36BC16F1C03400455E63 /* block_alpha_map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = block_alpha_map.cpp; path = ../../../fm_terrain/block_alpha_map.cpp; sourceTree = "<group>"; };
+		852A36BD16F1C03400455E63 /* block_alpha_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = block_alpha_map.h; path = ../../../fm_terrain/block_alpha_map.h; sourceTree = "<group>"; };
+		852A36BE16F1C03400455E63 /* block_area.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = block_area.cpp; path = ../../../fm_terrain/block_area.cpp; sourceTree = "<group>"; };
+		852A36BF16F1C03400455E63 /* block_area.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = block_area.h; path = ../../../fm_terrain/block_area.h; sourceTree = "<group>"; };
+		852A36C016F1C03400455E63 /* block_base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = block_base.cpp; path = ../../../fm_terrain/block_base.cpp; sourceTree = "<group>"; };
+		852A36C116F1C03400455E63 /* block_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = block_base.h; path = ../../../fm_terrain/block_base.h; sourceTree = "<group>"; };
+		852A36C216F1C03400455E63 /* block_chunk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = block_chunk.cpp; path = ../../../fm_terrain/block_chunk.cpp; sourceTree = "<group>"; };
+		852A36C316F1C03400455E63 /* block_chunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = block_chunk.h; path = ../../../fm_terrain/block_chunk.h; sourceTree = "<group>"; };
+		852A36C416F1C03400455E63 /* block_file.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = block_file.cpp; path = ../../../fm_terrain/block_file.cpp; sourceTree = "<group>"; };
+		852A36C516F1C03400455E63 /* block_file.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = block_file.h; path = ../../../fm_terrain/block_file.h; sourceTree = "<group>"; };
+		852A36C616F1C03400455E63 /* block_grass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = block_grass.cpp; path = ../../../fm_terrain/block_grass.cpp; sourceTree = "<group>"; };
+		852A36C716F1C03400455E63 /* block_grass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = block_grass.h; path = ../../../fm_terrain/block_grass.h; sourceTree = "<group>"; };
+		852A36C816F1C03400455E63 /* block_height.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = block_height.cpp; path = ../../../fm_terrain/block_height.cpp; sourceTree = "<group>"; };
+		852A36C916F1C03400455E63 /* block_height.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = block_height.h; path = ../../../fm_terrain/block_height.h; sourceTree = "<group>"; };
+		852A36CA16F1C03400455E63 /* block_height2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = block_height2.cpp; path = ../../../fm_terrain/block_height2.cpp; sourceTree = "<group>"; };
+		852A36CB16F1C03400455E63 /* block_height2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = block_height2.h; path = ../../../fm_terrain/block_height2.h; sourceTree = "<group>"; };
+		852A36CC16F1C03400455E63 /* block_region.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = block_region.cpp; path = ../../../fm_terrain/block_region.cpp; sourceTree = "<group>"; };
+		852A36CD16F1C03400455E63 /* block_region.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = block_region.h; path = ../../../fm_terrain/block_region.h; sourceTree = "<group>"; };
+		852A36CE16F1C03400455E63 /* block_walk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = block_walk.cpp; path = ../../../fm_terrain/block_walk.cpp; sourceTree = "<group>"; };
+		852A36CF16F1C03400455E63 /* block_walk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = block_walk.h; path = ../../../fm_terrain/block_walk.h; sourceTree = "<group>"; };
+		852A36D016F1C03400455E63 /* block_water.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = block_water.cpp; path = ../../../fm_terrain/block_water.cpp; sourceTree = "<group>"; };
+		852A36D116F1C03400455E63 /* block_water.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = block_water.h; path = ../../../fm_terrain/block_water.h; sourceTree = "<group>"; };
+		852A36D216F1C03400455E63 /* chunk_style.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = chunk_style.cpp; path = ../../../fm_terrain/chunk_style.cpp; sourceTree = "<group>"; };
+		852A36D316F1C03400455E63 /* chunk_style.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = chunk_style.h; path = ../../../fm_terrain/chunk_style.h; sourceTree = "<group>"; };
+		852A36D416F1C03400455E63 /* chunk_vb.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = chunk_vb.cpp; path = ../../../fm_terrain/chunk_vb.cpp; sourceTree = "<group>"; };
+		852A36D516F1C03400455E63 /* chunk_vb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = chunk_vb.h; path = ../../../fm_terrain/chunk_vb.h; sourceTree = "<group>"; };
+		852A36D616F1C03400455E63 /* fm_terrain.vcproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = fm_terrain.vcproj; path = ../../../fm_terrain/fm_terrain.vcproj; sourceTree = "<group>"; };
+		852A36D716F1C03400455E63 /* grass_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = grass_data.h; path = ../../../fm_terrain/grass_data.h; sourceTree = "<group>"; };
+		852A36D816F1C03400455E63 /* grass_type.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = grass_type.cpp; path = ../../../fm_terrain/grass_type.cpp; sourceTree = "<group>"; };
+		852A36D916F1C03400455E63 /* grass_type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = grass_type.h; path = ../../../fm_terrain/grass_type.h; sourceTree = "<group>"; };
+		852A36DA16F1C03400455E63 /* height_compress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = height_compress.cpp; path = ../../../fm_terrain/height_compress.cpp; sourceTree = "<group>"; };
+		852A36DB16F1C03400455E63 /* height_compress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = height_compress.h; path = ../../../fm_terrain/height_compress.h; sourceTree = "<group>"; };
+		852A36DC16F1C03400455E63 /* height_loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = height_loader.cpp; path = ../../../fm_terrain/height_loader.cpp; sourceTree = "<group>"; };
+		852A36DD16F1C03400455E63 /* height_loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = height_loader.h; path = ../../../fm_terrain/height_loader.h; sourceTree = "<group>"; };
+		852A36DE16F1C03400455E63 /* i_block_reader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = i_block_reader.h; path = ../../../fm_terrain/i_block_reader.h; sourceTree = "<group>"; };
+		852A36DF16F1C03400455E63 /* i_block_writer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = i_block_writer.h; path = ../../../fm_terrain/i_block_writer.h; sourceTree = "<group>"; };
+		852A36E016F1C03400455E63 /* lib_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lib_main.cpp; path = ../../../fm_terrain/lib_main.cpp; sourceTree = "<group>"; };
+		852A36E116F1C03400455E63 /* light_geometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = light_geometry.cpp; path = ../../../fm_terrain/light_geometry.cpp; sourceTree = "<group>"; };
+		852A36E216F1C03400455E63 /* light_geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = light_geometry.h; path = ../../../fm_terrain/light_geometry.h; sourceTree = "<group>"; };
+		852A36E316F1C03400455E63 /* light_info.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = light_info.cpp; path = ../../../fm_terrain/light_info.cpp; sourceTree = "<group>"; };
+		852A36E416F1C03400455E63 /* light_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = light_info.h; path = ../../../fm_terrain/light_info.h; sourceTree = "<group>"; };
+		852A36E516F1C03400455E63 /* light_loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = light_loader.cpp; path = ../../../fm_terrain/light_loader.cpp; sourceTree = "<group>"; };
+		852A36E616F1C03400455E63 /* light_loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = light_loader.h; path = ../../../fm_terrain/light_loader.h; sourceTree = "<group>"; };
+		852A36E716F1C03400455E63 /* light_oct_tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = light_oct_tree.cpp; path = ../../../fm_terrain/light_oct_tree.cpp; sourceTree = "<group>"; };
+		852A36E816F1C03400455E63 /* light_oct_tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = light_oct_tree.h; path = ../../../fm_terrain/light_oct_tree.h; sourceTree = "<group>"; };
+		852A36E916F1C03400455E63 /* light_processor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = light_processor.cpp; path = ../../../fm_terrain/light_processor.cpp; sourceTree = "<group>"; };
+		852A36EA16F1C03400455E63 /* light_processor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = light_processor.h; path = ../../../fm_terrain/light_processor.h; sourceTree = "<group>"; };
+		852A36EB16F1C03400455E63 /* light_set.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = light_set.cpp; path = ../../../fm_terrain/light_set.cpp; sourceTree = "<group>"; };
+		852A36EC16F1C03400455E63 /* light_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = light_set.h; path = ../../../fm_terrain/light_set.h; sourceTree = "<group>"; };
+		852A36ED16F1C03400455E63 /* light_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = light_types.h; path = ../../../fm_terrain/light_types.h; sourceTree = "<group>"; };
+		852A36EE16F1C03400455E63 /* lighter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lighter.cpp; path = ../../../fm_terrain/lighter.cpp; sourceTree = "<group>"; };
+		852A36EF16F1C03400455E63 /* lighter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lighter.h; path = ../../../fm_terrain/lighter.h; sourceTree = "<group>"; };
+		852A36F016F1C03400455E63 /* math_3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = math_3d.cpp; path = ../../../fm_terrain/math_3d.cpp; sourceTree = "<group>"; };
+		852A36F116F1C03400455E63 /* math_3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = math_3d.h; path = ../../../fm_terrain/math_3d.h; sourceTree = "<group>"; };
+		852A36F216F1C03400455E63 /* name_list.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = name_list.h; path = ../../../fm_terrain/name_list.h; sourceTree = "<group>"; };
+		852A36F316F1C03400455E63 /* quad_collide.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = quad_collide.cpp; path = ../../../fm_terrain/quad_collide.cpp; sourceTree = "<group>"; };
+		852A36F416F1C03400455E63 /* quad_collide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = quad_collide.h; path = ../../../fm_terrain/quad_collide.h; sourceTree = "<group>"; };
+		852A36F516F1C03400455E63 /* quad_ground.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = quad_ground.cpp; path = ../../../fm_terrain/quad_ground.cpp; sourceTree = "<group>"; };
+		852A36F616F1C03400455E63 /* quad_ground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = quad_ground.h; path = ../../../fm_terrain/quad_ground.h; sourceTree = "<group>"; };
+		852A36F716F1C03400455E63 /* quad_node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = quad_node.cpp; path = ../../../fm_terrain/quad_node.cpp; sourceTree = "<group>"; };
+		852A36F816F1C03400455E63 /* quad_node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = quad_node.h; path = ../../../fm_terrain/quad_node.h; sourceTree = "<group>"; };
+		852A36F916F1C03400455E63 /* quad_tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = quad_tree.cpp; path = ../../../fm_terrain/quad_tree.cpp; sourceTree = "<group>"; };
+		852A36FA16F1C03400455E63 /* quad_tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = quad_tree.h; path = ../../../fm_terrain/quad_tree.h; sourceTree = "<group>"; };
+		852A36FB16F1C03400455E63 /* quad_visual.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = quad_visual.cpp; path = ../../../fm_terrain/quad_visual.cpp; sourceTree = "<group>"; };
+		852A36FC16F1C03400455E63 /* quad_visual.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = quad_visual.h; path = ../../../fm_terrain/quad_visual.h; sourceTree = "<group>"; };
+		852A36FD16F1C03400455E63 /* region_loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = region_loader.cpp; path = ../../../fm_terrain/region_loader.cpp; sourceTree = "<group>"; };
+		852A36FE16F1C03400455E63 /* region_loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = region_loader.h; path = ../../../fm_terrain/region_loader.h; sourceTree = "<group>"; };
+		852A36FF16F1C03400455E63 /* rigid_loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = rigid_loader.cpp; path = ../../../fm_terrain/rigid_loader.cpp; sourceTree = "<group>"; };
+		852A370016F1C03400455E63 /* rigid_loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rigid_loader.h; path = ../../../fm_terrain/rigid_loader.h; sourceTree = "<group>"; };
+		852A370116F1C03400455E63 /* sea_base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sea_base.cpp; path = ../../../fm_terrain/sea_base.cpp; sourceTree = "<group>"; };
+		852A370216F1C03400455E63 /* sea_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sea_base.h; path = ../../../fm_terrain/sea_base.h; sourceTree = "<group>"; };
+		852A370316F1C03400455E63 /* sea_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sea_data.h; path = ../../../fm_terrain/sea_data.h; sourceTree = "<group>"; };
+		852A370416F1C03400455E63 /* sea_water.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sea_water.cpp; path = ../../../fm_terrain/sea_water.cpp; sourceTree = "<group>"; };
+		852A370516F1C03400455E63 /* sea_water.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sea_water.h; path = ../../../fm_terrain/sea_water.h; sourceTree = "<group>"; };
+		852A370616F1C03400455E63 /* terrain_attr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = terrain_attr.cpp; path = ../../../fm_terrain/terrain_attr.cpp; sourceTree = "<group>"; };
+		852A370716F1C03400455E63 /* terrain_base.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = terrain_base.cpp; path = ../../../fm_terrain/terrain_base.cpp; sourceTree = "<group>"; };
+		852A370816F1C03400455E63 /* terrain_brush.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = terrain_brush.cpp; path = ../../../fm_terrain/terrain_brush.cpp; sourceTree = "<group>"; };
+		852A370916F1C03400455E63 /* terrain_brush.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = terrain_brush.h; path = ../../../fm_terrain/terrain_brush.h; sourceTree = "<group>"; };
+		852A370A16F1C03400455E63 /* terrain_chunk.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = terrain_chunk.cpp; path = ../../../fm_terrain/terrain_chunk.cpp; sourceTree = "<group>"; };
+		852A370B16F1C03400455E63 /* terrain_chunk.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = terrain_chunk.h; path = ../../../fm_terrain/terrain_chunk.h; sourceTree = "<group>"; };
+		852A370C16F1C03400455E63 /* terrain_copy.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = terrain_copy.cpp; path = ../../../fm_terrain/terrain_copy.cpp; sourceTree = "<group>"; };
+		852A370D16F1C03400455E63 /* terrain_copy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = terrain_copy.h; path = ../../../fm_terrain/terrain_copy.h; sourceTree = "<group>"; };
+		852A370E16F1C03400455E63 /* terrain_cull_sort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = terrain_cull_sort.h; path = ../../../fm_terrain/terrain_cull_sort.h; sourceTree = "<group>"; };
+		852A370F16F1C03400455E63 /* terrain_culling.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = terrain_culling.cpp; path = ../../../fm_terrain/terrain_culling.cpp; sourceTree = "<group>"; };
+		852A371016F1C03400455E63 /* terrain_culling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = terrain_culling.h; path = ../../../fm_terrain/terrain_culling.h; sourceTree = "<group>"; };
+		852A371116F1C03400455E63 /* terrain_dump.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = terrain_dump.cpp; path = ../../../fm_terrain/terrain_dump.cpp; sourceTree = "<group>"; };
+		852A371216F1C03400455E63 /* terrain_editor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = terrain_editor.cpp; path = ../../../fm_terrain/terrain_editor.cpp; sourceTree = "<group>"; };
+		852A371316F1C03400455E63 /* terrain_editor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = terrain_editor.h; path = ../../../fm_terrain/terrain_editor.h; sourceTree = "<group>"; };
+		852A371416F1C03400455E63 /* terrain_factory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = terrain_factory.cpp; path = ../../../fm_terrain/terrain_factory.cpp; sourceTree = "<group>"; };
+		852A371516F1C03400455E63 /* terrain_factory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = terrain_factory.h; path = ../../../fm_terrain/terrain_factory.h; sourceTree = "<group>"; };
+		852A371616F1C03400455E63 /* terrain_grass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = terrain_grass.cpp; path = ../../../fm_terrain/terrain_grass.cpp; sourceTree = "<group>"; };
+		852A371716F1C03400455E63 /* terrain_grass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = terrain_grass.h; path = ../../../fm_terrain/terrain_grass.h; sourceTree = "<group>"; };
+		852A371816F1C03400455E63 /* terrain_height.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = terrain_height.cpp; path = ../../../fm_terrain/terrain_height.cpp; sourceTree = "<group>"; };
+		852A371916F1C03400455E63 /* terrain_height.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = terrain_height.h; path = ../../../fm_terrain/terrain_height.h; sourceTree = "<group>"; };
+		852A371A16F1C03400455E63 /* terrain_light.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = terrain_light.cpp; path = ../../../fm_terrain/terrain_light.cpp; sourceTree = "<group>"; };
+		852A371B16F1C03400455E63 /* terrain_light.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = terrain_light.h; path = ../../../fm_terrain/terrain_light.h; sourceTree = "<group>"; };
+		852A371C16F1C03400455E63 /* terrain_material.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = terrain_material.cpp; path = ../../../fm_terrain/terrain_material.cpp; sourceTree = "<group>"; };
+		852A371D16F1C03400455E63 /* terrain_material.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = terrain_material.h; path = ../../../fm_terrain/terrain_material.h; sourceTree = "<group>"; };
+		852A371E16F1C03400455E63 /* terrain_painter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = terrain_painter.cpp; path = ../../../fm_terrain/terrain_painter.cpp; sourceTree = "<group>"; };
+		852A371F16F1C03400455E63 /* terrain_painter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = terrain_painter.h; path = ../../../fm_terrain/terrain_painter.h; sourceTree = "<group>"; };
+		852A372016F1C03400455E63 /* terrain_region.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = terrain_region.cpp; path = ../../../fm_terrain/terrain_region.cpp; sourceTree = "<group>"; };
+		852A372116F1C03400455E63 /* terrain_region.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = terrain_region.h; path = ../../../fm_terrain/terrain_region.h; sourceTree = "<group>"; };
+		852A372216F1C03400455E63 /* terrain_rigid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = terrain_rigid.cpp; path = ../../../fm_terrain/terrain_rigid.cpp; sourceTree = "<group>"; };
+		852A372316F1C03400455E63 /* terrain_rigid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = terrain_rigid.h; path = ../../../fm_terrain/terrain_rigid.h; sourceTree = "<group>"; };
+		852A372416F1C03400455E63 /* terrain_visuals.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = terrain_visuals.cpp; path = ../../../fm_terrain/terrain_visuals.cpp; sourceTree = "<group>"; };
+		852A372516F1C03400455E63 /* terrain_visuals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = terrain_visuals.h; path = ../../../fm_terrain/terrain_visuals.h; sourceTree = "<group>"; };
+		852A372616F1C03400455E63 /* terrain_walkable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = terrain_walkable.cpp; path = ../../../fm_terrain/terrain_walkable.cpp; sourceTree = "<group>"; };
+		852A372716F1C03400455E63 /* terrain_walkable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = terrain_walkable.h; path = ../../../fm_terrain/terrain_walkable.h; sourceTree = "<group>"; };
+		852A372816F1C03400455E63 /* terrain_water.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = terrain_water.cpp; path = ../../../fm_terrain/terrain_water.cpp; sourceTree = "<group>"; };
+		852A372916F1C03400455E63 /* terrain_water.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = terrain_water.h; path = ../../../fm_terrain/terrain_water.h; sourceTree = "<group>"; };
+		852A372A16F1C03400455E63 /* terrain_zone.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = terrain_zone.cpp; path = ../../../fm_terrain/terrain_zone.cpp; sourceTree = "<group>"; };
+		852A372B16F1C03400455E63 /* terrain_zone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = terrain_zone.h; path = ../../../fm_terrain/terrain_zone.h; sourceTree = "<group>"; };
+		852A372C16F1C03400455E63 /* terrain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = terrain.cpp; path = ../../../fm_terrain/terrain.cpp; sourceTree = "<group>"; };
+		852A372D16F1C03400455E63 /* terrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = terrain.h; path = ../../../fm_terrain/terrain.h; sourceTree = "<group>"; };
+		852A372E16F1C03400455E63 /* tex_alpha_map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tex_alpha_map.cpp; path = ../../../fm_terrain/tex_alpha_map.cpp; sourceTree = "<group>"; };
+		852A372F16F1C03400455E63 /* tex_alpha_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tex_alpha_map.h; path = ../../../fm_terrain/tex_alpha_map.h; sourceTree = "<group>"; };
+		852A373016F1C03400455E63 /* tex_light_map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tex_light_map.cpp; path = ../../../fm_terrain/tex_light_map.cpp; sourceTree = "<group>"; };
+		852A373116F1C03400455E63 /* tex_light_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tex_light_map.h; path = ../../../fm_terrain/tex_light_map.h; sourceTree = "<group>"; };
+		852A373216F1C03400455E63 /* trigger.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = trigger.cpp; path = ../../../fm_terrain/trigger.cpp; sourceTree = "<group>"; };
+		852A373316F1C03400455E63 /* trigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = trigger.h; path = ../../../fm_terrain/trigger.h; sourceTree = "<group>"; };
+		852A373416F1C03400455E63 /* visual_info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = visual_info.h; path = ../../../fm_terrain/visual_info.h; sourceTree = "<group>"; };
+		852A373516F1C03400455E63 /* visual_loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = visual_loader.cpp; path = ../../../fm_terrain/visual_loader.cpp; sourceTree = "<group>"; };
+		852A373616F1C03400455E63 /* visual_loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = visual_loader.h; path = ../../../fm_terrain/visual_loader.h; sourceTree = "<group>"; };
+		852A373716F1C03400455E63 /* visual_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = visual_manager.cpp; path = ../../../fm_terrain/visual_manager.cpp; sourceTree = "<group>"; };
+		852A373816F1C03400455E63 /* visual_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = visual_manager.h; path = ../../../fm_terrain/visual_manager.h; sourceTree = "<group>"; };
+		852A373916F1C03400455E63 /* walk_bit_compress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = walk_bit_compress.cpp; path = ../../../fm_terrain/walk_bit_compress.cpp; sourceTree = "<group>"; };
+		852A373A16F1C03400455E63 /* walk_bit_compress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = walk_bit_compress.h; path = ../../../fm_terrain/walk_bit_compress.h; sourceTree = "<group>"; };
+		852A373B16F1C03400455E63 /* walk_bit_map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = walk_bit_map.cpp; path = ../../../fm_terrain/walk_bit_map.cpp; sourceTree = "<group>"; };
+		852A373C16F1C03400455E63 /* walk_bit_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = walk_bit_map.h; path = ../../../fm_terrain/walk_bit_map.h; sourceTree = "<group>"; };
+		852A373D16F1C03400455E63 /* walk_flag_compress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = walk_flag_compress.cpp; path = ../../../fm_terrain/walk_flag_compress.cpp; sourceTree = "<group>"; };
+		852A373E16F1C03400455E63 /* walk_flag_compress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = walk_flag_compress.h; path = ../../../fm_terrain/walk_flag_compress.h; sourceTree = "<group>"; };
+		852A373F16F1C03400455E63 /* walk_flag_map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = walk_flag_map.cpp; path = ../../../fm_terrain/walk_flag_map.cpp; sourceTree = "<group>"; };
+		852A374016F1C03400455E63 /* walk_flag_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = walk_flag_map.h; path = ../../../fm_terrain/walk_flag_map.h; sourceTree = "<group>"; };
+		852A374116F1C03400455E63 /* walk_generator_trace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = walk_generator_trace.cpp; path = ../../../fm_terrain/walk_generator_trace.cpp; sourceTree = "<group>"; };
+		852A374216F1C03400455E63 /* walk_generator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = walk_generator.cpp; path = ../../../fm_terrain/walk_generator.cpp; sourceTree = "<group>"; };
+		852A374316F1C03400455E63 /* walk_generator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = walk_generator.h; path = ../../../fm_terrain/walk_generator.h; sourceTree = "<group>"; };
+		852A374416F1C03400455E63 /* walk_height_compress.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = walk_height_compress.cpp; path = ../../../fm_terrain/walk_height_compress.cpp; sourceTree = "<group>"; };
+		852A374516F1C03400455E63 /* walk_height_compress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = walk_height_compress.h; path = ../../../fm_terrain/walk_height_compress.h; sourceTree = "<group>"; };
+		852A374616F1C03400455E63 /* walk_height_map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = walk_height_map.cpp; path = ../../../fm_terrain/walk_height_map.cpp; sourceTree = "<group>"; };
+		852A374716F1C03400455E63 /* walk_height_map.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = walk_height_map.h; path = ../../../fm_terrain/walk_height_map.h; sourceTree = "<group>"; };
+		852A374816F1C03400455E63 /* walk_loader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = walk_loader.cpp; path = ../../../fm_terrain/walk_loader.cpp; sourceTree = "<group>"; };
+		852A374916F1C03400455E63 /* walk_loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = walk_loader.h; path = ../../../fm_terrain/walk_loader.h; sourceTree = "<group>"; };
+		852A374A16F1C03400455E63 /* zone_manager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = zone_manager.cpp; path = ../../../fm_terrain/zone_manager.cpp; sourceTree = "<group>"; };
+		852A374B16F1C03400455E63 /* zone_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zone_manager.h; path = ../../../fm_terrain/zone_manager.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		852A369F16F1C01200455E63 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852A36A616F1C01200455E63 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		852A369716F1C01200455E63 = {
+			isa = PBXGroup;
+			children = (
+				852A36B316F1C01A00455E63 /* src */,
+				852A36A716F1C01200455E63 /* fm_terrain */,
+				852A36A416F1C01200455E63 /* Frameworks */,
+				852A36A316F1C01200455E63 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		852A36A316F1C01200455E63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				852A36A216F1C01200455E63 /* libfm_terrain.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		852A36A416F1C01200455E63 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				852A36A516F1C01200455E63 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		852A36A716F1C01200455E63 /* fm_terrain */ = {
+			isa = PBXGroup;
+			children = (
+				852A36AA16F1C01200455E63 /* fm_terrain.h */,
+				852A36AC16F1C01200455E63 /* fm_terrain.m */,
+				852A36A816F1C01200455E63 /* Supporting Files */,
+			);
+			path = fm_terrain;
+			sourceTree = "<group>";
+		};
+		852A36A816F1C01200455E63 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				852A36A916F1C01200455E63 /* fm_terrain-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		852A36B316F1C01A00455E63 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				850EB2BE1885C52200D29088 /* block_dynamic_walk.cpp */,
+				850EB2BF1885C52200D29088 /* block_dynamic_walk.h */,
+				850EB2BB1885C4F100D29088 /* light_map_config.cpp */,
+				850EB2BC1885C4F100D29088 /* light_map_config.h */,
+				850EB2A81885C46D00D29088 /* dynamic_walk_flag_compress.cpp */,
+				850EB2A91885C46D00D29088 /* dynamic_walk_flag_compress.h */,
+				850EB2AA1885C46D00D29088 /* dynamic_walk_generator.cpp */,
+				850EB2AB1885C46D00D29088 /* dynamic_walk_generator.h */,
+				850EB2AC1885C46D00D29088 /* dynamic_walk_loader.cpp */,
+				850EB2AD1885C46E00D29088 /* dynamic_walk_loader.h */,
+				850EB2AE1885C46E00D29088 /* dynamic_walkable_manager.cpp */,
+				850EB2AF1885C46E00D29088 /* dynamic_walkable_manager.h */,
+				850EB2B01885C46E00D29088 /* dynamic_walkable.cpp */,
+				850EB2B11885C46E00D29088 /* dynamic_walkable.h */,
+				850EB2B21885C46E00D29088 /* walk_i_d_map.cpp */,
+				850EB2B31885C46E00D29088 /* walk_i_d_map.h */,
+				852A36B416F1C03400455E63 /* alpha_loader.cpp */,
+				852A36B516F1C03400455E63 /* alpha_loader.h */,
+				852A36B616F1C03400455E63 /* alpha_map_compress.cpp */,
+				852A36B716F1C03400455E63 /* alpha_map_compress.h */,
+				852A36B816F1C03400455E63 /* blend_tex_set.cpp */,
+				852A36B916F1C03400455E63 /* blend_tex_set.h */,
+				852A36BA16F1C03400455E63 /* blend_tex.cpp */,
+				852A36BB16F1C03400455E63 /* blend_tex.h */,
+				852A36BC16F1C03400455E63 /* block_alpha_map.cpp */,
+				852A36BD16F1C03400455E63 /* block_alpha_map.h */,
+				852A36BE16F1C03400455E63 /* block_area.cpp */,
+				852A36BF16F1C03400455E63 /* block_area.h */,
+				852A36C016F1C03400455E63 /* block_base.cpp */,
+				852A36C116F1C03400455E63 /* block_base.h */,
+				852A36C216F1C03400455E63 /* block_chunk.cpp */,
+				852A36C316F1C03400455E63 /* block_chunk.h */,
+				852A36C416F1C03400455E63 /* block_file.cpp */,
+				852A36C516F1C03400455E63 /* block_file.h */,
+				852A36C616F1C03400455E63 /* block_grass.cpp */,
+				852A36C716F1C03400455E63 /* block_grass.h */,
+				852A36C816F1C03400455E63 /* block_height.cpp */,
+				852A36C916F1C03400455E63 /* block_height.h */,
+				852A36CA16F1C03400455E63 /* block_height2.cpp */,
+				852A36CB16F1C03400455E63 /* block_height2.h */,
+				852A36CC16F1C03400455E63 /* block_region.cpp */,
+				852A36CD16F1C03400455E63 /* block_region.h */,
+				852A36CE16F1C03400455E63 /* block_walk.cpp */,
+				852A36CF16F1C03400455E63 /* block_walk.h */,
+				852A36D016F1C03400455E63 /* block_water.cpp */,
+				852A36D116F1C03400455E63 /* block_water.h */,
+				852A36D216F1C03400455E63 /* chunk_style.cpp */,
+				852A36D316F1C03400455E63 /* chunk_style.h */,
+				852A36D416F1C03400455E63 /* chunk_vb.cpp */,
+				852A36D516F1C03400455E63 /* chunk_vb.h */,
+				852A36D616F1C03400455E63 /* fm_terrain.vcproj */,
+				852A36D716F1C03400455E63 /* grass_data.h */,
+				852A36D816F1C03400455E63 /* grass_type.cpp */,
+				852A36D916F1C03400455E63 /* grass_type.h */,
+				852A36DA16F1C03400455E63 /* height_compress.cpp */,
+				852A36DB16F1C03400455E63 /* height_compress.h */,
+				852A36DC16F1C03400455E63 /* height_loader.cpp */,
+				852A36DD16F1C03400455E63 /* height_loader.h */,
+				852A36DE16F1C03400455E63 /* i_block_reader.h */,
+				852A36DF16F1C03400455E63 /* i_block_writer.h */,
+				852A36E016F1C03400455E63 /* lib_main.cpp */,
+				852A36E116F1C03400455E63 /* light_geometry.cpp */,
+				852A36E216F1C03400455E63 /* light_geometry.h */,
+				852A36E316F1C03400455E63 /* light_info.cpp */,
+				852A36E416F1C03400455E63 /* light_info.h */,
+				852A36E516F1C03400455E63 /* light_loader.cpp */,
+				852A36E616F1C03400455E63 /* light_loader.h */,
+				852A36E716F1C03400455E63 /* light_oct_tree.cpp */,
+				852A36E816F1C03400455E63 /* light_oct_tree.h */,
+				852A36E916F1C03400455E63 /* light_processor.cpp */,
+				852A36EA16F1C03400455E63 /* light_processor.h */,
+				852A36EB16F1C03400455E63 /* light_set.cpp */,
+				852A36EC16F1C03400455E63 /* light_set.h */,
+				852A36ED16F1C03400455E63 /* light_types.h */,
+				852A36EE16F1C03400455E63 /* lighter.cpp */,
+				852A36EF16F1C03400455E63 /* lighter.h */,
+				852A36F016F1C03400455E63 /* math_3d.cpp */,
+				852A36F116F1C03400455E63 /* math_3d.h */,
+				852A36F216F1C03400455E63 /* name_list.h */,
+				852A36F316F1C03400455E63 /* quad_collide.cpp */,
+				852A36F416F1C03400455E63 /* quad_collide.h */,
+				852A36F516F1C03400455E63 /* quad_ground.cpp */,
+				852A36F616F1C03400455E63 /* quad_ground.h */,
+				852A36F716F1C03400455E63 /* quad_node.cpp */,
+				852A36F816F1C03400455E63 /* quad_node.h */,
+				852A36F916F1C03400455E63 /* quad_tree.cpp */,
+				852A36FA16F1C03400455E63 /* quad_tree.h */,
+				852A36FB16F1C03400455E63 /* quad_visual.cpp */,
+				852A36FC16F1C03400455E63 /* quad_visual.h */,
+				852A36FD16F1C03400455E63 /* region_loader.cpp */,
+				852A36FE16F1C03400455E63 /* region_loader.h */,
+				852A36FF16F1C03400455E63 /* rigid_loader.cpp */,
+				852A370016F1C03400455E63 /* rigid_loader.h */,
+				852A370116F1C03400455E63 /* sea_base.cpp */,
+				852A370216F1C03400455E63 /* sea_base.h */,
+				852A370316F1C03400455E63 /* sea_data.h */,
+				852A370416F1C03400455E63 /* sea_water.cpp */,
+				852A370516F1C03400455E63 /* sea_water.h */,
+				852A370616F1C03400455E63 /* terrain_attr.cpp */,
+				852A370716F1C03400455E63 /* terrain_base.cpp */,
+				852A370816F1C03400455E63 /* terrain_brush.cpp */,
+				852A370916F1C03400455E63 /* terrain_brush.h */,
+				852A370A16F1C03400455E63 /* terrain_chunk.cpp */,
+				852A370B16F1C03400455E63 /* terrain_chunk.h */,
+				852A370C16F1C03400455E63 /* terrain_copy.cpp */,
+				852A370D16F1C03400455E63 /* terrain_copy.h */,
+				852A370E16F1C03400455E63 /* terrain_cull_sort.h */,
+				852A370F16F1C03400455E63 /* terrain_culling.cpp */,
+				852A371016F1C03400455E63 /* terrain_culling.h */,
+				852A371116F1C03400455E63 /* terrain_dump.cpp */,
+				852A371216F1C03400455E63 /* terrain_editor.cpp */,
+				852A371316F1C03400455E63 /* terrain_editor.h */,
+				852A371416F1C03400455E63 /* terrain_factory.cpp */,
+				852A371516F1C03400455E63 /* terrain_factory.h */,
+				852A371616F1C03400455E63 /* terrain_grass.cpp */,
+				852A371716F1C03400455E63 /* terrain_grass.h */,
+				852A371816F1C03400455E63 /* terrain_height.cpp */,
+				852A371916F1C03400455E63 /* terrain_height.h */,
+				852A371A16F1C03400455E63 /* terrain_light.cpp */,
+				852A371B16F1C03400455E63 /* terrain_light.h */,
+				852A371C16F1C03400455E63 /* terrain_material.cpp */,
+				852A371D16F1C03400455E63 /* terrain_material.h */,
+				852A371E16F1C03400455E63 /* terrain_painter.cpp */,
+				852A371F16F1C03400455E63 /* terrain_painter.h */,
+				852A372016F1C03400455E63 /* terrain_region.cpp */,
+				852A372116F1C03400455E63 /* terrain_region.h */,
+				852A372216F1C03400455E63 /* terrain_rigid.cpp */,
+				852A372316F1C03400455E63 /* terrain_rigid.h */,
+				852A372416F1C03400455E63 /* terrain_visuals.cpp */,
+				852A372516F1C03400455E63 /* terrain_visuals.h */,
+				852A372616F1C03400455E63 /* terrain_walkable.cpp */,
+				852A372716F1C03400455E63 /* terrain_walkable.h */,
+				852A372816F1C03400455E63 /* terrain_water.cpp */,
+				852A372916F1C03400455E63 /* terrain_water.h */,
+				852A372A16F1C03400455E63 /* terrain_zone.cpp */,
+				852A372B16F1C03400455E63 /* terrain_zone.h */,
+				852A372C16F1C03400455E63 /* terrain.cpp */,
+				852A372D16F1C03400455E63 /* terrain.h */,
+				852A372E16F1C03400455E63 /* tex_alpha_map.cpp */,
+				852A372F16F1C03400455E63 /* tex_alpha_map.h */,
+				852A373016F1C03400455E63 /* tex_light_map.cpp */,
+				852A373116F1C03400455E63 /* tex_light_map.h */,
+				852A373216F1C03400455E63 /* trigger.cpp */,
+				852A373316F1C03400455E63 /* trigger.h */,
+				852A373416F1C03400455E63 /* visual_info.h */,
+				852A373516F1C03400455E63 /* visual_loader.cpp */,
+				852A373616F1C03400455E63 /* visual_loader.h */,
+				852A373716F1C03400455E63 /* visual_manager.cpp */,
+				852A373816F1C03400455E63 /* visual_manager.h */,
+				852A373916F1C03400455E63 /* walk_bit_compress.cpp */,
+				852A373A16F1C03400455E63 /* walk_bit_compress.h */,
+				852A373B16F1C03400455E63 /* walk_bit_map.cpp */,
+				852A373C16F1C03400455E63 /* walk_bit_map.h */,
+				852A373D16F1C03400455E63 /* walk_flag_compress.cpp */,
+				852A373E16F1C03400455E63 /* walk_flag_compress.h */,
+				852A373F16F1C03400455E63 /* walk_flag_map.cpp */,
+				852A374016F1C03400455E63 /* walk_flag_map.h */,
+				852A374116F1C03400455E63 /* walk_generator_trace.cpp */,
+				852A374216F1C03400455E63 /* walk_generator.cpp */,
+				852A374316F1C03400455E63 /* walk_generator.h */,
+				852A374416F1C03400455E63 /* walk_height_compress.cpp */,
+				852A374516F1C03400455E63 /* walk_height_compress.h */,
+				852A374616F1C03400455E63 /* walk_height_map.cpp */,
+				852A374716F1C03400455E63 /* walk_height_map.h */,
+				852A374816F1C03400455E63 /* walk_loader.cpp */,
+				852A374916F1C03400455E63 /* walk_loader.h */,
+				852A374A16F1C03400455E63 /* zone_manager.cpp */,
+				852A374B16F1C03400455E63 /* zone_manager.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		852A36A116F1C01200455E63 /* fm_terrain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 852A36B016F1C01200455E63 /* Build configuration list for PBXNativeTarget "fm_terrain" */;
+			buildPhases = (
+				852A369E16F1C01200455E63 /* Sources */,
+				852A369F16F1C01200455E63 /* Frameworks */,
+				852A36A016F1C01200455E63 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fm_terrain;
+			productName = fm_terrain;
+			productReference = 852A36A216F1C01200455E63 /* libfm_terrain.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		852A369916F1C01200455E63 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = SnailResearch;
+			};
+			buildConfigurationList = 852A369C16F1C01200455E63 /* Build configuration list for PBXProject "fm_terrain" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 852A369716F1C01200455E63;
+			productRefGroup = 852A36A316F1C01200455E63 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				852A36A116F1C01200455E63 /* fm_terrain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		852A369E16F1C01200455E63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				852A36AD16F1C01200455E63 /* fm_terrain.m in Sources */,
+				852A374C16F1C03400455E63 /* alpha_loader.cpp in Sources */,
+				852A374D16F1C03400455E63 /* alpha_map_compress.cpp in Sources */,
+				852A374E16F1C03400455E63 /* blend_tex_set.cpp in Sources */,
+				852A374F16F1C03400455E63 /* blend_tex.cpp in Sources */,
+				852A375016F1C03400455E63 /* block_alpha_map.cpp in Sources */,
+				852A375116F1C03400455E63 /* block_area.cpp in Sources */,
+				852A375216F1C03400455E63 /* block_base.cpp in Sources */,
+				852A375316F1C03400455E63 /* block_chunk.cpp in Sources */,
+				852A375416F1C03400455E63 /* block_file.cpp in Sources */,
+				852A375516F1C03400455E63 /* block_grass.cpp in Sources */,
+				852A375616F1C03400455E63 /* block_height.cpp in Sources */,
+				852A375716F1C03400455E63 /* block_height2.cpp in Sources */,
+				852A375816F1C03400455E63 /* block_region.cpp in Sources */,
+				852A375916F1C03400455E63 /* block_walk.cpp in Sources */,
+				852A375A16F1C03400455E63 /* block_water.cpp in Sources */,
+				852A375B16F1C03400455E63 /* chunk_style.cpp in Sources */,
+				852A375C16F1C03400455E63 /* chunk_vb.cpp in Sources */,
+				852A375D16F1C03400455E63 /* grass_type.cpp in Sources */,
+				852A375E16F1C03400455E63 /* height_compress.cpp in Sources */,
+				852A375F16F1C03400455E63 /* height_loader.cpp in Sources */,
+				852A376016F1C03400455E63 /* lib_main.cpp in Sources */,
+				852A376116F1C03400455E63 /* light_geometry.cpp in Sources */,
+				852A376216F1C03400455E63 /* light_info.cpp in Sources */,
+				852A376316F1C03400455E63 /* light_loader.cpp in Sources */,
+				852A376416F1C03400455E63 /* light_oct_tree.cpp in Sources */,
+				852A376516F1C03400455E63 /* light_processor.cpp in Sources */,
+				852A376616F1C03400455E63 /* light_set.cpp in Sources */,
+				852A376716F1C03400455E63 /* lighter.cpp in Sources */,
+				852A376816F1C03400455E63 /* math_3d.cpp in Sources */,
+				852A376916F1C03400455E63 /* quad_collide.cpp in Sources */,
+				852A376A16F1C03400455E63 /* quad_ground.cpp in Sources */,
+				852A376B16F1C03400455E63 /* quad_node.cpp in Sources */,
+				852A376C16F1C03400455E63 /* quad_tree.cpp in Sources */,
+				852A376D16F1C03400455E63 /* quad_visual.cpp in Sources */,
+				852A376E16F1C03400455E63 /* region_loader.cpp in Sources */,
+				852A376F16F1C03400455E63 /* rigid_loader.cpp in Sources */,
+				852A377016F1C03400455E63 /* sea_base.cpp in Sources */,
+				852A377116F1C03400455E63 /* sea_water.cpp in Sources */,
+				852A377216F1C03400455E63 /* terrain_attr.cpp in Sources */,
+				852A377316F1C03400455E63 /* terrain_base.cpp in Sources */,
+				852A377416F1C03400455E63 /* terrain_brush.cpp in Sources */,
+				852A377516F1C03400455E63 /* terrain_chunk.cpp in Sources */,
+				852A377616F1C03400455E63 /* terrain_copy.cpp in Sources */,
+				852A377716F1C03400455E63 /* terrain_culling.cpp in Sources */,
+				852A377816F1C03400455E63 /* terrain_dump.cpp in Sources */,
+				852A377916F1C03400455E63 /* terrain_editor.cpp in Sources */,
+				852A377A16F1C03400455E63 /* terrain_factory.cpp in Sources */,
+				852A377B16F1C03400455E63 /* terrain_grass.cpp in Sources */,
+				852A377C16F1C03400455E63 /* terrain_height.cpp in Sources */,
+				852A377D16F1C03400455E63 /* terrain_light.cpp in Sources */,
+				852A377E16F1C03400455E63 /* terrain_material.cpp in Sources */,
+				852A377F16F1C03400455E63 /* terrain_painter.cpp in Sources */,
+				852A378016F1C03400455E63 /* terrain_region.cpp in Sources */,
+				852A378116F1C03400455E63 /* terrain_rigid.cpp in Sources */,
+				852A378216F1C03400455E63 /* terrain_visuals.cpp in Sources */,
+				852A378316F1C03400455E63 /* terrain_walkable.cpp in Sources */,
+				852A378416F1C03400455E63 /* terrain_water.cpp in Sources */,
+				852A378516F1C03400455E63 /* terrain_zone.cpp in Sources */,
+				852A378616F1C03400455E63 /* terrain.cpp in Sources */,
+				852A378716F1C03400455E63 /* tex_alpha_map.cpp in Sources */,
+				852A378816F1C03400455E63 /* tex_light_map.cpp in Sources */,
+				852A378916F1C03400455E63 /* trigger.cpp in Sources */,
+				852A378A16F1C03400455E63 /* visual_loader.cpp in Sources */,
+				852A378B16F1C03400455E63 /* visual_manager.cpp in Sources */,
+				852A378C16F1C03400455E63 /* walk_bit_compress.cpp in Sources */,
+				852A378D16F1C03400455E63 /* walk_bit_map.cpp in Sources */,
+				852A378E16F1C03400455E63 /* walk_flag_compress.cpp in Sources */,
+				852A378F16F1C03400455E63 /* walk_flag_map.cpp in Sources */,
+				852A379016F1C03400455E63 /* walk_generator_trace.cpp in Sources */,
+				852A379116F1C03400455E63 /* walk_generator.cpp in Sources */,
+				852A379216F1C03400455E63 /* walk_height_compress.cpp in Sources */,
+				852A379316F1C03400455E63 /* walk_height_map.cpp in Sources */,
+				852A379416F1C03400455E63 /* walk_loader.cpp in Sources */,
+				852A379516F1C03400455E63 /* zone_manager.cpp in Sources */,
+				850EB2B41885C46E00D29088 /* dynamic_walk_flag_compress.cpp in Sources */,
+				850EB2B51885C46E00D29088 /* dynamic_walk_generator.cpp in Sources */,
+				850EB2B61885C46E00D29088 /* dynamic_walk_loader.cpp in Sources */,
+				850EB2B71885C46E00D29088 /* dynamic_walkable_manager.cpp in Sources */,
+				850EB2B81885C46E00D29088 /* dynamic_walkable.cpp in Sources */,
+				850EB2B91885C46E00D29088 /* walk_i_d_map.cpp in Sources */,
+				850EB2BD1885C4F100D29088 /* light_map_config.cpp in Sources */,
+				850EB2C01885C52200D29088 /* block_dynamic_walk.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		852A36AE16F1C01200455E63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		852A36AF16F1C01200455E63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		852A36B116F1C01200455E63 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DSTROOT = /tmp/fm_terrain.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fm_terrain/fm_terrain-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					PERFORMANCE_DEBUG,
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		852A36B216F1C01200455E63 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DSTROOT = /tmp/fm_terrain.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fm_terrain/fm_terrain-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		852A369C16F1C01200455E63 /* Build configuration list for PBXProject "fm_terrain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				852A36AE16F1C01200455E63 /* Debug */,
+				852A36AF16F1C01200455E63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		852A36B016F1C01200455E63 /* Build configuration list for PBXNativeTarget "fm_terrain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				852A36B116F1C01200455E63 /* Debug */,
+				852A36B216F1C01200455E63 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 852A369916F1C01200455E63 /* Project object */;
+}

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="form_test\form_performance" init="main_form_init">
+        <prop ShowGrid="true" IsGC="true" Left="53" Top="205" Width="710" Height="278" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="skin\png\form_a.png" />
+        <event on_open="main_form_open" on_close="main_form_close" />
+        <control name="close_btn" entity="Button" script="" init="">
+            <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="8" Top="8" Width="22" Height="22" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="X" TabStop="true" />
+            <event on_click="close_btn_click" />
+        </control>
+        <control name="prog_bar_1" entity="ProgressBar" script="" init="">
+            <prop Maximum="100" WidthGap="2" HeightGap="2" ProgressMode="BottomToTop" TextColor="255,0,0,255" Left="48" Top="40" Width="22" Height="200" ForeColor="255,0,0,255" ShadowColor="0,0,0,0" />
+        </control>
+        <control name="refer_value_label_1" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="72" Top="230" Width="35" Height="10" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="skin\png\arrow_h.png" />
+        </control>
+        <control name="prog_bar_2" entity="ProgressBar" script="" init="">
+            <prop Maximum="100" WidthGap="2" HeightGap="2" ProgressMode="BottomToTop" TextColor="255,0,0,255" Left="184" Top="40" Width="22" Height="200" ShadowColor="0,0,0,0" />
+        </control>
+        <control name="refer_value_label_2" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="208" Top="230" Width="35" Height="10" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="skin\png\arrow_h.png" />
+        </control>
+        <control name="desc_label_1" entity="Label" script="" init="">
+            <prop Align="Center" RefCursor="WIN_HELP" Left="8" Top="248" Width="110" Height="16" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="描述1" />
+        </control>
+        <control name="desc_label_2" entity="Label" script="" init="">
+            <prop Align="Center" RefCursor="WIN_HELP" Left="144" Top="248" Width="110" Height="16" ForeColor="255,255,0,0" ShadowColor="0,0,0,0" Text="描述2" />
+        </control>
+        <control name="Label1" entity="Label" script="" init="">
+            <prop Align="Center" RefCursor="WIN_HELP" Left="80" Top="9" Width="110" Height="16" ShadowColor="0,0,0,0" Text="性能监视器" />
+        </control>
+        <control name="ref_label_1" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="72" Top="220" Width="110" Height="20" ShadowColor="0,0,0,0" NoFrame="false" DrawMode="FitWindow" />
+        </control>
+        <control name="ref_label_2" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="208" Top="220" Width="94" Height="20" ShadowColor="0,0,0,0" NoFrame="false" DrawMode="FitWindow" />
+        </control>
+        <control name="visual_list" entity="ListBox" script="" init="">
+            <prop ItemHeight="16" TextOffsetX="2" ScrollSize="17" HasHScroll="true" Left="320" Top="64" Width="382" Height="198" BackColor="128,255,255,255" ShadowColor="0,0,0,0" Text="ListBox1" TabStop="true" />
+            <event on_select_double_click="visual_list_select_double_click" />
+            <subor name="HScrollBar">
+                <prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0" />
+                <subor name="DecButton">
+                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+                </subor>
+                <subor name="IncButton">
+                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+                </subor>
+                <subor name="TrackButton">
+                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="10" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+                </subor>
+            </subor>
+            <subor name="VScrollBar">
+                <prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0" />
+                <subor name="DecButton">
+                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+                </subor>
+                <subor name="IncButton">
+                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+                </subor>
+                <subor name="TrackButton">
+                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+                </subor>
+            </subor>
+            <subor name="CornerLabel">
+                <prop Solid="true" RefCursor="WIN_HELP" ShadowColor="0,0,0,0" NoFrame="false" />
+            </subor>
+        </control>
+        <control name="Label2" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="320" Top="16" Width="198" Height="16" ShadowColor="0,0,0,0" Text="查找超过指定面数的模型：" />
+        </control>
+        <control name="Label3" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="320" Top="40" Width="214" Height="16" ShadowColor="0,0,0,0" Text="查找超过指定顶点数的模型：" />
+        </control>
+        <control name="search_triangle_count_btn" entity="Button" script="" init="">
+            <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="656" Top="16" Width="46" Height="20" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="查找" TabStop="true" />
+            <event on_click="search_triangle_count_btn_click" />
+        </control>
+        <control name="search_vertex_count_btn" entity="Button" script="" init="">
+            <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="656" Top="40" Width="46" Height="20" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="查找" TabStop="true" />
+            <event on_click="search_vertex_count_btn_click" />
+        </control>
+        <control name="pos_label" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="312" Width="6" Height="278" ShadowColor="0,0,0,0" />
+        </control>
+        <control name="query_check" entity="CheckButton" script="" init="">
+            <prop HideBox="true" BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="232" Top="8" Width="78" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="查询&gt;&gt;" TabStop="true" />
+            <event on_checked_changed="query_checked_changed" />
+        </control>
+        <control name="triangle_count_edit" entity="Edit" script="" init="">
+            <prop TextOffsetX="2" Caret="Default" Left="528" Top="16" Width="110" Height="20" ShadowColor="0,0,0,0" Cursor="WIN_IBEAM" TabStop="true" />
+        </control>
+        <control name="vertex_count_edit" entity="Edit" script="" init="">
+            <prop TextOffsetX="2" Caret="Default" Left="528" Top="40" Width="110" Height="20" ShadowColor="0,0,0,0" Cursor="WIN_IBEAM" TabStop="true" />
+        </control>
+    </control>
+</form>

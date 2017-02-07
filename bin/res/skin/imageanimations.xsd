@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- edited with XMLSpy v2009 (http://www.altova.com) by ylp (EMBRACE) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Root">
+		<xs:annotation>
+			<xs:documentation>根</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="Animation" type="Animation"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="Animation">
+		<xs:annotation>
+			<xs:documentation>独立的特效</xs:documentation>
+		</xs:annotation>
+		<xs:choice maxOccurs="unbounded">
+			<xs:element name="ImageFrame" type="ImageFrame">
+				<xs:annotation>
+					<xs:documentation>关键帧动画，这是动画的主时间轴动画！动画的播放开始都以此为准,因此任何动画需要至少有一个关键帧</xs:documentation>
+				</xs:annotation>
+			</xs:element>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="PartMotive" type="PartMotive">
+					<xs:annotation>
+						<xs:documentation>图片显示局部到整体的动画!主要用于界面及控件元素局部到整体的动画效果实现</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="MoveStep" type="MoveStep">
+					<xs:annotation>
+						<xs:documentation>位移动画,可以配置动画的位移路径点</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+				<xs:element name="SubAnimation" type="SubAnimation">
+					<xs:annotation>
+						<xs:documentation>子动画,
+1.子动画也是和当前同画平级的动画，
+2.在此配上动画名，动画名必须保证不能嵌套，不能配上自已的名称
+3.子动画通过一些配置参数控制其受父动画的影响</xs:documentation>
+					</xs:annotation>
+				</xs:element>
+			</xs:choice>
+		</xs:choice>
+		<xs:attribute name="Name" type="xs:string" use="optional" default="test">
+			<xs:annotation>
+				<xs:documentation>特效名</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Info" type="xs:string" use="optional" default="test">
+			<xs:annotation>
+				<xs:documentation>特效说明</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="IsDynamicCreate" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>是否动态创建，动态创建的动画，只有在显示时才会创建，且会动态清理</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="IsPng" type="xs:boolean" use="optional" default="true">
+			<xs:annotation>
+				<xs:documentation>配置的图片是否是PNG型式，如果为TGA则配成false</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="ResourceID" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>资源标识名</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="BlendMode" type="xs:short" use="optional" default="0">
+			<xs:annotation>
+				<xs:documentation>动画和背景的叠加情况0正常叠加，1稍淡，2加深</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="RotateMotive" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>旋转动画参数配置
+例:0,0;2000,360;4000,0
+表示0秒时角度为0,2000毫秒时转到360度，4000毫秒时转l回0度</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="ScaleMotive" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>放缩动画参数配置
+例:0,0;2000,1.0;4000,0
+表示0秒时放缩比例为0,2秒时放缩大到正常1.0倍,4秒时缩小到0</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="AlphaMotive" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>透明动画参数配置
+例：0,255;2000,0;4000,255
+表示0稍时alpha值为255不透明,2秒时为0变为全透明，4秒时又变为不透明</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="ImageFrame">
+		<xs:annotation>
+			<xs:documentation>关键帧</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="FileName" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>图片文件名
+例:gui\animations\face\bq001_01.png</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="KeepTime" type="xs:int" use="optional" default="100">
+			<xs:annotation>
+				<xs:documentation>此图片的保持时间</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="PartMotive">
+		<xs:annotation>
+			<xs:documentation>图片局部动画</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="Mode" type="xs:unsignedInt" use="optional" default="0">
+			<xs:annotation>
+				<xs:documentation>动画模式：
+0左上角到全部，
+1左到右，
+2左下到全部，
+3下到上，
+4右下到全部，
+5右到左，
+6右上到全部，
+7上到下，
+8中间到左右，
+9中间到上下，
+10中间到四周</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="StartTime" type="xs:int" use="optional" default="0">
+			<xs:annotation>
+				<xs:documentation>开始移动的时间</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="EndTime" type="xs:int" use="optional" default="1000">
+			<xs:annotation>
+				<xs:documentation>动画结束时间</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="x" type="xs:int" use="optional" default="0">
+			<xs:annotation>
+				<xs:documentation>相对于主动画位置的X偏移</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="y" type="xs:int" use="optional" default="0">
+			<xs:annotation>
+				<xs:documentation>相对于主动画位置的Y偏移</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="FileName" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>动画便用的图片</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="MoveStep">
+		<xs:annotation>
+			<xs:documentation>位移动画</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="x" type="xs:int" use="optional" default="0">
+			<xs:annotation>
+				<xs:documentation>位移目标点X值</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="y" type="xs:int" use="optional" default="0">
+			<xs:annotation>
+				<xs:documentation>位移目标点y值</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="TimeIndex" type="xs:int" use="optional" default="1000">
+			<xs:annotation>
+				<xs:documentation>是间序列，表明到什么时候到达目标点</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="SubAnimation">
+		<xs:annotation>
+			<xs:documentation>子特效</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="Name" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>子动画名，不能嵌套自已</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="x" type="xs:int" use="optional" default="0">
+			<xs:annotation>
+				<xs:documentation>相对父动画的x偏移</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="y" type="xs:int" use="optional" default="0">
+			<xs:annotation>
+				<xs:documentation>相对父动画的y偏</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="FollowAngle" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>跟随父动画旋转</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="FollowAlpha" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>跟随父动画透明</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="FollowMove" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>跟随父动画移动</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="FollowScale" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>跟随父动画放缩</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="FollowPlay" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>跟随父动画播放</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+</xs:schema>

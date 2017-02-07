@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by  () -->
+<!--语音频道管理，隶属于逻辑服务器 VoiceModule.cpp 模块。-->
+<object>
+	<!-- 基本属性 -->
+	<properties>
+		<property name="VoiceState" type="int" public="false" private="true" save="false" desc="语音登录状态"/>
+	</properties>
+	<!-- 表属性 -->
+	<records>
+		<!-- 已经加入的语音频道 -->
+		<record name="RecPlayerChannel" cols="3" maxrows="100" save="false" public="false" private="true" desc="已加入的语音频道">
+			<column type="string" desc="房间名"/>
+			<column type="int64" desc="房间ID"/>
+			<column type="dword" desc="房间类型"/>
+		</record>
+		<!-- 可以发送的消息id -->
+		<record name="RecVoiceMsgID" cols="1" maxrows="100" save="false" public="false" private="false" desc="可以发送的语音消息id">
+			<column type="int64" desc="消息ID"/>
+		</record>
+	</records>
+</object>

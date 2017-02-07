@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 夏日兑换规则-->
+<!-- NeedItems：需求物品-->
+<!-- NeedCapitals：需求货币-->
+<!-- ExchangeItem：兑换物品-->
+<!-- DayCount：每天兑换的数量-->
+<!-- LimitCount：活动周期限兑换数量(非限制的物品项,不用配置)-->
+
+<Object>	
+	<Property ID="1" NeedItems="Item_gqhd_lp:2" ExchangeItem="Item_yt3:1" DayCount="100" desc ="陨铁"/>
+	<Property ID="2" NeedItems="Item_gqhd_cd:1" ExchangeItem="Item_jb50000L:1" DayCount="100" desc ="金币50000"/>
+	<Property ID="3" NeedItems="Item_gqhd_wmx:1" ExchangeItem="Item_ll3:1" DayCount="20" desc ="大历练丹"/>
+	<Property ID="4" NeedItems="Item_gqhd_cd:1,Item_gqhd_wmx:1" ExchangeItem="Item_tlnew50:1" DayCount="50" desc ="体力丹50级"/>
+	<Property ID="5" NeedItems="Item_gqhd_xhh:1" ExchangeItem="Item_bx3:1" DayCount="100" desc ="黄金宝箱"/>
+	<Property ID="6" NeedItems="Item_gqhd_jm:1" ExchangeItem="Item_ys3:1" DayCount="100" desc ="黄金钥匙"/>
+	<Property ID="7" NeedItems="Item_gqhd_xhh:1,Item_gqhd_jm:1" ExchangeItem="Item_tlnew80:2" DayCount="10" desc ="体力丹80级"/>
+	<Property ID="8" NeedItems="Item_gqhd_cd:1,Item_gqhd_wmx:1,Item_gqhd_jq:1" ExchangeItem="Item_nszl:8" DayCount="100" desc ="月神之泪"/>
+	<Property ID="9" NeedItems="Item_gqhd_xhh:1,Item_gqhd_jm:1,Item_gqhd_hlj:1" ExchangeItem="Item_JingTieShi:12" DayCount="100" desc ="精炼石"/>
+	<Property ID="10" NeedItems="Item_gqhd_lp:1,Item_gqhd_cd:1,Item_gqhd_wmx:1,Item_gqhd_jq:1,Item_gqhd_xhh:1,Item_gqhd_jm:1,Item_gqhd_hlj:1" NeedCapitals= "BindDiamond:700" 
+		               ExchangeItem="Item_pet_lingwu_005_4:1"  DayCount ="1" LimitCount ="1" desc ="勇猛·极"/>
+	<Property ID="11" NeedItems="Item_gqhd_lp:1,Item_gqhd_cd:1,Item_gqhd_wmx:1,Item_gqhd_jq:1,Item_gqhd_xhh:1,Item_gqhd_jm:1,Item_gqhd_hlj:1" NeedCapitals= "BindDiamond:700" 
+		               ExchangeItem="Item_pet_lingwu_006_4:1"  DayCount ="1" LimitCount ="1" desc ="强生·极"/>
+	<Property ID="12" NeedItems="Item_gqhd_lp:1,Item_gqhd_cd:1,Item_gqhd_wmx:1,Item_gqhd_jq:1,Item_gqhd_xhh:1,Item_gqhd_jm:1,Item_gqhd_hlj:1" NeedCapitals= "BindDiamond:700" 
+		               ExchangeItem="Item_pet_lingwu_007_4:1"  DayCount ="1" LimitCount ="1" desc ="铜墙·极"/>
+	<Property ID="13" NeedItems="Item_gqhd_lp:1,Item_gqhd_cd:1,Item_gqhd_wmx:1,Item_gqhd_jq:1,Item_gqhd_xhh:1,Item_gqhd_jm:1,Item_gqhd_hlj:1" NeedCapitals= "BindDiamond:1500" 
+		               ExchangeItem="Item_title_113:1"  DayCount ="1" LimitCount ="1" desc ="普天同庆称号"/>
+</Object>

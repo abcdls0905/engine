@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop IsGC="true" Left="53" Top="21" Width="1280" Height="720" BackColor="255,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" />
+        <control name="group_main" entity="GroupBox" script="" init="">
+            <prop Left="136" Width="960" Height="720" BackColor="255,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" />
+            <control name="lbl_left" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="-560" Top="72" Width="552" Height="576" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\comic\chapter1.jpg" />
+            </control>
+            <control name="lbl_tips" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="40" Top="32" Width="150" Height="22" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="第一幕" Font="WRYH20" />
+            </control>
+            <control name="lbl_top" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="960" Top="56" Width="577" Height="288" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\comic\chapter2.jpg" />
+            </control>
+            <control name="lbl_bottom" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="960" Top="352" Width="655" Height="296" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\comic\chapter3.jpg" />
+            </control>
+        </control>
+    </control>
+</form>

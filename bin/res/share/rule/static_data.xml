@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!--
+Type->share表示客户端与服务器都需要加载(功能会自动将ini替换为share) client表示只有客户端需要加载 server表示只有服务器需要加载
+VTYPE_BOOL = 1,		// 布尔
+VTYPE_INT = 2,		// 32位整数
+VTYPE_INT64 = 3,	// 64位整数
+VTYPE_FLOAT = 4,	// 单精度浮点数
+VTYPE_DOUBLE =5,	// 双精度浮点数
+VTYPE_STRING =6,	// 字符串
+VTYPE_WIDESTR = 7,	// 宽字符串
+-->
+<Object>
+	<!-- 角色属性相关 -->
+	<Property ID="12" Type="share" Name="" Resource="ini\modifypack\attributedata.xml"/>
+	<Property ID="13" Type="share" Name="" Resource="ini\modifypack\fightdataformula.xml"/>
+	<Property ID="14" Type="share" Name="" Resource="ini\rule\battleability.xml"/>
+	<Property ID="20" Type="share" Name="" Resource="ini\modifypack\energydatapack.xml"/>	
+	<Property ID="21" Type="share" Name="技能解锁数据包" Resource="ini\modifypack\unlockskilldatapack.xml"/>	
+	<Property ID="22" Type="share" Name="火,冰,雷伤害数据包" Resource="ini\modifypack\fire_ice_light_datapack.xml"/>	
+	<!--200-299 NPC静态数据文件-->
+	<Property ID="200" Type="share" Name="NPC客户端显示包" Resource="ini\npc\npc_func\client_perform_pack.xml"/>
+	<Property ID="201" Type="share" Name="NPC战斗包" Resource="ini\npc\npc_func\fight_pack.xml"/>
+    	<Property ID="202" Type="share" Name="NPC光源包" Resource="ini\npc\npc_func\head_light.xml"/>
+    	<Property ID="203" Type="server" Name="NPC触发包" Resource="ini\npc\npc_func\spring_pack.xml"/>
+    	<Property ID="204" Type="share" Name="NPC战斗包" Resource="ini\npc\npc_func\normal_attack_pack.xml"/>
+    	<!--Property ID="205" Type="share" Name="宠物属性成长包" Resource="ini\npc\npc_func\pet_prop_upgrade.xml"/-->
+    	<Property ID="206" Type="share" Name="传送包" Resource="ini\npc\npc_func\portal_config.xml"/>
+	<Property ID="207" Type="share" Name="宠物突破修正包" Resource="ini\npc\npc_func\pet_evo_buffer.xml"/>
+	<Property ID="208" Type="client" Name="仅客户端使用的NPC属性包" Resource="share\npc\npc_func\npc_client_property.xml"/>
+	<Property ID="209" Type="client" Name="仅客户端使用的坐骑属性包" Resource="share\npc\npc_func\mount_property.xml"/>
+	<!--300-399 场景配置-->
+	<Property ID="301" Type="share" Name="场景信息" Resource="ini\scene\config\scene_info_config.xml"/>	
+	
+	<!--400-499 道具配置-->
+	<Property ID="400" Type="share" Name="道具美术资源静态包" Resource="ini\item\itemartstatic.xml"/>
+	<Property ID="401" Type="share" Name="道具逻辑包" Resource="ini\item\item_logical_static.xml"/>
+	<Property ID="402" Type="share" Name="道具功能包" Resource="ini\item\item_func_static.xml"/>
+	<Property ID="403" Type="share" Name="条件限制包" Resource="ini\item\itemlimited.xml"/>
+	<Property ID="405" Type="share" Name="装备静态配置包" Resource="ini\item\item_equip_static.xml"/>
+	<Property ID="408" Type="share" Name="道具静态属性包" Resource="ini\item\item_tool_static.xml"/>
+	<Property ID="409" Type="share" Name="特殊固定属性包" Resource="ini\item\item_spec_static.xml"/>
+	<Property ID="411" Type="share" Name="属性伤害包"     Resource="ini\item\prop_dam.xml"/>
+	<Property ID="412" Type="share" Name="套装基础包" Resource="ini\item\suit_base.xml"/>
+	<Property ID="413" Type="share" Name="套装装备包" Resource="ini\item\suit_equips.xml"/>
+	<Property ID="414" Type="share" Name="套装属性包" Resource="ini\item\suit_prop.xml"/>
+</Object>

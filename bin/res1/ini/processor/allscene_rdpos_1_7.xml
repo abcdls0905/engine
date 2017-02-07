@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes" ?>
+<Processor>
+    <Base type="object" version="1.0">
+        <Line Type="2" Event="2001" Name="AUTOP1" />
+        <Line Type="2" Event="4701" Name="AUTOP2">
+            <Param type="2" data="10" Index="0" />
+        </Line>
+        <Line Type="1" Event="5202">
+            <Param type="13" srctype="8" data="AUTOP1" Index="0" />
+            <Param type="6" data="randint" Index="1" />
+            <Param type="2" data="2" Index="2" />
+            <Param type="13" srctype="4" data="AUTOP2" Index="3" />
+        </Line>
+        <Line Type="2" Event="2001" Name="AUTOP3" />
+        <Line Type="2" Event="4701" Name="AUTOP4">
+            <Param type="2" data="10" Index="0" />
+        </Line>
+        <Line Type="1" Event="5202">
+            <Param type="13" srctype="8" data="AUTOP3" Index="0" />
+            <Param type="6" data="randint" Index="1" />
+            <Param type="2" data="2" Index="2" />
+            <Param type="13" srctype="4" data="AUTOP4" Index="3" />
+        </Line>
+        <Line Type="2" Event="2001" Name="AUTOP5" />
+        <Line Type="2" Event="4701" Name="AUTOP6">
+            <Param type="2" data="10" Index="0" />
+        </Line>
+        <Line Type="1" Event="5202">
+            <Param type="13" srctype="8" data="AUTOP5" Index="0" />
+            <Param type="6" data="randint" Index="1" />
+            <Param type="2" data="2" Index="2" />
+            <Param type="13" srctype="4" data="AUTOP6" Index="3" />
+        </Line>
+        <Line Type="2" Event="2001" Name="AUTOP7" />
+        <Line Type="2" Event="4701" Name="AUTOP8">
+            <Param type="2" data="10" Index="0" />
+        </Line>
+        <Line Type="1" Event="5202">
+            <Param type="13" srctype="8" data="AUTOP7" Index="0" />
+            <Param type="6" data="randint" Index="1" />
+            <Param type="2" data="2" Index="2" />
+            <Param type="13" srctype="4" data="AUTOP8" Index="3" />
+        </Line>
+        <Line Type="2" Event="2001" Name="AUTOP9" />
+        <Line Type="2" Event="4701" Name="AUTOP10">
+            <Param type="2" data="10" Index="0" />
+        </Line>
+        <Line Type="1" Event="5202">
+            <Param type="13" srctype="8" data="AUTOP9" Index="0" />
+            <Param type="6" data="randint" Index="1" />
+            <Param type="2" data="2" Index="2" />
+            <Param type="13" srctype="4" data="AUTOP10" Index="3" />
+        </Line>
+        <Line Type="2" Event="2001" Name="AUTOP13" />
+        <Line Type="2" Event="3002" Name="AUTOP12">
+            <Param type="13" srctype="8" data="AUTOP13" Index="0" />
+            <Param type="6" data="randint" Index="1" />
+        </Line>
+        <Line Type="2" Event="1101" Name="AUTOP11">
+            <Param type="13" srctype="4" data="AUTOP12" Index="0" />
+            <Param type="2" data="5" Index="1" />
+            <Param type="4" data="3" Index="2" />
+        </Line>
+        <Line Type="3" IncludeLines="1">
+            <Param type="13" bool="true" srctype="1" data="AUTOP11" Index="0" />
+        </Line>
+        <Line Type="1" Event="5018">
+            <Param type="6" data="-5.616,14.306,10.151,0.0" Index="0" />
+            <Param type="6" data="qiyu_event_3" Index="1" />
+            <Param type="6" data="event1" Index="2" />
+        </Line>
+        <Line Type="7" IncludeLines="7" />
+        <Line Type="2" Event="2001" Name="AUTOP16" />
+        <Line Type="2" Event="3002" Name="AUTOP15">
+            <Param type="13" srctype="8" data="AUTOP16" Index="0" />
+            <Param type="6" data="randint" Index="1" />
+        </Line>
+        <Line Type="2" Event="1101" Name="AUTOP14">
+            <Param type="13" srctype="4" data="AUTOP15" Index="0" />
+            <Param type="2" data="5" Index="1" />
+            <Param type="4" data="6" Index="2" />
+        </Line>
+        <Line Type="3" IncludeLines="1">
+            <Param type="13" bool="true" srctype="1" data="AUTOP14" Index="0" />
+        </Line>
+        <Line Type="1" Event="5018">
+            <Param type="6" data="17.009,14.271,21.371,0.0" Index="0" />
+            <Param type="6" data="qiyu_event_3" Index="1" />
+            <Param type="6" data="event4" Index="2" />
+        </Line>
+        <Line Type="7" IncludeLines="1" />
+        <Line Type="1" Event="5018">
+            <Param type="6" data="-11.544,14.183,46.111,0.0" Index="0" />
+            <Param type="6" data="qiyu_event_3" Index="1" />
+            <Param type="6" data="event4" Index="2" />
+        </Line>
+    </Base>
+</Processor>

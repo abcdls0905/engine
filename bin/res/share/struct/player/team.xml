@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<object>
+    <internals />
+    <properties>
+        <property name="TeamID" type="int" public="true" private="true" save="false" realtime="" desc="队伍编号" />
+        <property name="TeamCaptain" type="widestr" public="true" private="true" save="false" realtime="" desc="队长" />
+        <property name="TeamFlag" type="byte" public="true" private="true" save="false" realtime="" desc="队伍招募标志" />
+        <property name="TeamType" type="byte" public="true" private="true" save="false" realtime="" desc="队伍类型" />
+        <property name="TeamUniqueID" type="string" public="false" private="true" save="false" realtime="" desc="队伍唯一ID" />
+        <property name="IsReady" type="byte" public="true" private="true" save="false" realtime="" desc="是否准备" />
+    </properties>
+    <records>
+        <record name="team_rec" cols="24" maxrows="3" save="false" public="true" private="true" desc="成员表">
+            <column type="widestr" desc="队员名" />
+            <column type="string" desc="Photo" />
+            <column type="string" desc="场景编号" />
+            <column type="dword" desc="最高战斗力" />
+            <column type="dword" desc="活动类型" />
+            <column type="byte" desc="队伍的职位" />
+            <column type="byte" desc="忙碌状态" />
+            <column type="byte" desc="准备确认" />
+            <column type="byte" desc="等级" />
+            <column type="byte" desc="职业" />
+            <column type="dword" desc="HP" />
+            <column type="dword" desc="MP" />
+            <column type="dword" desc="MaxHP" />
+            <column type="dword" desc="MaxMP" />
+            <column type="dword" desc="小队编号" />
+            <column type="dword" desc="角色编号" />
+            <column type="dword" desc="皮肤编号" />
+            <column type="dword" desc="队员战力" />
+			      <column type="string" desc="成员uid" />
+            <column type="float" desc="x值"/>
+            <column type="float" desc="y值"/>
+			      <column type="dword" desc="分线"/>
+            <column type="string" desc="场景"/>
+            <column type="dword" desc="场景号"/>
+        </record>
+		
+        <record name="team_recruit_rec" cols="19" maxrows="40" save="false" public="false" private="true" desc="招募表">
+            <column type="dword" desc="队伍编号" />
+            <column type="widestr" desc="队长名字" />
+            <column type="byte" desc="当前队伍人数" />
+            <column type="byte" desc="最大募集人数" />
+            <column type="byte" desc="是否加密" />
+            <column type="widestr" desc="队伍密码" />
+            <column type="widestr" desc="队伍说明" />
+            <column type="dword" desc="副本ID" />
+            <column type="byte" desc="副本难度" />
+            <column type="byte" desc="是否副本中" />
+            <column type="byte" desc="队长等级" />
+            <column type="byte" desc="队长职业" />
+            <column type="byte" desc="队长ROLEINDEX" />
+            <column type="dword" desc="队长战斗力" />
+            <column type="dword" desc="队伍活动类型" /> 
+			      <column type="string" desc="队长uid" />
+            <column type="dword" desc="GroupID"/>
+            <column type="dword" desc="SceneID"/>
+            <column type="dword" desc="阵营"/>
+        </record>
+
+        <record name="team_apply_rec" cols="6" maxrows="20" save="false" public="false" private="true" desc="申请表">
+            <column type="byte" desc="申请人roleindex" />
+            <column type="widestr" desc="申请人名字" />
+            <column type="byte" desc="申请人等级" />
+            <column type="byte" desc="申请人职业" />
+            <column type="dword" desc="申请人战力" />
+			<column type="string" desc="申请人uid" />
+        </record>
+		
+		<record name="team_save_caption_rec" cols="3" maxrows="5" save="false" public="false" private="true" desc="保存队长表">
+			      <column type="string" desc="队长uid" />
+            <column type="widestr" desc="队长名字" />
+            <column type ="dword" desc="队伍编号" />
+        </record>
+		
+        <record name="use_role_rec" cols="4" maxrows="5" save="true" public="false" private="false" desc="最近使用角色">
+            <column type="byte" desc="角色编号" />
+            <column type="int64" desc="更换时间" />
+            <column type="dword" desc="战力" />
+            <column type="string" desc="Photo" />
+        </record>
+    </records>
+    <includes />
+</object>

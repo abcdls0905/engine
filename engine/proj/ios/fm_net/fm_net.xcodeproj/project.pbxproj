@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		856395FD17460B17002663EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856395FC17460B17002663EC /* Foundation.framework */; };
+		8563960417460B17002663EC /* fm_net.m in Sources */ = {isa = PBXBuildFile; fileRef = 8563960317460B17002663EC /* fm_net.m */; };
+		8563963317460B4E002663EC /* custom_handler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563960B17460B4E002663EC /* custom_handler.cpp */; };
+		8563963417460B4E002663EC /* game_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563960D17460B4E002663EC /* game_client.cpp */; };
+		8563963517460B4E002663EC /* game_encoder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563960F17460B4E002663EC /* game_encoder.cpp */; };
+		8563963617460B4E002663EC /* game_object_set.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563961117460B4E002663EC /* game_object_set.cpp */; };
+		8563963717460B4E002663EC /* game_object.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563961317460B4E002663EC /* game_object.cpp */; };
+		8563963817460B4E002663EC /* game_prop_set.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563961517460B4E002663EC /* game_prop_set.cpp */; };
+		8563963917460B4E002663EC /* game_rec_client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563961717460B4E002663EC /* game_rec_client.cpp */; };
+		8563963A17460B4E002663EC /* game_rec_common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563961817460B4E002663EC /* game_rec_common.cpp */; };
+		8563963B17460B4E002663EC /* game_receiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563961917460B4E002663EC /* game_receiver.cpp */; };
+		8563963C17460B4E002663EC /* game_record_set.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563961B17460B4E002663EC /* game_record_set.cpp */; };
+		8563963D17460B4E002663EC /* game_record.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563961D17460B4E002663EC /* game_record.cpp */; };
+		8563963E17460B4E002663EC /* game_scene_obj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563961F17460B4E002663EC /* game_scene_obj.cpp */; };
+		8563963F17460B4E002663EC /* game_scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563962117460B4E002663EC /* game_scene.cpp */; };
+		8563964017460B4E002663EC /* game_sender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563962317460B4E002663EC /* game_sender.cpp */; };
+		8563964117460B4E002663EC /* game_sock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563962517460B4E002663EC /* game_sock.cpp */; };
+		8563964217460B4E002663EC /* game_view_obj.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563962717460B4E002663EC /* game_view_obj.cpp */; };
+		8563964317460B4E002663EC /* game_view.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563962917460B4E002663EC /* game_view.cpp */; };
+		8563964417460B4E002663EC /* lib_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563962C17460B4E002663EC /* lib_main.cpp */; };
+		8563964517460B4E002663EC /* sock_buf.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563962F17460B4E002663EC /* sock_buf.cpp */; };
+		8563964617460B4E002663EC /* win_socket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8563963117460B4E002663EC /* win_socket.cpp */; };
+		85C7DD4A174B42680087C19D /* quicklz.c in Sources */ = {isa = PBXBuildFile; fileRef = 85C7DD49174B42680087C19D /* quicklz.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		856395F717460B17002663EC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		856395F917460B17002663EC /* libfm_net.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfm_net.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		856395FC17460B17002663EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8563960017460B17002663EC /* fm_net-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fm_net-Prefix.pch"; sourceTree = "<group>"; };
+		8563960117460B17002663EC /* fm_net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fm_net.h; sourceTree = "<group>"; };
+		8563960317460B17002663EC /* fm_net.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fm_net.m; sourceTree = "<group>"; };
+		8563960B17460B4E002663EC /* custom_handler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = custom_handler.cpp; path = ../../../fm_net/custom_handler.cpp; sourceTree = "<group>"; };
+		8563960C17460B4E002663EC /* custom_handler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = custom_handler.h; path = ../../../fm_net/custom_handler.h; sourceTree = "<group>"; };
+		8563960D17460B4E002663EC /* game_client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game_client.cpp; path = ../../../fm_net/game_client.cpp; sourceTree = "<group>"; };
+		8563960E17460B4E002663EC /* game_client.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game_client.h; path = ../../../fm_net/game_client.h; sourceTree = "<group>"; };
+		8563960F17460B4E002663EC /* game_encoder.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game_encoder.cpp; path = ../../../fm_net/game_encoder.cpp; sourceTree = "<group>"; };
+		8563961017460B4E002663EC /* game_encoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game_encoder.h; path = ../../../fm_net/game_encoder.h; sourceTree = "<group>"; };
+		8563961117460B4E002663EC /* game_object_set.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game_object_set.cpp; path = ../../../fm_net/game_object_set.cpp; sourceTree = "<group>"; };
+		8563961217460B4E002663EC /* game_object_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game_object_set.h; path = ../../../fm_net/game_object_set.h; sourceTree = "<group>"; };
+		8563961317460B4E002663EC /* game_object.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game_object.cpp; path = ../../../fm_net/game_object.cpp; sourceTree = "<group>"; };
+		8563961417460B4E002663EC /* game_object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game_object.h; path = ../../../fm_net/game_object.h; sourceTree = "<group>"; };
+		8563961517460B4E002663EC /* game_prop_set.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game_prop_set.cpp; path = ../../../fm_net/game_prop_set.cpp; sourceTree = "<group>"; };
+		8563961617460B4E002663EC /* game_prop_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game_prop_set.h; path = ../../../fm_net/game_prop_set.h; sourceTree = "<group>"; };
+		8563961717460B4E002663EC /* game_rec_client.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game_rec_client.cpp; path = ../../../fm_net/game_rec_client.cpp; sourceTree = "<group>"; };
+		8563961817460B4E002663EC /* game_rec_common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game_rec_common.cpp; path = ../../../fm_net/game_rec_common.cpp; sourceTree = "<group>"; };
+		8563961917460B4E002663EC /* game_receiver.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game_receiver.cpp; path = ../../../fm_net/game_receiver.cpp; sourceTree = "<group>"; };
+		8563961A17460B4E002663EC /* game_receiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game_receiver.h; path = ../../../fm_net/game_receiver.h; sourceTree = "<group>"; };
+		8563961B17460B4E002663EC /* game_record_set.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game_record_set.cpp; path = ../../../fm_net/game_record_set.cpp; sourceTree = "<group>"; };
+		8563961C17460B4E002663EC /* game_record_set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game_record_set.h; path = ../../../fm_net/game_record_set.h; sourceTree = "<group>"; };
+		8563961D17460B4E002663EC /* game_record.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game_record.cpp; path = ../../../fm_net/game_record.cpp; sourceTree = "<group>"; };
+		8563961E17460B4E002663EC /* game_record.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game_record.h; path = ../../../fm_net/game_record.h; sourceTree = "<group>"; };
+		8563961F17460B4E002663EC /* game_scene_obj.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game_scene_obj.cpp; path = ../../../fm_net/game_scene_obj.cpp; sourceTree = "<group>"; };
+		8563962017460B4E002663EC /* game_scene_obj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game_scene_obj.h; path = ../../../fm_net/game_scene_obj.h; sourceTree = "<group>"; };
+		8563962117460B4E002663EC /* game_scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game_scene.cpp; path = ../../../fm_net/game_scene.cpp; sourceTree = "<group>"; };
+		8563962217460B4E002663EC /* game_scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game_scene.h; path = ../../../fm_net/game_scene.h; sourceTree = "<group>"; };
+		8563962317460B4E002663EC /* game_sender.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game_sender.cpp; path = ../../../fm_net/game_sender.cpp; sourceTree = "<group>"; };
+		8563962417460B4E002663EC /* game_sender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game_sender.h; path = ../../../fm_net/game_sender.h; sourceTree = "<group>"; };
+		8563962517460B4E002663EC /* game_sock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game_sock.cpp; path = ../../../fm_net/game_sock.cpp; sourceTree = "<group>"; };
+		8563962617460B4E002663EC /* game_sock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game_sock.h; path = ../../../fm_net/game_sock.h; sourceTree = "<group>"; };
+		8563962717460B4E002663EC /* game_view_obj.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game_view_obj.cpp; path = ../../../fm_net/game_view_obj.cpp; sourceTree = "<group>"; };
+		8563962817460B4E002663EC /* game_view_obj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game_view_obj.h; path = ../../../fm_net/game_view_obj.h; sourceTree = "<group>"; };
+		8563962917460B4E002663EC /* game_view.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game_view.cpp; path = ../../../fm_net/game_view.cpp; sourceTree = "<group>"; };
+		8563962A17460B4E002663EC /* game_view.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game_view.h; path = ../../../fm_net/game_view.h; sourceTree = "<group>"; };
+		8563962B17460B4E002663EC /* len_type.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = len_type.h; path = ../../../fm_net/len_type.h; sourceTree = "<group>"; };
+		8563962C17460B4E002663EC /* lib_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lib_main.cpp; path = ../../../fm_net/lib_main.cpp; sourceTree = "<group>"; };
+		8563962D17460B4E002663EC /* outer_err.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = outer_err.h; path = ../../../fm_net/outer_err.h; sourceTree = "<group>"; };
+		8563962E17460B4E002663EC /* outer_msg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = outer_msg.h; path = ../../../fm_net/outer_msg.h; sourceTree = "<group>"; };
+		8563962F17460B4E002663EC /* sock_buf.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = sock_buf.cpp; path = ../../../fm_net/sock_buf.cpp; sourceTree = "<group>"; };
+		8563963017460B4E002663EC /* sock_buf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sock_buf.h; path = ../../../fm_net/sock_buf.h; sourceTree = "<group>"; };
+		8563963117460B4E002663EC /* win_socket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = win_socket.cpp; path = ../../../fm_net/win_socket.cpp; sourceTree = "<group>"; };
+		8563963217460B4E002663EC /* win_socket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = win_socket.h; path = ../../../fm_net/win_socket.h; sourceTree = "<group>"; };
+		85C7DD49174B42680087C19D /* quicklz.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = quicklz.c; path = ../../../extern/quicklz/quicklz.c; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		856395F617460B17002663EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				856395FD17460B17002663EC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		856395EE17460B17002663EC = {
+			isa = PBXGroup;
+			children = (
+				8563960A17460B2D002663EC /* src */,
+				856395FE17460B17002663EC /* fm_net */,
+				856395FB17460B17002663EC /* Frameworks */,
+				856395FA17460B17002663EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		856395FA17460B17002663EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				856395F917460B17002663EC /* libfm_net.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		856395FB17460B17002663EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				856395FC17460B17002663EC /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		856395FE17460B17002663EC /* fm_net */ = {
+			isa = PBXGroup;
+			children = (
+				8563960117460B17002663EC /* fm_net.h */,
+				8563960317460B17002663EC /* fm_net.m */,
+				856395FF17460B17002663EC /* Supporting Files */,
+			);
+			path = fm_net;
+			sourceTree = "<group>";
+		};
+		856395FF17460B17002663EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8563960017460B17002663EC /* fm_net-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8563960A17460B2D002663EC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				85C7DD49174B42680087C19D /* quicklz.c */,
+				8563960B17460B4E002663EC /* custom_handler.cpp */,
+				8563960C17460B4E002663EC /* custom_handler.h */,
+				8563960D17460B4E002663EC /* game_client.cpp */,
+				8563960E17460B4E002663EC /* game_client.h */,
+				8563960F17460B4E002663EC /* game_encoder.cpp */,
+				8563961017460B4E002663EC /* game_encoder.h */,
+				8563961117460B4E002663EC /* game_object_set.cpp */,
+				8563961217460B4E002663EC /* game_object_set.h */,
+				8563961317460B4E002663EC /* game_object.cpp */,
+				8563961417460B4E002663EC /* game_object.h */,
+				8563961517460B4E002663EC /* game_prop_set.cpp */,
+				8563961617460B4E002663EC /* game_prop_set.h */,
+				8563961717460B4E002663EC /* game_rec_client.cpp */,
+				8563961817460B4E002663EC /* game_rec_common.cpp */,
+				8563961917460B4E002663EC /* game_receiver.cpp */,
+				8563961A17460B4E002663EC /* game_receiver.h */,
+				8563961B17460B4E002663EC /* game_record_set.cpp */,
+				8563961C17460B4E002663EC /* game_record_set.h */,
+				8563961D17460B4E002663EC /* game_record.cpp */,
+				8563961E17460B4E002663EC /* game_record.h */,
+				8563961F17460B4E002663EC /* game_scene_obj.cpp */,
+				8563962017460B4E002663EC /* game_scene_obj.h */,
+				8563962117460B4E002663EC /* game_scene.cpp */,
+				8563962217460B4E002663EC /* game_scene.h */,
+				8563962317460B4E002663EC /* game_sender.cpp */,
+				8563962417460B4E002663EC /* game_sender.h */,
+				8563962517460B4E002663EC /* game_sock.cpp */,
+				8563962617460B4E002663EC /* game_sock.h */,
+				8563962717460B4E002663EC /* game_view_obj.cpp */,
+				8563962817460B4E002663EC /* game_view_obj.h */,
+				8563962917460B4E002663EC /* game_view.cpp */,
+				8563962A17460B4E002663EC /* game_view.h */,
+				8563962B17460B4E002663EC /* len_type.h */,
+				8563962C17460B4E002663EC /* lib_main.cpp */,
+				8563962D17460B4E002663EC /* outer_err.h */,
+				8563962E17460B4E002663EC /* outer_msg.h */,
+				8563962F17460B4E002663EC /* sock_buf.cpp */,
+				8563963017460B4E002663EC /* sock_buf.h */,
+				8563963117460B4E002663EC /* win_socket.cpp */,
+				8563963217460B4E002663EC /* win_socket.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		856395F817460B17002663EC /* fm_net */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8563960717460B17002663EC /* Build configuration list for PBXNativeTarget "fm_net" */;
+			buildPhases = (
+				856395F517460B17002663EC /* Sources */,
+				856395F617460B17002663EC /* Frameworks */,
+				856395F717460B17002663EC /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fm_net;
+			productName = fm_net;
+			productReference = 856395F917460B17002663EC /* libfm_net.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		856395F017460B17002663EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = SnailResearch;
+			};
+			buildConfigurationList = 856395F317460B17002663EC /* Build configuration list for PBXProject "fm_net" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 856395EE17460B17002663EC;
+			productRefGroup = 856395FA17460B17002663EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				856395F817460B17002663EC /* fm_net */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		856395F517460B17002663EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8563960417460B17002663EC /* fm_net.m in Sources */,
+				8563963317460B4E002663EC /* custom_handler.cpp in Sources */,
+				8563963417460B4E002663EC /* game_client.cpp in Sources */,
+				8563963517460B4E002663EC /* game_encoder.cpp in Sources */,
+				8563963617460B4E002663EC /* game_object_set.cpp in Sources */,
+				8563963717460B4E002663EC /* game_object.cpp in Sources */,
+				8563963817460B4E002663EC /* game_prop_set.cpp in Sources */,
+				8563963917460B4E002663EC /* game_rec_client.cpp in Sources */,
+				8563963A17460B4E002663EC /* game_rec_common.cpp in Sources */,
+				8563963B17460B4E002663EC /* game_receiver.cpp in Sources */,
+				8563963C17460B4E002663EC /* game_record_set.cpp in Sources */,
+				8563963D17460B4E002663EC /* game_record.cpp in Sources */,
+				8563963E17460B4E002663EC /* game_scene_obj.cpp in Sources */,
+				8563963F17460B4E002663EC /* game_scene.cpp in Sources */,
+				8563964017460B4E002663EC /* game_sender.cpp in Sources */,
+				8563964117460B4E002663EC /* game_sock.cpp in Sources */,
+				8563964217460B4E002663EC /* game_view_obj.cpp in Sources */,
+				8563964317460B4E002663EC /* game_view.cpp in Sources */,
+				8563964417460B4E002663EC /* lib_main.cpp in Sources */,
+				8563964517460B4E002663EC /* sock_buf.cpp in Sources */,
+				8563964617460B4E002663EC /* win_socket.cpp in Sources */,
+				85C7DD4A174B42680087C19D /* quicklz.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8563960517460B17002663EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8563960617460B17002663EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8563960817460B17002663EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DSTROOT = /tmp/fm_net.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fm_net/fm_net-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8563960917460B17002663EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DSTROOT = /tmp/fm_net.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fm_net/fm_net-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		856395F317460B17002663EC /* Build configuration list for PBXProject "fm_net" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8563960517460B17002663EC /* Debug */,
+				8563960617460B17002663EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8563960717460B17002663EC /* Build configuration list for PBXNativeTarget "fm_net" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8563960817460B17002663EC /* Debug */,
+				8563960917460B17002663EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 856395F017460B17002663EC /* Project object */;
+}

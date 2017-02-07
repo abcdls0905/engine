@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!--下面这些属性是RoleNpc与其他逻辑类共有, 但是只有RoleNpc需要设置为保存或可视-->
+<Object>
+    <!--设置保存, 目的是player下线后容器内RoleNpc的属性可以保存下来-->
+    <Property ID="Helmet" save="true"/>
+    <Property ID="Cloth" save="true"/>
+    <Property ID="Shoes" save="true"/>
+    <Property ID="Wing" save="true"/>
+    <Property ID="Bangle" save="true"/>
+    <Property ID="Ring" save="true"/>
+    <Property ID="LWeapon" save="true"/>
+    <Property ID="RWeapon" save="true"/>
+    <Property ID="WalkSpeed" save="true"/>
+    <Property ID="RunSpeed" save="true"/>
+    <Property ID="Helmet" save="true"/>
+  <Property ID="FashionWeapon" save="true"/>
+  <Property ID="FashionCloth" save="true"/>
+
+    
+    
+    <!--设置私有可视, 目的是容器内RoleNpc的属性可以同步到客户端, 从而本地服务器可用-->
+    <Property ID="WarnType" type="BYTE" public="false" private="true"/> 
+	<Property ID="AISkillSequenceID" type="" public="false" private="true"/>
+    <Property ID="SphereRadius" type="" public="false" private="true"/> 
+    <Property ID="TotalAttack" type="" public="true" private="true"/> 
+    <Property ID="TotalAttackAdd" type="" public="true" private="true"/> 
+    <Property ID="MaxHPAdd" type="" public="true" private="true"/>
+  <Property ID="Wing" type="" public="true" private="true"/>
+  <Property ID="FashionWeapon" type="" public="true" private="true"/>
+  <Property ID="FashionCloth" type="" public="true" private="true"/>
+</Object>

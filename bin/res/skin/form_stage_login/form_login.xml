@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop ShowGrid="true" Left="53" Top="13" Width="1254" Height="768" BackColor="0,255,255,255" ShadowColor="0,0,0,0"/>
+		<control name="group_login_main" entity="GroupBox" script="" init="">
+			<prop ClipChildren="false" Left="109" Top="69" Width="782" Height="678" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true"/>
+			<control name="lbl_logo" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="-255" Top="75" Width="512" Height="222" ShadowColor="0,0,0,0" HAnchor="Center" AutoSize="true"/>
+			</control>
+			<control name="btn_yybao" entity="Button" script="" init="">
+				<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-24" Top="-206" Width="120" Height="120" BackColor="255,192,192,192" ShadowColor="0,0,0,0" VAnchor="Bottom" AutoSize="true"/>
+			</control>
+			<control name="lbl_11" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="136" Top="320" Width="375" Height="81" ShadowColor="0,0,0,0" AutoSize="true"/>
+			</control>
+			<control name="lbl_12" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="504" Top="344" Width="114" Height="31" ShadowColor="0,0,0,0" AutoSize="true"/>
+			</control>
+			<control name="btn_select_account" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_login/name.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-150" Top="360" Width="300" Height="53" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Center" Text="@gui_login_server_register_1" Font="WRYH24_O_BLACK" TabStop="true" NoFrame="true" DrawMode="ExpandH" ClickSound="ui_open"/>
+			</control>
+			<control name="btn_select_server" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_login/name.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-150" Top="426" Width="300" Height="53" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Center" Text="@ui_creat_xuanfuwuqi" Font="WRYH24_O_BLACK" TabStop="true" DrawMode="ExpandH" ClickSound="ui_open"/>
+			</control>
+			<control name="btn_enter_game" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/jinru_1.png" PushImage="gui/tp2_common/window/jinru_2.png" DisableImage="gui/tp2_common/window/jinru_3.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-153" Top="504" Width="307" Height="64" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Center" TabIndex="100" TabStop="true" AutoSize="true" ClickSound="button_click"/>
+			</control>
+		</control>
+		<control name="group_account_main" entity="GroupBox" script="" init="">
+			<prop Left="824" Top="192" Width="662" Height="494" BackColor="150,0,0,0" ShadowColor="0,0,0,0" NoFrame="true"/>
+			<control name="group_account" entity="GroupBox" script="" init="">
+				<prop ClipChildren="false" Top="26" Width="662" Height="441" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+				<control name="Label1" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="18" Top="43" Width="625" Height="355" ShadowColor="0,0,0,0" DrawMode="ExpandTile" BackImage="gui/tp2_common/backdrop/bg_001.png"/>
+				</control>
+				<control name="Label2" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="23" Top="83" Width="615" Height="310" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_002.png"/>
+				</control>
+				<control name="lbl_3rd" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="33" Top="88" Width="595" Height="300" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+				</control>
+				<control name="lbl_3" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="114" Top="29" Width="433" Height="54" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_10.png"/>
+				</control>
+				<control name="lbl_4" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="36" Top="359" Width="589" Height="28" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_03.png"/>
+				</control>
+				<control name="lbl_6" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="29" Top="300" Width="603" Height="94" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_08.png"/>
+				</control>
+				<control name="group_input" entity="GroupBox" script="" init="">
+					<prop Left="33" Top="88" Width="595" Height="300" ForeColor="0,0,0,0" BackColor="0,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand"/>
+					<control name="ipt_account" entity="Edit" script="" init="">
+						<prop MaxLength="25" TextOffsetX="20" SelectBackColor="255,200,200,200" Caret="Default" Left="107" Top="46" Width="268" Height="54" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK" Cursor="WIN_IBEAM" TabStop="true" DrawMode="ExpandH" BackImage="gui/tp2_login/name.png"/>
+					</control>
+					<control name="ipt_password" entity="Edit" script="" init="">
+						<prop MaxLength="20" TextOffsetX="20" PasswordChar="*" SelectBackColor="255,200,200,200" Caret="Default" Left="107" Top="126" Width="268" Height="54" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK" Cursor="WIN_IBEAM" TabStop="true" DrawMode="ExpandH" BackImage="gui/tp2_login/name.png"/>
+					</control>
+					<control name="lbl_account_text" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="39" Top="54" Width="86" Height="38" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="@ui_stage_login_9" Font="WRYH22_O_BLACK"/>
+					</control>
+					<control name="lbl_password_text" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="39" Top="134" Width="86" Height="38" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="@ui_stage_login_8" Font="WRYH22_O_BLACK"/>
+					</control>
+				</control>
+				<control name="btn_exit" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/clos.png" PushImage="gui/tp2_common/window/clos1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="582" Top="23" Width="70" Height="70" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_close"/>
+				</control>
+				<control name="btn_register_new" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/affirm.png" PushImage="gui/tp2_common/window/affirm1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="95" Top="319" Width="200" Height="60" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_stage_login_1" Font="WRYH24" TabIndex="100" TabStop="true" DrawMode="ExpandH" ClickSound="ui_open"/>
+				</control>
+				<control name="lbl_title" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="272" Top="9" Width="116" Height="64" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH30_S" AutoSize="true" BackImage="gui/tp2_login/dengru.png"/>
+				</control>
+				<control name="btn_quick_register" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/affirm.png" PushImage="gui/tp2_common/window/affirm1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="366" Top="319" Width="200" Height="60" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_stage_login_27" Font="WRYH24" TabStop="true" DrawMode="ExpandH" ClickSound="button_click"/>
+				</control>
+				<control name="btn_login" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_login/enter.png" PushImage="gui/tp2_login/enter1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="456" Top="134" Width="128" Height="129" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click"/>
+				</control>
+			</control>
+		</control>
+		<control name="group_active" entity="GroupBox" script="" init="">
+			<prop Left="-222" Top="32" Width="182" Height="94" BackColor="0,0,0,0" LineColor="0,0,0,0" BlendColor="0,0,0,0" ShadowColor="0,0,0,0" HAnchor="Right" NoFrame="true" DrawMode="Expand"/>
+			<control name="btn_active_account" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/option.png" PushImage="gui/tp2_common/window/option1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="24" Top="24" Width="134" Height="51" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_active_account" Font="WRYH20" TabStop="true" DrawMode="ExpandH"/>
+			</control>
+		</control>
+		<control name="group_register_main" entity="GroupBox" script="" init="">
+			<prop Left="824" Top="504" Width="838" Height="622" BackColor="100,0,0,0" ShadowColor="0,0,0,0" NoFrame="true"/>
+			<control name="group_register" entity="GroupBox" script="" init="">
+				<prop ClipChildren="false" Left="-359" Top="-295" Width="718" Height="590" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" DrawMode="Expand"/>
+				<control name="Label3" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="84" Top="95" Width="550" Height="450" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_001.png"/>
+				</control>
+				<control name="Label5" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="112" Top="81" Width="493" Height="54" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="Center" BackImage="gui/tp2_common/backdrop/decorate_04.png"/>
+				</control>
+				<control name="Label6" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="99" Top="145" Width="520" Height="395" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+				</control>
+				<control name="Label7" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="93" Top="453" Width="525" Height="94" ShadowColor="0,0,0,0" BackImage="gui/tp2_common/backdrop/decorate_08.png"/>
+				</control>
+				<control name="Label8" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="101" Top="521" Width="515" Height="17" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_09.png"/>
+				</control>
+				<control name="Label4" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="89" Top="140" Width="540" Height="405" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_002.png"/>
+				</control>
+				<control name="group_reg_bk" entity="GroupBox" script="" init="">
+					<prop Left="59" Top="108" Width="600" Height="374" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand"/>
+					<control name="ipt_reg_account" entity="Edit" script="" init="">
+						<prop MaxLength="25" TextOffsetX="20" SelectBackColor="255,200,200,200" Caret="Default" Left="220" Top="79" Width="268" Height="54" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK" Cursor="WIN_IBEAM" TabStop="true" DrawMode="ExpandH" BackImage="gui/tp2_login/name.png"/>
+					</control>
+					<control name="ipt_reg_password" entity="Edit" script="" init="">
+						<prop MaxLength="20" TextOffsetX="20" PasswordChar="*" SelectBackColor="255,200,200,200" Caret="Default" Left="220" Top="146" Width="268" Height="54" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK" Cursor="WIN_IBEAM" TabStop="true" DrawMode="ExpandH" BackImage="gui/tp2_login/name.png"/>
+					</control>
+					<control name="lbl_reg_acc" entity="Label" script="" init="">
+						<prop Align="Right" RefCursor="WIN_HELP" Left="96" Top="87" Width="86" Height="38" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="@ui_stage_login_9" Font="WRYH22_O_BLACK"/>
+					</control>
+					<control name="lbl_reg_psw" entity="Label" script="" init="">
+						<prop Align="Right" RefCursor="WIN_HELP" Left="96" Top="154" Width="86" Height="38" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="@ui_stage_login_8" Font="WRYH22_O_BLACK"/>
+					</control>
+					<control name="ipt_reg_password_confirm" entity="Edit" script="" init="">
+						<prop MaxLength="20" TextOffsetX="20" PasswordChar="*" SelectBackColor="255,200,200,200" Caret="Default" Left="220" Top="213" Width="268" Height="54" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK" Cursor="WIN_IBEAM" TabStop="true" DrawMode="ExpandTile" BackImage="gui/tp2_login/name.png"/>
+					</control>
+					<control name="ipt_phone_num" entity="Edit" script="" init="">
+						<prop OnlyDigit="true" Marked="true" MaxLength="11" TextOffsetX="20" SelectBackColor="255,200,200,200" Caret="Default" Left="220" Top="280" Width="268" Height="54" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK" Cursor="WIN_IBEAM" TabStop="true" DrawMode="ExpandTile" BackImage="gui/tp2_login/name.png"/>
+					</control>
+					<control name="lbl_psw_con" entity="Label" script="" init="">
+						<prop Align="Right" RefCursor="WIN_HELP" Left="24" Top="221" Width="158" Height="38" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="@ui_stage_login_25" Font="WRYH22_O_BLACK"/>
+					</control>
+					<control name="lbl_phone_num" entity="Label" script="" init="">
+						<prop Align="Right" RefCursor="WIN_HELP" Left="96" Top="288" Width="86" Height="38" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="@ui_stage_login_24" Font="WRYH22_O_BLACK"/>
+					</control>
+					<control name="lbl_10" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="137" Top="47" Width="326" Height="16" ForeColor="255,229,0,0" ShadowColor="0,0,0,0" Text="@gui_login_server_register_2" Font="WRYH20"/>
+					</control>
+				</control>
+				<control name="btn_reg_exit" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/clos.png" PushImage="gui/tp2_common/window/clos1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="578" Top="68" Width="70" Height="70" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_close"/>
+				</control>
+				<control name="btn_reg_cancel" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/affirm.png" PushImage="gui/tp2_common/window/affirm1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="130" Top="475" Width="150" Height="60" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_cancel" Font="WRYH24" TabStop="true" ClickSound="ui_close"/>
+				</control>
+				<control name="btn_reg_login" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/affirm.png" PushImage="gui/tp2_common/window/affirm1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="381" Top="475" Width="200" Height="60" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_stage_login_4" Font="WRYH24" TabIndex="100" TabStop="true" DrawMode="ExpandH" ClickSound="button_click"/>
+				</control>
+				<control name="lbl_reg_title" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="221" Top="61" Width="274" Height="64" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH30_S" AutoSize="true" BackImage="gui/tp2_login/zhuce.png"/>
+				</control>
+			</control>
+		</control>
+		<control name="group_reg_suc_main" entity="GroupBox" script="" init="">
+			<prop Left="848" Top="-232" Width="830" Height="630" BackColor="100,0,0,0" ShadowColor="0,0,0,0" NoFrame="true"/>
+			<control name="group_reg_suc" entity="GroupBox" script="" init="">
+				<prop Left="-383" Top="-250" Width="766" Height="500" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" DrawMode="Expand"/>
+				<control name="Label9" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="70" Top="75" Width="625" Height="355" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_001.png"/>
+				</control>
+				<control name="Label10" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="75" Top="115" Width="615" Height="310" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_002.png"/>
+				</control>
+				<control name="Label11" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="85" Top="120" Width="595" Height="300" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+				</control>
+				<control name="Label12" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="136" Top="61" Width="493" Height="54" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_04.png"/>
+				</control>
+				<control name="Label13" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="321" Top="42" Width="123" Height="64" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_battle/scene_account/mop_up_09.png"/>
+				</control>
+				<control name="groupbox_3" entity="GroupBox" script="" init="">
+					<prop Left="81" Top="87" Width="600" Height="310" BackColor="0,0,0,0" LineColor="0,0,0,0" BlendColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand"/>
+					<control name="lbl_9" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Left="98" Top="46" Width="398" Height="86" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="@ui_stage_login_28" Font="WRYH26_O_BLACK"/>
+					</control>
+					<control name="ipt_res_account" entity="Edit" script="" init="">
+						<prop ReadOnly="true" OnlyDigit="true" MaxLength="25" TextOffsetX="20" SelectBackColor="255,200,200,200" Caret="Default" Left="125" Top="132" Width="268" Height="54" ShadowColor="0,0,0,0" Font="zhanghao" Cursor="WIN_IBEAM" TabStop="true" DrawMode="ExpandH" BackImage="gui/tp2_login/name.png"/>
+					</control>
+					<control name="ipt_res_password" entity="Edit" script="" init="">
+						<prop ReadOnly="true" OnlyDigit="true" MaxLength="20" TextOffsetX="20" SelectBackColor="255,200,200,200" Caret="Default" Left="125" Top="205" Width="268" Height="54" ShadowColor="0,0,0,0" Font="zhanghao" Cursor="WIN_IBEAM" TabStop="true" DrawMode="ExpandH" BackImage="gui/tp2_login/name.png"/>
+					</control>
+					<control name="lbl_res_account_text" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="66" Top="140" Width="86" Height="38" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="@ui_stage_login_9" Font="WRYH22_O_BLACK"/>
+					</control>
+					<control name="lbl_res_password_text" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="66" Top="213" Width="86" Height="38" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="@ui_stage_login_8" Font="WRYH22_O_BLACK"/>
+					</control>
+				</control>
+				<control name="btn_reg_suc_and_login" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_login/enter.png" PushImage="gui/tp2_login/enter1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="526" Top="216" Width="128" Height="129" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH26_S" TabIndex="100" TabStop="true" AutoSize="true" ClickSound="button_click"/>
+				</control>
+			</control>
+		</control>
+		<control name="btn_change_username" entity="Button" script="" init="">
+			<prop NormalImage="gui/tp2_login/zhanghao_1.png" PushImage="gui/tp2_login/zhanghao_2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="140" Top="15" Width="80" Height="80" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click"/>
+		</control>
+		<control name="btn_show_notice" entity="Button" script="" init="">
+			<prop NormalImage="gui/tp2_login/gonggao_1.png" PushImage="gui/tp2_login/gonggao_2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="45" Top="15" Width="80" Height="80" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click"/>
+		</control>
+		<control name="gbox_version" entity="GroupBox" script="" init="">
+			<prop Left="-200" Top="5" Width="230" Height="62" ForeColor="255,255,255,204" BackColor="0,255,255,255" ShadowColor="0,0,0,0" HAnchor="Right" NoFrame="true"/>
+			<control name="lbl_appver" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="106" Top="32" Width="60" Height="15" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="00.00.00" Font="WRYH15_O_BLACK"/>
+			</control>
+			<control name="lbl_appver_t" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="5" Top="32" Width="60" Height="15" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="@ui_appver" Font="WRYH15_O_BLACK"/>
+			</control>
+			<control name="lbl_resver_t" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="5" Top="5" Width="60" Height="15" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="@ui_resver" Font="WRYH15_O_BLACK"/>
+			</control>
+			<control name="lbl_resver" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="106" Top="5" Width="60" Height="15" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="00.00.00" Font="WRYH15_O_BLACK"/>
+			</control>
+		</control>
+		<control name="groupbox_notice" entity="GroupBox" script="" init="">
+			<prop Left="-627" Top="-80" Width="1254" Height="80" BackColor="180,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Center"/>
+			<control name="lbl_18" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="-195" Top="-34" Width="390" Height="16" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Center" Text="@ui_creat_choose_info4" Font="WRYH18_O_BLACK"/>
+			</control>
+			<control name="lbl_19" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="-195" Top="-88" Width="390" Height="16" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Center" Font="WRYH18_O_BLACK"/>
+			</control>
+			<control name="lbl_20" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="-195" Top="-64" Width="390" Height="16" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Center" Text="@ui_creat_choose_info3" Font="WRYH18_O_BLACK"/>
+			</control>
+		</control>
+	</control>
+</form>
+

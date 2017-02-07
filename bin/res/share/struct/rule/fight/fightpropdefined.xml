@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
+<!-- edited with XMLSpy v2010 (http://www.altova.com) by MESMERiZE (MiZE) -->
+<object>
+  <properties>
+    <!-- 最新技能流程计算所需配置字段 -->
+    <property name="HPBase" type="int" public="false" private="true" save="false" desc="基础生命"/>
+    <property name="MaxHPBase" type="int" public="false" private="true" save="false" desc="基础生命"/>
+    <property name="MaxHPMul" type="float" public="false" private="false" save="false" desc="生命百分比"/>
+    <property name="MaxHPAppend" type="int" public="false" private="false" save="false" desc="生命额外附加"/>
+    <property name="MaxHP" type="int" public="true" private="true" save="false" realtime="true" desc="最大生命值"/>
+    <property name="MaxMPBase" type="int" public="false" private="true" save="false" desc="基础法力"/>
+    <property name="MaxMPMul" type="float" public="false" private="false" save="false" desc="法力百分比"/>
+    <property name="MaxMP" type="int" public="true" private="true" save="false" desc="法力上限"/>
+    <property name="AttackBase" type="int" public="false" private="true" save="false" realtime="" desc="基础攻击"/>
+    <property name="AttackRate" type="int" public="false" private="true" save="false" desc="攻击百分比"/>
+    <property name="TotalAttack" type="int" public="false" private="true" save="true" realtime="" desc="基础攻击"/>
+    <property name="ADBase" type="int" public="false" private="true" save="false" realtime="" desc="物理攻击"/>
+    <property name="ADRate" type="int" public="false" private="true" save="false" realtime="" desc="物理攻击百分比"/>
+    <property name="ADTotalBase" type="int" public="false" private="true" save="false" realtime="" desc="物理总攻击"/>
+    <property name="ADTotalMul" type="float" public="false" private="true" save="false" realtime="" desc="物理攻击百分比"/>
+    <property name="ADTotalAppend" type="int" public="false" private="true" save="false" realtime="" desc="物理总攻击"/>
+    <property name="ADTotal" type="int" public="false" private="true" save="false" realtime="" desc="物理总攻击"/>
+    <property name="ADDefBaseBase" type="int" public="false" private="true" save="false" realtime="" desc="基础物理防御值"/>
+    <property name="ADDefBaseMul" type="float" public="false" private="true" save="false" realtime="" desc="物理防御率"/>
+    <property name="ADDefBase" type="int" public="false" private="true" save="false" realtime="" desc="物理防御值"/>
+    <property name="ADDefRateBase" type="int" public="false" private="true" save="false" realtime="" desc="基础物理减伤率"/>
+    <property name="ADDefRateMul" type="float" public="false" private="true" save="false" realtime="" desc="物理减伤率加成"/>
+    <property name="ADDefRate" type="int" public="false" private="true" save="false" realtime="" desc="物理减伤率"/>
+    <property name="TwiceADDefBase" type="int" public="false" private="true" save="false" desc="物理额外减伤率"/>
+    <property name="TwiceADDefMul" type="float" public="false" private="false" save="false" desc="物理额外减伤率"/>
+    <property name="TwiceADDef" type="int" public="false" private="true" save="false" realtime="" desc="物理额外减伤率"/>
+    <property name="ADDefTotal" type="int" public="false" private="true" save="false" desc="物理总减伤率"/>
+    <property name="ADDefRiftBase" type="int" public="false" private="true" save="false" desc="物理穿透率"/>
+    <property name="ADDefRiftMul" type="float" public="false" private="false" save="false" desc="物理穿透率"/>
+    <property name="ADDefRift" type="int" public="false" private="true" save="false" desc="物理穿透率"/>
+    <property name="APBase" type="int" public="false" private="true" save="false" realtime="" desc="法术攻击"/>
+    <property name="APRate" type="int" public="false" private="true" save="false" realtime="" desc="法术攻击百分比"/>
+    <property name="APTotalBase" type="int" public="false" private="true" save="false" realtime="" desc="法术基础攻击"/>
+    <property name="APTotalMul" type="float" public="false" private="true" save="false" realtime="" desc="法术攻击加成"/>
+    <property name="APTotalAppend" type="int" public="false" private="true" save="false" realtime="" desc="法术攻击"/>
+    <property name="APTotal" type="int" public="false" private="true" save="false" realtime="" desc="法术总攻击"/>
+    <property name="APDefBaseBase" type="int" public="false" private="true" save="false" realtime="" desc="基础法术防御值"/>
+    <property name="APDefBaseMul" type="float" public="false" private="true" save="false" realtime="" desc="法术防御值加成"/>
+    <property name="APDefBase" type="int" public="false" private="true" save="false" realtime="" desc="法术防御值"/>
+    <property name="APDefRateBase" type="int" public="false" private="true" save="false" realtime="" desc="法术减伤率"/>
+    <property name="APDefRateMul" type="float" public="false" private="false" save="false" realtime="" desc="法术减伤率"/>
+    <property name="APDefRate" type="int" public="false" private="true" save="false" realtime="" desc="法术减伤率"/>
+    <property name="TwiceAPDef" type="int" public="false" private="true" save="false" realtime="" desc="法术额外减伤率"/>
+    <property name="TJADDef" type="int" public="false" private="true" save="false" realtime="" desc="太极技物理二次减伤率"/>
+    <property name="TJAPDef" type="int" public="false" private="true" save="false" realtime="" desc="太极技法术二次减伤率"/>
+    <property name="APDefTotal" type="int" public="false" private="true" save="false" desc="法术总减伤率"/>
+    <property name="APDefRiftBase" type="int" public="false" private="true" save="false" desc="法术穿透率"/>
+    <property name="APDefRiftMul" type="float" public="false" private="false" save="false" desc="法术穿透率"/>
+    <property name="APDefRift" type="int" public="false" private="true" save="false" desc="法术穿透率"/>
+    <property name="HitBase" type="int" public="false" private="true" save="false" desc="基础命中"/>
+    <property name="HitMul" type="float" public="false" private="true" save="false" desc="命中加成系数"/>
+    <property name="Hit" type="int" public="false" private="true" save="false" desc="命中"/>
+    <property name="MissBase" type="int" public="true" private="true" save="false" desc="基础闪避"/>
+    <property name="MissMul" type="float" public="true" private="true" save="false" desc="闪避加成系数"/>
+    <property name="Miss" type="int" public="true" private="true" save="false" desc="闪避"/>
+    <property name="CritBase" type="int" public="false" private="true" save="false" desc="基础暴击几率"/>
+    <property name="CritMul" type="float" public="false" private="true" save="false" desc="暴击几率加成系数"/>
+    <property name="Crit" type="int" public="false" private="true" save="false" desc="暴击几率"/>
+    <property name="TougBase" type="int" public="true" private="true" save="false" desc="基础抗暴击"/>
+    <property name="TougMul" type="float" public="true" private="true" save="false" desc="抗暴击加成"/>
+    <property name="Toug" type="int" public="true" private="true" save="false" desc="抗暴击"/>
+    <property name="CritDamBase" type="int" public="false" private="true" save="false" desc="基础暴击伤害"/>
+    <property name="CritDamMul" type="float" public="false" private="true" save="false" desc="暴击伤害加成"/>
+    <property name="CritDam" type="int" public="false" private="true" save="false" desc="暴击伤害"/>
+    <property name="TougDamBase" type="int" public="true" private="true" save="false" desc="暴击免伤"/>
+    <property name="TougDamMul" type="float" public="true" private="true" save="false" desc="基础暴击免伤"/>
+    <property name="TougDam" type="int" public="true" private="true" save="false" desc="暴击免伤加成"/>
+    <property name="DefBase" type="int" public="true" private="true" save="false" desc="基础免伤"/>
+    <property name="DefMul" type="float" public="true" private="true" save="false" desc="免伤加成"/>
+    <property name="Def" type="int" public="true" private="true" save="false" desc="免伤"/>
+    <property name="RealDamBase" type="int" public="false" private="true" save="false" desc="基础真实伤害"/>
+    <property name="RealDamMul" type="float" public="false" private="true" save="false" desc="真实伤害加成"/>
+    <property name="RealDam" type="int" public="false" private="true" save="false" desc="真实伤害"/>
+    <property name="DamTotalBase" type="int" public="true" private="true" save="false" desc="伤害加成"/>
+    <property name="DamTotalMul" type="float" public="true" private="true" save="false" desc="伤害加成"/>
+    <property name="DamTotal" type="int" public="true" private="true" save="false" desc="伤害加成"/>
+    <property name="DodgeBase" type="int" public="true" private="true" save="false" desc="基础格挡"/>
+    <property name="DodgeMul" type="float" public="true" private="true" save="false" desc="格挡加成"/>
+    <property name="Dodge" type="int" public="true" private="true" save="false" desc="格挡"/>
+    <property name="HPReg" type="int" public="false" private="true" save="false" desc="命中回血"/>
+    <property name="MPReg" type="int" public="false" private="true" save="false" desc="命中回蓝"/>
+    <property name="RCReg" type="int" public="false" private="true" save="false" desc="命中回怒气值"/>
+    <property name="ECReg" type="int" public="false" private="true" save="false" desc="命中回能量值"/>
+    <property name="GPReg" type="int" public="false" private="true" save="false" desc="命中回气力值"/>
+    <property name="DFReg" type="int" public="false" private="true" save="false" desc="命中回护盾值"/>
+    <property name="BornHP" type="int" public="false" private="true" save="false" desc="出生血量"/>
+    <property name="BornMP" type="int" public="false" private="true" save="false" desc="出生魔值"/>
+    <property name="BornRC" type="int" public="false" private="true" save="false" desc="出生怒气值"/>
+    <property name="BornEC" type="int" public="false" private="true" save="false" desc="出生能量值"/>
+    <property name="BornGP" type="int" public="false" private="true" save="false" desc="出生气力值"/>
+    <property name="BornDF" type="int" public="false" private="true" save="false" desc="出生护盾值"/>
+    <property name="HP" type="int" public="true" private="true" save="fasle" desc="血量当前值"/>
+    <property name="MP" type="int" public="true" private="true" save="false" desc="法力当前值"/>
+    <property name="RC" type="int" public="true" private="true" save="false" desc="怒气当前值"/>
+    <property name="MaxRC" type="int" public="true" private="true" save="false" desc="怒气上限"/>
+    <property name="EC" type="int" public="true" private="true" save="false" desc="能量当前值"/>
+    <property name="MaxEC" type="int" public="true" private="true" save="false" desc="能量上限"/>
+    <property name="GP" type="int" public="true" private="true" save="false" desc="护盾当前值"/>
+    <property name="DF" type="int" public="true" private="true" save="false" desc="气力当前值"/>
+    <property name="MaxGP" type="int" public="true" private="true" save="false" desc="气力上限"/>
+    <property name="MaxDF" type="int" public="true" private="true" save="false" desc="护盾上限"/>
+    <property name="DisCost1" type="int" public="false" private="true" save="false" desc="减少消耗1"/>
+    <property name="DisCost2" type="int" public="false" private="true" save="false" desc="减少消耗2"/>
+    <property name="DisCost3" type="int" public="false" private="true" save="false" desc="减少消耗3"/>
+    <property name="DisCost4" type="int" public="false" private="true" save="false" desc="减少消耗4"/>
+    <property name="DisCD1Base" type="int" public="false" private="true" save="false" desc="基础减CD1"/>
+    <property name="DisCD1Mul" type="float" public="false" private="true" save="false" desc="减CD1加成"/>
+    <property name="DisCD1" type="int" public="false" private="true" save="false" desc="减CD1"/>
+    <property name="DisCD2Base" type="int" public="false" private="true" save="false" desc="基础减CD2"/>
+    <property name="DisCD2Mul" type="float" public="false" private="true" save="false" desc="减CD2加成"/>
+    <property name="DisCD2" type="int" public="false" private="true" save="false" desc="减CD2"/>
+    <property name="DisCD3Base" type="int" public="false" private="true" save="false" desc="基础减CD3"/>
+    <property name="DisCD3Mul" type="float" public="false" private="true" save="false" desc="减CD3加成"/>
+    <property name="DisCD3" type="int" public="false" private="true" save="false" desc="减CD3"/>
+    <property name="DisCD4" type="int" public="false" private="true" save="false" desc="减CD4"/>
+    <property name="RemainRevive" type="int" public="false" private="true" save="false" desc="剩余复活次数"/>
+    <property name="Revive" type="int" public="false" private="true" save="false" desc="复活次数"/>
+    <property name="LeechBase" type="int" public="false" private="true" save="false" desc="基础吸血"/>
+    <property name="LeechMul" type="float" public="false" private="true" save="false" desc="吸血加成"/>
+    <property name="Leech" type="int" public="false" private="true" save="false" desc="吸血"/>
+    <property name="ReboundBase" type="int" public="false" private="true" save="false" desc="基础反弹伤害"/>
+    <property name="ReboundMul" type="float" public="false" private="true" save="false" desc="反弹伤害加成"/>
+    <property name="Rebound" type="int" public="true" private="true" save="false" desc="反弹伤害"/>
+    <property name="Deadly" type="int" public="false" private="true" save="false" desc="必杀几率"/>
+    <property name="Dizzy" type="int" public="false" private="true" save="false" desc="眩晕几率"/>
+    <property name="DizzyAsist" type="int" public="true" private="true" save="false" desc="眩晕抗性"/>
+    <property name="Paraly" type="int" public="false" private="true" save="false" desc="麻痹几率"/>
+    <property name="ParalyAsist" type="int" public="true" private="true" save="false" desc="麻痹抗性"/>
+    <property name="FireDamBase" type="int" public="false" private="true" save="false" desc="基础火伤害"/>
+    <property name="FireDamMul" type="float" public="false" private="true" save="false" desc="火伤害加成"/>
+    <property name="FireDam" type="int" public="false" private="true" save="false" desc="火伤害"/>
+    <property name="FireRateBase" type="int" public="false" private="true" save="false" desc="基础火伤害几率"/>
+    <property name="FireRateMul" type="float" public="false" private="true" save="false" desc="火伤害几率加成"/>
+    <property name="FireRate" type="int" public="false" private="true" save="false" desc="火伤害几率"/>
+    <property name="IceDamBase" type="int" public="false" private="true" save="false" desc="基础冰伤害"/>
+    <property name="IceDamMul" type="float" public="false" private="true" save="false" desc="冰伤害加成"/>
+    <property name="IceDam" type="int" public="false" private="true" save="false" desc="冰伤害"/>
+    <property name="IceRateBase" type="int" public="false" private="true" save="false" desc="基础冰伤害几率"/>
+    <property name="IceRateMul" type="float" public="false" private="true" save="false" desc="冰伤害几率加成"/>
+    <property name="IceRate" type="int" public="false" private="true" save="false" desc="冰伤害几率"/>
+    <property name="IceAsistBase" type="int" public="false" private="true" save="false" desc="基础冰冻抗性"/>
+    <property name="IceAsistMul" type="float" public="false" private="true" save="false" desc="冰冻抗性加成"/>
+    <property name="IceAsist" type="int" public="false" private="true" save="false" desc="冰冻抗性"/>
+    <property name="LightningDamBase" type="int" public="false" private="true" save="false" desc="基础雷伤害"/>
+    <property name="LightningDamMul" type="float" public="false" private="true" save="false" desc="雷伤害加成"/>
+    <property name="LightningDam" type="int" public="false" private="true" save="false" desc="雷伤害"/>
+    <property name="LightningRateBase" type="int" public="false" private="true" save="false" desc="基础雷伤害几率"/>
+    <property name="LightningRateMul" type="float" public="false" private="true" save="false" desc="雷伤害几率加成"/>
+    <property name="LightningRate" type="int" public="false" private="true" save="false" desc="雷伤害几率"/>
+    <property name="WindDamBase" type="int" public="false" private="true" save="false" desc="基础风伤害"/>
+    <property name="WindDamMul" type="float" public="false" private="true" save="false" desc="风伤害加成"/>
+    <property name="WindDam" type="int" public="false" private="true" save="false" desc="风伤害"/>
+    <property name="WindRateBase" type="int" public="false" private="true" save="false" desc="基础风伤害几率"/>
+    <property name="WindRateMul" type="float" public="false" private="true" save="false" desc="风伤害几率加成"/>
+    <property name="WindRate" type="int" public="false" private="true" save="false" desc="风伤害几率"/>
+    <property name="SoilDamBase" type="int" public="false" private="true" save="false" desc="基础土伤害"/>
+    <property name="SoilDamMul" type="float" public="false" private="true" save="false" desc="土伤害加成"/>
+    <property name="SoilDam" type="int" public="false" private="true" save="false" desc="土伤害"/>
+    <property name="SoilRateBase" type="int" public="false" private="true" save="false" desc="基础土伤害几率"/>
+    <property name="SoilRateMul" type="float" public="false" private="true" save="false" desc="土伤害几率加成"/>
+    <property name="SoilRate" type="int" public="false" private="true" save="false" desc="土伤害几率"/>
+    <property name="PoisonDamBase" type="int" public="false" private="true" save="false" desc="基础毒伤害"/>
+    <property name="PoisonDamMul" type="float" public="false" private="true" save="false" desc="毒伤害加成"/>
+    <property name="PoisonDam" type="int" public="false" private="true" save="false" desc="毒伤害"/>
+    <property name="PoisonRateBase" type="int" public="false" private="true" save="false" desc="基础毒伤害几率"/>
+    <property name="PoisonRateMul" type="float" public="false" private="true" save="false" desc="毒伤害几率加成"/>
+    <property name="PoisonRate" type="int" public="false" private="true" save="false" desc="毒伤害几率"/>
+    <property name="MaxBreakBase"  type="int" public="false" private="true" save="false" desc="当前破防值"/>
+    <property name="MaxBreakMul"  type="int" public="false" private="true" save="false" desc="当前破防值"/>
+    <property name="Break"  type="int" public="true" private="true" save="false" desc="当前破防值"/>
+    <property name="MaxBreak"  type="int" public="true" private="true" save="false" desc="当前破防上限"/>
+    <property name="BreakReturn"  type="int" public="true" private="true" save="false" desc="当前破防回复速度"/>
+    <property name="BreakReturn2"  type="int" public="false" private="true" save="false" desc="当前破防回复速度"/>
+    <property name="BuffAbsorb" type="int" public="true" private="true" save="false" desc="Buff比例"/>
+    <property name="CureRateBase"  type="int" public="false" private="true" save="false" desc="治疗属性比值"/>
+    <property name="CureRateMul"  type="int" public="false" private="false" save="false" desc="治疗属性比值"/>
+    <property name="CureRate"  type="int" public="true" private="true" save="false" desc="治疗属性比值"/>
+	<property name="ImmunityBulletDamage" type="byte" public="true" private="true" save="false" desc="是否免疫弹道伤害"/>
+	<property name="LeechAsist" type="int" public="false" private="true" save="false" desc="吸血抗性"/>
+	<property name="LeechAsistBase" type="int" public="false" private="true" save="false" desc="吸血抗性基础值"/>
+	<property name="LeechAsistMul" type="float" public="false" private="true" save="false" desc="吸血抗性加成"/>
+	<property name="ReboundAsist" type="int" public="false" private="true" save="false" desc="反伤抗性"/>
+	<property name="ReboundAsistBase" type="int" public="false" private="true" save="false" desc="反伤抗性基础值"/>
+	<property name="ReboundAsistMul" type="float" public="false" private="true" save="false" desc="反伤抗性加成"/>
+  </properties>
+</object>

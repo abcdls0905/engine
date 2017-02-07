@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!--异步等待属性定义-->
+<object>	
+	<records>
+		<record name="grasp_rec_prop_add" cols="2" maxrows="1024" public="false" private="false" save="true" desc="增加激活的宠物属性值">
+				<column type="string" desc="属性名"/>
+				<column type="dword" desc="属性值"/>
+		</record>
+		<record name="grasp_rec_prop_dec" cols="2" maxrows="1024" public="false" private="false" save="true" desc="减少激活的宠物属性值">
+				<column type="string" desc="属性名"/>
+				<column type="dword" desc="属性值"/>
+		</record>
+		<record name="grasp_rec_effect" cols="3" maxrows="1024" public="true" private="true" save="true" desc="激活的宠物被动效果">
+				<column type="string" desc="Buffer效果名"/>
+				<column type="dword" desc="效果的类型"/>
+				<column type="dword" desc="领悟技能的等级"/>				
+		</record>
+		<record name="grasp_rec_prop_max_value" cols="2" maxrows="1024" public="true" private="false" save="true" desc="宠物最高属性值">
+				<column type="string" desc="属性名"/>
+				<column type="dword" desc="属性值"/>
+		</record>
+	</records>
+</object>

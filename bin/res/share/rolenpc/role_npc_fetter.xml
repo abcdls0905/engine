@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
+<!-- 角色羁绊 -->
+
+<!-- ID  唯一 -->
+<!-- RoleNpcConfigID 被羁绊的英雄configid 唯一 -->
+	<!-- FunID 羁绊ID 唯一 -->
+	<!-- AddProp 增加的属性：如:"MaxHP,percent,100" percent 代表百分比、int代表整数 -->
+		<!-- key 关键字段 唯一 -->
+		<!-- related_npc_id 羁绊的NPCID -->
+		<!-- active_condition 激活条件 -->
+	<!-- end -->
+<!-- end -->
+
+<!--
+VTYPE_BOOL=1		// 布尔
+VTYPE_INT=2		// 32位整数
+VTYPE_INT64=3	// 64位整数
+VTYPE_FLOAT=4	// 单精度浮点数
+VTYPE_DOUBLE=5	// 双精度浮点数
+VTYPE_STRING=6	// 字符串
+-->
+<Object>
+	<Property ID="1" RoleNpcConfigID="role_npc_base" Desc="太极武僧羁绊">
+		<Fun FunID="fun1_1" jbsx="810101" AddProp="ADTotal,percent,0.14" TextID="ui_jbtjsx_1" Desc="物理攻击+14%" TitleName="ui_titlename_1">
+			<Data key="1_1" related_npc_id="role_npc_base10" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun1_2" jbsx="810102" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_2">
+			<Data key="1_2" related_npc_id="role_npc_base2" active_condition="MaxHP,35000" TextID="ui_jbtjsx_3"/>
+		</Fun>
+		<Fun FunID="fun1_3" jbsx="810103" AddProp="ADTotal,percent,0.29" TextID="ui_jbtjsx_1" Desc="物理攻击+29%" TitleName="ui_titlename_3">
+			<Data key="1_3" related_npc_id="role_npc_base6" active_condition="APTotal,6200" TextID="ui_jbtjsx_2"/>
+			<Data key="1_4" related_npc_id="role_npc_base18" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+		</Fun>
+		<Fun FunID="fun1_4" jbsx="810104" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_4">
+			<Data key="1_5" related_npc_id="role_npc_base2" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="1_6" related_npc_id="role_npc_base3" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="1_7" related_npc_id="role_npc_base6" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="2" RoleNpcConfigID="role_npc_base1" Desc="魅影刺客羁绊">
+		<Fun FunID="fun2_1" jbsx="810201" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_5">
+			<Data key="2_1" related_npc_id="role_npc_base13" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun2_2" jbsx="810202" AddProp="ADTotal,percent,0.14" TextID="ui_jbtjsx_1" Desc="物理攻击+14%" TitleName="ui_titlename_6">
+			<Data key="2_2" related_npc_id="role_npc_base4" active_condition="ADTotal,3200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun2_3" jbsx="810203" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_7">
+			<Data key="2_3" related_npc_id="role_npc_base3" active_condition="APTotal,6200" TextID="ui_jbtjsx_2"/>
+			<Data key="2_4" related_npc_id="role_npc_base11" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+		</Fun>
+		<Fun FunID="fun2_4" jbsx="810204" AddProp="ADTotal,percent,0.29" TextID="ui_jbtjsx_1" Desc="物理攻击+29%" TitleName="ui_titlename_8">
+			<Data key="2_5" related_npc_id="role_npc_base4" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="2_6" related_npc_id="role_npc_base11" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="2_7" related_npc_id="role_npc_base12" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="3" RoleNpcConfigID="role_npc_base2" Desc="玄道术士羁绊">
+		<Fun FunID="fun3_1" jbsx="810301" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_9">
+			<Data key="3_1" related_npc_id="role_npc_base5" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun3_2" jbsx="810302" AddProp="APTotal,percent,0.14" TextID="ui_jbtjsx_2" Desc="法术攻击+14%" TitleName="ui_titlename_10">
+			<Data key="3_2" related_npc_id="role_npc_base" active_condition="MaxHP,35000" TextID="ui_jbtjsx_3"/>
+		</Fun>
+		<Fun FunID="fun3_3" jbsx="810303" AddProp="APTotal,percent,0.29" TextID="ui_jbtjsx_2" Desc="法术攻击+29%" TitleName="ui_titlename_11">
+			<Data key="3_3" related_npc_id="role_npc_base4" active_condition="ADTotal,6200" TextID="ui_jbtjsx_1"/>
+			<Data key="3_4" related_npc_id="role_npc_base3" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+		</Fun>
+		<Fun FunID="fun3_4" jbsx="810304" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_12">
+			<Data key="3_5" related_npc_id="role_npc_base" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="3_6" related_npc_id="role_npc_base3" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="3_7" related_npc_id="role_npc_base6" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="4" RoleNpcConfigID="role_npc_base3" Desc="幻术师羁绊">
+		<Fun FunID="fun4_1" jbsx="810401" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_13">
+			<Data key="4_1" related_npc_id="role_npc_base9" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun4_2" jbsx="810402" AddProp="APTotal,percent,0.14" TextID="ui_jbtjsx_2" Desc="法术攻击+14%" TitleName="ui_titlename_14">
+			<Data key="4_2" related_npc_id="role_npc_base12" active_condition="MaxHP,35000" TextID="ui_jbtjsx_3"/>
+		</Fun>
+		<Fun FunID="fun4_3" jbsx="810403" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_15">
+			<Data key="4_3" related_npc_id="role_npc_base1" active_condition="ADTotal,6200" TextID="ui_jbtjsx_1"/>
+			<Data key="4_4" related_npc_id="role_npc_base11" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+		</Fun>
+		<Fun FunID="fun4_4" jbsx="810404" AddProp="APTotal,percent,0.29" TextID="ui_jbtjsx_2" Desc="法术攻击+29%" TitleName="ui_titlename_16">
+			<Data key="4_5" related_npc_id="role_npc_base6" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="4_6" related_npc_id="role_npc_base2" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="4_7" related_npc_id="role_npc_base10" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="5" RoleNpcConfigID="role_npc_base4" Desc="雷月刀客羁绊">
+		<Fun FunID="fun5_1" jbsx="810501" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_17">
+			<Data key="5_1" related_npc_id="role_npc_base7" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun5_2" jbsx="810502" AddProp="ADTotal,percent,0.14" TextID="ui_jbtjsx_1" Desc="物理攻击+14%" TitleName="ui_titlename_18">
+			<Data key="5_2" related_npc_id="role_npc_base1" active_condition="ADTotal,3200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun5_3" jbsx="810503" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_19">
+			<Data key="5_3" related_npc_id="role_npc_base2" active_condition="APTotal,6200" TextID="ui_jbtjsx_2"/>
+			<Data key="5_4" related_npc_id="role_npc_base3" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+		</Fun>
+		<Fun FunID="fun5_4" jbsx="810504" AddProp="ADTotal,percent,0.29" TextID="ui_jbtjsx_1" Desc="物理攻击+29%" TitleName="ui_titlename_20">
+			<Data key="5_5" related_npc_id="role_npc_base1" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="5_6" related_npc_id="role_npc_base11" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="5_7" related_npc_id="role_npc_base12" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="6" RoleNpcConfigID="role_npc_base5" Desc="自然之女羁绊">
+		<Fun FunID="fun6_1" jbsx="810601" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_21">
+			<Data key="6_1" related_npc_id="role_npc_base2" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun6_2" jbsx="810602" AddProp="ADTotal,percent,0.14" TextID="ui_jbtjsx_1" Desc="物理攻击+14%" TitleName="ui_titlename_22">
+			<Data key="6_2" related_npc_id="role_npc_base16" active_condition="ADTotal,3200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun6_3" jbsx="810603" AddProp="ADTotal,percent,0.29" TextID="ui_jbtjsx_1" Desc="物理攻击+29%" TitleName="ui_titlename_23">
+			<Data key="6_3" related_npc_id="role_npc_base9" active_condition="APTotal,6200" TextID="ui_jbtjsx_2"/>
+			<Data key="6_4" related_npc_id="role_npc_base10" active_condition="APTotal,6200" TextID="ui_jbtjsx_2"/>
+			<Data key="6_5" related_npc_id="role_npc_base16" active_condition="ADTotal,6200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun6_4" jbsx="810604" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_24">
+			<Data key="6_6" related_npc_id="role_npc_base7" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="6_7" related_npc_id="role_npc_base9" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="6_8" related_npc_id="role_npc_base8" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="7" RoleNpcConfigID="role_npc_base6" Desc="烈焰凤凰羁绊">
+		<Fun FunID="fun7_1" jbsx="810701" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_25">
+			<Data key="7_1" related_npc_id="role_npc_base12" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun7_2" jbsx="810702" AddProp="APTotal,percent,0.14" TextID="ui_jbtjsx_2" Desc="法术攻击+14%" TitleName="ui_titlename_26">
+			<Data key="7_2" related_npc_id="role_npc_base8" active_condition="ADTotal,3200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun7_3" jbsx="810703" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_27">
+			<Data key="7_3" related_npc_id="role_npc_base" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+			<Data key="7_4" related_npc_id="role_npc_base18" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+		</Fun>
+		<Fun FunID="fun7_4" jbsx="810704" AddProp="APTotal,percent,0.29" TextID="ui_jbtjsx_2" Desc="法术攻击+29%" TitleName="ui_titlename_28">
+			<Data key="7_5" related_npc_id="role_npc_base3" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="7_6" related_npc_id="role_npc_base2" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="7_7" related_npc_id="role_npc_base10" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="8" RoleNpcConfigID="role_npc_base7" Desc="双子之力羁绊">
+		<Fun FunID="fun8_1" jbsx="810801" AddProp="ADTotal,percent,0.14" TextID="ui_jbtjsx_1" Desc="物理攻击+14%" TitleName="ui_titlename_29">
+			<Data key="8_1" related_npc_id="role_npc_base4" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun8_2" jbsx="810802" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_30">
+			<Data key="8_2" related_npc_id="role_npc_base14" active_condition="ADTotal,3200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun8_3" jbsx="810803" AddProp="ADTotal,percent,0.29" TextID="ui_jbtjsx_1" Desc="物理攻击+29%" TitleName="ui_titlename_31">
+			<Data key="8_3" related_npc_id="role_npc_base12" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+			<Data key="8_4" related_npc_id="role_npc_base8" active_condition="ADTotal,6200" TextID="ui_jbtjsx_1"/>
+			<Data key="8_5" related_npc_id="role_npc_base14" active_condition="ADTotal,6200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun8_4" jbsx="810804" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_32">
+			<Data key="8_6" related_npc_id="role_npc_base5" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="8_7" related_npc_id="role_npc_base8" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="8_8" related_npc_id="role_npc_base9" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="9" RoleNpcConfigID="role_npc_base8" Desc="汉克羁绊">
+		<Fun FunID="fun9_1" jbsx="810901" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_33">
+			<Data key="9_1" related_npc_id="role_npc_base11" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun9_2" jbsx="810902" AddProp="ADTotal,percent,0.14" TextID="ui_jbtjsx_1" Desc="物理攻击+14%" TitleName="ui_titlename_34">
+			<Data key="9_2" related_npc_id="role_npc_base6" active_condition="APTotal,3200" TextID="ui_jbtjsx_2"/>
+		</Fun>
+		<Fun FunID="fun9_3" jbsx="810903" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_35">
+			<Data key="9_3" related_npc_id="role_npc_base7" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+			<Data key="9_4" related_npc_id="role_npc_base12" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+			<Data key="9_5" related_npc_id="role_npc_base14" active_condition="ADTotal,6200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun9_4" jbsx="810904" AddProp="ADTotal,percent,0.29" TextID="ui_jbtjsx_1" Desc="物理攻击+29%" TitleName="ui_titlename_36">
+			<Data key="9_6" related_npc_id="role_npc_base7" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="9_7" related_npc_id="role_npc_base5" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="9_8" related_npc_id="role_npc_base9" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="10" RoleNpcConfigID="role_npc_base9" Desc="气功师羁绊">
+		<Fun FunID="fun10_1" jbsx="811001" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_37">
+			<Data key="10_1" related_npc_id="role_npc_base3" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun10_2" jbsx="811002" AddProp="APTotal,percent,0.14" TextID="ui_jbtjsx_2" Desc="法术攻击+14%" TitleName="ui_titlename_38">
+			<Data key="10_2" related_npc_id="role_npc_base15" active_condition="APTotal,3200" TextID="ui_jbtjsx_2"/>
+		</Fun>
+		<Fun FunID="fun10_3" jbsx="811003" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_39">
+			<Data key="10_3" related_npc_id="role_npc_base5" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+			<Data key="10_4" related_npc_id="role_npc_base10" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+			<Data key="10_5" related_npc_id="role_npc_base16" active_condition="ADTotal,6200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun10_4" jbsx="811004" AddProp="APTotal,percent,0.29" TextID="ui_jbtjsx_2" Desc="法术攻击+29%" TitleName="ui_titlename_40">
+			<Data key="10_6" related_npc_id="role_npc_base7" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="10_7" related_npc_id="role_npc_base5" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="10_8" related_npc_id="role_npc_base8" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="11" RoleNpcConfigID="role_npc_base10" Desc="游乐师羁绊">
+		<Fun FunID="fun11_1" jbsx="811101" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_41">
+			<Data key="11_1" related_npc_id="role_npc_base" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun11_2" jbsx="811102" AddProp="APTotal,percent,0.14" TextID="ui_jbtjsx_2" Desc="法术攻击+14%" TitleName="ui_titlename_42">
+			<Data key="11_2" related_npc_id="role_npc_base18" active_condition="MaxHP,35000" TextID="ui_jbtjsx_3"/>
+		</Fun>
+		<Fun FunID="fun11_3" jbsx="811103" AddProp="APTotal,percent,0.29" TextID="ui_jbtjsx_2" Desc="法术攻击+29%" TitleName="ui_titlename_43">
+			<Data key="11_3" related_npc_id="role_npc_base5" active_condition="ADTotal,6200" TextID="ui_jbtjsx_1"/>
+			<Data key="11_4" related_npc_id="role_npc_base9" active_condition="APTotal,6200" TextID="ui_jbtjsx_2"/>
+			<Data key="11_5" related_npc_id="role_npc_base16" active_condition="ADTotal,6200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun11_4" jbsx="811104" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_44">
+			<Data key="11_6" related_npc_id="role_npc_base12" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="11_7" related_npc_id="role_npc_base3" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="11_8" related_npc_id="role_npc_base11" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="12" RoleNpcConfigID="role_npc_base11" Desc="甜心死神羁绊">
+		<Fun FunID="fun12_1" jbsx="811201" AddProp="ADTotal,percent,0.14" TextID="ui_jbtjsx_1" Desc="物理攻击+14%" TitleName="ui_titlename_45">
+			<Data key="12_1" related_npc_id="role_npc_base8" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun12_2" jbsx="811202" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_46">
+			<Data key="12_2" related_npc_id="role_npc_base17" active_condition="MaxHP,35000" TextID="ui_jbtjsx_3"/>
+		</Fun>
+		<Fun FunID="fun12_3" jbsx="811203" AddProp="ADTotal,percent,0.29" TextID="ui_jbtjsx_1" Desc="物理攻击+29%" TitleName="ui_titlename_47">
+			<Data key="12_3" related_npc_id="role_npc_base1" active_condition="ADTotal,6200" TextID="ui_jbtjsx_1"/>
+			<Data key="12_4" related_npc_id="role_npc_base3" active_condition="APTotal,6200" TextID="ui_jbtjsx_2"/>
+		</Fun>
+		<Fun FunID="fun12_4" jbsx="811204" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_48">
+			<Data key="12_6" related_npc_id="role_npc_base1" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="12_7" related_npc_id="role_npc_base4" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="12_8" related_npc_id="role_npc_base12" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="13" RoleNpcConfigID="role_npc_base12" Desc="不醉酒仙羁绊">
+		<Fun FunID="fun13_1" jbsx="811301" AddProp="ADTotal,percent,0.14" TextID="ui_jbtjsx_1" Desc="物理攻击+14%" TitleName="ui_titlename_49">
+			<Data key="13_1" related_npc_id="role_npc_base6" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun13_2" jbsx="811302" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_50">
+			<Data key="13_2" related_npc_id="role_npc_base3" active_condition="APTotal,3200" TextID="ui_jbtjsx_2"/>
+		</Fun>
+		<Fun FunID="fun13_3" jbsx="811303" AddProp="ADTotal,percent,0.29" TextID="ui_jbtjsx_1" Desc="物理攻击+29%" TitleName="ui_titlename_51">
+			<Data key="13_3" related_npc_id="role_npc_base7" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+			<Data key="13_4" related_npc_id="role_npc_base8" active_condition="ADTotal,6200" TextID="ui_jbtjsx_1"/>
+			<Data key="13_5" related_npc_id="role_npc_base14" active_condition="ADTotal,6200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun13_4" jbsx="811304" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_52">
+			<Data key="13_6" related_npc_id="role_npc_base10" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="13_7" related_npc_id="role_npc_base3" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="13_8" related_npc_id="role_npc_base11" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="14" RoleNpcConfigID="role_npc_base13" Desc="瘟疫射手羁绊">
+		<Fun FunID="fun14_1" jbsx="811401" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_53">
+			<Data key="14_1" related_npc_id="role_npc_base1" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun14_2" jbsx="811402" AddProp="APTotal,percent,0.14" TextID="ui_jbtjsx_2" Desc="法术攻击+14%" TitleName="ui_titlename_54">
+			<Data key="14_2" related_npc_id="role_npc_base14" active_condition="ADTotal,3200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun14_3" jbsx="811403" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_55">
+			<Data key="14_3" related_npc_id="role_npc_base15" active_condition="APTotal,6200" TextID="ui_jbtjsx_2"/>
+			<Data key="14_4" related_npc_id="role_npc_base14" active_condition="ADTotal,6200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun14_4" jbsx="811404" AddProp="APTotal,percent,0.29" TextID="ui_jbtjsx_2" Desc="法术攻击+29%" TitleName="ui_titlename_56">
+			<Data key="14_6" related_npc_id="role_npc_base3" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="14_7" related_npc_id="role_npc_base6" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="14_8" related_npc_id="role_npc_base2" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="15" RoleNpcConfigID="role_npc_base14" Desc="无极剑客羁绊">
+		<Fun FunID="fun15_1" jbsx="811501" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_57">
+			<Data key="15_1" related_npc_id="role_npc_base18" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun15_2" jbsx="811502" AddProp="ADTotal,percent,0.14" TextID="ui_jbtjsx_1" Desc="物理攻击+14%" TitleName="ui_titlename_58">
+			<Data key="15_2" related_npc_id="role_npc_base7" active_condition="MaxHP,35000" TextID="ui_jbtjsx_3"/>
+		</Fun>
+		<Fun FunID="fun15_3" jbsx="811503" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_59">
+			<Data key="15_3" related_npc_id="role_npc_base15" active_condition="APTotal,6200" TextID="ui_jbtjsx_2"/>
+			<Data key="15_4" related_npc_id="role_npc_base3" active_condition="APTotal,6200" TextID="ui_jbtjsx_2"/>
+		</Fun>
+		<Fun FunID="fun15_4" jbsx="811504" AddProp="ADTotal,percent,0.29" TextID="ui_jbtjsx_1" Desc="物理攻击+29%" TitleName="ui_titlename_60">
+			<Data key="15_6" related_npc_id="role_npc_base" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="15_7" related_npc_id="role_npc_base2" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="15_8" related_npc_id="role_npc_base5" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="16" RoleNpcConfigID="role_npc_base15" Desc="湮灭女巫羁绊">
+		<Fun FunID="fun16_1" jbsx="811601" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_61">
+			<Data key="16_1" related_npc_id="role_npc_base17" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun16_2" jbsx="811602" AddProp="APTotal,percent,0.14" TextID="ui_jbtjsx_2" Desc="法术攻击+14%" TitleName="ui_titlename_62">
+			<Data key="16_2" related_npc_id="role_npc_base9" active_condition="APTotal,3200" TextID="ui_jbtjsx_2"/>
+		</Fun>
+		<Fun FunID="fun16_3" jbsx="811603" AddProp="APTotal,percent,0.29" TextID="ui_jbtjsx_2" Desc="法术攻击+29%" TitleName="ui_titlename_63">
+			<Data key="16_3" related_npc_id="role_npc_base1" active_condition="ADTotal,6200" TextID="ui_jbtjsx_1"/>
+			<Data key="16_4" related_npc_id="role_npc_base16" active_condition="ADTotal,6200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun16_4" jbsx="811604" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_64">
+			<Data key="16_6" related_npc_id="role_npc_base3" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="16_7" related_npc_id="role_npc_base6" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="16_8" related_npc_id="role_npc_base13" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+		<Property ID="17" RoleNpcConfigID="role_npc_base16" Desc="神枪游侠羁绊">
+		<Fun FunID="fun17_1" jbsx="811701" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_65">
+			<Data key="17_1" related_npc_id="role_npc_base18" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun17_2" jbsx="811702" AddProp="ADTotal,percent,0.14" TextID="ui_jbtjsx_1" Desc="物理攻击+14%" TitleName="ui_titlename_66">
+			<Data key="17_2" related_npc_id="role_npc_base13" active_condition="APTotal,3200" TextID="ui_jbtjsx_2"/>
+		</Fun>
+		<Fun FunID="fun17_3" jbsx="811703" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_67">
+			<Data key="17_3" related_npc_id="role_npc_base17" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+			<Data key="17_4" related_npc_id="role_npc_base4" active_condition="ADTotal,6200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun17_4" jbsx="811704" AddProp="ADTotal,percent,0.29" TextID="ui_jbtjsx_1" Desc="物理攻击+29%" TitleName="ui_titlename_68">
+			<Data key="17_6" related_npc_id="role_npc_base12" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="17_7" related_npc_id="role_npc_base10" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="17_8" related_npc_id="role_npc_base8" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+		<Property ID="18" RoleNpcConfigID="role_npc_base17" Desc="幽灵船长羁绊">
+		<Fun FunID="fun18_1" jbsx="811801" AddProp="ADTotal,percent,0.14" TextID="ui_jbtjsx_1" Desc="物理攻击+14%" TitleName="ui_titlename_69">
+			<Data key="18_1" related_npc_id="role_npc_base15" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun18_2" jbsx="811802" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_70">
+			<Data key="18_2" related_npc_id="role_npc_base11" active_condition="MaxHP,35000" TextID="ui_jbtjsx_3"/>
+		</Fun>
+		<Fun FunID="fun18_3" jbsx="811803" AddProp="ADTotal,percent,0.29" TextID="ui_jbtjsx_1" Desc="物理攻击+29%" TitleName="ui_titlename_71">
+			<Data key="18_3" related_npc_id="role_npc_base12" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+			<Data key="18_4" related_npc_id="role_npc_base18" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+		</Fun>
+		<Fun FunID="fun18_4" jbsx="811804" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_72">
+			<Data key="18_6" related_npc_id="role_npc_base1" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="18_7" related_npc_id="role_npc_base4" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="18_8" related_npc_id="role_npc_base11" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="19" RoleNpcConfigID="role_npc_base18" Desc="齐天大圣羁绊">
+		<Fun FunID="fun19_1" jbsx="811901" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_73">
+			<Data key="19_1" related_npc_id="role_npc_base14" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun19_2" jbsx="811902" AddProp="ADTotal,percent,0.3" TextID="ui_jbtjsx_1" Desc="物理攻击+30%" TitleName="ui_titlename_74">
+			<Data key="19_2" related_npc_id="role_npc_base10" active_condition="APTotal,3200" TextID="ui_jbtjsx_2"/>
+		</Fun>
+		<Fun FunID="fun19_3" jbsx="811903" AddProp="APTotal,percent,0.3" TextID="ui_jbtjsx_2" Desc="法术攻击+30%" TitleName="ui_titlename_75">
+			<Data key="19_3" related_npc_id="role_npc_base15" active_condition="APTotal,6200" TextID="ui_jbtjsx_2"/>
+			<Data key="19_4" related_npc_id="role_npc_base11" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+		</Fun>
+		<Fun FunID="fun19_4" jbsx="811904" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_76">
+			<Data key="19_6" related_npc_id="role_npc_base" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="19_7" related_npc_id="role_npc_base2" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="19_8" related_npc_id="role_npc_base7" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="20" RoleNpcConfigID="role_npc_base19" Desc="御雨狐仙羁绊">
+		<Fun FunID="fun20_1" jbsx="812001" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_77">
+			<Data key="20_1" related_npc_id="role_npc_base12" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun20_2" jbsx="812002" AddProp="APTotal,percent,0.14" TextID="ui_jbtjsx_2" Desc="法术攻击+14%" TitleName="ui_titlename_78">
+			<Data key="20_2" related_npc_id="role_npc_base10" active_condition="APTotal,3200" TextID="ui_jbtjsx_2"/>
+		</Fun>
+		<Fun FunID="fun20_3" jbsx="812003" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_79">
+			<Data key="20_3" related_npc_id="role_npc_base11" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+			<Data key="20_4" related_npc_id="role_npc_base5" active_condition="ADTotal,6200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun20_4" jbsx="812004" AddProp="APTotal,percent,0.29" TextID="ui_jbtjsx_2" Desc="法术攻击+29%" TitleName="ui_titlename_80">
+			<Data key="20_6" related_npc_id="role_npc_base4" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="20_7" related_npc_id="role_npc_base6" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="20_8" related_npc_id="role_npc_base9" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="21" RoleNpcConfigID="role_npc_base20" Desc="平衡法师羁绊">
+		<Fun FunID="fun21_1" jbsx="812101" AddProp="APTotal,percent,0.14" TextID="ui_jbtjsx_2" Desc="法术攻击+14%" TitleName="ui_titlename_81">
+			<Data key="21_1" related_npc_id="role_npc_base" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun21_2" jbsx="812102" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_82">
+			<Data key="21_2" related_npc_id="role_npc_base5" active_condition="ADTotal,3200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun21_3" jbsx="812103" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_83">
+			<Data key="21_3" related_npc_id="role_npc_base" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+			<Data key="21_4" related_npc_id="role_npc_base16" active_condition="ADTotal,6200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun21_4" jbsx="812104" AddProp="APTotal,percent,0.29" TextID="ui_jbtjsx_2" Desc="法术攻击+29%" TitleName="ui_titlename_84">
+			<Data key="21_6" related_npc_id="role_npc_base12" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="21_7" related_npc_id="role_npc_base7" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="21_8" related_npc_id="role_npc_base3" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="22" RoleNpcConfigID="role_npc_base21" Desc="伏虎拳师羁绊">
+		<Fun FunID="fun22_1" jbsx="812201" AddProp="APTotal,percent,0.14" TextID="ui_jbtjsx_2" Desc="法术攻击+14%" TitleName="ui_titlename_85">
+			<Data key="22_1" related_npc_id="role_npc_base6" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun22_2" jbsx="812202" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_86">
+			<Data key="22_2" related_npc_id="role_npc_base8" active_condition="ADTotal,3200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun22_3" jbsx="812203" AddProp="APTotal,percent,0.29" TextID="ui_jbtjsx_2" Desc="法术攻击+29%" TitleName="ui_titlename_87">
+			<Data key="22_3" related_npc_id="role_npc_base3" active_condition="APTotal,6200" TextID="ui_jbtjsx_2"/>
+			<Data key="22_4" related_npc_id="role_npc_base9" active_condition="APTotal,6200" TextID="ui_jbtjsx_2"/>
+		</Fun>
+		<Fun FunID="fun22_4" jbsx="812204" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_88">
+			<Data key="22_6" related_npc_id="role_npc_base3" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="22_7" related_npc_id="role_npc_base12" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="22_8" related_npc_id="role_npc_base7" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="23" RoleNpcConfigID="role_npc_base22" Desc="恶魔之源羁绊">
+		<Fun FunID="fun23_1" jbsx="812301" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_89">
+			<Data key="23_1" related_npc_id="role_npc_base10" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun23_2" jbsx="812302" AddProp="APTotal,percent,0.14" TextID="ui_jbtjsx_2" Desc="法术攻击+14%" TitleName="ui_titlename_90">
+			<Data key="23_2" related_npc_id="role_npc_base20" active_condition="MaxHP,35000" TextID="ui_jbtjsx_3"/>
+		</Fun>
+		<Fun FunID="fun23_3" jbsx="812303" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_91">
+			<Data key="23_3" related_npc_id="role_npc_base6" active_condition="APTotal,6200" TextID="ui_jbtjsx_2"/>
+			<Data key="23_4" related_npc_id="role_npc_base13" active_condition="APTotal,6200" TextID="ui_jbtjsx_2"/>
+		</Fun>
+		<Fun FunID="fun23_4" jbsx="812304" AddProp="APTotal,percent,0.29" TextID="ui_jbtjsx_2" Desc="法术攻击+29%" TitleName="ui_titlename_92">
+			<Data key="23_6" related_npc_id="role_npc_base11" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="23_7" related_npc_id="role_npc_base10" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="23_8" related_npc_id="role_npc_base2" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="24" RoleNpcConfigID="role_npc_base23" Desc="光辉剑师羁绊">
+		<Fun FunID="fun24_1" jbsx="812401" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_93">
+			<Data key="24_1" related_npc_id="role_npc_base4" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun24_2" jbsx="812402" AddProp="ADTotal,percent,0.14" TextID="ui_jbtjsx_1" Desc="物理攻击+14%" TitleName="ui_titlename_94">
+			<Data key="24_2" related_npc_id="role_npc_base14" active_condition="ADTotal,3200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun24_3" jbsx="812403" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_95">
+			<Data key="24_3" related_npc_id="role_npc_base3" active_condition="APTotal,6200" TextID="ui_jbtjsx_2"/>
+			<Data key="24_4" related_npc_id="role_npc_base11" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+		</Fun>
+		<Fun FunID="fun24_4" jbsx="812404" AddProp="ADTotal,percent,0.29" TextID="ui_jbtjsx_1" Desc="物理攻击+29%" TitleName="ui_titlename_96">
+			<Data key="24_6" related_npc_id="role_npc_base8" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="24_7" related_npc_id="role_npc_base1" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="24_8" related_npc_id="role_npc_base" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="25" RoleNpcConfigID="role_npc_base24" Desc="炼金术士羁绊">
+		<Fun FunID="fun25_1" jbsx="812501" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_97">
+			<Data key="25_1" related_npc_id="role_npc_base2" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun25_2" jbsx="812502" AddProp="ADTotal,percent,0.3" TextID="ui_jbtjsx_1" Desc="物理攻击+30%" TitleName="ui_titlename_98">
+			<Data key="25_2" related_npc_id="role_npc_base5" active_condition="MaxHP,35000" TextID="ui_jbtjsx_3"/>
+		</Fun>
+		<Fun FunID="fun25_3" jbsx="812503" AddProp="APTotal,percent,0.3" TextID="ui_jbtjsx_2" Desc="法术攻击+30%" TitleName="ui_titlename_99">
+			<Data key="25_3" related_npc_id="role_npc_base20" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+			<Data key="25_4" related_npc_id="role_npc_base12" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+		</Fun>
+		<Fun FunID="fun25_4" jbsx="812504" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_100">
+			<Data key="25_6" related_npc_id="role_npc_base4" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="25_7" related_npc_id="role_npc_base3" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="25_8" related_npc_id="role_npc_base7" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="26" RoleNpcConfigID="role_npc_base25" Desc="冰女羁绊">
+		<Fun FunID="fun26_1" jbsx="812601" AddProp="APTotal,percent,0.14" TextID="ui_jbtjsx_2" Desc="法术攻击+14%" TitleName="ui_titlename_101">
+			<Data key="26_1" related_npc_id="role_npc_base6" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun26_2" jbsx="812602" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_102">
+			<Data key="26_2" related_npc_id="role_npc_base22" active_condition="APTotal,3200" TextID="ui_jbtjsx_2"/>
+		</Fun>
+		<Fun FunID="fun26_3" jbsx="812603" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_103">
+			<Data key="26_3" related_npc_id="role_npc_base" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+			<Data key="26_4" related_npc_id="role_npc_base20" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+		</Fun>
+		<Fun FunID="fun26_4" jbsx="812604" AddProp="APTotal,percent,0.29" TextID="ui_jbtjsx_2" Desc="法术攻击+29%" TitleName="ui_titlename_104">
+			<Data key="26_6" related_npc_id="role_npc_base10" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="26_7" related_npc_id="role_npc_base3" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="26_8" related_npc_id="role_npc_base9" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="27" RoleNpcConfigID="role_npc_base26" Desc="暮色收割者">
+		<Fun FunID="fun27_1" jbsx="812701" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_105">
+			<Data key="27_1" related_npc_id="role_npc_base1" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun27_2" jbsx="812702" AddProp="ADTotal,percent,0.14" TextID="ui_jbtjsx_1" Desc="物理攻击+14%" TitleName="ui_titlename_106">
+			<Data key="27_2" related_npc_id="role_npc_base8" active_condition="ADTotal,3200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun27_3" jbsx="812703" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_107">
+			<Data key="27_3" related_npc_id="role_npc_base2" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+			<Data key="27_4" related_npc_id="role_npc_base14" active_condition="ADTotal,6200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun27_4" jbsx="812704" AddProp="ADTotal,percent,0.29" TextID="ui_jbtjsx_1" Desc="物理攻击+29%" TitleName="ui_titlename_108">
+			<Data key="27_6" related_npc_id="role_npc_base7" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="27_7" related_npc_id="role_npc_base5" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="27_8" related_npc_id="role_npc_base9" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="28" RoleNpcConfigID="role_npc_base27" Desc="云龙将军羁绊">
+		<Fun FunID="fun28_1" jbsx="812801" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_109">
+			<Data key="28_1" related_npc_id="role_npc_base7" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun28_2" jbsx="812802" AddProp="APTotal,percent,0.14" TextID="ui_jbtjsx_2" Desc="法术攻击+14%" TitleName="ui_titlename_110">
+			<Data key="28_2" related_npc_id="role_npc_base13" active_condition="APTotal,3200" TextID="ui_jbtjsx_2"/>
+		</Fun>
+		<Fun FunID="fun28_3" jbsx="812803" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_111">
+			<Data key="28_3" related_npc_id="role_npc_base4" active_condition="ADTotal,6200" TextID="ui_jbtjsx_1"/>
+			<Data key="28_4" related_npc_id="role_npc_base16" active_condition="ADTotal,6200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun28_4" jbsx="812804" AddProp="APTotal,percent,0.29" TextID="ui_jbtjsx_2" Desc="法术攻击+29%" TitleName="ui_titlename_112">
+			<Data key="28_6" related_npc_id="role_npc_base" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="28_7" related_npc_id="role_npc_base2" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="28_8" related_npc_id="role_npc_base7" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	<Property ID="29" RoleNpcConfigID="role_npc_base28" Desc="守望精灵羁绊">
+		<Fun FunID="fun29_1" jbsx="812901" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_113">
+			<Data key="29_1" related_npc_id="role_npc_base2" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun29_2" jbsx="812902" AddProp="ADTotal,percent,0.4" TextID="ui_jbtjsx_1" Desc="物理攻击+40%" TitleName="ui_titlename_114">
+			<Data key="29_2" related_npc_id="role_npc_base5" active_condition="ADTotal,3200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun29_3" jbsx="812903" AddProp="APTotal,percent,0.4" TextID="ui_jbtjsx_2" Desc="法术攻击+40%" TitleName="ui_titlename_115">
+			<Data key="29_3" related_npc_id="role_npc_base10" active_condition="MaxHP,65000" TextID="ui_jbtjsx_3"/>
+			<Data key="29_4" related_npc_id="role_npc_base15" active_condition="APTotal,6200" TextID="ui_jbtjsx_2"/>
+		</Fun>
+		<Fun FunID="fun29_4" jbsx="812904" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_116">
+			<Data key="29_6" related_npc_id="role_npc_base3" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="29_7" related_npc_id="role_npc_base7" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="29_8" related_npc_id="role_npc_base12" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+	
+	<Property ID="30" RoleNpcConfigID="role_npc_base29" Desc="太极拳圣羁绊">
+		<Fun FunID="fun30_1" jbsx="813001" AddProp="MaxHP,percent,0.14" TextID="ui_jbtjsx_3" Desc="生命上限+14%" TitleName="ui_titlename_117">
+			<Data key="30_1" related_npc_id="role_npc_base" active_condition="StepLevel,5" TextID="ui_jbtjsx_4"/>
+		</Fun>
+		<Fun FunID="fun30_2" jbsx="813002" AddProp="ADTotal,percent,0.14" TextID="ui_jbtjsx_1" Desc="物理攻击+14%" TitleName="ui_titlename_118">
+			<Data key="30_2" related_npc_id="role_npc_base5" active_condition="ADTotal,3200" TextID="ui_jbtjsx_1"/>
+		</Fun>
+		<Fun FunID="fun30_3" jbsx="813003" AddProp="MaxHP,percent,0.29" TextID="ui_jbtjsx_3" Desc="生命上限+29%" TitleName="ui_titlename_119">
+			<Data key="30_3" related_npc_id="role_npc_base14" active_condition="ADTotal,6200" TextID="ui_jbtjsx_1"/>
+			<Data key="30_4" related_npc_id="role_npc_base21" active_condition="APTotal,6200" TextID="ui_jbtjsx_2"/>
+		</Fun>
+		<Fun FunID="fun30_4" jbsx="813004" AddProp="ADTotal,percent,0.29" TextID="ui_jbtjsx_1" Desc="物理攻击+29%" TitleName="ui_titlename_120">
+			<Data key="30_6" related_npc_id="role_npc_base3" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="30_7" related_npc_id="role_npc_base7" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+			<Data key="30_8" related_npc_id="role_npc_base12" active_condition="StepLevel,8" TextID="ui_jbtjsx_4"/>
+		</Fun>
+	</Property>
+ </Object>

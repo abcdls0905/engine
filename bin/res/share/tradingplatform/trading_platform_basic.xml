@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 交易行基础配置 -->
+<!--
+	GoodsSellingTime - 商品售卖时长（单位分钟）
+	TaxRatio - 税率
+	MaxPlayerSalesCount - 每个玩家最多可上架售卖的道具数量
+	MinCost - 最少上架费
+	CostRate - 上架费倍率:CostRate*钻石数量=上架费
+	MaxPriceRate - 价格最高可上调至推荐价格的多少倍（此处必须 >= 1）
+	MinPriceRate - 价格最低可下调至推荐价格的多少倍（此处必须 <= 1）
+-->
+<Object>
+	<BasicConfig GoodsSellingTime="720" TaxRatio="0.1" MaxPlayerSalesCount="4" MinCost="1000" CostRate="10.0" MinRefRatio="0.8"/>
+</Object>

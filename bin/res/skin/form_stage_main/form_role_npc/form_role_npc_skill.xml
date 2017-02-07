@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop Left="173" Top="93" Width="504" Height="530" ForeColor="0,0,0,0" BackColor="0,255,255,255" ShadowColor="0,0,0,0"/>
+		<control name="lbl_main_left" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="-1" Top="-3" Width="80" Height="490" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_main/roles/rolenpcdiwen_11.png"/>
+		</control>
+		<control name="lbl_main_right" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="420" Top="-8" Width="80" Height="490" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_main/roles/rolenpcdiwen_12.png"/>
+		</control>
+		<control name="groupbox_kuang" entity="GroupBox" script="" init="">
+			<prop Transparent="true" Left="17" Top="15" Width="498" Height="526" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+			<control name="groupbox_right_skill" entity="GroupBox" script="" init="">
+				<prop Top="10" Width="500" Height="477" BackColor="0,255,68,51" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+				<control name="groupbox_need_money" entity="GroupBox" script="" init="">
+					<prop Left="159" Top="571" Width="246" Height="54" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+					<control name="lbl_13" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="39" Top="3" Width="156" Height="45" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_main/roles/roles.png,841,168,144,49"/>
+					</control>
+					<control name="lbl_10" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="33" Top="-1" Width="52" Height="52" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow"/>
+					</control>
+					<control name="lbl_need_money" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" TextOffsetX="10" Left="82" Top="8" Width="106" Height="32" ForeColor="255,100,50,0" ShadowColor="0,0,0,0" Text="88888" Font="WRYH18_O_BLACK" DrawMode="FitWindow"/>
+					</control>
+				</control>
+				<control name="groupbox_skill_temp" entity="GroupBox" script="" init="">
+					<prop Transparent="true" ClipChildren="false" Left="21" Top="30" Width="458" Height="114" BackColor="0,167,255,56" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+					<control name="lbl_14" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="-1" Top="-8" Width="486" Height="486" ShadowColor="0,0,0,0" DrawMode="Expand"/>
+					</control>
+					<control name="btn_skill_click" entity="Button" script="" init="">
+						<prop NormalImage="gui/tp2_main/roles/roles.png,391,100,200,200" PushImage="gui/tp2_main/roles/roles.png,391,100,200,200" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="460" Height="125" BackColor="255,192,192,192" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+					</control>
+					<control name="lbl_skill_back_image" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="20" Top="13" Width="98" Height="98" ShadowColor="0,0,0,0" TestTrans="true" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/roles/roles.png,98,484,98,98"/>
+					</control>
+					<control name="lbl_skill_pic" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="20" Top="12" Width="96" Height="96" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+					</control>
+					<control name="lbl_skill_level" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" TextOffsetX="0" TextOffsetY="0" Left="101" Top="87" Width="14" Height="16" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="1" Font="WRYH16_O_BLACK"/>
+					</control>
+					<control name="lbl_skill_ani" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="-31" Top="-18" Width="182" Height="166" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+					</control>
+					<control name="grp_skill_fit" entity="GroupBox" script="" init="">
+						<prop Transparent="true" Left="126" Top="10" Width="333" Height="103" BackColor="0,255,86,255" ShadowColor="0,0,0,0" TestTrans="true" NoFrame="true"/>
+						<control name="lbl_skill_name_fit" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" TextOffsetX="0" TextOffsetY="0" Left="12" Top="12" Width="154" Height="21" ForeColor="255,51,102,51" ShadowColor="0,0,0,0" Text="扫千斤" Font="WRYH28"/>
+						</control>
+						<control name="btn_skill_up" entity="Button" script="" init="">
+							<prop NormalImage="gui/tp2_main/roles/jia_up.png" PushImage="gui/tp2_main/roles/jia_over.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="235" Top="21" Width="77" Height="60" BackColor="255,192,192,192" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="FitWindow"/>
+						</control>
+						<control name="skill_need_money_bk" entity="Label" script="" init="">
+							<prop Align="Center" RefCursor="WIN_HELP" TextOffsetX="0" TextOffsetY="0" Left="11" Top="49" Width="160" Height="40" ForeColor="255,102,51,0" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_main/roles/uplevel_18.png"/>
+						</control>
+						<control name="skill_need_money_pt" entity="Label" script="" init="">
+							<prop Align="Center" RefCursor="WIN_HELP" TextOffsetX="0" TextOffsetY="0" Left="6" Top="42" Width="52" Height="52" ForeColor="255,102,51,0" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui/xm2_main/hall/jingbi.png"/>
+						</control>
+						<control name="lbl_skill_need_money" entity="Label" script="" init="">
+							<prop Align="Center" RefCursor="WIN_HELP" TextOffsetX="0" TextOffsetY="0" Left="-119" Top="2" Width="117" Height="34" ForeColor="255,102,51,0" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Text="310" Font="WRYH24"/>
+						</control>
+					</control>
+					<control name="grp_skill_not_fit" entity="GroupBox" script="" init="">
+						<prop Transparent="true" Left="126" Top="5" Width="333" Height="103" BackColor="0,84,255,255" ShadowColor="0,0,0,0" Visible="false" NoFrame="true"/>
+						<control name="mlt_need_level" entity="MultiTextBox" script="" init="">
+							<prop TextColor="255,60,90,120" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,264,31" LineHeight="27" ScrollSize="17" Left="15" Top="60" Width="264" Height="31" ForeColor="255,60,90,120" ShadowColor="0,0,0,0" TestTrans="true" Text="MultiTextBox1" Font="WRYH24" NoFrame="true" DrawMode="FitWindow"/>
+						</control>
+						<control name="lbl_skill_name_not_fit" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" TextOffsetX="0" TextOffsetY="0" Left="14" Top="18" Width="158" Height="22" ForeColor="255,51,102,51" ShadowColor="0,0,0,0" Text="skill_name" Font="WRYH28"/>
+						</control>
+					</control>
+					<control name="lbl_is_taichi_skill" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Top="-2" Width="118" Height="110" ShadowColor="0,0,0,0" TestTrans="true" BackImage="gui/tp2_main/roles/jineng.png"/>
+					</control>
+				</control>
+				<control name="groupscrollbox_skill" entity="GroupScrollableBox" script="" init="">
+					<prop ScrollSize="17" Left="-2" Width="475" Height="517" BackColor="0,187,172,58" ShadowColor="0,0,0,0" NoFrame="true"/>
+				</control>
+			</control>
+		</control>
+	</control>
+</form>
+

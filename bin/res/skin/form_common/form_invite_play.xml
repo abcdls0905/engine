@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop ShowGrid="true" Left="20" Top="30" Width="870" Height="726" BackColor="100,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+		<control name="groupbox_main" entity="GroupBox" script="" init="">
+			<prop Left="77" Top="100" Width="715" Height="525" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui/common/window/bg.jpg"/>
+			<control name="lbl_1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="1" Top="25" Width="713" Height="480" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/zuhe/di_system.jpg"/>
+			</control>
+			<control name="Label5" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="40" Top="85" Width="635" Height="410" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+			</control>
+			<control name="Label1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="36" Top="405" Width="643" Height="94" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_common/backdrop/decorate_08.png"/>
+			</control>
+			<control name="groupscrollbox_invite_list" entity="GroupScrollableBox" script="" init="">
+				<prop ScrollSize="17" Top="88" Width="715" Height="315" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+			</control>
+			<control name="groupbox_invite_info" entity="GroupBox" script="" init="">
+				<prop Left="45" Top="86" Width="625" Height="105" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="ExpandH" BackImage="gui/tp2_common/nine/tongyongdi.png"/>
+				<control name="lbl_mark" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="26" Top="9999" Width="38" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0"/>
+				</control>
+				<control name="mltbox_info" entity="MultiTextBox" script="" init="">
+					<prop TextColor="255,255,204,0" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,358,38" LineHeight="33" LineTextAlign="Center" ScrollSize="17" Left="15" Top="16" Width="358" Height="38" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK" NoFrame="true"/>
+				</control>
+				<control name="lbl_type" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="15" Top="50" Width="194" Height="38" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_invite_war" Font="WRYH22_O_BLACK"/>
+				</control>
+				<control name="btn_agree" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/refurbish.png" PushImage="gui/tp2_common/window/refurbish1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="383" Top="22" Width="100" Height="60" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_invite_agree" Font="WRYH24" DrawMode="ExpandH" ClickSound="button_click"/>
+				</control>
+				<control name="btn_reject" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/activate_2.png" PushImage="gui/tp2_common/window/activate_1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="503" Top="22" Width="100" Height="60" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_invite_reject" Font="WRYH24" TabIndex="1" DrawMode="ExpandH" ClickSound="button_click"/>
+				</control>
+			</control>
+			<control name="btn_close" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/clos.png" PushImage="gui/tp2_common/window/clos1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="625" Top="20" Width="70" Height="70" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" InSound="ui_open" ClickSound="button_click"/>
+			</control>
+			<control name="lbl_title" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="235" Top="4" Width="244" Height="66" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH30_S" AutoSize="true" BackImage="gui/tp2_main/guild/yaoqingliebiao.png"/>
+			</control>
+			<control name="lbl_bottom_bg" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="43" Top="467" Width="629" Height="28" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_03.png"/>
+			</control>
+			<control name="btn_cancel" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/affirm.png" PushImage="gui/tp2_common/window/affirm1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="282" Top="422" Width="150" Height="60" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_friend_52" Font="WRYH24" AutoSize="true" ClickSound="button_click"/>
+			</control>
+		</control>
+	</control>
+</form>
+

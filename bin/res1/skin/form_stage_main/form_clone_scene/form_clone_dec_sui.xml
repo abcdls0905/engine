@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="form_stage_main\form_clone_scene\form_clone_dec_sui" init="main_form_init">
+        <prop FormOpenSound="ui_clone_fail" IsGC="true" Top="5" Width="350" Height="166" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\main\heedbar\clone2.png,758,246,263,166" />
+        <event on_open="on_main_form_open" on_close="on_main_form_close" />
+        <control name="groupbox_main" entity="GroupBox" script="" init="">
+            <prop Fixed="false" Left="5" Top="8" Width="342" Height="142" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" TestTrans="true" Transparent="true" DrawMode="Expand" />
+            <control name="groupbox_reward_tmp" entity="GroupBox" script="" init="">
+                <prop Top="48" Width="326" Height="30" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" DrawMode="ExpandH" />
+                <control name="lbl_name" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="56" Width="134" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="Default" />
+                </control>
+                <control name="lbl_level" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="5" Width="54" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="Default" DrawMode="ExpandH" />
+                </control>
+                <control name="lbl_num" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="200" Width="121" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="Default" DrawMode="FitWindow" />
+                </control>
+            </control>
+            <control name="groupbox_reward" entity="GroupScrollableBox" script="" init="">
+                <prop ScrollSize="17" IsEditMode="false" Top="48" Width="334" Height="94" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+            </control>
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="16" Top="8" Width="44" Height="24" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\heedbar\clone2.png,885,668,44,24" />
+            </control>
+            <control name="lbl_2" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="104" Top="8" Width="44" Height="24" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\heedbar\clone2.png,885,720,44,24" />
+            </control>
+            <control name="lbl_3" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="224" Top="8" Width="84" Height="24" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\heedbar\clone2.png,885,694,84,24" />
+            </control>
+        </control>
+    </control>
+</form>

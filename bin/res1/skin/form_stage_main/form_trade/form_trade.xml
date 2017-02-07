@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop ShowGrid="true" Left="50" Top="90" Width="1366" Height="768" BackColor="100,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+		<control name="groupbox_main" entity="GroupBox" script="" init="">
+			<prop ClipChildren="false" Left="175" Top="41" Width="1015" Height="685" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+			<control name="Label_main" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Top="40" Width="1014" Height="605" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/zuhe/di.jpg"/>
+			</control>
+			<control name="groupbox_trade" entity="GroupBox" script="" init="">
+				<prop Transparent="true" ClipChildren="false" Width="1015" Height="685" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+				<control name="grpbox_buy" entity="GroupBox" script="" init="">
+					<prop Width="1015" Height="685" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand"/>
+					<control name="Label_buy_right" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="256" Top="156" Width="721" Height="424" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+					</control>
+					<control name="lbl_buy_title_bk" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="264" Top="162" Width="705" Height="60" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/window/team_di_02.png"/>
+					</control>
+					<control name="lbl_subcate_title" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="288" Top="166" Width="350" Height="51" ForeColor="255,255,230,94" ShadowColor="0,0,0,0" Font="WRYH26_O_BLACK" DrawMode="FitWindow"/>
+					</control>
+					<control name="lbl_buy_tips" entity="GroupBox" script="" init="">
+						<prop ClipChildren="false" Left="264" Top="222" Width="705" Height="348" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Visible="false" DrawMode="Expand" BackImage="gui/tp2_common/nine/bm_background_04.png"/>
+						<control name="lbl_null_2" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="-352" Top="-174" Width="705" Height="348" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" DrawMode="Expand"/>
+						</control>
+						<control name="lbl_null_1" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="378" Top="25" Width="321" Height="320" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_main/auction/meizi.png"/>
+						</control>
+						<control name="lbl_tips_content" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="-330" Top="-23" Width="366" Height="46" ForeColor="255,244,192,82" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Text="@ui_trade_null" Font="WRYH26_O_BLACK" AutoSize="true" DrawMode="FitWindow"/>
+						</control>
+						<control name="lbl_tips_title" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="-330" Top="-54" Width="254" Height="38" ForeColor="255,244,192,82" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Text="@ui_trade_null_01" Font="WRYH26_O_BLACK"/>
+						</control>
+					</control>
+					<control name="grpbox_select" entity="GroupBox" script="" init="">
+						<prop Left="38" Top="156" Width="213" Height="479" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+						<control name="lbl_3_left" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="3" Top="451" Width="207" Height="28" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_03.png"/>
+						</control>
+						<control name="grpscrollbox_main_cate_list_buy" entity="GroupScrollableBox" script="" init="">
+							<prop ScrollSize="17" Left="-7" Top="9" Width="213" Height="470" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+						</control>
+						<control name="cbtn_main_cate_item" entity="CheckButton" script="" init="">
+							<prop ClickEvent="true" BoxSize="12" NormalImage="gui/tp2_common/nine/mop_up_29.png" CheckedImage="gui/tp2_common/nine/mop_up_01.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" Left="9999" Top="-68" Width="199" Height="68" ForeColor="255,255,255,204" BackColor="0,192,192,192" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WRYH24_O_BLACK" TabStop="true" AutoSize="true" ClickSound="sound_ui_011"/>
+						</control>
+					</control>
+					<control name="grpscrollbox_itemlist" entity="GroupScrollableBox" script="" init="">
+						<prop ScrollSize="17" Left="274" Top="222" Width="685" Height="300" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+					</control>
+					<control name="grpbox_subcate" entity="GroupBox" script="" init="">
+						<prop Transparent="true" ClipChildren="false" Left="274" Top="222" Width="685" Height="300" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+						<control name="grpscrollbox_subcate_list" entity="GroupScrollableBox" script="" init="">
+							<prop ScrollSize="17" Width="685" Height="351" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+						</control>
+						<control name="grpbox_subcate_cut" entity="GroupBox" script="" init="">
+							<prop Transparent="true" Left="9999" Top="15" Width="323" Height="321" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+							<control name="grpbox_subcate_item" entity="GroupBox" script="" init="">
+								<prop Transparent="true" Width="323" Height="120" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+								<control name="btn_subcate_item_btn" entity="Button" script="" init="">
+									<prop DragEvent="true" NormalImage="gui/tp2_common/nine/bm_background_04.png" PushImage="gui/tp2_common/nine/bm_background_04.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="322" Height="120" BackColor="255,192,192,192" ShadowColor="0,0,0,0" DrawMode="Expand" ClickSound="button_click"/>
+								</control>
+								<control name="lbl_subcate_item_text" entity="Label" script="" init="">
+									<prop RefCursor="WIN_HELP" Left="104" Top="20" Width="254" Height="30" ForeColor="255,255,204,0" ShadowColor="0,0,0,0" Text="@ui_trade_goods_name" Font="WRYH26_O_BLACK"/>
+								</control>
+								<control name="lbl_2" entity="Label" script="" init="">
+									<prop RefCursor="WIN_HELP" Left="15" Top="19" Width="82" Height="82" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_common/window/item.png"/>
+								</control>
+								<control name="lbl_subcate_item_icon" entity="Label" script="" init="">
+									<prop RefCursor="WIN_HELP" Left="20" Top="24" Width="72" Height="72" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+								</control>
+							</control>
+						</control>
+					</control>
+					<control name="grpbox_bottom" entity="GroupBox" script="" init="">
+						<prop ClipChildren="false" Width="1015" Height="685" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" TestTrans="true"/>
+						<control name="grpbox_buy_top" entity="GroupBox" script="" init="">
+							<prop ClipChildren="false" Left="38" Top="86" Width="939" Height="66" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+							<control name="Label6" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Left="19" Top="6" Width="229" Height="53" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/auction/shousuodi.png"/>
+							</control>
+							<control name="btn_search" entity="Button" script="" init="">
+								<prop NormalImage="gui/tp2_main/auction/shousuo_up.png" PushImage="gui/tp2_main/auction/shousuo_over.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="196" Top="18" Width="36" Height="29" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" ClickSound="button_click"/>
+							</control>
+							<control name="ipt_search_input" entity="Edit" script="" init="">
+								<prop ChangedEvent="true" TextOffsetX="5" Caret="Default" Left="35" Top="7" Width="148" Height="51" ForeColor="255,250,229,185" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WRYH24_O_BLACK" Cursor="WIN_IBEAM" TabStop="true" AutoSize="true" DrawMode="Expand"/>
+							</control>
+							<control name="lbl_money_num" entity="Label" script="" init="">
+								<prop Align="Center" RefCursor="WIN_HELP" Left="217" Top="7" Width="226" Height="51" ForeColor="255,0,205,255" ShadowColor="0,0,0,0" HAnchor="Center" Text="000" Font="WRYH24_O_BLACK" AutoSize="true" BackImage="gui/tp2_main/hall/hall.png,674,0,226,51"/>
+							</control>
+							<control name="lbl_money_icon" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Left="222" Top="7" Width="52" Height="52" ShadowColor="0,0,0,0" HAnchor="Center" AutoSize="true" BackImage="gui/xm2_main/hall/zhuanshi.png"/>
+							</control>
+						</control>
+						<control name="btn_quick_buy" entity="Button" script="" init="">
+							<prop NormalImage="gui/tp2_common/window/affirm.png" PushImage="gui/tp2_common/window/affirm1.png" DisableImage="gui/tp2_common/window/ban1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="333" Top="583" Width="190" Height="51" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_trade_quick_buy" Font="WRYH24" DrawMode="ExpandH"/>
+						</control>
+						<control name="btn_buy" entity="Button" script="" init="">
+							<prop NormalImage="gui/tp2_common/window/affirm.png" PushImage="gui/tp2_common/window/affirm1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="763" Top="583" Width="190" Height="51" ForeColor="255,255,255,202" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_pay_buy" Font="WRYH24" DrawMode="ExpandH" ClickSound="button_click"/>
+						</control>
+						<control name="groupbox_pagenum" entity="GroupBox" script="" init="">
+							<prop Transparent="true" Left="236" Top="231" Width="761" Height="354" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" TestTrans="true" NoFrame="true"/>
+							<control name="btn_pre_page" entity="Button" script="" init="">
+								<prop NormalImage="gui/tp2_common/backdrop/left_1.png" PushImage="gui/tp2_common/backdrop/left_2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="92" Width="64" Height="110" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="1" AutoSize="true" ClickSound="button_click"/>
+							</control>
+							<control name="lbl_page_num" entity="Label" script="" init="">
+								<prop Align="Center" RefCursor="WIN_HELP" Left="351" Top="-50" Width="59" Height="50" ForeColor="255,255,203,122" ShadowColor="0,0,0,0" VAnchor="Bottom" Text="1/1" Font="WRYH26_O_BLACK"/>
+							</control>
+							<control name="btn_next_page" entity="Button" script="" init="">
+								<prop NormalImage="gui/tp2_common/backdrop/right_1.png" PushImage="gui/tp2_common/backdrop/right_2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="697" Top="92" Width="64" Height="110" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="2" AutoSize="true" ClickSound="button_click"/>
+							</control>
+						</control>
+					</control>
+					<control name="grpscrollbox_search_result" entity="GroupScrollableBox" script="" init="">
+						<prop ScrollSize="17" Left="274" Top="222" Width="685" Height="300" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Visible="false" NoFrame="true" DrawMode="Expand"/>
+					</control>
+					<control name="grpscrollbox_search_name_result" entity="GroupScrollableBox" script="" init="">
+						<prop ScrollSize="17" Left="38" Top="165" Width="213" Height="445" BackColor="0,0,0,0" ShadowColor="0,0,0,0" Visible="false" NoFrame="true" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+					</control>
+					<control name="grpbox_price_sort" entity="GroupBox" script="" init="">
+						<prop Width="1015" Height="685" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Visible="false" TestTrans="true" NoFrame="true" DrawMode="Expand"/>
+						<control name="btn_price" entity="Button" script="" init="">
+							<prop NormalImage="gui/tp2_common/window/di00.png" PushImage="gui/tp2_common/window/di00.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,153,0,0" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="781" Top="165" Width="150" Height="55" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_trade_price" Font="WRYH24_O_BLACK" DrawMode="ExpandH" ClickSound="button_click"/>
+						</control>
+						<control name="lbl_price" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="881" Top="169" Width="46" Height="46" ShadowColor="0,0,0,0" BackImage="gui/tp2_main/auction/shang.png"/>
+						</control>
+					</control>
+				</control>
+				<control name="grpbox_sell" entity="GroupBox" script="" init="">
+					<prop Width="1015" Height="685" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Visible="false" DrawMode="Expand"/>
+					<control name="grpbox_stall" entity="GroupBox" script="" init="">
+						<prop ClipChildren="false" Left="38" Top="85" Width="593" Height="495" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" TestTrans="true" DrawMode="Expand"/>
+						<control name="Label9" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Width="593" Height="495" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+						</control>
+						<control name="Label7" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="-167" Top="6" Width="335" Height="38" ShadowColor="0,0,0,0" HAnchor="Center" AutoSize="true" BackImage="gui/tp2_common/window/auction_diwen.png"/>
+						</control>
+						<control name="lbl_stall_title" entity="Label" script="" init="">
+							<prop Align="Center" RefCursor="WIN_HELP" Left="196" Top="10" Width="200" Height="30" ForeColor="255,255,230,90" ShadowColor="0,0,0,0" Text="@ui_trade_my_booth" Font="WRYH26_O_BLACK"/>
+						</control>
+						<control name="lbl_stall_num" entity="Label" script="" init="">
+							<prop Align="Center" RefCursor="WIN_HELP" Left="9056" Top="612" Width="80" Height="24" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="1/8" Font="num_s"/>
+						</control>
+						<control name="btn_add_sales" entity="Button" script="" init="">
+							<prop NormalImage="gui/tp2_common/window/tianjia.png" PushImage="gui/tp2_common/window/tianjia1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="9999" Top="276" Width="58" Height="56" BackColor="255,192,192,192" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+						</control>
+						<control name="grpscrollbox_stall_item_list" entity="GroupScrollableBox" script="" init="">
+							<prop ScrollSize="17" Top="51" Width="593" Height="374" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+						</control>
+						<control name="lbl_sell_null_tips" entity="GroupBox" script="" init="">
+							<prop Top="51" Width="593" Height="374" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" TestTrans="true" NoFrame="true"/>
+							<control name="lbl_sell_null_2" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Width="593" Height="374" ForeColor="255,141,107,86" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/nine/bm_background_04.png"/>
+							</control>
+							<control name="lbl_sell_null_1" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Left="5" Top="31" Width="341" Height="340" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_main/auction/meizi.png"/>
+							</control>
+							<control name="lbl_sell_null_3" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Left="286" Top="172" Width="302" Height="30" ForeColor="255,244,192,82" ShadowColor="0,0,0,0" Text="@ui_trade_sellnull" Font="WRYH26_O_BLACK" AutoSize="true" DrawMode="FitWindow"/>
+							</control>
+						</control>
+					</control>
+					<control name="grpbox_cansellitem" entity="GroupBox" script="" init="">
+						<prop ClipChildren="false" Left="636" Top="85" Width="341" Height="495" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" TestTrans="true" DrawMode="Expand"/>
+						<control name="Label8" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Width="341" Height="495" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+						</control>
+						<control name="Labe_bag_bg" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="13" Top="6" Width="315" Height="38" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_common/window/auction_diwen.png"/>
+						</control>
+						<control name="Labe_bag" entity="Label" script="" init="">
+							<prop Align="Center" RefCursor="WIN_HELP" Left="70" Top="10" Width="200" Height="30" ForeColor="255,255,230,94" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Text="@ui_task_criteria8" Font="WRYH26_O_BLACK" DrawMode="Expand"/>
+						</control>
+						<control name="imagegrid_cansellitem_list" entity="ImageGrid" script="" init="">
+							<prop SelectColor="0,0,255,0" MouseInColor="0,255,255,0" CoverColor="0,255,0,0" LockColor="0,255,255,0" CoolColor="0,0,0,0" ViewRect="0,0,374,438" MaxSize="-1" RowNum="1" ClomnNum="1" GridHeight="72" GridWidth="72" DrawMouseIn="RECT" DrawMouseSelect="RECT" DrawCover="RECT" DrawLock="RECT" DrawGridBack="gui/tp2_common/window/item.png" GridBackOffsetX="-5" GridBackOffsetY="-5" MouseDownScale="0.900000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" HasVScroll="false" Left="23" Top="61" Width="294" Height="406" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true"/>
+						</control>
+						<control name="lbl_no_items" entity="Label" script="" init="">
+							<prop Align="Center" RefCursor="WIN_HELP" Left="23" Top="221" Width="294" Height="35" ForeColor="255,244,192,82" ShadowColor="0,0,0,0" Text="@ui_trade_no_items" Font="WRYH26_O_BLACK"/>
+						</control>
+					</control>
+					<control name="btn_trade_record" entity="Button" script="" init="">
+						<prop NormalImage="gui/tp2_common/window/refurbish.png" PushImage="gui/tp2_common/window/refurbish1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="255" Top="527" Width="158" Height="50" ForeColor="255,255,255,202" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_trade_trading_record" Font="WRYH22_O_BLACK" DrawMode="ExpandH" ClickSound="button_click"/>
+					</control>
+				</control>
+				<control name="grpbox_all_template_item" entity="GroupBox" script="" init="">
+					<prop ClipChildren="false" Left="-176" Top="-42" Width="1366" Height="768" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Visible="false" TestTrans="true" NoFrame="true"/>
+					<control name="grpbox_item" entity="GroupBox" script="" init="">
+						<prop ClipChildren="false" Left="9999" Top="168" Width="323" Height="120" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+						<control name="cbtn_item" entity="CheckButton" script="" init="">
+							<prop HideBox="true" ClickEvent="true" BoxSize="12" NormalImage="gui/tp2_main/day_activity/label_act_01.png" CheckedImage="gui/tp2_main/day_activity/label_act_click.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" Width="323" Height="120" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" DrawMode="Expand"/>
+						</control>
+						<control name="lbl_item_money_num" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="143" Top="59" Width="117" Height="35" ForeColor="255,102,204,255" ShadowColor="0,0,0,0" Font="WRYH24_O_BLACK" DrawMode="Expand"/>
+						</control>
+						<control name="lbl_item_name" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="103" Top="13" Width="182" Height="30" ForeColor="255,255,204,0" ShadowColor="0,0,0,0" Font="WRYH24_O_BLACK"/>
+						</control>
+						<control name="lbl_item_money_icon" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="103" Top="58" Width="40" Height="40" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/xm2_main/hall/zhuanshi.png"/>
+						</control>
+						<control name="btn_item_chat" entity="Button" script="" init="">
+							<prop NormalImage="gui/tp2_main/guild/guild_chat_off.png" PushImage="gui/tp2_main/guild/guild_chat_on.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="9999" Top="37" Width="47" Height="46" BackColor="255,192,192,192" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+						</control>
+						<control name="imagegrid_item" entity="ImageGrid" script="" init="">
+							<prop SelectColor="0,0,255,0" MouseInColor="0,255,255,0" CoverColor="0,255,0,0" LockColor="0,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" GridHeight="72" GridWidth="72" DrawMouseIn="RECT" DrawMouseSelect="RECT" DrawCover="RECT" DrawLock="RECT" DrawGridBack="gui/tp2_common/window/item.png" GridBackOffsetX="-5" GridBackOffsetY="-5" MouseDownScale="0.900000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" HasVScroll="false" Left="17" Top="21" Width="77" Height="77" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+						</control>
+						<control name="lbl_item_time" entity="Label" script="" init="">
+							<prop Align="Center" RefCursor="WIN_HELP" Left="5" Top="88" Width="109" Height="27" ForeColor="255,255,0,0" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
+						</control>
+					</control>
+					<control name="grpbox_stall_item" entity="GroupBox" script="" init="">
+						<prop ClipChildren="false" Left="9999" Top="368" Width="276" Height="126" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand"/>
+						<control name="cbtn_stall_item" entity="CheckButton" script="" init="">
+							<prop HideBox="true" ClickEvent="true" BoxSize="12" NormalImage="gui/tp2_main/day_activity/label_act_01.png" CheckedImage="gui/tp2_main/day_activity/label_act_click.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" Width="276" Height="126" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" DrawMode="Expand"/>
+						</control>
+						<control name="lbl_stall_item_name" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="107" Top="14" Width="182" Height="30" ForeColor="255,255,204,0" ShadowColor="0,0,0,0" Font="WRYH24_O_BLACK"/>
+						</control>
+						<control name="lbl_stall_item_price" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="145" Top="56" Width="100" Height="30" ForeColor="255,102,204,255" ShadowColor="0,0,0,0" Font="WRYH24_O_BLACK"/>
+						</control>
+						<control name="imagegrid_stall_item" entity="ImageGrid" script="" init="">
+							<prop SelectColor="0,0,255,0" MouseInColor="0,255,255,0" CoverColor="0,255,0,0" LockColor="0,255,255,0" CoolColor="0,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" GridHeight="72" GridWidth="72" DrawMouseIn="RECT" DrawMouseSelect="RECT" DrawCover="RECT" DrawLock="RECT" DrawGridBack="gui/tp2_common/window/item.png" GridBackOffsetX="-5" GridBackOffsetY="-5" MouseDownScale="0.900000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" HasVScroll="false" Left="21" Top="16" Width="82" Height="82" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+						</control>
+						<control name="lbl_stall_item_money_icon" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="107" Top="51" Width="40" Height="40" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/xm2_main/hall/zhuanshi.png"/>
+						</control>
+						<control name="lbl_stall_item_state" entity="Label" script="" init="">
+							<prop Align="Right" RefCursor="WIN_HELP" Left="72" Top="88" Width="182" Height="30" ForeColor="255,55,199,78" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK"/>
+						</control>
+						<control name="lbl_uncheck_cm" entity="Label" script="" init="">
+							<prop Align="Center" RefCursor="WIN_HELP" Width="34" Height="34" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_common/window/tishi.png"/>
+						</control>
+					</control>
+					<control name="btn_search_result_item" entity="Button" script="" init="">
+						<prop DragEvent="true" NormalImage="gui/tp2_common/nine/mop_up_29.png" PushImage="gui/tp2_common/nine/mop_up_01.png" DisableImage="gui/tp2_common/nine/mop_up_ban.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="9999" Top="245" Width="199" Height="68" ForeColor="255,255,255,204" BackColor="255,192,192,192" BlendColor="255,0,0,0" ShadowColor="0,0,0,0" Text="@ui_trade_search_result" Font="WRYH24_O_BLACK" HintText="13" DrawMode="ExpandH" ClickSound="button_click"/>
+					</control>
+					<control name="grpbox_record_item" entity="GroupBox" script="" init="">
+						<prop ClipChildren="false" Left="9999" Top="496" Width="380" Height="100" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/nine/bm_background_04.png"/>
+						<control name="lbl_record_item_money_num" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="288" Top="34" Width="86" Height="32" ForeColor="255,255,255,202" ShadowColor="0,0,0,0" Text="0000" Font="WRYH20_O_BLACK" DrawMode="Expand"/>
+						</control>
+						<control name="imagegrid_record_item" entity="ImageGrid" script="" init="">
+							<prop SelectColor="0,0,255,0" MouseInColor="0,255,255,0" CoverColor="0,255,0,0" LockColor="0,255,255,0" CoolColor="0,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" GridHeight="72" GridWidth="72" DrawMouseIn="RECT" DrawMouseSelect="RECT" DrawCover="RECT" DrawLock="RECT" DrawGridBack="gui/tp2_common/window/item.png" GridBackOffsetX="-5" GridBackOffsetY="-5" MouseDownScale="0.900000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" Left="15" Top="16" Width="82" Height="82" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+							<subor name="VScrollBar">
+								<prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0"/>
+								<subor name="DecButton">
+									<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+								</subor>
+								<subor name="IncButton">
+									<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+								</subor>
+								<subor name="TrackButton">
+									<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+								</subor>
+							</subor>
+						</control>
+						<control name="lbl_record_item_name" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="101" Top="35" Width="150" Height="30" ForeColor="255,255,255,202" ShadowColor="0,0,0,0" Text="@ui_trade_goods_name" Font="WRYH24_O_BLACK"/>
+						</control>
+						<control name="lbl_record_item_money_icon" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="251" Top="29" Width="41" Height="41" ShadowColor="0,0,0,0" Font="Title_new_s" DrawMode="FitWindow" BackImage="gui/xm2_main/hall/zhuanshi.png"/>
+						</control>
+					</control>
+				</control>
+				<control name="lbl_title_bg" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="261" Top="26" Width="493" Height="54" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="Default" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_04.png"/>
+				</control>
+				<control name="Label_title" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="423" Top="6" Width="169" Height="64" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/auction/paimaihang.png"/>
+				</control>
+				<control name="btn_close" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/clos.png" PushImage="gui/tp2_common/window/clos1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-90" Top="20" Width="70" Height="70" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Right" AutoSize="true" ClickSound="ui_close"/>
+				</control>
+				<control name="rbtn_sell" entity="RadioButton" script="" init="">
+					<prop BoxSize="12" NormalImage="gui/tp2_common/window/affirm.png" CheckedImage="gui/tp2_common/window/affirm1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="548" Top="583" Width="190" Height="51" ForeColor="255,255,255,202" BackColor="255,192,192,192" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Text="@ui_trade_me_want_sell" Font="WRYH24" TabIndex="2" TabStop="true" DrawMode="ExpandH"/>
+				</control>
+				<control name="rbtn_buy" entity="RadioButton" script="" init="">
+					<prop Checked="true" BoxSize="12" NormalImage="gui/tp2_common/window/affirm.png" CheckedImage="gui/tp2_common/window/affirm1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="763" Top="583" Width="190" Height="51" ForeColor="255,255,255,202" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_trade_me_want_buy" Font="WRYH24" TabIndex="1" TabStop="true" DrawMode="ExpandH" ClickSound="menu_click"/>
+				</control>
+				<control name="lbl_corner_mark" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="708" Top="575" Width="34" Height="34" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_common/window/tishi.png"/>
+				</control>
+				<control name="grpbox_trade_record" entity="GroupBox" script="" init="">
+					<prop ClipChildren="false" Left="-176" Top="-42" Width="1366" Height="768" BackColor="100,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Visible="false" NoFrame="true" DrawMode="Expand"/>
+					<control name="groupbox_record_main" entity="GroupBox" script="" init="">
+						<prop Left="260" Top="38" Width="858" Height="686" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+						<control name="lbl_6" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Top="41" Width="845" Height="605" ShadowColor="0,0,0,0" DrawMode="ExpandTile" BackImage="gui/tp2_common/backdrop/bg_001.png"/>
+						</control>
+						<control name="lbl_6_2nd" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="5" Top="81" Width="835" Height="560" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_002.png"/>
+						</control>
+						<control name="btn_record_buy_more" entity="Button" script="" init="">
+							<prop NormalImage="gui/tp2_common/window/affirm.png" PushImage="gui/tp2_common/window/affirm1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="443" Top="550" Width="374" Height="40" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_trade_recordmore" Font="WRYH20" TabIndex="1" DrawMode="ExpandH"/>
+						</control>
+						<control name="btn_record_sell_more" entity="Button" script="" init="">
+							<prop NormalImage="gui/tp2_common/window/affirm.png" PushImage="gui/tp2_common/window/affirm1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="21" Top="550" Width="374" Height="40" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_trade_recordmore" Font="WRYH20" DrawMode="ExpandH"/>
+						</control>
+						<control name="grpbox_record_sell" entity="GroupBox" script="" init="">
+							<prop ClipChildren="false" Left="11" Top="86" Width="407" Height="462" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui/tp2_common/nine/bm_background_02.png"/>
+							<control name="lbl_record_2" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Left="3" Top="2" Width="400" Height="46" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/window/team_di_02.png"/>
+							</control>
+							<control name="lbl_record_1" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Left="-15" Top="341" Width="435" Height="51" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+							</control>
+							<control name="lbl_record_sell_title" entity="Label" script="" init="">
+								<prop Align="Center" RefCursor="WIN_HELP" Left="148" Top="4" Width="110" Height="32" ForeColor="255,255,230,94" ShadowColor="0,0,0,0" Text="@ui_trade_sell_record" Font="WRYH24_O_BLACK"/>
+							</control>
+							<control name="grpscrollbox_record_sell" entity="GroupScrollableBox" script="" init="">
+								<prop ScrollSize="17" IsEditMode="false" Left="3" Top="57" Width="400" Height="398" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+							</control>
+						</control>
+						<control name="grpbox_record_buy" entity="GroupBox" script="" init="">
+							<prop ClipChildren="false" Left="427" Top="86" Width="407" Height="462" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/nine/bm_background_02.png"/>
+							<control name="lbl_record_4" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Left="3" Top="2" Width="400" Height="46" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/window/team_di_02.png"/>
+							</control>
+							<control name="lbl_record_3" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Left="15" Top="375" Width="435" Height="51" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+							</control>
+							<control name="lbl_record_buy_title" entity="Label" script="" init="">
+								<prop Align="Center" RefCursor="WIN_HELP" Left="148" Top="4" Width="110" Height="32" ForeColor="255,255,230,94" ShadowColor="0,0,0,0" Text="@ui_trade_purchase_record" Font="WRYH24_O_BLACK"/>
+							</control>
+							<control name="grpscrollbox_record_buy" entity="GroupScrollableBox" script="" init="">
+								<prop ScrollSize="17" IsEditMode="false" Left="3" Top="57" Width="400" Height="398" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+							</control>
+						</control>
+						<control name="btn_record_clear" entity="Button" script="" init="">
+							<prop NormalImage="gui/tp2_common/window/daanniu-over.png" PushImage="gui/tp2_common/window/daanniu.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="13" Top="592" Width="820" Height="45" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_trade_clean_record" Font="WRYH22_O_BLACK" DrawMode="ExpandH" ClickSound="button_click"/>
+						</control>
+						<control name="lbl_4_record" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="177" Top="28" Width="493" Height="54" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_04.png"/>
+						</control>
+						<control name="lbl_7" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="310" Top="1" Width="226" Height="66" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_main/auction/auction_jiaoyijilu.png"/>
+						</control>
+						<control name="btn_history_close" entity="Button" script="" init="">
+							<prop NormalImage="gui/tp2_common/window/clos.png" PushImage="gui/tp2_common/window/clos1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="786" Top="22" Width="70" Height="70" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true"/>
+						</control>
+					</control>
+				</control>
+			</control>
+		</control>
+	</control>
+</form>
+

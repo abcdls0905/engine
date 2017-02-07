@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop Left="125" Top="93" Width="533" Height="530" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+		<control name="lbl_main_left" entity="Label" script="" init="">
+			<prop Align="Center" RefCursor="WIN_HELP" Left="-15" Top="3" Width="80" Height="490" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_main/roles/rolenpcdiwen_11.png"/>
+		</control>
+		<control name="lbl_main_right" entity="Label" script="" init="">
+			<prop Align="Center" RefCursor="WIN_HELP" Left="422" Top="3" Width="80" Height="490" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_main/roles/rolenpcdiwen_12.png"/>
+		</control>
+		<control name="groupbox_kuang" entity="GroupBox" script="" init="">
+			<prop Transparent="true" Left="13" Top="2" Width="485" Height="501" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+			<control name="grp_main" entity="GroupBox" script="" init="">
+				<prop Left="4" Top="9" Width="477" Height="495" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+				<control name="grpscroll_box" entity="GroupScrollableBox" script="" init="">
+					<prop ScrollSize="17" HasVScroll="true" Top="56" Width="477" Height="434" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="FitWindow"/>
+					<subor name="VScrollBar">
+						<prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0"/>
+						<subor name="DecButton">
+							<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+						</subor>
+						<subor name="IncButton">
+							<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+						</subor>
+						<subor name="TrackButton">
+							<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+						</subor>
+					</subor>
+				</control>
+				<control name="fettter_dbk_1" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="7" Top="34" Width="462" Height="17" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/roles/rolenpcdiwen_3.png"/>
+				</control>
+				<control name="mlt_fetter_title" entity="MultiTextBox" script="" init="">
+					<prop HAlign="Center" TextColor="255,50,0,0" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,142,26" LineHeight="25" HtmlText="@ui_form_role_npc_array_32" ScrollSize="17" Left="-68" Top="19" Width="142" Height="26" ShadowColor="0,0,0,0" HAnchor="Center" Font="WRYH22" NoFrame="true"/>
+				</control>
+			</control>
+		</control>
+		<control name="grp_related_temp" entity="GroupBox" script="" init="">
+			<prop Left="29" Top="267" Width="477" Height="109" BackColor="0,0,39,31" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+			<control name="Label1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="18" Top="1" Width="90" Height="90" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_main/teamnuber/zhjm_28.png"/>
+			</control>
+			<control name="lbl_head" entity="Label" script="" init="">
+				<prop Transparent="false" ClickEvent="true" RefCursor="WIN_HELP" Left="20" Top="-3" Width="86" Height="94" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+			</control>
+			<control name="lbl_role_npc_name" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="120" Top="34" Width="78" Height="22" ForeColor="255,0,102,153" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Text="name" Font="WRYH18"/>
+			</control>
+			<control name="mlt_prop_info" entity="MultiTextBox" script="" init="">
+				<prop HAlign="Right" TextColor="255,51,102,51" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="20,0,249,31" LineHeight="23" HtmlText="23321111111111" ScrollSize="17" Left="-256" Top="32" Width="238" Height="31" ShadowColor="0,0,0,0" HAnchor="Right" Text="MultiTextBox1" Font="WRYH18" NoFrame="true"/>
+			</control>
+		</control>
+		<control name="grp_fetter_temp" entity="GroupBox" script="" init="">
+			<prop ClipChildren="false" Left="21" Top="65" Width="477" Height="70" BackColor="0,149,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui/tp2_main/roles/roles.png,391,100,200,200"/>
+			<control name="lbl_title" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="4" Top="7" Width="196" Height="43" ForeColor="255,255,254,0" ShadowColor="0,0,0,0" Font="WRYH22" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/roles/fetter_2.png"/>
+			</control>
+			<control name="lbl_add_fetter" entity="Label" script="" init="">
+				<prop Align="Right" RefCursor="WIN_HELP" Left="290" Top="27" Width="161" Height="30" ForeColor="255,51,102,51" ShadowColor="0,0,0,0" Text="Label1" Font="WRYH22"/>
+			</control>
+		</control>
+		<control name="grp_fetter_special" entity="GroupBox" script="" init="">
+			<prop ClipChildren="false" Left="17" Top="368" Width="477" Height="170" BackColor="0,149,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui/tp2_main/roles/roles.png,391,100,200,200"/>
+			<control name="lbl_title_special" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Top="3" Width="181" Height="51" ForeColor="255,255,254,0" ShadowColor="0,0,0,0" Text="@ui_role_npc_fetter_9" Font="WRYH22" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/roles/fetter_5.png"/>
+			</control>
+			<control name="lbl_add_special" entity="Label" script="" init="">
+				<prop Align="Right" RefCursor="WIN_HELP" Left="222" Top="15" Width="236" Height="30" ForeColor="255,255,0,0" ShadowColor="0,0,0,0" Text="@ui_role_npc_fetter_8" Font="WRYH16"/>
+			</control>
+			<control name="mltbox_special" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,60,100,60" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,390,63" LineHeight="23" ScrollSize="17" Left="43" Top="72" Width="390" Height="63" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="MultiTextBox1" Font="WRYH18" NoFrame="true"/>
+			</control>
+		</control>
+	</control>
+</form>
+

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by  () -->
+<!--场景基础属性-->
+<object>
+	<!-- 内部属性 -->
+	<internals>
+		<property name="Name" type="widestr" public="true" private="true" save="false" desc=""/>
+		<property name="Grouping" type="int" public="true" private="true" save="false" desc=""/>
+	</internals>
+	<!-- 基本属性 -->
+	<properties>
+		<property name="ConfigID" type="string" public="true" private="true" save="false" desc="场景编号"/>
+		<property name="ProtoSceneID" type="int" public="true" private="true" save="false" desc="原形场景编号"/>
+		<property name="Resource" type="string" public="true" private="true" save="false" desc="场景基础资源名称"/>
+		<property name="SceneType" type="int" public="true" private="false" save="true" realtime="" desc="场景类型(0=一般场景,1=本地副本,2=远程服务器副本)"/>
+		<property name="CommonGroupID" type="int" public="false" private="false" save="false" desc="场景共同分组号"/>
+		<property name="SceneBuff" type="string" public="true" private="false" save="false" desc="野外场景的buff"/>
+    <property name="PauseSceneAI" type="int" public="false" private="false" save="false" desc="暂停场景所有NPC的AI"/>
+    <property name="CellarFlag" type="int" public="false" private="false" save="false" desc="地宫标记,bit位"/>
+		<property name="SceneCommonBuff" type="string" public="true" private="false" save="false" desc="野外场景的通用buff"/>
+    <!--<property name="ZYWarLastResetTime" type="int64" public="false" private="false" save="true" desc="上次场景归属重置时间"/>-->
+  </properties>
+	<!-- 表属性 -->
+	<records>
+		<record name="TriggerFailedRec" cols="4" maxrows="512" save="false" public="false" private="false" desc="场景触发器失败信息记录">
+			<column type="string" desc="绑定触发器的对象配置名"/>
+			<column type="word" desc="失败的触发器执行器编号"/>
+			<column type="string" desc="失败的触发器名"/>
+			<column type="word" desc="失败的触发器行为编号"/>
+		</record>
+		<record name="AllGroupIDRec" cols="5" maxrows="1024" save="false" public="false" private="false" desc="场景分组号保存表">
+			<column type="word" desc="分组号"/>
+      <column type="word" desc="分组人数"/>
+      <column type="word" desc="武林联盟阵营分组人数"/>
+      <column type="word" desc="是否上锁"/>
+			<column type="word" desc="是否初始化分组"/>
+		</record>
+		<record name="AllNpcRec" cols="1" maxrows="64" save="false" public="false" private="false" desc="场景分组号保存表">
+			<column type="object" desc="npc对象"/>
+		</record>
+		<record name="clone_all_per_dec" cols="6" maxrows="15" save="false" public="false" private="false" desc="伤害信息">
+			<column type="string" desc="英雄configID"/>
+			<column type="widestr" desc="主人角色名"/>
+			<column type="word" desc="英雄等级"/>
+			<column type="dword" desc="伤害值"/>
+			<column type="dword" desc="承伤量"/>
+			<column type="dword" desc="治疗量"/>
+		</record>
+		<record name="AllPlayerArrestValue" cols="2" maxrows="50000" save="false" public="false" private="false" desc="伤害信息">
+			<column type="object" desc="玩家"/>
+			<column type="dword" desc="杀戮值"/>
+		</record>
+		<record name="AllEliteBossInfo" cols="8" maxrows="500" save="false" public="false" private="false" desc="所有稀有BOSS信息">
+			<column type="object" desc="boss"/>
+			<column type="word" desc="场景"/>
+			<column type="word" desc="分线"/>
+			<column type="float" desc="X坐标"/>
+			<column type="float" desc="Y坐标"/>
+			<column type="float" desc="Z坐标"/>
+			<column type="string" desc="BOSS名字"/>
+			<column type="int64" desc="BOSS刷新的时间"/>
+		</record>
+		<record name="NSBossInfoRec" cols="8" maxrows="500" save="false" public="false" private="false" desc="所有年兽BOSS信息">
+			<column type="object" desc="boss"/>
+			<column type="word" desc="场景"/>
+			<column type="word" desc="分线"/>
+			<column type="float" desc="X坐标"/>
+			<column type="float" desc="Y坐标"/>
+			<column type="float" desc="Z坐标"/>
+			<column type="string" desc="BOSS名字"/>
+		</record>
+		<record name="HorseRaceRec" cols="3" maxrows="500" save="false" public="false" private="false" desc="赛马活动奖励表">
+			<column type="string" desc="玩家UID"/>
+			<column type="word" desc="时间"/>
+			<column type="string" desc="奖励"/>
+		</record>
+    <record name="ZYWarFlagNpc" cols="2" maxrows="500" save="false" public="false" private="false" desc="阵营战旗帜npc">
+      <column type="object" desc="npc ID"/>
+      <column type="word" desc="npc index"/>
+    </record>
+    <record name="ZYWarFireNpc" cols="3" maxrows="500" save="false" public="false" private="false" desc="阵营战攻势npc">
+      <column type="object" desc="npc ID"/>
+      <column type="word" desc="npc index"/>
+      <column type="object" desc="轰炸玩法中，创建的攻击npc"/>
+    </record>
+    <record name="ZYWarPlayer" cols="10" maxrows="500" save="false" public="true" private="true" desc="阵营战玩家列表">
+      <column type="widestr" desc="玩家名"/>
+      <column type="word" desc="玩家阵营"/>
+      <column type="word" desc="玩家积分"/>
+      <column type="word" desc="玩家击杀数"/>
+      <column type="word" desc="玩家助攻数"/>
+      <column type="word" desc="玩家连杀数"/>
+      <column type="int64" desc="玩家进场时间"/>
+      <column type="word" desc="玩家是否在当前场景"/>
+      <column type="word" desc="玩家RoleIndex"/>
+      <column type="word" desc="玩家GroupID"/>
+    </record>
+    <record name="ZYWarCommand" cols="6" maxrows="500" save="false" public="false" private="false" desc="阵营战攻势npc">
+      <column type="word" desc="分线"/>
+      <column type="word" desc="阵营"/>
+      <column type="word" desc="flag index"/>
+      <column type="word" desc="command  防守1进攻2"/>
+      <column type="int64" desc="冷却开始时间"/>
+      <column type="int64" desc="冷却结束时间"/>
+    </record>
+
+  </records>
+	<!--从其他文件加载属性-->
+	<includes>
+		<path name="struct\common\trigger.xml" desc="触发器"/>
+	</includes>
+</object>

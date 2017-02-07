@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Left="5" Top="5" Width="1294" Height="870" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\use\function\function_vein_096.png" />
+        <control name="groupbox_main" entity="GroupBox" script="" init="">
+            <prop Left="172" Top="28" Width="1024" Height="720" ShadowColor="0,0,0,0" Font="WRYH30_O" NoFrame="true" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+            <control name="btn_close" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="948" Top="-28" Width="100" Height="100" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+            </control>
+            <control name="btn_help" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\pk\btn_help_normal.jpg" PushImage="gui\main\pk\btn_help_click.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="4" Top="4" Width="56" Height="56" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="8" Top="77" Width="1008" Height="638" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\shurukuang3.png" />
+            </control>
+            <control name="groupbox_role" entity="GroupBox" script="" init="">
+                <prop Left="13" Top="101" Width="343" Height="606" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" BackImage="gui\main\war\yzbz_bzbz.jpg" />
+                <control name="scenebox_role" entity="SceneBox" script="" init="">
+                    <prop Left="71" Top="136" Width="203" Height="354" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" />
+                </control>
+                <control name="lbl_role_level" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="71" Top="100" Width="38" Height="16" ForeColor="255,154,255,255" ShadowColor="0,0,0,0" Font="WRYH20_S" />
+                </control>
+                <control name="lbl_role_name" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="108" Top="100" Width="126" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20_S" />
+                </control>
+                <control name="lbl_role_server" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="1143" Top="143" Width="46" Height="16" ForeColor="0,255,143,0" ShadowColor="0,0,0,0" Font="WRYH20_S" />
+                </control>
+                <control name="lbl_role_ability" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="52" Top="548" Width="238" Height="30" ForeColor="255,255,186,0" ShadowColor="0,0,0,0" Font="WRYH30_S" />
+                </control>
+                <control name="lbl_4" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="45" Top="100" Width="22" Height="16" ForeColor="255,154,255,255" ShadowColor="0,0,0,0" Text="Lv" Font="WRYH20_S" />
+                </control>
+                <control name="lbl_6" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="123" Top="503" Width="98" Height="34" ForeColor="255,255,186,0" ShadowColor="0,0,0,0" Font="WRYH30_S" AutoSize="true" DrawMode="FitWindow" BackImage="gui\tips\fontpicture_zdl.jpg" />
+                </control>
+            </control>
+            <control name="groupbox_rank" entity="GroupBox" script="" init="">
+                <prop Left="353" Top="84" Width="658" Height="625" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\main\rank\textfont2.png,0,95,330,300" />
+                <control name="groupscrollbox_rank" entity="GroupScrollableBox" script="" init="">
+                    <prop ScrollSize="17" Top="96" Width="658" Height="522" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand" />
+                </control>
+            </control>
+            <control name="lbl_5" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="481" Top="29" Width="80" Height="16" ForeColor="255,153,255,255" ShadowColor="0,0,0,0" Text="@ui_lord_6" Font="WRYH30_S" />
+            </control>
+            <control name="groupbox_rankitem" entity="GroupBox" script="" init="">
+                <prop Left="380" Top="180" Width="614" Height="126" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="ExpandH" />
+                <control name="groupbox_rankitem1" entity="GroupBox" script="" init="">
+                    <prop Left="10" Width="614" Height="126" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="ExpandH" BackImage="gui\pay\kuang4.png" />
+                    <control name="lbl_rankitem_name" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="182" Top="4" Width="106" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="玩家甲" Font="WRYH22_O" />
+                    </control>
+                    <control name="lbl_rankitem_6" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="22" Top="8" Width="100" Height="100" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="Center" BackImage="gui\common\window\touxiang_kuang2.png" />
+                    </control>
+                    <control name="lbl_rankitem_exploit" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="158" Top="6" Width="23" Height="26" ForeColor="255,255,186,0" ShadowColor="0,0,0,0" Font="WRYH22_O" />
+                    </control>
+                    <control name="lbl_rankitem_point" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="154" Top="87" Width="80" Height="16" ForeColor="255,255,186,0" ShadowColor="0,0,0,0" Text="lbl_6" Font="WRYH22_O" />
+                    </control>
+                    <control name="lbl_rankitem_photo" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="30" Top="2" Width="80" Height="92" ShadowColor="0,0,0,0" Transparent="false" TabStop="true" DrawMode="FitWindow" />
+                    </control>
+                    <control name="btn_rankitem_watch" entity="Button" script="" init="">
+                        <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="472" Top="20" Width="126" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_lord_1" Font="WRYH26_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                    </control>
+                    <control name="lbl_rankitem_guild" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="154" Top="44" Width="166" Height="30" ForeColor="255,255,255,203" ShadowColor="0,0,0,0" Text="公会" Font="WRYH22_O" />
+                    </control>
+                    <control name="lbl_rankitem_pktitle" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="338" Top="60" Width="102" Height="22" ForeColor="255,255,255,205" ShadowColor="0,0,0,0" Font="WRYH26_S" AutoSize="true" />
+                    </control>
+                    <control name="lbl_9" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="344" Top="7" Width="115" Height="104" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\war\piaoshuquyu.png" />
+                    </control>
+                    <control name="groupbox_revival_" entity="GroupBox" script="" init="">
+                        <prop Left="94" Top="24" Width="51" Height="86" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" BackImage="gui\main\revival\xingxing.png" />
+                        <control name="lbl_revival_lv_" entity="Label" script="" init="">
+                            <prop Align="Center" RefCursor="WIN_HELP" Left="2" Width="46" Height="46" ForeColor="255,93,85,13" ShadowColor="0,0,0,0" Text="1" Font="WRYH20" DrawMode="FitWindow" />
+                        </control>
+                        <control name="lbl_revival_sub_lv_" entity="Label" script="" init="">
+                            <prop Align="Center" RefCursor="WIN_HELP" Left="6" Top="42" Width="38" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="1" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                        </control>
+                    </control>
+                    <control name="lbl_ticket" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="360" Top="47" Width="86" Height="22" ForeColor="255,255,255,205" ShadowColor="0,0,0,0" Text="99999" Font="WRYH26_S" AutoSize="true" />
+                    </control>
+                    <control name="lbl_rankitem_level" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="40" Top="95" Width="46" Height="22" ForeColor="255,153,255,255" ShadowColor="0,0,0,0" Font="WRYH20_S" />
+                    </control>
+                    <control name="lbl_rankitem_rank" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="662" Top="119" Width="46" Height="30" ForeColor="0,255,255,255" ShadowColor="0,0,0,0" Text="3000" Font="TexFont_phbsz" AutoSize="true" />
+                    </control>
+                </control>
+            </control>
+            <control name="lbl_7" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="668" Top="684" Width="43" Height="22" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\button\jiantou_xia1.png" />
+            </control>
+            <control name="lbl_3" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="359" Top="94" Width="646" Height="85" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\main\rank\textfont2.png,0,0,630,85" />
+            </control>
+            <control name="lbl_ticket_count" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="396" Top="100" Width="430" Height="54" ForeColor="255,134,195,242" ShadowColor="0,0,0,0" Font="WRYH40" />
+            </control>
+            <control name="btn_officer" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\anniu_chengse_yuanjiao1.png" PushImage="gui\common\button\anniu_chengse_yuanjiao2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="836" Top="96" Width="130" Height="68" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_lord_8" Font="WRYH26_S" DrawMode="ExpandH" />
+            </control>
+            <control name="lbl_2" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="671" Top="89" Width="43" Height="22" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\button\jiantou_shang1.png" />
+            </control>
+        </control>
+    </control>
+</form>

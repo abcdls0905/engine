@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 被2011 rel. 2 sp1 (Lonely Knight) 使用XMLSpy vLK编辑的 (http://www.altova.com) by -->
+<!--历练系统-->
+<object>
+	<properties>
+		<property name="ArenaShopLastFreshTime" type="double" public="false" private="false" save="true" realtime="" desc="竞技场商店上次刷新时间"/>
+		<property name="ArenaAwardFreshTime" type="double" public="false" private="true" save="false" realtime="" desc="竞技场奖励刷新时间"/>
+		<property name="ArenaEnemyUid" type="string" public="false" private="false" save="false" realtime="" desc="竞技场奖励刷新时间"/>
+		<property name="ArenaRank" type="int" public="false" private="false" save="true" realtime="" desc="竞技场排名"/>
+		<property name="HighestArenaRecord" type="int" public="false" private="false" save="true" desc="竞技场个人排名纪录"/>
+		<property name="SportRewardFlag" type="int" public="false" private="true" save="false" desc="战斗标志位"/>
+		
+		<!--擂台信息记录-->
+		<property name="DefenceHpLeft" type="int" public="false" private="true" save="true" realtime="true" desc="剩余血量百分比"/>
+		<property name="DefenceType" type="int" public="false" private="true" save="true" desc="擂台难度"/>
+		<property name="DefenceCount" type="int" public="false" private="true" save="true" desc="擂台次数"/>
+		<property name="DefenceStartTime" type="int64" public="false" private="false" save="true" desc="最近一次开始擂台的时间(第一次取到对手开始计算)"/>
+		<property name="DefenceFighterUid" type="string" public="false" private="false" save="true" desc="当前对手"/>
+		<property name="DefenceSpendTime" type="int" public="false" private="true" save="true" desc="通关时间"/>
+		
+		<property name="DefenceNormalMaxCount" type="int" public="false" private="true" save="true"  realtime="true" desc="简单难度最高关卡"/>
+		<property name="DefenceHardMaxCount" type="int" public="false" private="true" save="true"  realtime="true" desc="困难难度最高关卡"/>
+		<property name="DefenceExtremeMaxCount" type="int" public="false" private="true" save="true"  realtime="true" desc="噩梦难度最高关卡"/>
+		<property name="DefenceMaxResetTime" type="double" public="false" private="true" save="true" desc="通关记录清除"/>
+		<property name="DefenceSaodangCount" type="int" public="false" private="true" save="true" desc="扫荡次数"/>
+		<property name="DefenceSaodangDate" type="int64" public="false" private="true" save="true" desc="扫荡次数"/>
+		
+		<property name="DefenceRandomScene" type="int" public="false" private="true" save="true" desc="随机场景"/>
+		<property name="DefenceRandomBuff" type="string" public="false" private="true" save="true" desc="随机buff"/>
+		<property name="LastRandomBuffTime" type="int64" public="false" private="true" save="true" desc="上次刷新buff时间"/>
+		<property name="PayRandCount" type="int" public="false" private="true" save="true" desc="钻石刷新buff次数"/>
+		<property name="LastPayRandTime" type="int64" public="false" private="true" save="true" desc="上次钻石刷新时间"/>
+		<property name="DefenceResetCount" type="int" public="false" private="true" save="true" desc="今日重置次数"/>
+		<property name="LastDefenceResetTime" type="int64" public="false" private="true" save="true" desc="上次重置时间"/>
+	</properties>
+	<records>
+		<record name="ArenaFightRec" cols="7" maxrows="20" save="true" public="false" private="true" desc="竞技场配对挑战榜">
+			<column type="string" desc="玩家uid"/>
+			<column type="widestr" desc="玩家名字"/>
+			<column type="dword" desc="玩家排名"/>
+			<column type="dword" desc="金钱奖励"/>
+			<column type="dword" desc="声望奖励"/>
+			<column type="word" desc="等级"/>
+			<column type="word" desc="角色"/>
+		</record>
+		<record name="ArenaRankRec" cols="7" maxrows="20" save="false" public="false" private="true" desc="竞技场挑战榜">
+			<column type="string" desc="玩家uid"/>
+			<column type="widestr" desc="玩家名字"/>
+			<column type="dword" desc="玩家排名"/>
+			<column type="dword" desc="金钱奖励"/>
+			<column type="dword" desc="声望奖励"/>
+			<column type="word" desc="等级"/>
+			<column type="word" desc="角色"/>
+		</record>
+		<record name="ArenaShopRec" cols="8" maxrows="20" save="true" public="false" private="true" desc="竞技场玩家所在名次">
+			<column type="word" desc="条目id"/>
+			<column type="string" desc="物品id"/>
+			<column type="dword" desc="物品数目"/>
+			<column type="dword" desc="已兑换数量"/>
+			<column type="dword" desc="当日可兑换数量"/>
+			<column type="dword" desc="总共可兑换数量"/>
+			<column type="dword" desc="价格"/>
+			<column type="byte" desc="是否推荐"/>
+		</record>
+	</records>
+</object>

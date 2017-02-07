@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 被动技能表-->
+<!-- ID：按照从大到小顺序检验是否满足，满足添加技能，越大越优先-->
+<!-- ConfigID：修正的类型跟数值 1减少冷却  2增加伤害  3吸血  4减伤  5增加暴击率-->
+<!-- ConditionList：条件列表，多个以逗号隔开，对应taichi_skill_condition.xml中的ID -->
+<Object>
+	<Property ID="1" TaichiID="DefendName1" ConfigID="" ConditionList="9999" Desc="基础太极技"/>
+	<Property ID="801" TaichiID="Taiji01" ConfigID="4,-0.5" ConditionList="1306" Desc="相同四象(释放太极技过程中减少自身50%的伤害)"/>
+	<Property ID="802" TaichiID="Taiji01" ConfigID="4,-0.5" ConditionList="1307" Desc="相同四象(释放太极技过程中减少自身50%的伤害)"/>
+	<Property ID="803" TaichiID="Taiji01" ConfigID="4,-0.5" ConditionList="1308" Desc="相同四象(释放太极技过程中减少自身50%的伤害)"/>
+	<Property ID="804" TaichiID="Taiji01" ConfigID="4,-0.5" ConditionList="1309" Desc="相同四象(释放太极技过程中减少自身50%的伤害)"/>
+	<Property ID="701" TaichiID="Taiji02" ConfigID="2,0.2" ConditionList="1201,1202,1203" Desc="三个不同种族(增加太极技20%伤害)"/>
+	<Property ID="702" TaichiID="Taiji02" ConfigID="2,0.2" ConditionList="1201,1202,1204" Desc="三个不同种族(增加太极技20%伤害)"/>
+	<Property ID="703" TaichiID="Taiji02" ConfigID="2,0.2" ConditionList="1201,1202,1205" Desc="三个不同种族(增加太极技20%伤害)"/>
+	<Property ID="704" TaichiID="Taiji02" ConfigID="2,0.2" ConditionList="1201,1203,1204" Desc="三个不同种族(增加太极技20%伤害)"/>
+	<Property ID="705" TaichiID="Taiji02" ConfigID="2,0.2" ConditionList="1201,1203,1205" Desc="三个不同种族(增加太极技20%伤害)"/>
+	<Property ID="706" TaichiID="Taiji02" ConfigID="2,0.2" ConditionList="1201,1204,1205" Desc="三个不同种族(增加太极技20%伤害)"/>
+	<Property ID="707" TaichiID="Taiji02" ConfigID="2,0.2" ConditionList="1202,1203,1204" Desc="三个不同种族(增加太极技20%伤害)"/>
+	<Property ID="708" TaichiID="Taiji02" ConfigID="2,0.2" ConditionList="1202,1203,1205" Desc="三个不同种族(增加太极技20%伤害)"/>
+	<Property ID="709" TaichiID="Taiji02" ConfigID="2,0.2" ConditionList="1203,1204,1205" Desc="三个不同种族(增加太极技20%伤害)"/>
+	<Property ID="601" TaichiID="Taiji05" ConfigID="1,0.2" ConditionList="1301,1302,1303" Desc="三个不同的四象(太极技冷却时间减少20%)"/>
+	<Property ID="602" TaichiID="Taiji05" ConfigID="1,0.2" ConditionList="1301,1302,1304" Desc="三个不同的四象(太极技冷却时间减少20%)"/>
+	<Property ID="603" TaichiID="Taiji05" ConfigID="1,0.2" ConditionList="1301,1303,1304" Desc="三个不同的四象(太极技冷却时间减少20%)"/>
+	<Property ID="604" TaichiID="Taiji05" ConfigID="1,0.2" ConditionList="1302,1303,1304" Desc="三个不同的四象(太极技冷却时间减少20%)"/>
+	<Property ID="501" TaichiID="Taiji03" ConfigID="3,0.1" ConditionList="201" Desc="全女性(附加额外吸血效果，伤害的10%)"/>
+	<Property ID="401" TaichiID="Taiji04" ConfigID="5,99" ConditionList="202" Desc="全男性(释放过程中附加20%暴击率)"/>
+</Object>
+
+

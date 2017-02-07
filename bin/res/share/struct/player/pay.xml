@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by  () -->
+<object>
+	<!-- 基本属性 -->
+	<properties>
+		<property name="PayAlready" type="int" public="false" private="true" save="true" desc="已经充过值"/>
+		<property name="ClickWelfareAlready" type="int" public="false" private="true" save="true" desc="已经点击过福利按钮"/>
+		<property name="ClickItemAlready" type="int" public="false" private="true" save="true" desc="已经点击过道具按钮"/>
+		<property name="ClickLimitAlready" type="int" public="false" private="true" save="true" desc="已经点击过限时道具按钮"/>
+		<property name="VipLevel" type="byte" public="true" private="true" save="true" desc="VIP等级"/>
+		<property name="TotalPay" type="int" public="false" private="true" save="true" desc="累计充值"/>
+		<property name="ItemShopResetDate" type="string" public="false" private="true" save="true" desc="道具商店次数重置日期"/>
+		<property name="CardType" type="byte" public="false" private="true" save="true" desc="卡的类型"/>
+		<property name="MonthQuest" type="byte" public="false" private="true" save="true" desc="月卡任务"/>
+		<property name="FuliQuest" type="byte" public="false" private="true" save="true" desc="福利卡任务"/>
+		<property name="MonthQuestTime" type="byte" public="false" private="true" save="true" desc="月卡任务时间"/>
+		<property name="FuliQuestTime" type="byte" public="false" private="true" save="true" desc="福利卡任务时间"/>
+		<property name="PayShow" type="byte" public="false" private="true" save="true" realtime="true" desc="显示弹窗"/>
+		<property name="TavernResetTimes" type="dword" public="false" private="true" save="true" realtime="true" desc="酒馆刷新次数"/>
+		<property name="TavernResetMax" type="dword" public="false" private="true" save="true" realtime="true" desc="酒馆刷新最大次数"/>
+		<property name="AutoTequanCard" type="dword" public="false" private="true" save="true" realtime="true" desc="特权卡自动订阅状态"/>
+		<!-- 黑市属性 -->
+		<property name="BlackMarketResetTimes" type="dword" public="false" private="true" save="true" realtime="true" desc="黑市刷新次数"/>
+		<property name="BlackMarketResetMax" type="dword" public="false" private="true" save="true" realtime="true" desc="黑市钻石刷新最大次数"/>
+	</properties>
+	<!-- 表属性 -->
+	<records>
+		<record name="item_shop_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="玩家购买道具记录表">
+			<column type="string" desc="道具ID"/>
+			<column type="dword" desc="道具数量"/>
+		</record>
+		<record name="limit_shop_rec" cols="3" maxrows="100" save="true" public="false" private="true" desc="玩家购买限时商品记录表">
+			<column type="string" desc="道具ID"/>
+			<column type="byte" desc="道具数量"/>
+			<column type="byte" desc="道具版本号"/>
+		</record>
+		<record name="limit_new_shop_rec" cols="4" maxrows="100" save="true" public="false" private="true" desc="极效新增限时商品表">
+			<column type="string" desc="道具ID"/>
+			<column type="byte" desc="版本号"/>
+			<column type="byte" desc="是否是新的商品"/>
+			<column type="byte" desc="商品类种"/>
+		</record>
+		<record name="vip_card_rec" cols="3" maxrows="30" save="true" public="false" private="true" desc="玩家特权卡(废弃)">
+			<column type="byte" desc="特权卡种类"/>
+			<column type="double" desc="开始时间"/>
+			<column type="double" desc="结束时间"/>
+		</record>
+		<record name="vip_card_rec2" cols="5" maxrows="30" save="true" public="false" private="true" desc="玩家特权卡">
+			<column type="byte" desc="特权卡种类"/>
+			<column type="double" desc="开始时间"/>
+			<column type="double" desc="结束时间"/>
+			<column type="double" desc="上次领取时间"/>
+			<column type="byte" desc="可否领取(客户端刷新用)"/>
+		</record>
+		<record name="gold_exchange_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="玩家兑换金币记录表">
+			<column type="byte" desc="编号"/>
+			<column type="byte" desc="兑换次数"/>
+		</record>
+		<record name="buy_vip_item_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="玩家购买vip福利记录">
+			<column type="byte" desc="编号"/>
+			<column type="byte" desc="是否购买 0：没有 1：买了"/>
+		</record>
+		<record name="first_pay_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="玩家购买钻石分类别记录 ">
+			<column type="byte" desc="编号"/>
+			<column type="byte" desc="是否购买该类 0：没有 1：买了"/>
+		</record>
+		<record name="vip_gift_get_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="玩家领取vip奖励记录表">
+			<column type="byte" desc="编号"/>
+			<column type="byte" desc="是否领取了该奖励 0：没有 1：领过了"/>
+		</record>
+		<record name="blackmarket_item_rec" cols="5" maxrows="32" save="true" public="false" private="true" desc="黑市刷新物品表">
+			<column type="string" desc="物品ID"/>
+			<column type="dword" desc="物品数目"/>
+			<column type="dword" desc="价格类型"/>
+			<column type="dword" desc="物品总价"/>
+			<column type="word" desc="物品购买标记"/>
+		</record>
+		<record name="DecPointQRec" cols="4" maxrows="4" save="false" public="false" private="false" desc="钻石交易等待列表">
+			<column type="string" desc="交易uid"/>
+			<column type="int64" desc="扣除绑定钻石数量"/>
+			<column type="dword" desc="回调CommandID"/>
+			<column type="string" desc="交易回调参数"/>
+		</record>
+		<record name="pay_gift_get" cols="2" maxrows="50" save="true" public="false" private="true" desc="玩家充值反馈奖励包">
+			<column type="byte" desc="道具ID"/>
+			<column type="byte" desc="是否可领取"/>
+		</record>
+		<record name="tavern_item_rec" cols="6" maxrows="12" save="true" public="false" private="true" desc="酒馆刷新物品表">
+			<column type="string" desc="物品ID"/>
+			<column type="dword" desc="物品数目"/>
+			<column type="dword" desc="货币类型"/>
+			<column type="dword" desc="物品总价"/>
+			<column type="word" desc="物品打折"/>
+			<column type="word" desc="物品购买标记"/>
+		</record>
+		<record name="pay_traceorder_rec" cols="3" maxrows="200" save="true" public="false" private="true" desc="玩家充值反馈奖励包">
+			<column type="string" desc="traceorder"/>
+			<column type="string" desc="szindex"/>
+			<column type="string" desc="time"/>
+		</record>
+		
+	</records>
+</object>

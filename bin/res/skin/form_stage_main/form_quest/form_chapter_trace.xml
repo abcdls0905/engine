@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop Transparent="true" ShowGrid="true" Left="10" Top="237" Width="372" Height="102" BackColor="0,255,255,255" ShadowColor="0,0,0,0" TestTrans="true" NoFrame="true"/>
+		<control name="gb_chapter_trace" entity="GroupBox" script="" init="">
+			<prop ClipChildren="false" Width="372" Height="92" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/hall/hall.png,207,133,372,92"/>
+			<control name="pbar_chp_progress" entity="ProgressBar" script="" init="">
+				<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_main/hall/hall.png,217,105,225,24" ProgressMode="LeftToRight" Left="80" Top="61" Width="225" Height="24" ForeColor="255,255,0,0" BackColor="0,200,200,200" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" BackImage="gui/tp2_main/hall/hall.png,217,75,225,24"/>
+			</control>
+			<control name="lbl_chp_title" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="80" Top="36" Width="210" Height="16" ForeColor="255,255,237,153" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK"/>
+			</control>
+			<control name="lbl_chp_progress" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="155" Top="66" Width="78" Height="16" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK"/>
+			</control>
+			<control name="lbl_chp_award_desc" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="80" Top="7" Width="210" Height="16" ForeColor="255,153,255,153" ShadowColor="0,0,0,0" Text="123123123" Font="WRYH22_O_BLACK" AutoSize="true" DrawMode="FitWindow"/>
+			</control>
+			<control name="ig_chp_award_item" entity="ImageGrid" script="" init="">
+				<prop SelectColor="0,0,255,0" MouseInColor="0,255,255,0" CoverColor="0,255,0,0" LockColor="0,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" GridHeight="72" GridWidth="72" GridsPos="0,0" DrawMouseIn="RECT" DrawMouseSelect="" DrawCover="RECT" DrawLock="RECT" MouseDownScale="0.900000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" HasVScroll="false" Left="6" Top="10" Width="67" Height="67" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" DrawMode="Expand" ClickSound="button_click"/>
+			</control>
+			<control name="btn_open" entity="Button" script="" init="">
+				<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="74" Top="8" Width="246" Height="70" BackColor="0,192,192,192" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" ClickSound="ui_open"/>
+			</control>
+			<control name="btn_submit" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_quest/draw.png" PushImage="gui/tp2_quest/draw1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="145" Top="56" Width="97" Height="41" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true"/>
+			</control>
+			<control name="lbl_submit_effect" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="145" Top="56" Width="97" Height="41" ShadowColor="0,0,0,0" BackImage=""/>
+			</control>
+			<control name="lbl_spark" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Top="-6" Width="326" Height="97" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+			</control>
+			<control name="lbl_particles2d" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="80" Top="61" Width="225" Height="24" ShadowColor="0,0,0,0"/>
+			</control>
+		</control>
+	</control>
+</form>
+

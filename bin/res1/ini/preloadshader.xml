@@ -1,0 +1,147 @@
+<Shader>
+    <ShaderItem Type="PS">
+        <ShaderSubItem FuncName="main" Define="" FileName="gui.fsh" />
+        <ShaderSubItem FuncName="main" Define="" FileName="design_line.fsh" />
+        <ShaderSubItem FuncName="ps_main_simple_shadow" Define="" FileName="simple_shadow.fsh" />
+        <ShaderSubItem FuncName="main" Define="" FileName="saber_arc.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define USE_PICTURE 1&#x0A;" FileName="gui.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define USE_PICTURE 1&#x0A;#define USE_PICTUREA8 1&#x0A;" FileName="gui.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define EMISSIVE 1&#x0A;#define EMISSIVEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define FOGLINEAR 1&#x0A;#define ALPHATEST 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define ALPHATEST_GREATERQUAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define EMISSIVE 1&#x0A;#define EMISSIVEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define FOGLINEAR 1&#x0A;#define ALPHATEST 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define EMISSIVE 1&#x0A;#define EMISSIVEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define SKELETON 1&#x0A;#define FOGLINEAR 1&#x0A;#define ALPHATEST 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define ALPHATEST_GREATERQUAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define EMISSIVE 1&#x0A;#define EMISSIVEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define SKELETON 1&#x0A;#define FOGLINEAR 1&#x0A;#define ALPHATEST 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSE 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSE 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define APPENDCOLOR 1&#x0A;#define FOGLINEAR 1&#x0A;#define BLEND_ENHANCE 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSE 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define FOGLINEAR 1&#x0A;#define BLEND_ENHANCE 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define APPENDCOLOR 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define USE_PICTURE 1&#x0A;#define USE_PICTUREA8 1&#x0A;#define USE_OUTLINE 1&#x0A;" FileName="gui.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define USE_PICTURE 1&#x0A;#define USE_FADE 1&#x0A;" FileName="gui.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define EMISSIVE 1&#x0A;#define EMISSIVEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define LIGHTMAP 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define LIGHTMAP 1&#x0A;#define FOGLINEAR 1&#x0A;#define ALPHATEST 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define ALPHATEST_GREATERQUAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define LIGHTMAP 1&#x0A;#define FOGLINEAR 1&#x0A;#define ALPHATEST 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define FOGLINEAR 1&#x0A;#define BLEND_ENHANCE 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define APPENDCOLOR 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define SKELETON 1&#x0A;#define APPENDCOLOR 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define SKELETON 1&#x0A;#define APPENDCOLOR 1&#x0A;#define FOGLINEAR 1&#x0A;#define ALPHATEST 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define SKELETON 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define SKELETON 1&#x0A;#define FOGLINEAR 1&#x0A;#define ALPHATEST 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSE 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define APPENDCOLOR 1&#x0A;#define FOGLINEAR 1&#x0A;#define FILTERMAP 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define APPENDCOLOR 1&#x0A;#define FOGLINEAR 1&#x0A;#define BLEND_ENHANCE 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSE 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define APPENDCOLOR 1&#x0A;#define FOGLINEAR 1&#x0A;#define FILTERMAP 1&#x0A;#define BLEND_ENHANCE 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define LIGHTMAP 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define LIGHTMAP 1&#x0A;#define ALPHATEST 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSE 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define BLEND_ENHANCE 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSE 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define APPENDCOLOR 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define LIGHTMAP 1&#x0A;#define SHADOWMAP 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define SKELETON 1&#x0A;#define APPENDCOLOR 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define APPENDCOLOR 1&#x0A;#define BLEND_ENHANCE 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSE 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define APPENDCOLOR 1&#x0A;#define FILTERMAP 1&#x0A;#define BLEND_ENHANCE 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define APPENDCOLOR 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="ps_main_model_shadow_map" Define="" FileName="model_shadow_map.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define SKELETON 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define BLEND_ENHANCE 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSE 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define FILTERMAP 1&#x0A;#define BLEND_ENHANCE 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define ALPHATEST_GREATERQUAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define SKELETON 1&#x0A;#define APPENDCOLOR 1&#x0A;#define ALPHATEST 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSE 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define APPENDCOLOR 1&#x0A;#define BLEND_ENHANCE 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define USE_PICTURE 1&#x0A;#define USE_PICTUREA8 1&#x0A;#define USE_FADE 1&#x0A;" FileName="gui.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define APPENDCOLOR 1&#x0A;#define FILTERMAP 1&#x0A;#define BLEND_ENHANCE 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define SKELETON 1&#x0A;#define ALPHATEST 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define ALPHATEST_GREATERQUAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define SKELETON 1&#x0A;#define ALPHATEST 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define USE_FADE 1&#x0A;" FileName="gui.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define USE_PICTURE 1&#x0A;#define USE_BLACKWHITE 1&#x0A;" FileName="gui.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSE 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSEMAP 1&#x0A;#define EMISSIVE 1&#x0A;#define EMISSIVEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define LIGHTMAP 1&#x0A;#define SHADOWMAP 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSE 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define FOGLINEAR 1&#x0A;#define FILTERMAP 1&#x0A;#define BLEND_ENHANCE 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define FOGLINEAR 1&#x0A;#define FILTERMAP 1&#x0A;#define BLEND_ENHANCE 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSE 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define FOGLINEAR 1&#x0A;#define FILTERMAP 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSE 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define APPENDCOLOR 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define APPENDCOLOR 1&#x0A;#define FOGLINEAR 1&#x0A;#define ALPHATEST 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define APPENDCOLOR 1&#x0A;#define FOGLINEAR 1&#x0A;#define FILTERMAP 1&#x0A;#define BLEND_ENHANCE 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define FOGLINEAR 1&#x0A;#define BLEND_ENHANCE 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSE 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define FOGLINEAR 1&#x0A;#define ALPHATEST 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSE 1&#x0A;#define ALPHATEST_GREATERQUAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define FOGLINEAR 1&#x0A;#define ALPHATEST 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define SKELETON 1&#x0A;#define FALLOFF 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define SKELETON 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define APPENDCOLOR 1&#x0A;#define FOGLINEAR 1&#x0A;#define FILTERMAP 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define USE_PICTURE 1&#x0A;#define USE_FADE 1&#x0A;#define USE_BLACKWHITE 1&#x0A;" FileName="gui.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define SKELETON 1&#x0A;#define APPENDCOLOR 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define USE_PICTURE 1&#x0A;#define USE_PICTUREA8 1&#x0A;#define USE_FADE 1&#x0A;#define USE_OUTLINE 1&#x0A;" FileName="gui.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define SKELETON 1&#x0A;#define HEIGHT_FOG 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define HEIGHT_FOG 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define LIGHTMAP 1&#x0A;#define SHADOWMAP 1&#x0A;#define HEIGHT_FOG 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define LIGHTMAP 1&#x0A;#define HEIGHT_FOG 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define SKELETON 1&#x0A;#define ALPHATEST 1&#x0A;#define HEIGHT_FOG 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define LIGHTMAP 1&#x0A;#define ALPHATEST 1&#x0A;#define HEIGHT_FOG 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define ALPHATEST_GREATERQUAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define SKELETON 1&#x0A;#define ALPHATEST 1&#x0A;#define HEIGHT_FOG 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define HEIGHT_FOG 1&#x0A;#define BLEND_ENHANCE 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSE 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define HEIGHT_FOG 1&#x0A;#define BLEND_ENHANCE 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSE 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define FILTERMAP 1&#x0A;#define HEIGHT_FOG 1&#x0A;#define BLEND_ENHANCE 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSE 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define APPENDCOLOR 1&#x0A;#define HEIGHT_FOG 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define HEIGHT_FOG 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSE 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define HEIGHT_FOG 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSEMAP 1&#x0A;#define EMISSIVE 1&#x0A;#define EMISSIVEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define HEIGHT_FOG 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSE 1&#x0A;#define ALPHATEST_GREATERQUAL 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define DYNAMICLIGHTING 1&#x0A;#define APPENDCOLOR 1&#x0A;#define FOGLINEAR 1&#x0A;#define ALPHATEST 1&#x0A;" FileName="model.fsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSEMAP 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="saber_arc.fsh" />
+    </ShaderItem>
+    <ShaderItem Type="VS">
+        <ShaderSubItem FuncName="main" Define="" FileName="gui.vsh" />
+        <ShaderSubItem FuncName="main" Define="" FileName="design_line.vsh" />
+        <ShaderSubItem FuncName="vs_main_simple_shadow" Define="" FileName="simple_shadow.vsh" />
+        <ShaderSubItem FuncName="main" Define="" FileName="saber_arc.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define USE_PICTURE 1&#x0A;" FileName="gui.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FOGLINEAR 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define VERTEX_SKELETON 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define VERTEX_SKELETON 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FOGLINEAR 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_COLOR 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define TEXTUREANI 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FOGLINEAR 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_COLOR 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FOGLINEAR 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_TEXTURE0 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FOGLINEAR 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define VERTEX_TEXTURE1 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define VERTEX_TEXTURE1 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FOGLINEAR 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_COLOR 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FILTERMAP 1&#x0A;#define FOGLINEAR 1&#x0A;#define FILTERTEXTUREANI 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_TEXTURE0 1&#x0A;#define TEXTUREANI 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FOGLINEAR 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define VERTEX_TEXTURE1 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_COLOR 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_COLOR 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define TEXTUREANI 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define VERTEX_TEXTURE1 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define SHADOWMAP 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define VERTEX_SKELETON 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_TEXTURE0 1&#x0A;#define TEXTUREANI 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_COLOR 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FILTERMAP 1&#x0A;#define FILTERTEXTUREANI 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="vs_main_model_shadow_map" Define="#define VERTEX_TEXTURE0 1&#x0A;#define VERTEX_SKELETON 1&#x0A;" FileName="model_shadow_map.vsh" />
+        <ShaderSubItem FuncName="vs_main_model_shadow_map" Define="" FileName="model_shadow_map.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define VERTEX_SKELETON 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_TEXTURE0 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_TEXTURE0 1&#x0A;#define TEXTUREANI 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FILTERMAP 1&#x0A;#define FILTERTEXTUREANI 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_TEXTURE0 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define VERTEX_TEXTURE1 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define SHADOWMAP 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_TEXTURE0 1&#x0A;#define TEXTUREANI 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FILTERMAP 1&#x0A;#define FOGLINEAR 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_COLOR 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define TEXTUREANI 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FILTERMAP 1&#x0A;#define FOGLINEAR 1&#x0A;#define FILTERTEXTUREANI 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_COLOR 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define TEXTUREANI 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FILTERMAP 1&#x0A;#define FOGLINEAR 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_COLOR 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_TEXTURE0 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FILTERMAP 1&#x0A;#define FOGLINEAR 1&#x0A;#define FILTERTEXTUREANI 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_TEXTURE0 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_TEXTURE0 1&#x0A;#define VERTEX_SKELETON 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_TEXTURE0 1&#x0A;#define VERTEX_SKELETON 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FOGLINEAR 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define VERTEX_SKELETON 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define HEIGHT_FOG 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define HEIGHT_FOG 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define VERTEX_TEXTURE1 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define SHADOWMAP 1&#x0A;#define HEIGHT_FOG 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define VERTEX_TEXTURE1 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define HEIGHT_FOG 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_NORMAL 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define VERTEX_SKELETON 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define HEIGHT_FOG 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_TEXTURE0 1&#x0A;#define TEXTUREANI 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define HEIGHT_FOG 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_TEXTURE0 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define HEIGHT_FOG 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_COLOR 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define TEXTUREANI 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define HEIGHT_FOG 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_COLOR 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define HEIGHT_FOG 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_COLOR 1&#x0A;#define VERTEX_TEXTURE0 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FILTERMAP 1&#x0A;#define HEIGHT_FOG 1&#x0A;#define FILTERTEXTUREANI 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_TEXTURE0 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define HEIGHT_FOG 1&#x0A;" FileName="model.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define DIFFUSEMAP 1&#x0A;#define FOGLINEAR 1&#x0A;" FileName="saber_arc.vsh" />
+        <ShaderSubItem FuncName="main" Define="#define VERTEX_TEXTURE0 1&#x0A;#define DIFFUSEMAP 1&#x0A;#define VIEWVECTOR 1&#x0A;#define FILTERMAP 1&#x0A;#define FOGLINEAR 1&#x0A;#define OPACITY 1&#x0A;" FileName="model.vsh" />
+    </ShaderItem>
+</Shader>

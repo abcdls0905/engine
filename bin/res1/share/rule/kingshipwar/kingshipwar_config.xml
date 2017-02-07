@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!--王座之争配置-->
+<Object>
+    <Property
+	BattleWarID="11" 
+	CloneId="702" 
+	CloneIdEasy="702" 
+	
+	OpenTime="11:00-22:58" 
+	EachFightTime="1200" 
+	DayEntryCount="2" 
+	MaxEntryCount="12" 
+	ConsumeEntryCount="1" 
+	EntryLevel="45" 
+	UseStayPower="10" 
+	
+	BossNpcConfig="war_createmon_3" 
+	BossNpcCreateTime="620" 
+	BossNpcLocate="-5.178637,11.426001,3.204532,0.768" 
+	BossCreateMsg="sys_kingshipwar_0011" 
+	
+	SmallBossANpcConfig="war_smallboss_1" 
+	SmallBossANpcCreateTime="320" 
+	SmallBossANpcLocate="-5.178637,11.526001,-60.99,0.768" 
+	SmallBossACreateMsg="sys_kingshipwar_0019" 
+	
+	SmallBossBNpcConfig="war_smallboss_2" 
+	SmallBossBNpcCreateTime="500" 
+	SmallBossBNpcLocate="-0.478637,11.326001,66.304532,0.768" 
+	SmallBossBCreateMsg = "sys_kingshipwar_0020" 
+	
+	CampAGuardConfig="war_redgardian_1" 
+	CampAGuardCreateTime="1" 
+	CampAGuardLocate="57.328899,11.379001,4.622762,-2.374" 
+	CampAGuardCreateMsg="" 
+	
+	CampBGuardConfig="war_bluegardian_1" 
+	CampBGuardCreateTime="1" 
+	CampBGuardLocate="-65.038208,11.379001,2.528748,1.5533" 
+	CampBGuardCreateMsg=""
+	
+	CommonNpcScore="7" 
+	EnhanceNpcScore="34" 
+	BossNpcScore="6500"
+	SmallBossNpcScore="3000"  
+	PlayerScore="120" 
+	GuardNpcScore="4000" 
+	SendHelpInterval="3000" 
+	ReliveTime="10" 
+	QuickEntryBuffer="bf_addatri_buff_1" 
+	
+	HelpAttackSecond="10" 
+	HelpAttackPlayerScore="50" 
+	HelpAttackBigBossScore="1200"
+	HelpAttackSmallBossScore="600"
+	
+	HelpDamgeBossSecond="60" 
+	HelpDamgeBigBossScore="2000" 
+	HelpDamageSmallBossScore="800" 
+	
+	LowWantedComboKillCount="20" 
+	FinalLowWantedScore="400" 
+	HelpFinalLowWantedScore="80" 
+	FinalLowWantedBuffer="bf_zhenfen_buff_1" 
+	LowWantedReliveSecond="20" 
+	
+	HighWantedComboKillCount="50" 
+	FinalHighWantedScore="1000" 
+	HelpFinalHighWantedScore="200" 
+	FinalHighWantedBuffer="bf_zhenfen_buff_1" 
+	HighWantedReliveSecond="30" 
+	 
+	RoomTeamCount="2" 
+	RoomCountPerTeam="10" 
+	PlayerCountPerRoom="50" 
+	
+	RoomTeamCount_Easy="1" 
+	RoomCountPerTeam_Easy="10" 
+	PlayerCountPerRoom_Easy="50" 
+	
+	TeamAverageLevelLimit="55"
+	PlayerMaxLevelLimt="60"
+	
+	ClientHideWing = "1" 
+	ClientSimpleEffect = "0" />
+</Object>
+
+<!-- 2015.12.21 新增配置项 TeamAverageLevelLimit PlayerMaxLevelLimt CloneIdEasy RoomTeamCount_Easy RoomCountPerTeam_Easy PlayerCountPerRoom_Easy -->
+
+<!--BattleWarID 玩法类型 -->
+<!--CloneId 副本ID -->
+
+<!--OpenTime 此活动一天的开放时间段 -->
+<!--EachFightTime 一轮战斗持续多少秒 -->
+<!--DayEntryCount 玩家每天回复多少进入次数 -->
+<!--MaxEntryCount 玩家最多能回复到多少次数-->
+<!--ConsumeEntryCount 玩家进入一次消耗多少次数-->
+<!--EntryLevel 玩家进入需要多少等级-->
+<!--UseStayPower 玩家进入一次消耗多少历练-->
+
+<!--BossNpcConfig Boss的ConfigID-->
+<!--BossNpcCreateTime Boss的创建时间(开场后多少秒)-->
+<!--BossNpcLocate Boss的创建位置-->
+
+<!--CampAGuardConfig 守护神的ConfigID-->
+<!--CampAGuardCreateTime 守护神的创建时间(开场后多少秒)-->
+<!--CampAGuardLocate 守护神的创建位置-->
+<!--CampBGuardConfig 守护神的ConfigID-->
+<!--CampBGuardCreateTime 守护神的创建时间(开场后多少秒)-->
+<!--CampBGuardLocate 守护神的创建位置-->
+
+<!--CommonNpcScore 击杀普通怪获得的积分 -->
+<!--EnhanceNpcScore 击杀精英怪获得的积分 -->
+<!--BossNpcScore 击杀BOSS获得的积分 -->
+<!--SmallBossNpcScore 击杀小BOSS获得的积分 -->
+<!--PlayerScore 击杀玩家获得的积分 -->
+<!--GuardNpcScore 击杀守护神获得的积分 -->
+<!--SendHelpInterval 发送救援的间隔秒数 -->
+<!--ReliveTime 死亡后复活需要的秒数-->
+<!--QuickEntryBuffer 选择“快速进入”的玩家获得一个散人buffID-->
+
+<!--HelpAttackSecond 助攻有效时间-->
+<!--HelpAttackPlayerScore 助攻击杀玩家的得分-->
+<!--HelpAttackBigBossScore 助攻击杀大BOSS的得分-->
+<!--HelpAttackSmallBossScore 助攻击杀小BOSS的得分-->
+
+<!--HelpDamgeBossSecond 对BOSS产生伤害助攻的有效时间-->
+<!--HelpDamgeBigBossScore 对大BOSS伤害助攻的得分-->
+<!--HelpDamageSmallBossScore 对小BOSS伤害助攻的得分-->
+
+<!--LowWantedShowBuffer 低级悬赏的显示BUFF-->
+<!--LowWantedComboKillCount 低级悬赏的连杀数-->
+<!--FinalLowWantedScore 击杀低级悬赏者的得分-->
+<!--HelpFinalLowWantedScore 击杀低级悬赏者的助攻分-->
+<!--FinalLowWantedBuffer 击杀低级悬赏者的振奋BUFF-->
+<!--LowWantedReliveSecond 低级悬赏者的复活秒数-->
+	
+<!--HighWantedShowBuffer 高级悬赏的显示BUFF-->
+<!--HighWantedComboKillCount 高级悬赏的连杀数-->
+<!--FinalHighWantedScore 击杀高级悬赏者的得分-->
+<!--HelpFinalHighWantedScore 击杀高级悬赏者的助攻分-->
+<!--FinalHighWantedBuffer 击杀高级悬赏者的振奋BUFF-->
+<!--HighWantedReliveSecond 高级悬赏者的复活秒数-->
+
+<!--RoomTeamCount 房间组的数量 -->
+<!--RoomCountPerTeam 每个房间组多少个房间 -->
+<!--PlayerCountPerRoom 每个房间最多可进多少人 -->
+
+<!--ClientHideWing 客户端是否隐藏其他玩家翅膀 -->
+<!--ClientSimpleEffect 客户端是否简化特效 -->
+

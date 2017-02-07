@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<commandbuttons groupsize="30" buttonwidth="140" buttonheight="24">
+	<funcgroup name="basefunc" Text="" groupctrl="basefunc_grpbox" button="basefunc_rbtn">
+		<item command="view_all" argcount="-1" Text="游戏对象查看器" prompt=""/>
+		<item command="data_all" argcount="-1" Text="属性地形查看器" prompt=""/>
+		<item command="switch_scence" argcount="0" Text="切换场景" prompt=""/>
+		<item command="play_movie" argcount="0" Text="播放黑幕" prompt=""/>
+		<item command="net_message_delay" argcount="1" Text="网络消息延迟" prompt=""/>
+		<item command="set_no_cooldown" argcount="-1" Text="开关技能CD" prompt=""/>
+		<item command="set_no_consume" argcount="-1" Text="开关消耗" prompt=""/>
+		<item command="test_map_camera" argcount="-1" Text="测试摄像机" prompt=""/>
+		<item command="performance" argcount="-1" Text="性能检测器" prompt=""/>
+		<item command="change_main_ui" argcount="1" Text="切换主界面" prompt=""/>
+		<item command="set_profile" argcount="-1" Text="性能实时分析" prompt=""/>
+		<item command="create_clonescene" argcount="1" Text="创建本地副本" prompt=""/>
+		<item command="leave_clonescene" argcount="1" Text="离开副本" prompt=""/>
+		<item command="set_back_music" argcount="-1" Text="开关背景音乐" prompt=""/>
+		<item command="accept_quest" argcount="1" Text="接受任务" prompt=""/>
+		<item command="giveup_quest" argcount="1" Text="放弃任务" prompt=""/>
+		<item command="clear_quest" argcount="1" Text="重置任务" prompt=""/>
+		<item command="submit_quest" argcount="1" Text="完成任务" prompt=""/>
+		<item command="set_totalattack" argcount="1" Text="Super攻击力" prompt=""/>
+		<item command="cobj" argcount="1" Text="创建对象" prompt=""/>
+		<item command="hide_all_UI" argcount="1" Text="隐藏全部ui" prompt=""/>
+		<item command="show_skill_range" argcount="-1" Text="开关特效范围" prompt="参数为2：显示特效"/>
+		<item command="del_all_roles" argcount="-1" Text="删除全部角色" prompt=""/>
+		<item command="client_goto" argcount="2" Text="本地副本Goto功能" prompt=""/>
+		<item command="set_foglinear" argcount="-1" Text="是否开启线性雾" prompt=""/>
+		<item command="set_heightfog" argcount="-1" Text="是否开启高度雾" prompt=""/>
+		<item command="set_saveshader" argcount="-1" Text="是否保存shader" prompt=""/>
+		<item command="set_unenemy" argcount="-1" Text="无敌设定" prompt=""/>
+		<item command="close_gm" argcount="-1" Text="关闭gm命令" prompt=""/>
+		<item command="close_fps" argcount="-1" Text="是否关闭FPS" prompt=""/>
+		<item command="add_npc" argcount="1" Text="创建一个怪物" prompt=""/>
+		<item command="get_phy_event" argcount="-1" Text="吃大餐(测试概率用)" prompt=""/>
+		<item command="nav_debugshow" argcount="-1" Text="Nav调试" prompt=""/>
+		<item command="show_wing" argcount="-1" Text="显示/关闭 翅膀" prompt=""/>
+		<item command="reload_pettips_config" argcount="-1" Text="重载宠物配置" prompt=""/>
+	</funcgroup>
+	<funcgroup name="reload" Text="" groupctrl="reload_grpbox" button="reload_rbtn">
+		<item command="reload_outline_config" argcount="-1" Text="重载高亮特效" prompt=""/>
+		<item command="reload_camera_vibrate" argcount="-1" Text="重载摄像机震动配置" prompt=""/>
+		<item command="reload_hall_simulate" argcount="-1" Text="重载大厅移动模拟配置" prompt=""/>
+		<item command="reload_skill_config" argcount="-1" Text="重载技能相关配置数据" prompt=""/>
+		<item command="reload_effect_resource" argcount="-1" Text="重载特效配置数据" prompt=""/>
+		<item command="reload_gui_effect_config" argcount="-1" Text="重载界面特效配置" prompt=""/>
+		<item command="reload_guide_config" argcount="-1" Text="重载引导配置" prompt=""/>
+		<item command="reload_select_clone_icon" argcount="-1" Text="重载战役关卡图标配置" prompt=""/>
+		<item command="create_way_point_xml" argcount="-1" Text="创建路径点配置" prompt=""/>
+		<item command="test_guide_config" argcount="-1" Text="测试引导" prompt=""/>
+		<item command="test_festival_config" argcount="-1" Text="重载活动配置" prompt=""/>
+		<item command="test_to_update_stage" argcount="-1" Text="转到更新阶段" prompt=""/>
+		<item command="show_transport_mine" argcount="-1" Text="运镖活动1" prompt=""/>
+		<item command="show_ship_cargo" argcount="-1" Text="运镖活动2" prompt=""/>
+		<item command="reload_physics" argcount="-1" Text="重载物理死亡数据" prompt=""/>
+		<item command="reload_battlewar" argcount="-1" Text="重载战场配置" prompt=""/>
+		<item command="reset_minimap" argcount="-1" Text="重载战场小地图" prompt=""/>
+	</funcgroup>
+	<funcgroup name="upgrade" Text="" groupctrl="upgrade_grpbox" button="upgrade_rbtn">
+		<item command="active_all_func" argcount="-1" Text="开启全部功能" prompt=""/>
+		<item command="set_level" argcount="1" Text="设置等级" prompt=""/>
+		<item command="set_guide_index" argcount="1" Text="设置引导步骤" prompt=""/>
+		<item command="stop_guide" argcount="1" Text="老子受够了引导！" prompt=""/>
+		<item command="set_guild_level" argcount="1" Text="设置公会等级" prompt=""/>
+		<item command="set_player_vision" argcount="-1" Text="隐藏玩家" prompt=""/>
+		<item command="set_player_visible" argcount="-1" Text="玩家隐身显示" prompt=""/>
+		<item command="show_hide_cameraset" argcount="-1" Text="摄像机配置" prompt=""/>
+		<item command="show_hide_ppbloom" argcount="-1" Text="ppbloom" prompt=""/>
+		<item command="set_role_npc_one" argcount="1" Text="主控GM对象" prompt=""/>
+		<item command="set_role_npc_two" argcount="1" Text="辅助1GM对象" prompt=""/>
+		<item command="set_role_npc_three" argcount="1" Text="辅助2GM对象" prompt=""/>
+		<item command="set_current_main_quest" argcount="1" Text="设置主线任务" prompt=""/>
+		<item command="set_icontrol_output" argcount="-1" Text="界面输出" prompt=""/>
+		<item command="set_physics_info" argcount="-1" Text="设置物理死亡数据" prompt=""/>
+		<item command="set_show_gm_btn" argcount="-1" Text="副本GM按钮" prompt=""/>
+		<item command="show_weather_edit" argcount="1" Text="天气设置" prompt=""/>
+		<item command="set_accout_level" argcount="1" Text="设置账号等级" prompt=""/>
+		<item command="set_own_role_npcs_level" argcount="1" Text="一键升级所拥有的rolenpc" prompt=""/>
+		<item command="restore_energy" argcount="-1" Text="一键恢复能量" prompt=""/>
+		<item command="gain_active_all_rolenpc_patch" argcount="-1" Text="一键获取所有英雄碎片" prompt=""/>
+		<item command="show_shadow_rect" argcount="-1" Text="阴影剪裁" prompt=""/>
+		<item command="select_debug" argcount="-1" Text="选中目标" prompt=""/>
+		<item command="hide_not_select_form" argcount="-1" Text="隐藏没有选中的界面" prompt=""/>
+		<item command="show_hide_voice_log" argcount="-1" Text="语音日志" prompt=""/>
+		<item command="set_current_loop_quest" argcount="1" Text="设置日常任务" prompt=""/>
+		<item command="done_current_loop_quest" argcount="1" Text="完成日常任务" prompt=""/>
+	</funcgroup>
+	<funcgroup name="createobj" Text="" groupctrl="createobj_grpbox" button="createobj_rbtn">
+		<item command="add_money" argcount="1" Text="增加金钱" prompt=""/>
+		<item command="add_diamond" argcount="1" Text="增加钻石" prompt=""/>
+		<item command="add_binddiamond" argcount="1" Text="增加绑钻" prompt=""/>
+		<item command="add_glory" argcount="1" Text="增加荣誉点" prompt=""/>
+		<item command="add_ap" argcount="1" Text="充满体力和耐力" prompt=""/>
+		<item command="add_icestone" argcount="1" Text="增加精铁石" prompt=""/>
+		<item command="add_meteor_iron" argcount="1" Text="增加陨铁" prompt=""/>
+		<item command="add_buff" argcount="1" Text="添加Buffer" prompt=""/>
+		<item command="remove_buff" argcount="1" Text="删除Buffer" prompt=""/>
+		<item command="add_guild_development" argcount="1" Text="增加公会建设度" prompt=""/>
+		<item command="add_guild_devote" argcount="1" Text="增加公会个人贡献" prompt=""/>
+		<item command="add_pet_stone" argcount="1" Text="增加武魂石" prompt=""/>
+		<item command="debug_pet_create_form" argcount="1" Text="调试武神创建" prompt=""/>
+		<item command="show_fightword_switch" argcount="1" Text="开关飘字" prompt=""/>
+		<item command="add_vip" argcount="1" Text="增加vip" prompt=""/>
+		<item command="send_mail_self" argcount="1" Text="发送邮件" prompt=""/>
+		<item command="guest_skip" argcount="1" Text="任务跳转" prompt=""/>
+		<item command="set_form_count" argcount="1" Text="活动副本次数" prompt=""/>
+		<item command="set_item_sell_time" argcount="1" Text="交易道具时间" prompt=""/>
+		<item command="set_showhide_scene" argcount="1" Text="显示/隐藏场景" prompt=""/>
+		<item command="apple_charge_resend" argcount="1" Text="IOS补单" prompt=""/>
+		<item command="good_music_gmshow" argcount="1" Text="纳哈克好声音" prompt=""/>
+	</funcgroup>
+	<funcgroup name="macros" Text="" groupctrl="somegms_grpbox" button="somegms_rbtn">
+	</funcgroup>
+	<funcgroup name="clear" Text="" groupctrl="cleardata_grpbox" button="cleardata_rbtn">
+	</funcgroup>
+	<funcgroup name="close" Text="" groupctrl="" button="close_btn">
+	</funcgroup>
+</commandbuttons>

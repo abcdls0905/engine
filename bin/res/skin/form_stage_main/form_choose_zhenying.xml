@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop Left="85" Top="53" Width="1022" Height="702" BackColor="100,0,0,0" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+		<control name="group_main" entity="GroupBox" script="" init="">
+			<prop Width="1014" Height="702" BackColor="0,0,0,0" ShadowColor="0,0,0,0" Text="GroupBox1" NoFrame="true"/>
+			<control name="Label_main_bg" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Top="59" Width="1014" Height="605" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/zuhe/di.jpg"/>
+			</control>
+			<control name="Label_main_bg2" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="40" Top="105" Width="939" Height="550" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+			</control>
+			<control name="Label_main_bg3" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="264" Top="51" Width="493" Height="54" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_04.png"/>
+			</control>
+			<control name="Label_main_bg4" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="38" Top="104" Width="942" Height="550" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_009.png"/>
+			</control>
+			<control name="Label_main_bg5" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="44" Top="126" Width="929" Height="512" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/league/league_king_bg.png"/>
+			</control>
+			<control name="Label1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="56" Top="126" Width="450" Height="512" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/pk/force_order.png"/>
+			</control>
+			<control name="Label6" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="512" Top="126" Width="450" Height="512" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/pk/force_killer.png"/>
+			</control>
+			<control name="btn_zhenying1" entity="Button" script="" init="">
+				<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="144" Top="229" Width="270" Height="342" BackColor="0,192,192,192" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" DataSource="1" NoFrame="true" ClickSound="button_click"/>
+			</control>
+			<control name="btn_zhenying2" entity="Button" script="" init="">
+				<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="600" Top="229" Width="270" Height="342" BackColor="0,192,192,192" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" DataSource="2" NoFrame="true"/>
+			</control>
+			<control name="btn_close" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/clos.png" PushImage="gui/tp2_common/window/clos1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="920" Top="45" Width="70" Height="70" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" ClickSound="ui_close"/>
+			</control>
+			<control name="Label_main_name" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="393" Top="33" Width="227" Height="64" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/pk/xuanz.png"/>
+			</control>
+			<control name="MultiTextBox1" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,255,0,0" ViewRect="0,0,246,118" LineHeight="21" HtmlText="@ui_zhenying_wushu_desc" ScrollSize="17" Left="160" Top="443" Width="246" Height="118" ShadowColor="0,0,0,0" Enabled="false" TestTrans="true" Text="MultiTextBox1" Font="WRYH20" NoFrame="true"/>
+			</control>
+			<control name="MultiTextBox2" entity="MultiTextBox" script="" init="">
+				<prop HAlign="Center" TextColor="255,0,0,255" ViewRect="0,0,251,126" LineHeight="21" HtmlText="@ui_zhenying_blood_desc" ScrollSize="17" Left="616" Top="440" Width="251" Height="126" ForeColor="255,0,0,255" ShadowColor="0,0,0,0" Enabled="false" TestTrans="true" Text="MultiTextBox2" Font="WRYH20" NoFrame="true"/>
+			</control>
+		</control>
+	</control>
+</form>
+

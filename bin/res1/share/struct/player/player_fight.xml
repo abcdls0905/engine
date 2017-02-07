@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<object>
+    <properties>
+    </properties>
+    <records>
+        <record name="player_prop_backup_rec" cols="2" maxrows="200" save="false" public="false" private="false" desc="玩家属性数据备份表，本地服用">
+            <column type="string" desc="属性名" />
+            <column type="int" desc="属性值"/>
+        </record>
+        <record name="hero_npc_prop_backup_rec" cols="3" maxrows="50" save="false" public="false" private="false" desc="竞技场中，玩家挑战的heronpc属性数据备份表，member服数值验证用">
+            <column type="int" desc="属性名索引号" />
+            <column type="int" desc="属性值"/>
+            <column type="int" desc="属性值附加值"/>
+        </record>
+        
+        <record name="player_fight_modify_backup_rec" cols="8" maxrows="200" save="false" public="false" private="false" desc="用于在member服中备份装备、符文、武神、练星、灵魂连接等属性刷新数值，便于分析问题">
+            <column type="string" desc="属性名" />
+            <column type="int" desc="装备"/>
+            <column type="int" desc="符文"/>
+            <column type="int" desc="装备+符文"/>
+            <column type="int" desc="武神"/>
+            <column type="int" desc="练星"/>
+            <column type="int" desc="灵魂连接"/>
+            <column type="int" desc="时装附魔"/>
+        </record>
+      <record name="player_fight_prop_compare_supreme_rec" cols="2" maxrows="300" save="false" public="false" private="false" desc="至尊切磋中装备相关的属性值。获得装备 灵魂连接 称号 时装 炼星 增加的 最大等级属性">
+        <column type="string" desc="属性名" />
+        <column type="int" desc="属性值"/>
+      </record>
+    </records>
+    
+    <includes>
+        <path name="struct\rule\commonfighter.xml" desc="战斗相关属性" />
+        <path name="struct\rule\modifybase.xml" desc="属性 技能 buff修正表" />
+        <path name="struct\rule\refreshpropcompute.xml" desc="属性影响表" />
+    </includes>
+</object>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Width="574" Height="670" BackColor="0,255,255,255" ShadowColor="0,0,0,0" BackImage="gui\use\function\function_vein_096.png" />
+        <control name="groupbox_main" entity="GroupBox" script="" init="">
+            <prop Width="574" Height="670" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="21" Top="69" Width="526" Height="582" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\shurukuang1.png" />
+            </control>
+            <control name="groupscrollbox_scroll" entity="GroupScrollableBox" script="" init="">
+                <prop ScrollSize="17" Left="24" Top="85" Width="510" Height="550" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+            </control>
+            <control name="groupbox_data" entity="GroupBox" script="" init="">
+                <prop Left="29" Top="93" Width="510" Height="120" ShadowColor="0,0,0,0" Text="groupbox_1" DrawMode="ExpandH" BackImage="gui\common\window\lantiao_1.png" />
+                <control name="lbl_name" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="24" Top="24" Width="142" Height="16" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="组队副本" Font="WRYH22_O" />
+                </control>
+                <control name="lbl_tacit_text" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="24" Top="72" Width="94" Height="16" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_master_23" Font="WRYH22_O" />
+                </control>
+                <control name="btn_Accept" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="341" Top="21" Width="149" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_master_22" Font="WRYH24_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+                <control name="lbl_tacit_num" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="184" Top="72" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="10" Font="WRYH24_S" />
+                </control>
+            </control>
+            <control name="lbl_2" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="245" Top="21" Width="80" Height="16" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_master_21" Font="WRYH30_S" />
+            </control>
+            <control name="btn_close" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="485" Top="-20" Width="100" Height="100" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+            </control>
+        </control>
+    </control>
+</form>

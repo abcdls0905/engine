@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop Left="13" Top="77" Width="1158" Height="582" BackColor="0,255,255,255" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+		<control name="lbl_main_left" entity="Label" script="" init="">
+			<prop Align="Center" RefCursor="WIN_HELP" Left="544" Top="6" Width="80" Height="490" ForeColor="255,255,255,153" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_main/roles/rolenpcdiwen_11.png"/>
+		</control>
+		<control name="lbl_ditu" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="98" Top="23" Width="336" Height="39" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/roles/roles.png,591,100,336,39"/>
+		</control>
+		<control name="lbl_role_name" entity="Label" script="" init="">
+			<prop Align="Center" RefCursor="WIN_HELP" Left="227" Top="32" Width="80" Height="16" ForeColor="255,50,0,0" ShadowColor="0,0,0,0" Text="角色名字" Font="WRYH22_O_BLACK"/>
+		</control>
+		<control name="lbl_role_equip" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="173" Top="23" Width="30" Height="30" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow"/>
+		</control>
+		<control name="lbl_main_right" entity="Label" script="" init="">
+			<prop Align="Center" RefCursor="WIN_HELP" Left="965" Top="6" Width="80" Height="490" ForeColor="255,255,255,153" ShadowColor="0,0,0,0" Font="WRYH18_O_BLACK" DrawMode="ExpandH" BackImage="gui/tp2_main/roles/rolenpcdiwen_12.png"/>
+		</control>
+		<control name="groupbox_inlay" entity="GroupBox" script="" init="">
+			<prop Left="-58" Top="-69" Width="597" Height="570" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Visible="false" NoFrame="true"/>
+			<control name="imagegrid_inlay_tattoo" entity="ImageGrid" script="" init="">
+				<prop SelectColor="0,0,213,0" MouseInColor="0,255,255,0" CoverColor="0,255,0,0" LockColor="0,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="6" GridHeight="75" GridWidth="75" GridsPos="92,158;92,285;92,413;475,158;475,285;475,413;" DrawMouseIn="xuanzekuang_on" DrawMouseSelect="xuanzhongkuang" DrawCover="RECT" DrawLock="RECT" GridCoverOffsetX="2" GridCoverOffsetY="2" MouseDownScale="1.000000" MouseDownAlpha="128" HasVScroll="false" Width="597" Height="570" BackColor="0,255,255,255" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" DrawMode="FitWindow"/>
+			</control>
+		</control>
+		<control name="scenebox_role" entity="SceneBox" script="" init="">
+			<prop Left="109" Top="136" Width="294" Height="287" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+		</control>
+		<control name="groupbox_effect" entity="GroupBox" script="" init="">
+			<prop Transparent="true" Left="-58" Top="-69" Width="597" Height="570" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+			<control name="lbl_effect_1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="92" Top="158" Width="80" Height="80" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_main/tattoo/fwdt_1.png"/>
+			</control>
+			<control name="lbl_effect_2" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="92" Top="285" Width="80" Height="80" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_main/tattoo/fwdt_2.png"/>
+			</control>
+			<control name="lbl_effect_3" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="92" Top="413" Width="80" Height="80" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_main/tattoo/fwdt_3.png"/>
+			</control>
+			<control name="lbl_effect_4" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" TextOffsetX="0" TextOffsetY="0" Left="475" Top="158" Width="80" Height="80" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_main/tattoo/fwdt_4.png"/>
+			</control>
+			<control name="lbl_effect_5" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="475" Top="285" Width="80" Height="80" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_main/tattoo/fwdt_5.png"/>
+			</control>
+			<control name="lbl_effect_6" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="475" Top="413" Width="80" Height="80" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_main/tattoo/fwdt_6.png"/>
+			</control>
+		</control>
+		<control name="groupbox_activate_kuang" entity="GroupBox" script="" init="">
+			<prop Left="555" Top="16" Width="478" Height="484" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+			<control name="groupbox_activate" entity="GroupBox" script="" init="">
+				<prop Width="478" Height="484" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+				<control name="groupbox_tattoo_tips" entity="GroupBox" script="" init="">
+					<prop Left="3" Width="476" Height="118" BackColor="55,246,65,41" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui/tp2_main/roles/roles.png,391,100,200,200"/>
+					<control name="lbel_can_inlay_cnt" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="23" Top="18" Width="470" Height="20" ForeColor="255,102,0,0" ShadowColor="0,0,0,0" Font="WRYH20_O_WHITE"/>
+					</control>
+					<control name="lbl_next_inlay_cnt" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="23" Top="43" Width="470" Height="20" ForeColor="255,102,0,0" ShadowColor="0,0,0,0" Font="WRYH20_O_WHITE"/>
+					</control>
+					<control name="lbl_center_tips" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="23" Top="68" Width="470" Height="20" ForeColor="255,102,0,0" ShadowColor="0,0,0,0" Font="WRYH20_O_WHITE"/>
+					</control>
+				</control>
+				<control name="lbl_no_tattoo_tips" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="100" Top="-219" Width="278" Height="38" ForeColor="255,102,0,0" ShadowColor="0,0,0,0" VAnchor="Bottom" Text="@ui_symbol_tattoo_tishi" Font="WRYH26"/>
+				</control>
+				<control name="groupscrollbox_prop" entity="GroupScrollableBox" script="" init="">
+					<prop ScrollSize="17" Left="54" Top="-311" Width="374" Height="218" BackColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Bottom" Font="WRYH30" NoFrame="true"/>
+				</control>
+				<control name="btn_inlay_all" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/affirm.png" PushImage="gui/tp2_common/window/affirm1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="35" Top="-65" Width="150" Height="60" ForeColor="255,255,255,205" BackColor="255,192,192,192" ShadowColor="0,0,0,0" VAnchor="Bottom" Font="WRYH20" AutoSize="true" DrawMode="FitWindow"/>
+				</control>
+				<control name="btn_uninlay_all" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/affirm.png" PushImage="gui/tp2_common/window/affirm1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="297" Top="-65" Width="150" Height="60" ForeColor="255,255,255,205" BackColor="255,192,192,192" ShadowColor="0,0,0,0" VAnchor="Bottom" Font="WRYH20" AutoSize="true" DrawMode="FitWindow"/>
+				</control>
+				<control name="lbl_3" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="10" Top="-345" Width="462" Height="17" ShadowColor="0,0,0,0" VAnchor="Bottom" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/roles/rolenpcdiwen_3.png"/>
+				</control>
+				<control name="lbl_5" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="37" Top="-66" Width="147" Height="60" ForeColor="255,255,255,205" ShadowColor="0,0,0,0" VAnchor="Bottom" Text="@ui_symbol_tattoo_inlay_all" Font="WRYH22"/>
+				</control>
+				<control name="lbl_6" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="299" Top="-66" Width="147" Height="60" ForeColor="255,255,255,205" ShadowColor="0,0,0,0" VAnchor="Bottom" Text="@ui_symbol_tattoo_unsnatch_all" Font="WRYH22"/>
+				</control>
+				<control name="lbl_2" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="10" Top="-74" Width="462" Height="17" ShadowColor="0,0,0,0" VAnchor="Bottom" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/roles/rolenpcdiwen_4.png"/>
+				</control>
+				<control name="lbl_1" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="134" Top="-367" Width="206" Height="30" ForeColor="255,102,0,0" ShadowColor="0,0,0,0" VAnchor="Bottom" Text="@ui_symbol_tattoo_prop" Font="WRYH24"/>
+				</control>
+			</control>
+		</control>
+		<control name="groupbox_prop_item" entity="GroupBox" script="" init="">
+			<prop Left="560" Top="112" Width="438" Height="30" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+			<control name="lbl_base_prop" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Width="190" Height="35" ForeColor="255,102,0,0" ShadowColor="0,0,0,0" Font="WRYH18"/>
+			</control>
+			<control name="lbl_add_prop" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="190" Width="80" Height="30" ForeColor="255,200,100,50" ShadowColor="0,0,0,0" Font="WRYH18" DrawMode="FitWindow"/>
+			</control>
+		</control>
+	</control>
+</form>
+

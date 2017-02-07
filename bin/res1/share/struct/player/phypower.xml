@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!--体力系统-->
+<object>
+	<properties>
+		<property name="PhyPower" type="dword" public="false" private="true" save="true"  realtime="true"  desc="PhyPower值"/>		
+		<property name="MaxPhyPower" type="dword" public="false" private="true" save="true" realtime="true"   desc="最大PhyPower值"/>		
+		
+		<property name="PhyPowerEx" type="dword" public="false" private="true" save="true" realtime="true"   desc="PhyPower溢出部分"/>		
+		<property name="MaxPhyPowerEx" type="dword" public="false" private="true" save="true" realtime="true"   desc="PhyPower溢出最大容量"/>		
+		
+		<!--property name="MaxAPAdd" type="dword" public="false" private="true" save="true"    desc="额外活力值"/-->		
+		<property name="RestorePhyPowerTime" type="int64" public="false" private="false" save="true"    desc="记录回复PhyPower的时间"/>	
+		<property name="RestorePhyPowerMoment" type="int64" public="false" private="false" save="false" desc="记录回复PhyPower的时刻"/>
+		<property name="SpecialRestorePhyPowerTime" type="string" public="false" private="false" save="true"  desc="记录特殊回复PhyPower时间"/>
+		<property name="IsCanGetPhyAward" type="word" public="false" private="true" save="false" realtime="true" desc="是否可以领取吃大餐奖励"/>
+	</properties>
+</object>

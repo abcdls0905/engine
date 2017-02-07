@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!--控制属性-->
+<object>
+    <!-- 基本属性 -->
+    <properties>
+        <property name="CantMove" type="byte" public="true" private="true" save="false" realtime="true" desc="是否能够移动 0:可移动 1:不能移动"/>
+        <property name="CantRotate" type="byte" public="false" private="true" save="false" realtime="true" desc="是否能够转动 0:可转动 1:不能转动"/>
+        <property name="CantAttack" type="byte" public="false" private="true" save="false" desc="是否能够攻击"/>
+        <property name="CantBeAttack" type="byte" public="true" private="true" save="false" desc="是否能够被攻击 0:可被攻击 1：不可被攻击"/>
+        <property name="CantBeKilled" type="byte" public="false" private="false" save="false" desc="是否能够被杀死"/>
+        <property name="CantBeAttackMove" type="byte" public="false" private="true" save="false" realtime="true" desc="不受击飞击退击倒等影响"/>
+        <property name="CantBeHitRotate" type="byte" public="false" private="true" save="false" realtime="true" desc="受击时转向攻击者"/>
+        <property name="CantBeStiff" type="byte" public="false" private="true" save="false" desc="不受硬直影响"/>
+        <property name="CanGaint" type="byte" public="true" private="true" save="false" desc="免疫控制效果"/>
+        <property name="CanBreak" type="byte" public="true" private="true" save="false" desc="是否能破防"/>
+        <property name="CanParry" type="byte" public="true" private="true" save="false" desc="是否正面防御"/>
+        <property name="CantDoAction" type="byte" public="true" private="true" save="false" realtime="true" desc="不能做动作"/>
+        <property name="CantUseSkill" type="byte" public="false" private="true" save="false" realtime="true" desc="是否能够使用技能"/>
+        <property name="IsStiff" type="int" public="true" private="true" save="false" realtime = "true" desc="是否在被动硬直状态下" />
+	</properties>
+</object>

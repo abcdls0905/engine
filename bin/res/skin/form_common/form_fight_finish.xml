@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="form_stage_main\form_clone_scene\form_clone_finish" init="main_form_init">
+		<prop Left="5" Top="5" Width="1280" Height="720" BackColor="100,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0" TestTrans="true" NoFrame="true" DrawMode="Expand"/>
+		<event on_open="on_main_form_open" on_close="on_main_form_close"/>
+		<control name="lbl_form_back" entity="Label" script="" init="">
+			<prop Transparent="false" ClickEvent="true" RefCursor="WIN_HELP" Width="1280" Height="720" ShadowColor="0,0,0,0" DrawMode="Expand"/>
+		</control>
+		<control name="groupbox_main" entity="GroupBox" script="" init="">
+			<prop ClipChildren="false" Left="-640" Top="-360" Width="1280" Height="720" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" TestTrans="true" NoFrame="true" DrawMode="Expand"/>
+			<control name="Label3" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="200" Width="1280" Height="494" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_main/war/pvp_di1.png"/>
+			</control>
+			<control name="groupbox_up" entity="GroupBox" script="" init="">
+				<prop Left="-624" Top="-379" Width="1280" Height="286" BackColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Center" NoFrame="true" DrawMode="Expand"/>
+				<control name="btn_baozang" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_battle/scene_fail/box_1.png" PushImage="gui/tp2_battle/scene_fail/box_2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-275" Top="536" Width="84" Height="128" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Center" AutoSize="true"/>
+				</control>
+				<control name="btn_fuwen" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_battle/scene_fail/totem_1.png" PushImage="gui/tp2_battle/scene_fail/totem_2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="94" Top="120" Width="84" Height="128" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Center" AutoSize="true"/>
+				</control>
+				<control name="btn_jineng" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_battle/scene_fail/skill_1.png" PushImage="gui/tp2_battle/scene_fail/skill_2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-178" Top="120" Width="84" Height="128" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Center" AutoSize="true"/>
+				</control>
+				<control name="btn_qianghua" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_battle/scene_fail/strengthen_1.png" PushImage="gui/tp2_battle/scene_fail/strengthen_2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-42" Top="120" Width="84" Height="128" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Center" AutoSize="true"/>
+				</control>
+				<control name="lbl_up_title" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="-235" Top="27" Width="470" Height="54" ForeColor="255,255,230,94" ShadowColor="0,0,0,0" HAnchor="Center" Text="@ui_clone_39" Font="WRYH26_O_BLACK"/>
+				</control>
+			</control>
+			<control name="lbl_light" entity="Label" script="" init="">
+				<prop Transparent="false" RefCursor="WIN_HELP" Left="-231" Top="-60" Width="461" Height="415" ShadowColor="0,0,0,0" HAnchor="Center" AutoSize="true" DrawMode="FitWindow"/>
+			</control>
+			<control name="Label1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="-40" Top="176" Width="80" Height="16" ShadowColor="0,0,0,0" HAnchor="Center" Particles2d="particleeffects_016e"/>
+			</control>
+			<control name="lbl_back" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="-255" Width="510" Height="344" ShadowColor="0,0,0,0" HAnchor="Center" Font="WRYH30_S" AutoSize="true" BackImage="gui/tp2_main/war/shengli.png"/>
+			</control>
+			<control name="groupbox_reward_all" entity="GroupBox" script="" init="">
+				<prop Left="-640" Top="-368" Width="1280" Height="278" BackColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Center" Visible="false" NoFrame="true" DrawMode="ExpandV"/>
+				<control name="Label4_cpy2" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="488" Top="184" Width="368" Height="54" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_main/war/pvp_di.png"/>
+				</control>
+				<control name="Label4_cpy" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="488" Top="104" Width="368" Height="54" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_main/war/pvp_di.png"/>
+				</control>
+				<control name="Label4" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="488" Top="20" Width="368" Height="54" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_main/war/pvp_di.png"/>
+				</control>
+				<control name="mltbox_consume" entity="MultiTextBox" script="" init="">
+					<prop TextColor="255,0,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,142,38" LineHeight="37" HtmlText="耐力-" ScrollSize="17" Left="715" Top="104" Width="142" Height="38" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH26" NoFrame="true"/>
+				</control>
+				<control name="mltbox_reward_exp" entity="MultiTextBox" script="" init="">
+					<prop TextColor="255,0,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,134,38" LineHeight="37" HtmlText="经验+" ScrollSize="17" Left="715" Top="20" Width="134" Height="38" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH26" NoFrame="true"/>
+				</control>
+				<control name="mltbox_reward_info" entity="MultiTextBox" script="" init="">
+					<prop TextColor="255,0,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,142,38" LineHeight="37" HtmlText="金钱+" ScrollSize="17" Left="715" Top="184" Width="142" Height="38" ShadowColor="0,0,0,0" Font="WRYH26" NoFrame="true"/>
+				</control>
+				<control name="lbl_exp" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="463" Top="20" Width="51" Height="51" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/war/jingyan.png"/>
+				</control>
+				<control name="lbl_gold" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="463" Top="184" Width="51" Height="51" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/war/jingbi.png"/>
+				</control>
+				<control name="lbl_staypower" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="542" Top="104" Width="134" Height="42" ForeColor="255,255,255,153" ShadowColor="0,0,0,0" Text="@ui_teams_clone_51" Font="WRYH26" AutoSize="true"/>
+				</control>
+				<control name="lbl_exp_text" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="542" Top="20" Width="142" Height="42" ForeColor="255,255,255,153" ShadowColor="0,0,0,0" Text="@ui_teams_clone_49" Font="WRYH26" AutoSize="true"/>
+				</control>
+				<control name="lbl_gold_text" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="542" Top="184" Width="136" Height="42" ForeColor="255,255,255,153" ShadowColor="0,0,0,0" Text="@ui_teams_clone_50" Font="WRYH26" AutoSize="true"/>
+				</control>
+				<control name="Label2" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="463" Top="104" Width="51" Height="51" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/war/lilian.png"/>
+				</control>
+			</control>
+			<control name="btn_confirm" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/cancel.png" PushImage="gui/tp2_common/window/cancel1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-520" Top="608" Width="200" Height="60" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Right" Text="@ui_ok" Font="WRYH24" DrawMode="ExpandH" ClickSound="button_click"/>
+			</control>
+			<control name="btn_show_equip" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/affirm.png" PushImage="gui/tp2_common/window/affirm1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-952" Top="608" Width="200" Height="60" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Right" Text="@ui_arena_17" Font="WRYH24" DrawMode="ExpandH" ClickSound="button_click"/>
+			</control>
+			<control name="mltbox_spoils_info" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,255,255,204" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,1118,38" LineHeight="33" HtmlText="&lt;center&gt;抢夺得到碎片&lt;/center&gt;" ScrollSize="17" Left="80" Top="304" Width="1118" Height="38" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Font="WRYH28" NoFrame="true"/>
+			</control>
+		</control>
+	</control>
+</form>
+

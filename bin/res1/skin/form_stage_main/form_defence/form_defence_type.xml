@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Width="1110" Height="774" ShadowColor="0,0,0,0" BackImage="gui\use\function\function_vein_096.png" />
+        <control name="groupbox_1" entity="GroupBox" script="" init="">
+            <prop Left="-512" Top="-360" Width="1024" Height="720" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Text="groupbox_1" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+            <control name="lbl_6" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="8" Top="642" Width="1006" Height="70" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\main\guild\gonghui_tongmingdi.png" />
+            </control>
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="5" Top="82" Width="1007" Height="540" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\ring\ltbz_bg.jpg" />
+            </control>
+            <control name="btn_normal" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\ring\dfdj_card.jpg,0,0,320,484" PushImage="gui\main\ring\dfdj_card.jpg,0,482,320,484" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="26" Top="98" Width="320" Height="484" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="100" TabStop="true" AutoSize="true" ClickSound="button_click" />
+            </control>
+            <control name="btn_hard" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\ring\dfdj_card.jpg,320,0,320,484" PushImage="gui\main\ring\dfdj_card.jpg,320,482,320,484" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="354" Top="98" Width="320" Height="484" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+            </control>
+            <control name="lbl_2" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="413" Top="13" Width="214" Height="46" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_defence_7" Font="WRYH30_S" />
+            </control>
+            <control name="btn_close" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="933" Top="-5" Width="100" Height="100" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+            </control>
+            <control name="lbl_4" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="50" Top="648" Width="174" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_defence_25" Font="WRYH22_O" DrawMode="Expand" />
+            </control>
+            <control name="lbl_5" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="50" Top="680" Width="222" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_defence_26" Font="WRYH22_O" />
+            </control>
+            <control name="lbl_7" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="18" Top="650" Width="24" Height="24" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\blackmarket\heishi_shuaxin_ff2.jpg" />
+            </control>
+            <control name="lbl_8" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="18" Top="680" Width="24" Height="24" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\blackmarket\heishi_shuaxin_ff2.jpg" />
+            </control>
+            <control name="btn_extreme" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\ring\dfdj_card.jpg,640,0,320,484" PushImage="gui\main\ring\dfdj_card.jpg,640,482,320,484" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="682" Top="98" Width="320" Height="484" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+            </control>
+            <control name="btn_saodang_3" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\ring\ltbz_yjsd1.png" PushImage="gui\main\ring\ltbz_yjsd2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="762" Top="474" Width="170" Height="150" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH26_S" TabStop="true" AutoSize="true" ClickSound="button_click" />
+            </control>
+            <control name="btn_saodang_1" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\ring\ltbz_yjsd1.png" PushImage="gui\main\ring\ltbz_yjsd2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-406" Top="114" Width="170" Height="150" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Font="WRYH26_S" TabStop="true" NoFrame="true" AutoSize="true" ClickSound="button_click" />
+            </control>
+            <control name="btn_saodang_2" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\ring\ltbz_yjsd1.png" PushImage="gui\main\ring\ltbz_yjsd2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="434" Top="474" Width="170" Height="150" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH26_S" TabStop="true" AutoSize="true" ClickSound="button_click" />
+            </control>
+            <control name="lbl_saodang_guanka_1" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="66" Top="514" Width="246" Height="32" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="可以扫荡至第X关" Font="WRYH22_O" />
+            </control>
+            <control name="lbl_saodang_guanka_2" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="402" Top="514" Width="254" Height="32" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="可以扫荡至第X关" Font="WRYH22_O" />
+            </control>
+            <control name="lbl_saodang_guanka_3" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="706" Top="514" Width="278" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="可以扫荡至第X关" Font="WRYH22_O" />
+            </control>
+            <control name="btn_reset" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="858" Top="642" Width="150" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_defence_9" Font="WRYH26_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+            </control>
+            <control name="btn_shop" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="642" Top="642" Width="206" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_defence_2" Font="WRYH26_S" TabStop="true" DrawMode="ExpandH" ClickSound="ui_open" />
+            </control>
+        </control>
+        <control name="groupbox_confirm" entity="GroupBox" script="" init="">
+            <prop Left="285" Top="797" Width="774" Height="454" ShadowColor="0,0,0,0" BackImage="gui\use\function\function_vein_096.png" />
+            <control name="groupbox_back" entity="GroupBox" script="" init="">
+                <prop Left="152" Top="32" Width="454" Height="374" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\main\heedbar\youxizanti_kuang.jpg" />
+                <control name="btn_ok" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="48" Top="288" Width="170" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_ok" Font="WRYH26_S" TabIndex="100" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+                <control name="btn_cancel" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\anniu_chengse_yuanjiao1.png" PushImage="gui\common\button\anniu_chengse_yuanjiao2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="232" Top="288" Width="170" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_cancel" Font="WRYH26_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+                <control name="mltbox_1" entity="MultiTextBox" script="" init="">
+                    <prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,358,126" LineHeight="25" HtmlText="难度说明啦啦啦啦啦难度说明啦啦啦啦啦难度说明啦啦啦啦啦" ScrollSize="17" Left="48" Top="120" Width="358" Height="126" ShadowColor="0,0,0,0" Font="WRYH20_S" NoFrame="true" />
+                </control>
+                <control name="lbl_3" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="192" Top="16" Width="80" Height="36" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_MiniTip" Font="WRYH30_S" />
+                </control>
+            </control>
+        </control>
+        <control name="groupbox_tips" entity="GroupBox" script="" init="">
+            <prop Left="77" Top="821" Width="454" Height="374" ShadowColor="0,0,0,0" TabStop="true" DrawMode="FitWindow" BackImage="gui\main\heedbar\youxizanti_kuang.jpg" />
+            <control name="mltbox_tip" entity="MultiTextBox" script="" init="">
+                <prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,350,94" LineHeight="30" HtmlText="各种确认信息各种确认信息各种确认信息各种确认信息各种确认信息各种确认信息" ScrollSize="17" Left="56" Top="96" Width="350" Height="94" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH24_S" NoFrame="true" />
+            </control>
+            <control name="btn_tip_confirm" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="136" Top="288" Width="170" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_defence_27" Font="WRYH26_S" TabIndex="100" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+            </control>
+            <control name="btn_tip_cancel" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="360" Top="-8" Width="100" Height="100" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH26_S" TabStop="true" AutoSize="true" DrawMode="ExpandH" ClickSound="button_click" HandleShortcut="BUTTON_X" />
+            </control>
+            <control name="lbl_9" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="200" Top="16" Width="62" Height="35" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_MiniTip" Font="WRYH30_S" />
+            </control>
+            <control name="groupbox_tip_cost" entity="GroupBox" script="" init="">
+                <prop Left="56" Top="160" Width="342" Height="126" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                <control name="lbl_13" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="144" Top="8" Width="80" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="500" Font="WRYH22_O" />
+                </control>
+                <control name="lbl_15" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="72" Width="44" Height="44" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zuanshi.jpg" />
+                </control>
+                <control name="mltbox_2" entity="MultiTextBox" script="" init="">
+                    <prop SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,334,77" LineHeight="30" HtmlText="@ui_defence_28" ScrollSize="17" Left="8" Top="48" Width="334" Height="77" ShadowColor="0,0,0,0" Text="mltbox_1" Font="WRYH24" NoFrame="true" />
+                </control>
+            </control>
+        </control>
+    </control>
+</form>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Left="13" Top="5" Width="1024" Height="768" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" />
+        <control name="lbl_title" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="344" Width="355" Height="69" ShadowColor="0,0,0,0" AutoSize="true" />
+        </control>
+        <control name="group_lock" entity="GroupBox" script="" init="">
+            <prop Left="32" Top="168" Width="378" Height="102" BackColor="100,0,0,0" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" BackImage="gui\login\bg_xjs_namelv.png.png" />
+            <control name="mlt_lock_tip" entity="MultiTextBox" script="" init="">
+                <prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="10,10,320,300" LineHeight="25" HtmlText="@ui_stage_login_32" ScrollSize="17" Left="24" Top="40" Width="334" Height="70" ShadowColor="0,0,0,0" Transparent="true" Font="WRYH22_O" NoFrame="true" />
+            </control>
+        </control>
+        <control name="group_bottom" entity="GroupBox" script="" init="">
+            <prop Width="1024" Height="768" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" />
+            <control name="group_intro" entity="GroupBox" script="" init="">
+                <prop Left="-384" Top="136" Width="382" Height="342" ShadowColor="0,0,0,0" HAnchor="Right" Transparent="true" NoFrame="true" DrawMode="ExpandV" BackImage="gui\login\bg_xjs_jieshao.png" />
+                <control name="lbl_intro_name" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="80" Width="222" Height="32" ForeColor="255,0,247,255" ShadowColor="0,0,0,0" Text="战士" Font="WRYH24_S" />
+                </control>
+                <control name="mltbox_intro" entity="MultiTextBox" script="" init="">
+                    <prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="10,10,300,300" LineHeight="25" HtmlText="阿斯顿飞洒发达撒旦法撒旦法阿撒旦法撒旦法撒旦法撒旦法撒旦法撒旦法阿第三个 斯顿发生大发撒旦法" ScrollSize="17" Left="32" Top="48" Width="310" Height="222" ShadowColor="0,0,0,0" Transparent="true" Font="WRYH20" NoFrame="true" />
+                </control>
+            </control>
+            <control name="btn_right" entity="Button" script="" init="">
+                <prop NormalImage="gui\login\arrow_xjsr.png" PushImage="gui\login\arrow_xjsrclick.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="272" Top="-272" Width="113" Height="144" BackColor="255,192,192,192" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Center" TabStop="true" AutoSize="true" ClickSound="button_click" HandleShortcut="BUTTON_R1" />
+            </control>
+            <control name="btn_left" entity="Button" script="" init="">
+                <prop NormalImage="gui\login\arrow_xjs.png" PushImage="gui\login\arrow_xjsclick.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-376" Top="-264" Width="113" Height="144" BackColor="255,192,192,192" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Center" TabStop="true" AutoSize="true" ClickSound="button_click" HandleShortcut="BUTTON_L1" />
+            </control>
+            <control name="lbl_bottom" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="224" Top="-88" Width="594" Height="92" ShadowColor="0,0,0,0" VAnchor="Bottom" AutoSize="true" DrawMode="FitWindow" BackImage="gui\login\bg_xjs_start.png" />
+            </control>
+            <control name="btn_enter_game" entity="Button" script="" init="">
+                <prop NormalImage="gui\login\btn_xjs_newplayer.png" PushImage="gui\login\btn_xjs_newplayerclick.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="344" Top="-104" Width="358" Height="80" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" VAnchor="Bottom" Text="@ui_stage_login_10" Font="WRYH26_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" HandleShortcut="BUTTON_B" />
+            </control>
+            <control name="group_create" entity="GroupBox" script="" init="">
+                <prop Left="152" Top="-104" Width="800" Height="108" BackColor="0,120,120,120" ShadowColor="0,0,0,0" VAnchor="Bottom" NoFrame="true" AutoSize="true" DrawMode="FitWindow" BackImage="gui\login\bg_xjs_newplayer.png" />
+                <control name="btn_create" entity="Button" script="" init="">
+                    <prop NormalImage="gui\login\btn_xjs_newplayer.png" PushImage="gui\login\btn_xjs_newplayerclick.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="432" Top="-16" Width="248" Height="80" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_stage_login_11" Font="WRYH26_S" TabIndex="100" TabStop="true" AutoSize="true" ClickSound="button_click" />
+                </control>
+                <control name="ipt_name" entity="Edit" script="" init="">
+                    <prop MaxLength="14" TextOffsetX="2" Align="Center" SelectBackColor="255,120,120,120" Caret="Default" Left="184" Width="238" Height="70" ForeColor="255,255,255,255" BackColor="0,200,200,200" ShadowColor="0,0,0,0" Text="@ui_stage_login_12" Font="WRYH20" Cursor="WIN_IBEAM" TabStop="true" NoFrame="true" DrawMode="FitWindow" ClickSound="button_click" />
+                </control>
+                <control name="btn_rand_name" entity="Button" script="" init="">
+                    <prop NormalImage="gui\login\touzi.png" PushImage="gui\login\touzi_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="108" Top="2" Width="62" Height="58" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+                </control>
+            </control>
+            <control name="btn_back" entity="Button" script="" init="">
+                <prop NormalImage="gui\login\btn_xjs_back.png" PushImage="gui\login\btn_xjs_backclick.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="16" Width="124" Height="60" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH24_S" TabStop="true" AutoSize="true" ClickSound="button_click" />
+            </control>
+            <control name="group_info" entity="GroupBox" script="" init="">
+                <prop Left="24" Top="160" Width="378" Height="302" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                <control name="lbl_info_bg" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="8" Top="8" Width="378" Height="102" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\login\bg_xjs_namelv.png.png" />
+                </control>
+                <control name="lbl_info_name" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="30" Top="33" Width="302" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="name" Font="WRYH24_O2_BLACK" />
+                </control>
+                <control name="lbl_info_lv" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="30" Top="73" Width="302" Height="16" ForeColor="255,252,216,0" ShadowColor="0,0,0,0" Text="12" Font="WRYH24_O2_BLACK" />
+                </control>
+            </control>
+        </control>
+        <control name="group_front" entity="GroupBox" script="" init="">
+            <prop Left="-168" Top="-168" Width="158" Height="166" BackColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Right" NoFrame="true" />
+            <control name="btn_relogin" entity="Button" script="" init="">
+                <prop NormalImage="gui\login\shanchu_1.png" PushImage="gui\login\shanchu_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="100" Width="158" Height="58" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_creat_choose_info6" Font="WRYH24_S" TabStop="true" AutoSize="true" ClickSound="button_click" />
+            </control>
+            <control name="btn_select_role" entity="Button" script="" init="">
+                <prop NormalImage="gui\login\shanchu_1.png" PushImage="gui\login\shanchu_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="1000" Top="8" Width="158" Height="58" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH24_S" TabStop="true" AutoSize="true" ClickSound="button_click" />
+            </control>
+            <control name="btn_del_role" entity="Button" script="" init="">
+                <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="584" Top="224" Width="142" Height="54" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="删除角色" />
+            </control>
+        </control>
+    </control>
+</form>

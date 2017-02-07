@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="form_common\form_loading" init="main_form_init">
+		<prop LimitInScreen="true" Width="1280" Height="720" BackColor="0,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_loading/Loading_1.jpg"/>
+		<event on_open="on_main_form_open" on_close="on_main_form_close"/>
+		<control name="lbl_background" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Width="1280" Height="720" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+		</control>
+		<control name="lbl_bar_back" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="-440" Top="-98" Width="814" Height="52" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Center" AutoSize="true"/>
+		</control>
+		<control name="pbar_load" entity="ProgressBar" script="" init="">
+			<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_loading/loadingtiao1.png" ProgressMode="LeftToRight" Left="-640" Top="-59" Width="1280" Height="32" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Center" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_loading/loadingtiao.png"/>
+		</control>
+		<control name="lbl_4" entity="Label" script="" init="">
+			<prop Align="Right" RefCursor="WIN_HELP" Left="-171" Top="-63" Width="190" Height="32" ForeColor="255,255,204,0" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Center" Text="@ui_loading_1" Font="WRYH24_O_BLACK"/>
+		</control>
+		<control name="groupbox_flash" entity="GroupBox" script="" init="">
+			<prop ClipChildren="false" Left="-383" Top="-155" Width="814" Height="100" BackColor="0,223,29,194" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Center" NoFrame="true"/>
+			<control name="lbl_flash" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="100" Width="90" Height="90" ShadowColor="0,0,0,0" AutoSize="true"/>
+			</control>
+		</control>
+		<control name="lbl_rbar_loading" entity="Label" script="" init="">
+			<prop Align="Right" RefCursor="WIN_HELP" Left="26" Top="-63" Width="46" Height="32" ForeColor="255,255,204,0" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Center" Text="110" Font="WRYH24_O_BLACK"/>
+		</control>
+		<control name="lbl_5" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="81" Top="-63" Width="142" Height="32" ForeColor="255,255,204,0" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Center" Text="@ui_loading_baifenbi" Font="WRYH24_O_BLACK"/>
+		</control>
+		<control name="grp_random_image" entity="GroupBox" script="" init="">
+			<prop ClipChildren="false" Left="-640" Top="37" Width="1280" Height="620" BackColor="0,255,255,255" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" HAnchor="Center" NoFrame="true"/>
+			<control name="lbl_random_image" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Width="1280" Height="620" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_loading/01-1.jpg"/>
+			</control>
+			<control name="gpb_moba_player" entity="GroupBox" script="" init="">
+				<prop Width="1222" Height="614" ShadowColor="0,0,0,0" Text="GroupBox1"/>
+				<control name="gpb_a_list" entity="GroupBox" script="" init="">
+					<prop Left="18" Top="21" Width="1182" Height="262" ShadowColor="0,0,0,0" Text="GroupBox1"/>
+				</control>
+				<control name="gpb_b_list" entity="GroupBox" script="" init="">
+					<prop Left="34" Top="309" Width="1150" Height="278" ShadowColor="0,0,0,0" Text="GroupBox2"/>
+				</control>
+			</control>
+		</control>
+		<control name="mltbox_text" entity="MultiTextBox" script="" init="">
+			<prop TextColor="255,255,255,15" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,5,1280,38" LineHeight="33" ScrollSize="17" Left="-640" Top="-115" Width="1280" Height="54" ForeColor="255,102,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Center" Font="WRYH24" DrawMode="ExpandH"/>
+		</control>
+		<control name="gpb_play" entity="GroupBox" script="" init="">
+			<prop Left="26" Top="58" Width="222" Height="262" ShadowColor="0,0,0,0" Text="GroupBox1"/>
+			<control name="lbl_player_photo" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="24" Top="24" Width="182" Height="222" ShadowColor="0,0,0,0" Text="Label1" DrawMode="FitWindow"/>
+			</control>
+			<control name="lbl_role_name" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="56" Top="192" Width="118" Height="14" ShadowColor="0,0,0,0" Text="Label1"/>
+			</control>
+			<control name="lbl_player_name" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="52" Top="216" Width="126" Height="38" ShadowColor="0,0,0,0" Text="Label2"/>
+			</control>
+		</control>
+	</control>
+</form>
+

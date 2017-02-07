@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop ClipChildren="false" Width="510" Height="438" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+		<control name="grp_main" entity="GroupBox" script="" init="">
+			<prop Left="5" Width="502" Height="182" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui/tp2_main/roles/tipsdi.png"/>
+			<control name="mlt_desc" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,255,255,204" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,449,57" LineHeight="22" ScrollSize="17" Left="33" Top="15" Width="449" Height="57" ForeColor="255,255,204,27" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK" NoFrame="true" AutoSize="true" DrawMode="FitWindow"/>
+			</control>
+			<control name="lbl_name" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="33" Top="12" Width="214" Height="38" ForeColor="255,255,255,150" ShadowColor="0,0,0,0" Font="WRYH24" DrawMode="FitWindow"/>
+			</control>
+		</control>
+	</control>
+</form>
+

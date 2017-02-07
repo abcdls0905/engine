@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes" ?>
+<Processor>
+    <Base type="object" version="1.0">
+        <Line Type="2" Event="2115" Name="AUTOP2" />
+        <Line Type="2" Event="3002" Name="AUTOP1">
+            <Param type="13" srctype="8" data="AUTOP2" Index="0" />
+            <Param type="6" data="biaochekongzhi" Index="1" />
+        </Line>
+        <Line Type="10" CaseNum="1" IncludeLines="5">
+            <Param type="13" srctype="6" data="AUTOP1" Index="0" />
+        </Line>
+        <Line Type="11" IncludeLines="4">
+            <Param type="6" data="1" Index="0" />
+        </Line>
+        <Line Type="2" Event="2114" Name="AUTOP3">
+            <Param type="6" data="1_2_biaoche_fpc" Index="0" />
+        </Line>
+        <Line Type="1" Event="4202">
+            <Param type="13" srctype="8" data="AUTOP3" Index="0" />
+            <Param type="4" data="35.91" Index="1" />
+            <Param type="4" data="33.38" Index="2" />
+            <Param type="4" data="47.46" Index="3" />
+        </Line>
+        <Line Type="2" Event="2115" Name="AUTOP4" />
+        <Line Type="1" Event="3007">
+            <Param type="13" srctype="8" data="AUTOP4" Index="0" />
+            <Param type="6" data="biaochekongzhi" Index="1" />
+        </Line>
+    </Base>
+</Processor>

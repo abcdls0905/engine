@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Left="189" Top="133" Width="846" Height="450" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\use\function\function_vein_096.png" />
+        <control name="groupbox_main" entity="GroupBox" script="" init="">
+            <prop Left="-399" Top="-225" Width="800" Height="480" BackColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Transparent="true" NoFrame="true" DrawMode="Expand" />
+            <control name="lbl_form_back" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="-8" Width="800" Height="480" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+            </control>
+            <control name="lbl_top_back" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="384" Top="16" Width="53" Height="50" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="Center" />
+            </control>
+            <control name="lbl_title_back" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="-178" Top="-16" Width="352" Height="92" ShadowColor="0,0,0,0" HAnchor="Center" AutoSize="true" BackImage="gui\main\treasure\baozang_bt.jpg" />
+            </control>
+            <control name="lbl_title" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="-52" Top="16" Width="102" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" HAnchor="Center" Text="@ui_form_treasure_10" Font="WRYH30_S" DrawMode="Expand" />
+            </control>
+            <control name="groupbox_item" entity="GroupBox" script="" init="">
+                <prop Left="6" Top="72" Width="774" Height="302" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\main\treasure\baozang_waikuan.jpg" />
+                <control name="lbl_item_photo" entity="Label" script="" init="">
+                    <prop ClickEvent="true" RefCursor="WIN_HELP" Left="-64" Top="103" Width="112" Height="112" ShadowColor="0,0,0,0" HAnchor="Center" Transparent="false" DrawMode="FitWindow" />
+                </control>
+                <control name="lbl_item_name" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="-114" Top="216" Width="214" Height="30" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" HAnchor="Center" Font="WRYH22_O" />
+                </control>
+                <control name="lbl_item_cover" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="-71" Top="97" Width="126" Height="126" ShadowColor="0,0,0,0" HAnchor="Center" TabStop="true" DrawMode="FitWindow" BackImage="gui\common\window\zhuangbeikuang_09.png" />
+                </control>
+                <control name="lbl_item_mark" entity="Label" script="" init="">
+                    <prop ClickEvent="true" RefCursor="WIN_HELP" Left="-40" Top="94" Width="94" Height="50" ShadowColor="0,0,0,0" HAnchor="Center" AutoSize="true" DrawMode="FitWindow" BackImage="gui\use\bag\icon_wupin_whs94.jpg" />
+                </control>
+                <control name="lbl_item_count" entity="Label" script="" init="">
+                    <prop Align="Right" ClickEvent="true" RefCursor="WIN_HELP" Left="-12" Top="195" Width="60" Height="20" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" HAnchor="Center" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                </control>
+            </control>
+            <control name="btn_open_again" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="296" Top="410" Width="206" Height="64" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_defence_27" Font="WRYH24_S" TabIndex="100" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+            </control>
+            <control name="groupbox_items" entity="GroupBox" script="" init="">
+                <prop Left="6" Top="72" Width="774" Height="302" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\main\treasure\baozang_waikuan.jpg" />
+                <control name="groupbox_item_1" entity="GroupBox" script="" init="">
+                    <prop Left="4" Top="32" Width="764" Height="290" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" />
+                    <control name="lbl_item_name_1" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="20" Top="96" Width="124" Height="20" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O" />
+                    </control>
+                    <control name="lbl_item_cover_1" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="38" Width="90" Height="90" ShadowColor="0,0,0,0" TabStop="true" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_item_photo_1" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="44" Top="4" Width="80" Height="80" ShadowColor="0,0,0,0" Transparent="false" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_item_mark_1" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="36" Top="-6" Width="94" Height="50" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\use\bag\icon_wupin_whs94.jpg" />
+                    </control>
+                    <control name="lbl_item_count_1" entity="Label" script="" init="">
+                        <prop Align="Right" ClickEvent="true" RefCursor="WIN_HELP" Left="44" Top="64" Width="80" Height="20" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                    </control>
+                </control>
+                <control name="groupbox_item_2" entity="GroupBox" script="" init="">
+                    <prop Left="4" Top="32" Width="764" Height="290" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" />
+                    <control name="lbl_item_name_2" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="172" Top="96" Width="124" Height="20" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O" />
+                    </control>
+                    <control name="lbl_item_cover_2" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="186" Width="90" Height="90" ShadowColor="0,0,0,0" TabStop="true" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_item_photo_2" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="192" Top="4" Width="80" Height="80" ShadowColor="0,0,0,0" Transparent="false" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_item_mark_2" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="184" Top="-6" Width="94" Height="50" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\use\bag\icon_wupin_whs94.jpg" />
+                    </control>
+                    <control name="lbl_item_count_2" entity="Label" script="" init="">
+                        <prop Align="Right" ClickEvent="true" RefCursor="WIN_HELP" Left="192" Top="64" Width="80" Height="20" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                    </control>
+                </control>
+                <control name="groupbox_item_3" entity="GroupBox" script="" init="">
+                    <prop Left="4" Top="32" Width="764" Height="290" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" />
+                    <control name="lbl_item_name_3" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="324" Top="96" Width="124" Height="20" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O" />
+                    </control>
+                    <control name="lbl_item_cover_3" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="342" Width="90" Height="90" ShadowColor="0,0,0,0" TabStop="true" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_item_photo_3" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="347" Top="4" Width="80" Height="80" ShadowColor="0,0,0,0" Transparent="false" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_item_mark_3" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="340" Top="-6" Width="94" Height="50" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\use\bag\icon_wupin_whs94.jpg" />
+                    </control>
+                    <control name="lbl_item_count_3" entity="Label" script="" init="">
+                        <prop Align="Right" ClickEvent="true" RefCursor="WIN_HELP" Left="347" Top="64" Width="80" Height="20" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                    </control>
+                </control>
+                <control name="groupbox_item_4" entity="GroupBox" script="" init="">
+                    <prop Left="4" Top="32" Width="764" Height="290" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" />
+                    <control name="lbl_item_name_4" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="480" Top="96" Width="124" Height="20" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O" />
+                    </control>
+                    <control name="lbl_item_cover_4" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="494" Width="90" Height="90" ShadowColor="0,0,0,0" TabStop="true" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_item_photo_4" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="500" Top="4" Width="80" Height="80" ShadowColor="0,0,0,0" Transparent="false" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_item_mark_4" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="493" Top="-6" Width="94" Height="50" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\use\bag\icon_wupin_whs94.jpg" />
+                    </control>
+                    <control name="lbl_item_count_4" entity="Label" script="" init="">
+                        <prop Align="Right" ClickEvent="true" RefCursor="WIN_HELP" Left="500" Top="64" Width="80" Height="20" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                    </control>
+                </control>
+                <control name="groupbox_item_5" entity="GroupBox" script="" init="">
+                    <prop Left="4" Top="32" Width="764" Height="290" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" />
+                    <control name="lbl_item_name_5" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="622" Top="96" Width="124" Height="20" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O" />
+                    </control>
+                    <control name="lbl_item_cover_5" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="639" Width="90" Height="90" ShadowColor="0,0,0,0" TabStop="true" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_item_photo_5" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="644" Top="4" Width="80" Height="80" ShadowColor="0,0,0,0" Transparent="false" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_item_mark_5" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="638" Top="-6" Width="94" Height="50" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\use\bag\icon_wupin_whs94.jpg" />
+                    </control>
+                    <control name="lbl_item_count_5" entity="Label" script="" init="">
+                        <prop Align="Right" ClickEvent="true" RefCursor="WIN_HELP" Left="644" Top="64" Width="80" Height="20" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                    </control>
+                </control>
+                <control name="groupbox_item_6" entity="GroupBox" script="" init="">
+                    <prop Left="4" Top="5" Width="764" Height="290" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" />
+                    <control name="lbl_item_name_6" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="20" Top="251" Width="124" Height="20" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O" />
+                    </control>
+                    <control name="lbl_item_cover_6" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="38" Top="156" Width="90" Height="90" ShadowColor="0,0,0,0" TabStop="true" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_item_photo_6" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="44" Top="160" Width="80" Height="80" ShadowColor="0,0,0,0" Transparent="false" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_item_mark_6" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="36" Top="152" Width="94" Height="50" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\use\bag\icon_wupin_whs94.jpg" />
+                    </control>
+                    <control name="lbl_item_count_6" entity="Label" script="" init="">
+                        <prop Align="Right" ClickEvent="true" RefCursor="WIN_HELP" Left="44" Top="220" Width="80" Height="20" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                    </control>
+                </control>
+                <control name="groupbox_item_7" entity="GroupBox" script="" init="">
+                    <prop Left="4" Top="8" Width="764" Height="290" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" />
+                    <control name="lbl_item_name_7" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="172" Top="251" Width="124" Height="20" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O" />
+                    </control>
+                    <control name="lbl_item_cover_7" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="186" Top="156" Width="90" Height="90" ShadowColor="0,0,0,0" TabStop="true" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_item_photo_7" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="192" Top="160" Width="80" Height="80" ShadowColor="0,0,0,0" Transparent="false" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_item_mark_7" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="184" Top="152" Width="94" Height="50" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\use\bag\icon_wupin_whs94.jpg" />
+                    </control>
+                    <control name="lbl_item_count_7" entity="Label" script="" init="">
+                        <prop Align="Right" ClickEvent="true" RefCursor="WIN_HELP" Left="192" Top="220" Width="80" Height="20" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                    </control>
+                </control>
+                <control name="groupbox_item_8" entity="GroupBox" script="" init="">
+                    <prop Left="4" Top="8" Width="764" Height="290" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" />
+                    <control name="lbl_item_name_8" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="324" Top="251" Width="124" Height="20" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O" />
+                    </control>
+                    <control name="lbl_item_cover_8" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="342" Top="156" Width="90" Height="90" ShadowColor="0,0,0,0" TabStop="true" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_item_photo_8" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="347" Top="160" Width="80" Height="80" ShadowColor="0,0,0,0" Transparent="false" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_item_mark_8" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="340" Top="152" Width="94" Height="50" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\use\bag\icon_wupin_whs94.jpg" />
+                    </control>
+                    <control name="lbl_item_count_8" entity="Label" script="" init="">
+                        <prop Align="Right" ClickEvent="true" RefCursor="WIN_HELP" Left="347" Top="220" Width="80" Height="20" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                    </control>
+                </control>
+                <control name="groupbox_item_9" entity="GroupBox" script="" init="">
+                    <prop Left="4" Top="8" Width="764" Height="290" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" />
+                    <control name="lbl_item_name_9" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="480" Top="251" Width="124" Height="20" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O" />
+                    </control>
+                    <control name="lbl_item_cover_9" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="494" Top="156" Width="90" Height="90" ShadowColor="0,0,0,0" TabStop="true" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_item_photo_9" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="500" Top="160" Width="80" Height="80" ShadowColor="0,0,0,0" Transparent="false" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_item_mark_9" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="493" Top="152" Width="94" Height="50" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\use\bag\icon_wupin_whs94.jpg" />
+                    </control>
+                    <control name="lbl_item_count_9" entity="Label" script="" init="">
+                        <prop Align="Right" ClickEvent="true" RefCursor="WIN_HELP" Left="500" Top="220" Width="80" Height="20" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                    </control>
+                </control>
+                <control name="groupbox_item_10" entity="GroupBox" script="" init="">
+                    <prop Left="4" Top="8" Width="764" Height="290" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" />
+                    <control name="lbl_item_name_10" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="622" Top="251" Width="124" Height="20" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O" />
+                    </control>
+                    <control name="lbl_item_cover_10" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="639" Top="157" Width="90" Height="90" ShadowColor="0,0,0,0" TabStop="true" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_item_photo_10" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="644" Top="160" Width="80" Height="80" ShadowColor="0,0,0,0" Transparent="false" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_item_mark_10" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="638" Top="152" Width="94" Height="50" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\use\bag\icon_wupin_whs94.jpg" />
+                    </control>
+                    <control name="lbl_item_count_10" entity="Label" script="" init="">
+                        <prop Align="Right" ClickEvent="true" RefCursor="WIN_HELP" Left="644" Top="220" Width="80" Height="20" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                    </control>
+                </control>
+            </control>
+            <control name="groupbox_stars" entity="GroupBox" script="" init="">
+                <prop Left="262" Top="96" Width="262" Height="46" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                <control name="lbl_star_4" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="29" Width="45" Height="44" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\xingxing.png" />
+                </control>
+                <control name="lbl_star_3" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="72" Width="45" Height="44" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\xingxing.png" />
+                </control>
+                <control name="lbl_star_1" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="120" Width="45" Height="44" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\xingxing.png" />
+                </control>
+                <control name="lbl_star_2" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="168" Width="45" Height="44" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\xingxing.png" />
+                </control>
+                <control name="lbl_star_5" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="216" Width="45" Height="44" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\xingxing.png" />
+                </control>
+            </control>
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="4" Top="8" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_zuoshang.png" />
+            </control>
+            <control name="lbl_2" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="736" Top="8" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_youshang.png" />
+            </control>
+            <control name="lbl_3" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="4" Top="416" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_zuoxia.png" />
+            </control>
+            <control name="lbl_4" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="736" Top="416" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshiyouxia.png" />
+            </control>
+            <control name="btn_close" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="720" Top="-24" Width="100" Height="100" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH18_S" TabStop="true" AutoSize="true" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+            </control>
+            <control name="lbl_price_photo" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="344000" Top="368" Width="52" Height="52" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zuanshi_da.jpg" />
+            </control>
+            <control name="lbl_price" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="392000" Top="368" Width="86" Height="52" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="1000" Font="WRYH26_S" />
+            </control>
+            <control name="lbl_consume_item_photo" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="488000" Top="376" Width="30" Height="30" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\common\window\extract_001_o.jpg" />
+            </control>
+            <control name="lbl_consume_item_count" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="520000" Top="370" Width="110" Height="44" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="1000" Font="WRYH26_S" />
+            </control>
+            <control name="lbl_5" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="464000" Top="378" Width="27" Height="27" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="（" Font="WRYH26_S" AutoSize="true" />
+            </control>
+            <control name="lbl_6" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="616000" Top="378" Width="27" Height="27" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="）" Font="WRYH26_S" AutoSize="true" />
+            </control>
+            <control name="group_effects" entity="GroupBox" script="" init="">
+                <prop Left="60" Top="8" Width="654" Height="486" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                <control name="lbl_spot_light" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="60" Top="40" Width="538" Height="409" ShadowColor="0,0,0,0" AutoSize="true" />
+                </control>
+                <control name="lbl_anim" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="132" Top="-8" Width="400" Height="450" ShadowColor="0,0,0,0" DrawMode="FitWindow" />
+                </control>
+            </control>
+        </control>
+    </control>
+</form>

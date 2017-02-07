@@ -1,0 +1,1661 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!--display-->
+<Root>
+	<Display ID="0" BackColor="0,0,0,0" MaskForm="" MaskCtrl="" GridIndex="" MaskEnabled="true" Desc="默认窗口属性">
+<!--调试工具起始--><!--
+		<control Name="debug_btn_exit" Type="Button" Left="950" Top="10" Width="130" Height="50" AutoSize="true" Font="WRYH10" ForeColor="255,255,255,255" Text="@ui_guide_exit" NormalImage="" PushImage=""/>
+		<control Name="debug_mltbox_info" Type="MultiTextBox" HAnchor="Right" Left="-200" Top="10" Width="200" Height="200" Font="WRYH20" TextColor="255,255,0,0" ViewRect="0,0,200,200" BackColor="0,0,0,0"/>
+		<control Name="debug_btn_test_prev" Type="Button" Left="200" Top="100" AutoSize="true" Font="WRYH20" ForeColor="255,255,255,255" Text="@ui_guide_prev_index" NormalImage="gui/common/button/button2.png" PushImage="gui/common/button/button2_up.png"/>
+		<control Name="debug_btn_test_next" Type="Button" Left="350" Top="100" AutoSize="true" Font="WRYH20" ForeColor="255,255,255,255" Text="@ui_guide_next_index" NormalImage="gui/common/button/button2.png" PushImage="gui/common/button/button2_up.png"/>
+		<control Name="debug_btn_test_prev_step" Type="Button" Left="530" Top="100" AutoSize="true" Font="WRYH20" ForeColor="255,255,255,255" Text="@ui_guide_prev_step" NormalImage="gui/common/button/button2.png" PushImage="gui/common/button/button2_up.png"/>
+		<control Name="debug_btn_test_next_step" Type="Button" Left="680" Top="100" AutoSize="true" Font="WRYH20" ForeColor="255,255,255,255" Text="@ui_guide_next_step" NormalImage="gui/common/button/button2.png" PushImage="gui/common/button/button2_up.png"/>
+		<control Name="debug_btn_test_reload" Type="Button" Left="850" Top="100" AutoSize="true" Font="WRYH20" ForeColor="255,255,255,255" Text="@ui_guide_reload" NormalImage="gui/common/button/button2.png" PushImage="gui/common/button/button2_up.png"/>
+		<control Name="net_warning" Type="MultiTextBox" Alpha="0" HAnchor="Center" VAnchor="Center" Transparent="true" Left="-170" Top="-50" AutoSize="true" Font="WRYH22_O" NoFrame="true" SelectBarColor="0,0,0,0" MouseInBarColor="0,0,0,0" ViewRect="30,40,300,300" TipAutoSize="true" DrawMode="Tile" BackImage="gui/login/xinxilan.png" HtmlText=""/>
+--><!--调试工具终止-->
+		<control Name="btn_skip_guide" Type="Button" Left="0" Top="0" AutoSize="true"/>
+
+		<control Name="show_gril" Type="Label" Transparent="true" Left="200" Top="0" AutoSize="true" Rotate="true" BackImage="gui\xm2_quest\yindaomeizi.png"/>
+		<control Name="finger" Type="Label" Transparent="true" Left="10" Top="0" AutoSize="true" Rotate="true" AngleZ="0" BackImage="guide_click"/>
+		<control Name="text_left" Type="MultiTextBox" Transparent="true" Left="-150" Top="-100" AutoSize="true" Font="WRYH22_O" NoFrame="true" SelectBarColor="0,0,0,0" MouseInBarColor="0,0,0,0" TextColor="255,253,246,191" ViewRect="20,20,310,115" TipAutoSize="true" BackImage="gui/xm2_quest/xinshouyindao_2.png" HtmlText="this is left" Alpha="255"/>
+		<control Name="text_right" Type="MultiTextBox" Transparent="true" Left="150" Top="-100" AutoSize="true" Font="WRYH22_O" NoFrame="true" SelectBarColor="0,0,0,0" MouseInBarColor="0,0,0,0" TextColor="255,253,246,191" ViewRect="70,20,360,115" TipAutoSize="true" BackImage="gui/xm2_quest/xinshouyindao_1.png" HtmlText="this is right" Alpha="255"/>
+	</Display>
+	<Display ID="1" desc="提示回主界面">
+		<control Name="show_gril" Left="260" Top="200"/>
+		<control Name="text_right" Left="500" Top="200" HtmlText="@yindao1"/>
+	</Display>
+	<Display ID="2" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<!--有序引导-->
+	<Display ID="101" Visible="false" desc="隐藏引导界面">
+    </Display>
+	<Display ID="102" MaskForm="form_joystick" MaskCtrl="main_form" desc="点击摇杆">
+		<control Name="joystick_back" Type="Label" Left="0" Top="0" AutoSize="true" BackImage="gui/tp2_joystick/yaogandi.png"/>
+		<control Name="joystick_front" Type="Label" Left="0" Top="72" AutoSize="true" BackImage="guide_move"/>
+		<control Name="show_gril" Left="350" Top="-280" AngleY="3.14"/>
+		<control Name="text_left" Left="170" Top="-280" HtmlText="@yindao102"/>
+		<sound Name="guide_102" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="103" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="104" MaskForm="form_main_clone" MaskCtrl="imagegrid_common_attack" GridIndex="0" desc="点击普攻技能">
+		<control Name="show_gril" Left="-480" Top="-250" AngleY="0"/>
+		<control Name="text_right" Left="-270" Top="-250" HtmlText="@yindao104"/>
+		<control Name="finger" Left="0" Top="0"/>
+		<control Name="finger_eft" Type="Label" Left="80" Top="80" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="80" Top="80" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_104" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="105" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="106" MaskForm="form_main_clone" MaskCtrl="imagegrid_skill_bar" GridIndex="0" desc="点击第一个技能">
+		<control Name="show_gril" Left="-410" Top="-320"/>
+		<control Name="text_right" Left="-200" Top="-320" HtmlText="@yindao106"/>
+		<control Name="finger" Left="-35" Top="-35"/>
+		<control Name="finger_eft" Type="Label" Left="45" Top="45" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="45" Top="45" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_106" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="107" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="108" MaskForm="form_clone_finish" MaskCtrl="btn_continue" desc="点击“确定”按钮，离开副本">
+		<control Name="finger" Left="10" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="90" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="90" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="109" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="201" MaskForm="form_quest_trace" MaskCtrl="btn_bg_1" desc="点击“任务追踪”界面，“初来乍到，还是先找个人打听下消息吧”">
+		<control Name="show_gril" Left="550" Top="0" AngleY="3.14"/>
+		<control Name="text_left" Left="370" Top="0" HtmlText="@yindao201"/>
+		<control Name="finger" Left="130" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_201" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="202" BackColor="0,0,0,0" desc="自动寻路中——无点击位置">
+		<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="540" Top="450" ViewRect="-23,23,450,81" BackImage="" HtmlText=""/>
+	</Display>
+	<Display ID="203" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="301" MaskForm="form_quest_trace" MaskCtrl="btn_bg_1" desc="点击“任务追踪”界面，“找城主报道”">
+		<control Name="finger" Left="130" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<!--<control Name="show_gril" Left="550" Top="0" AngleY="3.14"/>
+		<control Name="text_left" Left="370" Top="0" HtmlText="@yindao401"/>
+		<sound Name="guide_401" Volume="2.0" Loop="false"/>-->
+	</Display>
+	<Display ID="302" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="401" desc="无点击位置，技能学习说明">
+		<control Name="show_gril" Left="210" Top="100" AngleY="0"/>
+		<control Name="text_right" Left="400" Top="100" HtmlText="@yindao502"/>
+		<sound Name="guide_502" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="402" MaskForm="form_guide_skill" MaskCtrl="btn_skill_up_1" desc="点击“升级”按钮">
+		<control Name="finger" Left="-55" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="25" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="25" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="403" desc="技能学习说明——无点击位置">
+		<control Name="show_gril" Left="140" Top="140" AngleY="0"/>
+		<control Name="text_right" Left="350" Top="140" HtmlText="@yindao504"/>
+		<sound Name="guide_504" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="404" MaskForm="form_guide_skill" MaskCtrl="btn_close" desc="点击英雄界面“关闭”按钮">
+		<control Name="finger" Left="-50" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="30" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="30" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="501" MaskForm="form_quest_trace" MaskCtrl="btn_bg_1" desc="点击“任务追踪”界面">
+		<control Name="finger" Left="130" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<!--<Display ID="502" BackColor="0,0,0,0" desc="自动寻路中——无点击位置">
+		<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="540" Top="450" ViewRect="-23,23,450,81" BackImage="" HtmlText=""/>
+	</Display>
+	<Display ID="503" MaskForm="form_clone_select" MaskCtrl="lbl_ring" desc="点击箭头指向副本按钮">
+	</Display>
+	<Display ID="504" MaskForm="form_clone_scene_info" MaskCtrl="btn_begin" desc="点击“进入”按钮，进入副本">
+		<control Name="show_gril" Left="-430" Top="-300" AngleY="0"/>
+		<control Name="text_right" Left="-220" Top="-300" HtmlText="@yindao604"/>
+		<control Name="finger" Left="-15" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="65" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="65" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_604" Volume="2.0" Loop="false"/>
+	</Display>-->
+	<Display ID="502" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="506" MaskForm="form_clone_finish" MaskCtrl="btn_continue" desc="点击“确定”按钮，离开副本">
+		<control Name="finger" Left="10" Top="-60" AngleZ="0"/>
+		<control Name="finger_eft" Type="Label" Left="90" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="90" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="507" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="601" MaskForm="form_quest_trace" MaskCtrl="btn_bg_1" desc="点击“任务追踪”界面">
+		<control Name="finger" Left="130" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_701" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="602" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="701" desc="五点击位置，引导3技能学习">
+		<control Name="show_gril" Left="210" Top="100" AngleY="0"/>
+		<control Name="text_right" Left="400" Top="100" HtmlText="@yindao801"/>
+		<sound Name="guide_801" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="702" MaskForm="form_guide_skill" MaskCtrl="btn_skill_up_2" desc="点击“升级”按钮">
+		<control Name="finger" Left="-55" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="25" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="25" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="703" desc="技能学习说明——无点击位置">
+		<control Name="show_gril" Left="140" Top="140" AngleY="0"/>
+		<control Name="text_right" Left="350" Top="140" HtmlText="@yindao803"/>
+		<sound Name="guide_803" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="704" MaskForm="form_guide_skill" MaskCtrl="btn_close" desc="点击英雄界面“关闭”按钮">
+		<control Name="finger" Left="-50" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="30" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="30" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="801" MaskForm="form_quest_trace" MaskCtrl="btn_bg_1" desc="点击“任务追踪”界面">
+		<control Name="finger" Left="130" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="802" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<!--<Display ID="803" MaskForm="form_clone_select" MaskCtrl="lbl_ring" desc="点击箭头指向副本按钮">
+	</Display>
+	<Display ID="804" MaskForm="form_clone_scene_info" MaskCtrl="btn_begin" desc="点击“进入”按钮，进入副本">
+		<control Name="finger" Left="-15" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="65" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="65" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="805" Visible="false" desc="隐藏引导界面">
+	</Display>-->
+	<Display ID="803" desc="稀有技说明——无点击位置">
+		<control Name="show_gril" Left="450" Top="200" AngleY="0"/>
+		<control Name="text_right" Left="660" Top="200" HtmlText="@yindao806"/>
+		<sound Name="guide_906" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="804" MaskForm="form_main_clone" MaskCtrl="imagegrid_skill_bar" GridIndex="3" desc="点击“稀有技”按钮">
+		<control Name="finger" Left="-37" Top="-37"/>
+		<control Name="finger_eft" Type="Label" Left="43" Top="43" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="43" Top="43" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="805" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="806" MaskForm="form_clone_finish" MaskCtrl="btn_continue" desc="点击“确定”按钮，离开副本">
+		<control Name="finger" Left="10" Top="-60" AngleZ="0"/>
+		<control Name="finger_eft" Type="Label" Left="90" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="90" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="807" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="901" MaskForm="form_main_hall" MaskCtrl="btn_war" desc="点击战役界面，领取战役宝箱解说">
+		<control Name="show_gril" Left="-600" Top="-200" AngleY="0"/>
+		<control Name="text_right" Left="-400" Top="-200" HtmlText="@yindao901"/>
+		<sound Name="guide_901" Volume="2.0" Loop="false"/>
+		<control Name="finger" Left="-45" Top="-45"/>
+		<control Name="finger_eft" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<Display ID="902" BackColor="0,0,0,0" desc="自动寻路中——无点击位置">
+		<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="540" Top="450" ViewRect="-23,23,450,81" BackImage="" HtmlText=""/>
+	    <control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<Display ID="903" MaskForm="form_clone_select" MaskCtrl="btn_level3" desc="点击“战神的馈赠”按钮">
+		<control Name="finger" Left="-40" Top="-48"/>
+		<control Name="finger_eft" Type="Label" Left="40" Top="32" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="40" Top="32" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="904" MaskForm="form_clone_reward" MaskCtrl="btn_get_award" desc="点击“领取”按钮">
+		<control Name="show_gril" Left="-770" Top="-360" AngleY="0"/>
+		<control Name="text_right" Left="-560" Top="-360" HtmlText="@yindao904"/>
+		<sound Name="guide_904" Volume="2.0" Loop="false"/>
+		<control Name="finger" Left="-17" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="55" Top="17" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="55" Top="17" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="905" MaskForm="form_gift_package" MaskCtrl="btn_ok" desc="点击“确认”按钮">
+		<control Name="finger" Left="-10" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="70" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="70" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+    	<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="906" MaskForm="form_clone_select" MaskCtrl="btn_back" desc="点击关卡选择界面的“关闭”按钮">
+		<control Name="finger" Left="-47" Top="-47"/>
+		<control Name="finger_eft" Type="Label" Left="33" Top="33" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="33" Top="33" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1001" MaskForm="form_quest_trace" MaskCtrl="btn_bg_1" desc="点击“任务追踪”界面">
+		<control Name="finger" Left="130" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	    <control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<Display ID="1002" BackColor="0,0,0,0" desc="自动寻路中——无点击位置">
+		<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="540" Top="450" ViewRect="-23,23,450,81" BackImage="" HtmlText=""/>
+		<control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<Display ID="1003" Visible="false" desc="隐藏引导界面">
+	    <control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<Display ID="1101" MaskForm="form_quest_trace" MaskCtrl="btn_bg_1" desc="点击“任务追踪”界面">
+		<control Name="show_gril" Left="550" Top="0" AngleY="3.14"/>
+		<control Name="text_left" Left="370" Top="0" HtmlText="@yindao401"/>
+		<control Name="finger" Left="130" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_401" Volume="2.0" Loop="false"/>
+		<control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<Display ID="1102" BackColor="0,0,0,0" desc="自动寻路中——无点击位置">
+		<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="540" Top="450" ViewRect="-23,23,450,81" BackImage="" HtmlText=""/>
+		<control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<Display ID="1103" Visible="false" desc="隐藏引导界面">
+	    <control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<Display ID="1201" MaskForm="form_quest_trace" MaskCtrl="btn_bg_1" desc="点击“任务追踪”界面">
+		<control Name="finger" Left="130" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<Display ID="1202" BackColor="0,0,0,0" desc="自动寻路中——无点击位置">
+		<control Name="text_right" HAnchor="Center" VAnchor="Center" Left="540" Top="450" ViewRect="-23,23,450,81" BackImage="" HtmlText=""/>
+		<control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<Display ID="1203" Visible="false" desc="隐藏引导界面">
+	    <control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<Display ID="1301" MaskForm="form_main_hall" MaskCtrl="btn_mystic" desc="点击“秘境”按钮">
+		<control Name="show_gril" Left="-460" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="-250" Top="150" HtmlText="@yindao1301"/>
+		<control Name="finger" Left="-50" Top="-50"/>
+		<control Name="finger_eft" Type="Label" Left="30" Top="30" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="30" Top="30" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+        <control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<Display ID="1302" MaskForm="form_mystic" MaskCtrl="btn_jl_fp_1" desc="点击“精良”宝藏">
+		<control Name="finger" Left="200" Top="150"/>
+		<control Name="finger_eft" Type="Label" Left="280" Top="230" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="280" Top="230" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1303" MaskForm="form_secret_area_info" MaskCtrl="btn_begin" desc="点击“进入”按钮">
+		<control Name="show_gril" Left="380" Top="-150" AngleY="3.14"/>
+		<control Name="text_left" Left="200" Top="-150" HtmlText="@yindao1303"/>
+		<control Name="finger" Left="-5" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="75" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="75" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1304" Visible="false" desc="隐藏引导界面">
+	    <control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1305" MaskForm="form_clone_finish" MaskCtrl="btn_continue" desc="点击“确定”按钮，离开副本">
+		<control Name="show_gril" Left="40" Top="-500" AngleY="3.14"/>
+		<control Name="text_left" Left="-130" Top="-500" HtmlText="@yindao1305"/>
+		<control Name="finger" Left="-10" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="70" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="70" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_1305" Volume="2.0" Loop="false"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+
+	<Display ID="1401" MaskForm="form_main_hall" MaskCtrl="btn_role_npc" desc="点击“英雄”按钮">
+		<control Name="show_gril" Left="-510" Top="-400" AngleY="0"/>
+		<control Name="text_right" Left="-300" Top="-400" HtmlText="@yindao1401"/>
+		<control Name="finger" Left="-43" Top="-43"/>
+		<control Name="finger_eft" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_1401" Volume="2.0" Loop="false"/>
+		<control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<Display ID="1402" MaskForm="form_bag_copy" MaskCtrl="btn_arrange" GridIndex="0" desc="点击整理按钮">
+		<control Name="finger" Left="-15" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="65" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="65" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1403" MaskForm="form_bag_copy" MaskCtrl="imagegrid_goods" GridIndex="0" desc="点击背包第3个格子">
+		<!--15步之前禁止背包滑动，程序代码处理-->
+		<control Name="finger" Left="-55" Top="-50"/>
+		<control Name="finger_eft" Type="Label" Left="25" Top="30" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="25" Top="30" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1404" MaskForm="form_equip_tips" MaskCtrl="btn_equip" desc="点击“装备”按钮">
+		<control Name="show_gril" Left="330" Top="-310" AngleY="3.14"/>
+		<control Name="text_left" Left="150" Top="-310" HtmlText="@yindao1404"/>
+		<control Name="finger" Left="10" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="90" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="90" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_1404" Volume="2.0" Loop="false"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1405" MaskForm="form_bag_copy" MaskCtrl="imagegrid_equip" GridIndex="4" desc="点击已装备的武器">
+		<control Name="show_gril" Left="300" Top="-200" AngleY="3.14"/>
+		<control Name="text_left" Left="100" Top="-200" HtmlText="@yindao1405"/>
+		<control Name="finger" Left="-55" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="25" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="25" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_1405" Volume="2.0" Loop="false"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1406" MaskForm="form_equip_tips" MaskCtrl="btn_level_up" desc="点击Tips上的“升级”按钮```">
+		<control Name="finger" Left="10" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="90" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="90" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1407" MaskForm="form_strengthen_upgrade" MaskCtrl="btn_all_strengthen" desc="点击“强化所有装备”按钮```">
+		<control Name="show_gril" Left="-580" Top="-350" AngleY="0"/>
+		<control Name="text_right" Left="-370" Top="-350" HtmlText="@yindao1407"/>
+		<control Name="finger" Left="-10" Top="-65"/>
+		<control Name="finger_eft" Type="Label" Left="70" Top="15" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="70" Top="15" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_1407" Volume="2.0" Loop="false"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1408" desc="强化成功解说--无点击位置">
+		<control Name="show_gril" Left="160" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="370" Top="150" HtmlText="@yindao1408"/>
+		<sound Name="guide_1408" Volume="2.0" Loop="false"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1409" MaskForm="form_strengthen_upgrade" MaskCtrl="rbtn_upgrade" desc="点击“精练”页签```">
+		<control Name="show_gril" Left="-640" Top="-30" AngleY="0"/>
+		<control Name="text_right" Left="-430" Top="-30" HtmlText="@yindao1409"/>
+		<control Name="finger" Left="-35" Top="-35"/>
+		<sound Name="guide_1409" Volume="2.0" Loop="false"/>
+		<control Name="finger_eft" Type="Label" Left="45" Top="45" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="45" Top="45" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1410" MaskForm="form_strengthen_upgrade" MaskCtrl="btn_strengthen" desc="点击“精练”按钮```">
+		<control Name="finger" Left="-18" Top="-65"/>
+		<control Name="finger_eft" Type="Label" Left="62" Top="15" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="62" Top="15" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1411" MaskForm="form_strengthen_upgrade" MaskCtrl="btn_return" desc="点击精练界面的“关闭”按钮```">
+		<control Name="show_gril" Left="-600" Top="100" AngleY="0"/>
+		<!--	<control Name="text_right" Left="-400" Top="100" HtmlText="@yindao1410"/>-->
+		<sound Name="guide_1410" Volume="2.0" Loop="false"/>
+		<control Name="finger" Left="10" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="90" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="90" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+        <control Name="skip_bg_bottom" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1412" MaskForm="form_role_npc_base" MaskCtrl="btn_close" desc="点击英雄界面“关闭”按钮```">
+		<control Name="finger" Left="10" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="90" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="90" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_bottom" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1501" MaskForm="form_main_hall" MaskCtrl="btn_blackmarket" desc="点击“黑市”按钮```">
+		<control Name="show_gril" Left="-450" Top="-350" AngleY="0"/>
+		<control Name="text_right" Left="-240" Top="-350" HtmlText="@yindao1501"/>
+		<control Name="finger" Left="-43" Top="-45"/>
+		<control Name="finger_eft" Type="Label" Left="37" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="37" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_1501" Volume="2.0" Loop="false"/>
+		<control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<Display ID="1502" MaskForm="form_black_market" MaskCtrl="btn_select" desc="点击“批量添加装备”按钮```">
+		<control Name="show_gril" Left="230" Top="-300" AngleY="3.14"/>
+		<control Name="text_left" Left="50" Top="-300" HtmlText="@yindao1502"/>
+		<control Name="finger" Left="-5" Top="-65"/>
+		<control Name="finger_eft" Type="Label" Left="75" Top="15" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="75" Top="15" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_1502" Volume="2.0" Loop="false"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1503" MaskForm="form_select_bag" MaskCtrl="cbtn_green" desc="点击“绿色品质”按钮```">
+		<control Name="finger" Left="-10" Top="-65"/>
+		<control Name="finger_eft" Type="Label" Left="70" Top="15" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="70" Top="15" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1504" MaskForm="form_select_bag" MaskCtrl="btn_put" desc="点击“确定”按钮```">
+		<control Name="finger" Left="-15" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="65" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="65" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1505" MaskForm="form_black_market" MaskCtrl="btn_rebuild" desc="点击“熔炼”按钮```">
+		<control Name="finger" Left="-28" Top="-62"/>
+		<control Name="finger_eft" Type="Label" Left="52" Top="18" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="52" Top="18" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1506" MaskForm="form_gift_package" MaskCtrl="btn_ok" desc="点击“确定”按钮```">
+		<control Name="finger" Left="-15" Top="-65"/>
+		<control Name="finger_eft" Type="Label" Left="65" Top="15" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="65" Top="15" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1507" MaskForm="form_black_market" MaskCtrl="rbtn_rebuild" desc="点击“重铸”按钮```">
+		<control Name="show_gril" Left="380" Top="-50" AngleY="3.14"/>
+		<control Name="text_left" Left="200" Top="-50" HtmlText="@yindao1507"/>
+		<control Name="finger" Left="-5" Top="-65"/>
+		<control Name="finger_eft" Type="Label" Left="75" Top="15" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="75" Top="15" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_1507" Volume="2.0" Loop="false"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1508" desc="重铸说明——无点击位置">
+		<control Name="show_gril" Left="400" Top="140" AngleY="0"/>
+		<control Name="text_right" Left="610" Top="140" HtmlText="@yindao1508"/>
+		<sound Name="guide_1508" Volume="2.0" Loop="false"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1509" MaskForm="form_black_market" MaskCtrl="btn_close" desc="点击“关闭”按钮```">
+		<control Name="finger" Left="-50" Top="-50"/>
+		<control Name="finger_eft" Type="Label" Left="30" Top="30" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="30" Top="30" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_bottom" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1510" Visible="false" desc="隐藏引导界面">
+	    <control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1601" MaskForm="form_quest_trace" MaskCtrl="btn_bg_1" desc="点击“任务追踪”界面">
+		<control Name="finger" Left="130" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<Display ID="1602" Visible="false" desc="隐藏引导界面">
+	    <control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<!--野外阶段开始-->
+	<Display ID="1701" MaskForm="form_main_smallmap" MaskCtrl="btn_linechange" desc="点击“换线”按钮```">
+		<control Name="finger" Left="-55" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="25" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="25" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="show_gril" Left="-600" Top="50" AngleY="0"/>
+		<control Name="text_right" Left="-400" Top="50" HtmlText="@yindao1802"/>
+		<sound Name="guide_1802" Volume="2.0" Loop="false"/>
+		<control Name="skip_anchor" Type="Label" Left="1165" Top="223"/>
+	</Display>
+	<Display ID="1702" Visible="false" desc="隐藏引导界面">
+	    <control Name="skip_anchor" Type="Label" Left="1165" Top="223"/>
+	</Display>
+	<Display ID="1703" MaskForm="form_quest_trace" MaskCtrl="btn_bg_1" desc="点击“任务追踪”界面">
+		<control Name="finger" Left="130" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_anchor" Type="Label" Left="1165" Top="223"/>
+	</Display>
+	<Display ID="1704" Visible="false" desc="隐藏引导界面">
+	    <control Name="skip_anchor" Type="Label" Left="1165" Top="223"/>
+	</Display>
+	<Display ID="1801" MaskForm="form_main_smallmap" MaskCtrl="pic_map" desc="点击“小地图”">
+		<control Name="finger" Left="50" Top="-20"/>
+		<control Name="finger_eft" Type="Label" Left="130" Top="65" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="130" Top="65" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="show_gril" Left="-600" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="-400" Top="150" HtmlText="@yindao1901"/>
+		<control Name="skip_anchor" Type="Label" Left="1165" Top="223"/>
+	</Display>
+	<Display ID="1802" MaskForm="form_map" MaskCtrl="btn_back" desc="点击“回城”按钮">
+		<control Name="finger" Left="15" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="95" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="95" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="show_gril" Left="-600" Top="-300" AngleY="0"/>
+		<control Name="text_right" Left="-400" Top="-300" HtmlText="@yindao1902"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="1803" Visible="false" desc="隐藏引导界面">
+	    <control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<!--    <Display ID="1801" Visible="false" desc="隐藏引导界面">
+	</Display>	-->
+	<!--野外阶段结束-->
+	<Display ID="1901" MaskForm="form_quest_trace" MaskCtrl="btn_bg_1" desc="点击“任务追踪”界面">
+		<control Name="finger" Left="130" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_701" Volume="2.0" Loop="false"/>
+		<control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<Display ID="1902" Visible="false" desc="隐藏引导界面">
+	    <control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<Display ID="2001" MaskForm="form_chapter_trace" MaskCtrl="btn_submit" desc="点击“章节奖励领取”按钮```">
+		<control Name="show_gril" Left="350" Top="-100" AngleY="3.14"/>
+		<control Name="text_left" Left="170" Top="-100" HtmlText="@yindao2001"/>
+		<control Name="finger" Left="-40" Top="-65"/>
+		<control Name="finger_eft" Type="Label" Left="40" Top="15" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="40" Top="15" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_2001" Volume="2.0" Loop="false"/>
+		<control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<Display ID="2002" Visible="false" desc="隐藏引导界面">
+	    <control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<!--
+	    <Display ID="2002" MaskForm="form_gift_package" MaskCtrl="btn_ok" desc="点击“确认”按钮">
+		<control Name="finger" Left="-13" Top="-60"/>
+	</Display>
+	-->
+	<!--<Display ID="2101" MaskForm="form_quest_trace" MaskCtrl="btn_bg_1" desc="点击“任务追踪”界面">
+		<control Name="finger" Left="130" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="2102" Visible="false" desc="隐藏引导界面">
+	</Display>-->
+	<Display ID="2201" MaskForm="form_quest_trace" MaskCtrl="btn_bg_1" desc="点击“任务追踪”界面">
+		<control Name="finger" Left="130" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="210" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<Display ID="2202" Visible="false" desc="隐藏引导界面">
+	    <control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2301" MaskForm="form_main_hall" MaskCtrl="btn_activity_phy" desc="点击“精彩活动”按钮">
+		<control Name="show_gril" Left="-420" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="-220" Top="150" HtmlText="@yindao2201"/>
+		<control Name="finger" Left="-50" Top="-50"/>
+		<control Name="finger_eft" Type="Label" Left="30" Top="30" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="30" Top="30" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_2201" Volume="2.0" Loop="false"/>
+		<control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<!--    <Display ID="2302" MaskForm="form_activity" MaskCtrl="cbtn_activity_3" desc="点击“缤纷礼包”按钮">
+		<control Name="finger" Left="0" Top="-60"/>
+        <control Name="finger_eft" Type ="Label" Left="80" Top="20"  Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+        <control Name="finger_eft1" Type ="Label" Left="80" Top="20"  Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>-->
+	<Display ID="2302" MaskForm="form_activity" MaskCtrl="btn_example_gift_1" desc="点击“领取”按钮">
+		<control Name="show_gril" Left="-750" Top="-100" AngleY="0"/>
+		<control Name="text_right" Left="-550" Top="-100" HtmlText="@yindao2203"/>
+		<control Name="finger" Left="-35" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="45" Top="15" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="45" Top="15" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_2203" Volume="2.0" Loop="false"/>
+		<control Name="skip_bg_bottom" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2303" MaskForm="form_gift_package" MaskCtrl="btn_ok" desc="点击“确认”按钮">
+		<control Name="finger" Left="-13" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="70" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="70" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_bottom" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2304" MaskForm="form_activity" MaskCtrl="btn_close" desc="点击精彩活动“关闭”按钮">
+		<control Name="finger" Left="-50" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="30" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="30" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_bottom" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2401" MaskForm="form_main_hall" MaskCtrl="lbl_photo" desc="点击“主控英雄头像”">
+		<control Name="show_gril" Left="460" Top="150" AngleY="3.14"/>
+		<control Name="text_left" Left="270" Top="150" HtmlText="@yindao2301"/>
+		<control Name="finger" Left="-35" Top="-30"/>
+		<control Name="finger_eft" Type="Label" Left="45" Top="50" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="45" Top="50" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_2301" Volume="2.0" Loop="false"/>
+		<control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<Display ID="2402" MaskForm="form_role_npc_array" MaskCtrl="btn_active_3" desc="点击“召唤”按钮">
+		<control Name="finger" Left="-30" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="50" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="50" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2403" Visible="false" desc="隐藏引导界面">
+	    <control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2404" MaskForm="form_role_npc_array_effect" MaskCtrl="btn_close" desc="点击“确认”按钮">
+		<control Name="show_gril" Left="-620" Top="-400" AngleY="0"/>
+		<control Name="text_right" Left="-400" Top="-400" HtmlText="@yindao2303"/>
+		<control Name="finger" Left="-10" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="70" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="70" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_2304" Volume="2.0" Loop="false"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2405" MaskForm="form_role_npc_array" MaskCtrl="imagegrid_head_3" DisableEvent="on_leftclick_up" desc="拖拽幻术师头像设置副将">
+		<control Name="joystick_front" Type="Label" Left="50" Top="30" AutoSize="true" BackImage="gui/xm2_animation/guide_click/A0001.png" Effect="guide_move_pet"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2406" MaskForm="form_role_npc_array" MaskCtrl="btn_close" desc="点击战队界面的“关闭”按钮```">
+		<control Name="show_gril" Left="-820" Top="100" AngleY="0"/>
+		<control Name="text_right" Left="-620" Top="100" HtmlText="@yindao2305"/>
+		<control Name="finger" Left="10" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="90" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="90" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_2306" Volume="2.0" Loop="false"/>
+		<control Name="skip_bg_bottom" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2501" MaskForm="form_main_hall" MaskCtrl="btn_role_npc" desc="点击“英雄”按钮">
+		<control Name="show_gril" Left="-500" Top="-400" AngleY="0"/>
+		<control Name="text_right" Left="-300" Top="-400" HtmlText="@yindao2401"/>
+		<control Name="finger" Left="-43" Top="-43"/>
+		<control Name="finger_eft" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_2401" Volume="2.0" Loop="false"/>
+		<control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<Display ID="2502" MaskForm="form_role_npc_base" MaskCtrl="lbl_big_back_image_3" desc="点击“幻术师”头像">
+		<control Name="finger" Left="-37" Top="-39"/>
+		<control Name="finger_eft" Type="Label" Left="43" Top="41" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="43" Top="41" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2503" MaskForm="form_role_npc_base" MaskCtrl="rbtn_2" desc="点击“属性”按钮">
+		<control Name="finger" Left="-38" Top="-48"/>
+		<control Name="finger_eft" Type="Label" Left="42" Top="32" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="42" Top="32" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2504" MaskForm="form_role_npc_base" MaskCtrl="btn_role_npc_add_exp" desc="点击“加号”">
+		<control Name="finger" Left="-55" Top="-65"/>
+		<control Name="finger_eft" Type="Label" Left="25" Top="15" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="25" Top="15" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2505" MaskForm="form_add_experience" MaskCtrl="lbl_image_3" desc="经验界面中点击“幻术师”头像">
+		<control Name="finger" Left="-35" Top="-25"/>
+		<control Name="finger_eft" Type="Label" Left="45" Top="55" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="45" Top="55" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2506" MaskForm="form_add_experience" MaskCtrl="btn_close" desc="点击“关闭”按钮">
+		<control Name="show_gril" Left="-600" Top="100" AngleY="0"/>
+		<control Name="text_right" Left="-400" Top="100" HtmlText="@yindao2407"/>
+		<control Name="finger" Left="-50" Top="-50"/>
+		<control Name="finger_eft" Type="Label" Left="30" Top="30" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="30" Top="30" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_2407" Volume="2.0" Loop="false"/>
+		<control Name="skip_bg_bottom" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2507" MaskForm="form_role_npc_base" MaskCtrl="rbtn_3" desc="点击“技能”按钮，打开技能界面">
+		<control Name="finger" Left="-38" Top="-48"/>
+		<control Name="finger_eft" Type="Label" Left="42" Top="32" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="42" Top="32" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_bottom" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2508" MaskForm="form_role_npc_base" MaskCtrl="btn_skill_up_1" desc="点击第二个技能“升级”按钮">
+		<control Name="finger" Left="-53" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="27" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="27" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_bottom" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2509" MaskForm="form_role_npc_base" MaskCtrl="btn_skill_up_2" desc="点击第三个技能“升级”按钮">
+		<control Name="finger" Left="-53" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="27" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="27" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_bg_bottom" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2510" MaskForm="form_role_npc_base" MaskCtrl="btn_close" desc="点击英雄界面“关闭”按钮">
+		<control Name="show_gril" Left="-800" Top="130" AngleY="0"/>
+		<control Name="text_right" Left="-590" Top="130" HtmlText="@yindao2411"/>
+		<control Name="finger" Left="10" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="90" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="90" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_2411" Volume="2.0" Loop="false"/>
+		<control Name="skip_bg_bottom" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2511" Visible="false" desc="隐藏引导界面">
+	    <control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2601" MaskForm="form_main_hall" MaskCtrl="lbl_photo" desc="点击“主控英雄头像”">
+		<control Name="show_gril" Left="460" Top="200" AngleY="3.14"/>
+		<control Name="text_left" Left="270" Top="200" HtmlText="@yindao2601"/>
+		<sound Name="guide_2601" Volume="2.0" Loop="false"/>
+		<control Name="finger" Left="-35" Top="-30"/>
+		<control Name="finger_eft" Type="Label" Left="45" Top="50" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="45" Top="50" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<control Name="skip_anchor" Type="Label" Left="1180" Top="220"/>
+	</Display>
+	<Display ID="2602" MaskForm="form_role_npc_array" MaskCtrl="imagegrid_fight_11" DisableEvent="on_leftclick_up" desc="拖拽幻术师头像设置副将">
+		<control Name="joystick_front" Type="Label" Left="50" Top="30" AutoSize="true" BackImage="gui/xm2_animation/guide_click/A0001.png" Effect="guide_move_pet1"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2603" desc="更换主将解说-无点击位置">
+		<control Name="show_gril" Left="50" Top="50" AngleY="0"/>
+		<control Name="text_right" Left="260" Top="50" HtmlText="@yindao2603"/>
+		<sound Name="guide_2603" Volume="2.0" Loop="false"/>
+		<control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2604" Visible="false" desc="隐藏引导界面">
+	    <control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2701" Visible="false" desc="隐藏引导界面">
+	    <control Name="skip_bg_top" Type="Label" BackColor="100,0,0,0" Solid="true" />
+	</Display>
+	<Display ID="2801" MaskForm="form_main_hall" MaskCtrl="btn_exercise" desc="开启新的历练解说，点击历练按钮">
+		<control Name="show_gril" Left="-600" Top="-200" AngleY="0"/>
+		<control Name="text_right" Left="-400" Top="-200" HtmlText="@yindao2501"/>
+		<control Name="finger" Left="-45" Top="-45"/>
+		<control Name="finger_eft" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_2501" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="2802" MaskForm="form_exercise" MaskCtrl="groupbox_show_0_0" desc="点击竞技场">
+		<control Name="finger" Left="80" Top="30"/>
+		<control Name="finger_eft" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="2803" desc="竞技场解说-无点击位置">
+		<control Name="show_gril" Left="60" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="270" Top="150" HtmlText="@yindao2502"/>
+		<sound Name="guide_2502" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="2804" MaskForm="form_arena_main" MaskCtrl="rbtn_rank" desc="点击排行">
+		<control Name="finger" Left="-10" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="70" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="70" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="2805" desc="排行榜解说-无点击位置">
+		<control Name="show_gril" Left="60" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="270" Top="150" HtmlText="@yindao2504"/>
+		<sound Name="guide_2504" Volume="2.0" Loop="false"/>
+	</Display>
+	<!--<Display ID="2806" MaskForm="form_arena_main" MaskCtrl="rbtn_shop" desc="点击兑换">
+		<control Name="finger" Left="-10" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="70" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="70" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="2807" desc="兑换解说-无点击位置">
+		<control Name="show_gril" Left="60" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="270" Top="150" HtmlText="@yindao2505"/>
+		<sound Name="guide_2505" Volume="2.0" Loop="false"/>
+	</Display>-->
+	<Display ID="2806" MaskForm="form_arena_main" MaskCtrl="rbtn_arena" desc="点击竞技">
+		<control Name="finger" Left="-10" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="70" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="70" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="2807" desc="赶快去体验一下吧-无点击位置">
+		<control Name="show_gril" Left="60" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="270" Top="150" HtmlText="@yindao2506"/>
+		<sound Name="guide_2506" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="2808" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<!--
+	    <Display ID="2901" MaskForm="form_main_hall" MaskCtrl="btn_activity_phy" desc="点击“精彩活动”按钮">
+		<control Name="show_gril" Left="-420" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="-220" Top="150" HtmlText="@yindao2901"/>
+		<control Name="finger" Left="-50" Top="-50"/>
+        <control Name="finger_eft" Type ="Label" Left="30" Top="30"  Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+        <control Name="finger_eft1" Type ="Label" Left="30" Top="30"  Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	    <Display ID="2902" MaskForm="form_activity" MaskCtrl="cbtn_activity_1" desc="点击“月签到”按钮">
+		<control Name="finger" Left="0" Top="-60"/>
+        <control Name="finger_eft" Type ="Label" Left="80" Top="20"  Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+        <control Name="finger_eft1" Type ="Label" Left="80" Top="20"  Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	    <Display ID="2903" desc="签到解说-无点击位置">
+		<control Name="show_gril" Left="40" Top="50" AngleY="0"/>
+		<control Name="text_right" Left="250" Top="50" HtmlText="@yindao2903"/>
+	</Display>
+	    <Display ID="2904" Visible="false" desc="隐藏引导界面">
+	</Display>
+	首测不开放充值，暂时屏蔽充值引导
+	    <Display ID="2905" MaskForm="form_main_hall" MaskCtrl="btn_shop" desc="点击“商店”按钮">
+		<control Name="show_gril" Left="-420" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="-220" Top="150" HtmlText="@yindao2905"/>
+		<control Name="finger" Left="-50" Top="-50"/>
+	</Display>
+	    <Display ID="2906" desc="商店解说-无点击位置">
+		<control Name="show_gril" Left="0" Top="180" AngleY="0"/>
+		<control Name="text_right" Left="210" Top="180" HtmlText="@yindao2906"/>
+	</Display>
+        <Display ID="2907" MaskForm="form_pay" MaskCtrl="btn_vip_help" desc="点击“查看特权”按钮">
+		<control Name="finger" Left="-15" Top="-65"/>
+	</Display>
+	    <Display ID="2908" desc="VIP特权解说1-无点击位置">
+		<control Name="show_gril" Left="0" Top="180" AngleY="0"/>
+		<control Name="text_right" Left="210" Top="180" HtmlText="@yindao2908"/>
+	</Display>
+	    <Display ID="2909" MaskForm="form_pay" MaskCtrl="btn_right" desc="点击“特权翻页”按钮">
+		<control Name="finger" Left="-65" Top="-40"/>
+	</Display>
+	    <Display ID="2910" desc="VIP特权解说2-无点击位置">
+		<control Name="show_gril" Left="0" Top="180" AngleY="0"/>
+		<control Name="text_right" Left="210" Top="180" HtmlText="@yindao2910"/>
+	</Display>
+        <Display ID="2911" Visible="false" desc="隐藏引导界面">
+	</Display>
+    -->
+	<Display ID="2901" MaskForm="form_main_hall" MaskCtrl="btn_day_activity" desc="点击“活跃度”按钮">
+		<control Name="show_gril" Left="-420" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="-220" Top="150" HtmlText="@yindao3001"/>
+		<control Name="finger" Left="-50" Top="-50"/>
+		<control Name="finger_eft" Type="Label" Left="30" Top="30" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="30" Top="30" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="2902" desc="普通活动解说-无点击位置">
+		<control Name="show_gril" Left="0" Top="200" AngleY="0"/>
+		<control Name="text_right" Left="210" Top="200" HtmlText="@yindao3002"/>
+	</Display>
+	<Display ID="2903" MaskForm="form_day_activity_main" MaskCtrl="rbtn_limit_time" desc="点击“限时活动”按钮">
+		<control Name="finger" Left="10" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="90" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="90" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="2904" desc="限时活动解说-无点击位置">
+		<control Name="show_gril" Left="0" Top="200" AngleY="0"/>
+		<control Name="text_right" Left="210" Top="200" HtmlText="@yindao3004"/>
+	</Display>
+	<Display ID="2905" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<!--    <Display ID="2905" MaskForm="form_day_activity_main" MaskCtrl="btn_close" desc="点击“关闭”按钮">
+		<control Name="finger" Left="-55" Top="-55"/>
+        <control Name="finger_eft" Type ="Label" Left="25" Top="25"  Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+        <control Name="finger_eft1" Type ="Label" Left="25" Top="25"  Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>-->
+	<Display ID="3001" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="3101" MaskForm="form_main_hall" MaskCtrl="btn_role_npc" desc="点击“英雄”按钮">
+		<control Name="show_gril" Left="-500" Top="-400" AngleY="0"/>
+		<control Name="text_right" Left="-300" Top="-400" HtmlText="@yindao3101"/>
+		<control Name="finger" Left="-43" Top="-43"/>
+		<control Name="finger_eft" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3102" MaskForm="form_bag_copy" MaskCtrl="btn_role_npc_up_stage" desc="点击“升阶”按钮">
+		<control Name="finger" Left="-35" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="45" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="45" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3103" desc="英雄升阶解说-无点击位置">
+		<control Name="show_gril" Left="60" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="270" Top="150" HtmlText="@yindao3103"/>
+	</Display>
+	<Display ID="3104" MaskForm="form_role_npc_uplevel" MaskCtrl="btn_get_way" desc="点击英雄碎片“+”按钮">
+		<control Name="show_gril" Left="260" Top="-500" AngleY="3.14"/>
+		<control Name="text_left" Left="80" Top="-500" HtmlText="@yindao3104"/>
+		<control Name="finger" Left="-63" Top="-62"/>
+		<control Name="finger_eft" Type="Label" Left="17" Top="18" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="17" Top="18" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3105" desc="英雄碎片获取途径解说-无点击位置">
+		<control Name="show_gril" Left="0" Top="80" AngleY="0"/>
+		<control Name="text_right" Left="210" Top="80" HtmlText="@yindao3105"/>
+	</Display>
+	<Display ID="3106" MaskForm="form_patch_source" MaskCtrl="btn_ok" desc="点击“确定”按钮">
+		<control Name="finger" Left="10" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="80" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="80" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3107" MaskForm="form_role_npc_uplevel" MaskCtrl="btn_get_way_02" desc="点击进阶丹“+”按钮">
+		<control Name="finger" Left="-63" Top="-62"/>
+		<control Name="finger_eft" Type="Label" Left="17" Top="18" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="17" Top="18" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3108" desc="进阶丹获取途径解说-无点击位置">
+		<control Name="show_gril" Left="0" Top="80" AngleY="0"/>
+		<control Name="text_right" Left="210" Top="80" HtmlText="@yindao3108"/>
+	</Display>
+	<Display ID="3109" MaskForm="form_patch_source" MaskCtrl="btn_ok" desc="点击“确定”按钮">
+		<control Name="finger" Left="10" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="90" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="90" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3110" desc="英雄进阶条件解说-无点击位置">
+		<control Name="show_gril" Left="60" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="270" Top="150" HtmlText="@yindao3110"/>
+	</Display>
+	<Display ID="3111" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="3201" MaskForm="form_main_hall" MaskCtrl="btn_exercise" desc="开启新的历练解说，点击历练按钮">
+		<control Name="show_gril" Left="-600" Top="-200" AngleY="0"/>
+		<control Name="text_right" Left="-400" Top="-200" HtmlText="@yindao2501"/>
+		<control Name="finger" Left="-45" Top="-45"/>
+		<control Name="finger_eft" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_2501" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="3202" MaskForm="form_exercise" MaskCtrl="groupbox_show_0_5" desc="点击国家宝藏">
+		<control Name="finger" Left="80" Top="30"/>
+		<control Name="finger_eft" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3203" desc="国家宝藏活动解说-无点击位置">
+		<control Name="show_gril" Left="150" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="370" Top="150" HtmlText="@yindao3204"/>
+	</Display>
+	<Display ID="3204" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="3301" MaskForm="form_main_hall" MaskCtrl="btn_exercise" desc="开启新的历练解说，点击历练按钮">
+		<control Name="show_gril" Left="-600" Top="-200" AngleY="0"/>
+		<control Name="text_right" Left="-400" Top="-200" HtmlText="@yindao2501"/>
+		<control Name="finger" Left="-45" Top="-45"/>
+		<control Name="finger_eft" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_2501" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="3302" MaskForm="form_exercise" MaskCtrl="groupbox_show_0_4" desc="点击藏宝副本">
+		<control Name="finger" Left="80" Top="30"/>
+		<control Name="finger_eft" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3303" desc="金币副本解说-无点击位置">
+		<control Name="show_gril" Left="300" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="520" Top="150" HtmlText="@yindao3303"/>
+	</Display>
+	<Display ID="3304" MaskForm="form_mine_transcript" MaskCtrl="rbtn_elite" desc="点击“精英副本”按钮">
+		<control Name="finger" Left="25" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="105" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="105" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3305" desc="精英副本解说-无点击位置">
+		<control Name="show_gril" Left="300" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="520" Top="150" HtmlText="@yindao3305"/>
+	</Display>
+	<Display ID="3306" MaskForm="form_mine_transcript" MaskCtrl="rbtn_left" desc="点击“生存副本”按钮">
+		<control Name="finger" Left="25" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="105" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="105" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3307" desc="生存副本解说-无点击位置">
+		<control Name="show_gril" Left="300" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="520" Top="150" HtmlText="@yindao3307"/>
+	</Display>
+	<Display ID="3308" desc="整体解说-无点击位置">
+		<control Name="show_gril" Left="300" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="520" Top="150" HtmlText="@yindao3308"/>
+	</Display>
+	<Display ID="3309" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="3401" MaskForm="form_main_hall" MaskCtrl="btn_exercise" desc="开启新的历练解说，点击历练按钮">
+		<control Name="show_gril" Left="-600" Top="-200" AngleY="0"/>
+		<control Name="text_right" Left="-400" Top="-200" HtmlText="@yindao2501"/>
+		<control Name="finger" Left="-45" Top="-45"/>
+		<control Name="finger_eft" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>s
+	    <sound Name="guide_2501" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="3402" MaskForm="form_exercise" MaskCtrl="groupbox_show_0_2" desc="点击组队副本">
+		<control Name="finger" Left="80" Top="30"/>
+		<control Name="finger_eft" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3403" desc="组队副本解说1-无点击位置">
+		<control Name="show_gril" Left="300" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="520" Top="150" HtmlText="@yindao3403"/>
+	</Display>
+	<Display ID="3404" desc="组队副本解说2-无点击位置">
+		<control Name="show_gril" Left="300" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="520" Top="150" HtmlText="@yindao3404"/>
+	</Display>
+	<Display ID="3405" MaskForm="form_teams_clone" MaskCtrl="btn_clone_shop" desc="点击“勇者商店”按钮">
+		<control Name="finger" Left="5" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="85" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="85" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3406" desc="勇者商店解说-无点击位置">
+		<control Name="show_gril" Left="300" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="520" Top="150" HtmlText="@yindao3406"/>
+	</Display>
+	<Display ID="3407" MaskForm="form_exercise_shop" MaskCtrl="btn_close" desc="点击“关闭”按钮">
+		<control Name="finger" Left="-55" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="25" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="25" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3408" desc="鼓励体验解说-无点击位置">
+		<control Name="show_gril" Left="300" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="520" Top="150" HtmlText="@yindao3408"/>
+	</Display>
+	<Display ID="3409" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="3501" MaskForm="form_main_hall" MaskCtrl="btn_exercise" desc="开启新的历练解说，点击历练按钮">
+		<control Name="show_gril" Left="-600" Top="-200" AngleY="0"/>
+		<control Name="text_right" Left="-400" Top="-200" HtmlText="@yindao2501"/>
+		<control Name="finger" Left="-45" Top="-45"/>
+		<control Name="finger_eft" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_2501" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="3502" MaskForm="form_exercise" MaskCtrl="lbl_right" desc="点击“翻页”按钮">
+		<control Name="finger" Left="-70" Top="-35"/>
+		<control Name="finger_eft" Type="Label" Left="10" Top="45" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="10" Top="45" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3503" desc="夺宝联盟+世界BOSS活动解说-无点击位置">
+		<control Name="show_gril" Left="300" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="520" Top="150" HtmlText="@yindao3504"/>
+	</Display>
+	<Display ID="3504" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="3601" MaskForm="form_main_hall" MaskCtrl="lbl_photo" desc="点击“主控英雄头像”">
+		<control Name="show_gril" Left="460" Top="200" AngleY="3.14"/>
+		<control Name="text_left" Left="270" Top="200" HtmlText="@yindao3601"/>
+		<control Name="finger" Left="-35" Top="-30"/>
+		<control Name="finger_eft" Type="Label" Left="45" Top="50" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="45" Top="50" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3602" desc="英雄第二排开启说明-无点击位置">
+		<control Name="show_gril" Left="100" Top="50" AngleY="0"/>
+		<control Name="text_right" Left="320" Top="50" HtmlText="@yindao3602"/>
+	</Display>
+	<Display ID="3603" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="3701" MaskForm="form_main_hall" MaskCtrl="btn_exercise" desc="开启新的历练解说，点击历练按钮">
+		<control Name="show_gril" Left="-600" Top="-200" AngleY="0"/>
+		<control Name="text_right" Left="-400" Top="-200" HtmlText="@yindao2501"/>
+		<control Name="finger" Left="-45" Top="-45"/>
+		<control Name="finger_eft" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_2501" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="3702" MaskForm="form_exercise" MaskCtrl="groupbox_show_0_3" desc="点击巅峰对决">
+		<control Name="finger" Left="80" Top="30"/>
+		<control Name="finger_eft" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3703" MaskForm="form_ladder_select" MaskCtrl="btn_entry_highest" desc="点击巅峰对决">
+		<control Name="finger" Left="80" Top="90"/>
+		<control Name="finger_eft" Type="Label" Left="220" Top="170" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="220" Top="170" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3704" desc="巅峰对决说明-无点击位置">
+		<control Name="show_gril" Left="300" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="520" Top="150" HtmlText="@yindao3606"/>
+	</Display>
+	<Display ID="3705" MaskForm="form_pk" MaskCtrl="btn_show_rank" desc="点击“巅峰排名”按钮">
+		<control Name="finger" Left="5" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="85" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="85" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3706" desc="巅峰排名说明-无点击位置">
+		<control Name="show_gril" Left="300" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="520" Top="150" HtmlText="@yindao3608"/>
+	</Display>
+	<Display ID="3707" MaskForm="form_pk" MaskCtrl="btn_help_info" desc="点击“帮助”按钮">
+		<control Name="finger" Left="-60" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="20" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="20" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3708" desc="帮助说明-无点击位置">
+		<control Name="show_gril" Left="0" Top="50" AngleY="0"/>
+		<control Name="text_right" Left="220" Top="50" HtmlText="@yindao3610"/>
+	</Display>
+	<Display ID="3709" MaskForm="form_help" MaskCtrl="btn_close" desc="点击“确定”按钮">
+		<control Name="finger" Left="10" Top="-57"/>
+		<control Name="finger_eft" Type="Label" Left="90" Top="23" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="90" Top="23" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3710" MaskForm="form_pk" MaskCtrl="btn_shop" desc="点击“巅峰商店”按钮">
+		<control Name="finger" Left="5" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="85" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="85" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3711" desc="巅峰商店说明-无点击位置">
+		<control Name="show_gril" Left="300" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="520" Top="150" HtmlText="@yindao3613"/>
+	</Display>
+	<Display ID="3712" MaskForm="form_exercise_shop" MaskCtrl="btn_close" desc="点击“关闭”按钮">
+		<control Name="finger" Left="-55" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="25" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="25" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3713" desc="鼓励参与说明-无点击位置">
+		<control Name="show_gril" Left="300" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="520" Top="150" HtmlText="@yindao3615"/>
+	</Display>
+	<Display ID="3714" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="3801" MaskForm="form_main_hall" MaskCtrl="btn_role_npc" desc="点击“英雄”按钮">
+		<control Name="show_gril" Left="-500" Top="-400" AngleY="0"/>
+		<control Name="text_right" Left="-300" Top="-400" HtmlText="@yindao3706"/>
+		<control Name="finger" Left="-43" Top="-43"/>
+		<control Name="finger_eft" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3802" MaskForm="form_role_npc_base" MaskCtrl="rbtn_4" desc="点击“符文”按钮，打开技能界面">
+		<control Name="finger" Left="-42" Top="-48"/>
+		<control Name="finger_eft" Type="Label" Left="38" Top="32" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="38" Top="32" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3803" desc="符文解说1-无点击位置">
+		<control Name="show_gril" Left="300" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="520" Top="150" HtmlText="@yindao3708"/>
+	</Display>
+	<Display ID="3804" desc="符文解说2-无点击位置">
+		<control Name="show_gril" Left="300" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="520" Top="150" HtmlText="@yindao3709"/>
+	</Display>
+	<Display ID="3805" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="3901" MaskForm="form_main_hall" MaskCtrl="btn_trade" desc="点击“交易行”按钮```">
+		<control Name="show_gril" Left="-450" Top="-350" AngleY="0"/>
+		<control Name="text_right" Left="-240" Top="-350" HtmlText="@yindao3701"/>
+		<control Name="finger" Left="-43" Top="-45"/>
+		<control Name="finger_eft" Type="Label" Left="37" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="37" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3902" desc="交易行解说-无点击位置">
+		<control Name="show_gril" Left="300" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="520" Top="150" HtmlText="@yindao3702"/>
+	</Display>
+	<Display ID="3903" MaskForm="form_trade" MaskCtrl="rbtn_sell" desc="点击“我要出售”按钮">
+		<control Name="finger" Left="5" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="85" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="85" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="3904" desc="出售解说-无点击位置">
+		<control Name="show_gril" Left="300" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="520" Top="150" HtmlText="@yindao3704"/>
+	</Display>
+	<Display ID="3905" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="4001" MaskForm="form_main_hall" MaskCtrl="btn_exercise" desc="开启新的历练解说，点击历练按钮">
+		<control Name="show_gril" Left="-600" Top="-200" AngleY="0"/>
+		<control Name="text_right" Left="-400" Top="-200" HtmlText="@yindao2501"/>
+		<control Name="finger" Left="-45" Top="-45"/>
+		<control Name="finger_eft" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_2501" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="4002" MaskForm="form_exercise" MaskCtrl="groupbox_show_0_1" desc="点击实时战场">
+		<control Name="finger" Left="80" Top="30"/>
+		<control Name="finger_eft" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="4003" desc="战场解说1-无点击位置">
+		<control Name="show_gril" Left="100" Top="185" AngleY="0"/>
+		<control Name="text_right" Left="320" Top="185" HtmlText="@yindao3803"/>
+	</Display>
+	<Display ID="4004" desc="战场解说2-无点击位置">
+		<control Name="show_gril" Left="100" Top="185" AngleY="0"/>
+		<control Name="text_right" Left="320" Top="185" HtmlText="@yindao3804"/>
+	</Display>
+	<Display ID="4005" MaskForm="form_war_select" MaskCtrl="btn_shop" desc="点击“荣誉商店”按钮">
+		<control Name="finger" Left="-8" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="72" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="72" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="4006" desc="荣有商店解说-无点击位置">
+		<control Name="show_gril" Left="300" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="520" Top="150" HtmlText="@yindao3806"/>
+	</Display>
+	<Display ID="4007" MaskForm="form_exercise_shop" MaskCtrl="btn_close" desc="点击“关闭”按钮">
+		<control Name="finger" Left="-55" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="25" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="25" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="4008" desc="鼓励参与-无点击位置">
+		<control Name="show_gril" Left="100" Top="185" AngleY="0"/>
+		<control Name="text_right" Left="320" Top="185" HtmlText="@yindao3808"/>
+	</Display>
+	<Display ID="4009" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="4101" MaskForm="form_main_hall" MaskCtrl="btn_function_ex" desc="点击“社交”按钮">
+		<control Name="show_gril" Left="-500" Top="-400" AngleY="0"/>
+		<control Name="text_right" Left="-300" Top="-400" HtmlText="@yindao4001"/>
+		<control Name="finger" Left="-43" Top="-43"/>
+		<control Name="finger_eft" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="4102" MaskForm="form_main_hall" MaskCtrl="btn_guild" desc="公会解说-无点击位置">
+		<control Name="show_gril" Left="-500" Top="-400" AngleY="0"/>
+		<control Name="text_right" Left="-300" Top="-400" HtmlText="@yindao4002"/>
+		<control Name="finger" Left="-43" Top="-43"/>
+		<control Name="finger_eft" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="4103" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<!--
+	    <Display ID="4101" MaskForm="form_main_hall" MaskCtrl="btn_role_npc" desc="点击“英雄”按钮，打开英雄界面">
+	    <control Name="show_gril" Left="-610" Top="-400" AngleY="0"/>
+		<control Name="text_right" Left="-400" Top="-400" HtmlText="@yindao4101"/>
+		<control Name="finger" Left="-43" Top="-43"/>
+	</Display>	
+	    <Display ID="4102" MaskForm="form_role_npc_base" MaskCtrl="rbtn_3" desc="点击“技能”按钮，打开技能界面">
+		<control Name="finger" Left="-42" Top="-48"/>
+	</Display>
+		<Display ID="4103" desc="稀有技解说1-无点击位置">
+		<control Name="show_gril" Left="200" Top="250" AngleY="0"/>
+		<control Name="text_right" Left="420" Top="250" HtmlText="@yindao4103"/>
+	</Display>	
+		<Display ID="4104" desc="稀有技解说2-无点击位置">
+		<control Name="show_gril" Left="200" Top="250" AngleY="0"/>
+		<control Name="text_right" Left="420" Top="250" HtmlText="@yindao4104"/>
+	</Display>
+		<Display ID="4105" desc="稀有技解说3-无点击位置">
+		<control Name="show_gril" Left="200" Top="250" AngleY="0"/>
+		<control Name="text_right" Left="420" Top="250" HtmlText="@yindao4105"/>
+	</Display>
+        <Display ID="4106" Visible="false" desc="隐藏引导界面">
+	</Display>	
+	
+	    <Display ID="4201" MaskForm="form_main_hall" MaskCtrl="lbl_photo" desc="点击“主控英雄头像”">
+		<control Name="show_gril" Left="460" Top="200" AngleY="3.14"/>
+		<control Name="text_left" Left="270" Top="200" HtmlText="@yindao4201"/>
+		<control Name="finger" Left="-35" Top="-30"/>
+	</Display>
+	    <Display ID="4202" MaskForm="form_role_npc_array" MaskCtrl="rbtn_name" desc="点击“称号”按钮">
+		<control Name="finger" Left="-5" Top="-50"/>
+	</Display>
+		<Display ID="4203" desc="称号解说1-无点击位置">
+		<control Name="show_gril" Left="870" Top="150" AngleY="3.14"/>
+		<control Name="text_left" Left="700" Top="150" HtmlText="@yindao4203"/>
+	</Display>	
+		<Display ID="4204" desc="称号解说2-无点击位置">
+		<control Name="show_gril" Left="870" Top="150" AngleY="3.14"/>
+		<control Name="text_left" Left="700" Top="150" HtmlText="@yindao4204"/>
+	</Display>
+	    <Display ID="4205" Visible="false" desc="隐藏引导界面">
+	</Display>
+    -->
+	<Display ID="4201" MaskForm="form_main_hall" MaskCtrl="lbl_photo" desc="点击“主控英雄头像”">
+		<control Name="show_gril" Left="460" Top="200" AngleY="3.14"/>
+		<control Name="text_left" Left="270" Top="200" HtmlText="@yindao4301"/>
+		<control Name="finger" Left="-35" Top="-30"/>
+		<control Name="finger_eft" Type="Label" Left="45" Top="50" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="45" Top="50" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="4202" desc="第二个副将位开启说明1-无点击位置">
+		<control Name="show_gril" Left="870" Top="150" AngleY="3.14"/>
+		<control Name="text_left" Left="700" Top="150" HtmlText="@yindao4302"/>
+	</Display>
+	<Display ID="4203" desc="第二个副将位开启说明2-无点击位置">
+		<control Name="show_gril" Left="870" Top="150" AngleY="3.14"/>
+		<control Name="text_left" Left="700" Top="150" HtmlText="@yindao4303"/>
+	</Display>
+	<Display ID="4204" Visible="false" desc="隐藏引导界面">
+	</Display>
+	
+	<Display ID="4301" Visible="false" desc="隐藏引导界面">
+	</Display>
+	
+	<Display ID="4401" MaskForm="form_main_hall" MaskCtrl="btn_exercise" desc="开启新的历练解说，点击历练按钮">
+		<control Name="show_gril" Left="-600" Top="-200" AngleY="0"/>
+		<control Name="text_right" Left="-400" Top="-200" HtmlText="@yindao2501"/>
+		<control Name="finger" Left="-45" Top="-45"/>
+		<control Name="finger_eft" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_2501" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="4402" MaskForm="form_exercise" MaskCtrl="lbl_right" desc="点击“翻页”按钮">
+		<control Name="finger" Left="-70" Top="-35"/>
+		<control Name="finger_eft" Type="Label" Left="10" Top="45" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="10" Top="45" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="4403" MaskForm="form_exercise" MaskCtrl="btn_enter_1_3" desc="点击浴血沙场">
+		<control Name="finger" Left="80" Top="30"/>
+		<control Name="finger_eft" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="4404" desc="浴血沙场活动解说-无点击位置">
+		<control Name="show_gril" Left="750" Top="150" AngleY="3.14"/>
+		<control Name="text_left" Left="570" Top="150" HtmlText="@yindao4404"/>
+	</Display>
+	<Display ID="4405" Visible="false" desc="隐藏引导界面">
+	</Display>
+	
+	<Display ID="4501" MaskForm="form_main_hall" MaskCtrl="lbl_photo" desc="点击“主控英雄头像”">
+		<control Name="show_gril" Left="460" Top="200" AngleY="3.14"/>
+		<control Name="text_left" Left="270" Top="200" HtmlText="@yindao4501"/>
+		<control Name="finger" Left="-35" Top="-30"/>
+		<control Name="finger_eft" Type="Label" Left="45" Top="50" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="45" Top="50" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="4502" MaskForm="form_role_npc_array" MaskCtrl="rbtn_military" desc="点击“军衔”按钮">
+		<control Name="finger" Left="0" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="80" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="80" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="4503" desc="军衔说明-无点击位置">
+		<control Name="show_gril" Left="870" Top="150" AngleY="3.14"/>
+		<control Name="text_left" Left="700" Top="150" HtmlText="@yindao4503"/>
+	</Display>
+	<Display ID="4504" desc="军衔说明-无点击位置">
+		<control Name="show_gril" Left="870" Top="150" AngleY="3.14"/>
+		<control Name="text_left" Left="700" Top="150" HtmlText="@yindao4504"/>
+	</Display>
+	<Display ID="4505" Visible="false" desc="隐藏引导界面">
+	</Display>
+	
+	<Display ID="4601" Visible="false" desc="隐藏引导界面">
+	<!--<Display ID="4601" MaskForm="form_main_hall" MaskCtrl="btn_exercise" desc="开启新的历练解说，点击历练按钮">
+		<control Name="show_gril" Left="-600" Top="-200" AngleY="0"/>
+		<control Name="text_right" Left="-400" Top="-200" HtmlText="@yindao2501"/>
+		<control Name="finger" Left="-45" Top="-45"/>
+		<control Name="finger_eft" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_2501" Volume="2.0" Loop="false"/>-->
+	</Display>
+	<Display ID="4602" MaskForm="form_exercise" MaskCtrl="lbl_right" desc="点击“翻页”按钮">
+		<control Name="finger" Left="-70" Top="-35"/>
+		<control Name="finger_eft" Type="Label" Left="10" Top="45" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="10" Top="45" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="4603" MaskForm="form_exercise" MaskCtrl="btn_enter_1_2" desc="点击荒野镖客">
+		<control Name="finger" Left="80" Top="30"/>
+		<control Name="finger_eft" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="4604" desc="荒野镖客活动解说-无点击位置">
+		<control Name="show_gril" Left="750" Top="150" AngleY="3.14"/>
+		<control Name="text_left" Left="570" Top="150" HtmlText="@yindao3008"/>
+	</Display>
+	<Display ID="4605" Visible="false" desc="隐藏引导界面">
+	</Display>
+	
+	<Display ID="4701" MaskForm="form_main_hall" MaskCtrl="btn_ride" desc="点击“坐骑”按钮">
+		<control Name="show_gril" Left="-500" Top="-400" AngleY="0"/>
+		<control Name="text_right" Left="-300" Top="-400" HtmlText="@yindao4701"/>
+		<control Name="finger" Left="-43" Top="-43"/>
+		<control Name="finger_eft" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="4702" desc="坐骑解说-无点击位置">
+		<control Name="show_gril" Left="750" Top="150" AngleY="3.14"/>
+		<control Name="text_left" Left="570" Top="150" HtmlText="@yindao4702"/>
+	</Display>
+	<Display ID="4703" desc="坐骑解说-无点击位置">
+		<control Name="show_gril" Left="750" Top="150" AngleY="3.14"/>
+		<control Name="text_left" Left="570" Top="150" HtmlText="@yindao4703"/>
+	</Display>	
+	<Display ID="4704" Visible="false" desc="隐藏引导界面">
+	</Display>
+	
+	<Display ID="4801" MaskForm="form_main_hall" MaskCtrl="btn_exercise" desc="开启新的历练解说，点击历练按钮">
+		<control Name="show_gril" Left="-600" Top="-200" AngleY="0"/>
+		<control Name="text_right" Left="-400" Top="-200" HtmlText="@yindao2501"/>
+		<control Name="finger" Left="-45" Top="-45"/>
+		<control Name="finger_eft" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_2501" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="4802" MaskForm="form_exercise" MaskCtrl="lbl_right" desc="点击“翻页”按钮">
+		<control Name="finger" Left="-70" Top="-35"/>
+		<control Name="finger_eft" Type="Label" Left="10" Top="45" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="10" Top="45" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="4803" MaskForm="form_exercise" MaskCtrl="btn_enter_1_2" desc="点击荒野狂飙">
+		<control Name="finger" Left="80" Top="30"/>
+		<control Name="finger_eft" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="4804" desc="荒野狂飙活动解说-无点击位置">
+		<control Name="show_gril" Left="750" Top="150" AngleY="3.14"/>
+		<control Name="text_left" Left="570" Top="150" HtmlText="@yindao4804"/>
+	</Display>
+	<Display ID="4805" Visible="false" desc="隐藏引导界面">
+	</Display>
+	
+	<Display ID="4901" MaskForm="form_main_hall" MaskCtrl="btn_exercise" desc="开启新的历练解说，点击历练按钮">
+		<control Name="show_gril" Left="-600" Top="-200" AngleY="0"/>
+		<control Name="text_right" Left="-400" Top="-200" HtmlText="@yindao2501"/>
+		<control Name="finger" Left="-45" Top="-45"/>
+		<control Name="finger_eft" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_2501" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="4902" MaskForm="form_exercise" MaskCtrl="groupbox_show_0_3" desc="点击天梯对决">
+		<control Name="finger" Left="80" Top="30"/>
+		<control Name="finger_eft" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="4903" MaskForm="form_ladder_select" MaskCtrl="btn_entry_kinger" desc="点击王者对决">
+		<control Name="finger" Left="80" Top="90"/>
+		<control Name="finger_eft" Type="Label" Left="220" Top="170" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="220" Top="170" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="4904" desc="巅峰对决说明-无点击位置">
+		<control Name="show_gril" Left="300" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="520" Top="150" HtmlText="@yindao4904"/>
+	</Display>
+	<Display ID="4905" desc="巅峰对决说明-无点击位置">
+		<control Name="show_gril" Left="300" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="520" Top="150" HtmlText="@yindao4905"/>
+	</Display>
+	<Display ID="4906" Visible="false" desc="隐藏引导界面">
+	</Display>
+	
+	<Display ID="5001" Visible="false" desc="隐藏引导界面">
+	</Display>
+	
+	<Display ID="5101" MaskForm="form_main_hall" MaskCtrl="btn_function_ex" desc="点击“社交”按钮">
+		<control Name="show_gril" Left="-500" Top="-400" AngleY="0"/>
+		<control Name="text_right" Left="-300" Top="-400" HtmlText="@yindao5101"/>
+		<control Name="finger" Left="-43" Top="-43"/>
+		<control Name="finger_eft" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="5102" MaskForm="form_main_hall" MaskCtrl="btn_zhenying" desc="阵营解说-无点击位置">
+		<control Name="show_gril" Left="-500" Top="-400" AngleY="0"/>
+		<control Name="text_right" Left="-300" Top="-400" HtmlText="@yindao5102"/>
+		<control Name="finger" Left="-43" Top="-43"/>
+		<control Name="finger_eft" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="5103" Visible="false" desc="隐藏引导界面">
+	</Display>
+	
+	<Display ID="5201" Visible="false" desc="隐藏引导界面">
+	</Display>
+	
+	<Display ID="5301" MaskForm="form_main_hall" MaskCtrl="btn_role_npc" desc="点击“英雄”按钮">
+		<control Name="show_gril" Left="-510" Top="-400" AngleY="0"/>
+		<control Name="text_right" Left="-300" Top="-400" HtmlText="@yindao5201"/>
+		<control Name="finger" Left="-43" Top="-43"/>
+		<control Name="finger_eft" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="5302" MaskForm="form_bag_copy" MaskCtrl="imagegrid_equip" GridIndex="4" desc="点击已装备的武器">
+		<control Name="show_gril" Left="300" Top="-200" AngleY="3.14"/>
+		<control Name="text_left" Left="100" Top="-200" HtmlText="@yindao5202"/>
+		<control Name="finger" Left="-55" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="25" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="25" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="5303" MaskForm="form_equip_tips" MaskCtrl="btn_level_up" desc="点击Tips上的“升级”按钮```">
+		<control Name="finger" Left="10" Top="-60"/>
+		<control Name="finger_eft" Type="Label" Left="90" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="90" Top="20" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="5304" MaskForm="form_strengthen_upgrade" MaskCtrl="rbtn_awake" desc="点击“附魔”页签```">
+		<control Name="show_gril" Left="-580" Top="-350" AngleY="0"/>
+		<control Name="text_right" Left="-370" Top="-350" HtmlText="@yindao5204"/>
+		<control Name="finger" Left="-40" Top="-35"/>
+		<control Name="finger_eft" Type="Label" Left="40" Top="45" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="40" Top="45" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="5305" desc="附魔解说--无点击位置">
+		<control Name="show_gril" Left="160" Top="150" AngleY="0"/>
+		<control Name="text_right" Left="370" Top="150" HtmlText="@yindao5205"/>
+		<sound Name="guide_1408" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="5306" Visible="false" desc="隐藏引导界面">
+	</Display>
+	
+	<Display ID="5401" MaskForm="form_main_hall" MaskCtrl="lbl_photo" desc="点击“主控英雄头像”">
+		<control Name="show_gril" Left="460" Top="200" AngleY="3.14"/>
+		<control Name="text_left" Left="270" Top="200" HtmlText="@yindao5401"/>
+		<control Name="finger" Left="-35" Top="-30"/>
+		<control Name="finger_eft" Type="Label" Left="45" Top="50" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="45" Top="50" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="5402" MaskForm="form_role_npc_array" MaskCtrl="rbtn_talent" desc="点击“天赋”按钮">
+		<control Name="finger" Left="0" Top="-55"/>
+		<control Name="finger_eft" Type="Label" Left="80" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="80" Top="25" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="5403" desc="天赋说明-无点击位置">
+		<control Name="show_gril" Left="870" Top="150" AngleY="3.14"/>
+		<control Name="text_left" Left="700" Top="150" HtmlText="@yindao5403"/>
+	</Display>
+	<Display ID="5404" desc="天赋说明-无点击位置">
+		<control Name="show_gril" Left="870" Top="150" AngleY="3.14"/>
+		<control Name="text_left" Left="700" Top="150" HtmlText="@yindao5404"/>
+	</Display>
+	<Display ID="5405" Visible="false" desc="隐藏引导界面">
+	</Display>
+	
+	
+	
+	<Display ID="5501" MaskForm="form_main_hall" MaskCtrl="btn_exercise" desc="开启新的历练解说，点击历练按钮">
+		<control Name="show_gril" Left="-600" Top="-200" AngleY="0"/>
+		<control Name="text_right" Left="-400" Top="-200" HtmlText="@yindao2501"/>
+		<control Name="finger" Left="-45" Top="-45"/>
+		<control Name="finger_eft" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_2501" Volume="2.0" Loop="false"/>
+	</Display>
+	<!--
+	<Display ID="5502" MaskForm="form_exercise" MaskCtrl="lbl_right" desc="点击“翻页”按钮">
+		<control Name="finger" Left="-70" Top="-35"/>
+		<control Name="finger_eft" Type="Label" Left="10" Top="45" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="10" Top="45" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	-->
+	<Display ID="5502" MaskForm="form_exercise" MaskCtrl="groupbox_show_0_3" desc="点击联赛">
+		<control Name="finger" Left="80" Top="30"/>
+		<control Name="finger_eft" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="5503" MaskForm="form_ladder_select" MaskCtrl="btn_entry_kinger_cpy" desc="点击王者联赛">
+		<control Name="finger" Left="80" Top="90"/>
+		<control Name="finger_eft" Type="Label" Left="190" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="190" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="5504" desc="王者联赛解说-无点击位置">
+		<control Name="show_gril" Left="750" Top="150" AngleY="3.14"/>
+		<control Name="text_left" Left="570" Top="150" HtmlText="@yindao5004"/>
+	</Display>
+	<Display ID="5505" Visible="false" desc="隐藏引导界面">
+	</Display>
+	
+	<Display ID="5601" MaskForm="form_main_hall" MaskCtrl="btn_exercise" desc="开启新的历练解说，点击历练按钮">
+		<control Name="show_gril" Left="-600" Top="-200" AngleY="0"/>
+		<control Name="text_right" Left="-400" Top="-200" HtmlText="@yindao2501"/>
+		<control Name="finger" Left="-45" Top="-45"/>
+		<control Name="finger_eft" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+		<sound Name="guide_2501" Volume="2.0" Loop="false"/>
+	</Display>
+	<!--
+	<Display ID="5602" MaskForm="form_exercise" MaskCtrl="lbl_right" desc="点击“翻页”按钮">
+		<control Name="finger" Left="-70" Top="-35"/>
+		<control Name="finger_eft" Type="Label" Left="10" Top="45" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="10" Top="45" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	-->
+	<Display ID="5602" MaskForm="form_exercise" MaskCtrl="groupbox_show_0_3" desc="点击联赛">
+		<control Name="finger" Left="80" Top="30"/>
+		<control Name="finger_eft" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="160" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="5603" MaskForm="form_ladder_select" MaskCtrl="btn_entry_highest_cpy" desc="点击无双联赛">
+		<control Name="finger" Left="80" Top="90"/>
+		<control Name="finger_eft" Type="Label" Left="190" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="190" Top="110" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="5604" desc="王者联赛解说-无点击位置">
+		<control Name="show_gril" Left="750" Top="150" AngleY="3.14"/>
+		<control Name="text_left" Left="570" Top="150" HtmlText="@yindao5605"/>
+	</Display>
+	<Display ID="5605" Visible="false" desc="隐藏引导界面">
+	</Display>
+	
+	<Display ID="5701" Visible="false" desc="隐藏引导界面">
+	</Display>
+	
+	<Display ID="5801" MaskForm="form_main_hall" MaskCtrl="btn_function_ex" desc="点击“社交”按钮">
+		<control Name="show_gril" Left="-500" Top="-400" AngleY="0"/>
+		<control Name="text_right" Left="-300" Top="-400" HtmlText="@yindao5801"/>
+		<control Name="finger" Left="-43" Top="-43"/>
+		<control Name="finger_eft" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="5802" MaskForm="form_main_hall" MaskCtrl="btn_starsoul" desc="星魂解说-无点击位置">
+		<control Name="show_gril" Left="-500" Top="-400" AngleY="0"/>
+		<control Name="text_right" Left="-300" Top="-400" HtmlText="@yindao5802"/>
+		<control Name="finger" Left="-43" Top="-43"/>
+		<control Name="finger_eft" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="5803" Visible="false" desc="隐藏引导界面">
+	</Display>
+	
+	<Display ID="5901" Visible="false" desc="隐藏引导界面">
+	</Display>
+	
+	<Display ID="6001" MaskForm="form_main_hall" MaskCtrl="btn_function_ex" desc="点击“社交”按钮">
+		<control Name="show_gril" Left="-500" Top="-400" AngleY="0"/>
+		<control Name="text_right" Left="-300" Top="-400" HtmlText="@yindao6001"/>
+		<control Name="finger" Left="-43" Top="-43"/>
+		<control Name="finger_eft" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="6002" MaskForm="form_main_hall" MaskCtrl="btn_ridehome" desc="点击“家园”按钮">
+		<control Name="finger" Left="-43" Top="-43"/>
+		<control Name="finger_eft" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="6003" desc="家园解说-无点击位置">
+		<control Name="show_gril" Left="870" Top="150" AngleY="3.14"/>
+		<control Name="text_left" Left="700" Top="150" HtmlText="@yindao6002"/>
+	</Display>
+	<Display ID="6004" Visible="false" desc="隐藏引导界面">
+	</Display>
+	
+	<Display ID="6101" Visible="false" desc="隐藏引导界面">
+	</Display>
+	
+	<Display ID="6201" MaskForm="form_main_hall" MaskCtrl="btn_function_ex" desc="点击“社交”按钮">
+		<control Name="show_gril" Left="-500" Top="-400" AngleY="0"/>
+		<control Name="text_right" Left="-300" Top="-400" HtmlText="@yindao6101"/>
+		<control Name="finger" Left="-43" Top="-43"/>
+		<control Name="finger_eft" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="6202" MaskForm="form_main_hall" MaskCtrl="btn_achieve" desc="成就解说-无点击位置">
+		<control Name="show_gril" Left="-500" Top="-400" AngleY="0"/>
+		<control Name="text_right" Left="-300" Top="-400" HtmlText="@yindao6102"/>
+		<control Name="finger" Left="-43" Top="-43"/>
+		<control Name="finger_eft" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="37" Top="37" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="6203" Visible="false" desc="隐藏引导界面">
+	</Display>
+	
+	<Display ID="6301" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<!--无序引导
+    
+	<Display ID="10001" MaskForm="form_main_clone_head" MaskCtrl="pbar_boss_break" desc="破防值解说——点击破防值">
+	<control Name="show_gril" Left="-450" Top="100" AngleY="0"/>
+	<control Name="text_right" Left="-250" Top="100" HtmlText="@yindao10001"/>
+	<control Name="finger" Left="0" Top="-70"/>
+	<sound   Name="guide_10001" Volume="2.0" Loop="false"/>
+	</Display>
+	<Display ID="10002" Visible="false" desc="隐藏引导界面">
+	</Display>
+  
+    -->
+	<Display ID="10001" Visible="false" desc="隐藏引导界面">
+	</Display>
+	<Display ID="10002" MaskForm="form_main_clone" MaskCtrl="btn_start_auto_skill" desc="自动战斗解说，点击自动战斗">
+		<control Name="show_gril" Left="-600" Top="0" AngleY="0"/>
+		<control Name="text_right" Left="-400" Top="0" HtmlText="@yindao2607"/>
+		<control Name="finger" Left="-45" Top="-45"/>
+		<control Name="finger_eft" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003e"/>
+		<control Name="finger_eft1" Type="Label" Left="35" Top="35" Width="15" Height="15" AutoSize="true" Particles2d="particleeffects_003f"/>
+	</Display>
+	<Display ID="10003" Visible="false" desc="隐藏引导界面">
+	</Display>
+</Root>

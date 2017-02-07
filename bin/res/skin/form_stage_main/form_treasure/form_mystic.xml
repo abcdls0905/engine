@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop ShowGrid="true" Width="1280" Height="720" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="FitWindow"/>
+		<control name="groupbox_main" entity="GroupBox" script="" init="">
+			<prop Width="1280" Height="720" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+			<control name="btn_gift" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/cancel.png" PushImage="gui/tp2_common/window/cancel1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="470" Top="8" Width="150" Height="60" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Center" Text="@ui_form_treasure_24" Font="WRYH24" AutoSize="true" ClickSound="ui_open"/>
+			</control>
+			<control name="btn_jifen" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/cancel.png" PushImage="gui/tp2_common/window/cancel1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="308" Top="8" Width="150" Height="60" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Center" Text="@ui_mystic_25" Font="WRYH24" AutoSize="true" ClickSound="ui_open"/>
+			</control>
+			<control name="btn_jl_fp_1" entity="Button" script="" init="">
+				<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-626" Top="-273" Width="600" Height="600" BackColor="37,192,192,192" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" AutoSize="true"/>
+			</control>
+			<control name="mltbox_myxtic_des" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,0,240,0" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,350,64" LineHeight="30" HtmlText="@ui_mystic_2" ScrollSize="17" Left="-175" Top="-275" Width="350" Height="64" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" TestTrans="true" Font="WRYH24_O_BLACK" NoFrame="true"/>
+			</control>
+			<control name="btn_cs_fp_1" entity="Button" script="" init="">
+				<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="32" Top="-273" Width="600" Height="600" BackColor="0,192,192,192" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" AutoSize="true"/>
+			</control>
+			<control name="groupbox_info_2" entity="GroupBox" script="" init="">
+				<prop Transparent="true" Left="-626" Top="-275" Width="600" Height="600" BackColor="0,0,0,0" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" NoFrame="true"/>
+				<control name="mltbox_free_2" entity="MultiTextBox" script="" init="">
+					<prop TextColor="255,0,240,0" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,280,45" LineHeight="30" ScrollSize="17" Left="-140" Top="-38" Width="280" Height="45" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" TestTrans="true" Font="WRYH26_O_BLACK" NoFrame="true"/>
+				</control>
+				<control name="lbl_jl_2" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="-93" Top="-193" Width="163" Height="35" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Text="@ui_mystic_4" Font="WRYH36_O_BLACK"/>
+				</control>
+			</control>
+			<control name="groupbox_info_3" entity="GroupBox" script="" init="">
+				<prop Transparent="true" Left="32" Top="-273" Width="600" Height="600" BackColor="0,0,0,0" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" NoFrame="true"/>
+				<control name="mltbox_free_3" entity="MultiTextBox" script="" init="">
+					<prop TextColor="255,0,240,0" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,280,45" LineHeight="30" ScrollSize="17" Left="-140" Top="-38" Width="280" Height="45" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" TestTrans="true" Font="WRYH26_O_BLACK" NoFrame="true"/>
+				</control>
+				<control name="lbl_cs_2" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="-93" Top="-195" Width="163" Height="35" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Text="@ui_mystic_6" Font="WRYH36_O_BLACK"/>
+				</control>
+			</control>
+			<control name="btn_close" entity="Button" script="" init="">
+				<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="9412" Top="-6" Width="76" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Right" ClickSound="ui_close"/>
+			</control>
+		</control>
+		<control name="groupbox_capital" entity="GroupBox" script="" init="">
+			<prop Left="-427" Top="9" Width="702" Height="54" BackColor="0,255,255,255" ShadowColor="0,0,0,0" HAnchor="Center" NoFrame="true"/>
+			<control name="groupbox_reward_diamond" entity="GroupBox" script="" init="">
+				<prop Left="235" Width="231" Height="56" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" BackImage="gui/xm2_main/treasure/huobikuang.png"/>
+				<control name="lbl_1" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="5" Width="52" Height="52" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/xm2_main/hall/zhuanshi.png"/>
+				</control>
+				<control name="lbl_reward_diamond" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="53" Top="11" Width="125" Height="30" ForeColor="255,0,204,255" ShadowColor="0,0,0,0" Text="0" Font="WRYH20_O_BLACK"/>
+				</control>
+				<control name="btn_buy_money" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/tianjia.png" PushImage="gui/tp2_common/window/tianjia1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="178" Top="2" Width="50" Height="50" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" ClickSound="ui_open"/>
+				</control>
+				<control name="Label2" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="8" Width="50" Height="50" ShadowColor="0,0,0,0" AutoSize="true" BackImage="xsguang"/>
+				</control>
+			</control>
+			<control name="groupbox_reward_money" entity="GroupBox" script="" init="">
+				<prop Width="231" Height="56" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" DrawMode="FitWindow" BackImage="gui/xm2_main/treasure/huobikuang.png"/>
+				<control name="lbl_3" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="4" Width="52" Height="52" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/xm2_main/hall/jingbi.png"/>
+				</control>
+				<control name="lbl_reward_money" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="53" Top="11" Width="125" Height="30" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="0" Font="WRYH20_O_BLACK"/>
+				</control>
+				<control name="btn_buy_gold" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/tianjia.png" PushImage="gui/tp2_common/window/tianjia1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="178" Top="2" Width="50" Height="50" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" ClickSound="ui_open"/>
+				</control>
+				<control name="Label1" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="8" Width="50" Height="50" ShadowColor="0,0,0,0" AutoSize="true" BackImage="xsguang"/>
+				</control>
+			</control>
+			<control name="groupbox_reward_bd_diamond" entity="GroupBox" script="" init="">
+				<prop Left="470" Width="231" Height="56" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" BackImage="gui/xm2_main/treasure/huobikuang.png"/>
+				<control name="lbl_8" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="4" Width="52" Height="52" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/xm2_main/hall/bangzuan.png"/>
+				</control>
+				<control name="lbl_reward_zd_diamond" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="53" Top="11" Width="135" Height="30" ForeColor="255,0,204,255" ShadowColor="0,0,0,0" Text="0" Font="WRYH20_O_BLACK"/>
+				</control>
+				<control name="Label3" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="8" Width="50" Height="50" ShadowColor="0,0,0,0" AutoSize="true" BackImage="xsguang"/>
+				</control>
+			</control>
+		</control>
+		<control name="btn_return" entity="Button" script="" init="">
+			<prop NormalImage="gui/tp2_common/backdrop/fanhui.png" PushImage="gui/tp2_common/backdrop/fanhui1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="30" Top="5" Width="164" Height="66" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH24_S" AutoSize="true" ClickSound="ui_close"/>
+		</control>
+	</control>
+</form>
+

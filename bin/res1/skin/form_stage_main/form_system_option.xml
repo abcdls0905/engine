@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="form_stage_main\form_system\form_system_option" init="form_system_option_Init">
+        <prop LimitInScreen="true" ShowGrid="true" IsGC="true" Left="69" Top="29" Width="950" Height="710" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="Default" NoFrame="true" DrawMode="Expand" BackImage="gui\use\function\function_vein_096.png" />
+        <event on_open="form_system_option_Open" on_close="form_system_option_close" />
+        <control name="groupbox_main" entity="GroupBox" script="" init="">
+            <prop Left="16" Top="32" Width="916" Height="630" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="16" Top="79" Width="886" Height="534" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\main\grasp\bg_juexin.png" />
+            </control>
+            <control name="lbl_4" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="32" Top="96" Width="398" Height="502" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg_huikuang4.png" />
+            </control>
+            <control name="btn_gmcc" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\system\btn_xt_lxgm_1.png" PushImage="gui\main\system\btn_xt_lxgm_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="608" Top="112" Width="112" Height="120" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,255,0,0" Font="WRYH26" TabStop="true" NoFrame="true" ClickSound="ui_open" />
+                <event on_click="form_system_option_OnClickReLogin" />
+            </control>
+            <control name="btn_close" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="374" Top="-16" Width="100" Height="100" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Center" Font="WRYH13" TabStop="true" NoFrame="true" AutoSize="true" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+                <event on_click="on_close_form" />
+            </control>
+            <control name="lbl_title" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="-98" Top="16" Width="215" Height="62" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" HAnchor="Center" Text="@ui_system_option0001" Font="WRYH30_S" AutoSize="true" />
+            </control>
+            <control name="btn_back_to_hall" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\heedbar\anniu_chengse1.png" PushImage="gui\main\heedbar\anniu_chengse2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="22" Top="488" Width="174" Height="78" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Center" Text="@ui_system_choose_role" Font="WRYH26_S" TabStop="true" NoFrame="true" DrawMode="ExpandH" ClickSound="button_click" />
+                <event on_click="on_btn_back_to_hall_click" />
+            </control>
+            <control name="btn_gm" entity="Button" script="" init="">
+                <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-136" Top="28000" Width="200" Height="47" ForeColor="255,191,191,191" BackColor="255,192,192,192" ShadowColor="0,255,0,0" Text="GM帮助" Font="WRYH13" TabStop="true" NoFrame="true" DrawMode="FitWindow" ClickSound="ok_7" />
+                <event on_click="on_btn_gm" />
+            </control>
+            <control name="btn_relogin" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\heedbar\anniu_chengse1.png" PushImage="gui\main\heedbar\anniu_chengse2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="230" Top="488" Width="174" Height="78" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Center" Text="@ui_system_option0005" Font="WRYH26_S" TabStop="true" NoFrame="true" DrawMode="ExpandH" ClickSound="button_click" />
+                <event on_click="form_system_option_OnClickReLogin" />
+            </control>
+            <control name="btn_account" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\system\btn_xt_zhxx_1.png" PushImage="gui\main\system\btn_xt_zhxx_1-10.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="464" Top="112" Width="124" Height="124" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH26" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+            <control name="btn_snd_psw" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\form_snd_psw\btn_xt_2jmm_1.png" PushImage="gui\main\form_snd_psw\btn_xt_2jmm_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="752" Top="112" Width="124" Height="124" ForeColor="255,255,0,0" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH26" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+            <control name="btn_cdkey" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\system\btn_xt_lbdh_1.png" PushImage="gui\main\system\btn_xt_lbdh_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="61600" Top="280" Width="112" Height="120" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH26" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="cbtn_image_quality" entity="CheckButton" script="" init="">
+                <prop BoxSize="12" NormalImage="gui\main\system\image_xt_off.png" CheckedImage="gui\main\system\image_xt_on.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="47200" Top="296" Width="103" Height="56" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Enabled="false" TabStop="true" AutoSize="true" ClickSound="button_click" />
+            </control>
+            <control name="cbtn_music" entity="CheckButton" script="" init="">
+                <prop BoxSize="12" NormalImage="gui\main\system\image_xt_off.png" CheckedImage="gui\main\system\image_xt_on.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="272" Top="120" Width="103" Height="56" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+            </control>
+            <control name="cbtn_sound" entity="CheckButton" script="" init="">
+                <prop BoxSize="12" NormalImage="gui\main\system\image_xt_off.png" CheckedImage="gui\main\system\image_xt_on.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="272" Top="208" Width="103" Height="56" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+            </control>
+            <control name="btn_friend" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\system\btn_xt_fxyl_1.png" PushImage="gui\main\system\btn_xt_fxyl_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="75200" Top="280" Width="112" Height="120" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="btn_phone_bind" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\system\btn_xt_bdyl_1.png" PushImage="gui\main\system\btn_xt_bdyl_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="46400" Top="280" Width="124" Height="124" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH26" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+            <control name="cbtn_joystick" entity="CheckButton" script="" init="">
+                <prop BoxSize="12" NormalImage="gui\main\system\image_xt_off.png" CheckedImage="gui\main\system\image_xt_on.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="272" Top="456" Width="103" Height="56" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+            </control>
+            <control name="lbl_2" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="8" Top="8" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_zuoshang.png" />
+            </control>
+            <control name="cbtn_show_wing" entity="CheckButton" script="" init="">
+                <prop BoxSize="12" NormalImage="gui\main\system\image_xt_off.png" CheckedImage="gui\main\system\image_xt_on.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="272" Top="376" Width="103" Height="56" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+            </control>
+            <control name="lbl_phone_bind_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="52800" Top="272" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="btn_3d_display" entity="Button" script="" init="">
+                <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="272" Top="536" Width="103" Height="56" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+            </control>
+            <control name="lbl_3" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="48" Top="120" Width="220" Height="60" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\system\image_xt_yinyue.png" />
+            </control>
+            <control name="lbl_5" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="48" Top="200" Width="220" Height="60" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\system\image_xt_yinxiao.png" />
+            </control>
+            <control name="lbl_6" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="48" Top="368" Width="220" Height="60" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\system\image_xt_xschibang.png" />
+            </control>
+            <control name="lbl_7" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="48" Top="448" Width="220" Height="60" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\system\image_xt_yaogansuoding.png" />
+            </control>
+            <control name="lbl_gmcc_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="672" Top="104" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="lbl_9" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="56" Top="528" Width="220" Height="60" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\system\image_xt_3d.png" />
+            </control>
+            <control name="lbl_10" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="48" Top="528" Width="220" Height="60" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\system\image_xt_splz.png" />
+            </control>
+            <control name="lbl_8" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="48" Top="288" Width="220" Height="60" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\system\image_xt_huazhi-.png" />
+            </control>
+            <control name="groupbox_image_quality" entity="GroupBox" script="" init="">
+                <prop Left="240" Top="280" Width="169" Height="56" LineColor="3,0,0,0" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\system\image_xitong_3xuan_bg.png" />
+                <control name="rbtn_image_quality_high" entity="RadioButton" script="" init="">
+                    <prop HideBox="true" BoxSize="12" NormalImage="gui\main\system\image_xt_high2.png" CheckedImage="gui\main\system\image_xt_high1.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="114" Top="-1" Width="57" Height="56" BackColor="255,192,192,192" ShadowColor="0,0,0,0" DataSource="high" TabIndex="1" TabStop="true" AutoSize="true" ClickSound="button_click" />
+                </control>
+                <control name="rbtn_image_quality_normal" entity="RadioButton" script="" init="">
+                    <prop HideBox="true" BoxSize="12" NormalImage="gui\main\system\image_xt_mid2.png" CheckedImage="gui\main\system\image_xt_mid1.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="56" Top="-1" Width="57" Height="56" BackColor="255,192,192,192" ShadowColor="0,0,0,0" DataSource="low" TabIndex="2" TabStop="true" AutoSize="true" ClickSound="button_click" />
+                </control>
+                <control name="rbtn_image_quality_low" entity="RadioButton" script="" init="">
+                    <prop HideBox="true" BoxSize="12" NormalImage="gui\main\system\image_xt_low2.png" CheckedImage="gui\main\system\image_xt_low1.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="-1" Width="57" Height="56" BackColor="255,192,192,192" ShadowColor="0,0,0,0" DataSource="lower" TabIndex="3" TabStop="true" AutoSize="true" ClickSound="button_click" />
+                </control>
+            </control>
+            <control name="lbl_11" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="464" Top="448" Width="414" Height="4" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\common\window\fengexian.png" />
+            </control>
+            <control name="cbtn_replay" entity="CheckButton" script="" init="">
+                <prop BoxSize="12" NormalImage="gui\main\system\image_xt_off.png" CheckedImage="gui\main\system\image_xt_on.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="272" Top="532" Width="103" Height="56" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+            </control>
+        </control>
+        <control name="groupbox_bg" entity="GroupBox" script="" init="">
+            <prop Left="24" Top="16" Width="950" Height="680" ForeColor="0,0,0,0" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Visible="false" TabStop="true" NoFrame="true" AutoSize="true" DrawMode="Expand" />
+            <control name="groupbox_1" entity="GroupBox" script="" init="">
+                <prop Left="152" Top="112" Width="598" Height="374" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+                <control name="ScrollBar_Convergence" entity="ScrollBar" script="" init="">
+                    <prop ButtonSize="0" Orient="Horizon" Maximum="10" SmallChange="1" LargeChange="5" Left="144" Top="184" Width="300" Height="46" BackColor="255,224,224,224" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\common\window\zhuangbeiqianghua_jindutiao_di.png" />
+                    <subor name="DecButton">
+                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="1" Height="46" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+                    </subor>
+                    <subor name="IncButton">
+                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="1" Height="46" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+                    </subor>
+                    <subor name="TrackButton">
+                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="100" Height="46" BackColor="255,192,192,192" ShadowColor="0,0,0,0" DrawMode="Expand" />
+                    </subor>
+                </control>
+                <control name="ScrollBar_Separation" entity="ScrollBar" script="" init="">
+                    <prop ButtonSize="0" Orient="Horizon" Maximum="10" SmallChange="1" LargeChange="5" Left="144" Top="56" Width="300" Height="46" BackColor="255,224,224,224" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\common\window\zhuangbeiqianghua_jindutiao_di.png" />
+                    <subor name="DecButton">
+                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="1" Height="46" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+                    </subor>
+                    <subor name="IncButton">
+                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="1" Height="46" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+                    </subor>
+                    <subor name="TrackButton">
+                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="100" Height="46" BackColor="255,192,192,192" ShadowColor="0,0,0,0" DrawMode="Expand" />
+                    </subor>
+                </control>
+                <control name="btn_confirm" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="96" Top="272" Width="170" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_system_option0015" Font="WRYH26_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+                <control name="btn_set_mode" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="328" Top="272" Width="170" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_system_option0017" Font="WRYH26_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+                <control name="btn_left_Separation" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\button9_up.png" PushImage="gui\common\button\button9.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="72" Top="48" Width="52" Height="53" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+                </control>
+                <control name="btn_right_Separation" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\button8_up.png" PushImage="gui\common\button\button8.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="456" Top="48" Width="52" Height="53" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+                </control>
+                <control name="btn_left_Convergence" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\button9_up.png" PushImage="gui\common\button\button9.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="72" Top="184" Width="52" Height="53" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+                </control>
+                <control name="btn_right_Convergence" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\button8_up.png" PushImage="gui\common\button\button8.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="456" Top="184" Width="52" Height="53" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+                </control>
+                <control name="lbl_Separation" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="288" Top="56" Width="94" Height="46" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" />
+                </control>
+                <control name="lbl_Convergence" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="288" Top="184" Width="94" Height="46" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" />
+                </control>
+                <control name="btn_close_box" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="544" Top="-24" Width="73" Height="70" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" DrawMode="Center" />
+                </control>
+            </control>
+        </control>
+    </control>
+</form>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Left="20" Top="30" Width="950" Height="670" BackColor="105,0,0,0" ShadowColor="0,0,0,0" />
+        <control name="group_main" entity="GroupBox" script="" init="">
+            <prop Left="193" Top="71" Width="526" Height="334" BackColor="105,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="FitWindow" BackImage="gui\common\window\bg.jpg" />
+            <control name="lbl_5" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="468" Top="4" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_youshang.png" />
+            </control>
+            <control name="group_success" entity="GroupBox" script="" init="">
+                <prop Top="64" Width="526" Height="270" BackColor="40,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\main\jixianpiaoliu\jxpl_qp.png,102,348,172,36" />
+                <control name="lbl_rank" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="408" Top="40" Width="30" Height="38" ForeColor="255,227,127,0" ShadowColor="0,0,0,0" Text="2" Font="WRYH26_S" />
+                </control>
+                <control name="lbl_rank_tip" entity="Label" script="" init="">
+                    <prop Align="Right" RefCursor="WIN_HELP" Left="200" Top="40" Width="190" Height="38" ForeColor="255,255,255,210" ShadowColor="0,0,0,0" Text="@ui_activity_rowing_19" Font="WRYH26_S" />
+                </control>
+                <control name="lbl_time_tip" entity="Label" script="" init="">
+                    <prop Align="Right" RefCursor="WIN_HELP" Left="136" Top="106" Width="190" Height="38" ForeColor="255,255,255,210" ShadowColor="0,0,0,0" Text="@ui_activity_rowing_21" Font="WRYH26_S" />
+                </control>
+                <control name="lbl_time" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="344" Top="106" Width="80" Height="38" ForeColor="255,227,127,0" ShadowColor="0,0,0,0" Text="3:20" Font="WRYH26_S" />
+                </control>
+                <control name="lbl_2" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="448" Top="40" Width="80" Height="38" ForeColor="255,255,255,210" ShadowColor="0,0,0,0" Text="@ui_activity_rowing_20" Font="WRYH26_S" />
+                </control>
+            </control>
+            <control name="group_failed" entity="GroupBox" script="" init="">
+                <prop Top="64" Width="526" Height="270" BackColor="40,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\common\window\bg_huikuang4.png" />
+                <control name="lbl_fail_tip" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="72" Top="40" Width="390" Height="38" ForeColor="255,255,255,210" ShadowColor="0,0,0,0" Text="@ui_activity_rowing_16" Font="WRYH26_S" />
+                </control>
+                <control name="lbl_fail_info" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="72" Top="106" Width="390" Height="38" ForeColor="255,255,255,210" ShadowColor="0,0,0,0" Text="@ui_activity_rowing_17" Font="WRYH26_S" />
+                </control>
+            </control>
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="216" Top="24" Width="80" Height="30" ForeColor="255,153,255,255" ShadowColor="0,0,0,0" Text="@ui_activity_rowing_01" Font="WRYH30_S" />
+            </control>
+            <control name="btn_leave" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="136" Top="256" Width="254" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_activity_rowing_18" Font="WRYH26_S" DrawMode="Expand" />
+            </control>
+            <control name="lbl_6" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="4" Top="4" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_zuoshang.png" />
+            </control>
+            <control name="lbl_4" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="4" Top="274" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_zuoxia.png" />
+            </control>
+            <control name="lbl_3" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="468" Top="274" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshiyouxia.png" />
+            </control>
+        </control>
+    </control>
+</form>

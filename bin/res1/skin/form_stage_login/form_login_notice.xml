@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Left="21" Top="21" Width="1254" Height="768" BackColor="0,255,255,255" ShadowColor="0,0,0,0" />
+        <control name="group_notice_main" entity="GroupBox" script="" init="">
+            <prop Left="40" Top="16" Width="1024" Height="768" BackColor="151,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" />
+            <control name="group_notice" entity="GroupBox" script="" init="">
+                <prop Left="5" Top="16" Width="1014" Height="678" BackColor="0,255,255,255" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+                <control name="lbl_10" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="955" Top="616" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshiyouxia.png" />
+                </control>
+                <control name="lbl_11" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="8" Top="8" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_zuoshang.png" />
+                </control>
+                <control name="lbl_12" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="8" Top="616" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_zuoxia.png" />
+                </control>
+                <control name="lbl_13" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="955" Top="8" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_youshang.png" />
+                </control>
+                <control name="group_notice_bk" entity="GroupBox" script="" init="">
+                    <prop Left="251" Top="88" Width="740" Height="502" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\beibao_12.png" />
+                    <control name="mlt_notic" entity="MultiTextBox" script="" init="">
+                        <prop TextColor="255,231,227,183" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,694,430" LineHeight="33" ScrollSize="17" Left="24" Top="32" Width="694" Height="430" ShadowColor="0,0,0,0" Font="WRYH24_O2_BLACK" NoFrame="true" />
+                    </control>
+                </control>
+                <control name="btn_notice_ok" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\anniu.png" PushImage="gui\common\button\anniu_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="395" Top="592" Width="238" Height="78" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_ok" Font="WRYH26_S" TabIndex="100" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" HandleShortcut="BUTTON_B" />
+                </control>
+                <control name="lbl_14" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="355" Top="-8" Width="352" Height="92" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@gui_login_title" Font="WRYH30_O" AutoSize="true" BackImage="gui\main\treasure\baozang_bt.jpg" />
+                </control>
+                <control name="lbl_15" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="243" Top="72" Width="762" Height="534" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\main\treasure\baozang_ylwk.jpg" />
+                </control>
+                <control name="lbl_16" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="315" Top="608" Width="53" Height="50" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_zuo.png" />
+                </control>
+                <control name="lbl_17" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="667" Top="608" Width="53" Height="50" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_you.png" />
+                </control>
+                <control name="grpsbox_notice_list" entity="GroupScrollableBox" script="" init="">
+                    <prop ScrollSize="17" Left="11" Top="72" Width="234" Height="534" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\common\window\bg_huikuang.png" />
+                </control>
+                <control name="groupbox_notice" entity="GroupBox" script="" init="">
+                    <prop Left="11" Top="80" Width="222" Height="102" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                    <control name="cbtn_select" entity="CheckButton" script="" init="">
+                        <prop ClickEvent="true" BoxSize="12" NormalImage="gui\notice\gg_btn_1.jpg" CheckedImage="gui\notice\gg_btn_2.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-8" Top="16" Width="225" Height="87" ForeColor="255,255,249,203" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH24_O2_BLACK" TabStop="true" NoFrame="true" DrawMode="ExpandH" ClickSound="button_click" />
+                    </control>
+                    <control name="lbl_left_state" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="-8" Top="8" Width="76" Height="35" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\notice\gg_cuxiao.png" />
+                    </control>
+                    <control name="lbl_right_state" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="136" Top="78" Width="72" Height="33" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\notice\gg_hot.png" />
+                    </control>
+                </control>
+            </control>
+        </control>
+    </control>
+</form>

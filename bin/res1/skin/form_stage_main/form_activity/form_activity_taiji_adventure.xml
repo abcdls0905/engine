@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Left="117" Top="20" Width="910" Height="638" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\use\function\function_vein_096.png" />
+        <control name="groupbox_main" entity="GroupBox" script="" init="">
+            <prop Width="1022" Height="734" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="16" Top="81" Width="1002" Height="641" ShadowColor="0,0,0,0" TestTrans="true" AutoSize="true" BackImage="gui\main\activity\tjmx_d.jpg" />
+            </control>
+            <control name="btn_help" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\pk\btn_help_normal.jpg" PushImage="gui\main\pk\btn_help_click.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="58" Top="8" Width="56" Height="56" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" NoFrame="true" AutoSize="true" />
+            </control>
+            <control name="btn_close" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="936" Top="-15" Width="100" Height="100" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="100" TabStop="true" AutoSize="true" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+            </control>
+            <control name="lbl_9" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="416" Top="17" Width="142" Height="40" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_taiji_adventure_1" Font="WRYH30_S" />
+            </control>
+            <control name="lbl_11" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="8" Top="9" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_zuoshang.png" />
+            </control>
+            <control name="lbl_12" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="8000" Top="657" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_zuoxia.png" />
+            </control>
+            <control name="groupbox_left" entity="GroupBox" script="" init="">
+                <prop Left="26" Top="89" Width="654" Height="622" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" TestTrans="true" Transparent="true" />
+                <control name="lbl_point" entity="Label" script="" init="">
+                    <prop ClickEvent="true" RefCursor="WIN_HELP" Left="24" Top="32" Width="70" Height="52" BackColor="0,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Transparent="false" AutoSize="true" BackImage="gui\main\activity\tjmx_bx.png" />
+                </control>
+                <control name="btn_destinycard1" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\activity\tjmx_myk_1.png" PushImage="gui\main\activity\tjmx_myk_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="386" Top="144" Width="158" Height="172" BackColor="255,192,192,192" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" />
+                </control>
+                <control name="btn_destinycard2" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\activity\tjmx_myk_1.png" PushImage="gui\main\activity\tjmx_myk_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="103" Top="312" Width="158" Height="172" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" />
+                </control>
+                <control name="lbl_begin" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="163" Top="30" Width="80" Height="105" ShadowColor="0,0,0,0" Transparent="false" BackImage="gui\main\activity\tjmx_bx.png" />
+                </control>
+                <control name="lbl_end" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" TextOffsetX="3" Left="163" Top="30" Width="80" Height="102" ShadowColor="0,0,0,0" Transparent="false" BackImage="gui\main\activity\tjmx_bx.png" />
+                </control>
+            </control>
+            <control name="groupbox_right" entity="GroupBox" script="" init="">
+                <prop Left="688" Top="89" Width="326" Height="622" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" TestTrans="true" Transparent="true" />
+                <control name="groupbox_right_top" entity="GroupBox" script="" init="">
+                    <prop Top="40" Width="318" Height="102" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                    <control name="lbl_dice_img" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="32" Top="8" Width="70" Height="70" BackColor="0,255,255,255" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\main\activity\luckydice.jpg" />
+                    </control>
+                    <control name="lbl_ticket" entity="Label" script="" init="">
+                        <prop Align="Right" RefCursor="WIN_HELP" Left="56" Top="56" Width="46" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="1" Font="WRYH20_S" />
+                    </control>
+                    <control name="btn_go" entity="Button" script="" init="">
+                        <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="176" Top="8" Width="134" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_taiji_adventure_2" Font="WRYH24_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                    </control>
+                </control>
+                <control name="groupscrollbox_destiny" entity="GroupScrollableBox" script="" init="">
+                    <prop ScrollSize="17" Left="8" Top="160" Width="310" Height="342" BackColor="0,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0" TestTrans="true" Transparent="true" NoFrame="true" />
+                </control>
+                <control name="groupbox_destiny_card" entity="GroupBox" script="" init="">
+                    <prop Left="64" Top="200" Width="174" Height="278" BackColor="0,255,255,255" ShadowColor="0,0,0,0" TestTrans="true" NoFrame="true" />
+                    <control name="cbtn_choose" entity="CheckButton" script="" init="">
+                        <prop BoxSize="12" NormalImage="gui\common\window\dian0%.png" CheckedImage="gui\main\activity\xzxg.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="4" Width="166" Height="270" BackColor="0,192,192,192" ShadowColor="0,0,0,0" TabStop="true" NoFrame="true" />
+                    </control>
+                    <control name="lbl_item_photo" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="8" Top="8" Width="158" Height="254" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\main\activity\tjmx_dlk.png" />
+                    </control>
+                    <control name="lbl_destiny_desc" entity="Label" script="" init="">
+                        <prop Align="Right" RefCursor="WIN_HELP" Left="120" Top="232" Width="38" Height="22" ForeColor="255,0,255,115" ShadowColor="0,0,0,0" Font="WRYH24_S" />
+                    </control>
+                    <control name="lbl_item_title" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="51" Top="24" Width="80" Height="16" ForeColor="255,255,255,189" ShadowColor="0,0,0,0" Text="lbl_2" Font="WRYH22_O" />
+                    </control>
+                    <control name="mltbox_item_desc" entity="MultiTextBox" script="" init="">
+                        <prop TextColor="255,255,255,196" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,134,86" LineHeight="20" ScrollSize="17" Left="24" Top="160" Width="134" Height="86" ForeColor="255,197,197,197" ShadowColor="0,0,0,0" Transparent="true" Text="mltbox_1" Font="WRYH18_S" NoFrame="true" />
+                    </control>
+                </control>
+                <control name="btn_use" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\anniu_chengse_yuanjiao1.png" PushImage="gui\common\button\anniu_chengse_yuanjiao2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="64" Top="528" Width="190" Height="62" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_taiji_adventure_3" Font="WRYH24_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+                <control name="lbl_2" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="-51" Top="16" Width="80" Height="16" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" HAnchor="Center" Text="@ui_taiji_adventure_16" Font="WRYH24_S" />
+                </control>
+            </control>
+			<control name="groupbox_temp" entity="GroupBox" script="" init="">
+                <prop Left="26" Top="89" Width="654" Height="622" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" TestTrans="true" Transparent="true" />
+                <control name="lbl_player" entity="Label" script="" init="">
+                    <prop Rotate="true" RefCursor="WIN_HELP" TextOffsetX="25" Left="70" Top="120" Width="46" Height="46" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\common\button\x.png" />
+                </control>
+            </control>
+            <control name="groupbox_card" entity="GroupBox" script="" init="">
+                <prop Top="1" Width="1022" Height="734" BackColor="98,0,0,0" ShadowColor="0,0,0,0" Visible="false" TestTrans="true" NoFrame="true" />
+                <control name="lbl_card_bg" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="384" Top="144" Width="227" Height="387" ShadowColor="0,0,0,0" Transparent="false" AutoSize="true" BackImage="gui\main\activity\tjmx_dlk.png" />
+                </control>
+                <control name="lbl_title" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="448" Top="168" Width="102" Height="30" ForeColor="255,255,255,183" ShadowColor="0,0,0,0" Font="WRYH26_S" />
+                </control>
+                <control name="lbl_bottom" entity="MultiTextBox" script="" init="">
+                    <prop SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,182,118" LineHeight="30" ScrollSize="17" Left="408" Top="376" Width="182" Height="118" ForeColor="255,197,197,197" ShadowColor="0,0,0,0" Font="WRYH24_S" NoFrame="true" />
+                </control>
+            </control>
+            <control name="groupbox_main_award" entity="GroupBox" script="" init="">
+                <prop Left="192" Top="89" Width="598" Height="622" ShadowColor="0,0,0,0" Visible="false" TestTrans="true" Transparent="true" TabStop="true" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+                <control name="lbl_5" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="22" Top="79" Width="558" Height="518" ShadowColor="0,0,0,0" TestTrans="true" DrawMode="Expand" BackImage="gui\common\window\bg_huikuang4.png" />
+                </control>
+                <control name="grpsbox_award_list" entity="GroupScrollableBox" script="" init="">
+                    <prop ScrollSize="17" Left="32" Top="96" Width="534" Height="486" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                </control>
+                <control name="groupbox_award" entity="GroupBox" script="" init="">
+                    <prop Left="32" Top="96" Width="534" Height="150" BackColor="255,120,120,120" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\main\activity\huodong_21.png" />
+                    <control name="lbl_bg" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Width="534" Height="150" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\pay\shop_05.png" />
+                    </control>
+                    <control name="groupbox_item" entity="GroupBox" script="" init="">
+                        <prop Left="8" Top="8" Width="518" Height="126" BackColor="0,200,200,200" ShadowColor="0,0,0,0" NoFrame="true" />
+                        <control name="imagegrid_item" entity="ImageGrid" script="" init="">
+                            <prop SelectColor="0,0,255,0" MouseInColor="0,255,255,0" CoverColor="0,255,0,0" LockColor="0,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" GridHeight="80" GridWidth="80" DrawMouseIn="RECT" DrawMouseSelect="RECT" DrawCover="RECT" DrawLock="RECT" DrawGridBack="gui\common\window\tubiaokuang_2.png" GridBackOffsetX="-7" GridBackOffsetY="-7" GridCoverOffsetX="-5" GridCoverOffsetY="-5" MouseDownScale="0.900000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" HasVScroll="false" Left="24" Top="8" Width="80" Height="80" ShadowColor="0,0,0,0" />
+                        </control>
+                        <control name="lbl_item_name" entity="Label" script="" init="">
+                            <prop Align="Center" RefCursor="WIN_HELP" Left="24" Top="104" Width="86" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" />
+                        </control>
+                        <control name="lbl_item_desc" entity="MultiTextBox" script="" init="">
+                            <prop SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,366,102" LineHeight="30" ScrollSize="17" Left="144" Top="8" Width="366" Height="102" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH24_S" NoFrame="true" />
+                        </control>
+                    </control>
+                </control>
+                <control name="lbl_award_title" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="232" Top="32" Width="118" Height="16" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_taiji_adventure_12" Font="WRYH30_S" />
+                </control>
+                <control name="btn_award_close" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="504" Top="-8" Width="100" Height="100" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="100" TabStop="true" AutoSize="true" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+                </control>
+            </control>
+            <control name="ani_saize" entity="Animation" script="" init="">
+                <prop PlayMode="2" Left="376" Top="297" Width="110" Height="134" />
+            </control>
+        </control>
+    </control>
+</form>

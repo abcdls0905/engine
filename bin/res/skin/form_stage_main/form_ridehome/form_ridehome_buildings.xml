@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop ShowGrid="true" Left="30" Top="30" Width="1015" Height="685" BackColor="100,0,0,0" ShadowColor="0,0,0,0"/>
+		<control name="label_main" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="-507" Top="-302" Width="1014" Height="605" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" AutoSize="true" BackImage="gui/tp2_common/zuhe/di.jpg"/>
+		</control>
+		<control name="lbl_main_3rd" entity="Label" script="" init="">
+			<prop Align="Center" RefCursor="WIN_HELP" Left="-469" Top="-257" Width="939" Height="550" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+		</control>
+		<control name="lbl_main_5th" entity="Label" script="" init="">
+			<prop Align="Center" RefCursor="WIN_HELP" Left="-471" Top="-260" Width="943" Height="207" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" TestTrans="true" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_005.png"/>
+		</control>
+		<control name="lbl_title_bg" entity="Label" script="" init="">
+			<prop Align="Center" RefCursor="WIN_HELP" Left="-246" Top="-316" Width="493" Height="54" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_04.png"/>
+		</control>
+		<control name="groupbox_ride_list" entity="GroupBox" script="" init="">
+			<prop Left="-459" Top="195" Width="918" Height="100" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" DrawMode="Expand"/>
+			<control name="lbl_arrow_left" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/backdrop/left_1.png" PushImage="gui/tp2_common/backdrop/left_2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-3" Top="5" Width="48" Height="84" BackColor="255,192,192,192" ShadowColor="0,0,0,0" DrawMode="FitWindow" ClickSound="button_click"/>
+			</control>
+			<control name="lbl_arrow_right" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/backdrop/right_1.png" PushImage="gui/tp2_common/backdrop/right_2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="872" Top="5" Width="48" Height="84" BackColor="255,192,192,192" ShadowColor="0,0,0,0" DrawMode="FitWindow" ClickSound="button_click"/>
+			</control>
+			<control name="group_scroll_ride_list" entity="GroupScrollableBox" script="" init="">
+				<prop ScrollSize="17" Left="44" Top="-29" Width="831" Height="125" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+				<subor name="TitleBar">
+					<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="90" Height="20" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="GroupScrollableBox1"/>
+				</subor>
+			</control>
+		</control>
+		<control name="GroupBox1" entity="GroupBox" script="" init="">
+			<prop Left="-468" Top="-56" Width="937" Height="248" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" DrawMode="Expand" BackImage="gui/tp2_common/nine/tongyongdi.png"/>
+			<control name="gpb_ride_1" entity="GroupBox" script="" init="">
+				<prop ClipChildren="false" Left="21" Top="35" Width="190" Height="202" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+				<control name="lbl_back_0" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="22" Top="15" Width="146" Height="145" ForeColor="255,204,255,204" BackColor="0,204,255,204" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_common/window/team_di_12.png"/>
+				</control>
+				<control name="SceneBox1" entity="SceneBox" script="" init="">
+					<prop Left="7" Width="176" Height="175" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+				</control>
+				<control name="lbl_time_1" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="44" Top="182" Width="102" Height="16" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
+				</control>
+				<control name="lbl_product_1" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="14" Top="127" Width="162" Height="47" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK" AutoSize="true" BackImage="gui/tp2_ride/zhanli_bg.png"/>
+				</control>
+				<control name="lbl_back_1" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="7" Width="176" Height="175" ForeColor="255,204,255,204" BackColor="0,204,255,204" ShadowColor="0,0,0,0" Text="@ui_ridehome_46" Font="WRYH20_O_BLACK" DrawMode="FitWindow"/>
+				</control>
+				<control name="img_module_1" entity="ImageGrid" script="" init="">
+					<prop SelectColor="80,0,255,0" MouseInColor="80,255,255,0" CoverColor="80,255,0,0" LockColor="80,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" DrawMouseIn="rect_t" DrawMouseSelect="rect_t" DrawCover="rect_t" DrawLock="rect_t" MouseDownScale="0.900000" MouseDownAlpha="128" Left="40" Top="24" Width="110" Height="126" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+					<subor name="VScrollBar">
+						<prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0"/>
+						<subor name="DecButton">
+							<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+						</subor>
+						<subor name="IncButton">
+							<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+						</subor>
+						<subor name="TrackButton">
+							<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+						</subor>
+					</subor>
+				</control>
+			</control>
+			<control name="gpb_ride_2" entity="GroupBox" script="" init="">
+				<prop ClipChildren="false" Left="251" Top="35" Width="190" Height="202" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+				<control name="lbl_back_4" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="22" Top="15" Width="146" Height="145" ForeColor="255,204,255,204" BackColor="0,204,255,204" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_common/window/team_di_12.png"/>
+				</control>
+				<control name="SceneBox2" entity="SceneBox" script="" init="">
+					<prop Left="7" Width="176" Height="175" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+				</control>
+				<control name="lbl_time_2" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="44" Top="182" Width="102" Height="16" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
+				</control>
+				<control name="lbl_product_2" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="14" Top="127" Width="162" Height="47" ForeColor="255,0,255,255" BackColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK" AutoSize="true" BackImage="gui/tp2_ride/zhanli_bg.png"/>
+				</control>
+				<control name="lbl_back_2" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="7" Width="176" Height="175" ForeColor="255,204,255,204" ShadowColor="0,0,0,0" Text="@ui_ridehome_46" Font="WRYH20_O_BLACK"/>
+				</control>
+				<control name="img_module_2" entity="ImageGrid" script="" init="">
+					<prop SelectColor="80,0,255,0" MouseInColor="80,255,255,0" CoverColor="80,255,0,0" LockColor="80,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" DrawMouseIn="rect_t" DrawMouseSelect="rect_t" DrawCover="rect_t" DrawLock="rect_t" MouseDownScale="0.900000" MouseDownAlpha="128" Left="40" Top="24" Width="110" Height="126" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+					<subor name="VScrollBar">
+						<prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0"/>
+						<subor name="DecButton">
+							<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+						</subor>
+						<subor name="IncButton">
+							<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+						</subor>
+						<subor name="TrackButton">
+							<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+						</subor>
+					</subor>
+				</control>
+			</control>
+			<control name="gpb_ride_3" entity="GroupBox" script="" init="">
+				<prop ClipChildren="false" Left="481" Top="35" Width="190" Height="202" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+				<control name="lbl_back_5" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="22" Top="15" Width="146" Height="145" ForeColor="255,204,255,204" BackColor="0,204,255,204" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_common/window/team_di_12.png"/>
+				</control>
+				<control name="SceneBox3" entity="SceneBox" script="" init="">
+					<prop Left="7" Width="176" Height="175" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+				</control>
+				<control name="lbl_time_3" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="44" Top="182" Width="102" Height="16" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
+				</control>
+				<control name="lbl_product_3" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="14" Top="127" Width="162" Height="47" ForeColor="255,0,255,255" BackColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK" AutoSize="true" BackImage="gui/tp2_ride/zhanli_bg.png"/>
+				</control>
+				<control name="lbl_back_3" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="7" Width="176" Height="175" ForeColor="255,204,255,204" ShadowColor="0,0,0,0" Text="@ui_ridehome_46" Font="WRYH20_O_BLACK"/>
+				</control>
+				<control name="img_module_3" entity="ImageGrid" script="" init="">
+					<prop SelectColor="80,0,255,0" MouseInColor="80,255,255,0" CoverColor="80,255,0,0" LockColor="80,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" GridHeight="10" GridWidth="10" DrawMouseIn="rect_t" DrawMouseSelect="rect_t" DrawCover="rect_t" DrawLock="rect_t" MouseDownScale="0.900000" MouseDownAlpha="128" Left="40" Top="24" Width="110" Height="126" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+					<subor name="VScrollBar">
+						<prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0"/>
+						<subor name="DecButton">
+							<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+						</subor>
+						<subor name="IncButton">
+							<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+						</subor>
+						<subor name="TrackButton">
+							<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+						</subor>
+					</subor>
+				</control>
+			</control>
+			<control name="ProgressBar1" entity="ProgressBar" script="" init="">
+				<prop Maximum="15" WidthGap="2" HeightGap="2" ProgressMode="LeftToRight" Left="9999" Top="31" Width="598" Height="16" ShadowColor="0,0,0,0"/>
+			</control>
+			<control name="gpb_1" entity="GroupBox" script="" init="">
+				<prop Left="154" Top="7" Width="230" Height="44" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+				<control name="mlt_1" entity="MultiTextBox" script="" init="">
+					<prop TextColor="255,255,255,202" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,114,50" LineHeight="22" ScrollSize="17" Left="43" Top="-1" Width="114" Height="50" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WRYH18"/>
+				</control>
+				<control name="lbl_1" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Top="5" Width="38" Height="38" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_ride/dot_1.png"/>
+				</control>
+			</control>
+			<control name="gpb_2" entity="GroupBox" script="" init="">
+				<prop Left="313" Top="7" Width="230" Height="44" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+				<control name="mlt_2" entity="MultiTextBox" script="" init="">
+					<prop TextColor="255,255,255,202" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,114,50" LineHeight="22" ScrollSize="17" Left="44" Top="-1" Width="114" Height="50" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WRYH18"/>
+				</control>
+				<control name="lbl_2" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Top="5" Width="38" Height="38" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_ride/dot_1.png"/>
+				</control>
+			</control>
+			<control name="gpb_3" entity="GroupBox" script="" init="">
+				<prop Left="474" Top="7" Width="230" Height="44" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+				<control name="mlt_3" entity="MultiTextBox" script="" init="">
+					<prop TextColor="255,255,255,202" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,114,50" LineHeight="22" ScrollSize="17" Left="43" Top="-1" Width="114" Height="50" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WRYH18"/>
+				</control>
+				<control name="lbl_3" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Top="5" Width="38" Height="38" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_ride/dot_1.png"/>
+				</control>
+			</control>
+			<control name="gpb_4" entity="GroupBox" script="" init="">
+				<prop Left="635" Top="7" Width="230" Height="44" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Text="GroupBox7" NoFrame="true"/>
+				<control name="mlt_4" entity="MultiTextBox" script="" init="">
+					<prop TextColor="255,255,255,202" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,114,50" LineHeight="22" ScrollSize="17" Left="42" Top="-1" Width="114" Height="50" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WRYH18"/>
+				</control>
+				<control name="lbl_4" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Top="5" Width="38" Height="38" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_ride/dot_1.png"/>
+				</control>
+			</control>
+			<control name="gpb_5" entity="GroupBox" script="" init="">
+				<prop Left="796" Top="7" Width="230" Height="44" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+				<control name="mlt_5" entity="MultiTextBox" script="" init="">
+					<prop TextColor="255,255,255,202" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,114,50" LineHeight="22" ScrollSize="17" Left="41" Top="-1" Width="114" Height="50" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WRYH18"/>
+				</control>
+				<control name="lbl_5" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Top="5" Width="38" Height="38" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_ride/dot_1.png"/>
+				</control>
+			</control>
+			<control name="lbl_desc_2" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="37" Top="16" Width="30" Height="22" ForeColor="255,255,255,102" ShadowColor="0,0,0,0" Text="@ui_ridehome_71" Font="WRYH20_O_BLACK"/>
+			</control>
+		</control>
+		<control name="GroupBox2" entity="GroupBox" script="" init="">
+			<prop Left="9" Top="-247" Width="446" Height="186" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" TestTrans="true"/>
+			<control name="btn_upgrade" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/cancel.png" PushImage="gui/tp2_common/window/cancel1.png" DisableImage="gui/tp2_common/window/ban1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="340" Top="128" Width="100" Height="56" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_ridehome_10" Font="WRYH24" DrawMode="ExpandH" ClickSound="button_click"/>
+			</control>
+			<control name="lbl_desc" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="10" Top="-5" Width="62" Height="30" ForeColor="255,255,255,102" ShadowColor="0,0,0,0" Text="@ui_ridehome_70" Font="WRYH20_O_BLACK"/>
+			</control>
+			<control name="MultiTextBox4" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,255,255,204" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,246,30" LineHeight="22" ScrollSize="17" Left="10" Top="138" Width="246" Height="30" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK"/>
+			</control>
+			<control name="gpsb_prize" entity="GroupScrollableBox" script="" init="">
+				<prop ScrollSize="17" Left="11" Top="27" Width="413" Height="110" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+				<subor name="TitleBar">
+					<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="90" Height="20" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="GroupScrollableBox1"/>
+				</subor>
+			</control>
+			<control name="lbl_uplevel_tip" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="411" Top="120" Width="34" Height="34" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/window/tishi.png"/>
+			</control>
+		</control>
+		<control name="groupbox_ride_temp" entity="GroupBox" script="" init="">
+			<prop Left="9999" Top="516" Width="95" Height="101" BackColor="0,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0" AutoSize="true"/>
+			<control name="Label2" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Top="22" Width="79" Height="76" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_ride/ditu_1.png"/>
+			</control>
+			<control name="img_photo" entity="ImageGrid" script="" init="">
+				<prop SelectColor="80,0,255,0" MouseInColor="80,255,255,0" CoverColor="80,255,0,0" LockColor="80,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" GridHeight="101" GridWidth="81" DrawMouseIn="rect_t" DrawMouseSelect="rect_t" DrawCover="rect_t" DrawLock="rect_t" MouseDownScale="0.900000" MouseDownAlpha="128" Width="81" Height="101" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+				<subor name="VScrollBar">
+					<prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0"/>
+					<subor name="DecButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="IncButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="TrackButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+				</subor>
+			</control>
+			<control name="lbl_preview" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="6" Top="10" Width="64" Height="26" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH18_O_BLACK" AutoSize="true"/>
+			</control>
+			<control name="lbl_batteling" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="6" Top="78" Width="64" Height="26" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_ride/not_have.png"/>
+			</control>
+		</control>
+		<control name="GroupBox3" entity="GroupBox" script="" init="">
+			<prop Left="-452" Top="-248" Width="510" Height="190" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center"/>
+			<control name="Label3" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="20" Top="89" Width="80" Height="16" ForeColor="255,255,255,102" ShadowColor="0,0,0,0" Text="@ui_ridehome_47" Font="WRYH20_O_BLACK"/>
+			</control>
+			<control name="MultiTextBox1" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,255,255,102" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,302,30" LineHeight="24" ScrollSize="17" Left="20" Top="15" Width="302" Height="30" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK"/>
+			</control>
+			<control name="MultiTextBox2" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,255,255,204" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,358,30" LineHeight="22" ScrollSize="17" Left="20" Top="45" Width="358" Height="30" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK"/>
+			</control>
+			<control name="MultiTextBox3" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,255,255,204" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,350,54" LineHeight="22" ScrollSize="17" Left="20" Top="118" Width="350" Height="54" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK"/>
+			</control>
+		</control>
+		<control name="label_photo_hand" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="196" Top="532" Width="81" Height="101" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+		</control>
+		<control name="gpb_prize" entity="GroupBox" script="" init="">
+			<prop Left="9999" Top="81" Width="110" Height="94" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+			<control name="img_prize" entity="ImageGrid" script="" init="">
+				<prop SelectColor="80,0,255,0" MouseInColor="80,255,255,0" CoverColor="80,255,0,0" LockColor="80,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" GridHeight="72" GridWidth="72" DrawMouseIn="rect_t" DrawMouseSelect="rect_t" DrawCover="rect_t" DrawLock="rect_t" DrawGridBack="gui/tp2_common/window/active_17.png" GridBackOffsetX="-2" GridBackOffsetY="-2" MouseDownScale="0.900000" MouseDownAlpha="128" Left="19" Top="2" Width="72" Height="72" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+				<subor name="VScrollBar">
+					<prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0"/>
+					<subor name="DecButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="IncButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="TrackButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+				</subor>
+			</control>
+			<control name="lbl_name" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="15" Top="76" Width="80" Height="16" ForeColor="255,255,255,202" ShadowColor="0,0,0,0" Font="WRYH16_O_BLACK"/>
+			</control>
+			<control name="lbl_number" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="44" Top="46" Width="22" Height="16" ForeColor="255,255,255,202" ShadowColor="0,0,0,0" Font="WRYH16_O_BLACK"/>
+			</control>
+		</control>
+		<control name="gpb_tip" entity="GroupBox" script="" init="">
+			<prop Left="-246" Top="-316" Width="493" Height="54" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center"/>
+			<control name="lbl_tip" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="166" Top="12" Width="62" Height="30" ForeColor="255,102,51,0" ShadowColor="0,0,0,0" Text="@ui_ridehome_22" Font="WRYH24"/>
+			</control>
+			<control name="lbl_level_1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="250" Top="12" Width="22" Height="30" ForeColor="255,102,51,0" ShadowColor="0,0,0,0" Font="WRYH24"/>
+			</control>
+			<control name="lbl_level_2" entity="Label" script="" init="">
+				<prop Align="Right" RefCursor="WIN_HELP" Left="304" Top="12" Width="22" Height="30" ForeColor="255,102,51,0" ShadowColor="0,0,0,0" Text="@ui_ridehome_67" Font="WRYH24"/>
+			</control>
+		</control>
+		<control name="btn_all_work" entity="Button" script="" init="">
+			<prop NormalImage="gui/tp2_common/window/affirm.png" PushImage="gui/tp2_common/window/affirm1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="247" Top="4" Width="200" Height="60" ForeColor="255,255,255,202" BackColor="255,192,192,192" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Text="@ui_ridehome_33" Font="WRYH24" DrawMode="ExpandH"/>
+		</control>
+		<control name="btn_all_harvest" entity="Button" script="" init="">
+			<prop NormalImage="gui/tp2_common/window/affirm.png" PushImage="gui/tp2_common/window/affirm1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="247" Top="85" Width="200" Height="60" ForeColor="255,255,255,202" BackColor="255,192,192,192" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Text="@ui_ridehome_36" Font="WRYH24" DrawMode="ExpandH"/>
+		</control>
+		<control name="btn_close" entity="Button" script="" init="">
+			<prop NormalImage="gui/tp2_common/window/clos.png" PushImage="gui/tp2_common/window/clos1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="418" Top="-322" Width="70" Height="70" BackColor="255,192,192,192" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" AutoSize="true" ClickSound="ui_close"/>
+		</control>
+	</control>
+</form>
+

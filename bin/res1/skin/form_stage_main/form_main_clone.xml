@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Left="37" Top="29" Width="1024" Height="768" BackColor="0,255,255,255" ShadowColor="0,0,0,0" TestTrans="true" Transparent="true" NoFrame="true" />
+        <control name="groupbox_scene" entity="GroupBox" script="" init="">
+            <prop Left="384" Width="462" Height="78" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+            <control name="lbl_title" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="69" Top="10" Width="134" Height="24" ForeColor="255,255,0,0" ShadowColor="0,0,0,0" Text="@ui_clone_46" Font="WRYH26_S" />
+            </control>
+            <control name="lbl_time" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="214" Top="10" Width="80" Height="22" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="00 : 00 : 00" Font="WRYH30_S" />
+            </control>
+            <control name="lbl_content" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="8" Top="40" Width="422" Height="30" ForeColor="255,197,255,7" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WRYH26_S" />
+            </control>
+        </control>
+        <control name="btn_start_auto_skill" entity="Button" script="" init="">
+            <prop NormalImage="gui\main\heedbar\clone.png,760,898,120,120" PushImage="gui\main\heedbar\clone.png,760,778,120,120" DisableImage="gui\main\heedbar\clone.png,760,778,120,120" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-122" Top="168" Width="120" Height="120" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Right" Font="WRYH18" TabStop="true" AutoSize="true" ClickSound="button_click" />
+        </control>
+        <control name="lbl_blood" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="-24" Top="-8" Width="278" Height="174" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\common\screen\common_blood_001.png" />
+        </control>
+        <control name="lbl_boss_show" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="-24" Top="184" Width="760" Height="315" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\animation\bosswarning.jpg" />
+        </control>
+        <control name="btn_pause" entity="Button" script="" init="">
+            <prop NormalImage="gui\main\heedbar\clone2.png,1,680,103,93" PushImage="gui\main\heedbar\clone2.png,133,680,103,93" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="100" Top="8" Width="103" Height="93" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH18" TabStop="true" AutoSize="true" ClickSound="button_click" />
+        </control>
+        <control name="btn_tongji" entity="Button" script="" init="">
+            <prop NormalImage="gui\main\heedbar\clone2.png,854,415,84,84" PushImage="gui\main\heedbar\clone2.png,939,415,84,84" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="304" Top="680" Width="84" Height="84" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH18" TabStop="true" AutoSize="true" ClickSound="button_click" />
+        </control>
+        <control name="btn_exit" entity="Button" script="" init="">
+            <prop NormalImage="gui\main\heedbar\clone2.png,270,548,103,93" PushImage="gui\main\heedbar\clone2.png,270,675,103,93" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="360" Top="16" Width="103" Height="93" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH18" TabStop="true" AutoSize="true" ClickSound="button_click" />
+        </control>
+        <control name="btn_end_auto_skill" entity="Button" script="" init="">
+            <prop NormalImage="gui\main\heedbar\clone.png,640,898,120,120" PushImage="gui\main\heedbar\clone.png,640,778,120,120" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-122" Top="168" Width="120" Height="120" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Right" Font="WRYH18" TabStop="true" AutoSize="true" ClickSound="button_click" />
+        </control>
+        <control name="groupbox_dead_angle" entity="GroupBox" script="" init="">
+            <prop Left="-178" Top="238" Width="350" Height="74" BackColor="0,255,255,255" ShadowColor="0,0,0,0" HAnchor="Center" DrawMode="ExpandH" BackImage="gui\main\war\titlebar_xinxi.jpg" />
+            <control name="lbl_dead_angle_count_down" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="47" Top="31" Width="46" Height="16" ForeColor="255,239,0,74" ShadowColor="0,0,0,0" Text="3" Font="WRYH30_S" />
+            </control>
+            <control name="lbl_7" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="95" Top="31" Width="126" Height="16" ForeColor="255,255,255,127" ShadowColor="0,0,0,0" Text="@ui_war_12" Font="WRYH22_O" />
+            </control>
+        </control>
+        <control name="lbl_network_status" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Top="-16" Width="58" Height="16" ShadowColor="0,0,0,0" VAnchor="Bottom" Font="TexFont_cloneNum" AutoSize="true" DrawMode="Center" BackImage="gui\main\hall\pin_4.png" />
+        </control>
+        <control name="btn_start_auto_skill2" entity="Button" script="" init="">
+            <prop NormalImage="gui\main\heedbar\clone2.png,907,884,110,110" PushImage="gui\main\heedbar\clone2.png,907,764,110,110" DisableImage="gui\main\heedbar\clone.png,760,778,120,120" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-116" Top="175" Width="110" Height="110" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Right" Font="WRYH18" TabStop="true" ClickSound="button_click" />
+        </control>
+        <control name="groupbox_relive" entity="GroupBox" script="" init="">
+            <prop Left="72" Top="510" Width="358" Height="254" ShadowColor="0,0,0,0" Text="复活" DrawMode="Expand" BackImage="gui\common\window\bg2.jpg" />
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="37" Top="112" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_system_function_show_fuhuo_1" Font="WRYH22_O" />
+            </control>
+            <control name="lbl_2" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="169" Top="100" Width="44" Height="44" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zuanshi.jpg" />
+            </control>
+            <control name="lbl_relive_cost" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="213" Top="112" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH22_O" />
+            </control>
+            <control name="btn_relive" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\anniu.png" PushImage="gui\common\button\anniu_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="117" Top="176" Width="126" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_system_function_show_fuhuo_2" Font="WRYH26_S" DrawMode="ExpandH" />
+            </control>
+        </control>
+        <control name="groupbox_skill" entity="GroupBox" script="" init="">
+            <prop Left="430" Top="310" Width="600" Height="450" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" TestTrans="true" NoFrame="true" />
+            <control name="imagegrid_skill_bar" entity="ImageGrid" script="" init="">
+                <prop SelectColor="0,0,255,0" MouseInColor="0,255,255,0" CoverColor="80,255,0,0" LockColor="80,255,255,0" CoolColor="255,120,120,120" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="7" GridHeight="128" GridWidth="128" GridsPos="275,325;270,208;354,125;472,130;150,325;472,0;238,90;" DrawMouseIn="RECT" DrawMouseSelect="RECT" DrawCover="RECT" DrawLock="RECT" MouseDownScale="1.100000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="200" HasVScroll="false" Width="600" Height="450" ForeColor="255,0,255,255" BackColor="0,255,255,255" BlendColor="255,120,120,120" ShadowColor="255,255,255,255" TestTrans="true" Font="WRYH30_O" NoFrame="true" DrawMode="Center" />
+            </control>
+            <control name="imagegrid_common_attack" entity="ImageGrid" script="" init="">
+                <prop SelectColor="0,0,255,0" MouseInColor="0,255,255,0" CoverColor="80,255,0,0" LockColor="80,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" GridHeight="180" GridWidth="180" DrawMouseIn="RECT" DrawMouseSelect="RECT" DrawCover="RECT" DrawLock="RECT" MouseDownScale="1.100000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="200" HasVScroll="false" Left="400" Top="250" Width="180" Height="180" BackColor="0,255,255,255" ShadowColor="0,0,0,0" TestTrans="true" NoFrame="true" />
+            </control>
+        </control>
+        <control name="groupbox_showmap" entity="GroupBox" script="" init="">
+            <prop Left="392" Top="680" Width="86" Height="86" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Text="groupbox_1" NoFrame="true" />
+            <control name="btn_showmap" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\throne\combat.jpg,426,199,84,84" PushImage="gui\main\throne\combat.jpg,342,199,84,84" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="84" Height="84" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH18" TabStop="true" ClickSound="button_click" />
+            </control>
+            <control name="lbl_newflag" entity="Label" script="" init="">
+                <prop Solid="true" RefCursor="WIN_HELP" Left="48" Width="30" Height="32" BackColor="255,255,0,0" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\common\window\gengxin.png" />
+            </control>
+        </control>
+        <control name="btn_sendhelp" entity="Button" script="" init="">
+            <prop NormalImage="gui\main\throne\btn_qiuzhu.png" PushImage="gui\main\throne\btn_qiuzhuclick.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="480" Top="680" Width="84" Height="84" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH18" TabStop="true" ClickSound="button_click" />
+        </control>
+    </control>
+</form>

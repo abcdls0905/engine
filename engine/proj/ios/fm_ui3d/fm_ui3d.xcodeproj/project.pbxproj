@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8591D3ED18E1887800184488 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8591D3EC18E1887800184488 /* Foundation.framework */; };
+		8591D3F418E1887800184488 /* fm_ui3d.m in Sources */ = {isa = PBXBuildFile; fileRef = 8591D3F318E1887800184488 /* fm_ui3d.m */; };
+		8591D43218E188A800184488 /* animation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8591D41C18E188A800184488 /* animation.cpp */; };
+		8591D43318E188A800184488 /* global.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8591D41F18E188A800184488 /* global.cpp */; };
+		8591D43418E188A800184488 /* helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8591D42118E188A800184488 /* helper.cpp */; };
+		8591D43518E188A800184488 /* lib_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8591D42318E188A800184488 /* lib_main.cpp */; };
+		8591D43618E188A800184488 /* mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8591D42418E188A800184488 /* mesh.cpp */; };
+		8591D43718E188A800184488 /* node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8591D42618E188A800184488 /* node.cpp */; };
+		8591D43818E188A800184488 /* render_ui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8591D42818E188A800184488 /* render_ui.cpp */; };
+		8591D43918E188A800184488 /* shader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8591D42A18E188A800184488 /* shader.cpp */; };
+		8591D43A18E188A800184488 /* ui3d_core.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8591D42C18E188A800184488 /* ui3d_core.cpp */; };
+		8591D43B18E188A800184488 /* ui3d_helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8591D42E18E188A800184488 /* ui3d_helper.cpp */; };
+		8591D43C18E188A800184488 /* visnode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8591D43018E188A800184488 /* visnode.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8591D3E718E1887800184488 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8591D3E918E1887800184488 /* libfm_ui3d.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libfm_ui3d.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8591D3EC18E1887800184488 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8591D3F018E1887800184488 /* fm_ui3d-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fm_ui3d-Prefix.pch"; sourceTree = "<group>"; };
+		8591D3F118E1887800184488 /* fm_ui3d.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = fm_ui3d.h; sourceTree = "<group>"; };
+		8591D3F318E1887800184488 /* fm_ui3d.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fm_ui3d.m; sourceTree = "<group>"; };
+		8591D3FA18E1887800184488 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8591D3FD18E1887800184488 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8591D40418E1887800184488 /* fm_ui3dTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "fm_ui3dTests-Info.plist"; sourceTree = "<group>"; };
+		8591D40618E1887800184488 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8591D40818E1887800184488 /* fm_ui3dTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fm_ui3dTests.m; sourceTree = "<group>"; };
+		8591D41C18E188A800184488 /* animation.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = animation.cpp; path = ../../../fm_ui3d/animation.cpp; sourceTree = "<group>"; };
+		8591D41D18E188A800184488 /* animation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = animation.h; path = ../../../fm_ui3d/animation.h; sourceTree = "<group>"; };
+		8591D41E18E188A800184488 /* defines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = defines.h; path = ../../../fm_ui3d/defines.h; sourceTree = "<group>"; };
+		8591D41F18E188A800184488 /* global.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = global.cpp; path = ../../../fm_ui3d/global.cpp; sourceTree = "<group>"; };
+		8591D42018E188A800184488 /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = global.h; path = ../../../fm_ui3d/global.h; sourceTree = "<group>"; };
+		8591D42118E188A800184488 /* helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = helper.cpp; path = ../../../fm_ui3d/helper.cpp; sourceTree = "<group>"; };
+		8591D42218E188A800184488 /* helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = helper.h; path = ../../../fm_ui3d/helper.h; sourceTree = "<group>"; };
+		8591D42318E188A800184488 /* lib_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lib_main.cpp; path = ../../../fm_ui3d/lib_main.cpp; sourceTree = "<group>"; };
+		8591D42418E188A800184488 /* mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = mesh.cpp; path = ../../../fm_ui3d/mesh.cpp; sourceTree = "<group>"; };
+		8591D42518E188A800184488 /* mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mesh.h; path = ../../../fm_ui3d/mesh.h; sourceTree = "<group>"; };
+		8591D42618E188A800184488 /* node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = node.cpp; path = ../../../fm_ui3d/node.cpp; sourceTree = "<group>"; };
+		8591D42718E188A800184488 /* node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = node.h; path = ../../../fm_ui3d/node.h; sourceTree = "<group>"; };
+		8591D42818E188A800184488 /* render_ui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = render_ui.cpp; path = ../../../fm_ui3d/render_ui.cpp; sourceTree = "<group>"; };
+		8591D42918E188A800184488 /* render_ui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = render_ui.h; path = ../../../fm_ui3d/render_ui.h; sourceTree = "<group>"; };
+		8591D42A18E188A800184488 /* shader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = shader.cpp; path = ../../../fm_ui3d/shader.cpp; sourceTree = "<group>"; };
+		8591D42B18E188A800184488 /* shader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shader.h; path = ../../../fm_ui3d/shader.h; sourceTree = "<group>"; };
+		8591D42C18E188A800184488 /* ui3d_core.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ui3d_core.cpp; path = ../../../fm_ui3d/ui3d_core.cpp; sourceTree = "<group>"; };
+		8591D42D18E188A800184488 /* ui3d_core.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ui3d_core.h; path = ../../../fm_ui3d/ui3d_core.h; sourceTree = "<group>"; };
+		8591D42E18E188A800184488 /* ui3d_helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ui3d_helper.cpp; path = ../../../fm_ui3d/ui3d_helper.cpp; sourceTree = "<group>"; };
+		8591D42F18E188A800184488 /* ui3d_helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ui3d_helper.h; path = ../../../fm_ui3d/ui3d_helper.h; sourceTree = "<group>"; };
+		8591D43018E188A800184488 /* visnode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = visnode.cpp; path = ../../../fm_ui3d/visnode.cpp; sourceTree = "<group>"; };
+		8591D43118E188A800184488 /* visnode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = visnode.h; path = ../../../fm_ui3d/visnode.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8591D3E618E1887800184488 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8591D3ED18E1887800184488 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8591D3E018E1887800184488 = {
+			isa = PBXGroup;
+			children = (
+				8591D41B18E1888200184488 /* source */,
+				8591D3EE18E1887800184488 /* fm_ui3d */,
+				8591D40218E1887800184488 /* fm_ui3dTests */,
+				8591D3EB18E1887800184488 /* Frameworks */,
+				8591D3EA18E1887800184488 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8591D3EA18E1887800184488 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8591D3E918E1887800184488 /* libfm_ui3d.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8591D3EB18E1887800184488 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8591D3EC18E1887800184488 /* Foundation.framework */,
+				8591D3FA18E1887800184488 /* XCTest.framework */,
+				8591D3FD18E1887800184488 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8591D3EE18E1887800184488 /* fm_ui3d */ = {
+			isa = PBXGroup;
+			children = (
+				8591D3F118E1887800184488 /* fm_ui3d.h */,
+				8591D3F318E1887800184488 /* fm_ui3d.m */,
+				8591D3EF18E1887800184488 /* Supporting Files */,
+			);
+			path = fm_ui3d;
+			sourceTree = "<group>";
+		};
+		8591D3EF18E1887800184488 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8591D3F018E1887800184488 /* fm_ui3d-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8591D40218E1887800184488 /* fm_ui3dTests */ = {
+			isa = PBXGroup;
+			children = (
+				8591D40818E1887800184488 /* fm_ui3dTests.m */,
+				8591D40318E1887800184488 /* Supporting Files */,
+			);
+			path = fm_ui3dTests;
+			sourceTree = "<group>";
+		};
+		8591D40318E1887800184488 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8591D40418E1887800184488 /* fm_ui3dTests-Info.plist */,
+				8591D40518E1887800184488 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8591D41B18E1888200184488 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				8591D41C18E188A800184488 /* animation.cpp */,
+				8591D41D18E188A800184488 /* animation.h */,
+				8591D41E18E188A800184488 /* defines.h */,
+				8591D41F18E188A800184488 /* global.cpp */,
+				8591D42018E188A800184488 /* global.h */,
+				8591D42118E188A800184488 /* helper.cpp */,
+				8591D42218E188A800184488 /* helper.h */,
+				8591D42318E188A800184488 /* lib_main.cpp */,
+				8591D42418E188A800184488 /* mesh.cpp */,
+				8591D42518E188A800184488 /* mesh.h */,
+				8591D42618E188A800184488 /* node.cpp */,
+				8591D42718E188A800184488 /* node.h */,
+				8591D42818E188A800184488 /* render_ui.cpp */,
+				8591D42918E188A800184488 /* render_ui.h */,
+				8591D42A18E188A800184488 /* shader.cpp */,
+				8591D42B18E188A800184488 /* shader.h */,
+				8591D42C18E188A800184488 /* ui3d_core.cpp */,
+				8591D42D18E188A800184488 /* ui3d_core.h */,
+				8591D42E18E188A800184488 /* ui3d_helper.cpp */,
+				8591D42F18E188A800184488 /* ui3d_helper.h */,
+				8591D43018E188A800184488 /* visnode.cpp */,
+				8591D43118E188A800184488 /* visnode.h */,
+			);
+			name = source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8591D3E818E1887800184488 /* fm_ui3d */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8591D40C18E1887800184488 /* Build configuration list for PBXNativeTarget "fm_ui3d" */;
+			buildPhases = (
+				8591D3E518E1887800184488 /* Sources */,
+				8591D3E618E1887800184488 /* Frameworks */,
+				8591D3E718E1887800184488 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fm_ui3d;
+			productName = fm_ui3d;
+			productReference = 8591D3E918E1887800184488 /* libfm_ui3d.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8591D3E118E1887800184488 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = SnailResearch;
+			};
+			buildConfigurationList = 8591D3E418E1887800184488 /* Build configuration list for PBXProject "fm_ui3d" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8591D3E018E1887800184488;
+			productRefGroup = 8591D3EA18E1887800184488 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8591D3E818E1887800184488 /* fm_ui3d */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8591D3E518E1887800184488 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8591D43B18E188A800184488 /* ui3d_helper.cpp in Sources */,
+				8591D43518E188A800184488 /* lib_main.cpp in Sources */,
+				8591D43218E188A800184488 /* animation.cpp in Sources */,
+				8591D43618E188A800184488 /* mesh.cpp in Sources */,
+				8591D43A18E188A800184488 /* ui3d_core.cpp in Sources */,
+				8591D43918E188A800184488 /* shader.cpp in Sources */,
+				8591D43818E188A800184488 /* render_ui.cpp in Sources */,
+				8591D3F418E1887800184488 /* fm_ui3d.m in Sources */,
+				8591D43C18E188A800184488 /* visnode.cpp in Sources */,
+				8591D43718E188A800184488 /* node.cpp in Sources */,
+				8591D43318E188A800184488 /* global.cpp in Sources */,
+				8591D43418E188A800184488 /* helper.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8591D40518E1887800184488 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8591D40618E1887800184488 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8591D40A18E1887800184488 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8591D40B18E1887800184488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8591D40D18E1887800184488 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DSTROOT = /tmp/fm_ui3d.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fm_ui3d/fm_ui3d-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		8591D40E18E1887800184488 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				DSTROOT = /tmp/fm_ui3d.dst;
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fm_ui3d/fm_ui3d-Prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8591D3E418E1887800184488 /* Build configuration list for PBXProject "fm_ui3d" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8591D40A18E1887800184488 /* Debug */,
+				8591D40B18E1887800184488 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8591D40C18E1887800184488 /* Build configuration list for PBXNativeTarget "fm_ui3d" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8591D40D18E1887800184488 /* Debug */,
+				8591D40E18E1887800184488 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8591D3E118E1887800184488 /* Project object */;
+}

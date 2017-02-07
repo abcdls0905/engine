@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<object>
+	<properties>
+		<property name="RideExp" type="int" public="false" private="true" save="true" realtime="" desc="当前骑术经验值"/>
+		<property name="RideLevel" type="int" public="false" private="true" save="true" realtime="" desc="当前骑术等级"/>
+		<property name="RideStep" type="int" public="false" private="true" save="true" realtime="" desc="当前骑术等阶"/>
+		<property name="RidePropType" type="int" public="false" private="true" save="true" realtime="" desc="当前选择的修正坐骑属性类型"/>
+	</properties>
+    <records>
+        <record name="ride_rec" cols="4" maxrows="500" save="true" public="false" private="true" desc="已获得坐骑表">
+			<column type="string" desc="坐骑configid" />
+			<column type="byte" desc="坐骑是否上阵" />
+			<column type="byte" desc="坐骑可使用时间" />
+			<column type="int64" desc="坐骑获得时间" />
+        </record>
+        <record name="ride_equip_rec" cols="2" maxrows="10" save="true" public="false" private="true" desc="已装备的骑士装备表">
+			<column type="string" desc="骑士装备configid" />
+			<column type="byte" desc="骑士装备的类型" />
+        </record>
+	</records>
+</object>

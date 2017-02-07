@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop ShowGrid="true" Left="21" Top="29" Width="1366" Height="768" BackColor="100,0,0,0" ShadowColor="0,0,0,0"/>
+		<control name="grp_rule" entity="GroupBox" script="" init="">
+			<prop Left="10692" Top="102" Width="654" Height="598" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui/xm2_main/day_activity/hyd_yemian.png"/>
+			<control name="btn_rule_close" entity="Button" script="" init="">
+				<prop NormalImage="gui/xm2_main/roles/js_x1.png" PushImage="gui/xm2_main/roles/js_x3.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="592" Width="64" Height="54" BackColor="255,192,192,192" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+			</control>
+			<control name="mltbox_rule" entity="MultiTextBox" script="" init="">
+				<prop ViewRect="0,0,654,526" LineHeight="20" ScrollSize="17" Top="72" Width="654" Height="526" ShadowColor="0,0,0,0" Text="mltbox_1"/>
+			</control>
+		</control>
+		<control name="grp_main_cargo" entity="GroupBox" script="" init="">
+			<prop ClipChildren="false" Left="220" Top="81" Width="925" Height="605" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+			<control name="Label_main" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="-507" Top="-302" Width="1014" Height="605" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" AutoSize="true" BackImage="gui/tp2_common/zuhe/di.jpg"/>
+			</control>
+			<control name="Label_main_3rd" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="-469" Top="-257" Width="939" Height="550" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+			</control>
+			<control name="grp_info" entity="GroupBox" script="" init="">
+				<prop Left="-467" Top="-258" Width="935" Height="550" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center"/>
+				<control name="Label_4th" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="-2" Top="1" Width="939" Height="467" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_005.png"/>
+				</control>
+				<control name="lbl_zhuangshi_3" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="1" Top="523" Width="933" Height="28" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_03.png"/>
+				</control>
+				<control name="Label1" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="-5" Top="465" Width="947" Height="94" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/decorate_08.png"/>
+				</control>
+				<control name="grp_cargo_mode" entity="GroupBox" script="" init="">
+					<prop Top="8" Width="413" Height="83" BackColor="0,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+					<control name="rbtn_cargo_mode" entity="RadioButton" script="" init="">
+						<prop BoxSize="12" NormalImage="gui/tp2_common/window/bflb_1.png" CheckedImage="gui/tp2_common/window/bflb_2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="413" Height="83" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" DrawMode="ExpandH"/>
+					</control>
+					<control name="lbl_cargo_info" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Left="57" Top="27" Width="286" Height="24" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="@ui_rbtn_ship_1" Font="WRYH24_O_BLACK"/>
+					</control>
+				</control>
+				<control name="grp_map_second" entity="GroupBox" script="" init="">
+					<prop Left="429" Top="8" Width="498" Height="278" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/xm2_main/transport/labiao.png"/>
+					<control name="scenebox_cargo" entity="SceneBox" script="" init="">
+						<prop Left="71" Top="19" Width="355" Height="240" BackColor="0,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0" AutoSize="true"/>
+					</control>
+				</control>
+				<control name="groupbox_5" entity="GroupBox" script="" init="">
+					<prop Left="15" Top="291" Width="450" Height="170" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/xm2_main/transport/yb_bg.png"/>
+					<control name="Label2" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="226" Top="110" Width="182" Height="48" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/xm2_main/treasure/huobikuang.png"/>
+					</control>
+					<control name="Label3" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="226" Top="61" Width="182" Height="46" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/xm2_main/treasure/huobikuang.png"/>
+					</control>
+					<control name="lbl_12" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Left="9908" Top="6" Width="325" Height="44" ForeColor="255,204,255,255" ShadowColor="0,0,0,0" AutoSize="true"/>
+					</control>
+					<control name="lbl_13" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="237" Top="62" Width="40" Height="40" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/xm2_common/window/jingyan.png"/>
+					</control>
+					<control name="lbl_exp_count_cargo" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="282" Top="61" Width="94" Height="42" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="500000" Font="WRYH22_O_BLACK" AutoSize="true" BackImage="gui/xm2_main/transport/yb_jingbidi.png"/>
+					</control>
+					<control name="lbl_15" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="237" Top="113" Width="40" Height="40" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/xm2_main/hall/jingbi.png"/>
+					</control>
+					<control name="lbl_gold_count_cargo" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="282" Top="114" Width="117" Height="38" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="99999" Font="WRYH22_O_BLACK" AutoSize="true"/>
+					</control>
+					<control name="lbl_2" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Left="113" Top="13" Width="218" Height="27" ForeColor="255,204,255,255" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/xm2_main/transport/tishi1.png"/>
+					</control>
+					<control name="lbl_award" entity="Label" script="" init="">
+						<prop Transparent="false" ClickEvent="true" RefCursor="WIN_HELP" Left="31" Top="61" Width="208" Height="36" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="@ui_ship_award" Font="WRYH24_O_BLACK" AutoSize="true"/>
+					</control>
+					<control name="lbl_award_num" entity="Label" script="" init="">
+						<prop Align="Right" RefCursor="WIN_HELP" Left="9999" Top="125" Width="30" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0"/>
+					</control>
+					<control name="lbl_award1" entity="Label" script="" init="">
+						<prop Transparent="false" ClickEvent="true" RefCursor="WIN_HELP" Left="31" Top="112" Width="270" Height="36" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="@ui_ship_add_award" Font="WRYH24_O_BLACK" AutoSize="true"/>
+					</control>
+					<control name="lbl_award_num1" entity="Label" script="" init="">
+						<prop Align="Right" RefCursor="WIN_HELP" Left="9999" Top="125" Width="30" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0"/>
+					</control>
+				</control>
+				<control name="groupbox_6" entity="GroupBox" script="" init="">
+					<prop Left="470" Top="291" Width="450" Height="170" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/xm2_main/transport/yb_bg.png"/>
+					<control name="Label4" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="15" Top="85" Width="240" Height="62" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/xm2_main/treasure/huobikuang.png"/>
+					</control>
+					<control name="lbl_14" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Left="62" Top="7" Width="325" Height="44" ForeColor="255,204,255,255" ShadowColor="0,0,0,0" AutoSize="true"/>
+					</control>
+					<control name="lbl_pay_count" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="94" Top="96" Width="10" Height="35" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH24_O_BLACK" AutoSize="true"/>
+					</control>
+					<control name="btn_refresh" entity="Button" script="" init="">
+						<prop NormalImage="gui/tp2_common/window/refurbish.png" PushImage="gui/tp2_common/window/refurbish1.png" DisableImage="gui/tp2_common/window/ban.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="288" Top="56" Width="134" Height="46" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_ship_refresh" Font="WRYH24_O_BLACK" DrawMode="ExpandH"/>
+					</control>
+					<control name="btn_refresh_cpy" entity="Button" script="" init="">
+						<prop NormalImage="gui/tp2_common/window/refurbish.png" PushImage="gui/tp2_common/window/refurbish1.png" DisableImage="gui/tp2_common/window/ban.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="288" Top="112" Width="134" Height="46" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_ship_one_refresh" Font="WRYH24_O_BLACK" DrawMode="ExpandH"/>
+					</control>
+					<control name="lbl_1" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="21" Top="89" Width="52" Height="52" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/xm2_main/hall/jingbi.png"/>
+					</control>
+					<control name="lbl_3" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Left="175" Top="13" Width="99" Height="27" ForeColor="255,204,255,255" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/xm2_main/transport/tishi2.png"/>
+					</control>
+				</control>
+				<control name="btn_begin" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/affirm.png" PushImage="gui/tp2_common/window/affirm1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="367" Top="481" Width="200" Height="60" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_ship_begin" Font="WRYH24" DrawMode="ExpandH"/>
+				</control>
+				<control name="grp_choose_level" entity="GroupBox" script="" init="">
+					<prop Left="14" Top="10" Width="418" Height="262" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+				</control>
+			</control>
+			<control name="lbl_4" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="-246" Top="-316" Width="493" Height="54" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_04.png"/>
+			</control>
+			<control name="lbl_18" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="-58" Top="-335" Width="116" Height="64" ForeColor="255,255,255,153" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" AutoSize="true" BackImage="gui/xm2_main/transport/biaoti.png"/>
+			</control>
+		</control>
+		<control name="btn_close" entity="Button" script="" init="">
+			<prop NormalImage="gui/tp2_common/window/clos.png" PushImage="gui/tp2_common/window/clos1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="9999" Top="20" Width="70" Height="70" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true"/>
+		</control>
+		<control name="btn_help_info" entity="Button" script="" init="">
+			<prop NormalImage="gui/tp2_main/pk/pk_help_off.png" PushImage="gui/tp2_main/pk/pk_help_on.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-440" Top="-323" Width="70" Height="71" ForeColor="255,204,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" DataSource="ui_activityinvo_12" AutoSize="true" DrawMode="FitWindow"/>
+		</control>
+	</control>
+</form>
+

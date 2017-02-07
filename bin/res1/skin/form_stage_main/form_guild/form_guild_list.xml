@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Width="1024" Height="720" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\use\function\function_vein_096.png" />
+        <control name="groupbox_main" entity="GroupBox" script="" init="">
+            <prop Left="-512" Top="-360" Width="1024" Height="720" BackColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" NoFrame="true" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+            <control name="lbl_7" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="2" Top="72" Width="614" Height="638" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg_huikuang.png" />
+            </control>
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="5" Top="8500" Width="1006" Height="678" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\shurukuang1.png" />
+            </control>
+            <control name="btn_close" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="946" Top="-20" Width="100" Height="100" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH24_S" TabIndex="100" TabStop="true" AutoSize="true" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+            </control>
+            <control name="btn_create" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\anniu.png" PushImage="gui\common\button\anniu_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="834" Top="608" Width="174" Height="84" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_guild_21" Font="WRYH24_S" TabStop="true" DrawMode="ExpandH" ClickSound="ui_open" />
+            </control>
+            <control name="groupscrollbox_guild_list" entity="GroupScrollableBox" script="" init="">
+                <prop ScrollSize="17" IsEditMode="false" Left="5" Top="80" Width="602" Height="622" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+            </control>
+            <control name="groupbox_guild" entity="GroupBox" script="" init="">
+                <prop Left="13" Top="101" Width="582" Height="134" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="ExpandH" BackImage="gui\pay\kuang4.png" />
+                <control name="lbl_ranking_back" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="-5" Top="-5" Width="122" Height="133" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\guild\gonghui_nhao.jpg" />
+                </control>
+                <control name="lbl_guild_name_level" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="131" Top="3" Width="238" Height="22" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="guild_name  LV.1" Font="WRYH24_S" />
+                </control>
+                <control name="lbl_control" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="437" Top="35" Width="126" Height="70" ForeColor="0,0,255,255" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH24_S" TabStop="true" />
+                </control>
+                <control name="lbl_ranking" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="10" Top="26" Width="94" Height="62" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="1" Font="WRYH30_S" />
+                </control>
+                <control name="lbl_captain_name_level" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="131" Top="32" Width="310" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="player_name  LV.1" Font="WRYH24_S" />
+                </control>
+                <control name="lbl_member_count" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="131" Top="59" Width="310" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="member: 1/10" Font="WRYH24_S" />
+                </control>
+                <control name="lbl_declaration" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="131" Top="91" Width="310" Height="22" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="xuanyan:" Font="WRYH24_S" />
+                </control>
+                <control name="btn_apply" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\anniu_chengse_yuanjiao1.png" PushImage="gui\common\button\anniu_chengse_yuanjiao2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="432" Top="35" Width="134" Height="68" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="Apply" Font="WRYH22_O" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+            </control>
+            <control name="lbl_2" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="621" Top="192" Width="374" Height="406" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH24_S" DrawMode="Expand" BackImage="gui\common\window\beibao_12.png" />
+            </control>
+            <control name="lbl_3" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="642" Top="272" Width="318" Height="16" ForeColor="255,231,227,183" ShadowColor="0,0,0,0" Text="@ui_guild_42" Font="WRYH24_O_BLACK" />
+            </control>
+            <control name="lbl_4" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="637" Top="312" Width="80" Height="16" ForeColor="255,231,227,183" ShadowColor="0,0,0,0" Text="@ui_guild_43" Font="WRYH24_O_BLACK" />
+            </control>
+            <control name="lbl_5" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="464" Top="32" Width="118" Height="16" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_guild_50" Font="WRYH30_S" />
+            </control>
+            <control name="ipt_find_guild" entity="Edit" script="" init="">
+                <prop TextOffsetX="2" SelectBackColor="255,200,200,200" Caret="Default" Left="624" Top="77" Width="270" Height="62" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH22_O" Cursor="WIN_IBEAM" TabStop="true" DrawMode="ExpandH" BackImage="gui\common\window\shurukuang2.png" />
+            </control>
+            <control name="btn_find_guild" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="896" Top="69" Width="110" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_guild_51" Font="WRYH24_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" HandleShortcut="BUTTON_B" />
+            </control>
+            <control name="mltbox_cooltime" entity="MultiTextBox" script="" init="">
+                <prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,222,38" LineHeight="28" ScrollSize="17" Left="637" Top="149" Width="222" Height="38" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH22_O" NoFrame="true" />
+            </control>
+            <control name="lbl_6" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="642" Top="368" Width="80" Height="16" ForeColor="255,255,0,0" ShadowColor="0,0,0,0" Text="@ui_guild_52" Font="WRYH24_O_BLACK" />
+            </control>
+            <control name="lbl_8" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="642" Top="400" Width="80" Height="32" ForeColor="255,255,0,0" ShadowColor="0,0,0,0" Text="@ui_guild_53" Font="WRYH24_O_BLACK" />
+            </control>
+            <control name="groupbox_more_guild" entity="GroupBox" script="" init="">
+                <prop Left="13" Top="272" Width="582" Height="94" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="ExpandH" BackImage="gui\pay\kuang4.png" />
+                <control name="btn_more_guild" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\anniu_chengse_yuanjiao1.png" PushImage="gui\common\button\anniu_chengse_yuanjiao2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="64" Top="8" Width="462" Height="68" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_form_guild_99" Font="WRYH22_O" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+            </control>
+            <control name="btn_help" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\pk\btn_help_normal.jpg" PushImage="gui\main\pk\btn_help_click.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="8" Width="56" Height="56" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+            <control name="btn_auto_join" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\anniu.png" PushImage="gui\common\button\anniu_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="634" Top="608" Width="174" Height="84" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_guild_92" Font="WRYH24_S" TabStop="true" DrawMode="ExpandH" ClickSound="ui_open" />
+            </control>
+        </control>
+    </control>
+</form>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="gb2312"?>
+
+<!--
+{ 
+	遗迹战配置总览
+	rule\relic\relic.xml   配置遗迹基础信息
+	rule\relic\relic_room.xml	配置遗迹战房间信息
+	rule\relic\relic_guild.xml	配置公会职位对应挑战次数
+	rule\relic\relic_reward.xml	配置遗迹祈福奖励
+	rule\relic\relic_config.xml	配置其他内容
+	rule\war\battlewar_config.xml	配置遗迹战场
+	rule\war\playconfig\battlewar_relic.xml	配置遗迹战场玩法
+	
+
+	客户端
+	skin\form_stage_main\form_relic\relic_config.xml	配置遗迹战预览图，遗迹图标位置
+}
+
+
+
+时间配置
+OpenTime="W:3[10:00-12:00],W:4[10:00-12:00]"
+意思是每周3的10点到12点，以及每周四10点到十二点开放
+[注：W:0是周日]
+
+
+ID 遗迹ID
+Name 遗迹名的中文包索引
+GuildRank 	    公会排名需求（GuildRank="100" 表示前100名公会可竞标）
+ColorLevel  	颜色等级(1234对应金紫绿蓝)
+RightList 		权限列表，暂时无用
+OpenTime 		开放时间（如 W:3[10:00-12:00]，代表每周三的十点到十二点）
+ReadyTime 		准备时间（如 1:10 代表一小时十分钟）
+OwnTime 		占有时间（如 10:00代表十小时，该时间过去后自动失去）
+EmptyTime		遗迹空闲可竞标的时间（格式[W:5:22:15-W:6:21:15],[W:1:22:15-W:3:21:15]）
+PromptTime		遗迹战开始前多长时间内提醒玩家一次
+在2015.3.30日的版本修改中，10号和3号遗迹其实在界面上是看不到了。后来修改完又看得到了
+-->
+
+<Object>
+
+	<Property ID="1"  Name="relic_name_1" GuildRank="30" ColorLevel="3" OpenTime="W:3[12:00-22:00]" PromptTime="0:15" ReadyTime="9:30" OwnTime="144:00" OpenTimeShow="W:3[21:30-22:00]" EmptyTimeShow="[W:2:22:00-W:3:12:00]" desc="遗忘神迹" />
+	<Property ID="2"  Name="relic_name_2" GuildRank="15" ColorLevel="2" OpenTime="W:3[12:00-22:15]" PromptTime="0:15" ReadyTime="9:45" OwnTime="144:00" OpenTimeShow="W:3[21:45-22:15]" EmptyTimeShow="[W:2:22:15-W:3:12:00]" desc="迷途荒漠" />
+	<Property ID="6"  Name="relic_name_6" GuildRank="5" ColorLevel="1" OpenTime="W:3[12:00-22:15]" PromptTime="0:15" ReadyTime="9:45" OwnTime="144:00" OpenTimeShow="W:3[21:45-22:15]" EmptyTimeShow="[W:2:22:15-W:3:12:00]" desc="米修斯神庙" />
+	<Property ID="7"  Name="relic_name_7" GuildRank="15" ColorLevel="2" OpenTime="W:3[12:00-22:15]" PromptTime="0:15" ReadyTime="9:45" OwnTime="144:00" OpenTimeShow="W:3[21:45-22:15]" EmptyTimeShow="[W:2:22:15-W:3:12:00]" desc="远古战场" />
+	<Property ID="9"  Name="relic_name_9" GuildRank="30" ColorLevel="3" OpenTime="W:3[12:00-22:00]" PromptTime="0:15" ReadyTime="9:30" OwnTime="144:00" OpenTimeShow="W:3[21:30-22:00]" EmptyTimeShow="[W:2:22:00-W:3:12:00]" desc="藤蔓乐园" />
+	<Property ID="11" Name="relic_name_11" GuildRank="30" ColorLevel="3" OpenTime="W:3[12:00-22:00]" PromptTime="0:15" ReadyTime="9:30" OwnTime="144:00" OpenTimeShow="W:3[21:30-22:00]" EmptyTimeShow="[W:2:22:00-W:3:12:00]" desc="信仰之巅" />
+	<Property ID="3"  Name="relic_name_3" GuildRank="30" ColorLevel="3" OpenTime="W:3[12:00-22:00]" PromptTime="0:15" ReadyTime="9:30" OwnTime="144:00" OpenTimeShow="W:3[21:30-22:00]" EmptyTimeShow="[W:2:22:00-W:3:12:00]" desc="秃鹫居穴" />
+	<Property ID="10" Name="relic_name_10" GuildRank="5" ColorLevel="1" OpenTime="W:3[12:00-22:15]" PromptTime="0:15" ReadyTime="9:45" OwnTime="144:00" OpenTimeShow="W:3[21:45-22:15]" EmptyTimeShow="[W:2:22:15-W:3:12:00]" desc="鸟伊甸" />
+
+	<Property ID="12" Name="relic_name_12" GuildRank="5" ColorLevel="5" OpenTime="W:3[12:00-22:15]" PromptTime="0:15" ReadyTime="9:45" OwnTime="144:00" OpenTimeShow="W:3[21:45-22:15]" EmptyTimeShow="[W:2:22:15-W:3:12:00]" desc="大地神域" />
+
+</Object>

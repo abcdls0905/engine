@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop ShowGrid="true" Left="20" Top="30" Width="1038" Height="750" BackColor="0,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+		<control name="groupbox_1" entity="GroupBox" script="" init="">
+			<prop Left="-499" Top="20" Width="1015" Height="685" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" HAnchor="Center" DrawMode="Expand"/>
+			<control name="lbl_2" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Top="40" Width="1014" Height="605" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/zuhe/di.jpg"/>
+			</control>
+			<control name="lbl_right" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="256" Top="85" Width="721" Height="550" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+			</control>
+			<control name="lbl_3_right" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="259" Top="609" Width="715" Height="28" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_03.png"/>
+			</control>
+			<control name="groupscrollbox_friend_list" entity="GroupScrollableBox" script="" init="">
+				<prop ScrollSize="17" Left="269" Top="93" Width="689" Height="534" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+			</control>
+			<control name="lbl_1" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="9999" Top="-3" Width="122" Height="68" ForeColor="255,65,0,0" ShadowColor="0,0,0,0" Font="WRYH26" AutoSize="true" BackImage="gui/tp2_team/friend_invite.png,0,0,122,68"/>
+			</control>
+			<control name="btn_close" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/clos.png" PushImage="gui/tp2_common/window/clos1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="925" Top="20" Width="70" Height="70" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" ClickSound="ui_close"/>
+			</control>
+			<control name="lbl_title_bg" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="251" Top="26" Width="493" Height="54" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="Default" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_04.png"/>
+			</control>
+			<control name="lbl_title" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="396" Top="6" Width="223" Height="63" ForeColor="255,65,0,0" ShadowColor="0,0,0,0" Font="WRYH26" AutoSize="true" BackImage="gui/tp2_battle/scene_account/yaoqing.png"/>
+			</control>
+		</control>
+		<control name="GroupBox1" entity="GroupBox" script="" init="">
+			<prop Left="58" Top="105" Width="213" Height="550" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+			<control name="lbl_3_left" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="3" Top="524" Width="207" Height="28" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_03.png"/>
+			</control>
+			<control name="rbtn_1" entity="RadioButton" script="" init="">
+				<prop BoxSize="12" NormalImage="gui/tp2_common/nine/mop_up_29.png" CheckedImage="gui/tp2_common/nine/mop_up_01.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="7" Top="12" Width="199" Height="68" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_teams_clone_46" Font="WRYH24_O_BLACK" TabStop="true" AutoSize="true"/>
+			</control>
+			<control name="rbtn_2" entity="RadioButton" script="" init="">
+				<prop BoxSize="12" NormalImage="gui/tp2_common/nine/mop_up_29.png" CheckedImage="gui/tp2_common/nine/mop_up_01.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="7" Top="82" Width="199" Height="68" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_teams_clone_47" Font="WRYH24_O_BLACK" TabIndex="1" TabStop="true" AutoSize="true"/>
+			</control>
+			<control name="rbtn_3" entity="RadioButton" script="" init="">
+				<prop BoxSize="12" NormalImage="gui/tp2_common/nine/mop_up_29.png" CheckedImage="gui/tp2_common/nine/mop_up_01.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="7" Top="152" Width="199" Height="68" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_teams_clone_48" Font="WRYH24_O_BLACK" TabIndex="2" TabStop="true" AutoSize="true"/>
+			</control>
+			<control name="rbtn_4" entity="RadioButton" script="" init="">
+				<prop BoxSize="12" NormalImage="gui/tp2_common/nine/mop_up_29.png" CheckedImage="gui/tp2_common/nine/mop_up_01.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="7" Top="222" Width="199" Height="68" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_battleteam_54" Font="WRYH24_O_BLACK" TabIndex="3" TabStop="true" AutoSize="true"/>
+			</control>
+		</control>
+		<control name="lbl_no_friend" entity="Label" script="" init="">
+			<prop Align="Center" RefCursor="WIN_HELP" Left="382" Top="345" Width="518" Height="70" ForeColor="255,244,192,80" ShadowColor="0,0,0,0" Text="@ui_teams_clone_26" Font="WRYH30_O_BLACK"/>
+		</control>
+		<control name="groupbox_friend_info" entity="GroupBox" script="" init="">
+			<prop Left="9999" Top="132" Width="688" Height="100" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/nine/tongyongdi.png"/>
+			<control name="lbl_3" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="13" Top="10" Width="80" Height="80" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_main/chat/hall.png"/>
+			</control>
+			<control name="btn_invite" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/refurbish.png" PushImage="gui/tp2_common/window/refurbish1.png" DisableImage="gui/tp2_common/window/ban.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="567" Top="20" Width="100" Height="60" ForeColor="255,255,255,202" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_teams_clone_6" Font="WRYH24" DrawMode="ExpandH" ClickSound="button_click"/>
+			</control>
+			<control name="lbl_photo" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="13" Top="10" Width="80" Height="80" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+			</control>
+			<control name="lbl_name" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="123" Top="20" Width="270" Height="30" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
+			</control>
+			<control name="lbl_friend_level" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="317" Top="20" Width="30" Height="30" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="@ui_arena_9" Font="WRYH22_O_BLACK"/>
+			</control>
+			<control name="lbl_7" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="123" Top="49" Width="100" Height="30" ForeColor="255,255,204,0" ShadowColor="0,0,0,0" Text="@ui_ability_text" Font="WRYH22_O_BLACK"/>
+			</control>
+			<control name="lbl_Level" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="362" Top="20" Width="38" Height="30" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
+			</control>
+			<control name="lbl_fight_capacity_num" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="259" Top="49" Width="200" Height="30" ForeColor="255,255,204,0" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
+			</control>
+		</control>
+	</control>
+</form>
+

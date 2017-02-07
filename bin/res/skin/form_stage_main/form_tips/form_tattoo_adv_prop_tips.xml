@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop ClipChildren="false" Left="50" Top="40" Width="510" Height="438" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+		<control name="grp_main" entity="GroupBox" script="" init="">
+			<prop Left="5" Width="338" Height="294" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui/tp2_main/roles/tipsdi.png"/>
+			<control name="grp_normal" entity="GroupBox" script="" init="">
+				<prop ClipChildren="false" Width="338" Height="294" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+				<control name="mlt_now_level" entity="MultiTextBox" script="" init="">
+					<prop TextColor="255,0,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,286,31" LineHeight="31" ScrollSize="17" Left="26" Top="23" Width="286" Height="31" ForeColor="255,0,128,255" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK" NoFrame="true"/>
+				</control>
+				<control name="mlt_now_info" entity="MultiTextBox" script="" init="">
+					<prop TextColor="255,0,255,51" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,286,70" LineHeight="24" ScrollSize="17" Solid="true" Left="26" Top="66" Width="286" Height="70" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK" NoFrame="true"/>
+				</control>
+				<control name="mlt_next_level" entity="MultiTextBox" script="" init="">
+					<prop TextColor="255,255,0,0" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,286,31" LineHeight="31" ScrollSize="17" Left="26" Top="149" Width="286" Height="31" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK" NoFrame="true"/>
+				</control>
+				<control name="mlt_next_info" entity="MultiTextBox" script="" init="">
+					<prop TextColor="255,0,255,51" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,286,70" LineHeight="24" ScrollSize="17" Left="26" Top="192" Width="286" Height="70" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK" NoFrame="true"/>
+				</control>
+			</control>
+			<control name="grp_core" entity="GroupBox" script="" init="">
+				<prop ClipChildren="false" Width="338" Height="294" BackColor="0,37,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+				<control name="mlt_core_info" entity="MultiTextBox" script="" init="">
+					<prop TextColor="255,255,255,186" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,286,230" LineHeight="26" ScrollSize="17" Solid="true" Left="26" Top="32" Width="286" Height="230" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Text="MultiTextBox1" Font="WRYH24_O_BLACK" NoFrame="true"/>
+				</control>
+			</control>
+		</control>
+	</control>
+</form>
+

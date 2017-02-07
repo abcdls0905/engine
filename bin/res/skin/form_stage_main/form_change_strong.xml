@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop ShowGrid="true" Left="20" Top="30" Width="1102" Height="702" BackColor="100,0,0,0" ShadowColor="0,0,0,0"/>
+		<control name="groupbox_main" entity="GroupBox" script="" init="">
+			<prop ClipChildren="false" Left="176" Top="80" Width="750" Height="542" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand"/>
+			<control name="Label1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Top="25" Width="726" Height="518" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/nine/tankuang.png"/>
+			</control>
+			<control name="groupbox_2" entity="GroupBox" script="" init="">
+				<prop Left="14" Top="87" Width="700" Height="110" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/nine/mop_up_29.png"/>
+				<control name="lbl_1" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Top="6" Width="140" Height="100" ForeColor="255,255,255,202" ShadowColor="0,0,0,0" Text="@ui_change_strong36" Font="WRYH30_O_BLACK" DrawMode="FitWindow" BackImage="gui/tp2_main/strong/strong_flag.png"/>
+				</control>
+				<control name="groupbox_1" entity="GroupBox" script="" init="">
+					<prop Left="408" Top="15" Width="160" Height="80" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand"/>
+					<control name="lbl_5" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Top="10" Width="160" Height="30" ForeColor="255,255,255,65" ShadowColor="0,0,0,0" Text="@ui_change_strong5" Font="WRYH24_O_BLACK"/>
+					</control>
+					<control name="lbl_level" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Top="40" Width="160" Height="30" ForeColor="255,255,255,65" ShadowColor="0,0,0,0" Font="WRYH24_O_BLACK"/>
+					</control>
+				</control>
+				<control name="groupbox_12" entity="GroupBox" script="" init="">
+					<prop ClipChildren="false" Left="146" Top="15" Width="254" Height="80" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand"/>
+					<control name="mult_doc1" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,202" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,254,78" LineHeight="24" HtmlText="@ui_change_strong_doc_1" ScrollSize="17" ClipChildren="false" Top="10" Width="254" Height="78" ForeColor="255,255,255,202" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK" NoFrame="true"/>
+					</control>
+				</control>
+			</control>
+			<control name="groupbox_3" entity="GroupBox" script="" init="">
+				<prop Left="14" Top="197" Width="700" Height="110" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/nine/mop_up_29.png"/>
+				<control name="lbl_2" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Top="6" Width="140" Height="100" ForeColor="255,255,255,202" ShadowColor="0,0,0,0" Text="@ui_change_strong37" Font="WRYH30_O_BLACK" DrawMode="FitWindow" BackImage="gui/tp2_main/strong/strong_flag.png"/>
+				</control>
+				<control name="groupbox_8" entity="GroupBox" script="" init="">
+					<prop Left="408" Top="15" Width="166" Height="80" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand"/>
+					<control name="lbl_7" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Top="10" Width="160" Height="30" ForeColor="255,255,255,65" ShadowColor="0,0,0,0" Text="@ui_change_strong6" Font="WRYH24_O_BLACK"/>
+					</control>
+					<control name="lbl_power1" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Top="40" Width="160" Height="30" ForeColor="255,255,255,65" ShadowColor="0,0,0,0" Font="WRYH24_O_BLACK"/>
+					</control>
+				</control>
+				<control name="groupbox_14" entity="GroupBox" script="" init="">
+					<prop ClipChildren="false" Left="146" Top="15" Width="254" Height="80" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand"/>
+					<control name="mult_doc2" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,202" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,254,78" LineHeight="24" HtmlText="@ui_change_strong_doc_2" ScrollSize="17" ClipChildren="false" Left="3" Top="10" Width="254" Height="78" ForeColor="255,255,255,202" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK" NoFrame="true"/>
+					</control>
+				</control>
+			</control>
+			<control name="groupbox_5" entity="GroupBox" script="" init="">
+				<prop Left="14" Top="307" Width="700" Height="110" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/nine/mop_up_29.png"/>
+				<control name="lbl_3" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Top="6" Width="140" Height="100" ForeColor="255,255,255,202" ShadowColor="0,0,0,0" Text="@ui_tips_equip" Font="WRYH30_O_BLACK" DrawMode="FitWindow" BackImage="gui/tp2_main/strong/strong_flag.png"/>
+				</control>
+				<control name="groupbox_9" entity="GroupBox" script="" init="">
+					<prop Left="408" Top="15" Width="166" Height="80" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand"/>
+					<control name="lbl_9" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Top="10" Width="160" Height="30" ForeColor="255,255,255,65" ShadowColor="0,0,0,0" Text="@ui_change_strong3" Font="WRYH24_O_BLACK"/>
+					</control>
+					<control name="lbl_power2" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Top="40" Width="160" Height="30" ForeColor="255,255,255,65" ShadowColor="0,0,0,0" Font="WRYH24_O_BLACK"/>
+					</control>
+				</control>
+				<control name="groupbox_15" entity="GroupBox" script="" init="">
+					<prop Left="146" Top="15" Width="254" Height="80" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand"/>
+					<control name="pbar_power1" entity="ProgressBar" script="" init="">
+						<prop Maximum="100" Value="90" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_common/window/task_progress.png" ProgressMode="LeftToRight" Top="10" Width="254" Height="30" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_common/window/task_progress_di.png"/>
+					</control>
+					<control name="lbl_15" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="10" Top="40" Width="100" Height="30" ForeColor="255,255,255,202" ShadowColor="0,0,0,0" Text="@ui_change_strong4" Font="WRYH22_O_BLACK"/>
+					</control>
+					<control name="lbl_tuijian_power1" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="120" Top="40" Width="126" Height="30" ForeColor="255,255,255,202" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
+					</control>
+				</control>
+			</control>
+			<control name="groupbox_6" entity="GroupBox" script="" init="">
+				<prop Left="14" Top="417" Width="700" Height="110" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/nine/mop_up_29.png"/>
+				<control name="lbl_4" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Top="6" Width="140" Height="100" ForeColor="255,255,255,202" ShadowColor="0,0,0,0" Text="@ui_change_strong7" Font="WRYH30_O_BLACK" DrawMode="FitWindow" BackImage="gui/tp2_main/strong/strong_flag.png"/>
+				</control>
+				<control name="groupbox_10" entity="GroupBox" script="" init="">
+					<prop Left="408" Top="15" Width="166" Height="80" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand"/>
+					<control name="lbl_11" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Top="10" Width="160" Height="30" ForeColor="255,255,255,65" ShadowColor="0,0,0,0" Text="@ui_change_strong3" Font="WRYH24_O_BLACK"/>
+					</control>
+					<control name="lbl_power3" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Top="40" Width="160" Height="30" ForeColor="255,255,255,65" ShadowColor="0,0,0,0" Font="WRYH24_O_BLACK"/>
+					</control>
+				</control>
+				<control name="groupbox_17" entity="GroupBox" script="" init="">
+					<prop Left="146" Top="15" Width="254" Height="80" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand"/>
+					<control name="pbar_power2" entity="ProgressBar" script="" init="">
+						<prop Maximum="100" Value="90" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_common/window/task_progress.png" ProgressMode="LeftToRight" Top="10" Width="254" Height="30" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_common/window/task_progress_di.png"/>
+					</control>
+					<control name="lbl_17" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="10" Top="40" Width="100" Height="30" ForeColor="255,255,255,202" ShadowColor="0,0,0,0" Text="@ui_change_strong4" Font="WRYH22_O_BLACK"/>
+					</control>
+					<control name="lbl_tuijian_power2" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="120" Top="40" Width="126" Height="30" ForeColor="255,255,255,202" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
+					</control>
+				</control>
+			</control>
+			<control name="btn_change1" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/refurbish1.png" PushImage="gui/tp2_common/window/refurbish.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="574" Top="116" Width="126" Height="51" ForeColor="255,255,255,202" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_change_strong1" Font="WRYH22" DrawMode="FitWindow" ClickSound="button_click"/>
+			</control>
+			<control name="btn_change2" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/refurbish1.png" PushImage="gui/tp2_common/window/cancel1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="574" Top="226" Width="126" Height="51" ForeColor="255,255,255,202" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_change_strong1" Font="WRYH22" DrawMode="FitWindow" ClickSound="button_click"/>
+			</control>
+			<control name="btn_change3" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/refurbish1.png" PushImage="gui/tp2_common/window/refurbish.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="574" Top="336" Width="126" Height="51" ForeColor="255,255,255,202" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_change_strong1" Font="WRYH22" DrawMode="FitWindow" ClickSound="button_click"/>
+			</control>
+			<control name="btn_change4" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/refurbish1.png" PushImage="gui/tp2_common/window/refurbish.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="574" Top="446" Width="126" Height="51" ForeColor="255,255,255,202" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_change_strong1" Font="WRYH22" DrawMode="ExpandH" ClickSound="button_click"/>
+			</control>
+			<control name="lbl_19" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="246" Width="242" Height="67" ShadowColor="0,0,0,0" Font="WRYH24" DrawMode="FitWindow" BackImage="gui/tp2_main/strong/strong_txt_01.png"/>
+			</control>
+			<control name="btn_close" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/clos1.png" PushImage="gui/tp2_common/window/clos.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="680" Top="8" Width="71" Height="70" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" ClickSound="ui_close"/>
+			</control>
+		</control>
+	</control>
+</form>
+

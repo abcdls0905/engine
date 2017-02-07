@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- edited with XMLSpy v2010 (http://www.altova.com) by MESMERiZE (MiZE) -->
+<!--环境互动参数说明-->
+<!--	一，公共参数-->
+<!--	EnvInteractTriggerType		int iTriggerType;//触发类型 SkillTriggerType-->
+<!--	EnvInteractStartPosType		int iStartPosType;//起始点类型（0攻击者所在位置，1目标点所在位置）-->
+<!--	EnvInteractEffectSpeed		float fSpeed;//速度(SkillPhyTriggerType_Time类触发的技能运动的速度，加上距离用于确定 开始给力的时间)-->
+<!--	EnvInteractDelayTime		DWORD dDelayTime;//延迟毫秒(SkillPhyTriggerType_Delay需要延迟的时间-->
+<!--	EnvInteractDist			float fDist; //移动（碰撞后触发）-与GetVal_Display:ActionDistance 相同-->
+<!--	EnvInteractHitTimes   	std::vector<DWORD> vecTimes;//多次伤害时间列表-与GetVal_Main:HitTime,ExtraHitTimes相同-->
+<!--	EnvInteractHitShape		int targetShape;//伤害形状   -1矩形2圆3扇形-->
+<!--	EnvInteractHitShapePara1	float fTargetShapePara1; //圆或扇形的半径，矩形的长-->
+<!--	EnvInteractHitShapePara2	float fTargetShapePara2; //扇形的角度，矩形的宽-->
+<!--	二，草动参数-->
+<!--	GrassDownTime	DWORD dDowTime;		//倒下时间-->
+<!--	GrassStopTime	DWORD dStopTime;	//保持倒地时间-->
+<!--	GrassUpTime		DWORD dStandTime;	//站起时间-->
+<!--	GrassFireDownTime	DWORD dFireDownTime;	//倒下时间-->
+<!--	GrassFireStopTime	DWORD dFireStopTime;	//保持倒地时间-->
+<!--	GrassFireUpTime		DWORD dFireStandTime;	//站起时间-->
+<!--	GrassFallDown		float fFallDown;	//最大倒下程度（x>=0.0 && x< 10.0）-->
+<!--	GrassEffectType		DWORD dEffectType;	//草特效类型（0无效果，1动，2烧，3动和烧）-->
+<!--	GrassFireEffectName		std::vector<std::string> vecFireEffectName;	//火特效名（多个则以逗号隔开）-->
+<!--	GrassMoveEffectName		std::vector<std::string> vecMoveEffectName;	//草屑特效名（多个则以逗号隔开）-->
+<!--	GrassHitShape				int grassShape;//伤害形状(1矩形，2园，3扇形)-->
+<!--	GrassHitShapePara1			float fGrassShapePara1;//伤害角度或宽-->
+<!--	GrassHitShapePara2			float fGrassShapePara2;//伤害半径或长-->
+<!--	三，模型动画参数-->
+<!--	AnimationDamageType	std::string strDamageType; //0火1冰-->
+<!--	四，物理参数-->
+<!--	PhysicsOpen		bool  bPhysicsOpen;//开关-->
+<!--	PhyDamage		float fDamage;     //力大小-->
+<!--	PhyMomentum		float fMomentum;   //力的量级-->
+<!--	PhyAttackerHeightRatio		float fAttackerHeightRatio;  //高度参数，用于确定力的起始点相对释放者的高度，技能释放者高度*fAttackerHeightRatio = fStartY-->
+<!--	PhyBeAttackerHeightRatio	float fBeAttackerHeightRatio;//高度参数，用于确定力的终点相对被攻击者的高度，技能被攻击高度*fBeAttackerHeightRatio = fEndY）-->
+<!--	PhyAttackType	int iAttackType; //力量碰到物体的打击类型(0固定方向固定长度射线,1固定半径四周扩散)-->
+<!--	PhyRadius		float fRadius;   //扩散半径(只对四散力有关)-->
+<!--	PhyFallOff		int iFallOff;    //是否衰减(只对四散力有关)-->
+<Object>
+	<Property ID="Gin_1" Name="龙吼" EnvInteractTriggerType="1" EnvInteractStartPosType="0" EnvInteractDelayTime="500" EnvInteractHitShape="2" EnvInteractHitShapePara1="5" GrassEffectType="1" GrassMoveEffectName="scenes_grass_001" GrassDownTime="50" GrassStopTime="50" GrassUpTime="800" GrassFallDown="3" GrassHitShape="2" GrassHitShapePara1="0" GrassHitShapePara2="5" AnimationDamageType="0" PhysicsOpen="1" PhyDamage="100" PhyMomentum="10" PhyAttackerHeightRatio="0.1" PhyBeAttackerHeightRatio="0.8" PhyAttackType="1" PhyRadius="6" PhyFallOff="1"/>
+	<Property ID="Gin_2" Name="崩山击" EnvInteractTriggerType="1" EnvInteractStartPosType="0" EnvInteractDelayTime="800" EnvInteractHitShape="3" EnvInteractHitShapePara1="5" EnvInteractHitShapePara2="60" GrassEffectType="1" GrassMoveEffectName="scenes_grass_001" GrassDownTime="100" GrassStopTime="50" GrassUpTime="300" GrassFallDown="2" GrassHitShape="3" GrassHitShapePara1="60" GrassHitShapePara2="8" AnimationDamageType="0" PhysicsOpen="1" PhyDamage="250" PhyMomentum="10" PhyAttackerHeightRatio="0.1" PhyBeAttackerHeightRatio="0.8" PhyAttackType="0"/>
+	<Property ID="Gin_3" Name="旋风斩" EnvInteractTriggerType="3" EnvInteractStartPosType="0" EnvInteractDelayTime="0" EnvInteractHitTimes="0,500,500,500,500,500,500" EnvInteractHitShape="2" EnvInteractHitShapePara1="3" GrassEffectType="1" GrassMoveEffectName="scenes_grass_001" GrassDownTime="150" GrassStopTime="150" GrassUpTime="150" GrassFallDown="3" GrassHitShape="2" GrassHitShapePara1="0" GrassHitShapePara2="3" PhysicsOpen="1" PhyDamage="30" PhyMomentum="1" PhyAttackerHeightRatio="0.7" PhyBeAttackerHeightRatio="0.7" PhyAttackType="1" PhyRadius="2" PhyFallOff="1"/>
+	<Property ID="Gin_4" Name="跳斩" EnvInteractTriggerType="1" EnvInteractStartPosType="1" EnvInteractDelayTime="1000" EnvInteractHitShape="2" EnvInteractHitShapePara1="5" GrassEffectType="1" GrassMoveEffectName="scenes_grass_001" GrassDownTime="100" GrassStopTime="100" GrassUpTime="300" GrassFallDown="3" GrassHitShape="2" GrassHitShapePara1="0" GrassHitShapePara2="5" AnimationDamageType="0" PhysicsOpen="1" PhyDamage="250" PhyMomentum="10" PhyAttackerHeightRatio="0.1" PhyBeAttackerHeightRatio="0.8" PhyAttackType="1" PhyRadius="5" PhyFallOff="1"/>
+	<Property ID="Gin_5" Name="普通攻击-连招1" EnvInteractTriggerType="1" EnvInteractStartPosType="0" EnvInteractDelayTime="800" EnvInteractHitShape="3" EnvInteractHitShapePara1="5" EnvInteractHitShapePara2="90" GrassEffectType="1" GrassMoveEffectName="scenes_grass_001" GrassDownTime="100" GrassStopTime="50" GrassUpTime="300" GrassFallDown="2" GrassHitShape="3" GrassHitShapePara1="90" GrassHitShapePara2="5" AnimationDamageType="0" PhysicsOpen="1" PhyDamage="100" PhyMomentum="10" PhyAttackerHeightRatio="0.1" PhyBeAttackerHeightRatio="0.8" PhyAttackType="0"/>
+	<Property ID="Gin_6" Name="普通攻击-连招2" EnvInteractTriggerType="1" EnvInteractStartPosType="0" EnvInteractDelayTime="600" EnvInteractHitShape="3" EnvInteractHitShapePara1="6" EnvInteractHitShapePara2="180" GrassEffectType="1" GrassMoveEffectName="scenes_grass_001" GrassDownTime="100" GrassStopTime="50" GrassUpTime="300" GrassFallDown="3" GrassHitShape="3" GrassHitShapePara1="180" GrassHitShapePara2="6" AnimationDamageType="0" PhysicsOpen="1" PhyDamage="150" PhyMomentum="10" PhyAttackerHeightRatio="0.1" PhyBeAttackerHeightRatio="0.8" PhyAttackType="0"/>
+	<Property ID="Gin_7" Name="普通攻击-连招3" EnvInteractTriggerType="1" EnvInteractStartPosType="0" EnvInteractDelayTime="700" EnvInteractHitShape="2" EnvInteractHitShapePara1="5" GrassEffectType="1" GrassMoveEffectName="scenes_grass_001" GrassDownTime="100" GrassStopTime="50" GrassUpTime="300" GrassFallDown="2" GrassHitShape="2" GrassHitShapePara1="0" GrassHitShapePara2="5" AnimationDamageType="0" PhysicsOpen="1" PhyDamage="100" PhyMomentum="10" PhyAttackerHeightRatio="0.1" PhyBeAttackerHeightRatio="0.8" PhyAttackType="1" PhyRadius="5" PhyFallOff="1"/>
+	<Property ID="Gin_8" Name="死亡尖啸" EnvInteractTriggerType="1" EnvInteractStartPosType="0" EnvInteractDelayTime="500" EnvInteractHitShape="3" EnvInteractHitShapePara1="7" EnvInteractHitShapePara2="60" GrassEffectType="1" GrassMoveEffectName="scenes_grass_001" GrassDownTime="100" GrassStopTime="300" GrassUpTime="300" GrassFallDown="3" GrassHitShape="3" GrassHitShapePara1="60" GrassHitShapePara2="7" AnimationDamageType="0" PhysicsOpen="1" PhyDamage="150" PhyMomentum="10" PhyAttackerHeightRatio="0.1" PhyBeAttackerHeightRatio="0.8" PhyAttackType="0"/>
+	<Property ID="Gin_9" Name="音纹领域" EnvInteractTriggerType="1" EnvInteractStartPosType="0" EnvInteractDelayTime="500" EnvInteractHitShape="2" EnvInteractHitShapePara1="5" GrassEffectType="1" GrassMoveEffectName="scenes_grass_001" GrassDownTime="50" GrassStopTime="50" GrassUpTime="400" GrassFallDown="2" GrassHitShape="2" GrassHitShapePara1="0" GrassHitShapePara2="5" PhysicsOpen="1" PhyDamage="100" PhyMomentum="10" PhyAttackerHeightRatio="0.1" PhyBeAttackerHeightRatio="0.8" PhyAttackType="1" PhyRadius="5" PhyFallOff="1"/>
+	<Property ID="Gin_10" Name="地震" EnvInteractTriggerType="1" EnvInteractStartPosType="0" EnvInteractDelayTime="500" EnvInteractHitShape="2" EnvInteractHitShapePara1="6" GrassEffectType="1" GrassMoveEffectName="scenes_grass_001" GrassDownTime="50" GrassStopTime="50" GrassUpTime="900" GrassFallDown="3" GrassHitShape="2" GrassHitShapePara1="0" GrassHitShapePara2="6" PhysicsOpen="1" PhyDamage="100" PhyMomentum="10" PhyAttackerHeightRatio="0.1" PhyBeAttackerHeightRatio="0.8" PhyAttackType="1" PhyRadius="6" PhyFallOff="1"/>
+	<Property ID="Gin_11" Name="戏谑音盾" EnvInteractTriggerType="1" EnvInteractStartPosType="0" EnvInteractDelayTime="150" EnvInteractHitShape="2" EnvInteractHitShapePara1="10" GrassEffectType="1" GrassMoveEffectName="scenes_grass_001" GrassDownTime="150" GrassStopTime="150" GrassUpTime="300" GrassFallDown="3" GrassHitShape="2" GrassHitShapePara1="0" GrassHitShapePara2="10" PhysicsOpen="0" PhyDamage="30" PhyMomentum="1" PhyAttackerHeightRatio="0.5" PhyBeAttackerHeightRatio="0.5" PhyAttackType="1" PhyRadius="10" PhyFallOff="1"/>
+	<Property ID="copy_Gin_4" Name="跳斩" EnvInteractTriggerType="1" EnvInteractStartPosType="1" EnvInteractDelayTime="1000" EnvInteractHitShape="2" EnvInteractHitShapePara1="5" GrassEffectType="1" GrassMoveEffectName="scenes_grass_001" GrassDownTime="100" GrassStopTime="100" GrassUpTime="300" GrassFallDown="3" GrassHitShape="2" GrassHitShapePara1="0" GrassHitShapePara2="5" AnimationDamageType="0" PhysicsOpen="1" PhyDamage="250" PhyMomentum="10" PhyAttackerHeightRatio="0.1" PhyBeAttackerHeightRatio="0.8" PhyAttackType="1" PhyRadius="5" PhyFallOff="1"/>
+	<Property ID="Gin_12" Name="破釜沉舟" EnvInteractTriggerType="1" EnvInteractStartPosType="0" EnvInteractDelayTime="750" EnvInteractHitShape="2" EnvInteractHitShapePara1="10" GrassEffectType="1" GrassMoveEffectName="scenes_grass_001" GrassDownTime="150" GrassStopTime="150" GrassUpTime="300" GrassFallDown="3" GrassHitShape="2" GrassHitShapePara1="0" GrassHitShapePara2="10" PhysicsOpen="0" PhyDamage="30" PhyMomentum="1" PhyAttackerHeightRatio="0.5" PhyBeAttackerHeightRatio="0.5" PhyAttackType="1" PhyRadius="10" PhyFallOff="1"/>
+	<Property ID="Gin_13" Name="雷霆一击" EnvInteractTriggerType="1" EnvInteractStartPosType="1" EnvInteractDelayTime="800" EnvInteractHitShape="2" EnvInteractHitShapePara1="5" GrassEffectType="1" GrassMoveEffectName="scenes_grass_001" GrassDownTime="150" GrassStopTime="150" GrassUpTime="300" GrassFallDown="3" GrassHitShape="2" GrassHitShapePara1="0" GrassHitShapePara2="5" PhysicsOpen="1" PhyDamage="30" PhyMomentum="1" PhyAttackerHeightRatio="0.5" PhyBeAttackerHeightRatio="0.5" PhyAttackType="1" PhyRadius="5" PhyFallOff="1"/>
+	<Property ID="Gin_14a" Name="at01" EnvInteractTriggerType="1" EnvInteractStartPosType="0" EnvInteractDelayTime="300" EnvInteractHitShape="3" EnvInteractHitShapePara1="5" EnvInteractHitShapePara2="150" GrassEffectType="1" GrassMoveEffectName="scenes_grass_001" GrassDownTime="50" GrassStopTime="150" GrassUpTime="300" GrassFallDown="7" GrassHitShape="3" GrassHitShapePara1="150" GrassHitShapePara2="5" PhysicsOpen="1" PhyDamage="30" PhyMomentum="1" PhyAttackerHeightRatio="0.5" PhyBeAttackerHeightRatio="0.5" PhyAttackType="1" PhyRadius="5" PhyFallOff="1"/>
+</Object>
+
+

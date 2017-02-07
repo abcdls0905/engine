@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by  () -->
+<!--技能使用相关的属性(npc,玩家角色共用)-->
+<object>
+    <!-- 基本属性 -->
+    <properties>
+        <property name="CurSkill" type="object" public="false" private="false" save="false" desc="当前正在使用的技能"/>
+        <property name="CurSkillUUID" type="int64" public="false" private="false" save="false" desc="当前正在使用技能的64位唯一标志"/>
+        <property name="CurSkillType" type="int" public="false" private="false" save="false" realtime="false" desc="当前正在使用的技能方式"/>
+        <property name="CurSkillTarget" type="object" public="false" private="false" save="false" realtime="false" desc="当前的技能目标"/>
+        <property name="CurSkillTargetX" type="float" public="false" private="false" save="false" realtime="false" desc="当前的技能坐标"/>
+        <property name="CurSkillTargetY" type="float" public="false" private="false" save="false" realtime="false" desc="当前的技能坐标"/>
+        <property name="CurSkillTargetZ" type="float" public="false" private="false" save="false" realtime="false" desc="当前的技能坐标"/>
+        <property name="StorageBeginTime" type="int64" public="false" private="false" save="false" desc="蓄力开始时间"/>
+        <property name="StorageEndTime" type="int64" public="false" private="false" save="false" desc="蓄力结束时间"/>
+		<property name="CurDestTarget" type="object" public="false" private="false" save="false" desc="技能当前目标，与技能锁定目标不同"/>
+        
+        <property name="UseBeforeMoveSelfPos" type="byte" public="false" private="false" save="false" desc="是否要使用位移前的坐标"/>
+        <property name="BeforeMoveSelfPosX" type="float" public="false" private="false" save="false" desc="自身在位于前的坐标"/>
+        <property name="BeforeMoveSelfPosY" type="float" public="false" private="false" save="false" desc="自身在位于前的坐标"/>
+        <property name="BeforeMoveSelfPosZ" type="float" public="false" private="false" save="false" desc="自身在位于前的坐标"/>
+        <property name="BeforeMoveSelfPosO" type="float" public="false" private="false" save="false" desc="自身在位于前的坐标"/>
+    </properties>
+    
+    <!-- 表属性 -->
+    <records>
+        <record name="cooldown_rec" cols="4" maxrows="32" save="false" public="false" private="false" desc="冷却表">
+            <column type="dword" desc="冷却分类ID" />
+            <column type="int64" desc="冷却开始时间，现实64位时间数据" />
+            <column type="int64" desc="冷却结束时间，现实64位时间数据" />
+            <column type="word" desc="冷却大分类ID,更上一层的分类" />
+        </record>
+    </records>
+    
+    <!--从其他文件加载属性-->
+    <includes>
+    </includes>
+</object>

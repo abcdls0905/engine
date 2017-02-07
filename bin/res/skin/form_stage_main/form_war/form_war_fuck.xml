@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="form_common\form_confirm" init="main_form_init">
+		<prop LimitInScreen="true" Left="165" Top="85" Width="522" Height="520" ForeColor="0,0,0,0" BackColor="0,0,0,0" LineColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH13" DrawMode="FitWindow" BackImage="gui/main/heedbar/youxizanti_kuang.jpg"/>
+		<event on_open="main_form_open" on_close="on_main_form_close"/>
+		<control name="Label1" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="30" Top="60" Width="462" Height="440" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_001.png"/>
+		</control>
+		<control name="Label2" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="35" Top="100" Width="452" Height="395" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_002.png"/>
+		</control>
+		<control name="lbl_3rd" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="40" Top="105" Width="442" Height="385" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+		</control>
+		<control name="lbl_decorate_3" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="43" Top="462" Width="436" Height="28" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_03.png"/>
+		</control>
+		<control name="lbl_decorate_8" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="36" Top="404" Width="450" Height="94" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_08.png"/>
+		</control>
+		<control name="lbl_title_bg" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="83" Top="46" Width="356" Height="54" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_10.png"/>
+		</control>
+		<control name="lbl_6" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="76" Top="293" Width="53" Height="53" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/main/strengthen/fuxuankuang.png"/>
+		</control>
+		<control name="lbl_5" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="76" Top="227" Width="53" Height="53" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/main/strengthen/fuxuankuang.png"/>
+		</control>
+		<control name="lbl_4" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="79" Top="162" Width="53" Height="53" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/main/strengthen/fuxuankuang.png"/>
+		</control>
+		<control name="ok_btn" entity="Button" script="" init="">
+			<prop NormalImage="gui/tp2_common/window/affirm.png" PushImage="gui/tp2_common/window/affirm1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="73" Top="-99" Width="150" Height="60" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" VAnchor="Bottom" Text="@ui_ok" Font="WRYH24" TabIndex="100" TabStop="true" AutoSize="true" ClickSound="button_click"/>
+			<event on_click="ok_btn_click"/>
+		</control>
+		<control name="cancel_btn" entity="Button" script="" init="">
+			<prop NormalImage="gui/tp2_common/window/cancel.png" PushImage="gui/tp2_common/window/cancel1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-223" Top="-99" Width="150" Height="60" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Right" Text="@ui_cancel" Font="WRYH24" TabStop="true" AutoSize="true" ClickSound="button_click"/>
+			<event on_click="cancel_btn_click"/>
+		</control>
+		<control name="btn_close" entity="Button" script="" init="">
+			<prop NormalImage="gui/tp2_common/window/clos.png" PushImage="gui/tp2_common/window/clos1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-90" Top="40" Width="70" Height="70" BackColor="255,192,192,192" LineColor="0,0,0,0" ShadowColor="0,0,0,0" HAnchor="Right" TabStop="true" AutoSize="true" DrawMode="FitWindow" ClickSound="ui_close"/>
+			<event on_click="cancel_btn_click"/>
+		</control>
+		<control name="lbl_title" entity="Label" script="" init="">
+			<prop Align="Center" RefCursor="WIN_HELP" Left="-58" Top="26" Width="116" Height="64" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" HAnchor="Center" AutoSize="true" BackImage="gui/tp2_battle/scene_account/jubao.png"/>
+		</control>
+		<control name="rbtn_1" entity="RadioButton" script="" init="">
+			<prop Checked="true" BoxSize="12" NormalImage="gui/tp2_main/blackmarket/bm_8.png" CheckedImage="gui/tp2_main/blackmarket/bm_10.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="185" Top="180" Width="40" Height="40" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click"/>
+		</control>
+		<control name="lbl_1" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="256" Top="189" Width="80" Height="22" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="@ui_war_83" Font="WRYH24"/>
+		</control>
+		<control name="rbtn_2" entity="RadioButton" script="" init="">
+			<prop BoxSize="12" NormalImage="gui/tp2_main/blackmarket/bm_8.png" CheckedImage="gui/tp2_main/blackmarket/bm_10.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="185" Top="230" Width="40" Height="40" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="1" TabStop="true" AutoSize="true" ClickSound="button_click"/>
+		</control>
+		<control name="lbl_2" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="256" Top="239" Width="80" Height="22" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="@ui_war_84" Font="WRYH24"/>
+		</control>
+		<control name="rbtn_3" entity="RadioButton" script="" init="">
+			<prop BoxSize="12" NormalImage="gui/tp2_main/blackmarket/bm_8.png" CheckedImage="gui/tp2_main/blackmarket/bm_10.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="185" Top="280" Width="40" Height="40" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="2" TabStop="true" AutoSize="true" ClickSound="button_click"/>
+		</control>
+		<control name="lbl_3" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="256" Top="289" Width="80" Height="22" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="@ui_war_85" Font="WRYH24"/>
+		</control>
+		<control name="ipt_1" entity="Edit" script="" init="">
+			<prop TextOffsetX="5" Caret="Default" Left="78" Top="333" Width="366" Height="54" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Font="WRYH24_O_BLACK" Cursor="WIN_IBEAM" TabStop="true" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_006.png"/>
+		</control>
+		<control name="mltbox_info" entity="MultiTextBox" script="" init="">
+			<prop TextColor="255,255,255,153" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,382,54" LineHeight="50" LineTextAlign="Center" ScrollSize="17" Left="70" Top="111" Width="382" Height="54" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Font="WRYH26" NoFrame="true"/>
+		</control>
+	</control>
+</form>
+

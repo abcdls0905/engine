@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 每日推荐表格定义 -->
+<object>
+	<properties>
+		<property name="DayActive" type="int" public="false" private="true" save="true" desc="每日活跃度"/>
+	</properties>
+
+	<records>
+		<record name="day_active_main_rec" cols="5" maxrows="200" public="false" private="true" save="true" desc="每日参与的活动主表">
+			<column type="dword" desc="活跃度ID"/>
+			<column type="byte" desc="任务状态"/>
+			<column type="byte" desc="完成次数"/>
+			<column type="byte" desc="完成获得的活跃度"/>
+			<column type="byte" desc="是否领取奖励"/>
+		</record>
+		<record name="day_active_get_award_rec" cols="1" maxrows="200" public="false" private="true" save="true" desc="每日参与的活动领取奖励表">
+			<column type="dword" desc="分数"/>
+		</record>
+	</records>
+</object>

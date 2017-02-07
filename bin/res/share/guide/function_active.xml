@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 被2011 rel. 2 sp1 (Lonely Knight) 使用XMLSpy vLK编辑的 (http://www.altova.com) by -->
+<!---->
+<!--
+	ActiveType 取值范围[0,1]  默认值是 0
+						0 表示激活的类型是 锁定/解锁(可以点击，点击后显示未开启提示)
+						1 表示激活的类型是 启用/禁用(变灰不可点击)
+						2 表示激活的类型是 显示/隐藏(隐藏不显示)
+	desc 
+-->
+<Object>
+	<Property ID="skill" GuideStep="1" GuideIndex="7" ActiveType="2" Form="form_main_clone" Ctrl="imagegrid_skill_bar"/>
+	<Property ID="skill_1" GuideStep="1" GuideIndex="7" ActiveType="2" Form="form_main_clone" Ctrl="lbl_1"/>
+	<Property ID="skill_2" GuideStep="1" GuideIndex="7" ActiveType="2" Form="form_main_clone" Ctrl="lbl_2"/>
+	<Property ID="skill_3" GuideStep="1" GuideIndex="7" ActiveType="2" Form="form_main_clone" Ctrl="lbl_3"/>
+	<Property ID="skill_4" GuideStep="1" GuideIndex="7" ActiveType="2" Form="form_main_clone" Ctrl="lbl_bg_skill_change_2"/>
+	<Property ID="yewaiqiehuan" GuideStep="18" GuideIndex="3" ActiveType="2" Form="form_main_war" Ctrl="btn_exchange"/>
+	<!--
+    <Property ID="skill_taiji_bg1" Level="6" ActiveType="2" Form="form_main_clone" Ctrl="lbl_taiji_bg1"/>
+	<Property ID="skill_taiji_bg2" Level="6" ActiveType="2" Form="form_main_clone" Ctrl="lbl_taiji_bg2"/>
+    -->
+	<Property ID="shibai-qianghua" GuideStep="16" GuideIndex="0" ActiveType="0" Form="form_clone_fail" Ctrl="btn_qianghua" Tips="sys_gongnengjiesuo_shibaiqianghua"/>
+	<Property ID="shibai-baoxiang" GuideStep="16" GuideIndex="0" ActiveType="0" Form="form_clone_fail" Ctrl="btn_baozang" Tips="sys_gongnengjiesuo_shibaibaoxiang"/>
+	<Property ID="shibai-jineng" GuideStep="16" GuideIndex="0" ActiveType="0" Form="form_clone_fail" Ctrl="btn_jineng" Tips="sys_gongnengjiesuo_shibaijineng"/>
+	<Property ID="shibai-fuwen" GuideStep="16" GuideIndex="0" ActiveType="0" Form="form_clone_fail" Ctrl="btn_fuwen" Tips="sys_gongnengjiesuo_shibaifuwen"/>
+	<Property ID="shibai-chonglai" GuideStep="16" GuideIndex="0" ActiveType="1" Form="form_clone_fail" Ctrl="btn_restart"/>
+	
+	<Property ID="Pause" GuideStep="16" GuideIndex="0" ActiveType="2" Form="form_main_clone" Ctrl="btn_pause" Tips="sys_gongnengjiesuo_pause"/>
+	<!--<Property ID="tuoguan" GuideStep="16" GuideIndex="0" ActiveType="2" Form="form_main_clone" Ctrl="btn_end_auto_skill" Tips="sys_gongnengjiesuo_tuoguan"/>-->
+	<Property ID="lilian" Level="7" ActiveType="0" Form="form_main_hall" Ctrl="btn_exercise" Tips="sys_gongnengjiesuo_lilian" ActiveEffect="function_active_effect"/>
+	<Property ID="heishi" Level="4" ActiveType="0" Form="form_main_hall" Ctrl="btn_blackmarket" Tips="sys_gongnengjiesuo_heishi" ActiveEffect="function_active_effect"/>
+	<Property ID="jiaoyihang" Level="17" ActiveType="0" Form="form_main_hall" Ctrl="btn_trade" Tips="sys_gongnengjiesuo_jiaoyihang" ActiveEffect="function_active_effect"/>
+	
+	<Property ID="huoyuedu" Level="8" ActiveType="2" Form="form_main_hall" Ctrl="btn_day_activity"/>
+	<Property ID="huoyuedu-tips" Level="8" ActiveType="2" Form="form_main_hall" Ctrl="lbl_dayactive_num_tips"/>
+	<Property ID="huoyuedu-tips-bg" Level="8" ActiveType="2" Form="form_main_hall" Ctrl="lbl_dayactive_num_tips_bg"/>
+	<Property ID="baozang" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="btn_treasure" Tips=""/>
+	<Property ID="baozang-tips" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="lbl_treasure_num_tips" Tips=""/>
+	<Property ID="baozang-tips-bg" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="lbl_treasure_num_tips_bg" Tips=""/>
+	<Property ID="mijing" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="btn_mystic" Tips=""/>
+	<Property ID="mijing-tips" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="btn_mystic_num_tips" Tips=""/>
+	<Property ID="mijing-tips-bg" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="btn_mystic_num_tips_bg" Tips=""/>
+	<Property ID="shangdian" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="btn_shop" Tips=""/>
+	<Property ID="shangdian-tips" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="lbl_pay_num_tips" Tips=""/>
+	<Property ID="shangdian-tips-bg" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="lbl_pay_num_tips_bg" Tips=""/>
+	<Property ID="libaotuisong" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="btn_rebateshop" Tips=""/>
+	<Property ID="libaotuisong-tips" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="lbl_rebateshop_time" Tips=""/>
+	<Property ID="jizihuodong" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="btn_word_collect" Tips=""/>
+	<Property ID="shouchong" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="btn_charge" Tips=""/>
+	<Property ID="qirihuodong" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="btn_seven_days" Tips=""/>
+	<Property ID="qirihuodong-tips" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="lbl_seven_days_tips" Tips=""/>
+	<Property ID="qirihuodong-tips-bg" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="lbl_seven_days_tips_bg" Tips=""/>
+	<Property ID="chunjie" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="btn_spring_festival" Tips=""/>
+	<Property ID="chunjie-tips" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="lbl_spring_num_tips" Tips=""/>
+	<Property ID="chunjie-tips-bg" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="lbl_spring_num_tips_bg" Tips=""/>
+	<Property ID="xianshihuodong" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="btn_limit_activity" Tips=""/>
+	<Property ID="xianshihuodong-tips" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="lbl_limit_activity_num_tips" Tips=""/>
+	<Property ID="xianshihuodong-tips-bg" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="lbl_limit_activity_num_tips_bg" Tips=""/>
+	<Property ID="haoshengyin" GuideStep="13" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="btn_goodmusic" Tips=""/>
+
+	<Property ID="libao" GuideStep="23" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="btn_activity_phy" Tips="sys_gongnengjiesuo_libao"/>
+	<Property ID="libao-tips" GuideStep="23" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="lbl_activity_num_tips" Tips="sys_gongnengjiesuo_libao"/>
+	<Property ID="libao-tips-bg" GuideStep="23" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="lbl_activity_num_tips_bg" Tips="sys_gongnengjiesuo_libao_bg"/>
+	<Property ID="libao-tips-news" GuideStep="23" GuideIndex="0" ActiveType="2" Form="form_main_hall" Ctrl="lbl_activity_tips_new" Tips="sys_gongnengjiesuo_libao_bg"/>
+	<Property ID="zhandui" GuideStep="24" GuideIndex="1" ActiveType="0" Form="form_main_hall" Ctrl="lbl_photo" Tips="sys_gongnengjiesuo_zhandui"/>
+	<Property ID="zhandui-tips" GuideStep="24" GuideIndex="1" ActiveType="2" Form="form_main_hall" Ctrl="lbl_role_npc_num_tips" Tips="sys_gongnengjiesuo_zhandui"/>
+	<Property ID="zhandui-tips-bg" GuideStep="24" GuideIndex="1" ActiveType="2" Form="form_main_hall" Ctrl="lbl_role_npc_num_tips_bg" Tips="sys_gongnengjiesuo_zhandui_bg"/>
+	<Property ID="zhandui-zhukong" GuideStep="26" GuideIndex="1" ActiveType="1" Form="form_role_npc_array" Ctrl="btn_use_guide"/>
+	<Property ID="zhandui-yewai" GuideStep="24" GuideIndex="1" ActiveType="0" Form="form_main_clone_head" Ctrl="lbl_player_photo" Tips="sys_gongnengjiesuo_zhandui"/>
+	<Property ID="zudui-yewai" GuideStep="13" GuideIndex="1" ActiveType="2" Form="form_quest_trace" Ctrl="rbtn_team" Tips="sys_gongnengjiesuo_zhandui"/>
+	<Property ID="rbtn_zhenying" Level="36" ActiveType="2" Form="form_quest_trace" Ctrl="rbtn_zhenying" Tips=""/>
+	<!--
+	<Property ID="skill" GuideStep="2" GuideIndex="7" ActiveType="2" Form="form_main_hall" Ctrl="btn_gift" ActiveEffect="function_active_effect" Tips="yindaojiesuo"/>
+	<Property ID="Gift" GuideStep="8" GuideIndex="1" ActiveType="0" Form="form_main_hall" Ctrl="btn_gift" ActiveEffect="function_active_effect" Tips="sys_gongnengjiesuo_gift"/>
+	<Property ID="Treasure" GuideStep="9" GuideIndex="1" ActiveType="0" Form="form_main_hall" Ctrl="btn_treasure" ActiveEffect="function_active_effect" Tips="sys_gongnengjiesuo_treasure"/>
+	<Property ID="Tavern" GuideStep="14" GuideIndex="1" ActiveType="0" Form="form_main_hall" Ctrl="btn_tavern" ActiveEffect="function_active_effect" Tips="sys_gongnengjiesuo_tavern"/>
+	<Property ID="jingjichang" GuideStep="21" GuideIndex="1" ActiveType="0" Form="form_main_hall" Ctrl="btn_exercise" ActiveEffect="function_active_effect" Tips="sys_gongnengjiesuo_exercise"/>
+	<Property ID="duobao" GuideStep="22" GuideIndex="1" ActiveType="0" Form="form_exercise" Ctrl="btn_db" ActiveEffect="" Tips="sys_gongnengjiesuo_deprive"/>
+	<Property ID="BlackMarket" GuideStep="23" GuideIndex="1" ActiveType="0" Form="form_main_hall" Ctrl="btn_blackmarket" ActiveEffect="function_active_effect" Tips="sys_gongnengjiesuo_blackMarket"/>
+	<Property ID="Talent" GuideStep="26" GuideIndex="1" ActiveType="0" Form="form_main_hall" Ctrl="btn_talent" ActiveEffect="function_active_effect" Tips="sys_gongnengjiesuo_talent"/>
+	<Property ID="zudui" GuideStep="27" GuideIndex="1" ActiveType="0" Form="form_exercise" Ctrl="btn_zdfb" ActiveEffect="" Tips="sys_gongnengjiesuo_zudui"/>
+	<Property ID="dianfeng" GuideStep="29" GuideIndex="1" ActiveType="0" Form="form_exercise" Ctrl="btn_dfdj" ActiveEffect="" Tips="sys_gongnengjiesuo_dianfeng"/>
+	<Property ID="Tattoo" GuideStep="30" GuideIndex="1" ActiveType="0" Form="form_main_hall" Ctrl="btn_tattoo" ActiveEffect="function_active_effect" Tips="sys_gongnengjiesuo_tattoo"/>
+	<Property ID="gonghui" GuideStep="31" GuideIndex="1" ActiveType="0" Form="form_main_hall" Ctrl="btn_guild" ActiveEffect="function_active_effect" Tips="sys_gongnengjiesuo_gonghui"/>
+	<Property ID="zhanchang" GuideStep="32" GuideIndex="1" ActiveType="0" Form="form_exercise" Ctrl="btn_sszc" ActiveEffect="" Tips="sys_gongnengjiesuo_zhanchang"/>
+	<Property ID="Soul" GuideStep="35" GuideIndex="1" ActiveType="1" Form="form_bag" Ctrl="btn_soul" ActiveEffect=""/>
+	<Property ID="zuoqi" GuideStep="43" GuideIndex="1" ActiveType="0" Form="form_main_hall" Ctrl="btn_ride" ActiveEffect="function_active_effect" Tips="sys_gongnengjiesuo_zuoqi"/>
+	<Property ID="baozang" Level="6" ActiveType="1" Form="form_clone_fail" Ctrl="btn_qianghua" ActiveEffect="function_active_effect"/>
+	<Property ID="jiuguan" Level="6" ActiveType="2" Form="form_clone_fail" Ctrl="btn_tianshu" ActiveEffect="function_active_effect"/>
+	<Property ID="qianghua" Level="6" ActiveType="2" Form="form_clone_fail" Ctrl="btn_jiineng" ActiveEffect="function_active_effect"/>
+	<Property ID="jineng" Level="6" ActiveType="1" Form="form_clone_fail" Ctrl="btn_fuwen" ActiveEffect="function_active_effect"/>
+	<Property ID="chongjinbi" Level="6" ActiveType="1" Form="form_skill" Ctrl="btn_buy_gold" ActiveEffect="function_active_effect"/>
+	<Property ID="chongzuan" Level="6" ActiveType="1" Form="form_skill" Ctrl="btn_buy_diamond" ActiveEffect="function_active_effect"/>
+	<Property ID="BlackMarket" Level="8" ActiveType="1" Form="form_skill" Ctrl="btn_buy_diamond" ActiveEffect="function_active_effect"/>
+-->
+</Object>

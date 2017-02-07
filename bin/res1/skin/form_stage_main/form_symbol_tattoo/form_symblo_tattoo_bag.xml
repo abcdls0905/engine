@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop IsGC="true" Left="37" Top="37" Width="1062" Height="718" BackColor="0,255,255,255" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\use\function\function_vein_096.png" />
+        <control name="groupbox_bk_bag" entity="GroupBox" script="" init="">
+            <prop Top="8" Width="1054" Height="710" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+            <control name="groupbox_bag" entity="GroupBox" script="" init="">
+                <prop Left="-622" Top="8" Width="582" Height="694" BackColor="0,255,255,255" ShadowColor="0,0,0,0" HAnchor="Right" NoFrame="true" DrawMode="Expand" />
+                <control name="lbl_8" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Top="12" Width="468" Height="702" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+                </control>
+                <control name="lbl_3" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="16" Top="24" Width="446" Height="686" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\beibao_12.png" />
+                </control>
+                <control name="imagegrid_goods" entity="ImageGrid" script="" init="">
+                    <prop SelectColor="80,0,255,0" MouseInColor="80,255,255,0" CoverColor="80,255,0,0" LockColor="80,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="20" GridHeight="80" GridWidth="80" GridsPos="5,0;115,0;225,0;335,0;5,110;115,110;225,110;335,110;5,220;115,220;225,220;335,220;5,330;115,330;225,330;335,330;5,440;115,440;225,440;335,440;5,550;115,550;225,550;335,550;5,660;115,660;225,660;335,660;5,770;115,770;225,770;335,770;" DrawMouseIn="RECT" DrawMouseSelect="RECT" DrawCover="RECT" DrawLock="RECT" DrawGridBack="gui\common\window\tubiaokuang_2.png" GridBackOffsetX="-7" GridBackOffsetY="-7" MouseDownScale="0.900000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" Left="16" Top="72" Width="422" Height="582" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Text="imagegrid_1" NoFrame="true" />
+                    <subor name="VScrollBar">
+                        <prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0" />
+                        <subor name="DecButton">
+                            <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+                        </subor>
+                        <subor name="IncButton">
+                            <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+                        </subor>
+                        <subor name="TrackButton">
+                            <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+                        </subor>
+                    </subor>
+                </control>
+                <control name="lbl_7" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="8" Top="8" Width="55" Height="57" ShadowColor="0,0,0,0" />
+                </control>
+                <control name="lbl_1" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="24" Top="656" Width="434" Height="16" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\main\symbol\line_fuwen_zhegai.jpg" />
+                </control>
+                <control name="lbl_2" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="16" Top="40" Width="434" Height="16" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\main\symbol\line_fuwen_zhegai.jpg" />
+                </control>
+                <control name="rbtn_tattoo_1" entity="RadioButton" script="" init="">
+                    <prop BoxSize="12" NormalImage="gui\main\symbol\btn_bg_fuwen_hd.jpg" CheckedImage="gui\main\symbol\btn_bg_fuwen_h.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="464" Top="48" Width="120" Height="102" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="1" TabStop="true" AutoSize="true" DrawMode="FitWindow" />
+                </control>
+                <control name="rbtn_tattoo_2" entity="RadioButton" script="" init="">
+                    <prop BoxSize="12" NormalImage="gui\main\symbol\btn_bg_fuwen_fd.jpg" CheckedImage="gui\main\symbol\btn_bg_fuwen_f.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="464" Top="152" Width="120" Height="102" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="2" TabStop="true" AutoSize="true" DrawMode="FitWindow" />
+                </control>
+                <control name="rbtn_tattoo_3" entity="RadioButton" script="" init="">
+                    <prop BoxSize="12" NormalImage="gui\main\symbol\btn_bg_fuwen_hxd.jpg" CheckedImage="gui\main\symbol\btn_bg_fuwen_hx.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="464" Top="256" Width="120" Height="102" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="3" TabStop="true" AutoSize="true" DrawMode="FitWindow" />
+                </control>
+                <control name="rbtn_tattoo_4" entity="RadioButton" script="" init="">
+                    <prop BoxSize="12" NormalImage="gui\main\symbol\btn_bg_fuwen_td.jpg" CheckedImage="gui\main\symbol\btn_bg_fuwen_t.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="464" Top="360" Width="120" Height="102" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="4" TabStop="true" AutoSize="true" DrawMode="FitWindow" />
+                </control>
+                <control name="rbtn_tattoo_5" entity="RadioButton" script="" init="">
+                    <prop BoxSize="12" NormalImage="gui\main\symbol\btn_bg_fuwen_sd.jpg" CheckedImage="gui\main\symbol\btn_bg_fuwen_s.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="464" Top="464" Width="120" Height="102" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="5" TabStop="true" AutoSize="true" DrawMode="FitWindow" />
+                </control>
+                <control name="rbtn_tattoo_6" entity="RadioButton" script="" init="">
+                    <prop BoxSize="12" NormalImage="gui\main\symbol\btn_bg_fuwen_ed.jpg" CheckedImage="gui\main\symbol\btn_bg_fuwen_e.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="464" Top="568" Width="120" Height="102" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="6" TabStop="true" AutoSize="true" DrawMode="FitWindow" />
+                </control>
+                <control name="groupbox_1" entity="GroupBox" script="" init="">
+                    <prop ClipChildren="true" Left="16" Top="64" Width="438" Height="612" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                    <control name="imagegrid_select" entity="ImageGrid" script="" init="">
+                        <prop SelectColor="0,0,255,0" MouseInColor="0,255,255,0" CoverColor="0,255,0,0" LockColor="0,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" GridHeight="80" GridWidth="80" DrawMouseIn="RECT" DrawMouseSelect="treasure_liuguang" DrawCover="RECT" DrawLock="RECT" DrawGridBack="gui\common\window\tubiaokuang_2.png" GridBackOffsetX="-7" GridBackOffsetY="-7" GridCoverOffsetX="-5" GridCoverOffsetY="-5" MouseDownScale="0.980000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" HasVScroll="false" Left="4" Top="8" Width="414" Height="598" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                    </control>
+                </control>
+                <control name="btn_bag_close" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="408" Top="-32" Width="100" Height="100" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="100" TabStop="true" AutoSize="true" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+                </control>
+            </control>
+        </control>
+    </control>
+</form>

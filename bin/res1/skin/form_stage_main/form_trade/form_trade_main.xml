@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Width="1038" Height="638" BackColor="0,255,255,255" ShadowColor="0,0,0,0" BackImage="gui\use\function\function_vein_096.png" />
+        <control name="groupbox_bk" entity="GroupBox" script="" init="">
+            <prop Width="1038" Height="638" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+            <control name="groupbox_buy" entity="GroupBox" script="" init="">
+                <prop Left="72" Top="5" Width="870" Height="670" ShadowColor="0,0,0,0" Visible="false" Text="购买界面" />
+                <control name="ipt_good_name" entity="Edit" script="" init="">
+                    <prop TextOffsetX="2" Caret="Default" Left="25" Top="21" Width="80" Height="20" ShadowColor="0,0,0,0" Text="输入名字" Cursor="WIN_IBEAM" TabStop="true" />
+                </control>
+                <control name="btn_search" entity="Button" script="" init="">
+                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="121" Top="21" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="搜索" />
+                </control>
+                <control name="lbl_2" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="217" Top="21" Width="80" Height="16" ShadowColor="0,0,0,0" Text="品质筛选" />
+                </control>
+                <control name="cbtn_red" entity="CheckButton" script="" init="">
+                    <prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="313" Top="21" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="品质红" TabStop="true" />
+                </control>
+                <control name="cbtn_gold" entity="CheckButton" script="" init="">
+                    <prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="393" Top="21" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="品质金" TabStop="true" />
+                </control>
+                <control name="cbtn_orange" entity="CheckButton" script="" init="">
+                    <prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="481" Top="21" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="品质橙" TabStop="true" />
+                </control>
+                <control name="cbtn_purple" entity="CheckButton" script="" init="">
+                    <prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="561" Top="21" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="品质紫" TabStop="true" />
+                </control>
+                <control name="cbtn_blue" entity="CheckButton" script="" init="">
+                    <prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="633" Top="21" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="品质蓝" TabStop="true" />
+                </control>
+                <control name="cbtn_green" entity="CheckButton" script="" init="">
+                    <prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="713" Top="21" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="品质绿" TabStop="true" />
+                </control>
+                <control name="groupscrollbox_1" entity="GroupScrollableBox" script="" init="">
+                    <prop ScrollSize="17" Left="25" Top="61" Width="190" Height="550" ShadowColor="0,0,0,0" Text="左边分类页签" />
+                </control>
+                <control name="groupscrollbox_2" entity="GroupScrollableBox" script="" init="">
+                    <prop ScrollSize="17" Left="208" Top="128" Width="638" Height="478" ShadowColor="0,0,0,0" Text="物品栏" />
+                </control>
+                <control name="lbl_3" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="224" Top="72" Width="80" Height="16" ShadowColor="0,0,0,0" Text="物品" />
+                </control>
+                <control name="lbl_1" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="352" Top="72" Width="80" Height="16" ShadowColor="0,0,0,0" Text="物品名字" />
+                </control>
+                <control name="btn_quality" entity="Button" script="" init="">
+                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="488" Top="72" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="品质" />
+                </control>
+                <control name="btn_num" entity="Button" script="" init="">
+                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="616" Top="72" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="数量" />
+                </control>
+                <control name="btn_price" entity="Button" script="" init="">
+                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="736" Top="72" Width="46" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="单价" />
+                </control>
+                <control name="lbl_4" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="784" Top="80" Width="80" Height="16" ShadowColor="0,0,0,0" Text="红钻图标" />
+                </control>
+                <control name="lbl_page" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="416" Top="608" Width="80" Height="16" ShadowColor="0,0,0,0" Text="1" />
+                </control>
+                <control name="btn_pre_page" entity="Button" script="" init="">
+                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="312" Top="600" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="btn_1" />
+                </control>
+                <control name="btn_next_page" entity="Button" script="" init="">
+                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="528" Top="600" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="btn_2" />
+                </control>
+                <control name="groupbox_sort" entity="GroupBox" script="" init="">
+                    <prop Left="45" Top="80" Width="158" Height="502" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Text="groupbox_4" NoFrame="true" />
+                    <control name="btn_sort" entity="Button" script="" init="">
+                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="16" Width="134" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="btn_1" />
+                    </control>
+                    <control name="groupscrollbox_3" entity="GroupScrollableBox" script="" init="">
+                        <prop ScrollSize="17" Left="5" Top="24" Width="142" Height="430" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Text="groupscrollbox_3" NoFrame="true" />
+                    </control>
+                </control>
+                <control name="btn_sub_sort" entity="Button" script="" init="">
+                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="61" Top="112" Width="102" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="btn_1" />
+                </control>
+                <control name="groupbox_6" entity="GroupBox" script="" init="">
+                    <prop Left="221" Top="144" Width="622" Height="126" ShadowColor="0,0,0,0" Text="groupbox_2" />
+                    <control name="lbl_10_name" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="144" Top="48" Width="94" Height="16" ShadowColor="0,0,0,0" Text="lbl_4" />
+                    </control>
+                    <control name="lbl_12_num" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="400" Top="48" Width="80" Height="16" ShadowColor="0,0,0,0" Text="lbl_4" />
+                    </control>
+                    <control name="lbl_16_price" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="520" Top="48" Width="80" Height="16" ShadowColor="0,0,0,0" Text="lbl_4" />
+                    </control>
+                    <control name="lbl_17_bkg" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="16" Top="16" Width="118" Height="86" ShadowColor="0,0,0,0" Text="lbl_17" />
+                    </control>
+                    <control name="lbl_18_icon" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="16" Top="16" Width="102" Height="86" ShadowColor="0,0,0,0" Text="lbl_18" />
+                    </control>
+                    <control name="lbl_19_quality" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="16" Top="16" Width="86" Height="86" ShadowColor="0,0,0,0" Text="lbl_19" />
+                    </control>
+                    <control name="lbl_10_text_quality" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="282" Top="51" Width="80" Height="16" ShadowColor="0,0,0,0" Text="lbl_10" />
+                    </control>
+                </control>
+            </control>
+            <control name="groupbox_sell" entity="GroupBox" script="" init="">
+                <prop Left="72" Top="5" Width="934" Height="630" ShadowColor="0,0,0,0" Text="出售界面" />
+                <control name="groupbox_4" entity="GroupBox" script="" init="">
+                    <prop Left="421" Top="24" Width="462" Height="590" ShadowColor="0,0,0,0" Text="groupbox_4" />
+                </control>
+                <control name="groupscrollbox_4" entity="GroupScrollableBox" script="" init="">
+                    <prop ScrollSize="17" Left="17" Top="24" Width="406" Height="590" ShadowColor="0,0,0,0" Text="出售物品列表" />
+                </control>
+                <control name="groupbox_sell_item" entity="GroupBox" script="" init="">
+                    <prop Left="25" Top="40" Width="374" Height="102" ShadowColor="0,0,0,0" Text="groupbox_1" />
+                    <control name="lbl_sell_item_name" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="120" Top="40" Width="80" Height="16" ShadowColor="0,0,0,0" Text="lbl_5" />
+                    </control>
+                    <control name="lbl_sell_num" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="200" Top="40" Width="80" Height="16" ShadowColor="0,0,0,0" Text="lbl_5" />
+                    </control>
+                    <control name="lbl_sell_price" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="280" Top="40" Width="80" Height="16" ShadowColor="0,0,0,0" Text="lbl_5" />
+                    </control>
+                    <control name="lbl_sell_bkg" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="12" Top="24" Width="102" Height="62" ShadowColor="0,0,0,0" Text="lbl_10" />
+                    </control>
+                    <control name="lbl_sell_icon" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="12" Top="24" Width="86" Height="62" ShadowColor="0,0,0,0" Text="lbl_10" />
+                    </control>
+                    <control name="lbl_sell_quality" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="12" Top="16" Width="86" Height="78" ShadowColor="0,0,0,0" Text="lbl_10" />
+                    </control>
+                </control>
+                <control name="rbtn_item_packege" entity="RadioButton" script="" init="">
+                    <prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="885" Top="40" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="背包" TabIndex="4" TabStop="true" />
+                </control>
+                <control name="rbtn_piece_packege" entity="RadioButton" script="" init="">
+                    <prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="885" Top="88" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="碎片" TabIndex="5" TabStop="true" />
+                </control>
+                <control name="rbtn_badge_packege" entity="RadioButton" script="" init="">
+                    <prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="885" Top="144" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="徽章" TabIndex="6" TabStop="true" />
+                </control>
+                <control name="rbtn_star_stone" entity="RadioButton" script="" init="">
+                    <prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="885" Top="192" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="星石" TabIndex="7" TabStop="true" />
+                </control>
+            </control>
+            <control name="groupbox_record" entity="GroupBox" script="" init="">
+                <prop Left="72" Top="5" Width="870" Height="630" ShadowColor="0,0,0,0" Visible="false" Text="groupbox_1" />
+                <control name="groupscrollbox_5" entity="GroupScrollableBox" script="" init="">
+                    <prop ScrollSize="17" Left="9" Top="64" Width="854" Height="550" ShadowColor="0,0,0,0" Text="groupscrollbox_5" />
+                    <control name="groupbox_1" entity="GroupBox" script="" init="">
+                        <prop Left="8" Top="16" Width="822" Height="110" ShadowColor="0,0,0,0" Text="groupbox_1" />
+                        <control name="imagegrid_1" entity="ImageGrid" script="" init="">
+                            <prop SelectColor="80,0,255,0" MouseInColor="80,255,255,0" CoverColor="80,255,0,0" LockColor="80,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" DrawMouseIn="RECT" DrawMouseSelect="RECT" DrawCover="RECT" DrawLock="RECT" MouseDownScale="0.900000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" Left="16" Top="16" Width="110" Height="78" ShadowColor="0,0,0,0" Text="imagegrid_1" />
+                            <subor name="VScrollBar">
+                                <prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0" />
+                                <subor name="DecButton">
+                                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+                                </subor>
+                                <subor name="IncButton">
+                                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+                                </subor>
+                                <subor name="TrackButton">
+                                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+                                </subor>
+                            </subor>
+                        </control>
+                        <control name="lbl_record_name" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="144" Top="48" Width="110" Height="16" ShadowColor="0,0,0,0" Text="lbl_5" />
+                        </control>
+                        <control name="lbl_record_num" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="280" Top="48" Width="80" Height="16" ShadowColor="0,0,0,0" Text="lbl_6" />
+                        </control>
+                        <control name="lbl_record_time" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="408" Top="48" Width="80" Height="16" ShadowColor="0,0,0,0" Text="lbl_7" />
+                        </control>
+                        <control name="lbl_8" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="536" Top="48" Width="80" Height="14" ShadowColor="0,0,0,0" Text="货币图标" />
+                        </control>
+                        <control name="lbl_record_price" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="662" Top="46" Width="80" Height="16" ShadowColor="0,0,0,0" Text="lbl_9" />
+                        </control>
+                    </control>
+                </control>
+            </control>
+            <control name="rbtn_1" entity="RadioButton" script="" init="">
+                <prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="37" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="购买" TabStop="true" />
+            </control>
+            <control name="rbtn_2" entity="RadioButton" script="" init="">
+                <prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="93" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="出售" TabIndex="1" TabStop="true" />
+            </control>
+            <control name="rbtn_3" entity="RadioButton" script="" init="">
+                <prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="165" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="记录" TabIndex="2" TabStop="true" />
+            </control>
+            <control name="groupbox_sell_dlg" entity="GroupBox" script="" init="">
+                <prop Width="1038" Height="638" ShadowColor="0,0,0,0" Visible="false" Text="groupbox_3" />
+                <control name="groupbox_3" entity="GroupBox" script="" init="">
+                    <prop Left="16" Top="16" Width="470" Height="574" ShadowColor="0,0,0,0" Text="groupbox_3" />
+                    <control name="imagegrid_sell_dlg_item" entity="ImageGrid" script="" init="">
+                        <prop SelectColor="80,0,255,0" MouseInColor="80,255,255,0" CoverColor="80,255,0,0" LockColor="80,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" DrawMouseIn="RECT" DrawMouseSelect="RECT" DrawCover="RECT" DrawLock="RECT" MouseDownScale="0.900000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" Left="16" Top="24" Width="102" Height="78" ShadowColor="0,0,0,0" Text="imagegrid_2" />
+                        <subor name="VScrollBar">
+                            <prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0" />
+                            <subor name="DecButton">
+                                <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+                            </subor>
+                            <subor name="IncButton">
+                                <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+                            </subor>
+                            <subor name="TrackButton">
+                                <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+                            </subor>
+                        </subor>
+                    </control>
+                    <control name="lbl_sell_dlg_name" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="184" Top="48" Width="80" Height="16" ShadowColor="0,0,0,0" Text="lbl_5" />
+                    </control>
+                    <control name="lbl_6" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="16" Top="120" Width="80" Height="16" ShadowColor="0,0,0,0" Text="数量" />
+                    </control>
+                    <control name="btn_sell_dlg_max_num" entity="Button" script="" init="">
+                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="184" Top="120" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="btn_1" />
+                    </control>
+                    <control name="lbl_5" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="280" Top="120" Width="80" Height="16" ShadowColor="0,0,0,0" Text="总价" />
+                    </control>
+                    <control name="lbl_sell_dlg_total_price" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="360" Top="120" Width="80" Height="16" ShadowColor="0,0,0,0" Text="lbl_7" />
+                    </control>
+                    <control name="lbl_7" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="16" Top="152" Width="80" Height="16" ShadowColor="0,0,0,0" Text="售价" />
+                    </control>
+                    <control name="lbl_9" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="280" Top="160" Width="80" Height="16" ShadowColor="0,0,0,0" Text="收入" />
+                    </control>
+                    <control name="lbl_sell_dlg_get" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="360" Top="160" Width="80" Height="16" ShadowColor="0,0,0,0" Text="lbl_10" />
+                    </control>
+                    <control name="btn_11" entity="Button" script="" init="">
+                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="16" Top="432" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="btn_11" />
+                    </control>
+                    <control name="btn_12" entity="Button" script="" init="">
+                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="312" Top="440" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="btn_12" />
+                    </control>
+                    <control name="ipt_sell_dlg_num" entity="Edit" script="" init="">
+                        <prop OnlyDigit="true" MaxDigit="99" ChangedEvent="true" MaxLength="2" TextOffsetX="2" Caret="Default" Left="77" Top="118" Width="80" Height="20" ShadowColor="0,0,0,0" Text="ipt_1" Cursor="WIN_IBEAM" TabStop="true" />
+                    </control>
+                    <control name="ipt_sell_dlg_price" entity="Edit" script="" init="">
+                        <prop OnlyDigit="true" ChangedEvent="true" TextOffsetX="2" Caret="Default" Left="76" Top="152" Width="80" Height="20" ShadowColor="0,0,0,0" Text="ipt_1" Cursor="WIN_IBEAM" TabStop="true" />
+                    </control>
+                </control>
+                <control name="groupbox_other_query" entity="GroupBox" script="" init="">
+                    <prop Left="501" Top="37" Width="390" Height="566" ShadowColor="0,0,0,0" Text="groupbox_4" />
+                    <control name="groupscrollbox_6" entity="GroupScrollableBox" script="" init="">
+                        <prop ScrollSize="17" Left="16" Top="16" Width="326" Height="510" ShadowColor="0,0,0,0" Text="groupscrollbox_6" />
+                    </control>
+                    <control name="groupbox_5" entity="GroupBox" script="" init="">
+                        <prop Left="24" Top="32" Width="310" Height="94" ShadowColor="0,0,0,0" Text="groupbox_5" />
+                        <control name="lbl_13" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="112" Top="16" Width="80" Height="16" ShadowColor="0,0,0,0" Text="lbl_13" />
+                        </control>
+                        <control name="lbl_14" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="112" Top="48" Width="80" Height="16" ShadowColor="0,0,0,0" Text="lbl_14" />
+                        </control>
+                        <control name="lbl_15" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="192" Top="48" Width="80" Height="14" ShadowColor="0,0,0,0" Text="货币图标" />
+                        </control>
+                        <control name="lbl_10_back" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="16" Top="24" Width="86" Height="54" ShadowColor="0,0,0,0" Text="lbl_10" />
+                        </control>
+                        <control name="lbl_10_icon" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="16" Top="24" Width="70" Height="54" ShadowColor="0,0,0,0" Text="lbl_10" />
+                        </control>
+                        <control name="lbl_10_quality" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="16" Top="24" Width="78" Height="54" ShadowColor="0,0,0,0" Text="lbl_10" />
+                        </control>
+                        <control name="lbl_10_num" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="24" Top="56" Width="54" Height="14" ShadowColor="0,0,0,0" Text="lbl_10" />
+                        </control>
+                    </control>
+                </control>
+                <control name="btn_sell_panel_close" entity="Button" script="" init="">
+                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="768" Top="16" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="btn_1" />
+                </control>
+            </control>
+            <control name="btn_close" entity="Button" script="" init="">
+                <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="965" Top="5" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="关闭" />
+            </control>
+        </control>
+    </control>
+</form>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Left="20" Top="30" Width="1062" Height="742" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" BackImage="gui\use\function\function_vein_096.png" />
+        <control name="groupbox_main" entity="GroupBox" script="" init="">
+            <prop Left="145" Top="55" Width="758" Height="510" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+            <control name="lbl_title" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="280" Top="16" Width="214" Height="16" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_war_14" Font="WRYH30_S" />
+            </control>
+            <control name="lbl_2" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="33" Top="64" Width="80" Height="43" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_war_15" Font="WRYH26_S" />
+            </control>
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="32" Top="128" Width="80" Height="48" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_war_16" Font="WRYH26_S" />
+            </control>
+            <control name="lbl_3" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="32" Top="192" Width="80" Height="40" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_war_17" Font="WRYH26_S" />
+            </control>
+            <control name="lbl_4" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="32" Top="262" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_war_18" Font="WRYH26_S" />
+            </control>
+            <control name="lbl_5" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="32" Top="310" Width="80" Height="32" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_war_19" Font="WRYH26_S" />
+            </control>
+            <control name="lbl_6" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="32" Top="368" Width="80" Height="40" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_war_20" Font="WRYH26_S" />
+            </control>
+            <control name="btn_ok" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="184" Top="432" Width="166" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_war_13" Font="WRYH26_S" TabIndex="100" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" HandleShortcut="BUTTON_B" />
+            </control>
+            <control name="btn_cancel" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="440" Top="432" Width="166" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_g_backshop" Font="WRYH26_S" TabStop="true" DrawMode="ExpandH" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+            </control>
+            <control name="lbl_talk_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="128" Top="56" Width="590" Height="56" ForeColor="255,255,255,122" ShadowColor="0,0,0,0" Text="lbl_7" Font="WRYH24_S" />
+            </control>
+            <control name="lbl_talk_2" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="128" Top="136" Width="334" Height="32" ForeColor="255,255,255,122" ShadowColor="0,0,0,0" Text="lbl_7" Font="WRYH24_S" />
+            </control>
+            <control name="lbl_talk_3" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="128" Top="200" Width="350" Height="32" ForeColor="255,255,255,122" ShadowColor="0,0,0,0" Text="lbl_7" Font="WRYH24_S" />
+            </control>
+            <control name="lbl_talk_4" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="128" Top="256" Width="318" Height="32" ForeColor="255,255,255,122" ShadowColor="0,0,0,0" Text="lbl_7" Font="WRYH24_S" />
+            </control>
+            <control name="lbl_talk_5" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="128" Top="312" Width="334" Height="32" ForeColor="255,255,255,122" ShadowColor="0,0,0,0" Text="lbl_7" Font="WRYH24_S" />
+            </control>
+            <control name="ipt_talk_6" entity="Edit" script="" init="">
+                <prop MaxLength="40" TextOffsetX="2" SelectBackColor="255,200,200,200" Caret="Default" Left="112" Top="360" Width="630" Height="62" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="ipt_1" Font="WRYH24_S" Cursor="WIN_IBEAM" TabStop="true" DrawMode="ExpandH" BackImage="gui\common\window\shurukuang2.png" />
+            </control>
+            <control name="lbl_7" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="24" Top="112" Width="710" Height="4" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\common\window\fengexian.png" />
+            </control>
+            <control name="lbl_8" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="24" Top="176" Width="710" Height="4" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\common\window\fengexian.png" />
+            </control>
+            <control name="lbl_9" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="24" Top="240" Width="710" Height="4" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\common\window\fengexian.png" />
+            </control>
+            <control name="lbl_10" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="24" Top="294" Width="710" Height="4" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\common\window\fengexian.png" />
+            </control>
+            <control name="lbl_11" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="24" Top="352" Width="710" Height="4" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\common\window\fengexian.png" />
+            </control>
+            <control name="lbl_12" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="24" Top="424" Width="710" Height="4" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\common\window\fengexian.png" />
+            </control>
+            <control name="lbl_13" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="8" Top="8" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_zuoshang.png" />
+            </control>
+            <control name="lbl_14" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="698" Top="6" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_youshang.png" />
+            </control>
+            <control name="lbl_15" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="8" Top="448" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_zuoxia.png" />
+            </control>
+            <control name="lbl_16" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="696" Top="448" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshiyouxia.png" />
+            </control>
+        </control>
+    </control>
+</form>

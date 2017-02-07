@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by  () -->
+<!--每项Buffer的属性数据，附加IDMATCH.xml-->
+<object>
+	<internals>
+		<property name="LifeTime" type="int" public="false" private="false" save="false" desc="持续时间(ms) 如果为0,则持久有效"/>
+	</internals>
+	<!-- 基本属性 -->
+	<properties>
+		<!-- BUFFER的固定属性 -->
+		<property name="ConfigID" type="string" public="true" private="true" save="false" desc="技能编号"/>
+		<property name="CurBufferUUID" type="int64" public="false" private="false" save="false" desc="当前正在使用buffer的64位唯一标志"/>	
+		<!-- BUFFER的施加来源属性 -->
+		<property name="Sender" type="object" public="false" private="false" save="false" desc="BUFFER的施加者"/>
+		<property name="Skill" type="object" public="false" private="false" save="false" desc="产生BUFFER的技能"/>
+        <property name="GraspLevel" type="int" public="false" private="false" save="false" desc="技能领悟的级别"/>
+		<property name="GraspMaxLevel" type="int" public="false" private="false" save="false" desc="领悟的最高级别"/>		
+		<!-- BUFFER的过程管理属性 -->
+		<property name="AddTime" type="int64" public="false" private="false" save="false" desc="BUFFER添加的时间 单位s(time_t)"/>
+		<property name="Active" type="byte" public="false" private="false" save="false" desc="BUFFER是否有效"/>
+        <property name="CantTriggerEvent" type="byte" public="false" private="false" save="false" desc="BUFFER是否可以触发事件"/>
+		<property name="Suspend" type="byte" public="false" private="false" save="false" desc="BUFFER是否暂停"/>
+		<property name="Counter" type="int" public="false" private="false" save="false" desc="BUFFER已计次的次数"/>
+		<property name="Timer" type="int" public="false" private="false" save="false" desc="BUFFER已存在的时间 单位ms"/>
+        <property name="MainBuffer" type="object" public="false" private="false" save="false" desc="光环BUFFER的主buffer对象"/>
+        <!-- 以下三个是为了防止加载保存，建议引擎解决预加载时屏蔽不需要的配置-->
+        <property name="Description" type="string" public="false" private="false" save="false" desc="技能描述，配置可否从移除该属性？"/>
+        <property name="Buff_Main" type="string" public="false" private="false" save="false" desc="Buff主包"/>		
+        <property name="Buff_Display" type="string" public="false" private="false" save="false" desc="表现包"/>
+
+	</properties>
+	<!-- 表属性 -->
+	<records>
+		<!-- 由技能添加的表格 -->
+		<record name="overlay_buff_time_rec" cols="3" maxrows="100" save="false" public="false" private="false" desc="叠加buffer时间列表，有需求要保存这个表">
+			<column type="word" desc="buffer已经过去的时间"/>
+			<column type="int64" desc="buffer添加的事件的时间(服务器时间 ms)"/>
+			<column type="word" desc="buffer当前层持续时间"/>
+		</record>
+        
+        <record name="halo_buff_target_rec" cols="2" maxrows="100" save="false" public="false" private="false" desc="光环主buffer对象用于保存添加了子buffer的对象的列表">
+			<column type="object" desc="被光环buffer加了子buffer的目标"/>
+            <column type="byte" desc="标记当前目标是否是当前搜索到的目标"/>
+		</record>
+	</records>
+</object>

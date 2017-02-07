@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<object>
+	<internals />
+	<properties>
+        <property name="BornAction" type="string" public="true" private="true" save="false" realtime="" desc="出生动作" />
+        <property name="BornProtectTime" type="int" public="true" private="true" save="false" desc="保护时间（可跟进动作时间来设定）"/>
+        <property name="FightAction" type="string" public="false" private="true" save="false" realtime="" desc="npc进入战斗动作" />
+        <property name="FightProtectTime" type="int" public="false" private="true" save="false" realtime="" desc="npc进入战斗保护时间" />
+        <property name="KeDamageRadius" type="float" public="false" private="false" save="false" desc="受伤害半径"/>
+        <property name="ColorLevel" type="int" public="false" private="true" save="true" realtime="" desc="宠物颜色" />
+        <property name="EvoLevel"   type="int" public="false" private="true" save="true" realtime="" desc="进化等级" />
+        <property name="PeneLevel"  type="int" public="true" private="true" save="true" realtime="" desc="突破等级" />
+        <property name="PeneCount"  type="int" public="false" private="true" save="true" realtime="" desc="突破次数" />
+        <property name="Quality" type="int" public="false" private="false" save="false" realtime="" desc="宠物品质" />
+        <property name="Skill" type="string" public="false" private="false" save="false" realtime="" desc="技能详细"/>
+        <property name="Tupo" type="string" public="true" private="true" save="false" realtime="" desc="突破详细"/>
+        <property name="MasterSkill" type="string" public="false" private="false" save="false" realtime="" desc="宠物给主人提供的技能"/>
+        <property name="ChangeSkill" type="string" public="false" private="false" save="false" realtime="" desc="宠物切换释放的技能"/>
+        <property name="IsGotoWar" type="int" public="false" private="true" save="true" realtime="" desc="是否出征"/>
+        <property name="PetIsNew" type="int" public="false" private="true" save="true" realtime="" desc="新获得宠物"/>
+        <property name="PropUpGradePackID" type="string" public="false" private="true" save="false" realtime="" desc="宠物属性成长包"/>
+        <property name="BattleAbility" type="int" public="false" private="true" save="true" realtime="" desc="宠物战斗力"/>
+        <property name="UniqueID" type="string" public="false" private="true" save="true" realtime="" desc="宠物唯一标识"/>
+        <property name="Transparency" type="int" public="true" private="false" save="false" realtime="" desc="透明度"/>
+        <property name="IsClonePetData" type="int" public="false" private="false" save="false" realtime="" desc="是否是召唤宠物"/>
+		<property name="PropEffect" type="string" public="true" private="true" save="false" realtime="" desc="属性提升效果"/>
+		<property name="UseMasterModel" type="byte" public="true" private="true" save="false" realtime="" desc="是否使用主人模型"/>
+		<property name="CantLockTarget" type="byte" public="false" private="false" save="false" realtime="" desc="是否可以锁定该目标"/>
+		<property name="TerrainIsOpened" type="int" public="true" private="false" save="false" realtime="" desc="地形数据是否打开，1是打开，0是关闭" />
+    </properties>
+    <records>
+    	  <record name="pet_skill_rec" cols="2" maxrows="32" save="true" public="false" private="true" desc="宠物技能列表">
+            <column type="string" desc="技能名称" />
+            <column type="dword" desc="技能等级" />
+        </record>
+    </records>
+    <includes>
+        <path name="struct\npc\npcproperty\fight.xml" desc="NPC战斗属性" />
+        <path name="struct\npc\rule\modifybase.xml" desc="属性 技能 buff修正表" />
+		<path name="struct\rule\shortcut.xml" desc="快捷栏" />
+        <path name="struct\ai\ai_npc_data.xml" desc="AI属性" />
+        <path name="struct\ai\ai_motion.xml" desc="AI属性" />
+    </includes>
+</object>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 坐骑驯化配置-->
+<!-- ID          坐骑configid-->
+<!-- NeedValue   进化、驯养、喂养需要的进化、喂养值-->
+<!-- NeedDiamond 钻石消耗-->
+<!-- NeedInheritDiamond    连续喂养钻石消耗-->
+<!-- NeedRide    合成需要的坐骑ID-->
+<!-- NeedItem    合成需要的物品ID-->
+<!-- GainItem    合成产出的坐骑ID-->
+<!-- PropCount   合成产出的坐骑ID-->
+<!-- Name        属性名-->
+<!-- ValueRange  属性值区间-->
+<!-- RangeWeight 属性值区间的概率权重-->
+
+<Object>
+	<Ride ID="mount_tiger_001" NeedValue="100" NeedDiamond="10" NeedInheritDiamond="1,2,3,4,5,7" NeedRide="mount_tiger_001a" NeedItem="" GainItem="mount_dragon_001b" PropCount="3">
+		<Prop Name="LeechAdd" ValueRange="100,299;300,800" RangeWeight="8,2"/>
+		<Prop Name="ReboundAdd" ValueRange="10,20;50,100" RangeWeight="50,30"/>
+		<Prop Name="DodgeAdd" ValueRange="10,30;60,90;100,200" RangeWeight="40,30,20"/>
+	</Ride>
+	<Ride ID="mount_bird_001" NeedValue="100" NeedDiamond="10" NeedInheritDiamond="1,2,3,4,5,7" NeedRide="mount_bird_001a" NeedItem="" GainItem="mount_dragon_001c" PropCount="3">
+		<Prop Name="HitAdd" ValueRange="2,5;8,16" RangeWeight="7,3"/>
+		<Prop Name="ADTotalAdd" ValueRange="10,20;50,100" RangeWeight="50,30"/>
+		<Prop Name="APTotalAdd" ValueRange="10,30;60,90;100,150" RangeWeight="40,30,20,10"/>
+	</Ride>
+</Object>

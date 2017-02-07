@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!--星魂总表-->
+<!-- ID 星魂类型ID，定义星魂类型-->
+<!-- Name 星魂名-->
+<!-- StarCount 星魂空位数量-->
+<!-- ClearLevel  每个空位的解锁等级-->
+<!-- Effect    星魂特效-->
+<!-- AccordType    相性契合的英雄类型-->
+<!-- AccordPoint    相性契合等级加成-->
+<!-- Relation    相关克制关系包ID 对应starsoul_restrain.xml中的ID-->
+<!-- BaseProperty1    物理基础属性修正包ID-->
+<!-- BaseProperty2    法术基础属性修正包ID-->
+<!-- ActivateProperty1  物理激活属性修正包ID 进阶总等级带来的激活属性修正包id 格式 进阶总等级,属性修正包id;进阶总等级,属性修正包id-->
+<!-- ActivateProperty2  法术激活属性修正包ID 进阶总等级带来的激活属性修正包id 格式 进阶总等级,属性修正包id;进阶总等级,属性修正包id-->
+<!-- Desc  描述-->
+<Object>
+	<Property ID="1" Name="StarSoul_001" StarCount="10" ClearLevel="58,61,64,67,70,73,76,79,82,85" Effect="common_dragon_001" AccordType="2" AccordPoint="50" Relation="1" BaseProperty1="521101" BaseProperty2="521201" ActivateProperty1="10,531101;40,531102;70,531103;100,531104;130,531105" ActivateProperty2="10,531201;40,531202;70,531203;100,531204;130,531205" desc="青龙星魂"/>
+	<Property ID="2" Name="StarSoul_002" StarCount="10" ClearLevel="58,61,64,67,70,73,76,79,82,85" Effect="common_tiger_001" AccordType="3" AccordPoint="50" Relation="2" BaseProperty1="522101" BaseProperty2="522201" ActivateProperty1="10,532101;40,532102;70,532103;100,532104;130,532105" ActivateProperty2="10,532201;40,532202;70,532203;100,532204;130,532205" desc="白虎星魂"/>
+	<Property ID="3" Name="StarSoul_003" StarCount="10" ClearLevel="58,61,64,67,70,73,76,79,82,85" Effect="common_rosefinch_001" AccordType="4" AccordPoint="50" Relation="3" BaseProperty1="523101" BaseProperty2="523201" ActivateProperty1="10,533101;40,533102;70,533103;100,533104;130,533105" ActivateProperty2="10,533201;40,533202;70,533203;100,533204;130,533205" desc="朱雀星魂"/>
+	<Property ID="4" Name="StarSoul_004" StarCount="10" ClearLevel="58,61,64,67,70,73,76,79,82,85" Effect="common_tortoise_001" AccordType="1" AccordPoint="50" Relation="4" BaseProperty1="524101" BaseProperty2="524201" ActivateProperty1="10,534101;40,534102;70,534103;100,534104;130,534105" ActivateProperty2="10,534201;40,534202;70,534203;100,534204;130,534205" desc="玄武星魂"/>
+</Object>

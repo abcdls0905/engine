@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 被2011 rel. 2 sp1 (Lonely Knight) 使用XMLSpy vLK编辑的 (http://www.altova.com) by -->
+<!-- 坐骑战场配置 -->
+<Object>
+	<!-- 
+	SoulBuffID:远古之魂buff
+	SoulNPCID:远古之魂npc
+	CircleConfigID:召唤阵法npc
+	TotemsConfigID:远古图腾npc
+	SoulNPCPosition:远古之魂出生位置
+	TotemsPosition:图腾出生位置
+	-->
+	<Property id="0"  SoulBuffID="battle_hg_buff_hun" CircleConfigID="battle_hg_zhfz" TotemsConfigID="battle_hg_ygzs" SoulNPCID="battle_hg_ygzh" SoulNPCPosition="1.007,10.467,-47.555,0.0;-40.282,10.467,-6.893,0.0;30.839,10.467,64.717,0.0;71.883,10.467,23.705,0.0"
+	TotemsPosition="15.522,10.204,8.137,0.0"/>
+	<!-- 
+	ReliveSecond:复活时间
+	SoulScore:携带远古之魂每秒积分	
+	SoulRefresh:远古之魂刷新间隔	
+	SoulOccupyTime:图腾召唤时间	
+	OccupyTime:占领法阵时间	
+	OccupyScore:占领后每秒获得积分	
+	TotemsScore:图腾每秒积分	
+	KillScore:击杀积分	
+	WinScore:胜利所需要积分	
+	FirstWinReward:首胜宝箱	
+	-->
+	<Property Id="1" ReliveSecond="10" SoulScore="1" OccupyTime="10000" OccupyScore="2" SoulOccupyTime="10000" TotemsScore="5" SoulRefresh="15000" KillScore="20" WinScore="1000" FirstWinReward=";Item_zfbx:1" />
+	<!-- 
+	BuffNPCCreateSec:神符创建间隔
+	BuffNPCConfigID:神符npc
+	BuffNPCPosition:神符刷新位置
+	-->
+	<Property ID="2" BuffNPCCreateSec="30"  BuffNPCConfigID="battle_3v3_buffer_1;battle_3v3_buffer_2;battle_3v3_buffer_3" BuffNPCPosition="1.007,10.467,-47.555,0.0;-40.282,10.467,-6.893,0.0;30.839,10.467,64.717,0.0;71.883,10.467,23.705,0.0" />
+</Object>

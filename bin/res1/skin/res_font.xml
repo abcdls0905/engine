@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by  () -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 字体配置 -->
+<fonts>
+	<!--可配置项name,sys_font,font_file,font_tex,tex_width,tex_height,height,interval,weight,smooth,italic,underline,strikeout,var_extent,shadow_color,shadow_offset_x,shadow_offset_y-->
+	<!--注意事项:
+		1.描边设置:shadow_color>0并且shadow_offset_x,shadow_offset_y同时为0时认为以shadow_color描边
+		2.字体加粗
+		/* Font Weights */
+		#define FW_DONTCARE         0        不处理
+		#define FW_THIN             100      细
+		#define FW_EXTRALIGHT       200      非常轻
+		#define FW_LIGHT            300      轻
+		#define FW_NORMAL           400      一般
+		#define FW_MEDIUM           500      中度
+		#define FW_SEMIBOLD         600      半粗体
+		#define FW_BOLD             700      粗体
+		#define FW_EXTRABOLD        800      非常粗
+		#define FW_HEAVY            900      极度粗厚
+		需配后面的值
+		3.命令规范
+		2014-4-15 太极熊猫更新
+		1，描边设置：outline_num 描边宽度 描边颜色 outline_color 其中第一个透明度暂无效果。
+		2，渐变设置：fade_type 渐变类型，0，不渐变；1，由上至下；2，由下至上；3，从中间往两边渐变。
+		3，描边配置需要额外的将var_extent置为true，防止字体无法对齐。
+		
+		-->
+	<!--字体名后缀 M 表示smooth开启,O表示描边,S表示阴	影,W表示加粗-->
+	<!--默认，微软雅黑 13-->
+	<font name="Default" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="16" shadow_color="155,0,0,0" shadow_offset_x="1.3" shadow_offset_y="1.8" var_extent="true" tex_width="2048" tex_height="2048"/>
+
+	<font name="WRYH20" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="20" tex_width="1024" tex_height="1024"  />
+	<font name="WRYH30" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="30"  offsety="-2.5"  />
+	<font name="WRYH40" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="40"  offsety="-2.5"  />
+	<font name="WRYH30_S" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="30"  shadow_color="155,0,0,0" shadow_offset_x="1.9" shadow_offset_y="3.4" offsety="-4.5"  />
+	<font name="WRYH26" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="26"  offsety="-2.5"  />
+	<font name="WRYH26_S" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="26"  shadow_color="155,0,0,0" shadow_offset_x="1.9" shadow_offset_y="3.4" offsety="-2.5"  tex_width="1024" tex_height="1024"  />
+	<font name="WRYH20_S" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="20"  shadow_color="155,0,0,0" shadow_offset_x="1.9" shadow_offset_y="3.4" offsety="-2.5"  tex_width="1024" tex_height="1024"  />
+	<font name="WRYH20_O_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="20"  var_extent="true" outline_num ="1" outline_color = "255,0,0,0" tex_width="2048" tex_height="2048"/>
+	<font name="WRYH18_O_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="18"  var_extent="true" outline_num ="1" outline_color = "255,0,0,0" />
+	<font name="WRYH18_S" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="18"  var_extent="true" shadow_color="155,0,0,0" shadow_offset_x="1.9" shadow_offset_y="3.4" />
+	<font name="WRYH24_O_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="24"  var_extent="true" outline_num ="1" outline_color = "255,0,0,0" />
+	<font name="WRYH26_O_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="26"  var_extent="true" outline_num ="1" outline_color = "255,0,0,0" />
+	<font name="WRYH20_S_GRAY" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="20"  shadow_color="155,0,0,0" shadow_offset_x="1.9" shadow_offset_y="3.4" offsety="-2.5" tex_width="2048" tex_height="2048"/>
+	<font name="WRYH24_S" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="24"  shadow_color="155,0,0,0" shadow_offset_x="1.9" shadow_offset_y="3.4" offsety="-2.5"  tex_width="2048" tex_height="2048"  />
+	<font name="WRYH30_O" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="30"  var_extent="true" outline_num ="2" outline_color = "255,0,0,0" />
+	<font name="WRYH22_O" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="22" shadow_color="255,0,0,0" shadow_offset_x="1.9" shadow_offset_y="2.4" offsety="-2"  tex_width="1024" tex_height="1024"  />
+	<font name="WRYH24_O2_BLACK" sys_font="方正粗圆_GBK" font_file="font\fzcy_gbk.ttf" height="24"  var_extent="true" outline_num ="2" outline_color = "255,0,0,0"  tex_width="1024" tex_height="1024" />
+	<font name="zhanghao" sys_font="账号_专用" font_file="font\zh_zhuanyong.TTF" height="26"  offsety="-2.5"  />
+	<font name="TexFont1" font_tex="font\shuzi.png" tex_width="512" tex_height="512" height="17" >
+		<image name="0" left="56" top="0" width="15" height="20" />
+		<image name="1" left="77" top="0" width="15" height="20" />
+		<image name="2" left="97" top="0" width="15" height="20" />
+		<image name="3" left="117" top="0" width="15" height="20" />
+		<image name="4" left="137" top="0" width="15" height="20" />
+		<image name="5" left="157" top="0" width="15" height="20" />
+		<image name="6" left="177" top="0" width="15" height="20" />
+		<image name="7" left="197" top="0" width="15" height="20" />
+		<image name="8" left="217" top="0" width="15" height="20" />
+		<image name="9" left="237" top="0" width="15" height="20" />
+		<image name="V" left="0" top="0" width="18" height="20" />
+		<image name="I" left="20" top="0" width="6" height="20" />
+		<image name="P" left="28" top="0" width="14" height="20" />
+		<image name=":" left="44" top="0" width="4" height="20" />
+    </font>
+	<font name="TexFont_hall" font_tex="gui\main\hall\hall.jpg" tex_width="1024" tex_height="1024" height="17" >
+		<image name="0" left="55" top="968" width="15" height="20" />
+		<image name="1" left="76" top="968" width="15" height="20" />
+		<image name="2" left="96" top="968" width="15" height="20" />
+		<image name="3" left="116" top="968" width="15" height="20" />
+		<image name="4" left="136" top="968" width="15" height="20" />
+		<image name="5" left="156" top="968" width="15" height="20" />
+		<image name="6" left="176" top="968" width="15" height="20" />
+		<image name="7" left="196" top="968" width="15" height="20" />
+		<image name="8" left="216" top="968" width="15" height="20" />
+		<image name="9" left="236" top="968" width="15" height="20" />
+		<image name="V" left="0" top="968" width="18" height="20" />
+		<image name="I" left="19" top="968" width="6" height="20" />
+		<image name="P" left="27" top="968" width="14" height="20" />
+		<image name=":" left="43" top="968" width="4" height="20" />
+    </font>
+	<font name="TexFont_cloneNum" font_tex="gui\main\heedbar\clone.png" tex_width="1024" tex_height="1024" height="17" >
+		<image name="0" left="991" top="68" width="13" height="17"/>
+		<image name="1" left="1014" top="0" width="10" height="17"/>
+		<image name="2" left="1010" top="89" width="12" height="17"/>
+		<image name="3" left="985" top="85" width="12" height="17"/>
+		<image name="4" left="1004" top="51" width="13" height="17"/>
+		<image name="5" left="991" top="51" width="13" height="17"/>
+		<image name="6" left="1008" top="34" width="13" height="17"/>
+		<image name="7" left="995" top="34" width="13" height="17"/>
+		<image name="8" left="1001" top="17" width="13" height="17"/>
+		<image name="9" left="1001" top="0" width="13" height="17"/>
+		<image name="/" left="885" top="787" width="14" height="21"/>
+    </font>
+	<font name="TexFont_zdlNum" font_tex="font\textfont1.png" tex_width="256" tex_height="256" height="17" >
+		<image name="0" left="30" top="72" width="30" height="36"/>
+		<image name="1" left="0" top="72" width="30" height="36"/>
+		<image name="2" left="90" top="36" width="30" height="36"/>
+		<image name="3" left="60" top="36" width="30" height="36"/>
+		<image name="4" left="30" top="36" width="30" height="36"/>
+		<image name="5" left="0" top="36" width="30" height="36"/>
+		<image name="6" left="90" top="0" width="30" height="36"/>
+		<image name="7" left="60" top="0" width="30" height="36"/>
+		<image name="8" left="30" top="0" width="30" height="36"/>
+		<image name="9" left="0" top="0" width="30" height="36"/>
+    </font>
+	<font name="TexFont_qhlvNum" font_tex="font\textfont1.png" tex_width="256" tex_height="256" height="17" >	
+		<image name="0" left="54" top="116" width="18" height="22"/>
+		<image name="1" left="36" top="108" width="18" height="22"/>
+		<image name="2" left="18" top="108" width="18" height="22"/>
+		<image name="3" left="0" top="108" width="18" height="22"/>
+		<image name="4" left="96" top="94" width="18" height="22"/>
+		<image name="5" left="78" top="94" width="18" height="22"/>
+		<image name="6" left="60" top="94" width="18" height="22"/>
+		<image name="7" left="96" top="72" width="18" height="22"/>
+		<image name="8" left="78" top="72" width="18" height="22"/>
+		<image name="9" left="60" top="72" width="18" height="22"/>
+    </font>	
+	<font name="TexFont_RelicVSNum" font_tex="font\textfont1.png" tex_width="256" tex_height="256" height="17" >	
+		<image name="1" left="0" top="142" width="30" height="38"/>
+		<image name="2" left="30" top="142" width="30" height="38"/>
+		<image name="3" left="60" top="142" width="30" height="38"/>
+		<image name="v" left="90" top="135" width="32" height="38"/>
+		<image name="V" left="90" top="135" width="32" height="38"/>
+    </font>	
+	<font name="TexFont_RelicNum" font_tex="font\textfont1.png" tex_width="256" tex_height="256" height="17" >	
+		<image name="0" left="0" top="180" width="18" height="24"/>
+		<image name="1" left="18" top="180" width="18" height="24"/>
+		<image name="2" left="38" top="180" width="18" height="24"/>
+		<image name="3" left="54" top="180" width="18" height="24"/>
+		<image name="4" left="72" top="180" width="18" height="24"/>
+		<image name="5" left="90" top="180" width="18" height="24"/>
+		<image name="6" left="108" top="180" width="18" height="24"/>
+		<image name="7" left="0" top="204" width="18" height="24"/>
+		<image name="8" left="18" top="204" width="18" height="24"/>
+		<image name="9" left="36" top="204" width="18" height="24"/>
+    </font>	
+	<font name="TexFont_timeNum" font_tex="gui\common\special\special.png" tex_width="512" tex_height="1024" height="17" >	
+		<image name="0" left="253" top="974" width="23" height="28"/>
+		<image name="1" left="277" top="974" width="23" height="28"/>
+		<image name="2" left="301" top="974" width="23" height="28"/>
+		<image name="3" left="325" top="974" width="23" height="28"/>
+		<image name="4" left="349" top="974" width="23" height="28"/>
+		<image name="5" left="373" top="974" width="23" height="28"/>
+		<image name="6" left="397" top="974" width="23" height="28"/>
+		<image name="7" left="421" top="974" width="23" height="28"/>
+		<image name="8" left="445" top="974" width="23" height="28"/>
+		<image name="9" left="469" top="974" width="23" height="28"/>
+		<image name=":" left="496" top="975" width="14" height="26"/>
+    </font>	
+	<font name="TexFont_ping" font_tex="gui\main\hall\number_ping.png" tex_width="128" tex_height="128" height="17" >	
+		<image name="0" left="0" top="0" width="13" height="18"/>
+		<image name="1" left="14" top="0" width="10" height="18"/>
+		<image name="2" left="26" top="0" width="12" height="18"/>
+		<image name="3" left="40" top="0" width="12" height="18"/>
+		<image name="4" left="54" top="0" width="13" height="18"/>
+		<image name="5" left="69" top="0" width="12" height="18"/>
+		<image name="6" left="0" top="20" width="13" height="18"/>
+		<image name="7" left="13" top="20" width="12" height="18"/>
+		<image name="8" left="27" top="20" width="12" height="18"/>
+		<image name="9" left="40" top="20" width="12" height="18"/>
+		<image name=":" left="81" top="0" width="9" height="17"/>
+    </font>
+  <font name="TexFont_phbsz" font_tex="font\textfont1.png" tex_width="256" tex_height="256" height="17" >	
+		<image name="0" left="130" top="0" width="34" height="42"/>
+		<image name="1" left="169" top="0" width="34" height="42"/>
+		<image name="2" left="208" top="0" width="34" height="42"/>
+		<image name="3" left="130" top="47" width="34" height="42"/>
+		<image name="4" left="169" top="47" width="34" height="42"/>
+		<image name="5" left="208" top="47" width="34" height="42"/>
+		<image name="6" left="130" top="94" width="34" height="42"/>
+		<image name="7" left="169" top="94" width="34" height="42"/>
+		<image name="8" left="208" top="94" width="34" height="42"/>
+		<image name="9" left="130" top="141" width="34" height="42"/>
+    </font>		
+  <font name="TexFont_luckynumber" font_tex="gui\main\activity\luckynumber.png" tex_width="1024" tex_height="1024" height="17" >	
+		<image name="0" left="278" top="568" width="33" height="41"/>
+		<image name="1" left="278" top="609" width="33" height="41"/>
+		<image name="2" left="278" top="650" width="33" height="41"/>
+		<image name="3" left="278" top="691" width="33" height="41"/>
+		<image name="4" left="278" top="732" width="33" height="41"/>
+		<image name="5" left="278" top="773" width="33" height="41"/>
+		<image name="6" left="278" top="814" width="33" height="41"/>
+		<image name="7" left="278" top="855" width="33" height="41"/>
+		<image name="8" left="278" top="896" width="33" height="41"/>
+		<image name="9" left="278" top="937" width="33" height="41"/>
+		<image name="?" left="278" top="978" width="33" height="41"/>
+    </font>	
+</fonts>

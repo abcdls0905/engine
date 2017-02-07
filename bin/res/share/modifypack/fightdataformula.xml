@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- RelationFormula公式中 # 表示自身技能属性-->
+<!-- RelationFormula公式中 @ 表示自身对象属性-->
+<!-- RelationFormula公式中 $ 表示受击对象属性-->
+<Object>
+  <Property ID="-1" PropName="0" DataType="1" RelationFormula="2" Min="3" Max="4"/>
+  <Property ID="0" PropName="6" DataType="2" RelationFormula="6" Min="2" Max="2"/>
+  <Property ID="HitRate" PropName="命中率" DataType="int" RelationFormula="@Hit-$Miss" Min="35" Max="100"/>
+  <Property ID="DeadlyRate" PropName="必杀率s" DataType="int" RelationFormula="@Deadly" Min="0" Max="100"/>
+  <Property ID="DeadlyDam" PropName="必杀伤害" DataType="int" RelationFormula="$MaxHP" Min="1"/>
+  <Property ID="CritRate" PropName="暴击几率" DataType="int" RelationFormula="@Crit-$Toug" Min="0" Max="75"/>
+  <Property ID="CritDamRate" PropName="暴击伤害比率" DataType="int" RelationFormula="@CritDam-$TougDam+100" Min="120" Max="400"/>
+  <Property ID="DamRate" PropName="伤害比率" DataType="int" RelationFormula="@DamTotal-$Dodge+100" Min="25" Max="200"/>
+  <Property ID="ADDef" PropName="物理一次减伤率" DataType="int" RelationFormula="@ADDefTotal-$ADDefRift" Min="20" Max="65"/>
+  <Property ID="APDef" PropName="法术一次减伤率" DataType="int" RelationFormula="@APDefTotal-$APDefRift" Min="20" Max="65"/>
+  <Property ID="ExADDef" PropName="物理二次减伤率" DataType="int" RelationFormula="100-@TwiceADDef" Min="0" Max="100"/>
+  <Property ID="ExAPDef" PropName="法术二次减伤率" DataType="int" RelationFormula="100-@TwiceAPDef" Min="0" Max="100"/>
+  <Property ID="CritDamage" PropName="暴击伤害" DataType="int" RelationFormula="(#SkillAD*(1-$ADDef/100)*$ExADDef/100+#SkillAP*(1-$APDef/100)*$ExAPDef/100+#SkillHoly*0.8)*@CritDamRate*@DamRate/10000+@RealDam-$Def" Min="1"/>
+  <Property ID="NormalDamage" PropName="普通伤害" DataType="int" RelationFormula="(#SkillAD*(1-$ADDef/100)*$ExADDef/100+#SkillAP*(1-$APDef/100)*$ExAPDef/100+#SkillHoly*0.8)*@DamRate/100+@RealDam-$Def" Min="1"/>
+  <Property ID="ReboundDam" PropName="反弹伤害比例" DataType="int" RelationFormula="$Rebound-@ReboundAsist" Min="0" Max="70"/>
+  <Property ID="LeechReturn" PropName="普攻吸血比例" DataType="int" RelationFormula="@Leech-$LeechAsist" Min="0" Max="70"/>
+  <Property ID="DizzyRate" PropName="眩晕几率" DataType="int" RelationFormula="@Dizzy-$DizzyAsist" Min="0" Max="100"/>
+  <Property ID="ParalyRate" PropName="麻痹几率" DataType="int" RelationFormula="@Paraly-$ParalyAsist" Min="0" Max="100"/>
+  <Property ID="DizzyBuffID" PropName="眩晕BuffID" DataType="string" RelationFormula="Buff_TY_001"/>
+  <Property ID="ParalyBuffID" PropName="麻痹BuffID" DataType="string" RelationFormula="Buff_TY_002"/>
+  <Property ID="BufferNormalDamage" PropName="buffer普通伤害" DataType="int" RelationFormula="(#BufferAD*(1-$ADDef/100)*$ExADDef/100+#BufferAP*(1-$APDef/100)*$ExAPDef/100+#BufferHoly*0.8)*@DamRate/100+@RealDam-$Def" Min="1"/>
+  <Property ID="BufferCritDamRate" PropName="buffer暴击伤害比率" DataType="int" RelationFormula="@CritDam-$TougDam+100" Min="20" Max="500"/>
+  <Property ID="BufferDeadlyDam" PropName="buffer必杀伤害" DataType="int" RelationFormula="$MaxHP" Min="1"/>
+  <Property ID="BufferCritDamage" PropName="暴击伤害" DataType="int" RelationFormula="(#BufferAD*(1-$ADDef/100)*$ExADDef/100+#BufferAP*(1-$APDef/100)*$ExAPDef/100+#BufferHoly*0.8)*@CritDamRate*@DamRate/10000+@RealDam-$Def" Min="1"/>
+  <Property ID="MaxDFFormula" PropName="最大护盾值" DataType="int" RelationFormula="(@MaxHPBase+@MaxHPAdd)/10" Min="0"/>
+  <Property ID="PlayerReturnDF" PropName="攻击Player恢复属性值" DataType="int" RelationFormula="(@APTotal+@ADTotal)/2" Min="0"/>
+  <Property ID="NpcReturnDF" PropName="攻击Npc恢复属性值" DataType="int" RelationFormula="(@APTotal+@ADTotal)/5" Min="0"/>
+  <Property ID="BossReturnDF" PropName="攻击Boss恢复属性值" DataType="int" RelationFormula="(@APTotal+@ADTotal)/5" Min="0"/>
+  <Property ID="MissCDTime" PropName="闪避间隔时间" DataType="int" RelationFormula="2000" Min="0" Max="2000"/>
+</Object>

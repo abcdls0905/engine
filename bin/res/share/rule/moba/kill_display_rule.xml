@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
+<!-- edited with XMLSpy v2010 (http://www.altova.com) by MESMERiZE (MiZE) -->
+<Object>
+	<!--<Property ID="Common" NoHeroKillInterval="非英雄生物击杀英雄算人头的时间间隔，单位:s"  HelpKillInterval="助攻间隔，单位:s"/>-->
+	<Property ID="Common" NoHeroKillInterval="3" HelpKillInterval="10"/>
+	<!--<Property ID="限时连杀规则" MaxKillInterval="连杀最长时间间隔，单位:s"  MaxSerialKillNum="连杀计数上限"/>-->
+	<Property ID="TimeLimit" MaxKillInterval="12" MaxSerialKillNum="5"/>
+	<!--<Property ID="非限时连杀规则" TimeUnlimitKillNum_1="显示杀得飞起达标数量"  TimeUnlimitKillNum_2="显示杀得超神达标数量" ZhongJieNum="终结别人连杀达标数量"/>-->
+	<Property ID="TimeUnlimit" TimeUnlimitKillNum_1="3" TimeUnlimitKillNum_2="5" ZhongJieNum="3"/>
+</Object>
+
+

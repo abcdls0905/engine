@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by  () -->
+<!--游戏对象属性定义模版文件-->
+<object>
+	<properties>
+		<property name="MainStepID" type="word" public="false" private="true" save="true" desc="当前正在进行的主线任务ID"/>
+		<property name="LastLoopResetTime" type="double" public="false" private="false" save="true" desc="上次环式任务重置时间"/>
+		<property name="IsStartLoopQuest" type="byte" public="false" private="false" save="true" desc="开始环式任务（达到开始等级）"/>
+		<property name="LoopAwardID" type="dword" public="false" private="true" save="true" desc="当日满环奖励"/>
+		<property name="LoopAwardStatus" type="byte" public="false" private="true" save="true" desc="当日满环奖励领取状态（0未领取 1已领取）"/>
+		<property name="LastCampResetTime" type="double" public="false" private="false" save="true" desc="上次阵营任务重置时间"/>
+		<property name="TodayCampDoneCount" type="byte" public="false" private="true" save="true" desc="每日(重置)当前阵营任务完成次数"/>
+	</properties>
+	<records>
+		<!-- 任务表，凡是接到的任务均在此注册 -->
+		<record name="QuestRecord" cols="6" maxrows="512" save="true" public="false" private="true" desc="任务承接表">
+			<column type="word" desc="任务编号"/>
+			<column type="byte" desc="任务状态"/>
+			<column type="word" desc="当前进度"/>
+			<column type="word" desc="总进度"/>
+			<column type="byte" desc="是否是新任务"/>
+			<column type="string" desc="参数列表"/>
+		</record>
+		<!-- 任务完成记录表，按位操作 -->
+		<record name="QuestRewarded" cols="1" maxrows="2048" save="true" public="false" private="true" desc="任务完成">
+			<column type="dword" desc="任务编号位集"/>
+		</record>
+		<!-- 重复任务表，记录可以刷新的任务 -->
+		<record name="QuestRepeatRecord" cols="4" maxrows="32" save="true" public="false" private="true" desc="可重复任务表">
+			<column type="word" desc="任务编号"/>
+			<column type="word" desc="承接次数"/>
+			<column type="word" desc="上限次数"/>
+			<column type="double" desc="任务刷新时间"/>
+		</record>
+		<record name="talk_record" cols="3" maxrows="2048" save="true" public="false" private="true" desc="可重复任务表">
+			<column type="word" desc="关联ID"/>
+			<column type="word" desc="播放次数"/>
+			<column type="word" desc="上限次数"/>
+		</record>
+		<record name="ChapterRec" cols="4" maxrows="512" save="true" public="false" private="true" desc="章节任务表">
+			<column type="word" desc="章节编号"/>
+			<column type="byte" desc="章节状态"/>
+			<column type="word" desc="当前进度"/>
+			<column type="word" desc="总进度"/>
+		</record>
+		<record name="LoopQuestRec" cols="2" maxrows="512" save="true" public="false" private="true" desc="环式任务接受表">
+			<column type="dword" desc="任务id"/>
+			<column type="byte" desc="星数"/>
+		</record>
+		<record name="CampLoopQuestRec" cols="2" maxrows="512" save="true" public="false" private="true" desc="阵营环式任务接受表">
+			<column type="dword" desc="任务id"/>
+		</record>
+	</records>
+</object>

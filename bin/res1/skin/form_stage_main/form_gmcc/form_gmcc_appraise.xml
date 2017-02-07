@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="form_stage_main\form_gmcc\form_gmcc_appraise" init="on_main_form_init">
+        <prop LimitInScreen="true" ShowGrid="true" IsGC="true" Left="261" Top="165" Width="694" Height="438" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+        <event on_open="on_main_form_open" on_close="on_main_form_close" />
+        <control name="groupbox_1" entity="GroupBox" script="" init="">
+            <prop Left="7" Top="2" Width="670" Height="414" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+            <control name="lbl_line_2" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="12" Top="126" Width="662" Height="84" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\fenge.png" />
+            </control>
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="-99" Top="-70" Width="169" Height="26" ShadowColor="0,0,0,0" HAnchor="Center" AutoSize="true" />
+            </control>
+            <control name="lbl_title" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="-31" Top="14" Width="63" Height="16" ForeColor="255,237,228,166" ShadowColor="0,0,0,0" HAnchor="Center" Text="@ui_gmcc_appraise" Font="WRYH16" />
+            </control>
+            <control name="lbl_line_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="12" Top="230" Width="662" Height="97" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\fenge.png" />
+            </control>
+            <control name="groupbox_func" entity="GroupBox" script="" init="">
+                <prop Left="17" Top="126" Width="654" Height="84" ForeColor="255,255,229,139" BackColor="0,255,255,255" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH12" NoFrame="true" DrawMode="Expand" />
+            </control>
+            <control name="lbl_5" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="-392" Top="304" Width="322" Height="27" ShadowColor="0,0,0,0" />
+            </control>
+            <control name="btn_ok" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-405" Top="350" Width="198" Height="70" ForeColor="255,237,228,166" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Right" Text="@ui_ok" Font="WRYH26_S" TabIndex="100" TabStop="true" DrawMode="ExpandH" InSound="MouseIn" ClickSound="button_click" />
+                <event on_click="on_btn_ok_click" />
+            </control>
+            <control name="lbl_line_3" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="-400" Top="48" Width="318" Height="4" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\special\gmcc\line_bg2.png" />
+            </control>
+            <control name="lbl_line_4" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="-352" Top="-56" Width="318" Height="4" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\special\gmcc\line_bg2.png" />
+            </control>
+            <control name="mltbox_hint" entity="MultiTextBox" script="" init="">
+                <prop TextColor="255,255,229,139" MouseInBarColor="0,255,255,0" ViewRect="10,5,266,47" LineHeight="20" AutoScroll="true" ScrollSize="17" Left="12" Top="44" Width="662" Height="78" ShadowColor="0,0,0,0" Font="WRYH12" NoFrame="true" DrawMode="Expand" BackImage="gui\common\window\fenge.png" />
+            </control>
+            <control name="redit_txt" entity="RichEdit" script="" init="">
+                <prop ViewRect="10,10,270,120" MaxLength="220" SelectBackColor="190,190,190,190" Caret="Default" LineHeight="18" ScrollSize="17" Left="17" Top="230" Width="646" Height="97" ForeColor="255,255,229,139" BackColor="0,255,255,255" ShadowColor="0,20,0,0" Font="WRYH12" Cursor="WIN_IBEAM" TabStop="true" NoFrame="true" DrawMode="Expand" />
+            </control>
+            <control name="btn_close" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-53" Top="-26" Width="100" Height="100" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Right" TabStop="true" AutoSize="true" InSound="MouseIn" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+                <event on_click="on_close_click" />
+            </control>
+        </control>
+        <control name="lbl_icon" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="-12" Top="-70" Width="36" Height="36" ShadowColor="0,0,0,0" DrawMode="FitWindow" />
+        </control>
+    </control>
+</form>

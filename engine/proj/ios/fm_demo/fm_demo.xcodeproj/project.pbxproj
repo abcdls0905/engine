@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		85173AF8185B151500EA5C8E /* role_composite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85173AF6185B151500EA5C8E /* role_composite.cpp */; };
+		856396B4174610AF002663EC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856396B3174610AF002663EC /* UIKit.framework */; };
+		856396B6174610AF002663EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856396B5174610AF002663EC /* Foundation.framework */; };
+		856396B8174610AF002663EC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856396B7174610AF002663EC /* CoreGraphics.framework */; };
+		856396BA174610AF002663EC /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856396B9174610AF002663EC /* GLKit.framework */; };
+		856396BC174610AF002663EC /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 856396BB174610AF002663EC /* OpenGLES.framework */; };
+		856396C2174610AF002663EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 856396C0174610AF002663EC /* InfoPlist.strings */; };
+		856396C4174610AF002663EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 856396C3174610AF002663EC /* main.m */; };
+		856396C8174610AF002663EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 856396C7174610AF002663EC /* AppDelegate.m */; };
+		856396CA174610AF002663EC /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 856396C9174610AF002663EC /* Default.png */; };
+		856396CC174610AF002663EC /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 856396CB174610AF002663EC /* Default@2x.png */; };
+		856396CE174610AF002663EC /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 856396CD174610AF002663EC /* Default-568h@2x.png */; };
+		856396D1174610AF002663EC /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856396CF174610AF002663EC /* MainStoryboard_iPhone.storyboard */; };
+		856396D4174610AF002663EC /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 856396D2174610AF002663EC /* MainStoryboard_iPad.storyboard */; };
+		856396D6174610AF002663EC /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 856396D5174610AF002663EC /* Shader.fsh */; };
+		856396D8174610AF002663EC /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 856396D7174610AF002663EC /* Shader.vsh */; };
+		856396DB174610AF002663EC /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 856396DA174610AF002663EC /* ViewController.mm */; };
+		856396ED1746110D002663EC /* app.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 856396E21746110D002663EC /* app.cpp */; };
+		856396EF1746110D002663EC /* game_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 856396E61746110D002663EC /* game_main.cpp */; };
+		856396F01746110D002663EC /* game_scene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 856396E81746110D002663EC /* game_scene.cpp */; };
+		856396F11746110D002663EC /* helper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 856396EA1746110D002663EC /* helper.cpp */; };
+		856396F21746110D002663EC /* lib_main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 856396EC1746110D002663EC /* lib_main.cpp */; };
+		856396FC174613DC002663EC /* libfm_math.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 856396F4174613DC002663EC /* libfm_math.a */; };
+		856396FD174613DC002663EC /* libfm_model.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 856396F5174613DC002663EC /* libfm_model.a */; };
+		856396FF174613DC002663EC /* libfm_render.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 856396F7174613DC002663EC /* libfm_render.a */; };
+		85639700174613DC002663EC /* libfm_sound.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 856396F8174613DC002663EC /* libfm_sound.a */; };
+		85639701174613DC002663EC /* libfm_terrain.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 856396F9174613DC002663EC /* libfm_terrain.a */; };
+		85639702174613DC002663EC /* libfm_world.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 856396FA174613DC002663EC /* libfm_world.a */; };
+		8563970417461411002663EC /* libfm_gui.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8563970317461411002663EC /* libfm_gui.a */; };
+		8563970B17461AF3002663EC /* bin in Resources */ = {isa = PBXBuildFile; fileRef = 8563970A17461AF3002663EC /* bin */; };
+		85931E261905336C002AD563 /* libfm_core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85931E241905336C002AD563 /* libfm_core.a */; };
+		85931E271905336C002AD563 /* libfm_input.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85931E251905336C002AD563 /* libfm_input.a */; };
+		85D09D98178950100075AC31 /* free_camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 85D09D96178950100075AC31 /* free_camera.cpp */; };
+		85DF43DE192A677B00F9C927 /* libfm_geometry.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DF43D9192A677B00F9C927 /* libfm_geometry.a */; };
+		85DF43DF192A677B00F9C927 /* libfm_movie.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DF43DA192A677B00F9C927 /* libfm_movie.a */; };
+		85DF43E0192A677B00F9C927 /* libfm_net.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DF43DB192A677B00F9C927 /* libfm_net.a */; };
+		85DF43E1192A677B00F9C927 /* libfm_physics_bullet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DF43DC192A677B00F9C927 /* libfm_physics_bullet.a */; };
+		85DF43E2192A677B00F9C927 /* libfm_ui3d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 85DF43DD192A677B00F9C927 /* libfm_ui3d.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		85173AF6185B151500EA5C8E /* role_composite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = role_composite.cpp; path = ../../../fm_demo/role_composite.cpp; sourceTree = "<group>"; };
+		85173AF7185B151500EA5C8E /* role_composite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = role_composite.h; path = ../../../fm_demo/role_composite.h; sourceTree = "<group>"; };
+		856396AF174610AF002663EC /* fm_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fm_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		856396B3174610AF002663EC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		856396B5174610AF002663EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		856396B7174610AF002663EC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		856396B9174610AF002663EC /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		856396BB174610AF002663EC /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		856396BF174610AF002663EC /* fm_demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "fm_demo-Info.plist"; sourceTree = "<group>"; };
+		856396C1174610AF002663EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		856396C3174610AF002663EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		856396C5174610AF002663EC /* fm_demo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fm_demo-Prefix.pch"; sourceTree = "<group>"; };
+		856396C6174610AF002663EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		856396C7174610AF002663EC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		856396C9174610AF002663EC /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		856396CB174610AF002663EC /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		856396CD174610AF002663EC /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		856396D0174610AF002663EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		856396D3174610AF002663EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		856396D5174610AF002663EC /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		856396D7174610AF002663EC /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		856396D9174610AF002663EC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		856396DA174610AF002663EC /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		856396E21746110D002663EC /* app.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = app.cpp; path = ../../../fm_demo/app.cpp; sourceTree = "<group>"; };
+		856396E31746110D002663EC /* app.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = app.h; path = ../../../fm_demo/app.h; sourceTree = "<group>"; };
+		856396E61746110D002663EC /* game_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game_main.cpp; path = ../../../fm_demo/game_main.cpp; sourceTree = "<group>"; };
+		856396E71746110D002663EC /* game_main.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game_main.h; path = ../../../fm_demo/game_main.h; sourceTree = "<group>"; };
+		856396E81746110D002663EC /* game_scene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = game_scene.cpp; path = ../../../fm_demo/game_scene.cpp; sourceTree = "<group>"; };
+		856396E91746110D002663EC /* game_scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = game_scene.h; path = ../../../fm_demo/game_scene.h; sourceTree = "<group>"; };
+		856396EA1746110D002663EC /* helper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = helper.cpp; path = ../../../fm_demo/helper.cpp; sourceTree = "<group>"; };
+		856396EB1746110D002663EC /* helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = helper.h; path = ../../../fm_demo/helper.h; sourceTree = "<group>"; };
+		856396EC1746110D002663EC /* lib_main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = lib_main.cpp; path = ../../../fm_demo/lib_main.cpp; sourceTree = "<group>"; };
+		856396F3174613DC002663EC /* libfm_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfm_core.a; path = "../fm_core/build/Release-iphoneos/libfm_core.a"; sourceTree = "<group>"; };
+		856396F4174613DC002663EC /* libfm_math.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfm_math.a; path = "../fm_math/build/Release-iphoneos/libfm_math.a"; sourceTree = "<group>"; };
+		856396F5174613DC002663EC /* libfm_model.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfm_model.a; path = "../fm_model/build/Release-iphoneos/libfm_model.a"; sourceTree = "<group>"; };
+		856396F6174613DC002663EC /* libfm_net.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfm_net.a; path = "../fm_net/build/Release-iphoneos/libfm_net.a"; sourceTree = "<group>"; };
+		856396F7174613DC002663EC /* libfm_render.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfm_render.a; path = "../fm_render/build/Release-iphoneos/libfm_render.a"; sourceTree = "<group>"; };
+		856396F8174613DC002663EC /* libfm_sound.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfm_sound.a; path = "../fm_sound/build/Release-iphoneos/libfm_sound.a"; sourceTree = "<group>"; };
+		856396F9174613DC002663EC /* libfm_terrain.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfm_terrain.a; path = "../fm_terrain/build/Release-iphoneos/libfm_terrain.a"; sourceTree = "<group>"; };
+		856396FA174613DC002663EC /* libfm_world.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfm_world.a; path = "../fm_world/build/Release-iphoneos/libfm_world.a"; sourceTree = "<group>"; };
+		8563970317461411002663EC /* libfm_gui.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfm_gui.a; path = "../fm_gui/build/Release-iphoneos/libfm_gui.a"; sourceTree = "<group>"; };
+		8563970A17461AF3002663EC /* bin */ = {isa = PBXFileReference; lastKnownFileType = folder; name = bin; path = ../../../bin; sourceTree = "<group>"; };
+		85931E201905332F002AD563 /* libfm_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfm_core.a; path = "/Users/snailresearch/Documents/mobile/mobile/proj/ios/fm_core/../../../release/ios/Debug-iphoneos/libfm_core.a"; sourceTree = "<absolute>"; };
+		85931E221905333A002AD563 /* libfm_input.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfm_input.a; path = "/Users/snailresearch/Documents/mobile/mobile/proj/ios/fm_input/../../../release/ios/Debug-iphoneos/libfm_input.a"; sourceTree = "<absolute>"; };
+		85931E241905336C002AD563 /* libfm_core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfm_core.a; path = "/Users/snailresearch/Documents/mobile/mobile/proj/ios/fm_core/../../../release/ios/Debug-iphoneos/libfm_core.a"; sourceTree = "<absolute>"; };
+		85931E251905336C002AD563 /* libfm_input.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfm_input.a; path = "/Users/snailresearch/Documents/mobile/mobile/proj/ios/fm_input/../../../release/ios/Debug-iphoneos/libfm_input.a"; sourceTree = "<absolute>"; };
+		85D09D9517894F700075AC31 /* i_input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = i_input.h; path = ../../../visual/i_input.h; sourceTree = "<group>"; };
+		85D09D96178950100075AC31 /* free_camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = free_camera.cpp; path = ../../../fm_demo/free_camera.cpp; sourceTree = "<group>"; };
+		85D09D97178950100075AC31 /* free_camera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = free_camera.h; path = ../../../fm_demo/free_camera.h; sourceTree = "<group>"; };
+		85D09D991789503C0075AC31 /* libfm_input.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfm_input.a; path = "../Build/Products/Debug-iphoneos/libfm_input.a"; sourceTree = "<group>"; };
+		85DF43D9192A677B00F9C927 /* libfm_geometry.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfm_geometry.a; path = "../fm_geometry/build/Release-iphoneos/libfm_geometry.a"; sourceTree = "<group>"; };
+		85DF43DA192A677B00F9C927 /* libfm_movie.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfm_movie.a; path = "../fm_movie/build/Release-iphoneos/libfm_movie.a"; sourceTree = "<group>"; };
+		85DF43DB192A677B00F9C927 /* libfm_net.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfm_net.a; path = "../Build/Products/Release-iphoneos/libfm_net.a"; sourceTree = "<group>"; };
+		85DF43DC192A677B00F9C927 /* libfm_physics_bullet.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfm_physics_bullet.a; path = "../fm_physics_bullet/build/Release-iphoneos/libfm_physics_bullet.a"; sourceTree = "<group>"; };
+		85DF43DD192A677B00F9C927 /* libfm_ui3d.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfm_ui3d.a; path = "../fm_ui3d/build/Release-iphoneos/libfm_ui3d.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		856396AC174610AF002663EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85DF43DE192A677B00F9C927 /* libfm_geometry.a in Frameworks */,
+				85DF43DF192A677B00F9C927 /* libfm_movie.a in Frameworks */,
+				85DF43E0192A677B00F9C927 /* libfm_net.a in Frameworks */,
+				85DF43E1192A677B00F9C927 /* libfm_physics_bullet.a in Frameworks */,
+				85DF43E2192A677B00F9C927 /* libfm_ui3d.a in Frameworks */,
+				85931E261905336C002AD563 /* libfm_core.a in Frameworks */,
+				85931E271905336C002AD563 /* libfm_input.a in Frameworks */,
+				8563970417461411002663EC /* libfm_gui.a in Frameworks */,
+				856396FC174613DC002663EC /* libfm_math.a in Frameworks */,
+				856396FD174613DC002663EC /* libfm_model.a in Frameworks */,
+				856396FF174613DC002663EC /* libfm_render.a in Frameworks */,
+				85639700174613DC002663EC /* libfm_sound.a in Frameworks */,
+				85639701174613DC002663EC /* libfm_terrain.a in Frameworks */,
+				85639702174613DC002663EC /* libfm_world.a in Frameworks */,
+				856396B4174610AF002663EC /* UIKit.framework in Frameworks */,
+				856396B6174610AF002663EC /* Foundation.framework in Frameworks */,
+				856396B8174610AF002663EC /* CoreGraphics.framework in Frameworks */,
+				856396BA174610AF002663EC /* GLKit.framework in Frameworks */,
+				856396BC174610AF002663EC /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		856396A4174610AF002663EC = {
+			isa = PBXGroup;
+			children = (
+				85D09D9317894F510075AC31 /* visual */,
+				8563970A17461AF3002663EC /* bin */,
+				8563970317461411002663EC /* libfm_gui.a */,
+				856396F3174613DC002663EC /* libfm_core.a */,
+				856396F4174613DC002663EC /* libfm_math.a */,
+				85D09D991789503C0075AC31 /* libfm_input.a */,
+				856396F5174613DC002663EC /* libfm_model.a */,
+				856396F6174613DC002663EC /* libfm_net.a */,
+				856396F7174613DC002663EC /* libfm_render.a */,
+				856396F8174613DC002663EC /* libfm_sound.a */,
+				856396F9174613DC002663EC /* libfm_terrain.a */,
+				856396FA174613DC002663EC /* libfm_world.a */,
+				856396E1174610CB002663EC /* src */,
+				856396BD174610AF002663EC /* fm_demo */,
+				856396B2174610AF002663EC /* Frameworks */,
+				856396B0174610AF002663EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		856396B0174610AF002663EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				856396AF174610AF002663EC /* fm_demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		856396B2174610AF002663EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85DF43D9192A677B00F9C927 /* libfm_geometry.a */,
+				85DF43DA192A677B00F9C927 /* libfm_movie.a */,
+				85DF43DB192A677B00F9C927 /* libfm_net.a */,
+				85DF43DC192A677B00F9C927 /* libfm_physics_bullet.a */,
+				85DF43DD192A677B00F9C927 /* libfm_ui3d.a */,
+				85931E241905336C002AD563 /* libfm_core.a */,
+				85931E251905336C002AD563 /* libfm_input.a */,
+				85931E221905333A002AD563 /* libfm_input.a */,
+				85931E201905332F002AD563 /* libfm_core.a */,
+				856396B3174610AF002663EC /* UIKit.framework */,
+				856396B5174610AF002663EC /* Foundation.framework */,
+				856396B7174610AF002663EC /* CoreGraphics.framework */,
+				856396B9174610AF002663EC /* GLKit.framework */,
+				856396BB174610AF002663EC /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		856396BD174610AF002663EC /* fm_demo */ = {
+			isa = PBXGroup;
+			children = (
+				856396C6174610AF002663EC /* AppDelegate.h */,
+				856396C7174610AF002663EC /* AppDelegate.m */,
+				856396CF174610AF002663EC /* MainStoryboard_iPhone.storyboard */,
+				856396D2174610AF002663EC /* MainStoryboard_iPad.storyboard */,
+				856396D5174610AF002663EC /* Shader.fsh */,
+				856396D7174610AF002663EC /* Shader.vsh */,
+				856396D9174610AF002663EC /* ViewController.h */,
+				856396DA174610AF002663EC /* ViewController.mm */,
+				856396BE174610AF002663EC /* Supporting Files */,
+			);
+			path = fm_demo;
+			sourceTree = "<group>";
+		};
+		856396BE174610AF002663EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				856396BF174610AF002663EC /* fm_demo-Info.plist */,
+				856396C0174610AF002663EC /* InfoPlist.strings */,
+				856396C3174610AF002663EC /* main.m */,
+				856396C5174610AF002663EC /* fm_demo-Prefix.pch */,
+				856396C9174610AF002663EC /* Default.png */,
+				856396CB174610AF002663EC /* Default@2x.png */,
+				856396CD174610AF002663EC /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		856396E1174610CB002663EC /* src */ = {
+			isa = PBXGroup;
+			children = (
+				85173AF6185B151500EA5C8E /* role_composite.cpp */,
+				85173AF7185B151500EA5C8E /* role_composite.h */,
+				85D09D96178950100075AC31 /* free_camera.cpp */,
+				85D09D97178950100075AC31 /* free_camera.h */,
+				856396E21746110D002663EC /* app.cpp */,
+				856396E31746110D002663EC /* app.h */,
+				856396E61746110D002663EC /* game_main.cpp */,
+				856396E71746110D002663EC /* game_main.h */,
+				856396E81746110D002663EC /* game_scene.cpp */,
+				856396E91746110D002663EC /* game_scene.h */,
+				856396EA1746110D002663EC /* helper.cpp */,
+				856396EB1746110D002663EC /* helper.h */,
+				856396EC1746110D002663EC /* lib_main.cpp */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		85D09D9317894F510075AC31 /* visual */ = {
+			isa = PBXGroup;
+			children = (
+				85D09D9517894F700075AC31 /* i_input.h */,
+			);
+			name = visual;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		856396AE174610AF002663EC /* fm_demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 856396DE174610AF002663EC /* Build configuration list for PBXNativeTarget "fm_demo" */;
+			buildPhases = (
+				856396AB174610AF002663EC /* Sources */,
+				856396AC174610AF002663EC /* Frameworks */,
+				856396AD174610AF002663EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = fm_demo;
+			productName = fm_demo;
+			productReference = 856396AF174610AF002663EC /* fm_demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		856396A6174610AF002663EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = SnailResearch;
+				TargetAttributes = {
+					856396AE174610AF002663EC = {
+						DevelopmentTeam = WSSN499SLU;
+					};
+				};
+			};
+			buildConfigurationList = 856396A9174610AF002663EC /* Build configuration list for PBXProject "fm_demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 856396A4174610AF002663EC;
+			productRefGroup = 856396B0174610AF002663EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				856396AE174610AF002663EC /* fm_demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		856396AD174610AF002663EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				856396C2174610AF002663EC /* InfoPlist.strings in Resources */,
+				856396CA174610AF002663EC /* Default.png in Resources */,
+				856396CC174610AF002663EC /* Default@2x.png in Resources */,
+				856396CE174610AF002663EC /* Default-568h@2x.png in Resources */,
+				856396D1174610AF002663EC /* MainStoryboard_iPhone.storyboard in Resources */,
+				856396D4174610AF002663EC /* MainStoryboard_iPad.storyboard in Resources */,
+				856396D6174610AF002663EC /* Shader.fsh in Resources */,
+				856396D8174610AF002663EC /* Shader.vsh in Resources */,
+				8563970B17461AF3002663EC /* bin in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		856396AB174610AF002663EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				856396C4174610AF002663EC /* main.m in Sources */,
+				856396C8174610AF002663EC /* AppDelegate.m in Sources */,
+				856396DB174610AF002663EC /* ViewController.mm in Sources */,
+				856396ED1746110D002663EC /* app.cpp in Sources */,
+				856396EF1746110D002663EC /* game_main.cpp in Sources */,
+				856396F01746110D002663EC /* game_scene.cpp in Sources */,
+				856396F11746110D002663EC /* helper.cpp in Sources */,
+				856396F21746110D002663EC /* lib_main.cpp in Sources */,
+				85D09D98178950100075AC31 /* free_camera.cpp in Sources */,
+				85173AF8185B151500EA5C8E /* role_composite.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		856396C0174610AF002663EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				856396C1174610AF002663EC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		856396CF174610AF002663EC /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				856396D0174610AF002663EC /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		856396D2174610AF002663EC /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				856396D3174610AF002663EC /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		856396DC174610AF002663EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: chen cong (LE9Q4365D9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+					PERFORMANCE_DEBUG,
+					USE_FREE_CAMERA,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "688F2352-744A-436B-A160-07FAC243E927";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		856396DD174610AF002663EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: chen cong (LE9Q4365D9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "688F2352-744A-436B-A160-07FAC243E927";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		856396DF174610AF002663EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fm_demo/fm_demo-Prefix.pch";
+				INFOPLIST_FILE = "fm_demo/fm_demo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\"$(SRCROOT)/../Build/Products/Debug-iphoneos\\\\\\\"",
+					"/Users/snailresearch/Documents/mobile/mobile/proj/ios/fm_core/../../../release/ios/Debug-iphoneos",
+					"/Users/snailresearch/Documents/mobile/mobile/proj/ios/fm_input/../../../release/ios/Debug-iphoneos",
+					"/Users/snailresearch/Documents/mobile/mobile/proj/ios/fm_geometry/build/Release-iphoneos",
+					"/Users/snailresearch/Documents/mobile/mobile/proj/ios/fm_movie/build/Release-iphoneos",
+					"/Users/snailresearch/Documents/mobile/mobile/proj/ios/Build/Products/Release-iphoneos",
+					"/Users/snailresearch/Documents/mobile/mobile/proj/ios/fm_physics_bullet/build/Release-iphoneos",
+					"/Users/snailresearch/Documents/mobile/mobile/proj/ios/fm_ui3d/build/Release-iphoneos",
+				);
+				OTHER_LDFLAGS = (
+					"-L\"$(SRCROOT)/../../../extern/freeimage/lib/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/\"",
+					"-lFreeImage",
+					"-L\"$(SRCROOT)/../../../extern/freetype/lib/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/\"",
+					"-lFreeType",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		856396E0174610AF002663EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "fm_demo/fm_demo-Prefix.pch";
+				INFOPLIST_FILE = "fm_demo/fm_demo-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\\\\\\\"$(SRCROOT)/../Build/Products/Debug-iphoneos\\\\\\\"",
+					"/Users/snailresearch/Documents/mobile/mobile/proj/ios/fm_core/../../../release/ios/Debug-iphoneos",
+					"/Users/snailresearch/Documents/mobile/mobile/proj/ios/fm_input/../../../release/ios/Debug-iphoneos",
+					"/Users/snailresearch/Documents/mobile/mobile/proj/ios/fm_geometry/build/Release-iphoneos",
+					"/Users/snailresearch/Documents/mobile/mobile/proj/ios/fm_movie/build/Release-iphoneos",
+					"/Users/snailresearch/Documents/mobile/mobile/proj/ios/Build/Products/Release-iphoneos",
+					"/Users/snailresearch/Documents/mobile/mobile/proj/ios/fm_physics_bullet/build/Release-iphoneos",
+					"/Users/snailresearch/Documents/mobile/mobile/proj/ios/fm_ui3d/build/Release-iphoneos",
+				);
+				OTHER_LDFLAGS = (
+					"-L\"$(SRCROOT)/../../../extern/freeimage/lib/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/\"",
+					"-lFreeImage",
+					"-L\"$(SRCROOT)/../../../extern/freetype/lib/ios/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/\"",
+					"-lFreeType",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		856396A9174610AF002663EC /* Build configuration list for PBXProject "fm_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				856396DC174610AF002663EC /* Debug */,
+				856396DD174610AF002663EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		856396DE174610AF002663EC /* Build configuration list for PBXNativeTarget "fm_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				856396DF174610AF002663EC /* Debug */,
+				856396E0174610AF002663EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 856396A6174610AF002663EC /* Project object */;
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop ShowGrid="true" Left="117" Top="101" Width="262" Height="110" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="FitWindow"/>
+		<control name="group_bk" entity="GroupBox" script="" init="">
+			<prop Left="96" Top="90" Width="71" Height="9" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" BackImage=""/>
+			<control name="pbar_hp" entity="ProgressBar" script="" init="">
+				<prop Maximum="100" Value="100" WidthGap="9" HeightGap="9" ProgressImage="" ProgressMode="LeftToRight" Left="2" Top="3" Width="67" Height="5" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+			</control>
+		</control>
+		<control name="lbl_name" entity="Label" script="" init="">
+			<prop Align="Center" RefCursor="WIN_HELP" Left="72" Top="64" Width="129" Height="24" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="走私商" Font="HEIT20" AutoSize="true" DrawMode="Expand" BackImage=""/>
+		</control>
+		<control name="lbl_inhall_name" entity="Label" script="" init="">
+			<prop Align="Center" RefCursor="WIN_HELP" Left="96" Top="72" Width="80" Height="16" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Font="WRYH24_O_BLACK"/>
+		</control>
+		<control name="mltbox_name" entity="MultiTextBox" script="" init="">
+			<prop TextColor="255,0,255,0" ViewRect="0,0,150,24" LineHeight="20" TipAutoSize="true" TipMaxWidth="300" LineTextAlign="Center" ScrollSize="17" Left="88" Top="56" Width="150" Height="24" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Text="mltbox_1" AutoSize="true" DrawMode="Center"/>
+		</control>
+		<control name="groupbox_head_talk" entity="GroupBox" script="" init="">
+			<prop Left="32" Width="238" Height="102" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Visible="false" NoFrame="true" DrawMode="FitWindow"/>
+			<control name="mltbox_talk" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,255,255,204" SelectBarColor="0,0,0,0" MouseInBarColor="0,0,0,0" ViewRect="15,10,125,40" LineHeight="20" HtmlText="大王叫我来巡山" ScrollSize="17" Left="24" Width="150" Height="60" ForeColor="255,204,255,255" ShadowColor="0,0,0,0" Font="WRYH16_O_BLACK" NoFrame="true" DrawMode="Expand" BackImage=""/>
+			</control>
+		</control>
+	</control>
+</form>
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by  () -->
+<!--Equip_Item的属性表，继承自Nim_Item，所有可装备的物品的基类-->
+<object>
+	<!-- 基本属性 -->
+	<properties>	
+		<property name="BadgeType" type="int" public="false" private="true" save="false" desc="徽章类型"/>
+		<property name="BadgeProp" type="string" public="false" private="true" save="false" desc="徽章属性"/>
+	</properties>
+	
+	<!--策划要求装备的修正表必须保存不得重刷-->
+	<records>
+	</records>
+	
+	<!--从其他文件加载属性-->
+	<includes>
+		<!--<path name="struct\rule\fight\fightpropdefined.xml" desc="战斗属性附加"/>-->
+	</includes>	
+</object>

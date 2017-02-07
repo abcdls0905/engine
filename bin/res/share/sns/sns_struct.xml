@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- sns请求数据的模板文件,玩家所有离线数据文件 -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 被2011 rel. 2 sp1 (Lonely Knight) 使用XMLSpy vLK编辑的 (http://www.altova.com) by -->
+<!-- edited with XMLSpy v2010 (http://www.altova.com) by MESMERiZE (MiZE) -->
+<!-- DataType:int,float,string,widestr,object -->
+<Object>
+	<Propertys>
+		<Property Name="Name" DataType="widestr" Desc="玩家名字"/>
+		<Property Name="Level" DataType="int" Desc="玩家等级"/>
+		<Property Name="BattleAbility" DataType="int" Desc="玩家战斗力"/>
+		<Property Name="RoleIndex" DataType="int" Desc="玩家战斗力"/>
+		<Property Name="RoleNpcMainId"  DataType="string" Desc="主角色"/>
+		<Property Name="RoleNpcExt1Id"  DataType="string" Desc="副将1"/>
+		<Property Name="RoleNpcExt2Id"  DataType="string" Desc="副将2"/>
+		<Property Name="GuildName"  DataType="widestr" Desc="公会名"/>
+		<Property Name="ZhenYing"  DataType="int" Desc="阵营"/>
+	</Propertys>
+
+	<Includes>
+		<Path Name="ini/sns/_rolenpc_rec.xml" desc="" />
+		<Path Name="ini/sns/_rolenpc_prop_rec.xml" desc="" />
+		<Path Name="ini/sns/_shortcut_skill_rec.xml" desc="" />
+		<Path Name="ini/sns/_skill_rec.xml" desc="" />
+		<Path Name="ini/sns/_equip_rec.xml" desc="装备表" />
+		<Path Name="ini/sns/_tattoo_rec.xml" desc="符文表" />
+		<Path Name="ini/sns/_fashion_rec.xml" desc="时装表" />
+		<!--<Record Name="pet_skill_rec" Cols="2" MaxRows="10" ColType="int,string" Desc="宠物技能表：nIndex,技能数据"/>-->
+	</Includes>
+</Object>

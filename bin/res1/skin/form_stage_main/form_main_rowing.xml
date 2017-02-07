@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Left="29" Top="29" Width="822" Height="630" BackColor="0,0,0,0" ShadowColor="0,0,0,0" />
+        <control name="group_rowing_main" entity="GroupBox" script="" init="">
+            <prop Left="-24" Top="-270" Width="374" Height="262" BackColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Bottom" Transparent="true" NoFrame="true" />
+            <control name="btn_move_forward" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\jixianpiaoliu\jxpl_qp.png,204,0,102,114" PushImage="gui\main\jixianpiaoliu\jxpl_qp.png,204,114,102,114" DisableImage="gui\main\jixianpiaoliu\jxpl_qp.png,204,114,102,114" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="255,120,120,120" Left="144" Top="16" Width="102" Height="114" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="1" AutoSize="true" />
+            </control>
+            <control name="btn_move_left" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\jixianpiaoliu\jxpl_qp.png,0,0,102,114" PushImage="gui\main\jixianpiaoliu\jxpl_qp.png,0,114,102,114" DisableImage="gui\main\jixianpiaoliu\jxpl_qp.png,0,114,102,114" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="255,120,120,120" Left="48" Top="112" Width="102" Height="114" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="3" AutoSize="true" />
+            </control>
+            <control name="btn_move_right" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\jixianpiaoliu\jxpl_qp.png,102,0,102,114" PushImage="gui\main\jixianpiaoliu\jxpl_qp.png,102,114,102,114" DisableImage="gui\main\jixianpiaoliu\jxpl_qp.png,102,114,102,114" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="255,120,120,120" Left="240" Top="112" Width="102" Height="114" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="4" AutoSize="true" />
+            </control>
+            <control name="btn_move_shut" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\jixianpiaoliu\jxpl_qp.png,0,228,102,114" PushImage="gui\main\jixianpiaoliu\jxpl_qp.png,0,342,102,114" DisableImage="gui\main\jixianpiaoliu\jxpl_qp.png,0,342,102,114" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="255,120,120,120" Left="144" Top="120" Width="102" Height="114" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="2" AutoSize="true" />
+            </control>
+        </control>
+        <control name="group_team" entity="GroupBox" script="" init="">
+            <prop Width="360" Height="128" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" AutoSize="true" DrawMode="Expand" BackImage="gui\main\jixianpiaoliu\jxpl_qp.png,152,384,360,128" />
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop Solid="true" RefCursor="WIN_HELP" Left="7" Top="48" Width="172" Height="36" BackColor="255,200,200,200" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="Expand" BackImage="gui\main\jixianpiaoliu\jxpl_qp.png,102,348,172,36" />
+            </control>
+            <control name="lbl_2" entity="Label" script="" init="">
+                <prop Solid="true" RefCursor="WIN_HELP" Left="181" Top="48" Width="172" Height="36" BackColor="255,200,200,200" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="Expand" BackImage="gui\main\jixianpiaoliu\jxpl_qp.png,102,348,172,36" />
+            </control>
+            <control name="lbl_3" entity="Label" script="" init="">
+                <prop Solid="true" RefCursor="WIN_HELP" Left="7" Top="86" Width="172" Height="36" BackColor="255,200,200,200" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="Expand" BackImage="gui\main\jixianpiaoliu\jxpl_qp.png,102,348,172,36" />
+            </control>
+            <control name="lbl_4" entity="Label" script="" init="">
+                <prop Solid="true" RefCursor="WIN_HELP" Left="181" Top="86" Width="172" Height="36" BackColor="255,200,200,200" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="Expand" BackImage="gui\main\jixianpiaoliu\jxpl_qp.png,102,348,172,36" />
+            </control>
+            <control name="lbl_captain_tip" entity="Label" script="" init="">
+                <prop Align="Right" RefCursor="WIN_HELP" Left="40" Top="8" Width="32" Height="27" ForeColor="255,120,120,120" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\jixianpiaoliu\jxpl_qp.png,102,462,32,27" />
+            </control>
+            <control name="lbl_captain_name" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="80" Top="8" Width="166" Height="27" ForeColor="255,227,127,0" ShadowColor="0,0,0,0" Text="杰克*斯帕洛" Font="WRYH24_S" />
+            </control>
+            <control name="lbl_mem_1_name" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="48" Top="48" Width="126" Height="36" ForeColor="255,152,255,255" ShadowColor="0,0,0,0" Text="船员1" Font="WRYH20_S" />
+            </control>
+            <control name="lbl_mem_3_name" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="48" Top="86" Width="80" Height="36" ForeColor="255,152,255,255" ShadowColor="0,0,0,0" Text="船员3" Font="WRYH20_S" />
+            </control>
+            <control name="lbl_mem_2_name" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="224" Top="48" Width="126" Height="36" ForeColor="255,152,255,255" ShadowColor="0,0,0,0" Text="船员2" Font="WRYH20_S" />
+            </control>
+            <control name="lbl_mem_4_name" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="224" Top="86" Width="126" Height="36" ForeColor="255,152,255,255" ShadowColor="0,0,0,0" Text="船员4" Font="WRYH20_S" />
+            </control>
+            <control name="lbl_mem_1_op" entity="Label" script="" init="">
+                <prop Solid="true" RefCursor="WIN_HELP" Left="10" Top="51" Width="30" Height="30" BackColor="255,227,127,0" ShadowColor="0,0,0,0" AutoSize="true" />
+            </control>
+            <control name="lbl_mem_2_op" entity="Label" script="" init="">
+                <prop Solid="true" RefCursor="WIN_HELP" Left="184" Top="51" Width="30" Height="30" BackColor="255,227,127,0" ShadowColor="0,0,0,0" AutoSize="true" />
+            </control>
+            <control name="lbl_mem_3_op" entity="Label" script="" init="">
+                <prop Solid="true" RefCursor="WIN_HELP" Left="10" Top="88" Width="30" Height="30" BackColor="255,227,127,0" ShadowColor="0,0,0,0" AutoSize="true" />
+            </control>
+            <control name="lbl_mem_4_op" entity="Label" script="" init="">
+                <prop Solid="true" RefCursor="WIN_HELP" Left="184" Top="88" Width="30" Height="30" BackColor="255,227,127,0" ShadowColor="0,0,0,0" AutoSize="true" />
+            </control>
+            <control name="lbl_member_tip" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="1320" Top="-16" Width="80" Height="16" ForeColor="255,120,120,120" ShadowColor="0,0,0,0" Text="船员" />
+            </control>
+            <control name="lbl_captain_state" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="40" Top="8" Width="32" Height="37" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\jixianpiaoliu\jxpl_qp.png,274,348,32,37" />
+            </control>
+        </control>
+        <control name="group_op_info" entity="GroupBox" script="" init="">
+            <prop Left="32" Top="184" Width="222" Height="150" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" />
+            <control name="lbl_operation" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="8" Top="16" Width="218" Height="62" ForeColor="255,227,127,0" ShadowColor="0,0,0,0" Font="WRYH30_S" AutoSize="true" BackImage="gui\main\jixianpiaoliu\huachuan.png" />
+            </control>
+            <control name="lbl_op_countdown" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="72" Top="88" Width="80" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="4" Font="WRYH30_S" />
+            </control>
+        </control>
+        <control name="group_func" entity="GroupBox" script="" init="">
+            <prop Left="-150" Top="-182" Width="142" Height="142" BackColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Right" Transparent="true" NoFrame="true" />
+            <control name="btn_captain_promote" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\jixianpiaoliu\jxpl_qp.png,102,228,120,120" PushImage="gui\main\jixianpiaoliu\jxpl_qp.png,222,228,120,120" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="16" Width="120" Height="120" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" />
+            </control>
+            <control name="btn_captain_quit" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\jixianpiaoliu\jxpl_qp.png,392,144,120,120" PushImage="gui\main\jixianpiaoliu\jxpl_qp.png,392,264,120,120" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="16" Width="120" Height="120" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" />
+            </control>
+        </control>
+        <control name="group_timeinfo" entity="GroupBox" script="" init="">
+            <prop Left="-107" Top="24" Width="254" Height="70" BackColor="0,255,255,255" ShadowColor="0,0,0,0" HAnchor="Center" NoFrame="true" />
+            <control name="lbl_passtime" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="88" Top="24" Width="80" Height="16" ForeColor="255,227,127,0" ShadowColor="0,0,0,0" Text="00:00" Font="WRYH30_S" />
+            </control>
+        </control>
+        <control name="btn_exit" entity="Button" script="" init="">
+            <prop NormalImage="gui\main\heedbar\clone2.png,270,548,103,93" PushImage="gui\main\heedbar\clone2.png,270,654,103,93" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-102" Width="103" Height="93" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Right" AutoSize="true" />
+        </control>
+        <control name="btn_team_visible" entity="Button" script="" init="">
+            <prop NormalImage="gui\main\jixianpiaoliu\jxpl_qp.png,0,456,48,48" PushImage="gui\main\jixianpiaoliu\jxpl_qp.png,48,456,48,48" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="48" Height="48" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" />
+        </control>
+    </control>
+</form>

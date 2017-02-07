@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop IsGC="true" Left="13" Top="13" Width="1262" Height="790" BackColor="153,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand" />
+        <control name="groupbox_main" entity="GroupBox" script="" init="">
+            <prop Left="117" Top="29" Width="1024" Height="742" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+            <control name="lbl_room_title" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="-123" Top="11" Width="238" Height="38" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" HAnchor="Center" Text="遗迹战房间" Font="WRYH30_S" />
+            </control>
+            <control name="groupbox_team_info" entity="GroupBox" script="" init="">
+                <prop Left="-472" Top="-320" Width="950" Height="486" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" DrawMode="Expand" BackImage="gui\common\window\shurukuang3.png" />
+            </control>
+            <control name="lbl_11" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="5" Top="5" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_zuoshang.png" />
+            </control>
+            <control name="lbl_12" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="965" Top="5" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_youshang.png" />
+            </control>
+            <control name="lbl_13" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="965" Top="683" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshiyouxia.png" />
+            </control>
+            <control name="group_chat" entity="GroupBox" script="" init="">
+                <prop ClipChildren="true" Left="45" Top="539" Width="950" Height="182" BackColor="0,120,120,120" ShadowColor="0,0,0,0" NoFrame="true" />
+            </control>
+            <control name="btn_close" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-82" Top="-15" Width="100" Height="100" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Right" Font="WRYH24_S" TabIndex="100" TabStop="true" AutoSize="true" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+            </control>
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="3" Top="683" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_zuoxia.png" />
+            </control>
+            <control name="lbl_countdown_tip" entity="Label" script="" init="">
+                <prop Align="Right" RefCursor="WIN_HELP" Left="787" Top="595" Width="134" Height="31" ForeColor="255,255,0,0" ShadowColor="0,0,0,0" Text="@ui_relic_room_countdown" Font="WRYH20_S" />
+            </control>
+            <control name="lbl_countdown" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="819" Top="635" Width="102" Height="31" ForeColor="255,255,0,0" ShadowColor="0,0,0,0" Text="10:20" Font="WRYH20_S" />
+            </control>
+        </control>
+        <control name="groupbox_team_member" entity="GroupBox" script="" init="">
+            <prop Left="200" Top="96" Width="300" Height="450" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\battle\scene_select\zudui_zs.jpg" />
+            <control name="lbl_player_state" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="56" Top="192" Width="198" Height="38" ForeColor="255,227,127,0" ShadowColor="0,0,0,0" Text="哇哈哈" />
+            </control>
+            <control name="lbl_player_name" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="64" Top="352" Width="174" Height="38" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="克鲁斯" Font="WRYH24_S" />
+            </control>
+            <control name="lbl_fight_word" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="98" Top="24" Width="98" Height="34" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\tips\fontpicture_zdl.jpg" />
+            </control>
+            <control name="lbl_zhanli_num" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="48" Top="64" Width="200" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="999999" Font="TexFont_zdlNum" />
+            </control>
+            <control name="lbl_player_bg" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="24" Top="88" Width="256" Height="256" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH22_O" BackImage="gui\battle\scene_select\zuduiyj_xuanren.png" />
+            </control>
+            <control name="btn_player_photo" entity="Button" script="" init="">
+                <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="104" Top="128" Width="100" Height="125" BackColor="0,192,192,192" ShadowColor="0,0,0,0" DrawMode="FitWindow" ClickSound="button_click" />
+            </control>
+            <control name="lbl_player_level" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="168" Top="240" Width="46" Height="38" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="18" Font="WRYH22_O" />
+            </control>
+            <control name="groupbox_revival_" entity="GroupBox" script="" init="">
+                <prop Left="168" Top="224" Width="51" Height="86" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" BackImage="gui\main\revival\xingxing.png" />
+                <control name="lbl_revival_lv_" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="2" Top="0" Width="46" Height="46" ForeColor="255,93,85,13" ShadowColor="0,0,0,0" Text="1" Font="WRYH20" DrawMode="FitWindow" />
+                </control>
+                <control name="lbl_revival_sub_lv_" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="6" Top="42" Width="38" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="1" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                </control>
+            </control>
+        </control>
+    </control>
+</form>

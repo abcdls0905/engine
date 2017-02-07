@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="NsightTegraProject">
+    <NsightTegraProjectRevisionNumber>5</NsightTegraProjectRevisionNumber>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Tegra-Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Tegra-Android">
+      <Configuration>Release</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Tegra-Android">
+      <Configuration>Profile</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\action_control.cpp" />
+    <ClCompile Include="..\action_control_info.cpp" />
+    <ClCompile Include="..\actor.cpp" />
+    <ClCompile Include="..\actor_action.cpp" />
+    <ClCompile Include="..\actor_foot.cpp" />
+    <ClCompile Include="..\actor_look.cpp" />
+    <ClCompile Include="..\actor_node.cpp" />
+    <ClCompile Include="..\broken_shadow.cpp" />
+    <ClCompile Include="..\camera.cpp" />
+    <ClCompile Include="..\dynamic_weather.cpp" />
+    <ClCompile Include="..\effect_data.cpp" />
+    <ClCompile Include="..\effect_model.cpp" />
+    <ClCompile Include="..\lib_main.cpp" />
+    <ClCompile Include="..\light_manager.cpp" />
+    <ClCompile Include="..\light_source.cpp" />
+    <ClCompile Include="..\model.cpp" />
+    <ClCompile Include="..\particle.cpp" />
+    <ClCompile Include="..\particle_data.cpp" />
+    <ClCompile Include="..\particle_info.cpp" />
+    <ClCompile Include="..\particle_manager.cpp" />
+    <ClCompile Include="..\particle_node.cpp" />
+    <ClCompile Include="..\post_debug.cpp" />
+    <ClCompile Include="..\post_effect.cpp" />
+    <ClCompile Include="..\post_effect_filter.cpp" />
+    <ClCompile Include="..\post_effect_fxaa.cpp" />
+    <ClCompile Include="..\pssm.cpp" />
+    <ClCompile Include="..\render_tex.cpp" />
+    <ClCompile Include="..\saber_arc.cpp" />
+    <ClCompile Include="..\saber_arc_manager.cpp" />
+    <ClCompile Include="..\scene.cpp" />
+    <ClCompile Include="..\shadow.cpp" />
+    <ClCompile Include="..\shadow_manager.cpp" />
+    <ClCompile Include="..\skin.cpp" />
+    <ClCompile Include="..\sky_box.cpp" />
+    <ClCompile Include="..\sun_glow.cpp" />
+    <ClCompile Include="..\weather.cpp" />
+    <ClCompile Include="..\whip.cpp" />
+    <ClCompile Include="..\whip_data.cpp" />
+    <ClCompile Include="..\whip_manager.cpp" />
+    <ClCompile Include="..\world.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\action_control.h" />
+    <ClInclude Include="..\actor.h" />
+    <ClInclude Include="..\actor_node.h" />
+    <ClInclude Include="..\broken_shadow.h" />
+    <ClInclude Include="..\camera.h" />
+    <ClInclude Include="..\dynamic_weather.h" />
+    <ClInclude Include="..\effect_data.h" />
+    <ClInclude Include="..\effect_model.h" />
+    <ClInclude Include="..\light_manager.h" />
+    <ClInclude Include="..\light_source.h" />
+    <ClInclude Include="..\model.h" />
+    <ClInclude Include="..\particle.h" />
+    <ClInclude Include="..\particle_data.h" />
+    <ClInclude Include="..\particle_info.h" />
+    <ClInclude Include="..\particle_manager.h" />
+    <ClInclude Include="..\particle_node.h" />
+    <ClInclude Include="..\perlin.h" />
+    <ClInclude Include="..\post_debug.h" />
+    <ClInclude Include="..\post_effect.h" />
+    <ClInclude Include="..\post_effect_filter.h" />
+    <ClInclude Include="..\post_effect_fxaa.h" />
+    <ClInclude Include="..\pssm.h" />
+    <ClInclude Include="..\render_tex.h" />
+    <ClInclude Include="..\saber_arc.h" />
+    <ClInclude Include="..\saber_arc_manager.h" />
+    <ClInclude Include="..\scene.h" />
+    <ClInclude Include="..\shadow.h" />
+    <ClInclude Include="..\shadow_manager.h" />
+    <ClInclude Include="..\skin.h" />
+    <ClInclude Include="..\sky_box.h" />
+    <ClInclude Include="..\sun_glow.h" />
+    <ClInclude Include="..\weather.h" />
+    <ClInclude Include="..\whip.h" />
+    <ClInclude Include="..\whip_data.h" />
+    <ClInclude Include="..\whip_manager.h" />
+    <ClInclude Include="..\world.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BD65BE13-3149-4831-B96F-F2BB292BC3B2}</ProjectGuid>
+    <RootNamespace>fm_world</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Profile|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL;PERFORMANCE_DEBUG</PreprocessorDefinitions>
+      <GccExceptionHandling>true</GccExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+      <GccExceptionHandling>true</GccExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

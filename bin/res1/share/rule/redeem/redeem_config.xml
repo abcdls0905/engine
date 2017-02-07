@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
+<!-- 
+  ID：          追回事件ID(不要改动)
+  MaxRedeemCount: 一天最大可追回次数(次数走商店配置的事件 配0)
+  BaseNeedDiamond:  单次消耗的钻石数量
+  ShopConfigID：商店配置表item_shop.xml 中的 ConfigID字段（针对 额外消耗钻石 ，以及奖励走商店配置的事件） 
+  ItemReward：  单次道具奖励(道具名1:数量,道具名2:数量,......)
+  desc：        说明性文字
+	-->
+<Object>
+	<Property ID="StartDate" Date="" desc=""/>
+	<Property ID="DayLimit" MaxDay="3" desc="可以追回多少天的奖励"/>
+	<Property ID="LevelLimit" OpenLevel="30" desc="开放等级"/>
+	<!-- 我是分割线 -->
+	<Property ID="1" BaseNeedDiamond="30" CanUseLevel="40" MaxRedeemCount="1" ShopConfigID="" ItemReward="Item_Hufu:10,Item_jb250000:2" Text="ui_form_redeem_03" desc="擂台霸主奖励"/>
+	<Property ID="2" BaseNeedDiamond="50" MaxRedeemCount="2" ShopConfigID="" ItemReward="Item_tl3:2" Text="ui_form_redeem_04" desc="吃大餐"/>
+	<Property ID="3" BaseNeedDiamond="20" MaxRedeemCount="1" ShopConfigID="" ItemReward="Item_jb400000N:1" Text="ui_form_redeem_05" desc="金币副本"/>
+	<Property ID="4" BaseNeedDiamond="20" MaxRedeemCount="1" ShopConfigID="" ItemReward="Item_yt3:15" Text="ui_form_redeem_06" desc="生存副本"/>
+	<Property ID="5" BaseNeedDiamond="40" MaxRedeemCount="1" ShopConfigID="" ItemReward="Item_yzzz:4,Item_zdfb_box:1,Item_yt3:2,Item_hjs:3" Text="ui_form_redeem_17" desc="组队副本"/>
+	<Property ID="6" BaseNeedDiamond="20" MaxRedeemCount="1" ShopConfigID="" ItemReward="Item_rongyu20:1" Text="ui_form_redeem_18" desc="实时战场"/>
+	<Property ID="7" BaseNeedDiamond="50" CanUseLevel="60" MaxRedeemCount="1" ShopConfigID="" ItemReward="suipian_Item_pet_44_bag:2,Item_hjs:4,Item_xzfc:4,Item_tttjyk_25000:1" Text="ui_form_redeem_19" desc="通天塔"/>
+</Object>

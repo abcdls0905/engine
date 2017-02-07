@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!--
+LogicName 界面逻辑实体名
+FilePath 界面配置文件路径
+Static 界面配置文件是否为静态（配置文件只加载一次）
+PrLoad 界面是否预先加载
+AsyncLoad 界面是否异步加载
+Center 界面是否居中
+ -->
+<stages>
+	<!-- 登陆阶段需要加载的界面 -->
+	<stage Name="login">
+		<Property LogicName="FormLogin" FilePath="skin/form_stage_login/form_login.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormLoginNotice" FilePath="skin/form_stage_login/form_login_notice.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormLoginLineUp" FilePath="skin/form_stage_login/form_login_line_up.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+	</stage>
+	<stage Name="create">
+		<Property LogicName="FormCreateRole" FilePath="skin/form_stage_create/form_create_role.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+	</stage>
+	<!--  主城用到的界面 -->
+	<stage Name="main">
+		<Property LogicName="FormGaming" FilePath="skin/form_gaming.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormMainHall" FilePath="skin/form_stage_main/form_main_hall.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormRoleInfo" FilePath="/skin/form_stage_main/form_role_info/form_role_info.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormBuyAP" FilePath="skin/form_common/form_buy_ap.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormArena" FilePath="skin/form_stage_main/form_arena/form_arena_main.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" MultipleOpen="true"/>
+		<Property LogicName="FormArenaChoose" FilePath="skin/form_stage_main/form_arena/form_arena_choose.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormQuest" FilePath="skin/form_stage_main/form_quest/form_quest.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormQuestTrace" FilePath="skin/form_stage_main/form_quest/form_quest_trace.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormChapterTrace" FilePath="skin/form_stage_main/form_quest/form_chapter_trace.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormChapter" FilePath="skin/form_stage_main/form_quest/form_chapter.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormReward" FilePath="skin/form_stage_main/form_quest/form_reward.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormCampQuest" FilePath="skin/form_stage_main/form_quest/form_camp_quest.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormGift" FilePath="skin/form_stage_main/form_gift/form_gift.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormMystic" FilePath="skin/form_stage_main/form_treasure/form_mystic.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false" FormClickClose="true" MultipleOpen="true"/>
+		<Property LogicName="FormTreasure" FilePath="skin/form_stage_main/form_treasure/form_treasure_main.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false" FormClickClose="true" MultipleOpen="true"/>
+		<Property LogicName="FormTreasureGet" FilePath="skin/form_stage_main/form_treasure/form_treasure_get.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false" FormClickClose="true"/>
+		<Property LogicName="FormTreasurePetList" FilePath="skin/form_stage_main/form_pet/form_treasure_pet_list.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormTreasureList" FilePath="skin/form_stage_main/form_treasure/form_treasure_list.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormTreasureResult" FilePath="skin/form_stage_main/form_treasure/form_treasure_result.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormTreasureSelect" FilePath="skin/form_stage_main/form_treasure/form_treasure_select.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormTreasureGoldSelect" FilePath="skin/form_stage_main/form_treasure/form_treasure_gold_select.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormPay" FilePath="skin/form_stage_main/form_pay/form_pay.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormStorage" FilePath="skin/form_stage_main/form_storage/form_storage.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormBuyItem" FilePath="skin/form_stage_main/form_pay/form_buy_item.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormBuyLimit" FilePath="skin/form_stage_main/form_pay/form_buy_item.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormBlackMarket" FilePath="skin/form_stage_main/form_pay/form_black_market.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormTrade" FilePath="skin/form_stage_main/form_trade/form_trade.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormTradePutOnOffGoods" FilePath="skin/form_stage_main/form_trade/form_trade_putonoffgoods.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormTradeQuickBuy" FilePath="skin/form_stage_main/form_trade/form_trade_quick_buy.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormFriend" FilePath="skin/form_stage_main/form_friend/form_friend.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormMail" FilePath="skin/form_stage_main/form_mail/form_mail.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormSystem" FilePath="skin/form_stage_main/form_system_option.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormFriendCircle" FilePath="skin/form_stage_main/form_friend_circle.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormGmcc" FilePath="skin/form_stage_main/form_gmcc/form_gmcc.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormGmccAppraise" FilePath="skin/form_stage_main/form_gmcc/form_gmcc_appraise.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormGmccChat" FilePath="skin/form_stage_main/form_gmcc/form_gmcc_chat.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormSymbloTattooBag" FilePath="skin/form_stage_main/form_symbol_tattoo/form_symblo_tattoo_bag.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormSymbolTattooInlay" FilePath="skin/form_stage_main/form_symbol_tattoo/form_symbol_tattoo_inlay.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormSymbolTattooTips" FilePath="skin/form_stage_main/form_symbol_tattoo/form_symbol_tattoo_tips.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormSymbolTattooAdv" FilePath="skin/form_stage_main/form_symbol_tattoo/form_symbol_tattoo_adv.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormSymbolTattooAdvCharge" FilePath="skin/form_stage_main/form_symbol_tattoo/form_symbol_tattoo_adv_charge.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormSymbolTattooAdvConfirm" FilePath="skin/form_stage_main/form_symbol_tattoo/form_symbol_tattoo_adv_confirm.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormTattooAdvPropTips" FilePath="skin/form_stage_main/form_tips/form_tattoo_adv_prop_tips.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormSymbolTattooUpgrade" FilePath="skin/form_stage_main/form_symbol_tattoo/form_symbol_tattoo_upgrade.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormSymbloTattooExplain" FilePath="skin/form_stage_main/form_symbol_tattoo/form_symblo_tattoo_explain.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormBagCopy" FilePath="skin/form_stage_main/form_role_npc/form_bag_copy.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormInheritConfirm" FilePath="skin/form_stage_main/form_role_npc/form_inherit_confirm.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormSymbolTattooCompound" FilePath="skin/form_stage_main/form_symbol_tattoo/form_symblo_tattoo_compound.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormSymbolTattooSelectCnt" FilePath="skin/form_stage_main/form_symbol_tattoo/form_symbol_tattoo_select_cnt.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormSymbloTattooRule" FilePath="skin/form_stage_main/form_symbol_tattoo/form_symblo_tattoo_rule.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+    <Property LogicName="FormSelectBag" FilePath="skin/form_stage_main/form_bag/form_select_bag.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+    <Property LogicName="FormCompoundMulti" FilePath="skin/form_stage_main/form_compound_multi.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+    <Property LogicName="FormCompoundRandom" FilePath="skin/form_stage_main/form_compound_random.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+    <Property LogicName="FormGiftPackage" FilePath="skin/form_stage_main/form_bag/form_gift_package.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormGiftPackageShow" FilePath="skin/form_stage_main/form_bag/form_gift_package_show.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormSelectTreasure" FilePath="skin/form_stage_main/form_bag/form_select_treasure.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormPatchSource" FilePath="skin/form_stage_main/form_bag/form_patch_source.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormSecretAreaInfo" FilePath="skin/form_stage_main/form_clone_scene/form_secret_area_info.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormCloneSelect" FilePath="skin/form_stage_main/form_clone_scene/form_clone_select.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" MultipleOpen="true"/>
+		<Property LogicName="FormCloneSelectInfo" FilePath="skin/form_stage_main/form_clone_scene/form_clone_scene_info.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" MultipleOpen="true"/>
+		<Property LogicName="FormCloneStarRanking" FilePath="skin/form_stage_main/form_clone_scene/form_clone_ranking.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormInviteFriendFighting" FilePath="skin/form_stage_main/form_clone_scene/form_invite_friend.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormTeamClone" FilePath="skin/form_stage_main/form_clone_scene/form_teams_clone.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" MultipleOpen="true"/>
+		<Property LogicName="FormTeamRanking" FilePath="skin/form_stage_main/form_clone_scene/form_teams_ranking.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormWaitingTeams" FilePath="skin/form_stage_main/form_clone_scene/form_wating_teams.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormCloneAccount" FilePath="skin/form_stage_main/form_clone_scene/form_clone_finish.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormTreasureAccount" FilePath="skin/form_stage_main/form_clone_scene/form_clone_treasure_finish .xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormCloneFail" FilePath="skin/form_stage_main/form_clone_scene/form_clone_fail.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormCloneDec" FilePath="skin/form_stage_main/form_clone_scene/form_clone_dec.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormCloneDecSui" FilePath="skin/form_stage_main/form_clone_scene/form_clone_dec_sui.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false" FormClickClose="true"/>
+		<Property LogicName="FormCloneBag" FilePath="skin/form_stage_main/form_clone_scene/form_clone_bag.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormSnsInfo" FilePath="skin/form_stage_main/form_sns_info.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormFriendInvite" FilePath="skin/form_common/form_friend_invite.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormStrengthenUpgrade" FilePath="skin/form_stage_main/form_strengthen/form_strengthen_upgrade.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormAwakeEquip" FilePath="skin/form_stage_main/form_strengthen/form_awake_equip.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormAwakeProp" FilePath="skin/form_stage_main/form_strengthen/form_awake_prop.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormAwakeUpLevel" FilePath="skin/form_stage_main/form_strengthen/form_awake_up_level.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormPetTips" FilePath="skin/form_stage_main/form_tips/form_pet_tips.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormActivity" FilePath="skin/form_stage_main/form_activity/form_activity.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormLimitActivity" FilePath="skin/form_stage_main/form_activity/form_limit_activity.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormSpringFestivalActivity" FilePath="skin/form_stage_main/form_activity/form_spring_festival_activity.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormIntroduce" FilePath="skin/form_common/form_introduce.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormUseItemAni" FilePath="skin/form_common/form_useitem_ani.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormSelectPlayer" FilePath="skin/form_common/form_select_player.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormTimeDelay" FilePath="skin/form_test/form_time_delay.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormGuildList" FilePath="skin/form_stage_main/form_guild/form_guild_list.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormGuildCreate" FilePath="skin/form_stage_main/form_guild/form_guild_create.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormGuildHall" FilePath="skin/form_stage_main/form_guild/form_guild_hall.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormGuildMain" FilePath="skin/form_stage_main/form_guild/form_guild_main.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormGuildApprove" FilePath="skin/form_stage_main/form_guild/form_guild_member.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormGuildBless" FilePath="skin/form_stage_main/form_guild/form_guild_bless.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormGuildManage" FilePath="skin/form_stage_main/form_guild/form_guild_manage.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormGuildTask" FilePath="skin/form_stage_main/form_guild/form_guild_task.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormGuildTrends" FilePath="skin/form_stage_main/form_guild/form_guild_trends.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormGuildShop" FilePath="skin/form_stage_main/form_guild/form_guild_shop.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormGuildSSBoss" FilePath="skin/form_stage_main/form_guild/form_guild_ssboss.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormNewEquipTips" FilePath="skin/form_stage_main/form_tips/form_new_equip_tips.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormWarSelect" FilePath="skin/form_stage_main/form_war/form_war_select.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" MultipleOpen="true"/>
+		<Property LogicName="FormWarCompare" FilePath="skin/form_stage_main/form_war/form_war_compare.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormWarKingCompare" FilePath="skin/form_stage_main/form_war/form_war_king_compare.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormExerciseShop" FilePath="skin/form_stage_main/form_exercise_shop.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormWarResult" FilePath="skin/form_stage_main/form_war/form_war_result.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormItemCard" FilePath="skin/form_stage_main/form_pay/form_itemcard.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormWarPk" FilePath="skin/form_stage_main/form_pk/form_pk.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" MultipleOpen="true"/>
+		<Property LogicName="FormRank" FilePath="skin/form_stage_main/form_rank/form_rank.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormGoodMusic" FilePath="skin/form_stage_main/form_good_music.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRebateShop" FilePath="skin/form_stage_main/form_pay/form_rebate_shop.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormWarReport" FilePath="skin/form_stage_main/form_war/form_war_fuck.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormWarHead" FilePath="skin/form_stage_main/form_war/form_war_head.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRoomVoice" FilePath="skin/form_common/form_room_voice.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormInvitePlay" FilePath="skin/form_common/form_invite_play.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormSystemAccount" FilePath="skin/form_stage_main/form_system_account.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormTalkConf" FilePath="skin/form_common/form_talk_conf.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormWarTalk" FilePath="skin/form_stage_main/form_war/form_war_talk.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormTitle" FilePath="skin/form_stage_main/form_title/form_title.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormMilitaryRank" FilePath="skin/form_stage_main/form_military/form_military_rank.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRoleNpcArray" FilePath="skin/form_stage_main/form_role_npc/form_role_npc_array.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" MultipleOpen="true"/>
+		<Property LogicName="FormRoleNpcBase" FilePath="skin/form_stage_main/form_role_npc/form_role_npc_base.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" MultipleOpen="true"/>
+		<Property LogicName="FormRoleNpcArrange" FilePath="skin/form_stage_main/form_role_npc/form_role_npc_arrange.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRoleNpcSelf" FilePath="skin/form_stage_main/form_role_npc/form_role_npc_self.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRoleNpcSkill" FilePath="skin/form_stage_main/form_role_npc/form_role_npc_skill.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRoleNpcTips" FilePath="skin/form_stage_main/form_role_npc/form_role_npc_tips.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRoleNpcUpLevel" FilePath="skin/form_stage_main/form_role_npc/form_role_npc_uplevel.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" MultipleOpen="true"/>
+		<Property LogicName="FormRoleNpcTattoo" FilePath="skin/form_stage_main/form_role_npc/form_role_npc_tattoo.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormCurrentCamera" FilePath="skin/form_test/form_current_camera.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormCollectButton" FilePath="skin/form_stage_main/form_skill/form_collect_button.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormMainTeam" FilePath="skin/form_stage_main/form_team/form_main_team.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRecharge" FilePath="skin/form_stage_main/form_pay/form_recharge.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormSignInItem" FilePath="skin/form_stage_main/form_sign_in/form_sign_in_item.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormDayActivity" FilePath="skin/form_stage_main/form_day_activity/form_day_activity_main.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormHelpInfo" FilePath="skin/form_stage_main/form_help/form_help.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormHelpInfo2nd" FilePath="skin/form_stage_main/form_help/form_help_2nd.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormHelpInfoPay" FilePath="skin/form_stage_main/form_help/form_help_pay.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormTran" FilePath="skin/form_stage_main/form_map/form_tran.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormDiamondBuy" FilePath="skin/form_stage_main/form_role_npc/form_diamond_buy.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormEquipMessage" FilePath="skin/form_stage_main/form_equip_message.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormDayActiveCalendar" FilePath="skin/form_stage_main/form_day_activity/form_day_activity_calendar.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormActivitySevenDays" FilePath="skin/form_stage_main/form_activity/form_activity_seven_days.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FullScreen="true" FormClickClose="true"/>
+		<Property LogicName="FormActivityTurnCard" FilePath="skin/form_stage_main/form_activity/form_activity_turncard.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormFashionList" FilePath="skin/form_stage_main/form_fashion/form_fashion_list.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormNumeralShow" FilePath="skin/form_stage_main/form_numeral_show.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormFashionDisplay" FilePath="skin/form_stage_main/form_fashion/form_fashion_display.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormMineTranscript" FilePath="skin/form_stage_main/form_clone_scene/form_mine_transcript.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" MultipleOpen="true"/>
+		<Property LogicName="FormExercise" FilePath="skin/form_stage_main/form_exercise.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false" FullScreen="true" MultipleOpen="true"/>
+		<Property LogicName="FormChangeName" FilePath="skin/form_stage_main/form_role_info/form_change_name.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRoleNpcArrayEffect" FilePath="skin/form_stage_main/form_role_npc/form_role_npc_array_effect.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormGuildBoss" FilePath="skin/form_stage_main/form_guildboss/form_guildboss.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+        <Property LogicName="FormGuildBossRank" FilePath="skin/form_stage_main/form_guildboss/form_guildboss_rank.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+        <Property LogicName="FormGuildBossReward" FilePath="skin/form_stage_main/form_guildboss/form_guildboss_reward.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+        <Property LogicName="FormGuildBossMatch" FilePath="skin/form_stage_main/form_guildboss/form_guildboss_match.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+        <Property LogicName="FormGuildBossInvite" FilePath="skin/form_stage_main/form_guildboss/form_guildboss_invite.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormGWorldBoss" FilePath="skin/form_stage_main/form_gworld_boss/form_gworld_boss.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormDigTreasure" FilePath="skin/form_stage_main/form_activity/form_dig_treasure.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormHelpManualTips" FilePath="skin/form_stage_main/form_tips/form_help_manual_tips.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormAddExperience" FilePath="skin/form_stage_main/form_role_npc/form_add_experience.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormGuildBuild" FilePath="skin/form_stage_main/form_guild/form_guild_build.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+    <Property LogicName="FormRoleNpcSkillTips" FilePath="skin/form_stage_main/form_tips/form_role_npc_skill_tips.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+    <Property LogicName="FormPotionTips" FilePath="skin/form_stage_main/form_tips/form_potion_tips.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+    <Property LogicName="FormTeamInvite" FilePath="skin/form_common/form_team_invite.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormSnsShare" FilePath="skin/form_common/form_share.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRoleNpcFetter" FilePath="skin/form_stage_main/form_role_npc/form_role_npc_fetter.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormVIPDec" FilePath="skin/form_stage_main/form_vip/form_vip_dec.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormExitActivity" FilePath="skin/form_stage_main/form_tips/form_exit_activity.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRoleNpcIntroduce" FilePath="skin/form_stage_main/form_role_npc/form_role_npc_introduce.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormOneFurnace" FilePath="skin/form_stage_main/form_pay/form_one_furnace.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormNewItemTips" FilePath="skin/form_stage_main/form_tips/form_new_item_tips.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRoleNpcExchange" FilePath="skin/form_stage_main/form_role_npc_exchange.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormLevelLimit" FilePath="skin/form_stage_main/form_tips/form_level_limit.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormRelic" FilePath="skin/form_stage_main/form_relic/form_relic.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRelicEntry" FilePath="skin/form_stage_main/form_relic/form_relic_entry.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormSecondPsw" FilePath="skin/form_stage_main/form_snd_psw.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>	
+		<Property LogicName="FormBattleTeam" FilePath="skin/form_stage_main/form_battleteam/form_battleteam.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormTeamLeague" FilePath="skin/form_stage_main/form_league/form_team_league.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormTeamLeagueRoom" FilePath="skin/form_stage_main/form_league/form_team_league_room.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormTeamLeagueList" FilePath="skin/form_stage_main/form_league/form_team_league_list.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormInviteTeammateFighting" FilePath="skin/form_stage_main/form_clone_scene/form_invite_teammate.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormStarSoul" FilePath="skin/form_stage_main/form_star_soul.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>	
+		<Property LogicName="FormRide" FilePath="skin/form_stage_main/form_ride/form_ride.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>	
+		<Property LogicName="FormRideBook" FilePath="skin/form_stage_main/form_ride/form_ride_book.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>	
+		<Property LogicName="FormRideUpStep" FilePath="skin/form_stage_main/form_ride/form_ride_upstep.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>	
+		<Property LogicName="FormRideBag" FilePath="skin/form_stage_main/form_ride/form_ride_bag.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>	
+		<Property LogicName="FormRideEquipCompound" FilePath="skin/form_stage_main/form_ride/form_ride_equip_compound.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRideEquipTips" FilePath="skin/form_stage_main/form_ride/form_ride_equip_tips.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>	
+		<Property LogicName="FormRideEquipRule" FilePath="skin/form_stage_main/form_ride/form_ride_equip_rule.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRideEquipSelectCnt" FilePath="skin/form_stage_main/form_ride/form_ride_equip_select_cnt.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRideRaise" FilePath="skin/form_stage_main/form_ride/form_ride_raise.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>	
+		<Property LogicName="FormRideHome" FilePath="skin/form_stage_main/form_ridehome/form_ridehome.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRideHomeBuildings" FilePath="skin/form_stage_main/form_ridehome/form_ridehome_buildings.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRideHomeHall" FilePath="skin/form_stage_main/form_ridehome/form_ridehome_hall.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRideHomeSearch" FilePath="skin/form_stage_main/form_ridehome/form_ridehome_search.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRideHomeHistory" FilePath="skin/form_stage_main/form_ridehome/form_ridehome_history.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRideHomeStage" FilePath="skin/form_stage_main/form_ridehome/form_ridehome_stage.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRideHomeCastle" FilePath="skin/form_stage_main/form_ridehome/form_ridehome_castle.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRideHomeUpLevel" FilePath="skin/form_stage_main/form_ridehome/form_ridehome_uplevel.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRideHomePropTip" FilePath="skin/form_stage_main/form_ridehome/form_ridehome_proptip.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormRideRaiseConfirm" FilePath="skin/form_stage_main/form_ride/form_ride_raise_confirm.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormLeagueBuff" FilePath="skin/form_stage_main/form_league/form_league_buff.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormLeague" FilePath="skin/form_stage_main/form_league/form_league_main.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormLeagueSemiList" FilePath="skin/form_stage_main/form_league/form_league_semi_list.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormLeagueRoom" FilePath="skin/form_stage_main/form_league/form_league_room.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormLeagueList" FilePath="skin/form_stage_main/form_league/form_league_list.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormSeasonRank" FilePath="skin/form_stage_main/form_league/form_season_rank.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormItemSomeUse" FilePath="skin/form_stage_main/form_bag/form_item_some_use.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormLadderSelect" FilePath="skin/form_stage_main/form_war/form_ladder_select.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormKingShipWar" FilePath="skin/form_stage_main/form_pk/form_king_ship_war.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+    <Property LogicName="FormCellar" FilePath="skin/form_stage_main/form_cellar/form_cellar.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+    <Property LogicName="FormCellarExchange" FilePath="skin/form_stage_main/form_cellar/form_cellar_exchange.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+    <Property LogicName="FormCellarConfirm" FilePath="skin/form_stage_main/form_cellar/form_cellar_confirm.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+    <Property LogicName="FormCellarMap" FilePath="skin/form_stage_main/form_cellar/form_cellar_map.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormGuideSkill" FilePath="skin/form_stage_main/form_role_npc/form_guide_skill.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormSkipGuide" FilePath="skin/form_common/form_skip_guide.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormKofPk" FilePath="skin/form_stage_main/form_pk/form_kof_pk.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormKofChoose" FilePath="skin/form_stage_main/form_pk/form_kof_choose.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormChooseZhenying" FilePath="skin/form_stage_main/form_choose_zhenying.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="false"/>
+		<Property LogicName="FormZhenying" FilePath="skin/form_stage_main/form_zhenying.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="false"/>
+		<Property LogicName="FormAnswerInfo" FilePath="skin/form_stage_main/form_activity/form_activity_answer.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormArtal" FilePath="skin/form_stage_main/form_artal/form_artal.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="false"/>
+		<Property LogicName="FormRebirthHeroChoose" FilePath="skin/form_stage_main/form_artal/form_rebirth_hero_choose.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="false"/>
+		<Property LogicName="FormArtalTips" FilePath="skin/form_stage_main/form_artal/form_artal_tips.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="false"/>
+        <Property LogicName="FormTransZhenYingFail" FilePath="skin/form_stage_main/form_trans_zhenying_fail.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+        <Property LogicName="FormZhenYingConfirm" FilePath="skin/form_stage_main/form_zhenying_confirm.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormGrasp" FilePath="skin/form_stage_main/form_talent/form_grasp.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormTalent" FilePath="skin/form_stage_main/form_talent/form_talent.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormTalismanTips" FilePath="skin/form_stage_main/form_talisman/form_talisman_tips.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormTalismanShowSlot" FilePath="skin/form_stage_main/form_talisman/form_talisman_show_slot.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormTalismanUpLevel" FilePath="skin/form_stage_main/form_talisman/form_talisman_uplevel.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormTalismanSlotFinal" FilePath="skin/form_stage_main/form_talisman/form_talisman_slot_final.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormTalismanResolve" FilePath="skin/form_stage_main/form_talisman/form_talisman_resolve.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormTalismanTransition" FilePath="skin/form_stage_main/form_talisman/form_talisman_transition.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormActivityCollect" FilePath="skin/form_stage_main/form_activity/form_activity_collect.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormWaitingSpecial" FilePath="skin/form_stage_main/form_waiting_special.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormBigDraw" FilePath="skin/form_stage_main/form_bigdraw/form_big_draw.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormAchieveExtra" FilePath="skin/form_stage_main/form_achieve/form_achieve.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FullScreen="true"/>
+		<Property LogicName="FormMobaRoom" FilePath="skin/form_stage_main/form_moba_war/form_moba_room.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormAchieveShow" FilePath="skin/form_stage_main/form_achieve/form_achieve_show.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FullScreen="true"/>
+		<Property LogicName="FormMobaSelectHero" FilePath="skin/form_stage_main/form_moba_war/form_moba_hero_select.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FullScreen="true"/>
+		<Property LogicName="FormMobaEntry" FilePath="skin/form_stage_main/form_moba_war/form_moba_entry.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FullScreen="true"/>
+		<Property LogicName="FormRideDogFood" FilePath="skin/form_stage_main/form_ride/form_ride_dog_food.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FullScreen="true"/>
+		<Property LogicName="FormNewWing" FilePath="skin/form_stage_main/form_wing/form_new_wing.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FullScreen="true"/>
+		<Property LogicName="FormBlendWing" FilePath="skin/form_stage_main/form_wing/form_blend_wing.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FullScreen="true"/>
+		<Property LogicName="FormFashionWingTips" FilePath="skin/form_stage_main/form_wing/form_fashion_wing_tips.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FullScreen="true"/>
+ </stage>
+	<!--  野外战场中用到的界面 -->
+	<stage Name="field">
+		<Property LogicName="FormGaming" FilePath="skin/form_gaming.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormMainWar" FilePath="skin/form_stage_main/form_main_war.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormMainCloneHead" FilePath="skin/form_stage_main/form_main_clone_head.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormTalk" FilePath="skin/form_stage_main/form_quest/form_talk.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormTalkFaceNpc" FilePath="skin/form_stage_main/form_quest/form_talk_face_npc.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormHitCount" FilePath="skin/form_stage_main/form_main_hits.xml" Static="false" PrLoad="true" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormCompass" FilePath="skin/form_common/form_compass.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormTimeCount" FilePath="skin/form_common/form_time_count.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormPlayerHead" FilePath="skin/form_common/form_player_head.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormMainSmallMap" FilePath="skin/form_stage_main/form_map/form_main_smallmap.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormMap" FilePath="skin/form_stage_main/form_map/form_map.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormMainGroupScene" FilePath="skin/form_stage_main/form_main_groupscene.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormWorldActivityResult" FilePath="skin/form_stage_main/form_world/form_world_activity_result.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormActivityState" FilePath="skin/form_stage_main/form_main_activitystate.xml" Static="false" PrLoad="true" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormWorldActivityDec" FilePath="skin/form_stage_main/form_world/form_world_activity_dec.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormHorseRaceRank" FilePath="skin/form_stage_main/form_rank/form_horse_race_rank.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormWorldActivityDecSui" FilePath="skin/form_stage_main/form_world/form_world_activity_dec_sui.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormBufferBar" FilePath="skin/form_stage_main/form_buffer_bar.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormRelive" FilePath="skin/form_stage_main/form_relive/form_relive.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormTransportMine" FilePath="skin/form_stage_main/form_transport/form_transport_mine.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" MultipleOpen="true"/>
+		<Property LogicName="FormTransportCargo" FilePath="skin/form_stage_main/form_transport/form_transport_cargo.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormPvpState" FilePath="skin/form_stage_main/form_main_pvpstate.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormOneFinishResult" FilePath="skin/form_stage_main/form_world/form_one_finish_result.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormAlmaBossHelp" FilePath="skin/form_stage_main/form_help/form_boss_help.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true" FormClickClose="true"/>
+		<Property LogicName="FormBufferTeammate" FilePath="skin/form_stage_main/form_buffer_teammate.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormCampDesc" FilePath="skin/form_stage_main/form_camp/form_camp_desc.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormCampPray" FilePath="skin/form_stage_main/form_camp/form_camp_pray.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormCampWarInfo" FilePath="skin/form_stage_main/form_camp/form_camp_warinfo.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormCampSelect" FilePath="skin/form_stage_main/form_camp/form_camp_select.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormCampReward" FilePath="skin/form_stage_main/form_camp/form_camp_reward_dec.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+	</stage>
+	<!--  副本中用到的界面 -->
+	<stage Name="fightmain">
+		<Property LogicName="FormGaming" FilePath="skin/form_gaming.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormMainClone" FilePath="skin/form_stage_main/form_main_clone.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormMainCloneHead" FilePath="skin/form_stage_main/form_main_clone_head.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormMainSportsHead" FilePath="skin/form_stage_main/form_main_sports_head.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormTalk" FilePath="skin/form_stage_main/form_quest/form_talk.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormTalkFaceNpc" FilePath="skin/form_stage_main/form_quest/form_talk_face_npc.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormHitCount" FilePath="skin/form_stage_main/form_main_hits.xml" Static="false" PrLoad="true" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormCompass" FilePath="skin/form_common/form_compass.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormFightFinish" FilePath="skin/form_common/form_fight_finish.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormTimeCount" FilePath="skin/form_common/form_time_count.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormMainPause" FilePath="skin/form_stage_main/form_main_pause.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormPlayerHead" FilePath="skin/form_common/form_player_head.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormRoleNpcGroup" FilePath="skin/form_common/form_rolenpc_group.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormTaichiSkillBG" FilePath="skin/form_stage_main/form_taichi_skill_bg.xml" Static="false" PrLoad="true" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormForceTouchEffect" FilePath="skin/form_stage_main/form_skill/form_force_touch_effect.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormCloneWinBefore" FilePath="skin/form_stage_main/form_clone_scene/form_clone_win_before.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormSceneCurtain" FilePath="skin/form_common/form_scene_curtain.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormCloneSaodang" FilePath="skin/form_stage_main/form_clone_scene/form_clone_saodang.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormCloneReward" FilePath="skin/form_stage_main/form_clone_scene/form_clone_reward.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormBufferBar" FilePath="skin/form_stage_main/form_buffer_bar.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormMobaFight" FilePath="skin/form_stage_main/form_moba_war/form_moba_fight.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormWarMiniMap" FilePath="skin/form_stage_main/form_war/form_war_minimap.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormChatRoom" FilePath="skin/form_stage_main/form_chat/form_chat_room.xml" Static="false" PrLoad="true" AsyncLoad="false" Center="false" FormClickClose="true"/>
+	</stage>
+	<!-- 全局需要加载的界面 -->
+	<stage Name="common">
+		<Property LogicName="FormPopup" FilePath="skin/form_common/form_popup.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormInvitePlay" FilePath="skin/form_common/form_invite_play.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormPrompt" FilePath="skin/form_common/form_prompt.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormMessage" FilePath="skin/form_stage_main/form_main_message.xml" Static="false" PrLoad="true" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormPropChange" FilePath="skin/form_stage_main/form_prop_change.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormConfirm" FilePath="skin/form_common/form_confirm.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormQBox" FilePath="skin/form_common/form_confirm.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormMsgBox" FilePath="skin/form_common/form_error.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormLevelUp" FilePath="skin/form_common/form_levelup.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormEquipTips" FilePath="skin/form_stage_main/form_tips/form_equip_tips.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormItemTips" FilePath="skin/form_stage_main/form_tips/form_item_tips.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormFashionTips" FilePath="skin/form_stage_main/form_tips/form_fashion_tips.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormJoyStick" FilePath="skin/form_joystick.xml" Static="false" PrLoad="true" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormWaiting" FilePath="skin/form_stage_main/form_waiting.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormGMMenu" FilePath="skin/form_test/form_gmmenu.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormGmCommand" FilePath="skin/form_test/form_gm_command.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormCollideTest" FilePath="skin/form_test/form_collide_test.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormDebug" FilePath="skin/form_test/form_debug.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormProfile" FilePath="skin/form_test/form_profile.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormNoMoney" FilePath="skin/form_common/form_no_money.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormVersionWarning" FilePath="skin/form_common/form_new_version.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormChangeSceneTip" FilePath="skin/form_common/form_change_scene_tip.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormTeamHead" FilePath="skin/form_stage_main/form_team/form_team_head.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormWeatherSet" FilePath="skin/weather_set/form_weather.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormSetColor" FilePath="skin/form_set_color.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormPickUpItems" FilePath="skin/form_stage_main/form_pickup_items.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormAutoFight" FilePath="skin/form_common/form_auto_fight.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormPkInvite" FilePath="skin/form_common/form_pk_invite.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormPkTime" FilePath="skin/form_common/form_pk_time.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormPkAccount" FilePath="skin/form_common/form_pk_account.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormHorseRace" FilePath="skin/form_stage_main/form_activity/form_horse_race.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormActivityYSZL" FilePath="skin/form_stage_main/form_activity/form_activity_yszl.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<!-- 副本中也接受聊天信息，聊天窗口不能关闭 -->
+		<Property LogicName="FormChat" FilePath="skin/form_stage_main/form_chat/form_chat.xml" Static="false" PrLoad="true" AsyncLoad="false" Center="false" FormClickClose="true"/>
+		<Property LogicName="FormChatFace" FilePath="skin/form_stage_main/form_chat/form_chat_face.xml" Static="false" PrLoad="true" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormChatQuicklyReply" FilePath="skin/form_stage_main/form_chat/form_chat_quickly_reply.xml" Static="false" PrLoad="true" AsyncLoad="false" Center="false" FormClickClose="true"/>
+		<Property LogicName="FormCurtainCartoon" FilePath="skin/form_common/form_curtain_cartoon.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormUIEffect" FilePath="skin/form_common/form_uieffect.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormPPBloom" FilePath="skin/form_test/form_ppbloom.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormShadowRect" FilePath="skin/form_test/form_shadow_rect.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormPhoneBind" FilePath="skin/form_stage_main/form_phone_bind/form_phone_bind.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormAchieve" FilePath="skin/form_common/form_achieve.xml" Static="false" PrLoad="true" AsyncLoad="false" Center="false"/>
+		<Property LogicName="FormActivityPetSelect" FilePath="skin/form_stage_main/form_activity/form_activity_pet_select.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormHeadBarManager" FilePath="skin/head_bar_player_simple.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormUseDiamond" FilePath="skin/form_stage_main/form_use_diamond.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormLoginServers" FilePath="skin/form_stage_login/form_login_servers.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="true"/>
+		<Property LogicName="FormReplaykit" FilePath="skin/form_stage_main/form_replayerkit/form_replaykit.xml" Static="false" PrLoad="false" AsyncLoad="false" Center="false"/>
+	</stage>
+</stages>

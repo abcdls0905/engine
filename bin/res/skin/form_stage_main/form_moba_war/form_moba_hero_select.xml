@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop ShowGrid="true" Left="50" Top="40" Width="1254" Height="734" ShadowColor="0,0,0,0"/>
+		<control name="groupbox_main" entity="GroupBox" script="" init="">
+			<prop Left="24" Top="26" Width="1222" Height="694" ShadowColor="0,0,0,0" Text="GroupBox1"/>
+			<control name="groupbox_timer" entity="GroupBox" script="" init="">
+				<prop Left="328" Top="8" Width="366" Height="80" ShadowColor="0,0,0,0" Text="GroupBox1"/>
+				<control name="lbl_timer" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="96" Top="16" Width="150" Height="45" ShadowColor="0,0,0,0" Text="Label1"/>
+				</control>
+			</control>
+			<control name="groupbox_team" entity="GroupBox" script="" init="">
+				<prop Left="24" Top="27" Width="222" Height="654" ShadowColor="0,0,0,0" Text="GroupBox1"/>
+				<control name="groupbox_hero" entity="GroupBox" script="" init="">
+					<prop Left="24" Top="24" Width="182" Height="102" ShadowColor="0,0,0,0" Text="GroupBox1"/>
+					<control name="lbl_photo" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="57" Top="24" Width="70" Height="38" ShadowColor="0,0,0,0" Text="Label1"/>
+					</control>
+					<control name="lbl_name" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="52" Top="72" Width="80" Height="16" ShadowColor="0,0,0,0" Text="Label1"/>
+					</control>
+					<control name="btn_exchange" entity="Button" script="" init="">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="140" Top="8" Width="38" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="Button1"/>
+					</control>
+				</control>
+			</control>
+			<control name="scenebox_role" entity="SceneBox" script="" init="">
+				<prop Left="328" Top="83" Width="366" Height="438" ShadowColor="0,0,0,0"/>
+			</control>
+			<control name="groupbox_select_hero" entity="GroupBox" script="" init="">
+				<prop Left="819" Top="15" Width="392" Height="606" ShadowColor="0,0,0,0" Text="GroupBox1"/>
+				<control name="btn_confirm" entity="Button" script="" init="">
+					<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="152" Top="521" Width="198" Height="67" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="Button1"/>
+				</control>
+				<control name="imagegrid_hero" entity="ImageGrid" script="" init="">
+					<prop SelectColor="80,0,255,0" MouseInColor="80,255,255,0" CoverColor="80,255,0,0" LockColor="80,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" DrawMouseIn="rect_t" DrawMouseSelect="rect_t" DrawCover="rect_t" DrawLock="rect_t" MouseDownScale="0.900000" MouseDownAlpha="128" Left="120" Top="16" Width="262" Height="502" ShadowColor="0,0,0,0" Text="ImageGrid1"/>
+					<subor name="VScrollBar">
+						<prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0"/>
+						<subor name="DecButton">
+							<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+						</subor>
+						<subor name="IncButton">
+							<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+						</subor>
+						<subor name="TrackButton">
+							<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+						</subor>
+					</subor>
+				</control>
+				<control name="groupbox_skill" entity="GroupBox" script="" init="">
+					<prop Left="8" Top="160" Width="100" Height="286" ShadowColor="0,0,0,0" Text="GroupBox1"/>
+					<control name="btn_skill1" entity="Button" script="" init="">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="16" Top="24" Width="80" Height="62" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="Button1" DrawMode="Center"/>
+					</control>
+					<control name="btn_skill2" entity="Button" script="" init="">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="16" Top="112" Width="80" Height="62" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="Button2" DrawMode="Center"/>
+					</control>
+					<control name="btn_skill3" entity="Button" script="" init="">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="16" Top="216" Width="80" Height="62" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="Button3" DrawMode="Center"/>
+					</control>
+				</control>
+			</control>
+			<control name="btn_close" entity="Button" script="" init="">
+				<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="8" Top="8" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="Button1"/>
+			</control>
+			<control name="group_chat" entity="GroupBox" script="" init="">
+				<prop Left="-363" Top="171" Width="640" Height="180" BackColor="0,120,120,120" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" NoFrame="true" DrawMode="ExpandTile" BackImage="gui/tp2_main/war/liaotian_di.png"/>
+				<control name="group_chat_room_main_wait" entity="GroupBox" script="" init="">
+					<prop Left="11" Top="15" Width="590" Height="155" BackColor="0,120,120,120" ShadowColor="0,0,0,0" NoFrame="true"/>
+					<control name="group_chat_room_wait" entity="GroupBox" script="" init="">
+						<prop Left="65" Top="3" Width="520" Height="155" BackColor="0,200,200,200" LineColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+						<control name="Label2_wait" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="16" Width="504" Height="90" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/nine/team_di_04.png"/>
+						</control>
+						<control name="Label1_wait" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="16" Top="92" Width="504" Height="60" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/nine/team_di_04.png"/>
+						</control>
+						<control name="ript_chat_room_wait" entity="RichInputBox" script="" init="">
+							<prop MaxLength="50" TextOffsetX="20" SelectBackColor="255,200,200,200" Caret="Default" Left="22" Top="99" Width="332" Height="48" ForeColor="255,244,244,196" ShadowColor="0,0,0,0" Cursor="WIN_IBEAM" TabStop="true" DrawMode="ExpandH" BackImage="gui/tp2_common/nine/team_di_05.png"/>
+						</control>
+						<control name="btn_chat_room_enter_wait" entity="Button" script="" init="">
+							<prop NormalImage="gui/tp2_common/window/refurbish.png" PushImage="gui/tp2_common/window/refurbish1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="405" Top="98" Width="108" Height="48" ForeColor="255,255,255,202" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_gmcc_send" Font="WRYH22" TabStop="true" DrawMode="FitWindow" ClickSound="button_click"/>
+						</control>
+						<control name="group_chat_room_list_wait" entity="GroupScrollableBox" script="" init="">
+							<prop ScrollSize="17" Left="16" Top="7" Width="504" Height="83" BackColor="0,120,120,120" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+							<subor name="TitleBar">
+								<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="90" Height="20" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="GroupScrollableBox1"/>
+							</subor>
+						</control>
+						<control name="btn_chat_room_face_wait_cpy" entity="Button" script="" init="">
+							<prop NormalImage="gui/tp2_team/team_btn_face_off.png" PushImage="gui/tp2_team/team_btn_face_on.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="351" Top="93" Width="59" Height="59" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" DrawMode="FitWindow" ClickSound="button_click"/>
+						</control>
+					</control>
+					<control name="btn_chat_main_wait" entity="Button" script="" init="">
+						<prop NormalImage="gui/tp2_team/team_btn_talk_on.png" PushImage="gui/tp2_team/team_btn_talk_off.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="77" Height="77" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" DrawMode="FitWindow" ClickSound="button_click"/>
+					</control>
+				</control>
+			</control>
+		</control>
+	</control>
+</form>
+

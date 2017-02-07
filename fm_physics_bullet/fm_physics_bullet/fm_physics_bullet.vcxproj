@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="NsightTegraProject">
+    <NsightTegraProjectRevisionNumber>5</NsightTegraProjectRevisionNumber>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Tegra-Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Tegra-Android">
+      <Configuration>Release</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Tegra-Android">
+      <Configuration>Profile</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\bullet\bt_bullet_collision_common.h" />
+    <ClInclude Include="..\bullet\bt_bullet_dynamics_common.h" />
+    <ClInclude Include="..\bullet\bullet-c-api.h" />
+    <ClInclude Include="..\bullet\bullet_collision\broadphase_collision\bt_axis_sweep_3.h" />
+    <ClInclude Include="..\bullet\bullet_collision\broadphase_collision\bt_broadphase_interface.h" />
+    <ClInclude Include="..\bullet\bullet_collision\broadphase_collision\bt_broadphase_proxy.h" />
+    <ClInclude Include="..\bullet\bullet_collision\broadphase_collision\bt_collision_algorithm.h" />
+    <ClInclude Include="..\bullet\bullet_collision\broadphase_collision\bt_dbvt.h" />
+    <ClInclude Include="..\bullet\bullet_collision\broadphase_collision\bt_dbvt_broadphase.h" />
+    <ClInclude Include="..\bullet\bullet_collision\broadphase_collision\bt_dispatcher.h" />
+    <ClInclude Include="..\bullet\bullet_collision\broadphase_collision\bt_multi_sap_broadphase.h" />
+    <ClInclude Include="..\bullet\bullet_collision\broadphase_collision\bt_overlapping_pair_cache.h" />
+    <ClInclude Include="..\bullet\bullet_collision\broadphase_collision\bt_overlapping_pair_callback.h" />
+    <ClInclude Include="..\bullet\bullet_collision\broadphase_collision\bt_quantized_bvh.h" />
+    <ClInclude Include="..\bullet\bullet_collision\broadphase_collision\bt_simple_broadphase.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_activating_collision_algorithm.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_box_2d_box_2d_collision_algorithm.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_box_box_collision_algorithm.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_box_box_detector.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_collision_configuration.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_collision_create_func.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_collision_dispatcher.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_collision_object.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_collision_object_wrapper.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_collision_world.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_compound_collision_algorithm.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_compound_compound_collision_algorithm.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_convex_2d_convex_2d_algorithm.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_convex_concave_collision_algorithm.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_convex_convex_algorithm.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_convex_plane_collision_algorithm.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_default_collision_configuration.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_empty_collision_algorithm.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_ghost_object.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_hashed_simple_pair_cache.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_internal_edge_utility.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_manifold_result.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_simulation_island_manager.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_sphere_box_collision_algorithm.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_sphere_sphere_collision_algorithm.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_sphere_triangle_collision_algorithm.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\bt_union_find.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_dispatch\sphere_triangle_detector.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_box_2d_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_box_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_bvh_triangle_mesh_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_capsule_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_collision_margin.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_collision_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_compound_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_concave_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_cone_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_convex_2d_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_convex_hull_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_convex_internal_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_convex_point_cloud_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_convex_polyhedron.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_convex_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_convex_triangle_mesh_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_cylinder_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_empty_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_heightfield_terrain_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_material.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_minkowski_sum_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_multimaterial_triangle_mesh_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_multi_sphere_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_optimized_bvh.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_polyhedral_convex_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_scaled_bvh_triangle_mesh_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_shape_hull.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_sphere_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_static_plane_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_striding_mesh_interface.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_tetrahedron_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_triangle_buffer.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_triangle_callback.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_triangle_index_vertex_array.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_triangle_index_vertex_material_array.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_triangle_info_map.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_triangle_mesh.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_triangle_mesh_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_triangle_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\collision_shapes\bt_uniform_scaling_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\bt_box_collision.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\bt_clip_polygon.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\bt_compound_from_gimpact.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\bt_contact_processing.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\bt_generic_pool_allocator.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\bt_geometry_operations.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\bt_g_impact_bvh.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\bt_g_impact_collision_algorithm.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\bt_g_impact_mass_util.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\bt_g_impact_quantized_bvh.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\bt_g_impact_shape.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\bt_quantization.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\bt_triangle_shape_ex.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\gim_array.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\gim_basic_geometry_operations.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\gim_bitset.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\gim_box_collision.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\gim_box_set.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\gim_clip_polygon.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\gim_contact.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\gim_geometry.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\gim_geom_types.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\gim_hash_table.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\gim_linear_math.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\gim_math.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\gim_memory.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\gim_radixsort.h" />
+    <ClInclude Include="..\bullet\bullet_collision\gimpact\gim_tri_collision.h" />
+    <ClInclude Include="..\bullet\bullet_collision\narrow_phase_collision\bt_continuous_convex_collision.h" />
+    <ClInclude Include="..\bullet\bullet_collision\narrow_phase_collision\bt_convex_cast.h" />
+    <ClInclude Include="..\bullet\bullet_collision\narrow_phase_collision\bt_convex_penetration_depth_solver.h" />
+    <ClInclude Include="..\bullet\bullet_collision\narrow_phase_collision\bt_discrete_collision_detector_interface.h" />
+    <ClInclude Include="..\bullet\bullet_collision\narrow_phase_collision\bt_gjk_convex_cast.h" />
+    <ClInclude Include="..\bullet\bullet_collision\narrow_phase_collision\bt_gjk_epa_2.h" />
+    <ClInclude Include="..\bullet\bullet_collision\narrow_phase_collision\bt_gjk_epa_penetration_depth_solver.h" />
+    <ClInclude Include="..\bullet\bullet_collision\narrow_phase_collision\bt_gjk_pair_detector.h" />
+    <ClInclude Include="..\bullet\bullet_collision\narrow_phase_collision\bt_manifold_point.h" />
+    <ClInclude Include="..\bullet\bullet_collision\narrow_phase_collision\bt_minkowski_penetration_depth_solver.h" />
+    <ClInclude Include="..\bullet\bullet_collision\narrow_phase_collision\bt_persistent_manifold.h" />
+    <ClInclude Include="..\bullet\bullet_collision\narrow_phase_collision\bt_point_collector.h" />
+    <ClInclude Include="..\bullet\bullet_collision\narrow_phase_collision\bt_polyhedral_contact_clipping.h" />
+    <ClInclude Include="..\bullet\bullet_collision\narrow_phase_collision\bt_raycast_callback.h" />
+    <ClInclude Include="..\bullet\bullet_collision\narrow_phase_collision\bt_simplex_solver_interface.h" />
+    <ClInclude Include="..\bullet\bullet_collision\narrow_phase_collision\bt_sub_simplex_convex_cast.h" />
+    <ClInclude Include="..\bullet\bullet_collision\narrow_phase_collision\bt_voronoi_simplex_solver.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\character\bt_character_controller_interface.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\character\bt_kinematic_character_controller.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\constraint_solver\bt_cone_twist_constraint.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\constraint_solver\bt_constraint_solver.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\constraint_solver\bt_contact_constraint.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\constraint_solver\bt_contact_solver_info.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\constraint_solver\bt_fixed_constraint.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\constraint_solver\bt_gear_constraint.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\constraint_solver\bt_generic_6_dof_constraint.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\constraint_solver\bt_generic_6_dof_spring_constraint.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\constraint_solver\bt_hinge_2_constraint.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\constraint_solver\bt_hinge_constraint.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\constraint_solver\bt_jacobian_entry.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\constraint_solver\bt_point_2_point_constraint.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\constraint_solver\bt_sequential_impulse_constraint_solver.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\constraint_solver\bt_slider_constraint.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\constraint_solver\bt_solver_body.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\constraint_solver\bt_solver_constraint.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\constraint_solver\bt_solve_2_linear_constraint.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\constraint_solver\bt_typed_constraint.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\constraint_solver\bt_universal_constraint.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\dynamics\bt_action_interface.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\dynamics\bt_discrete_dynamics_world.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\dynamics\bt_dynamics_world.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\dynamics\bt_rigid_body.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\dynamics\bt_simple_dynamics_world.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\featherstone\bt_multi_body.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\featherstone\bt_multi_body_constraint.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\featherstone\bt_multi_body_constraint_solver.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\featherstone\bt_multi_body_dynamics_world.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\featherstone\bt_multi_body_joint_limit_constraint.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\featherstone\bt_multi_body_joint_motor.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\featherstone\bt_multi_body_link.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\featherstone\bt_multi_body_link_collider.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\featherstone\bt_multi_body_point_2_point.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\featherstone\bt_multi_body_solver_constraint.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\m_l_c_p_solvers\bt_dantzig_l_c_p.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\m_l_c_p_solvers\bt_dantzig_solver.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\m_l_c_p_solvers\bt_m_l_c_p_solver.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\m_l_c_p_solvers\bt_m_l_c_p_solver_interface.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\m_l_c_p_solvers\bt_p_a_t_h_solver.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\m_l_c_p_solvers\bt_solve_projected_gauss_seidel.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\vehicle\bt_raycast_vehicle.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\vehicle\bt_vehicle_raycaster.h" />
+    <ClInclude Include="..\bullet\bullet_dynamics\vehicle\bt_wheel_info.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\bt_gpu_3_d_grid_broadphase.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\bt_gpu_3_d_grid_broadphase_shared_code.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\bt_gpu_3_d_grid_broadphase_shared_defs.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\bt_gpu_3_d_grid_broadphase_shared_types.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\bt_gpu_defines.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\bt_gpu_utils_shared_code.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\bt_gpu_utils_shared_defs.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\bt_parallel_constraint_solver.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\bt_thread_support_interface.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\d_x_11\bt_soft_body_solver_buffer_d_x_11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\d_x_11\bt_soft_body_solver_d_x_11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\d_x_11\bt_soft_body_solver_d_x_11_s_i_m_d_aware.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\d_x_11\bt_soft_body_solver_link_data_d_x_11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\d_x_11\bt_soft_body_solver_link_data_d_x_11_s_i_m_d_aware.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\d_x_11\bt_soft_body_solver_triangle_data_d_x_11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\d_x_11\bt_soft_body_solver_vertex_buffer_d_x_11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\d_x_11\bt_soft_body_solver_vertex_data_d_x_11.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\open_c_l\bt_soft_body_solver_buffer_open_c_l.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\open_c_l\bt_soft_body_solver_link_data_open_c_l.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\open_c_l\bt_soft_body_solver_link_data_open_c_l_s_i_m_d_aware.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\open_c_l\bt_soft_body_solver_open_c_l.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\open_c_l\bt_soft_body_solver_open_c_l_s_i_m_d_aware.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\open_c_l\bt_soft_body_solver_output_c_lto_g_l.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\open_c_l\bt_soft_body_solver_triangle_data_open_c_l.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\open_c_l\bt_soft_body_solver_vertex_buffer_open_g_l.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\open_c_l\bt_soft_body_solver_vertex_data_open_c_l.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\shared\bt_soft_body_solver_data.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\bullet\bullet_multi_threaded\heap_manager.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\platform_definitions.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\posix_thread_support.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\ppu_address_space.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\sequential_thread_support.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\spu_collision_object_wrapper.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\spu_collision_task_process.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\spu_contact_manifold_collision_algorithm.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\spu_double_buffer.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\spu_fake_dma.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\spu_gathering_collision_dispatcher.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\spu_libspe_2_support.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\spu_narrow_phase_collision_task\box.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\spu_narrow_phase_collision_task\box_box_distance.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\spu_narrow_phase_collision_task\spu_collision_shapes.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\spu_narrow_phase_collision_task\spu_contact_result.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\spu_narrow_phase_collision_task\spu_convex_penetration_depth_solver.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\spu_narrow_phase_collision_task\spu_gathering_collision_task.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\spu_narrow_phase_collision_task\spu_local_support.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\spu_narrow_phase_collision_task\spu_minkowski_penetration_depth_solver.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\spu_narrow_phase_collision_task\spu_preferred_penetration_directions.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\spu_sample_task\spu_sample_task.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\spu_sample_task_process.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\spu_sync.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\trb_dyn_body.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\trb_state_vec.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\vectormath_2bullet.h" />
+    <ClInclude Include="..\bullet\bullet_multi_threaded\win_32_thread_support.h" />
+    <ClInclude Include="..\bullet\bullet_soft_body\bt_default_soft_body_solver.h" />
+    <ClInclude Include="..\bullet\bullet_soft_body\bt_soft_body.h" />
+    <ClInclude Include="..\bullet\bullet_soft_body\bt_soft_body_concave_collision_algorithm.h" />
+    <ClInclude Include="..\bullet\bullet_soft_body\bt_soft_body_data.h" />
+    <ClInclude Include="..\bullet\bullet_soft_body\bt_soft_body_helpers.h" />
+    <ClInclude Include="..\bullet\bullet_soft_body\bt_soft_body_internals.h" />
+    <ClInclude Include="..\bullet\bullet_soft_body\bt_soft_body_rigid_body_collision_configuration.h" />
+    <ClInclude Include="..\bullet\bullet_soft_body\bt_soft_body_solvers.h" />
+    <ClInclude Include="..\bullet\bullet_soft_body\bt_soft_body_solver_vertex_buffer.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\bullet\bullet_soft_body\bt_soft_rigid_collision_algorithm.h" />
+    <ClInclude Include="..\bullet\bullet_soft_body\bt_soft_rigid_dynamics_world.h" />
+    <ClInclude Include="..\bullet\bullet_soft_body\bt_soft_soft_collision_algorithm.h" />
+    <ClInclude Include="..\bullet\bullet_soft_body\bt_sparse_s_d_f.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_aabb_util_2.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_aligned_allocator.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_aligned_object_array.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_convex_hull.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_convex_hull_computer.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_default_motion_state.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_geometry_util.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_graham_scan_2d_convex_hull.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_hash_map.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_i_debug_draw.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_list.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_matrix_3x_3.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_matrix_x.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_min_max.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_motion_state.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_polar_decomposition.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_pool_allocator.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_quad_word.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_quaternion.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_quickprof.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_random.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_scalar.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_serializer.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_stack_alloc.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_transform.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_transform_util.h" />
+    <ClInclude Include="..\bullet\linear_math\bt_vector_3.h" />
+    <ClInclude Include="..\bullet\mini_c_l\cl.h" />
+    <ClInclude Include="..\bullet\mini_c_l\cl_gl.h" />
+    <ClInclude Include="..\bullet\mini_c_l\cl_mini_c_l_defs.h" />
+    <ClInclude Include="..\bullet\mini_c_l\cl_platform.h" />
+    <ClInclude Include="..\bullet\mini_c_l\mini_c_l_task\mini_c_l_task.h" />
+    <ClInclude Include="..\bullet\mini_c_l\mini_c_l_task_scheduler.h" />
+    <ClInclude Include="..\bullet\vectormath\neon\bool_in_vec.h" />
+    <ClInclude Include="..\bullet\vectormath\neon\float_in_vec.h" />
+    <ClInclude Include="..\bullet\vectormath\neon\mat_aos.h" />
+    <ClInclude Include="..\bullet\vectormath\neon\quat_aos.h" />
+    <ClInclude Include="..\bullet\vectormath\neon\vectormath_aos.h" />
+    <ClInclude Include="..\bullet\vectormath\neon\vec_aos.h" />
+    <ClInclude Include="..\bullet\vectormath\scalar\bool_in_vec.h" />
+    <ClInclude Include="..\bullet\vectormath\scalar\float_in_vec.h" />
+    <ClInclude Include="..\bullet\vectormath\scalar\mat_aos.h" />
+    <ClInclude Include="..\bullet\vectormath\scalar\quat_aos.h" />
+    <ClInclude Include="..\bullet\vectormath\scalar\vectormath_aos.h" />
+    <ClInclude Include="..\bullet\vectormath\scalar\vec_aos.h" />
+    <ClInclude Include="..\bullet\vectormath\sse\bool_in_vec.h" />
+    <ClInclude Include="..\bullet\vectormath\sse\float_in_vec.h" />
+    <ClInclude Include="..\bullet\vectormath\sse\mat_aos.h" />
+    <ClInclude Include="..\bullet\vectormath\sse\quat_aos.h" />
+    <ClInclude Include="..\bullet\vectormath\sse\vecidx_aos.h" />
+    <ClInclude Include="..\bullet\vectormath\sse\vectormath_aos.h" />
+    <ClInclude Include="..\bullet\vectormath\sse\vec_aos.h" />
+    <ClInclude Include="..\bullet\vectormath\vm_include.h" />
+    <ClInclude Include="..\collision_shape.h" />
+    <ClInclude Include="..\common.h" />
+    <ClInclude Include="..\constraint.h" />
+    <ClInclude Include="..\debug_drawer.h" />
+    <ClInclude Include="..\my_motion_state.h" />
+    <ClInclude Include="..\physics_bullet.h" />
+    <ClInclude Include="..\rigid_body.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\bullet\bullet_collision\broadphase_collision\bt_axis_sweep_3.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\broadphase_collision\bt_broadphase_proxy.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\broadphase_collision\bt_collision_algorithm.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\broadphase_collision\bt_dbvt.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\broadphase_collision\bt_dbvt_broadphase.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\broadphase_collision\bt_dispatcher.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\broadphase_collision\bt_multi_sap_broadphase.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\broadphase_collision\bt_overlapping_pair_cache.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\broadphase_collision\bt_quantized_bvh.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\broadphase_collision\bt_simple_broadphase.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_activating_collision_algorithm.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_box_2d_box_2d_collision_algorithm.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_box_box_collision_algorithm.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_box_box_detector.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_collision_dispatcher.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_collision_object.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_collision_world.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_compound_collision_algorithm.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_compound_compound_collision_algorithm.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_convex_2d_convex_2d_algorithm.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_convex_concave_collision_algorithm.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_convex_convex_algorithm.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_convex_plane_collision_algorithm.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_default_collision_configuration.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_empty_collision_algorithm.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_ghost_object.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_hashed_simple_pair_cache.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_internal_edge_utility.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_manifold_result.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_simulation_island_manager.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_sphere_box_collision_algorithm.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_sphere_sphere_collision_algorithm.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_sphere_triangle_collision_algorithm.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\bt_union_find.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_dispatch\sphere_triangle_detector.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_box_2d_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_box_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_bvh_triangle_mesh_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_capsule_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_collision_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_compound_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_concave_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_cone_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_convex_2d_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_convex_hull_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_convex_internal_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_convex_point_cloud_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_convex_polyhedron.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_convex_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_convex_triangle_mesh_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_cylinder_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_empty_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_heightfield_terrain_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_minkowski_sum_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_multimaterial_triangle_mesh_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_multi_sphere_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_optimized_bvh.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_polyhedral_convex_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_scaled_bvh_triangle_mesh_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_shape_hull.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_sphere_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_static_plane_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_striding_mesh_interface.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_tetrahedron_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_triangle_buffer.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_triangle_callback.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_triangle_index_vertex_array.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_triangle_index_vertex_material_array.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_triangle_mesh.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_triangle_mesh_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\collision_shapes\bt_uniform_scaling_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\gimpact\bt_contact_processing.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\gimpact\bt_generic_pool_allocator.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\gimpact\bt_g_impact_bvh.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\gimpact\bt_g_impact_collision_algorithm.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\gimpact\bt_g_impact_quantized_bvh.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\gimpact\bt_g_impact_shape.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\gimpact\bt_triangle_shape_ex.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\gimpact\gim_box_set.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\gimpact\gim_contact.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\gimpact\gim_memory.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\gimpact\gim_tri_collision.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\narrow_phase_collision\bt_continuous_convex_collision.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\narrow_phase_collision\bt_convex_cast.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\narrow_phase_collision\bt_gjk_convex_cast.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\narrow_phase_collision\bt_gjk_epa_2.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\narrow_phase_collision\bt_gjk_epa_penetration_depth_solver.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\narrow_phase_collision\bt_gjk_pair_detector.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\narrow_phase_collision\bt_minkowski_penetration_depth_solver.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\narrow_phase_collision\bt_persistent_manifold.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\narrow_phase_collision\bt_polyhedral_contact_clipping.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\narrow_phase_collision\bt_raycast_callback.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\narrow_phase_collision\bt_sub_simplex_convex_cast.cpp" />
+    <ClCompile Include="..\bullet\bullet_collision\narrow_phase_collision\bt_voronoi_simplex_solver.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\character\bt_kinematic_character_controller.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\constraint_solver\bt_cone_twist_constraint.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\constraint_solver\bt_contact_constraint.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\constraint_solver\bt_fixed_constraint.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\constraint_solver\bt_gear_constraint.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\constraint_solver\bt_generic_6_dof_constraint.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\constraint_solver\bt_generic_6_dof_spring_constraint.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\constraint_solver\bt_hinge_2_constraint.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\constraint_solver\bt_hinge_constraint.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\constraint_solver\bt_point_2_point_constraint.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\constraint_solver\bt_sequential_impulse_constraint_solver.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\constraint_solver\bt_slider_constraint.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\constraint_solver\bt_solve_2_linear_constraint.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\constraint_solver\bt_typed_constraint.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\constraint_solver\bt_universal_constraint.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\dynamics\bt_discrete_dynamics_world.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\dynamics\bt_rigid_body.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\dynamics\bt_simple_dynamics_world.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\dynamics\bullet-c-a_p_i.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\featherstone\bt_multi_body.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\featherstone\bt_multi_body_constraint.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\featherstone\bt_multi_body_constraint_solver.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\featherstone\bt_multi_body_dynamics_world.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\featherstone\bt_multi_body_joint_limit_constraint.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\featherstone\bt_multi_body_joint_motor.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\featherstone\bt_multi_body_point_2_point.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\m_l_c_p_solvers\bt_dantzig_l_c_p.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\m_l_c_p_solvers\bt_m_l_c_p_solver.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\vehicle\bt_raycast_vehicle.cpp" />
+    <ClCompile Include="..\bullet\bullet_dynamics\vehicle\bt_wheel_info.cpp" />
+    <ClCompile Include="..\bullet\bullet_multi_threaded\bt_gpu_3_d_grid_broadphase.cpp" />
+    <ClCompile Include="..\bullet\bullet_multi_threaded\bt_parallel_constraint_solver.cpp" />
+    <ClCompile Include="..\bullet\bullet_multi_threaded\bt_thread_support_interface.cpp" />
+    <ClCompile Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\d_x_11\bt_soft_body_solver_d_x_11.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\d_x_11\bt_soft_body_solver_d_x_11_s_i_m_d_aware.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\open_c_l\bt_soft_body_solver_open_c_l.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\open_c_l\bt_soft_body_solver_open_c_l_s_i_m_d_aware.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\open_c_l\bt_soft_body_solver_output_c_lto_g_l.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\bullet\bullet_multi_threaded\gpu_soft_body_solvers\open_c_l\mini_c_l\mini_c_l_task_wrap.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\bullet\bullet_multi_threaded\posix_thread_support.cpp" />
+    <ClCompile Include="..\bullet\bullet_multi_threaded\sequential_thread_support.cpp" />
+    <ClCompile Include="..\bullet\bullet_multi_threaded\spu_collision_object_wrapper.cpp" />
+    <ClCompile Include="..\bullet\bullet_multi_threaded\spu_collision_task_process.cpp" />
+    <ClCompile Include="..\bullet\bullet_multi_threaded\spu_contact_manifold_collision_algorithm.cpp" />
+    <ClCompile Include="..\bullet\bullet_multi_threaded\spu_fake_dma.cpp" />
+    <ClCompile Include="..\bullet\bullet_multi_threaded\spu_gathering_collision_dispatcher.cpp" />
+    <ClCompile Include="..\bullet\bullet_multi_threaded\spu_libspe_2_support.cpp" />
+    <ClCompile Include="..\bullet\bullet_multi_threaded\spu_narrow_phase_collision_task\box_box_distance.cpp" />
+    <ClCompile Include="..\bullet\bullet_multi_threaded\spu_narrow_phase_collision_task\spu_collision_shapes.cpp" />
+    <ClCompile Include="..\bullet\bullet_multi_threaded\spu_narrow_phase_collision_task\spu_contact_result.cpp" />
+    <ClCompile Include="..\bullet\bullet_multi_threaded\spu_narrow_phase_collision_task\spu_gathering_collision_task.cpp" />
+    <ClCompile Include="..\bullet\bullet_multi_threaded\spu_narrow_phase_collision_task\spu_minkowski_penetration_depth_solver.cpp" />
+    <ClCompile Include="..\bullet\bullet_multi_threaded\spu_sample_task\spu_sample_task.cpp" />
+    <ClCompile Include="..\bullet\bullet_multi_threaded\spu_sample_task_process.cpp" />
+    <ClCompile Include="..\bullet\bullet_multi_threaded\win_32_thread_support.cpp" />
+    <ClCompile Include="..\bullet\bullet_soft_body\bt_default_soft_body_solver.cpp" />
+    <ClCompile Include="..\bullet\bullet_soft_body\bt_soft_body.cpp" />
+    <ClCompile Include="..\bullet\bullet_soft_body\bt_soft_body_concave_collision_algorithm.cpp" />
+    <ClCompile Include="..\bullet\bullet_soft_body\bt_soft_body_helpers.cpp" />
+    <ClCompile Include="..\bullet\bullet_soft_body\bt_soft_body_rigid_body_collision_configuration.cpp" />
+    <ClCompile Include="..\bullet\bullet_soft_body\bt_soft_rigid_collision_algorithm.cpp" />
+    <ClCompile Include="..\bullet\bullet_soft_body\bt_soft_rigid_dynamics_world.cpp" />
+    <ClCompile Include="..\bullet\bullet_soft_body\bt_soft_soft_collision_algorithm.cpp" />
+    <ClCompile Include="..\bullet\linear_math\bt_aligned_allocator.cpp" />
+    <ClCompile Include="..\bullet\linear_math\bt_convex_hull.cpp" />
+    <ClCompile Include="..\bullet\linear_math\bt_convex_hull_computer.cpp" />
+    <ClCompile Include="..\bullet\linear_math\bt_geometry_util.cpp" />
+    <ClCompile Include="..\bullet\linear_math\bt_polar_decomposition.cpp" />
+    <ClCompile Include="..\bullet\linear_math\bt_quickprof.cpp" />
+    <ClCompile Include="..\bullet\linear_math\bt_serializer.cpp" />
+    <ClCompile Include="..\bullet\linear_math\bt_vector_3.cpp" />
+    <ClCompile Include="..\bullet\mini_c_l\mini_c_l.cpp" />
+    <ClCompile Include="..\bullet\mini_c_l\mini_c_l_task\mini_c_l_task.cpp" />
+    <ClCompile Include="..\bullet\mini_c_l\mini_c_l_task_scheduler.cpp" />
+    <ClCompile Include="..\collision_shape.cpp" />
+    <ClCompile Include="..\constraint.cpp" />
+    <ClCompile Include="..\debug_drawer.cpp" />
+    <ClCompile Include="..\lib_main.cpp" />
+    <ClCompile Include="..\physics_bullet.cpp" />
+    <ClCompile Include="..\rigid_body.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2BB66FED-2E93-4474-CEFC-FF3832CC7E83}</ProjectGuid>
+    <RootNamespace>fm_physics_bullet</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Profile|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings"></ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <IncludePath>../bullet</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+      <GccExceptionHandling>true</GccExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+      <GccExceptionHandling>true</GccExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets"></ImportGroup>
+</Project>

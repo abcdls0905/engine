@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop ShowGrid="true" Left="13" Top="13" Width="1422" Height="670" BackColor="180,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand"/>
+		<control name="groupbox_main" entity="GroupBox" script="" init="">
+			<prop Left="12" Top="40" Width="1398" Height="590" BackColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" DrawMode="FitWindow"/>
+			<control name="lbl_bg" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="16" Top="55" Width="1365" Height="500" ShadowColor="0,0,0,0" DrawMode="ExpandTile" BackImage="gui/tp2_common/window/beijing_tu.png"/>
+			</control>
+			<control name="lbl_2" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="1048" Top="103" Width="335" Height="410" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/window/dragon_left.png"/>
+			</control>
+			<control name="lbl_3" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="16" Top="103" Width="335" Height="410" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/window/dragon_right.png"/>
+			</control>
+			<control name="lbl_4" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="481" Top="12" Width="436" Height="93" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/bg_007.png"/>
+			</control>
+			<control name="lbl_5" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="588" Top="1" Width="222" Height="64" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_battle/scene_settle/saodang.png"/>
+			</control>
+			<control name="btn_ok" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/cancel.png" PushImage="gui/tp2_common/window/cancel1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="255,255,250,200" FocusColor="255,255,250,200" PushColor="255,255,250,200" DisableColor="255,255,250,200" NormalFont="WRYH20" FocusFont="WRYH20" PushFont="WRYH20" DisableFont="WRYH20" Left="624" Top="527" Width="150" Height="60" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_ok" Font="WRYH24" AutoSize="true" ClickSound="ui_close"/>
+			</control>
+			<control name="lbl_6" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="648" Top="71" Width="80" Height="16" ShadowColor="0,0,0,0"/>
+			</control>
+			<control name="btn_next" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/enter.png" FocusImage="gui/tp2_common/window/enter.png" PushImage="gui/tp2_common/window/enter1.png" DisableImage="gui/tp2_common/window/enter.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="255,255,250,200" FocusColor="255,255,250,200" PushColor="255,255,250,200" DisableColor="255,255,250,200" NormalFont="WRYH20" FocusFont="WRYH20" PushFont="WRYH20" DisableFont="WRYH20" Left="387" Top="3007" Width="174" Height="54" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_saodang_continue" DrawMode="ExpandH"/>
+			</control>
+			<control name="groupbox_one" entity="GroupBox" script="" init="">
+				<prop Left="217" Top="110" Width="963" Height="406" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" Visible="false"/>
+				<control name="lbl_one_up" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="171" Top="3" Width="620" Height="140" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_battle/scene_settle/ditu1.png"/>
+				</control>
+				<control name="lbl_one_down" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="171" Top="154" Width="620" Height="240" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/nine/active_36.png"/>
+				</control>
+				<control name="groupscrollbox_award" entity="GroupScrollableBox" script="" init="">
+					<prop ScrollSize="17" IsEditMode="false" Left="-279" Top="8" Width="558" Height="140" BackColor="0,255,255,255" ShadowColor="0,0,0,0" HAnchor="Center" NoFrame="true" DrawMode="Expand"/>
+				</control>
+				<control name="groupbox_currency" entity="GroupBox" script="" init="">
+					<prop Left="182" Top="158" Width="598" Height="62" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0"/>
+					<control name="groupbox_exp" entity="GroupBox" script="" init="">
+						<prop Left="141" Top="8" Width="215" Height="45" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+						<control name="lbl_8" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Width="215" Height="45" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_battle/scene_settle/ditu1.png"/>
+						</control>
+						<control name="lbl_7" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="7" Top="1" Width="44" Height="42" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/xm2_common/window/jingyan.png"/>
+						</control>
+						<control name="lbl_exp" entity="Label" script="" init="">
+							<prop Align="Right" RefCursor="WIN_HELP" Left="102" Top="10" Width="105" Height="25" ForeColor="255,160,100,30" ShadowColor="0,0,0,0" Font="WRYH28"/>
+						</control>
+					</control>
+					<control name="groupbox_money" entity="GroupBox" script="" init="">
+						<prop Left="366" Top="8" Width="215" Height="45" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+						<control name="lbl_10" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Width="215" Height="45" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_battle/scene_settle/ditu1.png"/>
+						</control>
+						<control name="lbl_11" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="7" Top="2" Width="40" Height="40" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/xm2_main/hall/jingbi.png"/>
+						</control>
+						<control name="lbl_money" entity="Label" script="" init="">
+							<prop Align="Right" RefCursor="WIN_HELP" Left="102" Top="10" Width="105" Height="25" ForeColor="255,160,100,30" ShadowColor="0,0,0,0" Font="WRYH28"/>
+						</control>
+					</control>
+					<control name="lbl_level_tip" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="20" Top="16" Width="22" Height="30" ForeColor="255,102,0,0" ShadowColor="0,0,0,0" Text="lv" Font="WRYH30"/>
+					</control>
+					<control name="lbl_level_text" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="60" Top="20" Width="54" Height="22" ForeColor="255,102,0,0" ShadowColor="0,0,0,0" Font="WRYH30"/>
+					</control>
+				</control>
+				<control name="groupbox_role" entity="GroupBox" script="" init="">
+					<prop Left="170" Top="230" Width="622" Height="158" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+					<control name="groupbox_role1" entity="GroupBox" script="" init="">
+						<prop Left="44" Top="32" Width="80" Height="110" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+						<control name="lbl_role1_back" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Width="80" Height="80" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_info_show/notbattle.png"/>
+						</control>
+						<control name="lbl_role1" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Width="78" Height="78" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+						</control>
+						<control name="pbar_role1" entity="ProgressBar" script="" init="">
+							<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_battle/scene_settle/exp.png" ProgressMode="LeftToRight" Left="1" Top="88" Width="78" Height="18" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_battle/scene_settle/exp1.png"/>
+						</control>
+						<control name="lbl_level_up1" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Top="10" Width="78" Height="94" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+						</control>
+						<control name="lbl_index1" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Top="48" Width="31" Height="31" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_battle/scene_info_show/zhu.png"/>
+						</control>
+					</control>
+					<control name="groupbox_role2" entity="GroupBox" script="" init="">
+						<prop Left="154" Top="32" Width="80" Height="110" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+						<control name="lbl_role2_back" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Width="80" Height="80" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_info_show/notbattle.png"/>
+						</control>
+						<control name="lbl_role2" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Width="78" Height="78" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+						</control>
+						<control name="pbar_role2" entity="ProgressBar" script="" init="">
+							<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_battle/scene_settle/exp.png" ProgressMode="LeftToRight" Left="1" Top="88" Width="78" Height="18" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_battle/scene_settle/exp1.png"/>
+						</control>
+						<control name="lbl_level_up2" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Top="10" Width="78" Height="94" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+						</control>
+						<control name="lbl_index2" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Top="48" Width="31" Height="31" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_battle/scene_info_show/yi.png"/>
+						</control>
+					</control>
+					<control name="groupbox_role3" entity="GroupBox" script="" init="">
+						<prop Left="270" Top="32" Width="80" Height="110" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+						<control name="lbl_role3_back" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Width="80" Height="80" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_info_show/notbattle.png"/>
+						</control>
+						<control name="lbl_role3" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Width="78" Height="78" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+						</control>
+						<control name="pbar_role3" entity="ProgressBar" script="" init="">
+							<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_battle/scene_settle/exp.png" ProgressMode="LeftToRight" Left="1" Top="88" Width="78" Height="18" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_battle/scene_settle/exp1.png"/>
+						</control>
+						<control name="lbl_level_up3" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Top="10" Width="78" Height="94" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+						</control>
+						<control name="lbl_index3" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Top="48" Width="31" Height="31" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_battle/scene_info_show/yi.png"/>
+						</control>
+					</control>
+					<control name="groupbox_role4" entity="GroupBox" script="" init="">
+						<prop Left="384" Top="32" Width="80" Height="110" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+						<control name="lbl_role4_back" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Width="80" Height="80" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_info_show/notbattle.png"/>
+						</control>
+						<control name="lbl_role4" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Width="78" Height="78" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+						</control>
+						<control name="pbar_role4" entity="ProgressBar" script="" init="">
+							<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_battle/scene_settle/exp.png" ProgressMode="LeftToRight" Left="1" Top="88" Width="78" Height="18" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_settle/exp1.png"/>
+						</control>
+						<control name="lbl_level_up4" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Top="10" Width="78" Height="94" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+						</control>
+						<control name="lbl_index4" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Top="48" Width="31" Height="31" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_battle/scene_info_show/er.png"/>
+						</control>
+					</control>
+					<control name="groupbox_role5" entity="GroupBox" script="" init="">
+						<prop Left="500" Top="32" Width="80" Height="110" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+						<control name="lbl_role5_back" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Width="80" Height="80" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_info_show/notbattle.png"/>
+						</control>
+						<control name="lbl_role5" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Width="78" Height="78" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+						</control>
+						<control name="lbl_index5" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Top="48" Width="31" Height="31" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_battle/scene_info_show/er.png"/>
+						</control>
+						<control name="pbar_role5" entity="ProgressBar" script="" init="">
+							<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_battle/scene_settle/exp.png" ProgressMode="LeftToRight" Left="1" Top="88" Width="78" Height="18" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_settle/exp1.png"/>
+						</control>
+						<control name="lbl_level_up5" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Top="10" Width="78" Height="94" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+						</control>
+					</control>
+				</control>
+			</control>
+			<control name="groupbox_more" entity="GroupBox" script="" init="">
+				<prop Transparent="true" Left="133" Top="123" Width="1130" Height="364" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Visible="false" NoFrame="true"/>
+				<control name="groupbox_right" entity="GroupBox" script="" init="">
+					<prop Left="570" Width="560" Height="364" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui/tp2_common/nine/active_36.png"/>
+					<control name="groupbox_currency_more" entity="GroupBox" script="" init="">
+						<prop Top="-7" Width="560" Height="80" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0"/>
+						<control name="groupbox_exp_more" entity="GroupBox" script="" init="">
+							<prop Left="105" Top="17" Width="215" Height="45" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+							<control name="lbl_8_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Width="215" Height="45" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_battle/scene_settle/ditu1.png"/>
+							</control>
+							<control name="lbl_7_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Left="7" Top="1" Width="44" Height="42" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/xm2_common/window/jingyan.png"/>
+							</control>
+							<control name="lbl_exp_more" entity="Label" script="" init="">
+								<prop Align="Right" RefCursor="WIN_HELP" Left="102" Top="10" Width="105" Height="25" ForeColor="255,160,100,30" ShadowColor="0,0,0,0" Font="WRYH20"/>
+							</control>
+						</control>
+						<control name="groupbox_money_more" entity="GroupBox" script="" init="">
+							<prop Left="331" Top="17" Width="215" Height="45" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+							<control name="lbl_10_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Width="215" Height="45" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_battle/scene_settle/ditu1.png"/>
+							</control>
+							<control name="lbl_11_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Left="7" Top="2" Width="40" Height="40" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/xm2_main/hall/jingbi.png"/>
+							</control>
+							<control name="lbl_money_more" entity="Label" script="" init="">
+								<prop Align="Right" RefCursor="WIN_HELP" Left="102" Top="10" Width="105" Height="25" ForeColor="255,160,100,30" ShadowColor="0,0,0,0" Font="WRYH20"/>
+							</control>
+						</control>
+						<control name="lbl_level_tip_more" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="18" Top="32" Width="14" Height="16" ForeColor="255,102,0,0" ShadowColor="0,0,0,0" Text="Lv" Font="WRYH30"/>
+						</control>
+						<control name="lbl_level_text_more" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="56" Top="31" Width="54" Height="16" ForeColor="255,102,0,0" ShadowColor="0,0,0,0" Font="WRYH30"/>
+						</control>
+					</control>
+					<control name="groupbox_role_more" entity="GroupBox" script="" init="">
+						<prop Left="57" Top="91" Width="446" Height="253" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+						<control name="groupbox_role1_more" entity="GroupBox" script="" init="">
+							<prop Left="23" Top="70" Width="80" Height="110" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+							<control name="lbl_role1_back_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Width="80" Height="80" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_info_show/notbattle.png"/>
+							</control>
+							<control name="lbl_role1_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Width="78" Height="78" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+							</control>
+							<control name="pbar_role1_more" entity="ProgressBar" script="" init="">
+								<prop Maximum="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_battle/scene_settle/exp.png" ProgressMode="LeftToRight" Left="1" Top="88" Width="78" Height="18" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_battle/scene_settle/exp1.png"/>
+							</control>
+							<control name="lbl_level_up1_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Top="10" Width="78" Height="94" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+							</control>
+							<control name="lbl_index1_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Top="48" Width="31" Height="31" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_battle/scene_info_show/zhu.png"/>
+							</control>
+						</control>
+						<control name="groupbox_role2_more" entity="GroupBox" script="" init="">
+							<prop Left="163" Top="10" Width="80" Height="110" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+							<control name="lbl_role2_back_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Width="80" Height="80" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_info_show/notbattle.png"/>
+							</control>
+							<control name="lbl_role2_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Width="78" Height="78" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+							</control>
+							<control name="pbar_role2_more" entity="ProgressBar" script="" init="">
+								<prop Maximum="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_battle/scene_settle/exp.png" ProgressMode="LeftToRight" Left="1" Top="88" Width="78" Height="18" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_battle/scene_settle/exp1.png"/>
+							</control>
+							<control name="lbl_level_up2_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Top="10" Width="78" Height="94" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+							</control>
+							<control name="lbl_index2_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Top="48" Width="31" Height="31" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_battle/scene_info_show/yi.png"/>
+							</control>
+						</control>
+						<control name="groupbox_role3_more" entity="GroupBox" script="" init="">
+							<prop Left="303" Top="10" Width="80" Height="110" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+							<control name="lbl_role3_back_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Width="80" Height="80" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_info_show/notbattle.png"/>
+							</control>
+							<control name="lbl_role3_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Width="78" Height="78" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+							</control>
+							<control name="pbar_role3_more" entity="ProgressBar" script="" init="">
+								<prop Maximum="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_battle/scene_settle/exp.png" ProgressMode="LeftToRight" Left="1" Top="88" Width="78" Height="18" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_battle/scene_settle/exp1.png"/>
+							</control>
+							<control name="lbl_level_up3_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Top="10" Width="78" Height="94" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+							</control>
+							<control name="lbl_index3_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Top="48" Width="31" Height="31" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_battle/scene_info_show/yi.png"/>
+							</control>
+						</control>
+						<control name="groupbox_role4_more" entity="GroupBox" script="" init="">
+							<prop Left="163" Top="140" Width="80" Height="110" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+							<control name="lbl_role4_back_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Width="80" Height="80" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_info_show/notbattle.png"/>
+							</control>
+							<control name="lbl_role4_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Width="78" Height="78" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+							</control>
+							<control name="pbar_role4_more" entity="ProgressBar" script="" init="">
+								<prop Maximum="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_battle/scene_settle/exp.png" ProgressMode="LeftToRight" Left="1" Top="88" Width="78" Height="18" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_settle/exp1.png"/>
+							</control>
+							<control name="lbl_level_up4_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Top="10" Width="78" Height="94" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+							</control>
+							<control name="lbl_index4_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Top="48" Width="31" Height="31" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_battle/scene_info_show/er.png"/>
+							</control>
+						</control>
+						<control name="groupbox_role5_more" entity="GroupBox" script="" init="">
+							<prop Left="303" Top="140" Width="80" Height="110" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+							<control name="lbl_role5_back_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Width="80" Height="80" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_info_show/notbattle.png"/>
+							</control>
+							<control name="lbl_role5_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Width="78" Height="78" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+							</control>
+							<control name="lbl_index5_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Top="48" Width="31" Height="31" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_battle/scene_info_show/er.png"/>
+							</control>
+							<control name="pbar_role5_more" entity="ProgressBar" script="" init="">
+								<prop Maximum="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_battle/scene_settle/exp.png" ProgressMode="LeftToRight" Left="1" Top="88" Width="78" Height="18" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_settle/exp1.png"/>
+							</control>
+							<control name="lbl_level_up5_more" entity="Label" script="" init="">
+								<prop RefCursor="WIN_HELP" Top="10" Width="78" Height="94" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+							</control>
+						</control>
+					</control>
+				</control>
+				<control name="groupbox_left" entity="GroupBox" script="" init="">
+					<prop Transparent="true" Width="560" Height="364" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/nine/task_21.png"/>
+					<control name="groupscrollbox_award_more" entity="GroupScrollableBox" script="" init="">
+						<prop ScrollSize="17" IsEditMode="false" Transparent="true" Width="560" Height="364" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+					</control>
+					<control name="groupbox_award_more" entity="GroupBox" script="" init="">
+						<prop Transparent="true" Left="10" Top="36" Width="540" Height="130" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+					</control>
+					<control name="groupbox_title" entity="GroupBox" script="" init="">
+						<prop Transparent="true" Top="200" Width="560" Height="46" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_quest/saodang_title.png"/>
+						<control name="lbl_title_bk_r" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="280" Top="7" Width="160" Height="32" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/window/task_33.png,282,0,160,32"/>
+						</control>
+						<control name="lbl_title_back" entity="Label" script="" init="">
+							<prop RefCursor="WIN_HELP" Left="120" Top="7" Width="160" Height="32" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/window/task_33.png,0,0,160,32"/>
+						</control>
+						<control name="lbl_title" entity="Label" script="" init="">
+							<prop Align="Center" RefCursor="WIN_HELP" Left="213" Top="15" Width="134" Height="16" ForeColor="255,102,0,0" ShadowColor="0,0,0,0" Font="WRYH28"/>
+						</control>
+					</control>
+				</control>
+			</control>
+		</control>
+		<control name="groupbox_reward_tmp" entity="GroupBox" script="" init="">
+			<prop Transparent="true" ClipChildren="false" Left="56" Top="480" Width="230" Height="110" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,0,0,0" ShadowColor="0,0,0,0" Visible="false" DrawMode="Center"/>
+			<control name="lbl_1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="47" Width="82" Height="82" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/window/item.png"/>
+			</control>
+			<control name="lbl_name" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="41" Top="83" Width="94" Height="25" ForeColor="255,102,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
+			</control>
+			<control name="imagegrid_reward" entity="Label" script="" init="">
+				<prop Align="Center" Transparent="false" ClickEvent="true" RefCursor="WIN_HELP" Left="51" Top="4" Width="74" Height="74" ForeColor="0,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+			</control>
+			<control name="lbl_colorLevel" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="51" Top="4" Width="74" Height="74" ForeColor="255,200,200,200" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+			</control>
+			<control name="lbl_sui" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="41" Top="8" Width="94" Height="27" ForeColor="255,200,200,200" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+			</control>
+			<control name="lbl_wuhun" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="41" Top="9" Width="94" Height="50" ForeColor="255,200,200,200" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+			</control>
+			<control name="lbl_num" entity="Label" script="" init="">
+				<prop Align="Right" RefCursor="WIN_HELP" Left="40" Top="46" Width="80" Height="25" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK"/>
+			</control>
+			<control name="lbl_persit2d_first" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="32" Width="110" Height="110" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0"/>
+			</control>
+			<control name="lbl_persit2d_second" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="32" Width="110" Height="110" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0"/>
+			</control>
+		</control>
+	</control>
+</form>
+

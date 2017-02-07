@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<EffectForm>
+    <scale script="form_stage_main\form_system\form_system_option" effect_status="close" scale_time="0.5" begin_width="230" begin_height="318" end_width="10" end_height="10" back_image="gui\common\back_image_system.png" />
+    <move script="form_stage_main\form_system\form_system_option" effect_status="close" ratio="100" use_cur_pos="true" left="42" top="30" seg_num="1" seg_args="0.5,0,0,up" />
+    <alpha script="form_stage_main\form_system\form_system_option" effect_status="close" begin_alpha="255" end_alpha="0" alpha_time="0.5" />
+    <move script="form_stage_main\\form_role_info\\form_role_info" effect_status="close" ratio="100" use_cur_pos="true" left="50" top="30" seg_num="0" seg_args="" />
+    <alpha script="form_stage_main\\form_role_info\\form_role_info" effect_status="close" begin_alpha="255" end_alpha="0" alpha_time="0.5" />
+    <move script="form_stage_main\form_system\form_system_option" effect_status="open" ratio="100" use_cur_pos="false" left="0" top="0" seg_num="1" seg_args="0.5,42,30,down" />
+    <alpha script="form_stage_main\form_system\form_system_option" effect_status="open" begin_alpha="0" end_alpha="255" alpha_time="0.5" />
+    <scale script="form_stage_main\form_system\form_system_option" effect_status="open" scale_time="0.5" begin_width="10" begin_height="10" end_width="230" end_height="318" back_image="gui\common\back_image_system.png" />
+    <move script="form_stage_main\form_quest\form_quest.lua" effect_status="open" ratio="1000" use_cur_pos="false" left="20" top="100" seg_num="1" seg_args="0.5,20,100,down" />
+    <alpha script="form_stage_main\form_quest\form_quest.lua" effect_status="open" begin_alpha="0" end_alpha="255" alpha_time="0.5" />
+    <scale script="form_stage_main\form_quest\form_quest.lua" effect_status="open" scale_time="0.5" begin_width="10" begin_height="10" end_width="800" end_height="600" <!--back_image="gui\common\task.png"--> />
+    <move script="form_stage_main\form_quest\form_quest.lua" effect_status="close" ratio="1000" use_cur_pos="true" left="20" top="100" seg_num="1" seg_args="0.5,20,100,up" />
+    <alpha script="form_stage_main\form_quest\form_quest.lua" effect_status="close" begin_alpha="255" end_alpha="0" alpha_time="0.5" />
+    <scale script="form_stage_main\form_quest\form_quest.lua" effect_status="close" scale_time="0.5" begin_width="800" begin_height="600" end_width="10" end_height="10"  <!--back_image="gui\common\task.png" -->/>
+    <move script="form_stage_main\form_bag\form_bag.lua" effect_status="close" ratio="1000" use_cur_pos="false" left="700" top="300" seg_num="1" seg_args="0.4,700,300,up" />
+    <alpha script="form_stage_main\form_bag\form_bag.lua" effect_status="close" begin_alpha="255" end_alpha="0" alpha_time="0.5" />
+    <scale script="form_stage_main\form_bag\form_bag.lua" effect_status="close" scale_time="0.4" begin_width="414" begin_height="409" end_width="10" end_height="10"  /><!-- back_image="gui\common\back_image_bag.png" -->
+    <move script="form_stage_main\\form_role_info\\form_role_info" effect_status="open" ratio="1000" use_cur_pos="false" left="40" top="200" seg_num="1" seg_args="0.2,60,200,up" />
+    <alpha script="form_stage_main\\form_role_info\\form_role_info" effect_status="open" begin_alpha="0" end_alpha="255" alpha_time="0.2" />
+    <move script="form_stage_main\form_skill\form_skill" effect_status="open" ratio="1000" use_cur_pos="false" left="390" top="240" seg_num="1" seg_args="0.3,400,240,up" />
+    <alpha script="form_stage_main\form_skill\form_skill" effect_status="open" begin_alpha="0" end_alpha="255" alpha_time="0.5" />
+    <move script="form_stage_main\form_skill\form_skill" effect_status="close" ratio="1000" use_cur_pos="false" left="400" top="240" seg_num="1" seg_args="0.3,390,240,up" />
+    <alpha script="form_stage_main\form_skill\form_skill" effect_status="close" begin_alpha="255" end_alpha="0" alpha_time="0.3" />
+    <move script="form_stage_main\form_bag\form_bag.lua" effect_status="open" ratio="1000" use_cur_pos="false" left="700" top="300" seg_num="1" seg_args="0.4,700,300,up" />
+    <alpha script="form_stage_main\form_bag\form_bag.lua" effect_status="open" begin_alpha="0" end_alpha="255" alpha_time="0.5" />
+    <scale script="form_stage_main\form_bag\form_bag.lua" effect_status="open" scale_time="0.5" begin_width="10" begin_height="10" end_width="414" end_height="409"  /><!-- back_image="gui\common\back_image_bag.png" -->
+</EffectForm>

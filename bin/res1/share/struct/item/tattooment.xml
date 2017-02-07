@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by  () -->
+<!--Equip_Item的属性表，继承自Nim_Item，所有可装备的物品的基类-->
+<object>
+	<!-- 基本属性 -->
+	<properties>	
+        <property name="UpgradeTattooLevel" type="Int" public="false" private="true" save="true" realtime="true" desc="当前符文等级"/>
+        <property name="SymbolTattooCurExp" type="Int" public="false" private="true" save="true" desc="当前符文剩余经验"/>
+        <property name="RuneWordsPackage" type="string" public="false" private="false" save="true" desc="符文之语属性包"/>
+        <property name="BasePropertyPackage" type="string" public="false" private="false" save="true" desc="符文属性包"/>
+		<property name="TattooType" type="string" public="false" private="false" save="true" desc="符文类型"/>
+	</properties>
+	
+	<!--策划要求装备的修正表必须保存不得重刷-->
+	<records>
+        <record name="SymTattooUpgradeRec" cols="8" maxrows="16" save="true" public="false" private="true" desc="符文升级解锁属性表">
+            <column type="string" desc="属性名"/>                                                                                    
+            <column type="DWORD" desc="属性值"/>                                                                                     
+            <column type="DWORD" desc="升级增加值"/>                                                                                   
+            <column type="DWORD" desc="解锁属性类型"/>
+            <column type="DWORD" desc="解锁等级限制"/>
+            <column type="DWORD" desc="是否为激活状态1为激活0为不激活即不能起到作用"/>
+            <column type="string" desc="说明文字ID"/>
+            <column type="string" desc="说明文字ID"/>
+        </record>
+        <record name="SymTattooRuneWordsRec" cols="3" maxrows="16" save="true" public="false" private="false" desc="符文之语属性表">
+            <column type="string" desc="属性ID"/>
+            <column type="string" desc="属性名"/>
+            <column type="DWORD" desc="属性值"/>
+        </record>
+        <record name="PropModifySymbolTattooRec" cols="3" maxrows="300" save="false" public="false" private="false" desc="符文属性刷新表">
+            <column type="string" desc="属性名"/>
+            <column type="float" desc="属性值"/>
+            <column type="string" desc="来源"/>
+        </record>
+
+	</records>
+	
+	<!--从其他文件加载属性-->
+	<includes>
+		<path name="struct\rule\fight\fightpropdefined.xml" desc="战斗属性附加"/>
+	</includes>	
+</object>

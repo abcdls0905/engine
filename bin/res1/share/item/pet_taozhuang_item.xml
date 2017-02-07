@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 武神装备的套装属性配置 -->
+<!-- ID   套装ID-->
+<!-- ItemSuit 所需要的其他套装，因为只有三种类型的武神装备，所以这一项最少1个，最多两个，逗号隔开-->
+<!--IsSkillProp 是否是技能，true表示是技能，false表示是buff-->
+<!--SkillID 技能ID或者BuffID -->
+<Object>
+	<Property ID="1" ItemSuit="pet_Wrist_01,pet_Ring_01,pet_Neck_01" IsSkillProp="false" SkillID="buff_wszb_002"/>
+	<Property ID="2" ItemSuit="pet_Wrist_02,pet_Ring_02,pet_Neck_02" IsSkillProp="false" skillID="buff_wszb_003"/>
+	<Property ID="3" ItemSuit="pet_Wrist_03,pet_Ring_03,pet_Neck_03" IsSkillProp="false" skillID="buff_wszb_001"/>
+</Object>

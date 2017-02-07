@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop IsGC="true" Left="20" Top="30" Width="1024" Height="768" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" />
+        <control name="groupbox_back" entity="GroupBox" script="" init="">
+            <prop ClipChildren="true" Left="289" Top="239" Width="502" Height="390" BackColor="91,255,255,255" ShadowColor="0,0,0,0" Transparent="true" Text="groupbox_1" NoFrame="true" DrawMode="FitWindow" />
+            <control name="btn_extend" entity="Button" script="" init="">
+                <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="448" Top="8" Width="40" Height="40" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="btn_1" NoFrame="true" DrawMode="FitWindow" />
+            </control>
+            <control name="lbl_righttop" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="416" Top="56" Width="122" Height="132" ShadowColor="0,0,0,0" Text="lbl_1" DrawMode="FitWindow" />
+            </control>
+            <control name="groupbox_map" entity="GroupBox" script="" init="">
+                <prop Left="88" Top="88" Width="302" Height="214" ShadowColor="0,0,0,0" Transparent="true" Text="groupbox_1" NoFrame="true" DrawMode="FitWindow" />
+                <control name="groupbox_flag" entity="GroupBox" script="" init="">
+                    <prop Left="89" Top="40" Width="126" Height="118" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" Text="groupbox_1" NoFrame="true" />
+                    <control name="lbl_stable" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="8" Width="36" Height="36" ShadowColor="0,0,0,0" TestTrans="true" Text="lbl_1" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_effect" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="8" Top="56" Width="100" Height="100" ShadowColor="0,0,0,0" TestTrans="true" Text="lbl_2" DrawMode="FitWindow" />
+                    </control>
+                </control>
+            </control>
+        </control>
+    </control>
+</form>

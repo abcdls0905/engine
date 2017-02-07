@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop Left="13" Top="13" Width="646" Height="502" BackColor="100,0,0,0" ShadowColor="0,0,0,0" NoFrame="true"/>
+		<control name="group_invite_bg" entity="GroupBox" script="" init="">
+			<prop Left="-60" Top="1" Width="766" Height="500" BackColor="0,200,200,200" ShadowColor="0,0,0,0" Text="groupbox_2" NoFrame="true" DrawMode="Expand"/>
+			<control name="Label1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="70" Top="75" Width="625" Height="355" ShadowColor="0,0,0,0" DrawMode="ExpandTile" BackImage="gui/tp2_common/backdrop/bg_001.png"/>
+			</control>
+			<control name="lbl_1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="75" Top="115" Width="615" Height="310" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_002.png"/>
+			</control>
+			<control name="lbl_2" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="85" Top="124" Width="595" Height="300" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+			</control>
+			<control name="lbl_notice_title_bg" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="166" Top="60" Width="433" Height="54" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_10.png"/>
+			</control>
+			<control name="lbl_6" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="81" Top="338" Width="603" Height="94" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_08.png"/>
+			</control>
+			<control name="lbl_4" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="88" Top="394" Width="589" Height="28" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_03.png"/>
+			</control>
+			<control name="lbl_edit" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="99" Top="140" Width="567" Height="176" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_006.png"/>
+			</control>
+			<control name="redit_invite_msg" entity="Edit" script="" init="">
+				<prop TextOffsetX="5" Align="Center" SelectForeColor="0,0,0,0" SelectBackColor="0,0,0,0" Caret="Default" Left="128" Top="165" Width="509" Height="126" ForeColor="255,255,255,153" BackColor="0,0,0,0" BlendColor="0,0,0,0" ShadowColor="0,0,0,0" Text="@ui_friend_37" Font="WRYH24_O_BLACK" Cursor="WIN_IBEAM" TabStop="true" NoFrame="true" DrawMode="Expand"/>
+			</control>
+			<control name="btn_confirm" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/affirm.png" PushImage="gui/tp2_common/window/affirm1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="164" Top="353" Width="150" Height="60" ForeColor="255,255,255,205" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_friend_6" Font="WRYH24" AutoSize="true" ClickSound="button_click"/>
+			</control>
+			<control name="btn_cancel" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/cancel.png" PushImage="gui/tp2_common/window/cancel1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="451" Top="353" Width="150" Height="60" ForeColor="255,255,255,205" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_friend_7" Font="WRYH24" AutoSize="true" ClickSound="button_click"/>
+			</control>
+			<control name="lbl_invite_title" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="271" Top="40" Width="223" Height="64" ForeColor="255,255,255,205" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/war/friend.png"/>
+			</control>
+		</control>
+	</control>
+</form>
+

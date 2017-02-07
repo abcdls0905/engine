@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by  () -->
+<object>
+
+
+	<!-- 基本属性 -->
+	<properties>
+             <property name="PostSwitch" type="int" public="true" private="true" save="true" desc="邮件箱开关" /> 
+
+
+	</properties>
+	<!-- 表属性 -->
+	<records>
+		<record name="PostStageRec" cols="10" maxrows="20" save="false" public="false" private="true" desc="邮寄系统相关属性">
+				<column type="dword" desc="基本邮费"/>
+				<column type="dword" desc="金钱邮费"/>
+				<column type="dword" desc="物品邮费"/>
+				<column type="dword" desc="交易邮件的邮费"/>
+				<column type="dword" desc="加急的邮费"/>
+				<column type="dword" desc="金钱延迟时间"/>
+				<column type="dword" desc="物品延迟时间"/>
+				<column type="dword" desc="退信延迟时间"/>
+				<column type="dword" desc="发送至交易行邮费"/>
+				<column type="dword" desc="发送至银行邮费"/>
+		</record>
+	</records>
+</object>

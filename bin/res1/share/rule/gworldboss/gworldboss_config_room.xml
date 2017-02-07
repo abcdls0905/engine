@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!--世界boss战场配置-->
+<!--CollectSourceTime:采集资源点耗时(单位秒)-->
+<!--BossBuff:占领资源点数对应boss的buf-->
+<!--BossDefRatio:占领资源点数对应boss减防百分比-->
+<!--KillScore:击杀得分-->
+<!--HelpKillScore:助攻得分-->
+<!--HelpKillTime:助攻有效时间-->
+<!--ReliveTimeBase:复活初始时间-->
+<!--ReliveTimeAdd:随死亡次数增多的递增时间-->
+<!--ReliveTimeLimit:复活上限时间-->
+<!--ReliveIceStoneBase:购买复活消耗冰晶石基础值-->
+<!--ReliveIceStoneAdd:购买复活消耗冰晶石递增值-->
+<!--ReliveIceStoneLimit:购买复活消耗冰晶石上限值-->
+<!--ReliveDiamondBase:购买复活消耗钻石基础值-->
+<!--ReliveDiamondAdd:购买复活消耗钻石递增值-->
+<!--ReliveDiamondLimit:购买复活消耗钻石上限值-->
+<!--CutBossHpTime:占领资源点给boss减血的时间-->
+<!--CutBossHpValue:占领资源点给boss每次减血的百分比-->
+<Object>
+	<Property 
+		ID="1"
+		CollectSourceTime="30"
+		BossBuff="buff_mianshang_001,buff_mianshang_002,buff_mianshang_003,buff_mianshang_004,buff_mianshang_005,buff_mianshang_006"
+		BossDefRatio="99,90,80,50,20,1" 
+		KillScore="100"
+		HelpKillScore="10"
+		HelpKillTime="10"
+		ReliveTimeBase="10"
+		ReliveTimeAdd="5"
+		ReliveTimeLimit="45"
+		ReliveIceStoneBase="30"
+		ReliveIceStoneAdd="10"
+		ReliveIceStoneLimit="200"
+		ReliveDiamondBase="10"
+		ReliveDiamondAdd="10"
+		ReliveDiamondLimit="200"
+		CutBossHpTime="30"
+		CutBossHpValue="0.5"
+	/>
+</Object>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop Transparent="true" ShowGrid="true" Left="69" Top="45" Width="1366" Height="768" ForeColor="0,0,0,0" BackColor="0,255,255,255" ShadowColor="0,0,0,0" TestTrans="true" NoFrame="true"/>
+		<control name="groupbox_pet_1" entity="GroupBox" script="" init="">
+			<prop Transparent="true" Left="1104" Top="72" Width="69" Height="6" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Visible="false" BackImage="gui/tp2_main/war/heise.png"/>
+			<control name="pbar_pet_1" entity="ProgressBar" script="" init="">
+				<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_main/war/lv-35.png" ProgressMode="LeftToRight" Left="-33" Width="67" Height="4" BackColor="0,255,255,255" ShadowColor="0,0,0,0" HAnchor="Center" Font="Default" NoFrame="true"/>
+			</control>
+		</control>
+		<control name="groupbox_pet_2" entity="GroupBox" script="" init="">
+			<prop Transparent="true" ClipChildren="false" Left="701" Top="216" Width="69" Height="6" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Visible="false" BackImage="gui/tp2_main/war/heise.png"/>
+			<control name="pbar_pet_2" entity="ProgressBar" script="" init="">
+				<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_main/war/hong.png" ProgressMode="LeftToRight" Left="-33" Top="1" Width="67" Height="4" BackColor="0,255,255,255" ShadowColor="0,0,0,0" HAnchor="Center" Font="Default" NoFrame="true" DrawMode="ExpandH"/>
+			</control>
+			<control name="lbl_target_cpy" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="-32" Top="-11" Width="30" Height="29" ShadowColor="0,0,0,0"/>
+			</control>
+			<control name="lbl_trace_cpy" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="-116" Top="-50" Width="300" Height="300" ShadowColor="0,0,0,0"/>
+			</control>
+		</control>
+		<control name="groupbox_head_self_little" entity="GroupBox" script="" init="">
+			<prop Left="179" Top="304" Width="214" Height="142" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Visible="false" NoFrame="true" DrawMode="FitWindow"/>
+			<control name="Label3" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="2" Top="-60" Width="207" Height="58" ShadowColor="0,0,0,0" VAnchor="Bottom" AutoSize="true" BackImage="gui/tp2_main/war/di_2.png"/>
+			</control>
+			<control name="Label4" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="-52" Width="44" Height="44" ShadowColor="0,0,0,0" VAnchor="Bottom" AutoSize="true" BackImage="gui/tp2_main/war/01.png"/>
+			</control>
+			<control name="pbar_self_hp_little" entity="ProgressBar" script="" init="">
+				<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_main/war/lv-35.png" ProgressMode="LeftToRight" Left="58" Top="-38" Width="126" Height="8" BackColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Bottom" NoFrame="true" DrawMode="FitWindow"/>
+			</control>
+			<control name="pbar_self_mp_little" entity="ProgressBar" script="" init="">
+				<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_main/war/lan.png" ProgressMode="LeftToRight" Left="52" Top="-28" Width="126" Height="8" BackColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Bottom" NoFrame="true" DrawMode="FitWindow"/>
+			</control>
+			<control name="pbar_self_break_little" entity="ProgressBar" script="" init="">
+				<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_main/war/huang.png" ProgressMode="LeftToRight" Left="46" Top="-18" Width="94" Height="8" BackColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Bottom" NoFrame="true" DrawMode="FitWindow"/>
+			</control>
+			<control name="lbl_self_name_little" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="50" Top="-64" Width="134" Height="20" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" VAnchor="Bottom" Font="WRYH18_O_BLACK"/>
+			</control>
+			<control name="lbl_self_level_little" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="15" Top="-43" Width="30" Height="26" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" VAnchor="Bottom" Text="16" Font="WRYH24"/>
+			</control>
+			<control name="lbl_self_title" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="13" Top="13" Width="200" Height="54" ShadowColor="0,0,0,0" AutoSize="true"/>
+			</control>
+		</control>
+		<control name="groupbox_head_enemy_little" entity="GroupBox" script="" init="">
+			<prop ClipChildren="false" Left="533" Top="304" Width="214" Height="147" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Visible="false" NoFrame="true" DrawMode="FitWindow"/>
+			<control name="Label1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="2" Top="-56" Width="207" Height="58" ShadowColor="0,0,0,0" VAnchor="Bottom" AutoSize="true" BackImage="gui/tp2_main/war/di_2.png"/>
+			</control>
+			<control name="Label2" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="-48" Width="44" Height="44" ShadowColor="0,0,0,0" VAnchor="Bottom" AutoSize="true" BackImage="gui/tp2_main/war/02.png"/>
+			</control>
+			<control name="pbar_enemy_hp_little" entity="ProgressBar" script="" init="">
+				<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_main/war/hong.png" ProgressMode="LeftToRight" Left="58" Top="-34" Width="126" Height="8" BackColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Bottom" NoFrame="true" DrawMode="FitWindow"/>
+			</control>
+			<control name="pbar_enemy_mp_little" entity="ProgressBar" script="" init="">
+				<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_main/war/lan.png" ProgressMode="LeftToRight" Left="52" Top="-24" Width="126" Height="8" BackColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Bottom" NoFrame="true" DrawMode="FitWindow"/>
+			</control>
+			<control name="pbar_enemy_break_little" entity="ProgressBar" script="" init="">
+				<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_main/war/huang.png" ProgressMode="LeftToRight" Left="46" Top="-14" Width="94" Height="8" BackColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Bottom" NoFrame="true" DrawMode="FitWindow"/>
+			</control>
+			<control name="lbl_enemy_level_little" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="15" Top="-39" Width="30" Height="26" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" VAnchor="Bottom" Text="16" Font="WRYH24"/>
+			</control>
+			<control name="lbl_enemy_name_little" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="50" Top="-60" Width="134" Height="20" ForeColor="255,255,0,0" ShadowColor="0,0,0,0" VAnchor="Bottom" Font="WRYH18_O_BLACK"/>
+			</control>
+			<control name="lbl_enemy_title" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="16" Top="13" Width="200" Height="54" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+			</control>
+			<control name="lbl_flagtarget" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="2" Top="93" Width="54" Height="54" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+			</control>
+			<control name="lbl_flagtarce" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="-43" Top="90" Width="300" Height="300" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+			</control>
+		</control>
+		<control name="groupbox_head_self" entity="GroupBox" script="" init="">
+			<prop Left="8" Width="495" Height="151" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true"/>
+			<control name="Label5" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="14" Top="30" Width="104" Height="104" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/chat/hall.png"/>
+			</control>
+			<control name="lbl_self_photo" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="15" Top="24" Width="101" Height="110" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="Center" BackImage="gui/xm2_main/hall/tx_ck1.png"/>
+			</control>
+			<control name="pbar_self_hp" entity="ProgressBar" script="" init="">
+				<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_main/war/dahong.png" ProgressMode="LeftToRight" TextVisible="true" TextColor="255,252,230,208" Left="124" Top="30" Width="364" Height="29" ForeColor="255,252,230,208" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH14_O_BLACK" NoFrame="true" AutoSize="true" DrawMode="ExpandH" BackImage="gui/tp2_main/war/datiao.png"/>
+			</control>
+			<control name="pbar_self_mp" entity="ProgressBar" script="" init="">
+				<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_main/war/dalan.png" ProgressMode="LeftToRight" TextVisible="true" TextColor="255,252,230,208" Left="124" Top="57" Width="244" Height="29" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH14_O_BLACK" NoFrame="true" DrawMode="ExpandH" BackImage="gui/tp2_main/war/datiao.png"/>
+			</control>
+			<control name="lbl_self_level_back" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="80" Top="104" Width="35" Height="36" ShadowColor="0,0,0,0"/>
+			</control>
+			<control name="pbar_self_break" entity="ProgressBar" script="" init="">
+				<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_main/war/dahuang.png" ProgressMode="LeftToRight" TextVisible="true" TextColor="255,252,230,208" Left="124" Top="84" Width="244" Height="29" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH14_O_BLACK" NoFrame="true" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/war/xiaotiao.png"/>
+			</control>
+			<control name="lbl_self_name" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="124" Top="8" Width="80" Height="16" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="玩家1" Font="WRYH20_O_BLACK"/>
+			</control>
+			<control name="Label6" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="124" Top="111" Width="121" Height="28" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/war/dengjidi.png"/>
+			</control>
+			<control name="lbl_self_level" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="164" Top="111" Width="30" Height="32" ForeColor="255,255,204,0" ShadowColor="0,0,0,0" Text="99" Font="WRYH18_O_BLACK"/>
+			</control>
+			<control name="pbar_player_df_animation" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="124" Top="57" Width="244" Height="60" ForeColor="255,255,204,0" ShadowColor="0,0,0,0"/>
+			</control>
+		</control>
+		<control name="groupbox_head_enemy" entity="GroupBox" script="" init="">
+			<prop Left="-486" Width="495" Height="151" BackColor="0,255,255,255" ShadowColor="0,0,0,0" HAnchor="Right" NoFrame="true" AutoSize="true"/>
+			<control name="Label7" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="377" Top="30" Width="104" Height="104" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/chat/hall.png"/>
+			</control>
+			<control name="lbl_enemy_photo" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="378" Top="24" Width="101" Height="110" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="Center" BackImage="gui/xm2_main/hall/tx_ck2.png"/>
+			</control>
+			<control name="pbar_enemy_hp" entity="ProgressBar" script="" init="">
+				<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_main/war/dahong.png" ProgressMode="RightToLeft" TextVisible="true" TextColor="255,252,230,208" Left="7" Top="30" Width="364" Height="29" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH14_O_BLACK" NoFrame="true" AutoSize="true" DrawMode="ExpandH" BackImage="gui/tp2_main/war/datiao.png"/>
+			</control>
+			<control name="pbar_enemy_mp" entity="ProgressBar" script="" init="">
+				<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_main/war/dalan.png" ProgressMode="RightToLeft" TextVisible="true" TextColor="255,252,230,208" Left="127" Top="57" Width="244" Height="29" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH14_O_BLACK" NoFrame="true" DrawMode="ExpandH" BackImage="gui/tp2_main/war/datiao.png"/>
+			</control>
+			<control name="lbl_enemy_level_back" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="396" Top="104" Width="35" Height="36" ShadowColor="0,0,0,0"/>
+			</control>
+			<control name="pbar_enemy_break" entity="ProgressBar" script="" init="">
+				<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_main/war/dahuang.png" ProgressMode="RightToLeft" TextVisible="true" TextColor="255,252,230,208" Left="127" Top="84" Width="244" Height="29" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH14_O_BLACK" NoFrame="true" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/war/xiaotiao.png"/>
+			</control>
+			<control name="lbl_enemy_name" entity="Label" script="" init="">
+				<prop Align="Right" RefCursor="WIN_HELP" Left="291" Top="8" Width="80" Height="16" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="玩家2" Font="WRYH20_O_BLACK"/>
+			</control>
+			<control name="Label8" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="242" Top="108" Width="121" Height="28" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/war/dengjidi2.png" AngleX="3.140000"/>
+			</control>
+			<control name="lbl_enemy_level" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="331" Top="106" Width="30" Height="32" ForeColor="255,255,240,0" ShadowColor="0,0,0,0" Text="16" Font="WRYH18_O_BLACK"/>
+			</control>
+		</control>
+		<control name="lbl_vs" entity="Label" script="" init="">
+			<prop Align="Center" RefCursor="WIN_HELP" Left="-58" Width="115" Height="80" ShadowColor="0,0,0,0" HAnchor="Center" AutoSize="true" BackImage="gui/tp2_main/war/vs.png"/>
+		</control>
+		<control name="lbl_time" entity="Label" script="" init="">
+			<prop Align="Center" RefCursor="WIN_HELP" Left="-141" Top="85" Width="282" Height="46" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" HAnchor="Center" Text="10:10" Font="scene_attzk" DrawMode="FitWindow" BackImage="gui/tp2_main/war/time_di.png"/>
+		</control>
+	</control>
+</form>
+

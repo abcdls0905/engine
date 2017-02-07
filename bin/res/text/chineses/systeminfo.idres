@@ -1,0 +1,1828 @@
+﻿//技能提示
+sys_skill_1=没有攻击目标
+sys_skill_error_scene=当前场景无法学习技能，请返回主城后再进行相关操作。
+
+on_connect_fail=连接失败
+on_app_exit=无法与服务器连接，请稍后再试！
+
+ui_main_requestinfo={@0:对方姓名}请求将您加为好友是否接受?
+sys_com_player_cant_no_weapon = 玩家不能没有武器
+sys_fresys_130000=玩家[{@0:名称}]不存在
+sys_fresys_130001=玩家[{@0:名称}]已下线
+sys_fresys_130002=不能将自己加为好友
+sys_fresys_130003=不能将自己加入陌生人
+sys_fresys_130004=不能将自己加入黑名单
+sys_fresys_130005=不能将自己加为对手
+sys_fresys_130006=请输入玩家名称
+sys_fresys_130029=已在黑名单表中
+sys_fresys_130030=已在对手表中
+sys_fresys_130010=好友上限已满
+sys_fresys_130013=与[{@0:name}]断绝了往来
+sys_fresys_130014=[{@0:name}]与你断绝了往来
+sys_fresys_130015=已在好友列表中，无需再次申请
+sys_fresys_130016=发送成功，请等待
+sys_fresys_130017=对方在黑名单之中，无法发出好友请求，请先从黑名单中删除对方
+sys_fresys_130020=对方已经将你加入黑名单，无法发出请求
+sys_fresys_130021=阵营不符，不能添加好友
+sys_fresys_130024=对方的好友上限已满
+sys_fresys_130025=[{@0:name}]请求建立好友关系
+sys_fresys_130026=你已同意[{@0:name}]的好友申请，已加入好友列表
+sys_fresys_130027=[{@0:name}]拒绝建立好友关系
+sys_fresys_130028=好友[{@0:name}]上线了
+sys_fresys_130031=你的对手[{@0:name}]请求加你为好友
+sys_fresys_130032=该英雄不在对手表中
+sys_fresys_130033=对手上限已满
+sys_fresys_130034=对手上限已满
+sys_fresys_130035=将[{@0:name}]加入黑名单
+sys_fresys_130036=将[{@0:name}]加为对手
+sys_fresys_130037=分组<font color='#00BD00'>{@0:name}</font>已存在
+sys_fresys_130042=[{@0:name}]同意，已加入好友列表
+sys_fresys_130045=<center>确定删除好友<font color='#ff0000'>[{@0:name}]</font>吗？</center>
+
+sys_fresys_130060=超过了今天的赠送总次数
+sys_fresys_130061=超过了今天的接收总次数
+sys_fresys_130062=今天已经赠送过了
+
+sys_strengthen_130000=您已强化至当前最高等级
+sys_strengthen_130001=请添加装备或陨铁
+sys_strengthen_130002=金币不足，无法继续升级
+sys_strengthen_130003=扣除金钱失败，升级未能完成
+sys_strengthen_130004=陨铁扣除失败，升级未能完成
+sys_strengthen_130005=陨铁不足以升级
+sys_strengthen_130029=精炼已达到上限，无需再精炼
+sys_strengthen_130030=战队等级达到{@0:num1}级才可精炼下一等级
+sys_strengthen_130010=扣除精炼石失败，升级未能完成
+sys_strengthen_130013=精炼石不足，升级未能完成
+sys_strengthen_130014=没有升级消耗的蓝绿装备，用陨铁强化
+sys_strengthen_130015=精炼所需材料不足，无法精炼
+sys_strengthen_130016=您身上没有陨铁，不能升级强化
+sys_strengthen_130017=没有可选择的装备
+sys_strengthen_130018=指定的等级太低
+sys_symbol_130000=当前容器不可操作
+sys_symbol_130001=目标容器不可操作
+sys_symbol_130002=没有可操作的物品
+sys_symbol_130003=镶嵌物品不是符文，不能镶嵌
+sys_symbol_130004=符文不能替换
+sys_symbol_130005=该符文位置已镶嵌符文，不可在镶嵌符文
+sys_symbol_130010=该符文已到达英雄等级，不能继续升级
+sys_symbol_130013=没有选取用来升级的符文
+sys_symbol_130014=升级成功
+sys_symbol_130015=等级已达最高，无需升级
+sys_symbol_130016=包裹中已无合适符文，不能镶嵌
+sys_symbol_130017=符文已镶嵌满，如需替换请单独取下重新镶嵌
+sys_symbol_130018=背包空间不足，无法卸下符文
+sys_symbol_130019=镶嵌失败，该英雄无法镶嵌此符文
+sys_symbol_130029=该符文不是[{@0:Type}]，不可镶嵌在该符文位
+sys_symbol_130030=这个符文类型已经镶嵌，请更换符文类型
+
+sys_symbol_130050=进阶已达最高等级
+sys_symbol_130051=进阶所需充能值不足
+sys_symbol_130052=进阶所需物品不足
+sys_symbol_130053=属性已达最高等级
+sys_symbol_130054=属性升级所需进阶等级不足
+sys_symbol_130055=没有属性可重置
+sys_symbol_130056=升级材料不足，无法学习对应属性
+sys_symbol_130061=进阶错误 核心符文不升级
+sys_symbol_130062=进阶错误 属性等级+1失败
+sys_symbol_130063=进阶错误 核心符文不重置
+sys_symbol_130064=进阶错误 不是符文不能充能
+sys_symbol_130065=进阶错误 属性等级异常
+sys_symbol_130066=进阶错误 属性升级材料异常
+sys_symbol_130067=进阶错误 属性升级类型异常
+
+sys_grasp_130000=同种类型的技能只能存在一个
+sys_grasp_130001=同种类型的技能只能存在一个
+sys_grasp_130002=扣除领悟丹失败，领悟不能进行
+sys_grasp_130003=当天金币领悟次数已达上限，请隔天再领悟或提升Vip等级
+sys_grasp_130004=当天钻石领悟次数已达上限，请隔天再领悟或提升Vip等级
+sys_grasp_130005=您没有选择金币或者钻石来进行领悟，请选择一种方式领悟
+sys_grasp_130006=成功炼魔，获得技能经验{@0:name}点
+sys_grasp_130007=技能经验不足
+sys_grasp_130008=技能已达此等级最大数量
+sys_grasp_130009=没有技能可炼化
+sys_grasp_130010=您还有领悟的技能未处理，请选择替换或者炼化
+sys_grasp_130011=寄存栏已满，请解锁新的栏位，或清空寄存栏
+sys_grasp_130012=没有技能可以交换，交换失败
+sys_grasp_130013=领悟{@0:tiem}次并且成功炼魔，获得技能经验{@1:name}点
+sys_grasp_130014=解锁数量已达最大，解锁不能进行
+sys_grasp_130015=您的钻石领悟次数不足，请提高Vip等级！
+sys_grasp_130016=使用技能书成功，该技能存放在寄存栏中
+sys_grasp_130017=没有需要重铸的技能，无需重铸
+sys_grasp_130018=领悟技能重铸获得领悟经验{@0:num}
+
+sys_awake_130000=获得魔印{@0:name}
+sys_awake_130001=该属性已达最高级
+sys_awake_130002=聚魔已达当前最大数量！
+sys_awake_130003=同种类型的属性只能存在一个
+sys_awake_130004=成功炼魔，获得魔印经验{@0:name}点
+sys_awake_130005=操作的类型不明确，请选择要添加或替换属性
+sys_awake_130006=扣除魔印失败，附魔不能进行
+sys_awake_130007=当天钻石聚魔次数已达上限，请隔天再领悟
+sys_awake_130008=聚魔方式不对
+sys_awake_130100=玩家{@0:name}级解锁
+sys_awake_130009=同种类型的属性只能存在一个
+sys_awake_130010=聚魔的属性没有找到
+sys_awake_130011=没有属性可炼化
+sys_awake_130012=您还有已经聚魔的属性未处理，请选择替换或者炼化
+sys_awake_130013=聚魔{@0:tiem}次并且成功炼魔，获得魔印经验{@1:name}点
+sys_awake_130014=寄存栏已满，请解锁新的栏位，或清空寄存栏
+sys_awake_130015=属性交换成功
+sys_awake_130016=没有选择你要聚魔的装备，请选择！
+sys_awake_130017=没有此类型的书，请确定您选择的书是否正确！
+sys_awake_130018=拥有紫色或橙色以上附魔属性的装备,不能被重铸或熔炼,请手动将其炼化或转移
+sys_awake_130019=扣除物品失败，附魔失败
+sys_awake_130020=扣除物品失败，领悟失败
+sys_awake_130021=没有选择你要领悟的副将，请选择！
+sys_awake_130022=您的钻石聚魔次数不足，请提高Vip等级！
+sys_awake_130023=使用道具成功，该属性存已放在寄存栏中
+sys_awake_130024=升级失败，请检查是否拥有足够的魔印
+sys_awake_130025=属性类型不匹配
+
+sys_clone_teams_130000=你不是队长，无法邀请
+sys_clone_teams_130001=该英雄不在线
+sys_clone_teams_130002=该英雄已经在别的队伍中，无法邀请
+sys_clone_teams_130003=该好友历练不足，无法进入组队副本
+sys_clone_teams_130004=该好友今日组队副本挑战次数已用完
+sys_clone_teams_130005=队伍已满，无法加入队伍
+sys_clone_teams_130006=你已经在队伍里了
+sys_clone_teams_130007=[{@0:name}]被队长踢出了队伍
+sys_clone_teams_130008=该好友未满足挑战条件，无法进入组队副本
+sys_clone_teams_130009=该好友已经没有这个副本的挑战次数
+sys_clone_teams_130010=您要加入的队伍已不在组队状态
+sys_clone_teams_130011=您历练不足，无法进入组队副本
+sys_clone_teams_130012=您今日组队副本挑战次数已用完，无法进行匹配
+sys_clone_teams_130013=这个副本的今日挑战次数，您已经用完
+sys_clone_teams_130014=您未满足挑战条件，无法进入组队副本
+sys_clone_teams_130015=[{@0:name}]退出了队伍
+sys_clone_teams_130016=您还未解锁当前组队副本，无法进入组队副本
+sys_clone_teams_130017=[{@0:name}]取消了匹配
+sys_clone_teams_130018=匹配已成功，但是有队友掉线，请重新匹配
+sys_clone_teams_130019=队伍人数已满足副本所需人数，无法加入
+sys_clone_teams_130020=队伍人数已满足副本所需人数，无法发送邀请
+sys_clone_teams_130021=队伍中没有其他人
+sys_clone_teams_130022 = 您当前处于禁赛中，无法进行邀请
+sys_clone_teams_130023 = 您当前处于活动中，无法进行邀请
+sys_clone_teams_130024 = 该英雄处于战斗状态中，无法进行邀请
+sys_clone_teams_130025 = 该英雄处于被禁赛中，无法进行邀请
+sys_clone_teams_130026 = 该英雄处于活动中，无法进行邀请
+sys_clone_teams_130027=使用双倍收益效果成功，您已处于组队副本双倍收益状态
+sys_clone_teams_130028=您当前正处于组队副本双倍收益状态，无法叠加使用
+sys_clone_teams_130029=使用双倍收益后，下一次组队副本奖励将翻倍，如果通关失败双倍收益效果当天不消失直至通关成功
+sys_clone_teams_130030=该好友还未解锁组队副本功能，无法进入组队副本
+sys_clone_teams_130031=次数不够，不能使用双倍奖励
+
+sys_condition_error_activity=您正在活动中
+sys_relive_sucess=您已原地复活
+sys_relive_local_money_lose=您的钻石不足，系统已自动帮你选择就近复活点
+
+// 邀请相关
+sys_invite_in_team_clone = 正在组队副本中，无法接受邀请
+sys_invite_in_war = 正在战场中，无法接受邀请
+sys_invite_in_league = 正在联赛中，无法接受邀请
+sys_invite_reject = 英雄{@0:name}拒绝了你的邀请
+sys_invite_not_accept = 你正在房间中，无法接受邀请
+sys_invite_in_room = 正在房间中，无法接受邀请
+
+ui_battle_war_killer_name = <font color='{@0:color}'>{@1:name}</font>
+ui_battle_war_suffer_name = <font color='{@0:color}'>{@1:name}</font>
+
+ui_battle_team_name1 = <center><font color='#00ff00'>{@0:name}</font></center>
+ui_battle_team_name2 = <center><font color='#ff0000'>{@0:name}</font></center>
+
+sys_capital_0001 = <font color='#fc7d4b'>失去{@0:value}{@1:capital}</font>
+sys_capital_pay_error_code = 此游戏分区帐户余额不足
+sys_getitem_info_0001=你获得了[<font color='{@0:color}'>{@1:itemname}</font>]
+sys_getitem_info_0002=你获得了<font color='#ffff00'>[{@0:gold}]金币</font>
+sys_getitem_info_0003=[{@1:name}]获得了<font color='#ffff00'>[{@0:gold}]金币</font>
+sys_getitem_info_0004={@2:name}获得了[<font color='{@0:color}'>{@1:itemname}</font>]
+sys_getitem_info_0005=你获得了[{@0:itemname}]*[{@1:itemnum}]
+sys_dignpc_info_0001=您惊动了护宝怪物，此次挖宝结束
+
+sys_compose_patchs_not_enough = 合成{@0:itemname}所需碎片不足
+sys_compose_success = 合成{@0:itemname}成功
+sys_compose_failed = 合成{@0:itemname}失败
+
+sys_use_capital_item_success = 使用{@0:itemname}成功,获得{@1:amount}{@2:capital}
+sys_use_capital_item_failed = 使用{@0:itemname}失败
+
+sys_packageitem_open_success = 打开{@0:itemname}成功
+sys_packageitem_consume_failed = {@0:itemname}扣除失败，打开未完成
+
+sys_addpropitem_prop_full = {@0:name}已经到达上限
+sys_addpropitem_prop_success = 成功获得{@0:name}{@1:amount}点
+
+sys_item_consume_not_enough = 所需{@0:itemname}数量不足
+sys_item_consume_success = 扣除{@0:itemname}
+sys_item_consume_failed = 扣除{@0:itemname}失败
+sys_item_consume_petnpc_success = 你获得了<font color='#{@0:color}'>{@1:itemname}</font>，赶紧去酒馆看看吧
+sys_item_count_max = 您的次数已满，暂时无法使用该道具
+sys_item_count_success = 使用道具成功，次数增加
+sys_item_fashion_not_rolenpc = 当前英雄无法装备该时装
+
+sys_bag_space_not_enough =背包空间不足
+sys_item_amount_not_enough = 需要道具个数不足
+
+//付费商店
+ui_risk_control_1 = 您的账号存在安全风险无法充值，如有疑问，请致电：0512-67630610
+sys_pay_dec_diamond_failed = 扣费失败
+sys_pay_add_item_failed = 购买{@0:itemname}失败
+sys_pay_add_item_success = 购买{@0:itemname}成功
+sys_pay_buy_item_failed = 购买{@0:itemname}失败
+sys_pay_buy_item_success = 购买{@0:itemname}成功
+sys_pay_buy_item_over = 一次最多只能购买200个道具
+sys_pay_buy_money_item_success = 购买成功，获得{@2:amount}{@3:propname}
+sys_pay_buy_item_not_enough_money = 购买{@0:itemname}所需钻石不足
+sys_pay_buy_limit_failed = 购买{@0:itemname}*{@1:count}失败
+sys_pay_buy_limit_success = 购买{@0:itemname}*{@1:count}成功
+sys_pay_buy_limit_not_enough_money = 购买礼包所需钻石不足
+sys_pay_buy_item_not_enough_num = {@0:itemname}可购买数量不足
+sys_pay_buy_limit_not_enough_num = 购买礼包所需VIP等级不足
+sys_pay_buy_limit_not_enough_count = 该礼包已经卖光了
+sys_pay_buy_card_failed = {@0:cardname}剩余时间大于3天，不能续费
+sys_pay_cant_buy_card = {@0:cardname}未到期，不能购买其他卡
+sys_pay_cant_use_card = {@0:cardname}未到期，不能使用此道具
+sys_pay_first_pay_gift = 首充获得{@0:itemname}
+sys_pay_month_quest_failed = 领取失败
+sys_pay_gift_failed = 领取{@0:itemname}失败
+sys_item_card_consume_success = 使用{@0:itemname}成功
+sys_card_replace_confirm = <center>使用此道具会清除{@0:cardname}的剩余有效期，是否继续？</center>
+sys_pay_limit_success = 您购买的充值限时商品已到账，请查收邮件
+ui_buy_too_frequently = 购买太频繁，请稍候
+sys_limit_role_success = 成功使用{@0:amount}张限时秘境重置券重置了一次限时秘境
+sys_limit_role_false = 使用限时秘境重置券失败
+sys_pay_buy_diamond_success = 充值成功，请查收
+sys_need_diamond_instead = 绑定钻石不足，是否用{@0:number}钻石代替？
+sys_pay_repair = 恢复购买记录成功
+//
+sys_itemcard_wrong_number = 请输入正确的卡号
+sys_itemcard_wrong_password = 请输入正确的密码
+sys_itemcard_ilegal_character = 卡号不正确(卡号只能由子母及数字组成)
+//
+sys_login_failed = 登录失败
+sys_connect_failed = 您的网络状态不稳定，网络连接已断开，请尝试重新连接
+
+sys_guide_failed = <font color='#FF0000'>引导失败，请重启客户端继续...</font>
+sys_guide_relogin = <center>引导失败，请重新登录继续...</center>
+
+//战场消息
+sys_battlewar_0002 = 战场进入需要达到{@0:level}级
+sys_battlewar_0003 = 报名失败
+sys_battlewar_0004 = 战场报名成功,请等待...
+sys_battlewar_0006 = 战场匹配成功
+sys_battlewar_0007 = 你已在报名中，无法再次报名
+sys_battlewar_0008 = 战场开启时间未到，请稍作等待
+sys_battlewar_0012 = 该英雄不在线
+sys_battlewar_0013 = 该英雄已经接受其他邀请
+sys_battlewar_0014 = 必须由房主邀请
+sys_battlewar_0016 = 有队友申请过战场或者达到申请上限
+sys_battlewar_0034 = 必须由房主报名
+sys_battlewar_0035 = 匹配成功，即将进入战场
+sys_battlewar_0036 = 由于房主退出房间，该房间解散,请重新报名
+sys_battlewar_0037 = 创建房间请先取消报名
+sys_battlewar_0038 = 有英雄退出房间,请重新报名
+sys_battlewar_0039 = 队伍中有英雄进入战场次数不足
+sys_battlewar_0040 = 可进入战场次数不足，成为VIP可获得额外次数
+sys_battlewar_0050 = 取消战场报名成功
+sys_battlewar_0051 = 该英雄已报过名，无法邀请
+sys_battlewar_0052 = 该房间已经开始匹配
+sys_battlewar_0053 = 物品已经售完
+sys_battlewar_0054 = 您的战场荣誉值不够
+sys_battlewar_0055 = 该房间人数已满，无法进入
+sys_battlewar_0056 = 该房间不存在
+sys_battlewar_0057 = 太极战场已经开始，请各位勇士准备进入
+sys_battlewar_0058 = 太极战场已经结束
+sys_battlewar_0059 = 历练值不够，无法进入战场
+sys_battlewar_0060 = {@0:name}已经报过名
+sys_battlewar_0061 = {@0:name}进入次数不足
+sys_battlewar_0062 = {@0:name}等级不足{@1:level}级，无法进入战场
+sys_battlewar_0063 = {@0:name}历练值不足
+sys_battlewar_0064 = 该英雄已经进入战场
+sys_battlewar_0065 = 你已经在房间中
+sys_battlewar_0066 = 您的巅峰令不够
+sys_battlewar_0067 = 您的勇者之证不够 
+sys_battlewar_0068 = {@0:name}加入房间
+sys_battlewar_0069 = 你已经被踢出了房间
+sys_battlewar_0070 = 你已退出房间
+sys_battlewar_0071 = 该英雄不在主城中
+sys_battlewar_0072 = 该英雄正在匹配中
+sys_battlewar_0073 = 该英雄处于战斗状态中，无法进行邀请
+sys_battlewar_0074 = 该英雄处于被禁赛中，无法进行邀请
+sys_battlewar_0075 = 该英雄处于活动中，无法进行邀请
+sys_battlewar_0076 = 您的魔族之血不足
+sys_battlewar_0077 = 正处于活动中，无法进入浴血沙场
+sys_battlewar_0078 = 积分不足无法购买
+sys_battlewar_0088 = 战队等级过低，无法进入浴血沙场
+sys_battlewar_0091 = 浴血沙场次数不足，无法加入队伍中
+sys_battlewar_0092 = 无随机战场可进入
+sys_battlewar_0093 = 玩家{@0:name}不能和你进入同样的随机战场
+sys_battlewar_0094 = 无法进行匹配，本周开放的是平衡王者对决请更换到对应模式后再试
+sys_battlewar_0095 = 无法进行匹配，本周开放的是战力王者对决请更换到对应模式后再试
+sys_battlewar_0096 = 无法进行匹配，本周开放的是平衡王者联赛请更换到对应模式后再试
+sys_battlewar_0097 = 无法进行匹配，本周开放的是战力王者联赛请更换到对应模式后再试
+sys_battlewar_0100 = 英雄信息传输失败
+sys_battlewar_0101 = <center>您确定中途退出此次的比赛吗？</center>
+sys_battlewar_1101 = 您确定要退出此次的观战？
+sys_battlewar_0333 = 战斗未开始
+sys_battlewar_0401 = <font color='#FF00FF'>[{@0:name}]</font>在巅峰对决中，连续获胜<font color='#FF0000'>{@1:num}次</font>，已经无人可挡了！
+sys_battlewar_0402 = <font color='#FF00FF'>[{@0:name}]</font>已经在巅峰对决中连续斩获<font color='#FF0000'>{@1:num}次</font>胜利，已经接近神了！
+sys_battlewar_0403 = <font color='#FF0000'>{@1:num}连斩！</font><font color='#FF00FF'>[{@0:name}]</font>在巅峰对决中已经很久没有尝到失败的滋味了，还有谁能阻止TA！
+sys_battlewar_0404= 你的进入次数不足
+sys_battlewar_0405= 您的队伍尚不足3人,无法进行匹配！
+sys_battlewar_0406= 战队仍在战斗中，请等待！
+sys_battlewar_0407 = <font color='#FF00FF'>[{@0:name}]</font>在王者对决中，连续获胜<font color='#FF0000'>{@1:num}次</font>，已经无人可挡了！
+sys_battlewar_0408 = <font color='#FF00FF'>[{@0:name}]</font>已经在王者对决中连续斩获<font color='#FF0000'>{@1:num}次</font>胜利，已经接近神了！
+sys_battlewar_0409 = <font color='#FF0000'>{@1:num}连胜！</font><font color='#FF00FF'>[{@0:name}]</font>在王者对决中已经很久没有尝到失败的滋味了，还有谁能阻止TA！
+sys_battlewar_0410 = 战队有未结束的战斗，请等待！
+sys_battlewar_0411 = 战队阵容中禁止选用相同职业，请协调阵容后再试。
+sys_battlewar_0412 = 切换失败，战队阵容中禁止选用相同职业，请更换其他职业后再试。
+sys_battlewar_0413 = 双倍领取成功
+
+//夺旗战场
+sys_battlewar_0500 = 我方正在向胜利迈进
+sys_battlewar_0501 = 敌方正在迈进胜利
+sys_battlewar_0502 = 我方阵营旗帜被{@0:name}夺走
+sys_battlewar_0503 = {@0:name}夺回了阵营旗帜
+sys_battlewar_0504 = 请尽快将旗帜送到己方阵营点
+sys_battlewar_0505 = 敌方阵营旗帜已被我方{@0:name}机智的夺走，注意接应
+
+sys_battlewar_0102 = 确定退出观战模式？
+
+sys_battlewar_0200 = {@0:time}秒后可取消
+sys_battlewar_0201 = {@0:time}秒后可匹配
+
+sys_battlewar_watch_faild = 观战人数已满，下次记得早点哦 ^_^
+
+ui_war_report_sb = 你要举报<font color='#FF0000'>[{@0:name}]</font>
+ui_chat_report_sb = 你要举报<font color='#FF0000'>[{@0:name}]</font>
+sys_battlewar_guaji = 您当前处于消极挂机状态，请尽快加入战斗否则将被强制踢出
+
+//背包
+sys_bag_122006 = 背包空间不足，无法获得更多物品
+sys_cont_125005 = 剩余空间不足
+sys_cont_125007 = 整理物品的频率太快，请稍等片刻
+
+sys_chat_channel = 当前处于房间频道，不可切换
+//--------------------------------以下是原systemhelp内容------------------------------------------
+ErrorCodeFromServer_1		= 结果成功
+ErrorCodeFromServer_0		= 结果失败
+
+//计费应用
+ErrorCodeFromServer_20101 = <center>网络通讯协议版本错误(20101)</center>
+ErrorCodeFromServer_20102 = <center>同一个帐号不能重复登陆(20102)</center>
+ErrorCodeFromServer_20103 = <center>要进入的场景未开放或已关闭(20103)</center>
+ErrorCodeFromServer_20104 = <center>连接数满(20104)</center>
+ErrorCodeFromServer_20105 = <center>在一段时间内禁止登陆(20105)</center>
+ErrorCodeFromServer_20106 = <center>登录超时(20106)</center>
+ErrorCodeFromServer_20107 = <center>登录队列满(20107)</center>
+ErrorCodeFromServer_20108 = <center>服务器与角色数据库的连接故障(20108)</center>
+ErrorCodeFromServer_20109 = <center>服务器与计费服务器的连接故障(20109)</center>
+ErrorCodeFromServer_20110 = <center>要切换的场景不存在(20110)</center>
+ErrorCodeFromServer_20111 = <center>此帐号已经登陆此游戏服务器(20111)</center>
+ErrorCodeFromServer_20112 = <center>帐号密码中包含非法字符(20112)</center>
+ErrorCodeFromServer_20113 = <center>因费用不足已经被系统踢出(20113)</center>
+ErrorCodeFromServer_20114 = <center>承载人数已经达到服务器上限(20114)</center>
+ErrorCodeFromServer_20115 = <center>没有可使用的场景(20115)</center>
+ErrorCodeFromServer_20116 = <center>被系统踢下线(20116)</center>
+ErrorCodeFromServer_20117 = <center>正在进行处理中(20117)</center>
+ErrorCodeFromServer_20118 = <center>无法处理请求(20118)</center>
+ErrorCodeFromServer_20119 = <center>涉嫌使用作弊程序向服务器发送非法消息(20119)</center>
+ErrorCodeFromServer_20120 = <center>此账号已经进入游戏(20120)</center>
+ErrorCodeFromServer_20121 = <center>使用密保卡登陆的不能被其他不同IP顶替(20121)</center>
+ErrorCodeFromServer_20122 = <center>被管理员踢下线(20122)</center>
+ErrorCodeFromServer_20123 = <center>登陆类型为管理员，不能被踢下线(20123)</center>
+ErrorCodeFromServer_20124 = <center>当前服务器不允许进入场景(20124)</center>
+ErrorCodeFromServer_20125 = <center>与服务器断开连接，重新登录(20125)</center>
+ErrorCodeFromServer_21101 = <center>人物重名(21101)</center>
+ErrorCodeFromServer_21102 = <center>人物在保护期内，不可删除(21102)</center>
+ErrorCodeFromServer_21103 = <center>人物存盘失败(21103)</center>
+ErrorCodeFromServer_21104 = <center>人物数据错误(21104)</center>
+ErrorCodeFromServer_21105 = <center>超过总的人物数量限制(21105)</center>
+ErrorCodeFromServer_21106 = <center>人物位置错误(21106)</center>
+ErrorCodeFromServer_21107 = <center>人物没找到(21107)</center>
+ErrorCodeFromServer_21108 = <center>名字重复(21108)</center>
+ErrorCodeFromServer_21109 = <center>名字包含非法字符(21109)</center>
+ErrorCodeFromServer_21110 = <center>此名称已存在(21110)</center>
+ErrorCodeFromServer_21111 = <center>数据库忙，无法处理请求(21111)</center>
+ErrorCodeFromServer_21112 = <center>计费系统忙，无法处理请求(21112)</center>
+ErrorCodeFromServer_21113 = <center>信件数量超过上限(21113)</center>
+ErrorCodeFromServer_21114 = <center>创建人物时编号资源不足(21114)</center>
+ErrorCodeFromServer_21115 = <center>人物转服时服务器不存在(21115)</center>
+ErrorCodeFromServer_21116 = <center>此服务器不能执行人物转服(21116)</center>
+ErrorCodeFromServer_21117 = <center>人物存盘数据超过允许的上限(21117)</center>
+ErrorCodeFromServer_21118 = <center>转服时目标服务器的状态发生改变(21118)</center>
+ErrorCodeFromServer_21119 = <center>新建人物时未设置登陆场景(21119)</center>
+ErrorCodeFromServer_21120 = <center>新建人物时保存数据失败(21120)</center>
+ErrorCodeFromServer_21121 = <center>人物数据在一段时间内被封闭(21121)</center>
+ErrorCodeFromServer_21122 = <center>计费登陆失败(21122)</center>
+ErrorCodeFromServer_21123 = <center>加载人物数据失败(21123)</center>
+ErrorCodeFromServer_21124 = <center>获取英雄列表失败(21124)</center>
+ErrorCodeFromServer_21125 = <center>创建人物数据失败(21125)</center>
+ErrorCodeFromServer_21126 = <center>删除人物数据失败(21126)</center>
+ErrorCodeFromServer_21127 = <center>收信人不存在(21127)</center>
+ErrorCodeFromServer_21128 = <center>角色正在使用中，不允许转服(21128)</center>
+ErrorCodeFromServer_21130 = <center>登录异常，请稍候登录。(21130)</center>
+ErrorCodeFromServer_22000 = <center>服务器内部错误(22000)</center>
+ErrorCodeFromServer_22001 = <center>房间服务器已经关闭(22001)</center>
+ErrorCodeFromServer_22002 = <center>英雄不存在(22002)</center>
+ErrorCodeFromServer_22003 = <center>平台服务器已经关闭(22003)</center>
+ErrorCodeFromServer_22004 = <center>战场已经结束(22004)</center>
+ErrorCodeFromServer_1000 = <center>连接超时,请稍后再试(1000)</center>
+ErrorCodeFromServer_1001 = <center>缺少参数或参数不正确(1001)</center>
+ErrorCodeFromServer_1002 = <center>表或视图不存在(1002)</center>
+ErrorCodeFromServer_1003 = <center>联合运营串登录 URL串时间超期失效(1003)</center>
+ErrorCodeFromServer_1004 = <center>联合运营串登录 校验串不正确(1004)</center>
+ErrorCodeFromServer_1005 = <center>数据库过程调用失败(1005)</center>
+ErrorCodeFromServer_50000 = <center>帐号验证失败，请稍后再试[游戏盒子返回需要计费创建帐号](50000)</center>
+ErrorCodeFromServer_50001 = <center>游戏服务器ID不可识别(50001)</center>
+ErrorCodeFromServer_50002 = <center>游戏分区信息不存在或已禁用(50002)</center>
+ErrorCodeFromServer_50003 = <center>游戏服务器状态为‘禁用’(50003)</center>
+ErrorCodeFromServer_50004 = <center>游戏服务器注册IP不正确(50004)</center>
+ErrorCodeFromServer_50005 = <center>游戏服务器注册的游戏与计费配置游戏不匹配(50005)</center>
+ErrorCodeFromServer_50007 = <center>游戏服务器ID被替换(50007)</center>
+ErrorCodeFromServer_51001 = <center>账号不存在(51001)</center>
+ErrorCodeFromServer_51002 = <center>登录密码不正确(51002)</center>
+ErrorCodeFromServer_51003 = <center>此帐号已被冻结(51003)</center>
+ErrorCodeFromServer_51004 = <center>帐号为锁定状态，请会员中心解锁后再试(51004)</center>
+ErrorCodeFromServer_51005 = <center>非法GM帐号登录(51005)</center>
+ErrorCodeFromServer_51006 = <center>登录帐号或密码不正确(51006)</center>
+ErrorCodeFromServer_51007 = <center>此帐号受动态口令服务保护，请选择动态口令登录方式(51007)</center>
+ErrorCodeFromServer_51008 = <center>您的帐号并未绑定动态口令卡或尚未开通服务，请选择普通方式登录(51008)</center>
+ErrorCodeFromServer_51009 = <center>此游戏分区不存在已禁用(51009)</center>
+ErrorCodeFromServer_51010 = <center>此游戏不存在或已禁用(51010)</center>
+ErrorCodeFromServer_51011 = <center>账号未激活(51011)</center>
+ErrorCodeFromServer_51012 = <center>此游戏未被激活(51012)</center>
+ErrorCodeFromServer_51013 = <center>此游戏分区帐户尚未激活(此用户在这个分区没有充过值)(51013)</center>
+ErrorCodeFromServer_51014 = <center>此帐号已在游戏分区内其他服务器登录(51014)</center>
+ErrorCodeFromServer_51015 = <center>动态口令错误，禁止登录(51015)</center>
+ErrorCodeFromServer_51016 = <center>您的帐号绑定的动态口令卡已过期，请解除绑定或换卡后再登录(51016)</center>
+ErrorCodeFromServer_51017 = <center>此游戏分区帐户余额不足(51017)</center>
+ErrorCodeFromServer_51018 = <center>更新分区账户信息失败(51018)</center>
+ErrorCodeFromServer_51019 = <center>新增游戏分站帐号登录统计信息失败(51019)</center>
+ErrorCodeFromServer_51020 = <center>记录游戏分站帐号登录统计信息失败(51020)</center>
+ErrorCodeFromServer_51021 = <center>创建登录日志失败(51021)</center>
+ErrorCodeFromServer_51022 = <center>查询游戏道具信息失败[虚拟道具编码不存在](51022)</center>
+ErrorCodeFromServer_51023 = <center>游戏道具价格不匹配[物品点数单价发生变化,请刷新](51023)</center>
+ErrorCodeFromServer_51024 = <center>购买数量或单价有误(51024)</center>
+ErrorCodeFromServer_51025 = <center>游戏道具代点券使用情况不匹配(51025)</center>
+ErrorCodeFromServer_51026 = <center>账户余额不足[门户帐户余额不足](51026)</center>
+ErrorCodeFromServer_51027 = <center>所赠送的帐号不存在[未知帐号请求](51027)</center>
+ErrorCodeFromServer_51028 = <center>商城内购买道具日志记录失败(51028)</center>
+ErrorCodeFromServer_51029 = <center>扣除账户余额失败[点卡可能之前已售出或已撤消](51029)</center>
+ErrorCodeFromServer_51030 = <center>寄售点卡记录插入失败(51030)</center>
+ErrorCodeFromServer_51031 = <center>分区账户进账失败(51031)</center>
+ErrorCodeFromServer_51032 = <center>购买寄售点卡失败(51032)</center>
+ErrorCodeFromServer_51033 = <center>插入游戏中点卡寄售购买错误日志记录失败(51033)</center>
+ErrorCodeFromServer_51034 = <center>查询用户最后登录信息失败(51034)</center>
+ErrorCodeFromServer_51035 = <center>查询帐号安全信息失败(51035)</center>
+ErrorCodeFromServer_51036 = <center>查询客服提交问题失败(51036)</center>
+ErrorCodeFromServer_51037 = <center>查询通行证基本信息失败(51037)</center>
+ErrorCodeFromServer_51038 = <center>查询最近获取电子口令卡信息失败(51038)</center>
+ErrorCodeFromServer_51039 = <center>一周内已取过电子口令卡(51039)</center>
+ErrorCodeFromServer_51040 = <center>没有可用的电子口令卡(51040)</center>
+ErrorCodeFromServer_51041 = <center>获取电子口令卡失败(51041)</center>
+ErrorCodeFromServer_51042 = <center>查询VIP级别失败,无记录(51042)</center>
+ErrorCodeFromServer_51043 = <center>记录游戏分站帐号登录日志失败(51043)</center>
+ErrorCodeFromServer_51044 = <center>更新游戏分站帐号登录日志失败(51044)</center>
+ErrorCodeFromServer_51045 = <center>口令卡号未填写(51045)</center>
+ErrorCodeFromServer_51046 = <center>查询此用户分区激活信息失败(51046)</center>
+ErrorCodeFromServer_51047 = <center>查询此用户游戏激活信息失败(51047)</center>
+ErrorCodeFromServer_51048 = <center>分区账户查询失败(51048)</center>
+ErrorCodeFromServer_51049 = <center>查询用户未读回复信息失败(51049)</center>
+ErrorCodeFromServer_51050 = <center>用户游戏内购买物品获取回执执行失败(51050)</center>
+ErrorCodeFromServer_51051 = <center>查询用户网上商城购买物品或赠品信息失败(51051)</center>
+ErrorCodeFromServer_51052 = <center>用户获取数量小于0(51052)</center>
+ErrorCodeFromServer_51053 = <center>获取英雄网上商城购买物品或赠品信息失败(51053)</center>
+ErrorCodeFromServer_51054 = <center>用户收到物品的回执更新失败(51054)</center>
+ErrorCodeFromServer_51055 = <center>记录超级密码登录日志失败(51055)</center>
+ErrorCodeFromServer_51056 = <center>记录游戏服务器历史在线人数失败(51056)</center>
+ErrorCodeFromServer_51057 = <center>寄售点卡已撤销(51057)</center>
+ErrorCodeFromServer_51058 = <center>寄售点卡已售出(51058)</center>
+ErrorCodeFromServer_51059 = <center>寄售点卡信息有误(51059)</center>
+ErrorCodeFromServer_51060 = <center>点卡寄售两小时内不可撤消(51060)</center>
+ErrorCodeFromServer_51061 = <center>寄售人不能购买自己寄售的点卡(51061)</center>
+ErrorCodeFromServer_51062 = <center>游戏服务器在线人数统计失败(51062)</center>
+ErrorCodeFromServer_51063 = <center>寄售点数不能少于100点(51063)</center>
+ErrorCodeFromServer_51064 = <center>寄售人帐号不存在(51064)</center>
+ErrorCodeFromServer_51065 = <center>寄售的道具不存在(51065)</center>
+ErrorCodeFromServer_51066 = <center>寄售的道具已售出(51066)</center>
+ErrorCodeFromServer_51067 = <center>更新游戏登录日志MAC地址失败(51067)</center>
+ErrorCodeFromServer_51068 = <center>当前在线记录不存在(51068)</center>
+ErrorCodeFromServer_51069 = <center>尊敬的用户，您属于防沉迷帐号，现在是不健康游戏时间，请您休息满5小时后方可登陆游戏！(51069)</center>
+ErrorCodeFromServer_51070 = <center>兑换比例不正确(1点只能兑换4文金子或银票)(51070)</center>
+ErrorCodeFromServer_51071 = <center>兑换游戏点数类型不正确(51071)</center>
+ErrorCodeFromServer_51072 = <center>此帐号受SIM卡密宝服务保护，请选择SIM卡方式登录(51072)</center>
+ErrorCodeFromServer_51073 = <center>您的帐号并未绑定SIM卡或尚未开通服务，请选择普通方式登录(51073)</center>
+ErrorCodeFromServer_51074 = <center>SIM卡动态口令不正确(51074)</center>
+ErrorCodeFromServer_51075 = <center>柜面道具已下架(51075)</center>
+ErrorCodeFromServer_51076 = <center>活动未开始(51076)</center>
+ErrorCodeFromServer_51077 = <center>活动已结束(51077)</center>
+ErrorCodeFromServer_51078 = <center>总数量限制上限(51078)</center>
+ErrorCodeFromServer_51079 = <center>单帐号限量上限(51079)</center>
+ErrorCodeFromServer_51080 = <center>创建失败, 游戏战队名/军团名已被使用(51080)</center>
+ErrorCodeFromServer_51081 = <center>修改失败, 游戏战队名/军团名不存在(51081)</center>
+ErrorCodeFromServer_51082 = <center>删除失败, 游戏战队名/军团名不存在(51082)</center>
+ErrorCodeFromServer_51083 = <center>此订单号已处理过(订单号:引擎生成的唯一标识)(51083)</center>
+ErrorCodeFromServer_51084 = <center>此接口已停止使用，请更新到新版本(51084)</center>
+ErrorCodeFromServer_51085 = <center>兑换游戏点数失败(51085)</center>
+ErrorCodeFromServer_51086 = <center>对不起,您不属于本次的测试区域,无法进行游戏登陆(51086)</center>
+ErrorCodeFromServer_51087 = <center>登录受限,请联系客服处理(51087)</center>
+ErrorCodeFromServer_51088 = <center>您的帐号绑定的令牌密保已过期，请解除绑定或更换后再登录(51088)</center>
+ErrorCodeFromServer_51089 = <center>您的帐号绑定的令牌密保需要效验，请到会员中心操作(51089)</center>
+ErrorCodeFromServer_51090 = <center>您的令牌密保错误，禁止登录(51090)</center>
+ErrorCodeFromServer_51091 = <center>此帐号受令牌密保服务保护，请选择令牌密保方式登录(51091) </center>
+ErrorCodeFromServer_51092 = <center>帐号为转服锁定状态，请稍后再试(51092)</center>
+ErrorCodeFromServer_51093 = <center>您在此服务器的游戏权限尚未激活,请至jhm页面进行激活(51093)</center>
+ErrorCodeFromServer_51094 = <center>此帐号受手机令牌密保服务保护，请选择手机令牌密保方式登录(51094)</center>
+ErrorCodeFromServer_51095 = <center>您的帐号绑定的手机令牌密保已过期，请解除绑定或更换后再登录(51095)</center>
+ErrorCodeFromServer_51096 = <center>您的帐号绑定的手机令牌密保需要效验，请到会员中心操作(51096)</center>
+ErrorCodeFromServer_51097 = <center>您的手机令牌密保错误，禁止登录(51097)</center>
+ErrorCodeFromServer_51098 = <center>操作失败(51098)</center>
+ErrorCodeFromServer_51099 = <center>电话锁验证失败(51099)</center>
+ErrorCodeFromServer_51100 = <center>电话锁服务商系统故障(51100)</center>
+ErrorCodeFromServer_51111 = <center>服务器ID已经被使用(51111)</center>
+ErrorCodeFromServer_51999 = <center>您的帐号已纳入家长监控，账号被封停(51999)</center>
+ErrorCodeFromServer_51101 = <center>SSO 验证失败，请重新登录(51101)</center>
+ErrorCodeFromServer_54066 = <center>发送手机验证码失败(54066)</center>
+ErrorCodeFromServer_54067 = <center>手机已认证(54067)</center>
+ErrorCodeFromServer_54069 = <center>手机验证失败(54069)</center>
+ErrorCodeFromServer_51990 = <center>您的账户不安全， 建议去XXXX修改密码(51990)</center>
+ErrorCodeFromServer_65001 = <center>联合/区域运营商不存在或状态为已禁用(65001)</center>
+ErrorCodeFromServer_65002 = <center>联合/区域运营商尚未运营此游戏(65002)</center>
+ErrorCodeFromServer_65003 = <center>帐号所属运营商不匹配(65003)</center>
+ErrorCodeFromServer_65004 = <center>联合/区域运营商的密码不匹配(65004)</center>
+ErrorCodeFromServer_65005 = <center>联合/区域运营商加密串格式不正确(65005)</center>
+ErrorCodeFromServer_65006 = <center>验证时间戳(5分钟内有效,即：当前系统时间前后5分钟内有效)(65006)</center>
+ErrorCodeFromServer_65007 = <center>校验参数加密串(65007)</center>
+ErrorCodeFromServer_65008 = <center>创建账号失败， 稍后重试(65008)</center>
+ErrorCodeFromServer_91001 = <center>合并源分区和目的分区相同(91001)</center>
+ErrorCodeFromServer_91002 = <center>合并的源分区不存在(91002)</center>
+ErrorCodeFromServer_91003 = <center>合并的源分区目前仍为正常状态, 不能执行合并操作(91003)</center>
+ErrorCodeFromServer_91004 = <center>合并的目的分区不存在或状态为已禁用(91004)</center>
+ErrorCodeFromServer_91005 = <center>合并的源分区和目的分区已经执行过合并操作(91005)</center>
+ErrorCodeFromServer_91006 = <center>合并的源分区和目的分区不属于同一个游戏(91006)</center>
+ErrorCodeFromServer_91007 = <center>合并的源分站DBLINK不存在或已禁用(91007)</center>
+ErrorCodeFromServer_91008 = <center>并的目的分站DBLINK不存在或已禁用(91008)</center>
+
+//兑换道具卡返回信息
+sys_itemcardsend_failed=请求发送失败，请重试
+ItemcardReturnInfo_1= 兑换成功，请注意查收
+ItemcardReturnInfo_0= 兑换失败，请核实兑换码
+ItemcardReturnInfo_50001=游戏服务器ID不可识别或禁用
+ItemcardReturnInfo_52009=游戏分区不存在或已禁用
+ItemcardReturnInfo_52005=用户帐号不存在或已禁用
+ItemcardReturnInfo_52061=道具卡卡号无效
+ItemcardReturnInfo_52001=道具卡卡号不存在
+ItemcardReturnInfo_52003=此道具卡未激活
+ItemcardReturnInfo_52004=此道具卡已使用
+ItemcardReturnInfo_52063=此道具卡信息查询异常
+ItemcardReturnInfo_52008=此道具卡有效期已过
+ItemcardReturnInfo_52007=此道具卡批次信息不正确
+ItemcardReturnInfo_52006=此道具卡类型不存在或未启用
+ItemcardReturnInfo_52002=卡密码不正确
+ItemcardReturnInfo_52010=充入分区游戏ID跟传入的游戏ID不匹配
+ItemcardReturnInfo_52073=此道具卡不能充到该分区
+ItemcardReturnInfo_52016=不能再充此道具卡,已到最大数量限制
+ItemcardReturnInfo_52020=此道具卡充值信息插入异常
+ItemcardReturnInfo_52075=该道具卡限制分区充值,该道具卡此服务器限充一张
+ItemcardReturnInfo_52074=该道具卡只能在新区开启7天内充值
+ItemcardReturnInfo_52028=此道具卡充值记录插入异常
+ItemcardReturnInfo_52027=此道具卡充值信息记录异常
+ItemcardReturnInfo_52069=此道具卡批次开卡数量更新失败
+ItemcardReturnInfo_14112=输入卡号不存在
+ItemcardReturnInfo_10002=接口处理异常
+ItemcardReturnInfo_1001=此道具卡状态不是正常充值状态,请联系客服人员查询
+ItemcardReturnInfo_14131=输入的卡号与激活类型不一致
+ItemcardReturnInfo_14132=道具卡未激活
+ItemcardReturnInfo_14133=道具卡已使用
+ItemcardReturnInfo_14134=道具卡已禁用
+ItemcardReturnInfo_1006=兑换失败，请核实兑换码
+ItemcardReturnInfo_52076=此道具卡不能充到该运营商
+
+//功能开关返回信息
+sys_switch_1 = 获取体力暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_2 = 签到礼包暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_3 = 等级礼包暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_4 = 开服礼包暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_5 = 在线礼包暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_6 = 购买投资计划暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_7 = 领取投资计划收益暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_8 = 免费开启宝藏暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_9 = 花费开一次宝藏暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_10 = 花费十连开宝藏暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_12 = 充值暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_13 = 购买VIP礼包暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_14 = 购买道具暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_15 = 收取附件暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_16 = 好友馈赠暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_17 = 领取好友馈赠暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_18 = 领取全部好友馈赠暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_19 = 熔炼暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_20 = 重铸暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_21 = 黑市兑换暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_22 = 黑市刷新暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_23 = 天赋暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_24 = 酒馆招募购买暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_25 = 酒馆刷新暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_26 = 武神分解暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_27 = 创建公会暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_28 = 公会建设暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_29 = 祈福殿暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_30 = 夺宝抢夺暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_31 = 夺宝合成暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_32 = 夺宝购买和平模式暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_33 = 竞技场兑换暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_34 = 竞技场挑战暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_35 = 战场组队暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_36 = 战场单人匹配暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_37 = 战场荣誉商店暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_38 = 组队副本单人匹配暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_39 = 组队副本多人匹配暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_40 = 上传玩家等级暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_41 = 邮件一键收取暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_42 = 月签签到暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_43 = 月签补签暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_44 = 称号暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_45 = 改名暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_46 = 圣诞节活动暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_47 = 组队副本快速匹配暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_53 = 时装附魔暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_54 = 附魔交换暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_69 = 勇者商店重置暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_70 = 巅峰商店重置暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_71 = 荣誉商店重置暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_72 = 擂台商店重置暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_73 = 阵营商店重置暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_75 =物品仓库暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_76 =碎片仓库暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_77 =物品仓库解锁格子暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_78 =碎片仓库解锁格子暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_86 = 交易行暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_91 = 时装领取奖励暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_92 = 时装锁定属性暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_93 = 时装解锁属性暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_94 = 遗迹巨魔暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_95 = 微信分享暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_96 = 荒野镖客暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_97 = 国家宝藏暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_98 = 夺宝联盟暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_99 = 世界BOSS暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_101 = 二级密码暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_103 = 降魔商店暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_104 = 该玩法暂时关闭，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_105 = 观战暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_106 = 创建王者战队暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_107 = 王者对决暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_108 = 王者联赛暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_109 = 根据开服天数增加经验，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_110 = 翻牌活动暂未开启或已关闭，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_111 = 荒野狂飙暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_113 = 无双联赛观战暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_114 = 无双联赛匹配暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_115 = 无双联赛膜拜暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_116 = 荣誉殿暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_117 = 酒馆功能暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_118 = 附魔功能暂时不可用，造成不便，敬请谅解，请留意官方公告
+sys_switch_119 = 问答活动暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_120 = 纳哈克好声音暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_121 = 第一阶段挑战赛已经结束，敬请谅解，请关注官方活动页面
+sys_switch_122 = 免费进入秘境功能暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_123 = 常规进入秘境功能暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_124 = 重置秘境次数功能暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_125 = 祭坛功能暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_126 = 活动异常，请重开界面恢复
+sys_switch_127 = 家园系统暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_128 = 家园城池功能暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_129 = 法宝系统暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_136 = 成就系统暂时不可用，给您造成不便，敬请谅解，请留意官方公告
+sys_switch_138 = 此玩法暂停开放，更多详情请留意官网公告
+
+ui_prohibit_plays_001 = 您因为非法操作暂时无法使用此玩法，请{@0:time}之后再试
+
+//充值提示
+pay_6480 = 6480钻石
+pay_3280 = 3280钻石
+pay_1980 = 1980钻石
+pay_980 = 980钻石
+pay_300 = 300钻石
+pay_60 = 60钻石
+pay_monthcard = 一张月卡
+pay_quartercard = 一张季卡
+pay_yearcard = 一张年卡
+pay_fulicard= 一张福利卡
+
+//微信分享
+sys_share_to_friend = 太极熊猫很不错哟，快来和我一起组队玩吧。
+
+
+//交易行
+sys_trade_01=无法购买自己出售的物品！
+sys_trade_02=恭喜，上架成功！
+sys_trade_03=请输入要搜索的物品名。
+sys_trade_03a=搜索不到物品分类。
+sys_trade_04=请选择要购买的商品。
+sys_trade_05=交易行已爆满，请稍后再试。
+sys_trade_06=操作失败#{@0:num}
+sys_trade_07=恭喜您已成功消耗{@0:n64}钻石购买了{@1:n}个{@2:str}物品
+sys_trade_08=下架成功
+sys_trade_09=钻石不足
+sys_trade_10=您的出售栏位已满！
+sys_trade_11=出售价格不能低于20
+sys_trade_12=<font color="#00ff3e">{@0:name}</font>已成功售出，恭喜获得<font color="#00ff3e">{@1:num}</font>钻石!
+sys_trade_13=交易记录已清空
+sys_trade_14=是否清空交易记录？
+sys_trade_15=操作过于频繁
+sys_trade_16=此物品无法出售
+sys_trade_17=物品不存在，退还购买费用
+sys_trade_18=交易行已爆满，请稍后再试。
+sys_trade_19=物品已綁定
+sys_trade_20=钻石不足！
+sys_trade_20a=金币不足！
+sys_trade_21=出售价格不能低于20！
+sys_trade_22=交易行已爆满！
+sys_trade_23=已无更多商品
+sys_trade_24=已拥有的钻石超出上限
+sys_trade_25=<font color="#00ff3e">{@0:name}</font>出售到期，自动下架
+sys_trade_26=你确定消耗<font color="#00ff3e">{@0:num}</font>金币增加一个寄售栏位？
+sys_trade_27=你确定消耗<font color="#00ff3e">{@0:num}</font>绑钻/钻石增加一个寄售栏位？
+sys_trade_28=你确定消耗<font color="#00ff3e">{@0:num}</font>绑钻/钻石增加一个寄售栏位？
+sys_trade_29=资金不足!
+sys_trade_30=可扩展寄售栏位数量已经达到最大！
+sys_trade_31=已过期
+sys_trade_32=价格已上调至当前最高值
+sys_trade_33=价格已下调至当前最低值
+sys_trade_34=你确定消耗<font color="#00ff3e">{@0:num}</font>钻石来购买此物品?
+sys_trade_65=该物品最低出售价格不能低于<font color="#00ff3e">{@0:num}</font>钻。
+
+sys_trade_66=交易行中暂无该价格物品，请稍后再试。
+sys_trade_67=强化过的法宝不能交易。
+sys_trade_68=进阶过的法宝不能交易。
+sys_trade_69=该物品最高出售价格不能高于<font color="#00ff3e">{@0:num}</font>钻。
+
+//熊猫2多角色
+role_npc_buy_succeed=您已经成功召唤一个英雄
+role_npc_active_succeed=你已经成功召唤{@0:name}
+sys_pvp_killtype_npc=您被怪物击败了，请选择就近复活点
+sys_pvp_killtype_player=您被英雄{@0:name}击败了，请选择就近复活点
+sys_pvp_set_error_activity=<font color='#ff0000'>活动中无法切换PVP模式</font>
+sys_pvp_set_error_zhenying=<font color='#ff0000'>阵营场景中禁止切换其它模式</font>
+sys_pvp_set_error_level=<font color='#ff0000'>您的战队等级未达到15级，无法设置全体状态！</font>
+sys_pvp_kill_player=您被英雄{@0:name}击败了，请选择就近复活点
+sys_pvp_no_arrest=您当前的红名值为0，无法使用净魂石
+sys_pvp_arrest_cd=净魂石使用冷却时间为100秒，请{@0:time}秒后再试
+sys_role_npc_1=副将只能在主城才可以进行装备相关操作
+sys_role_npc_2=副将只能在主城才可以进行符文相关操作
+sys_chname_lack_diamond=钻石不足
+sys_equip_not_fit_this_rolenpc = 该英雄的攻击类型不适合这件装备
+sys_switchlocate_error=您正处于战斗状态，请先脱离战斗！
+sys_activity_error=您正处于战斗状态，请先脱离战斗！
+sys_chname_success=改名成功
+sys_chname_name_exist=角色重名
+sys_chname_have_letter = 有未领取的邮件，请领取后再改名
+sys_chname_fail = 改名失败，返还钻石
+sys_chname_is_cool = 改名冷却中
+sys_chanme_solong = 名字超过最大长度
+sys_chname_no_diff = 和当前名字相同
+
+
+sys_activity_comp_1=您历练不足，无法参与此次活动
+sys_activity_comp_2=您的战队等级不足，无法参与此次活动
+sys_activity_comp_3=您次数不足，无法参与此次活动
+sys_activity_comp_4=活动未开启，您无法参与此次活动
+sys_activity_comp_5=您正在进行副本，无法参与此次活动
+sys_activity_comp_6=您正在参与其他活动，无法同时参与此次活动
+sys_activity_comp_7=您不是队长，无法参与此次活动
+sys_activity_comp_8=活动未开启，请耐心等待下次活动开启。
+sys_activity_comp_9=恭喜您已完成活动，请领取奖励！
+sys_activity_comp_12=恭喜您成功接受<font color="#00ff3e">[{@0:name}]</font>活动！
+sys_activity_comp_13=恭喜您成功完成国家宝藏任务
+sys_activity_comp_14=恭喜英雄[<font color="#00ff3e">{@0:name}</font>]从国家宝藏中获得[<font color='{@1:color}'>{@2:itemname}</font>]*{@3:num}
+sys_activity_comp_15=您背包剩余空间不足，无法一键卸装
+sys_activity_comp_16=您在战斗状态，暂时无法参与活动！
+sys_activity_comp_17=您正处于采集冷却中，请{@0:time}分钟后再试！
+sys_activity_comp_18=历练值不足
+sys_activity_comp_19=活动未开启或BOSS已经被击败，请耐心等待下次活动开启。
+sys_activity_comp_20=您正在参与此活动
+sys_activity_comp_21=您的背包已满，请至邮件领取奖励
+sys_activity_comp_22=恭喜您成功击败稀有怪，请至邮件领取奖励
+sys_activity_comp_23=您今日击败稀有怪的次数已用完，欢迎明天再来！
+sys_activity_comp_24=您正处于阵营战中，暂时无法参与活动！
+sys_activity_comp_25=您正处于地宫中，暂时无法参与活动！
+
+// 活动名称
+sys_activity_name_1=荒野镖客
+sys_activity_name_2=世界BOSS
+sys_activity_name_3=国家宝藏
+sys_activity_name_5=夺宝联盟
+
+sys_active_horse_race_1=成功激活{@0:name}号点
+
+sys_relive_friend_kill = 您的挚友{@0:name}在{@1:name}-{@2:name}线被{@3:name}击败，请速去支援
+sys_relive_guide_kill = 公会英雄{@0:name}在{@1:name}-{@2:name}线被{@3:name}击败，请速去支援
+sys_relive_all_kill = {@0:name}正在{@1:sceneid}-{@2:groupid}线肆意挑衅，正义的英雄在哪里？
+sys_relive_redname = 该区域有红名英雄，请小心行事
+sys_activity_accept_10=至走私商处接受走镖<br/><font color='#00FF00'>（点击寻路）</font>
+sys_activity_run_10=保护运货野猪至镖货接头人处。
+sys_activity_summit_10=护送镖车，<font color='#00FF00'> 点击寻路 </font>领取护送奖励。
+sys_activity_accept_11=探索寻宝地点<br/><font color='#00FF00'>（点击寻路）</font>
+sys_activity_accept_13=请前往【空岛】场景采集宝珠<br/><font color='#00FF00'>（无法寻路，需寻找宝珠）</font>
+sys_activity_run_13=请前往【空岛】场景采集宝珠<br/><font color='#00FF00'>（无法寻路，需寻找宝珠）</font>
+sys_activity_summit_13=采集成功，请领取奖励<br/><font color='#00FF00'>（点击寻路）</font>
+sys_activity_accept_14=击败世界BOSS<br/><font color='#00FF00'>（点击寻路）</font>
+sys_activity_accept_15=行驶至下一站点<font color='#00FF00'>（点击寻路）</font><br/>
+sys_activity_summit_15=已经成功到达终点<br/>
+sys_activity_bekill=镖车已被敌方击败，请提交获得基础奖励
+sys_activity_boss_not_groupid=活动分线英雄已爆满，请手动切换分线试试!
+sys_activity_cangonpc_bedamage=您的镖车正在被攻击，请注意保护!
+sys_activity_cangonpc_bekill=您的镖车已被摧毁，请深入战区抢夺物资！
+sys_activity_horse_race=当前行驶圈数（{@0:num} / {@1:num}）
+
+
+sys_activity_add_sucess=恭喜您已经进入活动场景
+
+
+sys_activity_biao=成功运送镖车可获得大量金币
+sys_activity_biao1=成功运送镖车可获得大量金币
+sys_activity_biao_2=1.绿色货物<font color='#FFFF00'>({@0:num1}/{@1:num2})</font>
+sys_activity_biao_3=2.蓝色货物<font color='#FFFF00'>({@0:num1}/{@1:num2})</font>
+sys_activity_biao_4=3.紫色货物<font color='#FFFF00'>({@0:num1}/{@1:num2})</font>
+sys_activity_biao_5=4.橙色货物<font color='#FFFF00'>({@0:num1}/{@1:num2})</font>
+sys_activity_boss_sucess=恭喜你获得第{@0:num1}名，请在邮件中收取奖励
+
+sys_activity_answer_closed：活动关闭
+
+//太极熊猫2组队系统提示
+sys_team_tip_1 = {@0:name}创建队伍成功
+sys_team_tip_2 = 加入了{@0:name}的队伍
+sys_team_tip_3 = {@0:name}加入队伍
+sys_team_tip_4 = 成功退出队伍
+sys_team_tip_5 = {@0:name}离开队伍
+sys_team_tip_6 = 申请成功
+sys_team_tip_7 = 清空申请列表成功
+sys_team_tip_8 = {@0:name}解散了队伍
+sys_team_tip_9 = {@0:name}拒绝进入活动
+sys_team_tip_10 = {@0:name{同意加入活动
+sys_team_tip_11 = 你已经拥有队伍
+sys_team_tip_12 = 对方不是队长
+sys_team_tip_13 = 队伍已经满了
+sys_team_tip_14 = 你申请的队伍数量满了
+sys_team_tip_15 = 申请该队伍的人数已满
+sys_team_tip_16 = 对方已经拥有队伍
+sys_team_tip_17 = 你已经不在队伍中
+sys_team_tip_18 = 你已申请过此队伍,请等待队长同意
+sys_team_tip_19 = 你的队伍已满,无法邀请别人加入
+sys_team_tip_20 = 你不是队长,无法邀请别人加入队伍
+sys_team_tip_21 = 队伍已经满了,无法进入队伍
+sys_team_tip_22 = 发送邀请成功
+sys_team_tip_23 = 对方正在忙碌中
+sys_team_tip_24 = 对方已经有队伍
+sys_team_tip_25 = 请求失败，该英雄已下线
+sys_team_tip_26 = {@0:name}被任命为队长
+sys_team_tip_27 = 您的战队等级不够，暂时无法申请该队伍
+sys_team_tip_28 = 您的战队等级不够，暂时无法创建该类型队伍
+sys_team_tip_29 = 您邀请的该名英雄战队等级未达到队伍要求等级
+sys_team_tip_30 = 阵营不匹配
+
+//太极熊猫2角色进阶系统提示
+sys_Stage_1=进阶所需灵魂碎片不足，进阶失败
+sys_Stage_2=进阶所需金币不足，进阶失败
+301=【风语平原】
+302=【空岛】
+303=【天劫遗迹】
+304=【沉睡冰川】
+305=【静寂岭】
+306=【放逐之地】
+201=【荒漠黄金线】
+307=【原初之森】
+308=【潮汐之环】
+309=【秘银海岸】
+350=【终焉群岛】
+202=【荒野狂飙】
+352=【边境之地】
+sys_world_reset_sys_1={@0:name1}还有<font color='#ff0000'> {@1:name2} </font>分钟重置！
+sys_world_reset_sys_2={@0:name1}<font color='#ff0000'>已经重置！</font>
+sys_world_open_sys_1={@0:name1}还有<font color='#ff0000'> {@1:name2} </font>分钟开始，请各位英雄点击【历练】进入！
+sys_world_open_sys_2={@0:name1}<font color='#00FF00'>已经开启，欢迎各位英雄参加！</font>
+sys_world_open_sys_3=荒野狂飙活动<font color='#ff0000'> {@0:name1} </font>分钟可以进入竞赛赛道，请各位英雄预先进入活动等待竞赛开始！
+sys_world_open_sys_4=荒野狂飙活动还有<font color='#ff0000'> {@0:name1} </font>秒开始竞赛，请各位英雄在起始点处等待竞赛开始！
+sys_world_close_sys_1={@0:name1}还有<font color='#ff0000'> {@1:name2} </font>分钟结束，请各位英雄努力奋战！
+sys_world_close_sys_2={@0:name1}<font color='#ff0000'>已经结束。</font>
+sys_world_close_sys_3=荒野镖客还有{@0:time}分钟结束，请各位英雄尽快提交当前货物
+
+sys_world_boss_1=<font color='#00FF00'>恭喜！</font>【世界BOSS-{@0:name1}】<font color='#00FF00'>已被</font><font color='#00FF00'>【{@1:name2}】英雄</font><font color='#00FF00'>击败！</font>
+sys_world_activity_10=<font color='#00FF00'>【荒野镖客】</font>
+sys_world_activity_14=<font color='#00FF00'>【世界BOSS】</font>
+sys_world_activity_11=<font color='#00FF00'>【国家宝藏】</font>
+sys_world_activity_13=<font color='#00FF00'>【夺宝联盟】</font>
+sys_world_activity_15=<font color='#00FF00'>【荒野狂飙】</font>
+sys_world_activity_16=<font color='#00FF00'>【阵营BOSS刷新】</font>
+sys_world_activity_mes=<font color='#00FF00'>恭喜你在【世界BOSS】活动中获得</font>第{@0:name1}名<font color='#00FF00'>,请在【社交】-【邮件】中领取奖励！</font>
+sys_activity_boss_owner_refresh=<font color='#ff0000'>【稀有BOSS】</font>即将在<font color='#00FF00'>{@0:name}</font>-<font color='#00FF00'>{@1:name}线</font>刷新！请各位英雄前往抢夺！
+sys_activity_horse_race_rank_1=您的荒野狂飙用时{@0:num}分{@1:num}秒，排名在200名以外，请至邮件领取奖励！
+sys_activity_horse_race_rank_2=您的荒野狂飙当前排名被挤出200名，您的奖励将发放至您的邮件
+sys_activity_horse_race_rank_3=恭喜您完成荒野狂飙活动，您当前暂列第 <font color='#00FF00'>{@0:num}</font> 名，全程用时{@1:num}分{@2:num}秒
+sys_activity_horse_race_rank_4=荒野狂飙活动结束，您未能完成功能，下次请早点参加活动
+sys_activity_horse_race_rank_5=今日荒野狂飙活动结束，恭喜<font color='#00FF00'>{@0:name}</font>，<font color='#00FF00'>{@1:name}</font>，<font color='#00FF00'>{@2:name}</font>取得第一名，第二名，第三名
+sys_activity_horse_race_rank_6=恭喜<font color='#00FF00'>{@0:name}</font>英雄的荒野狂飙全程用时已成功超越<font color='#00FF00'>{@1:name}</font>，暂列第 <font color='#00FF00'>{@2:name}</font> 名，当前<font color='#00FF00'>{@3:name}</font>,<font color='#00FF00'>{@4:name}</font>,<font color='#00FF00'>{@5:name}</font>英雄遥遥领先
+sys_zhenying_boss_owner_refresh=<font color='#ff0000'>【阵营BOSS】</font>即将在<font color='#00FF00'>{@0:name}</font>-<font color='#00FF00'>{@1:name}线</font>刷新！请各位英雄前往抢夺！
+
+sys_scene_group_change_fail_1=线路人数已满，无法进入
+sys_scene_group_change_fail_2=正处于战斗状态，无法切换线路
+sys_scene_group_change_fail_3=您正处于红名状态，无法切换线路
+sys_scene_group_change_fail_4=您正处于全体模式，无法切换线路
+sys_scene_group_change_fail_5=您已死亡，无法切换线路
+sys_scene_group_change_fail_6=您处于活动中，无法切换线路
+sys_scene_group_change_fail_7=切换线路冷却时间为2分钟，请{@0:num}秒后再试
+sys_scene_group_change_fail_8=您正与其他英雄进行决斗，无法切换线路
+sys_scene_group_change_fail_9=你的队友正处于副本中，暂时无法寻路
+sys_scene_group_change_fail_10=您队友所在分线处于拥挤状态，请手动切换分线
+sys_scene_group_change_fail_11=您正处于运送宝珠状态，无法切换线路
+sys_scene_group_change_fail_12=线路同阵营人数已满，无法进入
+
+sys_scene_group_change_sucess=切换到{@0:name1}号分线成功
+
+sys_scene_change_fail_1=您正处于{@0:name}活动中，无法切换场景
+
+//太极熊猫2安全区和非安全区提示
+sys_activity_comp_11=您已进入非安全区
+sys_activity_comp_10=<font color='#00FF00'>您已进入安全区</font>
+
+
+//宝藏副本非法进入提示
+sys_minetranscript_1=战队中有英雄性别不符，请调整阵容
+sys_minetranscript_2=战队中有英雄类型不符，请调整阵容
+sys_minetranscript_3=战队中有英雄种族不符，请调整阵容
+sys_minetranscript_4=战队中有英雄星级不足，请调整阵容
+sys_minetranscript_5=战队中有英雄攻击类型不符，请调整阵容
+sys_minetranscript_6=战队中有英雄等级不足，请调整阵容
+sys_minetranscript_7=今日挑战次数已满
+sys_minetranscript_8=战队中有英雄等级不足，请调整阵容
+sys_minetranscript_9=历练值不足，请补充
+
+
+//任务奖励提示
+quest_award_1=你获得了 <font color="#ceb12b">{@0:num}</font> 金币
+quest_award_2=你获得了 <font color="#65beec">{@0:num}</font> 钻石
+quest_award_3=你获得了 <font color="#84ca50">{@0:num}</font> 战队经验
+quest_award_4=你获得了 <font color="#d87e27">{@0:num}</font> 个 {@1:itemname}
+quest_loop_award_before=当前环任务未领奖，请先领取奖励再操作。
+quest_award_bag_not_enough=背包空间已满，任务奖励已由邮件形式发送给您，请查收
+
+// 月签相关
+sys_sign_sign_success = 签到成功
+sys_sign_reload = 版本已更新，请重新签到
+sys_sign_retro_success = 补签成功
+sys_sign_retro_lack = 本月可补签次数不足
+sys_sign_retro_reload = 版本已更新，请重新补签
+sys_sign_no_day = 没有可签到的天数
+sys_sign_lack_bag = 背包空间不足，无法签到
+sys_sign_retro_lack_bag = 背包空间不足，无法补签
+sys_sign_have_sign = 今天已签到
+sys_sign_lack_diamond = 钻石不足，无法补签
+
+// 公会信息
+sys_guild_1 = 已召唤野外BOSS，请及时将其击败。
+sys_guild_2 = 请先召唤公会成员后再召唤BOSS。
+sys_guild_3 = 召唤BOSS失败，请到对应场景召唤。
+sys_guild_3a = 小伙伴们都在分线{@0:num}等待会长召唤BOSS。
+sys_guidl_4 = 召集公会成员失败，请先传送到对应场景。
+sys_guidl_4t = 召集公会成员成功。
+sys_guild_4f = 您正处于活动中，无法召唤公会成员。
+sys_guild_5 = 公会会长正在召集会员击败BOSS，您是否传送？
+sys_guild_6 = 您正处于安全区，无法召唤BOSS。
+sys_guild_6f = 您正处于活动中，无法参与魔兽浩劫活动
+sys_guild_7 = 安全区不可召唤BOSS
+sys_guild_8 = 死亡安全区不可召唤公会成员
+sys_guild_9 = 新手区不可召唤小伙伴
+sys_guild_10 = 您正处于活动中，无法参与魔兽浩劫活动。
+ui_boss_desc = 挑战BOSS可获得大量金币，贡献证，精炼石等
+ui_boss_start_time = {@0:year}年{@1:month}月{@2:day}日{@3:hour}时{@4:minute}分开启
+ui_boss_end_time = {@0:year}年{@1:month}月{@2:day}日{@3:hour}时{@4:minute}分关闭
+ui_invite_9 = 邀请
+sys_item_addguilddevote_1 = 成功增加{@0:a}点公会贡献度
+sys_item_addguilddevelopment_2 = 成功增加{@0:a}点公会建设度
+sys_guild_11 = 欢迎来到公会
+
+// 经验疲劳提示
+sys_exp_tips = 您从<font color='#ff0000'>{@0:name}</font>获得<font color="#84ca50">{@1:num}</font>战队经验
+
+ui_ywjy01 = <font color='#00FF00'>规则描述：</font><br/>1.该战队经验的获得仅针对野外击败怪物<br/>2.当日击败怪物未完成的战队经验可累计至第二天，最多累计七天的战队经验值<br/>3.累计战队经验值达到上限时，击败野外怪物将不再继续获得战队经验<br/>4.使用经验丹道具可加速战队经验值的获得，战队经验累计达到上限时，将不可继续使用经验丹<br/><font color='#00FF00'>贴心小提示：</font><br/>野外组队和使用多倍经验丹可有效提升战队经验获得速度
+
+//vip奖励包
+sys_vip_gift_got=奖励包已经领取
+sys_vip_vip_level=vip等级不够
+sys_vip_gift_null=该等级无奖励
+
+//夺宝联盟
+sys_struggle_treasure_1=恭喜！<font color='#00FF00'>{@0:num}</font>英雄已成功在<font color='#00FF00'>{@1:num}</font>-<font color='#00FF00'>{@2:num}</font><font color='#00FF00'>线</font>获得{@3:num}
+sys_activity_run_14=前往【空岛】场景寻<br/>找宝珠!
+
+sys_picksys_60020=您的背包已满，请清理背包！
+
+//货币说明
+ui_main_money_tips_1 = 【金币】可从战役，组队副本，藏宝副本，荒野镖客，世界BOSS，公会等获得。<br/>【钻石】可通过充值，交易行出售物品获得。<br/>【绑钻】可通过完成精彩活动，充值，活跃度等获得。<br/><font color='#00FF00'>除交易行外，游戏中的所有钻石类消耗都优先消耗绑钻再消耗钻石。</font>
+
+sys_diamond_buy_not_open = 活动未开启，无法购买额外次数 
+sys_diamond_buy_success=恭喜，次数购买成功
+sys_diamond_buy_double_gain = 恭喜,双倍收益购买成功
+sys_double_gain_not_add = 双倍收益效果不能叠加
+//世界BOSS排名
+ui_boss_01=最终一击
+ui_boss_02=伤害第1名
+ui_boss_03=伤害第2-3名
+ui_boss_04=伤害第4-10名
+ui_boss_05=伤害第11-20名
+ui_boss_06=伤害第21-50名
+ui_boss_07=伤害第51-100名
+ui_boss_08=伤害第100以后
+
+sys_send_001=你的体力已经恢复满了，快去踏上征程吧
+sys_send_002=午餐时间到了，快回来享用大餐吧
+sys_send_003=我们已经为英雄们准备了丰盛的晚餐，快回来享用吧
+sys_send_004=宵夜时间到，和朋友们边吃边聊吧，分享下你这一天的冒险故事
+sys_send_005=世界BOSS马上就要出现了，快拿起武器和小伙伴们齐心协力击败它吧
+sys_send_006=世界BOSS马上就要出现了，快拿起武器和小伙伴们齐心协力击败它吧
+
+sys_change_role_npc = 在野外只有处于安全区并且VIP等级12以上才有权限切换英雄
+sys_change_battle_array = 在野外只有处于安全区并且VIP等级12以上才有权限切换阵容
+sys_activity_not_change_role = 你在活动中无法切换英雄
+sys_not_change_in_pk = 当前正处于决斗状态，无法进行英雄切换
+sys_change_battle_array_cd = 切换阵容太频繁，请稍后再试
+
+//决斗功能
+sys_player_pk_1 = 决斗请求失败，请先脱离战斗状态后再试
+sys_player_pk_2 = 决斗请求失败，你所发起的对象正处于战斗状态，请稍后再试
+sys_player_pk_3 = 决斗请求失败，你正处于决斗状态，请退出后再试
+sys_player_pk_4 = 决斗请求失败，你所选择的对象正处于决斗状态，请稍后再试
+sys_player_pk_5 = 决斗请求频率过快，请稍后再试({@0:time})
+sys_player_pk_6 = 对方取消了决斗邀请
+sys_player_pk_7 = 决斗请求失败，对方拒绝了你的邀请
+sys_player_pk_8 = 你在与[{@0:name}]的决斗中，胜利了
+sys_player_pk_9 = 你在与[{@0:name}]的决斗中，失败了
+sys_plyaer_pk_10 = 你在与[{@0:name}]的决斗中，双方打成平局
+sys_player_pk_11 = 决斗请求失败，对方拒绝了你的邀请
+sys_player_pk_12 = 你在30秒内没有做出回应，决斗邀请已取消
+sys_player_pk_13 = 对方在30秒内没有做出回应，决斗请求已取消
+sys_player_pk_14 = [{@0:name}]与[{@1:name}]的决斗中，[{@2:name}]获得了胜利！
+sys_player_pk_15 = [{@0:name}]与[{@1:name}]的决斗中，双方平分秋色。
+sys_player_pk_16 = 当前处于死亡状态，无法发起决斗请求
+sys_player_pk_17 = 对方处于死亡状态，无法发起决斗请求
+sys_player_pk_18 = 当前参加活动中，无法发起决斗请求
+sys_player_pk_19 = 对方参加活动中，无法发起决斗请求
+sys_player_pk_20 = 当前正处于阵营战中，无法发起决斗请求
+
+sys_is_playing_horse_race = 您当前正在参加荒野狂飙活动，暂时无法使用技能
+sys_skill_forbid_scene = 当前场景无法使用技能
+
+//朋友、仇敌相关
+sys_addto_enemy=你已成功将{@0:name}加为对手，对手信息可在好友-对手信息中查看
+sys_enemy_rec_full=对手已满，无法添加!
+sys_enemy_is_friend=该英雄是您的好友，不能加为对手！
+sys_is_your_enemy=该英雄已经是你的对手成员
+sys_has_delete_haters=你已经删除了{@0:name}对手
+sys_enemy_canot_addto_friend=该英雄是您的对手，不能加为好友！
+
+// GMCC相关
+sys_gmcc_kick_player = <center>您已被系统踢下线</center>
+sys_gmcc_kick_forbid = <center>您的账号被系统冻结{@0:time}分钟</center>
+
+team_auto_find_teamer_1 = 您的队友正在副本中，暂时无法寻路
+team_auto_find_teamer_2 = 您的队友正在参加荒野镖客活动，暂时无法寻路
+// 物品掉落相关
+sys_item_drop_notify = 恭喜英雄[<font color="#00ff3e">{@0:player}</font>]从[{@1:npc}]身上获得[<font color="#E17F00">{@2:item}</font>]*{@3:num}
+
+sys_gamecenter_unauth=由于未登录Game Center，因此不会向Game Center提交您的游戏数据
+sys_gm_pay_1=GM补单的ServerID与本服不一致，补单失败
+
+//春节活动
+sys_place_dumpling_to_toolbox_succeed = 杉树枝已经长成圣诞树了，快去看看吧
+cant_compose_spring_festival_item = 背包空间不足
+sys_activity_festivalboss_refresh = <font color='#00FF00'>{@0:}</font>-<font color='#00FF00'>{@1:}线</font>的稀有BOSS死亡后，出现了一只圣诞使者，参与击败的玩家都可获得杉树枝
+sys_spring_festival_open = <font color='#00FF00'>温暖冬日</font>活动开启，<font color='#00FF00'>【空岛】【风语平原】【天劫遗迹】</font>出现了大量圣诞袜<font color='#00FF00'>(仅在1线-10线)</font>，拾取圣诞袜的玩家将获得<font color='#00FF00'>圣诞节礼包</font>奖励！
+sys_not_have_enough_material = 合成圣诞树的材料不足
+spring_festival_pack_has_sendto_mail = 成功拾取圣诞袜，圣诞节礼包将通过邮件发放，注意查收
+sys_spring_festival_close = “温暖冬日”活动已经结束。
+
+//情人节称号
+sys_festival_active_title_1 = 你已经拥有该称号
+
+//累充称号
+ui_title_online_broadcast130 = 万夫莫当-[<font color="#00ff3e">{@0:name}</font>]上线，生人勿近。
+ui_title_online_broadcast131 = 只手遮天-[<font color="#00ff3e">{@0:name}</font>]上线，生人勿近。
+ui_title_online_broadcast132 = 独孤求败-[<font color="#00ff3e">{@0:name}</font>]上线，生人勿近。
+ui_title_online_broadcast133 = 逆天侯-[<font color="#00ff3e">{@0:name}</font>]上线，生人勿近。
+
+//邮件
+sys_mail_tishi_01 = 邮件已满，已无法收取更多邮件
+sys_mail_tishi_02 = 邮件即将收满，收满后则无法收取之后的邮件
+
+sys_mail_Sender_001 = 系统
+sys_mail_Sender_002 = 太极熊猫2运营团队
+sys_mail_Sender_003 = 交易行系统
+sys_mail_Sender_004 = 每日活跃度
+sys_mail_Sender_005 = 活跃度奖励
+sys_mail_Sender_006 = 遗迹巨魔
+sys_mail_Sender_007 = 公会系统
+sys_mail_Sender_008 = 公会职位变更
+sys_mail_Sender_009 = 荒野镖客活动
+sys_mail_Sender_010 = 夺宝联盟活动
+sys_mail_Sender_011 = 世界BOSS活动
+sys_mail_Sender_012 = 活动奖励
+
+sys_mail_Title_001 = 竞技场系统
+sys_mail_Title_002 = 竞技场奖励
+sys_mail_Title_003 = 夺宝系统
+sys_mail_Title_004 = 欢迎回来
+sys_mail_Title_005 = 热烈欢迎！
+sys_mail_Title_006 = 运营奖励
+sys_mail_Title_007 = 巅峰对决奖励
+sys_mail_Title_008 = 道具卡兑换
+sys_mail_Title_009 = 竞技场最高排名奖励
+sys_mail_Title_010 = 被踢出公会
+sys_mail_Title_011 = 限时英雄
+sys_mail_Title_012 = 通关排名奖励
+sys_mail_Title_013 = 公会解散
+sys_mail_Title_014 = 主线任务奖励
+sys_mail_Title_015 = 章节奖励
+sys_mail_Title_016 = 物品上架失败
+sys_mail_Title_017 = 物品下架失败
+sys_mail_Title_018 = 物品成功购买
+sys_mail_Title_019 = 物品下架
+sys_mail_Title_020 = 购买物品失败
+sys_mail_Title_021 = 交易行出售
+sys_mail_Title_022 = 每日活跃度奖励
+sys_mail_Title_023 = 活跃度奖励
+sys_mail_Title_024 = 遗迹巨魔
+sys_mail_Title_025 = 您已踢出公会
+sys_mail_Title_026 = 荒野镖客奖励
+sys_mail_Title_027 = 夺宝联盟奖励
+sys_mail_Title_028 = 世界BOSS排名奖励
+sys_mail_Title_029 = 世界BOSS击败奖励
+sys_mail_Title_030 = 世界BOSS参与奖励
+sys_mail_Title_031 = 遗迹竞标结束
+sys_mail_Title_032 = 遗迹争夺提醒
+sys_mail_Title_033 = 遗迹争夺成功
+sys_mail_Title_034 = 遗迹竞标失败
+sys_mail_Title_035 = 遗迹争夺失败
+sys_mail_Title_036 = 遗迹争夺战场开始
+sys_mail_Title_037 = 失去遗迹
+sys_mail_Title_038 = 遗迹战奖励
+sys_mail_Title_039 = 遗迹争夺结果
+sys_mail_Title_040 = 圣诞节活动奖励
+sys_mail_Title_041 = 等级排名
+sys_mail_Title_042 = 战力排名
+sys_mail_Title_043 = 巅峰排名
+sys_mail_Title_044 = 副本排名
+sys_mail_Title_045 = 商品成功出售
+sys_mail_Title_046 = 公会职位变更
+sys_mail_Title_047 = 领地竞标结束
+sys_mail_Title_048 = 领地争夺提醒
+sys_mail_Title_049 = 领地争夺成功
+sys_mail_Title_050 = 领地竞标失败
+sys_mail_Title_051 = 领地争夺失败
+sys_mail_Title_052 = 领地争夺战场开始
+sys_mail_Title_053 = 失去领地
+sys_mail_Title_054 = 领地战奖励
+sys_mail_Title_055 = 领地争夺结果
+sys_mail_Title_056 = 充值限时商品
+sys_mail_Title_057 = 魔兽浩劫BOSS
+sys_mail_Title_059 = 稀有怪奖励
+sys_mail_Title_085 = 荒野狂飙
+sys_mail_Title_058 = VIP礼品补发
+sys_mail_Title_086 = 活动奖励
+sys_mail_Title_092 = 勇士之路奖励
+sys_mail_award001 = 法宝分解
+sys_mail_Title_093 = 地宫精英奖励
+sys_mail_Title_094 = 地宫BOSS奖励
+sys_mail_Title_095 = 地宫兑换
+sys_mail_Title_096 = 金币怪奖励
+sys_mail_Title_099 = 自动续费
+
+sys_mail_desc_001 = 摆摊商品上架失败
+sys_mail_desc_002 = 摆摊商品下架失败
+sys_mail_desc_003 = 商品购买成功
+sys_mail_desc_004 = 摆摊商品出售期满
+sys_mail_desc_005 = 购买物品失败
+sys_mail_desc_006 = 卖物品成功但给银子失败
+sys_mail_desc_007 = 活跃度满足，奖励物品
+sys_mail_desc_008 = 活跃度奖励
+sys_mail_desc_009 = 公会遗迹巨魔排行奖励
+sys_mail_desc_010 = 公会遗迹巨魔最终击败奖励
+sys_mail_desc_011 = 您已踢出公会
+sys_mail_desc_012 = 公会职位变更
+sys_mail_desc_013 = 运镖活动奖励
+sys_mail_desc_014 = 夺宝联盟奖励
+sys_mail_desc_015 = 击败世界BOSS
+sys_mail_desc_016 = 荒野镖客
+sys_mail_desc_017 = 商品成功出售
+
+sys_mail_Content_001 = 玩家<font color='#FF00FF'>{@0:name}</font>在竞技场中轻松击败了你，你的竞技场排名降至<font color='#FF0000'>{@1:num}</font>。
+sys_mail_Content_002 = 玩家<font color='#FF00FF'>{@0:name}</font>在竞技场中轻松击败了你，你的竞技场排名没有改变。
+sys_mail_Content_003 = 玩家<font color='#FF00FF'>{@0:name}</font>在竞技场中挑战你，但被你轻松击败了！
+sys_mail_Content_004 = 恭喜您在竞技场中取得第<font color='#FF0000'>{@0:num}</font>名的成绩。<br>获得奖励: {@1:num} 声望, {@2:num} 金币！
+sys_mail_Content_005 = 恭喜您在竞技场中取得第<font color='#FF0000'>{@0:num}</font>名的成绩。<br><font color='#00FFFF'>竞技场活动给予双倍奖励。</font><br>获得奖励: {@1:num} 声望, {@2:num} 金币！
+sys_mail_Content_006 = 玩家<font color='#FF00FF'>{@0:name}</font>抢夺了你,你失去了<font color='#FF0000'><ReadText>{@1:chip}</ReadText>*1</font>,快去抢夺吧!
+sys_mail_Content_007 = 欢迎您再次回到太极熊猫2，一点小礼，不成敬意，请您惠存。
+sys_mail_Content_008 = 哎呦客官，您可有日子没来了，姑娘们都想死你了呢，快里面请……
+sys_mail_Content_009 = 感谢您对太极熊猫2的支持。
+sys_mail_Content_010 = 恭喜您在巅峰对决每日赛中取得第<font color='#FF0000'>{@0:num}</font>名的成绩！<br>获得奖励：{@1:num} 巅峰令！
+sys_mail_Content_011 = 恭喜您在巅峰对决每周赛中取得第<font color='#FF0000'>{@0:num}</font>名的成绩！<br>获得奖励：{@1:num} 巅峰令，{@2:num}钻石！
+sys_mail_Content_012 = 道具卡兑换道具成功，请查收。
+sys_mail_Content_013 = 恭喜您的竞技场最高排名达到了{@0:num}，奖励您{@1:num}绑钻。
+sys_mail_Content_014 = 你被{@0:name}从{@1:guild}公会踢出！
+sys_mail_Content_015 = 恭喜您成为限时英雄积分排名第{@0:num}名！
+sys_mail_Content_016_705 = 恭喜您成为第{@0:num}个通关熙攘绿岛的玩家！
+sys_mail_Content_016_706 = 恭喜您成为第{@0:num}个通关卓尔绿岛的玩家！
+sys_mail_Content_016_707 = 恭喜您成为第{@0:num}个通关扶摇走廊的玩家！
+sys_mail_Content_016_708 = 恭喜您成为第{@0:num}个通关飞鱼码头的玩家！
+sys_mail_Content_016_709 = 恭喜您成为第{@0:num}个通关青尾蝠幽的玩家！
+sys_mail_Content_016_710 = 恭喜您成为第{@0:num}个通关蛮族部落的玩家！
+sys_mail_Content_016_711 = 恭喜您成为第{@0:num}个通关萨耶领域的玩家！
+sys_mail_Content_016_712 = 恭喜您成为第{@0:num}个通关扈古之地的玩家！
+sys_mail_Content_016_713 = 恭喜您成为第{@0:num}个通关王之台座的玩家！
+sys_mail_Content_016_721 = 恭喜您成为第{@0:num}个通关幽魂腹地的玩家！
+sys_mail_Content_016_722 = 恭喜您成为第{@0:num}个通关恶灵沼泽的玩家！
+sys_mail_Content_016_723 = 恭喜您成为第{@0:num}个通关地脉入口的玩家！
+sys_mail_Content_016_724 = 恭喜您成为第{@0:num}个通关地脉通道的玩家！
+sys_mail_Content_016_725 = 恭喜您成为第{@0:num}个通关地下陵墓的玩家！
+sys_mail_Content_016_726 = 恭喜您成为第{@0:num}个通关地陵左殿的玩家！
+sys_mail_Content_016_727 = 恭喜您成为第{@0:num}个通关地陵右殿的玩家！
+sys_mail_Content_016_728 = 恭喜您成为第{@0:num}个通关地陵主庭的玩家！
+sys_mail_Content_016_731 = 恭喜您成为第{@0:num}个通关梦之诅咒的玩家！
+sys_mail_Content_016_732 = 恭喜您成为第{@0:num}个通关再返熙攘的玩家！
+sys_mail_Content_016_733 = 恭喜您成为第{@0:num}个通关绿茵岛的玩家！
+sys_mail_Content_016_734 = 恭喜您成为第{@0:num}个通关陵墓入口的玩家！
+sys_mail_Content_016_735 = 恭喜您成为第{@0:num}个通关夜寂码头的玩家！
+sys_mail_Content_016_736 = 恭喜您成为第{@0:num}个通关死神战地的玩家！
+sys_mail_Content_016_737 = 恭喜您成为第{@0:num}个通关亡魂战地的玩家！
+sys_mail_Content_016_738 = 恭喜您成为第{@0:num}个通关幽魂战地的玩家！
+sys_mail_Content_016_739 = 恭喜您成为第{@0:num}个通关魂归之地的玩家！
+sys_mail_Content_016_741 = 恭喜您成为第{@0:num}个通关黄金沙漠的玩家！
+sys_mail_Content_016_742 = 恭喜您成为第{@0:num}个通关沙漠通道的玩家！
+sys_mail_Content_016_743 = 恭喜您成为第{@0:num}个通关黄沙高地的玩家！
+sys_mail_Content_016_744 = 恭喜您成为第{@0:num}个通关死亡沙径的玩家！
+sys_mail_Content_016_745 = 恭喜您成为第{@0:num}个通关凋零荒漠的玩家！
+sys_mail_Content_016_746 = 恭喜您成为第{@0:num}个通关沙之禁地的玩家！
+sys_mail_Content_016_747 = 恭喜您成为第{@0:num}个通关邪龙殿的玩家！
+sys_mail_Content_016_748 = 恭喜您成为第{@0:num}个通关龙渊台的玩家！
+sys_mail_Content_016_751 = 恭喜您成为第{@0:num}个通关荒芜雪原的玩家！
+sys_mail_Content_016_752 = 恭喜您成为第{@0:num}个通关凛冬高地的玩家！
+sys_mail_Content_016_753 = 恭喜您成为第{@0:num}个通关死亡雪岭的玩家！
+sys_mail_Content_016_754 = 恭喜您成为第{@0:num}个通关冰寂谷地的玩家！
+sys_mail_Content_016_755 = 恭喜您成为第{@0:num}个通关邪刀部族的玩家！
+sys_mail_Content_016_756 = 恭喜您成为第{@0:num}个通关邪教领地的玩家！
+sys_mail_Content_016_757 = 恭喜您成为第{@0:num}个通关邪典魔宫的玩家！
+sys_mail_Content_016_758 = 恭喜您成为第{@0:num}个通关猩红魔殿的玩家！
+sys_mail_Content_016_759 = 恭喜您成为第{@0:num}个通关凋零之座的玩家！
+sys_mail_Content_016_761 = 恭喜您成为第{@0:num}个通关破碎古道的玩家！
+sys_mail_Content_016_762 = 恭喜您成为第{@0:num}个通关部落领地的玩家！
+sys_mail_Content_016_763 = 恭喜您成为第{@0:num}个通关英灵之路的玩家！
+sys_mail_Content_016_764 = 恭喜您成为第{@0:num}个通关劫掠营地的玩家！
+sys_mail_Content_016_765 = 恭喜您成为第{@0:num}个通关沉睡之森的玩家！
+sys_mail_Content_016_766 = 恭喜您成为第{@0:num}个通关训练营地的玩家！
+sys_mail_Content_016_767 = 恭喜您成为第{@0:num}个通关守护之地的玩家！
+sys_mail_Content_016_768 = 恭喜您成为第{@0:num}个通关绿地沼泽的玩家！
+sys_mail_Content_016_769 = 恭喜您成为第{@0:num}个通关浮空遗迹的玩家！
+sys_mail_Content_016_771 = 恭喜您成为第{@0:num}个通关破败之地的玩家！
+sys_mail_Content_016_772 = 恭喜您成为第{@0:num}个通关瘴气山谷的玩家！
+sys_mail_Content_016_773 = 恭喜您成为第{@0:num}个通关龙骨高地的玩家！
+sys_mail_Content_016_774 = 恭喜您成为第{@0:num}个通关恐狼之穴的玩家！
+sys_mail_Content_016_775 = 恭喜您成为第{@0:num}个通关暴猿氏族的玩家！
+sys_mail_Content_016_776 = 恭喜您成为第{@0:num}个通关极寒山脉的玩家！
+sys_mail_Content_016_777 = 恭喜您成为第{@0:num}个通关兄弟齐心的玩家！
+sys_mail_Content_016_778 = 恭喜您成为第{@0:num}个通关魔索布莱的玩家！
+sys_mail_Content_016_781 = 恭喜您成为第{@0:num}个通关幽深地宫的玩家！
+sys_mail_Content_016_782 = 恭喜您成为第{@0:num}个通关古之遗迹的玩家！
+sys_mail_Content_016_783 = 恭喜您成为第{@0:num}个通关山间峭壁的玩家！
+sys_mail_Content_016_784 = 恭喜您成为第{@0:num}个通关魔窟废墟的玩家！
+sys_mail_Content_016_785 = 恭喜您成为第{@0:num}个通关夕阳墓地的玩家！
+sys_mail_Content_016_786 = 恭喜您成为第{@0:num}个通关高空截击的玩家！
+sys_mail_Content_016_787 = 恭喜您成为第{@0:num}个通关寂冻雪原的玩家！
+sys_mail_Content_016_788 = 恭喜您成为第{@0:num}个通关迷雾林地的玩家！
+sys_mail_Content_016_789 = 恭喜您成为第{@0:num}个通关恶灵血舰的玩家！
+sys_mail_Content_016_791 = 恭喜您成为第{@0:num}个通关废弃码头的玩家！
+sys_mail_Content_016_792 = 恭喜您成为第{@0:num}个通关裂痕丘陵的玩家！
+sys_mail_Content_016_793 = 恭喜您成为第{@0:num}个通关诅咒之林的玩家！
+sys_mail_Content_016_794 = 恭喜您成为第{@0:num}个通关黑暗祭坛的玩家！
+sys_mail_Content_016_795 = 恭喜您成为第{@0:num}个通关妖异之窟的玩家！
+sys_mail_Content_016_796 = 恭喜您成为第{@0:num}个通关失落之城的玩家！
+sys_mail_Content_016_797 = 恭喜您成为第{@0:num}个通关信仰之地的玩家！
+sys_mail_Content_016_798 = 恭喜您成为第{@0:num}个通关炽热熔池的玩家！
+sys_mail_Content_016_801 = 恭喜您成为第{@0:num}个通关原始部落的玩家！
+sys_mail_Content_016_802 = 恭喜您成为第{@0:num}个通关失落之地的玩家！
+sys_mail_Content_016_803 = 恭喜您成为第{@0:num}个通关边荒峡谷的玩家！
+sys_mail_Content_016_804 = 恭喜您成为第{@0:num}个通关盗墓营地的玩家！
+sys_mail_Content_016_805 = 恭喜您成为第{@0:num}个通关幽暗陵墓的玩家！
+sys_mail_Content_016_806 = 恭喜您成为第{@0:num}个通关古墓魅影的玩家！
+sys_mail_Content_016_807 = 恭喜您成为第{@0:num}个通关古墓奇兵的玩家！
+sys_mail_Content_016_808 = 恭喜您成为第{@0:num}个通关葬地文明的玩家！
+sys_mail_Content_016_809 = 恭喜您成为第{@0:num}个通关迷雾绿洲的玩家！
+sys_mail_Content_016_811 = 恭喜您成为第{@0:num}个通关雾月丛林的玩家！
+sys_mail_Content_016_812 = 恭喜您成为第{@0:num}个通关遗迹之林的玩家！
+sys_mail_Content_016_813 = 恭喜您成为第{@0:num}个通关风息苍穹的玩家！
+sys_mail_Content_016_814 = 恭喜您成为第{@0:num}个通关战栗回廊的玩家！
+sys_mail_Content_016_815 = 恭喜您成为第{@0:num}个通关圣者广场的玩家！
+sys_mail_Content_016_816 = 恭喜您成为第{@0:num}个通关金鳞口岸的玩家！
+sys_mail_Content_016_817 = 恭喜您成为第{@0:num}个通关失落洞坑的玩家！
+sys_mail_Content_016_818 = 恭喜您成为第{@0:num}个通关沙之暴君的玩家！
+sys_mail_Content_016_821 = 恭喜您成为第{@0:num}个通关冰雪丘陵的玩家！
+sys_mail_Content_016_822 = 恭喜您成为第{@0:num}个通关风林雪猿的玩家！
+sys_mail_Content_016_823 = 恭喜您成为第{@0:num}个通关双刀试炼的玩家！
+sys_mail_Content_016_824 = 恭喜您成为第{@0:num}个通关遗迹凶灵的玩家！
+sys_mail_Content_016_825 = 恭喜您成为第{@0:num}个通关恶人谷地的玩家！
+sys_mail_Content_016_826 = 恭喜您成为第{@0:num}个通关寒冰梧桐的玩家！
+sys_mail_Content_016_827 = 恭喜您成为第{@0:num}个通关冰火神教的玩家！
+sys_mail_Content_016_828 = 恭喜您成为第{@0:num}个通关空山雪顶的玩家！
+sys_mail_Content_016_829 = 恭喜您成为第{@0:num}个通关地下擂台的玩家！
+sys_mail_Content_016_831 = 恭喜您成为第{@0:num}个通关风雷峭壁的玩家！
+sys_mail_Content_016_832 = 恭喜您成为第{@0:num}个通关熔岩之核的玩家！
+sys_mail_Content_016_833 = 恭喜您成为第{@0:num}个通关尸毒沼泽的玩家！
+sys_mail_Content_016_834 = 恭喜您成为第{@0:num}个通关冰冷之巅的玩家！
+sys_mail_Content_016_835 = 恭喜您成为第{@0:num}个通关勇者遗迹的玩家！
+sys_mail_Content_016_836 = 恭喜您成为第{@0:num}个通关荒漠废土的玩家！
+sys_mail_Content_016_837 = 恭喜您成为第{@0:num}个通关幽冥墓穴的玩家！
+sys_mail_Content_016_838 = 恭喜您成为第{@0:num}个通关战魂之地的玩家！
+sys_mail_Content_016_841 = 恭喜您成为第{@0:num}个通关星空之角的玩家！
+sys_mail_Content_016_842 = 恭喜您成为第{@0:num}个通关战场遗迹的玩家！
+sys_mail_Content_016_843 = 恭喜您成为第{@0:num}个通关堕落之地的玩家！
+sys_mail_Content_016_844 = 恭喜您成为第{@0:num}个通关元素废墟的玩家！
+sys_mail_Content_016_845 = 恭喜您成为第{@0:num}个通关守护之盾的玩家！
+sys_mail_Content_016_846 = 恭喜您成为第{@0:num}个通关战争学院的玩家！
+sys_mail_Content_016_847 = 恭喜您成为第{@0:num}个通关试炼入口的玩家！
+sys_mail_Content_016_848 = 恭喜您成为第{@0:num}个通关荣耀试炼的玩家！
+sys_mail_Content_016_849 = 恭喜您成为第{@0:num}个通关勇者之巅的玩家！
+sys_mail_Content_016_851 = 恭喜您成为第{@0:num}个通关通天塔底的玩家！
+sys_mail_Content_016_852 = 恭喜您成为第{@0:num}个通关第八层的玩家！
+sys_mail_Content_016_853 = 恭喜您成为第{@0:num}个通关第十二层的玩家！
+sys_mail_Content_016_854 = 恭喜您成为第{@0:num}个通关第十八层的玩家！
+sys_mail_Content_016_855 = 恭喜您成为第{@0:num}个通关第二十层的玩家！
+sys_mail_Content_016_856 = 恭喜您成为第{@0:num}个通关第三十层的玩家！
+sys_mail_Content_016_857 = 恭喜您成为第{@0:num}个通关第五十层的玩家！
+sys_mail_Content_016_858 = 恭喜您成为第{@0:num}个通关第一百层的玩家！
+sys_mail_Content_016_861 = 恭喜您成为第{@0:num}个通关马里亚纳的玩家！
+sys_mail_Content_016_862 = 恭喜您成为第{@0:num}个通关亲善环礁的玩家！
+sys_mail_Content_016_863 = 恭喜您成为第{@0:num}个通关冒险礁的玩家！
+sys_mail_Content_016_864 = 恭喜您成为第{@0:num}个通关海豚湾的玩家！
+sys_mail_Content_016_865 = 恭喜您成为第{@0:num}个通关珍珠海域的玩家！
+sys_mail_Content_016_866 = 恭喜您成为第{@0:num}个通关苏珊娜湾的玩家！
+sys_mail_Content_016_867 = 恭喜您成为第{@0:num}个通关阿尔法沟的玩家！
+sys_mail_Content_016_868 = 恭喜您成为第{@0:num}个通关国王湾的玩家！
+sys_mail_Content_016_869 = 恭喜您成为第{@0:num}个通关大漩涡的玩家！
+sys_mail_Content_016_871 = 恭喜您成为第{@0:num}个通关地下沼泽的玩家！
+sys_mail_Content_016_872 = 恭喜您成为第{@0:num}个通关熊魂峭壁的玩家！
+sys_mail_Content_016_873 = 恭喜您成为第{@0:num}个通关埋骨之森的玩家！
+sys_mail_Content_016_874 = 恭喜您成为第{@0:num}个通关升灵之岛的玩家！
+sys_mail_Content_016_875 = 恭喜您成为第{@0:num}个通关绿野仙踪的玩家！
+sys_mail_Content_016_876 = 恭喜您成为第{@0:num}个通关惊奇之旅的玩家！
+sys_mail_Content_016_877 = 恭喜您成为第{@0:num}个通关勇者之心的玩家！
+sys_mail_Content_016_878 = 恭喜您成为第{@0:num}个通关终极挑战的玩家！
+sys_mail_Content_017 = 你所在的{@0:guild}公会被{@1:name}解散！
+sys_mail_Content_018 = 背包空间不足，任务奖励已通过邮件形式发送给您，请查收！
+sys_mail_Content_019 = 背包空间不足，章节奖励已通过邮件形式发送给您，请查收！
+sys_mail_Content_020 = 您的物品上架失败，请重新上架！
+sys_mail_Content_021 = 您的物品下架失败！
+sys_mail_Content_022 = 恭喜，物品购买成功！
+sys_mail_Content_023 = 因合服需要，您在交易行寄售的商品被强制下架。在此给您带来的不便，我们十分抱歉。
+sys_mail_Content_024 = 抱歉，购买物品失败！
+sys_mail_Content_025 = 恭喜，你所出售的物品已成功售出！
+sys_mail_Content_026 = 活跃度满足，奖励物品！
+sys_mail_Content_027 = 恭喜您已成功完成活跃度，请领取奖励！
+sys_mail_Content_028 = 恭喜您在遗迹巨魔活动中取得<font color='#FF0000'>{@0:num}</font>名的成绩。
+sys_mail_Content_029 = 恭喜！您的公会伙伴们已成功将遗迹BOSS击败，请领取奖励！
+sys_mail_Content_030 = 抱歉，您已被踢出公会！
+sys_mail_Content_031 = 恭喜您被任命为公会副会长！
+sys_mail_Content_032 = 恭喜您被任命为公会精英！
+sys_mail_Content_033 = 抱歉，您被解除了公会副会长职位！
+sys_mail_Content_034 = 抱歉，您被解除了公会精英职位！
+sys_mail_Content_035 = 恭喜您已完成荒野镖客活动，请领取奖励！
+sys_mail_Content_036 = 恭喜您已完成夺宝联盟活动，请领取奖励！
+sys_mail_Content_037 = 恭喜您在世界BOSS活动中获得第<font color='#FF0000'>{@0:num}</font>名，请领取奖励！
+sys_mail_Content_038 = 恭喜您在世界BOSS活动中最终击败了世界BOSS，请领取奖励！
+sys_mail_Content_039 = 恭喜您已完成世界BOSS活动，请领取奖励！
+sys_mail_Content_040 = 您的公会获得了{@0:relic_name}遗迹的争夺权，您将同时面对{@1:guild_1}公会的进攻，成功打倒他们能够占有遗迹，每日祈福获得祈福奖励，请提前做好准备！
+sys_mail_Content_041 = 您的公会获得了{@0:relic_name}遗迹的争夺权，您将攻打{@2:guild_2}公会，赢得胜利占有遗迹，每日祈福获得祈福奖励，请提前做好准备！
+sys_mail_Content_042 = 我方公会已竞标遗迹[{@0:relic_name}]成功，请等待遗迹战开始！
+sys_mail_Content_043 = [{@0:relic_name}]遗迹战斗即将开始，请进入房间，严阵以待！
+sys_mail_Content_044 = 遗迹争夺结束，成功夺取{@0:name}！
+sys_mail_Content_045 = 遗迹争夺结束，对方公会解散，我方成功夺取{@0:name}！
+sys_mail_Content_046 = 由于系统问题，对[{@0:name}]竞标未成功，贡献度已返还，请稍后重新竞标！
+sys_mail_Content_047 = 遗迹{@0:name}争夺失败！
+sys_mail_Content_048 = {@0:name} 遗迹争夺正式开战！
+sys_mail_Content_049 = {@0:name}遗迹时间到，自动失去！
+sys_mail_Content_050 = 很遗憾，你对{@0:name}遗迹发起的竞标未能成功，建设度已返还！
+sys_mail_Content_051 = 由于你在{@0:name}遗迹战中获胜，大涨我方士气，特发此物，以资鼓励。
+sys_mail_Content_052 = 虽然你在{@0:name}遗迹战中未能取胜，但你永不言败的精神感染了每一个人，特发此物，以资鼓励。
+sys_mail_Content_053 = 您公会参加的遗迹<font color='#FF0000'>[{@0:name}]</font>已争夺结束，结果如下：<font color='#FFFF00'>{@1:guild_1}</font>公会战胜<font color='#FFFF00'>{@2:guild_2}</font>公会，夺得了遗迹。
+sys_mail_Content_054 = 您公会参加的遗迹<font color='#FF0000'>[{@0:name}]</font>已争夺结束，结果如下：<font color='#FFFF00'>{@1:guild_1}</font>公会率先战胜<font color='#FFFF00'>{@2:guild_2}</font>公会，随后<font color='#FFFF00'>{@3:guild_3}</font>公会战胜<font color='#FFFF00'>{@4:guild_4}</font>公会。最后遗迹归<font color='#FFFF00'>{@5:guild_5}公会所有。</font>
+sys_mail_Content_055 = 恭喜你在完成战役时幸运的获得了一份<font color='#FF0000'>肥料</font>。
+sys_mail_Content_056 = 你刚刚完成了一次组队副本，奖励两份<font color='#FF0000'>肥料</font>。
+sys_mail_Content_057 = 你参与了击败圣诞，奖励<font color='#FF0000'>杉树枝</font>一根。
+sys_mail_Content_058 = 恭喜你最终击败了冥魂大帝，额外奖励<font color='#FF0000'>杉树枝</font>一根。
+sys_mail_Content_059 = 恭喜你刚刚成功拾取了圣诞袜，奖励一个<font color='#FF0000'>圣诞节礼包</font>，祝您在寒冷的冬季收获无限温暖。
+sys_mail_Content_060 = 恭喜您成为等级排行榜第{@0:num}名！
+sys_mail_Content_061 = 恭喜您成为战力排行榜第{@0:num}名！
+sys_mail_Content_062 = 恭喜您成为巅峰排行榜第{@0:num}名！
+sys_mail_Content_063 = 恭喜您成为副本排行榜第{@0:num}名！\
+sys_mail_Content_064 = 您上架的物品已成功售出，获得{@0:num}钻石，钻石已至您的账下
+sys_mail_Content_065 = 您的公会获得了{@0:relic_name}领地的争夺权，您将面对{@1:guild_1}公会的进攻，成功打倒他们能够占有领地，并且每日祈福获得祈福奖励，请提前做好准备。
+sys_mail_Content_066 = 您的公会获得了{@0:relic_name}领地的争夺权，您将攻打{@2:guild_2}公会，赢得胜利占有领地，并且每日祈福获得祈福奖励，请提前做好准备。
+sys_mail_Content_067 = 您的公会获得了{@0:relic_name}领地的争夺权，您将抵御{@1:guild_1}公会的进攻，成功打倒他们能够占有领地，并且每日祈福获得祈福奖励，请提前做好准备。
+sys_mail_Content_068 = 您的公会获得了{@0:relic_name}领地的争夺权，您将对{@1:guild_1}公会发起进攻，成功打倒他们能够占有领地，并且每日祈福获得祈福奖励，请提前做好准备。
+sys_mail_Content_069 = 我方公会已竞标领地[{@0:relic_name}]成功，请等待领地战开始
+sys_mail_Content_070 = [{@0:relic_name}]领地战斗即将开始，请进入房间，严阵以待！
+sys_mail_Content_071 = 领地争夺结束，对方公会解散，我方成功夺取{@0:name}
+sys_mail_Content_072 = 领地争夺结束，成功夺取{@0:name}
+sys_mail_Content_073 = 领地{@0:name}争夺失败
+sys_mail_Content_074 = {@0:name} 领地争夺正式开战
+sys_mail_Content_075 = {@0:name}领地时间到，自动失去
+sys_mail_Content_076 = 很遗憾，你对{@0:name}领地发起的竞标未能成功，建设度已返还
+sys_mail_Content_077 = 由于你在{@0:name}领地战中获胜，大涨我方士气，特发此物，以资鼓励。
+sys_mail_Content_078 = 虽然你在{@0:name}领地战中未能取胜，但你永不言败的精神感染了每一个人，特发此物，以资鼓励。
+sys_mail_Content_079 = 您公会参加的领地<font color='#FF0000'>[{@0:name}]</font>已争夺结束，结果如下：<font color='#FFFF00'>{@1:guild_1}</font>公会战胜<font color='#FFFF00'>{@2:guild_2}</font>公会，夺得了领地。
+sys_mail_Content_080 = 您公会参加的领地<font color='#FF0000'>[{@0:name}]</font>已争夺结束，结果如下：<font color='#FFFF00'>{@1:guild_1}</font>公会率先战胜<font color='#FFFF00'>{@2:guild_2}</font>公会，随后<font color='#FFFF00'>{@3:guild_3}</font>公会战胜<font color='#FFFF00'>{@4:guild_4}</font>公会。最后领地归<font color='#FFFF00'>{@5:guild_5}公会所有。</font>
+sys_mail_Content_081 = 您购买的商品已送达，请查收。感谢您对我们产品的支持！
+sys_mail_Content_082 = 恭喜您成功击败了魔兽浩劫BOSS，请领取奖励！
+sys_mail_Content_084 = 恭喜您成功击败了稀有怪，请领取奖励！
+sys_mail_Content_085 = 恭喜您参加了荒野狂飙，你获得了第{@0:number}名，请领取奖励！
+sys_mail_Content_087 = 恭喜您参加了荒野狂飙，名次在200名以外，请领取奖励！
+sys_mail_Content_083 = 非常抱歉，刚刚由于系统异常，没能直接发送所有奖励。这里是未成功发送的物品，请查收。
+sys_mail_Content_086 = 您的背包已满，请领取活动奖励！
+sys_mail_Content_088 = 荒野狂飙活动结束，你没能完成比赛，请领取奖励！
+sys_mail_Content_092 = 您的背包已满，请领取勇士之路奖励
+sys_mail_Content_award001 = 您的背包已满，请领取分解物品
+sys_mail_Content_093 = 恭喜您成功击败了地宫精英，请领取奖励！
+sys_mail_Content_094 = 恭喜您成功击败了地宫BOSS，请领取奖励！
+sys_mail_Content_095 = 地宫次数兑换收益，请查收！
+sys_mail_Content_096 = 恭喜您成功击败了地宫金币怪，请领取奖励！
+sys_mail_Content_097 = 您于{@0}年{@1}月{@2}日成功续费了特权卡。
+
+sys_kingshipwar_0001 = <font color='#FF0000'>浴血沙场</font>活动已经开启，请大家踊跃参与！
+sys_kingshipwar_0002 = <font color='#FF0000'>浴血沙场</font>新一轮战斗已经打响，请大家踊跃参与
+sys_kingshipwar_0003 = <font color='#FF0000'>浴血沙场</font>本轮战斗已经结束，请大家等待下一轮战斗
+sys_kingshipwar_0004 = <font color='#FF0000'>浴血沙场</font>活动已经结束，感谢大家的参与
+sys_kingshipwar_0011 = <font color='#FFFF00'>恶魔首领</font>已经出现战场中央，请各位勇士迅速消灭它吧
+sys_kingshipwar_0012 = <font color='#FFFF00'>守护神</font>已经出现并镇守双方据点，击破守护神能够瓦解对方的防御
+sys_kingshipwar_0013 = <font color='#FFFF00'>恶魔首领</font>已经被<font color='#00CFFF'>蓝方</font>击败，<font color='#00CFFF'>蓝方</font>获得6500积分，<font color='#00CFFF'>蓝方</font>全体玩家获得1200积分
+sys_kingshipwar_0014 = <font color='#FFFF00'>恶魔首领</font>已经被<font color='#FF0000'>红方</font>击败，<font color='#FF0000'>红方</font>获得6500积分，<font color='#FF0000'>红方</font>全体玩家获得1200积分
+sys_kingshipwar_0015 = <font color='#00CFFF'>蓝方</font>的守护神已经被击破，<font color='#FF0000'>红方</font>获得4000积分
+sys_kingshipwar_0016 = <font color='#FF0000'>红方</font>的守护神已经被击破，<font color='#00CFFF'>蓝方</font>获得4000积分
+sys_kingshipwar_0017 = 已向好友及公会求援
+sys_kingshipwar_0018 = 已向公会求援
+sys_kingshipwar_0019 = <font color='#FFFF00'>深渊魔族</font>出现在战场<font color='#FF0000'>右下区域</font>，请各位勇士迅速消灭它们吧
+sys_kingshipwar_0020 = <font color='#FFFF00'>深渊魔族</font>出现在战场<font color='#FF0000'>左上区域</font>，请各位勇士迅速消灭它们吧
+sys_kingshipwar_0021 = <font color='#FFFF00'>深渊魔族</font>已经被<font color='#0000FF'>蓝方</font>击败，<font color='#0000FF'>蓝方</font>获得3000积分，<font color='#0000FF'>蓝方</font>全体玩家获得600积分
+sys_kingshipwar_0022 = <font color='#FFFF00'>深渊魔族</font>已经被<font color='#FF0000'>红方</font>击败，<font color='#FF0000'>红方</font>获得3000积分，<font color='#FF0000'>红方</font>全体玩家获得600积分
+sys_kingshipwar_0023 = <font color='#FF00FF'>[{@0:name}]</font>正在疯狂屠戮，已被悬赏，请迅速终结他
+sys_kingshipwar_0024 = <font color='#FF00FF'>[{@0:name}]</font>已经嗜血成性，已被特级悬赏，快来个人阻止他吧
+sys_kingshipwar_0026 = <font color='#00FF00'>秘境使者</font>已经被<font color='#00CFFF'>蓝方</font>击败，<font color='#00CFFF'>蓝方</font>获得2500积分，<font color='#00CFFF'>蓝方</font>全体玩家获得500积分
+sys_kingshipwar_0027 = <font color='#00FF00'>秘境使者</font>已经被<font color='#FF0000'>红方</font>击败，<font color='#FF0000'>红方</font>获得2500积分，<font color='#FF0000'>红方</font>全体玩家获得500积分
+sys_kingshipwar_campfull = 阵营人数已满，无法加入
+sys_kingshipwar_roomfull = 现有房间已爆满，无法加入
+sys_kingshipwar_noexist = 房间不存在，无法加入
+sys_kingshipwar_level = 您的等级不足，无法加入
+sys_no_can_item_use = 无法重复使用
+
+sys_kingshipwar2_0001 = <font color='#00FF00'>秘境使者</font>出现在战场<font color='#FF0000'>左上区域</font>，请各位勇士迅速消灭它们吧
+sys_kingshipwar2_0002 = <font color='#00FF00'>秘境使者</font>出现在战场<font color='#FF0000'>右上区域</font>，请各位勇士迅速消灭它们吧
+sys_kingshipwar2_0003 = <font color='#00FF00'>聚宝使者</font>率领大批<font color='#00FF00'>秘境使者</font>正向<font color='#FF0000'>中间区域</font>汇集，请各位勇士迅速消灭它们吧
+sys_kingshipwar2_0004 = <font color='#00FF00'>武装色龙鱼</font>出现在战场<font color='#FF0000'>左上</font>和<font color='#FF0000'>右上</font>区域,请各位勇士前往驯服它们吧
+sys_kingshipwar2_0005 = <font color='#00FF00'>霸王色龙鱼</font>出现在战场<font color='#FF0000'>左下</font>和<font color='#FF0000'>右下</font>区域,请各位勇士前往驯服它们吧
+sys_kingshipwar2_0006_blue = <font color='#00CFFF'>{@0:name}</font>化身为<font color='#00FF00'>武装色龙鱼</font>将为{@1:阵营}提供强力支持
+sys_kingshipwar2_0006_red = <font color='#FF0000'>{@0:name}</font>化身为<font color='#00FF00'>武装色龙鱼</font>将为{@1:阵营}提供强力支持
+sys_kingshipwar2_0007_blue = <font color='#00CFFF'>{@0:name}</font>化身为<font color='#00FF00'>霸王色龙鱼</font>将为{@1:阵营}提供强力支持
+sys_kingshipwar2_0007_red = <font color='#FF0000'>{@0:name}</font>化身为<font color='#00FF00'>霸王色龙鱼</font>将为{@1:阵营}提供强力支持
+sys_kingshipwar2_0008 = <font color='#00FF00'>秘境使者</font>出现在战场<font color='#FF0000'>左下区域</font>，请各位勇士迅速消灭它们吧
+sys_kingshipwar2_0009 = <font color='#00FF00'>秘境使者</font>出现在战场<font color='#FF0000'>右下区域</font>，请各位勇士迅速消灭它们吧
+sys_kingshipwar2_0010 = <font color='#00FF00'>武装色龙鱼</font>出现在战场<font color='#FF0000'>中上</font>和<font color='#FF0000'>中下</font>区域,请各位勇士前往驯服它们吧
+sys_kingshipwar2_0011 = <font color='#00FF00'>霸王色龙鱼</font>出现在战场<font color='#FF0000'>中间</font>区域,请各位勇士前往驯服它们吧
+
+// 坐骑系统
+sys_ride_0001 = 不能装备{@0:name}
+sys_ride_0002 = 没有可用装备
+sys_ride_0003 = 当前部位已有装备
+sys_ride_0004 = 骑术等级不足
+sys_cant_add_rideexp = 当前经验已达到上限
+sys_ride_cant_use = 战斗状态中无法使用坐骑
+sys_ride_tishi = 切换冷却中，稍后再试
+sys_ride_tishi1 = 此区域不能骑乘坐骑
+sys_ride_tishi2 = 当前坐骑属性已默认切换为物理
+sys_ride_tishi3 = 当前坐骑属性已默认切换为法术
+sys_ride_tishi4 = 冷却中，不能上坐骑
+sys_ride_tishi5 = {@0:}坐骑限时时间已到，坐骑自动下阵
+sys_ride_tishi6 = {@0:}使用时间还剩{@1:}分钟结束
+sys_ride_tishi7 = 使用技能中，无法骑乘坐骑
+sys_itemsys_level_do_not_reach = 战队等级未达到29级，无法使用
+
+
+// 七日活动
+sys_seven_buy_half_failed = 该礼包尚未解锁，请耐心等待！
+
+sys_room_state_1 = 您当前处于组队副本队伍中
+sys_room_state_2 = 您当前处于战场队伍中
+sys_room_state_3 = 您当前处于切磋邀请中
+sys_room_state_5 = 您当前处于组队副本队伍中
+sys_room_state_6 = 您当前处于组队副本匹配中
+sys_room_state_7 = 您当前已成功匹配组队副本
+sys_room_state_8 = 您当前处于组队副本战斗中
+sys_room_state_9 = 您当前刚刚结束组队副本战斗
+sys_room_state_11 = 您当前处于战场排队中
+sys_room_state_12 = 您当前已成功报名战场副本
+sys_room_state_13 = 您当前已成功匹配战场，等待进入
+sys_room_state_14 = 您当前处于战场战斗中
+sys_room_state_15 = 您当前刚刚结束战场战斗
+sys_room_state_17 = 您当前在公会BOSS队伍中
+sys_room_state_18 = 您当前处于公会BOSS匹配中
+sys_room_state_19 = 您当前已报名公会BOSS
+sys_room_state_20 = 您当前已匹配成功公会BOSS，等待进入
+sys_room_state_21 = 您当前处于公会BOSS战斗中
+sys_room_state_22 = 您当前处于王者联赛中
+sys_room_state_23 = 您当前处于无双联赛中
+sys_room_state_24 = 您当前处于阵营战中
+
+sys_room_state_01 = 该英雄当前处于组队副本队伍中
+sys_room_state_02 = 该英雄当前处于战场队伍中
+sys_room_state_03 = 该英雄当前处于切磋邀请中
+sys_room_state_05 = 该英雄当前处于组队副本队伍中
+sys_room_state_06 = 该英雄当前处于组队副本匹配中
+sys_room_state_07 = 该英雄当前已成功匹配组队副本
+sys_room_state_08 = 该英雄当前处于组队副本战斗中
+sys_room_state_09 = 该英雄当前刚刚结束组队副本战斗
+sys_room_state_011 = 该英雄当前处于战场排队中
+sys_room_state_012 = 该英雄当前已成功报名战场副本
+sys_room_state_013 = 该英雄当前已成功匹配战场，等待进入
+sys_room_state_014 = 该英雄当前处于战场战斗中
+sys_room_state_015 = 该英雄当前刚刚结束战场战斗
+sys_room_state_017 = 该英雄当前在公会BOSS队伍中
+sys_room_state_018 = 该英雄当前处于公会BOSS匹配中
+sys_room_state_019 = 该英雄当前已报名公会BOSS
+sys_room_state_020 = 该英雄当前已匹配成功公会BOSS，等待进入
+sys_room_state_021 = 该英雄当前处于公会BOSS战斗中
+sys_room_state_022 = 该英雄当前处于王者联赛中
+sys_room_state_023 = 该英雄当前处于无双联赛中
+sys_room_state_024 = 该英雄当前处于阵营战中
+sys_room_state_025 = 该英雄当前处于地宫中
+
+//阵营
+sys_zr_success = 操作成功
+sys_zr_error_other = 操作失败
+sys_zr_insufficient_capital = 货币不足，无法转换阵营
+sys_zr_join_level_limit = 等级不足，36级以上的玩家才能加入阵营！
+sys_zr_not_balance = 加入失败，您选择的阵营已经人满为患啦!
+sys_zr_sold_out = 道具已售馨
+sys_zr_buy_insufficent = 阵营点数不足，无法兑换此道具
+sys_zr_buy_success = 兑换成功
+sys_zr_reset_shop_insufficent = 阵营点数不足
+sys_already_in_zhenying=你已是该阵营的成员，无需重复加入
+sys_zr_in_fight_state = 战斗状态中，无法转换阵营
+sys_zr_in_zhenying_scene = 阵营地图中，无法转换阵营
+sys_already_in_zhenying_map=寻路已取消，您正在目标场景中
+
+// 阵营战
+sys_zyw_success = 操作成功
+sys_zyw_error_other = 操作失败
+sys_zyw_no_zhenying = 加入失败，请先加入阵营后再试
+sys_zyw_max_players = 战场人数达到上限，无法加入
+sys_zyw_not_open=当前时段阵营战场暂未开放，无法加入
+sys_zyw_bc=战场尚未正式开放，请稍后再试
+sys_zyw_finished=当前分线战场已结束，无法加入
+sys_zyw_in_activity=您正在其他玩法中，不能进入
+sys_zyw_high_rank=当前为至高战力玩家进场时间，开赛前2分钟后将解除此限制，请稍后再试
+sys_zyw_max_or_closed=人数已满或战场已结束
+sys_zyw_kickout_alarm=您当前处于消极挂机状态，请尽快加入战斗否则将被强制踢出
+sys_zyw_already_pray=今天已经祈祷过了
+sys_zyw_pray_no_zhenying=没有加入阵营,无法进行祈祷
+sys_zyw_pray_scene=您的阵营没有占领阵营领地，无法进行高级祈祷
+sys_zyw_pray_task_count=阵营任务完成次数不足5次,无法进行祈祷
+sys_zyw_normal_wanted=<font color='#FF00FF'>[{@0:name}]</font>正在疯狂屠戮，已被悬赏，请迅速终结他
+sys_zyw_high_wanted=<font color='#FF00FF'>[{@0:name}]</font>已经嗜血成性，已被特级悬赏，快来个人阻止他吧
+sys_zyw_command_cd=指挥命令冷却中，请稍后再试
+sys_zyw_command_rank=操作失败，战力未达到挥权限标准
+sys_zyw_command_attack= <font color='#ffffcc'>◆</font><font color='#00ffff'>[{@0:name}]</font>向{@1:Flagname}发起了防御指令，请各位勇士火速回防。
+sys_zyw_command_defense= <font color='#ffffcc'>◆</font><font color='#00ffff'>[{@0:name}]</font>向{@1:Flagname}发起了进攻指令，请各位勇士前往突击。
+sys_zyw_msg1=<font color='#ffffcc'>◆</font><font color='#00FF00'>{@0:npc名}</font>出现在A区
+sys_zyw_msg2=<font color='#ffffcc'>◆</font><font color='#00FF00'>{@0:npc名}</font>出现在B区
+sys_zyw_msg3=<font color='#ffffcc'>◆</font><font color='#00FF00'>{@0:npc名}</font>出现在C区
+sys_zyw_msg4=<font color='#ffffcc'>◆</font><font color='#00FF00'>{@0:npc名}</font>出现在D区
+ui_zy_war_broadcast1=<font color='#00FF00'>{@0:场景名} </font>阵营战场即将于<font color='#ff0000'> 10 </font>分后开放，届时请各位勇士提前做好准备！
+ui_zy_war_broadcast2=<font color='#00FF00'>{@0:场景名} </font>阵营战场即将于<font color='#ff0000'> 5 </font>分后开放，届时请各位勇士提前做好准备！
+ui_zy_war_broadcast3=<font color='#00FF00'>{@0:场景名} </font>阵营战场即将于<font color='#ff0000'> 3 </font>分后开放，届时请各位勇士提前做好准备！
+ui_zy_war_broadcast_reset=<font color='#00FF00'>{@0:场景名} </font>阵营领地归属已重置！
+ui_zy_war_broadcast_win=<font color='#00FF00'>{@0:场景名} </font>阵营争夺战，{@1:阵营}获得了最终的胜利，让我们祝贺他们！
+ui_zy_war_broadcast_draw=<font color='#00FF00'>{@0:场景名} </font>阵营争夺战，双方平分秋色！
+ui_zy_war_broadcast_line_win=<font color='#ffffcc'>◆</font><font color='#00FF00'>{@0:场景名} </font>阵营战中，{@1:阵营}赢得了{@2:分线}线程的胜利！
+ui_zy_war_broadcast_line_draw=<font color='#ffffcc'>◆</font><font color='#00FF00'>{@0:场景名} </font>阵营战中，({@1:分线})线程双方平分秋色！
+ui_zy_war_line_win=<font color='#ffffcc'>◆当前分线</font>{@0:阵营}<font color='#ffffcc'>获得了胜利！</font>
+ui_zy_war_line_draw=<font color='#ffffcc'>◆当前分线双方平分秋色！</font>
+zyw_flag_name1=<font color='#00FF00'>太阳旗</font>
+zyw_flag_name2=<font color='#00FF00'>月亮旗</font>
+zyw_flag_name3=<font color='#00FF00'>星光旗</font>
+zyw_flag_name4=<font color='#00FF00'>闪电旗</font>
+zyw_flag_name5=<font color='#00FF00'>火焰旗</font>
+sys_zyw_cap_flag_msg={@0:阵营}成功占领了{@1:旗帜}
+sys_zyw_cap_fire_msg1=<font color='#ffffcc'>◆</font><font color='#00FF00'>赫拉特</font><font color='#ffffcc'>协助</font>{@1:阵营}<font color='#ffffcc'>对</font>{@2:旗帜}<font color='#ffffcc'>发起了轰炸</font>
+sys_zyw_cap_fire_msg2=<font color='#ffffcc'>◆</font>{@0:玩家}<font color='#ffffcc'>化身为超级战士将为</font>{@1:阵营}<font color='#ffffcc'>提供强力支持</font>
+sys_zhenyingwar_forbid_clone=当前在阵营战中，无法参加活动
+sys_zyw_line_name_1=<font color='#00FF00'>A线</font>
+sys_zyw_line_name_2=<font color='#00FF00'>B线</font>
+sys_zyw_line_name_3=<font color='#00FF00'>C线</font>
+sys_zyw_line_name_4=<font color='#00FF00'>D线</font>
+sys_zyw_line_name_5=<font color='#00FF00'>E线</font>
+sys_zyw_color_red=<font color='#FF0000'>{@0:玩家}</font>
+sys_zyw_color_blue=<font color='#00CFFF'>{@0:玩家}</font>
+
+ui_mail_Title094=阵营战奖励
+ui_mail_Content094=阵营战积分奖励，请领取奖励！
+ui_mail_Title095=阵营战奖励
+ui_mail_Content095=阵营战参与奖励，请领取奖励！
+ui_mail_Title096=阵营战奖励
+ui_mail_Content096=阵营战参与奖励，请领取奖励！
+sys_zyw_bag_full=背包空间不足，无法获得更多物品
+ui_mail_Title098=浴血鼓励奖励
+ui_mail_Content098=每一个胜利者都有一个开始。勇于开始，才能找到胜利的路。请继续努力！
+
+抽卡提示
+sys_chouka_tishi_001 = 您的剩余购买次数不足10次，请使用购买一个。
+sys_chouka_tishi_002 = 您每日只能购买20次，请明天再来购买。
+
+//星魂
+sys_starsoul_change_001 = 只有在主城或安全区才能对星魂进行操作
+sys_starsoul_change_002 = 只有在主城或安全区才能激活星魂
+sys_starsoul_limit = 战队等级达到{@0:level}才可以激活星魂
+
+//天赋
+sys_talent_change_001 = 只有在主城或安全区才能对天赋进行操作
+sys_talent_change_002 = 领悟点不足，无法升级该天赋
+sys_talent_change_003 = VIP等级不足，无法学习该方案天赋
+sys_talent_change_004 = 当前天赋已经切换至新的方案，请注意处理
+sys_talent_change_005 = 升级该天赋需要战队等级达到{@0:}
+
+
+//祭坛
+sys_artal_change_001 = 灵魂碎片或绑钻不足，无法兑换
+sys_artal_change_002 = 物品不存在
+sys_artal_change_003 = 购买次数用完
+sys_artal_change_004 = 祭坛刷新令不足，无法刷新
+sys_artal_change_007 = 背包剩余空间不足，无法炼魂
+sys_artal_change_008 = 碎片背包剩余空间不足，无法兑换
+sys_artal_change_009 = 购买次数不足
+
+//秘境BOSS提示
+raffle_clone_tip_0  = 背包满
+raffle_clone_tip_1  = 掉落包错误
+raffle_clone_tip_2  = 生成物品失败
+raffle_clone_tip_3  = 参数错误
+raffle_clone_tip_4  = 次数不足
+raffle_clone_tip_5  = 配置错误
+raffle_clone_tip_6  = 扣费失败
+raffle_clone_tip_7  = 其他原因导致的失败
+raffle_clone_tip_8  = 活动关闭
+raffle_clone_tip_9  = 活动中不能进入秘境
+sys_raffle_clone_fighting = 战斗状态不能进入秘境
+
+//坐骑家园
+sys_ridehome_001 = 大厅{@0:n}级可解锁下一个建筑。
+sys_ridehome_002 = 该建筑已解锁。
+sys_ridehome_003 = 家园币不足，升级失败。
+sys_ridehome_004 = 恭喜，建筑升级成功。
+sys_ridehome_005 = 该建筑无法再升级，请先提高大厅等级。
+sys_ridehome_005a = 升级大厅需要战队等级达到{@0:n}级。
+sys_ridehome_005b = 建筑等级已经满级，无法再提升。
+sys_ridehome_006 = 上阵失败，请先领取生产奖励。
+sys_ridehome_007 = 该坐骑今日已经完成生产。
+sys_ridehome_008 = 今日抢夺次数已经用完。
+sys_ridehome_009 = 家园币不足，是否花费{@0:n}个绑钻/钻石购买一次？
+sys_ridehome_010 = 家园系统60级开启。
+sys_ridehome_011 = {@0}抢夺了你的家园，您失去了{@1})家园币和{@2}幸运币。
+sys_ridehome_012 = 恭喜你，{@0}就在刚才企图抢夺你的家园，但却被你的城池防守成功了。
+sys_ridehome_013 = 建筑等级已经满级，不能在提升。
+sys_ridehome_014 = 家园币已满，请升级大厅增加储存容量。
+sys_ridehome_015 = 幸运币已满，请升级大厅增加储存容量。
+sys_ridehome_016 = 在保护时间内无法购买
+sys_ridehome_017 = 该坐骑已经完成生产，请先领取。
+sys_ridehome_018 = 未能寻找到合适的对手家园币已返还。
+sys_ridehome_019 = 未能寻找到合适的对手绑钻/钻石已返还。
+sys_ridehome_020 = 未能寻找到合适的对手。
+
+sys_ridehome_storm00 = 购买建筑物等级不足
+sys_ridehome_storm01 = 幸运币不足
+sys_ridehome_storm02 = 购买次数用完
+sys_ridehome_storm03 = 购买成功，获取物品{@0:}数量{@1:}
+sys_ridehome_storm04 = 已无可收取资源
+
+sys_talisman_tip_1=法宝强化所需金币不足
+sys_talisman_tip_2=法宝强化所需冰魄石不足
+sys_talisman_tip_3=法宝进阶所需金币不足
+sys_talisman_tip_4=法宝进阶所需冰魄石不足
+sys_talisman_tip_5=法宝进阶所需核心材料不足
+sys_talisman_tip_6=法宝洗炼所需幻彩石不足
+sys_talisman_tip_7=法宝不适合该英雄
+sys_talisman_tip_8 = 0级法宝不能转换
+sys_talisman_tip_9 = 低级法宝转换高级法宝材料不足
+sys_talisman_tip_10 = 法宝转换成功
+sys_talisman_tip_11 = 法宝分解成功
+sys_talisman_tip_12 = 0级法宝不能分解
+sys_talisman_tip_13 = 相同职业法宝无需转移
+sys_talisman_broadcase = 恭喜{@0:}在法宝洗炼中获得<font color='#ff0000'>{@1:}</font>，实力大增!
+
+//新手跳过功能
+ui_mail_Content097 = 跳过剧情后，期间的主线任务奖励，请查收！
+
+//地宫
+sys_cellar_itemprompt_01=今日地宫BOSS收益以达上限，无法获得BOSS掉落收益
+sys_cellar_itemprompt_02=今日地宫精英怪收益以达上限，无法获得精英怪掉落收益
+sys_cellar_itemprompt_03=地宫宝箱剩余采集次数不足，无法进行采集
+sys_cellar_bantracking=<font color='#ff0000'>该场景或目标场景不支持寻路追踪</font>
+Desc_cellar_01_boss_01=深渊裂隙地宫BOSS，随机在暗影回廊、十字路口、审判之陵、王之禁地场景中刷新
+Desc_cellar_01_jingying_01=深渊裂隙地宫精英，随机在深渊裂隙所有场景中刷新
+Desc_cellar_02_boss_01=罪恶之渊地宫BOSS，随机在罪恶之渊所有场景中刷新
+Desc_cellar_02_jingying_01=罪恶之渊地宫精英，随机在罪恶之渊所有场景中刷新
+Desc_cellar_03_boss_01=混沌温床地宫BOSS，随机在混沌温床所有场景中刷新
+Desc_cellar_03_jingying_01=混沌温床地宫精英，随机在混沌温床所有场景中刷新
+Desc_cellar_jinbi_gbl=行踪飘忽不定，击败它可以获得大量金币
+Desc_cellar_baoxiang=深埋于地宫中的宝藏，据说权利、金钱、名利都收藏于此
+cellarscene_introduction_231=[深渊裂隙]第一层，进入等级50级
+cellarscene_introduction_232=[深渊裂隙]第二层，进入等级50级
+cellarscene_introduction_233=[深渊裂隙]第三层，进入等级50级
+cellarscene_introduction_234=[深渊裂隙]第四层，进入等级50级
+cellarscene_introduction_235=[深渊裂隙]第五层，进入等级50级
+cellarscene_introduction_236=[深渊裂隙]第六层，进入等级50级
+cellarscene_introduction_241=[罪恶之渊]第一层，进入等级55级
+cellarscene_introduction_242=[罪恶之渊]第二层，进入等级55级
+cellarscene_introduction_243=[罪恶之渊]第三层，进入等级55级
+cellarscene_introduction_244=[罪恶之渊]第四层，进入等级55级
+cellarscene_introduction_245=[罪恶之渊]第五层，进入等级55级
+cellarscene_introduction_246=[混沌温床]第一层，进入等级50级
+cellarscene_introduction_247=[混沌温床]第二层，进入等级50级
+cellarscene_introduction_248=[混沌温床]第三层，进入等级50级
+cellarscene_introduction_249=[混沌温床]第四层，进入等级50级
+cellarscene_introduction_250=[混沌温床]第五层，进入等级50级
+sys_cellar_boss_owner_refresh=<font color='#ff0000'>【地宫BOSS】</font>即将在<font color='#00FF00'>{@0:name}</font>刷新！请各位英雄前往抢夺！
+sys_cellar_boss_owner_refresh1=<font color='#ff0000'>【地宫BOSS】</font>出现在<font color='#00FF00'>{@0:name}</font>！请各位英雄前往抢夺！
+sys_cellar_boss_owner_refresh2=<font color='#ff0000'>【地宫精英】</font>即将在<font color='#00FF00'>{@0:name}</font>刷新！请各位英雄前往抢夺！
+sys_cellar_boss_owner_refresh3=<font color='#ff0000'>【地宫精英】</font>出现在<font color='#00FF00'>{@0:name}</font>！请各位英雄前往抢夺！
+sys_item_max_hp=当前血量已满无需使用
+sys_cellear_bc_open=<font color='#00FF00'>{@0:地宫名}</font>地宫将于2分钟后开放，请各位英雄提前做好准备！
+sys_cellear_bc_open1=<font color='#00FF00'>{@0:地宫名}</font>地宫已经开放，请各位英雄前往探索！
+sys_cellear_bc_close=<font color='#00FF00'>{@0:地宫名}</font>地宫将于5分钟后关闭，请各位英雄提前做好退出准备！
+sys_cellear_bc_close1=<font color='#00FF00'>{@0:地宫名}</font>地宫已经关闭，期待您的下次参与！
+sys_cellear_max_player=地宫人数已满，无法进入！
+sys_cellear_close=当前地宫已经关闭，无法进入！
+sys_cellear_zhenyingwar=您当前在阵营战中，无法进入地宫！
+sys_cellear_yaoji=该药剂仅限在地宫中使用
+sys_cellear_zhaohuan=地宫场景中禁止召唤公会成员
+sys_cellear_chuansong=地宫场景中无法进行传送，请前往其他场景后再试
+sys_cellear_cant_relive_local=地宫中禁止使用原地复活，已默认为您就近复活
+sys_cellar_exchange_activity_limit=当前活跃度不足，无法进行兑换操作
+sys_cellar_exchange_count=剩余次数不足，无法进行兑换
+sys_cellar_exchange_item_count=乾坤石不足，无法进行兑换
+
+//红装交易
+sys_trade_70 = 附魔过的装备无法交易，请先将附魔属性取下
+
+phone_bind_1 = 领取成功
+
+//道具合成
+sys_compound_material_not_enough=合成所需材料不足
+sys_compound_success = 合成成功
+sys_compound_failed = 合成失败
+sys_compound_bag_full = 背包已满
+
+//随机道具合成
+sys_compoundr_capital_not_enough=合成所需货币不足
+sys_compoundr_formula_not_enough=缺少配方
+sys_compoundr_material_not_enough=合成所需材料不足
+sys_compoundr_success = 合成成功
+sys_compoundr_failed = 合成失败
+sys_compoundr_bag_full = 背包已满
+sys_compoundr_cout = 超过最高合成次数
+
+sys_cant_use_skill_change_module = 变身状态下无法学习新技能
+
+//翅膀融合铭刻
+sys_wing_success=操作成功
+sys_wing_failed=激活失败，需要融合后才能激活
+sys_wing_not_exist=翅膀不存在
+sys_wing_fashion_not_exist=翅膀时装不存在
+sys_wing_exist_same_fashion=翅膀已经融合该时装
+sys_wing_extract_has_new_stone=当前有萃取的宝石未处理
+sys_wing_extract_max_stone_count=宝石数量过多，请先分解
+sys_wing_extract_max_extract_count=今天萃取次数达到上限
+sys_wing_extract_capital_not_enough=萃取所需货币不足
+sys_wing_extract_item_not_enough=萃取所需道具不足
+sys_wing_extract_vip_limit=当天萃取次数达到上限
+sys_wing_wash_lock_too_much=洗炼失败，请先解锁镶嵌孔
+sys_wing_wash_cell_not_exist=指定镶嵌孔不存在
+sys_wing_wash_capital_not_enough=洗炼所需货币不足
+sys_wing_inscription_cell_lock=镶嵌孔未解锁，无法镶嵌
+sys_wing_upgrade_max_level=该品质宝石达到最大等级，不能再进行等级提升
+sys_wing_upgrade_capital_not_enough=宝石升级所需碎片不足
+sys_merge_success=融合成功
+sys_active_success=激活成功
+sys_extract_success=萃取成功
+sys_save_stone_success=保存宝石成功
+sys_decompose_stone_success=分解宝石成功
+sys_wash_success=洗炼成功
+sys_save_wash_success=保存洗炼成功
+sys_cancel_wash_success=放弃洗炼成功
+sys_upgrade_stone_success=升级宝石成功
+sys_recast_stone_success=重铸宝石成功
+sys_wing_wash_cell_not_unlock=洗炼失败，当前没有解锁的孔，请提升翅膀的进阶等级

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object>
+	<internals/>
+	<properties>
+		<property name="AttackNpcType" type="int" public="true" private="false" save="false" realtime="" desc="攻击npc类型(0: 普通  1: 精英  2: 稀有  3: boss)"/>
+		<property name="BornAction" type="string" public="true" private="true" save="false" realtime="" desc="出生动作"/>
+		<property name="BornProtectTime" type="int" public="true" private="true" save="false" desc="保护时间（可跟进动作时间来设定）"/>
+		<property name="FightAction" type="string" public="false" private="true" save="false" realtime="" desc="npc进入战斗动作"/>
+		<property name="FightProtectTime" type="int" public="false" private="true" save="false" realtime="" desc="npc进入战斗保护时间"/>
+		<property name="IsWorldBoss" type="int" public="false" private="false" save="false" realtime="" desc="是否是世界BOSS" />
+		<property name="IsHeadHpShow" type="int" public="true" private="true" save="false" desc="是否立即显示血条"/>
+		<property name="EffectState" type="int" public="false" private="true" save="false" realtime="" desc="技能效果状态"/>
+		<property name="UseHitPoint" type="byte" public="true" private="true" save="false" realtime="" desc="是否使用命中点(部位点播放特效使用)"/>
+		<property name="ElementStateAdd" type="int" public="true" private="true" save="false" realtime="" desc="附加元素状态(负面)"/>
+		<property name="MaterialType" type="byte" public="false" private="false" save="false" realtime="" desc="材质类型(0:肉 1:骨 2:石头)"/>
+		<property name="BeAttackRadius" type="float" public="false" private="false" save="false" realtime="" desc="受击半径"/>
+		<property name="CantBeSkygrab" type="int" public="true" private="false" save="false" realtime="" desc="是否可被空中擒拿，默认可被擒拿"/>
+		<property name="ShowDeadEffect" type="byte" public="false" private="false" save="false" desc="显示死亡屏幕特效"/>
+		<property name="Exp" type="int" public="false" private="true" save="false" realtime="" desc="NPC携带经验"/>
+		<property name="OwnerCamp" type="int" public="true" private="false" save="false" realtime="" desc="战场所有者的阵营号"/>
+		<property name="ChaseNoBack" type="int" public="false" private="false" save="false" realtime="" desc="脱战后是否不返回"/>
+	</properties>
+	<records/>
+	<includes>
+		<path name="struct\npc\npcproperty\awards.xml" desc="NPC死亡奖励属性"/>
+		<path name="struct\npc\npcproperty\fight.xml" desc="NPC战斗属性"/>
+		<path name="struct\npc\rule\modifybase.xml" desc="属性 技能 buff修正表"/>
+		<path name="struct\ai\ai_npc_data.xml" desc="AI属性"/>
+		<path name="struct\ai\ai_motion.xml" desc="AI属性"/>
+	</includes>
+</object>

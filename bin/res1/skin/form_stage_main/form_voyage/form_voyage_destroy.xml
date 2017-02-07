@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Width="1024" Height="720" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\use\function\function_vein_096.png" />
+        <control name="groupbox_main" entity="GroupBox" script="" init="">
+            <prop Width="1024" Height="720" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+            <control name="lbl_2" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="613" Top="37" Width="378" Height="636" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\relic\bg_gonghuij_diban.png" />
+            </control>
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="29" Top="37" Width="378" Height="636" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\relic\bg_gonghuij_diban.png" />
+            </control>
+            <control name="groupbox_player_0" entity="GroupBox" script="" init="">
+                <prop Left="45" Top="72" Width="342" Height="94" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                <control name="lbl_4" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Top="-11" Width="100" Height="104" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\voyage\btn_ttt_boxyour.png" />
+                </control>
+                <control name="lbl_name_0" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="104" Top="-3" Width="118" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="玩家名" Font="WRYH22_O" />
+                </control>
+                <control name="lbl_ability_0" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="96" Top="53" Width="198" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="100" Font="TexFont_zdlNum" />
+                </control>
+                <control name="btn_invite_0" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\voyage\btn_ttt_boxmyc.png" PushImage="gui\main\voyage\btn_ttt_boxmy.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="-11" Width="100" Height="104" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="button_click" />
+                </control>
+                <control name="btn_fire_0" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\voyage\icon_ttt_tiren.png" PushImage="gui\main\voyage\icon_ttt_tiren.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="288000" Top="-11" Width="60" Height="60" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+                </control>
+                <control name="lbl_photo_0" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="8" Top="-27" Width="80" Height="100" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\main\hall\touxiang_fpanda1.png" />
+                </control>
+                <control name="lbl_battle_0" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="104" Top="29" Width="62" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\tips\fontpicture_zdl.jpg" />
+                </control>
+                <control name="lbl_level_0" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="64" Top="66" Width="30" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="Default" />
+                </control>
+                <control name="groupbox_revival_0" entity="GroupBox" script="" init="">
+                    <prop Left="52" Top="38" Width="51" Height="86" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" BackImage="gui\main\revival\xingxing.png" />
+                    <control name="lbl_revival_lv_0" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="2" Top="0" Width="46" Height="46" ForeColor="255,93,85,13" ShadowColor="0,0,0,0" Text="1" Font="WRYH20" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_revival_sub_lv_0" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="6" Top="42" Width="38" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="1" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                    </control>
+                </control>
+            </control>
+            <control name="groupbox_player_1" entity="GroupBox" script="" init="">
+                <prop Left="45" Top="184" Width="342" Height="94" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                <control name="lbl_5" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="-3" Top="-3" Width="100" Height="104" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\voyage\btn_ttt_boxyour.png" />
+                </control>
+                <control name="lbl_name_1" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="101" Top="-3" Width="118" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="玩家名" Font="WRYH22_O" />
+                </control>
+                <control name="lbl_ability_1" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="93" Top="53" Width="238" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="TexFont_zdlNum" />
+                </control>
+                <control name="btn_invite_1" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\voyage\btn_ttt_boxmyc.png" PushImage="gui\main\voyage\btn_ttt_boxmy.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-3" Top="-3" Width="100" Height="104" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" OutSound="button_click" />
+                </control>
+                <control name="btn_fire_1" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\voyage\icon_ttt_tiren.png" PushImage="gui\main\voyage\icon_ttt_tiren.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="285" Top="-16" Width="60" Height="60" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+                </control>
+                <control name="lbl_photo_1" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="5" Top="-19" Width="80" Height="100" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\main\hall\touxiang_fpanda1.png" />
+                </control>
+                <control name="lbl_battle_1" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="101" Top="29" Width="62" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\tips\fontpicture_zdl.jpg" />
+                </control>
+                <control name="lbl_level_1" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="56" Top="76" Width="38" Height="14" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="Default" />
+                </control>
+                <control name="groupbox_revival_1" entity="GroupBox" script="" init="">
+                    <prop Left="48" Top="45" Width="55" Height="86" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" BackImage="gui\main\revival\xingxing.png" />
+                    <control name="lbl_revival_lv_1" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="2" Top="0" Width="46" Height="46" ForeColor="255,93,85,13" ShadowColor="0,0,0,0" Text="1" Font="WRYH20" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_revival_sub_lv_1" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="6" Top="42" Width="38" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="1" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                    </control>
+                </control>
+            </control>
+            <control name="groupbox_player_2" entity="GroupBox" script="" init="">
+                <prop Left="45" Top="301" Width="342" Height="94" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                <control name="lbl_name_2" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="101" Top="-3" Width="118" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="玩家名" Font="WRYH22_O" />
+                </control>
+                <control name="lbl_ability_2" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="93" Top="53" Width="118" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="100" Font="TexFont_zdlNum" />
+                </control>
+                <control name="btn_fire_2" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\voyage\icon_ttt_tiren.png" PushImage="gui\main\voyage\icon_ttt_tiren.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="285" Top="-16" Width="60" Height="60" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+                </control>
+                <control name="lbl_6" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="-3" Top="-3" Width="100" Height="104" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\voyage\btn_ttt_boxyour.png" />
+                </control>
+                <control name="btn_invite_2" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\voyage\btn_ttt_boxmyc.png" PushImage="gui\main\voyage\btn_ttt_boxmy.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-3" Top="-3" Width="100" Height="104" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="button_click" />
+                </control>
+                <control name="lbl_photo_2" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="5" Top="-19" Width="80" Height="100" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\main\hall\touxiang_fpanda1.png" />
+                </control>
+                <control name="lbl_battle_2" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="101" Top="29" Width="62" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\tips\fontpicture_zdl.jpg" />
+                </control>
+                <control name="lbl_level_2" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="56" Top="72" Width="38" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="Default" />
+                </control>
+                <control name="groupbox_revival_2" entity="GroupBox" script="" init="">
+                    <prop Left="48" Top="48" Width="51" Height="86" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" BackImage="gui\main\revival\xingxing.png" />
+                    <control name="lbl_revival_lv_2" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="2" Top="0" Width="46" Height="46" ForeColor="255,93,85,13" ShadowColor="0,0,0,0" Text="1" Font="WRYH20" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_revival_sub_lv_2" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="6" Top="42" Width="38" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="1" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                    </control>
+                </control>
+            </control>
+            <control name="groupbox_player_3" entity="GroupBox" script="" init="">
+                <prop Left="45" Top="421" Width="342" Height="94" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                <control name="lbl_7" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="-3" Top="-3" Width="100" Height="104" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\voyage\btn_ttt_boxyour.png" />
+                </control>
+                <control name="lbl_name_3" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="101" Top="-3" Width="118" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="玩家名" Font="WRYH22_O" />
+                </control>
+                <control name="lbl_ability_3" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="93" Top="53" Width="118" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="100" Font="TexFont_zdlNum" />
+                </control>
+                <control name="btn_invite_3" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\voyage\btn_ttt_boxmyc.png" PushImage="gui\main\voyage\btn_ttt_boxmy.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-3" Top="-3" Width="100" Height="104" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="button_click" />
+                </control>
+                <control name="btn_fire_3" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\voyage\icon_ttt_tiren.png" PushImage="gui\main\voyage\icon_ttt_tiren.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="285" Top="-11" Width="60" Height="60" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+                </control>
+                <control name="lbl_photo_3" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="5" Top="-19" Width="80" Height="100" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\main\hall\touxiang_fpanda1.png" />
+                </control>
+                <control name="lbl_battle_3" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="101" Top="29" Width="62" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\tips\fontpicture_zdl.jpg" />
+                </control>
+                <control name="lbl_level_3" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="56" Top="72" Width="38" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="Default" />
+                </control>
+                <control name="groupbox_revival_3" entity="GroupBox" script="" init="">
+                    <prop Left="48" Top="48" Width="51" Height="86" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" BackImage="gui\main\revival\xingxing.png" />
+                    <control name="lbl_revival_lv_3" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="2" Top="0" Width="46" Height="46" ForeColor="255,93,85,13" ShadowColor="0,0,0,0" Text="1" Font="WRYH20" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_revival_sub_lv_3" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="6" Top="42" Width="38" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="1" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                    </control>
+                </control>
+            </control>
+            <control name="groupbox_player_4" entity="GroupBox" script="" init="">
+                <prop Left="45" Top="549" Width="342" Height="94" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                <control name="lbl_name_4" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="101" Top="-3" Width="118" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="玩家名" Font="WRYH22_O" />
+                </control>
+                <control name="lbl_ability_4" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="93" Top="48" Width="118" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="100" Font="TexFont_zdlNum" />
+                </control>
+                <control name="btn_fire_4" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\voyage\icon_ttt_tiren.png" PushImage="gui\main\voyage\icon_ttt_tiren.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="285" Top="-8" Width="60" Height="60" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" />
+                </control>
+                <control name="lbl_8" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="-3" Top="-3" Width="100" Height="104" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\voyage\btn_ttt_boxyour.png" />
+                </control>
+                <control name="btn_invite_4" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\voyage\btn_ttt_boxmyc.png" PushImage="gui\main\voyage\btn_ttt_boxmy.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-3" Top="-3" Width="100" Height="104" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+                </control>
+                <control name="lbl_photo_4" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="5" Top="-19" Width="80" Height="100" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\main\hall\touxiang_fpanda1.png" />
+                </control>
+                <control name="lbl_battle_4" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="101" Top="29" Width="62" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\tips\fontpicture_zdl.jpg" />
+                </control>
+                <control name="lbl_level_4" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="56" Top="72" Width="38" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="Default" />
+                </control>
+                <control name="groupbox_revival_4" entity="GroupBox" script="" init="">
+                    <prop Left="48" Top="48" Width="51" Height="86" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" BackImage="gui\main\revival\xingxing.png" />
+                    <control name="lbl_revival_lv_4" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="2" Top="0" Width="46" Height="46" ForeColor="255,93,85,13" ShadowColor="0,0,0,0" Text="1" Font="WRYH20" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_revival_sub_lv_4" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="6" Top="42" Width="38" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="1" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                    </control>
+                </control>
+            </control>
+            <control name="groupbox_enemy_0" entity="GroupBox" script="" init="">
+                <prop Left="637" Top="61" Width="342" Height="97" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                <control name="lbl_enemy_name_0" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="101" Top="-3" Width="118" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="玩家名" Font="WRYH22_O" />
+                </control>
+                <control name="lbl_enemy_ability_0" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="93" Top="53" Width="118" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="100" Font="TexFont_zdlNum" />
+                </control>
+                <control name="btn_enemy_fire_0" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\voyage\icon_ttt_tiren.png" PushImage="gui\main\voyage\icon_ttt_tiren.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="288000" Top="-16" Width="60" Height="60" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+                </control>
+                <control name="lbl_9" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="-3" Top="-3" Width="100" Height="104" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\voyage\btn_ttt_boxyour.png" />
+                </control>
+                <control name="btn_enemy_invite_0" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\voyage\btn_ttt_boxmyc.png" PushImage="gui\main\voyage\btn_ttt_boxmy.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-3" Top="-3" Width="100" Height="104" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="button_click" />
+                </control>
+                <control name="lbl_enemy_photo_0" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="5" Top="-19" Width="80" Height="100" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\main\hall\touxiang_fpanda1.png" />
+                </control>
+                <control name="lbl_enemy_battle_0" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="101" Top="29" Width="62" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\tips\fontpicture_zdl.jpg" />
+                </control>
+                <control name="lbl_enemy_level_0" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="56" Top="72" Width="38" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="Default" />
+                </control>
+                <control name="groupbox_revival_enemy0" entity="GroupBox" script="" init="">
+                    <prop Left="48" Top="48" Width="51" Height="86" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" BackImage="gui\main\revival\xingxing.png" />
+                    <control name="lbl_revival_lv_enemy0" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="2" Top="0" Width="46" Height="46" ForeColor="255,93,85,13" ShadowColor="0,0,0,0" Text="1" Font="WRYH20" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_revival_sub_lv_enemy0" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="6" Top="42" Width="38" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="1" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                    </control>
+                </control>
+            </control>
+            <control name="groupbox_enemy_1" entity="GroupBox" script="" init="">
+                <prop Left="637" Top="184" Width="342" Height="94" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                <control name="lbl_enemy_name_1" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="101" Top="-3" Width="118" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="玩家名" Font="WRYH22_O" />
+                </control>
+                <control name="lbl_enemy_ability_1" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="93" Top="53" Width="118" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="100" Font="TexFont_zdlNum" />
+                </control>
+                <control name="btn_enemy_fire_1" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\voyage\icon_ttt_tiren.png" PushImage="gui\main\voyage\icon_ttt_tiren.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="288" Top="-16" Width="60" Height="60" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+                </control>
+                <control name="lbl_10" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="-3" Top="-3" Width="100" Height="104" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\voyage\btn_ttt_boxyour.png" />
+                </control>
+                <control name="btn_enemy_invite_1" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\voyage\btn_ttt_boxmyc.png" PushImage="gui\main\voyage\btn_ttt_boxmy.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-3" Top="-3" Width="100" Height="104" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="button_click" />
+                </control>
+                <control name="lbl_enemy_photo_1" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="5" Top="-19" Width="80" Height="100" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\main\hall\touxiang_fpanda1.png" />
+                </control>
+                <control name="lbl_enemy_battle_1" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="101" Top="29" Width="62" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\tips\fontpicture_zdl.jpg" />
+                </control>
+                <control name="lbl_enemy_level_1" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="56" Top="76" Width="38" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="Default" />
+                </control>
+                <control name="groupbox_revival_enemy1" entity="GroupBox" script="" init="">
+                    <prop Left="48" Top="45" Width="51" Height="86" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" BackImage="gui\main\revival\xingxing.png" />
+                    <control name="lbl_revival_lv_enemy1" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="2" Top="0" Width="46" Height="46" ForeColor="255,93,85,13" ShadowColor="0,0,0,0" Text="1" Font="WRYH20" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_revival_sub_lv_enemy1" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="6" Top="42" Width="38" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="1" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                    </control>
+                </control>
+            </control>
+            <control name="groupbox_enemy_2" entity="GroupBox" script="" init="">
+                <prop Left="637" Top="301" Width="342" Height="94" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                <control name="lbl_enemy_name_2" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="101" Top="-3" Width="118" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="玩家名" Font="WRYH22_O" />
+                </control>
+                <control name="lbl_enemy_ability_2" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="93" Top="48" Width="118" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="100" Font="TexFont_zdlNum" />
+                </control>
+                <control name="btn_enemy_fire_2" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\voyage\icon_ttt_tiren.png" PushImage="gui\main\voyage\icon_ttt_tiren.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="288" Top="-19" Width="60" Height="60" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+                </control>
+                <control name="lbl_11" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="-3" Top="-3" Width="100" Height="104" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\voyage\btn_ttt_boxyour.png" />
+                </control>
+                <control name="btn_enemy_invite_2" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\voyage\btn_ttt_boxmyc.png" PushImage="gui\main\voyage\btn_ttt_boxmy.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-3" Top="-3" Width="100" Height="104" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+                </control>
+                <control name="lbl_enemy_photo_2" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="5" Top="-19" Width="80" Height="100" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\main\hall\touxiang_fpanda1.png" />
+                </control>
+                <control name="lbl_enemy_battle_2" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="101" Top="29" Width="62" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\tips\fontpicture_zdl.jpg" />
+                </control>
+                <control name="lbl_enemy_level_2" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="56" Top="72" Width="38" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="Default" />
+                </control>
+                <control name="groupbox_revival_enemy2" entity="GroupBox" script="" init="">
+                    <prop Left="48" Top="48" Width="51" Height="86" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" BackImage="gui\main\revival\xingxing.png" />
+                    <control name="lbl_revival_lv_enemy2" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="2" Top="0" Width="46" Height="46" ForeColor="255,93,85,13" ShadowColor="0,0,0,0" Text="1" Font="WRYH20" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_revival_sub_lv_enemy2" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="6" Top="42" Width="38" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="1" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                    </control>
+                </control>
+            </control>
+            <control name="groupbox_enemy_3" entity="GroupBox" script="" init="">
+                <prop Left="637" Top="421" Width="342" Height="94" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                <control name="lbl_enemy_name_3" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="101" Top="-3" Width="118" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="玩家名" Font="WRYH22_O" />
+                </control>
+                <control name="lbl_enemy_ability_3" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="93" Top="53" Width="118" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="100" Font="TexFont_zdlNum" />
+                </control>
+                <control name="btn_enemy_fire_3" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\voyage\icon_ttt_tiren.png" PushImage="gui\main\voyage\icon_ttt_tiren.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="288" Top="-19" Width="60" Height="60" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="button_click" />
+                </control>
+                <control name="lbl_12" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="-3" Top="-3" Width="100" Height="104" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\voyage\btn_ttt_boxyour.png" />
+                </control>
+                <control name="btn_enemy_invite_3" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\voyage\btn_ttt_boxmyc.png" PushImage="gui\main\voyage\btn_ttt_boxmy.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-3" Top="-3" Width="100" Height="104" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+                </control>
+                <control name="lbl_enemy_photo_3" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="5" Top="-19" Width="80" Height="100" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\main\hall\touxiang_fpanda1.png" />
+                </control>
+                <control name="lbl_enemy_battle_3" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="101" Top="29" Width="62" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\tips\fontpicture_zdl.jpg" />
+                </control>
+                <control name="lbl_enemy_level_3" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="56" Top="72" Width="38" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="Default" />
+                </control>
+                <control name="groupbox_revival_enemy3" entity="GroupBox" script="" init="">
+                    <prop Left="48" Top="48" Width="51" Height="86" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" BackImage="gui\main\revival\xingxing.png" />
+                    <control name="lbl_revival_lv_enemy3" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="2" Top="0" Width="46" Height="46" ForeColor="255,93,85,13" ShadowColor="0,0,0,0" Text="1" Font="WRYH20" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_revival_sub_lv_enemy3" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="6" Top="42" Width="38" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="1" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                    </control>
+                </control>
+            </control>
+            <control name="groupbox_enemy_4" entity="GroupBox" script="" init="">
+                <prop Left="637" Top="549" Width="342" Height="94" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                <control name="lbl_enemy_name_4" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="101" Top="-3" Width="118" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="玩家名" Font="WRYH22_O" />
+                </control>
+                <control name="lbl_enemy_ability_4" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="93" Top="53" Width="118" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="100" Font="TexFont_zdlNum" />
+                </control>
+                <control name="btn_enemy_fire_4" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\voyage\icon_ttt_tiren.png" PushImage="gui\main\voyage\icon_ttt_tiren.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="288" Top="-19" Width="60" Height="60" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+                </control>
+                <control name="lbl_13" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="-3" Top="-3" Width="100" Height="104" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\voyage\btn_ttt_boxyour.png" />
+                </control>
+                <control name="btn_enemy_invite_4" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\voyage\btn_ttt_boxmyc.png" PushImage="gui\main\voyage\btn_ttt_boxmy.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-3" Top="-3" Width="100" Height="104" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="button_click" />
+                </control>
+                <control name="lbl_enemy_photo_4" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="5" Top="-19" Width="80" Height="100" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\main\hall\touxiang_fpanda1.png" />
+                </control>
+                <control name="lbl_enemy_battle_4" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="101" Top="29" Width="62" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\tips\fontpicture_zdl.jpg" />
+                </control>
+                <control name="lbl_enemy_level_4" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="56" Top="72" Width="38" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="Default" />
+                </control>
+                <control name="groupbox_revival_enemy4" entity="GroupBox" script="" init="">
+                    <prop Left="48" Top="48" Width="51" Height="86" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" BackImage="gui\main\revival\xingxing.png" />
+                    <control name="lbl_revival_lv_enemy4" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="2" Top="0" Width="46" Height="46" ForeColor="255,93,85,13" ShadowColor="0,0,0,0" Text="1" Font="WRYH20" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_revival_sub_lv_enemy4" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="6" Top="42" Width="38" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="1" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+                    </control>
+                </control>
+            </control>
+            <control name="lbl_fight_time" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="421" Top="101" Width="182" Height="54" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="20:00" Font="WRYH26_S" />
+            </control>
+            <control name="lbl_3" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="365" Top="157" Width="294" Height="110" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\main\league\dfls_image_vs.png" />
+            </control>
+            <control name="mltbox_1" entity="MultiTextBox" script="" init="">
+                <prop TextColor="255,0,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,198,270" LineHeight="25" HtmlText="@ui_voyage_39" ScrollSize="17" Left="413" Top="301" Width="198" Height="270" ShadowColor="0,0,0,0" Font="WRYH20_S" NoFrame="true" />
+            </control>
+            <control name="btn_close" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="940" Top="-16" Width="100" Height="100" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+            </control>
+            <control name="lbl_24" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="437" Top="77" Width="80" Height="16" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_voyage_40" Font="WRYH30_S" />
+            </control>
+            <control name="mltbox_2" entity="MultiTextBox" script="" init="">
+                <prop TextColor="255,200,200,200" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,198,90" LineHeight="20" HtmlText="@ui_voyage_57" ScrollSize="17" Left="413" Top="549" Width="198" Height="90" ShadowColor="0,0,0,0" Font="Default" NoFrame="true" />
+            </control>
+        </control>
+    </control>
+</form>

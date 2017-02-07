@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<object>
+    <properties>
+        <property name="shareHP" type="int" public="true" private="false" save="false" desc="共享血量"/>
+    </properties>
+    <records>
+    	<record name="SummonNpcLimitRec" cols="2" maxrows="32" save="false" public="false" private="false" desc="召唤NPC限制记录表">
+            <column type="string" desc="召唤的NPC ConfigID"/>
+            <column type="byte" desc="召唤的NPC数据限制"/>
+        </record>
+        <record name="SummonedNpcRec" cols="2" maxrows="128" save="false" public="false" private="false" desc="召唤出来的NPC记录表">
+            <column type="string" desc="召唤的NPC ConfigID"/>
+            <column type="object" desc="召唤的NPC对象"/>
+        </record>
+    </records>
+    <includes />
+</object>

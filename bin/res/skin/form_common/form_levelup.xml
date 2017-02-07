@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop Transparent="true" LimitInScreen="true" Width="1280" Height="720" BackColor="0,0,0,0" BlendColor="0,0,0,0" ShadowColor="0,0,0,0" TestTrans="true" NoFrame="true" DrawMode="FitWindow"/>
+		<control name="group_form" entity="GroupBox" script="" init="">
+			<prop Transparent="true" ClipChildren="false" Left="85" Top="101" Width="630" Height="502" BackColor="0,255,255,255" ShadowColor="0,0,0,0" TestTrans="true" NoFrame="true" DrawMode="FitWindow"/>
+			<control name="lbl_LevelUp" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="126" Top="45" Width="378" Height="296" ShadowColor="0,0,0,0" TestTrans="true" AutoSize="true" DrawMode="FitWindow"/>
+			</control>
+			<control name="lbl_tip" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="118" Top="129" Width="393" Height="128" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_battle/scene_settle/levelupteam.png"/>
+			</control>
+			<control name="lbl_level_tip" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="152" Top="246" Width="326" Height="38" ForeColor="255,250,250,50" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
+			</control>
+			<control name="lbl_levelup_particle_1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="252" Top="152" Width="126" Height="70" ShadowColor="0,0,0,0"/>
+			</control>
+			<control name="lbl_levelup_particle_2" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="252" Top="158" Width="126" Height="70" ShadowColor="0,0,0,0"/>
+			</control>
+		</control>
+	</control>
+</form>
+

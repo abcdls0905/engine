@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop Left="37" Top="45" Width="1044" Height="655" BackColor="100,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0"/>
+		<control name="btn_back" entity="Button" script="" init="">
+			<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="2" Top="9" Width="80" Height="24" BackColor="0,192,192,192" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+		</control>
+		<control name="gpb_main" entity="GroupBox" script="" init="">
+			<prop ClipChildren="false" Width="1047" Height="653" BackColor="0,0,0,0" ShadowColor="0,0,0,0" Text="GroupBox1" NoFrame="true" DrawMode="Expand"/>
+			<control name="bg_0002" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="53" Top="41" Width="955" Height="555" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_001.png"/>
+			</control>
+			<control name="bg_0006" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="24" Top="551" Width="50" Height="45" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_01.png"/>
+			</control>
+			<control name="bg_0007" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="987" Top="551" Width="50" Height="45" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_02.png"/>
+			</control>
+			<control name="bg_0003" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="24" Top="41" Width="50" Height="73" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_07.png"/>
+			</control>
+			<control name="bg_0004" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="987" Top="41" Width="50" Height="73" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_06.png"/>
+			</control>
+			<control name="bg_0001" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="58" Top="81" Width="945" Height="510" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_002.png"/>
+			</control>
+			<control name="bg_0005" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="61" Top="86" Width="939" Height="501" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/teamnuber/yxjs_3.png"/>
+			</control>
+			<control name="bg_0008" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="64" Top="557" Width="934" Height="30" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_03.png"/>
+			</control>
+			<control name="lbl_static_type" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="84" Top="136" Width="80" Height="16" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="@role_npc_introduce_1" Font="WRYH26_O2_BLACK"/>
+			</control>
+			<control name="lbl_type" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="84" Top="183" Width="80" Height="16" ForeColor="255,0,255,51" ShadowColor="0,0,0,0" Text="@role_npc_introduce_2" Font="WRYH20_O2_BLACK"/>
+			</control>
+			<control name="lbl_organization" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="84" Top="274" Width="80" Height="16" ForeColor="255,0,255,51" ShadowColor="0,0,0,0" Text="@role_npc_introduce_3" Font="WRYH20_O2_BLACK"/>
+			</control>
+			<control name="lbl_introduce" entity="Label" script="" init="">
+				<prop Align="Right" RefCursor="WIN_HELP" Left="822" Top="154" Width="80" Height="16" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="@role_npc_introduce_6" Font="WRYH26_O2_BLACK"/>
+			</control>
+			<control name="lbl_equip" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="84" Top="320" Width="80" Height="16" ForeColor="255,0,255,51" ShadowColor="0,0,0,0" Text="@role_npc_introduce_4" Font="WRYH20_O2_BLACK"/>
+			</control>
+			<control name="lbl_skill" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="84" Top="381" Width="80" Height="16" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="@role_npc_introduce_5" Font="WRYH26_O2_BLACK"/>
+			</control>
+			<control name="mlt_special_skill" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,0,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,215,186" LineHeight="23" ScrollSize="17" Left="779" Top="390" Width="215" Height="186" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="MultiTextBox1" Font="WRYH18_O2_BLACK" NoFrame="true"/>
+			</control>
+			<control name="gpb_need" entity="GroupBox" script="" init="">
+				<prop Left="376" Top="498" Width="323" Height="80" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+				<control name="lbl_bg1" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="9" Top="3" Width="309" Height="73" ForeColor="255,102,50,0" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/teamnuber/yxjs_1.png"/>
+				</control>
+				<control name="lbl_need" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="31" Top="20" Width="62" Height="30" ForeColor="255,255,255,69" ShadowColor="0,0,0,0" Text="@role_npc_introduce_8" Font="WRYH26_O2_BLACK"/>
+				</control>
+				<control name="lbl_small_picture" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="92" Top="14" Width="52" Height="52" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+				</control>
+				<control name="lbl_suipian_need_bg" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="150" Top="16" Width="134" Height="49" ForeColor="255,244,227,194" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/teamnuber/yxjs_2.png"/>
+				</control>
+				<control name="lbl_suipian_need" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="138" Top="16" Width="134" Height="49" ForeColor="255,244,227,194" ShadowColor="0,0,0,0" Text="1/100" Font="WRYH22_O2_BLACK" AutoSize="true" DrawMode="FitWindow"/>
+				</control>
+				<control name="btn_add" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_main/roles/uplevel_11.png" PushImage="gui/tp2_main/roles/uplevel_13.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="242" Top="15" Width="49" Height="48" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow"/>
+				</control>
+			</control>
+			<control name="btn_close" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/clos1.png" PushImage="gui/tp2_common/window/clos.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="952" Top="22" Width="70" Height="70" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow"/>
+			</control>
+			<control name="mlt_introduce" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,255,255,204" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,256,126" LineHeight="23" HtmlText="11111111" ScrollSize="17" Left="734" Top="200" Width="256" Height="126" ShadowColor="0,0,0,0" Text="MultiTextBox1" Font="WRYH16_O2_BLACK" NoFrame="true"/>
+			</control>
+			<control name="lbl_special_skill" entity="Label" script="" init="">
+				<prop Align="Right" RefCursor="WIN_HELP" Left="909" Top="348" Width="80" Height="16" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="@role_npc_introduce_7" Font="WRYH26_O2_BLACK"/>
+			</control>
+			<control name="lbl_special" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="84" Top="228" Width="80" Height="16" ForeColor="255,0,255,51" ShadowColor="0,0,0,0" Text="@role_npc_introduce_9" Font="WRYH20_O2_BLACK"/>
+			</control>
+			<control name="mlt_type_text" entity="MultiTextBox" script="" init="">
+				<prop VAlign="Center" TextColor="255,255,255,204" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,183,50" LineHeight="23" LineTextAlign="Center" ScrollSize="17" Left="148" Top="223" Width="183" Height="50" ShadowColor="0,0,0,0" Text="MultiTextBox1" Font="WRYH16_O2_BLACK" NoFrame="true"/>
+			</control>
+			<control name="mlt_special_text" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,255,255,204" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,188,25" LineHeight="23" LineTextAlign="Center" ScrollSize="17" Left="148" Top="181" Width="188" Height="25" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="MultiTextBox1" Font="WRYH16_O2_BLACK" NoFrame="true"/>
+			</control>
+			<control name="mlt_organization_text" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,255,255,204" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,118,25" LineHeight="23" LineTextAlign="Center" ScrollSize="17" Left="148" Top="273" Width="118" Height="25" ShadowColor="0,0,0,0" Text="MultiTextBox1" Font="WRYH16_O2_BLACK" NoFrame="true"/>
+			</control>
+			<control name="mlt_equip_text" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,255,255,204" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,102,25" LineHeight="23" LineTextAlign="Center" ScrollSize="17" Left="193" Top="319" Width="102" Height="25" ShadowColor="0,0,0,0" Text="MultiTextBox1" Font="WRYH16_O2_BLACK" NoFrame="true"/>
+			</control>
+			<control name="lbl_skill_1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="74" Top="422" Width="82" Height="82" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_main/teamnuber/yxjs_5.png"/>
+			</control>
+			<control name="lbl_skill_3" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="274" Top="422" Width="82" Height="82" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_main/teamnuber/yxjs_5.png"/>
+			</control>
+			<control name="lbl_skill_4" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="690" Top="410" Width="82" Height="82" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_main/teamnuber/yxjs_5.png"/>
+			</control>
+			<control name="lbl_skill_2" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="174" Top="422" Width="82" Height="82" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_main/teamnuber/yxjs_5.png"/>
+			</control>
+			<control name="btn_skill_2" entity="Button" script="" init="">
+				<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="167" Top="415" Width="95" Height="95" BackColor="255,192,192,192" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DataSource="2" DrawMode="FitWindow"/>
+			</control>
+			<control name="btn_skill_3" entity="Button" script="" init="">
+				<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="268" Top="415" Width="95" Height="95" BackColor="255,192,192,192" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DataSource="3" DrawMode="FitWindow"/>
+			</control>
+			<control name="btn_skill_4" entity="Button" script="" init="">
+				<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="685" Top="404" Width="94" Height="94" BackColor="255,192,192,192" ShadowColor="0,0,0,0" DataSource="4" DrawMode="FitWindow"/>
+			</control>
+			<control name="btn_skill_1" entity="Button" script="" init="">
+				<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="67" Top="415" Width="95" Height="95" BackColor="0,192,192,192" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DataSource="1" DrawMode="FitWindow"/>
+			</control>
+			<control name="Label1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="503" Top="277" Width="50" Height="50" ShadowColor="0,0,0,0" Particles2d="particleeffects_004d"/>
+			</control>
+			<control name="lbl_picture" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="334" Top="107" Width="389" Height="391" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+			</control>
+			<control name="group_start" entity="GroupBox" script="" init="">
+				<prop Transparent="true" ClipChildren="false" Left="345" Top="440" Width="366" Height="46" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+				<control name="lbl_start" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="163" Width="46" Height="46" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/roles/xing1.png"/>
+				</control>
+			</control>
+			<control name="mlt_name_bg" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,77,218" LineHeight="31" ScrollSize="17" Left="648" Top="104" Width="77" Height="218" ShadowColor="0,0,0,0" Text="MultiTextBox1" Font="WRYH30" NoFrame="true" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/teamnuber/yxjs_4.png"/>
+			</control>
+			<control name="mlt_name" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,30,150" LineHeight="31" ScrollSize="17" Left="652" Top="108" Width="30" Height="150" ShadowColor="0,0,0,0" Text="MultiTextBox1" Font="WRYH30" NoFrame="true" AutoSize="true" DrawMode="FitWindow"/>
+			</control>
+			<control name="mlt_real_name" entity="MultiTextBox" script="" init="">
+				<prop SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,23,102" LineHeight="24" ScrollSize="17" Left="690" Top="208" Width="23" Height="102" ShadowColor="0,0,0,0" Text="MultiTextBox1" Font="WRYH20" NoFrame="true"/>
+			</control>
+		</control>
+	</control>
+</form>
+

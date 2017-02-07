@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by  () -->
+<!--Talisman的属性表，继承自Equipment，法宝类物品-->
+<object>
+	<!-- 基本属性 -->
+	<properties>
+		<property name="FitRoleNpc" type="string" public="false" private="true" save="true" desc="法宝类型(适合英雄config)"/>
+		<property name="CurXilianPropID" type="dword" public="false" private="true" save="true" desc="当前未保存的洗练id"/>
+		<property name="CurXilianSlot" type="byte" public="false" private="true" save="true" desc="当前未保存的洗练孔位"/>
+		<property name="PropIndex" type="byte" public="false" private="true" save="true" desc="基础属性类型"/>
+		<property name="UpgradeStone" type="string" public="false" private="true" save="true" desc="所需进阶石config"/>
+	</properties>
+	<!---->
+	<records>
+		<record name="TalismanSlotRec" cols="2" maxrows="32" save="true" public="false" private="true" desc="法宝开启洗炼孔位">
+			<column type="byte" desc="孔位"/>
+			<column type="dword" desc="洗练属性ID"/>
+		</record>
+	</records>
+</object>

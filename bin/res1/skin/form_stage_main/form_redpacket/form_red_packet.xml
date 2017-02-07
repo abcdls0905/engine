@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Left="45" Top="37" Width="1024" Height="720" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\use\function\function_vein_096.png" />
+        <control name="groupbox_main" entity="GroupBox" script="" init="">
+            <prop Left="37" Top="5" Width="966" Height="710" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+            <control name="lbl_2" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="24" Top="96" Width="522" Height="614" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\main\redpacket\hb_kuang.png" />
+            </control>
+            <control name="rbtn_buy_redpacket" entity="RadioButton" script="" init="">
+                <prop BoxSize="12" NormalImage="gui\main\redpacket\hb_fhb2.png" CheckedImage="gui\main\redpacket\hb_fhb1.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="512" Top="139" Width="420" Height="156" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" DataSource="1" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="rbtn_rob_redpacket" entity="RadioButton" script="" init="">
+                <prop BoxSize="12" NormalImage="gui\main\redpacket\hb_qhb2.png" CheckedImage="gui\main\redpacket\hb_qhb1.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="512" Top="291" Width="420" Height="156" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" DataSource="2" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="groupbox_trends" entity="GroupBox" script="" init="">
+                <prop Left="544" Top="432" Width="390" Height="262" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                <control name="lbl_8" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Top="56" Width="390" Height="214" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg_huikuang4.png" />
+                </control>
+                <control name="groupscrollbox_trends_list" entity="GroupScrollableBox" script="" init="">
+                    <prop ScrollSize="17" Left="8" Top="72" Width="374" Height="182" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                </control>
+                <control name="rbtn_guild_trends" entity="RadioButton" script="" init="">
+                    <prop BoxSize="12" NormalImage="gui\main\blackmarket\heishi_yeqian2.png" CheckedImage="gui\main\blackmarket\heishi_yeqian1.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="134" Top="8" Width="120" Height="52" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_redpacket_34" DataSource="1" Font="WRYH20_S_GRAY" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+                <control name="rbtn_server_trends" entity="RadioButton" script="" init="">
+                    <prop BoxSize="12" NormalImage="gui\main\blackmarket\heishi_yeqian2.png" CheckedImage="gui\main\blackmarket\heishi_yeqian1.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="264" Top="8" Width="120" Height="52" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_redpacket_35" DataSource="2" Font="WRYH20_S_GRAY" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+                <control name="rbtn_my_trends" entity="RadioButton" script="" init="">
+                    <prop Checked="true" BoxSize="12" NormalImage="gui\main\blackmarket\heishi_yeqian2.png" CheckedImage="gui\main\blackmarket\heishi_yeqian1.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="8" Width="120" Height="52" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_redpacket_33" DataSource="0" Font="WRYH20_S_GRAY" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+                <control name="groupscrollbox_player_trends" entity="GroupScrollableBox" script="" init="">
+                    <prop ScrollSize="17" Left="8" Top="72" Width="374" Height="182" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                </control>
+            </control>
+            <control name="groupbox_trends_item" entity="GroupBox" script="" init="">
+                <prop Left="536" Top="480" Width="374" Height="30" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                <control name="mltbox_trends_info" entity="MultiTextBox" script="" init="">
+                    <prop TextColor="255,0,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,358,30" LineHeight="25" HtmlText="玩家XXX买了6元红包送给全服小伙伴" ScrollSize="17" Width="358" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="Default" NoFrame="true" />
+                </control>
+            </control>
+            <control name="groupbox_player_trends_item" entity="GroupBox" script="" init="">
+                <prop Left="536" Top="520" Width="374" Height="30" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                <control name="mltbox_player_trends_info" entity="MultiTextBox" script="" init="">
+                    <prop TextColor="255,0,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,358,30" LineHeight="25" HtmlText="玩家XXX买了6元红包送给全服小伙伴" ScrollSize="17" Width="358" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="Default" NoFrame="true" />
+                </control>
+            </control>
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Top="-8" Width="964" Height="125" ShadowColor="0,0,0,0" BackImage="gui\main\redpacket\hb_title.png" />
+            </control>
+            <control name="btn_close" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\redpacket\hb_close1.png" PushImage="gui\main\redpacket\hb_close2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="864" Width="94" Height="114" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="100" TabStop="true" AutoSize="true" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+            </control>
+            <control name="lbl_3" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="24" Top="588" Width="518" Height="118" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\redpacket\hb_zs.png" />
+            </control>
+            <control name="groupbox_charm" entity="GroupBox" script="" init="">
+                <prop Left="56" Top="120" Width="454" Height="550" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                <control name="lbl_4" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="-8" Width="470" Height="470" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\main\redpacket\hb_mlb_bg.png" />
+                </control>
+                <control name="groupscrollbox_charm_rank" entity="GroupScrollableBox" script="" init="">
+                    <prop ScrollSize="17" Left="8" Top="104" Width="438" Height="350" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                </control>
+                <control name="lbl_my_charm_value" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="8" Top="488" Width="190" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="我的魅力值：5000" Font="WRYH20_S_GRAY" />
+                </control>
+                <control name="lbl_my_charm_rank" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="8" Top="520" Width="190" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="我的排名：1" Font="WRYH20_S_GRAY" />
+                </control>
+                <control name="lbl_charm_title" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="136" Top="24" Width="176" Height="43" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\redpacket\hb_picwords_mlb.png" />
+                </control>
+                <control name="btn_award_preview" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\redpacket\hb_jlyl1.png" PushImage="gui\main\redpacket\hb_jlyl2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="240" Top="464" Width="200" Height="90" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH24_S" TabStop="true" ClickSound="ui_open" />
+                </control>
+                <control name="lbl_6" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="32" Top="80" Width="80" Height="16" ForeColor="255,253,236,193" ShadowColor="0,0,0,0" Text="@ui_arena_7" Font="WRYH20" />
+                </control>
+                <control name="lbl_5" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="176" Top="80" Width="80" Height="16" ForeColor="255,253,236,193" ShadowColor="0,0,0,0" Text="@ui_guildboss_name" Font="WRYH20" />
+                </control>
+                <control name="lbl_7" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="328" Top="80" Width="80" Height="16" ForeColor="255,253,236,193" ShadowColor="0,0,0,0" Text="@ui_redpacket_0" Font="WRYH20" />
+                </control>
+            </control>
+            <control name="groupbox_charm_item" entity="GroupBox" script="" init="">
+                <prop Left="56" Top="216" Width="438" Height="38" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                <control name="lbl_charm_rank" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="8" Top="16" Width="70" Height="22" ForeColor="255,242,241,161" ShadowColor="0,0,0,0" Text="1" Font="WRYH24_S" />
+                </control>
+                <control name="lbl_charm_playername" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="96" Top="16" Width="190" Height="22" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="玩家名称" Font="WRYH22_O" />
+                </control>
+                <control name="lbl_charm_value" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="312" Top="16" Width="118" Height="22" ForeColor="255,243,243,3" ShadowColor="0,0,0,0" Text="5000" Font="WRYH22_O" TabStop="true" />
+                </control>
+            </control>
+            <control name="groupbox_buy" entity="GroupBox" script="" init="">
+                <prop Left="56" Top="128" Width="454" Height="550" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                <control name="lbl_9" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Width="454" Height="462" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg_huikuang.png" />
+                </control>
+                <control name="groupscrollbox_buy_list_1" entity="GroupScrollableBox" script="" init="">
+                    <prop ScrollSize="17" Left="8" Top="115" Width="446" Height="330" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                </control>
+                <control name="groupscrollbox_buy_list_2" entity="GroupScrollableBox" script="" init="">
+                    <prop ScrollSize="17" Left="8" Top="67" Width="446" Height="330" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                </control>
+                <control name="lbl_my_buy_count" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="16" Top="480" Width="190" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="已发红包总数：10" Font="WRYH20_S_GRAY" />
+                </control>
+                <control name="lbl_my_buy_value" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="16" Top="512" Width="190" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="总价值：10000" Font="WRYH20_S_GRAY" />
+                </control>
+                <control name="lbl_buy_refresh_time" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="264" Top="51200" Width="190" Height="22" ForeColor="255,200,200,200" ShadowColor="0,0,0,0" Text="刷新倒计时：02:00:00" Font="Default" />
+                </control>
+                <control name="rbtn_buy_guild" entity="RadioButton" script="" init="">
+                    <prop BoxSize="12" NormalImage="gui\main\redpacket\hb_blank1.png" CheckedImage="gui\main\redpacket\hb_blank2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="8" Top="403" Width="438" Height="51" ForeColor="255,254,254,154" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_redpacket_31" DataSource="1" Font="WRYH24_S" TabStop="true" DrawMode="ExpandH" />
+                </control>
+                <control name="rbtn_buy_server" entity="RadioButton" script="" init="">
+                    <prop Checked="true" BoxSize="12" NormalImage="gui\main\redpacket\hb_blank1.png" CheckedImage="gui\main\redpacket\hb_blank2.png" DisableImage="gui\common\button\anniu_yuanjiao_huihua.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="8" Top="8" Width="438" Height="51" ForeColor="255,254,254,154" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_redpacket_32" DataSource="2" Font="WRYH24_S" TabStop="true" DrawMode="ExpandH" />
+                </control>
+            </control>
+            <control name="groupbox_rob" entity="GroupBox" script="" init="">
+                <prop Left="56" Top="128" Width="454" Height="550" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                <control name="lbl_10" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Width="454" Height="462" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg_huikuang.png" />
+                </control>
+                <control name="lbl_my_rob_count" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="16" Top="480" Width="190" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="已抢红包总数：10" Font="WRYH20_S_GRAY" />
+                </control>
+                <control name="lbl_my_rob_value" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="16" Top="512" Width="190" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="总价值：10000" Font="WRYH20_S_GRAY" />
+                </control>
+                <control name="lbl_rob_refresh_time" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="256" Top="512" Width="190" Height="22" ForeColor="255,200,200,200" ShadowColor="0,0,0,0" Text="刷新倒计时：02:00:00" Font="Default" />
+                </control>
+                <control name="lbl_rob_cd" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="240" Top="480" Width="190" Height="22" ForeColor="255,200,200,200" ShadowColor="0,0,0,0" Text="抢红包倒计时：02:00:00" Font="Default" />
+                </control>
+                <control name="groupbox_2" entity="GroupBox" script="" init="">
+                    <prop ClipChildren="true" Left="8" Top="171" Width="446" Height="276" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" />
+                    <control name="groupscrollbox_rob_list_2" entity="GroupScrollableBox" script="" init="">
+                        <prop ScrollSize="17" Width="446" Height="276" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                    </control>
+                </control>
+                <control name="groupbox_1" entity="GroupBox" script="" init="">
+                    <prop ClipChildren="true" Left="8" Top="115" Width="446" Height="276" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" />
+                    <control name="groupscrollbox_rob_list_1" entity="GroupScrollableBox" script="" init="">
+                        <prop ScrollSize="17" Width="446" Height="276" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                    </control>
+                </control>
+                <control name="groupbox_0" entity="GroupBox" script="" init="">
+                    <prop ClipChildren="true" Left="8" Top="59" Width="446" Height="276" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" />
+                    <control name="groupscrollbox_rob_list_0" entity="GroupScrollableBox" script="" init="">
+                        <prop ScrollSize="17" Width="446" Height="276" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                    </control>
+                </control>
+                <control name="rbtn_rob_guild" entity="RadioButton" script="" init="">
+                    <prop BoxSize="12" NormalImage="gui\main\redpacket\hb_blank1.png" CheckedImage="gui\main\redpacket\hb_blank2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="8" Top="347" Width="438" Height="51" ForeColor="255,254,254,154" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_redpacket_31" DataSource="1" Font="WRYH24_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+                <control name="rbtn_rob_server" entity="RadioButton" script="" init="">
+                    <prop BoxSize="12" NormalImage="gui\main\redpacket\hb_blank1.png" CheckedImage="gui\main\redpacket\hb_blank2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="8" Top="403" Width="438" Height="51" ForeColor="255,254,254,154" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_redpacket_32" DataSource="2" Font="WRYH24_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+                <control name="rbtn_rob_system" entity="RadioButton" script="" init="">
+                    <prop Checked="true" BoxSize="12" NormalImage="gui\main\redpacket\hb_blank1.png" CheckedImage="gui\main\redpacket\hb_blank2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="8" Top="8" Width="438" Height="51" ForeColor="255,254,254,154" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_redpacket_30" DataSource="0" Font="WRYH24_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+            </control>
+            <control name="groupbox_redpacket" entity="GroupBox" script="" init="">
+                <prop Left="64" Top="304" Width="438" Height="106" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\common\window\lantiao_1.png" />
+                <control name="imagegrid_redpacket" entity="ImageGrid" script="" init="">
+                    <prop SelectColor="0,0,255,0" MouseInColor="0,255,255,0" CoverColor="0,255,0,0" LockColor="0,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" GridHeight="64" GridWidth="64" DrawMouseIn="RECT" DrawMouseSelect="RECT" DrawCover="RECT" DrawLock="RECT" DrawGridBack="gui\common\window\tubiaokuang_1.png" GridBackOffsetX="-8" GridBackOffsetY="-8" GridCoverOffsetX="-5" GridCoverOffsetY="-5" MouseDownScale="0.980000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" HasVScroll="false" Left="16" Top="24000" Width="64" Height="64" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK" NoFrame="true" DrawMode="FitWindow" />
+                </control>
+                <control name="mltbox_redpacket_info_1" entity="MultiTextBox" script="" init="">
+                    <prop TextColor="255,243,243,3" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,190,78" LineHeight="30" HtmlText="￥1元" ScrollSize="17" Left="96" Top="3" Width="190" Height="78" ForeColor="255,243,243,3" ShadowColor="0,0,0,0" Transparent="true" Font="WRYH20_S_GRAY" NoFrame="true" />
+                </control>
+                <control name="btn_redpacket_confirm" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" DisableImage="gui\common\button\anniu_yuanjiao_huihua.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="304" Top="16" Width="134" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_form_activity_4" Font="WRYH24_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+                <control name="mltbox_redpacket_info_2" entity="MultiTextBox" script="" init="">
+                    <prop TextColor="255,200,200,200" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,246,38" LineHeight="25" HtmlText="回赞可获得1点魅力值" ScrollSize="17" Left="96" Top="64" Width="246" Height="38" ForeColor="255,200,200,200" ShadowColor="0,0,0,0" Transparent="true" Font="WRYH20_S_GRAY" NoFrame="true" />
+                </control>
+                <control name="lbl_11" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="3" Top="4" Width="94" Height="97" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\main\redpacket\hb_image.png" />
+                </control>
+            </control>
+            <control name="groupbox_redpacket_rob" entity="GroupBox" script="" init="">
+                <prop Left="64" Top="416" Width="438" Height="106" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\common\window\lantiao_1.png" />
+                <control name="imagegrid_redpacket_rob" entity="ImageGrid" script="" init="">
+                    <prop SelectColor="0,0,255,0" MouseInColor="0,255,255,0" CoverColor="0,255,0,0" LockColor="0,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" GridHeight="64" GridWidth="64" DrawMouseIn="RECT" DrawMouseSelect="RECT" DrawCover="RECT" DrawLock="RECT" DrawGridBack="gui\common\window\tubiaokuang_1.png" GridBackOffsetX="-8" GridBackOffsetY="-8" GridCoverOffsetX="-5" GridCoverOffsetY="-5" MouseDownScale="0.980000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" HasVScroll="false" Left="16" Top="24" Width="64" Height="64" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK" NoFrame="true" />
+                </control>
+                <control name="mltbox_redpacket_info_rob_1" entity="MultiTextBox" script="" init="">
+                    <prop TextColor="255,243,243,3" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,190,62" LineHeight="30" HtmlText="￥1元" ScrollSize="17" Left="99" Top="3" Width="190" Height="62" ForeColor="255,243,243,3" ShadowColor="0,0,0,0" Transparent="true" Font="WRYH22_O" NoFrame="true" />
+                </control>
+                <control name="btn_redpacket_confirm_rob" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\redpacket\hb_qiang1.png" PushImage="gui\main\redpacket\hb_qiang2.png" DisableImage="gui\common\button\anniu_yuanjiao_huihua.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="291" Width="146" Height="98" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH24_S" TabStop="true" ClickSound="button_click" />
+                </control>
+                <control name="mltbox_redpacket_info_rob_2" entity="MultiTextBox" script="" init="">
+                    <prop TextColor="255,200,200,200" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,246,38" LineHeight="25" HtmlText="回赞可获得1点魅力值" ScrollSize="17" Left="96" Top="67" Width="246" Height="38" ForeColor="255,200,200,200" ShadowColor="0,0,0,0" Transparent="true" Font="WRYH20_S_GRAY" NoFrame="true" />
+                </control>
+                <control name="lbl_12" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="16" Top="2200" Width="64" Height="64" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\main\redpacket\hbll_icon_hb.jpg" />
+                </control>
+            </control>
+            <control name="btn_help" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\redpacket\hb_xinxi1.png" PushImage="gui\main\redpacket\hb_xinxi2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="11" Top="3" Width="94" Height="114" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+            <control name="mltbox_activity_time" entity="MultiTextBox" script="" init="">
+                <prop TextColor="255,200,200,200" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,454,38" LineHeight="25" HtmlText="活动时间：" ScrollSize="17" Left="539" Top="107" Width="454" Height="38" ForeColor="255,200,200,200" ShadowColor="0,0,0,0" Font="Default" NoFrame="true" />
+            </control>
+            <control name="rbtn_hide" entity="RadioButton" script="" init="">
+                <prop BoxSize="12" NormalImage="gui\main\redpacket\hb_fhb2.png" CheckedImage="gui\main\redpacket\hb_fhb1.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="10000" Width="420" Height="156" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" DataSource="0" TabStop="true" ClickSound="ui_open" />
+            </control>
+        </control>
+        <control name="groupbox_award_back" entity="GroupBox" script="" init="">
+            <prop Left="8" Top="3200" Width="998" Height="662" BackColor="0,120,120,120" ShadowColor="0,0,0,0" TabStop="true" NoFrame="true" DrawMode="Expand" />
+            <control name="groupbox_main_award" entity="GroupBox" script="" init="">
+                <prop Left="-347" Top="-299" Width="686" Height="622" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+                <control name="lbl_award_back" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="22" Top="79" Width="646" Height="518" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg_huikuang4.png" />
+                </control>
+                <control name="grpsbox_award_list" entity="GroupScrollableBox" script="" init="">
+                    <prop ScrollSize="17" Left="24" Top="96" Width="654" Height="486" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                </control>
+                <control name="groupbox_award" entity="GroupBox" script="" init="">
+                    <prop Left="32" Top="96" Width="622" Height="190" BackColor="255,120,120,120" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\main\activity\huodong_21.png" />
+                    <control name="lbl_rank_desc" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Width="254" Height="46" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20_S" DrawMode="ExpandH" BackImage="gui\main\activity\huodong_zhuangshi.png" />
+                    </control>
+                </control>
+                <control name="lbl_award_title" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="288" Top="32" Width="118" Height="16" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_boss_4" Font="WRYH30_S" />
+                </control>
+                <control name="btn_award_close" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="600" Top="-16" Width="100" Height="100" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="100" TabStop="true" AutoSize="true" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+                </control>
+                <control name="groupbox_item" entity="GroupBox" script="" init="">
+                    <prop Left="56" Top="152" Width="118" Height="110" BackColor="0,200,200,200" ShadowColor="0,0,0,0" NoFrame="true" />
+                    <control name="imagegrid_item" entity="ImageGrid" script="" init="">
+                        <prop SelectColor="0,0,255,0" MouseInColor="0,255,255,0" CoverColor="0,255,0,0" LockColor="0,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" GridHeight="80" GridWidth="80" DrawMouseIn="RECT" DrawMouseSelect="RECT" DrawCover="RECT" DrawLock="RECT" DrawGridBack="gui\common\window\tubiaokuang_2.png" GridBackOffsetX="-7" GridBackOffsetY="-7" GridCoverOffsetX="-5" GridCoverOffsetY="-5" MouseDownScale="0.900000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" HasVScroll="false" Left="20" Top="8" Width="80" Height="80" ShadowColor="0,0,0,0" />
+                    </control>
+                    <control name="lbl_item_name" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="16" Top="96" Width="86" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" />
+                    </control>
+                </control>
+            </control>
+        </control>
+        <control name="groupbox_support" entity="GroupBox" script="" init="">
+            <prop Left="1032" Top="144" Width="670" Height="430" BackColor="200,120,120,120" ShadowColor="0,0,0,0" TabStop="true" NoFrame="true" DrawMode="Expand" BackImage="gui\use\function\function_vein_096.png" />
+            <control name="groupbox_support_main" entity="GroupBox" script="" init="">
+                <prop Left="-231" Top="-175" Width="462" Height="350" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" NoFrame="true" DrawMode="FitWindow" BackImage="gui\main\heedbar\youxizanti_kuang.jpg" />
+                <control name="btn_support_common" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="40" Top="264" Width="170" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_redpacket_27" Font="WRYH26_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+                <control name="btn_support_big" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="240" Top="264" Width="170" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_redpacket_28" Font="WRYH26_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+                <control name="lbl_support_title" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="144" Top="16" Width="174" Height="32" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_minitip" Font="WRYH30_S" />
+                </control>
+                <control name="mltbox_support_info" entity="MultiTextBox" script="" init="">
+                    <prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,358,126" LineHeight="25" ScrollSize="17" Left="55" Top="80" Width="358" Height="126" ShadowColor="0,0,0,0" Font="WRYH20_S" NoFrame="true" />
+                </control>
+                <control name="lbl_support_free" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="136" Top="232" Width="62" Height="32" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_redpacket_29" Font="WRYH20_S" />
+                </control>
+                <control name="lbl_support_price" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="338" Top="230" Width="54" Height="32" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="50" Font="WRYH20_S" />
+                </control>
+                <control name="lbl_support_diamond" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="296" Top="230" Width="38" Height="38" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH30_S" DrawMode="FitWindow" BackImage="gui\common\window\zuanshi_da.jpg" />
+                </control>
+                <control name="lbl_free_charm" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="56" Top="232" Width="78" Height="32" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="+10" Font="WRYH20_S" />
+                </control>
+                <control name="lbl_buy_charm" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="240" Top="232" Width="78" Height="32" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="+100" Font="WRYH20_S" />
+                </control>
+                <control name="btn_refuse_support" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="360" Top="-8" Width="100" Height="100" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+                </control>
+            </control>
+        </control>
+    </control>
+</form>

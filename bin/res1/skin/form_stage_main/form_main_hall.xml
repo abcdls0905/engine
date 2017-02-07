@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Left="45" Top="29" Width="1024" Height="768" BackColor="0,255,255,255" ShadowColor="0,0,0,0" TestTrans="true" Transparent="true" NoFrame="true" />
+        <control name="group_chat_preview" entity="GroupBox" script="" init="">
+            <prop Left="240" Top="432" Width="526" Height="142" BackColor="115,0,0,0" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" DrawMode="Expand" BackImage="gui\main\hall\hall2.jpg,0,334,270,90" />
+            <control name="btn_chat_detail" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,470,164,48,45" PushImage="gui\main\hall\hall2.jpg,519,164,49,45" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="488" Top="-8" Width="48" Height="45" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+            <control name="group_chat_content" entity="GroupBox" script="" init="">
+                <prop Left="104" Top="1440" Width="454" Height="47" BackColor="93,0,0,0" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" DrawMode="ExpandH" BackImage="gui\main\hall\hall.jpg,861,974,60,47" />
+                <control name="mltbox_chat_content" entity="MultiTextBox" script="" init="">
+                    <prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,406,38" LineHeight="30" TipAutoSize="true" LineTextAlign="Center" ScrollSize="17" Left="16" Top="6" Width="406" Height="38" ShadowColor="0,0,0,0" Font="WRYH20" NoFrame="true" />
+                </control>
+                <control name="lbl_omit" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="416" Width="46" Height="38" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="..." Font="WRYH24_S" />
+                </control>
+                <control name="lbl_viplevel" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="32" Width="80" Height="16" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" />
+                </control>
+            </control>
+            <control name="lbl_chat_effect" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="488" Top="-8" Width="49" Height="45" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\main\hall\hall2.jpg,470,164,48,45" />
+            </control>
+            <control name="mltbox_chat_view" entity="MultiTextBox" script="" init="">
+                <prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,470,108" LineHeight="25" ScrollSize="17" Left="8" Top="4" Width="470" Height="108" BackColor="217,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20" NoFrame="true" ClickSound="ui_open" />
+            </control>
+            <control name="group_trump_view" entity="GroupBox" script="" init="">
+                <prop Left="-3" Top="-64" Width="534" Height="62" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                <control name="lbl_trump_bg" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="3" Top="16" Width="526" Height="46" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\main\chat\liaotianlaba.png,0,81,256,34" />
+                </control>
+                <control name="lbl_trump_tip" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="499" Width="38" Height="36" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\chat\liaotianlaba.png,218,0,38,36" />
+                </control>
+                <control name="mltbox_trump_view" entity="MultiTextBox" script="" init="">
+                    <prop TextColor="255,255,255,204" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,486,30" LineHeight="25" ScrollSize="17" Left="8" Top="24" Width="486" Height="30" BackColor="217,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20" NoFrame="true" ClickSound="ui_open" />
+                </control>
+            </control>
+        </control>
+        <control name="group_funciton_sim" entity="GroupBox" script="" init="">
+            <prop Left="664" Top="520" Width="294" Height="118" BackColor="0,0,0,0" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" DrawMode="Expand" />
+            <control name="btn_bag_sim" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,442,67,110,110" PushImage="gui\main\hall\hall.jpg,552,67,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="120" Top="8" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH13" TabStop="true" DrawMode="Center" ClickSound="ui_open" />
+            </control>
+            <control name="btn_tavern_sim" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,0,220,110,110" PushImage="gui\main\hall\hall2.jpg,110,220,110,110" DisableImage="gui\main\hall\hall2.jpg,220,220,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="8" Top="8" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH26_S" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_bag_num_tips_sim" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="176" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="lbl_tavern_num_tips_sim" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="64" Top="2" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+        </control>
+        <control name="groupbox_system_status" entity="GroupBox" script="" init="">
+            <prop Top="-30" Width="1280" Height="30" BackColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Bottom" Transparent="true" NoFrame="true" DrawMode="Expand" BackImage="gui\main\hall\lilianheidi.png,1,1,25,14" />
+            <control name="lbl_curr_time" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="112" Top="6" Width="62" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="10:14" Font="TexFont_ping" />
+            </control>
+            <control name="lbl_network_status" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="48" Top="8" Width="58" Height="16" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="Center" BackImage="gui\main\hall\pin_4.png" />
+            </control>
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="8" Top="8" Width="38" Height="23" ShadowColor="0,0,0,0" BackImage="gui\main\hall\number_ping.png,90,0,38,23" />
+            </control>
+        </control>
+        <control name="groupbox_function_ex" entity="GroupBox" script="" init="">
+            <prop Left="56" Top="248" Width="998" Height="110" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+            <control name="btn_friend" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,660,196,110,110" PushImage="gui\main\hall\hall.jpg,909,305,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="480" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH13" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="btn_mail" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,330,481,110,110" PushImage="gui\main\hall\hall.jpg,440,507,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="592" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH13" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="btn_system" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,110,481,110,110" PushImage="gui\main\hall\hall.jpg,220,481,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="816" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH13" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_left_dir" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="944" Top="48" Width="10" Height="18" ShadowColor="0,0,0,0" BackImage="gui\main\hall\hall.jpg,845,60,10,18" />
+            </control>
+            <control name="lbl_mail_num_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="640" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="lbl_friend_num_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="528" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="btn_rank" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,0,0,110,110" PushImage="gui\main\hall\hall2.jpg,110,0,110,110" DisableImage="gui\main\hall\hall2.jpg,110,0,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="144" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH26" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="btn_title" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,330,220,110,110" PushImage="gui\main\hall\hall2.jpg,440,220,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="254" Width="110" Height="110" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_title_num_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="298" Top="2" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="lbl_system_num_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="880" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="btn_storage" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,0,371,110,110" PushImage="gui\main\hall\hall.jpg,110,371,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="704" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH13" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="btn_achieve" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,713,635,110,110" PushImage="gui\main\hall\hall.jpg,825,635,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="32" Width="110" Height="110" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_achieve_num_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="80" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="btn_battleteam" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,136,590,110,110" PushImage="gui\main\hall\hall.jpg,136,703,110,110" DisableImage="gui\main\hall\hall.jpg,489,617,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="368" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH13" TabStop="true" ClickSound="ui_open" />
+            </control>
+        </control>
+        <control name="group_head" entity="GroupBox" script="" init="">
+            <prop Width="442" Height="151" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" BackImage="gui\main\hall\hall.jpg,0,0,442,151" />
+            <control name="lbl_head_back" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="24" Top="32" Width="86" Height="86" ShadowColor="0,0,0,0" />
+            </control>
+            <control name="lbl_name" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="112" Top="8" Width="206" Height="34" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH24_O_BLACK" />
+            </control>
+            <control name="pbar_activepoint" entity="ProgressBar" script="" init="">
+                <prop Maximum="200" Value="200" WidthGap="2" HeightGap="2" ProgressImage="gui\main\hall\hall.jpg,713,0,198,30" ProgressMode="LeftToRight" TextColor="255,255,5,1" Left="158" Top="48" Width="198" Height="30" ForeColor="255,0,255,0" BackColor="0,200,200,200" ShadowColor="0,0,0,0" Font="WRYH11" NoFrame="true" />
+            </control>
+            <control name="btn_buy_activepoint" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,940,723,80,80" PushImage="gui\main\hall\hall.jpg,940,643,80,80" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="340" Top="24" Width="80" Height="80" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_photo" entity="Label" script="" init="">
+                <prop ClickEvent="true" RefCursor="WIN_HELP" Left="15" Top="2" Width="100" Height="125" ShadowColor="0,0,0,0" Transparent="false" TabStop="true" DrawMode="FitWindow" BackImage="gui\main\hall\touxiang_mm.jpg" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_level_back" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="88" Top="112" Width="30" Height="31" ShadowColor="0,0,0,0" />
+            </control>
+            <control name="lbl_level" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="88" Top="110" Width="30" Height="31" ForeColor="255,51,255,255" ShadowColor="0,0,0,0" Font="WRYH20_S" />
+            </control>
+            <control name="lbl_battle_ability_title" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="128" Top="124" Width="66" Height="24" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH18_S" AutoSize="true" BackImage="gui\main\hall\hall.jpg,262,967,66,24" />
+            </control>
+            <control name="lbl_battle_ability" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="208" Top="122" Width="126" Height="24" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="TexFont_hall" />
+            </control>
+            <control name="lbl_ap_value" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="200" Top="53" Width="110" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK" />
+            </control>
+            <control name="pbar_stay_power" entity="ProgressBar" script="" init="">
+                <prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui\main\hall\hall.jpg,713,30,144,30" ProgressMode="LeftToRight" Left="158" Top="84" Width="142" Height="30" ForeColor="255,255,0,0" BackColor="0,200,200,200" ShadowColor="0,0,0,0" NoFrame="true" />
+            </control>
+            <control name="lbl_stay_power_info" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="184" Top="90" Width="94" Height="14" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK" />
+            </control>
+            <control name="btn_buy_stay_power" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,940,723,80,80" PushImage="gui\main\hall\hall.jpg,940,643,80,80" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="286" Top="60" Width="80" Height="80" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+        </control>
+        <control name="groupbox_function_btn" entity="GroupBox" script="" init="">
+            <prop Left="-126" Top="638" Width="1092" Height="118" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" DrawMode="Expand" />
+            <control name="groupbox_function_btn_" entity="GroupBox" script="" init="">
+                <prop Left="100" Width="982" Height="118" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" DrawMode="Expand" />
+                <control name="btn_guild" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\hall\hall.jpg,713,856,110,110" PushImage="gui\main\hall\hall.jpg,825,856,110,110" DisableImage="gui\main\hall\hall.jpg,492,840,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="24" Top="10" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH26" TabStop="true" ClickSound="ui_open" />
+                </control>
+                <control name="btn_skill" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\hall\hall.jpg,440,287,110,110" PushImage="gui\main\hall\hall.jpg,550,287,110,110" DisableImage="gui\main\hall\hall.jpg,379,617,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="360" Top="10" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH13" TabStop="true" DrawMode="Center" ClickSound="ui_open" />
+                </control>
+                <control name="btn_talent" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\hall\hall.jpg,0,745,110,110" PushImage="gui\main\hall\hall.jpg,0,855,110,110" DisableImage="gui\main\hall\hall.jpg,489,727,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="472" Top="10" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH13" TabStop="true" DrawMode="Center" ClickSound="ui_open" />
+                </control>
+                <control name="btn_tattoo" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\hall\hall.jpg,220,151,110,110" PushImage="gui\main\hall\hall.jpg,330,151,110,110" DisableImage="gui\main\hall\hall.jpg,379,837,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="696" Top="10" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH13" TabStop="true" DrawMode="Center" ClickSound="ui_open" />
+                </control>
+                <control name="btn_blackmarket" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\hall\hall.jpg,0,261,110,110" PushImage="gui\main\hall\hall.jpg,110,261,110,110" DisableImage="gui\main\hall\hall.jpg,268,811,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="584" Top="10" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH13" TabStop="true" DrawMode="Center" ClickSound="ui_open" />
+                </control>
+                <control name="btn_bag" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\hall\hall.jpg,442,67,110,110" PushImage="gui\main\hall\hall.jpg,552,67,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="808" Top="10" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH13" TabStop="true" DrawMode="Center" ClickSound="ui_open" />
+                </control>
+                <control name="lbl_skill_num_tips" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="416" Top="2" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+                </control>
+                <control name="btn_tavern" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\hall\hall2.jpg,0,220,110,110" PushImage="gui\main\hall\hall2.jpg,110,220,110,110" DisableImage="gui\main\hall\hall2.jpg,220,220,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="248" Top="10" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH26_S" TabStop="true" ClickSound="ui_open" />
+                </control>
+                <control name="lbl_blackmarket_num_tips" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="640" Top="2" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+                </control>
+                <control name="lbl_bag_num_tips" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="864" Top="2" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+                </control>
+                <control name="lbl_tavern_num_tips" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="304" Top="2" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+                </control>
+                <control name="lbl_guild_num_tips" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="80" Top="2" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" AutoSize="true" BackImage="gui\quest\tishiwancheng.png" />
+                </control>
+                <control name="btn_ride" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\hall\hall.jpg,713,745,110,110" PushImage="gui\main\hall\hall.jpg,825,745,110,110" DisableImage="gui\main\hall\hall.jpg,378,726,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="136" Top="10" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH26_S" TabStop="true" ClickSound="ui_open" />
+                </control>
+            </control>
+        </control>
+        <control name="groupbox_money" entity="GroupBox" script="" init="">
+            <prop Left="-568" Top="16" Width="548" Height="70" BackColor="0,255,255,255" ShadowColor="0,0,0,0" HAnchor="Right" NoFrame="true" />
+            <control name="lbl_diamond_back" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="280" Width="271" Height="67" ShadowColor="0,0,0,0" BackImage="gui\main\hall\hall.jpg,442,0,271,67" />
+            </control>
+            <control name="lbl_gold_back" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="12" Width="271" Height="67" ShadowColor="0,0,0,0" BackImage="gui\main\hall\hall.jpg,442,0,271,67" />
+            </control>
+            <control name="lbl_gold_title" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="18" Top="8" Width="52" Height="52" ForeColor="255,213,215,31" ShadowColor="0,0,0,0" Font="WRYH13" AutoSize="true" BackImage="gui\common\window\jinbi_da.jpg" />
+            </control>
+            <control name="lbl_gold" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="76" Top="20" Width="142" Height="26" ForeColor="255,204,255,255" ShadowColor="0,0,0,0" Font="WRYH24_O_BLACK" />
+            </control>
+            <control name="btn_buy_gold" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,940,723,80,80" PushImage="gui\main\hall\hall.jpg,940,643,80,80" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="208" Top="-8" Width="80" Height="80" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_diamond_title" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="290" Top="8" Width="52" Height="52" ForeColor="255,200,200,200" ShadowColor="0,0,0,0" Font="WRYH13" AutoSize="true" BackImage="gui\common\window\zuanshi_da.jpg" />
+            </control>
+            <control name="lbl_diamond" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="344" Top="18" Width="142" Height="30" ForeColor="255,204,255,255" ShadowColor="0,0,0,0" Font="WRYH24_O_BLACK" />
+            </control>
+            <control name="btn_buy_diamond" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,940,723,80,80" PushImage="gui\main\hall\hall.jpg,940,643,80,80" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="474" Top="-8" Width="80" Height="80" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+        </control>
+        <control name="groupbox_task" entity="GroupBox" script="" init="">
+            <prop Left="896" Top="224" Width="110" Height="430" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+            <control name="btn_treasure" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,911,0,110,110" PushImage="gui\main\hall\hall.jpg,909,195,110,110" DisableImage="gui\main\hall\hall.jpg,268,591,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="80" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH13" TabStop="true" DrawMode="Center" ClickSound="ui_open" />
+            </control>
+            <control name="btn_shop" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,0,635,110,110" PushImage="gui\main\hall\hall.jpg,0,507,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="192" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH13" TabStop="true" DrawMode="Center" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_treasure_num_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="48" Top="80" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" AutoSize="true" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="btn_function_ex" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,440,177,110,110" PushImage="gui\main\hall\hall.jpg,550,177,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="304" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH13" TabStop="true" ClickSound="button_click" />
+            </control>
+            <control name="lbl_func_num_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="48" Top="304" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" AutoSize="true" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="lbl_shop_num_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="48" Top="192" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" AutoSize="true" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+        </control>
+        <control name="groupbox_activity" entity="GroupBox" script="" init="">
+            <prop Left="-812" Top="72" Width="792" Height="214" BackColor="0,255,255,255" ShadowColor="0,0,0,0" HAnchor="Right" Transparent="true" NoFrame="true" DrawMode="FitWindow" />
+            <control name="btn_gift_recurrence" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,877,806,83,76" PushImage="gui\main\hall\hall2.jpg,877,886,83,76" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-128" Top="96" Width="83" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+            </control>
+            <control name="btn_activity_phy" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,799,424,83,76" PushImage="gui\main\hall\hall.jpg,799,530,83,76" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="576" Top="8" Width="83" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="btn_gift" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,799,217,83,76" PushImage="gui\main\hall\hall.jpg,799,319,83,76" DisableImage="gui\main\hall\hall.jpg,148,830,83,76" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="480" Top="10" Width="83" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_gift_num_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="520" Top="2" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" AutoSize="true" DrawMode="FitWindow" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="lbl_online_gift_time" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="472" Top="80" Width="94" Height="22" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="Default" />
+            </control>
+            <control name="lbl_activity_num_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="616" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" AutoSize="true" DrawMode="FitWindow" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="btn_w1_activity" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,330,0,131,101" PushImage="gui\main\hall\hall2.jpg,330,102,131,101" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="20000" Top="272" Width="131" Height="101" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+            <control name="gb_money_gift" entity="GroupBox" script="" init="">
+                <prop Left="288" Top="8" Width="86" Height="94" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Text="给力充值大礼包" NoFrame="true" />
+                <control name="btn_money_gift" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\hall\hall2.jpg,877,326,83,76" PushImage="gui\main\hall\hall2.jpg,877,406,83,76" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="83" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" />
+                </control>
+                <control name="lbl_count_down" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Top="68" Width="94" Height="22" ForeColor="255,255,255,3" ShadowColor="0,0,0,0" Font="Default" />
+                </control>
+            </control>
+            <control name="btn_charge" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,652,0,83,76" PushImage="gui\main\hall\hall2.jpg,652,80,83,76" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="384" Top="8" Width="83" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="btn_grub_treasure" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,763,0,83,76" PushImage="gui\main\hall\hall2.jpg,763,80,83,76" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="576" Top="96" Width="83" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="btn_world_boss" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,876,0,83,76" PushImage="gui\main\hall\hall2.jpg,876,80,83,76" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="580" Top="96" Width="83" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_grub_treasure_prop" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="618" Top="80" Width="30" Height="22" BackColor="0,0,0,0" ShadowColor="0,0,0,0" DataSource="    " />
+            </control>
+            <control name="lbl_grub_treasure_num_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="616" Top="88" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" AutoSize="true" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="lbl_worldboss_num_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="520" Top="88" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" AutoSize="true" DrawMode="FitWindow" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="btn_seven_days" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,652,166,83,76" PushImage="gui\main\hall\hall2.jpg,652,246,83,76" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="274" Top="96" Width="83" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_seven_days_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="314" Top="88" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" AutoSize="true" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="btn_cool_summer" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,764,166,83,76" PushImage="gui\main\hall\hall2.jpg,764,246,83,76" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="178" Top="96" Width="83" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_cool_summer_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="218" Top="88" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" AutoSize="true" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="btn_anniversary" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,877,166,83,76" PushImage="gui\main\hall\hall2.jpg,877,246,83,76" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="82" Top="96" Width="83" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_anniversary_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="122" Top="88" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" AutoSize="true" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="btn_have_condition" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,653,326,83,76" PushImage="gui\main\hall\hall2.jpg,653,406,83,76" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-8" Top="96" Width="83" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_have_condition_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="32" Top="88" Width="60" Height="60" ShadowColor="0,0,0,0" Text="1" Font="WRYH26" AutoSize="true" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="btn_redpacket" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,764,326,83,76" PushImage="gui\main\hall\hall2.jpg,764,406,83,76" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="384" Top="96" Width="83" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_redpacket_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="424" Top="88" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" AutoSize="true" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="btn_wish_turntable" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,877,486,83,76" PushImage="gui\main\hall\hall2.jpg,877,566,83,76" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-98" Top="96" Width="83" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="btn_quick_match" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,764,806,83,76" PushImage="gui\main\hall\hall2.jpg,764,886,83,76" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-98" Top="96" Width="83" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_wish_turntable_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="-68" Top="88" Width="60" Height="60" ShadowColor="0,0,0,0" Text="1" Font="WRYH26" AutoSize="true" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="btn_super_new_server" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,652,0,83,76" PushImage="gui\main\hall\hall2.jpg,652,80,83,76" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="288000" Top="16" Width="83" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="ui_open" />
+            </control>
+            <control name="btn_active_cell" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,764,486,83,76" PushImage="gui\main\hall\hall2.jpg,764,566,83,76" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="192" Top="8" Width="83" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" />
+            </control>
+            <control name="btn_active_rowing" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,652,486,83,76" PushImage="gui\main\hall\hall2.jpg,652,566,83,76" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="112" Top="8" Width="83" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" />
+            </control>
+            <control name="btn_active_globalgift" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,764,646,83,76" PushImage="gui\main\hall\hall2.jpg,764,726,83,76" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="112" Top="8" Width="83" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+            </control>
+            <control name="lbl_active_globalgift_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="136" Top="8" Width="60" Height="60" ShadowColor="0,0,0,0" Text="1" Font="WRYH26" AutoSize="true" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="btn_free_pay" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,877,646,83,76" PushImage="gui\main\hall\hall2.jpg,877,726,83,76" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-8" Top="8" Width="83" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+            </control>
+            <control name="lbl_free_pay_time" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="-342" Top="76" Width="80" Height="16" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" HAnchor="Center" Font="WRYH20_S" />
+            </control>
+            <control name="btn_invite_gift" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,653,646,83,76" PushImage="gui\main\hall\hall2.jpg,653,726,83,76" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="72" Top="96" Width="83" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" />
+            </control>
+            <control name="lbl_invite_gift_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="314" Top="88" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" AutoSize="true" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="lbl_recurrence_num_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="-64" Top="96" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" AutoSize="true" DrawMode="FitWindow" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="btn_minitower" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\pagode.jpg" PushImage="gui\main\hall\pagode2.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="96" Top="96" Width="83" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+            </control>
+            <control name="btn_adventure" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\activity\tjmx_hall_1.png" PushImage="gui\main\activity\tjmx_hall_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="96" Top="96" Width="83" Height="76" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
+            </control>
+        </control>
+        <control name="groupbox_exercise2" entity="GroupBox" script="" init="">
+            <prop Left="64" Top="224" Width="750" Height="110" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Visible="false" Transparent="true" NoFrame="true" />
+            <control name="btn_deprive" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,0,151,110,110" PushImage="gui\main\hall\hall.jpg,110,151,110,110" DisableImage="gui\main\hall\hall.jpg,599,855,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-678" Top="2" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Right" Font="WRYH13" TabStop="true" DrawMode="Center" ClickSound="ui_open" />
+            </control>
+            <control name="btn_arena" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,660,306,110,110" PushImage="gui\main\hall\hall.jpg,909,415,110,110" DisableImage="gui\main\hall\hall.jpg,379,727,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-566" Top="2" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Right" Font="WRYH13" TabStop="true" DrawMode="Center" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_exercise_sign" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="56" Top="46" Width="10" Height="18" ShadowColor="0,0,0,0" BackImage="gui\main\hall\hall.jpg,835,60,10,18" />
+            </control>
+            <control name="btn_team_clone" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,713,747,110,110" PushImage="gui\main\hall\hall.jpg,825,747,110,110" DisableImage="gui\main\hall\hall.jpg,148,704,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-342" Top="2" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Right" Font="WRYH13" TabStop="true" DrawMode="Center" ClickSound="ui_open" />
+            </control>
+            <control name="btn_battlewar" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,713,637,110,110" PushImage="gui\main\hall\hall.jpg,825,637,110,110" DisableImage="gui\main\hall\hall.jpg,145,594,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-454" Top="2" Width="110" Height="110" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Right" TabStop="true" />
+            </control>
+            <control name="btn_pk" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,0,110,110,110" PushImage="gui\main\hall\hall2.jpg,110,110,110,110" DisableImage="gui\main\hall\hall2.jpg,220,110,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-230" Top="2" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Right" Font="WRYH13" TabStop="true" DrawMode="Center" ClickSound="ui_open" />
+            </control>
+            <control name="btn_defence" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,0,330,110,110" PushImage="gui\main\hall\hall2.jpg,110,330,110,110" DisableImage="gui\main\hall\hall2.jpg,220,330,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-118" Top="2" Width="110" Height="110" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Right" Font="WRYH13" TabStop="true" DrawMode="Center" ClickSound="ui_open" />
+            </control>
+        </control>
+        <control name="btn_expand" entity="Button" script="" init="">
+            <prop NormalImage="gui\main\hall\hall.jpg,220,261,110,110" FocusImage="gui\main\hall\hall.jpg,220,261,110,110" PushImage="gui\main\hall\hall.jpg,330,261,110,110" DisableImage="gui\main\hall\hall.jpg,220,261,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="912" Top="648" Width="110" Height="110" BackColor="0,192,192,192" ShadowColor="0,0,0,0" TabStop="true" DrawMode="Center" ClickSound="button_click" />
+        </control>
+        <control name="groupbox_battle" entity="GroupBox" script="" init="">
+            <prop Top="224" Width="110" Height="430" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+            <control name="btn_war" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,550,507,110,110" PushImage="gui\main\hall\hall.jpg,660,526,110,110" DisableImage="gui\main\skillbar\zhandou_3lv.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="80" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH13" TabStop="true" DrawMode="Center" ClickSound="ui_open" />
+            </control>
+            <control name="btn_exercise" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,440,397,110,110" PushImage="gui\main\hall\hall.jpg,550,397,110,110" DisableImage="gui\main\hall\hall.jpg,268,701,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="192" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH13" TabStop="true" DrawMode="Center" ClickSound="button_click" />
+            </control>
+            <control name="btn_task" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,660,416,110,110" PushImage="gui\main\hall\hall.jpg,909,525,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="304" Width="110" Height="110" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH13" TabStop="true" DrawMode="Center" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_task_num_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" TextOffsetX="4" TextOffsetY="4" Left="48" Top="304" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" AutoSize="true" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="lbl_war_num_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="48" Top="80" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" AutoSize="true" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+            <control name="lbl_exercise_num_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="48" Top="192" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" AutoSize="true" DrawMode="Center" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+        </control>
+        <control name="groupbox_clonescene_bag" entity="GroupBox" script="" init="">
+            <prop Left="-848" Top="120" Width="140" Height="140" BackColor="0,255,255,255" ShadowColor="0,0,0,0" HAnchor="Right" NoFrame="true" DrawMode="FitWindow" BackImage="anniutishi1" />
+            <control name="btn_clonescene_bag" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall.jpg,599,636,110,110" PushImage="gui\main\hall\hall.jpg,599,745,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="15" Top="15" Width="110" Height="110" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="ui_open" />
+            </control>
+        </control>
+        <control name="groupbox_eai_gift" entity="GroupBox" script="" init="">
+            <prop Left="-616" Top="88" Width="140" Height="140" BackColor="0,255,255,255" ShadowColor="0,0,0,0" HAnchor="Right" NoFrame="true" DrawMode="FitWindow" BackImage="anniutishi1" />
+            <control name="btn_eai_gift" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,330,330,110,110" PushImage="gui\main\hall\hall2.jpg,440,330,110,110" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="15" Top="15" Width="110" Height="110" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="ui_open" />
+            </control>
+        </control>
+        <control name="btn_fightcap" entity="Button" script="" init="">
+            <prop NormalImage="gui\main\hall\hall2.jpg,462,4,80,70" PushImage="gui\main\hall\hall2.jpg,542,4,80,70" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="424" Top="18" Width="80" Height="68" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" DrawMode="FitWindow" ClickSound="ui_open" />
+        </control>
+        <control name="groupbox_redeem" entity="GroupBox" script="" init="">
+            <prop Left="504" Top="16" Width="80" Height="70" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+            <control name="btn_redeem" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\hall\hall2.jpg,462,84,80,70" PushImage="gui\main\hall\hall2.jpg,542,84,80,70" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="-1" Width="80" Height="70" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" DrawMode="FitWindow" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_redeem_num_tips" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="40" Top="-8" Width="46" Height="46" ShadowColor="0,0,0,0" Font="WRYH20" DrawMode="FitWindow" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+            </control>
+        </control>
+        <control name="groupbox_revival" entity="GroupBox" script="" init="">
+            <prop Left="78" Top="100" Width="51" Height="82" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" BackImage="gui\main\hall\hall2.jpg,0,942,51,82" />
+            <control name="lbl_revival_lv" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="2" Top="1" Width="46" Height="46" ForeColor="255,93,85,13" ShadowColor="0,0,0,0" Text="10" Font="WRYH20" DrawMode="FitWindow" />
+            </control>
+            <control name="lbl_revival_sub_lv" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="2" Top="42" Width="46" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="10" Font="WRYH20_S_GRAY" DrawMode="FitWindow" />
+            </control>
+        </control>
+        <control name="btn_rideon" entity="Button" script="" init="">
+            <prop NormalImage="gui\main\ride\btn_zq_up.png" PushImage="gui\main\ride\btn_zq_up.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="8" Top="88" Width="80" Height="80" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+        </control>
+        <control name="group_change_race" entity="GroupBox" script="" init="">
+            <prop Left="365" Top="88" Width="62" Height="62" BackColor="200,0,0,0" ShadowColor="0,0,0,0" Font="WRYH18_S" NoFrame="true" BackImage="gui\main\roleinfo\btn_main_zz.png" />
+            <control name="lbl_2" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="-13" Top="58" Width="94" Height="22" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\relic\bg_yijiname.png" />
+            </control>
+            <control name="Label1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="-5" Top="56" Width="22" Height="22" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_change_race_3" />
+            </control>
+            <control name="lbl_chang_race_time" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="19" Top="58" Width="62" Height="16" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="360" />
+            </control>
+        </control>
+        <control name="groupbox_replaykit" entity="GroupBox" script="" init="">
+            <prop Top="184" Width="121" Height="58" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" Visible="false" TestTrans="true" Transparent="true" />
+            <control name="cbtn_replay" entity="CheckButton" script="" init="">
+                <prop ClickEvent="true" BoxSize="12" NormalImage="gui\main\hall\hall2.jpg,65,499,121,58" CheckedImage="gui\main\hall\hall2.jpg,65,432,121,58" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="121" Height="58" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" DrawMode="FitWindow" ClickSound="button_click" />
+            </control>
+            <control name="lbl_count_time" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="8" Top="5600" Width="80" Height="16" ForeColor="255,255,0,0" BlendColor="255,0,0,0" ShadowColor="0,0,0,0" />
+            </control>
+            <control name="lbl_effect" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="69" Top="8" Width="45" Height="45" ShadowColor="0,0,0,0" TestTrans="true" AutoSize="true" BackImage="gui\main\hall\hall2.jpg,186,432,45,45" />
+            </control>
+        </control>
+        <control name="lbl_super_exp" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="125" Top="146" Width="72" Height="27" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\EXP_UP.png" />
+        </control>
+        <control name="groupbox_buff" entity="GroupBox" script="" init="">
+            <prop Left="128" Top="168" Width="80" Height="80" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+            <control name="lbl_buff" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="-4" Top="8" Width="72" Height="30" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\main\guild\gj_UP.png" />
+            </control>
+            <control name="lbl_buff_time" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="72" Top="8" Width="80" Height="24" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" />
+            </control>
+        </control>
+    </control>
+</form>

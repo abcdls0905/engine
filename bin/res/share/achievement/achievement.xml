@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
+<!-- EventID            : 成就事件编号 ，单调递增 -->
+<!-- Category           : 成就大类编号 ，单调递增 -->
+<!-- AchieveType        : 成就小类编号 ，单调递增(此值由程序猿提供)-->
+<!-- Context            : 成就描述-->
+<!-- AwardPoint         : 奖励成就点数-->
+<!-- Count              : 成就最大进度值-->
+<!-- FirstStart         : 是否第一个开始(通常是成就的第一个子成就)-->
+<!-- NextEventID        : 下一子成就编号-->
+<!-- InheritPatch       : 用于补丁子成就，为true时继承以前的完成值。不配默认不继承-->
+<!-- ParamVarlist       : 参数列表-->
+<Object>
+	<Property ID="Switch" open="1" desc="活动开启开关，1开启，0关闭"/>
+	<!-- 功成名就-->
+	<Property EventID="10101" Category="1" AchieveType="1" Name="拥有6件30品及以上的装备" Context="AchieveContext_10101" AwardPoint="100" Count="6" FirstStart="true" NextEventID="10102" ParamVarlist="30"/>
+	<Property EventID="10102" Category="1" AchieveType="1" Name="拥有10件30品及以上的装备" Context="AchieveContext_10102" AwardPoint="100" Count="10" NextEventID="10103" ParamVarlist="30"/>
+	<Property EventID="10103" Category="1" AchieveType="1" Name="拥有15件30品及以上的装备" Context="AchieveContext_10103" AwardPoint="100" Count="15" NextEventID="10104" ParamVarlist="30"/>
+	<Property EventID="10104" Category="1" AchieveType="1" Name="拥有20件30品及以上的装备" Context="AchieveContext_10104" AwardPoint="100" Count="20" NextEventID="10105" ParamVarlist="30"/>
+	<Property EventID="10105" Category="1" AchieveType="1" Name="拥有30件30品及以上的装备" Context="AchieveContext_10105" AwardPoint="100" Count="30" NextEventID="10106" ParamVarlist="30"/>
+	<Property EventID="10106" Category="1" AchieveType="1" Name="拥有40件30品及以上的装备" Context="AchieveContext_10106" AwardPoint="100" Count="40" NextEventID="10107" ParamVarlist="30"/>
+	<Property EventID="10107" Category="1" AchieveType="1" Name="拥有50件30品及以上的装备" Context="AchieveContext_10107" AwardPoint="100" Count="50" NextEventID="10108" ParamVarlist="30"/>
+	<Property EventID="10108" Category="1" AchieveType="1" Name="拥有60件30品及以上的装备" Context="AchieveContext_10108" AwardPoint="100" Count="60" ParamVarlist="30,40"/>
+	<Property EventID="10201" Category="1" AchieveType="2" Name="拥有1件神器装备" Context="AchieveContext_10201" AwardPoint="100" Count="1" FirstStart="true" NextEventID="10202" ParamVarlist="6"/>
+	<Property EventID="10202" Category="1" AchieveType="2" Name="拥有6件神器装备" Context="AchieveContext_10202" AwardPoint="100" Count="6" NextEventID="10203" ParamVarlist="6"/>
+	<Property EventID="10203" Category="1" AchieveType="2" Name="拥有10件神器装备" Context="AchieveContext_10203" AwardPoint="100" Count="10" NextEventID="10204" ParamVarlist="6"/>
+	<Property EventID="10204" Category="1" AchieveType="2" Name="拥有20件神器装备" Context="AchieveContext_10204" AwardPoint="100" Count="20" NextEventID="10205" ParamVarlist="6"/>
+	<Property EventID="10205" Category="1" AchieveType="2" Name="拥有30件神器装备" Context="AchieveContext_10205" AwardPoint="100" Count="30" NextEventID="10206" ParamVarlist="6"/>
+	<Property EventID="10206" Category="1" AchieveType="2" Name="拥有40件神器装备" Context="AchieveContext_10206" AwardPoint="100" Count="40" NextEventID="10207" ParamVarlist="6"/>
+	<Property EventID="10207" Category="1" AchieveType="2" Name="拥有50件神器装备" Context="AchieveContext_10207" AwardPoint="100" Count="50" NextEventID="10208" ParamVarlist="6"/>
+	<Property EventID="10208" Category="1" AchieveType="2" Name="拥有60件神器装备" Context="AchieveContext_10208" AwardPoint="100" Count="60" ParamVarlist="6"/>
+	<Property EventID="10301" Category="1" AchieveType="3" Name="拥有5个7级级以上的符文" Context="AchieveContext_10301" AwardPoint="100" Count="5" FirstStart="true" NextEventID="10302" ParamVarlist="7"/>
+	<Property EventID="10302" Category="1" AchieveType="3" Name="拥有10个7级级以上的符文" Context="AchieveContext_10302" AwardPoint="100" Count="10" NextEventID="10303" ParamVarlist="7"/>
+	<Property EventID="10303" Category="1" AchieveType="3" Name="拥有20个7级级以上的符文" Context="AchieveContext_10303" AwardPoint="100" Count="20" NextEventID="10304" ParamVarlist="7"/>
+	<Property EventID="10304" Category="1" AchieveType="3" Name="拥有40个7级级以上的符文" Context="AchieveContext_10304" AwardPoint="100" Count="40" NextEventID="10305" ParamVarlist="7"/>
+	<Property EventID="10305" Category="1" AchieveType="3" Name="拥有50个7级级以上的符文" Context="AchieveContext_10305" AwardPoint="100" Count="50" NextEventID="10306" ParamVarlist="7"/>
+	<Property EventID="10306" Category="1" AchieveType="3" Name="拥有60个7级级以上的符文" Context="AchieveContext_10306" AwardPoint="100" Count="60" ParamVarlist="7"/>
+	<Property EventID="10401" Category="1" AchieveType="4" Name="所有五行符文都进阶至1级" Context="AchieveContext_10401" AwardPoint="100" Count="1" FirstStart="true" NextEventID="10402" ParamVarlist="1"/>
+	<Property EventID="10402" Category="1" AchieveType="4" Name="所有五行符文都进阶至2级" Context="AchieveContext_10402" AwardPoint="100" Count="2" NextEventID="10403" ParamVarlist="2"/>
+	<Property EventID="10403" Category="1" AchieveType="4" Name="所有五行符文都进阶至3级" Context="AchieveContext_10403" AwardPoint="100" Count="3" NextEventID="10404" ParamVarlist="3"/>
+	<Property EventID="10404" Category="1" AchieveType="4" Name="所有五行符文都进阶至4级" Context="AchieveContext_10404" AwardPoint="100" Count="4" NextEventID="10405" ParamVarlist="4"/>
+	<Property EventID="10405" Category="1" AchieveType="4" Name="所有五行符文都进阶至5级" Context="AchieveContext_10405" AwardPoint="100" Count="5" ParamVarlist="5"/>
+	<Property EventID="10501" Category="1" AchieveType="5" Name="核心符文进阶至1级" Context="AchieveContext_10501" AwardPoint="100" Count="1" FirstStart="true" NextEventID="10502" ParamVarlist="1"/>
+	<Property EventID="10502" Category="1" AchieveType="5" Name="核心符文进阶至2级" Context="AchieveContext_10502" AwardPoint="100" Count="2" NextEventID="10503" ParamVarlist="2"/>
+	<Property EventID="10503" Category="1" AchieveType="5" Name="核心符文进阶至3级" Context="AchieveContext_10503" AwardPoint="100" Count="3" NextEventID="10504" ParamVarlist="3"/>
+	<Property EventID="10504" Category="1" AchieveType="5" Name="核心符文进阶至4级" Context="AchieveContext_10504" AwardPoint="100" Count="4" NextEventID="10505" ParamVarlist="4"/>
+	<Property EventID="10505" Category="1" AchieveType="5" Name="核心符文进阶至5级" Context="AchieveContext_10505" AwardPoint="100" Count="5" ParamVarlist="5"/>
+	<Property EventID="10601" Category="1" AchieveType="6" Name="在游戏中获得5000万金币" Context="AchieveContext_10601" AwardPoint="100" Count="50000000" FirstStart="true" NextEventID="10602"/>
+	<Property EventID="10602" Category="1" AchieveType="6" Name="在游戏中获得1亿金币" Context="AchieveContext_10602" AwardPoint="100" Count="100000000" NextEventID="10603"/>
+	<Property EventID="10603" Category="1" AchieveType="6" Name="在游戏中获得5亿金币" Context="AchieveContext_10603" AwardPoint="100" Count="500000000" NextEventID="10604"/>
+	<Property EventID="10604" Category="1" AchieveType="6" Name="在游戏中获得10亿金币" Context="AchieveContext_10604" AwardPoint="100" Count="1000000000" NextEventID="10605"/>
+	<Property EventID="10605" Category="1" AchieveType="6" Name="在游戏中获得20亿金币" Context="AchieveContext_10605" AwardPoint="100" Count="2000000000"/>
+	<Property EventID="10701" Category="1" AchieveType="7" Name="最高战力达到5W" Context="AchieveContext_10701" AwardPoint="100" Count="50000" FirstStart="true" NextEventID="10702"/>
+	<Property EventID="10702" Category="1" AchieveType="7" Name="最高战力达到10W" Context="AchieveContext_10702" AwardPoint="100" Count="100000" NextEventID="10703"/>
+	<Property EventID="10703" Category="1" AchieveType="7" Name="最高战力达到20W" Context="AchieveContext_10703" AwardPoint="100" Count="200000" NextEventID="10704"/>
+	<Property EventID="10704" Category="1" AchieveType="7" Name="最高战力达到30W" Context="AchieveContext_10704" AwardPoint="100" Count="300000" NextEventID="10705"/>
+	<Property EventID="10705" Category="1" AchieveType="7" Name="最高战力达到40W" Context="AchieveContext_10705" AwardPoint="100" Count="400000" NextEventID="10706"/>
+	<Property EventID="10706" Category="1" AchieveType="7" Name="最高战力达到60W" Context="AchieveContext_10706" AwardPoint="100" Count="600000"/>
+	<Property EventID="10801" Category="1" AchieveType="8" Name="星魂总等级达到50级" Context="AchieveContext_10801" AwardPoint="100" Count="50" FirstStart="true" NextEventID="10802"/>
+	<Property EventID="10802" Category="1" AchieveType="8" Name="星魂总等级达到100级" Context="AchieveContext_10802" AwardPoint="100" Count="100" NextEventID="10803"/>
+	<Property EventID="10803" Category="1" AchieveType="8" Name="星魂总等级达到150级" Context="AchieveContext_10803" AwardPoint="100" Count="150" NextEventID="10804"/>
+	<Property EventID="10804" Category="1" AchieveType="8" Name="星魂总等级达到200级" Context="AchieveContext_10804" AwardPoint="100" Count="200" NextEventID="10805"/>
+	<Property EventID="10805" Category="1" AchieveType="8" Name="星魂总等级达到250级" Context="AchieveContext_10805" AwardPoint="100" Count="150"/>
+	<Property EventID="10901" Category="1" AchieveType="9" Name="获得1个溟海苍翼+10翅膀" Context="AchieveContext_10901" AwardPoint="100" Count="1" FirstStart="true" NextEventID="10902"/>
+	<Property EventID="10902" Category="1" AchieveType="9" Name="获得5个溟海苍翼+10翅膀" Context="AchieveContext_10902" AwardPoint="100" Count="5" NextEventID="10903"/>
+	<Property EventID="10903" Category="1" AchieveType="9" Name="获得10个溟海苍翼+10翅膀" Context="AchieveContext_10903" AwardPoint="100" Count="10" NextEventID="10904"/>
+	<Property EventID="10904" Category="1" AchieveType="9" Name="获得15个溟海苍翼+10翅膀" Context="AchieveContext_10904" AwardPoint="100" Count="15" NextEventID="10905"/>
+	<Property EventID="10905" Category="1" AchieveType="9" Name="获得20个溟海苍翼+10翅膀" Context="AchieveContext_10905" AwardPoint="100" Count="20"/>
+	<Property EventID="11001" Category="1" AchieveType="10" Name="拥有1个橙色觉醒属性" Context="AchieveContext_11001" AwardPoint="100" Count="1" FirstStart="true" NextEventID="11002" ParamVarlist="5"/>
+	<Property EventID="11002" Category="1" AchieveType="10" Name="拥有5个橙色觉醒属性" Context="AchieveContext_11002" AwardPoint="100" Count="5" NextEventID="11003" ParamVarlist="5"/>
+	<Property EventID="11003" Category="1" AchieveType="10" Name="拥有10个橙色觉醒属性" Context="AchieveContext_11003" AwardPoint="100" Count="10" NextEventID="11004" ParamVarlist="5"/>
+	<Property EventID="11004" Category="1" AchieveType="10" Name="拥有20个橙色觉醒属性" Context="AchieveContext_11004" AwardPoint="100" Count="20" NextEventID="11005" ParamVarlist="5"/>
+	<Property EventID="11005" Category="1" AchieveType="10" Name="拥有30个橙色觉醒属性" Context="AchieveContext_11005" AwardPoint="100" Count="30" NextEventID="11006" ParamVarlist="5"/>
+	<Property EventID="11006" Category="1" AchieveType="10" Name="拥有50个橙色觉醒属性" Context="AchieveContext_11006" AwardPoint="100" Count="50" ParamVarlist="5"/>
+	<Property EventID="11101" Category="1" AchieveType="11" Name="拥有1套精炼6的装备" Context="AchieveContext_11101" AwardPoint="100" Count="6" FirstStart="true" NextEventID="11102" ParamVarlist="6"/>
+	<Property EventID="11102" Category="1" AchieveType="11" Name="拥有1套精炼10的装备" Context="AchieveContext_11102" AwardPoint="100" Count="10" NextEventID="11103" ParamVarlist="10"/>
+	<Property EventID="11103" Category="1" AchieveType="11" Name="拥有1套精炼13的装备" Context="AchieveContext_11103" AwardPoint="100" Count="13" NextEventID="11104" ParamVarlist="13"/>
+	<Property EventID="11104" Category="1" AchieveType="11" Name="拥有1套精炼16的装备" Context="AchieveContext_11104" AwardPoint="100" Count="16" NextEventID="11105" ParamVarlist="16"/>
+	<Property EventID="11201" Category="1" AchieveType="12" Name="拥有1件数量的精炼+16装备" Context="AchieveContext_11201" AwardPoint="100" Count="1" FirstStart="true" NextEventID="11202" ParamVarlist="16"/>
+	<Property EventID="11202" Category="1" AchieveType="12" Name="拥有6件数量的精炼+16装备" Context="AchieveContext_11202" AwardPoint="100" Count="6" NextEventID="11203" ParamVarlist="16"/>
+	<Property EventID="11203" Category="1" AchieveType="12" Name="拥有10件数量的精炼+16装备" Context="AchieveContext_11203" AwardPoint="100" Count="10" NextEventID="11204" ParamVarlist="16"/>
+	<Property EventID="11204" Category="1" AchieveType="12" Name="拥有20件数量的精炼+16装备" Context="AchieveContext_11204" AwardPoint="100" Count="20" NextEventID="11205" ParamVarlist="16"/>
+	<Property EventID="11205" Category="1" AchieveType="12" Name="拥有30件数量的精炼+16装备" Context="AchieveContext_11205" AwardPoint="100" Count="30" NextEventID="11206" ParamVarlist="16"/>
+	<Property EventID="11206" Category="1" AchieveType="12" Name="拥有40件数量的精炼+16装备" Context="AchieveContext_11206" AwardPoint="100" Count="40" ParamVarlist="16"/>
+	<Property EventID="11301" Category="1" AchieveType="13" Name="拥有5个英雄" Context="AchieveContext_11301" AwardPoint="100" Count="5" FirstStart="true" NextEventID="11302"/>
+	<Property EventID="11302" Category="1" AchieveType="13" Name="拥有10个英雄" Context="AchieveContext_11302" AwardPoint="100" Count="10" NextEventID="11303"/>
+	<Property EventID="11303" Category="1" AchieveType="13" Name="拥有15个英雄" Context="AchieveContext_11303" AwardPoint="100" Count="15" NextEventID="11304"/>
+	<Property EventID="11304" Category="1" AchieveType="13" Name="拥有20个英雄" Context="AchieveContext_11304" AwardPoint="100" Count="20" NextEventID="11305"/>
+	<Property EventID="11305" Category="1" AchieveType="13" Name="拥有25个英雄" Context="AchieveContext_11305" AwardPoint="100" Count="25" NextEventID="11306"/>
+	<Property EventID="11306" Category="1" AchieveType="13" Name="拥有30个英雄" Context="AchieveContext_11306" AwardPoint="100" Count="30"/>
+	<Property EventID="11401" Category="1" AchieveType="14" Name="拥有5个进阶到红色品质的英雄" Context="AchieveContext_11401" AwardPoint="100" Count="5" FirstStart="true" NextEventID="11402" ParamVarlist="6"/>
+	<Property EventID="11402" Category="1" AchieveType="14" Name="拥有10个进阶到红色品质的英雄" Context="AchieveContext_11402" AwardPoint="100" Count="10" NextEventID="11403" ParamVarlist="6"/>
+	<Property EventID="11403" Category="1" AchieveType="14" Name="拥有15个进阶到红色品质的英雄" Context="AchieveContext_11403" AwardPoint="100" Count="15" NextEventID="11404" ParamVarlist="6"/>
+	<Property EventID="11404" Category="1" AchieveType="14" Name="拥有20个进阶到红色品质的英雄" Context="AchieveContext_11404" AwardPoint="100" Count="20" NextEventID="11405" ParamVarlist="6"/>
+	<Property EventID="11405" Category="1" AchieveType="14" Name="拥有25个进阶到红色品质的英雄" Context="AchieveContext_11405" AwardPoint="100" Count="25" NextEventID="11406" ParamVarlist="6"/>
+	<Property EventID="11406" Category="1" AchieveType="14" Name="拥有30个进阶到红色品质的英雄" Context="AchieveContext_11406" AwardPoint="100" Count="30" ParamVarlist="6"/>
+	<Property EventID="11501" Category="1" AchieveType="15" Name="3个英雄等级达到100级及以上" Context="AchieveContext_11501" AwardPoint="100" Count="3" FirstStart="true" NextEventID="11502" ParamVarlist="100"/>
+	<Property EventID="11502" Category="1" AchieveType="15" Name="5个英雄等级达到100级及以上" Context="AchieveContext_11502" AwardPoint="100" Count="5" NextEventID="11503" ParamVarlist="100"/>
+	<Property EventID="11503" Category="1" AchieveType="15" Name="10个英雄等级达到100级及以上" Context="AchieveContext_11503" AwardPoint="100" Count="10" NextEventID="11504" ParamVarlist="100"/>
+	<Property EventID="11504" Category="1" AchieveType="15" Name="20个英雄等级达到100级及以上" Context="AchieveContext_11504" AwardPoint="100" Count="20" NextEventID="11505" ParamVarlist="100"/>
+	<Property EventID="11505" Category="1" AchieveType="15" Name="30个英雄等级达到100级及以上" Context="AchieveContext_11505" AwardPoint="100" Count="30" ParamVarlist="100"/>
+	<Property EventID="11601" Category="1" AchieveType="16" Name="3个英雄技能升到100级及以上" Context="AchieveContext_11601" AwardPoint="100" Count="3" FirstStart="true" NextEventID="11602" ParamVarlist="100"/>
+	<Property EventID="11602" Category="1" AchieveType="16" Name="5个英雄技能升到100级及以上" Context="AchieveContext_11602" AwardPoint="100" Count="5" NextEventID="11603" ParamVarlist="100"/>
+	<Property EventID="11603" Category="1" AchieveType="16" Name="10个英雄技能升到100级及以上" Context="AchieveContext_11603" AwardPoint="100" Count="10" NextEventID="11604" ParamVarlist="100"/>
+	<Property EventID="11604" Category="1" AchieveType="16" Name="20个英雄技能升到100级及以上" Context="AchieveContext_11604" AwardPoint="100" Count="20" NextEventID="11605" ParamVarlist="100"/>
+	<Property EventID="11605" Category="1" AchieveType="16" Name="30个英雄技能升到100级及以上" Context="AchieveContext_11605" AwardPoint="100" Count="30" ParamVarlist="100"/>
+	<Property EventID="11701" Category="1" AchieveType="17" Name="获得3个进阶至10级的法宝" Context="AchieveContext_11701" AwardPoint="100" Count="3" FirstStart="true" NextEventID="11702" ParamVarlist="10"/>
+	<Property EventID="11702" Category="1" AchieveType="17" Name="获得5个进阶至10级的法宝" Context="AchieveContext_11702" AwardPoint="100" Count="5" NextEventID="11703" ParamVarlist="10"/>
+	<Property EventID="11703" Category="1" AchieveType="17" Name="获得10个进阶至10级的法宝" Context="AchieveContext_11703" AwardPoint="100" Count="10" NextEventID="11704" ParamVarlist="10"/>
+	<Property EventID="11704" Category="1" AchieveType="17" Name="获得20个进阶至10级的法宝" Context="AchieveContext_11704" AwardPoint="100" Count="20" NextEventID="11705" ParamVarlist="10"/>
+	<Property EventID="11705" Category="1" AchieveType="17" Name="获得30个进阶至10级的法宝" Context="AchieveContext_11705" AwardPoint="100" Count="30" ParamVarlist="10"/>
+	<Property EventID="20101" Category="2" AchieveType="18" Name="在巅峰对决中赢得10场比赛胜利" Context="AchieveContext_20101" AwardPoint="100" Count="10" FirstStart="true" NextEventID="20102"/>
+	<Property EventID="20102" Category="2" AchieveType="18" Name="在巅峰对决中赢得50场比赛胜利" Context="AchieveContext_20102" AwardPoint="100" Count="20" NextEventID="20103"/>
+	<Property EventID="20103" Category="2" AchieveType="18" Name="在巅峰对决中赢得100场比赛胜利" Context="AchieveContext_20103" AwardPoint="100" Count="100" NextEventID="20104"/>
+	<Property EventID="20104" Category="2" AchieveType="18" Name="在巅峰对决中赢得300场比赛胜利" Context="AchieveContext_20104" AwardPoint="100" Count="300" NextEventID="20105"/>
+	<Property EventID="20105" Category="2" AchieveType="18" Name="在巅峰对决中赢得500场比赛胜利" Context="AchieveContext_20105" AwardPoint="100" Count="500" NextEventID="20106"/>
+	<Property EventID="20106" Category="2" AchieveType="18" Name="在巅峰对决中赢得1000场比赛胜利" Context="AchieveContext_20106" AwardPoint="100" Count="1000"/>
+	<Property EventID="20201" Category="2" AchieveType="19" Name="在巅峰对决中连胜5次" Context="AchieveContext_20201" AwardPoint="100" Count="5" FirstStart="true" NextEventID="20202"/>
+	<Property EventID="20202" Category="2" AchieveType="19" Name="在巅峰对决中连胜10次" Context="AchieveContext_20202" AwardPoint="100" Count="10" NextEventID="20203"/>
+	<Property EventID="20203" Category="2" AchieveType="19" Name="在巅峰对决中连胜20次" Context="AchieveContext_20203" AwardPoint="100" Count="20" NextEventID="20204"/>
+	<Property EventID="20204" Category="2" AchieveType="19" Name="在巅峰对决中连胜25次" Context="AchieveContext_20204" AwardPoint="100" Count="25" NextEventID="20205"/>
+	<Property EventID="20205" Category="2" AchieveType="19" Name="在巅峰对决中连胜40次" Context="AchieveContext_20205" AwardPoint="100" Count="40"/>
+	<Property EventID="20301" Category="2" AchieveType="20" Name="连续3界获得巅峰对决第一名" Context="AchieveContext_20301" AwardPoint="100" Count="3" FirstStart="true" NextEventID="20302" ParamVarlist="1"/>
+	<Property EventID="20302" Category="2" AchieveType="20" Name="连续5界获得巅峰对决第一名" Context="AchieveContext_20302" AwardPoint="100" Count="5" NextEventID="20303" ParamVarlist="1"/>
+	<Property EventID="20303" Category="2" AchieveType="20" Name="连续10界获得巅峰对决第一名" Context="AchieveContext_20303" AwardPoint="100" Count="10" ParamVarlist="1"/>
+	<Property EventID="20401" Category="2" AchieveType="21" Name="在王者对决中赢得10场比赛胜利" Context="AchieveContext_20401" AwardPoint="100" Count="10" FirstStart="true" NextEventID="20402"/>
+	<Property EventID="20402" Category="2" AchieveType="21" Name="在王者对决中赢得50场比赛胜利" Context="AchieveContext_20402" AwardPoint="100" Count="50" NextEventID="20403"/>
+	<Property EventID="20403" Category="2" AchieveType="21" Name="在王者对决中赢得100场比赛胜利" Context="AchieveContext_20403" AwardPoint="100" Count="100" NextEventID="20404"/>
+	<Property EventID="20404" Category="2" AchieveType="21" Name="在王者对决中赢得300场比赛胜利" Context="AchieveContext_20404" AwardPoint="100" Count="300" NextEventID="20405"/>
+	<Property EventID="20405" Category="2" AchieveType="21" Name="在王者对决中赢得500场比赛胜利" Context="AchieveContext_20405" AwardPoint="100" Count="500" NextEventID="20406"/>
+	<Property EventID="20406" Category="2" AchieveType="21" Name="在王者对决中赢得1000场比赛胜利" Context="AchieveContext_20406" AwardPoint="100" Count="1000"/>
+	<Property EventID="20501" Category="2" AchieveType="22" Name="己方无英雄死亡，敌方全部被歼灭" Context="AchieveContext_20501" AwardPoint="100" Count="1" FirstStart="true"/>
+	<Property EventID="20601" Category="2" AchieveType="23" Name="在王者对决中连胜5次" Context="AchieveContext_20601" AwardPoint="100" Count="5" FirstStart="true" NextEventID="20602"/>
+	<Property EventID="20602" Category="2" AchieveType="23" Name="在王者对决中连胜10次" Context="AchieveContext_20602" AwardPoint="100" Count="10" NextEventID="20603"/>
+	<Property EventID="20603" Category="2" AchieveType="23" Name="在王者对决中连胜20次" Context="AchieveContext_20603" AwardPoint="100" Count="20" NextEventID="20604"/>
+	<Property EventID="20604" Category="2" AchieveType="23" Name="在王者对决中连胜25次" Context="AchieveContext_20604" AwardPoint="100" Count="25" NextEventID="20605"/>
+	<Property EventID="20605" Category="2" AchieveType="23" Name="在王者对决中连胜30次" Context="AchieveContext_20605" AwardPoint="100" Count="30"/>
+	<Property EventID="20701" Category="2" AchieveType="24" Name="在太极战场中累计击杀50人" Context="AchieveContext_20701" AwardPoint="100" Count="50" FirstStart="true" NextEventID="20702"/>
+	<Property EventID="20702" Category="2" AchieveType="24" Name="在太极战场中累计击杀100人" Context="AchieveContext_20702" AwardPoint="100" Count="100" NextEventID="20703"/>
+	<Property EventID="20703" Category="2" AchieveType="24" Name="在太极战场中累计击杀150人" Context="AchieveContext_20703" AwardPoint="100" Count="150" NextEventID="20704"/>
+	<Property EventID="20704" Category="2" AchieveType="24" Name="在太极战场中累计击杀300人" Context="AchieveContext_20704" AwardPoint="100" Count="300" NextEventID="20705"/>
+	<Property EventID="20705" Category="2" AchieveType="24" Name="在太极战场中累计击杀500人" Context="AchieveContext_20705" AwardPoint="100" Count="500" NextEventID="20706"/>
+	<Property EventID="20706" Category="2" AchieveType="24" Name="在太极战场中累计击杀1000人" Context="AchieveContext_20706" AwardPoint="100" Count="1000"/>
+	<Property EventID="20801" Category="2" AchieveType="25" Name="累计在太极战场一场战斗中击杀3人10次" Context="AchieveContext_20801" AwardPoint="100" Count="10" FirstStart="true" NextEventID="20802" ParamVarlist="3"/>
+	<Property EventID="20802" Category="2" AchieveType="25" Name="累计在太极战场一场战斗中击杀3人25次" Context="AchieveContext_20802" AwardPoint="100" Count="25" NextEventID="20803" ParamVarlist="3"/>
+	<Property EventID="20803" Category="2" AchieveType="25" Name="累计在太极战场一场战斗中击杀3人50次" Context="AchieveContext_20803" AwardPoint="100" Count="50" NextEventID="20804" ParamVarlist="3"/>
+	<Property EventID="20804" Category="2" AchieveType="25" Name="累计在太极战场一场战斗中击杀3人100次" Context="AchieveContext_20804" AwardPoint="100" Count="100" ParamVarlist="3"/>
+	<Property EventID="20901" Category="2" AchieveType="26" Name="己方无英雄死亡，敌方全部被歼灭" Context="AchieveContext_20901" AwardPoint="100" Count="1" FirstStart="true"/>
+	<Property EventID="21001" Category="2" AchieveType="27" Name="累计在水晶峡谷战场中个人获得50分及以上3次" Context="AchieveContext_21001" AwardPoint="100" Count="50" FirstStart="true" NextEventID="21002" ParamVarlist="3"/>
+	<Property EventID="21002" Category="2" AchieveType="27" Name="累计在水晶峡谷战场中个人获得60分及以上3次" Context="AchieveContext_21002" AwardPoint="100" Count="60" NextEventID="21003" ParamVarlist="3"/>
+	<Property EventID="21003" Category="2" AchieveType="27" Name="累计在水晶峡谷战场中个人获得70分及以上3次" Context="AchieveContext_21003" AwardPoint="100" Count="70" NextEventID="21004" ParamVarlist="3"/>
+	<Property EventID="21004" Category="2" AchieveType="27" Name="累计在水晶峡谷战场中个人获得80分及以上3次" Context="AchieveContext_21004" AwardPoint="100" Count="80" ParamVarlist="3"/>
+	<Property EventID="21101" Category="2" AchieveType="28" Name="在水晶峡谷战场中获胜且对方得分不高于30分" Context="AchieveContext_21101" AwardPoint="100" Count="30" FirstStart="true" NextEventID="21102"/>
+	<Property EventID="21102" Category="2" AchieveType="28" Name="在水晶峡谷战场中获胜且对方得分不高于20分" Context="AchieveContext_21102" AwardPoint="100" Count="20" NextEventID="21103"/>
+	<Property EventID="21103" Category="2" AchieveType="28" Name="在水晶峡谷战场中获胜且对方得分不高于15分" Context="AchieveContext_21103" AwardPoint="100" Count="15" NextEventID="21104"/>
+	<Property EventID="21104" Category="2" AchieveType="28" Name="在水晶峡谷战场中获胜且对方得分不高于10分" Context="AchieveContext_21104" AwardPoint="100" Count="10" NextEventID="21105"/>
+	<Property EventID="21105" Category="2" AchieveType="28" Name="在水晶峡谷战场中获胜且对方得分不高于5分" Context="AchieveContext_21105" AwardPoint="100" Count="5"/>
+	<Property EventID="21201" Category="2" AchieveType="29" Name="己方获胜且对方0分3场" Context="AchieveContext_21201" AwardPoint="100" Count="3" FirstStart="true" NextEventID="21202" ParamVarlist="0"/>
+	<Property EventID="21202" Category="2" AchieveType="29" Name="己方获胜且对方0分10场" Context="AchieveContext_21202" AwardPoint="100" Count="10" NextEventID="21203" ParamVarlist="0"/>
+	<Property EventID="21203" Category="2" AchieveType="29" Name="己方获胜且对方0分20场" Context="AchieveContext_21203" AwardPoint="100" Count="20" NextEventID="21204" ParamVarlist="0"/>
+	<Property EventID="21204" Category="2" AchieveType="29" Name="己方获胜且对方0分30场" Context="AchieveContext_21204" AwardPoint="100" Count="30" ParamVarlist="0"/>
+	<Property EventID="21301" Category="2" AchieveType="30" Name="在夺旗战场中个人获得50分及以上3次" Context="AchieveContext_21301" AwardPoint="100" Count="50" FirstStart="true" NextEventID="21302" ParamVarlist="3"/>
+	<Property EventID="21302" Category="2" AchieveType="30" Name="在夺旗战场中个人获得60分及以上3次" Context="AchieveContext_21302" AwardPoint="100" Count="60" NextEventID="21303" ParamVarlist="3"/>
+	<Property EventID="21303" Category="2" AchieveType="30" Name="在夺旗战场中个人获得70分及以上3次" Context="AchieveContext_21303" AwardPoint="100" Count="70" NextEventID="21304" ParamVarlist="3"/>
+	<Property EventID="21304" Category="2" AchieveType="30" Name="在夺旗战场中个人获得80分及以上3次" Context="AchieveContext_21304" AwardPoint="100" Count="80" ParamVarlist="3"/>
+	<Property EventID="21401" Category="2" AchieveType="31" Name="在夺旗战场中获胜且对方得分不高于30分" Context="AchieveContext_21401" AwardPoint="100" Count="30" FirstStart="true" NextEventID="21402"/>
+	<Property EventID="21402" Category="2" AchieveType="31" Name="在夺旗战场中获胜且对方得分不高于20分" Context="AchieveContext_21402" AwardPoint="100" Count="20" NextEventID="21403"/>
+	<Property EventID="21403" Category="2" AchieveType="31" Name="在夺旗战场中获胜且对方得分不高于15分" Context="AchieveContext_21403" AwardPoint="100" Count="15" NextEventID="21404"/>
+	<Property EventID="21404" Category="2" AchieveType="31" Name="在夺旗战场中获胜且对方得分不高于10分" Context="AchieveContext_21404" AwardPoint="100" Count="10" NextEventID="21405"/>
+	<Property EventID="21405" Category="2" AchieveType="31" Name="在夺旗战场中获胜且对方得分不高于5分" Context="AchieveContext_21405" AwardPoint="100" Count="5"/>
+	<Property EventID="21501" Category="2" AchieveType="32" Name="己方获胜且对方0分3场" Context="AchieveContext_21501" AwardPoint="100" Count="3" FirstStart="true" NextEventID="21502" ParamVarlist="0"/>
+	<Property EventID="21502" Category="2" AchieveType="32" Name="己方获胜且对方0分10场" Context="AchieveContext_21502" AwardPoint="100" Count="10" NextEventID="21503" ParamVarlist="0"/>
+	<Property EventID="21503" Category="2" AchieveType="32" Name="己方获胜且对方0分20场" Context="AchieveContext_21503" AwardPoint="100" Count="20" NextEventID="21504" ParamVarlist="0"/>
+	<Property EventID="21504" Category="2" AchieveType="32" Name="己方获胜且对方0分30场" Context="AchieveContext_21504" AwardPoint="100" Count="30" ParamVarlist="0"/>
+	<Property EventID="21601" Category="2" AchieveType="33" Name="在无双联赛中取得联赛前32强成绩" Context="AchieveContext_21601" AwardPoint="100" Count="32" FirstStart="true" NextEventID="21602" ParamVarlist="32"/>
+	<Property EventID="21602" Category="2" AchieveType="33" Name="在无双联赛中取得联赛前16强成绩" Context="AchieveContext_21602" AwardPoint="100" Count="16" NextEventID="21603" ParamVarlist="16"/>
+	<Property EventID="21603" Category="2" AchieveType="33" Name="在无双联赛中取得联赛前8强成绩" Context="AchieveContext_21603" AwardPoint="100" Count="8" NextEventID="21604" ParamVarlist="8"/>
+	<Property EventID="21604" Category="2" AchieveType="33" Name="在无双联赛中取得联赛前4强成绩" Context="AchieveContext_21604" AwardPoint="100" Count="4" NextEventID="21605" ParamVarlist="4"/>
+	<Property EventID="21605" Category="2" AchieveType="33" Name="在无双联赛中取得联赛前2强成绩" Context="AchieveContext_21605" AwardPoint="100" Count="2" NextEventID="21606" ParamVarlist="2"/>
+	<Property EventID="21606" Category="2" AchieveType="33" Name="在无双联赛中取得联赛冠军成绩" Context="AchieveContext_21606" AwardPoint="100" Count="1" ParamVarlist="1"/>
+	<Property EventID="21701" Category="2" AchieveType="34" Name="总计参加50场巅峰联赛比赛" Context="AchieveContext_21701" AwardPoint="100" Count="50" FirstStart="true" NextEventID="21702" ParamVarlist="1"/>
+	<Property EventID="21702" Category="2" AchieveType="34" Name="累计获得20次复赛资格" Context="AchieveContext_21702" AwardPoint="100" Count="20" NextEventID="21703" ParamVarlist="2"/>
+	<Property EventID="21703" Category="2" AchieveType="34" Name="获得10次决赛资格" Context="AchieveContext_21703" AwardPoint="100" Count="10" ParamVarlist="3"/>
+	<Property EventID="21801" Category="2" AchieveType="35" Name="参加5次王者联赛" Context="AchieveContext_21801" AwardPoint="100" Count="5" FirstStart="true" NextEventID="21802"/>
+	<Property EventID="21802" Category="2" AchieveType="35" Name="参加10次王者联赛" Context="AchieveContext_21802" AwardPoint="100" Count="10" NextEventID="21803"/>
+	<Property EventID="21803" Category="2" AchieveType="35" Name="参加20次王者联赛" Context="AchieveContext_21803" AwardPoint="100" Count="20" NextEventID="21804"/>
+	<Property EventID="21804" Category="2" AchieveType="35" Name="参加50次王者联赛" Context="AchieveContext_21804" AwardPoint="100" Count="50"/>
+	<Property EventID="21901" Category="2" AchieveType="36" Name="在巅峰联赛中取得联赛前32强成绩" Context="AchieveContext_21901" AwardPoint="100" Count="32" FirstStart="true" NextEventID="21902"/>
+	<Property EventID="21902" Category="2" AchieveType="36" Name="在巅峰联赛中取得联赛前16强成绩" Context="AchieveContext_21902" AwardPoint="100" Count="16" NextEventID="21903"/>
+	<Property EventID="21903" Category="2" AchieveType="36" Name="在巅峰联赛中取得联赛前8强成绩" Context="AchieveContext_21903" AwardPoint="100" Count="8" NextEventID="21904"/>
+	<Property EventID="21904" Category="2" AchieveType="36" Name="在巅峰联赛中取得联赛前4强成绩" Context="AchieveContext_21904" AwardPoint="100" Count="4" NextEventID="21905"/>
+	<Property EventID="21905" Category="2" AchieveType="36" Name="在巅峰联赛中取得联赛前2强成绩" Context="AchieveContext_21905" AwardPoint="100" Count="2" NextEventID="21906"/>
+	<Property EventID="21906" Category="2" AchieveType="36" Name="在巅峰联赛中取得联赛冠军成绩" Context="AchieveContext_21906" AwardPoint="100" Count="1"/>
+	<Property EventID="22001" Category="2" AchieveType="37" Name="在浴血沙场连续击倒5名玩家" Context="AchieveContext_22001" AwardPoint="100" Count="5" FirstStart="true" NextEventID="22002"/>
+	<Property EventID="22002" Category="2" AchieveType="37" Name="在浴血沙场连续击倒10名玩家" Context="AchieveContext_22002" AwardPoint="100" Count="10" NextEventID="22003"/>
+	<Property EventID="22003" Category="2" AchieveType="37" Name="在浴血沙场连续击倒15名玩家" Context="AchieveContext_22003" AwardPoint="100" Count="15" NextEventID="22004"/>
+	<Property EventID="22004" Category="2" AchieveType="37" Name="在浴血沙场连续击倒20名玩家" Context="AchieveContext_22004" AwardPoint="100" Count="20"/>
+	<Property EventID="22101" Category="2" AchieveType="38" Name="在浴血沙场累计击倒100名玩家" Context="AchieveContext_22101" AwardPoint="100" Count="100" FirstStart="true" NextEventID="22102"/>
+	<Property EventID="22102" Category="2" AchieveType="38" Name="在浴血沙场累计击倒500名玩家" Context="AchieveContext_22102" AwardPoint="100" Count="500" NextEventID="22103"/>
+	<Property EventID="22103" Category="2" AchieveType="38" Name="在浴血沙场累计击倒1000名玩家" Context="AchieveContext_22103" AwardPoint="100" Count="1000" NextEventID="22104"/>
+	<Property EventID="22104" Category="2" AchieveType="38" Name="在浴血沙场累计击倒2000名玩家" Context="AchieveContext_22104" AwardPoint="100" Count="2000" NextEventID="22105"/>
+	<Property EventID="22105" Category="2" AchieveType="38" Name="在浴血沙场累计击倒5000名玩家" Context="AchieveContext_22105" AwardPoint="100" Count="5000"/>
+	<Property EventID="22201" Category="2" AchieveType="39" Name="累计在浴血沙场获得10个恶魔遗物" Context="AchieveContext_22201" AwardPoint="100" Count="10" FirstStart="true" NextEventID="22202"/>
+	<Property EventID="22202" Category="2" AchieveType="39" Name="累计在浴血沙场获得50个恶魔遗物" Context="AchieveContext_22202" AwardPoint="100" Count="50" NextEventID="22203"/>
+	<Property EventID="22203" Category="2" AchieveType="39" Name="累计在浴血沙场获得100个恶魔遗物" Context="AchieveContext_22203" AwardPoint="100" Count="100" NextEventID="22204"/>
+	<Property EventID="22204" Category="2" AchieveType="39" Name="累计在浴血沙场获得300个恶魔遗物" Context="AchieveContext_22204" AwardPoint="100" Count="300" NextEventID="22205"/>
+	<Property EventID="22205" Category="2" AchieveType="39" Name="累计在浴血沙场获得500个恶魔遗物" Context="AchieveContext_22205" AwardPoint="100" Count="500"/>
+	<Property EventID="22301" Category="2" AchieveType="40" Name="总积分达到12000分1场，切获得浴血沙场胜利" Context="AchieveContext_22301" AwardPoint="100" Count="1" FirstStart="true" NextEventID="22302" ParamVarlist="12000"/>
+	<Property EventID="22302" Category="2" AchieveType="40" Name="总积分达到12000分3场，切获得浴血沙场胜利" Context="AchieveContext_22302" AwardPoint="100" Count="3" NextEventID="22303" ParamVarlist="12000"/>
+	<Property EventID="22303" Category="2" AchieveType="40" Name="总积分达到12000分10场，切获得浴血沙场胜利" Context="AchieveContext_22303" AwardPoint="100" Count="10" ParamVarlist="12000"/>
+	<Property EventID="30101" Category="3" AchieveType="41" Name="公会占领蓝色或蓝色以上遗迹5次" Context="AchieveContext_30101" AwardPoint="100" Count="5" FirstStart="true" NextEventID="30102" ParamVarlist="3"/>
+	<Property EventID="30102" Category="3" AchieveType="41" Name="公会占领紫色或紫色以上遗迹10次" Context="AchieveContext_30102" AwardPoint="100" Count="10" NextEventID="30103" ParamVarlist="4"/>
+	<Property EventID="30103" Category="3" AchieveType="41" Name="公会占领橙色遗迹15次" Context="AchieveContext_30103" AwardPoint="100" Count="15" ParamVarlist="5"/>
+	<Property EventID="30201" Category="3" AchieveType="42" Name="在世界BOSS活动中获得第1名成绩5次" Context="AchieveContext_30201" AwardPoint="100" Count="5" FirstStart="true" NextEventID="30202" ParamVarlist="1"/>
+	<Property EventID="30202" Category="3" AchieveType="42" Name="在世界BOSS活动中获得第1名成绩10次" Context="AchieveContext_30202" AwardPoint="100" Count="10" NextEventID="30203" ParamVarlist="1"/>
+	<Property EventID="30203" Category="3" AchieveType="42" Name="在世界BOSS活动中获得第1名成绩20次" Context="AchieveContext_30203" AwardPoint="100" Count="20" NextEventID="30204" ParamVarlist="1"/>
+	<Property EventID="30204" Category="3" AchieveType="42" Name="在世界BOSS活动中获得第1名成绩30次" Context="AchieveContext_30204" AwardPoint="100" Count="30" ParamVarlist="1"/>
+	<Property EventID="30301" Category="3" AchieveType="43" Name="在荒野狂飙活动中获得第1名成绩5次" Context="AchieveContext_30301" AwardPoint="100" Count="5" FirstStart="true" NextEventID="30302" ParamVarlist="1"/>
+	<Property EventID="30302" Category="3" AchieveType="43" Name="在荒野狂飙活动中获得第1名成绩10次" Context="AchieveContext_30302" AwardPoint="100" Count="10" NextEventID="30303" ParamVarlist="1"/>
+	<Property EventID="30303" Category="3" AchieveType="43" Name="在荒野狂飙活动中获得第1名成绩20次" Context="AchieveContext_30303" AwardPoint="100" Count="20" NextEventID="30304" ParamVarlist="1"/>
+	<Property EventID="30304" Category="3" AchieveType="43" Name="在荒野狂飙活动中获得第1名成绩30次" Context="AchieveContext_30304" AwardPoint="100" Count="30" ParamVarlist="1"/>
+	<Property EventID="30401" Category="3" AchieveType="44" Name="拿5次四级宝珠，并成功提交奖励" Context="AchieveContext_30401" AwardPoint="100" Count="5" FirstStart="true" NextEventID="30402"/>
+	<Property EventID="30402" Category="3" AchieveType="44" Name="拿10次四级宝珠，并成功提交奖励" Context="AchieveContext_30402" AwardPoint="100" Count="10" NextEventID="30403"/>
+	<Property EventID="30403" Category="3" AchieveType="44" Name="拿15次四级宝珠，并成功提交奖励" Context="AchieveContext_30403" AwardPoint="100" Count="15" NextEventID="30404"/>
+	<Property EventID="30404" Category="3" AchieveType="44" Name="拿20次四级宝珠，并成功提交奖励" Context="AchieveContext_30404" AwardPoint="100" Count="20"/>
+	<Property EventID="30501" Category="3" AchieveType="45" Name="击败20只地宫BOSS，并获得BOSS奖励" Context="AchieveContext_30501" AwardPoint="100" Count="20" FirstStart="true" NextEventID="30502"/>
+	<Property EventID="30502" Category="3" AchieveType="45" Name="击败30只地宫BOSS，并获得BOSS奖励" Context="AchieveContext_30502" AwardPoint="100" Count="30" NextEventID="30503"/>
+	<Property EventID="30503" Category="3" AchieveType="45" Name="击败50只地宫BOSS，并获得BOSS奖励" Context="AchieveContext_30503" AwardPoint="100" Count="50" NextEventID="30504"/>
+	<Property EventID="30504" Category="3" AchieveType="45" Name="击败100只地宫BOSS，并获得BOSS奖励" Context="AchieveContext_30504" AwardPoint="100" Count="100"/>
+	<Property EventID="30601" Category="3" AchieveType="46" Name="击败20只地宫精英，并获得精英奖励" Context="AchieveContext_30601" AwardPoint="100" Count="20" FirstStart="true" NextEventID="30602"/>
+	<Property EventID="30602" Category="3" AchieveType="46" Name="击败30只地宫精英，并获得精英奖励" Context="AchieveContext_30602" AwardPoint="100" Count="30" NextEventID="30603"/>
+	<Property EventID="30603" Category="3" AchieveType="46" Name="击败50只地宫精英，并获得精英奖励" Context="AchieveContext_30603" AwardPoint="100" Count="50" NextEventID="30604"/>
+	<Property EventID="30604" Category="3" AchieveType="46" Name="击败100只地宫精英，并获得精英奖励" Context="AchieveContext_30604" AwardPoint="100" Count="100"/>
+	<Property EventID="30701" Category="3" AchieveType="47" Name="成功拾取20个地宫神奇宝箱，并获得宝箱奖励" Context="AchieveContext_30701" AwardPoint="100" Count="20" FirstStart="true" NextEventID="30702"/>
+	<Property EventID="30702" Category="3" AchieveType="47" Name="成功拾取50个地宫神奇宝箱，并获得宝箱奖励" Context="AchieveContext_30702" AwardPoint="100" Count="50" NextEventID="30703"/>
+	<Property EventID="30703" Category="3" AchieveType="47" Name="成功拾取100个地宫神奇宝箱，并获得宝箱奖励" Context="AchieveContext_30703" AwardPoint="100" Count="100" NextEventID="30704"/>
+	<Property EventID="30704" Category="3" AchieveType="47" Name="成功拾取200个地宫神奇宝箱，并获得宝箱奖励" Context="AchieveContext_30704" AwardPoint="100" Count="200"/>
+	<Property EventID="30801" Category="3" AchieveType="48" Name="成功拾取20个地宫宝箱，并获得宝箱奖励" Context="AchieveContext_30801" AwardPoint="100" Count="20" FirstStart="true" NextEventID="30802"/>
+	<Property EventID="30802" Category="3" AchieveType="48" Name="成功拾取50个地宫宝箱，并获得宝箱奖励" Context="AchieveContext_30802" AwardPoint="100" Count="50" NextEventID="30803"/>
+	<Property EventID="30803" Category="3" AchieveType="48" Name="成功拾取100个地宫宝箱，并获得宝箱奖励" Context="AchieveContext_30803" AwardPoint="100" Count="100" NextEventID="30804"/>
+	<Property EventID="30804" Category="3" AchieveType="48" Name="成功拾取200个地宫宝箱，并获得宝箱奖励" Context="AchieveContext_30804" AwardPoint="100" Count="200"/>
+	<Property EventID="30901" Category="3" AchieveType="49" Name="在大世界击败50名玩家" Context="AchieveContext_30901" AwardPoint="100" Count="50" FirstStart="true" NextEventID="30902"/>
+	<Property EventID="30902" Category="3" AchieveType="49" Name="在大世界击败100名玩家" Context="AchieveContext_30902" AwardPoint="100" Count="100" NextEventID="30903"/>
+	<Property EventID="30903" Category="3" AchieveType="49" Name="在大世界击败500名玩家" Context="AchieveContext_30903" AwardPoint="100" Count="500" NextEventID="30904"/>
+	<Property EventID="30904" Category="3" AchieveType="49" Name="在大世界击败1000名玩家" Context="AchieveContext_30904" AwardPoint="100" Count="1000"/>
+	<Property EventID="31001" Category="3" AchieveType="50" Name="大世界击倒1000只怪物" Context="AchieveContext_31001" AwardPoint="100" Count="1000" FirstStart="true" NextEventID="31002"/>
+	<Property EventID="31002" Category="3" AchieveType="50" Name="大世界击倒5000只怪物" Context="AchieveContext_31002" AwardPoint="100" Count="5000" NextEventID="31003"/>
+	<Property EventID="31003" Category="3" AchieveType="50" Name="大世界击倒10000只怪物" Context="AchieveContext_31003" AwardPoint="100" Count="10000" NextEventID="31004"/>
+	<Property EventID="31004" Category="3" AchieveType="50" Name="大世界击倒20000只怪物" Context="AchieveContext_31004" AwardPoint="100" Count="20000" NextEventID="31005"/>
+	<Property EventID="31005" Category="3" AchieveType="50" Name="大世界击倒50000只怪物" Context="AchieveContext_31005" AwardPoint="100" Count="50000"/>
+	<Property EventID="31101" Category="3" AchieveType="51" Name="阵营战个人积分达到500分" Context="AchieveContext_31101" AwardPoint="100" Count="500" FirstStart="true" NextEventID="31102"/>
+	<Property EventID="31102" Category="3" AchieveType="51" Name="阵营战个人积分达到1000分" Context="AchieveContext_31102" AwardPoint="100" Count="1000" NextEventID="31103"/>
+	<Property EventID="31103" Category="3" AchieveType="51" Name="阵营战个人积分达到2000分" Context="AchieveContext_31103" AwardPoint="100" Count="2000" NextEventID="31104"/>
+	<Property EventID="31104" Category="3" AchieveType="51" Name="阵营战个人积分达到5000分" Context="AchieveContext_31104" AwardPoint="100" Count="5000" NextEventID="31105"/>
+	<Property EventID="31105" Category="3" AchieveType="51" Name="阵营战个人积分达到10000分" Context="AchieveContext_31105" AwardPoint="100" Count="10000"/>
+	<Property EventID="31201" Category="3" AchieveType="52" Name="参与并获得5次阵营战胜利" Context="AchieveContext_31201" AwardPoint="100" Count="5" FirstStart="true" NextEventID="31202"/>
+	<Property EventID="31202" Category="3" AchieveType="52" Name="参与并获得10次阵营战胜利" Context="AchieveContext_31202" AwardPoint="100" Count="10" NextEventID="31203"/>
+	<Property EventID="31203" Category="3" AchieveType="52" Name="参与并获得20次阵营战胜利" Context="AchieveContext_31203" AwardPoint="100" Count="20" NextEventID="31204"/>
+	<Property EventID="31204" Category="3" AchieveType="52" Name="参与并获得30次阵营战胜利" Context="AchieveContext_31204" AwardPoint="100" Count="30" NextEventID="31205"/>
+	<Property EventID="31205" Category="3" AchieveType="52" Name="参与并获得50次阵营战胜利" Context="AchieveContext_31205" AwardPoint="100" Count="50"/>
+	<Property EventID="31301" Category="3" AchieveType="53" Name="家园被抢夺时成功防守20次" Context="AchieveContext_31301" AwardPoint="100" Count="20" FirstStart="true" NextEventID="31302"/>
+	<Property EventID="31302" Category="3" AchieveType="53" Name="家园被抢夺时成功防守50次" Context="AchieveContext_31302" AwardPoint="100" Count="50" NextEventID="31303"/>
+	<Property EventID="31303" Category="3" AchieveType="53" Name="家园被抢夺时成功防守100次" Context="AchieveContext_31303" AwardPoint="100" Count="100" NextEventID="31304"/>
+	<Property EventID="31304" Category="3" AchieveType="53" Name="家园被抢夺时成功防守200次" Context="AchieveContext_31304" AwardPoint="100" Count="200" NextEventID="31305"/>
+	<Property EventID="31305" Category="3" AchieveType="53" Name="家园被抢夺时成功防守500次" Context="AchieveContext_31305" AwardPoint="100" Count="500"/>
+	<Property EventID="31401" Category="3" AchieveType="54" Name="家园成功挑战对手50次" Context="AchieveContext_31401" AwardPoint="100" Count="50" FirstStart="true" NextEventID="31402"/>
+	<Property EventID="31402" Category="3" AchieveType="54" Name="家园成功挑战对手100次" Context="AchieveContext_31402" AwardPoint="100" Count="100" NextEventID="31403"/>
+	<Property EventID="31403" Category="3" AchieveType="54" Name="家园成功挑战对手200次" Context="AchieveContext_31403" AwardPoint="100" Count="200" NextEventID="31404"/>
+	<Property EventID="31404" Category="3" AchieveType="54" Name="家园成功挑战对手500次" Context="AchieveContext_31404" AwardPoint="100" Count="500" NextEventID="31405"/>
+	<Property EventID="31405" Category="3" AchieveType="54" Name="家园成功挑战对手1000次" Context="AchieveContext_31405" AwardPoint="100" Count="1000"/>
+	<Property EventID="31501" Category="3" AchieveType="55" Name="成功将国家宝藏全部开启20次" Context="AchieveContext_31501" AwardPoint="100" Count="20" FirstStart="true" NextEventID="31502"/>
+	<Property EventID="31502" Category="3" AchieveType="55" Name="成功将国家宝藏全部开启50次" Context="AchieveContext_31502" AwardPoint="100" Count="50" NextEventID="31503"/>
+	<Property EventID="31503" Category="3" AchieveType="55" Name="成功将国家宝藏全部开启100次" Context="AchieveContext_31503" AwardPoint="100" Count="100" NextEventID="31504"/>
+	<Property EventID="31504" Category="3" AchieveType="55" Name="成功将国家宝藏全部开启500次" Context="AchieveContext_31504" AwardPoint="100" Count="500" NextEventID="31505"/>
+	<Property EventID="31505" Category="3" AchieveType="55" Name="成功将国家宝藏全部开启1000次" Context="AchieveContext_31505" AwardPoint="100" Count="1000"/>
+	<Property EventID="31601" Category="3" AchieveType="56" Name="成功击败20只稀有BOSS，并获得奖励" Context="AchieveContext_31601" AwardPoint="100" Count="20" FirstStart="true" NextEventID="31602"/>
+	<Property EventID="31602" Category="3" AchieveType="56" Name="成功击败30只稀有BOSS，并获得奖励" Context="AchieveContext_31602" AwardPoint="100" Count="30" NextEventID="31603"/>
+	<Property EventID="31603" Category="3" AchieveType="56" Name="成功击败50只稀有BOSS，并获得奖励" Context="AchieveContext_31603" AwardPoint="100" Count="50" NextEventID="31604"/>
+	<Property EventID="31604" Category="3" AchieveType="56" Name="成功击败100只稀有BOSS，并获得奖励" Context="AchieveContext_31604" AwardPoint="100" Count="100"/>
+	<Property EventID="31701" Category="3" AchieveType="57" Name="成功击败20只哥布林统领，并获得奖励" Context="AchieveContext_31701" AwardPoint="100" Count="20" FirstStart="true" NextEventID="31702"/>
+	<Property EventID="31702" Category="3" AchieveType="57" Name="成功击败30只哥布林统领，并获得奖励" Context="AchieveContext_31702" AwardPoint="100" Count="30" NextEventID="31703"/>
+	<Property EventID="31703" Category="3" AchieveType="57" Name="成功击败50只哥布林统领，并获得奖励" Context="AchieveContext_31703" AwardPoint="100" Count="50" NextEventID="31704"/>
+	<Property EventID="31704" Category="3" AchieveType="57" Name="成功击败100只哥布林统领，并获得奖励" Context="AchieveContext_31704" AwardPoint="100" Count="100"/>
+	<Property EventID="31801" Category="3" AchieveType="58" Name="成功击败20只满足的哥布林，并获得奖励" Context="AchieveContext_31801" AwardPoint="100" Count="20" FirstStart="true" NextEventID="31802"/>
+	<Property EventID="31802" Category="3" AchieveType="58" Name="成功击败30只满足的哥布林，并获得奖励" Context="AchieveContext_31802" AwardPoint="100" Count="30" NextEventID="31803"/>
+	<Property EventID="31803" Category="3" AchieveType="58" Name="成功击败50只满足的哥布林，并获得奖励" Context="AchieveContext_31803" AwardPoint="100" Count="50" NextEventID="31804"/>
+	<Property EventID="31804" Category="3" AchieveType="58" Name="成功击败100只满足的哥布林，并获得奖励" Context="AchieveContext_31804" AwardPoint="100" Count="100"/>
+	<Property EventID="40101" Category="4" AchieveType="59" Name="黑市累计刷新50次" Context="AchieveContext_40101" AwardPoint="100" Count="50" FirstStart="true" NextEventID="40102"/>
+	<Property EventID="40102" Category="4" AchieveType="59" Name="黑市累计刷新100次" Context="AchieveContext_40102" AwardPoint="100" Count="100" NextEventID="40103"/>
+	<Property EventID="40103" Category="4" AchieveType="59" Name="黑市累计刷新200次" Context="AchieveContext_40103" AwardPoint="100" Count="200" NextEventID="40104"/>
+	<Property EventID="40104" Category="4" AchieveType="59" Name="黑市累计刷新500次" Context="AchieveContext_40104" AwardPoint="100" Count="500"/>
+	<Property EventID="40201" Category="4" AchieveType="60" Name="酒馆累计刷新50次" Context="AchieveContext_40201" AwardPoint="100" Count="50" FirstStart="true" NextEventID="40202"/>
+	<Property EventID="40202" Category="4" AchieveType="60" Name="酒馆累计刷新100次" Context="AchieveContext_40202" AwardPoint="100" Count="100" NextEventID="40203"/>
+	<Property EventID="40203" Category="4" AchieveType="60" Name="酒馆累计刷新200次" Context="AchieveContext_40203" AwardPoint="100" Count="200" NextEventID="40204"/>
+	<Property EventID="40204" Category="4" AchieveType="60" Name="酒馆累计刷新500次" Context="AchieveContext_40204" AwardPoint="100" Count="500"/>
+	<Property EventID="40301" Category="4" AchieveType="61" Name="累计钻石购买金币50次" Context="AchieveContext_40301" AwardPoint="100" Count="50" FirstStart="true" NextEventID="40302"/>
+	<Property EventID="40302" Category="4" AchieveType="61" Name="累计钻石购买金币100次" Context="AchieveContext_40302" AwardPoint="100" Count="100" NextEventID="40303"/>
+	<Property EventID="40303" Category="4" AchieveType="61" Name="累计钻石购买金币200次" Context="AchieveContext_40303" AwardPoint="100" Count="200" NextEventID="40304"/>
+	<Property EventID="40304" Category="4" AchieveType="61" Name="累计钻石购买金币500次" Context="AchieveContext_40304" AwardPoint="100" Count="500"/>
+	<Property EventID="40401" Category="4" AchieveType="62" Name="累计钻石购买体力丹50次" Context="AchieveContext_40401" AwardPoint="100" Count="50" FirstStart="true" NextEventID="40402"/>
+	<Property EventID="40402" Category="4" AchieveType="62" Name="累计钻石购买体力丹100次" Context="AchieveContext_40402" AwardPoint="100" Count="100" NextEventID="40403"/>
+	<Property EventID="40403" Category="4" AchieveType="62" Name="累计钻石购买体力丹200次" Context="AchieveContext_40403" AwardPoint="100" Count="200" NextEventID="40404"/>
+	<Property EventID="40404" Category="4" AchieveType="62" Name="累计钻石购买体力丹500次" Context="AchieveContext_40404" AwardPoint="100" Count="500"/>
+	<Property EventID="40501" Category="4" AchieveType="63" Name="累计钻石购买历练丹50次" Context="AchieveContext_40501" AwardPoint="100" Count="50" FirstStart="true" NextEventID="40502"/>
+	<Property EventID="40502" Category="4" AchieveType="63" Name="累计钻石购买历练丹100次" Context="AchieveContext_40502" AwardPoint="100" Count="100" NextEventID="40503"/>
+	<Property EventID="40503" Category="4" AchieveType="63" Name="累计钻石购买历练丹200次" Context="AchieveContext_40503" AwardPoint="100" Count="200" NextEventID="40504"/>
+	<Property EventID="40504" Category="4" AchieveType="63" Name="累计钻石购买历练丹500次" Context="AchieveContext_40504" AwardPoint="100" Count="500"/>
+	<Property EventID="40601" Category="4" AchieveType="64" Name="向好友赠送1000点历练值" Context="AchieveContext_40601" AwardPoint="100" Count="1000" FirstStart="true" NextEventID="40602"/>
+	<Property EventID="40602" Category="4" AchieveType="64" Name="向好友赠送2000点历练值" Context="AchieveContext_40602" AwardPoint="100" Count="2000" NextEventID="40603"/>
+	<Property EventID="40603" Category="4" AchieveType="64" Name="向好友赠送5000点历练值" Context="AchieveContext_40603" AwardPoint="100" Count="5000" NextEventID="40604"/>
+	<Property EventID="40604" Category="4" AchieveType="64" Name="向好友赠送10000点历练值" Context="AchieveContext_40604" AwardPoint="100" Count="10000"/>
+	<Property EventID="40701" Category="4" AchieveType="65" Name="成功将物品出售10次" Context="AchieveContext_40701" AwardPoint="100" Count="10" FirstStart="true" NextEventID="40702"/>
+	<Property EventID="40702" Category="4" AchieveType="65" Name="成功将物品出售50次" Context="AchieveContext_40702" AwardPoint="100" Count="50" NextEventID="40703"/>
+	<Property EventID="40703" Category="4" AchieveType="65" Name="成功将物品出售100次" Context="AchieveContext_40703" AwardPoint="100" Count="100" NextEventID="40704"/>
+	<Property EventID="40704" Category="4" AchieveType="65" Name="成功将物品出售500次" Context="AchieveContext_40704" AwardPoint="100" Count="500"/>
+	<Property EventID="40801" Category="4" AchieveType="66" Name="获得20个称号" Context="AchieveContext_40801" AwardPoint="100" Count="20" FirstStart="true" NextEventID="40802"/>
+	<Property EventID="40802" Category="4" AchieveType="66" Name="获得50个称号" Context="AchieveContext_40802" AwardPoint="100" Count="50" NextEventID="40803"/>
+	<Property EventID="40803" Category="4" AchieveType="66" Name="获得70个称号" Context="AchieveContext_40803" AwardPoint="100" Count="70"/>
+	<Property EventID="40901" Category="4" AchieveType="67" Name="累计获得10个坐骑" Context="AchieveContext_40901" AwardPoint="100" Count="10" FirstStart="true" NextEventID="40902"/>
+	<Property EventID="40902" Category="4" AchieveType="67" Name="累计获得20个坐骑" Context="AchieveContext_40902" AwardPoint="100" Count="20" NextEventID="40903"/>
+	<Property EventID="40903" Category="4" AchieveType="67" Name="累计获得30个坐骑" Context="AchieveContext_40903" AwardPoint="100" Count="30"/>
+	<Property EventID="41001" Category="4" AchieveType="68" Name="在浴血沙场，阵营战，地宫成功变身50次数" Context="AchieveContext_41001" AwardPoint="100" Count="50" FirstStart="true" NextEventID="41002"/>
+	<Property EventID="41002" Category="4" AchieveType="68" Name="在浴血沙场，阵营战，地宫成功变身100次数" Context="AchieveContext_41002" AwardPoint="100" Count="100" NextEventID="41003"/>
+	<Property EventID="41003" Category="4" AchieveType="68" Name="在浴血沙场，阵营战，地宫成功变身300次数" Context="AchieveContext_41003" AwardPoint="100" Count="300" NextEventID="41004"/>
+	<Property EventID="41004" Category="4" AchieveType="68" Name="在浴血沙场，阵营战，地宫成功变身500次数" Context="AchieveContext_41004" AwardPoint="100" Count="500"/>
+	<Property EventID="41101" Category="4" AchieveType="69" Name="收集5件时装" Context="AchieveContext_41101" AwardPoint="100" Count="5" FirstStart="true" NextEventID="41102"/>
+	<Property EventID="41102" Category="4" AchieveType="69" Name="收集10件时装" Context="AchieveContext_41102" AwardPoint="100" Count="10" NextEventID="41103"/>
+	<Property EventID="41103" Category="4" AchieveType="69" Name="收集20件时装" Context="AchieveContext_41103" AwardPoint="100" Count="20" NextEventID="41104"/>
+	<Property EventID="41104" Category="4" AchieveType="69" Name="收集30件时装" Context="AchieveContext_41104" AwardPoint="100" Count="30"/>
+</Object>

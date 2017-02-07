@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Width="1046" Height="718" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\use\function\function_vein_096.png" />
+        <control name="groupbox_main" entity="GroupBox" script="" init="">
+            <prop Width="1024" Height="720" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+            <control name="lbl_6" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="960" Top="5" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_youshang.png" />
+            </control>
+            <control name="lbl_2" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="61" Top="101" Width="900" Height="526" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg_huikuang4.png" />
+            </control>
+            <control name="lbl_title" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="477" Top="13" Width="80" Height="46" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_ride_title" Font="WRYH30_S" />
+            </control>
+            <control name="grpsbox_ride_list" entity="GroupScrollableBox" script="" init="">
+                <prop ScrollSize="17" Left="77" Top="109" Width="870" Height="526" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+            </control>
+            <control name="groupbox_ride" entity="GroupBox" script="" init="">
+                <prop Left="77" Top="100" Width="366" Height="526" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="FitWindow" />
+                <control name="lbl_back" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="8" Top="20" Width="344" Height="414" ShadowColor="0,0,0,0" BackImage="gui\main\ride\if_zq.png,1,488,344, 418" />
+                </control>
+                <control name="lbl_type" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="32" Top="32000" Width="74" Height="74" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\ride\icon_zq_fan.png" />
+                </control>
+                <control name="imagegrid_pic" entity="ImageGrid" script="" init="">
+                    <prop SelectColor="0,0,255,0" MouseInColor="0,255,255,0" CoverColor="0,255,0,0" LockColor="0,255,255,0" CoolColor="0,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" GridHeight="110" GridWidth="110" DrawMouseIn="RECT" DrawMouseSelect="RECT" DrawCover="RECT" DrawLock="RECT" MouseDownScale="0.980000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" HasVScroll="false" Left="124" Top="108" Width="110" Height="110" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                </control>
+                <control name="lbl_grade" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="58" Top="344" Width="240" Height="56" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\main\ride\if_zq.png,741,488,240,56" />
+                </control>
+                <control name="imagegrid_equip" entity="ImageGrid" script="" init="">
+                    <prop SelectColor="0,0,255,0" MouseInColor="0,255,255,0" CoverColor="0,255,0,0" LockColor="0,255,255,0" CoolColor="0,0,0,0" ViewRect="0,0,32,32" MaxSize="4" RowNum="1" ClomnNum="4" Center="true" GridHeight="64" GridWidth="64" GridsPos="0,0;80,0;160,0;240,0;" DrawMouseIn="RECT" DrawMouseSelect="RECT" DrawCover="RECT" DrawLock="RECT" DrawGridBack="gui\common\window\tubiaokuang_1.png" GridBackOffsetX="-7" GridBackOffsetY="-7" GridCoverOffsetX="-5" GridCoverOffsetY="-5" MouseDownScale="0.900000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" HasVScroll="false" Left="26" Top="264" Width="310" Height="70" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                </control>
+                <control name="lbl_lv_back" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="260" Top="102" Width="90" Height="68" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\ride\if_zq.png,791,201,90,68" />
+                </control>
+                <control name="lbl_name" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="18" Top="47" Width="326" Height="32" ForeColor="255,255,229,70" ShadowColor="0,0,0,0" Font="WRYH24_S" />
+                </control>
+                <control name="lbl_level" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="267" Top="109" Width="48" Height="48" ForeColor="255,89,255,255" ShadowColor="0,0,0,0" Text="0" Font="WRYH20_S_GRAY" AutoSize="true" BackImage="gui\main\ride\if_zq.png,791,93,48,48" />
+                </control>
+                <control name="lbl_color" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="116" Top="102" Width="124" Height="124" ShadowColor="0,0,0,0" DrawMode="FitWindow" />
+                </control>
+                <control name="imagegrid_ride" entity="ImageGrid" script="" init="">
+                    <prop SelectColor="0,0,255,0" MouseInColor="0,255,255,0" CoverColor="0,255,0,0" LockColor="0,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" GridHeight="238" GridWidth="366" GridsPos="0£¬0" DrawMouseIn="RECT" DrawMouseSelect="RECT" DrawCover="RECT" DrawLock="RECT" MouseDownScale="0.900000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" HasVScroll="false" Left="8" Width="350" Height="238" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                </control>
+                <control name="lbl_battle" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="20" Top="36" Width="74" Height="66" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\ride\if_zq.png,791,270,74,66" />
+                </control>
+                <control name="lbl_1" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="48" Top="441" Width="270" Height="62" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\main\ride\if_zq.png,741,769,270,78" />
+                </control>
+                <control name="mltbox_info" entity="MultiTextBox" script="" init="">
+                    <prop TextColor="255,255,255,255" ViewRect="30,2,238,36" LineHeight="28" ScrollSize="17" Left="72" Top="448" Width="292" Height="62" ForeColor="255,0,115,254" ShadowColor="0,0,0,0" Transparent="true" Font="WRYH22_O" NoFrame="true" DrawMode="ExpandH" />
+                </control>
+                <control name="btn_battle" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="104" Top="433" Width="158" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_ride_battle" Font="WRYH26_S" TabStop="true" NoFrame="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+                <control name="btn_combine" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="104" Top="433" Width="158" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_pet_create" Font="WRYH26_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+            </control>
+            <control name="lbl_3" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="5" Top="5" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_zuoshang.png" />
+            </control>
+            <control name="lbl_4" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="5" Top="661" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_zuoxia.png" />
+            </control>
+            <control name="lbl_5" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="960" Top="661" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshiyouxia.png" />
+            </control>
+            <control name="lbl_8" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="966" Top="317" Width="37" Height="90" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\battle\scene_account\you.png" />
+            </control>
+            <control name="lbl_9" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="12" Top="317" Width="37" Height="90" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\battle\scene_account\zuo.png" />
+            </control>
+            <control name="btn_help" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\pk\btn_help_normal.jpg" PushImage="gui\main\pk\btn_help_click.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="5" Top="5" Width="56" Height="56" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" />
+            </control>
+            <control name="btn_close" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="944" Top="-19" Width="100" Height="100" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="100" TabStop="true" AutoSize="true" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+            </control>
+            <control name="btn_book" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\fashion\btn_sz_tujian1.png" PushImage="gui\main\fashion\btn_sz_tujian2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="22" Top="589" Width="102" Height="101" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+            </control>
+        </control>
+    </control>
+</form>

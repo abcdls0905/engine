@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
+<!--	
+	 目前使用的修改属性值的公式是 a + b*x
+	 TriggerEffect:
+		0:表示一般的Buffer添加 1:表示眩晕 2:表示减速
+	 GraspSkillIDList:
+		表示领悟之后，针对特有的技能会产生的一种效果	
+-->
+<Object>
+	<Property id="pet_lingwu_001_1" Formula="Crit,0,1" Name="低级必杀"/>
+	<Property id="pet_lingwu_001_2" Formula="Crit,5,1" Name="中级必杀"/>
+	<Property id="pet_lingwu_001_3" Formula="Crit,10,1" Name="高级必杀"/>
+	<Property id="pet_lingwu_002_1" Formula="Toug,0,1" Name="低级防御"/>
+	<Property id="pet_lingwu_002_2" Formula="Toug,5,1" Name="中级防御"/>
+	<Property id="pet_lingwu_002_3" Formula="Toug,10,1" Name="高级防御"/>
+	<Property id="pet_lingwu_003_1" Formula="CritDam,0,2" Name="低级幸运"/>
+	<Property id="pet_lingwu_003_2" Formula="CritDam,10,2" Name="中级幸运"/>
+	<Property id="pet_lingwu_003_3" Formula="CritDam,20,2" Name="高级幸运"/>
+	<Property id="pet_lingwu_004_1" Formula="TougDam,0,2" Name="低级韧性"/>
+	<Property id="pet_lingwu_004_2" Formula="TougDam,10,2" Name="中级韧性"/>
+	<Property id="pet_lingwu_004_3" Formula="TougDam,20,2" Name="高级韧性"/>
+	<Property id="pet_lingwu_005_1" Formula="TotalAttack,250,50" Name="低级勇猛"/>
+	<Property id="pet_lingwu_005_2" Formula="TotalAttack,500,100" Name="中级勇猛"/>
+	<Property id="pet_lingwu_005_3" Formula="TotalAttack,750,135" Name="高级勇猛"/>
+	<Property id="pet_lingwu_005_4" Formula="TotalAttack,0,1500" Name="勇猛_极"/>
+	<Property id="pet_lingwu_006_1" Formula="MaxHP,5000,1000" Name="低级强身"/>
+	<Property id="pet_lingwu_006_2" Formula="MaxHP,10000,2000" Name="中级强身"/>
+	<Property id="pet_lingwu_006_3" Formula="MaxHP,15000,2700" Name="高级强身"/>
+	<Property id="pet_lingwu_006_4" Formula="MaxHP,0,30000" Name="强身_极"/>
+	<Property id="pet_lingwu_007_1" Formula="Def,250,50" Name="低级铜墙"/>
+	<Property id="pet_lingwu_007_2" Formula="Def,500,100" Name="中级铜墙"/>
+	<Property id="pet_lingwu_007_3" Formula="Def,750,135" Name="高级铜墙"/>
+	<Property id="pet_lingwu_007_3" Formula="Def,750,135" Name="高级铜墙"/>
+	<Property id="pet_lingwu_007_4" Formula="Def,0,1500" Name="铜墙_极"/>
+	<Property id="pet_lingwu_008_1" Formula="IgnoreDef,250,50" Name="低级破防"/>
+	<Property id="pet_lingwu_008_2" Formula="IgnoreDef,500,100" Name="中级破防"/>
+	<Property id="pet_lingwu_008_3" Formula="IgnoreDef,750,135" Name="高级破防"/>
+	<Property id="pet_lingwu_008_4" Formula="IgnoreDef,0,1500" Name="破防_极"/>
+	<Property id="pet_lingwu_011_1" Formula="Hit,0,1" Name="低级命中"/>
+	<Property id="pet_lingwu_011_2" Formula="Hit,5,1" Name="中级命中"/>
+	<Property id="pet_lingwu_011_3" Formula="Hit,10,1" Name="高级命中"/>
+	<Property id="pet_lingwu_011_4" Formula="Hit,0,14" Name="命中_极"/>
+	<Property id="pet_lingwu_012_1" Formula="Miss,0,1" Name="低级闪避"/>
+	<Property id="pet_lingwu_012_2" Formula="Miss,5,1" Name="中级闪避"/>
+	<Property id="pet_lingwu_012_3" Formula="Miss,10,1" Name="高级闪避"/>
+	<Property id="pet_lingwu_012_4" Formula="Miss,0,14" Name="闪避_极"/>
+	<Property id="pet_lingwu_017_1" Formula="FireDamAbsort,0,100" Name="低级火墙吸收"/>
+	<Property id="pet_lingwu_017_2" Formula="FireDamAbsort,300,90" Name="中级火墙吸收"/>
+	<Property id="pet_lingwu_017_3" Formula="FireDamAbsort,500,100" Name="高级火墙吸收"/>
+	<Property id="pet_lingwu_018_1" Formula="DefFireDam,250,50" Name="低级火墙免疫"/>
+	<Property id="pet_lingwu_018_2" Formula="DefFireDam,500,100" Name="中级火墙免疫"/>
+	<Property id="pet_lingwu_018_3" Formula="DefFireDam,750,135" Name="高级火墙免疫"/>
+	<Property id="pet_lingwu_019_1" Formula="IceDamAbsort,0,100" Name="低级冰冻吸收"/>
+	<Property id="pet_lingwu_019_2" Formula="IceDamAbsort,300,90" Name="中级冰冻吸收"/>
+	<Property id="pet_lingwu_019_3" Formula="IceDamAbsort,500,100" Name="高级冰冻吸收"/>
+	<Property id="pet_lingwu_020_1" Formula="DefIceDam,250,50" Name="低级冰冻免疫"/>
+	<Property id="pet_lingwu_020_2" Formula="DefIceDam,500,100" Name="中级冰冻免疫"/>
+	<Property id="pet_lingwu_020_3" Formula="DefIceDam,750,135" Name="高级冰冻免疫"/>
+	<Property id="pet_lingwu_021_1" Formula="LightningDamAbsort,0,100" Name="低级雷电吸收"/>
+	<Property id="pet_lingwu_021_2" Formula="LightningDamAbsort,300,90" Name="中级雷电吸收"/>
+	<Property id="pet_lingwu_021_3" Formula="LightningDamAbsort,500,100" Name="高级雷电吸收"/>
+	<Property id="pet_lingwu_022_1" Formula="DefLiningDam,250,50" Name="低级雷电免疫"/>
+	<Property id="pet_lingwu_022_2" Formula="DefLiningDam,500,100" Name="中级雷电免疫"/>
+	<Property id="pet_lingwu_022_3" Formula="DefLiningDam,750,135" Name="高级雷电免疫"/>
+	<Property id="pet_lingwu_024_1" Formula="RevengeDam,500,100" Name="低级复仇" TriggerEffect="0,pet_normal_003_1"/>
+	<Property id="pet_lingwu_024_2" Formula="RevengeDam,1000,200" Name="中级复仇" TriggerEffect="0,pet_normal_003_2"/>
+	<Property id="pet_lingwu_024_3" Formula="RevengeDam,1500,270" Name="高级复仇" TriggerEffect="0,pet_normal_003_3"/>
+	<Property id="pet_lingwu_025_1" Formula="ChaseDam,500,100" Name="低级追击" TriggerEffect="0,pet_normal_004_1"/>
+	<Property id="pet_lingwu_025_2" Formula="ChaseDam,1000,200" Name="中级追击" TriggerEffect="0,pet_normal_004_2"/>
+	<Property id="pet_lingwu_025_3" Formula="ChaseDam,1500,270" Name="高级追击" TriggerEffect="0,pet_normal_004_3"/>
+	<Property id="pet_lingwu_029_1" Formula="Rebound,0,2.5" Name="伤害反弹"/>
+	<Property id="pet_lingwu_026_1" Formula="FireDamAbsort,0,500" Name="火焰伤害吸收"/>
+	<Property id="pet_lingwu_027_1" Formula="IceDamAbsort,0,500" Name="冰冻伤害吸收"/>
+	<Property id="pet_lingwu_028_1" Formula="LightningDamAbsort,0,500" Name="雷电伤害吸收"/>
+	<Property id="pet_lingwu_030_1" Formula="TotalAttack,0,1000;Hit,0,8" Name="进击战鼓"/>
+	<Property id="pet_lingwu_030_2" Formula="Def,0,1000;Miss,0,8" Name="魔法之风"/>
+	<Property id="pet_lingwu_030_3" Formula="Toug,0,6;TougDam,0,10" Name="守御之力"/>
+	<Property id="pet48_xiyou_001" Formula="DamageCripplePercent,0,8" Name="见血封喉"/>
+	<Property id="pet13_xiyou_002_1" Name="浴火" TriggerEffect="0,buff_pet13_xiyou_002_1"/>
+	<Property id="pet13_xiyou_005_1" Name="凤鸣" TriggerEffect="0,buff_pet13_xiyou_005_1"/>
+	<Property id="pet10_xiyou_003_1" Name="暗黑血裔" TriggerEffect="0,buff_pet10_xiyou_003_1"/>
+	<Property id="pet10_xiyou_005_1" Name="黑龙吐息" TriggerEffect="0,buff_pet10_xiyou_005_1"/>
+	<Property id="pet31_xiyou_002_1" Name="尖刺毫毛" TriggerEffect="0,buff_pet31_xiyou_002_1"/>
+	<Property id="pet31_xiyou_004_1" Name="人来疯" TriggerEffect="0,buff_pet31_xiyou_004_1"/>
+	<Property id="pet27_xiyou_003_1" Name="越破越勇" TriggerEffect="0,buff_pet27_xiyou_003_1"/>
+	<Property id="pet27_xiyou_004_1" Name="趁你病要你命" TriggerEffect="0,buff_pet27_xiyou_004_1"/>
+	<Property id="pet22_xiyou_003_1" Name="斩杀" TriggerEffect="0,buff_pet22_xiyou_003_1"/>
+	<Property id="pet19_xiyou_001_1" Name="生命回流" TriggerEffect="0,buff_pet19_xiyou_001_1"/>
+	<Property id="pet18_xiyou_003_1" Name="血液感染" TriggerEffect="0,buff_pet18_xiyou_003_1"/>
+	<Property id="pet18_xiyou_004_1" Name="石化毒素" TriggerEffect="0,buff_pet18_xiyou_004_1"/>
+	<Property id="pet26_xiyou_004_1" Name="缠" TriggerEffect="0,buff_pet26_xiyou_004_1"/>
+	<Property id="pet29_xiyou_002_1" Name="汉克的怒吼" TriggerEffect="0,buff_pet29_xiyou_002_1"/>
+	<Property id="pet23_xiyou_002_1" Name="蛮牛皮肤" TriggerEffect="0,buff_pet23_xiyou_002_1"/>
+	<Property id="pet23_xiyou_003_1" Name="莽牛愤怒" TriggerEffect="0,buff_pet23_xiyou_003_1"/>
+	<Property id="pet12_xiyou_003_1" Name="治愈之触" TriggerEffect="0,buff_pet12_xiyou_003_1"/>
+	<Property id="pet12_xiyou_005_1" Name="虚弱之触" TriggerEffect="0,buff_pet12_xiyou_005_1"/>
+	<Property id="pet17_xiyou_002_1" Name="圣力护佑" TriggerEffect="0,buff_pet17_xiyou_002_1"/>
+	<Property id="pet17_xiyou_004_1" Name="战斗怒吼" TriggerEffect="0,buff_pet17_xiyou_004_1"/>
+	<Property id="pet30_xiyou_001_1" Name="忽悠" TriggerEffect="0,buff_pet30_xiyou_001_1"/>
+	<Property id="pet32_xiyou_001_1" Name="极刀斗乱" TriggerEffect="0,buff_pet32_xiyou_001_1"/>
+	<Property id="pet32_xiyou_002_1" Name="一极道" TriggerEffect="0,buff_pet32_xiyou_002_1"/>
+	<Property id="pet33_xiyou_002_1" Name="三头六臂" TriggerEffect="0,buff_pet33_xiyou_002_1"/>
+	<Property id="pet33_xiyou_004_1" Name="莲花护身" TriggerEffect="0,buff_pet33_xiyou_004_1"/>
+	<Property id="pet28_xiyou_001_1" Name="夺命印记" TriggerEffect="0,buff_pet28_xiyou_001_1"/>
+	<Property id="pet28_xiyou_004_1" Name="死神虚影" TriggerEffect="0,buff_pet28_xiyou_004_1"/>
+	<Property id="pet19_xiyou_002_1" Name="古巫术" TriggerEffect="0,buff_pet19_xiyou_002_1"/>
+	<Property id="pet20_xiyou_001_1" Name="混沌初开" TriggerEffect="0,buff_pet20_xiyou_001_1"/>
+	<Property id="pet35_xiyou_005_1" Name="暴走" TriggerEffect="0,buff_pet36_xiyou_001_1"/>
+	<Property id="pet35_xiyou_004_1" Name="暴怒" TriggerEffect="0,buff_pet35_xiyou_004_1"/>
+	<Property id="pet34_xiyou_002_1" Name="正义与邪恶" TriggerEffect="0,buff_pet34_xiyou_002_1"/>
+	<Property id="pet34_xiyou_004_1" Name="海之分身" TriggerEffect="0,buff_pet34_xiyou_004_1"/>
+	<Property id="pet35_xiyou_003_1" Name="治愈之身" TriggerEffect="0,buff_pet35_xiyou_003_1"/>
+	<Property id="pet11_xiyou_004_1" Name="龙族血统" TriggerEffect="0,buff_pet11_xiyou_004_1"/>
+	<Property id="pet11_xiyou_002_1" Name="绝地反击" TriggerEffect="0,buff_pet11_xiyou_002_1"/>
+	<Property id="pet7_xiyou_001_1" Name="百折不挠" TriggerEffect="0,buff_pet7_xiyou_001_1"/>
+	<Property id="pet7_xiyou_001_2" Name="吸血" TriggerEffect="0,buff_pet7_xiyou_001_2"/>
+	<Property id="pet7_xiyou_001_3" Name="重伤" TriggerEffect="0,buff_pet7_xiyou_001_3"/>
+	<Property id="pet7_xiyou_002_1" Name="鬼魂术" TriggerEffect="0,buff_pet7_xiyou_002_1"/>
+	<Property id="pet43_xiyou_001" Name="神速" TriggerEffect="0,buff_pet43_xiyou_001"/>
+	<Property id="pet30_xiyou_002_1" Name="互闪" TriggerEffect="0,buff_pet30_xiyou_002_1"/>
+	<Property id="pet13_xiyou_004_1" Name="重生" TriggerEffect="0,buff_pet13_xiyou_004_1"/>
+	<Property id="pet21_xiyou_001_1" Name="长生不老" TriggerEffect="0,buff_pet21_xiyou_001_1"/>
+	<Property id="pet12_xiyou_005_1" Name="炎铠" TriggerEffect="0,buff_pet12_xiyou_005_1"/>
+	<Property id="pet10_xiyou_004_1" Name="伤害汲取" TriggerEffect="0,buff_pet10_xiyou_004_1"/>
+	<Property id="pet41_xiyou_001" Name="坚强护盾" TriggerEffect="0,buff_pet41_xiyou_001"/>
+	<Property id="pet40_xiyou_001" Name="无限火力" TriggerEffect="0,buff_pet40_xiyou_001"/>
+	<Property id="pet20_xiyou_002_1" Name="无极之道" TriggerEffect="0,buff_pet20_xiyou_002_1"/>
+	<Property id="pet34_xiyou_002_2" Name="虚弱" TriggerEffect="0,buff_pet34_xiyou_002_2"/>
+	<Property id="pet23_xiyou_004_1" Name="牺牲" TriggerEffect="0,buff_pet23_xiyou_004_1"/>
+	<Property id="pet47_xiyou_001" Name="狂暴雷灵" TriggerEffect="0,buff_pet47_xiyou_001"/>
+	<Property id="pet43_xiyou_001" Name="神速" TriggerEffect="0,buff_pet43_xiyou_001"/>
+	<Property id="pet47_xiyou_002" Name="绝地重生" TriggerEffect="0,buff_pet47_xiyou_002"/>
+	<Property id="pet45_xiyou_001" Name="石化覆盖" TriggerEffect="0,buff_pet45_xiyou_001_1"/>
+	<Property id="pet9_xiyou_001" Name="献祭" TriggerEffect="0,buff_pet9_xiyou_001"/>
+	<Property id="pet49_xiyou_001" Name="法术之刃" TriggerEffect="0,buff_pet49_xiyou_001"/>
+	<Property id="pet9_xiyou_002" Name="冰冻" TriggerEffect="0,buff_pet9_xiyou_002"/>
+</Object>

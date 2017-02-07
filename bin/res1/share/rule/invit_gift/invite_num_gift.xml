@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- inviteNum  邀请个数 -->
+<!-- giftPackage 奖励包配置-->
+<!-- giftType:奖励类型 1表示邀请成功的个数奖励， 2表示被邀请玩家等级奖励, 3表示被邀请玩家充值奖励-->
+<!--CountSection=1 表示只有达到inviteNum才发奖励，不配置的话表示每当1个邀请的玩家达到条件就可以发奖励-->
+<Object>
+	<Property ID="0" inviteNum="1" giftCount="20,20,10" giftPackage="Item_jxy,Item_lwd,Item_xzfc" giftType="1" CountSection="1"/>
+	<Property ID="1" inviteNum="5" giftCount="40,40,20" giftPackage="Item_jxy,Item_lwd,Item_xzfc" giftType="1" CountSection="1"/>
+	<Property ID="2" inviteNum="10" giftCount="80,80,40" giftPackage="Item_jxy,Item_lwd,Item_xzfc" giftType="1" CountSection="1"/>
+	<Property ID="3" inviteNum="10" needLevel="80" giftCount="1,1,1,200" giftPackage="Item_hzbx_02,Item_onemonth,Select_book_ty,Item_hyd" giftType="2"/>
+	<Property ID="4" inviteNum="10" needGold="1000" giftCount="10,20,10,300" giftPackage="Item_zybs,Item_tl3,Item_xiliandan,Item_hyd" giftType="3"/>
+</Object>

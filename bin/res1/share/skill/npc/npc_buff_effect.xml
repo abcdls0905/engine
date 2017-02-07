@@ -1,0 +1,657 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
+<Object>
+	<Property ID="buff_dead_1" Name="死亡" EventType="1" TargetType="2" FuncNo="20"/>
+	<Property ID="buff_boss_lsjs_001" Name="格挡"/>
+	<Property ID="buff_boss_hssz_002" Name="格挡反击" EventType="9" TargetType="0" FuncNo="601" ReBoundConfirmValue="20" PRebound="20"/>
+	<Property ID="buff_boss_jmlz_001a" Name="绝对防御之开启免伤" EventType="1" TargetType="2" FuncNo="602" OpenImmunityType="0"/>
+	<Property ID="buff_boss_jmlz_001b" Name="绝对防御之关闭免伤" EventType="2" TargetType="2" FuncNo="603" CloseImmunityType="0"/>
+	<Property ID="buff_boss_jmdsls_001" Name="毒镖投掷之中毒"/>
+	<Property ID="buff_item_jiaxue_001" Name="1级血瓶"/>
+	<Property ID="buff_boss_jmlz_001c" Name="绝对防御之反弹" EventType="10" TargetType="0" FuncNo="601" ReBoundConfirmValue="20" PRebound="20"/>
+	<Property ID="buff_boss_xh_002" Name="雪地重击之减速"/>
+	<Property ID="sacrifice_halo" Name="献祭光环" EventType="3" TargetType="0" FuncNo="300" DefaultHitFormula="100"/>
+	<Property ID="boss2_tanfei_adv" Name="弹飞" EventType="10" TargetType="0" FuncNo="604" HitBack2MoveSpeed="30" HitBack2MoveDistance="5" HitBack2Action="back"/>
+	<Property ID="zhongdu_buff" Name="中毒" EventType="3" TargetType="2" FuncNo="300" DefaultHitFormula="100"/>
+	<Property ID="buff_ws13_001" Name="烈焰凤凰之灼烧" EventType="3" TargetType="4" FuncNo="98" AttackEffectType="4" AttackEffectRatio="60" HPFirmValue="-200" Attribute="HP" AttributeIncValue="-300"/>
+	<Property ID="buff_light_fanji_1_1" Name="雷电反伤" EventTargetRelationType="3" EventTargetClassType="0" EventType="10" TargetType="3" FuncNo="604" HitBack2MoveSpeed="15" HitBack2MoveDistance="4" HitBack2Action="back" PRebound="100"/>
+	<Property ID="buff_light_fanji_1_2" Name="雷电麻痹" EventTargetRelationType="3" EventTargetClassType="0" EventType="10" TargetType="3" FuncNo="1" BuffID="buff_20cantmove" BuffTargetRatio="50"/>
+	<Property ID="buff_fire_zhiliao_1_1" Name="火焰治疗" EventType="3" TargetType="4" FuncNo="99" HPFirmValue="5000"/>
+	<Property ID="buff_fire_zhiliao_1_2" Name="火焰烧灼" EventTargetRelationType="3" EventTargetClassType="0" EventType="9" TargetType="5" FuncNo="1" BuffID="buff_fire_shaozhuo_1" BuffTargetRatio="100"/>
+	<Property ID="buff_freeze_jiansu_1_1" Name="霜冻减速" EventTargetRelationType="3" EventTargetClassType="0" EventType="10" TargetType="3" FuncNo="1" BuffID="buff_50speeddown" BuffTargetRatio="100"/>
+	<Property ID="buff_freeze_jiansu_1_2" Name="霜冻减速2" EventTargetRelationType="3" EventTargetClassType="0" EventType="9" TargetType="5" FuncNo="1" BuffID="buff_50speeddown" BuffTargetRatio="100"/>
+	<Property ID="buff_fire_shaozhuo_1" Name="火焰烧灼" EventType="3" TargetType="4" FuncNo="99" HPFirmValue="-200" Attribute="HP" AttributeIncValue="-100"/>
+	<Property ID="buff_ws5_001" Name="治疗加血" EventType="3" TargetType="4" FuncNo="98" AttackEffectType="3" AttackEffectRatio="80" HPFirmValue="100" Attribute="HP" AttributeIncValue="100"/>
+	<Property ID="buff_ws11_001" Name="腐蚀之掉血" EventType="3" TargetType="4" FuncNo="98" AttackEffectType="4" AttackEffectRatio="30" HPFirmValue="-300" Attribute="HP" AttributeIncValue="-100"/>
+	<Property ID="buff_ws11_002" Name="治疗雨回血" EventType="1" TargetType="4" FuncNo="98" AttackEffectType="3" AttackEffectRatio="80" HPPercent="10" HPFirmValue="1000" Attribute="HP" AttributeIncValue="1000"/>
+	<Property ID="buff_ws19_001" Name="生命汲取之反馈" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="50"/>
+	<Property ID="buff_ws10_002" Name="黑暗吐息之诅咒" EventType="1" TargetType="4" FuncNo="99" HPPercent="-5" SkillLevelModifyPercentRatio="-1"/>
+	<Property ID="frozen_sp" Name="冻伤" EventType="3" TargetType="4" FuncNo="99" HPPercent="-4" Attribute="HP" AttributeIncValue="-100"/>
+	<Property ID="copy_buff_dead_1" Name="死亡" EventType="2" TargetType="3" FuncNo="20"/>
+	<Property ID="copy_frozen_sp" Name="冻伤" EventType="3" TargetType="4" FuncNo="99" HPPercent="-1" Attribute="HP" AttributeIncValue="-100"/>
+	<Property ID="common_burn_adv" Name="引燃" EventType="3" TargetType="4" FuncNo="99" HPFirmValue="-300"/>
+	<Property ID="buff_ws24_003" Name="撕咬流血" EventType="3" TargetType="4" FuncNo="98" AttackEffectType="4" AttackEffectRatio="20" HPFirmValue="200"/>
+	<Property ID="buff_healball_1" Name="治疗飞弹" EventType="1" TargetType="4" FuncNo="99" HPPercent="10"/>
+	<Property ID="buff_timetodie" Name="死亡时间" EventType="3" TargetType="4" FuncNo="99" HPPercent="-4"/>
+	<Property ID="buff_health_1" Name="治疗术" EventType="3" TargetType="4" FuncNo="99" HPFirmValue="500"/>
+	<Property ID="buff_ws_skill_20_1" Name="普攻回血" EventType="1" TargetType="4" FuncNo="98" AttackEffectType="3" AttackEffectRatio="6"/>
+	<Property ID="buff_ws6_001a" Name="嗜血术加攻击" EventType="1" TargetType="4" FuncNo="98" AttackEffectType="1" AttackEffectRatio="80"/>
+	<Property ID="buff_ws_skill_7_1" Name="爆炎弹灼烧" EventType="3" TargetType="4" FuncNo="98" AttackEffectType="4" AttackEffectRatio="30"/>
+	<Property ID="buff_ws9_001a" Name="攻击怒吼加攻击" EventType="1" TargetType="4" FuncNo="98" AttackEffectType="1" AttackEffectRatio="58" AttackSkillLevelRatio="2"/>
+	<Property ID="buff_ws_skill_15_1" Name="10%攻击吸血" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="10"/>
+	<Property ID="buff_heal_133" Name="133巫医治疗术" EventType="1" TargetType="4" FuncNo="99" HPFirmValue="1000"/>
+	<Property ID="buff_gbldef_133" Name="防反减伤" EventTargetRelationType="3" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="602" ImmunityPercent="100"/>
+	<Property ID="buff_ws6_001b" Name="嗜血术减攻击" EventType="2" TargetType="0" FuncNo="98" AttackEffectType="2" AttackEffectRatio="80"/>
+	<Property ID="buff_ws9_001b" Name="攻击怒吼减攻击" EventType="2" TargetType="4" FuncNo="98" AttackEffectType="2" AttackEffectRatio="60"/>
+	<Property ID="buff_ws_skill_26_1" Name="回春回血" EventType="1" TargetType="4" FuncNo="98" AttackEffectType="3" AttackEffectRatio="3"/>
+	<Property ID="buff_ws_skill_26_2" Name="太极之力晕眩"/>
+	<Property ID="deepfrozen" Name="极寒诅咒" EventType="10" TargetType="2" FuncNo="1" BuffID="common_buff_freeze_2s" BuffTargetRatio="100"/>
+	<Property ID="st_blood_buff" Name="石像吸血" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="90"/>
+	<Property ID="st_healself_buff" Name="石像恢复" EventType="1" TargetType="4" FuncNo="99" HPPercent="5"/>
+	<Property ID="axiuluo_ad1" Name="阿修罗" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="90"/>
+	<Property ID="defdown_ad1" Name="破甲" EventType="1" TargetType="2" FuncNo="100"/>
+	<Property ID="nec162_heal_ad1" Name="白骨治愈" EventType="1" TargetType="4" FuncNo="99" HPPercent="50"/>
+	<Property ID="deeppoison_ad1" Name="剧毒" EventType="3" TargetType="4" FuncNo="99" HPFirmValue="-100"/>
+	<Property ID="deepdamage" Name="伤害加深" EventType="10" TargetType="5" FuncNo="99" HPFirmValue="-5000"/>
+	<Property ID="abyss_anti_adv" Name="反击风暴" EventTargetRelationType="3" EventTargetClassType="0" EventType="10" TargetType="5" FuncNo="99" HPFirmValue="-500"/>
+	<Property ID="hq_buff_adv" Name="火拳" EventType="9" TargetType="5" FuncNo="99" HPFirmValue="-200"/>
+	<Property ID="relive_sk_1_ad1" Name="复活" EventType="3" TargetType="4" FuncNo="99" HPPercent="4"/>
+	<Property ID="nec182_heal" Name="治疗飞弹" EventType="1" TargetType="4" FuncNo="99" HPPercent="2"/>
+	<Property ID="buff_ws_skill_28_2" Name="额外1%当前生命伤害" EventType="1" TargetType="4" FuncNo="99" HPPercent="1"/>
+	<Property ID="team3_lzwk_adv" Name="离子外壳" EventType="3" TargetType="4" FuncNo="99" HPFirmValue="-500"/>
+	<Property ID="team4_hbjs_adv" Name="寒冰寄生" EventType="2" TargetType="0" FuncNo="2" NPCConfigID="team4_ice" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="0"/>
+	<Property ID="jslq_adv" Name="急速冷却" EventType="10" TargetType="5" FuncNo="99" HPFirmValue="-500"/>
+	<Property ID="buff_team2_nd_ad1" Name="免伤" EventType="1" TargetType="2" FuncNo="602"/>
+	<Property ID="copy_st_blood_buff" Name="石像吸血2" EventType="1" TargetType="4" FuncNo="99" HPPercent="1"/>
+	<Property ID="copy_st_blood_buff_2" Name="石像吸血" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="15"/>
+	<Property ID="team4_hbxw1_buff_adv" Name="寒冰漩涡吸附" EventType="1" TargetType="2" FuncNo="630" BufferHaulSpeed="2" BufferHualDis="5"/>
+	<Property ID="hteam4_hbjs_adv" Name="寒冰寄生" EventType="2" TargetType="0" FuncNo="2" NPCConfigID="hteam4_ice" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="0"/>
+	<Property ID="hteam_zj_buff_adv" Name="斩击" EventType="2" TargetType="4" FuncNo="99" HPFirmValue="-4444"/>
+	<Property ID="hteam_zj_buff_adv1" Name="斩击1" EventType="2" TargetType="2" FuncNo="604" HitBack2MoveSpeed="30" HitBack2MoveDistance="5" HitBack2Action="back"/>
+	<Property ID="buff_soulblade_ad1" Name="魂剑" EventType="9" TargetType="2" FuncNo="1" BuffID="buff_soulup_1"/>
+	<Property ID="buff_soulblade_ad2" Name="魂剑" EventType="9" TargetType="0" FuncNo="1" BuffID="buff_soulup_1"/>
+	<Property ID="buff_souldef_ad1" Name="防御" EventType="10" TargetType="0" FuncNo="604" HitBack2MoveSpeed="15" HitBack2MoveDistance="4" HitBack2Action="back" ImmunityPercent="50" FirmDamagePercent="20" PRebound="100"/>
+	<Property ID="buff_soulheal_ad1" Name="治愈" EventType="1" TargetType="4" FuncNo="99" HPPercent="1"/>
+	<Property ID="buff_soulblade_ad3" Name="魂剑" EventType="9" TargetType="2" FuncNo="1" BuffID="buff_soulup_1_per"/>
+	<Property ID="buff_ht5_dead_ad1" Name="致死咒怨" EventType="3" TargetType="4" FuncNo="99" HPFirmValue="-1444"/>
+	<Property ID="buff_ws_skill_27_3A" Name="飞剑攻击子buff" EventType="3" TargetType="0" FuncNo="620" FirmDamagePercent="20" DamagePercentRatio="2"/>
+	<Property ID="new_data_item" FuncNo="98"/>
+	<Property ID="titan273_buff_2_ad1" Name="药剂调配" EventType="2" TargetType="2" FuncNo="1" BuffID="titan273_buff_4"/>
+	<Property ID="rdevent_buff_3_ad1" Name="吸血" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="90"/>
+	<Property ID="rdevent_buff_5_ad1" Name="破甲" EventType="17" TargetType="0" FuncNo="618" ConsumeBreak="30" AbsorbPercent="90" BreakEffectType="1" BreakEffectBase="3" BreakEffectImprove="3"/>
+	<Property ID="rdevent_buff_6_ad1" Name="治愈" EventType="1" TargetType="4" FuncNo="99" HPPercent="50"/>
+	<Property ID="rdevent_buff_6_ad2" Name="治愈" EventType="1" TargetType="0" FuncNo="100" HPPercent="100" Attribute="MP" AttributeIncValue="50000"/>
+	<Property ID="rdevent_buff_12_ad1" Name="中吸血" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="20"/>
+	<Property ID="rdevent_buff_13_ad1" Name="小吸血" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="1"/>
+	<Property ID="rdevent_buff_14_ad1" Name="破甲" EventType="17" TargetType="0" FuncNo="618" ConsumeBreak="30" AbsorbPercent="90" BreakEffectType="1" BreakEffectBase="2" BreakEffectImprove="2"/>
+	<Property ID="wl_hzss_buff_1_ad1" Name="烈性毒药" EventType="3" TargetType="2" FuncNo="99" HPFirmValue="-1000"/>
+	<Property ID="buff_ws_skill_33_3" Name="免死" EventType="1" TargetType="2" FuncNo="632" UnDeadCount="1" UnDeadBuffID="buff_ws_skill_33_3_1"/>
+	<Property ID="buff_ws_skill_33_3_1" Name="复活加属性-变身" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\pet\pet_shu_021.ini" ChangeModelScale="0.01" ChangeModelAction="born_001" ChangeModelEffect="common_change_002" Relive="1"/>
+	<Property ID="buff_ws_skill_33_3_1X" Name="复活加属性" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_ws_skill_33_3_1a"/>
+	<Property ID="buff_63dam_1_ad" EventType="10" TargetType="2" FuncNo="99" HPPercent="-1"/>
+	<Property ID="team6_ice_buff_1_ad1" Name="冰毒" EventTargetRelationType="3" EventTargetClassType="0,5" EventType="9" TargetType="5" FuncNo="1" BuffID="team6_freeze_buff_1"/>
+	<Property ID="team6_fire_buff_1_ad1" Name="火毒" EventTargetRelationType="3" EventTargetClassType="0,5" EventType="9" TargetType="5" FuncNo="1" BuffID="team6_bigboom_buff_1"/>
+	<Property ID="team6_bigboom_buff_1_ad1" Name="爆炸性伤害" EventType="1" TargetType="2" FuncNo="99" HPPercent="-5"/>
+	<Property ID="team6_bodyfire_1_ad1" EventType="3" TargetType="2" FuncNo="99" HPFirmValue="-200"/>
+	<Property ID="buff_wl_hdjs_skill_6" Name="水分身" EventType="10" TargetType="2" FuncNo="2" NPCConfigID="wl_hdjs_fenshen_29_3" NPCCreateCount="1" NPCTargetPosType="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="4"/>
+	<Property ID="team6_stoneboom_1_ad1" Name="爆炸" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="team6_titan_skill_11"/>
+	<Property ID="team6_stoneboom_1_ad2" Name="爆炸" EventType="1" TargetType="2" FuncNo="102" TriggerSkillConfigID="team6_titan_skill_11"/>
+	<Property ID="buff_yr_naga_skill_1" Name="海妖之歌" EventType="10" TargetType="2" FuncNo="15" BuffConfigID="buff_yr_naga_skill_1"/>
+	<Property ID="team7_buff_posion_1_ad1" Name="剧毒" EventType="3" TargetType="2" FuncNo="99" HPPercent="-1"/>
+	<Property ID="team7_buff_change_1_ad1" Name="变身海盗水手" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\monster\mon_shu_072.ini" ChangeModelSkillID="team7_hdss_skill_1; ;team7_hdss_skill_2; ; " ChangeModelEffect="common_change_002" ChangeModelTime="20"/>
+	<Property ID="team7_buff_change_1_ad2" Name="关闭变身" EventType="2" TargetType="2" FuncNo="617"/>
+	<Property ID="team7_buff_paopao_1_ad1" Name="召唤可破坏的泡泡" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="team7_paopao_2" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="99999"/>
+	<Property ID="team7_buff_paopao_3_ad1" Name="受击释放技能" EventType="10" TargetType="2" FuncNo="102" TriggerSkillConfigID="team7_wugui_skill_5"/>
+	<Property ID="team7_buff_paopao_3_ad2" Name="杀死自身" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_dead"/>
+	<Property ID="team7_buff_spdam_1_ad1" Name="超级伤害" EventType="1" TargetType="2" FuncNo="99" HPPercent="-51"/>
+	<Property ID="buff_ws_skill_33_3_1a" Name="复活加属性-解除变身" EventType="2" TargetType="2" FuncNo="617" ChangeModelPath="ini\npc\pet\pet_shu_021.ini" ChangeModelScale="0.25" ChangeModelAction="born_001" ChangeModelEffect="common_change_002"/>
+	<Property ID="deepsleep_buff_1_ad1" Name="深度沉睡" EventType="10" TargetType="2" FuncNo="15" BuffConfigID="deepsleep_buff_1"/>
+	<Property ID="nagastr_buff_1_ad1" Name="强化自愈" EventType="1" TargetType="2" FuncNo="99" HPPercent="2"/>
+	<Property ID="hdjs_flash_buff_1_ad1" Name="雷电剑" EventType="9" TargetType="5" FuncNo="1" BuffID="buff_20cantmove" BuffTargetRatio="20"/>
+	<Property ID="hdjs_fire_buff_1_ad1" Name="火焰剑" EventType="9" TargetType="5" FuncNo="1" BuffID="hdjs_fire_buff_2" BuffTargetRatio="20"/>
+	<Property ID="hdjs_fire_buff_1_ad2" Name="灼烧" EventType="3" TargetType="2" FuncNo="99" HPFirmValue="-1000"/>
+	<Property ID="hdjs_water_buff_1_ad1" Name="水护体" EventType="10" TargetType="0" FuncNo="2" NPCConfigID="hdjs_water_boss_31_3" NPCCreateCount="2" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="3" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="4"/>
+	<Property ID="buff_ws_skill_33_3_2X" Name="复活2加属性" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_ws_skill_33_3_2a"/>
+	<Property ID="buff_ws_skill_33_3_3X" Name="复活3加属性" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_ws_skill_33_3_3a"/>
+	<Property ID="buff_ws_skill_33_3_4X" Name="复活4加属性" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_ws_skill_33_3_4a"/>
+	<Property ID="buff_ws_skill_33_3_5X" Name="复活5加属性" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_ws_skill_33_3_5a"/>
+	<Property ID="buff_yr_yrfs_skill_6" Name="水疗" EventType="10" TargetType="2" FuncNo="99" HPPercent="0.7"/>
+	<Property ID="boss_wldz_buff_1_ad1" Name="格挡" EventType="10" TargetType="2" FuncNo="102" TriggerSkillConfigID="wlhddz_skill_4"/>
+	<Property ID="boss_wldz_buff_1_ad2" Name="删除buff" EventType="10" TargetType="2" FuncNo="15" BuffConfigID="boss_wldz_buff_1"/>
+	<Property ID="buff_wl_hdjs_skill_9" Name="减伤" EventType="10" TargetType="3" FuncNo="1" BuffID="buff_wl_hdjs_skill_9b"/>
+	<Property ID="buff_wl_hdjs_skill_9b" Name="减伤" EventType="1" TargetType="2" FuncNo="602" ImmunityPercent="95"/>
+	<Property ID="lwt_buff_1_ad1" Name="正向扫水" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="lwt_head_skill_3"/>
+	<Property ID="lwt_buff_2_ad1" Name="反向扫水" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="lwt_head_skill_4"/>
+	<Property ID="lwt_buff_3_ad1" Name="正向扫冰" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="lwt_head_skill_5"/>
+	<Property ID="lwt_buff_4_ad1" Name="反向扫冰" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="lwt_head_skill_6"/>
+	<Property ID="lwt_buff_5_ad1" Name="剧毒" EventType="3" TargetType="2" FuncNo="99" HPPercent="-0.1"/>
+	<Property ID="lwt_cs_buff_6_ad1" Name="吸血" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="20"/>
+	<Property ID="lwt_cs_buff_7_ad1" Name="输血" EventType="1" TargetType="2" FuncNo="99" HPPercent="0.5"/>
+	<Property ID="lwt_buff_11_ad1" Name="召唤左冰" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="boss_liweitan_cs_2" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="50.418644" NPCCreatePosY="18.143562" NPCCreatePosZ="91.290665" NPCCreateOrient="1.57" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="999999"/>
+	<Property ID="lwt_buff_12_ad1" Name="召唤左毒" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="boss_liweitan_cs_3" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="50.418644" NPCCreatePosY="18.143562" NPCCreatePosZ="91.290665" NPCCreateOrient="1.57" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="9999999"/>
+	<Property ID="lwt_buff_13_ad1" Name="召唤左暗" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="boss_liweitan_cs_4" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="50.418644" NPCCreatePosY="18.143562" NPCCreatePosZ="91.290665" NPCCreateOrient="1.57" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="9999999"/>
+	<Property ID="lwt_buff_14_ad1" Name="召唤左血" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="boss_liweitan_cs_5" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="50.418644" NPCCreatePosY="18.143562" NPCCreatePosZ="91.290665" NPCCreateOrient="1.57" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="9999999"/>
+	<Property ID="lwt_buff_15_ad1" Name="召唤右冰" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="boss_liweitan_cs_2_1" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="51.683869" NPCCreatePosY="18.093666" NPCCreatePosZ="81.042633" NPCCreateOrient="1.57" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="99999999"/>
+	<Property ID="lwt_buff_16_ad1" Name="召唤右毒" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="boss_liweitan_cs_3_1" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="51.683869" NPCCreatePosY="18.093666" NPCCreatePosZ="81.042633" NPCCreateOrient="1.57" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="99999999"/>
+	<Property ID="lwt_buff_17_ad1" Name="召唤右暗" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="boss_liweitan_cs_4_1" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="51.683869" NPCCreatePosY="18.093666" NPCCreatePosZ="81.042633" NPCCreateOrient="1.57" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="9999999"/>
+	<Property ID="lwt_buff_18_ad1" Name="召唤右血" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="boss_liweitan_cs_5_1" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="51.683869" NPCCreatePosY="18.093666" NPCCreatePosZ="81.042633" NPCCreateOrient="1.57" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="999999"/>
+	<Property ID="lwt_buff_19_ad1" Name="召唤中1冰" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="boss_liweitan_cs_2_2" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="55.472141" NPCCreatePosY="18.093666" NPCCreatePosZ="85.232277" NPCCreateOrient="1.57" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="9999999"/>
+	<Property ID="lwt_buff_20_ad1" Name="召唤中1毒" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="boss_liweitan_cs_3_2" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="55.472141" NPCCreatePosY="18.093666" NPCCreatePosZ="85.232277" NPCCreateOrient="1.57" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="999999"/>
+	<Property ID="lwt_buff_21_ad1" Name="召唤中1暗" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="boss_liweitan_cs_4_2" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="55.472141" NPCCreatePosY="18.093666" NPCCreatePosZ="85.232277" NPCCreateOrient="1.57" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="99999999"/>
+	<Property ID="lwt_buff_22_ad1" Name="召唤中1血" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="boss_liweitan_cs_5_2" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="55.472141" NPCCreatePosY="18.093666" NPCCreatePosZ="85.232277" NPCCreateOrient="1.57" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="999999"/>
+	<Property ID="lwt_buff_23_ad1" Name="召唤中2冰" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="boss_liweitan_cs_2_3" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="55.411236" NPCCreatePosY="18.093666" NPCCreatePosZ="87.584641" NPCCreateOrient="1.57" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="999999"/>
+	<Property ID="lwt_buff_24_ad1" Name="召唤中2毒" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="boss_liweitan_cs_3_3" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="55.411236" NPCCreatePosY="18.093666" NPCCreatePosZ="87.584641" NPCCreateOrient="1.57" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="999999"/>
+	<Property ID="lwt_buff_25_ad1" Name="召唤中2暗" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="boss_liweitan_cs_4_3" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="55.411236" NPCCreatePosY="18.093666" NPCCreatePosZ="87.584641" NPCCreateOrient="1.57" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="999999"/>
+	<Property ID="lwt_buff_26_ad1" Name="召唤中2血" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="boss_liweitan_cs_5_3" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="55.411236" NPCCreatePosY="18.093666" NPCCreatePosZ="87.584641" NPCCreateOrient="1.57" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="99999"/>
+	<Property ID="lwt_cs_buff_10_ad1" Name="召唤死亡" EventType="2" TargetType="2" FuncNo="20"/>
+	<Property ID="lwt_cs_buff_12_ad1" Name="扫冰1" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="lwt_hand_skill_8"/>
+	<Property ID="lwt_cs_buff_13_ad1" Name="扫冰2" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="lwt_hand_skill_9"/>
+	<Property ID="lwt_cs_buff_14_ad1" Name="扫毒1" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="lwt_hand_skill_10"/>
+	<Property ID="lwt_cs_buff_15_ad1" Name="扫毒2" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="lwt_hand_skill_11"/>
+	<Property ID="lwt_cs_buff_16_ad1" Name="扫暗1" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="lwt_hand_skill_12"/>
+	<Property ID="lwt_cs_buff_17_ad1" Name="扫暗2" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="lwt_hand_skill_13"/>
+	<Property ID="lwt_cs_buff_18_ad1" Name="扫血1" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="lwt_hand_skill_29"/>
+	<Property ID="lwt_cs_buff_19_ad1" Name="扫血2" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="lwt_hand_skill_30"/>
+	<Property ID="lwt_cs_buff_20_ad1" Name="扫无小1" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="lwt_hand_skill_42"/>
+	<Property ID="lwt_cs_buff_21_ad1" Name="扫无小2" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="lwt_hand_skill_43"/>
+	<Property ID="paopaosuid_buff_1_ad1" Name="泡泡自爆" EventType="2" TargetType="2" FuncNo="20"/>
+	<Property ID="team7_buff_bullet_1_ad1" Name="毒弹" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="team7_kunka_skill_9"/>
+	<Property ID="team7_buff_bullet_2_ad1" Name="水弹" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="team7_kunka_skill_8"/>
+	<Property ID="team7_buff_bullet_3_ad1" Name="暗黑弹" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="team7_kunka_skill_7"/>
+	<Property ID="team7_wuguims_buff_1_ad1" Name="乌龟免伤" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="100"/>
+	<Property ID="team7_hdjs_water_buff_1_ad1" Name="水护体" EventType="10" TargetType="0" FuncNo="2" NPCConfigID="team7_hdjs_water_boss_1" NPCCreateCount="2" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="3" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="4"/>
+	<Property ID="team7_buff_bullet_4_ad1" Name="咒怨" EventType="2" TargetType="2" FuncNo="2" NPCConfigID="team7_curse_1" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="999999"/>
+	<Property ID="team7_buff_bullet_5_ad1" Name="毒液散射" EventType="1" TargetType="2" FuncNo="2" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="999999"/>
+	<Property ID="team7_buff_bullet_4_ad2" Name="咒怨" EventType="2" TargetType="2" FuncNo="1" BuffID="team7_buff_bullet_6" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="999999"/>
+	<Property ID="jy_hdjs_water_buff_1_ad1" Name="水护体（精英）" EventType="10" TargetType="0" FuncNo="2" NPCConfigID="jy_hdjs_water_boss_31_3" NPCCreateCount="2" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="3" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="4"/>
+	<Property ID="buff_ws_skill_35_3_1" Name="开启诅咒" EventType="1" TargetType="2" FuncNo="642" BufferCurseType="1" BufferCurseDefaultRate="100" BufferCurseBossRate="50"/>
+	<Property ID="buff_ws_skill_35_3_2" Name="清除诅咒" EventType="2" TargetType="2" FuncNo="642" BufferCurseType="0"/>
+	<Property ID="lwt_buff_27_ad1" Name="保护免伤" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="99"/>
+	<Property ID="lwt_buff_34_ad1" Name="召唤冰霜术士1" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="hteam8_yr_yrfs_ice_1" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="68.846741" NPCCreatePosY="18.307001" NPCCreatePosZ="87.933723" NPCCreateOrient="1.57" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="lwt_buff_35_ad1" Name="召唤冰霜术士2" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="hteam8_yr_yrfs_ice_2" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="56.405987" NPCCreatePosY="18.307001" NPCCreatePosZ="101.014015" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="lwt_buff_36_ad1" Name="召唤冰霜术士3" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="hteam8_yr_yrfs_ice_3" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="58.235802" NPCCreatePosY="18.307001" NPCCreatePosZ="73.526459" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="lwt_buff_37_ad1" Name="召唤雷电术士1" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="hteam8_yr_yrfs_thunder_1" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="68.846741" NPCCreatePosY="18.307001" NPCCreatePosZ="87.933723" NPCCreateOrient="1.57" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="lwt_buff_38_ad1" Name="召唤雷电术士2" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="hteam8_yr_yrfs_thunder_2" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="56.405987" NPCCreatePosY="18.307001" NPCCreatePosZ="101.014015" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="lwt_buff_39_ad1" Name="召唤雷电术士3" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="hteam8_yr_yrfs_thunder_3" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="58.235802" NPCCreatePosY="18.307001" NPCCreatePosZ="73.526459" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="buff_zp_huof_skill_3" Name="燃烧" EventType="3" TargetType="2" FuncNo="99" HPPercent="-0.5"/>
+	<Property ID="buff_ws_skill_37_3" Name="减免60%伤害" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="60"/>
+	<Property ID="buff_zp_nezha_skill_6_ad1" Name="强化自愈" EventType="1" TargetType="2" FuncNo="99" HPPercent="2"/>
+	<Property ID="buff_zp_dl_skill_4_ad1" Name="毒液" EventType="3" TargetType="4" FuncNo="99" HPPercent="-1"/>
+	<Property ID="buff_zp_hzjr_skill_1_ad1" Name="自爆" EventType="1" TargetType="2" FuncNo="99" HPPercent="-25"/>
+	<Property ID="buff_team10_sj_skill_4_ad1" Name="寄生虫" EventType="3" TargetType="4" FuncNo="99" HPPercent="-2"/>
+	<Property ID="buff_team10_sj_skill_8_ad1" Name="毁灭" EventType="1" TargetType="4" FuncNo="99" HPPercent="-35"/>
+	<Property ID="buff_team10_sj_skill_9_ad1" Name="寄生种子" EventType="2" TargetType="2" FuncNo="2" NPCConfigID="hteam10_sj_zz" NPCCreateCount="1" NPCTargetPosType="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="buff_team10_sj_skill_9_ad2" Name="种子伤害" EventType="1" TargetType="4" FuncNo="99" HPPercent="-8"/>
+	<Property ID="buff_ws_skill_27_3B" Name="恢复5点破防" EventType="3" TargetType="2" FuncNo="100" Attribute="Break" AttributeIncValue="5"/>
+	<Property ID="buff_team9_sd_skill_10_ad1" Name="玩家攻击形态" EventType="1" TargetType="2" FuncNo="642" BufferCurseType="1" BufferCurseDefaultRate="30" BufferCurseBossRate="30"/>
+	<Property ID="buff_team9_sd_skill_8_ad1" Name="攻击形态" EventType="1" TargetType="2" FuncNo="642" BufferCurseType="1" BufferCurseDefaultRate="60" BufferCurseBossRate="60"/>
+	<Property ID="buff_team9_sd_skill_11_ad1" Name="玩家防御形态" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="60"/>
+	<Property ID="buff_team9_sd_skill_9_ad1" Name="防御形态" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="40"/>
+	<Property ID="buff_team9_sd_skill_8_ad2" Name="攻击形态" EventType="2" TargetType="2" FuncNo="642" BufferCurseType="0"/>
+	<Property ID="buff_team9_sd_skill_10_ad2" Name="玩家攻击形态" EventType="2" TargetType="2" FuncNo="642" BufferCurseType="0"/>
+	<Property ID="bf_createmon_buff_1_ad1" Name="召唤boss1" EventType="2" TargetType="2" FuncNo="2" NPCConfigID="war_boss_1" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="bf_createmon_buff_1_ad2" Name="召唤boss2" EventType="2" TargetType="2" FuncNo="2" NPCConfigID="war_boss_2" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="bf_createmon_buff_1_ad3" Name="召唤boss3" EventType="2" TargetType="2" FuncNo="2" NPCConfigID="war_boss_3" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="bf_createmon_buff_1_ad4" Name="召唤boss4" EventType="2" TargetType="2" FuncNo="2" NPCConfigID="war_boss_4" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="bf_createmon_buff_1_ad5" Name="召唤boss5" EventType="2" TargetType="2" FuncNo="2" NPCConfigID="war_boss_5" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="bf_createmon_buff_1_ad6" Name="召唤boss6" EventType="2" TargetType="2" FuncNo="2" NPCConfigID="war_boss_6" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="bf_createboss_buff_1_ad1" Name="随机召唤BOSS" EventType="1" TargetType="2" FuncNo="1" BuffID="bf_createmon_buff_1;bf_createmon_buff_2;bf_createmon_buff_3;bf_createmon_buff_4;bf_createmon_buff_5;bf_createmon_buff_6"/>
+	<Property ID="bf_createguard_buff_1_ad1" Name="召唤守护神（红）" EventType="2" TargetType="2" FuncNo="2" BuffID="bf_createmon_buff_1;bf_createmon_buff_2;bf_createmon_buff_3;bf_createmon_buff_4;bf_createmon_buff_5;bf_createmon_buff_6" NPCConfigID="war_redgardian_1" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="bf_createguard_buff_2_ad1" Name="召唤守护神（蓝）" EventType="2" TargetType="2" FuncNo="2" BuffID="bf_createmon_buff_1;bf_createmon_buff_2;bf_createmon_buff_3;bf_createmon_buff_4;bf_createmon_buff_5;bf_createmon_buff_6" NPCConfigID="war_bluegardian_1" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="bf_vam_buff_1_ad1" Name="高级吸血" EventType="1" TargetType="2" FuncNo="99" HPPercent="1"/>
+	<Property ID="bf_bone_buff_1_ad1" Name="骷髅战士变身" EventType="1" TargetType="2" FuncNo="615" ChangeModelPath="ini\npc\monster\mon_shu_006a.ini" ChangeModelSkillID="bf_bone_skill_3; ; ; ; " ChangeModelEffect="common_change_002" ChangeModelTime="20"/>
+	<Property ID="bf_bone_buff_2_ad1" Name="骷髅弓手变身" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\monster\mon_shu_005.ini" ChangeModelSkillID=" bf_bone_skill_2; ; ; ; " ChangeModelEffect="common_change_002" ChangeModelTime="20"/>
+	<Property ID="bf_jugg_buff_1_ad1" Name="刀痕" EventType="2" TargetType="2" FuncNo="99" HPPercent="-50"/>
+	<Property ID="bf_death_buff_1_ad1" Name="百比伤害" EventType="1" TargetType="4" FuncNo="99" HPPercent="-1" HPFirmValue="-5000"/>
+	<Property ID="bf_death_buff_2_ad1" Name="即死" EventType="1" TargetType="2" FuncNo="99" HPPercent="-100"/>
+	<Property ID="bf_guard_buff_1_ad1" Name="团战守护神buff" EventType="1" TargetType="4" FuncNo="99" HPPercent="-3"/>
+	<Property ID="bf_guard_buff_1_ad2" Name="团战守护神buff" EventType="18" TargetType="5" FuncNo="99" HPPercent="-0.005"/>
+	<Property ID="bf_tower_buff_2_ad1" Name="团战防御塔buff" EventType="1" TargetType="4" FuncNo="99" HPPercent="-3"/>
+	<Property ID="bf_tower_buff_2_ad2" Name="团战防御塔buff" EventType="18" TargetType="5" FuncNo="99" HPPercent="-0.2"/>
+	<Property ID="buff_ws_skill_40_3a" Name="开启变羊" EventType="1" TargetType="0" FuncNo="702"/>
+	<Property ID="buff_ws_skill_40_3b" Name="关闭变羊" EventType="2" TargetType="0" FuncNo="702"/>
+	<Property ID="buff_ws_skill_40_3c" Name="变成小动物" EventType="1" TargetType="0" FuncNo="626" ChangeModelScale="0.3" PetChangeModelPath="ini\npc\pet\pet_shu_021.ini" PetChangeModelScale="0.2"/>
+	<Property ID="buff_fuc_test_1_ad1" EventType="1" TargetType="2" FuncNo="1" Condition="buff_fuc_test_1_limit&amp;buff_fuc_test_2_limit" BuffID="bf_addatri_buff_1" BuffTargetRatio="100"/>
+	<Property ID="buff_ws_skill_42_3a" Name="减伤" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="50"/>
+	<Property ID="buff_ws_skill_40_3d" Name="关闭变羊" EventType="2" TargetType="0" FuncNo="626"/>
+	<Property ID="buff_ws_skill_41_2" Name="中毒" EventType="3" TargetType="4" FuncNo="98" AttackEffectType="4" AttackEffectRatio="50"/>
+	<Property ID="bls_bianshen_buff_1_ad1" Name="变身骷髅剑士" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\monster\mon_shu_019.ini" ChangeModelSkillID="bloodsword_skill_6;bloodsword_skill_7;bloodsword_skill_8;bloodsword_skill_9;bloodsword_skill_11" ChangeModelEffect="common_change_002" ChangeModelTime="360"/>
+	<Property ID="bls_bianshen_buff_1_ad2" Name="关闭变身" EventType="2" TargetType="2" FuncNo="617"/>
+	<Property ID="bls_suid_buff_1_ad1" Name="杀死武神" EventType="1" TargetType="4" FuncNo="99" HPPercent="-100"/>
+	<Property ID="zombiedog_buff_2_ad1" Name="致死量" EventType="1" TargetType="4" FuncNo="99" HPPercent="-0.5"/>
+	<Property ID="darkwiz_buff_2_ad1" Name="寒冰领域触发减速" EventType="1" TargetType="2" FuncNo="664" SlowFixValue="1" SlowEvoRatio="0.1" TriggerEffectPoint="0.1" EffectBufferID="common_buff_freeze"/>
+	<Property ID="darkwiz_buff_2_ad2" Name="寒冰领域触发减速" EventType="2" TargetType="2" FuncNo="664"/>
+	<Property ID="darkwiz_buff_4_ad1" Name="削蓝" EventType="1" TargetType="2" FuncNo="100" Attribute="MP" AttributeIncValue="-300"/>
+	<Property ID="darkwiz_buff_5_ad1" Name="变身小海龟" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\npc\npc_shu_015.ini" ChangeModelSkillID=" ; ; ; ; " ChangeModelScale="0.5" ChangeModelEffect="common_change_002" ChangeModelTime="5"/>
+	<Property ID="treebro_a_buff_1_ad1" Name="毒药减血" EventType="3" TargetType="4" FuncNo="99" HPPercent="-0.5"/>
+	<Property ID="treebro_b_buff_1_ad1" Name="攻防转换" EventType="1" TargetType="2" FuncNo="1" Condition="treebro_b_buff_1_limit" BuffID="treebro_b_buff_2"/>
+	<Property ID="treebro_b_buff_1_ad2" Name="攻防转换" EventType="1" TargetType="2" FuncNo="1" Condition="treebro_b_buff_1_limit3" BuffID="treebro_b_buff_3"/>
+	<Property ID="pandafs_buff_6_ad1" Name="重创" EventType="10" TargetType="5" FuncNo="99" HPPercent="-2"/>
+	<Property ID="pandafs_buff_7_ad1" Name="减血50%" EventType="1" TargetType="4" FuncNo="99" HPPercent="-25"/>
+	<Property ID="pandafs_buff_8_ad1" Name="加血50%" EventType="1" TargetType="4" FuncNo="99" HPPercent="50"/>
+	<Property ID="pandafs_buff_9_ad1" Name="削蓝100" EventType="1" TargetType="2" FuncNo="100" Attribute="MP" AttributeIncValue="-500"/>
+	<Property ID="pandafs_buff_10_ad1" Name="加蓝100" EventType="1" TargetType="2" FuncNo="100" Attribute="MP" AttributeIncValue="500"/>
+	<Property ID="treebro_b_buff_1_ad3" Name="关闭buff" EventType="1" TargetType="2" FuncNo="1" Condition="treebro_b_buff_1_limit" BuffID="treebro_b_buff_4" BuffConfigID="treebro_b_buff_1"/>
+	<Property ID="nature_fire_buff_1_ad1" Name="灼烧伤害" EventType="1" TargetType="4" FuncNo="99" HPPercent="-1"/>
+	<Property ID="jy_pandafs_buff_1_ad1" Name="召唤黑剑" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="jy_boss_pandajian_50_3" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="2" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="99999999"/>
+	<Property ID="jy_pandafs_buff_2_ad1" Name="召唤拳师" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="jy_boss_pandaquan_50_3" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="2" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="9999999"/>
+	<Property ID="jy_pandafs_buff_3_ad1" Name="召唤杖之魂" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="jy_boss_pandaqiang_50_3" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="2" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="9999999"/>
+	<Property ID="jy_pandafs_buff_4_ad1" Name="召唤龙炮" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="jy_boss_pandapao_50_3" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="2" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="9999999"/>
+	<Property ID="jy_zisha_buff_1_ad1" Name="自杀" EventType="1" TargetType="2" FuncNo="20"/>
+	<Property ID="team11_fairyking_buff_7_ad1" Name="急速冷却" EventType="10" TargetType="2" FuncNo="1" BuffID="common_freeze_buff_1s"/>
+	<Property ID="hteam11_fairyking_buff_1_ad1" Name="自然治愈" EventType="3" TargetType="4" FuncNo="99" HPPercent="1"/>
+	<Property ID="hteam11_fairyking_buff_4_ad1" Name="死亡凋零" EventType="1" TargetType="4" FuncNo="99" HPPercent="-0.5"/>
+	<Property ID="hteam11_fairyking_buff_5" Name="受击闪现" EventType="10" TargetType="2"/>
+	<Property ID="hteam11_fairyking_buff_7" Name="烧灼" EventType="1" TargetType="4" FuncNo="99" HPPercent="-0.2"/>
+	<Property ID="hteam11_fairyking_buff_10d_ad2" Name="瞬身击退" EventType="10" TargetType="5" FuncNo="604" HitBack2MoveSpeed="15" HitBack2MoveDistance="4" HitBack2Action="back" HPPercent="-5000"/>
+	<Property ID="hteam11_fairyking_buff_10d_ad1" Name="瞬身受到伤害" EventType="10" TargetType="0" FuncNo="99" HPFirmValue="-5000"/>
+	<Property ID="hteam11_fairyking_buff_11_ad1" Name="树甲反弹" EventType="18" TargetType="3" FuncNo="601" BoundPercent="5"/>
+	<Property ID="hteam11_fairyking_buff_12_ad1" Name="召唤树人" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="hteam11_boss_kaer_5" NPCCreateCount="1" NPCCreateOrient="0.0" NPCCreateRadiusRange="1" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="2"/>
+	<Property ID="hteam11_fairyking_buff_13_ad1" Name="吸血" EventType="1" TargetType="4" FuncNo="99" HPPercent="0.2"/>
+	<Property ID="hteam11_fairyking_buff_7b_ad1" Name="持续烧灼" EventType="3" TargetType="4" FuncNo="99" HPPercent="-0.2"/>
+	<Property ID="kaer_test_buff_1_ad1" Name="添加火元素" EventType="1" TargetType="2" FuncNo="1" Condition="kaer_limit_1&amp;kaer_limit_7&amp;kaer_limit_10&amp;kaer_limit_4" BuffID="kaer_buff_fire_1"/>
+	<Property ID="kaer_test_buff_1_ad2" Name="添加火元素" EventType="1" TargetType="2" FuncNo="1" Condition="kaer_limit_2&amp;kaer_limit_8&amp;kaer_limit_11&amp;kaer_limit_5&amp;kaer_limit_13" BuffID="kaer_buff_fire_2"/>
+	<Property ID="kaer_test_buff_1_ad3" Name="添加火元素" EventType="1" TargetType="2" FuncNo="1" Condition="kaer_limit_3&amp;kaer_limit_9&amp;kaer_limit_12&amp;kaer_limit_6&amp;kaer_limit_13&amp;kaer_limit_14" BuffID="kaer_buff_fire_3"/>
+	<Property ID="kaer_test_buff_1_ad4" Name="添加火元素" EventType="1" TargetType="2" FuncNo="1" Condition="kaer_limit_1&amp;kaer_limit_7&amp;kaer_limit_10&amp;kaer_limit_4" BuffID="kaer_buff_judge_1"/>
+	<Property ID="kaer_test_buff_1_ad5" Name="添加火元素" EventType="1" TargetType="2" FuncNo="1" Condition="kaer_limit_2&amp;kaer_limit_8&amp;kaer_limit_11&amp;kaer_limit_5&amp;kaer_limit_13" BuffID="kaer_buff_judge_2"/>
+	<Property ID="kaer_test_buff_2_ad1" Name="释放技能" EventType="3" TargetType="2" FuncNo="102" Condition="kaer_limit_4b&amp;kaer_limit_5b&amp;kaer_limit_6b" BuffID="kaer_buff_judge_2" TriggerSkillConfigID="hteam11_fairyking_skill_9"/>
+	<Property ID="kaer_test_buff_2_ad2" Name="删除buff" EventType="3" TargetType="2" FuncNo="1" Condition="kaer_limit_4b&amp;kaer_limit_5b&amp;kaer_limit_6b" BuffID="kaer_test_buff_3" TriggerSkillConfigID="hteam11_fairyking_skill_9"/>
+	<Property ID="kaer_test_buff_3_ad1" Name="清除buff" EventType="1" TargetType="2" FuncNo="15" BuffConfigID="kaer_buff_fire_1"/>
+	<Property ID="kaer_test_buff_3_ad2" Name="清除buff" EventType="1" TargetType="2" FuncNo="15" BuffConfigID="kaer_buff_fire_2"/>
+	<Property ID="kaer_test_buff_3_ad3" Name="清除buff" EventType="1" TargetType="2" FuncNo="15" BuffConfigID="kaer_buff_fire_3"/>
+	<Property ID="kaer_useskill_buff_1_ad1" Name="使用技能" EventType="3" TargetType="2" FuncNo="102" Condition="kaer_limit_1b&amp;kaer_limit_2b&amp;kaer_limit_3b" TriggerSkillConfigID="hteam11_fairyking_skill_7 "/>
+	<Property ID="kaer_useskill_buff_1_ad2" Name="使用技能" EventType="3" TargetType="2" FuncNo="102" Condition="kaer_limit_4b&amp;kaer_limit_5b&amp;kaer_limit_6b" TriggerSkillConfigID="hteam11_fairyking_skill_9"/>
+	<Property ID="kaer_useskill_buff_1_ad3" Name="使用技能" EventType="3" TargetType="2" FuncNo="102" Condition="kaer_limit_7b&amp;kaer_limit_8b&amp;kaer_limit_9b" TriggerSkillConfigID="hteam11_fairyking_skill_10"/>
+	<Property ID="kaer_useskill_buff_1_ad4" Name="使用技能" EventType="3" TargetType="2" FuncNo="102" Condition="kaer_limit_10b&amp;kaer_limit_11b&amp;kaer_limit_12b" TriggerSkillConfigID="hteam11_fairyking_skill_8"/>
+	<Property ID="kaer_useskill_buff_1_ad5" Name="使用技能" EventType="3" TargetType="2" FuncNo="102" Condition="(kaer_limit_1b&amp;kaer_limit_5b&amp;kaer_limit_9b)|(kaer_limit_1b&amp;kaer_limit_6b&amp;kaer_limit_8b)|(kaer_limit_2b&amp;kaer_limit_4b&amp;kaer_limit_9b)|(kaer_limit_2b&amp;kaer_limit_7b&amp;kaer_limit_6b)|(kaer_limit_3b&amp;kaer_limit_4b&amp;kaer_limit_8b)|(kaer_limit_3b&amp;kaer_limit_5b&amp;kaer_limit_7b)" TriggerSkillConfigID="hteam11_fairyking_skill_11"/>
+	<Property ID="kaer_useskill_buff_1_ad6" Name="使用技能" EventType="3" TargetType="2" FuncNo="102" Condition="(kaer_limit_1b&amp;kaer_limit_5b&amp;kaer_limit_12b)|(kaer_limit_1b&amp;kaer_limit_6b&amp;kaer_limit_11b)|(kaer_limit_2b&amp;kaer_limit_4b&amp;kaer_limit_12b)|(kaer_limit_2b&amp;kaer_limit_10b&amp;kaer_limit_6b)|(kaer_limit_3b&amp;kaer_limit_4b&amp;kaer_limit_11b)|(kaer_limit_3b&amp;kaer_limit_5b&amp;kaer_limit_10b)" TriggerSkillConfigID="hteam11_fairyking_skill_12"/>
+	<Property ID="kaer_useskill_buff_1_ad7" Name="使用技能" EventType="3" TargetType="2" FuncNo="102" Condition="(kaer_limit_1b&amp;kaer_limit_11b&amp;kaer_limit_9b)|(kaer_limit_1b&amp;kaer_limit_12b&amp;kaer_limit_8b)|(kaer_limit_2b&amp;kaer_limit_10b&amp;kaer_limit_9b)|(kaer_limit_2b&amp;kaer_limit_7b&amp;kaer_limit_12b)|(kaer_limit_3b&amp;kaer_limit_10b&amp;kaer_limit_8b)|(kaer_limit_3b&amp;kaer_limit_11b&amp;kaer_limit_7b)" TriggerSkillConfigID="hteam11_fairyking_skill_13"/>
+	<Property ID="kaer_useskill_buff_1_ad8" Name="使用技能" EventType="3" TargetType="2" FuncNo="102" Condition="(kaer_limit_10b&amp;kaer_limit_5b&amp;kaer_limit_9b)|(kaer_limit_10b&amp;kaer_limit_6b&amp;kaer_limit_8b)|(kaer_limit_11b&amp;kaer_limit_4b&amp;kaer_limit_9b)|(kaer_limit_11b&amp;kaer_limit_7b&amp;kaer_limit_6b)|(kaer_limit_12b&amp;kaer_limit_4b&amp;kaer_limit_8b)|(kaer_limit_12b&amp;kaer_limit_5b&amp;kaer_limit_7b)" TriggerSkillConfigID="hteam11_fairyking_skill_14"/>
+	<Property ID="kaer_useskill_buff_1_ad9" Name="使用技能" EventType="3" TargetType="2" FuncNo="102" Condition="(kaer_limit_1b&amp;kaer_limit_2b&amp;kaer_limit_6b)|(kaer_limit_1b&amp;kaer_limit_5b&amp;kaer_limit_3b)|(kaer_limit_4b&amp;kaer_limit_2b&amp;kaer_limit_3b)" TriggerSkillConfigID="hteam11_fairyking_skill_15"/>
+	<Property ID="kaer_useskill_buff_1_ad10" Name="使用技能" EventType="3" TargetType="2" FuncNo="102" Condition="(kaer_limit_1b&amp;kaer_limit_2b&amp;kaer_limit_9b)|(kaer_limit_1b&amp;kaer_limit_8b&amp;kaer_limit_3b)|(kaer_limit_7b&amp;kaer_limit_2b&amp;kaer_limit_3b)" TriggerSkillConfigID="hteam11_fairyking_skill_16"/>
+	<Property ID="kaer_useskill_buff_1_ad11" Name="使用技能" EventType="3" TargetType="2" FuncNo="102" Condition="(kaer_limit_1b&amp;kaer_limit_2b&amp;kaer_limit_12b)|(kaer_limit_1b&amp;kaer_limit_11b&amp;kaer_limit_3b)|(kaer_limit_10b&amp;kaer_limit_2b&amp;kaer_limit_3b)" TriggerSkillConfigID="hteam11_fairyking_skill_17"/>
+	<Property ID="kaer_useskill_buff_1_ad12" Name="使用技能" EventType="3" TargetType="2" FuncNo="102" Condition="(kaer_limit_4b&amp;kaer_limit_5b&amp;kaer_limit_3b)|(kaer_limit_4b&amp;kaer_limit_2b&amp;kaer_limit_6b)|(kaer_limit_1b&amp;kaer_limit_5b&amp;kaer_limit_6b)" TriggerSkillConfigID="hteam11_fairyking_skill_18"/>
+	<Property ID="kaer_useskill_buff_1_ad13" Name="使用技能" EventType="3" TargetType="2" FuncNo="102" Condition="(kaer_limit_4b&amp;kaer_limit_5b&amp;kaer_limit_9b)|(kaer_limit_4b&amp;kaer_limit_8b&amp;kaer_limit_6b)|(kaer_limit_7b&amp;kaer_limit_5b&amp;kaer_limit_6b)" TriggerSkillConfigID="hteam11_fairyking_skill_19"/>
+	<Property ID="kaer_useskill_buff_1_ad14" Name="使用技能" EventType="3" TargetType="2" FuncNo="102" Condition="(kaer_limit_4b&amp;kaer_limit_5b&amp;kaer_limit_12b)|(kaer_limit_4b&amp;kaer_limit_11b&amp;kaer_limit_6b)|(kaer_limit_10b&amp;kaer_limit_5b&amp;kaer_limit_6b)" TriggerSkillConfigID="hteam11_fairyking_skill_20"/>
+	<Property ID="kaer_useskill_buff_1_ad15" Name="使用技能" EventType="3" TargetType="2" FuncNo="102" Condition="(kaer_limit_7b&amp;kaer_limit_8b&amp;kaer_limit_3b)|(kaer_limit_7b&amp;kaer_limit_2b&amp;kaer_limit_9b)|(kaer_limit_1b&amp;kaer_limit_8b&amp;kaer_limit_9b)" TriggerSkillConfigID="hteam11_fairyking_skill_21"/>
+	<Property ID="kaer_useskill_buff_1_ad16" Name="使用技能" EventType="3" TargetType="2" FuncNo="102" Condition="(kaer_limit_7b&amp;kaer_limit_8b&amp;kaer_limit_6b)|(kaer_limit_7b&amp;kaer_limit_5b&amp;kaer_limit_9b)|(kaer_limit_4b&amp;kaer_limit_8b&amp;kaer_limit_9b)" TriggerSkillConfigID="hteam11_fairyking_skill_22"/>
+	<Property ID="kaer_useskill_buff_1_ad17" Name="使用技能" EventType="3" TargetType="2" FuncNo="102" Condition="(kaer_limit_7b&amp;kaer_limit_8b&amp;kaer_limit_12b)|(kaer_limit_7b&amp;kaer_limit_11b&amp;kaer_limit_9b)|(kaer_limit_10b&amp;kaer_limit_11b&amp;kaer_limit_9b)" TriggerSkillConfigID="hteam11_fairyking_skill_23"/>
+	<Property ID="kaer_useskill_buff_1_ad18" Name="使用技能" EventType="3" TargetType="2" FuncNo="102" Condition="(kaer_limit_10b&amp;kaer_limit_11b&amp;kaer_limit_3b)|(kaer_limit_10b&amp;kaer_limit_2b&amp;kaer_limit_12b)|(kaer_limit_1b&amp;kaer_limit_11b&amp;kaer_limit_12b)" TriggerSkillConfigID="hteam11_fairyking_skill_24"/>
+	<Property ID="kaer_useskill_buff_1_ad19" Name="使用技能" EventType="3" TargetType="2" FuncNo="102" Condition="(kaer_limit_10b&amp;kaer_limit_11b&amp;kaer_limit_9b)|(kaer_limit_10b&amp;kaer_limit_8b&amp;kaer_limit_12b)|(kaer_limit_7b&amp;kaer_limit_11b&amp;kaer_limit_12b)" TriggerSkillConfigID="hteam11_fairyking_skill_26"/>
+	<Property ID="kaer_useskill_buff_1_ad20" Name="使用技能" EventType="3" TargetType="2" FuncNo="102" Condition="kaer_limit_1b&amp;kaer_limit_2b&amp;kaer_limit_3b" TriggerSkillConfigID="hteam11_fairyking_skill_7 "/>
+	<Property ID="kaer_test_buff_1_ad1a" Name="添加水元素" EventType="1" TargetType="2" FuncNo="1" Condition="kaer_limit_4&amp;kaer_limit_7&amp;kaer_limit_10&amp;kaer_limit_1" BuffID="kaer_buff_ice_1"/>
+	<Property ID="kaer_test_buff_1_ad2a" Name="添加水元素" EventType="1" TargetType="2" FuncNo="1" Condition="kaer_limit_5&amp;kaer_limit_8&amp;kaer_limit_11&amp;kaer_limit_2&amp;kaer_limit_13" BuffID="kaer_buff_ice_2"/>
+	<Property ID="kaer_test_buff_1_ad3a" Name="添加水元素" EventType="1" TargetType="2" FuncNo="1" Condition="kaer_limit_6&amp;kaer_limit_9&amp;kaer_limit_12&amp;kaer_limit_3&amp;kaer_limit_13&amp;kaer_limit_14" BuffID="kaer_buff_ice_3"/>
+	<Property ID="kaer_test_buff_1_ad4a" Name="添加水元素" EventType="1" TargetType="2" FuncNo="1" Condition="kaer_limit_4&amp;kaer_limit_7&amp;kaer_limit_10&amp;kaer_limit_1" BuffID="kaer_buff_judge_1"/>
+	<Property ID="kaer_test_buff_1_ad5a" Name="添加水元素" EventType="1" TargetType="2" FuncNo="1" Condition="kaer_limit_5&amp;kaer_limit_8&amp;kaer_limit_11&amp;kaer_limit_2&amp;kaer_limit_13" BuffID="kaer_buff_judge_2"/>
+	<Property ID="kaer_test_buff_1_ad1b" Name="添加雷元素" EventType="1" TargetType="2" FuncNo="1" Condition="kaer_limit_1&amp;kaer_limit_4&amp;kaer_limit_10&amp;kaer_limit_7" BuffID="kaer_buff_flash_1"/>
+	<Property ID="kaer_test_buff_1_ad2b" Name="添加雷元素" EventType="1" TargetType="2" FuncNo="1" Condition="kaer_limit_2&amp;kaer_limit_5&amp;kaer_limit_11&amp;kaer_limit_8&amp;kaer_limit_13" BuffID="kaer_buff_flash_2"/>
+	<Property ID="kaer_test_buff_1_ad3b" Name="添加雷元素" EventType="1" TargetType="2" FuncNo="1" Condition="kaer_limit_3&amp;kaer_limit_9&amp;kaer_limit_12&amp;kaer_limit_6&amp;kaer_limit_13&amp;kaer_limit_14" BuffID="kaer_buff_flash_3"/>
+	<Property ID="kaer_test_buff_1_ad4b" Name="添加雷元素" EventType="1" TargetType="2" FuncNo="1" Condition="kaer_limit_1&amp;kaer_limit_4&amp;kaer_limit_10&amp;kaer_limit_7" BuffID="kaer_buff_judge_1"/>
+	<Property ID="kaer_test_buff_1_ad5b" Name="添加雷元素" EventType="1" TargetType="2" FuncNo="1" Condition="kaer_limit_2&amp;kaer_limit_5&amp;kaer_limit_11&amp;kaer_limit_8&amp;kaer_limit_13" BuffID="kaer_buff_judge_2"/>
+	<Property ID="kaer_test_buff_1_ad1c" Name="添加木元素" EventType="1" TargetType="2" FuncNo="1" Condition="kaer_limit_1&amp;kaer_limit_7&amp;kaer_limit_4&amp;kaer_limit_10" BuffID="kaer_buff_wood_1"/>
+	<Property ID="kaer_test_buff_1_ad2c" Name="添加木元素" EventType="1" TargetType="2" FuncNo="1" Condition="kaer_limit_2&amp;kaer_limit_8&amp;kaer_limit_5&amp;kaer_limit_11&amp;kaer_limit_13" BuffID="kaer_buff_wood_2"/>
+	<Property ID="kaer_test_buff_1_ad3c" Name="添加木元素" EventType="1" TargetType="2" FuncNo="1" Condition="kaer_limit_3&amp;kaer_limit_9&amp;kaer_limit_6&amp;kaer_limit_12&amp;kaer_limit_13&amp;kaer_limit_14" BuffID="kaer_buff_wood_3"/>
+	<Property ID="kaer_test_buff_1_ad4c" Name="添加木元素" EventType="1" TargetType="2" FuncNo="1" Condition="kaer_limit_1&amp;kaer_limit_7&amp;kaer_limit_4&amp;kaer_limit_10" BuffID="kaer_buff_judge_1"/>
+	<Property ID="kaer_test_buff_1_ad5c" Name="添加木元素" EventType="1" TargetType="2" FuncNo="1" Condition="kaer_limit_2&amp;kaer_limit_8&amp;kaer_limit_5&amp;kaer_limit_11&amp;kaer_limit_13" BuffID="kaer_buff_judge_2"/>
+	<Property ID="kaer_test_buff_3_ad4" Name="清除buff" EventType="1" TargetType="2" FuncNo="15" BuffConfigID="kaer_buff_ice_1"/>
+	<Property ID="kaer_test_buff_3_ad5" Name="清除buff" EventType="1" TargetType="2" FuncNo="15" BuffConfigID="kaer_buff_ice_2"/>
+	<Property ID="kaer_test_buff_3_ad6" Name="清除buff" EventType="1" TargetType="2" FuncNo="15" BuffConfigID="kaer_buff_ice_3"/>
+	<Property ID="kaer_test_buff_3_ad7" Name="清除buff" EventType="1" TargetType="2" FuncNo="15" BuffConfigID="kaer_buff_flash_1"/>
+	<Property ID="kaer_test_buff_3_ad8" Name="清除buff" EventType="1" TargetType="2" FuncNo="15" BuffConfigID="kaer_buff_flash_2"/>
+	<Property ID="kaer_test_buff_3_ad9" Name="清除buff" EventType="1" TargetType="2" FuncNo="15" BuffConfigID="kaer_buff_flash_3"/>
+	<Property ID="kaer_test_buff_3_ad10" Name="清除buff" EventType="1" TargetType="2" FuncNo="15" BuffConfigID="kaer_buff_wood_1"/>
+	<Property ID="kaer_test_buff_3_ad11" Name="清除buff" EventType="1" TargetType="2" FuncNo="15" BuffConfigID="kaer_buff_wood_2"/>
+	<Property ID="kaer_test_buff_3_ad12" Name="清除buff" EventType="1" TargetType="2" FuncNo="15" BuffConfigID="kaer_buff_wood_3"/>
+	<Property ID="kaer_create_buff_1_ad1" Name="冰小怪" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="hteam11_boss_kaer_7" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="6" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="2"/>
+	<Property ID="kaer_create_buff_2_ad1" Name="火小怪" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="hteam11_boss_kaer_9" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="6" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="2"/>
+	<Property ID="kaer_create_buff_3_ad1" Name="雷小怪" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="hteam11_boss_kaer_8" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="6" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="2"/>
+	<Property ID="kaer_create_buff_4_ad1" Name="木小怪" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="hteam11_boss_kaer_4" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="6" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="2"/>
+	<Property ID="treebro_b_buff_3_ad4" Name="剑buff" EventType="18" TargetType="5" FuncNo="99" HPPercent="-0.7"/>
+	<Property ID="guildboss_buff_2_ad1" Name="剧毒" EventType="10" TargetType="5" FuncNo="99" HPPercent="-5"/>
+	<Property ID="guildboss_buff_5_ad1" Name="中毒" EventType="10" TargetType="5" FuncNo="99" HPPercent="-1" DecByCurrentHP="-50"/>
+	<Property ID="guildboss_buff_1c_ad1" Name="添加暗" EventType="1" TargetType="2" FuncNo="1" Condition="guildboss_limit_1&amp;guildboss_limit_3&amp;guildboss_limit_5" BuffID="guildboss_buff_1a"/>
+	<Property ID="guildboss_buff_1c_ad2" Name="添加暗" EventType="1" TargetType="2" FuncNo="1" Condition="guildboss_limit_2&amp;guildboss_limit_4&amp;guildboss_limit_6&amp;kaer_limit_13" BuffID="guildboss_buff_1b"/>
+	<Property ID="guildboss_buff_1c_ad3" Name="添加暗" EventType="1" TargetType="2" FuncNo="1" Condition="guildboss_limit_1&amp;guildboss_limit_3&amp;guildboss_limit_5" BuffID="kaer_buff_judge_1"/>
+	<Property ID="guildboss_buff_2c_ad1" Name="添加毒" EventType="1" TargetType="2" FuncNo="1" Condition="guildboss_limit_1&amp;guildboss_limit_3&amp;guildboss_limit_5" BuffID="guildboss_buff_2a"/>
+	<Property ID="guildboss_buff_2c_ad2" Name="添加毒" EventType="1" TargetType="2" FuncNo="1" Condition="guildboss_limit_2&amp;guildboss_limit_4&amp;guildboss_limit_6&amp;kaer_limit_13" BuffID="guildboss_buff_2b"/>
+	<Property ID="guildboss_buff_2c_ad3" Name="添加毒" EventType="1" TargetType="2" FuncNo="1" Condition="guildboss_limit_1&amp;guildboss_limit_3&amp;guildboss_limit_5" BuffID="kaer_buff_judge_1"/>
+	<Property ID="guildboss_buff_3c_ad1" Name="添加冰" EventType="1" TargetType="2" FuncNo="1" Condition="guildboss_limit_1&amp;guildboss_limit_3&amp;guildboss_limit_5" BuffID="guildboss_buff_3a"/>
+	<Property ID="guildboss_buff_3c_ad2" Name="添加冰" EventType="1" TargetType="2" FuncNo="1" Condition="guildboss_limit_2&amp;guildboss_limit_4&amp;guildboss_limit_6&amp;kaer_limit_13" BuffID="guildboss_buff_3b"/>
+	<Property ID="guildboss_buff_3c_ad3" Name="添加冰" EventType="1" TargetType="2" FuncNo="1" Condition="guildboss_limit_1&amp;guildboss_limit_3&amp;guildboss_limit_5" BuffID="kaer_buff_judge_1"/>
+	<Property ID="guildboss_buff_8_ad1" Name="即死" EventType="3" TargetType="2" FuncNo="1" Condition="guildboss_limit_1b&amp;guildboss_limit_2b" BuffID="guildboss_buff_1"/>
+	<Property ID="guildboss_buff_8_ad2" Name="剧毒" EventType="3" TargetType="2" FuncNo="1" Condition="guildboss_limit_3b&amp;guildboss_limit_4b" BuffID="guildboss_buff_2"/>
+	<Property ID="guildboss_buff_8_ad3" Name="冰冻" EventType="3" TargetType="2" FuncNo="1" Condition="guildboss_limit_5b&amp;guildboss_limit_6b" BuffID="guildboss_buff_3"/>
+	<Property ID="guildboss_buff_8_ad4" Name="诅咒加减速" EventType="3" TargetType="2" FuncNo="1" Condition="(guildboss_limit_1b&amp;guildboss_limit_6b)|(guildboss_limit_2b&amp;guildboss_limit_5b)" BuffID="guildboss_buff_4"/>
+	<Property ID="guildboss_buff_8_ad5" Name="诅咒加中毒" EventType="3" TargetType="2" FuncNo="1" Condition="(guildboss_limit_1b&amp;guildboss_limit_4b)|(guildboss_limit_2b&amp;guildboss_limit_3b)" BuffID="guildboss_buff_5"/>
+	<Property ID="guildboss_buff_8_ad6" Name="减速加中毒" EventType="3" TargetType="2" FuncNo="1" Condition="(guildboss_limit_3b&amp;guildboss_limit_6b)|(guildboss_limit_4b&amp;guildboss_limit_5b)" BuffID="guildboss_buff_6"/>
+	<Property ID="guildboss_buff_9_ad1" Name="清除" EventType="1" TargetType="2" FuncNo="1" BuffID="guildboss_buff_9"/>
+	<Property ID="guildboss_buff_1_ad1" Name="即死" EventType="10" TargetType="5" FuncNo="99" HPPercent="-100"/>
+	<Property ID="bf_guard_buff_4_ad1" Name="5%生命" EventType="1" TargetType="4" FuncNo="99" HPPercent="-5"/>
+	<Property ID="bf_guard_buff_1_ad3" Name="添加副buff" EventType="1" TargetType="2" FuncNo="1" BuffID="bf_guard_buff_3"/>
+	<Property ID="bf_guard_buff_5_ad1" Name="伤害减免" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="90"/>
+	<Property ID="kaer_useskill_buff_1_ad21" Name="使用技能" EventType="3" TargetType="2" FuncNo="102" Condition="(kaer_limit_10b&amp;kaer_limit_11b&amp;kaer_limit_6b)|(kaer_limit_10b&amp;kaer_limit_5b&amp;kaer_limit_12b)|(kaer_limit_4b&amp;kaer_limit_11b&amp;kaer_limit_12b)" TriggerSkillConfigID="hteam11_fairyking_skill_25"/>
+	<Property ID="wboss_ape_buff_1_ad1" Name="触发技能" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="wboss_ape_skill_10"/>
+	<Property ID="bf_guard_buff_1_ad5" Name="99%免伤" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="99"/>
+	<Property ID="common_buff_zd_1_ad2" EventType="1" TargetType="2"/>
+	<Property ID="killself_buff_1_ad1" Name="杀死自己" EventType="1" TargetType="2" FuncNo="90" AttackSearchRange="120" BuckleHPPercent="-105" AttackConfigID="mon_makedamage_1"/>
+	<Property ID="buff_zs_hyd" Name="火焰刀灼烧" EventType="3" TargetType="0" FuncNo="99" HPFirmValue="500"/>
+	<Property ID="buff_jm_djzd" Name="毒箭中毒" EventType="3" TargetType="4" FuncNo="99" HPFirmValue="-500"/>
+	<Property ID="buff_zudui_boss1_002B" Name="回8%最大生命" EventType="1" TargetType="2" FuncNo="99" HPPercent="8"/>
+	<Property ID="buff_zudui_boss1_004A" Name="诅咒开启" EventType="1" TargetType="0" FuncNo="642" BufferCurseType="1" BufferCurseDefaultRate="100" BufferCurseBossRate="100"/>
+	<Property ID="buff_zudui_boss1_004B" Name="诅咒关闭" EventType="2" TargetType="0" FuncNo="642" BufferCurseType="0"/>
+	<Property ID="buff_zudui_boss2_002A" Name="扣血" EventType="1" TargetType="4" FuncNo="99" HPPercent="-30"/>
+	<Property ID="buff_zudui_boss2_002B" Name="加血" EventType="1" TargetType="0" FuncNo="99" HPPercent="30"/>
+	<Property ID="buff_zudui_boss2_004" Name="护盾" EventType="1" TargetType="0" FuncNo="630" AbsortPercentValue="5" AbsorbBombDamageRadius="6" AbsortBombEffect="feilong_skill_002A"/>
+	<Property ID="buff_zudui_boss2_005A" Name="开启隐身" EventType="1" TargetType="0" FuncNo="107" ChangePropName="1" ChangePropValue="122"/>
+	<Property ID="buff_zudui_boss2_005B" Name="关闭隐身" EventType="2" TargetType="0" FuncNo="107" ChangePropName="0" ChangePropValue="255"/>
+	<Property ID="buff_zudui_boss2_006A" Name="开启诅咒" EventType="1" TargetType="0" FuncNo="642" BufferCurseType="1" BufferCurseDefaultRate="100" BufferCurseBossRate="100"/>
+	<Property ID="buff_zudui_boss2_006B" Name="关闭诅咒" EventType="2" TargetType="0" FuncNo="642" BufferCurseType="0"/>
+	<Property ID="buff_zudui_boss2_003_1" EventType="3" TargetType="4" FuncNo="99" BuckleHPPercent="-2" HPPercent="-2" DecByCurrentHP="2"/>
+	<Property ID="wiz531_buff_1_ad1" Name="释放冰技能" EventType="1" TargetType="2" FuncNo="102" TriggerSkillConfigID="wizard531_skill_1"/>
+	<Property ID="wiz531_buff_2_ad1" Name="释放火技能" EventType="1" TargetType="2" FuncNo="102" TriggerSkillConfigID="wizard531_skill_2"/>
+	<Property ID="wiz531_buff_3_ad1" Name="释放木技能" EventType="1" TargetType="2" FuncNo="102" TriggerSkillConfigID="wizard531_skill_3"/>
+	<Property ID="wiz531_buff_4_ad1" Name="释放核爆" EventType="1" TargetType="2" FuncNo="102" TriggerSkillConfigID="wizard531_skill_4"/>
+	<Property ID="wiz531_buff_5b_ad1" Name="烧灼效果" EventType="1" TargetType="4" FuncNo="99" HPPercent="-1"/>
+	<Property ID="wiz531_buff_8_ad1" Name="创建幻象" EventTargetRelationType="3" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" Condition="wiz531_limit_4" NPCConfigID="fighter_boss_53_1" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="1" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="wiz531_buff_8_ad2" Name="创建幻象" EventTargetRelationType="3" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" Condition="wiz531_limit_5" NPCConfigID="assasin_boss_53_1" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="1" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="wiz531_buff_8_ad3" Name="创建幻象" EventTargetRelationType="3" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" Condition="wiz531_limit_6" NPCConfigID="monk_boss_53_1" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="1" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="wiz531_buff_8_ad4" Name="创建幻象" EventTargetRelationType="3" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" Condition="wiz531_limit_7" NPCConfigID="wiz_boss_53_1" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="1" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="wiz531_buff_8_ad5" Name="创建幻象" EventTargetRelationType="3" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" Condition="wiz531_limit_8" NPCConfigID="gunman_boss_53_1" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="1" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="wiz531_buff_11_ad1" Name="治疗" EventType="1" TargetType="2" FuncNo="99" HPPercent="10"/>
+	<Property ID="wiz531_buff_14_ad1" Name="减速" EventType="1" TargetType="2" FuncNo="1" Condition="wiz531_limit_2" BuffID="wiz531_buff_7"/>
+	<Property ID="wiz531_buff_14_ad2" Name="清除火" EventType="1" TargetType="2" FuncNo="1" Condition="wiz531_limit_2" BuffID="wiz531_buff_17" BuffConfigID="wiz531_buff_15"/>
+	<Property ID="wiz531_buff_14_ad3" Name="冰冻" EventType="1" TargetType="2" FuncNo="1" Condition="wiz531_limit_1" BuffID="wiz531_buff_9"/>
+	<Property ID="wiz531_buff_14_ad4" Name="治疗" EventType="1" TargetType="2" FuncNo="1" Condition="wiz531_limit_3" BuffID="wiz531_buff_11"/>
+	<Property ID="wiz531_buff_15_ad1" Name="烧灼" EventType="1" TargetType="2" FuncNo="2" Condition="wiz531_limit_3" BuffID="wiz531_buff_7" NPCConfigID="fire_53_1" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="1" IsLimitNPCCreateNumber="0" NPCCreateNumberLimit="9999999"/>
+	<Property ID="wiz531_buff_15_ad2" Name="清除木" EventType="1" TargetType="2" FuncNo="1" Condition="wiz531_limit_3" BuffID="wiz531_buff_17" BuffConfigID="wiz531_buff_16"/>
+	<Property ID="wiz531_buff_15_ad3" Name="核爆" EventType="1" TargetType="2" FuncNo="2" Condition="wiz531_limit_2" BuffID="wiz531_buff_4" NPCConfigID="bomb_53_1" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="999999999"/>
+	<Property ID="wiz531_buff_15_ad4" Name="净化" EventType="1" TargetType="2" FuncNo="1" Condition="wiz531_limit_1" BuffID="wiz531_buff_10"/>
+	<Property ID="wiz531_buff_16_ad1" Name="藤蔓" EventType="1" TargetType="2" FuncNo="1" Condition="wiz531_limit_1" BuffID="wiz531_buff_6"/>
+	<Property ID="wiz531_buff_16_ad2" Name="清除冰" EventType="1" TargetType="2" FuncNo="1" Condition="wiz531_limit_1" BuffID="wiz531_buff_17" BuffConfigID="wiz531_buff_14"/>
+	<Property ID="wiz531_buff_16_ad3" Name="幻象" EventType="1" TargetType="2" FuncNo="1" Condition="wiz531_limit_3" BuffID="wiz531_buff_8"/>
+	<Property ID="wiz531_buff_16_ad4" Name="强攻" EventType="1" TargetType="2" FuncNo="1" Condition="wiz531_limit_2" BuffID="wiz531_buff_12"/>
+	<Property ID="buff_tjb" Name="添加黑力场" EventType="3" TargetType="2" FuncNo="1" Condition="hp_20-" BuffID="buff_blc"/>
+	<Property ID="buff_tjw" Name="添加白力场" EventType="3" TargetType="2" FuncNo="1" Condition="hp_20+&amp;hp_45-|hp_55+&amp;hp_80-" BuffID="buff_wlc"/>
+	<Property ID="buff_tjr" Name="添加红力场" EventType="3" TargetType="2" FuncNo="1" Condition="hp_45+&amp;hp_55-" BuffID="buff_hslc"/>
+	<Property ID="buff_black" Name="黑力场" EventType="1" TargetType="2" FuncNo="102" BuffID="buff_ahcr" TriggerSkillConfigID="hlc_skill_hsjs"/>
+	<Property ID="buff_write" Name="白力场" EventType="1" TargetType="2" FuncNo="102" BuffID="buff_yrjh" TriggerSkillConfigID="blc_skill_hsjs"/>
+	<Property ID="buff_red" Name="红力场" EventType="1" TargetType="2" FuncNo="102" TriggerSkillConfigID="rlc_skill_hsjs"/>
+	<Property ID="buff_ancr" Name="暗黑缠绕" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_yrhh"/>
+	<Property ID="buff_yrth" Name="翼人天火掉血" EventType="1" TargetType="2" FuncNo="90" AttackSearchRange="20" BuckleHPPercent="-1"/>
+	<Property ID="buff_hf_hsjt" Name="石头回血" EventType="3" TargetType="4" FuncNo="99" AttackSearchRange="20" BuckleHPPercent="1" HPPercent="1"/>
+	<Property ID="wiz531_buff_18_ad1" Name="清除幻象" EventType="1" TargetType="4" FuncNo="99" Condition="wiz531_limit_9" HPPercent="-105"/>
+	<Property ID="wiz531_buff_10_ad1" Name="清除幻象" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="killshadow_53_1" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="9999999"/>
+	<Property ID="wiz531_buff_19_ad1" Name="幻象自杀" EventType="2" TargetType="2" FuncNo="90" AttackSearchRange="50" BuckleHPPercent="-105"/>
+	<Property ID="fairy541_buff_1_ad1" Name="变身精灵" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\monster\mon_shu_094_a.ini" ChangeModelSkillID="fairy541_skill_1; ;fairy541_skill_2; ;fairy541_skill_3" ChangeModelEffect="common_change_002" ChangeModelTime="360"/>
+	<Property ID="minibomb_buff_1_ad1" Name="爆弹百比伤害" EventType="1" TargetType="2" FuncNo="90" AttackSearchRange="50" BuckleHPPercent="-24.5" HPPercent="-33"/>
+	<Property ID="minibomb_buff_4_ad1" Name="爆弹百比伤害" EventType="1" TargetType="4" FuncNo="99" HPPercent="-50"/>
+	<Property ID="ass532_buff_1_ad1" Name="变身刺客" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\npc\ass_equip_001_1.ini" ChangeModelSkillID=" ; ; ; ; " ChangeModelEffect="common_change_002" ChangeModelTime="360"/>
+	<Property ID="ass532_buff_2_ad1" Name="变身枪手" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\monster\ger_equip_003_2.ini" ChangeModelSkillID=" ; ; ; ; " ChangeModelEffect="common_change_002" ChangeModelTime="360"/>
+	<Property ID="ass532_buff_3_ad1" Name="变身大盗" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\pet\pet_shu_027.ini" ChangeModelSkillID=" ; ; ; ; " ChangeModelEffect="common_change_002" ChangeModelTime="360"/>
+	<Property ID="ass532_buff_4_ad1" Name="变身鱼人" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\monster\mon_shu_082c.ini" ChangeModelSkillID=" ; ; ; ; " ChangeModelEffect="common_change_002" ChangeModelTime="360"/>
+	<Property ID="ass532_buff_5_ad1" Name="黄沙普攻" EventType="1" TargetType="2" FuncNo="102" Condition="ass532_limit_1b&amp;ass532_limit_2b&amp;ass532_limit_3b&amp;ass532_limit_4b" TriggerSkillConfigID="rl_hssz532_skill_1"/>
+	<Property ID="ass532_buff_5_ad2" Name="刺客普攻" EventType="1" TargetType="2" FuncNo="102" Condition="ass532_limit_1" TriggerSkillConfigID="CK_Ns532_skill_1"/>
+	<Property ID="ass532_buff_5_ad3" Name="枪手普攻" EventType="1" TargetType="2" FuncNo="102" Condition="ass532_limit_2" TriggerSkillConfigID="gun532_ns_skill_1"/>
+	<Property ID="ass532_buff_5_ad4" Name="大盗普攻" EventType="1" TargetType="2" FuncNo="102" Condition="ass532_limit_3" TriggerSkillConfigID="treebro532_a_skill_1"/>
+	<Property ID="ass532_buff_5_ad5" Name="鱼人普攻" EventType="1" TargetType="2" FuncNo="102" Condition="ass532_limit_4" TriggerSkillConfigID="yr_ass532_skill_6"/>
+	<Property ID="ass532_buff_6_ad1" Name="黄沙技能1" EventType="1" TargetType="2" FuncNo="102" Condition="ass532_limit_1b&amp;ass532_limit_2b&amp;ass532_limit_3b&amp;ass532_limit_4b" TriggerSkillConfigID="rl_hssz532_skill_5"/>
+	<Property ID="ass532_buff_6_ad2" Name="刺客技能1" EventType="1" TargetType="2" FuncNo="102" Condition="ass532_limit_1" TriggerSkillConfigID="CK_Ns532_skill_2"/>
+	<Property ID="ass532_buff_6_ad3" Name="枪手技能1" EventType="1" TargetType="2" FuncNo="102" Condition="ass532_limit_2" TriggerSkillConfigID="gun532_ns_skill_2"/>
+	<Property ID="ass532_buff_6_ad4" Name="大盗技能1" EventType="1" TargetType="2" FuncNo="102" Condition="ass532_limit_3" TriggerSkillConfigID="treebro532_a_skill_2"/>
+	<Property ID="ass532_buff_6_ad5" Name="鱼人技能1" EventType="1" TargetType="2" FuncNo="102" Condition="ass532_limit_4" TriggerSkillConfigID="yr_ass532_skill_2"/>
+	<Property ID="ass532_buff_7_ad1" Name="黄沙技能2" EventType="1" TargetType="2" FuncNo="102" Condition="ass532_limit_1b&amp;ass532_limit_2b&amp;ass532_limit_3b&amp;ass532_limit_4b" TriggerSkillConfigID="rl_hssz532_skill_3"/>
+	<Property ID="ass532_buff_7_ad2" Name="刺客技能2" EventType="1" TargetType="2" FuncNo="102" Condition="ass532_limit_1" TriggerSkillConfigID="CK_Ns532_skill_3"/>
+	<Property ID="ass532_buff_7_ad3" Name="枪手技能2" EventType="1" TargetType="2" FuncNo="102" Condition="ass532_limit_2" TriggerSkillConfigID="gun532_ns_skill_3"/>
+	<Property ID="ass532_buff_7_ad4" Name="大盗技能2" EventType="1" TargetType="2" FuncNo="102" Condition="ass532_limit_3" TriggerSkillConfigID="treebro532_a_skill_3"/>
+	<Property ID="ass532_buff_7_ad5" Name="鱼人技能2" EventType="1" TargetType="2" FuncNo="102" Condition="ass532_limit_4" TriggerSkillConfigID="yr_ass532_skill_7"/>
+	<Property ID="doom523_buff_1_ad1" Name="升级Lv1" EventType="1" TargetType="2" FuncNo="1" Condition="doom523_limit_4&amp;doom523_limit_5&amp;doom523_limit_6&amp;doom523_limit_1a&amp;doom523_limit_2a&amp;doom523_limit_3a" BuffID="doom523_buff_3a"/>
+	<Property ID="doom523_buff_1_ad2" Name="升级Lv2" EventType="1" TargetType="2" FuncNo="1" Condition="doom523_limit_4&amp;doom523_limit_5&amp;doom523_limit_6&amp;doom523_limit_1" BuffID="doom523_buff_3b"/>
+	<Property ID="doom523_buff_1_ad3" Name="升级Lv3" EventType="1" TargetType="2" FuncNo="1" Condition="doom523_limit_4&amp;doom523_limit_5&amp;doom523_limit_6&amp;doom523_limit_2" BuffID="doom523_buff_3c"/>
+	<Property ID="doom523_buff_2_ad1" Name="释放等级炮1" EventType="1" TargetType="2" FuncNo="102" Condition="doom523_limit_1" TriggerSkillConfigID="doom523_skill_1a"/>
+	<Property ID="doom523_buff_2_ad2" Name="释放等级炮2" EventType="1" TargetType="2" FuncNo="102" Condition="doom523_limit_2" TriggerSkillConfigID="doom523_skill_1b"/>
+	<Property ID="doom523_buff_2_ad3" Name="释放等级炮3" EventType="1" TargetType="2" FuncNo="102" Condition="doom523_limit_3" TriggerSkillConfigID="doom523_skill_1c"/>
+	<Property ID="doom523_buff_5_ad1" Name="添加火元素" EventType="1" TargetType="2" FuncNo="1" Condition="doom523_limit_4a&amp;doom523_limit_3a" BuffID="doom523_buff_4a"/>
+	<Property ID="doom523_buff_5_ad2" Name="添加火元素" EventType="1" TargetType="2" FuncNo="1" Condition="doom523_limit_5a&amp;kaer_limit_13&amp;doom523_limit_3a" BuffID="doom523_buff_4b"/>
+	<Property ID="doom523_buff_5_ad3" Name="添加火元素" EventType="1" TargetType="2" FuncNo="1" Condition="doom523_limit_6a&amp;kaer_limit_13&amp;kaer_limit_14&amp;doom523_limit_3a" BuffID="doom523_buff_4c"/>
+	<Property ID="doom523_buff_5_ad4" Name="添加火元素" EventType="1" TargetType="2" FuncNo="1" Condition="doom523_limit_4a&amp;doom523_limit_3a" BuffID="kaer_buff_judge_1"/>
+	<Property ID="doom523_buff_5_ad5" Name="添加火元素" EventType="1" TargetType="2" FuncNo="1" Condition="doom523_limit_5a&amp;kaer_limit_13&amp;doom523_limit_3a" BuffID="kaer_buff_judge_2"/>
+	<Property ID="doom523_buff_7_ad1" Name="10百比伤害" EventType="1" TargetType="4" FuncNo="99" HPPercent="-10"/>
+	<Property ID="doom523_buff_8_ad1" Name="30百比伤害" EventType="1" TargetType="4" FuncNo="99" HPPercent="-30"/>
+	<Property ID="doom523_buff_9_ad1" Name="70百比伤害" EventType="1" TargetType="4" FuncNo="99" HPPercent="-70"/>
+	<Property ID="doom523_buff_1_ad4" Name="清空怒气" EventType="1" TargetType="2" FuncNo="1" Condition="(doom523_limit_1|doom523_limit_2|doom523_limit_3)&amp;doom523_limit_7" BuffID="doom523_buff_10"/>
+	<Property ID="doom523_buff_1_ad5" Name="添加清空标记" EventType="1" TargetType="2" FuncNo="1" Condition="doom523_limit_4&amp;doom523_limit_5&amp;doom523_limit_6&amp;doom523_limit_1a&amp;doom523_limit_2a&amp;doom523_limit_3a" BuffID="doom523_buff_11"/>
+	<Property ID="doom523_buff_1_ad6" Name="添加清空标记" EventType="1" TargetType="2" FuncNo="1" Condition="doom523_limit_4&amp;doom523_limit_5&amp;doom523_limit_6&amp;doom523_limit_1" BuffID="doom523_buff_11"/>
+	<Property ID="doom523_buff_1_ad7" Name="添加清空标记" EventType="1" TargetType="2" FuncNo="1" Condition="doom523_limit_4&amp;doom523_limit_5&amp;doom523_limit_6&amp;doom523_limit_2" BuffID="doom523_buff_11"/>
+	<Property ID="dk533_buff_1_ad1" Name="区域一熔岩" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="rongyanboom_53_3" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="-34.868427" NPCCreatePosY="10.097" NPCCreatePosZ="0.154635" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="9999999"/>
+	<Property ID="dk533_buff_2_ad1" Name="区域二熔岩" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="rongyanboom_53_3_1" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="-34.769947" NPCCreatePosY="10.064194" NPCCreatePosZ="16.302774" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="9999999"/>
+	<Property ID="dk533_buff_3_ad1" Name="区域三熔岩" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="rongyanboom_53_3_2" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="-18.181248" NPCCreatePosY="10.111987" NPCCreatePosZ="0.214665" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="9999999"/>
+	<Property ID="dk533_buff_4_ad1" Name="区域四熔岩" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="rongyanboom_53_3_3" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="-35.357456" NPCCreatePosY="10.064194" NPCCreatePosZ="-16.977915" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="9999999"/>
+	<Property ID="dk533_buff_5_ad1" Name="区域五熔岩" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="rongyanboom_53_3_4" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="-52.146305" NPCCreatePosY="10.090322" NPCCreatePosZ="-0.110646" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="9999999"/>
+	<Property ID="vam522_buff_1_ad1" Name="治愈血球（玩家）" EventType="1" TargetType="4" FuncNo="99" HPPercent="20"/>
+	<Property ID="vam522_buff_1b_ad1" Name="治愈血球（怪物）" EventType="1" TargetType="4" FuncNo="99" HPPercent="-20"/>
+	<Property ID="vam522_buff_2_ad1" Name="毒性血球（玩家）" EventType="1" TargetType="4" FuncNo="99" HPPercent="-20"/>
+	<Property ID="vam522_buff_2b_ad1" Name="毒性血球（怪物）" EventType="1" TargetType="4" FuncNo="99" HPPercent="20"/>
+	<Property ID="vam522_buff_3_ad1" Name="血缚诅咒" EventType="2" TargetType="4" FuncNo="99" HPPercent="-105"/>
+	<Property ID="vam522_buff_5_ad1" Name="触发治愈血球技能" EventType="2" TargetType="2" FuncNo="102" Condition="vam522_limit_1" TriggerSkillConfigID="blood522_skill_1"/>
+	<Property ID="vam522_buff_5_ad2" Name="触发毒性血球技能" EventType="2" TargetType="2" FuncNo="102" Condition="vam522_limit_2" TriggerSkillConfigID="blood522_skill_2"/>
+	<Property ID="vam522_buff_6_ad1" Name="创建治愈血球" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="bloodball_52_2" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="2" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="999999"/>
+	<Property ID="vam522_buff_6b_ad1" Name="创建毒性血球" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="posionball_52_2" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="2" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="999999"/>
+	<Property ID="buff_zudui_shuiquan_001_1" EventType="3" TargetType="0" FuncNo="99" HPPercent="0.5"/>
+	<Property ID="minibomb_buff_6_ad1" Name="秒杀小怪" EventType="1" TargetType="2" FuncNo="90" AttackSearchRange="50" BuckleHPPercent="-105" HPPercent="-105"/>
+	<Property ID="minibomb_buff_7_ad1" Name="爆炸伤害（boss）" EventType="1" TargetType="2" FuncNo="1" Condition="minibomb_limit_1" BuffID="minibomb_buff_1"/>
+	<Property ID="minibomb_buff_7_ad2" Name="爆炸伤害（小怪）" EventType="1" TargetType="2" FuncNo="1" Condition="minibomb_limit_1b" BuffID="minibomb_buff_6"/>
+	<Property ID="jy_buff_soulheal_ad1" Name="治愈" EventType="1" TargetType="4" FuncNo="99" HPPercent="0.5"/>
+	<Property ID="sjdx_buff_bk" Name="冰块受击掉血" EventType="18" TargetType="5" FuncNo="99" HPPercent="-4"/>
+	<Property ID="bk_buff_mysh" Name="冰块免疫伤害" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="100"/>
+	<Property ID="buff_bd_zhbk" Name="召唤冰块" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="zh_bk_jmbd" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="4"/>
+	<Property ID="buff_bkrh" Name="冰块融化" EventType="3" TargetType="2" FuncNo="90" AttackSearchRange="120" BuckleHPPercent="-2.5" HPPercent="-4"/>
+	<Property ID="buff_bk_jd" Name="冰块解冻" EventType="4" TargetType="2" FuncNo="102" TriggerSkillConfigID="bkjd_jm_skill_1"/>
+	<Property ID="buff_jm_hd" Name="蓝色巨魔活动" EventTargetRelationType="0" EventTargetClassType="1" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_jm_bd_01"/>
+	<Property ID="buff_jsbk" Name="击碎冰块" EventTargetRelationType="2,1" EventTargetClassType="1" EventType="1" TargetType="4" FuncNo="99" HPPercent="-1"/>
+	<Property ID="buff_zudui_boss2_004A" Name="护盾关闭" EventType="2" TargetType="0" FuncNo="630" AbsorbBombDamageRadius="6" AbsortBombEffect="feilong_skill_002A"/>
+	<Property ID="battle_3v3_buff_3_ad1" Name="治疗" EventType="1" TargetType="2" FuncNo="99" HPPercent="2"/>
+	<Property ID="dk533_buff_6_ad1" Name="25%生命值减少" EventType="1" TargetType="4" FuncNo="99" HPPercent="-12"/>
+	<Property ID="wiz531_buff_21_ad1" Name="核爆伤害" EventType="1" TargetType="4" FuncNo="99" HPPercent="-33"/>
+	<Property ID="jm871_buff_1_ad1" Name="冰块自杀" EventType="1" TargetType="2" FuncNo="90" AttackSearchRange="50" BuckleHPPercent="-105"/>
+	<Property ID="jm871_buff_3_ad1" Name="再次添加buff" EventType="2" TargetType="2" FuncNo="1" BuffID="jm871_buff_3"/>
+	<Property ID="jm871_buff_3_ad2" Name="创建冰块光环" EventType="2" TargetType="2" FuncNo="2" NPCConfigID="zh_bk_jmbd" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0.0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="999999"/>
+	<Property ID="buff_wushenzs_022" Name="汉克铁山靠暴击晕眩" EventType="20" TargetType="5" FuncNo="1" EffectRatioParam="20" BuffID="buff_wushenzs_023" BuffTimeModifyRatio="100"/>
+	<Property ID="buff_wushenzs_027_1" Name="开启幽灵船长幽灵诅咒效果提高" EventType="1" TargetType="0" FuncNo="642" BufferCurseType="1" BufferCurseDefaultRate="100" BufferCurseBossRate="50"/>
+	<Property ID="buff_wushenzs_027_2" Name="关闭幽灵船长幽灵诅咒效果提高" EventType="2" TargetType="0" FuncNo="642" BufferCurseType="0"/>
+	<Property ID="buff_wushenzs_019" Name="陈普攻回血" EventType="1" TargetType="4" FuncNo="98" AttackEffectType="3" AttackEffectRatio="6" AttackReturnHPRatio="3"/>
+	<Property ID="buff_ws_skill_44_3B" Name="法力流失" EventType="3" TargetType="0" FuncNo="713" MetersDisMaxMPPercent="1"/>
+	<Property ID="hydp_zs" Name="火焰斗篷灼烧" EventType="3" TargetType="4" FuncNo="99" HPPercent="-3"/>
+	<Property ID="sjdx_buff_xl" Name="邪灵受击掉血" EventType="18" TargetType="5" FuncNo="99" HPPercent="-20"/>
+	<Property ID="xlzb_buff_1" Name="邪灵自爆" EventType="2" TargetType="2" FuncNo="102"/>
+	<Property ID="add_mwy_buff" Name="增加免位移" EventType="1" TargetType="4" FuncNo="1" BuffID="buff_jtmy_my"/>
+	<Property ID="buff_ws_skill_44_3B_1" Name="法力流失" EventType="1" TargetType="0" FuncNo="713"/>
+	<Property ID="bs_buff_zdr" Name="变身炸弹人" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\monster\mon_shu_032_a.ini" ChangeModelSkillID="fzzd_skill_bszdr_1; ;zd2_repick_skill_1; ; " ChangeModelEffect="common_change_002" ChangeModelTime="999999"/>
+	<Property ID="hyzd_buff_zdr" Name="释放火焰炸弹" EventType="1" TargetType="2" FuncNo="2" Condition="hboom_limit_1" NPCConfigID="fire_boom" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="9999999999" TriggerSkillConfigID="hybz_skill_ktsy"/>
+	<Property ID="ppzd_buff_zdr" Name="释放泡泡炸弹" EventType="1" TargetType="2" FuncNo="2" Condition="pboom_limit_1" NPCConfigID="pp_boom" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="999999999" TriggerSkillConfigID="ppbz_skill_ktsy"/>
+	<Property ID="bszd_buff_zdr" Name="释放冰霜炸弹" EventType="1" TargetType="2" FuncNo="2" Condition="sboom_limit_1" NPCConfigID="ice_boom" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="999999999" TriggerSkillConfigID="bsbz_skill_ktsy"/>
+	<Property ID="ysfd_buff_zdr" Name="释放压缩风弹" EventType="1" TargetType="2" FuncNo="2" Condition="fboom_limit_1" NPCConfigID="wind_boom" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="999999999999" TriggerSkillConfigID="fdbz_skill_ktsy"/>
+	<Property ID="pfzd_buff_zdr" Name="释放破防炸弹" EventType="1" TargetType="2" FuncNo="2" Condition="pfboom_limit_1" NPCConfigID="break_boom" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="99999999" TriggerSkillConfigID="pfbz_skill_ktsy"/>
+	<Property ID="ptzd_buff_zdr" Name="释放普通炸弹" EventType="1" TargetType="2" FuncNo="2" Condition="hboom_limit_2&amp;sboom_limit_2&amp;pfboom_limit_2&amp;pboom_limit_2&amp;fboom_limit_2" NPCConfigID="fire_boom" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateOrient="0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="99999999"/>
+	<Property ID="rebs_buff_zdr" Name="关闭变身炸弹人" EventType="2" TargetType="2" FuncNo="617" ChangeModelPath="ini\npc\monster\mon_shu_032_a.ini" ChangeModelSkillID="fzzd_skill_bszdr; ; ; ; " ChangeModelScale="1.2" ChangeModelTime="999999"/>
+	<Property ID="fire_boom_001" Name="火克风" EventType="1" TargetType="4" FuncNo="90" Condition="wind_other" AttackSearchRange="50" BuckleHPPercent="-5" HPPercent="-5"/>
+	<Property ID="ice_boom_001" Name="冰克火" EventType="1" TargetType="4" FuncNo="90" Condition="fire_other" AttackSearchRange="50" BuckleHPPercent="-5" HPPercent="-5"/>
+	<Property ID="wind_boom_001" Name="风克冰" EventType="1" TargetType="4" FuncNo="90" Condition="ice_other" AttackSearchRange="50" BuckleHPPercent="-5" HPPercent="-5"/>
+	<Property ID="hyly_buff_zs" Name="火焰灼烧" EventType="3" TargetType="4" FuncNo="99" HPPercent="-2"/>
+	<Property ID="bj_ms_buff_ny" Name="冰甲减伤" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="90"/>
+	<Property ID="ice_buff_hf" Name="冰回复" EventType="1" TargetType="4" FuncNo="99" Condition="ice_other" HPPercent="5"/>
+	<Property ID="wind_buff_hf" Name="风回复" EventType="1" TargetType="4" FuncNo="99" Condition="wind_other" HPPercent="5"/>
+	<Property ID="fire_buff_hf" Name="火回复" EventType="1" TargetType="4" FuncNo="99" Condition="fire_other" HPPercent="5"/>
+	<Property ID="fire_buff_mysh" Name="火焰免疫伤害" EventType="18" TargetType="2" FuncNo="602" Condition="fire_other" ImmunityPercent="100"/>
+	<Property ID="ice_buff_mysh" Name="冰免疫伤害" EventType="18" TargetType="2" FuncNo="602" Condition="ice_other" ImmunityPercent="100"/>
+	<Property ID="wind_buff_mysh" Name="风免疫伤害" EventType="18" TargetType="2" FuncNo="602" Condition="wind_other" ImmunityPercent="100"/>
+	<Property ID="hydp_buff_hx" Name="火焰斗篷回血" EventType="1" TargetType="2" FuncNo="90" Condition="hydp_limit_1" AttackSearchRange="50" BuckleHPPercent="10"/>
+	<Property ID="wind_buff_mysh_1" Name="风免疫伤害" EventType="18" TargetType="2" FuncNo="602" Condition="hydp_limit_1" ImmunityPercent="100"/>
+	<Property ID="back_buff_ktsy" Name="击退" EventType="1" TargetType="4" FuncNo="604" HitBack2MoveSpeed="8" HitBack2MoveDistance="3" HitBack2Action="back" AttackSearchRange="120" BuckleHPPercent="-105"/>
+	<Property ID="hp_buff_d10" Name="扣血10%" EventType="1" TargetType="4" FuncNo="99" AttackSearchRange="120" BuckleHPPercent="10" HPPercent="-10"/>
+	<Property ID="zd2_dam_buff_1_ad1" Name="33%伤害" EventType="1" TargetType="2" FuncNo="90" AttackSearchRange="60" BuckleHPPercent="-33" BuckleType="1"/>
+	<Property ID="zd2_dam_buff_2_ad1" Name="29%伤害" EventType="1" TargetType="2" FuncNo="90" AttackSearchRange="60" BuckleHPPercent="-29" BuckleType="1"/>
+	<Property ID="zd2_dam_buff_3_ad1" Name="15%伤害" EventType="1" TargetType="2" FuncNo="90" AttackSearchRange="60" BuckleHPPercent="-15" BuckleType="1"/>
+	<Property ID="zd2_dam_buff_4_ad1" Name="1%伤害" EventType="1" TargetType="2" FuncNo="90" AttackSearchRange="60" BuckleHPPercent="-1" BuckleType="1"/>
+	<Property ID="zd2_dam_buff_5_ad1" Name="2%伤害" EventType="1" TargetType="2" FuncNo="90" AttackSearchRange="60" BuckleHPPercent="-2" BuckleType="1"/>
+	<Property ID="zd2_dam_buff_6_ad1" Name="4%伤害（boss）" EventType="1" TargetType="2" FuncNo="90" AttackSearchRange="60" BuckleHPPercent="-4" BuckleType="1"/>
+	<Property ID="zd2_dam_buff_7_ad1" Name="2%伤害（boss）" EventType="1" TargetType="2" FuncNo="90" AttackSearchRange="60" BuckleHPPercent="-2" BuckleType="1"/>
+	<Property ID="zd2_dam_buff_8_ad1" Name="0.5%伤害（boss）" EventType="1" TargetType="2" FuncNo="90" AttackSearchRange="60" BuckleHPPercent="-1.5" BuckleType="1"/>
+	<Property ID="zd2_fire_buff_1_ad1" Name="对普通小怪造成33%伤害" EventType="1" TargetType="2" FuncNo="1" Condition="zd2_boss_limit_1a&amp;zd2_boss_limit_2a&amp;zd2_boss_limit_3a&amp;zd2_fire_limit&amp;zd2_ice_limit&amp;zd2_bd_limit_1a&amp;zd2_hypf_limit_1a" BuffID="zd2_dam_buff_1"/>
+	<Property ID="zd2_fire_buff_1_ad2" Name="对冰boss造成1%伤害" EventType="1" TargetType="2" FuncNo="1" Condition="zdr_ny_limit_2" BuffID="zd2_dam_buff_4"/>
+	<Property ID="zd2_fire_buff_1_ad3" Name="对风小怪额外造成29%伤害" EventType="1" TargetType="2" FuncNo="1" Condition="wind_other" BuffID="zd2_dam_buff_2"/>
+	<Property ID="zd2_fire_buff_1_ad4" Name="对冰小怪造成15%伤害" EventType="1" TargetType="2" FuncNo="1" Condition="ice_other" BuffID="zd2_dam_buff_3"/>
+	<Property ID="zd2_fire_buff_1_ad5" Name="治疗火小怪10%生命" EventType="1" TargetType="2" FuncNo="99" Condition="fire_other|zd2_hypf_limit_1" HPPercent="10" HPHandleType="1"/>
+	<Property ID="zd2_fire_buff_1_ad6" Name="对雷boss造成4%伤害" EventType="1" TargetType="2" FuncNo="1" Condition="zdr_ny_limit_3" BuffID="zd2_dam_buff_6"/>
+	<Property ID="zd2_fire_buff_1_ad7" Name="对火boss治疗1%" EventType="1" TargetType="2" FuncNo="99" Condition="zdr_ny_limit_1" BuffID="zd2_dam_buff_6" HPPercent="1" HPHandleType="1"/>
+	<Property ID="zd2_ice_buff_1_ad1" Name="对普通小怪造成29%伤害" EventType="1" TargetType="2" FuncNo="1" Condition="zd2_boss_limit_1a&amp;zd2_boss_limit_2a&amp;zd2_boss_limit_3a&amp;zd2_wind_limit&amp;zd2_ice_limit" BuffID="zd2_dam_buff_2"/>
+	<Property ID="zd2_ice_buff_1_ad2" Name="对雷boss造成1%伤害" EventType="1" TargetType="2" FuncNo="1" Condition="zdr_ny_limit_3" BuffID="zd2_dam_buff_4"/>
+	<Property ID="zd2_ice_buff_1_ad3" Name="对火小怪额外造成29%伤害" EventType="1" TargetType="2" FuncNo="1" Condition="fire_other" BuffID="zd2_dam_buff_2"/>
+	<Property ID="zd2_ice_buff_1_ad4" Name="对风小怪造成5%伤害" EventType="1" TargetType="2" FuncNo="1" Condition="wind_other" BuffID="zd2_dam_buff_9"/>
+	<Property ID="zd2_ice_buff_1_ad5" Name="治疗冰小怪10%生命" EventType="1" TargetType="2" FuncNo="99" Condition="ice_other" HPPercent="10" HPHandleType="1"/>
+	<Property ID="zd2_ice_buff_1_ad6" Name="冰冻效果" EventType="1" TargetType="2" FuncNo="1" Condition="zd2_boss_limit_1a&amp;zd2_boss_limit_2a&amp;zd2_boss_limit_3a&amp;zd2_ice_limit" BuffID="ice_buff_freeze" HPPercent="10"/>
+	<Property ID="zd2_ice_buff_1_ad7" Name="减速效果" EventType="1" TargetType="2" FuncNo="1" Condition="zd2_hypf_limit_1a|zd2_bj_limit_1a" BuffID="zd2_slowdown_buff_1" HPPercent="10"/>
+	<Property ID="zd2_ice_buff_1_ad8" Name="对火boss造成4%伤害" EventType="1" TargetType="2" FuncNo="1" Condition="zdr_ny_limit_1" BuffID="zd2_dam_buff_6"/>
+	<Property ID="zd2_ice_buff_1_ad9" Name="治疗冰boss1%生命" EventType="1" TargetType="2" FuncNo="99" Condition="zdr_ny_limit_2" HPPercent="1" HPHandleType="1"/>
+	<Property ID="zd2_wind_buff_1_ad1" Name="对普通小怪造成29%伤害" EventType="1" TargetType="2" FuncNo="1" Condition="zd2_boss_limit_1a&amp;zd2_boss_limit_2a&amp;zd2_boss_limit_3a&amp;zd2_wind_limit&amp;zd2_fire_limit" BuffID="zd2_dam_buff_2"/>
+	<Property ID="zd2_wind_buff_1_ad2" Name="对火boss造成1%伤害" EventType="1" TargetType="2" FuncNo="1" Condition="zdr_ny_limit_1" BuffID="zd2_dam_buff_4"/>
+	<Property ID="zd2_wind_buff_1_ad3" Name="对冰小怪额外造成29%伤害" EventType="1" TargetType="2" FuncNo="1" Condition="ice_other" BuffID="zd2_dam_buff_2"/>
+	<Property ID="zd2_wind_buff_1_ad4" Name="对火小怪造成2%伤害" EventType="1" TargetType="2" FuncNo="1" Condition="fire_other" BuffID="zd2_dam_buff_5"/>
+	<Property ID="zd2_wind_buff_1_ad5" Name="治疗风小怪10%生命" EventType="1" TargetType="2" FuncNo="99" Condition="wind_other|zd2_hypf_limit_1" HPPercent="10" HPHandleType="1"/>
+	<Property ID="zd2_wind_buff_1_ad6" Name="秒杀冰晶" EventType="1" TargetType="2" FuncNo="90" Condition="zdr_ny_limit_4" AttackSearchRange="80" BuckleHPPercent="-110" BuckleType="1" HPPercent="-110" HPHandleType="1"/>
+	<Property ID="zd2_wind_buff_1_ad8" Name="对冰boss造成4%伤害" EventType="1" TargetType="2" FuncNo="1" Condition="zdr_ny_limit_2" BuffID="zd2_dam_buff_6"/>
+	<Property ID="zd2_wind_buff_1_ad9" Name="治疗雷boss1%生命" EventType="1" TargetType="2" FuncNo="99" Condition="zdr_ny_limit_3" HPPercent="1" HPHandleType="1"/>
+	<Property ID="zd2_dam_buff_10_ad1" Name="10%伤害" EventType="1" TargetType="4" FuncNo="99" AttackSearchRange="60" BuckleHPPercent="-5" HPPercent="-10" HPHandleType="1"/>
+	<Property ID="zd2_dam_buff_11_ad1" Name="5%伤害" EventType="1" TargetType="4" FuncNo="99" AttackSearchRange="60" BuckleHPPercent="-5" HPPercent="-5" HPHandleType="1"/>
+	<Property ID="zd2_dam_buff_12_ad1" Name="固定10" EventType="1" TargetType="4" FuncNo="99" AttackSearchRange="60" BuckleHPPercent="-5" HPFirmValue="-10"/>
+	<Property ID="zd2_wire_buff_1_ad1" Name="对普通boss造成0.1%伤害" EventType="1" TargetType="2" FuncNo="1" Condition="zd2_boss_limit_1|zd2_boss_limit_2|zd2_boss_limit_3" BuffID="zd2_dam_buff_7"/>
+	<Property ID="zd2_wire_buff_1_ad2" Name="对普通小怪造成10%伤害" EventType="1" TargetType="2" FuncNo="1" Condition="zd2_boss_limit_1a&amp;zd2_boss_limit_2a&amp;zd2_boss_limit_3a" BuffID="zd2_dam_buff_3"/>
+	<Property ID="zd2_dam_buff_9_ad1" Name="5%伤害" EventType="1" TargetType="2" FuncNo="90" AttackSearchRange="60" BuckleHPPercent="-5" BuckleType="1"/>
+	<Property ID="back_buff_ktsy_1" Name="击退" EventType="1" TargetType="4" FuncNo="604" HitBack2MoveSpeed="8" HitBack2MoveDistance="3" HitBack2Action="back"/>
+	<Property ID="zd2_firehalo_buff_1_ad1" Name="对普通小怪造成2%伤害" EventType="1" TargetType="2" FuncNo="1" Condition="zd2_boss_limit_1a&amp;zd2_boss_limit_2a&amp;zd2_boss_limit_3a&amp;zd2_fire_limit" BuffID="zd2_dam_buff_5"/>
+	<Property ID="zd2_firehalo_buff_1_ad3" Name="对风小怪额外造成2%伤害" EventType="1" TargetType="2" FuncNo="1" Condition="wind_other" BuffID="zd2_dam_buff_5"/>
+	<Property ID="zd2_firehalo_buff_1_ad5" Name="对玩家武神造成1%最大血量伤害" EventTargetRelationType="3" EventTargetClassType="0,5" EventType="1" TargetType="4" FuncNo="99" Condition="wiz531_limit_4|wiz531_limit_5|wiz531_limit_6|wiz531_limit_7|wiz531_limit_8|wiz531_limit_10" HPPercent="-1" HPHandleType="1"/>
+	<Property ID="zd2_firehalo_buff_1_ad4" Name="治疗火小怪5%生命" EventType="1" TargetType="2" FuncNo="99" Condition="fire_other|zd2_hypf_limit_1" HPPercent="5" HPHandleType="1"/>
+	<Property ID="zd2_cure_buff_1" Name="全体治疗百分之5" EventType="1" TargetType="4" FuncNo="99" AttackSearchRange="60" BuckleHPPercent="5" HPPercent="5" HPHandleType="1"/>
+	<Property ID="test_bs_buff_1_ad1" Name="变身炸弹人" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\monster\mon_shu_032_a.ini" ChangeModelSkillID="test_hybz_skill_ktsy; ;zd2_repick_skill_1; ; " ChangeModelEffect="common_change_002" ChangeModelTime="999999"/>
+	<Property ID="test_bs_buff_2_ad1" Name="变身炸弹人" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\monster\mon_shu_032_a.ini" ChangeModelSkillID="test_bsbz_skill_ktsy; ;zd2_repick_skill_1; ; " ChangeModelEffect="common_change_002" ChangeModelTime="999999"/>
+	<Property ID="test_bs_buff_3_ad1" Name="变身炸弹人" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\monster\mon_shu_032_a.ini" ChangeModelSkillID="test_fdbz_skill_ktsy; ;zd2_repick_skill_1; ; " ChangeModelEffect="common_change_002" ChangeModelTime="999999"/>
+	<Property ID="test_bs_buff_4_ad1" Name="变身炸弹人" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\monster\mon_shu_032_a.ini" ChangeModelSkillID="test_ppbz_skill_ktsy; ;zd2_repick_skill_1; ; " ChangeModelEffect="common_change_002" ChangeModelTime="999999"/>
+	<Property ID="test_bs_buff_5_ad1" Name="变身炸弹人" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\monster\mon_shu_032_a.ini" ChangeModelSkillID="test_pfbz_skill_ktsy; ;zd2_repick_skill_1; ; " ChangeModelEffect="common_change_002" ChangeModelTime="999999"/>
+	<Property ID="common_yz_buff_1" Name="触发硬直" EventType="1" TargetType="2" FuncNo="302" StiffTime="200"/>
+	<Property ID="test_bs_buff_1_ad2" Name="添加特效" EventType="1" TargetType="2" FuncNo="1" BuffID="szhd_buff_zdr_001"/>
+	<Property ID="test_bs_buff_2_ad2" Name="添加特效" EventType="1" TargetType="2" FuncNo="1" BuffID="hbzd_buff_zdr_001"/>
+	<Property ID="test_bs_buff_3_ad2" Name="添加特效" EventType="1" TargetType="2" FuncNo="1" BuffID="ysfd_buff_zdr_001"/>
+	<Property ID="test_bs_buff_4_ad2" Name="添加特效" EventType="1" TargetType="2" FuncNo="1" BuffID="ppzd_buff_zdr_001"/>
+	<Property ID="test_bs_buff_5_ad2" Name="添加特效" EventType="1" TargetType="2" FuncNo="1" BuffID="pfzd_buff_zdr_001"/>
+	<Property ID="zd2_add_buff_1" Name="从新变身" EventType="1" TargetType="2" FuncNo="1" BuffID="bs_buff_zdr"/>
+	<Property ID="skytower_buff_2_ad1" Name="100%免疫伤害" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="100"/>
+	<Property ID="zd2_my_buff_1" Name="免疫冰冻" EventType="2" TargetType="2" FuncNo="1" BuffID="zd2_noice_buff_freeze"/>
+	<Property ID="zd2_clearcd_buff_1_ad1" Name="减少cd" EventType="1" TargetType="2"/>
+	<Property ID="skytower_buff_2_ad2" Name="每次被攻击减1点血" EventType="1" TargetType="2" FuncNo="90" AttackSearchRange="50" BuckleHPFireValue="-500000" HPFirmValue="-10000"/>
+	<Property ID="ret_buff_zdr" Name="解除变身" EventType="1" TargetType="2" FuncNo="617" ChangeModelPath="ini\npc\monster\mon_shu_032_a.ini" ChangeModelSkillID="fzzd_skill_bszdr; ; ; ; " ChangeModelScale="1.2" ChangeModelTime="999999"/>
+	<Property ID="zd2_re_add_buff_1" Name="恢复变身" EventType="2" TargetType="2" FuncNo="1" BuffID="bs_buff_zdr"/>
+	<Property ID="zdr_ny_buff_4_ad1" Name="使用火技能" EventType="1" TargetType="2" FuncNo="102" Condition="zdr_ny_limit_1" TriggerSkillConfigID="zd2_ny_skill_1"/>
+	<Property ID="zdr_ny_buff_4_ad2" Name="使用雷技能" EventType="1" TargetType="2" FuncNo="102" Condition="zdr_ny_limit_3" TriggerSkillConfigID="zd2_ny_skill_5"/>
+	<Property ID="zdr_ny_buff_4_ad3" Name="使用冰技能" EventType="1" TargetType="2" FuncNo="102" Condition="zdr_ny_limit_2" TriggerSkillConfigID="zd2_ny_skill_3"/>
+	<Property ID="zdr_ny_buff_1_ad1" Name="替换冰雷buff" EventType="2" TargetType="2" FuncNo="1" BuffID="zdr_ny_buff_2;zdr_ny_buff_3"/>
+	<Property ID="zdr_ny_buff_2_ad1" Name="替换火雷buff" EventType="2" TargetType="2" FuncNo="1" BuffID="zdr_ny_buff_1;zdr_ny_buff_3"/>
+	<Property ID="zdr_ny_buff_3_ad1" Name="替换火冰buff" EventType="2" TargetType="2" FuncNo="1" BuffID="zdr_ny_buff_1;zdr_ny_buff_2"/>
+	<Property ID="zdr_ny_buff_5_ad1" Name="释放火召唤" EventType="1" TargetType="2" FuncNo="102" Condition="zdr_ny_limit_1" TriggerSkillConfigID="zd2_ny_skill_2"/>
+	<Property ID="zdr_ny_buff_5_ad2" Name="释放冰召唤" EventType="1" TargetType="2" FuncNo="102" Condition="zdr_ny_limit_2" TriggerSkillConfigID="zd2_ny_skill_4"/>
+	<Property ID="zdr_ny_buff_5_ad3" Name="释放雷召唤" EventType="1" TargetType="2" FuncNo="102" Condition="zdr_ny_limit_3" TriggerSkillConfigID="zd2_ny_skill_6"/>
+	<Property ID="zdr_ny_buff_10_ad1" Name="雷霆伤害" EventType="1" TargetType="4" FuncNo="99" HPPercent="-1" HPHandleType="1"/>
+	<Property ID="buff_wushenzs_038" Name="娜美海妖之歌受到伤害减少" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="50"/>
+	<Property ID="buff_wushenzs_043" Name="减伤子buff" EventType="18" TargetType="4" FuncNo="602" ImmunityPercent="51" ModifyImmunityPercentRatio="1"/>
+	<Property ID="buff_wushenzs_046" Name="神牛野蛮冲撞伤害减免" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="50"/>
+	<Property ID="buff_wushenzs_049" Name="冰炮神龟璀璨冰花被攻击回血" EventType="10" TargetType="2" FuncNo="99" EffectRatioParam="50" HPPercent="3"/>
+	<Property ID="buff_ws_skill_46_3" Name="小恶魔吸血" EventType="9" TargetType="2" FuncNo="603" AbsorbPercent="10" AbsorbEffectName="buff_pet_skill_010" AbsortType="1"/>
+	<Property ID="buff_5v5boss_001" Name="百分比减血" EventType="18" TargetType="2" FuncNo="90" AttackSearchRange="50" BuckleHPPercent="-1"/>
+	<Property ID="buff_5v5boss_002" Name="免伤" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="100"/>
+	<Property ID="buff_boss5v5_003" Name="霸体" EventType="1" TargetType="2" FuncNo="1" BuffID="boss_bati_buff"/>
+	<Property ID="buff_ws_skill_47_3_1" Name="开启吸收伤害" EventType="22" TargetType="2" FuncNo="716" SumDamagePercentValue="50" IsImmunityDamage="1"/>
+	<Property ID="buff_ws_skill_47_3_2" Name="关闭吸收伤害" EventType="2" TargetType="2" FuncNo="716" SumDamagePercentValue="50"/>
+	<Property ID="buff_wushenzs_052" Name="死亡冲锋受到伤害减少" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="5" ModifyImmunityPercentRatio="5"/>
+	<Property ID="buff_wushenzs_054" Name="死亡收割者火翅雨灼烧" EventType="3" TargetType="4" FuncNo="98" AttackEffectType="4" AttackEffectRatio="100" HPFirmValue="-200" Attribute="HP" AttributeIncValue="-300"/>
+	<Property ID="buff_wushenzs_055" Name="女娲普攻回血" EventType="1" TargetType="4" FuncNo="98" AttackEffectType="3" AttackEffectRatio="6" AttackReturnHPRatio="3"/>
+	<Property ID="buff_wushenzs_058" Name="生命汲取之反馈" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="55" ModifyAbsorbPercentRatio="5"/>
+	<Property ID="hd3_dihuo_buff_ef_2" Name="召唤地火" EventType="1" TargetType="2" FuncNo="102" TriggerSkillConfigID="hd3_zhdh_skill_1"/>
+	<Property ID="hd3_dihuo_buff_ef_3" Name="召唤地火" EventType="1" TargetType="2" FuncNo="102" TriggerSkillConfigID="hd3_zhdh_skill_2"/>
+	<Property ID="hd3_hp_buff_ef_1" Name="百分比掉血7%" EventType="1" TargetType="4" FuncNo="99" AttackSearchRange="50" BuckleHPPercent="-7" BuckleType="1" HPPercent="-7" HPHandleType="1"/>
+	<Property ID="hd3_hp_buff_ef_2" Name="百分比掉血3%" EventType="1" TargetType="4" FuncNo="99" AttackSearchRange="50" BuckleHPPercent="-3" BuckleType="1" HPPercent="-3" HPHandleType="1"/>
+	<Property ID="hd3_hp_buff_ef_3" Name="百分比掉血2%" EventType="1" TargetType="4" FuncNo="99" AttackSearchRange="100" BuckleHPPercent="-2" BuckleType="1" HPPercent="-2" HPHandleType="1"/>
+	<Property ID="hd3_hp_buff_ef_4" Name="百分比掉血1%" EventType="1" TargetType="4" FuncNo="99" AttackSearchRange="50" BuckleHPPercent="-1" BuckleType="1" HPPercent="-1" HPHandleType="1"/>
+	<Property ID="hd3_hpup45_buff_ef_1" Name="45%hp" EventType="1" TargetType="4" FuncNo="99" HPPercent="45" HPHandleType="1"/>
+	<Property ID="hd3_hp_buff_ef_5" Name="百分比掉血33%" EventType="1" TargetType="4" FuncNo="99" HPPercent="-33" HPHandleType="1"/>
+	<Property ID="buff_wushenzs_064_1" Name="法力流失" EventType="3" TargetType="0" FuncNo="713" MetersDisMaxMPPercent="2"/>
+	<Property ID="buff_wushenzs_064_2" Name="开启法力流失" EventType="1" TargetType="0" FuncNo="713"/>
+	<Property ID="buff_wushenzs_069" Name="生命巨龙腐蚀吐息回血" EventType="1" TargetType="2" FuncNo="99" HPPercent="0.6" SkillLevelModifyPercentRatio="0.6"/>
+	<Property ID="buff_wushenzs_070" Name="治疗雨回血" EventType="1" TargetType="4" FuncNo="98" AttackEffectType="3" AttackEffectRatio="120" HPPercent="10" HPFirmValue="1000" Attribute="HP" AttributeIncValue="1000"/>
+	<Property ID="skytower_bati_buff_ef_2" Name="通天塔加掉血BUFF" EventType="18" TargetType="2" FuncNo="1" BuffID="skytower_bati_buff_2"/>
+	<Property ID="buff_wushenzs_074" Name="灼烧" EventType="3" TargetType="2" FuncNo="98" AttackEffectType="4" AttackEffectRatio="30"/>
+	<Property ID="50v50_winger_buff_eff_1_2" Name="怒风击飞" EventType="3" TargetType="4" FuncNo="99" HitOutSpeed="8" HitOutAngle="60" HitOutFloatAngle="0" HitOutGravityAccSpeed="-10" HitOutHorizontalAccSpeed="1" HitOutHorizontalAccSpeed2="1" HitBackSpeed="8" HitBackAngle="15" HitBackFloatAngle="0" HitBackGravityAccSpeed="-10" HitBackHorizontalAccSpeed="0" HitBackHorizontalAccSpeed2="0" HitBack2MoveSpeed="8" HitBack2MoveDistance="3" HitBack2Action="back" AttackSearchRange="50" BuckleHPPercent="-0.5" HPPercent="-0.5"/>
+	<Property ID="50v50_huixue_buff_1" Name="BUFF回血" EventType="3" TargetType="4" FuncNo="99" AttackSearchRange="50" BuckleHPPercent="1" HPPercent="1"/>
+	<Property ID="50v50_huixue_buff_3" Name="添加新BUFF1" EventType="1" TargetType="2" FuncNo="1" Condition="50v50_huixue_buff_limit_1" BuffID="50v50_huixue_buff_1"/>
+	<Property ID="50v50_huixue_buff_2" Name="BUFF回血" EventType="3" TargetType="4" FuncNo="99" AttackSearchRange="50" BuckleHPPercent="1" HPPercent="2"/>
+	<Property ID="50v50_huixue_buff_4" Name="添加新BUFF2" EventType="1" TargetType="2" FuncNo="1" Condition="50v50_huixue_buff_limit_2" BuffID="50v50_huixue_buff_2"/>
+	<Property ID="td1_wuyi_buff_eff_1" Name="解除沉睡" EventType="10" TargetType="2" FuncNo="15" BuffConfigID="td1_wuyi_buff_1"/>
+	<Property ID="td1_wuyi_buff_eff_3" Name="变羊" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\npc\npc_shu_015.ini" ChangeModelEffect="common_change_002" ChangeModelTime="4000"/>
+	<Property ID="td1_wuyi_buff_eff_3a" Name="关闭变羊" EventType="2" TargetType="2" FuncNo="617"/>
+	<Property ID="td1_wuyi_buff_eff_5" Name="掉血（0.2）" EventType="3" TargetType="0" FuncNo="99" AttackSearchRange="50" BuckleHPPercent="-1" HPPercent="-0.1"/>
+	<Property ID="td1_feifu_buff_eff_1" Name="掉血（1）" EventType="3" TargetType="0" FuncNo="99" AttackSearchRange="50" BuckleHPPercent="-1" HPPercent="-1"/>
+	<Property ID="td1_zuiji_buff_eff_1" Name="传送" EventType="2" TargetType="2" FuncNo="721" TransLateToPosX="87.86" TransLateToPosY="17.15" TransLateToPosZ="40.56" TransLateToOrient="-1.855"/>
+	<Property ID="buff_wushengzs_077" Name="免伤30%" EventType="1" TargetType="2" FuncNo="602" ImmunityPercent="30"/>
+	<Property ID="buff_wushengzs_077_1" Name="关闭免伤" EventType="2" TargetType="2" FuncNo="602" ImmunityPercent="30"/>
+	<Property ID="buff_wushenzs_079" Name="buff吸血" EventType="9" TargetType="2" FuncNo="603" AbsorbPercent="5" AbsortType="1"/>
+	<Property ID="buff_ws_skill_48_3" Name="流血效果" EventType="3" TargetType="4" FuncNo="98" AttackEffectType="4" AttackEffectRatio="75" AttackSkillLevelRatio="6"/>
+	<Property ID="50V50_gy_live_buff_eff_2" Name="图腾回血" EventType="3" TargetType="4" FuncNo="99" AttackSearchRange="50" BuckleHPPercent="10" HPPercent="10"/>
+	<Property ID="50V50_fengbao_buff_eff_2" Name="风暴破防" EventType="3" TargetType="2" FuncNo="305" ConsumeBreak="60" BreakBufferConfig="breakTest" BreakBufferSportConfig="Buff_break_001" BreakType="0"/>
+	<Property ID="50V50_xianfeng_buff_eff_1" Name="先锋BUFF后续" EventType="2" TargetType="2" FuncNo="1" BuffID="50V50_xianfeng_buff_2"/>
+	<Property ID="50V50_wanghun_buff_eff_1" Name="百分比掉血60%" EventType="1" TargetType="4" FuncNo="99" AttackSearchRange="50" BuckleHPPercent="-7" BuckleType="1" HPPercent="-60" HPHandleType="1"/>
+	<Property ID="50V50_wanghun_buff_eff_1a" Name="掉血5w" EventType="1" TargetType="4" FuncNo="99" AttackSearchRange="50" BuckleHPPercent="-7" BuckleType="1" HPFirmValue="-50000" HPHandleType="1"/>
+	<Property ID="buff_wszb_001A" Name="触发闪电buff" EventType="3" TargetType="2" FuncNo="1" BuffID="buff_wszb_001_1"/>
+	<Property ID="buff_wszb_001_2A" Name="闪电伤害" EventType="1" TargetType="4" FuncNo="98" AttackEffectType="4" AttackEffectRatio="150"/>
+	<Property ID="buff_wszb_003A" Name="触发护盾buff" EventType="3" TargetType="2" FuncNo="1" BuffID="buff_wszb_003_1"/>
+	<Property ID="buff_wszb_003_1A" Name="护盾效果" EventType="1" TargetType="2" FuncNo="630" AbsortPercentValue="5"/>
+	<Property ID="buff_wszb_002A" Name="增加攻击" EventType="8" TargetType="2" FuncNo="1" EffectRatioParam="5" BuffID="buff_wszb_002_1"/>
+	<Property ID="50V50_bati_buff_eff_2" Name="远征加掉血BUFF" EventType="18" TargetType="2" FuncNo="1" BuffID="50V50_bati_buff_2"/>
+	<Property ID="copy_skytower_buff_2_ad2" Name="每次被攻击减1点血" EventType="18" TargetType="0" FuncNo="99" BuffID="25V25_worldboss_bati_buff_2" AttackSearchRange="50" BuckleHPFireValue="-70000" HPFirmValue="-250000"/>
+	<Property ID="h_td1_wuyi_buff_eff_1" Name="解除沉睡" EventType="10" TargetType="2" FuncNo="15" BuffConfigID="td1_wuyi_buff_1"/>
+	<Property ID="h_td1_wuyi_buff_eff_3" Name="变羊" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\npc\npc_shu_015.ini" ChangeModelEffect="common_change_002" ChangeModelTime="4000"/>
+	<Property ID="h_td1_wuyi_buff_eff_3a" Name="关闭变羊" EventType="2" TargetType="2" FuncNo="617"/>
+	<Property ID="h_td1_wuyi_buff_eff_5" Name="掉血（0.2）" EventType="3" TargetType="0" FuncNo="99" AttackSearchRange="50" BuckleHPPercent="-1" HPPercent="-0.1"/>
+	<Property ID="h_td1_feifu_buff_eff_1" Name="掉血（1）" EventType="3" TargetType="0" FuncNo="99" AttackSearchRange="50" BuckleHPPercent="-1" HPPercent="-1"/>
+	<Property ID="h_td1_zuiji_buff_eff_1" Name="传送" EventType="2" TargetType="2" FuncNo="721" TransLateToPosX="87.86" TransLateToPosY="17.15" TransLateToPosZ="40.56" TransLateToOrient="-1.855"/>
+	<Property ID="td2_icer_buff_eff_6" Name="太极剑传送" EventType="1" TargetType="2" FuncNo="721" TransLateToPosX="17" TransLateToPosY="19" TransLateToPosZ="38" TransLateToOrient="0"/>
+	<Property ID="copy_skytower_buff_ad_2a" Name="每次被攻击减1点血" EventType="1" TargetType="4" FuncNo="99" AttackSearchRange="50" BuckleHPFireValue="-70000" HPFirmValue="-250000"/>
+	<Property ID="copy_skytower_buff_2b" Name="重启BUFF" EventType="3" TargetType="2" FuncNo="1" BuffID="25V25_worldboss_bati_buff_1" AttackSearchRange="50" BuckleHPFireValue="-70000" HPFirmValue="-250000"/>
+	<Property ID="ws_skill_49_2_1" Name="免伤25%" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="25"/>
+	<Property ID="pvp_live_buff_1" Name="回血5%" EventType="3" TargetType="2" FuncNo="99" AttackSearchRange="50" BuckleHPPercent="10" HPPercent="5"/>
+	<Property ID="pvp_live_buff_2" Name="回血100%" EventType="1" TargetType="4" FuncNo="99" AttackSearchRange="50" BuckleHPPercent="10" HPPercent="100"/>
+	<Property ID="pvp_live_buff_3" Name="buff吸血" EventType="9" TargetType="2" FuncNo="603" AbsorbPercent="10" AbsortType="1"/>
+	<Property ID="pvp_live_debuff_1a" Name="掉血1%" EventType="3" TargetType="4" FuncNo="99" AttackSearchRange="50" BuckleHPPercent="10" HPPercent="-1"/>
+	<Property ID="pvp_live_debuff_1b" Name="掉血2%" EventType="3" TargetType="4" FuncNo="99" AttackSearchRange="50" BuckleHPPercent="10" HPPercent="-2"/>
+	<Property ID="pvp_live_debuff_1c" Name="掉血10%" EventType="3" TargetType="4" FuncNo="99" AttackSearchRange="50" BuckleHPPercent="10" HPPercent="-10"/>
+	<Property ID="pvp_live_debuff_2a" Name="添加buff2" EventType="2" TargetType="2" FuncNo="1" BuffID="pvp_live_debuff_2a"/>
+	<Property ID="pvp_live_debuff_2b" Name="添加buff3" EventType="2" TargetType="2" FuncNo="1" BuffID="pvp_live_debuff_3a"/>
+	<Property ID="pvp_live_buff_1n" Name="回血5%" EventType="3" TargetType="0" FuncNo="99" AttackSearchRange="50" BuckleHPPercent="10" HPPercent="5"/>
+	<Property ID="h_td2_ice_buff_9" Name="冰魄消失回血" EventType="2" TargetType="2" FuncNo="99" HPPercent="3"/>
+	<Property ID="copy_bf_guard_buff_1_ad3" Name="添加副buff" EventType="1" TargetType="2" FuncNo="1" BuffID="bf_guard_buff_3"/>
+	<Property ID="copy_bf_guard_buff_1_ad3_1" Name="添加副buff" EventType="1" TargetType="2" FuncNo="1" BuffID="bf_guard_buff_3"/>
+	<Property ID="drop_bs_buff_1" Name="变身冰鸟" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\pet\pet_ani_002_skin01.ini" ChangeModelSkillID="drop_bs_skill_1;drop_bs_skill_2 ;drop_bs_skill_3 ; drop_bs_skill_4;drop_bs_skill_5 " ChangeModelScale="1" ChangeModelEffect="common_change_002" ChangeModelTime="999999"/>
+	<Property ID="drop_bs_buff_3" Name="变身乌龟" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\pet\pet_ani_009_skin01.ini" ChangeModelSkillID="drop_bs_skill_1;drop_bs_skill_2 ;drop_bs_skill_3 ; drop_bs_skill_4;drop_bs_skill_5 " ChangeModelScale="1" ChangeModelEffect="common_change_002" ChangeModelTime="999999"/>
+	<Property ID="drop_bs_buff_4" Name="变身女娲" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\pet\pet_shu_016.ini" ChangeModelSkillID="drop_bs_skill_1;drop_bs_skill_2 ;drop_bs_skill_3 ; drop_bs_skill_4;drop_bs_skill_5 " ChangeModelScale="1" ChangeModelEffect="common_change_002" ChangeModelTime="999999"/>
+	<Property ID="drop_bs_buff_5" Name="变身天使" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\pet\pet_shu_006.ini" ChangeModelSkillID="drop_bs_skill_1;drop_bs_skill_2 ;drop_bs_skill_3 ; drop_bs_skill_4;drop_bs_skill_5 " ChangeModelScale="1" ChangeModelEffect="common_change_002" ChangeModelTime="999999"/>
+	<Property ID="buff_wszf_001_1" Name="法力偷取" EventType="9" TargetType="0" FuncNo="750" StealRatio="10" StealMPPercent="2"/>
+	<Property ID="buff_wszf_002_1" Name="破甲" EventType="9" TargetType="0" FuncNo="751" BreakRatio="5" BreakValue="20" BreakBufferID="buff_wszf_002A"/>
+	<Property ID="buff_wszf_002A_1" Name="承受伤害增加30%" EventType="1" TargetType="2" FuncNo="755" BeAdvanceDamagePercent="30"/>
+	<Property ID="buff_wszf_004_1" Name="献祭" EventType="4" TargetType="0" FuncNo="753" RecoverCripplePercent="10" RecoverHPPercent="10" RecoverMPPercent="50"/>
+	<Property ID="buff_wszf_005_1" Name="神速" EventType="9" TargetType="0" FuncNo="754" AttackEffectRatio="30" EffectBufferID="buff_wszf_005A"/>
+	<Property ID="buff_wszf_002A_2" Name="关闭效果" EventType="2" TargetType="2" FuncNo="755" BeAdvanceDamagePercent="30"/>
+	<Property ID="buff_wszf_003_1" Name="致残效果" EventType="8" TargetType="2" FuncNo="752" CrippleRatio="5" CrippleBufferID="buff_wszf_003A"/>
+	<Property ID="td3_leitin_buff_eff_2" Name="回血" EventType="3" TargetType="0" FuncNo="99" HPPercent="5"/>
+	<Property ID="td3_sand_buff_eff_1" Name="召唤沙暴" EventType="2" TargetType="2" FuncNo="2" NPCConfigID="td3_sandwind_1" NPCCreateCount="1" NPCTargetPosType="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="td3_leitin_buff_eff_5" Name="召唤雷束" EventType="3" TargetType="2" FuncNo="2" NPCConfigID="td3_leisu_001" NPCCreateCount="1" NPCTargetPosType="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="10"/>
+</Object>
+
+

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- edited with XMLSpy v2009 (http://www.altova.com) by jiangxiexie (EMBRACE_1comt) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="Effect">
+		<xs:annotation>
+			<xs:documentation>Comment describing your root element</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:choice maxOccurs="unbounded">
+				<xs:element name="EffectItem" type="EffectItem"/>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="EffectItem">
+		<xs:annotation>
+			<xs:documentation>独立的特效</xs:documentation>
+		</xs:annotation>
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="SubEffect" type="SubEffect"/>
+		</xs:choice>
+		<xs:attribute name="Name" type="xs:string" use="optional" default="test">
+			<xs:annotation>
+				<xs:documentation>特效名</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="ActionEndDelete" type="xs:boolean" use="optional" default="true">
+			<xs:annotation>
+				<xs:documentation>是否动作播放结束后就删除，默认为true</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="SkillName" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>如果有这个属性，则在此技能施放时就触发特效</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Comment" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>特效的注释说明</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="SubEffect">
+		<xs:annotation>
+			<xs:documentation>子特效</xs:documentation>
+		</xs:annotation>
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="Condition" type="Condition"/>
+		</xs:choice>
+		<xs:attribute name="Type" type="xs:unsignedInt" use="optional" default="0">
+			<xs:annotation>
+				<xs:documentation>特效类型
+    EFFECT_POS = 0,         //位置绑定特效
+    EFFECT_DROP = 1,        //丢放特效
+    EFFECT_POINT = 2,       //表示是一个绑定特效 
+    EFFECT_BULLET = 3,      //表示是一个飞行特效，从施放者发出，到目标对像结束
+    EFFECT_LINK = 4,        //表示连接两个点的特效</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Point" type="xs:string" use="optional" default="body_01">
+			<xs:annotation>
+				<xs:documentation>特效绑定自身的点</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Name" type="xs:string" use="optional" default="body_01">
+			<xs:annotation>
+				<xs:documentation>子特效绑名称</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="NextName" type="xs:string" use="optional" default="body_01">
+			<xs:annotation>
+				<xs:documentation>下一个要播放的子特效名(暂无用)</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="PreLimit" type="xs:string" use="optional" default="">
+			<xs:annotation>
+				<xs:documentation>该特效的前置特效名(表示填写的特效播放完成后才播放该特效)</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="NextLimit" type="xs:string" use="optional" default="">
+			<xs:annotation>
+				<xs:documentation>该特效的后置特效名(表示填写的特效在该特效播放完后才开始播放)</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="TargetPoint" type="xs:string" use="optional" default="body_01">
+			<xs:annotation>
+				<xs:documentation>特效绑定对方的点</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Self" type="xs:boolean" use="optional" default="true">
+			<xs:annotation>
+				<xs:documentation>此子特效是绑定自身还是对方.
+为true时选Point,
+为false时选TargetPoint</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Model" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>对应使用的特效模型名</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Singleton" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>是否是唯一的，唯一的话绑到人身上的点名就是唯一的</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="MoveType" type="xs:integer" use="optional" default="0">
+			<xs:annotation>
+				<xs:documentation>运动方式，0直线运动，1抛物运动，2运动前放大运动后缩小，3回旋镖，4飞行过程中缩放特效</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Loop" type="xs:boolean" use="optional" default="true">
+			<xs:annotation>
+				<xs:documentation>特效播放是否循环，不循环的话，播放完后即刻释放,当然如果生命周期比单次循环时间还短的话也会根据生命周期来释放</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="IsOneOff" type="xs:boolean" use="optional" default="true">
+			<xs:annotation>
+				<xs:documentation>特效播放是否最后帧不停止；当Loop为false时起作用，IsOneOff为false时停止在最后一帧(无效)</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="AfterBullet" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>特效发动时机，
+默认为false表示完全由BeginTime决定发动时机
+为true时表示在同组Bullet结束后发动</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="BeginTime" type="xs:double" use="optional" default="0.0">
+			<xs:annotation>
+				<xs:documentation>特效发动时间,
+如果AfterBullet为false，则在相对整个特效开始后BeginTime的时间发动，
+如果AfterBullet为true，则在同组Bullett特效结束后立即发动</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="LifeTime" type="xs:double" use="optional" default="1.0">
+			<xs:annotation>
+				<xs:documentation>特效的生命周期，也就是说特效发动后存在的时间，无限的话填-1</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Speed" type="xs:double" use="optional" default="1.0">
+			<xs:annotation>
+				<xs:documentation>EFFECT_BULLET特效水平直线运动速度</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="OffsetPosX" type="xs:double" use="optional" default="0.0">
+			<xs:annotation>
+				<xs:documentation>特效相对于绑定点或位置的X方向偏移</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="OffsetPosY" type="xs:double" use="optional" default="0.0">
+			<xs:annotation>
+				<xs:documentation>特效相对于绑定点或位置的Y方向偏移</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="OffsetPosZ" type="xs:double" use="optional" default="0.0">
+			<xs:annotation>
+				<xs:documentation>特效相对于绑定点或位置的Z方向偏移</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="FollowAngle" type="xs:boolean" use="optional" default="true">
+			<xs:annotation>
+				<xs:documentation>特效跟随玩家旋转角度</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="UseLinkAngle" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>是否应用自身相对于目标的朝向</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="InitAngleType" type="xs:integer" use="optional" default="0">
+			<xs:annotation>
+				<xs:documentation>特效初始角度类型，0默认特效初始方向，1模型朝向，2绑定点方向，3自身与目标的连线方向</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="AngleX" type="xs:double" use="optional" default="0.0">
+			<xs:annotation>
+				<xs:documentation>特效初始X轴旋转角度</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="AngleY" type="xs:double" use="optional" default="0.0">
+			<xs:annotation>
+				<xs:documentation>特效初始Y轴旋转角度</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="AngleZ" type="xs:double" use="optional" default="0.0">
+			<xs:annotation>
+				<xs:documentation>特效初始Z轴旋转角度</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="IsBoneEffect" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>是否是骨骼特效</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="BoneModelPath" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>骨骼模型路径,专用于骨骼特效</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="IsTerrainPos" type="xs:boolean" use="optional" default="false">
+			<xs:annotation>
+				<xs:documentation>特效位置是否是受地型影响，如受地表和水面影响</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="TerrainPos" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>这个参数决定特效受到地表影响，还是水及其它.值=on_water表时在水面,值=on_ground表示在地表,值=on_mode_aabb表示使用目标模型的包围盒高度</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="SaberArcName" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>拖尾特效名(是在人物身上创建拖尾，注意拖尾绑点 例如右手与右手武器绑点Tpose_handR_01、Tpose_H_weaponR_01)</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="ScaleX" type="xs:double" use="optional">
+			<xs:annotation>
+				<xs:documentation>这个参数决定特效的缩放X</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="ScaleY" type="xs:double" use="optional">
+			<xs:annotation>
+				<xs:documentation>这个参数决定特效的缩放Y</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="ScaleZ" type="xs:double" use="optional">
+			<xs:annotation>
+				<xs:documentation>这个参数决定特效的缩放Z</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Bullet_LineScaleX" type="xs:double" use="optional">
+			<xs:annotation>
+				<xs:documentation>这个参数决定子弹特效中类型2(六脉神剑)的X轴缩放</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Bullet_LineScaleY" type="xs:double" use="optional">
+			<xs:annotation>
+				<xs:documentation>这个参数决定子弹特效中类型2(六脉神剑)的Y轴缩放</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Bullet_LineScaleZ" type="xs:double" use="optional">
+			<xs:annotation>
+				<xs:documentation>这个参数决定子弹特效中类型2(六脉神剑)的Z轴缩放</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Comment" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>子特效的注释说明</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="PickGround" type="xs:boolean" use="optional">
+			<xs:annotation>
+				<xs:documentation>是否在鼠标选中地面播放特效</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="ShotDistance" type="xs:double" use="optional">
+			<xs:annotation>
+				<xs:documentation>子弹类型特效的飞行距离（用于无目标绑点的飞行特效）</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="ModeZLength" type="xs:double" use="optional">
+			<xs:annotation>
+				<xs:documentation>这个参数说明 连接特效 和 子弹特效中类型2(六脉神剑) 在Z轴方向上的单位大小(这个模型初始时Z方向大小 用于缩放时使用)</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Bullet_CrossPersent" type="xs:double" use="optional">
+			<xs:annotation>
+				<xs:documentation>这个参数说明 子弹特效中类型3的回旋镖特效 拐点在玩家与目标之间 距离玩家的百分比 </xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Bullet_CrossRight" type="xs:boolean" use="optional">
+			<xs:annotation>
+				<xs:documentation>这个参数说明 子弹特效中类型3的回旋镖特效 开始时向右还是向左飞行</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Bullet_CrossLenght" type="xs:double" use="optional">
+			<xs:annotation>
+				<xs:documentation>这个参数说明 子弹特效中类型3的回旋镖特效 拐点处偏离玩家与目标所在直线的距离</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Bullet_CrossAngle" type="xs:double" use="optional">
+			<xs:annotation>
+				<xs:documentation>这个参数说明 子弹特效中类型3的回旋镖特效 飞行平面的偏角 范围[-1.5, 1.5]</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Bullet_CrossIsBack" type="xs:boolean" use="optional">
+			<xs:annotation>
+				<xs:documentation>这个参数说明 子弹特效中类型3的回旋镖特效 回旋镖是否需要飞回</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="FadeOut" type="xs:boolean" use="optional">
+			<xs:annotation>
+				<xs:documentation>是否渐隐（循环特效只在强制删除时有效，单次特效在播放完毕前或者删除时有效）</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="FadeOutTime" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>渐隐时长(如果渐隐时长大于LifeTime或者大于单次播放时间，则使用LifeTime或者单次播放时间为渐隐时长)</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="SoundFile" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>声音文件</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="SoundLoop" type="xs:double" use="optional">
+			<xs:annotation>
+				<xs:documentation>声音循环次数	（-1表示循环）</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="SoundBeginTime" type="xs:double" use="optional">
+			<xs:annotation>
+				<xs:documentation> 声音开始时间</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="SoundLifeTime" type="xs:double" use="optional">
+			<xs:annotation>
+				<xs:documentation>声音持续时间</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="SoundDistanc" type="xs:double" use="optional">
+			<xs:annotation>
+				<xs:documentation>声音衰减距离</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		
+		<xs:attribute name="nScale" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>缩放</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		
+		<xs:attribute name="Weapon" type="xs:string" use="optional">
+			<xs:annotation>
+				<xs:documentation>武器</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		
+			<xs:attribute name="PickSky" type="xs:boolean" use="optional">
+			<xs:annotation>
+				<xs:documentation>武器</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		
+			<xs:attribute name="Bullet_CrossLength" type="xs:double" use="optional">
+			<xs:annotation>
+				<xs:documentation>武器</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		
+		<xs:attribute name="SelfRolePart" type="xs:boolean" use="optional">
+			<xs:annotation>
+				<xs:documentation>武器</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		
+			<xs:attribute name="StopFellowTime" type="xs:double" use="optional">
+			<xs:annotation>
+				<xs:documentation>武器</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		
+		
+	</xs:complexType>
+	<xs:complexType name="Condition">
+		<xs:annotation>
+			<xs:documentation>子特效条件</xs:documentation>
+		</xs:annotation>
+		<xs:attribute name="Self" type="xs:boolean" use="optional" default="true">
+			<xs:annotation>
+				<xs:documentation>是否对自身进行条件判断，（false时，不进行判断，认为符合条件）</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="SelfConditionId" type="xs:integer" use="optional">
+			<xs:annotation>
+				<xs:documentation>自身条件包ID</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="Target" type="xs:boolean" use="optional" default="true">
+			<xs:annotation>
+				<xs:documentation>是否对目标进行条件判断，（false时，不进行判断，认为符合条件）</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="TargetConditionId" type="xs:integer" use="optional">
+			<xs:annotation>
+				<xs:documentation>目标条件包ID</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+		<xs:attribute name="ResultId" type="xs:integer" use="optional">
+			<xs:annotation>
+				<xs:documentation>修正包ID</xs:documentation>
+			</xs:annotation>
+		</xs:attribute>
+	</xs:complexType>
+</xs:schema>

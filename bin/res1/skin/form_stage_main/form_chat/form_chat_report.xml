@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="form_common\form_confirm" init="main_form_init">
+        <prop LimitInScreen="true" IsGC="true" Left="173" Top="45" Width="542" Height="614" ForeColor="255,209,187,143" LineColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH13" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+        <event on_open="main_form_open" on_close="on_main_form_close" />
+        <control name="lbl_7" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="32" Top="56" Width="478" Height="470" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg_huikuang4.png" />
+        </control>
+        <control name="lbl_6" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="64" Top="232" Width="53" Height="53" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\strengthen\fuxuankuang.png" />
+        </control>
+        <control name="lbl_5" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="64" Top="176" Width="53" Height="53" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\strengthen\fuxuankuang.png" />
+        </control>
+        <control name="lbl_4" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="66" Top="120" Width="53" Height="53" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\strengthen\fuxuankuang.png" />
+        </control>
+        <control name="ok_btn" entity="Button" script="" init="">
+            <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="48" Top="-86" Width="172" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" VAnchor="Bottom" Text="@ui_ok" Font="WRYH26_S" TabIndex="100" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+            <event on_click="ok_btn_click" />
+        </control>
+        <control name="cancel_btn" entity="Button" script="" init="">
+            <prop NormalImage="gui\common\button\anniu_chengse_yuanjiao1.png" PushImage="gui\common\button\anniu_chengse_yuanjiao2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-222" Top="-86" Width="172" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Right" Text="@ui_cancel" Font="WRYH26_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+            <event on_click="cancel_btn_click" />
+        </control>
+        <control name="btn_close" entity="Button" script="" init="">
+            <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-70" Top="-32" Width="100" Height="100" BackColor="255,192,192,192" LineColor="0,0,0,0" ShadowColor="0,0,0,0" HAnchor="Right" TabStop="true" AutoSize="true" DrawMode="FitWindow" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+            <event on_click="cancel_btn_click" />
+        </control>
+        <control name="lbl_title" entity="Label" script="" init="">
+            <prop Align="Center" RefCursor="WIN_HELP" Left="-111" Top="-299" Width="215" Height="54" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Text="@ui_war_122" Font="WRYH30_S" />
+        </control>
+        <control name="rbtn_1" entity="RadioButton" script="" init="">
+            <prop Checked="true" BoxSize="12" NormalImage="gui\common\window\dian0%.png" CheckedImage="gui\main\strengthen\xuanze_duigou.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="64" Top="120" Width="53" Height="53" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" ClickSound="button_click" />
+        </control>
+        <control name="lbl_1" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="136" Top="136" Width="80" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_newchat_18" Font="WRYH22_O" />
+        </control>
+        <control name="rbtn_2" entity="RadioButton" script="" init="">
+            <prop BoxSize="12" NormalImage="gui\common\window\dian0%.png" CheckedImage="gui\main\strengthen\xuanze_duigou.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="64" Top="176" Width="53" Height="53" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="1" TabStop="true" ClickSound="button_click" />
+        </control>
+        <control name="lbl_2" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="136" Top="192" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_newchat_19" Font="WRYH22_O" />
+        </control>
+        <control name="rbtn_3" entity="RadioButton" script="" init="">
+            <prop BoxSize="12" NormalImage="gui\common\window\dian0%.png" CheckedImage="gui\main\strengthen\xuanze_duigou.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="64" Top="232" Width="53" Height="53" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="2" TabStop="true" ClickSound="button_click" />
+        </control>
+        <control name="lbl_3" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="136" Top="240" Width="80" Height="32" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_newchat_20" Font="WRYH22_O" />
+        </control>
+        <control name="ipt_report_info" entity="Edit" script="" init="">
+            <prop MaxLength="200" TextOffsetX="5" Caret="Default" Left="64" Top="304" Width="414" Height="54" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20_S_GRAY" Cursor="WIN_IBEAM" TabStop="true" DrawMode="Expand" BackImage="gui\common\window\shurukuang3.png" />
+        </control>
+        <control name="mltbox_tip" entity="MultiTextBox" script="" init="">
+            <prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,382,54" LineHeight="50" HtmlText="你要举报[XXXX]？" LineTextAlign="Center" ScrollSize="17" Left="64" Top="64" Width="382" Height="54" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH22_O" NoFrame="true" />
+        </control>
+        <control name="mltbox_chat_info" entity="MultiTextBox" script="" init="">
+            <prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="20,20,380,150" LineHeight="33" HtmlText="rsdfgsfdgsdfg" ScrollSize="17" Left="64" Top="368" Width="414" Height="142" ShadowColor="0,0,0,0" Font="WRYH20" NoFrame="true" DrawMode="Expand" BackImage="gui\common\window\bg_huikuang.png" />
+        </control>
+    </control>
+</form>

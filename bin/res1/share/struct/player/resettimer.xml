@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<object>
+    <internals />
+    <properties>
+        <property name="ResetOnCreateRule" type="int" public="false" private="false" save="true" desc="创建角色时设置时间"/>
+    </properties>
+    <records>
+        <record name="reset_timer_rec" cols="4" maxrows="1024" save="true" public="false" private="true" desc="定时刷新表">
+            <column type="dword"  desc="刷新类型" />
+            <column type="string" desc="刷新时间" />
+			<column type="string" desc="上次刷新时间" />
+            <column type="double" desc="上次刷新时间" />
+        </record>
+    </records>
+    <includes />
+</object>

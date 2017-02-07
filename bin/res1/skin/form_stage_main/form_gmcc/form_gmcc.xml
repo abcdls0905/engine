@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="form_stage_main\form_gmcc\form_gmcc" init="on_main_form_init">
+        <prop ClipChildren="true" LimitInScreen="true" ShowGrid="true" FormOpenSound="Popup" FormCloseSound="Close" IsGC="true" Left="13" Top="69" Width="822" Height="547" BackColor="96,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+        <event on_open="on_main_form_open" on_close="on_main_form_close" />
+        <control name="groupbox_main" entity="GroupBox" script="" init="">
+            <prop Left="88" Top="96" Width="622" Height="390" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Text="groupbox_2" NoFrame="true" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+            <control name="groupbox_type" entity="GroupBox" script="" init="">
+                <prop Left="32" Top="112" Width="558" Height="246" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Text="groupbox_2" NoFrame="true" DrawMode="Expand" BackImage="gui\common\window\beibao_12.png" />
+                <control name="btn_4" entity="RadioButton" script="" init="">
+                    <prop HideBox="true" ClickEvent="true" BoxSize="12" NormalImage="gui\common\button\anniu_yuanjiao.png" CheckedImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="312" Top="136" Width="182" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH22_O" TabStop="true" DrawMode="ExpandH" InSound="MouseIn" ClickSound="ui_open" />
+                </control>
+                <control name="btn_2" entity="RadioButton" script="" init="">
+                    <prop HideBox="true" ClickEvent="true" BoxSize="12" NormalImage="gui\common\button\anniu_yuanjiao.png" CheckedImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="312" Top="40" Width="182" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH22_O" TabStop="true" NoFrame="true" DrawMode="ExpandH" InSound="MouseIn" OutSound="ui_open" ClickSound="MouseClick" />
+                </control>
+                <control name="btn_1" entity="RadioButton" script="" init="">
+                    <prop HideBox="true" ClickEvent="true" BoxSize="12" NormalImage="gui\common\button\anniu_yuanjiao.png" CheckedImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="64" Top="40" Width="182" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH22_O" TabStop="true" DrawMode="ExpandH" InSound="MouseIn" ClickSound="ui_open" />
+                </control>
+                <control name="btn_3" entity="RadioButton" script="" init="">
+                    <prop HideBox="true" ClickEvent="true" BoxSize="12" NormalImage="gui\common\button\anniu_yuanjiao.png" CheckedImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="64" Top="136" Width="182" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH22_O" TabStop="true" DrawMode="ExpandH" InSound="MouseIn" ClickSound="ui_open" />
+                </control>
+            </control>
+            <control name="lbl_2" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="-95" Top="32" Width="174" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" HAnchor="Center" Text="@ui_gmcc_tips" Font="WRYH30_S" />
+            </control>
+            <control name="btn_close" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="536" Top="-16" Width="100" Height="100" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="100" TabStop="true" AutoSize="true" DrawMode="FitWindow" InSound="MouseIn" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+            </control>
+        </control>
+    </control>
+</form>

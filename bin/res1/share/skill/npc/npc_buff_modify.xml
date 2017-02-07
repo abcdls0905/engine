@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
+<Object>
+	<Property ID="buff_stun_move_1" Name="晕眩禁止移动" ModifyTargetType="0" ModifyType="3" ModifyPropName="CantMove" ModifyPropValue="1" ModifyCalType="0"/>
+	<Property ID="buff_stun_useskill_1" Name="眩晕禁止技能" ModifyTargetType="0" ModifyType="3" ModifyPropName="CantUseSkill" ModifyPropValue="1" ModifyCalType="0"/>
+	<Property ID="buff_stun_noratk_1" Name="眩晕禁止普攻" ModifyTargetType="0" ModifyType="3" ModifyPropName="CantAttack" ModifyPropValue="1" ModifyCalType="0"/>
+	<Property ID="buff_stun_rotate_1" Name="眩晕禁止转向" ModifyTargetType="0" ModifyType="3" ModifyPropName="CantRotate" ModifyPropValue="1" ModifyCalType="0"/>
+	<Property ID="buff_kb_atk_1" Name="狂暴攻击增强" ModifyTargetType="0" ModifyType="3" ModifyPropName="AttackBase" ModifyPropValue="2" ModifyCalType="1"/>
+	<Property ID="buff_zd_atk_1" Name="中毒" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPBase" ModifyPropValue="-10" ModifyCalType="1"/>
+	<Property ID="buff_atkup_1" Name="攻击增强" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="buff_defup_1" Name="防御增强" ModifyTargetType="0" ModifyType="3" ModifyPropName="Def" ModifyPropValue="20" ModifyCalType="0"/>
+	<Property ID="buff_boss_lsjs_001" Name="格挡"/>
+	<Property ID="buff_boss_hssz_002" Name="格挡反击"/>
+	<Property ID="buff_boss_jmlz_001" Name="绝对防御"/>
+	<Property ID="buff_boss_jmdsls_001" Name="毒镖投掷之中毒"/>
+	<Property ID="buff_item_jiaxue_001" Name="1级血瓶"/>
+	<Property ID="speeddown" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-50" ModifyCalType="1"/>
+	<Property ID="buff_boss_xh_002" Name="雪地重击之减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-0.5" ModifyCalType="1"/>
+	<Property ID="attack_up" Name="攻击增强" ModifyTargetType="0" ModifyType="3" ModifyPropName="AttackBase" ModifyPropValue="70" ModifyCalType="0"/>
+	<Property ID="strom_speeddown" Name="风暴减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-15" ModifyCalType="1"/>
+	<Property ID="desert_speeddown_ad" Name="沙尖刺减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-50" ModifyCalType="1"/>
+	<Property ID="copy_buff_atkup_1" Name="攻击增强" ModifyTargetType="0" ModifyType="3" ModifyPropName="AttackBase" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_ws6_001" Name="嗜血术" ModifyTargetType="1" ModifyType="3" ModifyPropName="AttackBase" ModifyPropValue="15" ModifyCalType="1"/>
+	<Property ID="buff_ws14_001" Name="冰霜冲击减速" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30-2*$Level" ModifyCalType="1"/>
+	<Property ID="buff_ws10_001" Name="毁灭怒吼减攻击" ModifyTargetType="0" ModifyType="3" ModifyPropName="AttackBase" ModifyPropValue="-30-2*Level" ModifyCalType="1"/>
+	<Property ID="buff_ws9_001" Name="攻击怒吼加攻击" ModifyTargetType="0" ModifyType="3" ModifyPropName="AttackBase" ModifyPropValue="30" ModifyCalType="1"/>
+	<Property ID="buff_ws13_001" Name="烈焰冲击之灼烧"/>
+	<Property ID="buff_50speeddown" Name="50%减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-50" ModifyCalType="1"/>
+	<Property ID="spd" Name="风行" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="spd1" Name="风行" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_ws_skill_20_3" Name="超重力减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-80" ModifyCalType="1"/>
+	<Property ID="frozen_adv" Name="冻伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPBase" ModifyPropValue="-2" ModifyCalType="1"/>
+	<Property ID="copy_strom_speeddown" Name="风暴减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-10" ModifyCalType="1"/>
+	<Property ID="buff_ws10_002" Name="黑暗吐息之诅咒"/>
+	<Property ID="buff_ws24_001" Name="狂吠减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-15" ModifyCalType="1"/>
+	<Property ID="buff_ws24_002" Name="狂吠加速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="15" ModifyCalType="1"/>
+	<Property ID="buff_gbl_def_133" Name="防御增强" ModifyTargetType="2" ModifyType="3" ModifyPropName="Def" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_ws_skill_26_1" Name="回春回血"/>
+	<Property ID="buff_ws_skill_26_2" Name="太极之力晕眩"/>
+	<Property ID="deepfrozen" Name="极寒诅咒" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-20" ModifyCalType="1"/>
+	<Property ID="buff_defdown_1" Name="破防" ModifyType="3" ModifyPropName="Def" ModifyPropValue="-20" ModifyCalType="1"/>
+	<Property ID="deeppoison_1" ModifyTargetType="0" ModifyType="3" ModifyPropName="HP" ModifyPropValue="-10" ModifyCalType="0"/>
+	<Property ID="buff_levelup_1" ModifyTargetType="0" ModifyType="3" ModifyPropName="Level" ModifyPropValue="1" ModifyCalType="0"/>
+	<Property ID="buff_ws_skill_28_3" Name="削弱3%攻击" ModifyTargetType="0" ModifyType="3" ModifyPropName="AttackBase" ModifyPropValue="-3" ModifyCalType="1"/>
+	<Property ID="buff_atkup_25p" Name="攻击增强25%" ModifyTargetType="0" ModifyType="3" ModifyPropName="AttackBase" ModifyPropValue="125" ModifyCalType="1"/>
+	<Property ID="buff_atkup_50p" Name="攻击增强50%" ModifyTargetType="0" ModifyType="3" ModifyPropName="AttackBase" ModifyPropValue="150" ModifyCalType="1"/>
+	<Property ID="buff_atkup_75p" Name="攻击增强75%" ModifyTargetType="0" ModifyType="3" ModifyPropName="AttackBase" ModifyPropValue="175" ModifyCalType="1"/>
+	<Property ID="buff_sk_atkup75" Name="骷髅王攻击力提升75%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_sk_atkup150" Name="骷髅王攻击力提升150%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="150" ModifyCalType="1"/>
+	<Property ID="buff_sk_atkup225" Name="骷髅王攻击力提升225%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="225" ModifyCalType="1"/>
+	<Property ID="buff_team2_atkup" Name="攻击增强" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="30" ModifyCalType="1"/>
+	<Property ID="buff_team2_atkdown" Name="攻击减少" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="0.8" ModifyCalType="1"/>
+	<Property ID="hteam1_halo_buff_effect" Name="协同光环" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="buff_ws_skill_30_2" Name="蛛丝减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30" ModifyCalType="1"/>
+	<Property ID="buff_soulup_change" Name="魂吸" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_souldef" Name="防御" ModifyTargetType="0" ModifyType="3" ModifyPropName="Dodge" ModifyPropValue="9000" ModifyCalType="0"/>
+	<Property ID="buff_soulspeed" Name="神行" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="150" ModifyCalType="1"/>
+	<Property ID="buff_soulup_2" Name="强攻" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="buff_ht5_slow" Name="缓足禁锢" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-50" ModifyCalType="1"/>
+	<Property ID="buff_ht5_atk" Name="背水一战" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="titan273_buff_1_ef1" Name="狂暴加速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="titan273_buff_1_ef2" Name="狂暴加攻" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="150" ModifyCalType="1"/>
+	<Property ID="rdevent_buff_1_eff1" Name="神速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="rdevent_buff_2_eff1" Name="强攻" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="150" ModifyCalType="1"/>
+	<Property ID="rdevent_buff_8_eff1" Name="中神速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="rdevent_buff_9_eff1" Name="小神速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="rdevent_buff_10_eff1" Name="中强攻" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="120" ModifyCalType="1"/>
+	<Property ID="rdevent_buff_11_eff1" Name="小强攻" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="buff_ws_skill_33_3_1" Name="复活加属性1" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="buff_ws_skill_33_3_2" Name="复活加属性2" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="buff_ws_skill_33_3_3" Name="复活加属性3" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="150" ModifyCalType="1"/>
+	<Property ID="buff_ws_skill_33_3_4" Name="复活加属性4" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="1"/>
+	<Property ID="buff_ws_skill_33_3_5" Name="复活加属性5" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="250" ModifyCalType="1"/>
+	<Property ID="team6_slowdown_1_eff" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-50" ModifyCalType="1"/>
+	<Property ID="team6_speedup_buff_1_eff" Name="加速修正" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="150" ModifyCalType="1"/>
+	<Property ID="buff_hadisi_001" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="650" ModifyCalType="1"/>
+	<Property ID="buff_hadisi_002" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="650" ModifyCalType="1"/>
+	<Property ID="team7_buff_slowdown_1_eff" Name="50%减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-50" ModifyCalType="1"/>
+	<Property ID="team7_buff_slowdown_2_eff" Name="30%减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30" ModifyCalType="1"/>
+	<Property ID="team7_buff_paopao_4_eff" Name="5%减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-5" ModifyCalType="1"/>
+	<Property ID="buff_yr_shzh_skill_2_eff" Name="80%减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-80" ModifyCalType="1"/>
+	<Property ID="nagastr_buff_1_eff1" Name="攻击力强化" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="150" ModifyCalType="1"/>
+	<Property ID="nagastr_buff_1_eff2" Name="移动速度强化" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="70" ModifyCalType="1"/>
+	<Property ID="yr_ass_sb_buff_1_eff2" Name="闪避增强" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="30" ModifyCalType="1"/>
+	<Property ID="yr_ass_sb_buff_1_eff1" Name="移动加速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="70" ModifyCalType="1"/>
+	<Property ID="yr_ass_jiansu_buff_1_eff1" Name="减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-80" ModifyCalType="1"/>
+	<Property ID="buff_wl_hdjs_skill_8_eff" Name="70%减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-70" ModifyCalType="1"/>
+	<Property ID="buff_wl_hdjs_skill_9b" Name="减伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="Def" ModifyPropValue="200000" ModifyCalType="0"/>
+	<Property ID="lwt_buff_6_eff1" Name="60%减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-60" ModifyCalType="1"/>
+	<Property ID="lwt_buff_27_eff1" Name="保护壳" ModifyTargetType="0" ModifyType="3" ModifyPropName="Def" ModifyPropValue="1000000" ModifyCalType="0"/>
+	<Property ID="buff_ws_skill_35_3" Name="水流减速30%" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30" ModifyCalType="1"/>
+	<Property ID="buff_ws_skill_34_3" Name="祝福加攻击30%" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_lx_rkx_skill_1_eff" Name="70%减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-70" ModifyCalType="1"/>
+	<Property ID="buff_zp_bingf_skill_4_eff" Name="50%减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-50" ModifyCalType="1"/>
+	<Property ID="buff_ws_skill_37_2" Name="减少抗暴率" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="-50" ModifyCalType="1"/>
+	<Property ID="buff_ws_skill_37_3" Name="提高免伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="Def" ModifyPropValue="10000" ModifyCalType="0"/>
+	<Property ID="buff_zp_bl_skill_4_eff" Name="80%减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-80" ModifyCalType="1"/>
+	<Property ID="buff_zp_hl_skill_4_eff" Name="攻击降低50%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="-50" ModifyCalType="1"/>
+	<Property ID="buff_team9_sd_skill_8_eff" Name="攻击形态" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="80" ModifyCalType="1"/>
+	<Property ID="buff_team9_sd_skill_9_eff" Name="防御形态" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="-60" ModifyCalType="1"/>
+	<Property ID="buff_team9_sd_skill_10_eff" Name="玩家攻击形态" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="buff_team9_sd_skill_11_eff" Name="玩家防御形态" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="-60" ModifyCalType="1"/>
+	<Property ID="bf_bone_buff_1_eff1" Name="20%减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-20" ModifyCalType="1"/>
+	<Property ID="copy_buff_ws_skill_34_3" Name="祝福加攻击50%" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="bf_zhenfen_buff_1_eff1" Name="50%攻击力修正" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="bf_zhenfen_buff_1_eff2" Name="25%移动速度修正" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="25" ModifyCalType="1"/>
+	<Property ID="bf_zhenfen_buff_2_eff1" Name="100%攻击力修正" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="bf_zhenfen_buff_2_eff2" Name="50%移动速度修正" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="darkwiz_buff_3_eff1" Name="奥术弹减攻" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="-2" ModifyCalType="1"/>
+	<Property ID="darkwiz_buff_3_eff2" Name="奥术弹减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-1" ModifyCalType="1"/>
+	<Property ID="darkwiz_buff_5_eff1" Name="变身减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-50" ModifyCalType="1"/>
+	<Property ID="ruishou_buff_1_eff1" Name="100%攻击力修正" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="treebro_b_buff_2_eff1" Name="固守" ModifyTargetType="0" ModifyType="3" ModifyPropName="Dodge" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="treebro_b_buff_3_eff1" Name="强攻" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="pandafs_buff_1" Name="100%攻击" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="pandafs_buff_2" Name="50%攻击" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="pandafs_buff_3" Name="-50%攻击" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="-50" ModifyCalType="1"/>
+	<Property ID="pandafs_buff_4" Name="50%免伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="Dodge" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="pandafs_buff_5" Name="75%免伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="Dodge" ModifyPropValue="75" ModifyCalType="0"/>
+	<Property ID="pandafs_buff_13" Name="50%加速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="pandafs_buff_14" Name="50%减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-50" ModifyCalType="1"/>
+	<Property ID="fairyking_buff_1_eff1" Name="80%减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-80" ModifyCalType="1"/>
+	<Property ID="hteam11_fairyking_buff_5_eff1" Name="闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="hteam11_fairyking_buff_11_eff1" Name="免伤20" ModifyTargetType="0" ModifyType="3" ModifyPropName="Dodge" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_ws_skill_43_2" Name="弦月剑气加伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="130" ModifyCalType="1"/>
+	<Property ID="guildboss_buff_1_eff1" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="-101" ModifyCalType="1"/>
+	<Property ID="copy_worldboss_bati_buff_11_eff" ModifyTargetType="0" ModifyType="3" ModifyPropName="Dodge" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="bf_guard_buff_5_eff1" Name="90%免伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="Dodge" ModifyPropValue="90" ModifyCalType="0"/>
+	<Property ID="buff_text_zjgj" Name="增加攻击" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="100" ModifyCalType="1"/>
+	<Property ID="buff_text_zjfy" Name="增加防御" ModifyTargetType="0" ModifyType="3" ModifyPropName="Dodge" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="buff_zudui_boss1_001_1A" Name="闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_zudui_boss1_001_1B" Name="命中" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_zudui_boss1_003_1A" Name="暴击" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="200" ModifyCalType="0"/>
+	<Property ID="buff_zudui_boss1_003_1B" Name="暴伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="200" ModifyCalType="0"/>
+	<Property ID="buff_zudui_boss2_002C" Name="加伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="99" ModifyCalType="1"/>
+	<Property ID="buff_zudui_boss2_002D" Name="减伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="-99" ModifyCalType="1"/>
+	<Property ID="buff_zudui_boss2_005" Name="隐身加闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="500" ModifyCalType="0"/>
+	<Property ID="wiz531_buff_7_eff1" Name="减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-60" ModifyCalType="1"/>
+	<Property ID="buff_wsty_001" Name="提高自身1000生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_002" Name="提高自身10400生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_003" Name="提高自身10625生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_004" Name="提高自身11000生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_005" Name="提高自身1125生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_006" Name="提高自身12100生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_007" Name="提高自身1250生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_008" Name="提高自身1275生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_009" Name="提高自身12750生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_010" Name="提高自身1300生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_011" Name="提高自身1350生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_012" Name="提高自身13600生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_013" Name="提高自身13750生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_014" Name="提高自身1625生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_015" Name="提高自身16500生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_016" Name="提高自身1650生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_017" Name="提高自身1700生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_018" Name="提高自身17600生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_019" Name="提高自身1800生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_020" Name="提高自身1875生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_021" Name="提高自身1950生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_022" Name="提高自身2000生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_023" Name="提高自身2025生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_024" Name="提高自身2125生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_025" Name="提高自身2200生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_026" Name="提高自身2250生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_027" Name="提高自身2500生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_028" Name="提高自身2550生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_029" Name="提高自身2600生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_030" Name="提高自身2750生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_031" Name="提高自身2925生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_032" Name="提高自身3125生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_033" Name="提高自身3250生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_034" Name="提高自身3300生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_035" Name="提高自身3375生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_036" Name="提高自身3400生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_037" Name="提高自身3600生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_038" Name="提高自身3750生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_039" Name="提高自身375生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_040" Name="提高自身3825生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_041" Name="提高自身4000生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_042" Name="提高自身4050生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_043" Name="提高自身4225生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_044" Name="提高自身4250生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_045" Name="提高自身4400生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_046" Name="提高自身4500生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_047" Name="提高自身4875生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_048" Name="提高自身4950生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_049" Name="提高自身500生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_050" Name="提高自身5200生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_051" Name="提高自身5500生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_052" Name="提高自身5525生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_053" Name="提高自身5625生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_054" Name="提高自身5850生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_055" Name="提高自身625生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_056" Name="提高自身6375生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_057" Name="提高自身6500生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_058" Name="提高自身6750生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_059" Name="提高自身675生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_060" Name="提高自身6800生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_061" Name="提高自身7150生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_062" Name="提高自身7150生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_063" Name="提高自身7200生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_064" Name="提高自身750生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_065" Name="提高自身8125生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_066" Name="提高自身8250生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_067" Name="提高自身8500生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_068" Name="提高自身8800生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_069" Name="提高自身900生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_070" Name="提高自身9350生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_071" Name="提高自身9750生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_072" Name="提高自身975生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_073" Name="提高自身9900生命" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_074" Name="提高自身100攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_075" Name="提高自身1100攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_076" Name="提高自身1105攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_077" Name="提高自身110攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_078" Name="提高自身1190攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_079" Name="提高自身1210攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_080" Name="提高自身125攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_081" Name="提高自身130攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_082" Name="提高自身135攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_083" Name="提高自身1430攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_085" Name="提高自身150攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_086" Name="提高自身1540攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_087" Name="提高自身170攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_088" Name="提高自身175攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_089" Name="提高自身180攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_090" Name="提高自身195攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_091" Name="提高自身200攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_092" Name="提高自身225攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_093" Name="提高自身250攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_094" Name="提高自身255攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_095" Name="提高自身260攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_096" Name="提高自身270攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_097" Name="提高自身275攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_098" Name="提高自身315攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_099" Name="提高自身325攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_100" Name="提高自身330攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_101" Name="提高自身340攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_102" Name="提高自身350攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_103" Name="提高自身360攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_104" Name="提高自身390攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_105" Name="提高自身405攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_106" Name="提高自身425攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_107" Name="提高自身440攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_108" Name="提高自身450攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_109" Name="提高自身455攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_110" Name="提高自身45攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_111" Name="提高自身495攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_112" Name="提高自身50攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_113" Name="提高自身510攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_114" Name="提高自身520攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_115" Name="提高自身550攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_116" Name="提高自身585攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_117" Name="提高自身595攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_118" Name="提高自身630攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_119" Name="提高自身650攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_120" Name="提高自身65攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_121" Name="提高自身660攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_122" Name="提高自身680攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_123" Name="提高自身715攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_124" Name="提高自身75攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_125" Name="提高自身765攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_126" Name="提高自身770攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_127" Name="提高自身845攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_128" Name="提高自身850攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_129" Name="提高自身880攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_130" Name="提高自身90攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_131" Name="提高自身910攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_132" Name="提高自身935攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_133" Name="提高自身990攻击" ModifyTargetType="0" ModifyType="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_134" Name="提高自身330攻击，同时提高主人10%格挡" ModifyTargetType="2" ModifyType="3" ModifyPropName="Dodge" ModifyPropValue="10" ModifyCalType="1"/>
+	<Property ID="buff_wsty_135" Name="提高自身7150生命，同时提高主人10%伤害反弹" ModifyTargetType="2" ModifyType="3" ModifyPropName="Rebound" ModifyPropValue="10" ModifyCalType="1"/>
+	<Property ID="buff_wsty_136" Name="提高自身520攻击，同时提高主人250免伤" ModifyTargetType="2" ModifyType="3" ModifyPropName="Def" ModifyPropValue="250" ModifyCalType="0"/>
+	<Property ID="buff_wsty_137" Name="提高自身390攻击，同时提高主人250冰元素伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="IceDam" ModifyPropValue="250" ModifyCalType="0"/>
+	<Property ID="buff_wsty_138" Name="提高自身425攻击，提高主人300冰元素伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="IceDam" ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_wsty_139" Name="提高自身510攻击，同时提高主人500冰元素伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="IceDam" ModifyPropValue="500" ModifyCalType="0"/>
+	<Property ID="buff_wsty_140" Name="提高自身65攻击，同时提高主人200电元素伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="LightningDam" ModifyPropValue="200" ModifyCalType="0"/>
+	<Property ID="buff_wsty_141" Name="提高自身510攻击，同时提高主人300电元素伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="LightningDam" ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_wsty_142" Name="提高自身110攻击，同时提高主人500电元素伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="LightningDam" ModifyPropValue="500" ModifyCalType="0"/>
+	<Property ID="buff_wsty_143" Name="提高自身130攻击，同时提高主人200火元素伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="FireDam " ModifyPropValue="200" ModifyCalType="0"/>
+	<Property ID="buff_wsty_144" Name="提高自身455攻击，同时提高主人250火元素伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="FireDam " ModifyPropValue="250" ModifyCalType="0"/>
+	<Property ID="buff_wsty_145" Name="提高自身510攻击，同时提高主人300火元素伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="FireDam " ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_wsty_146" Name="提高自身7650生命，同时提高主人350火元素伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="FireDam " ModifyPropValue="350" ModifyCalType="0"/>
+	<Property ID="buff_wsty_147" Name="提高自身170攻击，同时提高主人400火元素伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="FireDam " ModifyPropValue="400" ModifyCalType="0"/>
+	<Property ID="buff_wsty_148" Name="提高自身3300生命，同时提高主人25%命中" ModifyTargetType="2" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="25" ModifyCalType="1"/>
+	<Property ID="buff_wsty_149" Name="提高自身8500生命，同时提高主人25%抗暴击" ModifyTargetType="2" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="25" ModifyCalType="1"/>
+	<Property ID="buff_wsty_150" Name="提高自身220攻击，同时提高主人35%抗暴击" ModifyTargetType="2" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="35" ModifyCalType="1"/>
+	<Property ID="buff_wsty_151" Name="提高自身255攻击，同时提高主人30%暴击免伤" ModifyTargetType="2" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="30" ModifyCalType="1"/>
+	<Property ID="buff_wsty_152" Name="提高自身12100生命，同时提高主人7%暴击免伤" ModifyTargetType="2" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="7" ModifyCalType="1"/>
+	<Property ID="buff_wsty_153" Name="提高自身260攻击，同时提高主人1000生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="1000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_154" Name="提高自身440攻击，同时提高主人10000生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="10000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_155" Name="提高自身660攻击，同时提高主人13000生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="13000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_156" Name="提高自身11000生命，同时提高主人16000生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="16000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_157" Name="提高自身390攻击，同时提高主人2000生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="2000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_158" Name="提高自身11000生命，同时提高主人22000生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="22000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_159" Name="提高自身3825生命，同时提高主人2500生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="2500" ModifyCalType="0"/>
+	<Property ID="buff_wsty_160" Name="提高自身340攻击，同时提高主人3000生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="3000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_161" Name="提高自身880攻击，同时提高主人30000生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="30000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_162" Name="提高自身8500生命，同时提高主人3500生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="3500" ModifyCalType="0"/>
+	<Property ID="buff_wsty_163" Name="提高自身340攻击，同时提高主人4500生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="4500" ModifyCalType="0"/>
+	<Property ID="buff_wsty_164" Name="提高自身765攻击，同时提高主人5000生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="5000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_165" Name="提高自身8500生命，同时提高主人6000生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="6000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_166" Name="提高自身2750生命，同时提高主人6500生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="6500" ModifyCalType="0"/>
+	<Property ID="buff_wsty_167" Name="提高自身510攻击，同时提高主人9000生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="9000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_168" Name="提高自身1540攻击，同时提高主人1200攻击" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="1200" ModifyCalType="0"/>
+	<Property ID="buff_wsty_169" Name="提高自身3400生命，同时提高主人200攻击" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="0"/>
+	<Property ID="buff_wsty_170" Name="提高自身3400生命，同时提高主人250攻击力" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="250" ModifyCalType="0"/>
+	<Property ID="buff_wsty_171" Name="提高自身510攻击，同时提高主人300攻击力" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_wsty_172" Name="提高自身5500生命，同时提高主人350攻击力" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="350" ModifyCalType="0"/>
+	<Property ID="buff_wsty_173" Name="提高自身4400生命，同时提高主人400攻击" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="400" ModifyCalType="0"/>
+	<Property ID="buff_wsty_174" Name="提高自身440攻击，同时提高主人10%闪避" ModifyTargetType="2" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="10" ModifyCalType="1"/>
+	<Property ID="buff_wsty_175" Name="提高自身195攻击，同时提高主人15%暴击伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="15" ModifyCalType="1"/>
+	<Property ID="buff_wsty_176" Name="提高自身1275生命，同时提高主人20%暴击伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_wsty_177" Name="提高自身6375生命，同时提高主人4%暴击伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="4" ModifyCalType="1"/>
+	<Property ID="buff_wsty_178" Name="提高自身16500生命，同时提高主人30%暴击伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="7" ModifyCalType="1"/>
+	<Property ID="buff_wsty_179" Name="提高自身1190攻击，同时提高主人5%暴击伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="5" ModifyCalType="1"/>
+	<Property ID="buff_wsty_180" Name="提高自身330攻击，同时提高主人40%暴击伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="40" ModifyCalType="1"/>
+	<Property ID="buff_wsty_181" Name="提高自身660攻击，同时提高主人50%暴击伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="buff_wsty_182" Name="提高自身255攻击，同时提高主人15%暴击" ModifyTargetType="2" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="15" ModifyCalType="1"/>
+	<Property ID="buff_wsty_183" Name="提高自身1650生命，同时提高主人20%暴击" ModifyTargetType="2" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_wsty_184" Name="提高自身4400生命，同时提高主人25%暴击" ModifyTargetType="2" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="25" ModifyCalType="1"/>
+	<Property ID="buff_wsty_185" Name="提高自身880攻击，同时提高主人10%暴击" ModifyTargetType="2" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="10" ModifyCalType="1"/>
+	<Property ID="buff_wsty_186" Name="提高自身660攻击，同时提高主人10%暴击" ModifyTargetType="2" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="10" ModifyCalType="1"/>
+	<Property ID="buff_wsty_187" Name="提高自身85攻击，同时提高主人20%暴击" ModifyTargetType="2" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="buff_wsty_188" Name="提高自身4950生命，同时提高主人40%暴击伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="40" ModifyCalType="1"/>
+	<Property ID="buff_wsty_189" Name="提高自身2550生命，同时提高主人200攻击" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="0"/>
+	<Property ID="buff_wsty_190" Name="提高自身2125生命，同时提高主人2500生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="2500" ModifyCalType="0"/>
+	<Property ID="buff_wsty_191" Name="提高自身390攻击，同时提高神圣天使1100生命" ConditionPack="pet_6" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="1100" ModifyCalType="0"/>
+	<Property ID="buff_wsty_192" Name="提高自身390攻击，同时提高主人200攻击" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="0"/>
+	<Property ID="buff_wsty_193" Name="提高自身1700生命，额外提高自身1500生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="1500" ModifyCalType="0"/>
+	<Property ID="buff_wsty_194" Name="提高自身2200生命，同时提高主人25%暴击" ModifyTargetType="2" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="25" ModifyCalType="1"/>
+	<Property ID="buff_wsty_195" Name="提高自身660攻击，同时提高主人400攻击" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="400" ModifyCalType="0"/>
+	<Property ID="buff_wsty_196" Name="提高自身325攻击，额外提高自身1200生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="1200" ModifyCalType="0"/>
+	<Property ID="buff_wsty_197" Name="提高自身2550生命，同时提高主人250攻击力" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="250" ModifyCalType="0"/>
+	<Property ID="buff_wsty_198" Name="提高自身3300生命，同时提高主人40%暴击伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="40" ModifyCalType="1"/>
+	<Property ID="buff_wsty_199" Name="提高自身550攻击，同时提高主人10%闪避" ModifyTargetType="2" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="10" ModifyCalType="1"/>
+	<Property ID="buff_wsty_200" Name="提高自身455攻击，同时提高主人200攻击" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="0"/>
+	<Property ID="buff_wsty_201" Name="提高自身4250生命，同时提高主人250攻击力" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="250" ModifyCalType="0"/>
+	<Property ID="buff_wsty_202" Name="提高自身595攻击，同时提高主人300攻击力" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_wsty_203" Name="提高自身770攻击，同时提高主人400攻击" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="400" ModifyCalType="0"/>
+	<Property ID="buff_wsty_204" Name="提高自身260攻击，同时提高堕落天使250攻击力" ConditionPack="pet_5" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="250" ModifyCalType="0"/>
+	<Property ID="buff_wsty_205" Name="提高自身195攻击，同时提高双头犬500攻击" ConditionPack="pet_16" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="500" ModifyCalType="0"/>
+	<Property ID="buff_wsty_206" Name="提高自身11000生命，同时提高主人350攻击力" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="350" ModifyCalType="0"/>
+	<Property ID="buff_wsty_207" Name="提高自身390攻击，同时提高主人200攻击" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="0"/>
+	<Property ID="buff_wsty_208" Name="提高自身5525生命，同时提高暴君领主500攻击" ConditionPack="pet_24" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="500" ModifyCalType="0"/>
+	<Property ID="buff_wsty_209" Name="提高自身660攻击，同时提高主人10000生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="10000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_210" Name="提高自身12750生命，同时提高死亡收割者1000攻击" ConditionPack="pet_12" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="2000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_211" Name="提高自身595攻击，同时提高主人300火元素伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="FireDam " ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_wsty_212" Name="提高自身770攻击，同时提高主人15%抗暴击" ModifyTargetType="2" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="15" ModifyCalType="1"/>
+	<Property ID="buff_wsty_213" Name="提高自身680攻击，同时提高主人500免伤" ModifyTargetType="2" ModifyType="3" ModifyPropName="Def" ModifyPropValue="500" ModifyCalType="0"/>
+	<Property ID="buff_wsty_214" Name="提高自身520攻击，同时提高主人3000生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="3000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_215" Name="提高自身680攻击，同时提高湮灭法师1200攻击" ConditionPack="pet_18" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="2400" ModifyCalType="0"/>
+	<Property ID="buff_wsty_216" Name="提高自身8250生命，同时提高主人7%暴击伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="7" ModifyCalType="1"/>
+	<Property ID="buff_wsty_217" Name="提高自身520攻击，同时提高主人250攻击力" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="250" ModifyCalType="0"/>
+	<Property ID="buff_wsty_218" Name="提高自身4250生命，同时提高主人4%暴击" ModifyTargetType="2" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="4" ModifyCalType="1"/>
+	<Property ID="buff_wsty_219" Name="提高自身680攻击，同时提高毒煞1200攻击" ConditionPack="pet_19" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="2400" ModifyCalType="0"/>
+	<Property ID="buff_wsty_220" Name="提高自身5500生命，同时提高主人16000生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="16000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_221" Name="提高自身880攻击，同时提高主人3%伤害反弹" ModifyTargetType="2" ModifyType="3" ModifyPropName="Rebound" ModifyPropValue="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_222" Name="提高自身11000生命，同时提高神牛2000攻击" ConditionPack="pet_21" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="4000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_223" Name="提高自身585攻击，同时提高怒炎5000生命" ConditionPack="pet_22" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="10000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_224" Name="提高自身4250生命，同时提高主人250攻击力" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="250" ModifyCalType="0"/>
+	<Property ID="buff_wsty_225" Name="提高自身5500生命，同时提高主人900免伤" ModifyTargetType="2" ModifyType="3" ModifyPropName="Def" ModifyPropValue="900" ModifyCalType="0"/>
+	<Property ID="buff_wsty_226" Name="提高自身990攻击，同时提高主人15%抗暴击" ModifyTargetType="2" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="15" ModifyCalType="1"/>
+	<Property ID="buff_wsty_227" Name="提高自身10625生命，同时提高冰炮神龟800攻击" ConditionPack="pet_23" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="1600" ModifyCalType="0"/>
+	<Property ID="buff_wsty_228" Name="提高自身13750生命，同时提高主人7%暴击伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="7" ModifyCalType="1"/>
+	<Property ID="buff_wsty_229" Name="提高自身715攻击，同时提高主人500能量" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxMP" ModifyPropValue="500" ModifyCalType="0"/>
+	<Property ID="buff_wsty_230" Name="提高自身9350生命，同时提高黑暗巨龙1200攻击" ConditionPack="pet_9" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="2400" ModifyCalType="0"/>
+	<Property ID="buff_wsty_231" Name="提高自身935攻击，同时提高主人500冰元素伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="IceDam" ModifyPropValue="500" ModifyCalType="0"/>
+	<Property ID="buff_wsty_232" Name="提高自身1210攻击，同时提高主人3%闪避" ModifyTargetType="2" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_233" Name="提高自身845攻击，同时提高主人250攻击力" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="250" ModifyCalType="0"/>
+	<Property ID="buff_wsty_234" Name="提高自身1105攻击，同时提高冰霜巨龙5000生命" ConditionPack="pet_10" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="10000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_235" Name="提高自身9900生命，同时提高主人7%暴击伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="7" ModifyCalType="1"/>
+	<Property ID="buff_wsty_236" Name="提高自身1430攻击，同时提高主人13000生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="13000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_237" Name="提高自身650攻击，同时提高主人3000生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="3000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_238" Name="提高自身13600生命，同时提高主人3500生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="3500" ModifyCalType="0"/>
+	<Property ID="buff_wsty_239" Name="提高自身850攻击，同时提高主人2%伤害反弹" ModifyTargetType="2" ModifyType="3" ModifyPropName="Rebound" ModifyPropValue="2" ModifyCalType="1"/>
+	<Property ID="buff_wsty_240" Name="提高自身17600生命，同时提高女蜗1500攻击" ConditionPack="pet_11" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="3000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_241" Name="提高自身1100攻击，同时提高主人13000生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="13000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_242" Name="提高自身910攻击，同时提高主人300火元素伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="FireDam " ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_wsty_243" Name="提高自身6800生命，同时提高冰霜凤凰3000生命" ConditionPack="pet_13" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="6000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_244" Name="提高自身8800生命，同时提高主人3%命中" ModifyTargetType="2" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_245" Name="提高自身715攻击，提高主人300冰元素伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="IceDam" ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_wsty_246" Name="提高自身8500生命，同时提高烈焰凤凰3000生命" ConditionPack="pet_14" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="6000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_247" Name="提高自身935攻击，同时提高主人5%暴击" ModifyTargetType="2" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="5" ModifyCalType="1"/>
+	<Property ID="buff_wsty_248" Name="提高自身1210攻击，同时提高主人1200攻击" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="1200" ModifyCalType="0"/>
+	<Property ID="buff_wsty_249" Name="提高自身650攻击，同时提高主人300电元素伤害" ModifyTargetType="2" ModifyType="3" ModifyPropName="LightningDam" ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_wsty_250" Name="提高自身8500生命，同时提高主人350攻击力" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="350" ModifyCalType="0"/>
+	<Property ID="buff_wsty_251" Name="提高自身850攻击，同时提高主人5%抗暴击" ModifyTargetType="2" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="5" ModifyCalType="1"/>
+	<Property ID="buff_wsty_252" Name="提高自身11000生命，同时提高主人2%闪避" ModifyTargetType="2" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="2" ModifyCalType="1"/>
+	<Property ID="buff_wsty_253" Name="提高自身1100攻击，同时提高生命巨龙1800攻击" ConditionPack="pet_20" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="3600" ModifyCalType="0"/>
+	<Property ID="buff_wsty_254" Name="提高自身25攻击" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="25" ModifyCalType="0"/>
+	<Property ID="buff_wsty_255" Name="提高自身910攻击，同时提高主人1500生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="1500" ModifyCalType="0"/>
+	<Property ID="buff_wsty_256" Name="提高自身3400生命，同时提高主人300攻击" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_wsty_257" Name="提高自身1190攻击，同时提高主人5000生命" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="5000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_258" Name="提高自身4400生命，同时提高主人500攻击" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="500" ModifyCalType="0"/>
+	<Property ID="buff_wsty_259" Name="提高自身1540攻击，同时提高主人4%闪避" ModifyTargetType="2" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="4" ModifyCalType="1"/>
+	<Property ID="buff_wsty_296" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="1000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_297" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="0"/>
+	<Property ID="buff_wsty_298" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="3000" ModifyCalType="0"/>
+	<Property ID="buff_wsty_299" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="400" ModifyCalType="0"/>
+	<Property ID="buff_wsty_300" ModifyTargetType="2" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_306" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="0"/>
+	<Property ID="buff_wsty_307" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="250" ModifyCalType="0"/>
+	<Property ID="buff_wsty_308" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="buff_wsty_309" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="350" ModifyCalType="0"/>
+	<Property ID="buff_wsty_310" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="400" ModifyCalType="0"/>
+	<Property ID="buff_wsty_316" ModifyTargetType="2" ModifyType="3" ModifyPropName="FireDam" ModifyPropValue="200" ModifyCalType="0"/>
+	<Property ID="buff_wsty_317" ModifyTargetType="2" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="200" ModifyCalType="0"/>
+	<Property ID="buff_wsty_318" ModifyTargetType="2" ModifyType="3" ModifyPropName="FireDam" ModifyPropValue="400" ModifyCalType="0"/>
+	<Property ID="buff_wsty_319" ModifyTargetType="2" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="3" ModifyCalType="1"/>
+	<Property ID="buff_wsty_320" ModifyTargetType="2" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="10" ModifyCalType="1"/>
+	<Property ID="buff_wsty_326" ModifyTargetType="2" ModifyType="3" ModifyPropName="LightningDam" ModifyPropValue="200" ModifyCalType="0"/>
+	<Property ID="buff_wsty_327" ModifyTargetType="2" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="2500" ModifyCalType="0"/>
+	<Property ID="buff_wsty_328" ModifyTargetType="2" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="5" ModifyCalType="1"/>
+	<Property ID="buff_wsty_329" ModifyTargetType="2" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="7" ModifyCalType="1"/>
+	<Property ID="buff_wsty_330" ModifyTargetType="2" ModifyType="3" ModifyPropName="LightningDam" ModifyPropValue="500" ModifyCalType="0"/>
+	<Property ID="fairy541_buff_3_eff1" Name="闪避修正" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="-9999" ModifyCalType="0"/>
+	<Property ID="fairy541_buff_1_eff1" Name="命中修正" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="99999" ModifyCalType="0"/>
+	<Property ID="buff_zudui_30_001A" Name="生命" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="3977115" ModifyCalType="0"/>
+	<Property ID="buff_zudui_30_001B" Name="伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="3298" ModifyCalType="0"/>
+	<Property ID="buff_zudui_30_001C" Name="命中" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="20" ModifyCalType="0"/>
+	<Property ID="buff_zudui_30_001D" Name="闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="10" ModifyCalType="0"/>
+	<Property ID="buff_zudui_30_001E" Name="暴击" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="10" ModifyCalType="0"/>
+	<Property ID="buff_zudui_30_001F" Name="抗暴" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="5" ModifyCalType="0"/>
+	<Property ID="buff_zudui_30_001G" Name="暴伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="10" ModifyCalType="0"/>
+	<Property ID="buff_zudui_30_001H" Name="暴免" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="5" ModifyCalType="0"/>
+	<Property ID="buff_zudui_30_001I" Name="冰冻抗性" ModifyTargetType="0" ModifyType="3" ModifyPropName="IceAsist" ModifyPropValue="2" ModifyCalType="0"/>
+	<Property ID="buff_zudui_40_001A" Name="生命" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="7954230" ModifyCalType="0"/>
+	<Property ID="buff_zudui_40_001B" Name="伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="8596" ModifyCalType="0"/>
+	<Property ID="buff_zudui_40_001C" Name="命中" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="40" ModifyCalType="0"/>
+	<Property ID="buff_zudui_40_001D" Name="闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="20" ModifyCalType="0"/>
+	<Property ID="buff_zudui_40_001E" Name="暴击" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="20" ModifyCalType="0"/>
+	<Property ID="buff_zudui_40_001F" Name="抗暴" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="10" ModifyCalType="0"/>
+	<Property ID="buff_zudui_40_001G" Name="暴伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="20" ModifyCalType="0"/>
+	<Property ID="buff_zudui_40_001H" Name="暴免" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="10" ModifyCalType="0"/>
+	<Property ID="buff_zudui_40_001I" Name="冰冻抗性" ModifyTargetType="0" ModifyType="3" ModifyPropName="IceAsist" ModifyPropValue="4" ModifyCalType="0"/>
+	<Property ID="buff_zudui_50_001A" Name="生命" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="11931345" ModifyCalType="0"/>
+	<Property ID="buff_zudui_50_001B" Name="伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="13935" ModifyCalType="0"/>
+	<Property ID="buff_zudui_50_001C" Name="命中" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="60" ModifyCalType="0"/>
+	<Property ID="buff_zudui_50_001D" Name="闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="30" ModifyCalType="0"/>
+	<Property ID="buff_zudui_50_001E" Name="暴击" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="30" ModifyCalType="0"/>
+	<Property ID="buff_zudui_50_001F" Name="抗暴" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="15" ModifyCalType="0"/>
+	<Property ID="buff_zudui_50_001G" Name="暴伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="30" ModifyCalType="0"/>
+	<Property ID="buff_zudui_50_001H" Name="暴免" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="15" ModifyCalType="0"/>
+	<Property ID="buff_zudui_50_001I" Name="冰冻抗性" ModifyTargetType="0" ModifyType="3" ModifyPropName="IceAsist" ModifyPropValue="6" ModifyCalType="0"/>
+	<Property ID="buff_zudui_60_001A" Name="生命" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="15908460" ModifyCalType="0"/>
+	<Property ID="buff_zudui_60_001B" Name="伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="40334" ModifyCalType="0"/>
+	<Property ID="buff_zudui_60_001C" Name="命中" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="80" ModifyCalType="0"/>
+	<Property ID="buff_zudui_60_001D" Name="闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="40" ModifyCalType="0"/>
+	<Property ID="buff_zudui_60_001E" Name="暴击" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_zudui_60_001F" Name="抗暴" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="25" ModifyCalType="0"/>
+	<Property ID="buff_zudui_60_001G" Name="暴伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="40" ModifyCalType="0"/>
+	<Property ID="buff_zudui_60_001H" Name="暴免" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="20" ModifyCalType="0"/>
+	<Property ID="buff_zudui_60_001I" Name="冰冻抗性" ModifyTargetType="0" ModifyType="3" ModifyPropName="IceAsist" ModifyPropValue="7" ModifyCalType="0"/>
+	<Property ID="buff_zudui_70_001A" Name="生命" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="20885575" ModifyCalType="0"/>
+	<Property ID="buff_zudui_70_001B" Name="伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="66733" ModifyCalType="0"/>
+	<Property ID="buff_zudui_70_001C" Name="命中" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="100" ModifyCalType="0"/>
+	<Property ID="buff_zudui_70_001D" Name="闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_zudui_70_001E" Name="暴击" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="70" ModifyCalType="0"/>
+	<Property ID="buff_zudui_70_001F" Name="抗暴" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="35" ModifyCalType="0"/>
+	<Property ID="buff_zudui_70_001G" Name="暴伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_zudui_70_001H" Name="暴免" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="25" ModifyCalType="0"/>
+	<Property ID="buff_zudui_70_001I" Name="冰冻抗性" ModifyTargetType="0" ModifyType="3" ModifyPropName="IceAsist" ModifyPropValue="8" ModifyCalType="0"/>
+	<Property ID="buff_zudui_80_001A" Name="生命" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="26862690" ModifyCalType="0"/>
+	<Property ID="buff_zudui_80_001B" Name="伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="93132" ModifyCalType="0"/>
+	<Property ID="buff_zudui_80_001C" Name="命中" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="120" ModifyCalType="0"/>
+	<Property ID="buff_zudui_80_001D" Name="闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="60" ModifyCalType="0"/>
+	<Property ID="buff_zudui_80_001E" Name="暴击" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="70" ModifyCalType="0"/>
+	<Property ID="buff_zudui_80_001F" Name="抗暴" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="45" ModifyCalType="0"/>
+	<Property ID="buff_zudui_80_001G" Name="暴伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="60" ModifyCalType="0"/>
+	<Property ID="buff_zudui_80_001H" Name="暴免" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="30" ModifyCalType="0"/>
+	<Property ID="buff_zudui_80_001I" Name="冰冻抗性" ModifyTargetType="0" ModifyType="3" ModifyPropName="IceAsist" ModifyPropValue="9" ModifyCalType="0"/>
+	<Property ID="buff_zudui_90_001A" Name="生命" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="32839805" ModifyCalType="0"/>
+	<Property ID="buff_zudui_90_001B" Name="伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="119531" ModifyCalType="0"/>
+	<Property ID="buff_zudui_90_001C" Name="命中" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="140" ModifyCalType="0"/>
+	<Property ID="buff_zudui_90_001D" Name="闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="70" ModifyCalType="0"/>
+	<Property ID="buff_zudui_90_001E" Name="暴击" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="110" ModifyCalType="0"/>
+	<Property ID="buff_zudui_90_001F" Name="抗暴" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="55" ModifyCalType="0"/>
+	<Property ID="buff_zudui_90_001G" Name="暴伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="70" ModifyCalType="0"/>
+	<Property ID="buff_zudui_90_001H" Name="暴免" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="35" ModifyCalType="0"/>
+	<Property ID="buff_zudui_90_001I" Name="冰冻抗性" ModifyTargetType="0" ModifyType="3" ModifyPropName="IceAsist" ModifyPropValue="10" ModifyCalType="0"/>
+	<Property ID="buff_zudui_100_001A" Name="生命" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="3977115" ModifyCalType="0"/>
+	<Property ID="buff_zudui_100_001B" Name="伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="3298" ModifyCalType="0"/>
+	<Property ID="buff_zudui_100_001C" Name="命中" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="20" ModifyCalType="0"/>
+	<Property ID="buff_zudui_100_001D" Name="闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="10" ModifyCalType="0"/>
+	<Property ID="buff_zudui_100_001E" Name="暴击" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="10" ModifyCalType="0"/>
+	<Property ID="buff_zudui_100_001F" Name="抗暴" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="5" ModifyCalType="0"/>
+	<Property ID="buff_zudui_100_001G" Name="暴伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="10" ModifyCalType="0"/>
+	<Property ID="buff_zudui_100_001H" Name="暴免" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="5" ModifyCalType="0"/>
+	<Property ID="buff_zudui_100_001I" Name="冰冻抗性" ModifyTargetType="0" ModifyType="3" ModifyPropName="IceAsist" ModifyPropValue="2" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc30_001A" Name="生命" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="2585124" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc30_001B" Name="伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="2143" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc30_001C" Name="命中" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="18" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc30_001D" Name="闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="9" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc30_001E" Name="暴击" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="10" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc30_001F" Name="抗暴" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="5" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc30_001G" Name="暴伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="10" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc30_001H" Name="暴免" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="5" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc30_001I" Name="冰冻抗性" ModifyTargetType="0" ModifyType="3" ModifyPropName="IceAsist" ModifyPropValue="2" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc40_001A" Name="生命" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="5170249" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc40_001B" Name="伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="5587" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc40_001C" Name="命中" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="36" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc40_001D" Name="闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="18" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc40_001E" Name="暴击" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="20" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc40_001F" Name="抗暴" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="10" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc40_001G" Name="暴伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="20" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc40_001H" Name="暴免" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="10" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc40_001I" Name="冰冻抗性" ModifyTargetType="0" ModifyType="3" ModifyPropName="IceAsist" ModifyPropValue="4" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc50_001A" Name="生命" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="7755374" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc50_001B" Name="伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="9057" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc50_001C" Name="命中" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="54" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc50_001D" Name="闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="27" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc50_001E" Name="暴击" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="30" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc50_001F" Name="抗暴" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="15" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc50_001G" Name="暴伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="30" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc50_001H" Name="暴免" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="15" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc50_001I" Name="冰冻抗性" ModifyTargetType="0" ModifyType="3" ModifyPropName="IceAsist" ModifyPropValue="6" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc60_001A" Name="生命" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="10340499" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc60_001B" Name="伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="26217" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc60_001C" Name="命中" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="72" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc60_001D" Name="闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="36" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc60_001E" Name="暴击" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc60_001F" Name="抗暴" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="25" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc60_001G" Name="暴伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="40" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc60_001H" Name="暴免" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="20" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc60_001I" Name="冰冻抗性" ModifyTargetType="0" ModifyType="3" ModifyPropName="IceAsist" ModifyPropValue="7" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc70_001A" Name="生命" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="13575628" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc70_001B" Name="伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="43376" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc70_001C" Name="命中" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="90" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc70_001D" Name="闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="45" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc70_001E" Name="暴击" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="70" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc70_001F" Name="抗暴" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="35" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc70_001G" Name="暴伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc70_001H" Name="暴免" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="25" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc70_001I" Name="冰冻抗性" ModifyTargetType="0" ModifyType="3" ModifyPropName="IceAsist" ModifyPropValue="8" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc80_001A" Name="生命" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="17460748" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc80_001B" Name="伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="60535" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc80_001C" Name="命中" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="108" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc80_001D" Name="闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="54" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc80_001E" Name="暴击" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="90" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc80_001F" Name="抗暴" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="45" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc80_001G" Name="暴伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="60" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc80_001H" Name="暴免" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="30" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc80_001I" Name="冰冻抗性" ModifyTargetType="0" ModifyType="3" ModifyPropName="IceAsist" ModifyPropValue="9" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc90_001A" Name="生命" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="21345873" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc90_001B" Name="伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="77695" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc90_001C" Name="命中" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="126" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc90_001D" Name="闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="63" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc90_001E" Name="暴击" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="110" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc90_001F" Name="抗暴" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="55" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc90_001G" Name="暴伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="70" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc90_001H" Name="暴免" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="35" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc90_001I" Name="冰冻抗性" ModifyTargetType="0" ModifyType="3" ModifyPropName="IceAsist" ModifyPropValue="10" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc100_001A" Name="生命" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="21345873" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc100_001B" Name="伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="77695" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc100_001C" Name="命中" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="126" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc100_001D" Name="闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="63" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc100_001E" Name="暴击" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="110" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc100_001F" Name="抗暴" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="55" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc100_001G" Name="暴伤" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="70" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc100_001H" Name="暴免" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="35" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc100_001I" Name="冰冻抗性" ModifyTargetType="0" ModifyType="3" ModifyPropName="IceAsist" ModifyPropValue="10" ModifyCalType="0"/>
+	<Property ID="buff_jcdp_mg" Name="沐光加攻击" ModifyTargetType="0" ModifyType="3" ModifyPropName="AttackBase" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="buff_kzwz" Name="空中王者闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="buff_kzwz_01" Name="空中王者暴击" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="buff_yyzg" Name="羽翼之光" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="30" ModifyCalType="0"/>
+	<Property ID="doom523_buff_3a_eff1" Name="25%攻击" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="25" ModifyCalType="1"/>
+	<Property ID="doom523_buff_3a_eff2" Name="50%攻击" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="doom523_buff_3a_eff3" Name="75%攻击" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="75" ModifyCalType="1"/>
+	<Property ID="buff_wushenzs_001" Name="哪吒乾坤圈减速" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="0-$Level*5" ModifyCalType="1"/>
+	<Property ID="buff_wushenzs_002" Name="哪吒暴雨枪加暴伤" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="0+$Level*15" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_004" Name="孙悟空撼天动地加闪避" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="0+$Level*10" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_005" Name="皮特无处可逃减少暴免" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="0-$Level*10" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_006" Name="冰霜凤凰冰霜漩涡减少闪避" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="0-$Level*5" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_007" Name="蜗牛十字横斩减少命中" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="0-$Level*10" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_009" Name="蜗牛双刃旋风加暴击" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="0+$Level*10" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_010" Name="孙悟空分身加抗暴" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="0+$Level*10" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_011" Name="皮特连发蛛丝减速" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30-$Level*3" ModifyCalType="1"/>
+	<Property ID="buff_wushenzs_015" Name="守护战神爆裂突刺减速" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-$Level*8" ModifyCalType="1"/>
+	<Property ID="buff_wushenzs_016" Name="守护战神磁力引减少抗暴" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="-$Level*5" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_017" Name="烈焰凤凰地焰冲击减少暴击免伤" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="-$Level*8" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_018" Name="烈焰凤凰烈焰波动提高暴击" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="$Level*10" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_019" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30-$Level*3" ModifyCalType="1"/>
+	<Property ID="buff_wushenzs_020" Name="陈酒雾减少命中" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="-$Level*6" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_021" Name="陈太极之力减少闪避" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="-$Level*5" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_022" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30-$Level*3" ModifyCalType="1"/>
+	<Property ID="buff_wushenzs_023" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30-$Level*3" ModifyCalType="1"/>
+	<Property ID="buff_wushenzs_024" Name="汉克凌云踢减速" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30-$Level*3" ModifyCalType="1"/>
+	<Property ID="buff_wushenzs_025" Name="幽灵船长幽灵洪流减速" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-$Level*5" ModifyCalType="1"/>
+	<Property ID="buff_wushenzs_026" Name="幽灵船长幽灵诅咒提高暴击伤害" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="0+$Level*5" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_027" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30-$Level*3" ModifyCalType="1"/>
+	<Property ID="buff_wushenzs_028" Name="炽热天神天神禁区提高闪避" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="0+$Level*10" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_029" Name="炽热天神群体祝福提高移动速度" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="0+$Level*3" ModifyCalType="1"/>
+	<Property ID="buff_wushenzs_030" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30-$Level*3" ModifyCalType="1"/>
+	<Property ID="buff_ws_skill_44_2_1" Name="花粉降低闪避" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="-50" ModifyCalType="0"/>
+	<Property ID="buff_ws_skill_44_2_2" Name="花粉降低命中" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="-50" ModifyCalType="0"/>
+	<Property ID="buff_ws_skill_44_3A" Name="加速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="50" ModifyCalType="1"/>
+	<Property ID="byf_buff_jf" Name="加防" ModifyTargetType="0" ModifyType="3" ModifyPropName="Dodge" ModifyPropValue="9999" ModifyCalType="0"/>
+	<Property ID="zd2_slowdown_buff_1_eff" Name="70%减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-70" ModifyCalType="1"/>
+	<Property ID="zd2_spd" Name="风行70" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="70" ModifyCalType="1"/>
+	<Property ID="buff_wushenzs_032_1" Name="年兽飘忽不定减少抗暴" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="-$Level*1" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_032_2" Name="年兽飘忽不定减少暴击免伤" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="-$Level*1" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_033" Name="年兽致命吸附减少伤害" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="-$Level*3" ModifyCalType="1"/>
+	<Property ID="buff_wushenzs_034" Name="骷髅帝王刀气龙卷减少移速" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-$Level*4" ModifyCalType="1"/>
+	<Property ID="buff_wushenzs_035" Name="骷髅帝王血契锁链减少闪避" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="-$Level*5" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_037" Name="娜美海妖水瀑减少暴击" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Crit" ModifyPropValue="-$Level*5" ModifyCalType="1"/>
+	<Property ID="buff_wushenzs_038" Name="双面大盗毒针减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30" ModifyCalType="1"/>
+	<Property ID="buff_wushenzs_044" Name="神秘人时间掌控减少免伤" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Def" ModifyPropValue="-$Level*1" ModifyCalType="1"/>
+	<Property ID="buff_wushenzs_048" Name="冰炮神龟冰水柱减速" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30-$Level*3" ModifyCalType="1"/>
+	<Property ID="buff_ws_skill_46_2a" Name="小恶魔拉拽减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-20" ModifyCalType="1"/>
+	<Property ID="buff_ws_skill_46_3" Name="小恶魔吸血" ModifyTargetType="0" ModifyType="3" ModifyPropValue="10"/>
+	<Property ID="buff_ws_skill_47_2" Name="麻痹减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-40" ModifyCalType="1"/>
+	<Property ID="buff_wushenzs_053" Name="死亡收割者火翅雨减速" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-$Level*2" ModifyCalType="1"/>
+	<Property ID="buff_wushenzs_056" Name="女娲悬浮加闪避" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="$Level*10" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_057" Name="女娲沉沦加命中" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="$Level*10" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_059" Name="湮灭巫师死亡波爆扣暴免" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="TougDam" ModifyPropValue="-$Level*3" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_060" Name="雷帝加反伤" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Rebound" ModifyPropValue="$Level*5" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc60_001Z" Name="格挡" ModifyTargetType="0" ModifyType="3" ModifyPropName="Dodge" ModifyPropValue="20" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc70_001Z" Name="格挡" ModifyTargetType="0" ModifyType="3" ModifyPropName="Dodge" ModifyPropValue="30" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc80_001Z" Name="格挡" ModifyTargetType="0" ModifyType="3" ModifyPropName="Dodge" ModifyPropValue="40" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc90_001Z" Name="格挡" ModifyTargetType="0" ModifyType="3" ModifyPropName="Dodge" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="buff_zudui_npc100_001Z" Name="格挡" ModifyTargetType="0" ModifyType="3" ModifyPropName="Dodge" ModifyPropValue="60" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_063_1" Name="花粉降低闪避" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="-50-$Level*5" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_063_2" Name="花粉降低命中" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="-50-$Level*5" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_065" Name="加速" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="50+$Level*5" ModifyCalType="1"/>
+	<Property ID="buff_wushenzs_066" Name="毒煞死亡毒区加暴击伤害" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="CritDam" ModifyPropValue="$Level*10" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_071" Name="生命巨龙生命波动加免伤" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Def" ModifyPropValue="$Level*3000" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_072" Name="神枪手霍克连环射击加最终伤害" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="RealDam" ModifyPropValue="$Level*300" ModifyCalType="0"/>
+	<Property ID="battle_hg_buff_hun_e" Name="远古之魂减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30" ModifyCalType="1"/>
+	<Property ID="buff_wushenzs_075" Name="怒炎减速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-20-($Level-1)*5"/>
+	<Property ID="buff_wushenzs_076" Name="黑暗巨龙削弱恢复" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPReturnFactor" ModifyPropValue="-15-3*$Level" ModifyCalType="1"/>
+	<Property ID="50v50_addatk_buff_1" Name="攻击加强" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="10" ModifyCalType="1"/>
+	<Property ID="50v50_addspe_buff_1" Name="风行" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="20" ModifyCalType="1"/>
+	<Property ID="td1_jianliao_buff_1" Name="减疗" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPReturnFactor" ModifyPropValue="-80" ModifyCalType="0"/>
+	<Property ID="buff_wushenzs_078" Name="增加移动速度" ModifyFormulaTargetType="3" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="10+2*$Level"/>
+	<Property ID="buff_wushenzs_080A" Name="减速" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-15-2*$Level"/>
+	<Property ID="buff_ws_skill_48_1" Name="减速" ModifyFormulaTargetType="5" ModifyTargetType="0" ModifyType="3" ModifyPropName="-20-($Level-1)*4" ModifyCalType="1"/>
+	<Property ID="buff_wushenzs_081" Name="减抗暴击" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="Toug" ModifyPropValue="-10-$Level*2"/>
+	<Property ID="50V50_xianfeng_buff_xz_1" Name="攻击增强" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="200" ModifyCalType="0"/>
+	<Property ID="buff_wszb_002A" Name="增加攻击" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="70" ModifyCalType="1"/>
+	<Property ID="buff_z_yx_ws_skill_45_2_1" Name="减速30%" ModifyTargetType="1" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30" ModifyCalType="1"/>
+	<Property ID="buff_z_ws_skill_43_2" Name="增加速度" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="10+$Level*3" ModifyCalType="1"/>
+	<Property ID="buff_z_ws_skill_43_2_1" Name="减速" ModifyFormulaTargetType="4" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-10-$Level*3" ModifyCalType="1"/>
+	<Property ID="buff_z_ws_skill_43_2_2" Name="弦月剑气加伤害" ModifyTargetType="0" ModifyType="3" ModifyPropName="TotalAttack" ModifyPropValue="150" ModifyCalType="1"/>
+	<Property ID="ws_skill_49_3" Name="减速30%" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="30" ModifyCalType="1"/>
+	<Property ID="pvp_live_debuff_1a" Name="减疗(30%)" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPReturnFactor" ModifyPropValue="-30" ModifyCalType="0"/>
+	<Property ID="pvp_live_debuff_1b" Name="减疗(60%)" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPReturnFactor" ModifyPropValue="-60" ModifyCalType="0"/>
+	<Property ID="pvp_live_debuff_1c" Name="减疗(99%)" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPReturnFactor" ModifyPropValue="-99" ModifyCalType="0"/>
+	<Property ID="pvp_live_debuff_2a" Name="攻击增强(30%)" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="30" ModifyCalType="0"/>
+	<Property ID="pvp_live_debuff_2b" Name="攻击增强(50%)" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="50" ModifyCalType="0"/>
+	<Property ID="pvp_live_debuff_2b_1" Name="攻击增强(500%)" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="500" ModifyCalType="0"/>
+	<Property ID="pvp_live_buff_3" Name="攻击增强(15%)" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="15" ModifyCalType="0"/>
+	<Property ID="h_td2_fire_buff_9a" Name="生命上限减少(-1%)" ModifyTargetType="0" ModifyType="3" ModifyPropName="MaxHP" ModifyPropValue="-0.8" ModifyCalType="1"/>
+	<Property ID="h_td2_fire_buff_9b" Name="攻击增强(1%)" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="0.5" ModifyCalType="0"/>
+	<Property ID="h_td2_ice_buff_9a" Name="减少命中（1%）" ModifyTargetType="0" ModifyType="3" ModifyPropName="Hit" ModifyPropValue="-2" ModifyCalType="1"/>
+	<Property ID="h_td2_ice_buff_9b" Name="增加受疗成效（1%）" ModifyTargetType="0" ModifyType="3" ModifyPropName="HPReturnFactor" ModifyPropValue="0.3" ModifyCalType="0"/>
+	<Property ID="buff_ws_skill_50_3" Name="移动速度增加40%" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="40" ModifyCalType="1"/>
+	<Property ID="50v50_shouhushen_buff_add_2" Name="攻击增强(300%)" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="300" ModifyCalType="0"/>
+	<Property ID="guild_atk_up_add_1" Name="攻击增强(3%)" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="3" ModifyCalType="0"/>
+	<Property ID="guild_atk_up_add_2" Name="攻击增强(6%)" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="6" ModifyCalType="0"/>
+	<Property ID="guild_atk_up_add_3" Name="攻击增强(9%)" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="9" ModifyCalType="0"/>
+	<Property ID="guild_atk_up_add_4" Name="攻击增强(12%)" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="12" ModifyCalType="0"/>
+	<Property ID="guild_atk_up_add_5" Name="攻击增强(15%)" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="15" ModifyCalType="0"/>
+	<Property ID="ws_skill_50_1" Name="减速30%" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30" ModifyCalType="1"/>
+	<Property ID="drop_bs_buff_add_1" Name="加速" ModifyTargetType="0" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="10" ModifyCalType="1"/>
+	<Property ID="z_ws_skill_49_2_1" Name="增加伤害" ModifyFormulaTargetType="7" ModifyTargetType="0" ModifyType="3" ModifyPropName="FinalDamageRate" ModifyPropValue="5+Level*1" ModifyCalType="0"/>
+	<Property ID="buff_wszf_003A_1" Name="致残20%" ModifyType="3" ModifyPropName="DamageCripplePercent" ModifyPropValue="20" ModifyCalType="0"/>
+	<Property ID="buff_wszf_005A_1" Name="减速30%" ModifyType="3" ModifyPropName="RunSpeed" ModifyPropValue="-30" ModifyCalType="1"/>
+	<Property ID="buff_wszf_005A_2" Name="减闪避50%" ModifyType="3" ModifyPropName="Miss" ModifyPropValue="-50" ModifyCalType="0"/>
+</Object>
+
+

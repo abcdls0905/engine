@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop Left="50" Top="40" Width="662" Height="478" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+		<control name="groupbox_tip" entity="GroupBox" script="" init="">
+			<prop Top="18" Width="662" Height="441" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand"/>
+			<control name="Label1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="18" Top="43" Width="625" Height="355" ShadowColor="0,0,0,0" DrawMode="ExpandTile" BackImage="gui/tp2_common/backdrop/bg_001.png"/>
+			</control>
+			<control name="Label1_2nd" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="23" Top="83" Width="615" Height="310" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_002.png"/>
+			</control>
+			<control name="lbl_3rd" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="33" Top="88" Width="595" Height="300" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+			</control>
+			<control name="lbl_3" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="114" Top="29" Width="433" Height="54" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_10.png"/>
+			</control>
+			<control name="lbl_4" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="36" Top="359" Width="589" Height="28" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_03.png"/>
+			</control>
+			<control name="lbl_6" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="29" Top="300" Width="603" Height="94" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_08.png"/>
+			</control>
+			<control name="btn_cancel" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/cancel.png" PushImage="gui/tp2_common/window/cancel1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="404" Top="319" Width="150" Height="60" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@form_exit_activity_3" Font="WRYH24" DrawMode="ExpandH"/>
+			</control>
+			<control name="btn_confirm" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/affirm.png" PushImage="gui/tp2_common/window/affirm1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="108" Top="319" Width="150" Height="60" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@form_exit_activity_2" Font="WRYH24" DrawMode="ExpandH"/>
+			</control>
+			<control name="Label2" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="268" Top="12" Width="126" Height="62" ShadowColor="0,0,0,0" BackImage="gui/tp2_battle/scene_account/mop_up_09.png"/>
+			</control>
+			<control name="mlt_box" entity="MultiTextBox" script="" init="">
+				<prop MouseInBarColor="0,255,255,0" ViewRect="0,0,544,145" LineHeight="29" HtmlText="@form_exit_activity_1" ScrollSize="17" Left="59" Top="120" Width="544" Height="145" ShadowColor="0,0,0,0" Font="WRYH24" NoFrame="true"/>
+			</control>
+		</control>
+	</control>
+</form>
+

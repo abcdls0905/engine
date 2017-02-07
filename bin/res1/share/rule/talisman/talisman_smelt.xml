@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
+<!--
+ID				: 法宝类型id
+
+Normal_Material	: 普通淬炼消耗材料 格式 name,value  	name消耗物品id  	value物品数量
+Special_Material: 传说淬炼消耗材料 格式 ......
+Ability_Material: 技能消耗材料     格式 ...... 
+
+Normal_Currency : 普通淬炼消耗货币 格式 Gold,value      Gold消耗金币		value消耗数量
+										Diamond,value   Diamond消耗金币		value消耗数量
+										IceStone,value  IceStone冰晶石	 	value消耗数量
+Special_Currency: 传说淬炼消耗货币 格式 ........
+Ability_Currency: 技能消耗货币     格式 ........
+
+base_value 		: 淬炼基础属性
+
+Increase		: 属性加的几率
+Coefficient		: 属性淬炼上限公式系数 name属性名 value系数 例如20% value=20
+
+Attrib  		: 属性增长范围  name属性名 inmin属性加最小值 inmax属性加最大值　demin属性减最小值 demax属性减最小值
+
+Ability_Pool	：技能池  name技能id value随机概率 例如 value=20 代表(0，20]为此技能
+
+Ability_Color	: 属性对应的资源 name属性名 value对应image_list.xml文件里的id
+-->
+<Object>
+	<talisman ID="Talisman_1" Normal_Material="Item_lhs,1" Normal_Currency="IceStone,10" Ability_Material="Item_fbjnk,1" Ability_Currency="" Increase="42" ability_pool="Talisman_1">
+		<Attrib name="MaxHP" value="1200" inmin="5" inmax="80" demin="10" demax="160" base_value="6000"/>
+		<Attrib name="TotalAttack" value="180" inmin="1" inmax="11" demin="3" demax="22" base_value="900"/>
+		<Attrib name="Def" value="100" inmin="1" inmax="7" demin="1" demax="14" base_value="500"/>
+		<Attrib name="RealDam" value="160" inmin="1" inmax="10" demin="2" demax="20" base_value="800"/>
+		<Cost min="0" max="20" Special_Material="" Special_Currency="Diamond,80"/>
+		<Cost min="21" max="50" Special_Material="" Special_Currency="Diamond,100"/>
+		<Cost min="51" max="100" Special_Material="" Special_Currency="Diamond,120"/>
+		<Cost min="101" max="150" Special_Material="" Special_Currency="Diamond,150"/>
+		<Cost min="151" max="65535" Special_Material="" Special_Currency="Diamond,200"/>
+	</talisman>
+	<talisman ID="Talisman_2" Normal_Material="Item_lhs,1" Normal_Currency="IceStone,10" Ability_Material="Item_fbjnk,1" Ability_Currency="" Increase="42" ability_pool="Talisman_2">
+		<Attrib name="MaxHP" value="1800" inmin="5" inmax="140" demin="10" demax="280" base_value="9000"/>
+		<Attrib name="TotalAttack" value="120" inmin="1" inmax="8" demin="3" demax="16" base_value="600"/>
+		<Attrib name="Def" value="160" inmin="1" inmax="11" demin="1" demax="22" base_value="800"/>
+		<Attrib name="RealDam" value="100" inmin="1" inmax="7" demin="2" demax="14" base_value="500"/>
+		<Cost min="0" max="20" Special_Material="" Special_Currency="Diamond,80"/>
+		<Cost min="21" max="50" Special_Material="" Special_Currency="Diamond,100"/>
+		<Cost min="51" max="100" Special_Material="" Special_Currency="Diamond,120"/>
+		<Cost min="101" max="150" Special_Material="" Special_Currency="Diamond,150"/>
+		<Cost min="151" max="65535" Special_Material="" Special_Currency="Diamond,200"/>
+	</talisman>
+	<talisman ID="Talisman_3" Normal_Material="Item_lhs,1" Normal_Currency="IceStone,10" Ability_Material="Item_fbjnk,1" Ability_Currency="" Increase="42" ability_pool="Talisman_3">
+		<Attrib name="MaxHP" value="1600" inmin="5" inmax="120" demin="10" demax="240" base_value="8000"/>
+		<Attrib name="TotalAttack" value="100" inmin="1" inmax="7" demin="3" demax="14" base_value="500"/>
+		<Attrib name="Def" value="180" inmin="1" inmax="11" demin="1" demax="22" base_value="900"/>
+		<Attrib name="RealDam" value="120" inmin="1" inmax="8" demin="2" demax="16" base_value="600"/>
+		<Cost min="0" max="20" Special_Material="" Special_Currency="Diamond,80"/>
+		<Cost min="21" max="50" Special_Material="" Special_Currency="Diamond,100"/>
+		<Cost min="51" max="100" Special_Material="" Special_Currency="Diamond,120"/>
+		<Cost min="101" max="150" Special_Material="" Special_Currency="Diamond,150"/>
+		<Cost min="151" max="65535" Special_Material="" Special_Currency="Diamond,200"/>
+	</talisman>
+	<talisman ID="Talisman_4" Normal_Material="Item_lhs,1" Normal_Currency="IceStone,10" Ability_Material="Item_fbjnk,1" Ability_Currency="" Increase="42" ability_pool="Talisman_4">
+		<Attrib name="MaxHP" value="1400" inmin="5" inmax="100" demin="10" demax="200" base_value="7000"/>
+		<Attrib name="TotalAttack" value="130" inmin="1" inmax="9" demin="3" demax="18" base_value="650"/>
+		<Attrib name="Def" value="140" inmin="1" inmax="10" demin="1" demax="20" base_value="700"/>
+		<Attrib name="RealDam" value="140" inmin="1" inmax="9" demin="2" demax="18" base_value="700"/>
+		<Cost min="0" max="20" Special_Material="" Special_Currency="Diamond,80"/>
+		<Cost min="21" max="50" Special_Material="" Special_Currency="Diamond,100"/>
+		<Cost min="51" max="100" Special_Material="" Special_Currency="Diamond,120"/>
+		<Cost min="101" max="150" Special_Material="" Special_Currency="Diamond,150"/>
+		<Cost min="151" max="65535" Special_Material="" Special_Currency="Diamond,200"/>
+	</talisman>
+	<!--
+AttribColor属性对应的颜色条
+name : 属性名
+value: 颜色值 value="255,255,255,255"
+res  : 资源名 value对应image_list.xml文件里的id
+-->
+	<AttribColor>
+		<Color name="MaxHP" value="255,1,175,66" res="Talismangreen"/>
+		<Color name="TotalAttack" value="255,207,16,17" res="Talismanred"/>
+		<Color name="Def" value="255,246,217,22" res="Talismanyellow"/>
+		<Color name="RealDam" value="255,136,4,180" res="Talismanpurple"/>
+	</AttribColor>
+</Object>

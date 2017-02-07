@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="form_stage_main\form_system\form_system_option" init="form_system_option_Init">
+		<prop LimitInScreen="true" Left="30" Top="30" Width="1280" Height="720" ForeColor="0,0,0,0" BackColor="100,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="Default" NoFrame="true" DrawMode="Expand"/>
+		<event on_open="form_system_option_Open" on_close="form_system_option_close"/>
+		<control name="groupbox_main" entity="GroupBox" script="" init="">
+			<prop Left="266" Top="81" Width="715" Height="518" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+			<control name="lbl_11" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="45" Top="81" Width="625" Height="355" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_001.png"/>
+			</control>
+			<control name="lbl_1_2nd" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="50" Top="121" Width="615" Height="310" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_002.png"/>
+			</control>
+			<control name="lbl_title_bg" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="111" Top="67" Width="493" Height="54" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_04.png"/>
+			</control>
+			<control name="lbl_title" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="244" Top="48" Width="226" Height="64" ForeColor="255,204,255,255" ShadowColor="0,0,0,0" Font="WRYH26_S" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_fail/lv_no.png"/>
+			</control>
+			<control name="lbl_back" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="60" Top="126" Width="595" Height="300" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/nine/bm_background_02.png"/>
+			</control>
+			<control name="groupbox_reward" entity="GroupBox" script="" init="">
+				<prop ClipChildren="false" Left="50" Top="192" Width="614" Height="134" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+				<control name="btn_qianghua" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_battle/scene_fail/shaguai.png" PushImage="gui/tp2_battle/scene_fail/shaguai1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="62" Top="3" Width="100" Height="127" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Center" Font="WRYH24" AutoSize="true"/>
+				</control>
+				<control name="btn_huoyue" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_battle/scene_fail/huoyuedu.png" PushImage="gui/tp2_battle/scene_fail/huoyuedu1.png" DisableImage="gui/tp2_battle/scene_fail/huoyuedu2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="174" Top="3" Width="100" Height="127" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Center" AutoSize="true"/>
+				</control>
+				<control name="btn_war" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_battle/scene_fail/zhanyi.png" PushImage="gui/tp2_battle/scene_fail/zhanyi1.png" DisableImage="gui/tp2_battle/scene_fail/zhanyi2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-274" Top="3" Width="100" Height="127" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Center" AutoSize="true"/>
+				</control>
+				<control name="btn_dayquest" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_battle/scene_fail/richang.png" PushImage="gui/tp2_battle/scene_fail/richang1.png" DisableImage="gui/tp2_battle/scene_fail/richang2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-162" Top="3" Width="100" Height="127" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Center" AutoSize="true"/>
+				</control>
+				<control name="btn_world_war" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_battle/scene_fail/shijie.png" PushImage="gui/tp2_battle/scene_fail/shijie1.png" DisableImage="gui/tp2_battle/scene_fail/shijie2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-50" Top="3" Width="100" Height="127" ForeColor="255,200,200,200" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Center" AutoSize="true"/>
+				</control>
+			</control>
+			<control name="Label1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="56" Top="338" Width="603" Height="94" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_common/backdrop/decorate_08.png"/>
+			</control>
+			<control name="lbl_1" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="-215" Top="134" Width="430" Height="46" ForeColor="255,255,255,135" ShadowColor="0,0,0,0" HAnchor="Center" Text="@ui_quest_level_0" Font="WRYH24"/>
+			</control>
+			<control name="Label2" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="61" Top="395" Width="595" Height="30" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_03.png"/>
+			</control>
+			<control name="btn_close" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/cancel.png" PushImage="gui/tp2_common/window/cancel1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-75" Top="358" Width="150" Height="60" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Center" Text="@ui_clone_51" Font="WRYH24" TabStop="true" NoFrame="true" AutoSize="true" ClickSound="ui_close"/>
+				<event on_click="on_close_form"/>
+			</control>
+		</control>
+	</control>
+</form>
+

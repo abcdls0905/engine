@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="gb2312" standalone="yes" ?>
+<Processor>
+    <Base type="object" version="1.0">
+        <Line Type="2" Event="2001" Name="AUTOP4" />
+        <Line Type="2" Event="3002" Name="AUTOP3">
+            <Param type="13" srctype="8" data="AUTOP4" Index="0" />
+            <Param type="6" data="kaiguan" Index="1" />
+        </Line>
+        <Line Type="2" Event="1101" Name="AUTOP2">
+            <Param type="13" srctype="4" data="AUTOP3" Index="0" />
+            <Param type="2" data="1" Index="1" />
+            <Param type="4" data="0" Index="2" />
+        </Line>
+        <Line Type="2" Event="2002" Name="AUTOP7" />
+        <Line Type="2" Event="2120" Name="AUTOP6">
+            <Param type="13" srctype="8" data="AUTOP7" Index="0" />
+        </Line>
+        <Line Type="2" Event="1102" Name="AUTOP5">
+            <Param type="13" srctype="6" data="AUTOP6" Index="0" />
+            <Param type="2" data="11" Index="1" />
+            <Param type="6" data="zym701_001" Index="2" />
+        </Line>
+        <Line Type="8" Name="AUTOP1">
+            <Param type="13" bool="true" srctype="1" data="AUTOP2" Index="0" />
+            <Param type="13" bool="true" srctype="1" data="AUTOP5" Index="0" />
+        </Line>
+        <Line Type="3" IncludeLines="10">
+            <Param type="13" bool="true" srctype="1" data="AUTOP1" Index="" />
+        </Line>
+        <Line Type="2" Event="2114" Name="AUTOP8">
+            <Param type="6" data="heimu_npc_suola" Index="0" />
+        </Line>
+        <Line Type="1" Event="4026">
+            <Param type="13" srctype="8" data="AUTOP8" Index="0" />
+            <Param type="2" data="0" Index="1" />
+            <Param type="3" data="5" Index="2" />
+        </Line>
+        <Line Type="2" Event="2114" Name="AUTOP9">
+            <Param type="6" data="heimu_npc_suola" Index="0" />
+        </Line>
+        <Line Type="1" Event="4202">
+            <Param type="13" srctype="8" data="AUTOP9" Index="0" />
+            <Param type="4" data="25.410845" Index="1" />
+            <Param type="4" data="17.982790" Index="2" />
+            <Param type="4" data="10.763409" Index="3" />
+        </Line>
+        <Line Type="2" Event="2114" Name="AUTOP10">
+            <Param type="6" data="heimu_npc_suola" Index="0" />
+        </Line>
+        <Line Type="1" Event="4023">
+            <Param type="13" srctype="8" data="AUTOP10" Index="0" />
+            <Param type="6" data="701_suola_speak02" Index="1" />
+            <Param type="2" data="3000" Index="2" />
+        </Line>
+        <Line Type="2" Event="2114" Name="AUTOP11">
+            <Param type="6" data="heimu_npc_suola" Index="0" />
+        </Line>
+        <Line Type="1" Event="4024">
+            <Param type="13" srctype="8" data="AUTOP11" Index="0" />
+            <Param type="6" data="sound\speak\shady\701_suola_speak02.ogg" Index="1" />
+        </Line>
+        <Line Type="2" Event="2001" Name="AUTOP12" />
+        <Line Type="1" Event="5202">
+            <Param type="13" srctype="8" data="AUTOP12" Index="0" />
+            <Param type="6" data="kaiguan" Index="1" />
+            <Param type="2" data="2" Index="2" />
+            <Param type="4" data="1" Index="3" />
+        </Line>
+    </Base>
+</Processor>

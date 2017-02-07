@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<object>
+    <internals />
+    <properties>
+        <property name="WarnType" type="int" public="true" private="false" save="false" realtime="" desc="警戒类型(0: 被动  1: 主动球警戒  2: 主动圆柱警戒  3: 主动扇柱警戒  4: 主动球+扇柱警戒)" />
+        <property name="StopWarning" type="int" public="false" private="false" save="false" realtime="" desc="是否开启警戒的开关" />
+        <property name="SphereRadius" type="float" public="false" private="false" save="false" realtime="" desc="球半径" />
+        <property name="CylinderRadius" type="float" public="false" private="false" save="false" realtime="" desc="圆柱半径或扇柱半径" />
+        <property name="CylinderLowerHeight" type="float" public="false" private="false" save="false" realtime="" desc="圆柱下高或扇柱下高" />
+        <property name="CylinderUpperHeight" type="float" public="false" private="false" save="false" realtime="" desc="圆柱上高或扇柱上高" />
+        <property name="SectorHalfAngle" type="float" public="false" private="false" save="false" realtime="" desc="扇柱角度的一半(角度制)" />
+        <property name="CurState" type="int" public="true" private="false" save="false" realtime="" desc="当前状态" />
+        <property name="PreState" type="int" public="false" private="false" save="false" realtime="" desc="前一状态" />
+        <property name="BornX" type="float" public="false" private="false" save="false" realtime="" desc="出生点X" />
+        <property name="BornY" type="float" public="false" private="false" save="false" realtime="" desc="出生点Y" />
+        <property name="BornZ" type="float" public="false" private="false" save="false" realtime="" desc="出生点Z" />
+        <property name="BornO" type="float" public="false" private="false" save="false" realtime="" desc="出生点朝向" />
+		<property name="PathID" type="string" public="false" private="false" save="false" desc="路径ID"/>
+        <property name="PatrolMode" type="int" public="false" private="false" save="false" realtime="" desc="巡逻模式" />
+        <property name="PatrolRange" type="float" public="false" private="false" save="false" realtime="" desc="巡逻范围" />
+        <property name="ChaseRange" type="float" public="false" private="false" save="false" realtime="" desc="追击范围" />
+        <property name="LastObject" type="object" public="true" private="false" save="false" realtime="" desc="当前选择的对象" />
+        <property name="AIFirstHateObj" type="object" public="false" private="false" save="false" realtime="" desc="当前第一仇恨对象" />
+        <property name="StopAI" type="int" public="true" private="true" save="false" realtime="" desc="停止AI" />
+        <property name="MasterID" type="object" public="true" private="true" save="true" realtime="" desc="主人的ID" />
+        <property name="FollowProtectRadius" type="float" public="false" private="false" save="false" realtime="" desc="跟随保护半径" />
+        <property name="FollowType" type="int" public="false" private="false" save="false" realtime="" desc="跟随类型" />
+        <property name="FollowTargetID" type="object" public="false" private="false" save="false" realtime="" desc="跟随目标ID" />
+        <property name="AISkillSequenceID" type="string" public="false" private="false" save="false" desc="AI技能队列ID"/>
+        <property name="BornBuff" type="string" public="false" private="false" save="false" desc="出生buff"/>
+        <property name="BornBuffProtectTime" type="int" public="false" private="false" save="false" desc="出生buff"/>
+        <property name="RandomMoveRadius" type="float" public="false" private="false" save="false" desc="随机游走半径"/>
+		<property name="AIMotioning" 	type="int"	 	public="false"  private="false" 	save="false" desc="AIMotion行动中"/>
+		<property name="FloatingState" 	type="int"	 	public="false"  private="false" 	save="false" desc="浮空状态"/>
+		<property name="LastConnectKeylist" 	type="string"	 	public="false"  private="false" 	save="false" desc="上次连招的按键记录"/>
+		<property name="LastSkillTime" 	type="int64"	 	public="false"  private="false" 	save="false" desc="上次技能发动的时间"/>
+		<property name="DelayUseSkill" 	type="string"	 	public="false"  private="false" 	save="false" desc="延迟释放的按键ID"/>
+    </properties>
+    <records>
+        <record name="SpringList" cols="1" maxrows="128" save="false" public="false" private="false" desc="触发列表">
+            <column type="object" desc="触发范围内的对象ID" />
+        </record>
+        <record name="HateList" cols="3" maxrows="32" save="false" public="true" private="true" desc="仇恨列表">
+            <column type="object" desc="仇恨对象ID" />
+            <column type="dword" desc="仇恨值" />
+            <column type="int64" desc="仇恨更新时间"/>
+        </record>
+      <record name="AttackerList" cols="3" maxrows="1024" save="false" public="false" private="false" desc="攻击者列表">
+        <column type="object" desc="仇恨对象ID" />
+      </record>
+        <record name="AttackValueList" cols="3" maxrows="1000" save="false" public="false" private="false" desc="攻击者攻击值列表">
+            <column type="string" desc="攻击者对象UID" />
+            <column type="dword" desc="攻击值" />
+            <column type="int" desc="玩家等级"/>
+        </record>
+        <record name="AISkillSequence" cols="3" maxrows="50" public="false" private="false" save="false" desc="Npc技能释放队列存储表">
+            <column type="string" desc="技能ID"/>
+            <column type="int" desc="执行次数"/>
+            <column type="int64" desc="上次执行时间"/>
+        </record>
+        <record name="PathFindPointRec" cols="2" maxrows="256" save="false" public="false" private="false" desc="寻路路径点记录表">
+            <column type="float" desc="x"/>
+            <column type="float" desc="z"/>
+        </record>
+		<record name="npc_owner_rec" cols="1" maxrows="500" public="false" private="false" save="false" desc="npc拥有者表，杀小怪时用">
+            <column type="object" desc="拥有者姓名"/>
+      </record>
+		<record name="boss_owner_rec" cols="2" maxrows="30" save="false" public="false" private="false" desc="最近击杀的可获得物品奖励的玩家表">
+            <column type="widestr" Name="角色名称" />
+            <column type="dword" Name="角色照成的伤害" />
+        </record>
+		</records>
+</object>

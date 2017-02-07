@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="form_stage_main\form_clone_scene\form_clone_finish" init="main_form_init">
+		<prop Left="5" Top="5" Width="1280" Height="720" BackColor="100,0,0,0" ShadowColor="0,0,0,0" NoFrame="true"/>
+		<event on_open="on_main_form_open" on_close="on_main_form_close"/>
+		<control name="groupbox_main" entity="GroupBox" script="" init="">
+			<prop Width="1280" Height="720" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0"/>
+			<control name="lbl_back" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="7" Top="27" Width="1266" Height="666" ShadowColor="0,0,0,0" BackImage="gui/tp2_battle/scene_select/di_001.jpg"/>
+			</control>
+			<control name="groupbox_clone_template_0" entity="GroupBox" script="" init="">
+				<prop ClipChildren="false" Left="100" Top="211" Width="126" Height="126" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Visible="false"/>
+				<control name="lbl_back_0" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="24" Top="24" Width="80" Height="80" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow"/>
+				</control>
+				<control name="btn_clone_icon_0" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_battle/scene_select/zhanyi_putong.png" PushImage="gui/tp2_battle/scene_select/zhanyi_putong.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="126" Height="122" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TestTrans="true" AutoSize="true" DrawMode="FitWindow" ClickSound="button_click"/>
+				</control>
+				<control name="lbl_clone_name_0" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="7" Top="99" Width="113" Height="32" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="啦啦啦啦" Font="WRYH18" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_select/zidi.png"/>
+				</control>
+				<control name="lbl_star_0" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="27" Top="78" Width="72" Height="32" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_select/zhanyi_xing2.png"/>
+				</control>
+			</control>
+			<control name="GroupBox1" entity="GroupBox" script="" init="">
+				<prop Left="33" Top="69" Width="1214" Height="515" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true"/>
+				<control name="groupbox_map" entity="GroupBox" script="" init="">
+					<prop Left="12" Top="7" Width="1190" Height="500" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+					<control name="lbl_map_back" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Width="1190" Height="500" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_select/zhanyi_xuzhang.jpg"/>
+					</control>
+				</control>
+				<control name="groupbox_map1" entity="GroupBox" script="" init="">
+					<prop Left="12" Top="7" Width="1190" Height="500" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Visible="false" NoFrame="true" DrawMode="Expand"/>
+					<control name="lbl_map_back1" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Width="1190" Height="500" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_select/zhanyi_xuzhang.jpg"/>
+					</control>
+				</control>
+				<control name="Label3" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Top="-1" Width="1214" Height="515" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_battle/scene_select/di_002.jpg"/>
+				</control>
+			</control>
+			<control name="Label5" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="415" Top="16" Width="450" Height="93" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_battle/scene_select/biaotui.png"/>
+			</control>
+			<control name="lbl_arrows" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="58" Top="554" Width="129" Height="179" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_select/zhanyi_xiajiantou.png"/>
+			</control>
+			<control name="lbl_waypoint_pattern" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="20" Top="658" Width="32" Height="31" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_select/zhanyi_ludian.png"/>
+			</control>
+			<control name="lbl_waypoint_pattern1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="63" Top="658" Width="32" Height="31" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_select/zhanyi_ludian1.png"/>
+			</control>
+			<control name="lbl_ring" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="232" Top="280" Width="88" Height="88" ShadowColor="0,0,0,0"/>
+			</control>
+			<control name="groupbox_stage" entity="GroupBox" script="" init="">
+				<prop Transparent="true" ClipChildren="false" Left="165" Top="552" Width="949" Height="110" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="ExpandH"/>
+				<control name="plbl_award_particle_3" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="797" Top="35" Width="63" Height="62" ShadowColor="0,0,0,0"/>
+				</control>
+				<control name="plbl_award_particle_2" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="549" Top="35" Width="63" Height="62" ShadowColor="0,0,0,0"/>
+				</control>
+				<control name="plbl_award_particle_1" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="303" Top="35" Width="63" Height="62" ShadowColor="0,0,0,0"/>
+				</control>
+				<control name="pbar_stage1" entity="ProgressBar" script="" init="">
+					<prop Maximum="9" Value="9" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_battle/scene_select/zhanyi_jingdutiao.png" ProgressMode="LeftToRight" TextVisible="true" Left="80" Top="48" Width="748" Height="32" ForeColor="255,227,127,0" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH18_O_BLACK" NoFrame="true" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_battle/scene_select/zhanyi_jingdutiao1.png"/>
+				</control>
+				<control name="lbl_stage1" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="8" Top="32" Width="66" Height="64" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH26_S" AutoSize="true" BackImage="gui/tp2_battle/scene_select/zhanyi_xing4.png"/>
+				</control>
+				<control name="btn_level1" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_battle/scene_select/muxiang_up.png" PushImage="gui/tp2_battle/scene_select/muxiang_down.png" DisableImage="gui/tp2_battle/scene_select/muxiang_over.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="285" Top="26" Width="92" Height="79" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" ClickSound="ui_open"/>
+				</control>
+				<control name="btn_level2" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_battle/scene_select/tiexiang_up.png" PushImage="gui/tp2_battle/scene_select/tiexiang_down.png" DisableImage="gui/tp2_battle/scene_select/tiexiang_over.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="533" Top="26" Width="92" Height="79" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" ClickSound="ui_open"/>
+				</control>
+				<control name="btn_level3" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_battle/scene_select/jinxiang_up.png" PushImage="gui/tp2_battle/scene_select/jinxiang_down.png" DisableImage="gui/tp2_battle/scene_select/jinxiang_over.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="781" Top="26" Width="92" Height="79" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" ClickSound="ui_open"/>
+				</control>
+				<control name="group_sepc" entity="GroupBox" script="" init="">
+					<prop Transparent="true" ClipChildren="false" Left="825" Top="-7" Width="142" Height="134" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" AutoSize="true"/>
+					<control name="Label4" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="65" Top="61" Width="20" Height="20" ShadowColor="0,0,0,0" Particles2d="particleeffects_016h"/>
+					</control>
+					<control name="Label2" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="37" Top="39" Width="70" Height="64" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_battle/scene_select/wupin_di1.png"/>
+					</control>
+					<control name="btn_spec_tips3" entity="Button" script="" init="">
+						<prop NormalImage="icon/xm2_item/gongxianzheng.jpg" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="50" Top="46" Width="50" Height="50" BackColor="255,192,192,192" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+					</control>
+				</control>
+				<control name="lbl_level11" entity="Label" script="" init="">
+					<prop Align="Right" RefCursor="WIN_HELP" Left="300" Top="67" Width="38" Height="16" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="@ui_clone_23" Font="WRYH24_O_BLACK"/>
+				</control>
+				<control name="lbl_level12" entity="Label" script="" init="">
+					<prop Align="Right" RefCursor="WIN_HELP" Left="547" Top="67" Width="38" Height="16" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="@ui_clone_24" Font="WRYH24_O_BLACK"/>
+				</control>
+				<control name="lbl_level13" entity="Label" script="" init="">
+					<prop Align="Right" RefCursor="WIN_HELP" Left="791" Top="67" Width="38" Height="16" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Text="@ui_clone_25" Font="WRYH24_O_BLACK"/>
+				</control>
+				<control name="lbl_star_image1" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="337" Top="59" Width="32" Height="33" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/xm2_battle/scene_account/jiesuan_xing1.png"/>
+				</control>
+				<control name="lbl_star_image2" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="583" Top="59" Width="32" Height="33" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="Center" BackImage="gui/xm2_battle/scene_account/jiesuan_xing1.png"/>
+				</control>
+				<control name="lbl_star_image3" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="831" Top="59" Width="32" Height="33" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/xm2_battle/scene_account/jiesuan_xing1.png"/>
+				</control>
+			</control>
+			<control name="lbl_title" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="537" Top="54" Width="206" Height="38" ForeColor="255,102,51,0" ShadowColor="0,0,0,0" Text="@ui_clone_screen_num_0" Font="WRYH30" DrawMode="FitWindow"/>
+			</control>
+			<control name="group_ranking" entity="GroupBox" script="" init="">
+				<prop Left="60" Top="102" Width="94" Height="110" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+				<control name="lbl_ranking" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="40" Top="83" Width="42" Height="30" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Font="WRYH18_O_BLACK"/>
+				</control>
+				<control name="btn_star_ranking" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_battle/scene_select/paihangbang.png" PushImage="gui/tp2_battle/scene_select/paihangbang1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="2" Top="-1" Width="86" Height="86" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" ClickSound="ui_open"/>
+				</control>
+				<control name="Label1" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="15" Top="83" Width="25" Height="26" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/xm2_battle/scene_account/jiesuan_xing1.png"/>
+				</control>
+			</control>
+			<control name="btn_back" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/clos.png" PushImage="gui/tp2_common/window/clos1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="1144" Top="40" Width="70" Height="70" ForeColor="255,227,127,0" BackColor="255,120,120,120" ShadowColor="0,0,0,0" Font="WRYH15" NoFrame="true" AutoSize="true" ClickSound="ui_close"/>
+			</control>
+			<control name="lbl_left_area" entity="Label" script="" init="">
+				<prop Transparent="false" ClickEvent="true" RefCursor="WIN_HELP" Left="16" Top="287" Width="64" Height="110" ShadowColor="0,0,0,0" BackImage="gui/tp2_common/backdrop/left_1.png" Particles2d="particleeffects_013d"/>
+			</control>
+			<control name="lbl_right_area" entity="Label" script="" init="">
+				<prop Transparent="false" ClickEvent="true" RefCursor="WIN_HELP" Left="1200" Top="287" Width="64" Height="110" ShadowColor="0,0,0,0" BackImage="gui/tp2_common/backdrop/right_1.png" Particles2d="particleeffects_013e"/>
+			</control>
+		</control>
+		<control name="lbl_cloud_image" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Width="1280" Height="720" ShadowColor="0,0,0,0" AutoSize="true"/>
+		</control>
+		<control name="group_cloud" entity="GroupBox" script="" init="">
+			<prop Transparent="true" Width="1280" Height="720" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+		</control>
+	</control>
+</form>
+

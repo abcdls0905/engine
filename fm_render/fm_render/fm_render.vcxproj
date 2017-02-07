@@ -1,0 +1,362 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="NsightTegraProject">
+    <NsightTegraProjectRevisionNumber>5</NsightTegraProjectRevisionNumber>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Tegra-Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Tegra-Android">
+      <Configuration>Release</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Tegra-Android">
+      <Configuration>Profile</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\cache_file.cpp" />
+    <ClCompile Include="..\cache_ini.cpp" />
+    <ClCompile Include="..\cache_ini_loader.cpp" />
+    <ClCompile Include="..\cache_loader.cpp" />
+    <ClCompile Include="..\color_rt.cpp" />
+    <ClCompile Include="..\color_tex.cpp" />
+    <ClCompile Include="..\context.cpp" />
+    <ClCompile Include="..\cube_tex_loader.cpp" />
+    <ClCompile Include="..\depthstencil_rt.cpp" />
+    <ClCompile Include="..\depthstencil_tex.cpp" />
+    <ClCompile Include="..\depth_rt.cpp" />
+    <ClCompile Include="..\depth_tex.cpp" />
+    <ClCompile Include="..\device_caps.cpp" />
+    <ClCompile Include="..\dynamic_ib.cpp" />
+    <ClCompile Include="..\dynamic_tex.cpp" />
+    <ClCompile Include="..\dynamic_vb.cpp" />
+    <ClCompile Include="..\font.cpp" />
+    <ClCompile Include="..\font_manager.cpp" />
+    <ClCompile Include="..\font_outline.cpp" />
+    <ClCompile Include="..\frame_rt.cpp" />
+    <ClCompile Include="..\helper.cpp" />
+    <ClCompile Include="..\image_access.cpp" />
+    <ClCompile Include="..\ktx20\checkheader.c" />
+    <ClCompile Include="..\ktx20\errstr.c" />
+    <ClCompile Include="..\ktx20\etcdec.cxx" />
+    <ClCompile Include="..\ktx20\etcunpack.cxx" />
+    <ClCompile Include="..\ktx20\hashtable.c" />
+    <ClCompile Include="..\ktx20\loader.c" />
+    <ClCompile Include="..\ktx20\swap.c" />
+    <ClCompile Include="..\ktx20\writer.c" />
+    <ClCompile Include="..\libpvr.cpp" />
+    <ClCompile Include="..\lib_main.cpp" />
+    <ClCompile Include="..\mempool2.cpp" />
+    <ClCompile Include="..\nv_hhdds.cpp" />
+    <ClCompile Include="..\nv_images.cpp" />
+    <ClCompile Include="..\nv_syscaps.cpp" />
+    <ClCompile Include="..\painter.cpp" />
+    <ClCompile Include="..\paint_batch.cpp" />
+    <ClCompile Include="..\pixel_shader.cpp" />
+    <ClCompile Include="..\render.cpp" />
+    <ClCompile Include="..\render_draw_op.cpp" />
+    <ClCompile Include="..\render_resource.cpp" />
+    <ClCompile Include="..\render_shader.cpp" />
+    <ClCompile Include="..\render_state_op.cpp" />
+    <ClCompile Include="..\render_texture.cpp" />
+    <ClCompile Include="..\render_tool.cpp" />
+    <ClCompile Include="..\res_thread.cpp" />
+    <ClCompile Include="..\scene_view.cpp" />
+    <ClCompile Include="..\scene_view_draw.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ast_array_index.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ast_expr.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ast_function.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ast_to_hir.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ast_type.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\builtin_functions.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\builtin_types.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\builtin_variables.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\glcpp\glcpp-lex.c" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\glcpp\glcpp-parse.c" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\glcpp\pp.c" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\glsl_lexer.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\glsl_optimizer.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\glsl_parser.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\glsl_parser_extras.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\glsl_symbol_table.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\glsl_types.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\hir_field_selection.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ir.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ir_basic_block.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ir_builder.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ir_clone.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ir_constant_expression.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ir_equals.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ir_expression_flattening.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ir_function.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ir_function_can_inline.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ir_function_detect_recursion.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ir_hierarchical_visitor.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ir_hv_accept.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ir_import_prototypes.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ir_print_glsl_visitor.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ir_print_visitor.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ir_rvalue_visitor.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ir_stats.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ir_unused_structs.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ir_validate.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ir_variable_refcount.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\linker.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\link_atomics.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\link_functions.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\link_interface_blocks.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\link_uniforms.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\link_uniform_blocks.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\link_uniform_block_active_visitor.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\link_uniform_initializers.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\link_varyings.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\loop_analysis.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\loop_controls.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\loop_unroll.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\lower_clip_distance.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\lower_discard.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\lower_discard_flow.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\lower_if_to_cond_assign.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\lower_instructions.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\lower_jumps.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\lower_mat_op_to_vec.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\lower_named_interface_blocks.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\lower_noise.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\lower_output_reads.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\lower_packed_varyings.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\lower_packing_builtins.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\lower_ubo_reference.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\lower_variable_index_to_cond_assign.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\lower_vector.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\lower_vector_insert.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\lower_vec_index_to_cond_assign.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\lower_vec_index_to_swizzle.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\opt_algebraic.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\opt_array_splitting.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\opt_constant_folding.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\opt_constant_propagation.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\opt_constant_variable.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\opt_copy_propagation.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\opt_copy_propagation_elements.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\opt_cse.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\opt_dead_builtin_varyings.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\opt_dead_code.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\opt_dead_code_local.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\opt_dead_functions.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\opt_flatten_nested_if_blocks.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\opt_flip_matrices.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\opt_function_inlining.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\opt_if_simplification.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\opt_noop_swizzle.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\opt_redundant_jumps.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\opt_structure_splitting.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\opt_swizzle_swizzle.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\opt_tree_grafting.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\opt_vectorize.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\ralloc.c" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\standalone_scaffolding.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\strtod.c" />
+    <ClCompile Include="..\shader_optimizer\src\glsl\s_expression.cpp" />
+    <ClCompile Include="..\shader_optimizer\src\mesa\main\hash_table.c" />
+    <ClCompile Include="..\shader_optimizer\src\mesa\main\imports.c" />
+    <ClCompile Include="..\shader_optimizer\src\mesa\program\prog_hash_table.c" />
+    <ClCompile Include="..\shader_optimizer\src\mesa\program\symbol_table.c" />
+    <ClCompile Include="..\shader_param_op.cpp" />
+    <ClCompile Include="..\shader_program.cpp" />
+    <ClCompile Include="..\static_cube.cpp" />
+    <ClCompile Include="..\static_ib.cpp" />
+    <ClCompile Include="..\static_tex.cpp" />
+    <ClCompile Include="..\static_vb.cpp" />
+    <ClCompile Include="..\stencil_tex.cpp" />
+    <ClCompile Include="..\texture.cpp" />
+    <ClCompile Include="..\tex_factory.cpp" />
+    <ClCompile Include="..\tex_font.cpp" />
+    <ClCompile Include="..\tex_loader.cpp" />
+    <ClCompile Include="..\tex_sampler.cpp" />
+    <ClCompile Include="..\tex_tools.cpp" />
+    <ClCompile Include="..\vertex_shader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\cache_file.h" />
+    <ClInclude Include="..\cache_ini.h" />
+    <ClInclude Include="..\cache_ini_loader.h" />
+    <ClInclude Include="..\cache_loader.h" />
+    <ClInclude Include="..\color_rt.h" />
+    <ClInclude Include="..\color_tex.h" />
+    <ClInclude Include="..\context.h" />
+    <ClInclude Include="..\cube_tex_loader.h" />
+    <ClInclude Include="..\ddsfile.h" />
+    <ClInclude Include="..\depthstencil_rt.h" />
+    <ClInclude Include="..\depthstencil_tex.h" />
+    <ClInclude Include="..\depth_rt.h" />
+    <ClInclude Include="..\depth_tex.h" />
+    <ClInclude Include="..\device_caps.h" />
+    <ClInclude Include="..\dynamic_ib.h" />
+    <ClInclude Include="..\dynamic_tex.h" />
+    <ClInclude Include="..\dynamic_vb.h" />
+    <ClInclude Include="..\font.h" />
+    <ClInclude Include="..\font_manager.h" />
+    <ClInclude Include="..\font_outline.h" />
+    <ClInclude Include="..\frame_rt.h" />
+    <ClInclude Include="..\helper.h" />
+    <ClInclude Include="..\image_access.h" />
+    <ClInclude Include="..\ktx20\gles1_funcptrs.h" />
+    <ClInclude Include="..\ktx20\gles2_funcptrs.h" />
+    <ClInclude Include="..\ktx20\gles3_funcptrs.h" />
+    <ClInclude Include="..\ktx20\gl_funcptrs.h" />
+    <ClInclude Include="..\ktx20\ktx.h" />
+    <ClInclude Include="..\ktx20\ktxint.h" />
+    <ClInclude Include="..\ktx20\uthash.h" />
+    <ClInclude Include="..\language.h" />
+    <ClInclude Include="..\libpvr.h" />
+    <ClInclude Include="..\mempool2.h" />
+    <ClInclude Include="..\nv_color.h" />
+    <ClInclude Include="..\nv_debug.h" />
+    <ClInclude Include="..\nv_global.h" />
+    <ClInclude Include="..\nv_hhdds.h" />
+    <ClInclude Include="..\nv_hhdds_internal.h" />
+    <ClInclude Include="..\nv_syscaps.h" />
+    <ClInclude Include="..\nv_types.h" />
+    <ClInclude Include="..\painter.h" />
+    <ClInclude Include="..\paint_batch.h" />
+    <ClInclude Include="..\pixel_shader.h" />
+    <ClInclude Include="..\render.h" />
+    <ClInclude Include="..\render_draw_op.h" />
+    <ClInclude Include="..\render_header.h" />
+    <ClInclude Include="..\render_state_op.h" />
+    <ClInclude Include="..\render_tool.h" />
+    <ClInclude Include="..\render_utils.h" />
+    <ClInclude Include="..\res_thread.h" />
+    <ClInclude Include="..\scene_view.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\ast.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\builtin_type_macros.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\glcpp\glcpp-parse.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\glcpp\glcpp.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\glsl_optimizer.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\glsl_parser.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\glsl_parser_extras.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\glsl_symbol_table.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\glsl_types.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\ir.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\ir_basic_block.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\ir_builder.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\ir_expression_flattening.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\ir_function_inlining.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\ir_hierarchical_visitor.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\ir_optimization.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\ir_print_glsl_visitor.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\ir_print_visitor.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\ir_rvalue_visitor.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\ir_stats.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\ir_uniform.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\ir_unused_structs.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\ir_variable_refcount.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\ir_visitor.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\linker.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\link_uniform_block_active_visitor.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\link_varyings.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\list.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\loop_analysis.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\program.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\ralloc.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\standalone_scaffolding.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\strtod.h" />
+    <ClInclude Include="..\shader_optimizer\src\glsl\s_expression.h" />
+    <ClInclude Include="..\shader_optimizer\src\mesa\main\compiler.h" />
+    <ClInclude Include="..\shader_optimizer\src\mesa\main\config.h" />
+    <ClInclude Include="..\shader_optimizer\src\mesa\main\context.h" />
+    <ClInclude Include="..\shader_optimizer\src\mesa\main\core.h" />
+    <ClInclude Include="..\shader_optimizer\src\mesa\main\dd.h" />
+    <ClInclude Include="..\shader_optimizer\src\mesa\main\glheader.h" />
+    <ClInclude Include="..\shader_optimizer\src\mesa\main\glminimal.h" />
+    <ClInclude Include="..\shader_optimizer\src\mesa\main\hash_table.h" />
+    <ClInclude Include="..\shader_optimizer\src\mesa\main\imports.h" />
+    <ClInclude Include="..\shader_optimizer\src\mesa\main\macros.h" />
+    <ClInclude Include="..\shader_optimizer\src\mesa\main\mtypes.h" />
+    <ClInclude Include="..\shader_optimizer\src\mesa\main\simple_list.h" />
+    <ClInclude Include="..\shader_optimizer\src\mesa\program\hash_table.h" />
+    <ClInclude Include="..\shader_optimizer\src\mesa\program\prog_instruction.h" />
+    <ClInclude Include="..\shader_optimizer\src\mesa\program\prog_parameter.h" />
+    <ClInclude Include="..\shader_optimizer\src\mesa\program\prog_statevars.h" />
+    <ClInclude Include="..\shader_optimizer\src\mesa\program\symbol_table.h" />
+    <ClInclude Include="..\shader_param_op.h" />
+    <ClInclude Include="..\shader_program.h" />
+    <ClInclude Include="..\static_cube.h" />
+    <ClInclude Include="..\static_ib.h" />
+    <ClInclude Include="..\static_tex.h" />
+    <ClInclude Include="..\static_vb.h" />
+    <ClInclude Include="..\stencil_tex.h" />
+    <ClInclude Include="..\texture.h" />
+    <ClInclude Include="..\tex_factory.h" />
+    <ClInclude Include="..\tex_fmt.h" />
+    <ClInclude Include="..\tex_font.h" />
+    <ClInclude Include="..\tex_loader.h" />
+    <ClInclude Include="..\tex_sampler.h" />
+    <ClInclude Include="..\tex_tools.h" />
+    <ClInclude Include="..\vertex_shader.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{15D7DCBA-FCD6-4ACB-B7D2-AE04C0A48521}</ProjectGuid>
+    <RootNamespace>fm_render</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Profile|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <IncludePath>..\..\extern\freetype\include;..\..\extern\freeimage\include;..\shader_optimizer\src\glsl;..\shader_optimizer\include;..\shader_optimizer\src\mesa</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <LibraryPath>..\..\extern\freetype\lib;..\..\extern\freeimage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <IncludePath>G:\GameEngine\FlexiMobile\mobile\extern\freetype\include;G:\GameEngine\FlexiMobile\mobile\extern\freeimage\include</IncludePath>
+    <LibraryPath>G:\GameEngine\FlexiMobile\mobile\extern\freetype\lib;G:\GameEngine\FlexiMobile\mobile\extern\freeimage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL;KTX_OPENGL_ES2;PERFORMANCE_DEBUG</PreprocessorDefinitions>
+      <GccExceptionHandling>true</GccExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL;KTX_OPENGL_ES2</PreprocessorDefinitions>
+      <GccExceptionHandling>true</GccExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

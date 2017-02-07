@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Width="1024" Height="720" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\use\function\function_vein_096.png" />
+        <control name="lbl_5" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="-507" Top="-355" Width="1024" Height="720" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+        </control>
+        <control name="lbl_top_left" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="301" Top="5" Width="270" Height="85" ShadowColor="0,0,0,0" />
+        </control>
+        <control name="lbl_top_right" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="-191" Width="191" Height="85" ShadowColor="0,0,0,0" HAnchor="Right" />
+        </control>
+        <control name="lbl_title" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="-3" Top="-339" Width="70" Height="38" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Text="@ui_form_dt_5" Font="WRYH30_S" />
+        </control>
+        <control name="mltbox_info" entity="MultiTextBox" script="" init="">
+            <prop TextColor="255,255,205,3" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,190,30" LineHeight="33" HtmlText="历练值:50/100" ScrollSize="17" Left="-219" Top="-267" Width="190" Height="30" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Font="WRYH26_S" NoFrame="true" />
+        </control>
+        <control name="groupbox_main" entity="GroupBox" script="" init="">
+            <prop Left="-642" Top="-299" Width="1160" Height="646" BackColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" NoFrame="true" />
+            <control name="lbl_items_back" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="272" Top="10" Width="878" Height="636" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg_huikuang.png" />
+            </control>
+            <control name="groupbox_chips" entity="GroupBox" script="" init="">
+                <prop Left="403" Top="10" Width="742" Height="630" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" BackImage="gui\main\deprive\duobao_zhuanlun_beijing.jpg" />
+                <control name="lbl_chips_back" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="560" Top="672" Width="115" Height="79" ShadowColor="0,0,0,0" />
+                </control>
+                <control name="lbl_3" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="296" Top="240" Width="142" Height="142" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\deprive\duobao_zhuanlun_dakuang.jpg" />
+                </control>
+                <control name="lbl_compose_item" entity="Label" script="" init="">
+                    <prop ClickEvent="true" RefCursor="WIN_HELP" Left="310" Top="254" Width="114" Height="114" ShadowColor="0,0,0,0" Transparent="false" DrawMode="FitWindow" />
+                </control>
+                <control name="lbl_equip_name" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="296" Top="384" Width="142" Height="38" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH22_O" />
+                </control>
+                <control name="lbl_eff_1" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="8" Width="267" Height="240" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\deprive\sd_1.1.png" />
+                </control>
+                <control name="lbl_eff_2" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="496" Top="416" Width="300" Height="163" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\deprive\sd_2.1.png" />
+                </control>
+                <control name="lbl_eff_3" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="448" Top="-16" Width="314" Height="173" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\deprive\sd_3.1.png" />
+                </control>
+                <control name="lbl_eff_4" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="-8" Top="464" Width="291" Height="142" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\deprive\sd_4.1.png" />
+                </control>
+                <control name="groupbox_chip_6" entity="GroupBox" script="" init="">
+                    <prop Left="96" Top="125" Width="108" Height="108" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" BackImage="gui\main\deprive\duobao_zhuanlun_xiangkuang.jpg" />
+                    <control name="lbl_chip_photo_6" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="14" Top="14" Width="80" Height="80" ShadowColor="0,0,0,0" Transparent="false" TabStop="true" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_chip_quality_6" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="9" Top="9" Width="90" Height="90" ShadowColor="0,0,0,0" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_chip_count_6" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="81" Top="72" Width="38" Height="22" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="0" Font="WRYH20_O_BLACK" />
+                    </control>
+                    <control name="lbl_chip_cover_6" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="7" Top="3" Width="94" Height="50" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\use\bag\box_daoju_dbsp94.jpg" />
+                    </control>
+                    <control name="lbl_eff_blink_6" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="-8" Top="-13" Width="131" Height="131" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\main\deprive\duobao_blink.png" />
+                    </control>
+                </control>
+                <control name="groupbox_chip_5" entity="GroupBox" script="" init="">
+                    <prop Left="96" Top="349" Width="108" Height="108" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" BackImage="gui\main\deprive\duobao_zhuanlun_xiangkuang.jpg" />
+                    <control name="lbl_chip_photo_5" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="14" Top="14" Width="80" Height="80" ShadowColor="0,0,0,0" Transparent="false" TabStop="true" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_chip_quality_5" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="9" Top="9" Width="90" Height="90" ShadowColor="0,0,0,0" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_chip_count_5" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="80" Top="72" Width="38" Height="22" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="0" Font="WRYH20_O_BLACK" />
+                    </control>
+                    <control name="lbl_chip_cover_5" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="7" Top="3" Width="94" Height="50" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\use\bag\box_daoju_dbsp94.jpg" />
+                    </control>
+                    <control name="lbl_eff_blink_5" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="-8" Top="-13" Width="131" Height="131" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\main\deprive\duobao_blink.png" />
+                    </control>
+                </control>
+                <control name="groupbox_chip_4" entity="GroupBox" script="" init="">
+                    <prop Left="310" Top="461" Width="108" Height="108" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" BackImage="gui\main\deprive\duobao_zhuanlun_xiangkuang.jpg" />
+                    <control name="lbl_chip_photo_4" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="14" Top="14" Width="80" Height="80" ShadowColor="0,0,0,0" Transparent="false" TabStop="true" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_chip_quality_4" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="9" Top="9" Width="90" Height="90" ShadowColor="0,0,0,0" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_chip_count_4" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="80" Top="72" Width="38" Height="22" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="0" Font="WRYH20_O_BLACK" />
+                    </control>
+                    <control name="lbl_chip_cover_4" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="7" Top="3" Width="94" Height="50" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\use\bag\box_daoju_dbsp94.jpg" />
+                    </control>
+                    <control name="lbl_eff_blink_4" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="-8" Top="-13" Width="131" Height="131" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\main\deprive\duobao_blink.png" />
+                    </control>
+                </control>
+                <control name="groupbox_chip_3" entity="GroupBox" script="" init="">
+                    <prop Left="528" Top="349" Width="108" Height="108" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" BackImage="gui\main\deprive\duobao_zhuanlun_xiangkuang.jpg" />
+                    <control name="lbl_chip_photo_3" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="14" Top="14" Width="80" Height="80" ShadowColor="0,0,0,0" Transparent="false" TabStop="true" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_chip_quality_3" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="9" Top="9" Width="90" Height="90" ShadowColor="0,0,0,0" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_chip_count_3" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="80" Top="72" Width="38" Height="22" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="0" Font="WRYH20_O_BLACK" />
+                    </control>
+                    <control name="lbl_chip_cover_3" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="7" Top="3" Width="94" Height="50" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\use\bag\box_daoju_dbsp94.jpg" />
+                    </control>
+                    <control name="lbl_eff_blink_3" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="-8" Top="-13" Width="131" Height="131" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\main\deprive\duobao_blink.png" />
+                    </control>
+                </control>
+                <control name="groupbox_chip_2" entity="GroupBox" script="" init="">
+                    <prop Left="528" Top="125" Width="108" Height="108" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" BackImage="gui\main\deprive\duobao_zhuanlun_xiangkuang.jpg" />
+                    <control name="lbl_chip_photo_2" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="14" Top="14" Width="80" Height="80" ShadowColor="0,0,0,0" Transparent="false" TabStop="true" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_chip_quality_2" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="9" Top="9" Width="90" Height="90" ShadowColor="0,0,0,0" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_chip_count_2" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="80" Top="72" Width="38" Height="22" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="0" Font="WRYH20_O_BLACK" />
+                    </control>
+                    <control name="lbl_chip_cover_2" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="7" Top="3" Width="94" Height="50" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\use\bag\box_daoju_dbsp94.jpg" />
+                    </control>
+                    <control name="lbl_eff_blink_2" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Top="-13" Width="131" Height="131" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\main\deprive\duobao_blink.png" />
+                    </control>
+                </control>
+                <control name="groupbox_chip_1" entity="GroupBox" script="" init="">
+                    <prop Left="310" Top="21" Width="108" Height="108" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" BackImage="gui\main\deprive\duobao_zhuanlun_xiangkuang.jpg" />
+                    <control name="lbl_chip_photo_1" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="14" Top="14" Width="80" Height="80" ShadowColor="0,0,0,0" Transparent="false" TabStop="true" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_chip_quality_1" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="9" Top="9" Width="90" Height="90" ShadowColor="0,0,0,0" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_chip_count_1" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="80" Top="72" Width="38" Height="22" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="0" Font="WRYH20_O_BLACK" />
+                    </control>
+                    <control name="lbl_chip_cover_1" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="7" Top="3" Width="94" Height="50" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\use\bag\box_daoju_dbsp94.jpg" />
+                    </control>
+                    <control name="lbl_eff_blink_1" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="-8" Top="-13" Width="131" Height="131" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\main\deprive\duobao_blink.png" />
+                    </control>
+                </control>
+                <control name="lbl_equip_level" entity="Label" script="" init="">
+                    <prop ClickEvent="true" RefCursor="WIN_HELP" Left="305" Top="249" Width="122" Height="122" ShadowColor="0,0,0,0" TabStop="true" DrawMode="FitWindow" />
+                </control>
+                <control name="lbl_eff_compose" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="152" Top="88" Width="439" Height="440" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\main\deprive\duobao_xuanwo.jpg" />
+                </control>
+            </control>
+            <control name="groupbox_item" entity="GroupBox" script="" init="">
+                <prop Left="280" Top="80" Width="110" Height="110" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" />
+                <control name="lbl_item_select" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Width="110" Height="110" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\battle\scene_account\xuanzhongkuang.png" />
+                </control>
+                <control name="lbl_item_photo_back" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="10" Top="10" Width="90" Height="90" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\common\window\tubiaokuang_2.png" />
+                </control>
+                <control name="btn_item_photo" entity="Button" script="" init="">
+                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="15" Top="15" Width="80" Height="80" ForeColor="0,0,0,0" BackColor="0,192,192,192" LineColor="0,0,0,0" ShadowColor="0,0,0,0" TabStop="true" DrawMode="FitWindow" />
+                </control>
+                <control name="lbl_item_photo_quality" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="10" Top="10" Width="90" Height="90" ShadowColor="0,0,0,0" DrawMode="FitWindow" />
+                </control>
+            </control>
+            <control name="btn_compose" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\anniu.png" PushImage="gui\common\button\anniu_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-185" Top="-86" Width="166" Height="84" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" VAnchor="Bottom" HAnchor="Right" Text="@ui_form_dt_2" Font="WRYH30_S" TabIndex="100" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" HandleShortcut="BUTTON_B" />
+            </control>
+            <control name="btn_compose_all" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\anniu.png" PushImage="gui\common\button\anniu_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="975" Top="488" Width="166" Height="84" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="一键合成" Font="WRYH30_S" TabIndex="100" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" HandleShortcut="BUTTON_Y" />
+            </control>
+            <control name="lbl_peace_time" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="432" Top="16" Width="246" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20" />
+            </control>
+            <control name="lbl_8" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="272" Top="10" Width="138" Height="626" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\kuang5.png" />
+            </control>
+            <control name="groupscrollbox_items" entity="GroupScrollableBox" script="" init="">
+                <prop ScrollSize="17" Left="276" Top="56" Width="120" Height="502" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+            </control>
+            <control name="rbtn_item_3" entity="RadioButton" script="" init="">
+                <prop BoxSize="12" NormalImage="gui\main\deprive\yuntie_1.jpg" CheckedImage="gui\main\deprive\yuntie_2.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="143" Top="16" Width="133" Height="122" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="2" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+            <control name="rbtn_item_2" entity="RadioButton" script="" init="">
+                <prop BoxSize="12" NormalImage="gui\main\deprive\jinglianshi_1.jpg" CheckedImage="gui\main\deprive\jinglianshi_2.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="143" Top="144" Width="133" Height="122" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="1" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+            <control name="rbtn_item_1" entity="RadioButton" script="" init="">
+                <prop BoxSize="12" NormalImage="gui\main\deprive\hexinfuwen_1.jpg" CheckedImage="gui\main\deprive\hexinfuwen_2.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="143" Top="272" Width="133" Height="122" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+            <control name="rbtn_item_4" entity="RadioButton" script="" init="">
+                <prop BoxSize="12" NormalImage="gui\main\deprive\fushi_1.jpg" CheckedImage="gui\main\deprive\fushi_2.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="143" Top="400" Width="133" Height="122" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="3" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="324" Top="32" Width="36" Height="21" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\deprive\duobao_shangjiantou_1.png" />
+            </control>
+            <control name="lbl_2" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="324" Top="568" Width="36" Height="21" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\deprive\duobao_xiajiantou_1.png" />
+            </control>
+            <control name="btn_help" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\pk\btn_help_normal.jpg" PushImage="gui\main\pk\btn_help_click.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="146" Top="-48" Width="56" Height="56" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+            <control name="rbtn_item_5" entity="RadioButton" script="" init="">
+                <prop BoxSize="12" NormalImage="gui\main\deprive\zhanqi_1.jpg" CheckedImage="gui\main\deprive\zhanqi_2.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="143" Top="528" Width="133" Height="122" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="4" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+        </control>
+        <control name="btn_peace" entity="Button" script="" init="">
+            <prop NormalImage="gui\common\button\anniu2_2.png" PushImage="gui\common\button\anniu2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="221" Top="-355" Width="142" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Text="@ui_form_dt_6" Font="WRYH26_S" TabStop="true" DrawMode="ExpandH" ClickSound="ui_open" />
+        </control>
+        <control name="lbl_4" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="-57" Top="5" Width="55" Height="57" ShadowColor="0,0,0,0" HAnchor="Right" AutoSize="true" BackImage="gui\common\window\zhuangshi_youshang.png" />
+        </control>
+        <control name="lbl_6" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="-83" Top="-347" Width="53" Height="50" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" AutoSize="true" BackImage="gui\common\window\zhuangshi_zuo.png" />
+        </control>
+        <control name="lbl_7" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="93" Top="-347" Width="53" Height="50" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" AutoSize="true" BackImage="gui\common\window\zhuangshi_you.png" />
+        </control>
+        <control name="btn_return" entity="Button" script="" init="">
+            <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="418" Top="-370" Width="100" Height="100" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Font="WRYH24_S" TabStop="true" AutoSize="true" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+        </control>
+        <control name="groupbox_compose_confirm" entity="GroupBox" script="" init="">
+            <prop Left="142" Top="173" Width="670" Height="430" BackColor="200,120,120,120" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\use\function\function_vein_096.png" />
+            <control name="groupbox_compose_back" entity="GroupBox" script="" init="">
+                <prop Left="-224" Top="-175" Width="462" Height="350" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" NoFrame="true" DrawMode="FitWindow" BackImage="gui\main\heedbar\youxizanti_kuang.jpg" />
+                <control name="btn_compose_confirm" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="48" Top="264" Width="170" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_ok" Font="WRYH26_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+                <control name="btn_compose_cancel" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\anniu_chengse_yuanjiao1.png" PushImage="gui\common\button\anniu_chengse_yuanjiao2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="240" Top="264" Width="170" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_cancel" Font="WRYH26_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+                <control name="lbl_compose_title" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="144" Top="16" Width="174" Height="32" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_form_dt_51" Font="WRYH30_S" />
+                </control>
+                <control name="mltbox_compose_confirm_info" entity="MultiTextBox" script="" init="">
+                    <prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,358,166" LineHeight="25" HtmlText="@ui_form_dt_50" ScrollSize="17" Left="55" Top="80" Width="358" Height="166" ShadowColor="0,0,0,0" Font="WRYH20_S" NoFrame="true" />
+                </control>
+            </control>
+        </control>
+    </control>
+</form>

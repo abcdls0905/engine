@@ -1,0 +1,577 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
+<!-- edited with XMLSpy v2013 (http://www.altova.com) by  () -->
+<Object>
+	<Property ID="CK_Ns100_01" Name="普通攻击1" Photo="gui\main\heedbar\clone.png,512,650,128,128" LevelType="0" HitAction="ck_ns100_01" HurtAction="combat1" HurtSoundID="ass_combat_001" HurtEffectID="ck_ns100_01" OutLine="outline1"/>
+	<Property ID="CK_Ns101_01" Name="普通攻击2" Photo="gui\main\heedbar\clone.png,512,650,128,128" LevelType="0" HitAction="ck_ns101_01" HurtAction="combat2" HurtSoundID="ass_combat_001" HurtEffectID="ck_ns101_01" OutLine="outline1"/>
+	<Property ID="CK_Ns102_01" Name="普通攻击3" Photo="gui\main\heedbar\clone.png,512,650,128,128" LevelType="0" HitAction="ck_ns102_01" HurtAction="combat1" HurtSoundID="ass_combat_001" HurtEffectID="ck_ns102_01" OutLine="outline1"/>
+	<Property ID="CK_Ns103_01" Name="普通攻击4" Photo="gui\main\heedbar\clone.png,514,652,124,124" SkillDisplayType1="0" LevelType="0" HitAction="ck_ns103_01" HurtAction="combat" HurtSoundID="ass_combat_001" HurtEffectID="ck_ns103_01" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="CK_Sk100_01" Name="峰回轮转" Photo="gui\main\heedbar\clone.png,640,650,128,128" SkillDisplayType1="1" LevelType="0" SkillNamePicture="gui\skill\fenghlz.png" HitAction="ck_sk100_01" ActionDistance="8" IsEffectCanCross="1" IsStartDynamicDamage="0" HurtAction="combat" HurtSoundID="ass_combat_002" HurtEffectID="ck_sk100_01" OutLine="outline1"/>
+	<Property ID="CK_Sk101_01" Name="腾云" Photo="gui\main\heedbar\clone.png,384,794,128,128" SkillDisplayType2="0" LevelType="0" SkillNamePicture="gui\skill\tengyun.png" HitAction="ck_sk101_01b" HurtAction="combat" HurtSoundID="ass_combat_002" HurtEffectID="ck_sk101_01" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="CK_Sk102_01" Name="雾闪" Photo="gui\main\heedbar\clone.png,256,854,128,128" LevelType="0" SkillNamePicture="gui\skill\wushan.png" HitAction="ck_sk102_01" HurtAction="combat" HurtSoundID="ass_combat_002" OutLine="outline1"/>
+	<Property ID="CK_Sk103_01" Name="流萤" Photo="gui\main\heedbar\clone.png,512,778,128,128" LevelType="0" SkillNamePicture="gui\skill\liuying.png" HurtEffectID="ck_sk103_01" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="CK_Sk101_01A" Name="腾云坠地" Photo="gui\main\heedbar\clone.png,384,666,128,128" LevelType="0" HitAction="ck_sk101_01a" HurtAction="combat" HurtSoundID="ass_combat_002" DeadDisplayEffect="demo_action_10;floatdiedown" HurtEffect="ckblood_u"/>
+	<Property ID="skill_test" LevelType="0"/>
+	<Property ID="monk_at01d" Name="功夫-1" Photo="gui\main\heedbar\clone.png,256,470,128,128" LevelType="0" HitAction="monk_0001" HurtAction="combat" HurtSoundID="shan_combat_003" HurtEffectID="m_at01_gi" OutLine="outline1"/>
+	<Property ID="monk_at02d" Name="功夫-2" Photo="gui\main\heedbar\clone.png,256,470,128,128" HitAction="monk_0002" HurtAction="combat" HurtSoundID="shan_combat_003" HurtEffectID="m_at01_gi" OutLine="outline1"/>
+	<Property ID="monk_at03d" Name="功夫-3" Photo="gui\main\heedbar\clone.png,256,470,128,128" HitAction="monk_0003" HurtAction="combat1" HurtSoundID="shan_combat_003" HurtEffectID="m_at02_gi" OutLine="outline1"/>
+	<Property ID="monk_at04d" Name="功夫-4" Photo="gui\main\heedbar\clone.png,256,470,128,128" LevelType="0" HitAction="monk_0004" HurtAction="combat1" HurtSoundID="shan_combat_004" HurtEffectID="m_at02_gi" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="monk_sk01d" Name="葫顶踢" Photo="gui\main\heedbar\clone.png,0,778,128,128" SkillDisplayType1="0" LevelType="0" SkillNamePicture="gui\skill\luohz.png" HitAction="monk_0006" HurtAction="combat" HurtSoundID="shan_combat_005" HurtEffectID="m_at01_gi" OutLine="outline2"/>
+	<Property ID="monk_sk02d" Name="般若转" Photo="gui\main\heedbar\clone.png,853,522,128,128" LevelType="0" SkillNamePicture="gui\skill\banrz.png" HitAction="monk_0007" HurtAction="combat" HurtSoundID="shan_combat_003" HurtEffectID="m_at02_gi" OutLine="outline2" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="monk_sk03d_1" Name="翻滚" Photo="gui\main\heedbar\clone.png,0,470,128,128" LevelType="0" SkillNamePicture="gui\skill\fanzhuang.png" HitAction="monk_0008" NonMovingHitAction="zc_monk_0008" HurtAction="combat" HurtSoundID="shan_combat_003" HurtEffectID="drag_hit" OutLine="outline2"/>
+	<Property ID="monk_sk03d_2" Name="后空踢" Photo="gui\main\heedbar\clone.png,0,650,128,128" LevelType="0" HitAction="monk_0009" HurtAction="combat" HurtSoundID="shan_combat_005" HurtEffectID="m_at02_gi" OutLine="outline2" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="monk_sk04d" Name="葫芦阵" Photo="gui\main\heedbar\clone.png,128,470,128,128" SkillDisplayType1="0" LevelType="0" SkillNamePicture="gui\skill\wanwgy.png" HitAction="monk_0012" HurtSoundID="shan_combat_003" HurtEffectID="drag_hit" OutLine="outline2"/>
+	<Property ID="hell_fire" ActionEffect="hell_fire"/>
+	<Property ID="skill_weapon_bing" Name="冰属性武器" LevelType="0"/>
+	<Property ID="skill_weapon_dian" Name="电属性武器"/>
+	<Property ID="pre_atd" Photo="..\..\mobile\res\gui\main\heedbar\clone.png" HitAction="w_0005" HurtAction="combat1" HurtSoundID="fit_combat_001" HurtEffectID="w_at02_gi" OutLine="outline1"/>
+	<Property ID="monk_pre" Name="前置冲刺" Photo="..\..\mobile\res\gui\main\heedbar\clone.png" HitAction="monk_0013" HurtAction="combat" HurtSoundID="shan_combat_003" HurtEffectID="m_at01_gi" OutLine="outline1"/>
+	<Property ID="ck_pre" Name="冲刺" Photo="..\..\mobile\res\gui\main\heedbar\clone.png" HitAction="ck_ns104_01" HurtAction="combat1" HurtSoundID="ass_combat_001" HurtEffectID="ck_ns100_01" OutLine="outline1"/>
+	<Property ID="copy_w_at01d" Name="斩击-1" Photo="gui\main\heedbar\clone.png,256,726,128,128" HitAction="w_0001" HurtSoundID="fit_combat_001" HurtEffectID="w_at02_gi" OutLine="outline1"/>
+	<Property ID="copy_w_at04d" Name="斩击-4" Photo="gui\main\heedbar\clone.png,258,728,124,124" HitAction="w_0004" HurtAction="combat" HurtSoundID="fit_combat_001" HurtEffectID="w_at03_gi" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="copy_w_sk01d" Name="爆裂斩" Photo="gui\main\heedbar\clone.png,128,854,128,128" SkillDisplayType2="0" SkillNamePicture="gui\skill\baoliezhan.png" HitAction="w_0013" HurtSoundID="fit_combat_001" HurtEffectID="w_sk01_gi" OutLine="outline2" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="copy_w_sk02d" Name="无畏冲锋" Photo="gui\main\heedbar\clone.png,128,726,128,128" SkillDisplayType1="0" SkillDisplayType2="0" SkillNamePicture="gui\skill\chongfeng.png" HitAction="w_0006" IsEffectCanCross="0" HurtAction="back" HurtSoundID="fit_combat_001" HurtEffectID="w_at03_gi" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="copy_w_sk03d" Name="英勇之跃" Photo="gui\main\heedbar\clone.png,256,598,128,128" SkillDisplayType1="0" SkillNamePicture="gui\skill\yingyzy.png" HitAction="w_0007" HurtAction="back" HurtSoundID="fit_combat_001" HurtEffectID="w_sk02_gi" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="copy_w_sk04d" Name="誓死旋风" Photo="gui\main\heedbar\clone.png,128,598,128,128" SkillNamePicture="gui\skill\xuanfenzhan.png" HitAction="w_0011" HurtSoundID="fit_combat_001" HurtEffectID="w_sk01_gi" OutLine="outline2"/>
+	<Property ID="copy_CK_Ns100_01" Name="普通攻击1" Photo="gui\main\heedbar\clone.png,512,650,128,128" HitAction="ck_ns100_01" HurtSoundID="ass_combat_001" HurtEffectID="ck_ns100_01" OutLine="outline1"/>
+	<Property ID="copy_CK_Ns103_01" Name="普通攻击4" Photo="gui\main\heedbar\clone.png,514,652,124,124" SkillDisplayType1="0" HitAction="ck_ns103_01" HurtSoundID="ass_combat_001" HurtEffectID="ck_ns103_01" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="copy_CK_Sk100_01" Name="峰回轮转" Photo="gui\main\heedbar\clone.png,640,650,128,128" SkillDisplayType1="1" SkillNamePicture="gui\skill\fenghlz.png" HitAction="ck_sk100_01" ActionDistance="8" IsEffectCanCross="1" IsStartDynamicDamage="0" HurtSoundID="ass_combat_002" HurtEffectID="ck_sk100_01" OutLine="outline1"/>
+	<Property ID="copy_CK_Sk101_01" Name="腾云" Photo="gui\main\heedbar\clone.png,384,794,128,128" SkillDisplayType2="0" SkillNamePicture="gui\skill\tengyun.png" HitAction="ck_sk101_01b" HurtAction="combat" HurtSoundID="ass_combat_002" HurtEffectID="ck_sk101_01" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="copy_CK_Sk103_01" Name="流萤" Photo="gui\main\heedbar\clone.png,512,778,128,128" SkillNamePicture="gui\skill\liuying.png" HurtEffectID="ck_sk103_01" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="copy_CK_Sk101_01A" Name="腾云坠地" Photo="gui\main\heedbar\clone.png,384,666,128,128" HitAction="ck_sk101_01a" HurtSoundID="ass_combat_002" DeadDisplayEffect="demo_action_10;floatdiedown" HurtEffect="ckblood_u"/>
+	<Property ID="copy_monk_at01d" Name="功夫-1" Photo="gui\main\heedbar\clone.png,256,470,128,128" HitAction="monk_0001" HurtSoundID="shan_combat_003" HurtEffectID="m_at01_gi" OutLine="outline1"/>
+	<Property ID="copy_monk_at04d" Name="功夫-4" Photo="gui\main\heedbar\clone.png,258,472,124,124" HitAction="monk_0004" HurtSoundID="shan_combat_004" HurtEffectID="m_at02_gi" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="copy_monk_sk01d" Name="葫顶踢" Photo="gui\main\heedbar\clone.png,4,782,120,120" SkillDisplayType1="0" LevelType="0" SkillNamePicture="gui\skill\luohz.png" HitAction="monk_0006" HurtSoundID="shan_combat_005" HurtEffectID="m_at01_gi" OutLine="outline2"/>
+	<Property ID="copy_monk_sk02d" Name="般若转" Photo="gui\main\heedbar\clone.png,853,522,128,128" LevelType="0" SkillNamePicture="gui\skill\banrz.png" HitAction="monk_0007" HurtSoundID="shan_combat_003" HurtEffectID="m_at02_gi" OutLine="outline2" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="copy_monk_sk04d" Name="葫芦阵" Photo="gui\main\heedbar\clone.png,132,472,125,125" LevelType="0" SkillNamePicture="gui\skill\wanwgy.png" HitAction="monk_0012" HurtSoundID="shan_combat_003" HurtEffectID="drag_hit" OutLine="outline2"/>
+	<Property ID="monk_sk03d_1a" Name="翻滚" Photo="gui\main\heedbar\clone.png,0,650,128,128" LevelType="0" SkillNamePicture="gui\skill\fanzhuang.png" HitAction="monk_0008" NonMovingHitAction="zc_monk_0008" HurtAction="combat" HurtSoundID="shan_combat_003" HurtEffectID="drag_hit" OutLine="outline2"/>
+	<Property ID="w_at01d" Name="斩击-1" Photo="gui\main\heedbar\clone.png,256,726,128,128" LevelType="0" HitAction="w_0001" HurtAction="combat1" HurtSoundID="fit_combat_001" HurtEffectID="w_at02_gi" OutLine="outline1"/>
+	<Property ID="w_at02d" Name="斩击-2" Photo="gui\main\heedbar\clone.png,256,726,128,128" LevelType="0" HitAction="w_0002" HurtAction="combat2" HurtSoundID="fit_combat_001" HurtEffectID="w_at01_gi" OutLine="outline1"/>
+	<Property ID="w_at03d" Name="斩击-3" Photo="gui\main\heedbar\clone.png,256,726,128,128" LevelType="0" HitAction="w_0003" HurtAction="combat1" HurtSoundID="fit_combat_001" HurtEffectID="w_at02_gi" OutLine="outline1"/>
+	<Property ID="w_at04d" Name="斩击-4" Photo="gui\main\heedbar\clone.png,258,728,124,124" LevelType="0" HitAction="w_0004" HurtAction="combat" HurtSoundID="fit_combat_001" HurtEffectID="w_at03_gi" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="w_sk01d" Name="爆裂斩" Photo="gui\main\heedbar\clone.png,128,854,128,128" SkillDisplayType2="0" LevelType="0" SkillNamePicture="gui\skill\baoliezhan.png" HitAction="w_0013" HurtAction="combat" HurtSoundID="fit_combat_001" HurtEffectID="w_sk01_gi" OutLine="outline2" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="w_sk02d" Name="无畏冲锋" Photo="gui\main\heedbar\clone.png,128,726,128,128" SkillDisplayType1="0" SkillDisplayType2="0" LevelType="0" SkillNamePicture="gui\skill\chongfeng.png" HitAction="w_0006" IsEffectCanCross="0" HurtAction="back" HurtSoundID="fit_combat_001" HurtEffectID="w_at03_gi" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="w_sk03d" Name="英勇之跃" Photo="gui\main\heedbar\clone.png,256,598,128,128" SkillDisplayType1="0" LevelType="0" SkillNamePicture="gui\skill\yingyzy.png" HitAction="w_0007" NonMovingHitAction="F2_w_0007" HurtAction="back" HurtSoundID="fit_combat_001" HurtEffectID="w_sk02_gi" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="w_sk04d" Name="誓死旋风" Photo="gui\main\heedbar\clone.png,128,598,128,128" LevelType="0" SkillNamePicture="gui\skill\xuanfenzhan.png" HitAction="w_0011" HurtAction="combat2" HurtSoundID="fit_combat_001" HurtEffectID="w_sk01_gi" OutLine="outline2"/>
+	<Property ID="w_atd" Name="斩击_test" HitAction="attack_2h_f_5"/>
+	<Property ID="w_sk02combod" Name="战神之击" HitAction="w_0008" HurtAction="combat" HurtEffectID="w_at03_gi" OutLine="outline1" HurtEffect="blood_u"/>
+	<Property ID="pet_skill_001" Name="天神下凡" Photo="gui\main\heedbar\clone2.png,262,392,128,128" LevelType="0"/>
+	<Property ID="pet_skill_002" Name="无懈可击" Photo="gui\main\heedbar\clone2.png,132,2,128,128" LevelType="0"/>
+	<Property ID="pet_skill_003" Name="伤害加深" Photo="gui\main\heedbar\clone2.png,132,262,128,128" LevelType="0"/>
+	<Property ID="pet_skill_004" Name="破防斩" Photo="gui\main\heedbar\clone2.png,132,132,128,128" LevelType="0"/>
+	<Property ID="pet_skill_005" Name="英勇击杀" Photo="gui\main\heedbar\clone2.png,2,262,128,128" LevelType="0"/>
+	<Property ID="pet_skill_006" Name="致命打击" Photo="gui\main\heedbar\clone2.png,262,262,128,128" LevelType="0"/>
+	<Property ID="pet_skill_007" Name="剧毒扩散" Photo="gui\main\heedbar\clone2.png,262,132,128,128" LevelType="0" ActionEffect="pet_skill_007"/>
+	<Property ID="pet_skill_008" Name="生存法则" Photo="gui\main\heedbar\clone2.png,2,132,128,128" LevelType="0"/>
+	<Property ID="pet_skill_009" Name="治愈" Photo="gui\main\heedbar\clone2.png,2,392,128,128" LevelType="0"/>
+	<Property ID="pet_skill_010" Name="生命汲取" Photo="gui\main\heedbar\clone2.png,2,522,128,128" LevelType="0"/>
+	<Property ID="pet_skill_011" Name="风影" Photo="gui\main\heedbar\clone2.png,2,2,128,128" LevelType="0" ActionEffect="pet_skill_011"/>
+	<Property ID="pet_skill_012" Name="嘲讽" Photo="gui\main\heedbar\clone2.png,262,2,128,128" LevelType="0"/>
+	<Property ID="pet_skill_013" Name="生命链接" Photo="gui\main\heedbar\clone2.png,132,392,128,128" LevelType="0"/>
+	<Property ID="pet_skill_014" Name="沉默" Photo="gui\main\heedbar\clone2.png,133,522,128,128" LevelType="0" ActionEffect="buff_pet_skill_014"/>
+	<Property ID="pet_skill_015" Name="变身" Photo="icon\skill\pet_sword_003.jpg" LevelType="0"/>
+	<Property ID="pet_skill_016" Name="变身1" Photo="icon\skill\pet_fist_011.jpg" LevelType="0"/>
+	<Property ID="pet_skill_017" Name="变身2" Photo="icon\skill\pet_stick_005.jpg" LevelType="0"/>
+	<Property ID="pet_skill_018" Name="变身3" Photo="icon\skill\pet_net_004.jpg" LevelType="0"/>
+	<Property ID="pet_skill_019" Name="净化" Photo="gui\main\heedbar\clone3.png,128,640,128,128" LevelType="0" ActionEffect="pet_skill_019"/>
+	<Property ID="pet_skill_020" Name="镇守" Photo="gui\main\heedbar\clone3.png,0,640,128,128" LevelType="0"/>
+	<Property ID="pet_skill_021" Name="死亡波动" Photo="gui\main\heedbar\clone2.png,650,798,128,128" LevelType="0"/>
+	<Property ID="fs_pg_001" Name="法师普攻" Photo="gui\main\heedbar\clone.png,514,652,124,124" SkillDisplayType2="1" LevelType="0" LeadAction="fs_1" LeadEffect="fs_pg_001" HurtAction="combat" HurtSoundID="fit_combat_001" HurtEffectID="fs_hit_001" OutLine="outline1"/>
+	<Property ID="fs_sk_001" Name="法师技能1" Photo="gui\main\heedbar\clone2.png,394,837,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_yslj.png" HitAction="fs_sk_1" HurtAction="combat" HurtSoundID="fit_combat_001" OutLine="outline1"/>
+	<Property ID="fs_sk_002" Name="法师技能2" Photo="gui\main\heedbar\clone.png,853,522,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_yslj.png" HitAction="fs_sk_2"/>
+	<Property ID="fs_sk_003" Name="法师技能3" Photo="gui\main\heedbar\clone.png,512,778,128,128" HitAction="fs_sk_3"/>
+	<Property ID="fs_sk_004" Name="法师技能4" Photo="gui\main\heedbar\clone2.png,650,668,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_ysqy.png" HitAction="fs_sk_4"/>
+	<Property ID="fs_sk_005" Name="法师技能5" Photo="gui\main\heedbar\clone.png,514,652,124,124" LevelType="0" SkillNamePicture="gui\skill\zi_ysqy.png" HitAction="fs_sk_5" HurtAction="combat" HurtSoundID="fit_combat_001" HurtEffectID="fs_hit_002" OutLine="outline1"/>
+	<Property ID="fs_sk_006" Name="法师技能6" Photo="gui\main\heedbar\clone2.png,522,837,128,128" LevelType="0" HitAction="fs_sk_6"/>
+	<Property ID="fs_sk_007" Name="法师技能7" Photo="gui\main\heedbar\clone.png,514,652,124,124" LevelType="0" HitAction="fs_sk_7"/>
+	<Property ID="fs_sk_008" Name="法师技能8" Photo="gui\main\heedbar\clone2.png,522,709,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_yscd.png" HitAction="fs_sk_8" HurtAction="combat" HurtSoundID="fit_combat_001" HurtEffectID="fs_hit_002" OutLine="outline1" HitEventCount="2"/>
+	<Property ID="fs_sk_009" Name="元素穿梭" Photo="gui\main\heedbar\clone2.png,650,413,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_yscs.png" HitAction="fs_sk_9"/>
+	<Property ID="fs_sk_010" Name="群冰元爆" Photo="gui\main\heedbar\clone.png,514,652,124,124" LevelType="0" HitAction="fs_sk_10"/>
+	<Property ID="fs_sk_011" Name="元素穿梭1" Photo="gui\main\heedbar\clone2.png,650,541,128,128" LevelType="0" HitAction="fs_sk_9"/>
+	<Property ID="fs_pg_002" Name="法师普攻1" Photo="gui\main\heedbar\clone2.png,393,709,128,128" LevelType="0" HitAction="fs_3" HurtAction="combat" HurtSoundID="mag_combat_001" HurtEffectID="fs_hit_002" OutLine="outline1"/>
+	<Property ID="fs_pg_003" Name="法师普攻3" Photo="gui\main\heedbar\clone2.png,393,709,128,128" LevelType="0" HitAction="fs_4" HurtAction="combat" HurtSoundID="mag_combat_001" HurtEffectID="fs_hit_002" OutLine="outline1"/>
+	<Property ID="fs_pg_004" Name="法师普攻4" Photo="gui\main\heedbar\clone2.png,393,709,128,128" LevelType="0" HitAction="fs_5" HurtAction="combat" HurtSoundID="mag_combat_001" HurtEffectID="fs_hit_002" OutLine="outline1"/>
+	<Property ID="fs_pg_005" Name="法师普攻2" Photo="gui\main\heedbar\clone2.png,393,709,128,128" LevelType="0" HitAction="fs_6" HurtAction="combat" HurtSoundID="mag_combat_001" HurtEffectID="fs_hit_002" OutLine="outline1"/>
+	<Property ID="pet_skill_022" Name="解除控制" Photo="gui\main\heedbar\clone3.png,0,512,128,128" LevelType="0"/>
+	<Property ID="pet_skill_023" Name="全场霸体" Photo="gui\main\heedbar\clone3.png,640,384,128,128" LevelType="0"/>
+	<Property ID="pet_skill_024" Name="弹无虚发" Photo="gui\main\heedbar\clone3.png,512,512,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_001_1" Name="低级必杀" Photo="gui\main\heedbar\clone3.png,128,0,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_001_2" Name="中级必杀" Photo="gui\main\heedbar\clone3.png,128,0,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_001_3" Name="高级必杀" Photo="gui\main\heedbar\clone3.png,128,0,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_001_4" Name="终级必杀" Photo="gui\main\heedbar\clone3.png,128,0,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_001_5" Name="究级必杀" Photo="gui\main\heedbar\clone3.png,128,0,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_002_1" Name="低级防御" Photo="gui\main\heedbar\clone3.png,256,0,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_002_2" Name="中级防御" Photo="gui\main\heedbar\clone3.png,256,0,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_002_3" Name="高级防御" Photo="gui\main\heedbar\clone3.png,256,0,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_002_4" Name="终级防御" Photo="gui\main\heedbar\clone3.png,256,0,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_002_5" Name="究级防御" Photo="gui\main\heedbar\clone3.png,256,0,128,128"/>
+	<Property ID="pet_lingwu_003_1" Name="低级幸运" Photo="gui\main\heedbar\clone3.png,384,0,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_003_2" Name="中级幸运" Photo="gui\main\heedbar\clone3.png,384,0,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_003_3" Name="高级幸运" Photo="gui\main\heedbar\clone3.png,384,0,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_003_4" Name="终级幸运" Photo="gui\main\heedbar\clone3.png,384,0,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_003_5" Name="究级幸运" Photo="gui\main\heedbar\clone3.png,384,0,128,128"/>
+	<Property ID="pet_lingwu_004_1" Name="低级韧性" Photo="gui\main\heedbar\clone3.png,512,0,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_004_2" Name="中级韧性" Photo="gui\main\heedbar\clone3.png,512,0,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_004_3" Name="高级韧性" Photo="gui\main\heedbar\clone3.png,512,0,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_004_4" Name="终级韧性" Photo="gui\main\heedbar\clone3.png,512,0,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_004_5" Name="究级韧性" Photo="gui\main\heedbar\clone3.png,512,0,128,128"/>
+	<Property ID="pet_lingwu_005_1" Name="低级勇猛" Photo="gui\main\heedbar\clone3.png,640,0,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_005_2" Name="中级勇猛" Photo="gui\main\heedbar\clone3.png,640,0,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_005_3" Name="高级勇猛" Photo="gui\main\heedbar\clone3.png,640,0,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_005_4" Name="终级勇猛" Photo="gui\main\heedbar\clone3.png,640,0,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_005_5" Name="究级勇猛" Photo="gui\main\heedbar\clone3.png,640,0,128,128"/>
+	<Property ID="pet_lingwu_006_1" Name="低级强身" Photo="gui\main\heedbar\clone3.png,769,0,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_006_2" Name="中级强身" Photo="gui\main\heedbar\clone3.png,769,0,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_006_3" Name="高级强身" Photo="gui\main\heedbar\clone3.png,769,0,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_006_4" Name="终级强身" Photo="gui\main\heedbar\clone3.png,769,0,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_006_5" Name="究级强身" Photo="gui\main\heedbar\clone3.png,769,0,128,128"/>
+	<Property ID="pet_lingwu_007_1" Name="低级铜墙" Photo="gui\main\heedbar\clone3.png,896,0,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_007_2" Name="中级铜墙" Photo="gui\main\heedbar\clone3.png,896,0,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_007_3" Name="高级铜墙" Photo="gui\main\heedbar\clone3.png,896,0,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_007_4" Name="终级铜墙" Photo="gui\main\heedbar\clone3.png,896,0,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_007_5" Name="究级铜墙" Photo="gui\main\heedbar\clone3.png,896,0,128,128"/>
+	<Property ID="pet_lingwu_008_1" Name="低级破防" Photo="gui\main\heedbar\clone3.png,0,128,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_008_2" Name="中级破防" Photo="gui\main\heedbar\clone3.png,0,128,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_008_3" Name="高级破防" Photo="gui\main\heedbar\clone3.png,0,128,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_008_4" Name="终级破防" Photo="gui\main\heedbar\clone3.png,0,128,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_008_5" Name="究级破防" Photo="gui\main\heedbar\clone3.png,0,128,128,128"/>
+	<Property ID="pet_lingwu_009_1" Name="低级反弹" Photo="gui\main\heedbar\clone3.png,128,128,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_009_2" Name="中级反弹" Photo="gui\main\heedbar\clone3.png,128,128,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_009_3" Name="高级反弹" Photo="gui\main\heedbar\clone3.png,128,128,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_009_4" Name="终级反弹" Photo="gui\main\heedbar\clone3.png,128,128,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_009_5" Name="究级反弹" Photo="gui\main\heedbar\clone3.png,128,128,128,128"/>
+	<Property ID="pet_lingwu_010_1" Name="低级护佑" Photo="gui\main\heedbar\clone3.png,256,128,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_010_2" Name="中级护佑" Photo="gui\main\heedbar\clone3.png,256,128,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_010_3" Name="高级护佑" Photo="gui\main\heedbar\clone3.png,256,128,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_010_4" Name="终级护佑" Photo="gui\main\heedbar\clone3.png,256,128,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_010_5" Name="究级护佑" Photo="gui\main\heedbar\clone3.png,256,128,128,128"/>
+	<Property ID="pet_lingwu_011_1" Name="低级命中" Photo="gui\main\heedbar\clone3.png,384,128,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_011_2" Name="中级命中" Photo="gui\main\heedbar\clone3.png,384,128,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_011_3" Name="高级命中" Photo="gui\main\heedbar\clone3.png,384,128,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_011_4" Name="终级命中" Photo="gui\main\heedbar\clone3.png,384,128,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_011_5" Name="究级命中" Photo="gui\main\heedbar\clone3.png,384,128,128,128"/>
+	<Property ID="pet_lingwu_012_1" Name="低级闪避" Photo="gui\main\heedbar\clone3.png,512,128,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_012_2" Name="中级闪避" Photo="gui\main\heedbar\clone3.png,512,128,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_012_3" Name="高级闪避" Photo="gui\main\heedbar\clone3.png,512,128,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_012_4" Name="终极闪避" Photo="gui\main\heedbar\clone3.png,512,128,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_012_5" Name="究级闪避" Photo="gui\main\heedbar\clone3.png,512,128,128,128"/>
+	<Property ID="pet_lingwu_013_1" Name="低级恐惧" Photo="gui\main\heedbar\clone3.png,640,128,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_013_2" Name="中级恐惧" Photo="gui\main\heedbar\clone3.png,640,128,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_013_3" Name="高级恐惧" Photo="gui\main\heedbar\clone3.png,640,128,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_013_4" Name="终极恐惧" Photo="gui\main\heedbar\clone3.png,640,128,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_013_5" Name="究级恐惧" Photo="gui\main\heedbar\clone3.png,640,128,128,128"/>
+	<Property ID="pet_lingwu_014_1" Name="低级醒神" Photo="gui\main\heedbar\clone3.png,768,128,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_014_2" Name="中级醒神" Photo="gui\main\heedbar\clone3.png,768,128,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_014_3" Name="高级醒神" Photo="gui\main\heedbar\clone3.png,768,128,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_014_4" Name="终级醒神" Photo="gui\main\heedbar\clone3.png,768,128,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_014_5" Name="究级醒神" Photo="gui\main\heedbar\clone3.png,768,128,128,128"/>
+	<Property ID="pet_lingwu_015_1" Name="低级缓速" Photo="gui\main\heedbar\clone3.png,896,128,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_015_2" Name="中级缓速" Photo="gui\main\heedbar\clone3.png,896,128,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_015_3" Name="高级缓速" Photo="gui\main\heedbar\clone3.png,896,128,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_015_4" Name="终级缓速" Photo="gui\main\heedbar\clone3.png,896,128,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_015_5" Name="究级缓速" Photo="gui\main\heedbar\clone3.png,896,128,128,128"/>
+	<Property ID="pet_lingwu_016_1" Name="低级神行" Photo="gui\main\heedbar\clone3.png,0,256,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_016_2" Name="中级神行" Photo="gui\main\heedbar\clone3.png,0,256,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_016_3" Name="高级神行" Photo="gui\main\heedbar\clone3.png,0,256,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_016_4" Name="终级神行" Photo="gui\main\heedbar\clone3.png,0,256,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_016_5" Name="究级神行" Photo="gui\main\heedbar\clone3.png,0,256,128,128"/>
+	<Property ID="pet_lingwu_017_1" Name="低级火墙吸收" Photo="gui\main\heedbar\clone3.png,128,256,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_017_2" Name="中级火墙吸收" Photo="gui\main\heedbar\clone3.png,128,256,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_017_3" Name="高级火墙吸收" Photo="gui\main\heedbar\clone3.png,128,256,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_017_4" Name="终级火墙吸收" Photo="gui\main\heedbar\clone3.png,128,256,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_017_5" Name="究级火墙吸收" Photo="gui\main\heedbar\clone3.png,128,256,128,128"/>
+	<Property ID="pet_lingwu_018_1" Name="低级火墙免疫" Photo="gui\main\heedbar\clone3.png,256,256,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_018_2" Name="中级火墙免疫" Photo="gui\main\heedbar\clone3.png,256,256,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_018_3" Name="高级火墙免疫" Photo="gui\main\heedbar\clone3.png,256,256,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_018_4" Name="终级火墙免疫" Photo="gui\main\heedbar\clone3.png,256,256,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_018_5" Name="究级火墙免疫" Photo="gui\main\heedbar\clone3.png,256,256,128,128"/>
+	<Property ID="pet_lingwu_019_1" Name="低级冰冻吸收" Photo="gui\main\heedbar\clone3.png,384,256,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_019_2" Name="中级冰冻吸收" Photo="gui\main\heedbar\clone3.png,384,256,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_019_3" Name="高级冰冻吸收" Photo="gui\main\heedbar\clone3.png,384,256,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_019_4" Name="终级冰冻吸收" Photo="gui\main\heedbar\clone3.png,384,256,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_019_5" Name="究级冰冻吸收" Photo="gui\main\heedbar\clone3.png,384,256,128,128"/>
+	<Property ID="pet_lingwu_020_1" Name="低级冰冻免疫" Photo="gui\main\heedbar\clone3.png,512,256,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_020_2" Name="中级冰冻免疫" Photo="gui\main\heedbar\clone3.png,512,256,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_020_3" Name="高级冰冻免疫" Photo="gui\main\heedbar\clone3.png,512,256,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_020_4" Name="终级冰冻免疫" Photo="gui\main\heedbar\clone3.png,512,256,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_020_5" Name="究级冰冻免疫" Photo="gui\main\heedbar\clone3.png,512,256,128,128"/>
+	<Property ID="pet_lingwu_021_1" Name="低级雷电吸收" Photo="gui\main\heedbar\clone3.png,640,256,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_021_2" Name="中级雷电吸收" Photo="gui\main\heedbar\clone3.png,640,256,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_021_3" Name="高级雷电吸收" Photo="gui\main\heedbar\clone3.png,640,256,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_021_4" Name="终极雷电吸收" Photo="gui\main\heedbar\clone3.png,640,256,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_021_5" Name="究级雷电吸收" Photo="gui\main\heedbar\clone3.png,640,256,128,128"/>
+	<Property ID="pet_lingwu_022_1" Name="低级雷电免疫" Photo="gui\main\heedbar\clone3.png,768,256,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_022_2" Name="中级雷电免疫" Photo="gui\main\heedbar\clone3.png,768,256,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_022_3" Name="高级雷电免疫" Photo="gui\main\heedbar\clone3.png,768,256,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_022_4" Name="终级雷电免疫" Photo="gui\main\heedbar\clone3.png,768,256,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_022_5" Name="究级雷电免疫" Photo="gui\main\heedbar\clone3.png,768,256,128,128"/>
+	<Property ID="pet_lingwu_023_1" Name="低级吸血" Photo="gui\main\heedbar\clone3.png,896,256,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_023_2" Name="中级吸血" Photo="gui\main\heedbar\clone3.png,896,256,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_023_3" Name="高级吸血" Photo="gui\main\heedbar\clone3.png,896,256,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_023_4" Name="终极吸血" Photo="gui\main\heedbar\clone3.png,896,256,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_023_5" Name="究级吸血" Photo="gui\main\heedbar\clone3.png,896,256,128,128"/>
+	<Property ID="pet_lingwu_024_1" Name="低级复仇" Photo="gui\main\heedbar\clone3.png,0,384,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_024_2" Name="中级复仇" Photo="gui\main\heedbar\clone3.png,0,384,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_024_3" Name="高级复仇" Photo="gui\main\heedbar\clone3.png,0,384,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_024_4" Name="终级复仇" Photo="gui\main\heedbar\clone3.png,0,384,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_024_5" Name="究级复仇" Photo="gui\main\heedbar\clone3.png,0,384,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_025_1" Name="低级追击" Photo="gui\main\heedbar\clone3.png,128,384,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_025_2" Name="中级追击" Photo="gui\main\heedbar\clone3.png,128,384,128,128" LevelType="1"/>
+	<Property ID="pet_lingwu_025_3" Name="高级追击" Photo="gui\main\heedbar\clone3.png,128,384,128,128" LevelType="2"/>
+	<Property ID="pet_lingwu_025_4" Name="终级追击" Photo="gui\main\heedbar\clone3.png,128,384,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_025_5" Name="究级追击" Photo="gui\main\heedbar\clone3.png,128,384,128,128" LevelType="0"/>
+	<Property ID="pet_lingwu_026_1" Name="火焰伤害吸收" Photo="gui\main\heedbar\clone5.png,512,0,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_026_2"/>
+	<Property ID="pet_lingwu_026_3"/>
+	<Property ID="pet_lingwu_026_4"/>
+	<Property ID="pet_lingwu_026_5"/>
+	<Property ID="pet_lingwu_027_1" Name="冰冻伤害吸收" Photo="gui\main\heedbar\clone5.png,640,0,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_027_2"/>
+	<Property ID="pet_lingwu_027_3"/>
+	<Property ID="pet_lingwu_027_4"/>
+	<Property ID="pet_lingwu_027_5"/>
+	<Property ID="pet_lingwu_028_1" Name="雷电伤害吸收" Photo="gui\main\heedbar\clone5.png,768,0,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_028_2"/>
+	<Property ID="pet_lingwu_028_3" LevelType="0"/>
+	<Property ID="pet_lingwu_028_4"/>
+	<Property ID="pet_lingwu_028_5"/>
+	<Property ID="pet_lingwu_029_1" Name="伤害反弹" Photo="gui\main\heedbar\clone5.png,256,0,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_029_2"/>
+	<Property ID="pet_lingwu_029_3"/>
+	<Property ID="pet_lingwu_029_4"/>
+	<Property ID="pet_lingwu_029_5"/>
+	<Property ID="pet_lingwu_030_1" Name="进击战鼓" Photo="gui\main\heedbar\clone7.png,256,0,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_030_2" Name="魔法之风" Photo="gui\main\heedbar\clone7.png,384,0,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_030_3" Name="守御之力" Photo="gui\main\heedbar\clone7.png,512,0,128,128" LevelType="3"/>
+	<Property ID="pet_lingwu_030_4"/>
+	<Property ID="pet_lingwu_030_5"/>
+	<Property ID="pet_lingwu_031_1"/>
+	<Property ID="pet_lingwu_031_2" LevelType="0"/>
+	<Property ID="pet_lingwu_031_3"/>
+	<Property ID="pet_lingwu_031_4"/>
+	<Property ID="pet_lingwu_031_5"/>
+	<Property ID="pet_lingwu_032_1"/>
+	<Property ID="pet_lingwu_032_2"/>
+	<Property ID="pet_lingwu_032_3"/>
+	<Property ID="pet_lingwu_032_4"/>
+	<Property ID="pet_lingwu_032_5"/>
+	<Property ID="pet_lingwu_033_1"/>
+	<Property ID="pet_lingwu_033_2"/>
+	<Property ID="pet_lingwu_033_3"/>
+	<Property ID="pet_lingwu_033_4"/>
+	<Property ID="pet_lingwu_033_5"/>
+	<Property ID="pet_lingwu_034_1"/>
+	<Property ID="pet_lingwu_034_2"/>
+	<Property ID="pet_lingwu_034_3" LevelType="0"/>
+	<Property ID="pet_lingwu_034_4"/>
+	<Property ID="pet_lingwu_034_5"/>
+	<Property ID="pet_lingwu_035_1"/>
+	<Property ID="pet_lingwu_035_2"/>
+	<Property ID="pet_lingwu_035_3"/>
+	<Property ID="pet_lingwu_035_4"/>
+	<Property ID="pet_lingwu_035_5"/>
+	<Property ID="pet_lingwu_036_1"/>
+	<Property ID="pet_lingwu_036_2"/>
+	<Property ID="pet_lingwu_036_3"/>
+	<Property ID="pet_lingwu_036_4"/>
+	<Property ID="pet_lingwu_036_5"/>
+	<Property ID="pet_lingwu_037_1"/>
+	<Property ID="pet_lingwu_037_2"/>
+	<Property ID="pet_lingwu_037_3"/>
+	<Property ID="pet_lingwu_037_4"/>
+	<Property ID="pet_lingwu_037_5"/>
+	<Property ID="pet_lingwu_038_1"/>
+	<Property ID="pet_lingwu_038_2"/>
+	<Property ID="pet_lingwu_038_3" LevelType="0"/>
+	<Property ID="pet_lingwu_038_4"/>
+	<Property ID="pet_lingwu_038_5"/>
+	<Property ID="pet_lingwu_039_1"/>
+	<Property ID="pet_lingwu_039_2"/>
+	<Property ID="pet_lingwu_039_3"/>
+	<Property ID="pet_lingwu_039_4" LevelType="0"/>
+	<Property ID="pet_lingwu_039_5"/>
+	<Property ID="pet_lingwu_040_1"/>
+	<Property ID="pet_lingwu_040_2"/>
+	<Property ID="pet_lingwu_040_3"/>
+	<Property ID="pet_lingwu_040_4" LevelType="0"/>
+	<Property ID="pet_lingwu_040_5" LevelType="0"/>
+	<Property ID="pet13_xiyou_002_1" Photo="icon\skill\pet_rareskill_001.png" LevelType="4"/>
+	<Property ID="pet13_xiyou_005_1" Photo="icon\skill\pet_rareskill_003.png" LevelType="4"/>
+	<Property ID="pet10_xiyou_003_1" Photo="icon\skill\pet_rareskill_006.png" LevelType="4"/>
+	<Property ID="pet10_xiyou_005_1" Photo="icon\skill\pet_rareskill_005.png" LevelType="4"/>
+	<Property ID="pet31_xiyou_002_1" Photo="icon\skill\pet_rareskill_007.png" LevelType="4"/>
+	<Property ID="pet31_xiyou_004_1" Photo="icon\skill\pet_rareskill_008.png" LevelType="4"/>
+	<Property ID="pet27_xiyou_003_1" Photo="icon\skill\pet_rareskill_011.png" LevelType="4"/>
+	<Property ID="pet27_xiyou_004_1" Photo="icon\skill\pet_rareskill_012.png" LevelType="4"/>
+	<Property ID="pet22_xiyou_003_1" Photo="icon\skill\pet_rareskill_014.png" LevelType="4"/>
+	<Property ID="pet19_xiyou_001_1" Photo="icon\skill\pet_rareskill_016.png" LevelType="4"/>
+	<Property ID="pet18_xiyou_003_1" Photo="icon\skill\pet_rareskill_020.png" LevelType="4"/>
+	<Property ID="pet18_xiyou_004_1" Photo="icon\skill\pet_rareskill_021.png" LevelType="4"/>
+	<Property ID="pet26_xiyou_004_1" Photo="icon\skill\pet_rareskill_024.png" LevelType="4"/>
+	<Property ID="pet29_xiyou_002_1" Photo="icon\skill\pet_rareskill_027.png" LevelType="4"/>
+	<Property ID="pet23_xiyou_002_1" Photo="icon\skill\pet_rareskill_028.png" LevelType="4"/>
+	<Property ID="pet23_xiyou_003_1" Photo="icon\skill\pet_rareskill_029.png" LevelType="4"/>
+	<Property ID="pet12_xiyou_003_1" Photo="icon\skill\pet_rareskill_030.png" LevelType="4"/>
+	<Property ID="pet12_xiyou_005_1" Photo="gui\main\heedbar\clone5.png,768,768,128,128" LevelType="4"/>
+	<Property ID="pet17_xiyou_002_1" Photo="icon\skill\pet_rareskill_032.png" LevelType="4"/>
+	<Property ID="pet17_xiyou_004_1" Photo="icon\skill\pet_rareskill_033.png" LevelType="4"/>
+	<Property ID="pet30_xiyou_001_1" Photo="icon\skill\pet_rareskill_039.png" LevelType="4"/>
+	<Property ID="pet32_xiyou_001_1" Photo="icon\skill\pet_rareskill_042.png" LevelType="4"/>
+	<Property ID="pet32_xiyou_002_1" Photo="icon\skill\pet_rareskill_043.png" LevelType="4"/>
+	<Property ID="pet33_xiyou_002_1" Photo="icon\skill\pet_rareskill_045.png" LevelType="4"/>
+	<Property ID="pet33_xiyou_004_1" Photo="icon\skill\pet_rareskill_046.png" LevelType="4"/>
+	<Property ID="pet28_xiyou_001_1" Photo="icon\skill\pet_rareskill_047.png" LevelType="4"/>
+	<Property ID="pet28_xiyou_004_1" Photo="icon\skill\pet_rareskill_048.png" LevelType="4"/>
+	<Property ID="pet_skill_025" Name="瑞兽祈福" Photo="gui\main\heedbar\clone4.png,128,512,128,128" LevelType="0"/>
+	<Property ID="pet_skill_026" Name="能量加剧" Photo="gui\main\heedbar\clone4.png,640,384,128,128" LevelType="0" ActionEffect="pet_skill_026"/>
+	<Property ID="gun_ns_001" Name="神枪手普攻1" Photo="gui\main\heedbar\clone4.png,0,640,128,128" LevelType="0" HitAction="gun_001" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="ger_hit_001" OutLine="outline1"/>
+	<Property ID="gun_ns_002" Name="神枪手普攻2" Photo="gui\main\heedbar\clone4.png,0,640,128,128" LevelType="0" HitAction="gun_002" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="ger_hit_001" OutLine="outline1"/>
+	<Property ID="gun_ns_003" Name="神枪手普攻3" Photo="gui\main\heedbar\clone4.png,0,640,128,128" LevelType="0" HitAction="gun_003" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="ger_hit_001" OutLine="outline1"/>
+	<Property ID="gun_ns_004" Name="神枪手普攻4" Photo="gui\main\heedbar\clone4.png,0,640,128,128" LevelType="0" HitAction="gun_004" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="ger_hit_001" OutLine="outline1"/>
+	<Property ID="gun_sk_001" Name="浮空弹" Photo="gui\main\heedbar\clone4.png,256,512,128,128" LevelType="0" SkillNamePicture="gui\skill\qiangshou_fkd.png" HitAction="gun_005" HurtAction="combat" HurtSoundID="fit_combat_001" HurtEffectID="ger_hit_001" OutLine="outline1"/>
+	<Property ID="gun_sk_002" Name="元素弹" Photo="gui\main\heedbar\clone4.png,384,768,128,128" LevelType="0" SkillNamePicture="gui\skill\qiangshou_ysbz.png" ActionEffect="gun_sk_002"/>
+	<Property ID="gun_sk_002A" Name="火元素" Photo="gui\main\heedbar\clone4.png,768,512,128,128" LevelType="0"/>
+	<Property ID="gun_sk_002B" Name="冰元素" Photo="gui\main\heedbar\clone4.png,640,512,128,128" LevelType="0"/>
+	<Property ID="gun_sk_002C" Name="雷元素" Photo="gui\main\heedbar\clone4.png,896,512,128,128" LevelType="0"/>
+	<Property ID="gun_sk_003" Name="烟雾弹" Photo="gui\main\heedbar\clone4.png,512,512,128,128" LevelType="0" SkillNamePicture="gui\skill\qiangshou_ywlr.png" HitAction="gun_006"/>
+	<Property ID="gun_sk_004" Name="腾跃" Photo="gui\main\heedbar\clone4.png,384,512,128,128" LevelType="0" SkillNamePicture="gui\skill\qiangshou_tnty.png" HitAction="gun_007" NonMovingHitAction="zc_gun_007"/>
+	<Property ID="pet_skill_027" Name="困兽之牢" Photo="gui\main\heedbar\clone4.png,256,768,128,128" LevelType="0"/>
+	<Property ID="pet_skill_028" Name="披荆斩棘" Photo="gui\main\heedbar\clone4.png,128,768,128,128" LevelType="0"/>
+	<Property ID="pet19_xiyou_002_1" Photo="gui\main\heedbar\clone4.png,768,512,128,128" LevelType="4"/>
+	<Property ID="pet20_xiyou_001_1" Photo="gui\main\heedbar\clone4.png,128,640,128,128" LevelType="4"/>
+	<Property ID="pet35_xiyou_005_1" Photo="gui\main\heedbar\clone4.png,256,640,128,128" LevelType="4"/>
+	<Property ID="pet_skill_029" Name="偷天换日" Photo="gui\main\heedbar\clone4.png,384,896,128,128" LevelType="0" ActionEffect="pet_skill_029"/>
+	<Property ID="pet_skill_030" Name="攻防一体" Photo="gui\main\heedbar\clone4.png,896,896,128,128" LevelType="0"/>
+	<Property ID="zuoqi_up" Name="上坐骑" SkillDisplayType2="1" LevelType="0"/>
+	<Property ID="zuoqi_down" Name="下坐骑" LevelType="0"/>
+	<Property ID="xiniu_skill_001" Name="犀牛普攻" Photo="gui\main\heedbar\clone5.png,384,128,128,128" LevelType="0" HitAction="zuoqi_1_001" HurtAction="combat" HurtSoundID="ass_combat_001" HurtEffectID="ck_ns103_01" OutLine="outline1"/>
+	<Property ID="xiniu_skill_002" Name="犀牛技能1" Photo="gui\main\heedbar\clone5.png,512,128,128,128" LevelType="0" HitAction="zuoqi_1_002"/>
+	<Property ID="xiniu_skill_003" Name="犀牛技能2" Photo="gui\main\heedbar\clone5.png,640,128,128,128" LevelType="0" HitAction="zuoqi_1_003"/>
+	<Property ID="baihu_skill_001" Name="白虎普攻" Photo="gui\main\heedbar\clone5.png,128,256,128,128" LevelType="0" HitAction="zuoqi_2_001" HurtAction="combat2" HurtSoundID="ass_combat_001" HurtEffectID="ck_ns103_01" OutLine="outline1"/>
+	<Property ID="baihu_skill_002" Name="白虎技能1" Photo="gui\main\heedbar\clone5.png,256,256,128,128" LevelType="0" HitAction="zuoqi_2_002"/>
+	<Property ID="baihu_skill_003" Name="白虎技能2" Photo="gui\main\heedbar\clone5.png,384,256,128,128" LevelType="0" HitAction="zuoqi_2_003" HurtAction="combat" HurtSoundID="ass_combat_001" HurtEffectID="ck_ns103_01" OutLine="outline1"/>
+	<Property ID="qilin_skill_001" Name="麒麟普攻" Photo="gui\main\heedbar\clone5.png,768,128,128,128" LevelType="0" HitAction="zuoqi_3_001" HurtAction="combat" HurtSoundID="mag_combat_001" HurtEffectID="fs_hit_002" OutLine="outline1"/>
+	<Property ID="qilin_skill_002" Name="麒麟技能1" Photo="gui\main\heedbar\clone5.png,896,128,128,128" LevelType="0" HitAction="zuoqi_3_002" HurtAction="combat" HurtSoundID="mag_combat_001" HurtEffectID="fs_hit_002" OutLine="outline1"/>
+	<Property ID="qilin_skill_003" Name="麒麟技能2" Photo="gui\main\heedbar\clone5.png,0,256,128,128" LevelType="0" HurtAction="combat" HurtSoundID="mag_combat_001" HurtEffectID="fs_hit_002" OutLine="outline1"/>
+	<Property ID="baihu_skill_004" Name="白虎技能3" Photo="gui\main\heedbar\clone5.png,512,256,128,128" SkillDisplayType1="1" LevelType="0" HitAction="zuoqi_2_004" HurtAction="combat" HurtSoundID="ass_combat_001" HurtEffectID="ck_ns103_01" OutLine="outline1"/>
+	<Property ID="pet7_xiyou_001_1" Name="百折不挠" Photo="gui\main\heedbar\clone5.png,0,0,128,128" LevelType="3"/>
+	<Property ID="pet7_xiyou_001_2" Name="吸血" Photo="gui\main\heedbar\clone5.png,128,0,128,128" LevelType="3"/>
+	<Property ID="pet7_xiyou_001_3" Name="重伤" Photo="gui\main\heedbar\clone5.png,384,0,128,128" LevelType="3"/>
+	<Property ID="qilin_skill_004" Name="麒麟陨石攻击" Photo="gui\main\heedbar\clone5.png,128,256,128,128" LevelType="0" HitAction="zuoqi_3_003" HurtAction="combat" HurtSoundID="mag_combat_001" HurtEffectID="fs_hit_002" OutLine="outline1"/>
+	<Property ID="pet35_xiyou_004_1" Photo="gui\main\heedbar\clone5.png,0,128,128,128" LevelType="4"/>
+	<Property ID="pet34_xiyou_002_1" Photo="gui\main\heedbar\clone5.png,128,128,128,128" LevelType="4"/>
+	<Property ID="pet34_xiyou_004_1" Photo="gui\main\heedbar\clone5.png,256,128,128,128" LevelType="4"/>
+	<Property ID="pet35_xiyou_003_1" Photo="gui\main\heedbar\clone4.png,640,768,128,128" LevelType="4"/>
+	<Property ID="pet11_xiyou_004_1" Photo="gui\main\heedbar\clone4.png,768,768,128,128" LevelType="4"/>
+	<Property ID="pet11_xiyou_002_1" Photo="gui\main\heedbar\clone4.png,896,768,128,128" LevelType="4"/>
+	<Property ID="pet7_xiyou_002_1" Name="鬼魂术" Photo="gui\main\heedbar\clone5.png,896,0,128,128" LevelType="3"/>
+	<Property ID="copy_gun_ns_001" Name="神枪手普攻1" Photo="gui\main\heedbar\clone4.png,0,640,128,128" LevelType="0" HitAction="gun_monster_1" HurtSoundID="ger_combat_004" HurtEffectID="ger_hit_001" OutLine="outline1"/>
+	<Property ID="copy_gun_ns_002" Name="神枪手普攻2" Photo="gui\main\heedbar\clone4.png,0,640,128,128" LevelType="0" HitAction="gun_monster_2" HurtSoundID="ger_combat_004" HurtEffectID="ger_hit_001" OutLine="outline1"/>
+	<Property ID="copy_gun_ns_004" Name="神枪手普攻4" Photo="gui\main\heedbar\clone4.png,0,640,128,128" LevelType="0" HitAction="gun_monster_4" HurtSoundID="ger_combat_004" HurtEffectID="ger_hit_001" OutLine="outline1"/>
+	<Property ID="pet_skill_031" Name="仁义同士" Photo="gui\main\heedbar\clone5.png,0,384,128,128" LevelType="0"/>
+	<Property ID="pet43_xiyou_001" Photo="gui\main\heedbar\clone5.png,128,384,128,128" LevelType="4"/>
+	<Property ID="qilin_skill_005" Name="麒麟陨石取消" Photo="gui\main\heedbar\clone2.png,522,837,128,128" LevelType="0"/>
+	<Property ID="feijian_skill_001" Name="飞剑普攻" Photo="gui\main\heedbar\clone5.png,256,384,128,128" LevelType="0" HitAction="zuoqi_4_001" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="feijian_skill_002" Name="飞剑技能1" Photo="gui\main\heedbar\clone5.png,384,384,128,128" LevelType="0" HitAction="zuoqi_4_002" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="feijian_skill_003" Name="飞剑技能2" Photo="gui\main\heedbar\clone5.png,640,384,128,128" LevelType="0" HitAction="zuoqi_4_003" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="feijian_skill_004" Name="飞剑技能1二段" Photo="gui\main\heedbar\clone5.png,512,384,128,128" LevelType="0" ActionEffect="feijian_skill_004" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="feilong_skill_001" Name="飞龙普攻" Photo="gui\main\heedbar\clone5.png,768,384,128,128" LevelType="0" HitAction="zuoqi_5_001" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="feilong_skill_002" Name="飞龙技能1" Photo="gui\main\heedbar\clone5.png,896,384,128,128" LevelType="0" HitAction="zuoqi_5_002" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="feilong_skill_003" Name="飞龙技能2" Photo="gui\main\heedbar\clone5.png,0,512,128,128" LevelType="0" HitAction="zuoqi_5_003" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="panda_ns_001" Name="母熊猫普攻1" Photo="gui\main\heedbar\clone6.png,0,0,128,128" LevelType="0" HitAction="panda_001" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="panda_hit" OutLine="outline1"/>
+	<Property ID="panda_ns_002" Name="母熊猫普攻2" Photo="gui\main\heedbar\clone6.png,0,0,128,128" LevelType="0" HitAction="panda_002" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="panda_hit" OutLine="outline1"/>
+	<Property ID="panda_ns_003" Name="母熊猫普攻3" Photo="gui\main\heedbar\clone6.png,0,0,128,128" LevelType="0" HitAction="panda_003" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="panda_hit" OutLine="outline1"/>
+	<Property ID="panda_ns_004" Name="母熊猫普攻4" Photo="gui\main\heedbar\clone6.png,0,0,128,128" LevelType="0" HitAction="panda_004" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="panda_hit" OutLine="outline1"/>
+	<Property ID="panda_skill_001" Name="母熊猫技能1" Photo="gui\main\heedbar\clone6.png,128,0,128,128" LevelType="0" SkillNamePicture="gui\skill\picwords_skill_mlcz.png" HitAction="panda_005" HurtAction="combat" HurtSoundID="panda_hit" HurtEffectID="ger_hit_001" OutLine="outline1"/>
+	<Property ID="panda_skill_002" Name="母熊猫技能2" Photo="gui\main\heedbar\clone6.png,640,0,128,128" LevelType="0" SkillNamePicture="gui\skill\picwords_skill_jldl.png" HitAction="panda_006" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="panda_hit" OutLine="outline1"/>
+	<Property ID="panda_skill_003" Name="母熊猫技能3" Photo="gui\main\heedbar\clone6.png,512,0,128,128" LevelType="0" SkillNamePicture="gui\skill\picwords_skill_bgzt.png" HitAction="panda_009" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="panda_hit" OutLine="outline1"/>
+	<Property ID="panda_skill_004" Name="母熊猫技能4" Photo="gui\main\heedbar\clone6.png,256,0,128,128" LevelType="0" SkillNamePicture="gui\skill\qiangshou_ywlr.png" HitAction="panda_010" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="ger_hit_001" OutLine="outline1"/>
+	<Property ID="panda_skill_005" Name="母熊猫技能5" Photo="gui\main\heedbar\clone6.png,384,0,128,128" LevelType="0" SkillNamePicture="gui\skill\qiangshou_ywlr.png" HitAction="panda_011" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="ger_hit_001" OutLine="outline1"/>
+	<Property ID="panda_skill_006" Name="母熊猫技能6" Photo="gui\main\heedbar\clone5.png,0,0,128,128" LevelType="0" SkillNamePicture="gui\skill\qiangshou_ywlr.png" HitAction="gun_001" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="ger_hit_001" OutLine="outline1"/>
+	<Property ID="panda_skill_007" Name="母熊猫技能7" Photo="gui\main\heedbar\clone6.png,768,0,128,128" LevelType="0" SkillNamePicture="gui\skill\picwords_skill_grbj.png" HitAction="panda_012" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="panda_hit" OutLine="outline1"/>
+	<Property ID="pet30_xiyou_002_1" Photo="gui\main\heedbar\clone5.png,384,768,128,128" LevelType="4"/>
+	<Property ID="pet13_xiyou_004_1" Photo="gui\main\heedbar\clone5.png,512,768,128,128" LevelType="4"/>
+	<Property ID="pet21_xiyou_001_1" Photo="gui\main\heedbar\clone5.png,640,768,128,128" LevelType="4"/>
+	<Property ID="pet10_xiyou_004_1" Photo="gui\main\heedbar\clone5.png,896,768,128,128" LevelType="4"/>
+	<Property ID="pet_skill_032" Name="有难同当" Photo="gui\main\heedbar\clone5.png,384,896,128,128" LevelType="0"/>
+	<Property ID="tianma_skill_001" Name="天马普攻" Photo="gui\main\heedbar\clone6.png,128,128,128,128" LevelType="0" HitAction="zuoqi_6_001" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="tianma_skill_002" Name="天马技能1" Photo="gui\main\heedbar\clone6.png,256,128,128,128" SkillDisplayType3="1" LevelType="0" PrepareFrontAction="zuoqi_6_002" PrepareFrontTime="1066" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="tianma_skill_003" Name="天马技能2" Photo="gui\main\heedbar\clone6.png,384,128,128,128" LevelType="0" HitAction="zuoqi_6_003" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="F1_w_sk01d" Name="爆裂斩" Photo="gui\main\heedbar\clone.png,128,854,128,128" SkillDisplayType2="0" LevelType="0" SkillNamePicture="gui\skill\baoliezhan.png" HitAction="w_0013" HurtAction="combat" HurtSoundID="fit_combat_001" HurtEffectID="w_sk01_gi" OutLine="outline2" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="F1_w_sk02d" Name="无畏冲锋" Photo="gui\main\heedbar\clone.png,128,726,128,128" SkillDisplayType1="0" SkillDisplayType2="0" LevelType="0" SkillNamePicture="gui\skill\chongfeng.png" HitAction="w_0006" IsEffectCanCross="0" HurtAction="back" HurtSoundID="fit_combat_001" HurtEffectID="w_at03_gi" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="F1_w_sk03d" Name="英勇之跃" Photo="gui\main\heedbar\clone.png,256,598,128,128" SkillDisplayType1="0" LevelType="0" SkillNamePicture="gui\skill\yingyzy.png" HitAction="w_0007" NonMovingHitAction="F2_w_0007" HurtAction="back" HurtSoundID="fit_combat_001" HurtEffectID="w_sk02_gi" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="F1_w_sk04d" Name="誓死旋风" Photo="gui\main\heedbar\clone.png,128,598,128,128" LevelType="0" SkillNamePicture="gui\skill\xuanfenzhan.png" HitAction="w_0011" HurtAction="combat2" HurtSoundID="fit_combat_001" HurtEffectID="w_sk01_gi" OutLine="outline2"/>
+	<Property ID="F2_w_sk01d" Name="爆裂斩" Photo="gui\main\heedbar\clone.png,128,854,128,128" SkillDisplayType2="0" LevelType="0" SkillNamePicture="gui\skill\baoliezhan.png" HitAction="F2_w_0013" HurtAction="combat" HurtSoundID="fit_combat_001" HurtEffectID="w_sk01_gi" OutLine="outline2" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="F2_w_sk02d" Name="无畏冲锋" Photo="gui\main\heedbar\clone.png,128,726,128,128" SkillDisplayType1="0" SkillDisplayType2="0" LevelType="0" SkillNamePicture="gui\skill\chongfeng.png" HitAction="w_0006" IsEffectCanCross="0" HurtAction="back" HurtSoundID="fit_combat_001" HurtEffectID="w_at03_gi" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="F2_w_sk03d" Name="英勇之跃" Photo="gui\main\heedbar\clone.png,256,598,128,128" SkillDisplayType1="0" LevelType="0" SkillNamePicture="gui\skill\yingyzy.png" HitAction="F2_w_0007" NonMovingHitAction="F2_w_0007" HurtAction="back" HurtSoundID="fit_combat_001" HurtEffectID="w_sk02_gi" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="F2_w_sk04d" Name="誓死旋风" Photo="gui\main\heedbar\clone.png,128,598,128,128" LevelType="0" SkillNamePicture="gui\skill\xuanfenzhan.png" HitAction="w_0011" HurtAction="combat2" HurtSoundID="fit_combat_001" HurtEffectID="w_sk01_gi" OutLine="outline2"/>
+	<Property ID="F1_CK_Sk100_01" Name="峰回轮转" Photo="gui\main\heedbar\clone.png,640,650,128,128" SkillDisplayType1="1" LevelType="0" SkillNamePicture="gui\skill\fenghlz.png" HitAction="ck_sk100_01" ActionDistance="8" IsEffectCanCross="1" IsStartDynamicDamage="0" HurtAction="combat" HurtSoundID="ass_combat_002" HurtEffectID="ck_sk100_01" OutLine="outline1"/>
+	<Property ID="F1_CK_Sk101_01" Name="腾云" Photo="gui\main\heedbar\clone.png,384,794,128,128" SkillDisplayType2="0" LevelType="0" SkillNamePicture="gui\skill\tengyun.png" HitAction="ck_sk101_01b" HurtAction="combat" HurtSoundID="ass_combat_002" HurtEffectID="ck_sk101_01" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="F1_CK_Sk102_01" Name="雾闪" Photo="gui\main\heedbar\clone.png,256,854,128,128" LevelType="0" SkillNamePicture="gui\skill\wushan.png" HitAction="ck_sk102_01" HurtAction="combat" HurtSoundID="ass_combat_002" OutLine="outline1"/>
+	<Property ID="F1_CK_Sk103_01" Name="流萤" Photo="gui\main\heedbar\clone.png,512,778,128,128" LevelType="0" SkillNamePicture="gui\skill\liuying.png" HurtEffectID="ck_sk103_01" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="F1_CK_Sk101_01A" Name="腾云坠地" Photo="gui\main\heedbar\clone.png,384,666,128,128" HitAction="ck_sk101_01a" HurtAction="combat" HurtSoundID="ass_combat_002" DeadDisplayEffect="demo_action_10;floatdiedown" HurtEffect="ckblood_u"/>
+	<Property ID="F2_CK_Sk100_01" Name="峰回轮转" Photo="gui\main\heedbar\clone.png,640,650,128,128" SkillDisplayType1="1" LevelType="0" SkillNamePicture="gui\skill\fenghlz.png" HitAction="F2_ck_sk100_01" ActionDistance="8" IsEffectCanCross="1" IsStartDynamicDamage="0" HurtAction="combat" HurtSoundID="ass_combat_002" HurtEffectID="ck_sk100_01" OutLine="outline1"/>
+	<Property ID="F2_CK_Sk101_01" Name="腾云" Photo="gui\main\heedbar\clone.png,384,794,128,128" SkillDisplayType2="0" LevelType="0" SkillNamePicture="gui\skill\tengyun.png" HitAction="F2_ck_sk101_01b" HurtAction="combat" HurtSoundID="ass_combat_002" HurtEffectID="ck_sk101_01" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="F2_CK_Sk102_01" Name="雾闪" Photo="gui\main\heedbar\clone.png,256,854,128,128" LevelType="0" SkillNamePicture="gui\skill\wushan.png" HitAction="ck_sk102_01" HurtAction="combat" HurtSoundID="ass_combat_002" OutLine="outline1"/>
+	<Property ID="F2_CK_Sk103_01" Name="流萤" Photo="gui\main\heedbar\clone.png,512,778,128,128" LevelType="0" SkillNamePicture="gui\skill\liuying.png" HurtEffectID="ck_sk103_01" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="F2_CK_Sk101_01A" Name="腾云坠地" Photo="gui\main\heedbar\clone.png,384,666,128,128" LevelType="0" HitAction="ck_sk101_01a" HurtAction="combat" HurtSoundID="ass_combat_002" DeadDisplayEffect="demo_action_10;floatdiedown" HurtEffect="ckblood_u"/>
+	<Property ID="F1_monk_sk01d" Name="葫顶踢" Photo="gui\main\heedbar\clone.png,0,778,128,128" SkillDisplayType1="0" LevelType="0" SkillNamePicture="gui\skill\luohz.png" HitAction="monk_0006" HurtAction="combat" HurtSoundID="shan_combat_005" HurtEffectID="m_at01_gi" OutLine="outline2"/>
+	<Property ID="F1_monk_sk02d" Name="般若转" Photo="gui\main\heedbar\clone.png,853,522,128,128" LevelType="0" SkillNamePicture="gui\skill\banrz.png" HitAction="monk_0007" HurtAction="combat" HurtSoundID="shan_combat_003" HurtEffectID="m_at02_gi" OutLine="outline2" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="F1_monk_sk03d_1" Name="翻滚" Photo="gui\main\heedbar\clone.png,0,470,128,128" LevelType="0" SkillNamePicture="gui\skill\fanzhuang.png" HitAction="monk_0008" NonMovingHitAction="zc_monk_0008" HurtAction="combat" HurtSoundID="shan_combat_003" HurtEffectID="drag_hit" OutLine="outline2"/>
+	<Property ID="F1_monk_sk03d_2" Name="后空踢" Photo="gui\main\heedbar\clone.png,0,650,128,128" LevelType="0" HitAction="monk_0009" HurtAction="combat" HurtSoundID="shan_combat_005" HurtEffectID="m_at02_gi" OutLine="outline2" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="F1_monk_sk04d" Name="葫芦阵" Photo="gui\main\heedbar\clone.png,128,470,128,128" SkillDisplayType1="0" LevelType="0" SkillNamePicture="gui\skill\wanwgy.png" HitAction="monk_0012" HurtSoundID="shan_combat_003" HurtEffectID="drag_hit" OutLine="outline2"/>
+	<Property ID="F1_monk_sk03d_1a" Name="翻滚" Photo="gui\main\heedbar\clone.png,0,650,128,128" LevelType="0" SkillNamePicture="gui\skill\fanzhuang.png" HitAction="monk_0008" NonMovingHitAction="zc_monk_0008" HurtAction="combat" HurtSoundID="shan_combat_003" HurtEffectID="drag_hit" OutLine="outline2"/>
+	<Property ID="F2_monk_sk01d" Name="葫顶踢" Photo="gui\main\heedbar\clone.png,0,778,128,128" SkillDisplayType1="0" LevelType="0" SkillNamePicture="gui\skill\luohz.png" HitAction="monk_0006" HurtAction="combat" HurtSoundID="shan_combat_005" HurtEffectID="m_at01_gi" OutLine="outline2"/>
+	<Property ID="F2_monk_sk02d" Name="般若转" Photo="gui\main\heedbar\clone.png,853,522,128,128" SkillNamePicture="gui\skill\banrz.png" HitAction="monk_0007" HurtAction="combat" HurtSoundID="shan_combat_003" HurtEffectID="m_at02_gi" OutLine="outline2" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="F2_monk_sk03d_1" Name="翻滚" Photo="gui\main\heedbar\clone.png,0,470,128,128" LevelType="0" SkillNamePicture="gui\skill\fanzhuang.png" HitAction="monk_0008" NonMovingHitAction="zc_monk_0008" HurtAction="combat" HurtSoundID="shan_combat_003" HurtEffectID="drag_hit" OutLine="outline2"/>
+	<Property ID="F2_monk_sk03d_2" Name="后空踢" Photo="gui\main\heedbar\clone.png,0,650,128,128" HitAction="monk_0009" HurtAction="combat" HurtSoundID="shan_combat_005" HurtEffectID="m_at02_gi" OutLine="outline2" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="F2_monk_sk04d" Name="葫芦阵" Photo="gui\main\heedbar\clone.png,128,470,128,128" SkillDisplayType1="0" LevelType="0" SkillNamePicture="gui\skill\wanwgy.png" HitAction="monk_0012" HurtSoundID="shan_combat_003" HurtEffectID="drag_hit" OutLine="outline2"/>
+	<Property ID="F2_monk_sk03d_1a" Name="翻滚" Photo="gui\main\heedbar\clone.png,0,650,128,128" LevelType="0" SkillNamePicture="gui\skill\fanzhuang.png" HitAction="monk_0008" NonMovingHitAction="zc_monk_0008" HurtAction="combat" HurtSoundID="shan_combat_003" HurtEffectID="drag_hit" OutLine="outline2"/>
+	<Property ID="F1_fs_sk_008" Name="法师技能8" Photo="gui\main\heedbar\clone2.png,522,709,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_yscd.png" HitAction="fs_sk_8" HurtAction="combat" HurtSoundID="fit_combat_001" HurtEffectID="fs_hit_002" OutLine="outline1" HitEventCount="2"/>
+	<Property ID="F1_fs_sk_001" Name="法师技能1" Photo="gui\main\heedbar\clone2.png,394,837,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_yslj.png" HitAction="F1_fs_sk_1" HurtAction="combat" HurtSoundID="fit_combat_001" OutLine="outline1"/>
+	<Property ID="F1_fs_sk_009" Name="元素穿梭" Photo="gui\main\heedbar\clone2.png,650,413,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_yscs.png" HitAction="fs_sk_9"/>
+	<Property ID="F1_fs_sk_011" Name="元素穿梭1" Photo="gui\main\heedbar\clone2.png,650,541,128,128" LevelType="0" HitAction="fs_sk_9"/>
+	<Property ID="F1_fs_sk_004" Name="法师技能4" Photo="gui\main\heedbar\clone2.png,650,668,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_ysqy.png" HitAction="fs_sk_4"/>
+	<Property ID="F1_fs_sk_005" Name="法师技能5" Photo="gui\main\heedbar\clone.png,514,652,124,124" LevelType="0" SkillNamePicture="gui\skill\zi_ysqy.png" HitAction="fs_sk_5" HurtAction="combat" HurtSoundID="fit_combat_001" HurtEffectID="fs_hit_002" OutLine="outline1"/>
+	<Property ID="F1_fs_sk_006" Name="法师技能6" Photo="gui\main\heedbar\clone2.png,522,837,128,128" LevelType="0" HitAction="fs_sk_6"/>
+	<Property ID="F2_fs_sk_008" Name="法师技能8" Photo="gui\main\heedbar\clone2.png,522,709,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_yscd.png" HitAction="fs_sk_8" HurtAction="combat" HurtSoundID="fit_combat_001" HurtEffectID="fs_hit_002" OutLine="outline1" HitEventCount="4"/>
+	<Property ID="F2_fs_sk_001" Name="法师技能1" Photo="gui\main\heedbar\clone2.png,394,837,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_yslj.png" HitAction="F2_fs_sk_1" HurtAction="combat" HurtSoundID="fit_combat_001" OutLine="outline1"/>
+	<Property ID="F2_fs_sk_009" Name="元素穿梭" Photo="gui\main\heedbar\clone2.png,650,413,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_yscs.png" HitAction="fs_sk_9"/>
+	<Property ID="F2_fs_sk_011" Name="元素穿梭1" Photo="gui\main\heedbar\clone2.png,650,541,128,128" LevelType="0" HitAction="fs_sk_9"/>
+	<Property ID="F2_fs_sk_004" Name="法师技能4" Photo="gui\main\heedbar\clone2.png,650,668,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_ysqy.png" HitAction="fs_sk_4"/>
+	<Property ID="F2_fs_sk_005" Name="法师技能5" Photo="gui\main\heedbar\clone.png,514,652,124,124" LevelType="0" SkillNamePicture="gui\skill\zi_ysqy.png" HitAction="fs_sk_5" HurtAction="combat" HurtSoundID="fit_combat_001" HurtEffectID="fs_hit_002" OutLine="outline1"/>
+	<Property ID="F2_fs_sk_006" Name="法师技能6" Photo="gui\main\heedbar\clone2.png,522,837,128,128" LevelType="0" HitAction="fs_sk_6"/>
+	<Property ID="F1_gun_sk_001" Name="浮空弹" Photo="gui\main\heedbar\clone4.png,256,512,128,128" LevelType="0" SkillNamePicture="gui\skill\qiangshou_fkd.png" HitAction="F1_gun_005" HurtAction="combat" HurtSoundID="fit_combat_001" HurtEffectID="ger_hit_001" OutLine="outline1"/>
+	<Property ID="F1_gun_sk_002" Name="元素弹" Photo="gui\main\heedbar\clone4.png,384,768,128,128" LevelType="0" SkillNamePicture="gui\skill\qiangshou_ysbz.png" ActionEffect="gun_sk_002"/>
+	<Property ID="F1_gun_sk_002A" Name="火元素" Photo="gui\main\heedbar\clone4.png,768,512,128,128" LevelType="0"/>
+	<Property ID="F1_gun_sk_002B" Name="冰元素" Photo="gui\main\heedbar\clone4.png,640,512,128,128" LevelType="0"/>
+	<Property ID="F1_gun_sk_002C" Name="雷元素" Photo="gui\main\heedbar\clone4.png,896,512,128,128" LevelType="0"/>
+	<Property ID="F1_gun_sk_004" Name="腾跃" Photo="gui\main\heedbar\clone4.png,384,512,128,128" LevelType="0" SkillNamePicture="gui\skill\qiangshou_tnty.png" HitAction="F1_gun_007" NonMovingHitAction="zc_gun_007"/>
+	<Property ID="F1_gun_sk_003" Name="烟雾弹" Photo="gui\main\heedbar\clone4.png,512,512,128,128" LevelType="0" SkillNamePicture="gui\skill\qiangshou_ywlr.png" HitAction="gun_006"/>
+	<Property ID="F2_gun_sk_001" Name="浮空弹" Photo="gui\main\heedbar\clone4.png,256,512,128,128" LevelType="0" SkillNamePicture="gui\skill\qiangshou_fkd.png" HitAction="gun_005" HurtAction="combat" HurtSoundID="fit_combat_001" HurtEffectID="ger_hit_001" OutLine="outline1"/>
+	<Property ID="F2_gun_sk_002" Name="元素弹" Photo="gui\main\heedbar\clone4.png,384,768,128,128" LevelType="0" SkillNamePicture="gui\skill\qiangshou_ysbz.png" ActionEffect="gun_sk_002"/>
+	<Property ID="F2_gun_sk_002A" Name="火元素" Photo="gui\main\heedbar\clone4.png,768,512,128,128" LevelType="0"/>
+	<Property ID="F2_gun_sk_002B" Name="冰元素" Photo="gui\main\heedbar\clone4.png,640,512,128,128" LevelType="0"/>
+	<Property ID="F2_gun_sk_002C" Name="雷元素" Photo="gui\main\heedbar\clone4.png,896,512,128,128" LevelType="0"/>
+	<Property ID="F2_gun_sk_004" Name="腾跃" Photo="gui\main\heedbar\clone4.png,384,512,128,128" LevelType="0" SkillNamePicture="gui\skill\qiangshou_tnty.png" HitAction="gun_007" NonMovingHitAction="zc_gun_007"/>
+	<Property ID="F2_gun_sk_003" Name="烟雾弹" Photo="gui\main\heedbar\clone4.png,512,512,128,128" LevelType="0" SkillNamePicture="gui\skill\qiangshou_ywlr.png" HitAction="gun_006"/>
+	<Property ID="F1_panda_skill_001" Name="母熊猫技能1" Photo="gui\main\heedbar\clone6.png,128,0,128,128" LevelType="0" SkillNamePicture="gui\skill\picwords_skill_mlcz.png" HitAction="panda_005" HurtAction="combat" HurtSoundID="panda_hit" HurtEffectID="ger_hit_001" OutLine="outline1"/>
+	<Property ID="F1_panda_skill_002" Name="母熊猫技能2" Photo="gui\main\heedbar\clone6.png,640,0,128,128" LevelType="0" SkillNamePicture="gui\skill\picwords_skill_jldl.png" HitAction="panda_006" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="panda_hit" OutLine="outline1"/>
+	<Property ID="F1_panda_skill_003" Name="母熊猫技能3" Photo="gui\main\heedbar\clone6.png,512,0,128,128" LevelType="0" SkillNamePicture="gui\skill\picwords_skill_bgzt.png" HitAction="panda_009" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="panda_hit" OutLine="outline1"/>
+	<Property ID="F1_panda_skill_004" Name="母熊猫技能4" Photo="gui\main\heedbar\clone6.png,256,0,128,128" LevelType="0" SkillNamePicture="gui\skill\qiangshou_ywlr.png" HitAction="panda_010" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="ger_hit_001" OutLine="outline1"/>
+	<Property ID="F1_panda_skill_005" Name="母熊猫技能5" Photo="gui\main\heedbar\clone6.png,384,0,128,128" LevelType="0" SkillNamePicture="gui\skill\qiangshou_ywlr.png" HitAction="panda_011" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="ger_hit_001" OutLine="outline1"/>
+	<Property ID="F1_panda_skill_006" Name="母熊猫技能6" Photo="gui\main\heedbar\clone5.png,0,0,128,128" LevelType="0" SkillNamePicture="gui\skill\qiangshou_ywlr.png" HitAction="gun_001" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="ger_hit_001" OutLine="outline1"/>
+	<Property ID="F1_panda_skill_007" Name="母熊猫技能7" Photo="gui\main\heedbar\clone6.png,768,0,128,128" LevelType="0" SkillNamePicture="gui\skill\picwords_skill_grbj.png" HitAction="panda_012" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="panda_hit" OutLine="outline1"/>
+	<Property ID="F2_panda_skill_001" Name="母熊猫技能1" Photo="gui\main\heedbar\clone6.png,128,0,128,128" LevelType="0" SkillNamePicture="gui\skill\picwords_skill_mlcz.png" HitAction="F2_panda_005" HurtAction="combat" HurtSoundID="panda_hit" HurtEffectID="ger_hit_001" OutLine="outline1"/>
+	<Property ID="F2_panda_skill_002" Name="母熊猫技能2" Photo="gui\main\heedbar\clone6.png,640,0,128,128" LevelType="0" SkillNamePicture="gui\skill\picwords_skill_jldl.png" HitAction="panda_006" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="panda_hit" OutLine="outline1"/>
+	<Property ID="F2_panda_skill_003" Name="母熊猫技能3" Photo="gui\main\heedbar\clone6.png,512,0,128,128" LevelType="0" SkillNamePicture="gui\skill\picwords_skill_bgzt.png" HitAction="F2_panda_009" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="panda_hit" OutLine="outline1"/>
+	<Property ID="F2_panda_skill_004" Name="母熊猫技能4" Photo="gui\main\heedbar\clone6.png,256,0,128,128" LevelType="0" SkillNamePicture="gui\skill\qiangshou_ywlr.png" HitAction="panda_010" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="ger_hit_001" OutLine="outline1"/>
+	<Property ID="F2_panda_skill_005" Name="母熊猫技能5" Photo="gui\main\heedbar\clone6.png,384,0,128,128" LevelType="0" SkillNamePicture="gui\skill\qiangshou_ywlr.png" HitAction="panda_011" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="ger_hit_001" OutLine="outline1"/>
+	<Property ID="F2_panda_skill_006" Name="母熊猫技能6" Photo="gui\main\heedbar\clone5.png,0,0,128,128" LevelType="0" SkillNamePicture="gui\skill\qiangshou_ywlr.png" HitAction="gun_001" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="ger_hit_001" OutLine="outline1"/>
+	<Property ID="F2_panda_skill_007" Name="母熊猫技能7" Photo="gui\main\heedbar\clone6.png,768,0,128,128" LevelType="0" SkillNamePicture="gui\skill\picwords_skill_grbj.png" HitAction="panda_012" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="panda_hit" OutLine="outline1"/>
+	<Property ID="pet_skill_033" Name="大地庇护" Photo="icon\skill\pet_rareskill_045.png" LevelType="0" ActionEffect="npc_soil_7"/>
+	<Property ID="pet41_xiyou_001" Photo="gui\main\heedbar\clone6.png,0,512,128,128" LevelType="4"/>
+	<Property ID="pet40_xiyou_001" Photo="gui\main\heedbar\clone6.png,128,512,128,128" LevelType="4"/>
+	<Property ID="pet20_xiyou_002_1" Photo="gui\main\heedbar\clone6.png,256,512,128,128" LevelType="4"/>
+	<Property ID="pet34_xiyou_002_2" Photo="gui\main\heedbar\clone6.png,384,512,128,128" LevelType="4"/>
+	<Property ID="pet23_xiyou_004_1" Photo="gui\main\heedbar\clone6.png,512,512,128,128" LevelType="4"/>
+	<Property ID="pet_skill_034" Name="恶魔形态" Photo="gui\main\heedbar\clone6.png,640,512,128,128" LevelType="0"/>
+	<Property ID="pet_skill_035" Name="雷池" Photo="gui\main\heedbar\clone6.png,512,640,128,128" LevelType="0"/>
+	<Property ID="dizang_skill_001" Name="地藏普攻" Photo="gui\main\heedbar\clone6.png,640,768,128,128" LevelType="0" HitAction="zuoqi_7_001" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="dizang_skill_002" Name="地藏技能1" Photo="gui\main\heedbar\clone6.png,768,768,128,128" SkillDisplayType3="1" LevelType="0" HitAction="zuoqi_7_002" PrepareFrontAction="zuoqi_6_002" PrepareFrontTime="1066" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="dizang_skill_003" Name="地藏技能2" Photo="gui\main\heedbar\clone6.png,896,768,128,128" LevelType="0" HitAction="zuoqi_7_003" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="pet47_xiyou_001" Photo="gui\main\heedbar\clone7.png,768,0,128,128" LevelType="4"/>
+	<Property ID="longling_skill_001" Name="龙灵普通攻击" Photo="gui\main\heedbar\clone7.png,384,128,128,128" LevelType="0" HitAction="zuoqi_8_001" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="longling_skill_002" Name="龙之愤怒" Photo="gui\main\heedbar\clone7.png,512,128,128,128" SkillDisplayType1="0" LevelType="0" HitAction="zuoqi_8_002" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="longling_skill_003" Name="火焰沼泽" Photo="gui\main\heedbar\clone6.png,384,128,128,128" LevelType="0" HitAction="zuoqi_8_003" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="longling_skill_004" Name="雷电风暴" Photo="gui\main\heedbar\clone7.png,640,128,128,128" LevelType="0" HitAction="zuoqi_8_004" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="pet47_xiyou_002" Name="绝地重生" Photo="gui\main\heedbar\clone7.png,768,128,128,128" LevelType="4"/>
+	<Property ID="war_at_01" Name="复仇者普攻1" Photo="gui\main\heedbar\clone7.png,0,384,128,128" LevelType="0" HitAction="war_001" HurtAction="combat" HurtEffectID="war_hit_at03" OutLine="outline1"/>
+	<Property ID="war_at_02" Name="复仇者普攻2" Photo="gui\main\heedbar\clone7.png,0,384,128,128" LevelType="0" HitAction="war_002" HurtAction="combat" HurtEffectID="war_hit_at02" OutLine="outline1"/>
+	<Property ID="war_at_03" Name="复仇者普攻3" Photo="gui\main\heedbar\clone7.png,0,384,128,128" LevelType="0" HitAction="war_003" HurtAction="combat" HurtEffectID="war_hit_at01" OutLine="outline1"/>
+	<Property ID="war_at_04" Name="复仇者普攻4" Photo="gui\main\heedbar\clone7.png,0,384,128,128" LevelType="0" HitAction="war_004" HurtAction="combat" HurtEffectID="war_hit_at02" OutLine="outline1"/>
+	<Property ID="war_pre" Name="近战冲刺" Photo="gui\main\heedbar\clone7.png,768,0,128,128" LevelType="0" HitAction="war_011" HurtAction="combat" HurtEffectID="war_hit_at03" OutLine="outline1"/>
+	<Property ID="war_sk_01A" Name="死亡召唤" Photo="gui\main\heedbar\clone7.png,256,256,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_swzh.png" HitAction="war_005" HurtAction="combat" HurtEffectID="war_hit_002" OutLine="outline1"/>
+	<Property ID="war_sk_01B" Name="死亡召唤2段" Photo="gui\main\heedbar\clone7.png,384,256,128,128" LevelType="0" HitAction="war_006" HurtAction="combat" HurtEffectID="war_hit_002" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="war_sk_03A" Name="奔袭" Photo="gui\main\heedbar\clone7.png,640,256,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_bx.png" HitAction="war_008" HurtAction="combat" HurtEffectID="war_hit_002" OutLine="outline1"/>
+	<Property ID="war_sk_03B" Name="奔袭2段" Photo="gui\main\heedbar\clone7.png,768,256,128,128" LevelType="0" HitAction="war_009" HurtAction="combat" HurtEffectID="war_hit_at01" OutLine="outline1"/>
+	<Property ID="war_sk_04" Name="护盾" Photo="gui\main\heedbar\clone8.png,256,128,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_smhd.png" HurtAction="combat" HurtEffectID="war_hit_001" OutLine="outline1"/>
+	<Property ID="pet_skill_036" Name="剑士无双" Photo="gui\main\heedbar\clone5.png,384,896,128,128" LevelType="0"/>
+	<Property ID="F1_war_sk_01A" Name="死亡召唤" Photo="gui\main\heedbar\clone7.png,256,256,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_swzh.png" HitAction="F1_war_005" HurtAction="combat" HurtEffectID="war_hit_002" OutLine="outline1"/>
+	<Property ID="F1_war_sk_01B" Name="死亡召唤2段" Photo="gui\main\heedbar\clone7.png,384,256,128,128" LevelType="0" HitAction="F1_war_006" HurtAction="combat" HurtEffectID="war_hit_002" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="F1_war_sk_02" Name="乱舞" Photo="gui\main\heedbar\clone7.png,512,256,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_lw.png" HitAction="F1_war_007" HurtAction="combat" HurtEffectID="war_hit_002" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="F1_war_sk_03A" Name="奔袭" Photo="gui\main\heedbar\clone7.png,640,256,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_bx.png" HitAction="F1_war_008" HurtAction="combat" HurtEffectID="war_hit_002" OutLine="outline1"/>
+	<Property ID="F1_war_sk_03B" Name="奔袭2段" Photo="gui\main\heedbar\clone7.png,768,256,128,128" LevelType="0" HitAction="F1_war_009" HurtAction="combat" HurtEffectID="war_hit_at01" OutLine="outline1"/>
+	<Property ID="F1_war_sk_04" Name="护盾" Photo="gui\main\heedbar\clone8.png,256,128,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_smhd.png" HurtAction="combat" HurtEffectID="war_hit_001" OutLine="outline1"/>
+	<Property ID="F1_war_sk_04B" Name="暗影突袭2段" Photo="gui\main\heedbar\clone8.png,0,256,128,128" LevelType="0" HurtAction="combat" HurtEffectID="war_hit_001" OutLine="outline1"/>
+	<Property ID="F2_war_sk_01A" Name="死亡召唤" Photo="gui\main\heedbar\clone7.png,256,256,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_swzh.png" HitAction="F2_war_005" HurtAction="combat" HurtEffectID="war_hit_002" OutLine="outline1"/>
+	<Property ID="F2_war_sk_01B" Name="死亡召唤2段" Photo="gui\main\heedbar\clone7.png,384,256,128,128" LevelType="0" HitAction="F2_war_006" HurtAction="combat" HurtEffectID="war_hit_002" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="F2_war_sk_02" Name="乱舞" Photo="gui\main\heedbar\clone7.png,512,256,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_lw.png" HurtAction="combat" HurtEffectID="war_hit_002" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="F2_war_sk_03A" Name="奔袭" Photo="gui\main\heedbar\clone7.png,640,256,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_bx.png" HitAction="F2_war_008" HurtAction="combat" HurtEffectID="war_hit_002" OutLine="outline1"/>
+	<Property ID="F2_war_sk_03B" Name="奔袭2段" Photo="gui\main\heedbar\clone7.png,768,256,128,128" LevelType="0" HitAction="F2_war_009" HurtAction="combat" HurtEffectID="war_hit_at01" OutLine="outline1"/>
+	<Property ID="F2_war_sk_04" Name="护盾" Photo="gui\main\heedbar\clone8.png,256,128,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_smhd.png" HurtAction="combat" HurtEffectID="war_hit_001" OutLine="outline1"/>
+	<Property ID="F2_war_sk_04B" Name="暗影突袭2段" Photo="gui\main\heedbar\clone8.png,0,256,128,128" LevelType="0" HurtAction="combat" HurtEffectID="war_hit_001" OutLine="outline1"/>
+	<Property ID="war_sk_04B" Name="暗影突袭2段" Photo="gui\main\heedbar\clone8.png,0,256,128,128" LevelType="0" HurtAction="combat" HurtEffectID="war_hit_001" OutLine="outline1"/>
+	<Property ID="pet_skill_037" Name="奥林匹斯之怒" Photo="gui\main\heedbar\clone7.png,384,640,128,128" LevelType="0" ActionEffect="pet_skill_037_1"/>
+	<Property ID="moto_skill_001" Name="摩托车普通攻击" Photo="gui\main\heedbar\clone7.png,0,768,128,128" LevelType="0" HitAction="zuoqi_9_001" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="moto_skill_002" Name="弹幕" Photo="gui\main\heedbar\clone7.png,128,768,128,128" LevelType="0" ActionEffect="zuoqi_9_002" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="moto_skill_003" Name="冲刺" Photo="gui\main\heedbar\clone7.png,256,768,128,128" LevelType="0" HitAction="zuoqi_9_003" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="moto_skill_004" Name="护盾" Photo="gui\main\heedbar\clone7.png,384,768,128,128" LevelType="0" ActionEffect="zuoqi_9_004" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="moto_skill_005" Name="旋风" Photo="gui\main\heedbar\clone7.png,512,768,128,128" LevelType="0" HitAction="zuoqi_9_005" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="ninja_at_01" Name="忍者普通攻击1" Photo="gui\main\heedbar\clone7.png,896,768,128,128" LevelType="0" HitAction="ninja_001" HurtAction="combat1" HurtSoundID="ninja_combat_001" HurtEffectID="ninja_combat_001" OutLine="outline1"/>
+	<Property ID="ninja_at_02" Name="忍者普通攻击2" Photo="gui\main\heedbar\clone7.png,896,768,128,128" LevelType="0" HitAction="ninja_002" HurtAction="combat2" HurtSoundID="ninja_combat_001" HurtEffectID="ninja_combat_002" OutLine="outline1"/>
+	<Property ID="ninja_at_03" Name="忍者普通攻击3" Photo="gui\main\heedbar\clone7.png,896,768,128,128" LevelType="0" HitAction="ninja_003" HurtAction="combat2" HurtSoundID="ninja_combat_001" HurtEffectID="ninja_combat_002" OutLine="outline1"/>
+	<Property ID="ninja_at_04" Name="忍者普通攻击4" Photo="gui\main\heedbar\clone7.png,896,768,128,128" LevelType="0" HitAction="ninja_004" HurtAction="combat" HurtSoundID="ninja_combat_001" HurtEffectID="ninja_combat_003" OutLine="outline1"/>
+	<Property ID="ninja_sk_01" Name="技能1" Photo="gui\main\heedbar\clone7.png,768,768,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_ldz.png" HurtAction="combat" HurtSoundID="ninja_combat_003" HurtEffectID="ninja_combat_002" OutLine="outline1"/>
+	<Property ID="ninja_sk_02" Name="技能2" Photo="gui\main\heedbar\clone7.png,128,896,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_fsz.png" HurtAction="combat" HurtSoundID="ninja_combat_003" HurtEffectID="ninja_combat_002" OutLine="outline1"/>
+	<Property ID="ninja_sk_03" Name="技能3" Photo="gui\main\heedbar\clone7.png,0,896,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_yzz.png" HitAction="ninja_008" HurtAction="combat" HurtSoundID="ninja_combat_003" HurtEffectID="ninja_combat_001" OutLine="outline1"/>
+	<Property ID="ninja_sk_04" Name="技能4" Photo="gui\main\heedbar\clone7.png,640,768,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_jsslj.png" HurtAction="combat" HurtSoundID="ninja_combat_002" HurtEffectID="ninja_combat_004" OutLine="outline1"/>
+	<Property ID="ninja_pre" Name="连招冲刺" Photo="gui\main\heedbar\clone7.png,0,384,128,128" LevelType="0" HitAction="ninja_005" HurtAction="combat1" HurtEffectID="ninja_combat_001" OutLine="outline1"/>
+	<Property ID="ninja_sk_03_2" Name="技能3" Photo="gui\main\heedbar\clone7.png,256,896,128,128" LevelType="0" HitAction="ninja_012" HurtAction="combat" HurtEffectID="ninja_combat_001" OutLine="outline1"/>
+	<Property ID="F1_ninja_sk_01" Name="技能1" Photo="gui\main\heedbar\clone7.png,768,768,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_ldz.png" HurtAction="combat" HurtSoundID="ninja_combat_003" HurtEffectID="ninja_combat_002" OutLine="outline1"/>
+	<Property ID="F1_ninja_sk_02" Name="技能2" Photo="gui\main\heedbar\clone7.png,128,896,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_fsz.png" HurtAction="combat" HurtSoundID="ninja_combat_003" HurtEffectID="ninja_combat_002" OutLine="outline1"/>
+	<Property ID="F1_ninja_sk_03" Name="技能3" Photo="gui\main\heedbar\clone7.png,0,896,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_yzz.png" HitAction="ninja_008" HurtAction="combat" HurtSoundID="ninja_combat_003" HurtEffectID="ninja_combat_001" OutLine="outline1"/>
+	<Property ID="F1_ninja_sk_04" Name="技能4" Photo="gui\main\heedbar\clone7.png,640,768,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_jsslj.png" HurtAction="combat" HurtSoundID="ninja_combat_002" HurtEffectID="ninja_combat_004" OutLine="outline1"/>
+	<Property ID="F1_ninja_sk_03_2" Name="技能3" Photo="gui\main\heedbar\clone7.png,256,896,128,128" LevelType="0" HitAction="ninja_012" HurtAction="combat" HurtSoundID="ninja_combat_003" HurtEffectID="ninja_combat_001" OutLine="outline1"/>
+	<Property ID="F2_ninja_sk_01" Name="技能1" Photo="gui\main\heedbar\clone7.png,768,768,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_ldz.png" HurtAction="combat" HurtSoundID="ninja_combat_003" HurtEffectID="ninja_combat_002" OutLine="outline1"/>
+	<Property ID="F2_ninja_sk_02" Name="技能2" Photo="gui\main\heedbar\clone7.png,128,896,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_fsz.png" HurtAction="combat" HurtSoundID="ninja_combat_003" HurtEffectID="ninja_combat_002" OutLine="outline1"/>
+	<Property ID="F2_ninja_sk_03" Name="技能3" Photo="gui\main\heedbar\clone7.png,0,896,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_yzz.png" HitAction="ninja_008" HurtAction="combat" HurtSoundID="ninja_combat_003" HurtEffectID="ninja_combat_001" OutLine="outline1"/>
+	<Property ID="F2_ninja_sk_04" Name="技能4" Photo="gui\main\heedbar\clone7.png,640,768,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_jsslj.png" HurtAction="combat" HurtSoundID="ninja_combat_002" HurtEffectID="ninja_combat_004" OutLine="outline1"/>
+	<Property ID="F2_ninja_sk_03_2" Name="技能3" Photo="gui\main\heedbar\clone7.png,256,896,128,128" LevelType="0" HitAction="ninja_012" HurtAction="combat" HurtSoundID="ninja_combat_003" HurtEffectID="ninja_combat_001" OutLine="outline1"/>
+	<Property ID="pet_skill_038" Name="水手变身" Photo="gui\main\heedbar\clone7.png,768,896,128,128" LevelType="0"/>
+	<Property ID="tank_skill_001" Name="坦克普通攻击" Photo="gui\main\heedbar\clone8.png,512,0,128,128" LevelType="0" HitAction="zuoqi_10_001" ActionEffect="zuoqi_10_001_2" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="tank_skill_002" Name="巨炮连击" Photo="gui\main\heedbar\clone8.png,384,0,128,128" LevelType="0" HitAction="zuoqi_10_002" ActionEffect="zuoqi_10_001_2" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="tank_skill_003" Name="反击护盾" Photo="gui\main\heedbar\clone8.png,128,0,128,128" LevelType="0" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="tank_skill_004" Name="反甲导弹" Photo="gui\main\heedbar\clone8.png,0,0,128,128" LevelType="0" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="tank_skill_005" Name="死亡光束" Photo="gui\main\heedbar\clone8.png,256,0,128,128" LevelType="0" HitAction="zuoqi_10_005" HurtAction="combat" HurtSoundID="ass_combat_001" OutLine="outline1"/>
+	<Property ID="war_sk_04C" Name="暗影突袭3段" Photo="gui\main\heedbar\clone7.png,896,256,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_aytx.png" HitAction="war_010" HurtAction="combat" HurtEffectID="war_hit_001" OutLine="outline1"/>
+	<Property ID="war_sk_04D" Name="暗影突袭4段" Photo="gui\main\heedbar\clone7.png,896,512,128,128" LevelType="0" HitAction="war_012" HurtAction="combat" HurtEffectID="war_hit_001" OutLine="outline1"/>
+	<Property ID="war_sk_04E" Name="暗影突袭5段" Photo="gui\main\heedbar\clone7.png,896,256,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_aytx.png" HitAction="war_010" HurtAction="combat" HurtEffectID="war_hit_001" OutLine="outline1"/>
+	<Property ID="war_sk_04F" Name="暗影突袭6段" Photo="gui\main\heedbar\clone7.png,896,512,128,128" LevelType="0" HitAction="war_012" HurtAction="combat" HurtEffectID="war_hit_001" OutLine="outline1"/>
+	<Property ID="war_sk_04G" Name="暗影突袭7段" Photo="gui\main\heedbar\clone7.png,896,256,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_aytx.png" HitAction="war_010" HurtAction="combat" HurtEffectID="war_hit_001" OutLine="outline1"/>
+	<Property ID="war_sk_04H" Name="暗影突袭8段" Photo="gui\main\heedbar\clone7.png,896,512,128,128" LevelType="0" HitAction="war_012" HurtAction="combat" HurtEffectID="war_hit_001" OutLine="outline1"/>
+	<Property ID="pet45_xiyou_001" Name="石化覆盖" Photo="gui\main\heedbar\clone8.png,640,0,128,128" LevelType="4"/>
+	<Property ID="pet45_xiyou_001_1" Photo="gui\main\heedbar\clone7.png,768,0,128,128" SkillDisplayType1="0" LevelType="4"/>
+	<Property ID="pet45_xiyou_001_2" Name="移花接木" Photo="gui\main\heedbar\clone7.png,768,128,128,128" SkillDisplayType1="0" SkillDisplayType2="1" SkillDisplayType3="0" LevelType="4"/>
+	<Property ID="war_sk_02" Name="乱舞" Photo="gui\main\heedbar\clone7.png,512,256,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_lw.png" HitAction="war_007" HurtAction="combat" HurtEffectID="war_hit_002" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="F2_war_sk_02_npc" Name="乱舞" Photo="gui\main\heedbar\clone7.png,512,256,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_lw.png" HitAction="F2_war_007" HurtAction="combat" HurtEffectID="war_hit_002" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="pet48_xiyou_001" Photo="gui\main\heedbar\clone8.png,768,0,128,128" LevelType="4"/>
+	<Property ID="war_sk_04A" Name="暗影突袭" Photo="gui\main\heedbar\clone7.png,896,256,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_aytx.png" HitAction="war_010" HurtAction="combat" HurtEffectID="war_hit_001" OutLine="outline1"/>
+	<Property ID="F1_war_sk_04A" Name="暗影突袭" Photo="gui\main\heedbar\clone7.png,896,256,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_aytx.png" HitAction="F1_war_010" HurtAction="combat" HurtEffectID="war_hit_001" OutLine="outline1"/>
+	<Property ID="F2_war_sk_04A" Name="暗影突袭" Photo="gui\main\heedbar\clone7.png,896,256,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_aytx.png" HitAction="F2_war_010" HurtAction="combat" HurtEffectID="war_hit_001" OutLine="outline1"/>
+	<Property ID="pet9_xiyou_001" Name="献祭" Photo="gui\main\heedbar\clone8.png,768,128,128,128" LevelType="4"/>
+	<Property ID="pet49_xiyou_001" Name="法术之刃" Photo="gui\main\heedbar\clone8.png,640,128,128,128" LevelType="4"/>
+	<Property ID="F3_w_sk04d" Name="誓死旋风" Photo="gui\main\heedbar\clone.png,128,598,128,128" LevelType="0" SkillNamePicture="gui\skill\xuanfenzhan.png" HitAction="w_0014" HurtAction="combat2" HurtSoundID="fit_combat_001" HurtEffectID="w_sk01_gi" OutLine="outline2"/>
+	<Property ID="F3_CK_Sk103_01" Name="流萤" Photo="gui\main\heedbar\clone.png,512,778,128,128" LevelType="0" SkillNamePicture="gui\skill\liuying.png" HurtEffectID="ck_sk103_01" OutLine="outline1" DeadDisplayEffect="demo_action_10;floatdiedown"/>
+	<Property ID="F3_monk_sk04d" Name="葫芦阵" Photo="gui\main\heedbar\clone.png,128,470,128,128" SkillDisplayType1="0" LevelType="0" SkillNamePicture="gui\skill\wanwgy.png" HitAction="monk_0014" HurtSoundID="shan_combat_003" HurtEffectID="drag_hit" OutLine="outline2"/>
+	<Property ID="F3_fs_sk_004" Name="法师技能4" Photo="gui\main\heedbar\clone2.png,650,668,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_ysqy.png" HitAction="fs_sk_11" HurtAction="combat"/>
+	<Property ID="F3_gun_sk_003" Name="烟雾弹" Photo="gui\main\heedbar\clone4.png,512,512,128,128" LevelType="0" SkillNamePicture="gui\skill\qiangshou_ywlr.png" HitAction="gun_008"/>
+	<Property ID="F3_panda_skill_007" Name="母熊猫技能7" Photo="gui\main\heedbar\clone6.png,768,0,128,128" LevelType="0" SkillNamePicture="gui\skill\picwords_skill_grbj.png" HitAction="panda_012" HurtAction="combat" HurtSoundID="ger_combat_004" HurtEffectID="panda_hit" OutLine="outline1"/>
+	<Property ID="F3_ninja_sk_04" Name="技能4" Photo="gui\main\heedbar\clone7.png,640,768,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_jsslj.png" HurtAction="combat" HurtSoundID="ninja_combat_002" HurtEffectID="ninja_combat_004" OutLine="outline1"/>
+	<Property ID="F3_war_sk_04" Name="护盾" Photo="gui\main\heedbar\clone8.png,256,128,128,128" LevelType="0" HurtAction="combat" HurtEffectID="war_hit_001" OutLine="outline1"/>
+	<Property ID="F3_war_sk_04_1" Name="护盾" Photo="gui\main\heedbar\clone8.png,256,128,128,128" LevelType="0" SkillNamePicture="gui\skill\zi_smhd.png" HurtAction="combat" HurtEffectID="war_hit_001" OutLine="outline1"/>
+	<Property ID="pet9_xiyou_002" Name="冰冻" Photo="gui\main\heedbar\clone8.png,128,256,128,128" LevelType="4"/>
+	<Property ID="F3_war_sk_04B" Name="护盾" Photo="gui\main\heedbar\clone8.png,0,256,128,128" LevelType="0" HurtAction="combat" HurtEffectID="war_hit_001" OutLine="outline1"/>
+</Object>
+
+

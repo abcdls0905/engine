@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop ShowGrid="true" Left="26" Top="26" Width="1024" Height="720" BackColor="100,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/use/function/function_vein_096.png"/>
+		<control name="groupbox_main" entity="GroupBox" script="" init="">
+			<prop Width="886" Height="678" BackColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui/common/window/bg.jpg"/>
+			<control name="lbl_main_bg" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="71" Top="69" Width="742" Height="574" ShadowColor="0,0,0,0" DrawMode="ExpandTile" BackImage="gui/tp2_common/backdrop/bg_001.png"/>
+			</control>
+			<control name="lbl_main_bg1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="76" Top="108" Width="734" Height="530" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_002.png"/>
+			</control>
+			<control name="lbl_left_bg2" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="83" Top="113" Width="244" Height="518" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+			</control>
+			<control name="lbl_right_bg2" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="331" Top="113" Width="470" Height="518" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+			</control>
+			<control name="lbl_left_bg3" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="83" Top="603" Width="244" Height="30" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_03.png"/>
+			</control>
+			<control name="lbl_right_bg3" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="331" Top="603" Width="470" Height="30" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_03.png"/>
+			</control>
+			<control name="lbl_name_bg" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="195" Top="54" Width="493" Height="54" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_04.png"/>
+			</control>
+			<control name="btn_close" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/clos.png" PushImage="gui/tp2_common/window/clos1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="771" Top="43" Width="70" Height="70" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="100" TabStop="true" AutoSize="true" ClickSound="ui_close"/>
+			</control>
+			<control name="groupscrollbox_season_rank" entity="GroupScrollableBox" script="" init="">
+				<prop ScrollSize="17" IsEditMode="false" Left="83" Top="115" Width="245" Height="518" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+			</control>
+			<control name="lbl_name" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="356" Top="35" Width="171" Height="64" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH30_S" AutoSize="true" BackImage="gui/tp2_main/league/league_words_honour.png"/>
+			</control>
+			<control name="groupbox_season_group" entity="GroupBox" script="" init="">
+				<prop Left="83" Top="115" Width="246" Height="518" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+				<control name="btn_season" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/tc_button.png" PushImage="gui/tp2_common/window/tc_button1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="8" Width="230" Height="70" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" DrawMode="Expand" ClickSound="button_click"/>
+				</control>
+				<control name="groupscrollbox_season_sub_rank" entity="GroupScrollableBox" script="" init="">
+					<prop ScrollSize="17" Left="-72" Top="76" Width="318" Height="437" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+				</control>
+				<control name="lbl_season" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="8" Top="24" Width="214" Height="38" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Font="WRYH26_O_BLACK"/>
+				</control>
+			</control>
+			<control name="groupbox_season_sub_group" entity="GroupBox" script="" init="">
+				<prop Left="82" Top="195" Width="222" Height="66" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+				<control name="btn_season_sub" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_common/window/zl_button.png" PushImage="gui/tp2_common/window/zl_button1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="213" Height="66" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" DrawMode="Expand" ClickSound="button_click"/>
+				</control>
+				<control name="lbl_season_sub" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="9" Top="4" Width="198" Height="30" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK"/>
+				</control>
+				<control name="lbl_season_time" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="9" Top="32" Width="197" Height="29" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Font="WRYH18_O_BLACK"/>
+				</control>
+			</control>
+			<control name="groupscrollbox_rank" entity="GroupScrollableBox" script="" init="">
+				<prop ScrollSize="17" Left="327" Top="115" Width="480" Height="518" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+			</control>
+			<control name="groupbox_rank" entity="GroupBox" script="" init="">
+				<prop Left="331" Top="163" Width="461" Height="112" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+				<control name="Label_rank_bg" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="8" Top="4" Width="454" Height="104" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/nine/bm_background_04.png"/>
+				</control>
+				<control name="Label_hand_bg" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="32" Top="12" Width="86" Height="85" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_main/teamnuber/zhjm_28.png"/>
+				</control>
+				<control name="lbl_role_icon" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="32" Top="12" Width="86" Height="86" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+				</control>
+				<control name="lbl_role_name" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="144" Top="12" Width="302" Height="22" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Font="WRYH24"/>
+				</control>
+				<control name="lbl_role_server" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="144" Top="40" Width="134" Height="22" ForeColor="255,50,255,255" ShadowColor="0,0,0,0" Text="1区" Font="WRYH22"/>
+				</control>
+				<control name="lbl_role_power" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="144" Top="68" Width="110" Height="22" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="00000" Font="WRYH22"/>
+				</control>
+			</control>
+			<control name="lbl_rank_num" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="328" Top="120" Width="478" Height="47" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH24_O_BLACK" DrawMode="ExpandH" BackImage="gui/tp2_main/league/league_mark_long.png"/>
+			</control>
+			<control name="btn_require_data" entity="Button" script="" init="">
+				<prop NormalImage="gui/common/button/anniu_yuanjiao.png" PushImage="gui/common/button/anniu_yuanjiao_2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="9999" Top="640" Width="150" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_pk_8" Font="WRYH22_O" TabStop="true" DrawMode="ExpandH" ClickSound="button_click"/>
+			</control>
+		</control>
+	</control>
+</form>
+

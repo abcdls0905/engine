@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Left="20" Top="30" Width="1142" Height="670" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+        <control name="groupbox_upgrade" entity="GroupBox" script="" init="">
+            <prop Width="990" Height="704" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="FitWindow" BackImage="gui\common\window\bg.jpg" />
+            <control name="lbl_27" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="9" Top="66" Width="678" Height="598" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg_huikuang4.png" />
+            </control>
+            <control name="lbl_21" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="929" Top="639" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="Center" BackImage="gui\common\window\zhuangshiyouxia.png" />
+            </control>
+            <control name="lbl_26" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="9" Top="639" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="Center" BackImage="gui\common\window\zhuangshi_zuoxia.png" />
+            </control>
+            <control name="lbl_4" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="11" Top="68" Width="674" Height="595" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\common\window\beibao_12.png" />
+            </control>
+            <control name="lbl_cur_state" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="33" Top="319" Width="262" Height="326" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\main\strengthen\zhuangbeijinglian_kuang.png" />
+            </control>
+            <control name="lbl_next_state" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="393" Top="319" Width="262" Height="326" ShadowColor="0,0,0,0" NoFrame="false" DrawMode="Expand" BackImage="gui\main\strengthen\zhuangbeijinglian_kuang.png" DisableEnter="true" />
+            </control>
+            <control name="groupbox_upgrade_cost" entity="GroupBox" script="" init="">
+                <prop Left="689" Top="66" Width="294" Height="598" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\main\strengthen\zhuangbeijinglian_kuang.png" />
+                <control name="btn_upgrade" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="40" Top="522" Width="230" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_wing_transform_upgrade_3" Font="WRYH26_S" TabIndex="100" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" HandleShortcut="BUTTON_B" />
+                </control>
+                <control name="lbl_9" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="4" Top="5" Width="285" Height="45" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_wing_transform_upgrade_2" Font="WRYH24_S" DrawMode="ExpandH" BackImage="gui\main\strengthen\zhuangbeijinglian_kuang2.png" />
+                </control>
+                <control name="lbl_22" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="8" Top="400" Width="278" Height="4" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\common\window\fengexian.png" />
+                </control>
+                <control name="groupbox_cost_item" entity="GroupBox" script="" init="">
+                    <prop Left="8" Top="45" Width="278" Height="350" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                </control>
+                <control name="groupbox_cost_item_sample" entity="GroupBox" script="" init="">
+                    <prop Left="8" Top="45" Width="278" Height="142" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                    <control name="imagegrid_item" entity="ImageGrid" script="" init="">
+                        <prop SelectColor="0,0,255,0" MouseInColor="0,255,255,0" CoverColor="0,255,0,0" LockColor="0,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" GridHeight="80" GridWidth="80" DrawMouseIn="RECT" DrawMouseSelect="RECT" DrawCover="RECT" DrawLock="RECT" DrawGridBack="gui\common\window\tubiaokuang_2.png" GridBackOffsetX="-7" GridBackOffsetY="-7" GridCoverOffsetX="-5" GridCoverOffsetY="-5" MouseDownScale="0.980000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" HasVScroll="false" Left="16" Top="16" Width="86" Height="86" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Text="imagegrid_2" NoFrame="true" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_need_count" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="112" Top="48" Width="94" Height="16" ForeColor="255,222,236,237" ShadowColor="0,0,0,0" Text="0" Font="WRYH20" />
+                    </control>
+                    <control name="lbl_stone_name" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="8" Top="104" Width="94" Height="22" ForeColor="255,255,129,0" ShadowColor="0,0,0,0" Text="@ui_form_wingfly_4" Font="WRYH22_O" />
+                    </control>
+                    <control name="btn_item_from" entity="Button" script="" init="">
+                        <prop NormalImage="gui\common\button\+.png" PushImage="gui\common\button\+_up.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="208" Top="32" Width="54" Height="48" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" DrawMode="Center" />
+                    </control>
+                </control>
+                <control name="groupbox_cost_capital" entity="GroupBox" script="" init="">
+                    <prop Left="8" Top="405" Width="278" Height="126" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                </control>
+                <control name="groupbox_cost_capital_sample" entity="GroupBox" script="" init="">
+                    <prop Left="8" Top="405" Width="278" Height="60" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                    <control name="lbl_need_money" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="88" Top="22" Width="142" Height="16" ForeColor="255,222,236,237" ShadowColor="0,0,0,0" Text="0" Font="WRYH20" />
+                    </control>
+                    <control name="imagegrid_capital" entity="ImageGrid" script="" init="">
+                        <prop SelectColor="0,0,0,0" MouseInColor="0,255,255,0" CoverColor="0,255,0,0" LockColor="0,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" GridHeight="52" GridWidth="52" DrawMouseIn="RECT" DrawMouseSelect="RECT" DrawCover="RECT" DrawLock="RECT" MouseDownScale="0.900000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" HasVScroll="false" Left="32" Top="5" Width="52" Height="52" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Center" />
+                    </control>
+                </control>
+            </control>
+            <control name="lbl_name" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="289" Top="7" Width="414" Height="46" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_wing_transform_upgrade_1" Font="WRYH30_S" DrawMode="ExpandH" />
+            </control>
+            <control name="imagegrid_wing" entity="ImageGrid" script="" init="">
+                <prop SelectColor="0,0,255,0" MouseInColor="0,255,255,0" CoverColor="0,255,0,0" LockColor="0,255,255,0" CoolColor="0,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" GridHeight="112" GridWidth="112" GridsPos="8,8" DrawMouseIn="RECT" DrawMouseSelect="RECT" DrawCover="RECT" DrawLock="RECT" DrawGridBack="gui\common\window\tubiaokuang_3.png" GridBackOffsetX="-8" GridBackOffsetY="-7" GridCoverOffsetX="-8" GridCoverOffsetY="-5" MouseDownScale="0.980000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" HasVScroll="false" Left="57" Top="111" Width="126" Height="126" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Text="imagegrid_2" NoFrame="true" DrawMode="FitWindow" />
+            </control>
+            <control name="lbl_8" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="305" Top="447" Width="88" Height="90" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\strengthen\qhtp_jinhuajiantou.png" />
+            </control>
+            <control name="lbl_5" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="41" Top="327" Width="246" Height="45" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\main\strengthen\zhuangbeijinglian_kuang2.png" />
+            </control>
+            <control name="lbl_20" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="401" Top="327" Width="246" Height="45" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\main\strengthen\zhuangbeijinglian_kuang2.png" />
+            </control>
+            <control name="lbl_next_flv" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="473" Top="327" Width="110" Height="45" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH26_O_BLACK" DrawMode="ExpandH" />
+            </control>
+            <control name="lbl_cur_flv" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="105" Top="327" Width="110" Height="45" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH26_O_BLACK" DrawMode="ExpandH" />
+            </control>
+            <control name="lbl_23" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="929" Top="7" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="Center" BackImage="gui\common\window\zhuangshi_youshang.png" />
+            </control>
+            <control name="lbl_25" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="9" Top="7" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="Center" BackImage="gui\common\window\zhuangshi_zuoshang.png" />
+            </control>
+            <control name="lbl_wing_name" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="249" Top="119" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="11111" Font="WRYH30_O" />
+            </control>
+            <control name="lbl_slv_name" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="249" Top="159" Width="80" Height="16" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_form_wingfly_7" Font="WRYH26_S" />
+            </control>
+            <control name="lbl_ulv_name" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="249" Top="191" Width="80" Height="16" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_form_wingfly_8" Font="WRYH26_S" />
+            </control>
+            <control name="lbl_slv_value" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="417" Top="159" Width="80" Height="16" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="1111" Font="WRYH26_S" />
+            </control>
+            <control name="lbl_ulv_value" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="417" Top="191" Width="80" Height="16" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="1111" Font="WRYH26_S" />
+            </control>
+            <control name="lbl_add_prop2" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="249" Top="223" Width="80" Height="16" ForeColor="255,255,157,0" ShadowColor="0,0,0,0" Text="11111" Font="WRYH24_S" />
+            </control>
+            <control name="mltbox_transform_prop_pre" entity="MultiTextBox" script="" init="">
+                <prop TextColor="255,0,255,0" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="20,0,246,262" LineHeight="30" ScrollSize="17" Left="41" Top="375" Width="246" Height="262" ShadowColor="0,0,0,0" Font="WRYH24" NoFrame="true" />
+            </control>
+            <control name="mltbox_transform_prop_next" entity="MultiTextBox" script="" init="">
+                <prop TextColor="255,0,255,0" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="20,0,246,262" LineHeight="30" ScrollSize="17" Left="401" Top="375" Width="246" Height="262" ShadowColor="0,0,0,0" Font="WRYH24" NoFrame="true" />
+            </control>
+        </control>
+        <control name="groupbox_transform_info" entity="GroupBox" script="" init="">
+            <prop Left="230" Width="500" Height="700" ShadowColor="0,0,0,0" Visible="false" NoFrame="true" DrawMode="FitWindow" BackImage="gui\common\window\bg.jpg" />
+            <control name="btn_transform_sure" entity="Button" script="" init="">
+                <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="139" Top="631" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="btn_1" />
+            </control>
+            <control name="btn_transform_cancel" entity="Button" script="" init="">
+                <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="283" Top="631" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="btn_2" />
+            </control>
+        </control>
+        <control name="groupbox_transform_select" entity="GroupBox" script="" init="">
+            <prop Width="990" Height="704" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="FitWindow" BackImage="gui\common\window\bg.jpg" />
+            <control name="lbl_beijing" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="9" Top="63" Width="974" Height="630" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\common\window\bg.jpg" />
+            </control>
+            <control name="groupbox_wing_info" entity="GroupBox" script="" init="">
+                <prop Left="16" Top="71" Width="960" Height="220" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\main\tuibian\cbdh_xxdb.png" />
+                <control name="lbl_name_1" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="272" Top="-64" Width="414" Height="46" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_wing_transform_upgrade_1" Font="WRYH30_S" DrawMode="ExpandH" />
+                </control>
+                <control name="lbl_12" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="3" Width="464" Height="214" ShadowColor="0,0,0,0" DrawMode="Expand" />
+                </control>
+                <control name="groupbox_label" entity="GroupBox" script="" init="">
+                    <prop Left="25" Top="104" Width="158" Height="118" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                    <control name="groupbox_9" entity="GroupBox" script="" init="">
+                        <prop Left="18" Top="-16" Width="118" Height="110" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                        <control name="lbl_element_label1" entity="Label" script="" init="">
+                            <prop Align="Center" RefCursor="WIN_HELP" Left="168" Top="88" Width="42" Height="24" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH15_O" AutoSize="true" DrawMode="FitWindow" />
+                        </control>
+                        <control name="lbl_element_label2" entity="Label" script="" init="">
+                            <prop Align="Center" RefCursor="WIN_HELP" Left="232" Top="88" Width="42" Height="24" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH15_O" AutoSize="true" DrawMode="FitWindow" />
+                        </control>
+                        <control name="lbl_name_label" entity="Label" script="" init="">
+                            <prop Align="Center" RefCursor="WIN_HELP" Left="8" Top="4" Width="57" Height="20" ForeColor="255,255,255,255" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH15_O" DrawMode="FitWindow" />
+                        </control>
+                        <control name="lbl_color_label" entity="Label" script="" init="">
+                            <prop Align="Center" RefCursor="WIN_HELP" Left="72" Top="4" Width="57" Height="20" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH15_O" DrawMode="FitWindow" />
+                        </control>
+                    </control>
+                </control>
+                <control name="groupbox_5" entity="GroupBox" script="" init="">
+                    <prop Left="161" Width="294" Height="198" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                    <control name="groupbox_quality" entity="GroupBox" script="" init="">
+                        <prop Left="38" Top="65" Width="94" Height="24" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                        <control name="lbl_name_quaility" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Width="54" Height="24" ForeColor="255,255,157,0" ShadowColor="0,0,0,0" Text="@ui_equip_tips_8" Font="WRYH24_O_BLACK" />
+                        </control>
+                        <control name="lbl_quaility" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="62" Top="-6" Width="32" Height="30" ForeColor="255,255,157,0" ShadowColor="0,0,0,0" Text="15" Font="WRYH30_O" />
+                        </control>
+                    </control>
+                    <control name="lbl_equip_type" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="218" Top="67" Width="46" Height="24" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="武器" Font="WRYH18_O_BLACK" />
+                    </control>
+                    <control name="lbl_weapon_name" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="28" Top="23" Width="166" Height="30" ForeColor="255,180,0,255" ShadowColor="0,0,0,0" Text="红龙长剑" Font="WRYH30_O" />
+                    </control>
+                    <control name="groupbox_attack" entity="GroupBox" script="" init="">
+                        <prop Left="38" Top="100" Width="134" Height="24" ForeColor="255,79,199,255" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                        <control name="lbl_attack" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="162" Top="-4" Width="100" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="0" Font="WRYH30_O" />
+                        </control>
+                        <control name="lbl_2" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Width="54" Height="24" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_wing_transform_strengthen_lvl" Font="WRYH24_O_BLACK" />
+                        </control>
+                    </control>
+                    <control name="groupbox_hp" entity="GroupBox" script="" init="">
+                        <prop Left="38" Top="134" Width="142" Height="24" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                        <control name="lbl_hp" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="162" Top="-4" Width="100" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="0" Font="WRYH30_O" />
+                        </control>
+                        <control name="lbl_3" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Width="54" Height="24" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_wing_transform_upgrade_lvl" Font="WRYH24_O_BLACK" />
+                        </control>
+                    </control>
+                    <control name="groupbox_add_prop" entity="GroupBox" script="" init="">
+                        <prop Left="38" Top="169" Width="246" Height="30" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                        <control name="lbl_add_prop" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Width="246" Height="30" ForeColor="255,255,157,0" ShadowColor="0,0,0,0" Text="减少CD" Font="WRYH18_O_BLACK" />
+                        </control>
+                    </control>
+                </control>
+                <control name="groupbox_weapon_photo" entity="GroupBox" script="" init="">
+                    <prop Left="25" Top="16" Width="154" Height="150" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" DrawMode="FitWindow" />
+                    <control name="lbl_weapon_frame" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="13" Top="15" Width="126" Height="126" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\tubiaokuang_3.png" />
+                    </control>
+                    <control name="lbl_weapon_photo" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="20" Top="20" Width="112" Height="112" ShadowColor="0,0,0,0" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_colorLevel" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="13" Top="16" Width="126" Height="126" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangbeikuang_33.png" />
+                    </control>
+                    <control name="lbl_tupoicon" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="13" Top="16" Width="126" Height="126" ShadowColor="0,0,0,0" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_allready_equip" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="10" Top="12" Width="71" Height="68" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\use\bag\tubiao_yizhuangbei.png" />
+                    </control>
+                    <control name="groupbox_color_level" entity="GroupBox" script="" init="">
+                        <prop Left="10" Top="124" Width="134" Height="28" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                        <control name="lbl_level1" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="-8" Width="32" Height="28" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\icon_zb_xx.jpg" />
+                        </control>
+                        <control name="lbl_level2" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="21" Width="32" Height="28" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\icon_zb_xx.jpg" />
+                        </control>
+                        <control name="lbl_level3" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="50" Width="32" Height="28" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\icon_zb_xx.jpg" />
+                        </control>
+                        <control name="lbl_level4" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="79" Width="32" Height="28" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\icon_zb_xx.jpg" />
+                        </control>
+                        <control name="lbl_level5" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="108" Width="32" Height="28" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\icon_zb_xx.jpg" />
+                        </control>
+                    </control>
+                    <control name="groupbox_tupo_level" entity="GroupBox" script="" init="">
+                        <prop Left="2" Top="115" Width="150" Height="46" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                        <control name="lbl_tupo1" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="-8" Width="49" Height="51" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\strengthen\qhtp_moon.png" />
+                        </control>
+                        <control name="lbl_tupo2" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="21" Width="49" Height="51" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\strengthen\qhtp_moon.png" />
+                        </control>
+                        <control name="lbl_tupo3" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="50" Width="49" Height="51" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\strengthen\qhtp_moon.png" />
+                        </control>
+                        <control name="lbl_tupo4" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="79" Width="49" Height="51" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\strengthen\qhtp_moon.png" />
+                        </control>
+                        <control name="lbl_tupo5" entity="Label" script="" init="">
+                            <prop RefCursor="WIN_HELP" Left="108" Width="49" Height="51" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\strengthen\qhtp_moon.png" />
+                        </control>
+                    </control>
+                </control>
+            </control>
+            <control name="groupbox_2" entity="GroupBox" script="" init="">
+                <prop Left="1" Top="223" Width="982" Height="478" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                <control name="groupscrollbox_transform_type" entity="GroupScrollableBox" script="" init="">
+                    <prop ScrollSize="17" Left="16" Top="64" Width="960" Height="410" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                </control>
+                <control name="groupbox_transform_type_sample" entity="GroupBox" script="" init="">
+                    <prop Left="8" Top="64" Width="235" Height="390" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="ExpandH" BackImage="gui\main\tuibian\cbdh_cbdb.png" />
+                    <control name="cbtn_transform_type" entity="CheckButton" script="" init="">
+                        <prop BoxSize="12" NormalImage="gui\common\button\anniu.png" CheckedImage="gui\common\button\anniu.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="64" Top="304" Width="102" Height="54" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_wing_transform_sure" Font="WRYH24_S" TabStop="true" DrawMode="ExpandH" />
+                    </control>
+                    <control name="lbl_transform_type_name" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="8" Top="24" Width="214" Height="54" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH24_S" />
+                    </control>
+                    <control name="mltbox_transform_type_desc" entity="MultiTextBox" script="" init="">
+                        <prop TextColor="255,0,255,0" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="20,0,198,182" LineHeight="30" ScrollSize="17" Left="16" Top="104" Width="198" Height="182" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH24" NoFrame="true" DrawMode="ExpandH" />
+                    </control>
+                </control>
+            </control>
+        </control>
+        <control name="btn_return" entity="Button" script="" init="">
+            <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="945" Top="-34" Width="100" Height="100" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+        </control>
+        <control name="rbtn_strengthen" entity="RadioButton" script="" init="">
+            <prop BoxSize="12" NormalImage="gui\main\strengthen\chaye_qianghua2.png" CheckedImage="gui\main\strengthen\chaye_qianghua1.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="974" Top="79" Width="120" Height="122" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="button_click" />
+        </control>
+        <control name="rbtn_upgrade" entity="RadioButton" script="" init="">
+            <prop BoxSize="12" NormalImage="gui\main\strengthen\chaye_jinglian2.png" CheckedImage="gui\main\strengthen\chaye_jinglian1.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="974" Top="207" Width="120" Height="122" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="1" TabStop="true" AutoSize="true" ClickSound="button_click" />
+        </control>
+        <control name="rbtn_wingfly" entity="RadioButton" script="" init="">
+            <prop BoxSize="12" NormalImage="gui\main\grasp\btn_feisheng.png" CheckedImage="gui\main\grasp\btn_feishengclick.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="974" Top="335" Width="120" Height="122" ForeColor="255,255,0,0" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH30_S" TabIndex="3" TabStop="true" AutoSize="true" ClickSound="button_click" />
+        </control>
+        <control name="lbl_prompt" entity="Label" script="" init="">
+            <prop Align="Center" RefCursor="WIN_HELP" Left="1033" Top="199" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" AutoSize="true" BackImage="gui\main\hall\hall.jpg,835,106,60,60" />
+        </control>
+        <control name="rbtn_remarkable" entity="RadioButton" script="" init="">
+            <prop BoxSize="12" NormalImage="gui\main\zhuoyue\sz_yeqian_jinhua2.png" CheckedImage="gui\main\zhuoyue\sz_yeqian_jinhua1.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="977" Top="463" Width="120" Height="122" ForeColor="255,255,0,0" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH30_S" TabIndex="4" TabStop="true" AutoSize="true" ClickSound="button_click" />
+        </control>
+        <control name="rbtn_wingtransform" entity="RadioButton" script="" init="">
+            <prop BoxSize="12" NormalImage="gui\main\tuibian\btn_tuibian.png" CheckedImage="gui\main\tuibian\btn_tuibianclick.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="974" Top="590" Width="120" Height="122" ForeColor="255,255,0,0" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH30_S" TabIndex="5" TabStop="true" AutoSize="true" ClickSound="button_click" />
+        </control>
+        <control name="btn_help" entity="Button" script="" init="">
+            <prop NormalImage="gui\main\pk\btn_help_normal.jpg" PushImage="gui\main\pk\btn_help_click.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="3" Top="1" Width="56" Height="56" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" DrawMode="FitWindow" ClickSound="button_click" />
+        </control>
+    </control>
+</form>

@@ -1,0 +1,173 @@
+<object>
+     <properties>
+          <property name="Camp" type="int" public="true" private="true" save="true" realtime="" desc="战场阵营号"/>
+		  <property name="BattleWarID" type="int" public="false" private="true" save="false" realtime="" desc="战场编号"/>
+		  <property name="BattleWarState" type="int" public="false" private="true" save="false" realtime="" desc="战场状态"/>
+		  <property name="IsCompareRoomOwner" type="int" public="false" private="true" save="false" realtime="" desc="是否是房主"/>
+		  <property name="MatchUidList" type="string" public="false" private="true" save="false" realtime="" desc="匹配的uid列表"/>
+		  <property name="BattleWarRefreshDate" type="string" public="false" private="true" save="true" realtime="" desc="刷新战场商店日期(YYYY_MM_DD)"/>
+		  <property name="BattleWarRefreshHighestDate" type="string" public="false" private="true" save="true" realtime="" desc="刷新巅峰之战商店日期(YYYY_MM_DD)"/>
+		  <property name="GWBRefreshDate" type="string" public="false" private="false" save="true" realtime="" desc="世界boss商店刷新日期(YYYY_MM_DD)"/>
+		  <property name="IsInvited" type="int" public="false" private="true" save="false" realtime="" desc="是否被邀请"/>
+		  <property name="TaichiLoseState" type="int" public="false" private="true" save="true" realtime="" desc="太极战场连续输的场数"/>
+
+		  <property name="HighestWinState" type="int" public="false" private="true" save="true" realtime="" desc="巅峰战场连续胜的场数"/>
+		  <property name="HighestLoseState" type="int" public="false" private="false" save="true" realtime="" desc="巅峰战场连续输的场数"/>
+		  <property name="HighestLastOpponents" type="string" public="false" private="false" save="true" realtime="" desc="巅峰上几场的对手UID,用逗号隔开,用于防对刷"/>
+		  <property name="HighestProtectCount" type="int" public="false" private="true" save="true" realtime="" desc="巅峰战场失败积分保护次数"/>
+		  
+		  <property name="PkPoint" type="int" public="true" private="true" save="true" realtime="" desc="天梯积分"/>
+		  <property name="PointClearTime" type="double" public="false" private="true" save="true" realtime="" desc="天梯积分"/>
+		  <property name="PkPointRecovered" type="int" public="false" private="false" save="true" realtime="" desc="天梯积分是否被恢复过"/>
+		  <property name="IsRoomGuest" type="int" public="true" private="true" save="false" realtime="" desc="观众标志位"/>
+		  <property name="ProhibitPlays" type="string" public="false" private="false" save="true" realtime="" desc="禁赛记录,由运营配置"/>
+		  <property name="ProhibitPlaysAdd" type="string" public="false" private="false" save="true" realtime="" desc="禁赛增量记录,由运营配置"/>
+		  
+		  <property name="GuildBossPlayerState" type="int" public="false" private="false" save="false" realtime="" desc="公会BOSS玩家当前的报名状态"/>
+		  <property name="GuildBossActivityID" type="int64" public="false" private="true" save="true" realtime="true" desc="公会BOSS本次活动的ID"/>
+		  <property name="GuildBossEntryTimes" type="int" public="false" private="true" save="true" realtime="true" desc="公会BOSS本次活动的参加次数"/>
+		  <property name="GuildBossNextEntryTime" type="int64" public="false" private="false" save="true" realtime="" desc="公会BOSS本次活动可再次进入的时间"/>
+		  <property name="GuildBossHPRatio" type="double" public="false" private="false" save="false" realtime="" desc="公会BOSS战场里BOSS的血量比例"/>
+		  <property name="GuildBossLevel" type="int" public="false" private="false" save="false" realtime="" desc="公会BOSS战场里BOSS的等级"/>
+		  
+		  <property name="KingShipWarPlayerState" type="int" public="false" private="false" save="false" realtime="" desc="玩家当前的报名状态"/>
+		  <property name="KingShipWarEntryRefreshDate" type="double" public="false" private="false" save="true" realtime="" desc="王座之争玩家的进入次数的刷新时间"/>
+		  <property name="KingShipWarEntryCount" type="int" public="false" private="true" save="true" realtime="true" desc="王座之争玩家当前的进入可次数"/>
+		  <property name="KingShipWarCampScore" type="int64" public="false" private="false" save="false" realtime="" desc="王座之争当前积分,用于房间重新创建时还原"/>
+		  <property name="KingShipWarNpcState" type="int" public="false" private="false" save="false" realtime="" desc="王座之争当前NPC状态,用于房间重新创建时还原"/>
+		  <property name="KingShipWarIsQuickEntry" type="int" public="false" private="false" save="false" realtime="" desc="王座之争是否选择快速进入"/>
+		  <property name="KingShipWarChannelNo" type="int" public="false" private="false" save="false" realtime="" desc="王座之争玩家进入的频道序号"/>
+		  <property name="KingShipWarRoomNo" type="int" public="false" private="false" save="false" realtime="" desc="王座之争玩家进入的房间序号"/>
+		  <property name="KingShipWarType" type="int" public="false" private="true" save="false" realtime="" desc="王座之争玩家进入的房间难度"/>
+		  <property name="BattleKingShipFailCount" type="int" public="false" private="false" save="true" realtime="false" desc="浴血沙场失败次数"/>
+		  
+		  <property name="NotBalanceKingerTeamPoint" type="int" public="false" private="true" save="false" realtime="" desc="非平衡王者对决战队积分"/>
+		  <property name="NotBalanceKingerWinState" type="int" public="false" private="true" save="false" realtime="" desc="非平衡王者对决当前的连胜次数"/>
+		  <property name="NotBalanceKingerBattleUID" type="int" public="false" private="false" save="false" realtime="" desc="非平衡王者对决一场战斗的唯一标示"/>
+		  <property name="NotBalanceKingerProtectCount" type="int" public="false" private="true" save="false" realtime="" desc="非平衡王者对决失败保护次数"/>
+		  <property name="NotBalanceKingerLastOpponents" type="string" public="false" private="false" save="true" realtime="" desc="非平衡王者对决上一场的对手UID,用逗号隔开,用于防对刷"/>
+		  
+		  <property name="KingerTeamPoint" type="int" public="false" private="true" save="false" realtime="" desc="王者对决战队积分"/>
+		  <property name="KingerWinState" type="int" public="false" private="true" save="false" realtime="" desc="王者对决当前的连胜次数"/>
+		  <property name="KingerBattleUID" type="int" public="false" private="false" save="false" realtime="" desc="王者对决一场战斗的唯一标示"/>
+		  <property name="KingerProtectCount" type="int" public="false" private="true" save="false" realtime="" desc="王者对决失败保护次数"/>
+		  <property name="KingerLastOpponents" type="string" public="false" private="false" save="true" realtime="" desc="王者对决上一场的对手UID,用逗号隔开,用于防对刷"/>
+		
+		  <property name="TeamLeagueLastApplyTime" type="double" public="false" private="true" save="true" realtime="" desc="王者联赛报名标记"/>
+		  <property name="TeamLeagueMobaiTime" type="double" public="false" private="true" save="true" realtime="" desc="王者联赛膜拜标记"/>
+		  <property name="TeamLeagueNextTime" type="string" public="false" private="true" save="true" realtime="true" desc="王者联赛下轮时间"/>
+		  <property name="TeamLeagueRound" type="int" public="false" private="true" save="true" realtime="true" desc="王者联赛轮次"/>	    
+		  <property name="TeamLeagueEnemyName" type="widestr" public="false" private="true" save="true" realtime="true" desc="王者联赛对面叫啥"/>	
+		  
+		  <property name="NotBalanceTeamLeagueMobaiTime" type="double" public="false" private="true" save="true" realtime="" desc="王者联赛膜拜标记"/>
+		  
+		  <property name="LeagueSemiTicket" type="double" public="false" private="true" save="true" realtime="" desc="巅峰复赛门票"/>
+		  <property name="LeagueFinalTicket" type="double" public="false" private="false" save="true" realtime="" desc="巅峰决赛门票"/>
+		  <property name="LeaguePreliminaryTicket" type="int" public="false" private="false" save="true" realtime="" desc="巅峰初赛门票"/>
+		  <property name="LeagueLastRefresh" type="int64" public="false" private="false" save="true" realtime="" desc="联赛时间标记"/>
+		  <property name="LeagueMobaiTime" type="double" public="false" private="false" save="true" realtime="" desc="膜拜标记"/>
+		  <property name="LeaguePreliminaryTime" type="double" public="false" private="true" save="true" realtime="true" desc="参加联赛的时间"/>
+		  <property name="LeagueType" type="int" public="false" private="true" save="true" realtime="true" desc="联赛类型"/>
+		  <property name="LeagueNextTime" type="string" public="false" private="true" save="true" realtime="true" desc="联赛类型"/>
+		  <property name="LeagueRound" type="int" public="false" private="true" save="true" realtime="true" desc="联赛轮次"/>	  
+		  <property name="LeagueBattlewarType" type="int" public="false" private="true" save="true" realtime="true" desc="联赛场景"/>
+		  <property name="LeagueBuff" type="string" public="false" private="true" save="true" realtime="true" desc="联赛buff"/>
+		  <property name="LeagueFinishFlag" type="int" public="false" private="true" save="true" realtime="true" desc="联赛结束标志位"/>  
+		  <property name="LeagueBaoSongDate" type="double" public="false" private="true" save="true" desc="联赛保送记录"/>
+		  <property name="KeepBetWin" type="int" public="false" private="false" save="true" desc="记录巅峰联赛点赞连胜次数"/>
+		  
+		  <property name="RelicID" type="byte" public="false" private="false" save="false" realtime="false" desc="遗迹战场id"/>
+		  <property name="RelicDebuff" type="string" public="false" private="false" save="false" realtime="false" desc="遗迹战场debuff"/>
+	 </properties>
+	 <records>
+	    <record name="compare_room_rec" cols="5" maxrows="100" save="false" public="false" private="true" desc="匹配组队表">
+            <column type="widestr" desc="玩家名字" />
+            <column type="dword" desc="玩家战斗力" />
+            <column type="dword" desc="玩家职业" />
+			<column type="dword" desc="玩家等级" />
+			<column type="dword" desc="玩家历史最高战斗力" />
+        </record>
+		
+		<record name="battlewar_enter_count_rec" cols="4" maxrows="100" save="true" public="false" private="true" desc="战场进入次数表">
+			<column type="dword" desc="战场类型" />
+            <column type="dword" desc="进入战场剩余次数" />
+            <column type="dword" desc="可进入战场次数" />
+            <column type="string" desc="进入战场的日期" />
+        </record>
+		
+		<record name="battlewar_shop_rec" cols="5" maxrows="100" save="true" public="false" private="true" desc="太极战场战场商店表">
+		    <column type="dword"  desc="物品编号" />
+		    <column type="string" desc="物品ID" />
+            <column type="dword"  desc="物品剩余个数" />
+            <column type="dword"  desc="消耗战场荣誉点" />
+			<column type="dword"  desc="能否刷新" />
+        </record>
+		<record name="battlewar_highest_shop_rec" cols="8" maxrows="100" save="true" public="false" private="true" desc="战场巅峰商店表">
+		    <column type="dword"  desc="物品编号" />
+		    <column type="string" desc="物品ID" />
+            <column type="dword"  desc="物品剩余个数" />
+            <column type="dword"  desc="消耗" />
+			<column type="dword"  desc="是否刷新" />
+			<column type="dword"  desc="巅峰积分" />
+			<column type="dword"  desc="王者积分" />
+			<column type="dword"  desc="玩家王者积分是否满足商品的购买" />
+        </record>
+        <record name="gworldboss_shop_rec" cols="5" maxrows="100" save="true" public="false" private="true" desc="世界boss商店表">
+		    <column type="dword"  desc="物品编号" />
+		    <column type="string" desc="物品ID" />
+            <column type="dword"  desc="物品剩余个数" />
+            <column type="dword"  desc="消耗" />
+			<column type="dword"  desc="是否刷新" />
+        </record>
+		<record name="battlewar_shop_refresh_rec" cols="2" maxrows="100" save="true" public="false" private="true" desc="战场商店一次性物品表">
+		    <column type="dword"  desc="物品编号" />
+            <column type="dword"  desc="物品剩余个数" />
+        </record>
+		<record name="guildboss_team_rec" cols="6" maxrows="8" save="false" public="false" private="true" desc="公会武神组队表">
+			<column type="string" desc="组队成员uid"/>
+			<column type="widestr" desc="玩家名字"/>
+			<column type="byte" desc="职业"/>
+			<column type="dword" desc="战斗力"/>
+			<column type="dword" desc="等级"/>
+			<column type="byte" desc="位置"/>
+		</record>
+		<record name="team_league_bet" cols="5" maxrows="10" save="true" public="false" private="true" desc="联赛下注表">
+			<column type="dword" desc="轮次"/>
+			<column type="dword" desc="对阵号"/>
+			<column type="dword" desc="结果"/>
+			<column type="double" desc="下注时间"/>
+			<column type="byte" desc="点赞结算"/>
+		</record>
+		<record name="not_balance_team_league_bet" cols="5" maxrows="10" save="true" public="false" private="true" desc="联赛下注表">
+			<column type="dword" desc="轮次"/>
+			<column type="dword" desc="对阵号"/>
+			<column type="dword" desc="结果"/>
+			<column type="double" desc="下注时间"/>
+			<column type="byte" desc="点赞结算"/>
+		</record>
+		<record name="league_team_rec" cols="7" maxrows="6" save="true" public="false" private="true" desc="王者联赛对手表">
+			<column type="dword" desc="队伍"/>
+			<column type="string" desc="组队成员uid"/>
+			<column type="widestr" desc="玩家名字"/>
+			<column type="word" desc="职业"/>
+			<column type="dword" desc="战斗力"/>
+			<column type="dword" desc="等级"/>
+			<column type="dword" desc="服务器id"/>
+		</record>
+		<record name="league_bet" cols="5" maxrows="10" save="true" public="false" private="true" desc="联赛下注表">
+			<column type="dword" desc="轮次"/>
+			<column type="dword" desc="对阵号"/>
+			<column type="dword" desc="结果"/>
+			<column type="double" desc="下注时间"/>
+			<column type="byte" desc="点赞结算"/>
+		</record>
+		<record name="league_room_fighter" cols="6" maxrows="2" save="true" public="false" private="true" desc="联赛对手表">
+			<column type="string" desc="组队成员uid"/>
+			<column type="widestr" desc="玩家名字"/>
+			<column type="word" desc="职业"/>
+			<column type="dword" desc="战斗力"/>
+			<column type="dword" desc="等级"/>
+			<column type="dword" desc="服务器id"/>
+		</record>
+	 </records>
+</object>

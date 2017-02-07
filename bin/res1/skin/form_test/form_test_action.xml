@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="form_test\form_test_action" init="main_form_init">
+        <prop Left="125" Top="165" Width="534" Height="502" BackColor="255,154,154,255" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="skin\png\form.png" />
+        <event on_open="main_form_open" />
+        <control name="title_label" entity="Label" script="" init="">
+            <prop Align="Center" RefCursor="WIN_HELP" Left="160" Top="8" Width="158" Height="22" ShadowColor="0,0,0,0" Text="测试动作" />
+        </control>
+        <control name="close_btn" entity="Button" script="" init="">
+            <prop Left="464" Top="464" Width="54" Height="24" ShadowColor="0,0,0,0" Text="关闭" TabStop="true" />
+            <event on_click="close_btn_click" />
+        </control>
+        <control name="action_list" entity="ListBox" script="" init="">
+            <prop Sorted="true" ItemHeight="16" TextOffsetX="2" ScrollSize="17" Left="16" Top="56" Width="206" Height="358" ShadowColor="0,0,0,0" Text="ListBox1" TabStop="true" />
+            <event on_select_double_click="action_list_select_double_click" on_select_changed="action_list_select_changed" />
+            <subor name="VScrollBar">
+                <prop BackColor="255,224,224,224" ShadowColor="0,0,0,0" />
+                <subor name="DecButton">
+                    <prop Width="17" Height="15" ShadowColor="0,0,0,0" />
+                </subor>
+                <subor name="IncButton">
+                    <prop Width="17" Height="15" ShadowColor="0,0,0,0" />
+                </subor>
+                <subor name="TrackButton">
+                    <prop Width="17" Height="10" ShadowColor="0,0,0,0" />
+                </subor>
+            </subor>
+        </control>
+        <control name="Label1" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="16" Top="32" Width="80" Height="22" ShadowColor="0,0,0,0" Text="动作列表：" />
+        </control>
+        <control name="play_btn" entity="Button" script="" init="">
+            <prop Left="16" Top="464" Width="54" Height="24" ShadowColor="0,0,0,0" Text="播放" TabStop="true" />
+            <event on_click="play_btn_click" />
+        </control>
+        <control name="stop_btn" entity="Button" script="" init="">
+            <prop Left="128" Top="464" Width="54" Height="24" ShadowColor="0,0,0,0" Text="停止" TabStop="true" />
+            <event on_click="stop_btn_click" />
+        </control>
+        <control name="frame_track" entity="TrackBar" script="" init="">
+            <prop Orient="Horizon" Maximum="1000" Left="16" Top="432" Width="502" Height="16" ShadowColor="0,0,0,0" />
+            <event on_value_changed="frame_track_value_changed" />
+            <subor name="TrackButton">
+                <prop Width="12" Height="16" ShadowColor="0,0,0,0" />
+            </subor>
+        </control>
+        <control name="Label2" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="280" Top="56" Width="78" Height="22" ShadowColor="0,0,0,0" Text="起始帧：" />
+        </control>
+        <control name="Label3" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="280" Top="88" Width="78" Height="22" ShadowColor="0,0,0,0" Text="结束帧：" />
+        </control>
+        <control name="Label4" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="280" Top="120" Width="78" Height="22" ShadowColor="0,0,0,0" Text="当前帧：" />
+        </control>
+        <control name="Label5" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="280" Top="152" Width="78" Height="22" ShadowColor="0,0,0,0" Text="播放速度：" />
+        </control>
+        <control name="speed_edit" entity="Float_Edit" script="" init="">
+            <prop Format="%.2f" DragStep="0.010000" Min="0.010000" Max="100.000000" OnlyDigit="true" DragEvent="true" ChangedEvent="true" TextOffsetX="2" Caret="Default" Left="368" Top="152" Width="86" Height="22" ShadowColor="0,0,0,0" Text="0.0" Cursor="WIN_IBEAM" TabStop="true" />
+            <event on_changed="speed_edit_changed" on_drag="speed_edit_changed" />
+        </control>
+        <control name="frame_edit" entity="Float_Edit" script="" init="">
+            <prop Format="%.2f" DragStep="0.100000" Max="10000.000000" Loop="true" OnlyDigit="true" DragEvent="true" ChangedEvent="true" TextOffsetX="2" Caret="Default" Left="368" Top="120" Width="86" Height="22" ShadowColor="0,0,0,0" Text="0.0" Cursor="WIN_IBEAM" TabStop="true" />
+        </control>
+        <control name="start_frame_edit" entity="Edit" script="" init="">
+            <prop TextOffsetX="2" Caret="Default" Left="368" Top="56" Width="86" Height="22" ShadowColor="0,0,0,0" Cursor="WIN_IBEAM" TabStop="true" />
+        </control>
+        <control name="end_frame_edit" entity="Edit" script="" init="">
+            <prop TextOffsetX="2" Caret="Default" Left="368" Top="88" Width="86" Height="22" ShadowColor="0,0,0,0" Cursor="WIN_IBEAM" TabStop="true" />
+        </control>
+        <control name="pause_btn" entity="Button" script="" init="">
+            <prop Left="72" Top="464" Width="54" Height="24" ShadowColor="0,0,0,0" Text="暂停" TabStop="true" />
+            <event on_click="pause_btn_click" />
+        </control>
+        <control name="param_edit" entity="Float_Edit" script="" init="">
+            <prop Format="%.3f" DragStep="0.010000" Max="1.000000" OnlyDigit="true" DragEvent="true" ChangedEvent="true" TextOffsetX="2" Caret="Default" Left="368" Top="200" Width="86" Height="22" ShadowColor="0,0,0,0" Text="0.0" Cursor="WIN_IBEAM" TabStop="true" />
+            <event on_changed="param_edit_changed" on_drag="param_edit_changed" />
+        </control>
+        <control name="start_btn" entity="Button" script="" init="">
+            <prop Left="264" Top="200" Width="46" Height="24" ShadowColor="0,0,0,0" Text="启动" TabStop="true" />
+            <event on_click="start_btn_click" />
+        </control>
+        <control name="end_btn" entity="Button" script="" init="">
+            <prop Left="312" Top="200" Width="46" Height="24" ShadowColor="0,0,0,0" Text="结束" TabStop="true" />
+            <event on_click="end_btn_click" />
+        </control>
+        <control name="blend_list" entity="ListBox" script="" init="">
+            <prop Sorted="true" ItemHeight="16" TextOffsetX="2" ScrollSize="17" Left="240" Top="264" Width="278" Height="150" ShadowColor="0,0,0,0" Text="ListBox1" TabStop="true" />
+            <subor name="VScrollBar">
+                <prop BackColor="255,224,224,224" ShadowColor="0,0,0,0" />
+                <subor name="DecButton">
+                    <prop Width="17" Height="15" ShadowColor="0,0,0,0" />
+                </subor>
+                <subor name="IncButton">
+                    <prop Width="17" Height="15" ShadowColor="0,0,0,0" />
+                </subor>
+                <subor name="TrackButton">
+                    <prop Width="17" Height="10" ShadowColor="0,0,0,0" />
+                </subor>
+            </subor>
+        </control>
+        <control name="Label6" entity="Label" script="" init="">
+            <prop RefCursor="WIN_HELP" Left="240" Top="240" Width="80" Height="22" ShadowColor="0,0,0,0" Text="混合列表：" />
+        </control>
+    </control>
+</form>

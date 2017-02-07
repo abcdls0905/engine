@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop Left="149" Top="77" Width="942" Height="670" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+		<control name="groupbox_main" entity="GroupBox" script="" init="">
+			<prop Left="-6" Top="8" Width="958" Height="638" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+			<control name="groupbox_other" entity="GroupBox" script="" init="">
+				<prop Left="18" Top="3" Width="914" Height="600" BackColor="255,192,192,192" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/nine/task_26.png"/>
+				<control name="lbl_add_experience" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="177" Top="121" Width="150" Height="27" ShadowColor="0,0,0,0"/>
+				</control>
+				<control name="lbl_diamond_title_cpy" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="6" Top="108" Width="902" Height="277" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/nine/zhjm_6.png"/>
+				</control>
+				<control name="groupbox_up" entity="GroupBox" script="" init="">
+					<prop Left="7" Top="5" Width="902" Height="100" BackColor="0,192,192,192" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui/tp2_common/nine/zhjm_6.png"/>
+					<control name="Label1" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Left="723" Top="21" Width="80" Height="16" ForeColor="255,2,65,88" ShadowColor="0,0,0,0" Text="@ui_zhenying" Font="WRYH20"/>
+					</control>
+					<control name="lbl_exp_info" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="1037" Top="120" Width="80" Height="30" ForeColor="255,255,255,203" ShadowColor="0,0,0,0" Text="10/110" Font="WRYH20_S" AutoSize="true" DrawMode="Expand"/>
+					</control>
+					<control name="btn_change_name" entity="Button" script="" init="">
+						<prop NormalImage="gui/tp2_common/window/refurbish.png" PushImage="gui/tp2_common/window/refurbish1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="509" Top="22" Width="120" Height="56" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_form_role_npc_array_21" Font="WRYH20_O_BLACK" DrawMode="FitWindow"/>
+					</control>
+					<control name="lbl_VIP_back" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="-2" Top="6" Width="156" Height="87" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/teamnuber/zhjm_36.png"/>
+					</control>
+					<control name="lbl_vip_title" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="17" Top="38" Width="59" Height="30" ForeColor="255,239,225,1" ShadowColor="0,0,0,0" Font="WRYH24_S" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/teamnuber/zhjm_10.png"/>
+					</control>
+					<control name="lbl_vip" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="82" Top="-71" Width="42" Height="32" ForeColor="255,239,225,1" ShadowColor="0,0,0,0" VAnchor="Bottom" Font="scene_attzk"/>
+					</control>
+					<control name="lbl_VIP_back_cpy" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="248" Top="21" Width="235" Height="57" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/teamnuber/zhjm_37.png"/>
+					</control>
+					<control name="lbl_name" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Left="-195" Top="-13" Width="220" Height="26" ForeColor="255,37,79,103" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Font="WRYH22"/>
+					</control>
+					<control name="btn_vip" entity="Button" script="" init="">
+						<prop NormalImage="gui/tp2_main/teamnuber/zhjm_38.png" PushImage="gui/tp2_main/teamnuber/zhjm_39.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="155" Top="21" Width="58" Height="58" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow"/>
+					</control>
+					<control name="lbl_zhenying" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Left="645" Top="48" Width="236" Height="42" ForeColor="255,0,102,153" ShadowColor="0,0,0,0" Font="WRYH22" AutoSize="true" BackImage="gui/tp2_common/window/team_di_11.png"/>
+					</control>
+				</control>
+				<control name="groupbox_point" entity="GroupBox" script="" init="">
+					<prop Left="6" Top="388" Width="902" Height="207" ShadowColor="0,0,0,0" Text="groupbox_2" DrawMode="Expand" BackImage="gui/tp2_common/nine/zhjm_6.png"/>
+					<control name="lbl_physical" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Left="130" Top="13" Width="140" Height="140" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/teamnuber/zhjm_12.png"/>
+					</control>
+					<control name="lbl_stay" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="381" Top="13" Width="140" Height="140" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/teamnuber/zhjm_12.png"/>
+					</control>
+					<control name="lbl_red_name" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="632" Top="13" Width="140" Height="140" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/teamnuber/zhjm_12.png"/>
+					</control>
+					<control name="lbl_all_phyp_time" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Left="151" Top="177" Width="102" Height="16" ForeColor="255,0,102,153" ShadowColor="0,0,0,0" Text="lbl_7" Font="WRYH20" DrawMode="FitWindow"/>
+					</control>
+					<control name="lbl_all_stayp_time" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Left="413" Top="177" Width="80" Height="16" ForeColor="255,0,102,153" ShadowColor="0,0,0,0" Text="lbl_8" Font="WRYH20" DrawMode="FitWindow"/>
+					</control>
+					<control name="lbl_all_rednamep_time" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Left="659" Top="177" Width="80" Height="16" ForeColor="255,0,102,153" ShadowColor="0,0,0,0" Text="lbl_9" Font="WRYH20" DrawMode="FitWindow"/>
+					</control>
+					<control name="pbar_red_name" entity="ProgressBar" script="" init="">
+						<prop Maximum="100" Value="50" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_main/teamnuber/zhjm_9.png" ProgressMode="BottomToTop" TextVisible="true" Left="632" Top="13" Width="140" Height="140" ForeColor="255,255,255,153" ShadowColor="0,0,0,0" Font="WRYH20" NoFrame="true" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/teamnuber/zhjm_11.png"/>
+					</control>
+					<control name="pbar_physical" entity="ProgressBar" script="" init="">
+						<prop Maximum="100" Value="50" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_main/teamnuber/zhjm_7.png" ProgressMode="BottomToTop" Left="130" Top="13" Width="140" Height="140" ForeColor="255,191,175,149" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/teamnuber/zhjm_11.png"/>
+					</control>
+					<control name="pbar_stay" entity="ProgressBar" script="" init="">
+						<prop Maximum="100" Value="60" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_main/teamnuber/zhjm_8.png" ProgressMode="BottomToTop" Left="381" Top="13" Width="140" Height="140" ShadowColor="0,0,0,0" Font="WRYH20" NoFrame="true" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_main/teamnuber/zhjm_11.png"/>
+					</control>
+					<control name="btn_physical" entity="Button" script="" init="">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="118" Top="17" Width="129" Height="127" ForeColor="0,0,0,0" BackColor="0,192,192,192" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+					</control>
+					<control name="btn_stay" entity="Button" script="" init="">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="361" Top="19" Width="142" Height="127" ForeColor="0,0,0,0" BackColor="0,192,192,192" LineColor="0,0,0,0" BlendColor="0,0,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+					</control>
+					<control name="btn_red_name" entity="Button" script="" init="">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="620" Top="22" Width="126" Height="118" BackColor="0,192,192,192" LineColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+					</control>
+					<control name="lbl_phyp_text" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="125" Top="149" Width="141" Height="16" ForeColor="255,0,65,88" ShadowColor="0,0,0,0" Text="@ui_form_role_info_1" Font="WRYH20"/>
+					</control>
+					<control name="lbl_stayp_text" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="376" Top="149" Width="141" Height="16" ForeColor="255,0,65,88" ShadowColor="0,0,0,0" Text="@ui_form_role_info_2" Font="WRYH20"/>
+					</control>
+					<control name="lbl_rednamep_text" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="627" Top="149" Width="141" Height="16" ForeColor="255,0,65,88" ShadowColor="0,0,0,0" Text="@ui_form_role_info_3" Font="WRYH20"/>
+					</control>
+					<control name="lbl_physical_text" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Left="158" Top="74" Width="86" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20"/>
+					</control>
+					<control name="lbl_stay_text" entity="Label" script="" init="">
+						<prop Align="Center" RefCursor="WIN_HELP" Left="414" Top="74" Width="78" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20"/>
+					</control>
+				</control>
+				<control name="groupbox_capital" entity="GroupBox" script="" init="">
+					<prop Left="29" Top="175" Width="446" Height="198" BackColor="0,192,192,192" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="FitWindow"/>
+					<control name="lbl_diamond_title" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="44" Top="22" Width="54" Height="16" ForeColor="255,102,0,0" ShadowColor="0,0,0,0" Text="@ui_role_1" Font="WRYH20"/>
+					</control>
+					<control name="lbl_diamond_pic" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="108" Top="4" Width="52" Height="52" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui/xm2_main/hall/zhuanshi.png"/>
+					</control>
+					<control name="lbl_diamond" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="180" Top="22" Width="190" Height="16" ForeColor="255,0,102,153" ShadowColor="0,0,0,0" Font="WRYH22"/>
+					</control>
+					<control name="lbl_gold_title" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="44" Top="68" Width="54" Height="16" ForeColor="255,100,0,0" ShadowColor="0,0,0,0" Text="@ui_role_2" Font="WRYH20"/>
+					</control>
+					<control name="lbl_gold_pic" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="108" Top="50" Width="52" Height="52" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui/xm2_main/hall/jingbi.png"/>
+					</control>
+					<control name="lbl_gold" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="180" Top="68" Width="206" Height="16" ForeColor="255,0,102,153" ShadowColor="0,0,0,0" Font="WRYH22"/>
+					</control>
+					<control name="lbl_icestone_title" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="44" Top="114" Width="54" Height="16" ForeColor="255,100,0,0" ShadowColor="0,0,0,0" Text="@ui_role_3" Font="WRYH20"/>
+					</control>
+					<control name="lbl_icestone_pic" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="108" Top="96" Width="52" Height="52" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/xm2_common/window/js_1.png"/>
+					</control>
+					<control name="lbl_icestone" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="180" Top="114" Width="214" Height="16" ForeColor="255,0,102,153" ShadowColor="0,0,0,0" Font="WRYH22"/>
+					</control>
+					<control name="lbl_icestone_title_cpy" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="44" Top="160" Width="54" Height="16" ForeColor="255,100,0,0" ShadowColor="0,0,0,0" Text="@ui_role_4" Font="WRYH20"/>
+					</control>
+					<control name="lbl_icestone_pic_cpy" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="108" Top="142" Width="52" Height="52" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui/xm2_main/hall/bangzuan.png"/>
+					</control>
+					<control name="lbl_bind_diamond" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="180" Top="160" Width="222" Height="16" ForeColor="255,0,102,153" ShadowColor="0,0,0,0" Font="WRYH22"/>
+					</control>
+				</control>
+				<control name="groupbox_rank" entity="GroupBox" script="" init="">
+					<prop Left="502" Top="175" Width="257" Height="200" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+					<control name="lbl_1" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="6" Top="22" Width="80" Height="16" ForeColor="255,100,0,0" ShadowColor="0,0,0,0" Text="@ui_form_role_npc_array_22" Font="WRYH20"/>
+					</control>
+					<control name="lbl_2" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="6" Top="68" Width="80" Height="16" ForeColor="255,100,0,0" ShadowColor="0,0,0,0" Text="@ui_form_role_npc_array_23" Font="WRYH20"/>
+					</control>
+					<control name="lbl_3" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="6" Top="114" Width="80" Height="16" ForeColor="255,100,0,0" ShadowColor="0,0,0,0" Text="@ui_form_role_npc_array_24" Font="WRYH20"/>
+					</control>
+					<control name="lbl_4" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="6" Top="160" Width="80" Height="16" ForeColor="255,100,0,0" ShadowColor="0,0,0,0" Text="@ui_form_role_npc_array_25" Font="WRYH20"/>
+					</control>
+					<control name="lbl_1_value" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="102" Top="22" Width="125" Height="16" ForeColor="255,0,102,153" ShadowColor="0,0,0,0" Font="WRYH18"/>
+					</control>
+					<control name="lbl_2_value" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="123" Top="68" Width="125" Height="16" ForeColor="255,0,102,153" ShadowColor="0,0,0,0" Font="WRYH18"/>
+					</control>
+					<control name="lbl_3_value" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="111" Top="114" Width="125" Height="16" ForeColor="255,0,102,153" ShadowColor="0,0,0,0" Font="WRYH18"/>
+					</control>
+					<control name="lbl_4_value" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="111" Top="160" Width="125" Height="16" ForeColor="255,0,102,153" ShadowColor="0,0,0,0" Font="WRYH18"/>
+					</control>
+				</control>
+				<control name="lbl_get_exp" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="508" Top="127" Width="230" Height="24" ForeColor="255,0,65,88" ShadowColor="0,0,0,0" Text="@ui_form_role_npc_array_26" Font="WRYH18"/>
+				</control>
+				<control name="pbar_get_exp" entity="ProgressBar" script="" init="">
+					<prop Maximum="10002" Value="3324" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_common/window/team_blue.png" ProgressMode="LeftToRight" TextVisible="true" Left="506" Top="153" Width="270" Height="29" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH14_O_BLACK" NoFrame="true" DrawMode="FitWindow" BackImage="gui/tp2_common/window/team_progress.png"/>
+				</control>
+				<control name="lbl_account_experience" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="75" Top="127" Width="80" Height="16" ForeColor="255,2,65,88" ShadowColor="0,0,0,0" Text="@ui_form_role_npc_array_27" Font="WRYH20"/>
+				</control>
+				<control name="pbar_exp" entity="ProgressBar" script="" init="">
+					<prop Maximum="100" Value="3" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_common/window/team_blue.png" ProgressMode="LeftToRight" TextVisible="true" Left="72" Top="153" Width="270" Height="29" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH14_O_BLACK" NoFrame="true" DrawMode="FitWindow" BackImage="gui/tp2_common/window/team_progress.png"/>
+				</control>
+			</control>
+		</control>
+		<control name="btn_help_info" entity="Button" script="" init="">
+			<prop NormalImage="gui/tp2_main/shop/shop_help_off.png" PushImage="gui/tp2_main/shop/shop_help_on.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="803" Top="151" Width="54" Height="54" BackColor="255,192,192,192" ShadowColor="0,0,0,0" DataSource="ui_ywjy01" AutoSize="true" ClickSound="button_click"/>
+		</control>
+	</control>
+</form>
+

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<object>
+    <internals />
+    <properties>
+        <property name="GuildName" type="widestr" public="true" private="true" save="true" realtime="" desc="公会名称" />
+		<property name="GuildPosition" type="int" public="true" private="true" save="true" realtime="" desc="在公会中的职务" />
+		<property name="QuitGuildDate" type="int64" public="false" private="false" save="true" realtime="" desc="退出公会日期" />
+		<property name="JoinGuildDate" type="int64" public="false" private="false" save="true" realtime="" desc="加入公会日期" />
+		<property name="GuildDevote" type="int" public="false" private="false" save="true" realtime="" desc="玩家个人公会总贡献度" />
+		<property name="GuildLeftDevote" type="int" public="false" private="true" save="true" realtime="" desc="玩家个人公会剩余贡献度" />
+		<property name="GuildListBeginRow" type="int" public="false" private="false" save="false" realtime="" desc="获取公会列表的起始行" />
+		<property name="GuildLastBuyDate" type="int64" public="false" private="false" save="true" realtime="" desc="最后一次兑换商品的时间" />
+		<property name="GuildShopVersion" type="int" public="false" private="false" save="true" realtime="" desc="公会商店的版本号" />
+	</properties>
+	<records>
+		<record name="guild_shop_rec" cols="6" maxrows="500" save="true" public="false" private="true" desc="公会商店商品表格">
+			<column type="string" desc="商品的唯一标示ID" />
+			<column type="string" desc="商品的configId" />
+			<column type="dword" desc="兑换该商品需要达到的商店等级" />
+			<column type="dword" desc="消耗贡献值" />
+			<column type="dword" desc="当天兑换个数" />
+			<column type="dword" desc="每日兑换个数限制" />
+		</record>
+		<record name="GuildSSBossAwardTimeRec" cols="2" maxrows="16" save="true" public="false" private="false" desc="公会野外boss可领奖时间">
+			<column type="int" desc="ssboss_id" />
+			<column type="int64" desc="可领奖时间" />
+		</record>
+	</records>
+	<includes />
+</object>

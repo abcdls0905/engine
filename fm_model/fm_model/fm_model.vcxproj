@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="NsightTegraProject">
+    <NsightTegraProjectRevisionNumber>5</NsightTegraProjectRevisionNumber>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Tegra-Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Tegra-Android">
+      <Configuration>Release</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Tegra-Android">
+      <Configuration>Profile</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\action_data.cpp" />
+    <ClCompile Include="..\action_player.cpp" />
+    <ClCompile Include="..\action_set.cpp" />
+    <ClCompile Include="..\action_set_loader.cpp" />
+    <ClCompile Include="..\array.cpp" />
+    <ClCompile Include="..\aux_tool.cpp" />
+    <ClCompile Include="..\dll_main.cpp" />
+    <ClCompile Include="..\material_loader.cpp" />
+    <ClCompile Include="..\math_3d.cpp" />
+    <ClCompile Include="..\model_data.cpp" />
+    <ClCompile Include="..\model_loader.cpp" />
+    <ClCompile Include="..\model_player.cpp" />
+    <ClCompile Include="..\model_player_draw.cpp" />
+    <ClCompile Include="..\model_player_material.cpp" />
+    <ClCompile Include="..\model_player_param.cpp" />
+    <ClCompile Include="..\model_player_routine.cpp" />
+    <ClCompile Include="..\model_player_shader.cpp" />
+    <ClCompile Include="..\model_player_skin.cpp" />
+    <ClCompile Include="..\model_player_texture.cpp" />
+    <ClCompile Include="..\model_player_trace.cpp" />
+    <ClCompile Include="..\model_player_update.cpp" />
+    <ClCompile Include="..\model_system.cpp" />
+    <ClCompile Include="..\oct_creator.cpp" />
+    <ClCompile Include="..\oct_tree.cpp" />
+    <ClCompile Include="..\res_manager.cpp" />
+    <ClCompile Include="..\res_model.cpp" />
+    <ClCompile Include="..\skeleton.cpp" />
+    <ClCompile Include="..\skeleton_data.cpp" />
+    <ClCompile Include="..\skeleton_loader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\action_data.h" />
+    <ClInclude Include="..\action_player.h" />
+    <ClInclude Include="..\action_set.h" />
+    <ClInclude Include="..\action_set_loader.h" />
+    <ClInclude Include="..\array.h" />
+    <ClInclude Include="..\aux_tool.h" />
+    <ClInclude Include="..\location.h" />
+    <ClInclude Include="..\material_loader.h" />
+    <ClInclude Include="..\math_3d.h" />
+    <ClInclude Include="..\model_data.h" />
+    <ClInclude Include="..\model_loader.h" />
+    <ClInclude Include="..\model_player.h" />
+    <ClInclude Include="..\model_system.h" />
+    <ClInclude Include="..\model_vf.h" />
+    <ClInclude Include="..\oct_creator.h" />
+    <ClInclude Include="..\oct_tree.h" />
+    <ClInclude Include="..\res_manager.h" />
+    <ClInclude Include="..\res_model.h" />
+    <ClInclude Include="..\skeleton.h" />
+    <ClInclude Include="..\skeleton_data.h" />
+    <ClInclude Include="..\skeleton_loader.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{45EE4ECC-C6DE-4EE9-8F3B-79EB9727243D}</ProjectGuid>
+    <RootNamespace>fm_model</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Profile|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings"></ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL;PERFORMANCE_DEBUG</PreprocessorDefinitions>
+      <GccExceptionHandling>true</GccExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+      <GccExceptionHandling>true</GccExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets"></ImportGroup>
+</Project>

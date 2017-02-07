@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop Left="50" Top="40" Width="950" Height="638" BackColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+		<control name="Label1" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="6" Top="2" Width="950" Height="566" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/nine/task_26.png"/>
+		</control>
+		<control name="groupbox_talent_list" entity="GroupScrollableBox" script="" init="">
+			<prop ScrollSize="17" Left="8" Top="8" Width="950" Height="486" ForeColor="0,0,0,0" BackColor="0,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+			<subor name="TitleBar">
+				<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="90" Height="20" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="GroupScrollableBox1"/>
+			</subor>
+			<control name="grpbox_skill_info" entity="GroupBox" script="" init="">
+				<prop Left="10" Width="248" Height="88" ForeColor="0,0,0,0" BackColor="0,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/talent/beijing.png"/>
+				<control name="btn_skill_click" entity="Button" script="" init="">
+					<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="9" Top="9" Width="80" Height="70" BackColor="0,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+				</control>
+				<control name="lbl_skill_name" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="87" Top="16" Width="80" Height="16" ForeColor="255,0,150,0" ShadowColor="0,0,0,0" Font="WRYH20"/>
+				</control>
+				<control name="lbl_skill_cost" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="121" Top="51" Width="60" Height="16" ForeColor="255,101,50,0" ShadowColor="0,0,0,0"/>
+				</control>
+				<control name="Label3" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="10" Top="6" Width="76" Height="76" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/talent/tianfu_di.png"/>
+				</control>
+				<control name="lbl_specil" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="7" Top="2" Width="86" Height="86" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/talent/kuang.png"/>
+				</control>
+				<control name="lbl_const_icon" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="87" Top="48" Width="25" Height="25" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/common/window/tianfu.png"/>
+				</control>
+				<control name="skill_photo" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="9" Top="9" Width="80" Height="70" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+				</control>
+				<control name="skill_level" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Left="33" Top="64" Width="30" Height="16" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="30/30" Font="WRYH20_O_BLACK"/>
+				</control>
+				<control name="btn_leason" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_main/talent/jiahao_1.png" PushImage="gui/tp2_main/talent/jiahao_2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" CanShow="false" Left="184" Top="19" Width="50" Height="50" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" ClickSound="button_click"/>
+				</control>
+				<control name="btn_up_level" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_main/talent/tisheng_1.png" PushImage="gui/tp2_main/talent/tisheng_2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="184" Top="19" Width="50" Height="50" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" ClickSound="button_click"/>
+				</control>
+			</control>
+			<control name="grpbox_layer" entity="GroupBox" script="" init="">
+				<prop Left="8" Top="8" Width="941" Height="88" BackColor="0,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+				<control name="grpbox_operator" entity="GroupBox" script="" init="">
+					<prop Left="747" Top="-3" Width="180" Height="88" BackColor="0,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+					<control name="btn_reset" entity="Button" script="" init="">
+						<prop NormalImage="gui/tp2_common/window/activate_1.png" PushImage="gui/tp2_common/window/activate_2.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="25" Top="21" Width="130" Height="50" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_talent_reset" Font="WRYH24_O_BLACK" DrawMode="FitWindow" ClickSound="button_click"/>
+					</control>
+					<control name="mulbox_notice" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,204" SelectBarColor="0,0,0,0" MouseInBarColor="0,0,0,0" ViewRect="5,0,145,60" LineHeight="24" ScrollSize="17" Left="15" Top="16" Width="150" Height="60" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
+					</control>
+				</control>
+			</control>
+		</control>
+		<control name="grpbox_grasp" entity="GroupBox" script="" init="">
+			<prop Top="493" Width="950" Height="50" BackColor="0,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+			<control name="lbl_talk_2" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="43" Top="17" Width="80" Height="16" ForeColor="255,153,103,50" ShadowColor="0,0,0,0" Text="@ui_talent_talk_2" Font="WRYH24"/>
+			</control>
+			<control name="lbl_current_count" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="687" Top="17" Width="80" Height="16" ForeColor="255,0,101,153" ShadowColor="0,0,0,0" Text="99999999" Font="WRYH24"/>
+			</control>
+			<control name="Label11" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="433" Top="19" Width="80" Height="16" ShadowColor="0,0,0,0"/>
+			</control>
+			<control name="lbl_const_icon_cpy" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="655" Top="13" Width="30" Height="30" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/common/window/tianfu.png"/>
+			</control>
+			<control name="btn_enter_gtasp" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_main/talent/jia_up.png" PushImage="gui/tp2_main/talent/jia_over.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="795" Top="1" Width="100" Height="48" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" ClickSound="ui_open"/>
+			</control>
+			<control name="Label2" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="515" Top="17" Width="80" Height="16" ForeColor="255,0,101,153" ShadowColor="0,0,0,0" Text="@ui_grasp_6" Font="WRYH24"/>
+			</control>
+		</control>
+		<control name="GroupBox3" entity="GroupBox" script="" init="">
+			<prop Top="554" Width="950" Height="61" BackColor="0,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+			<control name="rbtn_0" entity="RadioButton" script="" init="">
+				<prop Checked="true" BoxSize="12" NormalImage="gui/tp2_main/talent/yeqian_2.png" CheckedImage="gui/tp2_main/talent/yeqian_1.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="35" Top="11" Width="172" Height="46" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_talent_project1" Font="WRYH24_O_BLACK" TabStop="true" NoFrame="true" AutoSize="true" ClickSound="sound_ui_011"/>
+			</control>
+			<control name="rbtn_1" entity="RadioButton" script="" init="">
+				<prop BoxSize="12" NormalImage="gui/tp2_main/talent/yeqian_2.png" CheckedImage="gui/tp2_main/talent/yeqian_1.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="211" Top="11" Width="172" Height="46" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_talent_project2" Font="WRYH24_O_BLACK" TabIndex="1" TabStop="true" NoFrame="true" AutoSize="true" ClickSound="sound_ui_011"/>
+			</control>
+			<control name="rbtn_2" entity="RadioButton" script="" init="">
+				<prop BoxSize="12" NormalImage="gui/tp2_main/talent/yeqian_2.png" CheckedImage="gui/tp2_main/talent/yeqian_1.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="387" Top="11" Width="172" Height="46" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_talent_project3" Font="WRYH24_O_BLACK" TabIndex="2" TabStop="true" NoFrame="true" AutoSize="true" ClickSound="sound_ui_011"/>
+			</control>
+			<control name="btn_prop_1" entity="Button" script="" init="">
+				<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="211" Top="10" Width="172" Height="46" BackColor="0,0,0,0" LineColor="0,0,0,0" BlendColor="0,0,0,0" ShadowColor="0,0,0,0" AutoSize="true"/>
+			</control>
+			<control name="btn_prop_2" entity="Button" script="" init="">
+				<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="386" Top="10" Width="172" Height="46" BackColor="0,0,0,0" LineColor="0,0,0,0" BlendColor="0,0,0,0" ShadowColor="0,0,0,0" AutoSize="true"/>
+			</control>
+			<control name="lbl_battle_0" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="158" Top="9" Width="42" Height="42" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/talent/xuanding.png"/>
+			</control>
+			<control name="lbl_battle_1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="334" Top="9" Width="42" Height="42" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/talent/xuanding.png"/>
+			</control>
+			<control name="lbl_battle_2" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="511" Top="9" Width="42" Height="42" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/talent/xuanding.png"/>
+			</control>
+		</control>
+	</control>
+</form>
+

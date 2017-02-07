@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<object>
+    <internals />
+    <properties>
+        <property name="TerrainIsClosed" type="int" public="true" private="false" save="false" realtime="" desc="地形数据是否打开，0是打开，1是关闭" />
+        <property name="TerrainName" type="string" public="false" private="false" save="false" realtime="" desc="地形名称" />
+		<property name="TerrainRelateNpc" type="object" public="true" private="false" save="false" realtime="" desc="地形关联NPC"/>
+		<property name="RelateNpcBornAction" type="string" public="true" private="false" save="false" realtime="" desc="地形关联NPC出生动作"/>
+		<property name="RelateNpcDeadAction" type="string" public="true" private="false" save="false" realtime="" desc="地形关联NPC死亡动作"/>
+		<property name="TerrainNpcLength" type="float" public="true" private="false" save="false" realtime="" desc="地形关联NPC死亡动作"/>
+		<property name="TerrainNpcWidth" type="float" public="true" private="false" save="false" realtime="" desc="地形关联NPC死亡动作"/>
+    </properties>
+    <records />
+    <includes>
+        <path name="struct\npc\npcproperty\fight.xml" desc="NPC战斗属性" />
+    </includes>
+</object>

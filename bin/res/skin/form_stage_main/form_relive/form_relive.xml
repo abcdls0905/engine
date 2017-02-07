@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="form_stage_main\form_die" init="form_die_Init">
+		<prop LimitInScreen="true" ShowGrid="true" Width="766" Height="500" BackColor="100,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+		<event on_open="form_die_Open" on_close="on_main_form_close"/>
+		<control name="grp_main" entity="GroupBox" script="" init="">
+			<prop Left="52" Top="29" Width="662" Height="441" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="ExpandTile"/>
+			<control name="Label" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="18" Top="43" Width="625" Height="355" ShadowColor="0,0,0,0" DrawMode="ExpandTile" BackImage="gui/tp2_common/backdrop/bg_001.png"/>
+			</control>
+			<control name="Label2" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="23" Top="83" Width="615" Height="310" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_002.png"/>
+			</control>
+			<control name="lbl_3rd" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="33" Top="88" Width="595" Height="300" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+			</control>
+			<control name="lbl_3" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="114" Top="29" Width="433" Height="54" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_10.png"/>
+			</control>
+			<control name="lbl_4" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="36" Top="359" Width="589" Height="28" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_03.png"/>
+			</control>
+			<control name="lbl_6" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="29" Top="300" Width="603" Height="94" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_08.png"/>
+			</control>
+			<control name="form_die_string" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="164" Top="106" Width="334" Height="22" ForeColor="255,255,255,102" ShadowColor="0,0,0,0" Text="@ui_relive_text" Font="WRYH24_O_BLACK"/>
+			</control>
+			<control name="btn_near" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/tc_button.png" PushImage="gui/tp2_common/window/tc_button1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="108" Top="212" Width="445" Height="73" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_fuhuo0001" Font="WRYH26" TabStop="true" NoFrame="true" DrawMode="ExpandH" ClickSound="MouseClick"/>
+				<event on_click="on_form_die_Near_Relive_click" on_lost_capture="on_form_die_Near_Relive_lost_capture" on_get_capture="on_form_die_Near_Relive_get_capture"/>
+			</control>
+			<control name="btn_local" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/tc_button.png" PushImage="gui/tp2_common/window/tc_button1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="108" Top="139" Width="445" Height="73" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH26" TabStop="true" NoFrame="true" DrawMode="ExpandH" ClickSound="MouseClick"/>
+				<event on_click="on_form_die_Local_Relive_click" on_lost_capture="on_form_die_Local_Relive_lost_capture" on_get_capture="on_form_die_Local_Relive_get_capture"/>
+			</control>
+			<control name="btn_city" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/affirm.png" PushImage="gui/tp2_common/window/affirm1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="-65" Top="9999" Width="150" Height="60" ForeColor="255,255,229,139" BackColor="255,192,192,192" ShadowColor="0,255,0,0" HAnchor="Center" Text="@ui_fuhuo0003" Font="WRYH12" TabStop="true" NoFrame="true" AutoSize="true" DrawMode="FitWindow" ClickSound="MouseClick"/>
+				<event on_click="on_form_die_City_Relive_click" on_lost_capture="on_form_die_City_Relive_lost_capture" on_get_capture="on_form_die_City_Relive_get_capture"/>
+			</control>
+			<control name="Label1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="269" Width="123" Height="64" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_battle/scene_account/mop_up_09.png"/>
+			</control>
+			<control name="mltbox_local" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,255,255,204" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,445,60" LineHeight="53" LineTextAlign="Center" TransHyperLink="true" ScrollSize="17" Left="108" Top="145" Width="445" Height="60" ForeColor="255,255,255,153" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" TestTrans="true" Font="WRYH26" DrawMode="FitWindow"/>
+			</control>
+			<control name="btn_call_guide" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/daanniu.png" PushImage="gui/tp2_common/window/daanniu-over.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="63" Top="319" Width="240" Height="60" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_fuhuo_call_guild" Font="WRYH26" TabStop="true" NoFrame="true" DrawMode="ExpandH" ClickSound="MouseClick"/>
+			</control>
+			<control name="btn_add_enemy" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_common/window/daanniu.png" PushImage="gui/tp2_common/window/daanniu-over.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="359" Top="319" Width="240" Height="60" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_fuhuo_addto_enemy" Font="WRYH26" TabStop="true" NoFrame="true" DrawMode="ExpandH" ClickSound="MouseClick"/>
+			</control>
+		</control>
+	</control>
+</form>
+

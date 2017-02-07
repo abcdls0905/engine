@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by  () -->
+<object>
+	<!-- 基本属性 -->
+	<properties>
+		<property name="PayAlready" type="int" public="false" private="true" save="true" desc="已经充过值"/>
+		<property name="ClickWelfareAlready" type="int" public="false" private="true" save="true" desc="已经点击过福利按钮"/>
+		<property name="ClickItemAlready" type="int" public="false" private="true" save="true" desc="已经点击过道具按钮"/>
+		<property name="ClickPlusItemAlready" type="int" public="false" private="true" save="true" desc="是否已点击过运营礼包页面"/>
+		<property name="VipLevel" type="int" public="false" private="true" save="true" desc="VIP等级"/>
+		<property name="TotalPay" type="int" public="false" private="true" save="true" desc="累计充值"/>
+		<property name="ResetFirstPayRec" type="int" public="false" private="false" save="true" desc="重置首冲标记"/>
+		<property name="ResetVipItemPayRec" type="int" public="false" private="false" save="true" desc="重置VIP礼包购买记录标记"/>
+		<property name="ItemShopResetDate" type="string" public="false" private="false" save="true" desc="道具商店次数重置日期"/>
+		<property name="MonthCardEndDate" type="double" public="false" private="false" save="true" desc="月卡截止日期"/>
+		<property name="QuarterCardEndDate" type="double" public="false" private="true" save="true" desc="季卡截止日期"/>
+		<property name="YearCardEndDate" type="double" public="false" private="false" save="true" desc="年卡截止日期"/>
+		<property name="ForeverCardState" type="int" public="false" private="false" save="true" desc="是否购买福利卡"/>
+        <!-- 黑市属性 -->
+        <property name="BlackMarketResetTimes" type="dword" public="false" private="true" save="true" realtime="true" desc="黑市刷新次数"/>
+		<property name="BlackMarketResetMax" type="dword" public="false" private="true" save="true" realtime="true" desc="黑市钻石刷新最大次数"/>
+	</properties>
+	<!-- 表属性 -->
+	<records>
+		<!--这几个表的列数据类型变了，为了不丢失数据，还要保存定义-->
+		<!--会在进入游戏后将数据拷贝到新的表里，然后清空-->
+		<record name="item_shop_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="玩家购买道具记录表">
+            <column type="string" desc="道具ID" />
+            <column type="byte" desc="道具数量" />
+        </record>
+		<record name="plus_item_shop_rec" cols="3" maxrows="100" save="true" public="false" private="true" desc="玩家购买运营礼包记录表">
+			<column type="widestr" desc="礼包ID" />
+			<column type="byte" desc="已购买数量" />
+			<column type="byte" desc="限购数量" />
+		</record>
+        <record name="gold_exchange_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="玩家兑换金币记录表">
+			<column type="byte" desc="编号" />
+            <column type="byte" desc="兑换次数" />
+        </record>
+        <record name="buy_vip_item_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="玩家购买vip福利记录">
+			<column type="byte" desc="编号" />
+            <column type="byte" desc="是否购买 0：没有 1：买了" />
+        </record>
+        <record name="first_pay_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="玩家购买钻石分类别记录 ">
+			<column type="byte" desc="编号" />
+            <column type="byte" desc="是否购买该类 0：没有 1：买了" />
+        </record>
+		<!-- end -->
+		
+		<record name="item_shop_bought_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="玩家购买道具记录表">
+            <column type="string" desc="道具ID" />
+            <column type="dword" desc="道具数量" />
+        </record>
+		<record name="plus_item_shop_bought_rec" cols="3" maxrows="100" save="true" public="false" private="true" desc="玩家购买运营礼包记录表-弃用">
+			<column type="widestr" desc="礼包ID" />
+			<column type="dword" desc="已购买数量" />
+			<column type="dword" desc="限购数量" />
+		</record>
+		<record name="new_plus_item_shop_bought_rec" cols="5" maxrows="100" save="true" public="false" private="true" desc="玩家购买运营礼包记录表">
+			<column type="widestr" desc="礼包ID" />
+			<column type="string" desc="礼包版本号"/>
+			<column type="dword" desc="已购买数量" />
+			<column type="dword" desc="限购数量" />
+			<column type="int64" desc="最后一次刷新购买数量的日期" />
+		</record>
+        <record name="gold_exchange_bought_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="玩家兑换金币记录表">
+			<column type="dword" desc="编号" />
+            <column type="dword" desc="兑换次数" />
+        </record>
+        <record name="buy_vip_item_bought_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="玩家购买vip福利记录">
+			<column type="dword" desc="编号" />
+            <column type="dword" desc="是否购买 0：没有 1：买了" />
+        </record>
+        <record name="first_pay_bought_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="玩家购买钻石分类别记录 ">
+			<column type="dword" desc="编号" />
+            <column type="dword" desc="是否购买该类 0：没有 1：买了" />
+        </record>
+	
+        <record name="blackmarket_item_rec" cols="5" maxrows="32" save="true" public="false" private="true" desc="黑市刷新物品表">
+            <column type="string" desc="物品ID"/>
+            <column type="dword" desc="物品数目"/>
+            <column type="dword" desc="价格类型"/>
+            <column type="dword" desc="物品总价"/>
+			<column type="word" desc="物品购买标记"/>
+        </record>
+        <record name="DecPointQRec" cols="4" maxrows="4" save="false" public="false" private="false" desc="钻石交易等待列表">
+            <column type="string" desc="交易uid"/>
+ 	    <column type="int64" desc="扣除绑定钻石数量"/>
+	    <column type="dword" desc="回调CommandID"/>
+            <column type="string" desc="交易回调参数"/>
+        </record>
+	</records>
+</object>

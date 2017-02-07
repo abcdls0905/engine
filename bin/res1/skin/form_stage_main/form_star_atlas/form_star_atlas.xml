@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Left="13" Top="13" Width="1222" Height="750" BackColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\use\function\function_vein_096.png" />
+        <control name="group_form" entity="GroupBox" script="" init="">
+            <prop Left="-411" Top="-375" Width="966" Height="718" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" NoFrame="true" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+            <control name="lbl_6" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="16" Top="624" Width="718" Height="78" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\main\strengthen\zhuangbeijinglian_kuang.png" />
+            </control>
+            <control name="lbl_5" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="8" Top="64" Width="950" Height="646" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\xiaokuang.png" />
+            </control>
+            <control name="lbl_back_2" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="14" Top="68" Width="723" Height="555" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\staratlas\tianfu_beijingtu.jpg" />
+            </control>
+            <control name="group_total" entity="GroupBox" script="" init="">
+                <prop Left="736" Top="64" Width="222" Height="630" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                <control name="lbl_1" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="56" Top="16" Width="180" Height="43" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_star_2" Font="WRYH26_S" AutoSize="true" />
+                </control>
+                <control name="group_total_props" entity="GroupScrollableBox" script="" init="">
+                    <prop ScrollSize="17" Left="8" Top="72" Width="206" Height="478" ForeColor="255,204,204,204" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="Default" NoFrame="true" DrawMode="FitWindow" />
+                </control>
+                <control name="lbl_4" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="162" Top="8" Width="55" Height="57" ShadowColor="0,0,0,0" BackImage="gui\common\window\zhuangshi_youshang.png" />
+                </control>
+                <control name="lbl_8" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Top="8" Width="55" Height="57" ShadowColor="0,0,0,0" BackImage="gui\common\window\zhuangshi_zuoshang.png" />
+                </control>
+                <control name="lbl_13" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="89" Top="552" Width="43" Height="22" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\button\jiantou_xia1.png" />
+                </control>
+            </control>
+            <control name="group_constellation" entity="GroupBox" script="" init="">
+                <prop Left="24" Top="192" Width="710" Height="390" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                <control name="group_star_prev" entity="GroupBox" script="" init="">
+                    <prop Left="264" Top="100" Width="100" Height="100" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                    <control name="lbl_star_prev" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Width="102" Height="28" ForeColor="0,255,255,255" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" Text="test" Font="WRYH28" />
+                    </control>
+                    <control name="cbtn_star_prev" entity="CheckButton" script="" init="">
+                        <prop Checked="true" HideBox="true" BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="16" Top="32" Width="69" Height="69" BackColor="0,192,192,192" LineColor="0,0,0,0" ShadowColor="0,0,0,0" TestTrans="true" Transparent="true" TabStop="true" NoFrame="true" AutoSize="true" DrawMode="FitWindow" />
+                    </control>
+                </control>
+                <control name="group_star_cur" entity="GroupBox" script="" init="">
+                    <prop Left="264" Top="284" Width="100" Height="100" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                    <control name="lbl_star_cur" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Width="102" Height="32" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="test" Font="WRYH30_S" />
+                    </control>
+                    <control name="cbtn_star_cur" entity="CheckButton" script="" init="">
+                        <prop HideBox="true" BoxSize="12" NormalImage="gui\staratlas\tianfuxing_da_1.jpg" CheckedImage="gui\staratlas\tianfuxing_da_2.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="16" Top="32" Width="69" Height="69" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="100" TabStop="true" DrawMode="FitWindow" ClickSound="button_click" />
+                    </control>
+                    <control name="lbl_star_back" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="-1" Top="12" Width="108" Height="108" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH30_S" AutoSize="true" DrawMode="FitWindow" BackImage="gui\staratlas\star_back.png" />
+                    </control>
+                </control>
+                <control name="group_star_next" entity="GroupBox" script="" init="">
+                    <prop Left="405" Top="224" Width="100" Height="100" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                    <control name="lbl_star_next" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Width="102" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="test" Font="WRYH30_S" />
+                    </control>
+                    <control name="cbtn_star_next" entity="CheckButton" script="" init="">
+                        <prop HideBox="true" BoxSize="12" NormalImage="gui\staratlas\tianfuxing_xiao.jpg" FocusImage="gui\staratlas\tianfuxing_xiao.jpg" CheckedImage="gui\staratlas\tianfuxing_xiao.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="16" Top="32" Width="69" Height="69" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Enabled="false" Transparent="true" TabStop="true" NoFrame="true" AutoSize="true" DrawMode="FitWindow" />
+                    </control>
+                </control>
+                <control name="group_award" entity="GroupBox" script="" init="">
+                    <prop Left="360" Top="444" Width="334" Height="54" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                    <control name="group_award_list" entity="GroupScrollableBox" script="" init="">
+                        <prop ScrollSize="17" Left="80" Top="-3" Width="262" Height="54" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH30_S" NoFrame="true" DrawMode="Expand" />
+                    </control>
+                    <control name="lbl_2" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="8" Top="12" Width="38" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_award" Font="WRYH26_S" />
+                    </control>
+                </control>
+                <control name="group_consume" entity="GroupBox" script="" init="">
+                    <prop Left="8" Top="448" Width="326" Height="54" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                    <control name="group_consume_list" entity="GroupScrollableBox" script="" init="">
+                        <prop ScrollSize="17" Left="56" Width="294" Height="54" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH30_S" NoFrame="true" DrawMode="Expand" />
+                    </control>
+                    <control name="lbl_3" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Top="8" Width="38" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_consume" Font="WRYH26_S" />
+                    </control>
+                    <control name="lbl_9" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="184" Top="18" Width="80" Height="16" ForeColor="255,255,0,0" ShadowColor="0,0,0,0" Text="@ui_surplus" Font="WRYH22_O" />
+                    </control>
+                    <control name="lbl_10" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="280" Top="16" Width="30" Height="16" ForeColor="255,255,0,0" ShadowColor="0,0,0,0" Text=")" Font="WRYH22_O" />
+                    </control>
+                    <control name="lbl_11" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="168" Top="16" Width="30" Height="16" ForeColor="255,255,0,0" ShadowColor="0,0,0,0" Text="(" Font="WRYH22_O" />
+                    </control>
+                </control>
+            </control>
+            <control name="btn_exit" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="880" Top="-16" Width="100" Height="100" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+            </control>
+            <control name="lbl_effect_twist" entity="Label" script="" init="">
+                <prop Rotate="true" RefCursor="WIN_HELP" Left="248" Top="253" Width="180" Height="180" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="Center" BackImage="gui\staratlas\tianfu_xuanwo_donghua.jpg" />
+            </control>
+            <control name="lbl_effect_blink" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="256" Top="256" Width="166" Height="174" ShadowColor="0,0,0,0" BackImage="talent_blink" />
+            </control>
+            <control name="ani_effect_blink" entity="Animation" script="" init="">
+                <prop AnimationImage="talent_blink" PlayMode="2" Left="176" Top="184" Width="326" Height="294" />
+            </control>
+            <control name="group_keystar_award_main" entity="GroupBox" script="" init="">
+                <prop Left="16" Top="72" Width="678" Height="110" BackColor="0,120,120,120" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                <control name="group_keystar_award" entity="GroupScrollableBox" script="" init="">
+                    <prop ScrollSize="17" Left="8" Top="40" Width="670" Height="46" ForeColor="255,204,204,204" BackColor="0,200,200,200" ShadowColor="0,0,0,0" Font="WRYH24_S" NoFrame="true" DrawMode="Expand" />
+                </control>
+                <control name="mlt_key_star_tips" entity="MultiTextBox" script="" init="">
+                    <prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,510,86" LineHeight="30" HtmlText="===========================" ScrollSize="17" Left="8" Top="8" Width="510" Height="86" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WRYH24_S" NoFrame="true" />
+                </control>
+            </control>
+            <control name="lbl_7" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="440" Top="24" Width="80" Height="16" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_star_1" Font="WRYH30_S" />
+            </control>
+        </control>
+        <control name="group_consume_item" entity="GroupBox" script="" init="">
+            <prop Left="264" Top="644" Width="286" Height="40" BackColor="0,0,255,0" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+            <control name="lbl_14" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="2" Top="-6" Width="52" Height="52" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\common\window\shurukuang2.png" />
+            </control>
+            <control name="lbl_consume_name" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="8" Top="-20" Width="40" Height="40" ForeColor="255,227,127,0" ShadowColor="0,0,0,0" VAnchor="Center" Font="WRYH15" DrawMode="FitWindow" BackImage="gui\common\button\button10_up.png" />
+            </control>
+            <control name="lbl_12" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="-79" Top="-22" Width="14" Height="37" ForeColor="255,12,255,0" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Text="@ui_star_3" Font="WRYH26_S" AutoSize="true" />
+            </control>
+            <control name="lbl_consume_count" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="-198" Top="-19" Width="30" Height="30" ForeColor="255,12,255,0" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Right" Text="2" Font="WRYH26_S" AutoSize="true" />
+            </control>
+            <control name="lbl_surplus_name" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="1680" Width="40" Height="40" ForeColor="255,227,127,0" ShadowColor="0,0,0,0" Font="WRYH15" DrawMode="FitWindow" />
+            </control>
+            <control name="lbl_surplus_count" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="184" Top="3" Width="30" Height="30" ForeColor="255,255,0,0" ShadowColor="0,0,0,0" Text="2" Font="WRYH22_O" AutoSize="true" />
+            </control>
+        </control>
+        <control name="group_award_item" entity="GroupBox" script="" init="">
+            <prop Left="920" Top="728" Width="254" Height="34" BackColor="0,200,200,200" ShadowColor="0,0,0,0" Transparent="true" Font="WRYH20_S" NoFrame="true" DrawMode="Expand" />
+            <control name="mltbox_award_item" entity="MultiTextBox" script="" init="">
+                <prop TextColor="255,0,255,0" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,174,34" LineHeight="33" TipAutoSize="true" HtmlText="基础生命 + 20 %" ScrollSize="17" Width="174" Height="34" ShadowColor="0,0,0,0" Transparent="true" Font="WRYH20_S" NoFrame="true" AutoSize="true" />
+            </control>
+        </control>
+        <control name="group_tabs" entity="GroupBox" script="" init="">
+            <prop Left="-515" Top="-335" Width="158" Height="670" BackColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" NoFrame="true" DrawMode="Expand" />
+            <control name="rbtn_star_atlas" entity="RadioButton" script="" init="">
+                <prop Checked="true" BoxSize="12" NormalImage="gui\main\revival\lianxing_1.png" CheckedImage="gui\main\revival\lianxing_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="24" Width="120" Height="122" ForeColor="255,0,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH26_S" TabStop="true" AutoSize="true" ClickSound="ui_open" HandleShortcut="BUTTON_L1" />
+            </control>
+            <control name="rbtn_star_monster" entity="RadioButton" script="" init="">
+                <prop BoxSize="12" NormalImage="gui\main\revival\xingshou_1.png" CheckedImage="gui\main\revival\xingshou_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="152" Width="120" Height="122" ForeColor="255,0,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH26_S" TabIndex="1" TabStop="true" AutoSize="true" ClickSound="ui_open" HandleShortcut="BUTTON_R1" />
+            </control>
+            <control name="rbtn_star_revival" entity="RadioButton" script="" init="">
+                <prop BoxSize="12" NormalImage="gui\main\revival\xingyunxiulian_1.png" CheckedImage="gui\main\revival\xingyunxiulian_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="280" Width="120" Height="122" ForeColor="255,0,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH26_S" TabIndex="2" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+            <control name="rbtn_star_stone" entity="RadioButton" script="" init="">
+                <prop BoxSize="12" NormalImage="gui\main\revival\tjxs_1.png" CheckedImage="gui\main\revival\tjxs_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="408" Width="120" Height="122" ForeColor="255,0,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH26_S" TabIndex="3" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+            <control name="rbtn_star_genius" entity="RadioButton" script="" init="">
+                <prop BoxSize="12" NormalImage="gui\main\revival\xingyuntianfu_1.png" CheckedImage="gui\main\revival\xingyuntianfu_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Top="536" Width="120" Height="122" ForeColor="255,0,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH26_S" TabIndex="4" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+        </control>
+    </control>
+</form>

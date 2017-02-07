@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Width="1024" Height="720" BackColor="0,255,255,255" ShadowColor="0,0,0,0" BackImage="gui\use\function\function_vein_096.png" />
+        <control name="groupbox_main" entity="GroupBox" script="" init="">
+            <prop Width="1024" Height="720" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="613" Top="61" Width="390" Height="638" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg_huikuang.png" />
+            </control>
+            <control name="lbl_2" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="637" Top="69" Width="343" Height="638" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\league\wzls.jpg,681,11,343,638" />
+            </control>
+            <control name="scenebox_enemy" entity="SceneBox" script="" init="">
+                <prop Left="709" Top="237" Width="198" Height="350" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+            </control>
+            <control name="lbl_title" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="325" Top="21" Width="318" Height="41" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="@ui_teamleague_broad_6" Font="WRYH30_S" />
+            </control>
+            <control name="lbl_self_name" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="205" Top="166" Width="126" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" HAnchor="Center" Font="WRYH20_S" DrawMode="Center" />
+            </control>
+            <control name="lbl_self_level" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="693" Top="189" Width="46" Height="16" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="Default" />
+            </control>
+            <control name="btn_rule" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\pk\btn_help_normal.jpg" PushImage="gui\main\pk\btn_help_click.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="21" Top="13" Width="56" Height="56" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_reset" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="85300" Top="661" Width="134" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="今日剩余X次" Font="WRYH20" />
+            </control>
+            <control name="btn_mobai" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\anniu_chengse_yuanjiao1.png" PushImage="gui\common\button\anniu_chengse_yuanjiao2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="741" Top="605" Width="142" Height="68" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_league_5" Font="WRYH24_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+            </control>
+            <control name="lbl_5" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="701" Top="61" Width="220" Height="96" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\title\icon_ch_wzzd.png" />
+            </control>
+            <control name="lbl_3" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="43" Top="405" Width="539" Height="120" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\league\wzls.jpg,4,299,539,120" />
+            </control>
+            <control name="btn_final_list" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="197" Top="426" Width="222" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_league_2" Font="WRYH24_S" TabStop="true" DrawMode="ExpandH" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_4" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="43" Top="572" Width="539" Height="120" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\main\league\wzls.jpg,4,299,539,120" />
+            </control>
+            <control name="btn_join" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\anniu.png" PushImage="gui\common\button\anniu_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="221" Top="585" Width="174" Height="84" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_league_3" Font="WRYH26_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+            </control>
+            <control name="lbl_7" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="37" Top="85" Width="549" Height="296" ShadowColor="0,0,0,0" BackImage="gui\main\league\wzls.jpg,6,3,549,296" />
+            </control>
+            <control name="groupbox_1" entity="GroupBox" script="" init="">
+                <prop Left="29" Top="77" Width="566" Height="310" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                <control name="mltbox_broad" entity="MultiTextBox" script="" init="">
+                    <prop TextColor="255,79,67,46" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,358,158" LineHeight="33" ScrollSize="17" Left="104" Top="88" Width="358" Height="158" ShadowColor="0,0,0,0" Text="mltbox_1" Font="WRYH26" NoFrame="true" />
+                </control>
+                <control name="lbl_10" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="236" Top="36" Width="80" Height="16" ForeColor="255,228,226,175" ShadowColor="0,0,0,0" Text="@ui_league_msg_tonggao" Font="WRYH24_S" />
+                </control>
+            </control>
+            <control name="lbl_8" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="349" Top="16" Width="53" Height="50" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_zuo.png" />
+            </control>
+            <control name="lbl_9" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="565" Top="16" Width="53" Height="50" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_you.png" />
+            </control>
+            <control name="btn_watch" entity="Button" script="" init="">
+                <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="677" Top="237" Width="286" Height="342" BackColor="255,192,192,192" LineColor="0,0,0,0" ShadowColor="0,0,0,0" />
+            </control>
+            <control name="btn_change_winner" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="741" Top="525" Width="142" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_teamleague_broad_7" Font="WRYH20_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+            </control>
+            <control name="lbl_winnername" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="749" Top="189" Width="94" Height="16" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="Default" />
+            </control>
+            <control name="lbl_server" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="701" Top="205" Width="102" Height="24" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Font="Default" />
+            </control>
+            <control name="lbl_11" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="869" Top="166" Width="46" Height="16" ForeColor="255,245,246,155" ShadowColor="0,0,0,0" Text="@ui_battleteam_tip_3" Font="WRYH20_S" />
+            </control>
+            <control name="lbl_12" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="821" Top="208" Width="80" Height="16" ForeColor="255,165,165,167" ShadowColor="0,0,0,0" Text="@ui_stage_login_31" />
+            </control>
+        </control>
+        <control name="btn_close" entity="Button" script="" init="">
+            <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="429" Top="-379" Width="100" Height="100" BackColor="255,192,192,192" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" TabStop="true" AutoSize="true" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+        </control>
+    </control>
+</form>

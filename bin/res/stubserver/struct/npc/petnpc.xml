@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<object>
+	<internals />
+	<properties>
+		<property name="BornAction" type="string" public="true" private="true" save="false" realtime="" desc="出生动作" />
+		<property name="BornProtectTime" type="int" public="true" private="true" save="false" desc="保护时间（可跟进动作时间来设定）"/>
+		<property name="FightAction" type="string" public="false" private="true" save="false" realtime="" desc="npc进入战斗动作" />
+		<property name="FightProtectTime" type="int" public="false" private="true" save="false" realtime="" desc="npc进入战斗保护时间" />
+		<property name="KeDamageRadius" type="float" public="false" private="false" save="false" desc="受伤害半径"/>
+	
+		<property name="Quality" type="int" public="false" private="false" save="false" realtime="" desc="宠物品质" />
+		<property name="CapitalType" type="int" public="false" private="false" save="false" realtime="" desc="购买货币类型"/>
+		<property name="BuyPrice" type="int" public="false" private="false" save="false" realtime="" desc="购买价格" />
+		<property name="Brief" type="string" public="false" private="false" save="false" realtime="" desc="简介"/>
+		<property name="Skill" type="string" public="false" private="false" save="false" realtime="" desc="技能详细"/>
+		<property name="Tupo" type="string" public="false" private="false" save="false" realtime="" desc="突破详细"/>
+		<property name="IsGotoWar" type="int" public="false" private="true" save="true" realtime="" desc="是否出征"/>
+		<property name="PetCurExp" type="int" public="false" private="true" save="true" realtime="" desc="宠物当前经验"/>
+		<property name="PetTupoLv" type="int" public="false" private="true" save="true" realtime="" desc="突破等级"/>
+		<property name="PetCurTupo" type="int" public="false" private="true" save="true" realtime="" desc="宠物当前突破值"/>
+		<property name="PropUpGradePackID" type="string" public="false" private="true" save="false" realtime="" desc="宠物属性成长包"/>
+    </properties>
+    <records>
+    	  <record name="pet_skill_rec" cols="2" maxrows="32" save="true" public="false" private="true" desc="宠物技能列表">
+            <column type="string" desc="技能名称" />
+            <column type="dword" desc="技能等级" />
+        </record>
+    </records>
+    <includes>
+        <path name="struct\npc\npcproperty\fight.xml" desc="NPC战斗属性" />
+        <path name="struct\npc\rule\fightpack.xml" desc="战斗属性" />
+        <path name="struct\npc\rule\modifybase.xml" desc="属性 技能 buff修正表" />
+        <path name="struct\ai\ai_npc_data.xml" desc="AI属性" />
+        <path name="struct\ai\ai_motion.xml" desc="AI属性" />
+    </includes>
+</object>

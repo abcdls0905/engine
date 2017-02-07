@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop Left="20" Top="30" Width="1280" Height="720" BackColor="151,0,0,0" ShadowColor="0,0,0,0"/>
+		<control name="group_version" entity="GroupBox" script="" init="">
+			<prop Left="140" Top="235" Width="1000" Height="250" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="FitWindow" BackImage="gui/tp2_common/backdrop/update_di.png"/>
+			<control name="lbl_notice" entity="Label" script="" init="">
+				<prop Align="Center" RefCursor="WIN_HELP" Left="237" Top="98" Width="526" Height="54" ForeColor="255,255,204,0" ShadowColor="0,0,0,0" Text="@ui_new_version" Font="WRYH36_O_BLACK"/>
+			</control>
+			<control name="Label1" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="375" Top="7" Width="250" Height="52" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/update_up.png"/>
+			</control>
+			<control name="Label2" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="375" Top="190" Width="250" Height="52" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/update_down.png"/>
+			</control>
+		</control>
+	</control>
+</form>
+

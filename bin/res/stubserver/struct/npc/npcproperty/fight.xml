@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<object>
+    <internals />
+    <properties>
+        <property name="FightID" type="string" public="true" private="false" save="false" realtime="" desc="战斗包ID" />
+        <property name="NormalAttackID" type="string" public="true" private="false" save="false" realtime="" desc="普通攻击战斗包ID" />
+        <property name="AttackSpeedRatio" type="int" public="true" private="false" save="false" desc="攻击提速比率"/>
+        <property name="AttackTime" type="int" public="false" private="false" save="false" desc="攻击间隔时间"/>
+        <property name="BossCountTime" type="int" public="true" private="true" save="false" realtime="" desc="boss战计时" />
+        <property name="LogicState" type="byte" public="true" private="false" save="false" realtime="true" desc="逻辑状态"/>
+        <property name="Dead" type="byte" public="true" private="false" save="false" desc="死亡状态0:未死亡,1:已死亡"/>
+        <property name="HPBase" type="int" public="true" private="false" save="false" desc="基础生命"/>
+        <property name="HPRate" type="int" public="true" private="false" save="false" desc="生命百分比"/>
+        <property name="MaxHP" type="int" public="true" private="false" save="false" desc="最大生命值"/>
+        <property name="MaxMP" type="int" public="true" private="false" save="false" desc="法力上限"/>
+        <property name="AttackBase" type="int" public="true" private="false" save="false" desc="基础攻击"/>
+        <property name="AttackRate" type="int" public="true" private="false" save="false" desc="攻击百分比"/>
+        <property name="TotalAttack" type="int" public="true" private="false" save="false" desc="基础攻击"/>
+        <property name="HPBaseAdd" type="int" public="true" private="false" save="false" desc="血量基础值"/>      
+        <property name="HPRateAdd" type="int" public="true" private="false" save="false" desc="生命百分比"/>
+        <property name="MaxHPAdd" type="int" public="true" private="false" save="false" desc="血量额外上限"/>
+        <property name="AttackBaseAdd" type="int" public="true" private="false" save="false" desc="攻击基础值"/>      
+        <property name="AttackRateAdd" type="int" public="true" private="false" save="false" desc="攻击百分比"/>
+        <property name="TotalAttackAdd" type="int" public="true" private="false" save="false" desc="总攻击力"/>
+        <property name="Crit" type="int" public="true" private="false" save="false" desc="暴击几率"/>
+        <property name="CritAdd" type="int" public="true" private="false" save="false" desc="暴击几率"/>
+        <property name="Hit" type="int" public="true" private="false" save="false" desc="命中"/>
+        <property name="HitAdd" type="int" public="true" private="false" save="false" desc="命中"/>
+        <property name="HP" type="int" public="true" private="false" save="fasle" desc="血量当前值"/>
+        <property name="MP" type="int" public="true" private="false" save="false" desc="法力当前值"/>
+        <property name="Break"  type="int" public="true" private="false" save="false" desc="当前破防值"/>
+        <property name="MaxBreak"  type="int" public="true" private="false" save="false" desc="当前破防上限"/>
+        <property name="BreakReturn"  type="int" public="true" private="false" save="false" desc="当前破防回复速度"/>
+    </properties>
+    <records>
+        <record name="cooldown_rec" cols="4" maxrows="16" save="false" public="false" private="false" desc="冷却表">
+            <column type="dword" desc="冷却分类ID"/>
+            <column type="int64" desc="冷却开始时间，现实64位时间数据"/>
+            <column type="int64" desc="冷却结束时间，现实64位时间数据"/>
+            <column type="word" desc="冷却大分类ID,更上一层的分类"/>
+        </record>
+    </records>
+    <includes>
+        <path name="struct\npc\rule\flow.xml" desc=""/>
+        <path name="struct\npc\rule\cooldown.xml" desc=""/>
+        <path name="struct\npc\rule\skilluse.xml" desc=""/>
+    </includes>
+</object>

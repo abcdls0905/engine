@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="" init="">
+		<prop ClipChildren="false" ClipChildren="false" Left="100" Top="100" Width="430" Height="300" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+		<control name="groupbox_main" entity="GroupBox" script="" init="">
+			<prop Width="470" Height="300" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Text="groupbox_1" NoFrame="true"/>
+			<control name="1" entity="GroupBox" script="" init="">
+				<prop ClipChildren="false" Left="21" Top="22" Width="446" Height="80" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0"/>
+				<control name="lbl_image_1" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="7" Top="12" Width="54" Height="54" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+				</control>
+				<control name="lbl_name_1" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="67" Top="16" Width="80" Height="16" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="lbl_2"/>
+				</control>
+				<control name="lbl_level_1" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="253" Top="16" Width="80" Height="16" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="lbl_3"/>
+				</control>
+				<control name="pbar_hp_1" entity="ProgressBar" script="" init="">
+					<prop Maximum="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_team/hongtiao.png" ProgressMode="LeftToRight" Left="64" Top="40" Width="158" Height="17" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_team/jindutiaodi.png"/>
+				</control>
+				<control name="pbar_mp_1" entity="ProgressBar" script="" init="">
+					<prop Maximum="100" WidthGap="2" HeightGap="2" ProgressMode="LeftToRight" Left="1000" Top="64" Width="142" Height="16" ShadowColor="0,0,0,0"/>
+				</control>
+				<control name="btn_back_1" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_team/di01.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="286" Height="80" BackColor="0,192,192,192" LineColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="FitWindow"/>
+				</control>
+				<control name="lbl_caption_1" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="593" Top="16" Width="80" Height="16" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="队长"/>
+				</control>
+				<control name="lbl_busy_state_1" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="232" Top="33" Width="46" Height="37" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_team/team_busy.png"/>
+				</control>
+				<control name="lbl_level_text_1" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="215" Top="16" Width="80" Height="16" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="@ui_team_head_2"/>
+				</control>
+				<control name="btn_find_1" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_team/xunlu_up.png" PushImage="gui/tp2_team/xunlu_over.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="290" Top="21" Width="58" Height="37" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true"/>
+				</control>
+			</control>
+			<control name="2" entity="GroupBox" script="" init="">
+				<prop ClipChildren="false" Left="21" Top="112" Width="446" Height="80" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0"/>
+				<control name="lbl_image_2" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="7" Top="13" Width="54" Height="54" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+				</control>
+				<control name="lbl_name_2" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="67" Top="16" Width="80" Height="16" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="lbl_2"/>
+				</control>
+				<control name="lbl_level_2" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="253" Top="16" Width="80" Height="16" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="lbl_3"/>
+				</control>
+				<control name="pbar_hp_2" entity="ProgressBar" script="" init="">
+					<prop Maximum="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_team/hongtiao.png" ProgressMode="LeftToRight" Left="64" Top="40" Width="158" Height="17" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_team/jindutiaodi.png"/>
+				</control>
+				<control name="pbar_mp_2" entity="ProgressBar" script="" init="">
+					<prop Maximum="100" WidthGap="2" HeightGap="2" ProgressMode="LeftToRight" Left="1000" Top="64" Width="142" Height="16" ShadowColor="0,0,0,0"/>
+				</control>
+				<control name="btn_back_2" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_team/di01.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="286" Height="80" BackColor="0,192,192,192" LineColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="FitWindow"/>
+				</control>
+				<control name="lbl_caption_2" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="681" Top="16" Width="80" Height="16" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="等级"/>
+				</control>
+				<control name="lbl_busy_state_2" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="232" Top="36" Width="46" Height="37" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_team/team_busy.png"/>
+				</control>
+				<control name="lbl_level_text_2" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="215" Top="16" Width="80" Height="16" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="@ui_team_head_2"/>
+				</control>
+				<control name="btn_find_2" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_team/xunlu_up.png" PushImage="gui/tp2_team/xunlu_over.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="290" Top="21" Width="58" Height="37" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true"/>
+				</control>
+			</control>
+			<control name="3" entity="GroupBox" script="" init="">
+				<prop ClipChildren="false" Left="21" Top="201" Width="446" Height="80" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0"/>
+				<control name="lbl_image_3" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="7" Top="14" Width="54" Height="54" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+				</control>
+				<control name="lbl_name_3" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="67" Top="16" Width="80" Height="16" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="lbl_2"/>
+				</control>
+				<control name="lbl_level_3" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="253" Top="16" Width="80" Height="16" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="lbl_3"/>
+				</control>
+				<control name="pbar_hp_3" entity="ProgressBar" script="" init="">
+					<prop Maximum="100" WidthGap="2" HeightGap="2" ProgressImage="gui/tp2_team/hongtiao.png" ProgressMode="LeftToRight" Left="64" Top="40" Width="158" Height="17" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_team/jindutiaodi.png"/>
+				</control>
+				<control name="pbar_mp_3" entity="ProgressBar" script="" init="">
+					<prop Maximum="100" WidthGap="2" HeightGap="2" ProgressMode="LeftToRight" Left="1000" Top="64" Width="142" Height="16" ShadowColor="0,0,0,0"/>
+				</control>
+				<control name="btn_back_3" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_team/di01.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="286" Height="80" BackColor="0,192,192,192" LineColor="0,0,0,0" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="FitWindow"/>
+				</control>
+				<control name="lbl_caption_3" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="705" Top="16" Width="80" Height="16" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="等级"/>
+				</control>
+				<control name="lbl_busy_state_3" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="232" Top="39" Width="46" Height="37" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_team/team_busy.png"/>
+				</control>
+				<control name="lbl_level_text_3" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="215" Top="16" Width="80" Height="16" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="@ui_team_head_2"/>
+				</control>
+				<control name="btn_find_3" entity="Button" script="" init="">
+					<prop NormalImage="gui/tp2_team/xunlu_up.png" PushImage="gui/tp2_team/xunlu_over.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="290" Top="21" Width="58" Height="37" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true"/>
+				</control>
+			</control>
+			<control name="btn_open_team" entity="Button" script="" init="">
+				<prop NormalImage="gui/tp2_team/zudui2.png" PushImage="gui/tp2_team/zudui1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="6" Top="6" Width="130" Height="50" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK" AutoSize="true" ClickSound="ui_open"/>
+			</control>
+		</control>
+		<control name="grup_talk" entity="GroupBox" script="" init="">
+			<prop Transparent="true" Left="217" Top="9" Width="254" Height="245" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" TestTrans="true"/>
+			<control name="mltx_1" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,154,0,0" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="10,10,176,50" LineHeight="30" ScrollSize="17" Left="37" Width="179" Height="55" ForeColor="255,204,255,255" ShadowColor="0,0,0,0" Font="WRYH18_O_BLACK" NoFrame="true" DrawMode="FitWindow" BackImage="gui/tp2_main/chat/qipaokuang.png"/>
+			</control>
+			<control name="mltx_2" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,154,0,0" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="5,5,174,50" LineHeight="30" ScrollSize="17" Left="37" Top="88" Width="179" Height="55" ForeColor="255,204,255,255" ShadowColor="0,0,0,0" TestTrans="true" Font="WRYH18_O_BLACK" NoFrame="true" DrawMode="FitWindow" BackImage="gui/tp2_main/chat/qipaokuang.png"/>
+			</control>
+			<control name="mltx_3" entity="MultiTextBox" script="" init="">
+				<prop TextColor="255,154,0,0" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="5,5,174,50" LineHeight="30" ScrollSize="17" Left="37" Top="176" Width="179" Height="55" ForeColor="255,204,255,255" ShadowColor="0,0,0,0" Font="WRYH18_O_BLACK" NoFrame="true" DrawMode="FitWindow" BackImage="gui/tp2_main/chat/qipaokuang.png"/>
+			</control>
+		</control>
+	</control>
+</form>
+

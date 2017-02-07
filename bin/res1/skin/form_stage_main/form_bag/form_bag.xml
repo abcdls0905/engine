@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop IsGC="true" Top="5" Width="1110" Height="750" BackColor="0,255,255,255" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\use\function\function_vein_096.png" />
+        <control name="groupbox_bag" entity="GroupBox" script="" init="">
+            <prop Left="509" Top="24" Width="574" Height="702" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+            <control name="lbl_main_frame" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="5" Top="16" Width="488" Height="702" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+            </control>
+            <control name="groupbox_2" entity="GroupBox" script="" init="">
+                <prop Left="11" Top="616" Width="478" Height="96" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui\common\window\shurukuang3.png" />
+                <control name="lbl_3" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="167" Top="24" Width="150" Height="51" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\shurukuang1.png" />
+                </control>
+                <control name="btn_sell" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="2" Top="12" Width="158" Height="70" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_bag_2" Font="WRYH24_S" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+                <control name="btn_arrange" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\anniu.png" PushImage="gui\common\button\anniu_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="322" Top="2" Width="150" Height="84" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_bag_3" Font="WRYH24_S" TabIndex="100" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+                </control>
+                <control name="lbl_price" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="224" Top="30" Width="78" Height="34" ForeColor="182,255,255,0" ShadowColor="0,0,0,0" Text="111" Font="WRYH18_S" />
+                </control>
+                <control name="lbl_price_icon" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="172" Top="28" Width="48" Height="48" ShadowColor="0,0,0,0" BackImage="gui\common\window\jinbi.jpg" />
+                </control>
+            </control>
+            <control name="groupbox_grid" entity="GroupBox" script="" init="">
+                <prop ClipChildren="true" Left="19" Top="28" Width="526" Height="598" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                <control name="lbl_2" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Width="463" Height="582" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\beibao_12.png" />
+                </control>
+                <control name="lbl_15" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_zuoshang.png" />
+                </control>
+                <control name="lbl_16" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="408" Width="55" Height="57" ShadowColor="0,0,0,0" BackImage="gui\common\window\zhuangshi_youshang.png" />
+                </control>
+                <control name="lbl_17" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Top="524" Width="55" Height="57" ShadowColor="0,0,0,0" BackImage="gui\common\window\zhuangshi_zuoxia.png" />
+                </control>
+                <control name="lbl_18" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="408" Top="524" Width="55" Height="57" ShadowColor="0,0,0,0" BackImage="gui\common\window\zhuangshiyouxia.png" />
+                </control>
+                <control name="groupbox_3" entity="GroupBox" script="" init="">
+                    <prop ClipChildren="true" Left="16" Top="24" Width="430" Height="534" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                    <control name="imagegrid_patch" entity="ImageGrid" script="" init="">
+                        <prop SelectColor="0,0,255,0" MouseInColor="0,255,255,0" CoverColor="0,255,0,0" LockColor="0,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="20" GridHeight="80" GridWidth="80" GridsPos="5,0;115,0;225,0;335,0;5,110;115,110;225,110;335,110;5,220;115,220;225,220;335,220;5,330;115,330;225,330;335,330;5,440;115,440;225,440;335,440;" DrawMouseIn="RECT" DrawMouseSelect="treasure_liuguang" DrawCover="RECT" DrawLock="RECT" DrawGridBack="gui\common\window\tubiaokuang_2.png" GridBackOffsetX="-7" GridBackOffsetY="-7" GridCoverOffsetX="-5" GridCoverOffsetY="-5" MouseDownScale="0.980000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" HasVScroll="false" Left="6" Top="6" Width="422" Height="518" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK" NoFrame="true" ClickSound="button_click" />
+                    </control>
+                    <control name="imagegrid_goods" entity="ImageGrid" script="" init="">
+                        <prop SelectColor="0,0,255,0" MouseInColor="0,255,255,0" CoverColor="0,255,0,0" LockColor="0,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="32" GridHeight="80" GridWidth="80" GridsPos="5,0;115,0;225,0;335,0;5,110;115,110;225,110;335,110;5,220;115,220;225,220;335,220;5,330;115,330;225,330;335,330;5,440;115,440;225,440;335,440;5,550;115,550;225,550;335,550;5,660;115,660;225,660;335,660;5,770;115,770;225,770;335,770;" DrawMouseIn="RECT" DrawMouseSelect="RECT" DrawCover="RECT" DrawLock="RECT" DrawGridBack="gui\common\window\tubiaokuang_2.png" GridBackOffsetX="-7" GridBackOffsetY="-7" GridCoverOffsetX="-5" GridCoverOffsetY="-5" MouseDownScale="0.980000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" HasVScroll="false" Left="6" Top="6" Width="422" Height="518" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK" NoFrame="true" ClickSound="button_click" />
+                    </control>
+                    <control name="imagegrid_badge" entity="ImageGrid" script="" init="">
+                        <prop SelectColor="0,0,255,0" MouseInColor="0,255,255,0" CoverColor="0,255,0,0" LockColor="0,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="32" GridHeight="80" GridWidth="80" GridsPos="5,0;115,0;225,0;335,0;5,110;115,110;225,110;335,110;5,220;115,220;225,220;335,220;5,330;115,330;225,330;335,330;5,440;115,440;225,440;335,440;5,550;115,550;225,550;335,550;5,660;115,660;225,660;335,660;5,770;115,770;225,770;335,770;" DrawMouseIn="RECT" DrawMouseSelect="RECT" DrawCover="RECT" DrawLock="RECT" DrawGridBack="gui\common\window\tubiaokuang_2.png" GridBackOffsetX="-7" GridBackOffsetY="-7" GridCoverOffsetX="-5" GridCoverOffsetY="-5" MouseDownScale="0.980000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" HasVScroll="false" Left="6" Top="6" Width="422" Height="518" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK" NoFrame="true" ClickSound="button_click" />
+                    </control>
+                </control>
+                <control name="lbl_goods_grid_count" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="192" Top="556" Width="94" Height="24" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="1/100" Font="WRYH26_S" />
+                </control>
+                <control name="lbl_patch_grid_count" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="192" Top="556" Width="94" Height="24" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="1/100" Font="WRYH26_S" />
+                </control>
+                <control name="lbl_badge_grid_count" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="192" Top="556" Width="94" Height="24" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="1/100" Font="WRYH26_S" />
+                </control>
+            </control>
+            <control name="btn_bag" entity="Button" script="" init="">
+                <prop NormalImage="gui\use\bag\beibao_daoju1.png" PushImage="gui\use\bag\beibao_daoju2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="464" Top="91" Width="120" Height="122" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH18_O_BLACK" TabIndex="1" TabStop="true" AutoSize="true" DrawMode="Center" ClickSound="button_click" />
+            </control>
+            <control name="btn_patch" entity="Button" script="" init="">
+                <prop NormalImage="gui\use\bag\beibao_suipian1.png" PushImage="gui\use\bag\beibao_suipian2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="464" Top="220" Width="120" Height="122" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH18_O_BLACK" TabIndex="2" TabStop="true" AutoSize="true" ClickSound="button_click" />
+            </control>
+            <control name="btn_badge" entity="Button" script="" init="">
+                <prop NormalImage="gui\use\bag\beibao_huizhang1.png" PushImage="gui\use\bag\beibao_huizhang2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="464" Top="350" Width="120" Height="122" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH18_O_BLACK" TabIndex="3" TabStop="true" AutoSize="true" DrawMode="Center" ClickSound="button_click" />
+            </control>
+            <control name="btn_bag_close" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="432" Top="-24" Width="100" Height="100" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_close" />
+            </control>
+            <control name="lbl_combining_num" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="512" Top="203" Width="60" Height="60" ShadowColor="0,0,0,0" Font="WRYH26" AutoSize="true" BackImage="gui\common\window\gengxin.png" />
+            </control>
+            <control name="lbl_14" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="230" Top="24" Width="43" Height="22" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\button\jiantou_shang1.png" />
+            </control>
+            <control name="lbl_19" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="232" Top="608" Width="43" Height="22" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\button\jiantou_xia1.png" />
+            </control>
+        </control>
+        <control name="groupbox_equip" entity="GroupBox" script="" init="">
+            <prop Left="21" Top="24" Width="494" Height="718" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Width="484" Height="566" ShadowColor="0,0,0,0" DrawMode="Expand" />
+            </control>
+            <control name="lbl_role_frame" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="-2" Top="16" Width="495" Height="702" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+            </control>
+            <control name="groupbox_equip_bottom" entity="GroupBox" script="" init="">
+                <prop Width="494" Height="510" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                <control name="lbl_27" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="370" Top="409" Width="94" Height="94" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\use\bag\bag_46.png" />
+                </control>
+                <control name="lbl_26" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="30" Top="409" Width="94" Height="94" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\use\bag\bag_45.png" />
+                </control>
+                <control name="lbl_25" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="30" Top="299" Width="94" Height="94" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\use\bag\bag_36.png" />
+                </control>
+                <control name="lbl_24" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="370" Top="189" Width="94" Height="94" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\use\bag\bag_35.png" />
+                </control>
+                <control name="lbl_23" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="370" Top="299" Width="94" Height="94" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\use\bag\bag_25.png" />
+                </control>
+                <control name="lbl_22" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="30" Top="189" Width="94" Height="94" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\use\bag\bag_24.png" />
+                </control>
+                <control name="lbl_21" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="370" Top="79" Width="94" Height="94" ShadowColor="0,0,0,0" BackImage="gui\use\bag\bag_17.png" />
+                </control>
+                <control name="lbl_20" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="30" Top="79" Width="94" Height="94" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\use\bag\bag_15.png" />
+                </control>
+            </control>
+            <control name="imagegrid_equip" entity="ImageGrid" script="" init="">
+                <prop SelectColor="0,0,213,0" MouseInColor="0,255,255,0" CoverColor="0,255,0,0" LockColor="0,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="8" GridHeight="80" GridWidth="80" GridsPos="20,10;360,10;20,120;360,120;20,230;360,230;20,340;360,340;" DrawMouseIn="RECT" DrawMouseSelect="treasure_liuguang" DrawCover="RECT" DrawLock="RECT" GridBackOffsetX="-7" GridBackOffsetY="-7" GridCoverOffsetX="-5" GridCoverOffsetY="-5" MouseDownScale="0.980000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" HasVScroll="false" Left="17" Top="76" Width="454" Height="438" BackColor="0,255,255,255" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+            </control>
+            <control name="lbl_role_name" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="204" Top="43" Width="80" Height="16" ForeColor="255,232,255,255" ShadowColor="0,0,0,0" Text="角色名字" Font="WRYH24_S" />
+            </control>
+            <control name="scenebox_role" entity="SceneBox" script="" init="">
+                <prop Left="126" Top="80" Width="240" Height="420" BackColor="1,255,255,255" LineColor="1,0,0,0" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui\use\bag\juesekuang.jpg" />
+            </control>
+            <control name="groupbox_1" entity="GroupBox" script="" init="">
+                <prop Left="22" Top="600" Width="446" Height="102" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" />
+                <control name="lbl_10" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="40" Top="72" Width="414" Height="34" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\common\window\jindutiao_bg.png" />
+                </control>
+                <control name="lbl_5" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="-8" Top="32" Width="22" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_bag_6" Font="WRYH24_S" />
+                </control>
+                <control name="lbl_6" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="-8" Top="78" Width="38" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_bag_8" Font="WRYH24_S" />
+                </control>
+                <control name="lbl_hp" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="48" Top="16" Width="174" Height="48" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="100" Font="WRYH24_S" DrawMode="ExpandH" BackImage="gui\common\window\shurukuang3.png" />
+                </control>
+                <control name="lbl_8" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="232" Top="32" Width="46" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_equip_tips_7" Font="WRYH24_S" />
+                </control>
+                <control name="lbl_attack" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="288" Top="16" Width="166" Height="48" ForeColor="255,255,255,134" ShadowColor="0,0,0,0" Text="200" Font="WRYH24_S" DrawMode="ExpandH" BackImage="gui\common\window\shurukuang3.png" />
+                </control>
+                <control name="pbar_1" entity="ProgressBar" script="" init="">
+                    <prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui\common\window\jingdutiao.png" ProgressMode="LeftToRight" Left="40" Top="72" Width="414" Height="34" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="Default" NoFrame="true" AutoSize="true" DrawMode="Expand" />
+                </control>
+                <control name="lbl_exp" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="207" Top="80" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="100/100" Font="Default" />
+                </control>
+            </control>
+            <control name="lbl_11" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="6" Top="24" Width="55" Height="57" ShadowColor="0,0,0,0" BackImage="gui\common\window\zhuangshi_zuoshang.png" />
+            </control>
+            <control name="lbl_12" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="431" Top="24" Width="55" Height="57" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\common\window\zhuangshi_youshang.png" />
+            </control>
+            <control name="lbl_role_level" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="5000" Top="91" Width="78" Height="16" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Text="等级" Font="WRYH20_S" DrawMode="FitWindow" />
+            </control>
+            <control name="btn_show_fashion" entity="Button" script="" init="">
+                <prop NormalImage="gui\use\bag\btn_small_anniu1.png" PushImage="gui\use\bag\btn_small_anniu2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="13" Top="12" Width="126" Height="79" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_fashion_2" Font="Default" TabStop="true" DrawMode="ExpandH" ClickSound="button_click" />
+            </control>
+            <control name="btn_prop_detail" entity="Button" script="" init="">
+                <prop NormalImage="gui\use\bag\chakan_up.jpg" PushImage="gui\use\bag\chakan_up.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="128" Top="448" Width="236" Height="50" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_bag_11" Font="WRYH22_O" TabStop="true" AutoSize="true" ClickSound="button_click" />
+            </control>
+            <control name="groupbox_soulani" entity="GroupBox" script="" init="">
+                <prop ClipChildren="true" Left="13" Top="64" Width="462" Height="446" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Transparent="true" NoFrame="true" />
+                <control name="lbl_soulani_4" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="8" Top="225" Width="110" Height="110" ShadowColor="0,0,0,0" AutoSize="true" />
+                </control>
+                <control name="lbl_soulani_3" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="349" Top="116" Width="110" Height="110" ShadowColor="0,0,0,0" AutoSize="true" />
+                </control>
+                <control name="lbl_soulani_2" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="8" Top="116" Width="110" Height="110" ShadowColor="0,0,0,0" AutoSize="true" />
+                </control>
+                <control name="lbl_soulani_0" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="8" Top="5" Width="110" Height="110" ShadowColor="0,0,0,0" AutoSize="true" />
+                </control>
+                <control name="lbl_soulani_1" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="349" Top="5" Width="110" Height="110" ShadowColor="0,0,0,0" AutoSize="true" />
+                </control>
+                <control name="lbl_soulani_5" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="349" Top="225" Width="110" Height="110" ShadowColor="0,0,0,0" AutoSize="true" />
+                </control>
+                <control name="lbl_soulani_6" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="8" Top="336" Width="110" Height="110" ShadowColor="0,0,0,0" AutoSize="true" />
+                </control>
+            </control>
+            <control name="btn_soul" entity="Button" script="" init="">
+                <prop NormalImage="gui\use\bag\btn_bag_lhjt1.png" PushImage="gui\use\bag\btn_bag_lhjt2.png" DisableImage="gui\use\bag\btn_bag_lhjt2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="320" Top="504" Width="130" Height="102" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH24_S" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_9" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="8" Top="536" Width="478" Height="52" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\use\bag\pic_bag_hengyunwen.png" />
+            </control>
+            <control name="btn_fashion" entity="Button" script="" init="">
+                <prop NormalImage="gui\use\bag\btn_bag_sz1.png" PushImage="gui\use\bag\btn_bag_sz2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="40" Top="504" Width="130" Height="102" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+            <control name="btn_diff_world" entity="Button" script="" init="">
+                <prop NormalImage="gui\use\bag\btn_bag_lhjt1.png" PushImage="gui\use\bag\btn_bag_lhjt2.png" DisableImage="gui\use\bag\btn_bag_lhjt2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="336" Top="50400000" Width="130" Height="102" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="WRYH24_S" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+            <control name="btn_talisman" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\talisman\btn_bag_fb1.png" PushImage="gui\main\talisman\btn_bag_fb2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="180" Top="504" Width="130" Height="102" ForeColor="255,0,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_open" />
+            </control>
+        </control>
+    </control>
+</form>

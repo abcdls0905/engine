@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<form>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop ShowGrid="true" IsGC="true" Left="20" Top="30" Width="1024" Height="720" BackColor="0,255,255,255" ShadowColor="0,0,0,0" BackImage="gui\use\function\function_vein_096.png" />
+        <control name="groupbox_main" entity="GroupBox" script="" init="">
+            <prop Width="1024" Height="720" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common\window\bg.jpg" />
+            <control name="lbl_2" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="9" Top="71" Width="1006" Height="534" ShadowColor="0,0,0,0" BackImage="gui\main\homesystem\jlgs_dt.jpg" />
+            </control>
+            <control name="btn_close" entity="Button" script="" init="">
+                <prop NormalImage="gui\common\button\x.png" PushImage="gui\common\button\x_anxia.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="937" Top="-17" Width="100" Height="100" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" AutoSize="true" ClickSound="ui_close" HandleShortcut="BUTTON_X" />
+            </control>
+            <control name="btn_help" entity="Button" script="" init="">
+                <prop NormalImage="gui\main\pk\btn_help_normal.jpg" PushImage="gui\main\pk\btn_help_click.jpg" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="9" Top="15" Width="54" Height="54" BackColor="255,192,192,192" ShadowColor="0,0,0,0" DrawMode="FitWindow" />
+            </control>
+            <control name="groupbox_1" entity="GroupBox" script="" init="">
+                <prop Left="9" Top="215" Width="1006" Height="246" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                <control name="groupscrollbox_spring" entity="GroupScrollableBox" script="" init="">
+                    <prop ScrollSize="17" Left="80" Width="854" Height="246" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                </control>
+            </control>
+            <control name="groupbox_spring_sample" entity="GroupBox" script="" init="">
+                <prop Left="150" Top="200" Width="300" Height="208" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                <control name="cbtn_spring" entity="CheckButton" script="" init="">
+                    <prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="4" Height="4" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" />
+                </control>
+                <control name="btn_spring" entity="Button" script="" init="">
+                    <prop NormalImage="gui\main\homesystem\sjqs_1.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="228" Height="208" BackColor="255,192,192,192" ShadowColor="0,0,0,0" NoFrame="true" />
+                </control>
+                <control name="lbl_spring_state" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="27" Top="151" Width="102" Height="46" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" />
+                </control>
+                <control name="lbl_spring_irrigate_count" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="129" Top="151" Width="70" Height="46" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" />
+                </control>
+                <control name="lbl_spring_output" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="35" Top="95" Width="90" Height="24" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="@ui_guild_spirit_tree_spring_output" />
+                </control>
+                <control name="lbl_spring_output_item" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="139" Top="87" Width="40" Height="40" ShadowColor="0,0,0,0" DrawMode="FitWindow" />
+                </control>
+            </control>
+            <control name="groupbox_2" entity="GroupBox" script="" init="">
+                <prop Left="249" Top="615" Width="606" Height="80" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                <control name="lbl_spirittree_exp" entity="Label" script="" init="">
+                    <prop Align="Center" RefCursor="WIN_HELP" Left="-215" Top="14" Width="966" Height="45" ForeColor="255,0,103,255" ShadowColor="0,0,0,0" Font="WRYH18" DrawMode="ExpandH" BackImage="gui\common\window\zhuangbeiqianghua_jindutiao_di.png" />
+                </control>
+                <control name="pbar_spirittree_exp" entity="ProgressBar" script="" init="">
+                    <prop Maximum="100" Value="100" WidthGap="2" HeightGap="10" ProgressImage="gui\common\window\zhuangbeiqianghua_jindutiao.png" ProgressMode="LeftToRight" Left="-215" Top="14" Width="966" Height="45" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WRYH26" NoFrame="true" DrawMode="Expand" />
+                </control>
+            </control>
+            <control name="groupbox_3" entity="GroupBox" script="" init="">
+                <prop Left="17" Top="39" Width="318" Height="174" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                <control name="mltbox_irrigate_info" entity="MultiTextBox" script="" init="">
+                    <prop SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,318,134" LineHeight="20" ScrollSize="17" Top="40" Width="318" Height="134" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" />
+                </control>
+            </control>
+            <control name="groupbox_4" entity="GroupBox" script="" init="">
+                <prop Left="289" Top="471" Width="446" Height="110" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="ExpandH" BackImage="gui\common\window\bg_huikuang.png" />
+                <control name="btn_buy_irrigate_count" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common\button\anniu_yuanjiao.png" PushImage="gui\common\button\anniu_yuanjiao_2.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="208" Top="24" Width="190" Height="64" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_guild_spirit_tree_irrigate_cost_diamond_1" Font="WRYH24_S" DrawMode="ExpandH" />
+                </control>
+                <control name="lbl_1" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="40" Top="32" Width="54" Height="46" ShadowColor="0,0,0,0" BackImage="gui\common\window\zuanshi_da.jpg" />
+                </control>
+                <control name="lbl_buy_irrigate_count" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="112" Top="40" Width="80" Height="30" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="lbl_2" Font="WRYH24_S" />
+                </control>
+            </control>
+            <control name="lbl_3" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="441" Top="23" Width="312" Height="38" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="@ui_guild_spirit_tree" Font="WRYH30_O" />
+            </control>
+        </control>
+    </control>
+</form>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 
+MainComponent 主部件编号
+SubComponentList
+子部件集合(子部件NPCID,子部件挂接点x坐标,子部件挂接点y坐标,子部件挂接点z坐标,子部件对应skin挂点名字,子部件播放动画时高度,父NPC倒地，保持，起身招式,父NPC开始变为倒地状态时间,父NPC开始取消倒地状态时间,父NPC恢复AI时间;(父NPC倒地，保持，起身招式、父NPC开始变为倒地状态时间、父NPC开始取消倒地状态时间、父NPC恢复AI时间)......)
+-->
+<Object>
+	<Property ID="1" MainComponent="Demo_Boss_001" SubComponentList="Demo_Boss_002,1.0,2.0,3.0,Model::bomb_gua01,part_a,5.45,bomb,Demo_boss_011,2000,5000,7000,0.9;,,,,,,,,Demo_boss_011_2,2000,7500,9500"/>
+	<Property ID="2" MainComponent="zym728_boss_1" SubComponentList="boss_ani_0003_1,1.0,2.0,3.0,tpose::effect_02,part_b,5.45,boomdown3,mon_kl_king_skill_12,2000,5000,7000,0.7;,,,,,,,,mon_kl_king_skill_12_2,2000,7500,9500"/>
+	<Property ID="3" MainComponent="zym748_boss_1" SubComponentList="boss_ani_0005_1,1.0,2.0,3.0,Model::boss_ani_0005_neck,part_a,5.45,bomb,mon_shu_bd_sk15,2000,5000,7000,0.7;,,,,,,,,mon_shu_bd_sk15_2,2000,7000,9000"/>
+	<Property ID="4" MainComponent="zym778_boss_1" SubComponentList="boss_ani_0006_1,1.0,2.0,3.0,Model::boss_ani_0006_belly,part_a,5.45,bomb,mon_shu_judunvw_sk14,2000,5000,7000,0.5;,,,,,,,,mon_shu_judunvw_sk15,2000,7000,9000"/>
+	<Property ID="5" MainComponent="zym798_boss" SubComponentList="Demo_Boss_002,1.0,2.0,3.0,Model::bomb_gua01,part_a,5.45,bomb,Demo_boss_011,2000,5000,7000,0.9;,,,,,,,,Demo_boss_011_2,2000,7500,9500"/>
+</Object>

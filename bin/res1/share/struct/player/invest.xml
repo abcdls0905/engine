@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<object>
+    <properties>
+	    <property name="BuyInvestPlan" type="int" public="false" private="true" save="true" realtime="" desc="是否购买了投资计划" />   
+	</properties>
+    <records>
+        <record name="invest_gain_rec" cols="2" maxrows="500" save="true" public="false" private="true" desc="投资回报表格">
+            <column type="dword" desc="可领取需要达到的等级" />
+            <column type="dword" desc="是否已经领取"/>
+        </record>
+	</records>
+</object>

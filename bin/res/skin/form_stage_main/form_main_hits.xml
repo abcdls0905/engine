@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<control name="main_form" entity="Form" script="form_stage_main\form_main\form_main_hits" init="main_form_init">
+		<prop Transparent="true" LimitInScreen="true" ShowGrid="true" Left="-1024" Top="29" Width="1024" Height="768" BackColor="0,255,255,255" ShadowColor="0,0,0,0" HAnchor="Right" NoFrame="true"/>
+		<event on_open="on_main_form_open" on_close="on_main_form_close"/>
+		<control name="group_hits" entity="GroupBox" script="" init="">
+			<prop Transparent="true" ClipChildren="false" Left="645" Top="196" Width="270" Height="142" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true"/>
+			<control name="lbl_combohits" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="2" Top="-20" Width="318" Height="206" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/common/special/special.png,0,177,250,230"/>
+			</control>
+			<control name="group_hits_num" entity="GroupBox" script="" init="">
+				<prop Transparent="true" Left="3" Top="15" Width="222" Height="142" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+				<control name="lbl_hundred" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="35" Top="24" Width="40" Height="60" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+				</control>
+				<control name="lbl_decade" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="75" Top="18" Width="40" Height="60" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+				</control>
+				<control name="lbl_one" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="115" Top="12" Width="40" Height="60" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
+				</control>
+			</control>
+		</control>
+	</control>
+</form>
+

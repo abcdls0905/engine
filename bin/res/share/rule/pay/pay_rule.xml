@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
+<!-- 
+	充值规则
+		ExChangeRate表示充值比例10表示充1元=10钻石，所有条目必须一样。
+		GiftRate表示赠送比例，2表示，每充1元得到10钻石并且赠送10钻石（即20钻石），
+		Gift表示道具礼包ID。
+		
+		RMB	钻石	首次充值赠送	再次充值赠送	再次充值赠送比例
+		648	6480	6480	     1620	      0.25
+		328	3280	0	          600	      0.182926829
+		198	1980	1980	      240	      0.121212121
+		98	980		0              80	      0.081632653
+		30	300	    300            15	      0.05
+		6	60		0               3  	      0.05
+
+
+-->
+<Object>
+	<Property ID="-2" Name="充值选项" IsDebug="0" MoneyEachTime="648,328,198,98,30,6" GiftEachTime="648,328,198,98,30,6,1" MonthCardCost="30" MonthCardDiamond="300" QuarterCardCost="68" QuarterCardDiamond="680" YearCardCost="198" YearCardDiamond="1980" MonthToQuarter="40" MonthToQuarterDiamond="400" MonthToYear="178" MonthToYearDiamond="1780" QuarterToYear="138" QuarterToYearDiamond="1380" FuliCard="8" FuliCardDiamond="80" JinbiCard="8" JinbiCardGold="1500000" TequanCard="30"/>
+	<Property ID="-1" Name="首次充值送礼品" Gift="Item_jb150000,Item_jxd04,Fashion_Wing_1001,Equip_P_20ALL_Weapon,Item_Role_12"/>
+	<Property ID="0" Name="pay_6480" ProductID="com.snailgames.taiji2.product_point.648" ExChangeRate="10" GiftReward="1620" FirstReward="1" FirstRewardRate="1"/>
+	<Property ID="1" Name="pay_3280" ProductID="com.snailgames.taiji2.product_point.328" ExChangeRate="10" GiftReward="600" FirstReward="0"/>
+	<Property ID="2" Name="pay_1980" ProductID="com.snailgames.taiji2.product_point.198" ExChangeRate="10" GiftReward="240" FirstReward="1" FirstRewardRate="1"/>
+	<Property ID="3" Name="pay_980" ProductID="com.snailgames.taiji2.product_point.98" ExChangeRate="10" GiftReward="80" FirstReward="0"/>
+	<Property ID="4" Name="pay_300" ProductID="com.snailgames.taiji2.product_point.30" ExChangeRate="10" GiftReward="15" FirstReward="1" FirstRewardRate="1"/>
+	<Property ID="5" Name="pay_60" ProductID="com.snailgames.taiji2.product_point.6" ExChangeRate="10" GiftReward="3" FirstReward="0"/>
+	<!--月卡信息-->
+	<Property ID="MonthCard" Name="pay_monthcard" ProductID="com.snailgames.taiji2.product_point.31" ProductIDEx="com.snailgames.taiji2.product_dingyue.31" background="month"/>
+	<Property ID="QuarterCard" Name="pay_quartercard" ProductID="com.snailgames.taiji2.product_point.32" background="quarter"/>
+	<Property ID="YearCard" Name="pay_yearcard" ProductID="com.snailgames.taiji2.product_point.33" background="year"/>
+	<Property ID="MonthToQuarter" Name="pay_monthcard" ProductID="com.snailgames.taiji2.product_point.34" background="quarter"/>
+	<Property ID="MonthToYear" Name="pay_quartercard" ProductID="com.snailgames.taiji2.product_point.35" background="year"/>
+	<Property ID="QuarterToYear" Name="pay_yearcard" ProductID="com.snailgames.taiji2.product_point.36" background="year"/>
+	<Property ID="FuliCard" Name="pay_fulicard" ProductID="com.snailgames.taiji2.product_point.37" ProductIDEx="com.snailgames.taiji2.product_dingyue.37" background="fuli"/>
+	<Property ID="TequanCard" Name="pay_tequancard" ProductID="com.snailgames.taiji2.product_dingyue.38" background="month" IsTequanCard="1"/>
+	<!--充值礼包类型信息 Paytype="3"-->
+	<Property ID="Gift_648" Name="Gift_648" ProductID="com.snailgames.taiji2.product_point.41" MoneyCost="648"/>
+	<Property ID="Gift_649" Name="Gift_649" ProductID="com.snailgames.taiji2.product_point.412" MoneyCost="648"/>
+	<Property ID="Gift_650" Name="Gift_650" ProductID="com.snailgames.taiji2.product_point.413" MoneyCost="648"/>
+	<Property ID="Gift_328" Name="Gift_328" ProductID="com.snailgames.taiji2.product_point.42" MoneyCost="328"/>
+	<Property ID="Gift_329" Name="Gift_329" ProductID="com.snailgames.taiji2.product_point.422" MoneyCost="328"/>
+	<Property ID="Gift_330" Name="Gift_330" ProductID="com.snailgames.taiji2.product_point.423" MoneyCost="328"/>
+	<Property ID="Gift_198" Name="Gift_198" ProductID="com.snailgames.taiji2.product_point.43" MoneyCost="198"/>
+	<Property ID="Gift_199" Name="Gift_199" ProductID="com.snailgames.taiji2.product_point.432" MoneyCost="198"/>
+	<Property ID="Gift_200" Name="Gift_200" ProductID="com.snailgames.taiji2.product_point.433" MoneyCost="198"/>
+	<Property ID="Gift_98" Name="Gift_98" ProductID="com.snailgames.taiji2.product_point.44" MoneyCost="98"/>
+	<Property ID="Gift_99" Name="Gift_99" ProductID="com.snailgames.taiji2.product_point.442" MoneyCost="98"/>
+	<Property ID="Gift_100" Name="Gift_100" ProductID="com.snailgames.taiji2.product_point.443" MoneyCost="98"/>
+	<Property ID="Gift_30" Name="Gift_30" ProductID="com.snailgames.taiji2.product_point.45" MoneyCost="30"/>
+	<Property ID="Gift_31" Name="Gift_31" ProductID="com.snailgames.taiji2.product_point.452" MoneyCost="30"/>
+	<Property ID="Gift_32" Name="Gift_32" ProductID="com.snailgames.taiji2.product_point.453" MoneyCost="30"/>
+	<Property ID="Gift_6" Name="Gift_6" ProductID="com.snailgames.taiji2.product_point.46" MoneyCost="6"/>
+	<Property ID="Gift_7" Name="Gift_7" ProductID="com.snailgames.taiji2.product_point.462" MoneyCost="6"/>
+	<Property ID="Gift_1" Name="Gift_1" ProductID="com.snailgames.taiji2.product_point.47" MoneyCost="1"/>
+	<Property ID="Gift_2" Name="Gift_2" ProductID="com.snailgames.taiji2.product_point.472" MoneyCost="1"/>
+	<Property ID="Gift_1648" Name="Gift_1648" ProductID="com.snailgames.taiji2.product_point.51" MoneyCost="648"/>
+	<Property ID="Gift_1649" Name="Gift_1649" ProductID="com.snailgames.taiji2.product_point.512" MoneyCost="648"/>
+	<Property ID="Gift_1328" Name="Gift_1328" ProductID="com.snailgames.taiji2.product_point.52" MoneyCost="328"/>
+	<Property ID="Gift_1329" Name="Gift_1329" ProductID="com.snailgames.taiji2.product_point.522" MoneyCost="328"/>
+	<Property ID="Gift_1198" Name="Gift_1198" ProductID="com.snailgames.taiji2.product_point.53" MoneyCost="198"/>
+	<Property ID="Gift_1199" Name="Gift_1199" ProductID="com.snailgames.taiji2.product_point.532" MoneyCost="198"/>
+</Object>

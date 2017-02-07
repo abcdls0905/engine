@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="gb2312"?>
+<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
+<!-- edited with XMLSpy v2010 (http://www.altova.com) by MESMERiZE (MiZE) -->
+<object>
+	<properties>		
+		<!-- 最新技能流程计算所需配置字段 -->
+		<property name="HPRateBuffAdd" type="int" public="false" private="false" save="false" desc="生命百分比"/>
+		<property name="MaxHPBuffAdd" type="int" public="true" private="true" save="false" desc="血量额外上限"/>
+		<property name="MaxMPBuffAdd" type="int" public="true" private="true" save="false" desc="法力额外上限"/>
+		<property name="AttackRateBuffAdd" type="int" public="false" private="false" save="false" desc="攻击百分比"/>
+		<property name="TotalAttackBuffAdd" type="int" public="false" private="false" save="false" desc="总攻击力"/>
+    	<property name="FinalDamageRateBuffAdd" type="int" public="false" private="false" save="false" realtime="" desc="最终伤害百分比"/>
+    	<property name="HitBuffAdd" type="int" public="false" private="false" save="false" desc="命中"/>
+		<property name="MissBuffAdd" type="int" public="false" private="false" save="false" desc="闪避"/>
+		<property name="CritBuffAdd" type="int" public="false" private="false" save="false" desc="暴击几率"/>
+		<property name="TougBuffAdd" type="int" public="false" private="false" save="false" desc="抗暴击"/>
+		<property name="CritDamBuffAdd" type="int" public="false" private="false" save="false" desc="暴击伤害"/>
+		<property name="TougDamBuffAdd" type="int" public="false" private="false" save="false" desc="暴击免伤"/>
+		<property name="DefBuffAdd" type="int" public="false" private="false" save="false" desc="免伤"/>
+		<property name="RealDamBuffAdd" type="int" public="false" private="false" save="false" desc="真实伤害"/>
+		<property name="DamIncreaseBuffAdd" type="int" public="false" private="false" save="false" desc="伤害增加"/>		
+		<property name="DodgeBuffAdd" type="int" public="false" private="false" save="false" desc="格挡"/>
+		<property name="HPRegBuffAdd" type="int" public="false" private="false" save="false" desc="命中回血"/>
+		<property name="MPRegBuffAdd" type="int" public="false" private="false" save="false" desc="命中回蓝"/>
+		<property name="DisCost1BuffAdd" type="int" public="false" private="false" save="false" desc="减少消耗1"/>
+		<property name="DisCost2BuffAdd" type="int" public="false" private="false" save="false" desc="减少消耗2"/>
+		<property name="DisCost3BuffAdd" type="int" public="false" private="false" save="false" desc="减少消耗3"/>
+		<property name="DisCost4BuffAdd" type="int" public="false" private="false" save="false" desc="减少消耗4"/>
+		<property name="DisCD1BuffAdd" type="int" public="false" private="false" save="false" desc="减CD1"/>
+		<property name="DisCD2BuffAdd" type="int" public="false" private="false" save="false" desc="减CD2"/>
+		<property name="DisCD3BuffAdd" type="int" public="false" private="false" save="false" desc="减CD3"/>
+		<property name="DisCD4BuffAdd" type="int" public="false" private="false" save="false" desc="减CD4"/>
+		<property name="ReviveBuffAdd" type="int" public="false" private="false" save="false" desc="复活次数"/>
+		<property name="LeechBuffAdd" type="int" public="false" private="false" save="false" desc="吸血"/>
+		<property name="ReboundBuffAdd" type="int" public="false" private="false" save="false" desc="反弹伤害"/>
+		<property name="DeadlyBuffAdd" type="int" public="false" private="false" save="false" desc="必几率"/>
+		<property name="DizzyBuffAdd" type="int" public="false" private="false" save="false" desc="眩晕几率"/>
+		<property name="DizzyAsistBuffAdd" type="int" public="false" private="false" save="false" desc="眩晕抗性"/>
+		<property name="ParalyBuffAdd" type="int" public="false" private="false" save="false" desc="麻痹几率"/>
+		<property name="ParalyAsistBuffAdd" type="int" public="false" private="false" save="false" desc="麻痹抗性"/>		
+		<property name="FireDamBuffAdd" type="int" public="false" private="false" save="false" desc="火伤害"/>
+		<property name="FireRateBuffAdd" type="int" public="false" private="false" save="false" desc="火伤害几率"/>
+		<property name="IceDamBuffAdd" type="int" public="false" private="false" save="false" desc="冰伤害"/>	
+		<property name="IceRateBuffAdd" type="int" public="false" private="false" save="false" desc="冰伤害几率"/>
+		<property name="IceAsistBuffAdd" type="int" public="false" private="false" save="false" desc="冰冻抗性附加"/>
+    <property name="FireAsistBuffAdd" type="int" public="false" private="false" save="false" desc="火抗性附加"/>
+    <property name="LightningAsistBuffAdd" type="int" public="false" private="false" save="false" desc="雷抗性附加"/>
+    <property name="LightningDamBuffAdd" type="int" public="false" private="false" save="false" desc="雷伤害"/>
+		<property name="LightningRateBuffAdd" type="int" public="false" private="false" save="false" desc="雷伤害几率"/>
+		<property name="HPReturnFactorBuffAdd" type="int" public="false" private="false" save="false" desc="角色回血回复因子"/>	
+		<property name="MPReturnFactorBuffAdd" type="int" public="false" private="false" save="false" desc="角色回蓝回复因子"/>	
+		<property name="BufferTimeFactorBuffAdd" type="int" public="false" private="false" save="false" desc="角色Buffer时间影响因子"/>	
+    <property name="FireDamAbsortBuffAdd" type="int" public="false" private="false" save="false" desc="火伤害额外吸收"/>
+    <property name="IceDamAbsortBuffAdd" type="int" public="=false" private="false" save="false" desc="冰伤害额外吸收"/>
+    <property name="LightningDamAbsortBuffAdd" type="int" public="false" private="false" save="false" desc="雷伤害额外吸收"/>
+
+		<!-- 增加部分需要用到的属性-->
+	    <property name="IgnoreDefBuffAdd" type="int" public="false" private="false" save="false" desc="当前无视对方的免伤值"/>
+        <property name="DecReboundBuffAdd" type="int" public="false" private="false" save="false" desc="受到反弹时减少受到的伤害值"/>
+        <property name="DefFireDamBuffAdd" type="int" public="false" private="false" save="false" desc="受到火系伤害免疫值"/>
+        <property name="DefIceDamBuffAdd" type="int" public="false" private="false" save="false" desc="受到冰系伤害免疫值"/>
+        <property name="DefLiningDamBuffAdd" type="int" public="false" private="false" save="false" desc="受到雷系伤害免疫值"/>
+		<property name="SlowBuffAdd" type="int" public="false" private="false" save="false" desc="减速几率"/>
+		<property name="SlowAsistBuffAdd" type="int" public="false" private="false" save="false" desc="减速抗性"/>	
+        <property name="HitBossDamageRatioBuffAdd" type="int" public="false" private="false" save="false" desc="命中boss时的额外伤害比率"/>
+	    <property name="DamageChangeAdvancePercentBuffAdd" type="int" public="false" private="false" save="false" desc="目标变身之后提高伤害的百分比附加值"/>
+		
+		<!-- 增加部分需要用到的属性-->		
+	    <property name="DamageCripplePercentBuffAdd" type="int" public="false" private="false" save="false" desc="伤害致残的百分比额外附加值"/>
+		<property name="DamageCripplePercentDefBuffAdd" type="int" public="false" private="false" save="false" desc="伤害致残的免疫百分比额外附加值"/>
+	</properties>
+</object>
