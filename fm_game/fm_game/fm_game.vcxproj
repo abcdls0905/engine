@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="NsightTegraProject">
+    <NsightTegraProjectRevisionNumber>5</NsightTegraProjectRevisionNumber>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Tegra-Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Tegra-Android">
+      <Configuration>Release</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Tegra-Android">
+      <Configuration>Profile</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\camera_3rd.h" />
+    <ClInclude Include="..\camera_base.h" />
+    <ClInclude Include="..\camera_control.h" />
+    <ClInclude Include="..\defines.h" />
+    <ClInclude Include="..\fight_net.h" />
+    <ClInclude Include="..\form_gmcommand.h" />
+    <ClInclude Include="..\form_login.h" />
+    <ClInclude Include="..\form_mbox.h" />
+    <ClInclude Include="..\form_qbox.h" />
+    <ClInclude Include="..\free_camera.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="..\game.h" />
+    <ClInclude Include="..\game_scene.h" />
+    <ClInclude Include="..\global.h" />
+    <ClInclude Include="..\helper.h" />
+    <ClInclude Include="..\net.h" />
+    <ClInclude Include="..\object_motion.h" />
+    <ClInclude Include="..\role_composite.h" />
+    <ClInclude Include="..\stage.h" />
+    <ClInclude Include="..\stage_client.h" />
+    <ClInclude Include="..\stage_login.h" />
+    <ClInclude Include="..\stage_main.h" />
+    <ClInclude Include="..\stage_manager.h" />
+    <ClInclude Include="..\stage_switchscene.h" />
+    <ClInclude Include="..\stage_testmodel.h" />
+    <ClInclude Include="..\test_rt.h" />
+    <ClInclude Include="..\ui3d.h" />
+    <ClInclude Include="..\ui3d_logic.h" />
+    <ClInclude Include="..\ui3d_plane.h" />
+    <ClInclude Include="..\utility.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\camera_3rd.cpp" />
+    <ClCompile Include="..\camera_control.cpp" />
+    <ClCompile Include="..\fight_net.cpp" />
+    <ClCompile Include="..\form_gmcommand.cpp" />
+    <ClCompile Include="..\form_login.cpp" />
+    <ClCompile Include="..\form_mbox.cpp" />
+    <ClCompile Include="..\form_qbox.cpp" />
+    <ClCompile Include="..\free_camera.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="..\game.cpp" />
+    <ClCompile Include="..\game_scene.cpp" />
+    <ClCompile Include="..\global.cpp" />
+    <ClCompile Include="..\gui_utility.cpp" />
+    <ClCompile Include="..\helper.cpp" />
+    <ClCompile Include="..\lib_main.cpp" />
+    <ClCompile Include="..\net.cpp" />
+    <ClCompile Include="..\object_motion.cpp" />
+    <ClCompile Include="..\role_composite.cpp" />
+    <ClCompile Include="..\stage_client.cpp" />
+    <ClCompile Include="..\stage_login.cpp" />
+    <ClCompile Include="..\stage_main.cpp" />
+    <ClCompile Include="..\stage_manager.cpp" />
+    <ClCompile Include="..\stage_switchscene.cpp" />
+    <ClCompile Include="..\stage_testmodel.cpp" />
+    <ClCompile Include="..\test_rt.cpp" />
+    <ClCompile Include="..\ui3d.cpp" />
+    <ClCompile Include="..\ui3d_logic.cpp" />
+    <ClCompile Include="..\ui3d_plane.cpp" />
+    <ClCompile Include="..\utility.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2BB66FED-2E93-4234-BEFC-FF7832BB7E23}</ProjectGuid>
+    <RootNamespace>fm_game</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Profile|Tegra-Android'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings"></ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+      <GccExceptionHandling>true</GccExceptionHandling>
+      <AdditionalOptions>-fpermissive %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+      <GccExceptionHandling>true</GccExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets"></ImportGroup>
+</Project>

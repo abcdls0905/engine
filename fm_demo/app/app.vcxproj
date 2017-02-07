@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="NsightTegraProject">
+    <NsightTegraProjectRevisionNumber>5</NsightTegraProjectRevisionNumber>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Tegra-Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Tegra-Android">
+      <Configuration>Release</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Tegra-Android">
+      <Configuration>Profile</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\system\android_wstring.cpp" />
+    <ClCompile Include="..\android_app.cpp" />
+    <ClCompile Include="..\app.cpp" />
+    <ClCompile Include="..\free_camera.cpp" />
+    <ClCompile Include="..\game_main.cpp" />
+    <ClCompile Include="..\game_scene.cpp" />
+    <ClCompile Include="..\helper.cpp" />
+    <ClCompile Include="..\jnifile.cpp" />
+    <ClCompile Include="..\jnihelper.cpp" />
+    <ClCompile Include="..\lib_main.cpp" />
+    <ClCompile Include="..\role_composite.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\app.h" />
+    <ClInclude Include="..\free_camera.h" />
+    <ClInclude Include="..\game_main.h" />
+    <ClInclude Include="..\game_scene.h" />
+    <ClInclude Include="..\helper.h" />
+    <ClInclude Include="..\jnifile.h" />
+    <ClInclude Include="..\jnihelper.h" />
+    <ClInclude Include="..\message.h" />
+    <ClInclude Include="..\role_composite.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\fm_core\fm_core\fm_core\fm_core.vcxproj">
+      <Project>{016c8420-31eb-4dbd-be8b-05d0e149a1b6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fm_gui\fm_gui\fm_gui.vcxproj">
+      <Project>{d0219dba-0b29-4399-bd60-fda0a3c4725d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fm_input\fm_input\fm_input.vcxproj">
+      <Project>{2bb66fed-2e93-4274-befc-ff0832bb7e83}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fm_math\fm_math\fm_math.vcxproj">
+      <Project>{13358e06-bfba-4de6-a6d3-1db1249aaf26}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fm_model\fm_model\fm_model.vcxproj">
+      <Project>{45ee4ecc-c6de-4ee9-8f3b-79eb9727243d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fm_render\fm_render\fm_render.vcxproj">
+      <Project>{15d7dcba-fcd6-4acb-b7d2-ae04c0a48521}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fm_sound\fm_sound\fm_sound.vcxproj">
+      <Project>{606978a6-e24c-4b69-90ab-e7b907bee125}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fm_terrain\fm_terrain\fm_terrain.vcxproj">
+      <Project>{019a9367-389f-4ea9-bcf8-98a3f676ae3a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\fm_world\fm_world\fm_world.vcxproj">
+      <Project>{bd65be13-3149-4831-b96f-f2bb292bc3b2}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{51AC4015-80D4-466D-89BA-9C445E208648}</ProjectGuid>
+    <RootNamespace>app</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Profile|Tegra-Android'">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <AndroidTargetAPI>android-15</AndroidTargetAPI>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings"></ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <LibraryPath>..\..\Tegra-Android\Debug\</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <LibraryPath>G:\GameEngine\FlexiMobile\mobile\fm_core\fm_core\Tegra-Android\Release\</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL;USE_FREE_CAMERA</PreprocessorDefinitions>
+      <GccExceptionHandling>true</GccExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>fm_input;fm_core;fm_model;fm_world;fm_render;fm_gui;fm_math;fm_terrain;freeimage;freetype;%(AdditionalDependencies)</AdditionalDependencies>
+      <AndroidSystemLibs>c;m;log;gcc;GLESv2;EGL;android</AndroidSystemLibs>
+    </Link>
+    <PreBuildEvent>
+      <Command></Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>..\..\fm_demo\app\copy_so.bat</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+      <GccExceptionHandling>true</GccExceptionHandling>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>fm_input;fm_core;fm_model;fm_world;fm_render;fm_gui;fm_math;fm_terrain;freeimage;freetype;%(AdditionalDependencies)</AdditionalDependencies>
+      <AndroidSystemLibs>c;m;log;gcc;GLESv2;EGL;android</AndroidSystemLibs>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets"></ImportGroup>
+</Project>

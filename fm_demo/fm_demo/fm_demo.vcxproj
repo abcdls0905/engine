@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="NsightTegraProject">
+    <NsightTegraProjectRevisionNumber>5</NsightTegraProjectRevisionNumber>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Tegra-Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Tegra-Android">
+      <Configuration>Release</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Profile|Tegra-Android">
+      <Configuration>Profile</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\AndroidManifest.xml" />
+    <None Include="..\build.xml" />
+    <JCompile Include="..\gen\com\android\fmdemo\BuildConfig.java">
+      <FileType>Document</FileType>
+    </JCompile>
+    <JCompile Include="..\gen\com\android\fmdemo\Manifest.java">
+      <FileType>Document</FileType>
+    </JCompile>
+    <JCompile Include="..\gen\com\android\fmdemo\R.java">
+      <FileType>Document</FileType>
+    </JCompile>
+    <None Include="..\local.properties" />
+    <None Include="..\proguard-project.txt" />
+    <None Include="..\project.properties" />
+    <None Include="..\res\drawable\icon.png" />
+    <None Include="..\res\values\strings.xml" />
+    <JCompile Include="..\src\com\android\fmdemo\FMDEMOActivity.java">
+      <FileType>Document</FileType>
+    </JCompile>
+    <JCompile Include="..\src\com\android\fmdemo\FMDEMOLib.java">
+      <FileType>Document</FileType>
+    </JCompile>
+    <JCompile Include="..\src\com\android\fmdemo\FMDEMOView.java">
+      <FileType>Document</FileType>
+    </JCompile>
+    <JCompile Include="..\src\com\android\fmdemo\MyEdit.java">
+      <FileType>Document</FileType>
+    </JCompile>
+    <JCompile Include="..\src\com\android\fmdemo\TextInputWraper.java">
+      <FileType>Document</FileType>
+    </JCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\app\app.vcxproj">
+      <Project>{51ac4015-80d4-466d-89ba-9c445e208648}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{97F4A42A-34AC-46D4-9608-6C28A0054341}</ProjectGuid>
+    <RootNamespace>fm_demo</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <AndroidTargetAPI>android-17</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <AndroidTargetAPI>android-17</AndroidTargetAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Profile|Tegra-Android'">
+    <AndroidTargetAPI>android-17</AndroidTargetAPI>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM </AdditionalOptions>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <SoName>app.so</SoName>
+    </Link>
+    <AntBuild>
+      <AntBuildPath>..\..\fm_demo</AntBuildPath>
+    </AntBuild>
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <AntBuild>
+      <AntBuildPath>G:\GameEngine\FlexiMobile\mobile\fm_demo</AntBuildPath>
+    </AntBuild>
+    <PreBuildEvent>
+      <Command>copy G:\GameEngine\FlexiMobile\mobile\fm_core\fm_core\Tegra-Android\Release\libapp.so G:\GameEngine\FlexiMobile\mobile\fm_demo\fm_demo\Tegra-Android\Release\libs\armeabi-v7a\libapp.so</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Profile|Tegra-Android'">
+    <ClCompile>
+      <PreprocessorDefinitions>DISABLE_IMPORTGL</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalOptions>-lGLESv1_CM %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <AntBuild>
+      <AntBuildPath>G:\GameEngine\FlexiMobile\mobile\fm_demo</AntBuildPath>
+    </AntBuild>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,1 @@
+xcopy "../../Tegra-Android/Debug/*.so"  "../../fm_demo/fm_demo/Tegra-Android\Debug/libs/armeabi-v7a/"  /Y/F
