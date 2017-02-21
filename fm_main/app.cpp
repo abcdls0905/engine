@@ -97,7 +97,7 @@ void App::Init(const char* workpath, const IVarList& args, int screen_width, int
 		return ;
 	m_width = screen_width;
 	m_height = screen_height;
-   	lib_main_game();
+  lib_main_game();
 	lib_main_gui();
 	lib_main_render();
 	lib_main_world();
