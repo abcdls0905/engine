@@ -618,6 +618,7 @@ void CModelPlayer::DrawMaterialEarlyZ(const MatInfo* info)
 		pRenderStateOp->EnableCullFace(true);
 }
 
+//model draw½Ó¿Ú
 void CModelPlayer::DrawMaterialSolid(const MatInfo* info, bool onlyzpass, bool onlycolor)
 {
 	node_material_t* pMat = info->pMat;
