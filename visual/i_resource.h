@@ -847,6 +847,8 @@ public:
 
     virtual IPixelShader*  GetPixelShader() const = 0;
 
+    virtual int GetAttributeLoc(const char* name) = 0;
+
 
 	//äÖÈ¾×´Ì¬¼ÇÂ¼Æ÷
 //	virtual IRenderStateRecordOp* GetRenderStateRecordOp() const = 0;

@@ -60,6 +60,11 @@ public:
 
 	void Print();
 
+  virtual int GetAttributeLoc(const char* name)
+  {
+    return glGetAttribLocation(m_nProgram, name);
+  }
+
 private:
 	// ´´½¨
 	bool Create(fm_uint vs, fm_uint ps, const char* element_names[], 

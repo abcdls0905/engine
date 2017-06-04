@@ -147,6 +147,7 @@ bool CShaderProgram::Create(fm_uint vs, fm_uint ps, const char* element_names[],
 	glAttachShader(m_nProgram, vs);
 	glAttachShader(m_nProgram, ps);
 
+  //ls test
 	for (unsigned int i = 0; i < element_num; ++i)
 	{
 		glBindAttribLocation(m_nProgram, i, element_names[i]);

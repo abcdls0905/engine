@@ -790,6 +790,7 @@ void CModelPlayer::DrawMaterialSolid(const MatInfo* info, bool onlyzpass, bool o
 
 	//glUseProgram(pShader->GetProgram());
 	pShader->UsedShader();
+
 	IRenderStateOp* pRenderStateOp = pShader->GetRenderStateOp();
 	IRenderDrawOp* pRenderDrawOp = pShader->GetRenderDrawOp();
 
