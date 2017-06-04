@@ -335,7 +335,7 @@ bool CModelPlayer::Draw(const FmPlane* planes,
 	//MatInfo* pMat = new MatInfo[GetMaterialCount()];
 	DrawModel(true, 0);
 
-	if (m_bShowBoundBox)
+	if (m_bShowBoundBox && false)
 	{
 		model_t* pModel = m_pResModel->GetModelData();
 

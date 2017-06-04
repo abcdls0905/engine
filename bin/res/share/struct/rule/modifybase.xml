@@ -3,24 +3,37 @@
 <!--移动相关的属性-->
 <!--这几个修正表玩家和npc都要有-->
 <object>
-	<!-- 基本属性 -->
-	<properties>
-	</properties>
-	<records>
-		<record name="PropModifyRec" cols="10" maxrows="2048" save="false" public="false" private="true" desc="对象属性修正表">
-			<column type="string" desc="修正属性名"/>
-			<column type="float" desc="修正属性值"/>
-			<column type="byte" desc="计算方式"/>
-			<column type="dword" desc="条件包id"/>
-			<column type="string" desc="修正来源唯一ID"/>
+    <!-- 基本属性 -->
+    <properties>
+    </properties>
+    <records>
+        <record name="PropModifyRec" cols="9" maxrows="1024" save="false" public="false" private="false" desc="对象属性修正表">
+            <column type="string" desc="修正属性名"/>
+            <column type="float" desc="修正属性值"/>
+            <column type="byte" desc="计算方式"/>
+            <column type="dword" desc="条件包id"/>
+            <column type="string" desc="修正来源唯一ID"/>
             <column type="byte" desc="修正来源类型"/>
             <column type="dword" desc="倍率"/>
             <column type="dword" desc="属性索引"/>
-            <column type="string" desc="修正来源ConfigID"/>
-            <column type="byte" desc="条件包是否激活"/>
+            <column type="string" desc="修正来源对象的config id"/>
         </record>
-         <record name="PropCallBackCountRec" cols="1" maxrows="256" save="false" public="false" private="false" desc="属性统计刷新缓存表">
+        <record name="PropCallBackCountRec" cols="1" maxrows="256" save="false" public="false" private="false" desc="属性统计刷新缓存表">
             <column type="string" desc="属性名" />
         </record>
-	</records>
+        <record name="PropRefreshFormulaRec" cols="7" maxrows="256" save="false" public="false" private="false" desc="属性改变重新计算修正包公式值记录表">
+            <column type="string" desc="修正包来源对象ID，即sender对象" />
+            <column type="string" desc="修正来源唯一ID" />
+            <column type="string" desc="修正包公式ID" />
+            <column type="string" desc="修正属性名" />
+            <column type="string" desc="影响因子" />
+            <column type="float" desc="修正倍率" />
+            <column type="byte" desc="修正来源类型" />
+        </record>
+        <record name="SkillLevelModifyRec" cols="3" maxrows="256" save="false" public="false" private="false" desc="技能等级修正表">
+            <column type="string" desc="技能ID" />
+            <column type="word" desc="附加等级" />
+            <column type="string" desc="修正来源UID" />
+        </record>
+    </records>
 </object>

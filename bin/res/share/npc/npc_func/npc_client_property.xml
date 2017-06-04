@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="gb2312"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
 <!--
 ID="-1" 字段下标
 ID="0" 字段类型
@@ -18,49 +19,21 @@ ID="XXX" npcid
 HpBossStage  //设置BOSS血条数量
 PhysicsRate  //怪配置各自布娃娃效果的概率,-1概率为0.
 IsShowTalking //(1:表示在对话任务中不隐藏 0：表示要隐藏)
-LowMaterialFile //(部分Boss带高光贴图，需要根据画质切换，该字段存放不带高光贴图的ini配置文件的拼接名，如原始配置文件为a.ini,不带高光贴图的配置文件为a_h.ini，则该字段内放"_h")
 -->
 <Object>
-	<Property ID="-1" PhysicsType="0" NoShowOutline="1" HeadBarType="2" HpBossType="3" HpBossStage="4" IsShowHeadBar="5" PhysicsRate="6" IsShowTalking="7" LowMaterialFile="8"/>
-	<Property ID="0" PhysicsType="6" NoShowOutline="2" HeadBarType="6" HpBossType="6" HpBossStage="2" IsShowHeadBar="6" PhysicsRate="2" IsShowTalking="2" LowMaterialFile="6"/>
+	<Property ID="-1" PhysicsType="0" NoShowOutline="1" HeadBarType="2" HpBossType="3" HpBossStage="4" IsShowHeadBar="5" PhysicsRate="6" IsShowTalking="7" NoShowCastShadow="8"/>
+	<Property ID="0" PhysicsType="6" NoShowOutline="2" HeadBarType="6" HpBossType="6" HpBossStage="2" IsShowHeadBar="6" PhysicsRate="2" IsShowTalking="2" NoShowCastShadow="2"/>
 	<Property ID="npc_qiecuo_01" NoShowOutline="1" IsShowHeadBar="false"/>
-	<Property ID="npc_city_013" NoShowOutline="1" IsShowTalking="1"/>
-	<Property ID="npc_city_019" NoShowOutline="1" IsShowTalking="1"/>
-	<Property ID="npc_city_021" NoShowOutline="1" IsShowTalking="1"/>
-	<Property ID="npc_city_022" NoShowOutline="1" IsShowTalking="1"/>
-	<Property ID="npc_city_023" NoShowOutline="1" IsShowTalking="1"/>
-	<Property ID="npc_city_024" NoShowOutline="1" IsShowTalking="1"/>
-	<Property ID="npc_city2_028" NoShowOutline="1" IsShowTalking="1"/>
-	<Property ID="npc_city2_033" NoShowOutline="1" IsShowTalking="1"/>
-	<Property ID="npc_city2_034" NoShowOutline="1" IsShowTalking="1"/>
-	<Property ID="npc_city2_035" NoShowOutline="1" IsShowTalking="1"/>
-	<Property ID="npc_city2_036" NoShowOutline="1" IsShowTalking="1"/>
-	<Property ID="npc_city2_037" NoShowOutline="1" IsShowTalking="1"/>
-	<Property ID="npc_sjm_001" NoShowOutline="1" IsShowHeadBar="false"/>
-	<Property ID="npc_sjm_002" NoShowOutline="1" IsShowHeadBar="false"/>
-	<Property ID="npc_sjm_003" NoShowOutline="1" IsShowHeadBar="false"/>
-	<Property ID="npc_sjm302_001" NoShowOutline="1" IsShowHeadBar="false"/>
-	<Property ID="npc_sjm302_002" NoShowOutline="1" IsShowHeadBar="false"/>
-	<Property ID="npc_sjm303_001" NoShowOutline="1" IsShowHeadBar="false"/>
-	<Property ID="npc_sjm304_001" NoShowOutline="1" IsShowHeadBar="false"/>
-	<Property ID="npc_sjm304_002" NoShowOutline="1" IsShowHeadBar="false"/>
-	<Property ID="npc_sjm304_003" NoShowOutline="1" IsShowHeadBar="false"/>
-	<Property ID="npc_sjm305_001" NoShowOutline="1" IsShowHeadBar="false"/>
-	<Property ID="npc_sjm305_002" NoShowOutline="1" IsShowHeadBar="false"/>
-	<Property ID="npc_sjm305_003" NoShowOutline="1" IsShowHeadBar="false"/>
-	<Property ID="npc_sjm305_004" NoShowOutline="1" IsShowHeadBar="false"/>
-	<Property ID="sjm300_006" NoShowOutline="1"/>
-	<Property ID="sjm300_008" NoShowOutline="1" IsShowHeadBar="false"/>
 	<Property ID="heimu_npc_suola" IsShowHeadBar="false"/>
 	<Property ID="zym702_008" IsShowHeadBar="false"/>
 	<Property ID="zym702_009" IsShowHeadBar="false"/>
 	<Property ID="zym705_001" IsShowHeadBar="false"/>
 	<Property ID="laoshu_wadi_1" IsShowHeadBar="false"/>
 	<Property ID="test_3" NoShowOutline="1"/>
-	<Property ID="gonghuiboss_1" HpBossStage="10" NoShowOutline="1"/>
+	<Property ID="gonghuiboss_1" HpBossStage="10"/>
 	<Property ID="gbl_sm_boss_1_3" HpBossStage="4"/>
 	<Property ID="yiji_fashi_0_2" HpBossStage="4"/>
-	<Property ID="Demo_Boss_001" HpBossStage="6" LowMaterialFile="_h"/>
+	<Property ID="Demo_Boss_001" HpBossStage="6"/>
 	<Property ID="1_1_mojun_zs01" HpBossStage="3"/>
 	<Property ID="1_2_lbg_shoulin" HpBossStage="3"/>
 	<Property ID="1_3_dy_boss" HpBossStage="3"/>
@@ -69,7 +42,7 @@ LowMaterialFile //(部分Boss带高光贴图，需要根据画质切换，该字段存放不带高光贴图�
 	<Property ID="zym702_boss_001" HpBossStage="3"/>
 	<Property ID="1_7_jumo_boss" HpBossStage="3"/>
 	<Property ID="1_8_jumo_dp01" HpBossStage="3"/>
-	<Property ID="1_9_boss" HpBossStage="5" LowMaterialFile="h"/>
+	<Property ID="1_9_boss" HpBossStage="5"/>
 	<Property ID="zym721_boss" HpBossStage="4"/>
 	<Property ID="zym722_boss" HpBossStage="4"/>
 	<Property ID="zym723_boss" HpBossStage="4"/>
@@ -245,13 +218,13 @@ LowMaterialFile //(部分Boss带高光贴图，需要根据画质切换，该字段存放不带高光贴图�
 	<Property ID="sjm304_003" PhysicsType="mon_shu_0023"/>
 	<Property ID="sjm304_004" PhysicsType="mon_shu_0006"/>
 	<Property ID="sjm304_005" PhysicsType="mon_shu_0020"/>
-	<Property ID="yiji_zs_0_2_1" PhysicsType="mon_shu_0024" NoShowOutline="1"/>
-	<Property ID="yiji_ss_0_2_1" PhysicsType="mon_shu_0025" NoShowOutline="1"/>
+	<Property ID="yiji_zs_0_2_1" PhysicsType="mon_shu_0024"/>
+	<Property ID="yiji_ss_0_2_1" PhysicsType="mon_shu_0025"/>
 	<Property ID="1_1_lbg_zs02" PhysicsType="mon_shu_0014"/>
-	<Property ID="1_2_lbg_zs02" PhysicsType="mon_shu_0014" NoShowOutline="1"/>
+	<Property ID="1_2_lbg_zs02" PhysicsType="mon_shu_0014"/>
 	<Property ID="1_3_sm_ck02" PhysicsType="mon_shu_0011"/>
 	<Property ID="1_3_sm_qd02" PhysicsType="mon_shu_0012"/>
-	<Property ID="yiji_zs_0_2_2" PhysicsType="mon_shu_0024" NoShowOutline="1"/>
+	<Property ID="yiji_zs_0_2_2" PhysicsType="mon_shu_0024"/>
 	<Property ID="zym702_006" PhysicsType="mon_ani_0019"/>
 	<Property ID="zym702_007" PhysicsType="mon_ani_0019"/>
 	<Property ID="zym741_001" PhysicsType="mon_shu_0002"/>
@@ -389,7 +362,7 @@ LowMaterialFile //(部分Boss带高光贴图，需要根据画质切换，该字段存放不带高光贴图�
 	<Property ID="zym783_003" PhysicsType="mon_shu_0020"/>
 	<Property ID="zym784_001" PhysicsType="mon_ani_0011"/>
 	<Property ID="zym784_002" PhysicsType="mon_ani_0009"/>
-	<Property ID="zym785_001" PhysicsType="mon_ani_0008" NoShowOutline="1"/>
+	<Property ID="zym785_001" PhysicsType="mon_ani_0008"/>
 	<Property ID="zym785_002" PhysicsType="mon_ani_0002"/>
 	<Property ID="zym785_003" PhysicsType="mon_shu_0002"/>
 	<Property ID="zym785_004" PhysicsType="mon_shu_0004"/>
@@ -419,100 +392,6 @@ LowMaterialFile //(部分Boss带高光贴图，需要根据画质切换，该字段存放不带高光贴图�
 	<Property ID="hteam4_wpxg_1" PhysicsType="mon_ani_0004"/>
 	<Property ID="zym781_001" PhysicsType="mon_shu_0004"/>
 	<Property ID="zym781_002" PhysicsType="mon_shu_0002"/>
-	<Property ID="sjm306_001" PhysicsType="mon_ani_0004"/>
-	<Property ID="sjm306_002" PhysicsType="mon_ani_0022"/>
-	<Property ID="sjm306_003" PhysicsType="mon_ani_0018"/>
-	<Property ID="sjm306_004" PhysicsType="mon_ani_0009"/>
-	<Property ID="sjm306_005" PhysicsType="boss_shu_0001"/>
-	<Property ID="sjm306_006" PhysicsType="mon_ani_0012"/>
-	<Property ID="sjm306_007" PhysicsType="mon_ani_0011"/>
-	<Property ID="zym791_001" PhysicsType="mon_shu_0002"/>
-	<Property ID="zym791_002" PhysicsType="mon_shu_0025"/>
-	<Property ID="zym791_003" PhysicsType="mon_shu_0002"/>
-	<Property ID="zym792_001" PhysicsType="mon_shu_0015"/>
-	<Property ID="zym792_002" PhysicsType="mon_shu_0006"/>
-	<Property ID="zym794_001" PhysicsType="mon_shu_0024"/>
-	<Property ID="zym794_002" PhysicsType="mon_ani_0002"/>
-	<Property ID="zym795_001" PhysicsType="mon_shu_0041"/>
-	<Property ID="zym795_002" PhysicsType="mon_shu_0004"/>
-	<Property ID="zym797_001" PhysicsType="mon_shu_0040"/>
-	<Property ID="zym797_002" PhysicsType="mon_shu_0028"/>
-	<Property ID="zym798_001" PhysicsType="mon_shu_0036"/>
-	<Property ID="zym798_002" PhysicsType="mon_shu_0035"/>
-	<Property ID="zym801_001" PhysicsType="mon_shu_0015"/>
-	<Property ID="zym801_002" PhysicsType="mon_shu_0014"/>
-	<Property ID="zym801_003" PhysicsType="mon_shu_0036"/>
-	<Property ID="zym802_001" PhysicsType="mon_shu_0012"/>
-	<Property ID="zym802_002" PhysicsType="mon_shu_0025"/>
-	<Property ID="zym802_003" PhysicsType="mon_ani_0001"/>
-	<Property ID="zym803_002" PhysicsType="mon_shu_0025"/>
-	<Property ID="zym803_003" PhysicsType="mon_shu_0012"/>
-	<Property ID="zym804_001" PhysicsType="mon_shu_0024"/>
-	<Property ID="zym804_003" PhysicsType="mon_shu_0029"/>
-	<Property ID="zym805_001" PhysicsType="mon_shu_0002"/>
-	<Property ID="zym805_002" PhysicsType="mon_shu_0004"/>
-	<Property ID="zym806_001" PhysicsType="mon_shu_0002"/>
-	<Property ID="zym806_002" PhysicsType="mon_ani_0004"/>
-	<Property ID="zym807_001" PhysicsType="mon_ani_0008"/>
-	<Property ID="zym807_002" PhysicsType="boss_shu_0006"/>
-	<Property ID="zym808_001" PhysicsType="mon_shu_0024"/>
-	<Property ID="zym808_002" PhysicsType="mon_shu_0025"/>
-	<Property ID="zym809_001" PhysicsType="mon_shu_0009"/>
-	<Property ID="zym809_002" PhysicsType="mon_shu_0009"/>
-	<Property ID="sjm300_001" PhysicsType="mon_ani_0022"/>
-	<Property ID="sjm300_002" PhysicsType="mon_shu_0020"/>
-	<Property ID="sjm300_003" PhysicsType="mon_shu_0036"/>
-	<Property ID="sjm300_006" PhysicsType="mon_shu_0009"/>
-	<Property ID="team7_help_npc_01" PhysicsType="mon_ani_0004"/>
-	<Property ID="team7_001" PhysicsType="mon_ani_0018"/>
-	<Property ID="team7_002" PhysicsType="mon_shu_0009"/>
-	<Property ID="team7_003" PhysicsType="mon_shu_0009"/>
-	<Property ID="hteam7_help_npc_01" PhysicsType="mon_ani_0004"/>
-	<Property ID="hteam7_001" PhysicsType="mon_ani_0018"/>
-	<Property ID="hteam7_002" PhysicsType="mon_shu_0009"/>
-	<Property ID="hteam7_003" PhysicsType="mon_shu_0009"/>
-	<Property ID="zym811_001" PhysicsType="mon_shu_0007"/>
-	<Property ID="zym811_002" PhysicsType="mon_shu_0001"/>
-	<Property ID="zym812_001" PhysicsType="mon_shu_0027"/>
-	<Property ID="zym812_002" PhysicsType="mon_shu_0007"/>
-	<Property ID="zym814_001" PhysicsType="mon_shu_0042"/>
-	<Property ID="zym814_002" PhysicsType="mon_shu_0004"/>
-	<Property ID="zym815_001" PhysicsType="mon_shu_0002"/>
-	<Property ID="zym815_002" PhysicsType="mon_shu_0025"/>
-	<Property ID="zym815_003" PhysicsType="mon_shu_0002"/>
-	<Property ID="zym817_001" PhysicsType="mon_shu_0021"/>
-	<Property ID="zym817_002" PhysicsType="mon_shu_0009"/>
-	<Property ID="zym821_002" PhysicsType="mon_shu_0006"/>
-	<Property ID="zym821_003" PhysicsType="mon_shu_0008"/>
-	<Property ID="zym822_001" PhysicsType="mon_ani_0021"/>
-	<Property ID="zym822_002" PhysicsType="mon_shu_0044"/>
-	<Property ID="zym823_001" PhysicsType="mon_shu_0021"/>
-	<Property ID="zym823_002" PhysicsType="mon_shu_0022"/>
-	<Property ID="zym824_001" PhysicsType="mon_shu_0014"/>
-	<Property ID="zym824_002" PhysicsType="mon_shu_0015"/>
-	<Property ID="zym825_001" PhysicsType="mon_shu_0002"/>
-	<Property ID="zym825_002" PhysicsType="mon_shu_0004"/>
-	<Property ID="zym826_002" PhysicsType="mon_ani_0021"/>
-	<Property ID="zym827_001" PhysicsType="mon_shu_0040"/>
-	<Property ID="zym827_002" PhysicsType="mon_shu_0040"/>
-	<Property ID="zym827_003a" PhysicsType="mon_shu_0040"/>
-	<Property ID="zym827_003b" PhysicsType="mon_shu_0040"/>
-	<Property ID="zym827_003c" PhysicsType="mon_shu_0040"/>
-	<Property ID="zym827_003d" PhysicsType="mon_shu_0040"/>
-	<Property ID="zym827_003e" PhysicsType="mon_shu_0040"/>
-	<Property ID="zym828_001" PhysicsType="mon_shu_0035"/>
-	<Property ID="zym828_002" PhysicsType="mon_shu_0037"/>
-	<Property ID="zym828_003" PhysicsType="mon_shu_0035"/>
-	<Property ID="zym829_001" PhysicsType="mon_shu_0040"/>
-	<Property ID="zym829_002" PhysicsType="mon_shu_0037"/>
-	<Property ID="sjm307_001" PhysicsType="mon_shu_0009"/>
-	<Property ID="sjm307_002" PhysicsType="mon_shu_0027"/>
-	<Property ID="sjm307_004" PhysicsType="mon_ani_0021"/>
-	<Property ID="sjm307_005" PhysicsType="mon_shu_0028"/>
-	<Property ID="sjm307_006" PhysicsType="mon_ani_0010"/>
-	<Property ID="sjm307_007" PhysicsType="mon_shu_0001"/>
-	<Property ID="zym843_02" PhysicsType="mon_shu_0047"/>
-	<Property ID="zym849_boss_01a" PhysicsType="mon_shu_0047"/>
 	<Property ID="Demo_sence02_qiao" NoShowOutline="1"/>
 	<Property ID="super_boss_titan" HeadBarType="" HpBossType="4"/>
 	<Property ID="zym708_tri_01" NoShowOutline="1"/>
@@ -549,40 +428,9 @@ LowMaterialFile //(部分Boss带高光贴图，需要根据画质切换，该字段存放不带高光贴图�
 	<Property ID="hd24_6" HeadBarType="" HpBossType="4"/>
 	<Property ID="hd29_1" HeadBarType="" HpBossType="4"/>
 	<Property ID="hd29_7" HeadBarType="" HpBossType="4"/>
-	<Property ID="hd34_5" HeadBarType="" HpBossType="4"/>
-	<Property ID="hd39_6" HeadBarType="" HpBossType="4"/>
-	<Property ID="hdzy_1" HeadBarType="" HpBossType="4"/>
-	<Property ID="hdzy_2" HeadBarType="" HpBossType="4"/>
-	<Property ID="hdzy_3" HeadBarType="" HpBossType="4"/>
-	<Property ID="hdzy_4" HeadBarType="" HpBossType="4"/>
-	<Property ID="hd51_1" HeadBarType="" HpBossType="4"/>
-	<Property ID="yw301_gbl_1" HeadBarType="" HpBossType="4"/>
-	<Property ID="yw301_gbl_2" HeadBarType="" HpBossType="4"/>
-	<Property ID="yw301_gbl_3" HeadBarType="" HpBossType="4"/>
-	<Property ID="hd30_1" HeadBarType="" HpBossType="4"/>
 	<Property ID="sjm301_003" PhysicsType="mon_shu_0027"/>
 	<Property ID="sjm302_006" PhysicsType="mon_shu_0021"/>
 	<Property ID="sjm303_005" PhysicsType="mon_shu_0020"/>
-	<Property ID="zym831_02" PhysicsType="mon_shu_0020"/>
-	<Property ID="zym832_03" PhysicsType="mon_shu_0001"/>
-	<Property ID="zym832_04" PhysicsType="mon_ani_0001"/>
-	<Property ID="zym833_01" PhysicsType="mon_shu_0002"/>
-	<Property ID="zym833_03" PhysicsType="mon_ani_0037"/>
-	<Property ID="zym834_04" PhysicsType="mon_shu_0006"/>
-	<Property ID="zym834_05" PhysicsType="mon_shu_0015"/>
-	<Property ID="zym835_01" PhysicsType="mon_ani_0018"/>
-	<Property ID="zym835_02" PhysicsType="mon_ani_0018"/>
-	<Property ID="zym836_02" PhysicsType="mon_shu_0031"/>
-	<Property ID="zym836_03" PhysicsType="mon_shu_0011"/>
-	<Property ID="zym836_04" PhysicsType="mon_shu_0012"/>
-	<Property ID="zym837_02" PhysicsType="mon_shu_0002"/>
-	<Property ID="zym837_03" PhysicsType="mon_shu_0025"/>
-	<Property ID="zhenying_m_01" PhysicsType="boss_shu_0002"/>
-	<Property ID="zhenying_m_02" PhysicsType="mon_shu_0034"/>
-	<Property ID="zhenying_m_03" PhysicsType="mon_shu_0037"/>
-	<Property ID="zhenying_m_04" PhysicsType="mon_shu_0035"/>
-	<Property ID="zhenying_m_05" PhysicsType="mon_shu_0038"/>
-	<Property ID="zhenying_m_06" PhysicsType="mon_shu_0029"/>
 	<Property ID="WorldBossNpc" HpBossType="4"/>
 	<Property ID="zym761_boss_01" HpBossStage="10"/>
 	<Property ID="zym762_boss" HpBossStage="11"/>
@@ -630,7 +478,7 @@ LowMaterialFile //(部分Boss带高光贴图，需要根据画质切换，该字段存放不带高光贴图�
 	<Property ID="zym213_boss_011" HpBossStage="12"/>
 	<Property ID="zym213_boss_012" HpBossStage="12"/>
 	<Property ID="zym771_boss" HpBossStage="12"/>
-	<Property ID="zym772_boss" NoShowOutline="1" HpBossStage="12"/>
+	<Property ID="zym772_boss" HpBossStage="12"/>
 	<Property ID="zym773_boss" HpBossStage="13"/>
 	<Property ID="zym774_boss" HpBossStage="13"/>
 	<Property ID="zym775_boss" HpBossStage="13"/>
@@ -646,187 +494,11 @@ LowMaterialFile //(部分Boss带高光贴图，需要根据画质切换，该字段存放不带高光贴图�
 	<Property ID="zym787_boss" HpBossStage="15"/>
 	<Property ID="zym788_boss" HpBossStage="15"/>
 	<Property ID="zym789_boss" HpBossStage="15"/>
+	<Property ID="npc_city_013" NoShowOutline="1" IsShowTalking="1"/>
 	<Property ID="Demo_sence03_tieqiao" NoShowOutline="1"/>
-	<Property ID="team5_shawang_1" HpBossStage="15" NoShowOutline="1"/>
-	<Property ID="hteam5_shawang_1" HpBossStage="15" NoShowOutline="1"/>
-	<Property ID="team5_shawangwei_1" NoShowOutline="1"/>
-	<Property ID="hteam5_shawangwei_1" NoShowOutline="1"/>
-	<Property ID="zym791_boss" HpBossStage="16"/>
-	<Property ID="zym792_boss" HpBossStage="16"/>
-	<Property ID="zym793_boss" HpBossStage="16"/>
-	<Property ID="zym794_boss" HpBossStage="16" NoShowOutline="1"/>
-	<Property ID="zym795_boss" HpBossStage="17"/>
-	<Property ID="zym796_boss" HpBossStage="17"/>
-	<Property ID="zym797_boss" HpBossStage="17"/>
-	<Property ID="zym798_boss" HpBossStage="17" NoShowOutline="1"/>
-	<Property ID="zym798_qiao" NoShowOutline="1" IsShowHeadBar="false"/>
-	<Property ID="zym801_boss_01" HpBossStage="18"/>
-	<Property ID="zym802_boss_01" HpBossStage="18"/>
-	<Property ID="zym803_boss_01" HpBossStage="18"/>
-	<Property ID="zym804_boss_01" HpBossStage="18"/>
-	<Property ID="zym805_boss_01" HpBossStage="19"/>
-	<Property ID="zym806_boss_01" HpBossStage="19"/>
-	<Property ID="zym807_boss_01" HpBossStage="19"/>
-	<Property ID="zym808_boss_01" HpBossStage="19"/>
-	<Property ID="zym809_boss_01" HpBossStage="19"/>
-	<!--血条最大数值暂时不要超过20，否则会出问题-->
-	<Property ID="team5_blackman_01" HpBossStage="20"/>
-	<Property ID="hteam5_blackman_01" HpBossStage="20"/>
-	<Property ID="zym811_boss" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym812_boss" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym813_boss" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym814_boss" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym815_boss" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym816_boss" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym817_boss" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym818_001" NoShowOutline="1"/>
-	<Property ID="zym818_boss" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym821_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym822_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym823_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym824_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym825_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym826_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym827_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym828_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym829_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="team7_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="hteam7_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym831_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym832_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym833_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym834_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym835_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym836_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym837_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym838_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zhenying_boss01" NoShowOutline="1"/>
-	<Property ID="hdzy_1" NoShowOutline="1"/>
-	<Property ID="zhenying_a_03" NoShowOutline="1"/>
-	<Property ID="zhenying_b_03" NoShowOutline="1"/>
-	<Property ID="zhenying_m_12" NoShowOutline="1"/>
-	<Property ID="zhenying_wf_01" NoShowOutline="1"/>
-	<Property ID="zym841_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym842_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym843_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym844_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym845_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym846_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym847_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym848_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym849_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="mijing_boss_01" HpBossStage="5"/>
-	<Property ID="mijing_boss_02" HpBossStage="5"/>
-	<Property ID="mijing_tamer_01" HpBossStage="5"/>
-	<Property ID="mijing_soldier_01" HpBossStage="5"/>
-	<Property ID="mijing_rikishi_01" HpBossStage="5"/>
-	<Property ID="mijing_blackman_01" HpBossStage="5"/>
-	<Property ID="mijing_shooter_01" HpBossStage="5"/>
-	<Property ID="mijing_swordman_01" HpBossStage="5"/>
-	<Property ID="mijing_ghost_01" HpBossStage="5"/>
-	<Property ID="mijing_marksman_01" HpBossStage="5"/>
-	<Property ID="mijing_captain_01" HpBossStage="5"/>
-	<Property ID="mijing_mahatma_01" HpBossStage="5"/>
-	<Property ID="mijing_fox_01" HpBossStage="5"/>
-	<Property ID="mijing_rabbi_01" HpBossStage="5"/>
-	<Property ID="mijing_boxer_01" HpBossStage="5"/>
-	<Property ID="mijing_demon_01" HpBossStage="5"/>
-	<Property ID="mijing_feminine_01" HpBossStage="5"/>
-	<Property ID="mijing_singed_01" HpBossStage="5"/>
-	<Property ID="mijing_icefemale_01" HpBossStage="5"/>
-	<Property ID="mijing_executioner_01" HpBossStage="5"/>
-	<Property ID="mijing_pike_01" HpBossStage="5"/>
-	<Property ID="mijing_druid_01" HpBossStage="5"/>
-	<Property ID="mijing_meatshield_01" HpBossStage="5"/>
-	<Property ID="sjm308_001" NoShowOutline="1"/>
-	<Property ID="sjm308_002" PhysicsType="mon_shu_0049" NoShowOutline="1"/>
-	<Property ID="sjm308_003" PhysicsType="mon_shu_0050" NoShowOutline="1"/>
-	<Property ID="sjm308_004" PhysicsType="mon_shu_0050" NoShowOutline="1"/>
-	<Property ID="sjm308_005" PhysicsType="mon_shu_0052" NoShowOutline="1"/>
-	<Property ID="sjm308_006" PhysicsType="mon_shu_0053" NoShowOutline="1"/>
-	<Property ID="war2_lord_002" NoShowOutline="1"/>
-	<Property ID="war2_mon_001" PhysicsType="mon_shu_0050" NoShowOutline="1"/>
-	<Property ID="war2_mon_002" PhysicsType="mon_shu_0050" NoShowOutline="1"/>
-	<Property ID="war2_mon_003" PhysicsType="mon_shu_0050" NoShowOutline="1"/>
-	<Property ID="war2_mon_004" PhysicsType="mon_shu_0050" NoShowOutline="1"/>
-	<Property ID="war2_mon_005" PhysicsType="mon_shu_0050" NoShowOutline="1"/>
-	<Property ID="zym851_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym852_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym853_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym854_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym855_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym856_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym857_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym858_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="war2_wf_01" NoShowOutline="1"/>
-	<Property ID="war2_wf_02" NoShowOutline="1"/>
-	<Property ID="zym861_boss_01" HpBossStage="20"/>
-	<Property ID="zym862_boss_01" HpBossStage="20"/>
-	<Property ID="zym863_boss_01" HpBossStage="20"/>
-	<Property ID="zym864_boss_01" HpBossStage="20"/>
-	<Property ID="zym865_boss_01" HpBossStage="20"/>
-	<Property ID="zym866_boss_01" HpBossStage="20"/>
-	<Property ID="zym867_boss_01" HpBossStage="20"/>
-	<Property ID="zym868_boss_01" HpBossStage="20"/>
-	<Property ID="zym869_boss_01" HpBossStage="20"/>
-	<Property ID="zym861_01" PhysicsType="mon_shu_0050" NoShowOutline="1"/>
-	<Property ID="zym861_02" PhysicsType="mon_shu_0049" NoShowOutline="1"/>
-	<Property ID="zym871_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym872_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym873_boss_01a" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym874_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym875_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym876_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym877_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym878_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym871_01" PhysicsType="mon_ani_0022" NoShowOutline="1"/>
-	<Property ID="zym872_01" PhysicsType="mon_ani_0021" NoShowOutline="1"/>
-	<Property ID="zym873_01" PhysicsType="mon_shu_0002" NoShowOutline="1"/>
-	<Property ID="zym874_01" PhysicsType="mon_shu_0014" NoShowOutline="1"/>
-	<Property ID="zym875_01" PhysicsType="mon_shu_0037" NoShowOutline="1"/>
-	<Property ID="zym881_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym882_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym883_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym884_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym885_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym886_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym887_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym888_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym889_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="cellar_03_jingying_01" NoShowOutline="1"/>
-	<Property ID="zym891_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym892_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym893_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym894_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym895_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym896_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym897_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym898_boss_01" HpBossStage="20" NoShowOutline="1"/>
-	<Property ID="zym891_01" PhysicsType="boss_shu_0002" NoShowOutline="1"/>
-	<Property ID="zym891_02" PhysicsType="mon_ani_0001" NoShowOutline="1"/>
-	<Property ID="zym892_01" PhysicsType="mon_ani_0007" NoShowOutline="1"/>
-	<Property ID="zym892_02" PhysicsType="mon_ani_0008" NoShowOutline="1"/>
-	<Property ID="zym893_01" PhysicsType="mon_ani_0021" NoShowOutline="1"/>
-	<Property ID="zym894_01" PhysicsType="mon_shu_0008" NoShowOutline="1"/>
-	<Property ID="zym895_01" PhysicsType="mon_shu_0014" NoShowOutline="1"/>
-	<Property ID="zym896_01" PhysicsType="mon_shu_0017" NoShowOutline="1"/>
-	<Property ID="zym897_01" PhysicsType="mon_shu_0021" NoShowOutline="1"/>
-	<Property ID="NaturalDisasters_01" PhysicsType="mon_shu_0016" NoShowOutline="1"/>
-	<Property ID="NaturalDisasters_02" PhysicsType="mon_shu_0043" NoShowOutline="1"/>
-	<Property ID="NaturalDisasters_03" PhysicsType="boss_shu_0002" NoShowOutline="1"/>
-	<Property ID="NaturalDisasters_04" PhysicsType="item_0010" NoShowOutline="1"/>
-	<Property ID="konoe_01" PhysicsType="mon_shu_0024" NoShowOutline="1"/>
-	<Property ID="konoe_02" PhysicsType="mon_shu_0025" NoShowOutline="1"/>
-	<Property ID="konoe_03" PhysicsType="mon_shu_0027" NoShowOutline="1"/>
-	<Property ID="konoe_04" PhysicsType="item_0010" NoShowOutline="1"/>
-	<Property ID="Creeps_01" PhysicsType="mon_ani_0019" NoShowOutline="1"/>
-	<Property ID="Creeps_02" PhysicsType="mon_ani_0020" NoShowOutline="1"/>
-	<Property ID="Creeps_03" PhysicsType="mon_ani_0021" NoShowOutline="1"/>
-	<Property ID="Creeps_04" PhysicsType="mon_ani_0022" NoShowOutline="1"/>
-	<Property ID="Creeps_05" PhysicsType="mon_shu_0002" NoShowOutline="1"/>
-	<Property ID="Creeps_06" PhysicsType="mon_shu_0004" NoShowOutline="1"/>
-	<Property ID="Creeps_07" PhysicsType="mon_shu_0006" NoShowOutline="1"/>
-	<Property ID="Creeps_08" PhysicsType="mon_shu_0007" NoShowOutline="1"/>
-	<Property ID="npc_city3_021" NoShowOutline="1" IsShowHeadBar="false"/>
-	<Property ID="npc_city3_024" NoShowOutline="1" IsShowHeadBar="false"/>
+	<Property ID="zym808_001" PhysicsType="mon_shu_0009"/>
+	<Property ID="mon_world_gld0003" PhysicsType="world_gld_006"/>
+	<Property ID="mon_world_gld0007" PhysicsType="world_gld_007"/>
+	<Property ID="mon_world_gld0001" PhysicsType="world_gld_003"/>
+	<Property ID="boss_fb_xsjt0001" NoShowCastShadow="1"/>
 </Object>

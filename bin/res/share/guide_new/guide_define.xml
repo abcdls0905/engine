@@ -1,121 +1,29 @@
 <?xml version="1.0" encoding="gb2312"?>
-<!-->
-
-// 任务目标类型
-// 枚举对应的数字已确定，会在引导模块使用，不要改变
-enum QuestCriteriaTypes
-{
-												// 说明			消息参数
-    CRITERIA_TYPE_NONE					= 0,    // 无类型
-    CRITERIA_TYPE_KILLNPC				= 1,    // 击杀怪物
-    CRITERIA_TYPE_SCENECLEAR			= 2,    // 通关副本		次数
-    CRITERIA_TYPE_DEPRIVE				= 3,    // 进行夺宝		次数
-    CRITERIA_TYPE_TREASURE				= 4,    // 抽取宝藏		次数
-    CRITERIA_TYPE_PET					= 5,	// 培养武神		提升等级（变化值）
-    CRITERIA_TYPE_UPGRADE				= 6,    // 升级技能		提升等级（变化值）
-    CRITERIA_TYPE_TALENT				= 7,	// 炼化星位		星位个数（变化值）
-    CRITERIA_TYPE_ENHANCE				= 8,    // 强化装备		强化等级（变化值）
-    CRITERIA_TYPE_ARENA					= 9,	// 挑战竞技场	挑战次数
-	CRITERIA_TYPE_USEITEM				= 10,	// 使用物品		id,次数
-	CRITERIA_TYPE_EQUIP_ORANGE			= 11,	// 穿戴橙装	    个数变化（穿+1，脱-1）
-	CRITERIA_TYPE_ENHANCE_TOTAL			= 12,	// 累计强化		uid,强化等级（当前值）
-	CRITERIA_TYPE_EQUIP_UPGRADE_TOTAL	= 13,	// 累计精炼		uid,精炼等级（当前值）
-	CRITERIA_TYPE_PET_COLLECT			= 14,	// 收集武神(紫)    个数变化（获得时+1）
-	CRITERIA_TYPE_PET_LEVEL				= 15,	// 武神等级		uid,武神等级（当前值）
-	CRITERIA_TYPE_PET_TUPO				= 16,	// 武神突破		uid,突破等级（当前值）
-	CRITERIA_TYPE_TATOO					= 17,	// 镶嵌符文		uid,镶嵌个数（当前值）
-	CRITERIA_TYPE_SKILL_LEVEL			= 18,	// 技能等级     configid,技能等级（当前值）
-    CRITERIA_TYPE_TALK					= 19,   // 对话任务     对话id
-    CRITERIA_TYPE_PATHFIND				= 20,   // 寻路任务
-    CRITERIA_TYPE_VIP_DIAMOND			= 21,   // VIP钻石投放
-	CRITERIA_TYPE_TEAM_SCENECLEAR		= 22,   // 组队副本
-	CRITERIA_TYPE_PVP_BATTLEWAR			= 23,   // 实时战场
-    CRITERIA_TYPE_TATOO_UPGRADE         = 24,   // 符文升级
-    CRITERIA_TYPE_SINGLE_BATTLE         = 25,   // 单人战场
-	CRITERIA_TYPE_VIP_DIAMOND_SEASON    = 26,   // 月卡任务
-	CRITERIA_TYPE_VIP_DIAMOND_YEAR      = 27,   // 年卡任务
-	CRITERIA_TYPE_PET_GOTO_WAR			= 28,	// 宠物上阵
-	CRITERIA_TYPE_QUEST_CANSUBMIT		= 31,	// 任务可提交
-	CRITERIA_TYPE_QUEST_COMPLETE		= 32,   // 任务完成
-	CRITERIA_TYPE_ACCEPT_QUEST          = 33,   // 接受任务		任务id
-	
-	CRITERIA_TYPE_FACE_NPC_TALK			= 34,	// 黑幕对话任务     对话id
-	CRITERIA_TYPE_JUST_SUBMIT			= 35,	// 只提交(接受即可提交)
-    CRITERIA_TYPE_GIVING_NPC_COLLECT    = 36,   // 采集Npc
-	CRITERIA_TYPE_ACTIVITY				= 37,   // 活动任务
-	CRITERIA_TYPE_FESTIVAL_AWARD		= 38,	// 活动获得奖励
-	CRITERIA_TYPE_EQUIP					= 39,	// 穿脱装备（所有类型）  穿 +1,  脱 -1
-	
-	CRITERIA_TYPE_GIFT_AWARD			= 40,	// 领取礼包奖励		礼包类型（1=等级礼包，2=新服礼包，3=在线礼包，4=签到礼包）
-	CRITERIA_TYPE_CHAPTER_FINISH		= 41,	// 完成章节任务(点了领奖)	章节id
-	CRITERIA_TYPE_BLACKMARKET_FURNACE_SUCCESS = 42,//黑市熔炼成功
-	CRITERIA_TYPE_NEW_ROLENPC_CREATE = 43,//新英雄召唤成功
-	CRITERIA_TYPE_ROLENPC_LEVEL_CHANGE = 44,//新英雄等级变化
-	CRITERIA_TYPE_OBTAIN_CLONE_REWARD = 47,//领取副本战神宝箱奖励
-	CRITERIA_TYPE_FORMATION_EXCHANGE = 48,//战队阵容发生任意改变
-	
-    CRITERIA_TYPE_TOTAL,                        // 类型总数
-};
+<!-->=
+// 字符串对应的数字已确定，会在引导模块使用，不要改变
+	ON_TRIGGER_GET_TASK = 62,				// 承接任务
+	ON_TRIGGER_GUIDE_NPC = 63,				// NPC触发引导
+	ON_LEVEL_CHANGE = 64,					// 等级变化
+	ON_FUNCTION_ACTIVE_EVENT = 65,			// 解锁
+	ON_TRIGGER_GUI_EVENT = 66,				// 界面触发
+	ON_TRIGGER_COMPLETE_TASK =67,			// 完成任务
+	ON_STATE_PASSED = 68,					// 切场景
+	ON_TRIGGER_GET_POKEMON = 69,			// 获取宠物
+	ON_TRIGGER_TOOLBOX_ADD = 70,			// 背包中添加道具
+	ON_TRIGGER_CUSTOM = 71,					// 客户端收到自定义消息
 </-->
 <Object>
-	<Property Name="CRITERIA_TYPE_KILLNPC" Value="1"/>
-	<Property Name="CRITERIA_TYPE_SCENECLEAR" Value="2"/>
-	<Property Name="CRITERIA_TYPE_DEPRIVE" Value="3"/>
-	<Property Name="CRITERIA_TYPE_TREASURE" Value="4"/>
-	<Property Name="CRITERIA_TYPE_PET" Value="5"/>
-	<Property Name="CRITERIA_TYPE_UPGRADE" Value="6"/>
-	<Property Name="CRITERIA_TYPE_TALENT" Value="7"/>
-	<Property Name="CRITERIA_TYPE_ENHANCE" Value="8"/>
-	<Property Name="CRITERIA_TYPE_ARENA" Value="9"/>
-	<Property Name="CRITERIA_TYPE_USEITEM" Value="10"/>
-	<Property Name="CRITERIA_TYPE_EQUIP_ORANGE" Value="11"/>
-	<Property Name="CRITERIA_TYPE_ENHANCE_TOTAL" Value="12"/>
-	<Property Name="CRITERIA_TYPE_EQUIP_UPGRADE_TOTAL" Value="13"/>
-	<Property Name="CRITERIA_TYPE_PET_COLLECT" Value="14"/>
-	<Property Name="CRITERIA_TYPE_PET_LEVEL" Value="15"/>
-	<Property Name="CRITERIA_TYPE_PET_TUPO" Value="16"/>
-	<Property Name="CRITERIA_TYPE_TATOO" Value="17"/>
-	<Property Name="CRITERIA_TYPE_SKILL_LEVEL" Value="18"/>
-	<Property Name="CRITERIA_TYPE_TALK" Value="19"/>
-	<Property Name="CRITERIA_TYPE_PATHFIND" Value="20"/>
-	<Property Name="CRITERIA_TYPE_VIP_DIAMOND" Value="21"/>
-	<Property Name="CRITERIA_TYPE_TEAM_SCENECLEAR" Value="22"/>
-	<Property Name="CRITERIA_TYPE_PVP_BATTLEWAR" Value="23"/>
-	<Property Name="CRITERIA_TYPE_TATOO_UPGRADE" Value="24"/>
-	<Property Name="CRITERIA_TYPE_SINGLE_BATTLE" Value="25"/>
-	<Property Name="CRITERIA_TYPE_VIP_DIAMOND_SEASON" Value="26"/>
-	<Property Name="CRITERIA_TYPE_VIP_DIAMOND_YEAR" Value="27"/>
-	<Property Name="CRITERIA_TYPE_PET_GOTO_WAR" Value="28"/>
-	<Property Name="CRITERIA_TYPE_QUEST_CANSUBMIT" Value="31"/>
-	<Property Name="CRITERIA_TYPE_QUEST_COMPLETE" Value="32"/>
-	<Property Name="CRITERIA_TYPE_ACCEPT_QUEST" Value="33"/>
-	<Property Name="CRITERIA_TYPE_FACE_NPC_TALK" Value="34"/>
-	<Property Name="CRITERIA_TYPE_JUST_SUBMIT" Value="35"/>
-	<Property Name="CRITERIA_TYPE_GIVING_NPC_COLLECT" Value="36"/>
-	<Property Name="CRITERIA_TYPE_ACTIVITY" Value="37"/>
-	
-	<Property Name="CRITERIA_TYPE_FESTIVAL_AWARD" Value="38"/>
-	<Property Name="CRITERIA_TYPE_EQUIP" Value="39"/>
-	
-	<Property Name="CRITERIA_TYPE_GIFT_AWARD" Value="40"/>
-	<Property Name="CRITERIA_TYPE_CHAPTER_FINISH" Value="41"/>
-	<Property Name="CRITERIA_TYPE_BLACKMARKET_FURNACE_SUCCESS" Value="42"/>
-	<Property Name="CRITERIA_TYPE_NEW_ROLENPC_CREATE" Value="43"/>
-	<Property Name="CRITERIA_TYPE_ROLENPC_LEVEL_CHANGE" Value="44"/>
-	<Property Name="CRITERIA_TYPE_OBTAIN_CLONE_REWARD" Value="47"/>
-	<Property Name="CRITERIA_TYPE_FORMATION_EXCHANGE" Value="48"/>
-	
-	
-	
+	<Property Name="CRITERIA_TYPE_QUEST_GET_TASK" Value="62"/>
+	<Property Name="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Value="63"/>
+	<Property Name="on_level_change" Value="64"/>
+	<Property Name="on_function_active" Value="65"/>
+	<Property Name="on_trigger_gui_event" Value="66"/>
+	<Property Name="CRITERIA_TYPE_QUEST_COMPLETE_TASK" Value="67"/>
+	<Property Name="on_stage_passed" Value="68"/>
+	<Property Name="CRITERIA_TYPE_GET_POKEMON" Value="69"/>
+	<Property Name="CRITERIA_TYPE_TOOLBOX_ADD" Value="70"/>
+	<Property Name="on_custom" Value="71"/>
+	<Property Name="hunt_guide" Value="72"/>
+	<Property Name="movie_end" Value="73"/>
+	<Property Name="terrainloadfinish" Value="74"/>
 </Object>
-
-
-
-
-
-
-
-
-
-
-

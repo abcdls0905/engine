@@ -11,91 +11,17 @@
 <!-- 1			公服数据(Domain)
 	 2			公会公共数据(不用DomainName guild_pubdata即为DomainName)
 	 3			公会私有数据项(不用DomainName 公会名即为DomainName)
+	 4			公会私有数据属性项(不用DomainName guild_pubdata即为DomainName)
 -->
 <Object>
-<!-- 公服数据 -->
-<Property ID="order_uncomplete_rec" PubType="1" Col="2" DomainName="Domain_TraceOrder_" desc="未完成交易订单"/>
-<Property ID="order_dispatch_rec" PubType="1" Col="2" DomainName="Domain_TraceOrder_" desc="已完成未发放订单"/>
-<Property ID="dt_peace_rec" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="夺宝和平模式玩家表格"/>
-<!-- 公服数据(夺宝) 表名为碎片 -->
-<Property ID="qsp_Tattoo_Green_Center_001_1" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Green_Center_001"/>
-<Property ID="qsp_Tattoo_Green_Center_001_2" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Green_Center_001"/>
-<Property ID="qsp_Tattoo_Green_Center_001_3" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Green_Center_001"/>
-<Property ID="qsp_Tattoo_Blue_Center_001_1" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Blue_Center_001"/>
-<Property ID="qsp_Tattoo_Blue_Center_001_2" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Blue_Center_001"/>
-<Property ID="qsp_Tattoo_Blue_Center_001_3" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Blue_Center_001"/>
-<Property ID="qsp_Tattoo_Blue_Center_001_4" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Blue_Center_001"/>
-<Property ID="qsp_Tattoo_Purple_Center_002_1" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Purple_Center_002"/>
-<Property ID="qsp_Tattoo_Purple_Center_002_2" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Purple_Center_002"/>
-<Property ID="qsp_Tattoo_Purple_Center_002_3" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Purple_Center_002"/>
-<Property ID="qsp_Tattoo_Purple_Center_002_4" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Purple_Center_002"/>
-<Property ID="qsp_Tattoo_Purple_Center_002_5" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Purple_Center_002"/>
-<Property ID="qsp_Tattoo_Purple_Center_001_1" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Purple_Center_001"/>
-<Property ID="qsp_Tattoo_Purple_Center_001_2" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Purple_Center_001"/>
-<Property ID="qsp_Tattoo_Purple_Center_001_3" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Purple_Center_001"/>
-<Property ID="qsp_Tattoo_Purple_Center_001_4" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Purple_Center_001"/>
-<Property ID="qsp_Tattoo_Purple_Center_001_5" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Purple_Center_001"/>
-<Property ID="qsp_Tattoo_Orange_Center_003_1" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Orange_Center_003"/>
-<Property ID="qsp_Tattoo_Orange_Center_003_2" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Orange_Center_003"/>
-<Property ID="qsp_Tattoo_Orange_Center_003_3" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Orange_Center_003"/>
-<Property ID="qsp_Tattoo_Orange_Center_003_4" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Orange_Center_003"/>
-<Property ID="qsp_Tattoo_Orange_Center_003_5" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Orange_Center_003"/>
-<Property ID="qsp_Tattoo_Orange_Center_003_6" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Orange_Center_003"/>
-<Property ID="qsp_Tattoo_Orange_Center_002_1" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Orange_Center_002"/>
-<Property ID="qsp_Tattoo_Orange_Center_002_2" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Orange_Center_002"/>
-<Property ID="qsp_Tattoo_Orange_Center_002_3" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Orange_Center_002"/>
-<Property ID="qsp_Tattoo_Orange_Center_002_4" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Orange_Center_002"/>
-<Property ID="qsp_Tattoo_Orange_Center_002_5" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Orange_Center_002"/>
-<Property ID="qsp_Tattoo_Orange_Center_002_6" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Orange_Center_002"/>
-<Property ID="qsp_Tattoo_Orange_Center_001_1" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Orange_Center_001"/>
-<Property ID="qsp_Tattoo_Orange_Center_001_2" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Orange_Center_001"/>
-<Property ID="qsp_Tattoo_Orange_Center_001_3" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Orange_Center_001"/>
-<Property ID="qsp_Tattoo_Orange_Center_001_4" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Orange_Center_001"/>
-<Property ID="qsp_Tattoo_Orange_Center_001_5" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Orange_Center_001"/>
-<Property ID="qsp_Tattoo_Orange_Center_001_6" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Orange_Center_001"/>
-<Property ID="qsp_Item_JingTieShi_1" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_JingTieShi"/>
-<Property ID="qsp_Item_JingTieShi_2" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_JingTieShi"/>
-<Property ID="qsp_Item_JingTieShi_3" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_JingTieShi"/>
-<Property ID="qsp_Item_jts_bag1_1" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_jts_bag1"/>
-<Property ID="qsp_Item_jts_bag1_2" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_jts_bag1"/>
-<Property ID="qsp_Item_jts_bag1_3" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_jts_bag1"/>
-<Property ID="qsp_Item_jts_bag2_1" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_jts_bag2"/>
-<Property ID="qsp_Item_jts_bag2_2" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_jts_bag2"/>
-<Property ID="qsp_Item_jts_bag2_3" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_jts_bag2"/>
-<Property ID="qsp_Item_jts_bag2_4" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_jts_bag2"/>
-<Property ID="qsp_Item_jts_bag3_1" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_jts_bag3"/>
-<Property ID="qsp_Item_jts_bag3_2" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_jts_bag3"/>
-<Property ID="qsp_Item_jts_bag3_3" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_jts_bag3"/>
-<Property ID="qsp_Item_jts_bag3_4" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_jts_bag3"/>
-<Property ID="qsp_Item_jts_bag3_5" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_jts_bag3"/>
-<Property ID="qsp_Item_yt1_1" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_yt1"/>
-<Property ID="qsp_Item_yt1_2" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_yt1"/>
-<Property ID="qsp_Item_yt2_1" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_yt2"/>
-<Property ID="qsp_Item_yt2_2" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_yt2"/>
-<Property ID="qsp_Item_yt2_3" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_yt2"/>
-<Property ID="qsp_Item_yt3_1" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_yt3"/>
-<Property ID="qsp_Item_yt3_2" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_yt3"/>
-<Property ID="qsp_Item_yt3_3" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_yt3"/>
-<Property ID="qsp_Item_yt3_4" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Item_yt3"/>
-<Property ID="qsp_Tattoo_Green_Exp_001_1" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Green_Exp_001"/>
-<Property ID="qsp_Tattoo_Green_Exp_001_2" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Green_Exp_001"/>
-<Property ID="qsp_Tattoo_Green_Exp_001_3" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Green_Exp_001"/>
-<Property ID="qsp_Tattoo_Blue_Exp_001_1" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Blue_Exp_001"/>
-<Property ID="qsp_Tattoo_Blue_Exp_001_2" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Blue_Exp_001"/>
-<Property ID="qsp_Tattoo_Blue_Exp_001_3" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Blue_Exp_001"/>
-<Property ID="qsp_Tattoo_Blue_Exp_001_4" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Blue_Exp_001"/>
-<Property ID="qsp_Tattoo_Purple_Exp_001_1" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Purple_Exp_001"/>
-<Property ID="qsp_Tattoo_Purple_Exp_001_2" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Purple_Exp_001"/>
-<Property ID="qsp_Tattoo_Purple_Exp_001_3" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Purple_Exp_001"/>
-<Property ID="qsp_Tattoo_Purple_Exp_001_4" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Purple_Exp_001"/>
-<Property ID="qsp_Tattoo_Purple_Exp_001_5" PubType="1" Col="0" DomainName="Domain_DepriveTreasure_" desc="Tattoo_Purple_Exp_001"/>
-<!-- 公会公共数据 -->
-<Property ID="guild_list_rec" PubType="2" Col="1" desc="公会列表表格"/>
-<Property ID="guild_apply_rec" PubType="2" Col="0" desc="申请者列表表格"/>
-<Property ID="guild_outline_join_rec" PubType="2" Col="0" desc="记录不在线玩家加入公会的表格"/>
-<Property ID="guild_outline_quit_rec" PubType="2" Col="0" desc="记录不在线玩家退出公会的表格"/>
-<!-- 公会私有数据项 -->
-<Property ID="guild_member_rec" PubType="3" Col="0" desc="公会成员表格"/>
-<Property ID="guild_trends_rec" PubType="3" Col="0" desc="公会动态表格"/>
-<Property ID="guild_join_rec" PubType="3" Col="0" desc="申请加入公会玩家表格"/>
+	<!-- 公服数据 -->
+	<Property ID="player_online_rec" PubType="1" Col="1" DomainName="Domain_OnlinePlayer_" desc="在线角色表"/>
+	<!-- 公会公共数据 -->
+	<!--<Property ID="guild_outline_join_rec" PubType="2" Col="0" desc="记录不在线玩家加入公会的表格"/>
+	<Property ID="guild_outline_quit_rec" PubType="2" Col="0" desc="记录不在线玩家退出公会的表格"/>-->
+	<!-- 公会私有数据项 -->
+	<Property ID="guild_boss_info_rec" PubType="3" Col="4" desc="公会BOSS信息"/>
+	<Property ID="guild_boss_info_rec" PubType="3" Col="5" desc="公会BOSS信息"/>
+	<!-- 公会私有数据属性项 -->
+	<Property ID="GuildFounder" PubType="4" desc="创建人"/>
 </Object>

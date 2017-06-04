@@ -1,112 +1,96 @@
-<?xml version="1.0" encoding="gb2312"?>
+ï»¿<?xml version="1.0" encoding="gb2312" ?>
 <!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by  () -->
-<!--³¡¾°»ù´¡ÊôÐÔ-->
+<!--åœºæ™¯åŸºç¡€å±žæ€§-->
 <object>
-	<!-- ÄÚ²¿ÊôÐÔ -->
-	<internals>
-		<property name="Name" type="widestr" public="true" private="true" save="false" desc=""/>
-		<property name="Grouping" type="int" public="true" private="true" save="false" desc=""/>
-	</internals>
-	<!-- »ù±¾ÊôÐÔ -->
-	<properties>
-		<property name="ConfigID" type="string" public="true" private="true" save="false" desc="³¡¾°±àºÅ"/>
-		<property name="ProtoSceneID" type="int" public="true" private="true" save="false" desc="Ô­ÐÎ³¡¾°±àºÅ"/>
-		<property name="Resource" type="string" public="true" private="true" save="false" desc="³¡¾°»ù´¡×ÊÔ´Ãû³Æ"/>
-		<property name="SceneType" type="int" public="true" private="false" save="true" realtime="" desc="³¡¾°ÀàÐÍ(0=Ò»°ã³¡¾°,1=±¾µØ¸±±¾,2=Ô¶³Ì·þÎñÆ÷¸±±¾)"/>
-		<property name="CommonGroupID" type="int" public="false" private="false" save="false" desc="³¡¾°¹²Í¬·Ö×éºÅ"/>
-		<property name="SceneBuff" type="string" public="true" private="false" save="false" desc="Ò°Íâ³¡¾°µÄbuff"/>
-    <property name="PauseSceneAI" type="int" public="false" private="false" save="false" desc="ÔÝÍ£³¡¾°ËùÓÐNPCµÄAI"/>
-    <property name="CellarFlag" type="int" public="false" private="false" save="false" desc="µØ¹¬±ê¼Ç,bitÎ»"/>
-		<property name="SceneCommonBuff" type="string" public="true" private="false" save="false" desc="Ò°Íâ³¡¾°µÄÍ¨ÓÃbuff"/>
-    <!--<property name="ZYWarLastResetTime" type="int64" public="false" private="false" save="true" desc="ÉÏ´Î³¡¾°¹éÊôÖØÖÃÊ±¼ä"/>-->
-  </properties>
-	<!-- ±íÊôÐÔ -->
-	<records>
-		<record name="TriggerFailedRec" cols="4" maxrows="512" save="false" public="false" private="false" desc="³¡¾°´¥·¢Æ÷Ê§°ÜÐÅÏ¢¼ÇÂ¼">
-			<column type="string" desc="°ó¶¨´¥·¢Æ÷µÄ¶ÔÏóÅäÖÃÃû"/>
-			<column type="word" desc="Ê§°ÜµÄ´¥·¢Æ÷Ö´ÐÐÆ÷±àºÅ"/>
-			<column type="string" desc="Ê§°ÜµÄ´¥·¢Æ÷Ãû"/>
-			<column type="word" desc="Ê§°ÜµÄ´¥·¢Æ÷ÐÐÎª±àºÅ"/>
-		</record>
-		<record name="AllGroupIDRec" cols="5" maxrows="1024" save="false" public="false" private="false" desc="³¡¾°·Ö×éºÅ±£´æ±í">
-			<column type="word" desc="·Ö×éºÅ"/>
-      <column type="word" desc="·Ö×éÈËÊý"/>
-      <column type="word" desc="ÎäÁÖÁªÃËÕóÓª·Ö×éÈËÊý"/>
-      <column type="word" desc="ÊÇ·ñÉÏËø"/>
-			<column type="word" desc="ÊÇ·ñ³õÊ¼»¯·Ö×é"/>
-		</record>
-		<record name="AllNpcRec" cols="1" maxrows="64" save="false" public="false" private="false" desc="³¡¾°·Ö×éºÅ±£´æ±í">
-			<column type="object" desc="npc¶ÔÏó"/>
-		</record>
-		<record name="clone_all_per_dec" cols="6" maxrows="15" save="false" public="false" private="false" desc="ÉËº¦ÐÅÏ¢">
-			<column type="string" desc="Ó¢ÐÛconfigID"/>
-			<column type="widestr" desc="Ö÷ÈË½ÇÉ«Ãû"/>
-			<column type="word" desc="Ó¢ÐÛµÈ¼¶"/>
-			<column type="dword" desc="ÉËº¦Öµ"/>
-			<column type="dword" desc="³ÐÉËÁ¿"/>
-			<column type="dword" desc="ÖÎÁÆÁ¿"/>
-		</record>
-		<record name="AllPlayerArrestValue" cols="2" maxrows="50000" save="false" public="false" private="false" desc="ÉËº¦ÐÅÏ¢">
-			<column type="object" desc="Íæ¼Ò"/>
-			<column type="dword" desc="É±Â¾Öµ"/>
-		</record>
-		<record name="AllEliteBossInfo" cols="8" maxrows="500" save="false" public="false" private="false" desc="ËùÓÐÏ¡ÓÐBOSSÐÅÏ¢">
-			<column type="object" desc="boss"/>
-			<column type="word" desc="³¡¾°"/>
-			<column type="word" desc="·ÖÏß"/>
-			<column type="float" desc="X×ø±ê"/>
-			<column type="float" desc="Y×ø±ê"/>
-			<column type="float" desc="Z×ø±ê"/>
-			<column type="string" desc="BOSSÃû×Ö"/>
-			<column type="int64" desc="BOSSË¢ÐÂµÄÊ±¼ä"/>
-		</record>
-		<record name="NSBossInfoRec" cols="8" maxrows="500" save="false" public="false" private="false" desc="ËùÓÐÄêÊÞBOSSÐÅÏ¢">
-			<column type="object" desc="boss"/>
-			<column type="word" desc="³¡¾°"/>
-			<column type="word" desc="·ÖÏß"/>
-			<column type="float" desc="X×ø±ê"/>
-			<column type="float" desc="Y×ø±ê"/>
-			<column type="float" desc="Z×ø±ê"/>
-			<column type="string" desc="BOSSÃû×Ö"/>
-		</record>
-		<record name="HorseRaceRec" cols="3" maxrows="500" save="false" public="false" private="false" desc="ÈüÂí»î¶¯½±Àø±í">
-			<column type="string" desc="Íæ¼ÒUID"/>
-			<column type="word" desc="Ê±¼ä"/>
-			<column type="string" desc="½±Àø"/>
-		</record>
-    <record name="ZYWarFlagNpc" cols="2" maxrows="500" save="false" public="false" private="false" desc="ÕóÓªÕ½ÆìÖÄnpc">
-      <column type="object" desc="npc ID"/>
-      <column type="word" desc="npc index"/>
-    </record>
-    <record name="ZYWarFireNpc" cols="3" maxrows="500" save="false" public="false" private="false" desc="ÕóÓªÕ½¹¥ÊÆnpc">
-      <column type="object" desc="npc ID"/>
-      <column type="word" desc="npc index"/>
-      <column type="object" desc="ºäÕ¨Íæ·¨ÖÐ£¬´´½¨µÄ¹¥»÷npc"/>
-    </record>
-    <record name="ZYWarPlayer" cols="10" maxrows="500" save="false" public="true" private="true" desc="ÕóÓªÕ½Íæ¼ÒÁÐ±í">
-      <column type="widestr" desc="Íæ¼ÒÃû"/>
-      <column type="word" desc="Íæ¼ÒÕóÓª"/>
-      <column type="word" desc="Íæ¼Ò»ý·Ö"/>
-      <column type="word" desc="Íæ¼Ò»÷É±Êý"/>
-      <column type="word" desc="Íæ¼ÒÖú¹¥Êý"/>
-      <column type="word" desc="Íæ¼ÒÁ¬É±Êý"/>
-      <column type="int64" desc="Íæ¼Ò½ø³¡Ê±¼ä"/>
-      <column type="word" desc="Íæ¼ÒÊÇ·ñÔÚµ±Ç°³¡¾°"/>
-      <column type="word" desc="Íæ¼ÒRoleIndex"/>
-      <column type="word" desc="Íæ¼ÒGroupID"/>
-    </record>
-    <record name="ZYWarCommand" cols="6" maxrows="500" save="false" public="false" private="false" desc="ÕóÓªÕ½¹¥ÊÆnpc">
-      <column type="word" desc="·ÖÏß"/>
-      <column type="word" desc="ÕóÓª"/>
-      <column type="word" desc="flag index"/>
-      <column type="word" desc="command  ·ÀÊØ1½ø¹¥2"/>
-      <column type="int64" desc="ÀäÈ´¿ªÊ¼Ê±¼ä"/>
-      <column type="int64" desc="ÀäÈ´½áÊøÊ±¼ä"/>
-    </record>
+    <!-- å†…éƒ¨å±žæ€§ -->
+    <internals>
+        <property name="Name" type="widestr" public="true" private="true" save="false" desc="" />
+        <property name="Grouping" type="dword" public="false" private="false" save="false" desc="" />
+    </internals>
+    <!-- åŸºæœ¬å±žæ€§ -->
+    <properties>
+        <property name="ConfigID" type="string" public="true" private="true" save="false" desc="åœºæ™¯ç¼–å·" />
+        <property name="ProtoSceneID" type="dword" public="true" private="true" save="false" desc="åŽŸå½¢åœºæ™¯ç¼–å·" />
+        <property name="Resource" type="string" public="true" private="true" save="false" desc="åœºæ™¯åŸºç¡€èµ„æºåç§°" />
+        <property name="SceneType" type="dword" public="true" private="false" save="false" desc="åœºæ™¯ç±»åž‹(0=ä¸€èˆ¬åœºæ™¯,1=æœ¬åœ°å‰¯æœ¬,2=è¿œç¨‹æœåŠ¡å™¨å‰¯æœ¬)" />
 
-  </records>
-	<!--´ÓÆäËûÎÄ¼þ¼ÓÔØÊôÐÔ-->
-	<includes>
-		<path name="struct\common\trigger.xml" desc="´¥·¢Æ÷"/>
-	</includes>
+        <property name="TransferPos1" type="string" public="false" private="false" save="false" desc="åœºæ™¯ä¸­ä¼ é€ç‚¹ï¼Œä¸æ˜¯å‡ºç”Ÿç‚¹ã€‚1å·é˜µè¥ä¼ é€ç‚¹" />
+        <property name="TransferPos2" type="string" public="false" private="false" save="false" desc="åœºæ™¯ä¸­ä¼ é€ç‚¹ï¼Œä¸æ˜¯å‡ºç”Ÿç‚¹ã€‚2å·é˜µè¥ä¼ é€ç‚¹" />
+        <property name="TransferPos0" type="string" public="false" private="false" save="false" desc="åœºæ™¯ä¸­ä¼ é€ç‚¹ï¼Œä¸æ˜¯å‡ºç”Ÿç‚¹ã€‚0å·é˜µè¥ä¼ é€ç‚¹ï¼Œroomä¸­ç”¨" />
+        
+        <property name="CanFight" type="dword" public="true" private="false" save="false" desc="æ˜¯å¦å¯ä»¥æˆ˜æ–—(0=ä¸å¯æˆ˜æ–—,1=æˆ˜æ–—)" />
+		<property name="CanRide" type="dword" public="true" private="false" save="false" desc="æ˜¯å¦å¯ä»¥ä½¿ç”¨åéª‘(0=ä¸å¯,1=å¯ä»¥)" />
+		<property name="CanFly" type="dword" public="true" private="false" save="false" desc="æ˜¯å¦å¯ä»¥é£žè¡Œ(0=ä¸å¯,1=å¯ä»¥)" />
+		<property name="CantRestore" type="dword" public="false" private="false" save="false" desc="æ˜¯å¦å¯ä»¥å›žè¡€å›žè“(0=å¯ä»¥å›žè¡€ï¼Œ1=ä¸å¯ä»¥å›žè¡€)" />
+		
+		<property name="ProtectCheckTime" type="dword" public="false" private="false" save="false" need_defined="member" desc="å‡»æ€ä¿æŠ¤æ—¶é—´ï¼Œæ—¶é—´å†…è¢«çŽ©å®¶æ€æ­»ä¼šç´¯è®¡æ¬¡æ•°" />
+		<property name="ProtectBuffID" type="string" public="false" private="false" save="false" need_defined="member" desc="æ­»äº¡æ¬¡æ•°è¶…é™ï¼ŒåŠ ä¿æŠ¤buff" />
+		<property name="BeKillTopLimit" type="dword" public="false" private="false" save="false" need_defined="member" desc="è¢«æ€æ¬¡æ•°ä¸Šé™" />
+		
+		<property name="RandomRadius" type="dword" public="false" private="false" save="false" desc="çŽ©å®¶å½“å‰åœºæ™¯éšæœºä½ç½®çš„åŠå¾„" />
+		<property name="SceneCollidePath" type="string" public="true" private="true" save="false" desc="å¯»è·¯åŸºç¡€èµ„æºåç§°" />
+		
+		<property name="CampAPlayerCount" type="dword" public="true" private="true" save="false" desc="Aé˜Ÿäººæ•°" />
+		<property name="CampBPlayerCount" type="dword" public="true" private="true" save="false" desc="Bé˜Ÿäººæ•°" />
+		<property name="CampMaxPlayerCount" type="dword" public="true" private="true" save="false" desc="ä¸€é˜Ÿçš„æœ€å¤§äººæ•°" />
+		
+		<property name="CampAScore" type="dword" public="true" private="true" save="false" desc="Aé˜Ÿç§¯åˆ†" />
+		<property name="CampBScore" type="dword" public="true" private="true" save="false" desc="Bé˜Ÿç§¯åˆ†" />
+		<property name="CampMaxScore" type="dword" public="true" private="true" save="false" desc="èŽ·èƒœéœ€è¦çš„ç§¯åˆ†" />
+		
+		<property name="BattleWarID" type="dword" public="false" private="false" save="false" realtime="" desc="çŽ©æ³•ç±»åž‹" />
+		
+		<property name="BaseHeight" type="float" public="true" private="true" save="false" desc="æ°´å¹³é«˜åº¦" />
+		<property name="UpperLimitHeight" type="float" public="true" private="true" save="false" desc="ä¸Šé™é«˜åº¦" />
+		<property name="LowerLimitHeight" type="float" public="true" private="true" save="false" desc="ä¸‹é™é«˜åº¦" />
+    </properties>
+    <!-- è¡¨å±žæ€§ -->
+    <records>
+        <record name="AllGroupBossRec" cols="2" maxrows="1024" save="false" public="false" private="false" desc="åœºæ™¯åˆ†ç»„å·å¯¹åº”åˆ›å»ºçš„boss">
+            <column type="word" desc="åˆ†ç»„å·" />
+            <column type="string" desc="åˆ›å»ºçš„bossä¿¡æ¯" />
+        </record>
+		<record name="OfflinePlayerRec" cols="6" maxrows="1024" save="false" public="false" private="false" desc="ç¦»çº¿çŽ©å®¶">
+			<column type="object" desc="ç¦»çº¿çŽ©å®¶çš„PERSISTID"/>
+			<column type="word" desc="ä½ç½®ç´¢å¼•"/>
+            <column type="word" desc="GroupID"/>
+            <column type="word" desc="æŸ¥è¯¢çŠ¶æ€çŠ¶æ€"/>
+			<column type="int64" desc="ä¸‹æ¬¡åˆ·æ–°æ—¶é—´"/>	
+			<column type="word" desc="å¼€å…³"/>
+		</record>
+		<record name="group_info_rec" cols="4" maxrows="10000" save="false" public="false" private="false" desc="åˆ†ç»„ä¿¡æ¯è¡¨">
+			<column type="word" desc="åˆ†ç»„å·" />
+			<column type="object" desc="åˆ†ç»„ç®¡ç†å™¨PERSISTID" />
+			<column type="word" desc="åˆ†ç»„ç±»åž‹" />
+			<column type="word" desc="å½“å‰äººæ•°" />
+		</record>
+        <record name="ArenaRandomWaitingObjectRec" cols="2" maxrows="1000" save="false" public="false" private="false" desc="è¯·æ±‚éšæœºåŒ¹é…è¿›å…¥ç«žæŠ€åœºçš„å¯¹è±¡åˆ—è¡¨">
+            <column type="object" desc="ç­‰å¾…è¿›å…¥ç«žæŠ€åœºçš„å¯¹è±¡" />
+            <column type="int64" desc="å¼€å§‹ç­‰å¾…çš„æ—¶é—´" />
+		</record>
+        <record name="ArenaMatchWaitingObjectRec" cols="2" maxrows="1000" save="false" public="false" private="false" desc="è¯·æ±‚å®žåŠ›èŒƒå›´åŒ¹é…è¿›å…¥ç«žæŠ€åœºçš„å¯¹è±¡åˆ—è¡¨">
+            <column type="object" desc="ç­‰å¾…è¿›å…¥ç«žæŠ€åœºçš„å¯¹è±¡" />
+            <column type="int64" desc="å¼€å§‹ç­‰å¾…çš„æ—¶é—´" />
+		</record>
+        <record name="ArenaPKObjectRec" cols="4" maxrows="2000" save="false" public="false" private="false" desc="åœ¨pkä¸­çš„å¯¹è±¡åˆ—è¡¨">
+            <column type="word" desc="åˆ†ç»„å·" />
+            <column type="object" desc="åœ¨ç«žæŠ€åœºä¸­pkçš„å¯¹è±¡" />
+            <column type="object" desc="åœ¨ç«žæŠ€åœºä¸­pkçš„å¯¹è±¡" />
+            <column type="int64" desc="åœ¨ç«žæŠ€åœºä¸­pkçš„å¯¹è±¡" />
+		</record>
+		<record name="SceneLinePlayerCount" cols="3" maxrows="8" save="false" public="true" private="true" desc="åœºæ™¯çœŸåˆ†çº¿çŽ©å®¶æ•°é‡è¡¨">
+			<column type="word" desc="åˆ†çº¿åœºæ™¯å·" />
+			<column type="word" desc="æœ¬çº¿çŽ©å®¶å½“å‰æ•°é‡" />
+			<column type="word" desc="æœ¬çº¿çŽ©å®¶æœ€å¤§æ•°é‡" />
+		</record>
+    </records>
+    <!--ä»Žå…¶ä»–æ–‡ä»¶åŠ è½½å±žæ€§-->
+    <includes>
+        <path name="struct\common\trigger.xml" desc="è§¦å‘å™¨" />
+		<path name="struct\common\trigger_guid.xml" desc="è§¦å‘å™¨guid" />
+		<path name="struct\common\trigger_scene_prop_only.xml" desc="è§¦å‘å™¨åœºæ™¯ç‹¬æœ‰å±žæ€§" />
+		<path name="struct\scene\worldboss_scene.xml" desc="ä¸–ç•ŒBossä¼¤å®³ç»Ÿè®¡è¡¨" />
+        <path name="struct\rule\damage_show.xml" desc="ä¼¤å®³ç»Ÿè®¡ç›¸å…³"/>
+		<path name="struct\scene\dragoncraft_scene.xml" desc="é¾™åŸŽäº‰éœ¸ç›¸å…³"/>
+    </includes>
 </object>

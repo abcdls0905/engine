@@ -1,23 +1,18 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <object>
     <internals />
-    <properties> 
-	</properties>
+    <properties />
     <records>
-        <record name="system_mail_rec" cols="11" maxrows="256" save="true" public="false" private="true" desc="邮件表">
-
+        <record name="system_mail_rec" cols="11" maxrows="100" save="true" public="false" private="true" desc="邮件表">
             <column type="string" desc="信件流水号" key="default" />
             <column type="widestr" desc="发件人" />
             <column type="int64" desc="存在时间" />
             <column type="int64" desc="邮寄时间" />
-			
             <column type="byte" desc="信件类型" />
-			
             <column type="widestr" desc="信件题目" />
             <column type="widestr" desc="信件内容" />
             <column type="string" desc="金钱附件" />
             <column type="string" desc="物品附件" />
-			
             <column type="byte" desc="已读标记" />
             <column type="byte" desc="附件提取标记" />
         </record>

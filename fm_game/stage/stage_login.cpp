@@ -12,11 +12,11 @@ void StageLogin::OnEnterStage()
 {
 	char mbzTemp[256];
 	//arena
-	sprintf(mbzTemp,"%s%s%s/", g_core->GetResourcePath(), "map/ter/", "home_s3_1");
+	sprintf(mbzTemp,"%s%s%s/", g_core->GetResourcePath(), "ter/", "west_terrain_backup");
 	terrain_load(mbzTemp);
 	g_terrain->SetVisible(false);
 	ICamera* pCamera = (ICamera*)g_core->GetEntity(g_scene->GetCameraID());
-	pCamera->SetPosition(2.497921, 27.894909, -10.118525);
+	pCamera->SetPosition(2.497921, 97.894909, -10.118525);
 	pCamera->SetAngle(-0.116355, -1.230457, 0.000000);
 	//pCamera->SetPosition(0, 0, -10);
 	//pCamera->SetAngle(0,0,0);

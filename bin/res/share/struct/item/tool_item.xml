@@ -1,20 +1,26 @@
-<?xml version="1.0" encoding="gb2312"?>
+<?xml version="1.0" encoding="gb2312" ?>
 <!--可使用的道具的基础属性-->
 <object>
-	<!-- 基本属性 -->
-	<properties>
-		<property name="ToolPack" type="int" public="false" private="true" save="false" desc="道具属性包"/>
-	    <property name="Disappear" type="byte" public="false" private="true" save="false" desc="使用后是否消失"/>	
-		<property name="DropID" type="string" public="false" private="true" save="false" desc="通过掉落包获取礼包道具"/>
-		<property name="ItemsID" type="string" public="false" private="true" save="false" desc="通过物品id获取礼包道具"/>
-		<property name="ConsumeItem" type="string" public="false" private="true" save="false" desc="使用物品需要消耗的其他物品 格式：物品id, 物品数量"/>
-		<property name="SpecPack" type="int" public="false" private="true" save="false" desc="特殊固定属性包"/>
-		<property name="PetExp" type="int" public="false" private="true" save="false" desc="训练丹提供的经验"/>
+    <!-- 基本属性 -->
+    <properties>
+        <property name="ToolPack" type="dword" public="false" private="false" save="false" desc="道具属性包" />
+        <property name="Disappear" type="byte" public="false" private="false" save="false" desc="使用后是否消失" />
+        <property name="ConsumeItem" type="string" public="false" private="false" save="false" desc="使用物品需要消耗的其他物品 格式：物品id, 物品数量" />
+        <property name="SpecPack" type="dword" public="false" private="false" save="false" desc="特殊固定属性包" />
+        <property name="AddBufferID" type="string" public="false" private="false" save="false" desc="使用道具加Buffer" />
+		<property name="TaskPack" type="dword" public="false" private="false" save="false" desc="任务道具属性包" />
+		<property name="CoolDownTime" type="int" public="false" private="false" save="false" desc="使用冷却时间" />
+		<property name="Para1" type="string" public="false" private="fasle" save="false" desc="通用参数1" />
+		<property name="Para2" type="string" public="false" private="false" save="false" desc="通用参数2" />
+		<property name="FuncPack" type="int" public="false" private="false" save="false" desc="公用功能包"/>
+		<property name="CoolDownPackID" type="string" public="false" private="false" save="false" desc="冷却包"/>
+		<property name="DropID" type="string" public="false" private="false" save="false" realtime="" desc="开箱子类道具配置掉落id" />
+		<property name="SellPrice1" type="int" public="false" private="false" save="false" desc="价格"/> 
+		<property name="Buyprice2" type="int" public="false" private="false" save="false" desc="价格"/> 
+		<property name="Buyprice4" type="int" public="false" private="false" save="false" desc="价格"/> 
 	</properties>
-	<!-- 表属性 -->
-	<records>
-	</records>
-	<!--从其他文件加载属性-->
-	<includes>
-	</includes>
+    <!-- 表属性 -->
+    <records />
+    <!--从其他文件加载属性-->
+    <includes />
 </object>

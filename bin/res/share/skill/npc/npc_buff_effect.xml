@@ -1,278 +1,329 @@
 <?xml version="1.0" encoding="gb2312"?>
-<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
 <Object>
-	<Property ID="buff_dead_1" Name="死亡" EventType="1" TargetType="2" FuncNo="20"/>
-	<Property ID="buff_boss_lsjs_001" Name="格挡"/>
-	<Property ID="buff_boss_hssz_002" Name="格挡反击" EventType="9" TargetType="0" FuncNo="601" PRebound="20" ReBoundConfirmValue="20"/>
-	<Property ID="buff_boss_jmlz_001a" Name="绝对防御之开启免伤" EventType="1" TargetType="2" FuncNo="602" OpenImmunityType="0"/>
-	<Property ID="buff_boss_jmlz_001b" Name="绝对防御之关闭免伤" EventType="2" TargetType="2" FuncNo="603" CloseImmunityType="0"/>
-	<Property ID="buff_boss_jmdsls_001" Name="毒镖投掷之中毒"/>
-	<Property ID="buff_item_jiaxue_001" Name="1级血瓶"/>
-	<Property ID="buff_boss_jmlz_001c" Name="绝对防御之反弹" EventType="10" TargetType="0" FuncNo="601" PRebound="20" ReBoundConfirmValue="20"/>
-	<Property ID="buff_boss_xh_002" Name="雪地重击之减速"/>
-	<Property ID="sacrifice_halo" Name="献祭光环" EventType="3" TargetType="0" FuncNo="300" DefaultHitFormula="100"/>
-	<Property ID="boss2_tanfei_adv" Name="弹飞" EventType="10" TargetType="0" FuncNo="604" HitBack2MoveSpeed="30" HitBack2MoveDistance="5" HitBack2Action="back"/>
-	<Property ID="zhongdu_buff" Name="中毒" EventType="3" TargetType="2" FuncNo="300" DefaultHitFormula="100"/>
-	<Property ID="buff_ws13_001" Name="烈焰凤凰之灼烧" EventType="3" TargetType="4" FuncNo="98" AttackEffectType="4" AttackEffectRatio="60" HPFirmValue="-200" Attribute="HP" AttributeIncValue="-300"/>
-	<Property ID="buff_light_fanji_1_1" Name="雷电反伤" EventTargetRelationType="3" EventTargetClassType="0" EventType="10" TargetType="3" FuncNo="604" HitBack2MoveSpeed="15" HitBack2MoveDistance="4" HitBack2Action="back" PRebound="100"/>
-	<Property ID="buff_light_fanji_1_2" Name="雷电麻痹" EventTargetRelationType="3" EventTargetClassType="0" EventType="10" TargetType="3" FuncNo="1" BuffID="buff_20cantmove" BuffTargetRatio="50"/>
-	<Property ID="buff_fire_zhiliao_1_1" Name="火焰治疗" EventType="3" TargetType="0" FuncNo="99" HPFirmValue="5000"/>
-	<Property ID="buff_fire_zhiliao_1_2" Name="火焰烧灼" EventTargetRelationType="3" EventTargetClassType="0" EventType="9" TargetType="5" FuncNo="1" BuffID="buff_fire_shaozhuo_1" BuffTargetRatio="100"/>
-	<Property ID="buff_freeze_jiansu_1_1" Name="霜冻减速" EventTargetRelationType="3" EventTargetClassType="0" EventType="10" TargetType="3" FuncNo="1" BuffID="buff_50speeddown" BuffTargetRatio="100"/>
-	<Property ID="buff_freeze_jiansu_1_2" Name="霜冻减速2" EventTargetRelationType="3" EventTargetClassType="0" EventType="9" TargetType="5" FuncNo="1" BuffID="buff_50speeddown" BuffTargetRatio="100"/>
-	<Property ID="buff_fire_shaozhuo_1" Name="火焰烧灼" EventType="3" TargetType="0" FuncNo="99" HPPercent="-1" Attribute="HP" AttributeIncValue="-100"/>
-	<Property ID="buff_ws5_001" Name="治疗加血" EventType="3" TargetType="4" FuncNo="98" AttackEffectType="3" AttackEffectRatio="80" HPFirmValue="100" Attribute="HP" AttributeIncValue="100"/>
-	<Property ID="buff_ws11_001" Name="腐蚀之掉血" EventType="3" TargetType="4" FuncNo="98" AttackEffectType="4" AttackEffectRatio="30" HPFirmValue="-300" Attribute="HP" AttributeIncValue="-100"/>
-	<Property ID="buff_ws11_002" Name="治疗雨回血" EventType="1" TargetType="4" FuncNo="98" AttackEffectType="3" AttackEffectRatio="80" HPPercent="10" HPFirmValue="1000" Attribute="HP" AttributeIncValue="1000"/>
-	<Property ID="buff_ws19_001" Name="生命汲取之反馈" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="10"/>
-	<Property ID="buff_ws10_002" Name="黑暗吐息之诅咒" EventType="1" TargetType="0" FuncNo="99" HPPercent="-5"/>
-	<Property ID="frozen_sp" Name="冻伤" EventType="3" TargetType="0" FuncNo="99" HPPercent="-4" Attribute="HP" AttributeIncValue="-100"/>
-	<Property ID="copy_buff_dead_1" Name="死亡" EventType="2" TargetType="3" FuncNo="20"/>
-	<Property ID="copy_frozen_sp" Name="冻伤" EventType="3" TargetType="0" FuncNo="99" HPPercent="-1" Attribute="HP" AttributeIncValue="-100"/>
-	<Property ID="common_burn_adv" Name="引燃" EventType="3" TargetType="0" FuncNo="99" HPFirmValue="-300"/>
-	<Property ID="buff_ws24_003" Name="撕咬流血" EventType="3" TargetType="4" FuncNo="98" AttackEffectType="4" AttackEffectRatio="20" HPFirmValue="200"/>
-	<Property ID="buff_healball_1" Name="治疗飞弹" EventType="1" TargetType="0" FuncNo="99" HPPercent="10"/>
-	<Property ID="buff_timetodie" Name="死亡时间" EventType="3" TargetType="0" FuncNo="99" HPPercent="-4"/>
-	<Property ID="buff_health_1" Name="治疗术" EventType="3" TargetType="0" FuncNo="99" HPFirmValue="500"/>
-	<Property ID="buff_ws_skill_20_1" Name="普攻回血" EventType="1" TargetType="4" FuncNo="98" AttackEffectType="3" AttackEffectRatio="6"/>
-	<Property ID="buff_ws6_001a" Name="嗜血术加攻击" EventType="1" TargetType="4" FuncNo="98" AttackEffectType="1" AttackEffectRatio="80"/>
-	<Property ID="buff_ws_skill_7_1" Name="爆炎弹灼烧" EventType="3" TargetType="4" FuncNo="98" AttackEffectType="4" AttackEffectRatio="50"/>
-	<Property ID="buff_ws9_001a" Name="攻击怒吼加攻击" EventType="1" TargetType="4" FuncNo="98" AttackEffectType="1" AttackEffectRatio="60"/>
-	<Property ID="buff_ws_skill_15_1" Name="10%攻击吸血" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="10"/>
-	<Property ID="buff_heal_133" Name="133巫医治疗术" EventType="1" TargetType="0" FuncNo="99" HPFirmValue="1000"/>
-	<Property ID="buff_gbldef_133" Name="防反减伤" EventTargetRelationType="3" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="602" ImmunityPercent="100"/>
-	<Property ID="buff_ws6_001b" Name="嗜血术减攻击" EventType="2" TargetType="4" FuncNo="98" AttackEffectType="2" AttackEffectRatio="80"/>
-	<Property ID="buff_ws9_001b" Name="攻击怒吼减攻击" EventType="2" TargetType="4" FuncNo="98" AttackEffectType="2" AttackEffectRatio="60"/>
-	<Property ID="buff_ws_skill_26_1" Name="回春回血" EventType="1" TargetType="4" FuncNo="98" AttackEffectType="3" AttackEffectRatio="3"/>
-	<Property ID="buff_ws_skill_26_2" Name="太极之力晕眩"/>
-	<Property ID="deepfrozen" Name="极寒诅咒" EventType="10" TargetType="2" FuncNo="1" BuffID="common_buff_freeze_2s" BuffTargetRatio="100"/>
-	<Property ID="st_blood_buff" Name="石像吸血" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="90"/>
-	<Property ID="st_healself_buff" Name="石像恢复" EventType="1" TargetType="0" FuncNo="99" HPPercent="5"/>
-	<Property ID="axiuluo_ad1" Name="阿修罗" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="90"/>
-	<Property ID="defdown_ad1" Name="破甲" EventType="1" TargetType="2" FuncNo="100"/>
-	<Property ID="nec162_heal_ad1" Name="白骨治愈" EventType="1" TargetType="0" FuncNo="99" HPPercent="50"/>
-	<Property ID="abyss_anti_adv" Name="反击风暴" EventTargetRelationType="3" EventTargetClassType="0" EventType="10" TargetType="0" FuncNo="99" HPFirmValue="-500"/>
-	<Property ID="hq_buff_adv" Name="火拳" EventType="9" TargetType="0" FuncNo="99" HPFirmValue="-200"/>
-	<Property ID="relive_sk_1_ad1" Name="复活" EventType="3" TargetType="0" FuncNo="99" HPPercent="4"/>
-	<Property ID="nec182_heal" Name="治疗飞弹" EventType="1" TargetType="0" FuncNo="99" HPPercent="2"/>
-	<Property ID="buff_ws_skill_28_2" Name="额外1%当前生命伤害" EventType="1" TargetType="0" FuncNo="99" HPPercent="1"/>
-	<Property ID="team3_lzwk_adv" Name="离子外壳" EventType="3" TargetType="2" FuncNo="99" HPFirmValue="-500"/>
-	<Property ID="team4_hbjs_adv" Name="寒冰寄生" EventType="2" TargetType="0" FuncNo="2" NPCConfigID="team4_ice" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="0"/>
-	<Property ID="jslq_adv" Name="急速冷却" EventType="10" TargetType="2" FuncNo="99" HPFirmValue="-500"/>
-	<Property ID="buff_team2_nd_ad1" Name="免伤" EventType="1" TargetType="2" FuncNo="602"/>
-	<Property ID="copy_st_blood_buff" Name="石像吸血2" EventType="1" TargetType="2" FuncNo="99" HPPercent="1"/>
-	<Property ID="copy_st_blood_buff_2" Name="石像吸血" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="15"/>
-	<Property ID="team4_hbxw1_buff_adv" Name="寒冰漩涡吸附" EventType="1" TargetType="2" FuncNo="630" BufferHaulSpeed="2" BufferHualDis="5"/>
-	<Property ID="hteam4_hbjs_adv" Name="寒冰寄生" EventType="2" TargetType="0" FuncNo="2" NPCConfigID="hteam4_ice" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="0"/>
-	<Property ID="hteam_zj_buff_adv" Name="斩击" EventType="2" TargetType="2" FuncNo="99" HPFirmValue="-4444"/>
-	<Property ID="hteam_zj_buff_adv1" Name="斩击1" EventType="2" TargetType="2" FuncNo="604" HitBack2MoveSpeed="30" HitBack2MoveDistance="5" HitBack2Action="back"/>
-	<Property ID="buff_soulblade_ad1" Name="魂剑" EventType="9" TargetType="2" FuncNo="1" BuffID="buff_soulup_1"/>
-	<Property ID="buff_soulblade_ad2" Name="魂剑" EventType="9" TargetType="0" FuncNo="1" BuffID="buff_soulup_1"/>
-	<Property ID="buff_souldef_ad1" Name="防御" EventType="10" TargetType="0" FuncNo="604" HitBack2MoveSpeed="15" HitBack2MoveDistance="4" HitBack2Action="back" PRebound="100" ImmunityPercent="50" FirmDamagePercent="20"/>
-	<Property ID="buff_soulheal_ad1" Name="治愈" EventType="1" TargetType="2" FuncNo="99" HPPercent="1"/>
-	<Property ID="buff_soulblade_ad3" Name="魂剑" EventType="9" TargetType="2" FuncNo="1" BuffID="buff_soulup_1_per"/>
-	<Property ID="buff_ht5_dead_ad1" Name="致死咒怨" EventType="3" TargetType="2" FuncNo="99" HPFirmValue="-1444"/>
-	<Property ID="buff_ws_skill_27_3A" Name="飞剑攻击子buff" EventType="3" TargetType="0" FuncNo="620" FirmDamagePercent="20" DamagePercentRatio="5"/>
-	<Property ID="new_data_item" FuncNo="98"/>
-	<Property ID="titan273_buff_2_ad1" Name="药剂调配" EventType="2" TargetType="2" FuncNo="1" BuffID="titan273_buff_4"/>
-	<Property ID="rdevent_buff_3_ad1" Name="吸血" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="90"/>
-	<Property ID="rdevent_buff_5_ad1" Name="破甲" EventType="17" TargetType="0" FuncNo="618" ConsumeBreak="30" AbsorbPercent="90" BreakEffectType="1" BreakEffectBase="3" BreakEffectImprove="3"/>
-	<Property ID="rdevent_buff_6_ad1" Name="治愈" EventType="1" TargetType="0" FuncNo="99" HPPercent="50"/>
-	<Property ID="rdevent_buff_6_ad2" Name="治愈" EventType="1" TargetType="0" FuncNo="100" HPPercent="100" Attribute="MP" AttributeIncValue="50000"/>
-	<Property ID="rdevent_buff_12_ad1" Name="中吸血" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="20"/>
-	<Property ID="rdevent_buff_13_ad1" Name="小吸血" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="1"/>
-	<Property ID="rdevent_buff_14_ad1" Name="破甲" EventType="17" TargetType="0" FuncNo="618" ConsumeBreak="30" AbsorbPercent="90" BreakEffectType="1" BreakEffectBase="2" BreakEffectImprove="2"/>
-	<Property ID="Demo_mgn_shanghai" EventType="2" TargetType="0"/>
-	<Property ID="Demo_shitou_001" Name="驱散功能" EventType="3" TargetType="2" FuncNo="621" EventBlowWarFog="1" EventWarFogRadius="2"/>
-	<Property ID="Demo_shitou_002" Name="关闭功能" EventType="3" TargetType="2" FuncNo="621" EventBlowWarFog="0" EventWarFogRadius="2"/>
-	<Property ID="Demo_shitou_003" Name="过渡功能1" EventType="3" TargetType="2" FuncNo="621" EventBlowWarFog="1" EventWarFogRadius="1"/>
-	<Property ID="Demo_shitou_004" Name="过渡功能2" EventType="3" TargetType="2" FuncNo="621" EventBlowWarFog="1" EventWarFogRadius="2"/>
-	<Property ID="Demo_shitou_003_a" Name="移动功能1" EventType="3" TargetType="2" FuncNo="621" EventBlowWarFog="1" EventWarFogRadius="1"/>
-	<Property ID="xixuebuff_001f" Name="90%吸血" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="90"/>
-	<Property ID="buff_lgt_skill_4" Name="反伤" EventType="18" TargetType="2" FuncNo="602" PRebound="50" ReBoundConfirmValue="50" ImmunityPercent="95"/>
-	<Property ID="klw_xixuebuff" Name="400%吸血" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="400"/>
-	<Property ID="buff_klw_skill_10" Name="加血" EventType="1" TargetType="2" FuncNo="99" HPPercent="3"/>
-	<Property ID="deeppoison_ad1" Name="剧毒" EventType="3" TargetType="2" FuncNo="99" HPPercent="-1"/>
-	<Property ID="buff_klw_skill_9_ad1" Name="墓碑" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="klw_mubei_1" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="6.26" NPCCreatePosY="25.41" NPCCreatePosZ="19.02" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
-	<Property ID="buff_klw_skill_9_ad2" Name="墓碑" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="klw_mubei_2" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="23.65" NPCCreatePosY="25.412" NPCCreatePosZ="1.616" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
-	<Property ID="buff_klw_skill_9_ad3" Name="墓碑" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="klw_mubei_3" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="6.201" NPCCreatePosY="25.412" NPCCreatePosZ="-15.750" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
-	<Property ID="buff_klw_skill_9_ad4" Name="墓碑" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="klw_mubei_4" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="-9.955" NPCCreatePosY="25.412" NPCCreatePosZ="1.666" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
-	<Property ID="buff_klw_kouxue" Name="扣当前血量90%" EventType="3" TargetType="2" FuncNo="109" DeductBloodFormulaAD="$HP*0.9"/>
-	<Property ID="buff_klw_huixue" Name="回最大血量40%" EventType="3" TargetType="2" FuncNo="99" HPPercent="40"/>
-	<Property ID="buff_pangzi_skill_7_ad1" Name="护甲" EventType="3" TargetType="2" FuncNo="1" BuffID="buff_pangzi_skill_7" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
-	<Property ID="buff_jiaohui_fs_skill_006" Name="束缚术" EventType="2" TargetType="2" FuncNo="302" StiffTime="1500"/>
-	<Property ID="lgt_skill_5b" Name="天谴" EventType="1" TargetType="2" FuncNo="109" HPPercent="-10" DeductBloodFormulaHoly="@HP*0.2"/>
-	<Property ID="buff_lgt_skill_5c_1" Name="随机AOE" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="zym726_007" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateRadiusRange="1" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1" HPPercent="-10" DeductBloodFormulaAD="10000" ImmunityPercent="25"/>
-	<Property ID="buff_lgt_skill_5d_1" Name="减防" EventType="3" TargetType="2" FuncNo="99" HPPercent="-1" DeductBloodFormulaHoly="50" ImmunityPercent="75" BreakEffectType="1" BreakEffectBase="3" BreakEffectImprove="3"/>
-	<Property ID="buff_lgt_skill_5a_1" Name="回春" EventType="1" TargetType="2" FuncNo="99" HPPercent="80"/>
-	<Property ID="yiji_fashi_skill08a" Name="寒气入体" EventType="3" TargetType="2" FuncNo="99" HPPercent="-1"/>
-	<Property ID="jiaohui_nvzhujiao_skill04c" Name="极电斩无敌" EventType="1" TargetType="2" FuncNo="602" ImmunityPercent="100"/>
-	<Property ID="buff_team1_bd_skill_10_ad1" Name="扣最大血10%" EventType="1" TargetType="2" FuncNo="109" DeductBloodFormulaHoly="$MaxHP*0.08"/>
-	<Property ID="buff_team1_bd_skill_15_ad1" Name="变身" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\monster\mon_shu_0017.ini" ChangeModelSkillID="team1_bs_skill_1;team1_bs_skill_2;team1_bs_skill_3;team1_bs_skill_4;0;0" ChangeModelScale="1.25" ChangeModelAction="mon_shu_bd_sk20"/>
-	<Property ID="buff_shandianbs_skill_1_ad1" Name="变身" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\monster\mon_shu_0032.ini" ChangeModelSkillID="datou_wakuang_skill_1;0;0;0;0;0" ChangeModelScale="1" ChangeModelAction="mon_shu_datou_sk3"/>
-	<Property ID="buff_huoliquankai_skill_1_ad1" Name="火力全开" EventType="1" TargetType="0" FuncNo="627" IsNoCD="1" IsNoConsume="1"/>
-	<Property ID="buff_ganzhu_skill_1_ad1" Name="杀猪" EventType="1" TargetType="0" FuncNo="20" Condition="ganzhu_1"/>
-	<Property ID="buff_ganzhu2_skill_1_ad1" Name="杀猪" EventType="1" TargetType="0" FuncNo="20" Condition="ganzhu_2"/>
-	<Property ID="buff_ganzhu3_skill_1_ad1" Name="杀猪" EventType="1" TargetType="0" FuncNo="20" Condition="ganzhu_3"/>
-	<Property ID="buff_ganzhubs_skill_1_ad1" Name="变身" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\monster\mon_shu_0008.ini" ChangeModelSkillID="jbganzhu_skill_1;jbganzhu_skill_2;jbganzhu_skill_3;0;0;0" ChangeModelScale="1" ChangeModelAction="mon_shu_ganzhu_sk3"/>
-	<Property ID="buff_jbxiaogui_skill_1_ad1" Name="掉落金币" EventType="10" TargetType="2" FuncNo="2" EffectRatioParam="40" NPCConfigID="datou_diaoqian" NPCCreateCount="1" NPCTargetPosType="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="99"/>
-	<Property ID="buff_jbxiaogui_skill_2_ad1" Name="掉落金币" EventType="10" TargetType="2" FuncNo="2" EffectRatioParam="40" NPCConfigID="datou_diaoqian_1" NPCCreateCount="1" NPCTargetPosType="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="99"/>
-	<Property ID="buff_jbzisha_skill_1_ad1" Name="金币自杀" EventType="1" TargetType="2" FuncNo="20"/>
-	<Property ID="buff_jinbi_pk_skill_5_ad1" Name="传送门" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="jinbi_chuansongmen" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="113.225" NPCCreatePosY="57.229" NPCCreatePosZ="-86.354" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
-	<Property ID="buff_jinbi_pk_skill_5_ad2" Name="传送门" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="jinbi_chuansongmen" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="113.244" NPCCreatePosY="59.840" NPCCreatePosZ="-79.427" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
-	<Property ID="buff_jinbi_pk_skill_5_ad3" Name="传送门" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="jinbi_chuansongmen" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="91.713" NPCCreatePosY="57.229" NPCCreatePosZ="-62.491" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
-	<Property ID="buff_jinbi_pk_skill_5_ad4" Name="传送门" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="jinbi_chuansongmen" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="112.346" NPCCreatePosY="57.229" NPCCreatePosZ="-58.873" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
-	<Property ID="buff_jinbi_pk_skill_6_ad1" Name="免疫控制" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="pk_mianyi_1" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="112.674" NPCCreatePosY="57.229" NPCCreatePosZ="-84.192" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
-	<Property ID="buff_jinbi_pk_skill_6_ad2" Name="免疫控制" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="pk_mianyi_1" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="112.346" NPCCreatePosY="57.229" NPCCreatePosZ="-58.873" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
-	<Property ID="buff_jinbi_pk_skill_6_ad3" Name="免疫控制" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="pk_mianyi_1" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="100.332" NPCCreatePosY="57.229" NPCCreatePosZ="-58.315" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
-	<Property ID="buff_gbl_xdzhanshi_skill10" Name="寒冰回血" EventType="3" TargetType="2" FuncNo="99" HPFirmValue="8888"/>
-	<Property ID="debuff_du" Name="中毒0.01" EventType="3" TargetType="2" FuncNo="99" HPPercent="-1" DeductBloodFormulaHoly="50" ImmunityPercent="75" BreakEffectType="1" BreakEffectBase="3" BreakEffectImprove="3"/>
-	<Property ID="buff_judunvw_skill_12_ad1" Name="超级剧毒" EventType="3" TargetType="2" FuncNo="99" HPPercent="-10"/>
-	<Property ID="buff_judunvw_skill_8_ad1" Name="轻微剧毒" EventType="3" TargetType="2" FuncNo="99" HPPercent="-1"/>
-	<Property ID="super_bati_buff_ad1" Name="免疫大头" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_mianyi_datou"/>
-	<Property ID="buff_jingyan_huoli" Name="火力全开" EventType="1" TargetType="2" FuncNo="627" IsNoCD="1" IsNoConsume="1"/>
-	<Property ID="jingyan_shuaiguai_001" Name="随机到清屏炸弹" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="jingyan_zhadan_1" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateRadiusRange="8" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1" DeductBloodFormulaAD="9999999"/>
-	<Property ID="jingyan_shuaiguai_002" Name="随机到火力全开" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="jingyan_huoli_1" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateRadiusRange="8" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1" DeductBloodFormulaAD="9999999"/>
-	<Property ID="buff_blackman_05" Name="雷劫" EventType="2" TargetType="2" FuncNo="302" BuffID="common_buff_stun_1" StiffTime="300"/>
-	<Property ID="buff_dianju_skill_7_ad1" Name="变身熊" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\monster\mon_ani_0021b.ini" ChangeModelSkillID="team3_xiong_skill_1;0;0;0;0;0" ChangeModelScale="0.7" ChangeModelAction="mon_shu_bianshen_xiong" ChangeModelEffect="yeren_skill07" SkillSequenceID="team3_xiong_1"/>
-	<Property ID="buff_dianju_skill_7_ad2" Name="变身狼" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\monster\mon_ani_0022a.ini" ChangeModelSkillID="team3_lang_skill_1;0;0;0;0;0" ChangeModelScale="1.2" ChangeModelAction="mon_shu_bianshen_lang" ChangeModelEffect="yeren_skill07" SkillSequenceID="team3_lang_1"/>
-	<Property ID="buff_dianju_skill_7_ad3" Name="变身鹰" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\monster\mon_shu_0017a.ini" ChangeModelSkillID="team3_ying_skill_1;0;0;0;0;0" ChangeModelScale="1" ChangeModelAction="mon_shu_bianshen_ying" ChangeModelEffect="yeren_skill07" SkillSequenceID="team3_ying_1"/>
-	<Property ID="buff_shooter_skill_04" Name="冲击箭上DOT" EventType="3" TargetType="0" FuncNo="109" HPPercent="-1" DeductBloodFormulaHoly="@AttackBase*0.1"/>
-	<Property ID="buff_niutou_bianshen_01" Name="变身" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\monster\mon_shu_0020.ini" ChangeModelSkillID="mon_niutou_zhanshi01;mojun_zhanshi02;0;0;0;0" ChangeModelScale="1" ChangeModelAction="mon_niutou_zhanshi03" SkillSequenceID="zym754_005"/>
-	<Property ID="buff_jingzhi_01" Name="定身消除" EventType="10" TargetType="2" FuncNo="15" BuffConfigID="buff_jingzhi_01"/>
-	<Property ID="buff_yzr_zhanshi_skill05" Name="冰冻后接减速" EventType="2" TargetType="2" FuncNo="1" BuffID="control_speeddown_002f"/>
-	<Property ID="buff_jingzhi_02" Name="添加霸体" EventType="2" TargetType="2" FuncNo="1" BuffID="boss_bati_buff"/>
-	<Property ID="buff_judunvw_skill_15_ad1" Name="免伤" EventType="18" TargetType="2" FuncNo="602" PRebound="50" ReBoundConfirmValue="50" ImmunityPercent="90"/>
-	<Property ID="Buff_goblin_quicksand_001" Name="召唤流沙图腾" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="zym801_004" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateRadiusRange="3" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
-	<Property ID="Buff_goblin_viper_001" Name="召唤毒蛇图腾" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="zym801_005" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateRadiusRange="3" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
-	<Property ID="Buff_goblin_fete_001_ad1" Name="召唤祭祀图腾" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="zym801_006" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateRadiusRange="3" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
-	<Property ID="Buff_fete_02" Name="祭祀增强效果" EventType="1" TargetType="0" FuncNo="627" IsNoCD="1" IsNoConsume="1"/>
-	<Property ID="Buff_fete_01" Name="添加增强玩家效果的BUFF" EventType="1" TargetType="2" FuncNo="1" BuffID="Buff_fete_halo_02"/>
-	<Property ID="buff_roudan_skill_5_ad1" Name="美少女变身" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\monster\boss_shu_0005.ini" ChangeModelSkillID="panzi_boss_skill_02;0;0;0;0;0" ChangeModelScale="1" ChangeModelAction="mon_panzi_boss11" SkillSequenceID="panzi_boss01"/>
-	<Property ID="buff_xixue_001" Name="吸血25%" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="25"/>
-	<Property ID="buff_yewaiwudi_skill_1_ad1" Name="免伤" EventType="18" TargetType="2" FuncNo="602" PRebound="50" ReBoundConfirmValue="50" ImmunityPercent="100"/>
-	<Property ID="buff_Effect_lutanist_04" Name="琵琶颂歌-加血" EventType="1" TargetType="0" FuncNo="99" HPFirmValue="280000"/>
-	<Property ID="buff_skjiaren_skill_ad1" Name="扣最大血10%" EventType="3" TargetType="2" FuncNo="109" DeductBloodFormulaHoly="$MaxHP*0.99" IsAbsoluteDamage="1"/>
-	<Property ID="buff_skjiaren_skill_3_ad1" Name="解除夹人" EventType="10" TargetType="2" FuncNo="102" BuffID="buff_skjiaren_skill_2" TriggerSkillConfigID="shawang_skill_12" DeductBloodFormulaHoly="$MaxHP*0.70"/>
-	<Property ID="buff_xixue_002" Name="吸血200%" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="200"/>
-	<Property ID="buff_ghost_skill_04" Name="湮灭DOT" EventType="3" TargetType="2" FuncNo="99" HPPercent="-0.3" DeductBloodFormulaHoly="50" ImmunityPercent="75" BreakEffectType="1" BreakEffectBase="3" BreakEffectImprove="3"/>
-	<Property ID="buff_ghost_skill_13" Name="变身" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\boss\boss_ghost.ini" ChangeModelSkillID="ghost_skill_07;0;0;0;0;0" ChangeModelScale="1" ChangeModelAction="boss_ghost_14" SkillSequenceID="zym793_boss_1" HideWeapon="1"/>
-	<Property ID="buff_jiebei01" Name="界碑特效" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\boss\boss_ghost.ini" ChangeModelSkillID="ghost_skill_07;0;0;0;0;0" ChangeModelScale="1" ChangeModelAction="boss_ghost_14" SkillSequenceID="zym793_boss_1"/>
-	<Property ID="buff_fanshang_001" Name="反伤" EventType="10" TargetType="3" FuncNo="601" PRebound="12" ReBoundEffectName="buff_fanshang"/>
-	<Property ID="buff_zhuoshao_001_ad" Name="灼烧" EventTargetRelationType="3" EventTargetClassType="0" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaAD="5000"/>
-	<Property ID="buff_chaofeng_001" Name="嘲讽" EventType="1" TargetType="0" FuncNo="105" TauntSearchRadius="4" TauntTimes="3500" TauntRelationType="3" TauntTargetType="0" TauntBuffID="control_buff_chaofeng_001"/>
-	<Property ID="halo_zhuoshao_001" Name="灼烧光环" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaAD="5000"/>
-	<Property ID="buff_wuopao_sishen_skill20_ad" Name="黑暗光环" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaAP="180000"/>
-	<Property ID="buff_effect_speeddown_003f" Name="减速叠加" EventType="3" TargetType="2" FuncNo="1" BuffID="control_speeddown_006f_a"/>
-	<Property ID="battle_3v3_buff_3_ad1" Name="治疗" EventType="1" TargetType="2" FuncNo="99" HPPercent="2"/>
-	<Property ID="effect_team7_ningshi_01" Name="添加死亡凝视BUFF" EventType="3" TargetType="2" FuncNo="1" BuffID="buff_team7_ningshi_02"/>
-	<Property ID="effect_team7_ningshi_02" Name="死亡凝视造成伤害" EventType="1" TargetType="2" FuncNo="109" DeductBloodFormulaAD="4000" DeductBloodFormulaAP="4000" DeductBloodFormulaHoly="1000"/>
-	<Property ID="effect_team7_ningshi_03" Name="死亡凝视后添加冰冻BUFF" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_team7_ningshi_03"/>
-	<Property ID="effect_team7_fazhen_01" Name="添加增强BOSS的光环" EventType="3" TargetType="2" FuncNo="1" BuffID="buff_team7_fazhen_02"/>
-	<Property ID="effect_team7_fazhen_02" Name="添加增强玩家的光环" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_team7_fazhen_03"/>
-	<Property ID="effect_team7_zhuoshao_01" Name="冷焰灼烧-伤害" EventTargetClassType="0,5" EventType="3" TargetType="2" FuncNo="109" DeductBloodFormulaAD="5000" DeductBloodFormulaAP="3000" DeductBloodFormulaHoly="1000"/>
-	<Property ID="debuff_du_1ad" Name="中毒0.002" EventType="3" TargetType="2" FuncNo="99" HPPercent="-0.2" DeductBloodFormulaHoly="50" ImmunityPercent="75" BreakEffectType="1" BreakEffectBase="3" BreakEffectImprove="3"/>
-	<Property ID="buff_yewaiwudi_skill_1a_ad1" Name="免伤" EventType="18" TargetType="2" FuncNo="602" PRebound="50" ReBoundConfirmValue="50" ImmunityPercent="99"/>
-	<Property ID="buff_25_def_1_ad1" Name="免伤" EventType="18" TargetType="2" FuncNo="602" PRebound="50" ReBoundConfirmValue="50" ImmunityPercent="99"/>
-	<Property ID="buff_25_def_2_ad1" Name="掉血buff" EventType="1" TargetType="2" FuncNo="109" DeductBloodFormulaHoly="$MaxHP*0.05" IsAbsoluteDamage="1"/>
-	<Property ID="buff_25_def_4_ad1" Name="免伤" EventType="18" TargetType="2" FuncNo="602" PRebound="50" ReBoundConfirmValue="50" ImmunityPercent="90"/>
-	<Property ID="buff_25_tower_1_ad1" Name="掉血buff" EventType="18" TargetType="5" FuncNo="109" DeductBloodFormulaHoly="$MaxHP*0.02" IsAbsoluteDamage="1"/>
-	<Property ID="effect_team7_zhaohuan_01" Name="乌袍法师出现1" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="team7_help_npc_01" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="10.088" NPCCreatePosY="12.557" NPCCreatePosZ="31.195" NPCCreateOrient="-1.015002" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
-	<Property ID="effect_team7_zhaohuan_02" Name="乌袍法师出现2" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="team7_help_npc_01" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="9.214" NPCCreatePosY="12.454" NPCCreatePosZ="45.315" NPCCreateOrient="-2.305001" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
-	<Property ID="effect_team7_zhaohuan_03" Name="乌袍法师出现3" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="team7_help_npc_01" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="-1.122" NPCCreatePosY="12.557" NPCCreatePosZ="44.55" NPCCreateOrient="2.515004" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
-	<Property ID="effect_saima_cd_01" Name="赛马_减速" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_jiasu_1"/>
-	<Property ID="effect_saima_cd_02" Name="赛马_加速" EventType="1" TargetType="2" FuncNo="1" BuffID="control_speeddown_009f"/>
-	<Property ID="effect_saima_cd_03" Name="赛马_冰冻" EventType="1" TargetType="2" FuncNo="1" BuffID="control_common_buff_freeze_3s"/>
-	<Property ID="buff_Effect_ReduceHarm_30" Name="免伤" EventType="18" TargetType="2" FuncNo="602" PRebound="50" ReBoundConfirmValue="50" ImmunityPercent="30"/>
-	<Property ID="buff_Effect_ReduceHarm_35" Name="免伤" EventType="18" TargetType="2" FuncNo="602" PRebound="50" ReBoundConfirmValue="50" ImmunityPercent="35"/>
-	<Property ID="buff_Effect_ReduceHarm_40" Name="免伤" EventType="18" TargetType="2" FuncNo="602" PRebound="50" ReBoundConfirmValue="50" ImmunityPercent="40"/>
-	<Property ID="buff_Effect_ReduceHarm_45" Name="免伤" EventType="18" TargetType="2" FuncNo="602" PRebound="50" ReBoundConfirmValue="50" ImmunityPercent="45"/>
-	<Property ID="buff_Effect_ReduceHarm_50" Name="免伤" EventType="18" TargetType="2" FuncNo="602" PRebound="50" ReBoundConfirmValue="50" ImmunityPercent="50"/>
-	<Property ID="buff_Effect_ReduceHarm_55" Name="免伤" EventType="18" TargetType="2" FuncNo="602" PRebound="50" ReBoundConfirmValue="50" ImmunityPercent="55"/>
-	<Property ID="buff_Effect_ReduceHarm_60" Name="免伤" EventType="18" TargetType="2" FuncNo="602" PRebound="50" ReBoundConfirmValue="50" ImmunityPercent="60"/>
-	<Property ID="buff_Effect_ReduceHarm_65" Name="免伤" EventType="18" TargetType="2" FuncNo="602" PRebound="50" ReBoundConfirmValue="50" ImmunityPercent="65"/>
-	<Property ID="buff_Effect_ReduceHarm_70" Name="免伤" EventType="18" TargetType="2" FuncNo="602" PRebound="50" ReBoundConfirmValue="50" ImmunityPercent="70"/>
-	<Property ID="buff_Effect_ReduceHarm_75" Name="免伤" EventType="18" TargetType="2" FuncNo="602" PRebound="50" ReBoundConfirmValue="50" ImmunityPercent="75"/>
-	<Property ID="buff_Effect_ReduceHarm_80" Name="免伤" EventType="18" TargetType="2" FuncNo="602" PRebound="50" ReBoundConfirmValue="50" ImmunityPercent="80"/>
-	<Property ID="buff_Effect_ReduceHarm_85" Name="免伤" EventType="18" TargetType="2" FuncNo="602" PRebound="50" ReBoundConfirmValue="50" ImmunityPercent="85"/>
-	<Property ID="buff_Effect_ReduceHarm_90" Name="免伤" EventType="18" TargetType="2" FuncNo="602" PRebound="50" ReBoundConfirmValue="50" ImmunityPercent="90"/>
-	<Property ID="buff_Effect_ReduceHarm_95" Name="免伤" EventType="18" TargetType="2" FuncNo="602" PRebound="50" ReBoundConfirmValue="50" ImmunityPercent="95"/>
-	<Property ID="buff_Effect_ReduceHarm_20" Name="免伤" EventType="18" TargetType="2" FuncNo="602" PRebound="50" ReBoundConfirmValue="50" ImmunityPercent="20"/>
-	<Property ID="effect_zym832_boss_01a" Name="召唤天火" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="2" NPCConfigID="zym832_01" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
-	<Property ID="effect_zym833_boss_01" Name="毒液" EventType="3" TargetType="2" FuncNo="1" BuffID="buff_zym833_boss_01a"/>
-	<Property ID="effect_zym833_boss_01a" Name="剧毒" EventType="1" TargetType="2" FuncNo="109" DeductBloodFormulaAP="10000"/>
-	<Property ID="effect_zym833_boss_02" Name="毒痰（召唤骷髅）" EventType="3" TargetType="2" FuncNo="2" NPCConfigID="zym833_01" NPCCreateCount="2" NPCTargetPosType="0" NPCCreateRadiusRange="2"/>
-	<Property ID="effect_zym833_boss_03" Name="毒性皮肤" EventType="10" TargetType="3" FuncNo="1" BuffID="buff_zym833_boss_03a"/>
-	<Property ID="effect_zym834_boss_04" Name="生命收集" EventType="10" TargetType="4" FuncNo="99" HPFirmValue="5000"/>
-	<Property ID="effect_zym836_boss_02" Name="召唤落石" EventType="3" TargetType="2" FuncNo="2" NPCConfigID="zym836_01" NPCCreateCount="2" NPCTargetPosType="0" NPCCreateRadiusRange="10" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="20"/>
-	<Property ID="effect_mon_ani_0014_01" Name="被动沉默" EventType="10" TargetType="2" FuncNo="1" BuffID="buff_mon_ani_0014_01a"/>
-	<Property ID="effect_mon_ani_0014_02" Name="灼烧" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaAD="10000" DeductBloodFormulaAP="10000" DeductBloodFormulaHoly="5000"/>
-	<Property ID="effect_mon_ani_0014_03" Name="吸血" EventType="9" TargetType="2" FuncNo="603" HPFirmValue="1000" AbsorbPercent="50" AbsorbRate="10" LostHPPercent="01" ModifyLostHPPercentRatio="05"/>
-	<Property ID="effect_mon_shu_0028a_07" Name="嘲讽" EventType="1" TargetType="0" FuncNo="105" TauntSearchRadius="10" TauntTimes="3000" TauntRelationType="3" TauntTargetType="0;5"/>
-	<Property ID="effect_mon_shu_0028a_08a" Name="盾反（反弹100%伤害）" EventType="10" TargetType="3" FuncNo="601" PRebound="100" BoundAttackType="2"/>
-	<Property ID="effect_mon_shu_0028a_09" Name="治疗术" EventType="1" TargetType="0" FuncNo="610" LostHPPercent="05"/>
-	<Property ID="buff_fanshang_002" Name="反伤" EventType="10" TargetType="3" FuncNo="601" ReBoundConfirmValue="50000" ReBoundEffectName="buff_fanshang"/>
-	<Property ID="effect_pet" Name="反馈" EventTargetClassType="6" EventType="4" TargetType="3" FuncNo="1" BuffID="buff_pet_01" InitScaleX="1" InitScaleY="1" InitScaleZ="1"/>
-	<Property ID="buff_zhuoshao_002_ad" Name="灼烧" EventTargetRelationType="3" EventTargetClassType="0" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaHoly="30000"/>
-	<Property ID="effect_zym834_boss_03" Name="冰箱召唤" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="zym833_01" NPCCreateCount="10" NPCTargetPosType="0" NPCCreateRadiusRange="4" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="20"/>
-	<Property ID="buff_Effect_ReduceHarm_99" Name="免伤" EventType="18" TargetType="2" FuncNo="602" PRebound="50" ReBoundConfirmValue="50" ImmunityPercent="99"/>
-	<Property ID="debuff_lastblood_01" Name="扣血1%" EventType="1" TargetType="2" FuncNo="99" HPPercent="-1"/>
-	<Property ID="debuff_lastblood_02" Name="扣血2%" EventType="1" TargetType="2" FuncNo="99" HPPercent="-2"/>
-	<Property ID="debuff_lastblood_03" Name="扣血3%" EventType="1" TargetType="2" FuncNo="99" HPPercent="-3"/>
-	<Property ID="debuff_lastblood_04" Name="扣血5%" EventType="1" TargetType="2" FuncNo="99" HPPercent="-5"/>
-	<Property ID="debuff_lastblood_05" Name="扣血10%" EventType="1" TargetType="2" FuncNo="99" HPPercent="-10"/>
-	<Property ID="debuff_lastblood_06" Name="扣血15%" EventType="1" TargetType="2" FuncNo="99" HPPercent="-15"/>
-	<Property ID="debuff_lastblood_07" Name="扣血20%" EventType="1" TargetType="2" FuncNo="99" HPPercent="-20"/>
-	<Property ID="debuff_lastblood_08" Name="扣血30%" EventType="1" TargetType="2" FuncNo="99" HPPercent="-30"/>
-	<Property ID="debuff_lastblood_09" Name="扣血50%" EventType="1" TargetType="2" FuncNo="99" HPPercent="-50"/>
-	<Property ID="debuff_lastblood_10" Name="扣血75%" EventType="1" TargetType="2" FuncNo="99" HPPercent="-75"/>
-	<Property ID="effect_com_flags_1a" Name="背起_灰熊旗帜" EventType="1" TargetType="2" FuncNo="702" BindModel="ini/npc/item/item_0077.ini" BindPoint="main_model::wing_01" InitScaleX="1" InitScaleY="1" InitScaleZ="1" BindModelConfig="com_flags_1"/>
-	<Property ID="effect_com_flags_1b" Name="放下_灰熊旗帜" EventType="2" TargetType="2" FuncNo="702" BindModel="ini/npc/item/item_0077.ini" BindPoint="main_model::wing_01" InitScaleX="1" InitScaleY="1" InitScaleZ="1" BindModelConfig="com_flags_1"/>
-	<Property ID="effect_com_flags_2a" Name="背起_独狼旗帜" EventType="1" TargetType="2" FuncNo="702" BindModel="ini/npc/item/item_0078.ini" BindPoint="main_model::wing_01" InitScaleX="1" InitScaleY="1" InitScaleZ="1" BindModelConfig="com_flags_2"/>
-	<Property ID="effect_com_flags_2b" Name="放下_独狼旗帜" EventType="2" TargetType="2" FuncNo="702" BindModel="ini/npc/item/item_0078.ini" BindPoint="main_model::wing_01" InitScaleX="1" InitScaleY="1" InitScaleZ="1" BindModelConfig="com_flags_2"/>
-	<Property ID="buff_zhenying_bianshen1ad" Name="阵营变身1" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\monster\boss_shu_0010a.ini" ChangeModelSkillID="zhenying_shenen_skill1;zhenying_shenen_skill2;zhenying_shenen_skill3;zhenying_shenen_skill4;0;0;0;0" ChangeModelScale="0.85" ChangeModelAction="mon_shenen_qishi_10" SkillSequenceID="AI_zhenying_bianshen1"/>
-	<Property ID="buff_zhenying_bianshen2ad" Name="阵营变身2" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\monster\boss_shu_0009.ini" ChangeModelSkillID="zhenying_alice_skill1;zhenying_alice_skill2;zhenying_alice_skill3;zhenying_alice_skill4;0;0;0;0" ChangeModelScale="0.75" ChangeModelAction="boss_shu_0009_11"/>
-	<Property ID="buff_attackup_df_ad1" Name="巅峰增伤" EventType="8" TargetType="2" FuncNo="611" AdvanceHPPercent="100" AttackPercent="20" ModifyAdvenceHPPercentRatio="0" ModifyAttackPercentRatio="0" ModifyAttackTime="30000" ModifyAttackCount="20"/>
-	<Property ID="buff_attackup_ws_ad1" Name="无双增伤" EventType="8" TargetType="2" FuncNo="611" AdvanceHPPercent="100" AttackPercent="20" ModifyAdvenceHPPercentRatio="0" ModifyAttackPercentRatio="0" ModifyAttackTime="20000" ModifyAttackCount="20"/>
-	<Property ID="buff_attackup_df_ad2" Name="巅峰增伤" EventType="2" TargetType="2" FuncNo="611"/>
-	<Property ID="buff_attackup_ws_ad2" Name="无双增伤" EventType="2" TargetType="2" FuncNo="611"/>
-	<Property ID="buff_zhenying_bianshen0ad" Name="阵营变身清除后雷霆" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_zhenying_bianshen1"/>
-	<Property ID="buff_zhenying_bianshen0bd" Name="阵营变身清除后审判" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_zhenying_bianshen2"/>
-	<Property ID="buff_yuxue2_bianshen0ad" Name="浴血2变身清除后蓝鱼" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_yuxue2_bianshen1"/>
-	<Property ID="buff_yuxue2_bianshen0bd" Name="浴血2变身清除后金鱼" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_yuxue2_bianshen2"/>
-	<Property ID="buff_yuxue2_bianshen1ad" Name="浴血变身蓝鱼" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\monster\boss_shu_0012.ini" ChangeModelSkillID="yuxue2_skill01;yuxue2_skill02;yuxue2_skill03;yuxue2_skill04;0;0;0;0" ChangeModelScale="1"/>
-	<Property ID="buff_yuxue2_bianshen2ad" Name="浴血变身金鱼" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\monster\boss_shu_0012a.ini" ChangeModelSkillID="yuxue2_skill01;yuxue2_skill06;yuxue2_skill05;yuxue2_skill07;0;0;0;0" ChangeModelScale="1"/>
-	<Property ID="buff_zuoqi_sea_ad" Name="海底坐骑回血" EventType="3" TargetType="2" FuncNo="99" HPPercent="1" HPEffectID="common_addblood_001" DeductBloodFormulaHoly="50" ImmunityPercent="75" BreakEffectType="1" BreakEffectBase="3" BreakEffectImprove="3"/>
-	<Property ID="effect_zym858_boss_2a" Name="伤害" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaAD="150000" DeductBloodFormulaAP="150000" DeductBloodFormulaHoly="50000" InitScaleX="1" InitScaleY="1" InitScaleZ="1"/>
-	<Property ID="effect_zym858_boss_2b_01" Name="随机接技能" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="skill_boss_ani_0008_03a" InitScaleX="1" InitScaleY="1" InitScaleZ="1"/>
-	<Property ID="effect_zym858_boss_2b_02" Name="随机接技能" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="skill_boss_ani_0008_03b" InitScaleX="1" InitScaleY="1" InitScaleZ="1"/>
-	<Property ID="effect_zym858_boss_2b_03" Name="随机接技能" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="skill_boss_ani_0008_03c" InitScaleX="1" InitScaleY="1" InitScaleZ="1"/>
-	<Property ID="buff_yuxue2_bianshen1hx" Name="浴血变身时同时加血" EventType="1" TargetType="0" FuncNo="99" HPFirmValue="100000000" Attribute="HP" AttributeIncValue="100000000"/>
-	<Property ID="effect_zym864_boss_01" Name="护盾" EventType="1" TargetType="2" FuncNo="701" CanImmunityBreak="1" InitScaleX="1" InitScaleY="1" InitScaleZ="1"/>
-	<Property ID="effect_zym864_boss_02" Name="反伤" EventType="10" TargetType="3" FuncNo="601" ReBoundConfirmValue="50000" ReBoundEffectName="buff_fanshang" InitScaleX="1" InitScaleY="1" InitScaleZ="1"/>
-	<Property ID="digong_yaoji_1ad" Name="地宫药剂-瞬回30%" EventType="3" TargetType="2" FuncNo="99" HPPercent="30" HPEffectID="common_addblood_001"/>
-	<Property ID="digong_yaoji_2ad" Name="地宫药剂-秒回3%，10秒" EventType="3" TargetType="2" FuncNo="99" HPPercent="3" HPEffectID="common_addblood_001"/>
-	<Property ID="digong_yaoji_3ad" Name="地宫药剂-秒回4%，10秒" EventType="3" TargetType="2" FuncNo="99" HPPercent="4" HPEffectID="common_addblood_001"/>
-	<Property ID="digong_buff_zl_ad" Name="地宫秒回1%" EventType="3" TargetType="2" FuncNo="99" HPPercent="4" HPEffectID="common_addblood_001"/>
-	<Property ID="buff_digong_bianshen_1ad" Name="地宫变身清除后雷霆" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_digong_bianshen_1a"/>
-	<Property ID="buff_digong_bianshen_2ad" Name="地宫变身清除后审判" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_digong_bianshen_2a"/>
-	<Property ID="buff_digong_bianshen_3ad" Name="地宫变身清除后蓝鱼" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_digong_bianshen_3a"/>
-	<Property ID="buff_digong_bianshen_4ad" Name="地宫变身清除后金鱼" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_digong_bianshen_4a"/>
-	<Property ID="buff_digong_bianshen_1bd" Name="地宫变身雷霆" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\monster\boss_shu_0010a.ini" ChangeModelSkillID="digong_shenen_skill1;digong_shenen_skill2;digong_shenen_skill3;digong_shenen_skill4" ChangeModelScale="0.85" ChangeModelAction="mon_shenen_qishi_10" SkillSequenceID="AI_zhenying_bianshen1"/>
-	<Property ID="buff_digong_bianshen_2bd" Name="地宫变身审判" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\monster\boss_shu_0009.ini" ChangeModelSkillID="digong_alice_skill1;zhenying_alice_skill2;zhenying_alice_skill3;zhenying_alice_skill4;0;0;0;0" ChangeModelScale="0.75" ChangeModelAction="boss_shu_0009_11"/>
-	<Property ID="buff_digong_bianshen_3bd" Name="地宫变身蓝鱼" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\monster\boss_shu_0012.ini" ChangeModelSkillID="digong_longyu_skill01;digong_longyu_skill02;digong_longyu_skill03;digong_longyu_skill04" ChangeModelScale="1"/>
-	<Property ID="buff_digong_bianshen_4bd" Name="地宫变身金鱼" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\monster\boss_shu_0012a.ini" ChangeModelSkillID="digong_longyu_skill01;digong_longyu_skill06;digong_longyu_skill05;digong_longyu_skill07" ChangeModelScale="1"/>
-	<Property ID="buff_effect_addHurt_01" Name="受击时增加200%的伤害" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="-200" InitScaleX="1" InitScaleY="1" InitScaleZ="1"/>
-	<Property ID="buff_ShaoJP_01" Name="哨戒炮（激光伤害）" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaAD="300" DeductBloodFormulaAP="300" DeductBloodFormulaHoly="400" InitScaleX="1" InitScaleY="1" InitScaleZ="1"/>
-	<Property ID="buff_ChuanSong_001" Name="关卡884定点传送" EventType="1" TargetType="2" FuncNo="303" ShortMoveSwitch="1" TransFixDestX="6.618323" TransFixDestY="20.817299" TransFixDestZ="-0.123543" MoveType="0" InitScaleX="1" InitScaleY="1" InitScaleZ="1"/>
-	<Property ID="effect_zym887_01" Name="免疫伤害" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="99" SharedDamagePercent="100" InitScaleX="1" InitScaleY="1" InitScaleZ="1"/>
-	<Property ID="effect_Treat_5" Name="每次治愈5%" EventType="3" TargetType="0" FuncNo="99" HPPercent="5" InitScaleX="1" InitScaleY="1" InitScaleZ="1"/>
-	<Property ID="effect_zym887_01a" Name="伤害转移" EventType="10" TargetType="4" FuncNo="99" HPFirmValue="-10000" SharedDamagePercent="100" FirmDamagePercent="5" InitScaleX="1" InitScaleY="1" InitScaleZ="1" ImmunityPercent="100" DeductBloodFormulaAD="1000" DeductBloodFormulaHoly="1000" DeductBloodFormulaAP="1000"/>
-	<Property ID="buff_boss_ani_0002_05ad" Name="反击墓碑回血" EventType="10" TargetType="2" FuncNo="99" HPPercent="15" HPEffectID="common_addblood_001"/>
-	<Property ID="buff_digong_bianshen1hx" Name="地宫变身时同时加血" EventType="1" TargetType="0" FuncNo="99" HPFirmValue="1000000000" Attribute="HP" AttributeIncValue="100000000"/>
-	<Property ID="buff_Effect_ReduceHarm_100" Name="免伤" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="100"/>
-	<Property ID="buff_jidijiaxue" Name="基地回血-每秒回复20%" EventType="3" TargetType="2" FuncNo="99" HPPercent="20" HPEffectID="common_addblood_001"/>
-	<Property ID="buff_jididiaoxue" Name="基地掉血-每秒掉10%" EventType="3" TargetType="2" FuncNo="99" HPPercent="-10"/>
+	<Property ID="fl_wd" EventTargetRelationType="7" EventTargetClassType="3" EventType="18" TargetType="0" FuncNo="602" EffectRatioParam="100" ReBoundConfirmValue="10" ImmunityPercent="100"/>
+	<Property ID="fl_buildsj" Name="创建水晶" EventTargetRelationType="2" EventTargetClassType="2" EventType="1" TargetType="0" FuncNo="2"/>
+	<Property ID="mount_speed_01" Name="坐骑加速" EventTargetRelationType="1" EventTargetClassType="1" EventType="1" TargetType="0" FuncNo="1" BuffID="mount_speed_01"/>
+	<Property ID="buff_wild_001" Name="狂暴" EventTargetRelationType="1" EventTargetClassType="1" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_wild_001"/>
+	<Property ID="buff_npc_yyr_003_1" Name="每秒扣200HP" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="0" FuncNo="99" HPFirmValue="-200"/>
+	<Property ID="buff_sfzh_004_1" Name="链接特效" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" BufferCreateName="tt_boss_sf004"/>
+	<Property ID="buff_sfzh_004_2" Name="食腐之魂吸血" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="0" FuncNo="99" HPFirmValue="-100"/>
+	<Property ID="buff_sfzh_004_3" Name="食腐之魂加血" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="100"/>
+	<Property ID="buff_dragon_change_1_ad1" Name="切换阶段" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_dragon_change_1" BuffTargetRatio="100"/>
+	<Property ID="boss_buff_qingchu_02" Name="清除特效" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="1" BuffID="boss_buff_qingchu_02"/>
+	<Property ID="buff_task_ko_1_ad1" Name="杀怪" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="1" BuffID="buff_dead"/>
+	<Property ID="battle_fenwei_001_ad1" Name="杀死自己" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="20" EffectRatioParam="100"/>
+	<Property ID="battle_fenwei_004_ad1" Name="创建火焰事件" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="npc_bodyfire_01" NPCCreateCount="1" NPCTargetPosType="0" NPCCreateNumberLimit="99"/>
+	<Property ID="buff_task_leidian_1_ad1" Name="杀怪" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="1" BuffID="buff_dead"/>
+	<Property ID="buff_task_ko_2_ad1" Name="杀怪" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_task_ko_1"/>
+	<Property ID="buff_task_ko_2_ad2" Name="击退" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="5" HitBack2MoveSpeed="20" HitBack2MoveDistance="10"/>
+	<Property ID="battle_fenwei_007_ad1" Name="按照坐标创建火墙" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="2" NPCConfigID="demo_normal_monster_13" NPCCreateCount="1" NPCTargetPosType="1" NPCCreatePosX="-0.71" NPCCreatePosY="55.03" NPCCreatePosZ="42.75" NPCCreateOrient="0" NPCCreateNumberLimit="1"/>
+	<Property ID="boss_huolong_hp_1" Name="每秒扣除100HP" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="0" FuncNo="99" HPFirmValue="-100"/>
+	<Property ID="test_bianshen_1_ad1" Name="变身" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\tt\world_de_007.ini" ChangeModelSkillID=";;;;;" ChangeModelHeight="1.8"/>
+	<Property ID="battle_fenwei_009" Name="启动自杀" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="20"/>
+	<Property ID="boss_jiachou_hp_1" Name="百分比掉血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="-30" HPFirmValue="0"/>
+	<Property ID="ys_monster_liegou_1" Name="召唤" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="2" NPCConfigID="ys_monster_gouxiong_1" NPCCreateCount="1" NPCTargetPosType="1"/>
+	<Property ID="buff_diaoxue_1" Name="掉血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="-1"/>
+	<Property ID="buff_task_dadishu_1_ad1" Name="变身" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\npc\npc_task_008.ini" ChangeModelSkillID="task_dadishu_skill_1;;;;;" ChangeModelHeight="1.5" ChangeModelOff="0"/>
+	<Property ID="buff_task_dadishu_1_ad2" Name="变身结束" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="0" FuncNo="619" ChangeModelOff="1"/>
+	<Property ID="buff_task_demon_1_ad1" Name="变身" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\tt\fb_flds_boss001.ini" ChangeModelSkillID="task_demon_skill_2;task_demon_skill_1;;;;" ChangeModelScale="0.7" ChangeModelAction="monshu_changedemon_4" ChangeModelHeight="3" ChangeModelOff="0" ChangeCameraForwad="15"/>
+	<Property ID="buff_task_demon_1_ad2" Name="变身结束" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="0" FuncNo="619" ChangeModelOff="1"/>
+	<Property ID="buff_task_demon_2_ad1" Name="添加变身buff" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="0" FuncNo="1" BuffID="buff_task_demon_3"/>
+	<Property ID="buff_task_demon_3_1" Name="扣自血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPFirmValue="-1"/>
+	<Property ID="test_bianshen_1_ad2" Name="变身结束" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="0" FuncNo="619" ChangeModelOff="1"/>
+	<Property ID="buff_task_yanchi_1" Name="延迟" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="1" BuffID="buff_task_demon_2" BuffTargetRatio="0"/>
+	<Property ID="buff_task_fulong_skill_1_ad1" Name="孵化" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="rw_quwei_ganzhu_01" NPCCreateCount="1" NPCTargetPosType="1" IsLimitNPCCreateNumber="0" NPCCreateNumberLimit="0"/>
+	<Property ID="buff_task_fulong_skill_1_ad2" Name="销毁" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="20"/>
+	<Property ID="buff_task_jingzi_dead_ad1" Name="销毁" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="20"/>
+	<Property ID="buff_task_fuhuanpc_1_ad1" Name="召唤" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="task_fuhuanpc_1" NPCCreateCount="1" NPCTargetPosType="1"/>
+	<Property ID="buff_task_fuhuanpc_2_ad1" Name="召唤" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="task_fuhuanpc_2" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="90.38" NPCCreatePosY="47.79" NPCCreatePosZ="262.29" NPCCreateOrient="0.21"/>
+	<Property ID="buff_task_fuhuanpc_3_ad1" Name="召唤" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="task_fuhuanpc_3" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="79.57" NPCCreatePosY="51.64" NPCCreatePosZ="279.38" NPCCreateOrient="1.56"/>
+	<Property ID="buff_task_fuhuanpc_4_ad1" Name="召唤" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="task_fuhuanpc_4" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="95.97" NPCCreatePosY="46.35" NPCCreatePosZ="289.73" NPCCreateOrient="3.07"/>
+	<Property ID="buff_task_fuhuanpc_5_ad1" Name="召唤" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="task_fuhuanpc_5" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="106.24" NPCCreatePosY="43.32" NPCCreatePosZ="273.3" NPCCreateOrient="4.8"/>
+	<Property ID="buff_task_fuhuanpc_6_ad1" Name="召唤" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="2" NPCConfigID="task_fuhualong_1" NPCCreateCount="1" NPCTargetPosType="1"/>
+	<Property ID="buff_task_yezhuwang_2_ad1" Name="每秒扣除10%" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="0" FuncNo="99" HPPercent="-10" HPFirmValue="0"/>
+	<Property ID="buff_bianshenxiama_1_ad1" Name="变身下马" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="333"/>
+	<Property ID="buff_tks_HP_01_ad1" Name="百分比掉血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="-50"/>
+	<Property ID="buff_task_diaobaowu_1_ad1" Name="掉宝物" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="1" EffectRatioParam="20" BuffID="buff_task_diaobaowu_2"/>
+	<Property ID="buff_task_diaobaowu_2_ad1" Name="召唤" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="task_diaobaowu_1" NPCCreateCount="1" NPCTargetPosType="1"/>
+	<Property ID="buff_task_apple_2_ad1" Name="百分比掉血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="-50" HPFirmValue="0"/>
+	<Property ID="buff_zz_jingu_2_ad1" Name="延迟禁锢" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="1" BuffID="buff_zz_jingu_1"/>
+	<Property ID="buff_zz_jiaxue_2_ad1" Name="百分比回血" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="99" HPPercent="5"/>
+	<Property ID="buff_task_bus_1_ad1" Name="上车" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="638" CarrierOn="1" CarrierNpcConfig="ride_landbird_001" CarrierPathID="path_004028"/>
+	<Property ID="buff_task_bus_1_ad2" Name="下车" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="638" CarrierOn="0"/>
+	<Property ID="buff_task_zhuaren_1_ad1" Name="抓人" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="16" CatchKeepTime="100" CatchType="1" BeCatchBuffer="buff_yunxuan_003"/>
+	<Property ID="buff_task_zhuaren_1_ad2" Name="抓人" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="0" FuncNo="16" CatchKeepTime="0" CatchType="0"/>
+	<Property ID="buff_task_zhuaren_2_ad1" Name="主动解除抓人" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="16" CatchKeepTime="0" CatchType="0"/>
+	<Property ID="buff_task_zhuaren_bs_ad1" Name="变身" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\npc\npc_task_00.ini" ChangeModelSkillID="task_jiechuzhuaren_skill_1;;;;;" ChangeModelHeight="1.5" ChangeModelOff="0"/>
+	<Property ID="buff_task_zhuaren_bs_ad2" Name="变身结束" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="0" FuncNo="619" ChangeModelOff="1"/>
+	<Property ID="buff_talk_wc_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="task_wc_3_talk"/>
+	<Property ID="buff_talk_wc_2_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="task_wc_exin_talk"/>
+	<Property ID="buff_talk_gtr_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="task_gtr_1_talk"/>
+	<Property ID="buff_talk_gtr_2_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="task_gtr_2_talk"/>
+	<Property ID="buff_talk_key_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="task_key_1_talk"/>
+	<Property ID="buff_bianshen_hama_ad1" Name="变身" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\monster\mon_shu_017.ini" ChangeModelSkillID=";;;;;" ChangeModelHeight="1.8"/>
+	<Property ID="buff_task_butcher_1_ad1" Name="变身勾人" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\npc\npc_task_00.ini" ChangeModelSkillID="task_butcher_skill_1;;;;;" ChangeModelHeight="1.5" ChangeModelOff="0"/>
+	<Property ID="buff_task_sf_1_ad1" Name="变身影魔" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\npc\npc_task_00.ini" ChangeModelSkillID=";task_yingmo_skill_1;task_yingmo_skill_2;task_yingmo_skill_3;;" ChangeModelHeight="1.5" ChangeModelOff="0"/>
+	<Property ID="buff_task_sf_2_ad1" Name="百分比掉血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="-35" HPFirmValue="0"/>
+	<Property ID="buff_bianshen_gq_ad1" Name="变身光球" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="619"/>
+	<Property ID="buff_talk_jijie_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="task_jijie_1_talk"/>
+	<Property ID="buff_talk_jijie_2_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="task_jijie_2_talk"/>
+	<Property ID="buff_talk_butcher_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="task_butcher_1_talk"/>
+	<Property ID="buff_dyy_mianshang_2_ad1" Name="免伤" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="95"/>
+	<Property ID="buff_boss_dyy_skill_1_ad1" Name="召唤" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="dyy_shitouren_1" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="-113.24" NPCCreatePosY="109.19" NPCCreatePosZ="-164.85" NPCCreateOrient="3.19" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="buff_boss_dyy_skill_2_ad1" Name="召唤" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="dyy_jingyao_1" NPCCreateCount="1" NPCTargetPosType="1" NPCCreatePosX="-113.82" NPCCreatePosY="109.15" NPCCreatePosZ="-183.41" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="buff_dyy_mianshang_1_ad1" Name="免伤" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="100"/>
+	<Property ID="boss_dragon_skill_5_ad1" Name="百分比掉血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="-10"/>
+	<Property ID="buff_dyy_bosshp_1_ad1" Name="添加回血光环" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="1" BuffID="buff_dyy_hpgh_1"/>
+	<Property ID="buff_dyy_bosshp_2_ad1" Name="添加回血光环" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="1" BuffID="buff_dyy_hpgh_2"/>
+	<Property ID="buff_dyy_bosshp_3_ad1" Name="添加回血光环" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="1" BuffID="buff_dyy_hpgh_3"/>
+	<Property ID="buff_dyy_bosshp_4_ad1" Name="添加回血光环" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="1" BuffID="buff_dyy_hpgh_4"/>
+	<Property ID="buff_dyy_bosshp_1_ad2" Name="免伤" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="100"/>
+	<Property ID="buff_dyy_hpgh_1_ad1" Name="回血光环关闭自杀" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_dead"/>
+	<Property ID="buff_dyy_hphx_1_ad1" Name="回血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="10"/>
+	<Property ID="buff_boss_dyy_skill_1_ad2" Name="召唤" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="dyy_shitouren_2" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="-94.88" NPCCreatePosY="109.19" NPCCreatePosZ="-183.89" NPCCreateOrient="4.71" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="buff_boss_dyy_skill_1_ad3" Name="召唤" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="dyy_shitouren_3" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="-114.07" NPCCreatePosY="109.19" NPCCreatePosZ="-201.26" NPCCreateOrient="6.25" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="buff_boss_dyy_skill_1_ad4" Name="召唤" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="dyy_shitouren_4" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="-131.57" NPCCreatePosY="109.19" NPCCreatePosZ="-183.03" NPCCreateOrient="1.52" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="buff_dyy_boom_1_ad1" Name="添加炸弹光环" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="1" BuffID="buff_dyy_boom_2"/>
+	<Property ID="buff_dyy_boom_3_ad1" Name="爆炸" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="-2"/>
+	<Property ID="buff_dyy_boom_3_ad2" Name="爆炸死亡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_dead"/>
+	<Property ID="buff_dyy_boom_2_ad1" Name="爆炸自杀" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_dead"/>
+	<Property ID="buff_boss_dyy_skill_1_ad5" Name="召唤" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="dyy_jingyao_1" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="-130.99" NPCCreatePosY="109.01" NPCCreatePosZ="-201.24" NPCCreateOrient="0.7" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="10"/>
+	<Property ID="buff_boss_dyy_skill_1_ad6" Name="召唤" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="dyy_jingyao_1" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="-97.08" NPCCreatePosY="109.01" NPCCreatePosZ="-198.43" NPCCreateOrient="-0.8" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="10"/>
+	<Property ID="buff_boss_dyy_skill_1_ad7" Name="召唤" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="dyy_jingyao_1" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="-130.6" NPCCreatePosY="109.01" NPCCreatePosZ="-165.67" NPCCreateOrient="2.28" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="10"/>
+	<Property ID="buff_dyy_bosshp_1_ad3" Name="扣血" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="99" HPPercent="0" HPFirmValue="-1" HPIgnoreImmuneDamage="1"/>
+	<Property ID="boss_sjxy_buff_008a_ad1" Name="添加下一个BUFF" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="1" EffectRatioParam="0" BuffID="boss_sjxy_buff_008a_1"/>
+	<Property ID="boss_sjxy_buff_008a_ad2" Name="添加下一个BUFF" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="1" EffectRatioParam="0" BuffID="boss_sjxy_buff_008a_2"/>
+	<Property ID="boss_sjxy_buff_008a_ad3" Name="添加下一个BUFF" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="1" EffectRatioParam="0" BuffID="boss_sjxy_buff_008a_3"/>
+	<Property ID="boss_sjxy_buff_008a_ad4" Name="添加下一个BUFF" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="1" EffectRatioParam="0" BuffID="boss_sjxy_buff_008a_4"/>
+	<Property ID="boss_sjxy_buff_008a_ad5" Name="添加下一个BUFF" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="1" EffectRatioParam="0" BuffID="boss_sjxy_buff_008a_5"/>
+	<Property ID="boss_sjxy_buff_008b_ad1" Name="启动掉血" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="99" HPPercent="-4" HPFirmValue="0"/>
+	<Property ID="boss_sjxy_buff_009a_ad1" Name="召唤地穴" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="td2_mon_dixue_1" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="96" NPCCreatePosY="22" NPCCreatePosZ="-67"/>
+	<Property ID="boss_sjxy_buff_009a_ad2" Name="召唤地穴" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="td2_mon_dixue_1" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="101" NPCCreatePosY="22" NPCCreatePosZ="-35"/>
+	<Property ID="boss_sjxy_buff_009a_ad3" Name="召唤地穴" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="td2_mon_dixue_1" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="49" NPCCreatePosY="21" NPCCreatePosZ="-37"/>
+	<Property ID="boss_sjxy_buff_009b_ad1" Name="召唤水晶" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="td2_mon_shuijing_1" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="96" NPCCreatePosY="21" NPCCreatePosZ="-67"/>
+	<Property ID="boss_sjxy_buff_009b_ad2" Name="召唤水晶" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="td2_mon_shuijing_1" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="101" NPCCreatePosY="21" NPCCreatePosZ="-35"/>
+	<Property ID="boss_sjxy_buff_009b_ad3" Name="召唤水晶" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="td2_mon_shuijing_1" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="49" NPCCreatePosY="21" NPCCreatePosZ="-37"/>
+	<Property ID="td2_shuijing_buff_002_ad1" Name="嫩死那个巢穴" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="20" Condition="9"/>
+	<Property ID="td2_dixue_buff_001_ad1" Name="楼上要就因为我要召唤地龙就想弄死我" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="2" NPCConfigID="td2_mon_dixi_1" NPCCreateCount="1" NPCTargetPosType="1" NPCCreateOrient="0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="3" NPCCreateDistance="0"/>
+	<Property ID="buff_demon_mianshang_1_ad1" Name="免伤" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="100"/>
+	<Property ID="buff_task_demon_skill_2_ad1" Name="扣血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="-10" HPFirmValue="0"/>
+	<Property ID="td2_shuijing_buff_001_ad1" Name="水晶免疫伤害" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="100" ImmunityConfirmValue="0"/>
+	<Property ID="boss_sjxy_buff_010_ad1" Name="召唤地穴" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="td2_mon_dixue_1" NPCCreateCount="2" NPCTargetPosType="1" NPCCreatePosX="0" NPCCreatePosY="0" NPCCreatePosZ="0" NPCCreateOrient="0" NPCCreateRadiusRange="18" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="2" NPCCreateDistance="10"/>
+	<Property ID="buff_war_em_chilong_2_ad1" Name="吃龙" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" Condition="12" BuffID="buff_war_em_chilong_3"/>
+	<Property ID="buff_war_em_chilong_3_ad1" Name="龙死" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="20"/>
+	<Property ID="buff_war_stsm_xiaolong_2_ad1" Name="添加眩晕buff" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" Condition="13" BuffID="buff_war_stsm_xiaolong_3"/>
+	<Property ID="buff_war_stsm_xiaolong_3_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="war_stsm_2_talk"/>
+	<Property ID="buff_task_nangua_3_ad1" Name="搬南瓜" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="129" CommonActionAppend="_heave"/>
+	<Property ID="buff_task_nangua_3_ad2" Name="搬南瓜" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="129"/>
+	<Property ID="buff_task_bus_2040_ad1" Name="上车" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="638" CarrierOn="1" CarrierNpcConfig="ride_phoenix_001c" CarrierBufferConfig="buff_task_bus_2040" CarrierPathID="path_8005" CarrierCanFlay="1" CarrierShow="0"/>
+	<Property ID="buff_war_stsm_huoyan_2_ad1" Name="火焰燃烧" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="-25" HPFirmValue="0"/>
+	<Property ID="buff_war_stsm_hanbing_2_ad1" Name="寒冰添加buff" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_war_stsm_hanbing_3"/>
+	<Property ID="buff_bianshen_jiandie_ad1" Name="变身" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\npc\npc_shu_0030.ini" ChangeModelSkillID=";;;;;" ChangeModelScale="1.3" ChangeModelHeight="1.6"/>
+	<Property ID="buff_task_bus_8113_ad1" Name="上车" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="638" CarrierOn="1" CarrierNpcConfig="ride_eagle_001" CarrierBufferConfig="buff_task_bus_8113" CarrierPathID="path_008011" CarrierCanFlay="1" CarrierShow="1"/>
+	<Property ID="buff_task_bus_8115_ad1" Name="上车" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="638" CarrierOn="1" CarrierNpcConfig="ride_eagle_001" CarrierBufferConfig="buff_task_bus_8115" CarrierPathID="path_008012" CarrierCanFlay="1" CarrierShow="1"/>
+	<Property ID="buff_war_stsm_huoyan_ad1" Name="添加自杀buff" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_war_stsm_dead"/>
+	<Property ID="buff_war_stsm_dead_ad1" Name="自杀" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="20"/>
+	<Property ID="td3_jc_buff_008_ad1" Name="传送回血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="0.5" HPFirmValue="0"/>
+	<Property ID="buff_task_bus_8073_ad1" Name="上车" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="638" CarrierOn="1" CarrierNpcConfig="ride_eagle_001" CarrierBufferConfig="buff_task_bus_8073" CarrierPathID="path_004045" CarrierCanFlay="1" CarrierShow="0"/>
+	<Property ID="boss_jiachong_buff_007_ad1" Name="禁锢掉血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="-10"/>
+	<Property ID="buff_task_demon_3_ad1" Name="添加变身buff" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="0" FuncNo="1" BuffID="buff_task_demon_1"/>
+	<Property ID="jiachong_buff_diaoxue_1" Name="掉血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="-0.3"/>
+	<Property ID="boss_sjxy_buff_008c_ad1" Name="小地震后续" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="1" BuffID="boss_sjxy_buff_008a"/>
+	<Property ID="buff_task_bus_8039_ad1" Name="上车" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="638" CarrierOn="1" CarrierNpcConfig="ride_horse_001" CarrierBufferConfig="buff_task_bus_8039" CarrierPathID="path_004046" CarrierShow="0"/>
+	<Property ID="buff_bianshen_shibing_ad1" Name="2102变身" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\tt\city_gld_010.ini" ChangeModelSkillID=";;;;;" ChangeModelHeight="1.8"/>
+	<Property ID="buff_talk_task_8102_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="task_key_8102_talk"/>
+	<Property ID="buff_talk_task_8104_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="task_key_8104_1_talk"/>
+	<Property ID="buff_talk_task_8104_2_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="task_key_8104_2_talk"/>
+	<Property ID="buff_talk_task_8109_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="task_key_8109_1_talk"/>
+	<Property ID="buff_talk_task_8109_2_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="task_key_8109_2_talk"/>
+	<Property ID="buff_talk_task_8115_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="task_key_8115_1_talk"/>
+	<Property ID="buff_talk_task_8115_2_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="task_key_8115_2_talk"/>
+	<Property ID="buff_talk_task_8115_3_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="task_key_8115_3_talk"/>
+	<Property ID="buff_task_bus_2017_ad1" Name="上车" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="638" CarrierOn="1" CarrierNpcConfig="ride_dragon_002c" CarrierBufferConfig="buff_task_bus_2017" CarrierPathID="path_8015" CarrierCanFlay="1"/>
+	<Property ID="buff_task_bus_9509_ad1" Name="上车" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="638" CarrierOn="1" CarrierNpcConfig="ride_eagle_001" CarrierBufferConfig="buff_task_bus_9509" CarrierPathID="path_005001" CarrierCanFlay="1" CarrierShow="0"/>
+	<Property ID="battle_fenwei_022_ad1" Name="拉回提示" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="guide_return_001"/>
+	<Property ID="mon_illtree_buff_2_ad1" Name="枯木回春回血" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="99" HPPercent="5" HPFirmValue="0"/>
+	<Property ID="mon_bluestone_buff_1_ad1" Name="蓝晶掉血（2%）" EventType="3" TargetType="2" FuncNo="99" HPPercent="-2"/>
+	<Property ID="buff_task_bus_2106_ad1" Name="上车" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="638" CarrierOn="1" CarrierNpcConfig="ride_dragon_002c" CarrierBufferConfig="buff_task_bus_2106" CarrierPathID="path_8016" CarrierCanFlay="1"/>
+	<Property ID="buff_bianshen_muxiang_ad1" Name="变身木箱" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\item\task_muxiang.ini" ChangeModelSkillID=";;;;;" ChangeModelHeight="1"/>
+	<Property ID="buff_war_jianzhushi_skill_1_ad1" Name="回血水晶" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="99" HPPercent="2"/>
+	<Property ID="buff_war_zhaohuanshi_skill_1_ad1" Name="召唤援军" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="war_help_niaoren" NPCCreateCount="2" NPCTargetPosType="1" NPCCreateRadiusRange="3"/>
+	<Property ID="buff_war_zhaohuanshi_skill_2_ad1" Name="变羊" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\monster\mon_ani_0023.ini" ChangeModelSkillID=";;;;;" ChangeModelScale="2" ChangeModelHeight="1"/>
+	<Property ID="buff_war_kuanggong_skill_1_ad1" Name="挖洞" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="war_help_heidong" NPCCreateCount="1" NPCTargetPosType="1" NPCCreateRadiusRange="0"/>
+	<Property ID="buff_war_heidong_2_ad1" Name="黑洞扣血" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="99" HPPercent="-10"/>
+	<Property ID="buff_task_bus_9524_ad1" Name="上车" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="638" CarrierOn="1" CarrierNpcConfig="ride_eagle_001" CarrierBufferConfig="buff_task_bus_9524" CarrierPathID="path_005002" CarrierCanFlay="1" CarrierShow="0"/>
+	<Property ID="buff_task_bus_2085_ad1" Name="上车" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="638" CarrierOn="1" CarrierNpcConfig="ride_dragon_003b" CarrierBufferConfig="buff_task_bus_2085" CarrierPathID="path_8025" CarrierCanFlay="1"/>
+	<Property ID="buff_task_bus_8125_ad1" Name="上车" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="638" CarrierOn="1" CarrierNpcConfig="ride_eagle_001" CarrierBufferConfig="buff_task_bus_8125" CarrierPathID="path_004054" CarrierCanFlay="1" CarrierShow="0"/>
+	<Property ID="battle_bus_001_ad1" Name="上车" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="638" CarrierOn="1" CarrierNpcConfig="ride_dragon_001b" CarrierBufferConfig="battle_bus_001" CarrierPathID="path_001010" CarrierCanFlay="1" CarrierIgnoreRideOff="1"/>
+	<Property ID="battle_bus_001_ad2" Name="下车" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="638" CarrierOn="0" CarrierIgnoreRideOff="0"/>
+	<Property ID="battle_bus_001_ad3" Name="下车召唤触发器" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="2" NPCConfigID="chufa_npc_106" NPCCreateCount="1" NPCTargetPosType="2" NPCCreatePosX="-71.38" NPCCreatePosY="88.99" NPCCreatePosZ="-70.67" NPCCreateOrient="0" NPCCreateRadiusRange="0" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="buff_war_armor_1_ad1" Name="变身" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\item\war_armor_1.ini" ChangeModelSkillID="war_armor_skill_1;war_armor_skill_2;;;;" ChangeModelHeight="9" ChangeModelOff="0" ChangeCameraForwad="20"/>
+	<Property ID="buff_war_armor_atk_1_ad1" Name="掉血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="0" HPFirmValue="-100000"/>
+	<Property ID="buff_war_armor_atk_2_ad1" Name="掉血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="0" HPFirmValue="-250000"/>
+	<Property ID="buff_dragon_HP_ad1" Name="百分比掉血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="-20"/>
+	<Property ID="td_npc_xjws_buff_1_ad1" Name="巫师对话气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="td_npc_xjws_buff_1_task"/>
+	<Property ID="td_npc_xjws_buff_1_ad2" Name="flag结束" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_killself"/>
+	<Property ID="td2_mon_dixi_buff_1_ad1" Name="眩晕保护" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="1" BuffID="td2_mon_dixi_buff_2"/>
+	<Property ID="buff_guanghuan_HP_1_ad1" Name="巫师前置对话" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="buff_guanghuan_HP_1_task"/>
+	<Property ID="buff_war_armor_1_ad2" Name="免伤" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="90"/>
+	<Property ID="buff_task_8004_1_ad1" Name="召唤8004" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" EffectRatioParam="100" NPCConfigID="chufa_npc_8004_1" NPCCreateCount="1" NPCTargetPosType="1"/>
+	<Property ID="buff_task_8029_1_ad1" Name="召唤8029" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" EffectRatioParam="100" NPCConfigID="chufa_npc_8029_1" NPCCreateCount="1" NPCTargetPosType="1"/>
+	<Property ID="buff_task_8033_1_ad1" Name="召唤8033" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" EffectRatioParam="100" NPCConfigID="chufa_npc_8033_1" NPCCreateCount="1" NPCTargetPosType="1"/>
+	<Property ID="admiral_east_buff_002_ad1" Name="掉血30%" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="-30"/>
+	<Property ID="buff_task_bus_8170_ad1" Name="上车" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="638" CarrierOn="1" CarrierNpcConfig="ride_eagle_001" CarrierBufferConfig="buff_task_bus_8170" CarrierPathID="path_004055" CarrierCanFlay="1" CarrierShow="0"/>
+	<Property ID="buff_task_bus_8196_ad1" Name="上车" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="638" CarrierOn="1" CarrierNpcConfig="ride_eagle_001" CarrierBufferConfig="buff_task_bus_8196" CarrierPathID="path_004056" CarrierCanFlay="1" CarrierShow="0"/>
+	<Property ID="xiyou_mon_bear_ad2" Name="变身" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\item\task_gunshi.ini" ChangeModelSkillID=";;;;;" ChangeModelHeight="0.5"/>
+	<Property ID="xiyou_mon_bear_ad4" Name="下马" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="333"/>
+	<Property ID="buff_jinbi_zhaohuan_1_ad1" Name="召唤宝箱" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="jinbi_baoxiang_1" NPCCreateCount="2" NPCTargetPosType="1" NPCCreateRadiusRange="80" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="6" NPCCreateDistance="0"/>
+	<Property ID="buff_jinbi_zhaohuan_2_ad1" Name="召唤宝箱" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="jinbi_baoxiang_2" NPCCreateCount="1" NPCTargetPosType="1" NPCCreateRadiusRange="80" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="2" NPCCreateDistance="0"/>
+	<Property ID="buff_jinbi_zhaohuan_3_ad1" Name="召唤陷阱" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="jinbi_xianjing_1" NPCCreateCount="1" NPCTargetPosType="1" NPCCreateRadiusRange="50" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="2" NPCCreateDistance="0"/>
+	<Property ID="buff_task_8131_1_ad1" Name="召唤8131" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" EffectRatioParam="100" NPCConfigID="chufa_npc_8131_1" NPCCreateCount="1" NPCTargetPosType="1"/>
+	<Property ID="monster_zjeyu_skill05_ad1" Name="嘲讽" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="628" AttackIntervalTime="800"/>
+	<Property ID="monster_zjeyu_skill05_ad2" Name="取消嘲讽" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="629"/>
+	<Property ID="xiyou_west_niaoren_skill_ad1" Name="召唤" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" NPCConfigID="xiyou_west_niaoren_3" NPCCreateCount="3" NPCTargetPosType="1" NPCCreateRadiusRange="10" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="3"/>
+	<Property ID="monster_shuyao_buff_1_ad1" Name="掉血10" EventType="1" TargetType="2" FuncNo="99" HPPercent="-10"/>
+	<Property ID="monster_shuyao_buff_1_ad2" Name="下坐骑" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="333"/>
+	<Property ID="xiyou_west_xueyuan_buff_ad1" Name="扣除mp" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="110" MPPercent="-5"/>
+	<Property ID="xiyou_east_segui_buff_ad1" Name="扣除hp" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="-90" HPFirmValue="0"/>
+	<Property ID="xiyou_west_gtr_buff_ad1" Name="变身" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\tt\world_de_007_a.ini" ChangeModelSkillID=";;;;;" ChangeModelHeight="0.5"/>
+	<Property ID="monster_liegou_buff_ad1" Name="扣血30%" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="-30"/>
+	<Property ID="monster_liegou_buff_ad2" Name="扣血20%" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="-20"/>
+	<Property ID="xiyou_mon_bear_buff_ad1" Name="扣除mp" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="110" MPPercent="-5"/>
+	<Property ID="buff_task_bus_8209_ad1" Name="上车" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="638" CarrierOn="1" CarrierNpcConfig="ride_eagle_001" CarrierBufferConfig="buff_task_bus_8209" CarrierPathID="path_004057" CarrierCanFlay="1" CarrierShow="0"/>
+	<Property ID="xiyou_west_yezhu_buff_ad2" Name="下坐骑" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="333"/>
+	<Property ID="td5_mon_yunshi_buff_1_ad1" Name="召唤陨石" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="2" NPCConfigID="td5_mon_yunshi_1" NPCCreateCount="1" NPCTargetPosType="1" NPCCreateRadiusRange="30" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="8"/>
+	<Property ID="xiyou_xiaoyuren_skill_ad1" Name="变身" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\monster\mon_shu_023_b.ini" ChangeModelSkillID=";;;;;" ChangeModelHeight="0.5"/>
+	<Property ID="monster_hama_xianxing_ad" Name="开启显性" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="651" BufferRoleDamage="20"/>
+	<Property ID="monster_hama_xianxing_ad1" Name="关闭显性" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="651"/>
+	<Property ID="monster_hama_xianxing_buff_ad1" Name="破影一击" EventTargetRelationType="0" EventTargetClassType="0" EventType="6" TargetType="2" FuncNo="1" BuffID="monster_hama_xianxing_01"/>
+	<Property ID="monster_hama_yinshen_01" Name="隐身" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="650" BufferRoleAlpha="125"/>
+	<Property ID="monster_hama_yinshen_02" Name="关闭隐身" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="650" BufferRoleAlpha="255"/>
+	<Property ID="monster_hama_yinshen_03" Name="准备隐身" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="1" BuffID="monster_hama_yinshen_01"/>
+	<Property ID="monster_hama_yinshen_04" Name="技能用隐身" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="monster_hama_yinshen_02"/>
+	<Property ID="monster_yazi_skill_ad1" Name="扣血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="-20"/>
+	<Property ID="monster_yazi_skill_ad2" Name="扣血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="-20" HPFirmValue="0" HPMaxFormula="1000"/>
+	<Property ID="buff_bianshen_heipao_ad1" Name="变身" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\tt\fb_amzt_002.ini" ChangeModelSkillID=";;;;;" ChangeModelScale="1" ChangeModelHeight="1.6"/>
+	<Property ID="buff_task_8131_2_ad1" Name="召唤炸弹" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" EffectRatioParam="100" NPCConfigID="task_bingbao_1" NPCCreateCount="1" NPCTargetPosType="1"/>
+	<Property ID="buff_task_bus_8236_ad1" Name="上车" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="638" CarrierOn="1" CarrierNpcConfig="ride_eagle_001" CarrierBufferConfig="buff_task_bus_8236" CarrierPathID="Path_010004" CarrierCanFlay="1" CarrierShow="0"/>
+	<Property ID="buff_task_bus_8240_ad1" Name="上车" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="638" CarrierOn="1" CarrierNpcConfig="ride_eagle_001" CarrierBufferConfig="buff_task_bus_8240" CarrierPathID="Path_010005" CarrierCanFlay="1" CarrierShow="0"/>
+	<Property ID="buff_task_8243_1_ad1" Name="召唤8243" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" EffectRatioParam="100" NPCConfigID="chufa_npc_8243_1" NPCCreateCount="1" NPCTargetPosType="1"/>
+	<Property ID="td_clearcd_buff_1_ad1" Name="击杀清除CD" EventTargetRelationType="0" EventTargetClassType="0" EventType="4" TargetType="3" FuncNo="115" EffectRatioParam="0"/>
+	<Property ID="buff_jinbi_gujian_1_ad1" Name="免伤" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="100"/>
+	<Property ID="buff_rw_yinshen_01" Name="任务用隐身" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="650" BufferRoleAlpha="100"/>
+	<Property ID="boss_deathknight_buff_8_ad1" Name="召唤亡灵大军" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="2" NPCConfigID="td_sub_dk_qs_1" NPCCreateCount="1" NPCTargetPosType="1" NPCCreateRadiusRange="15" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="8"/>
+	<Property ID="buff_rw_jinfei_ad" Name="任务禁坐骑" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="333"/>
+	<Property ID="buff_rw_judu_ad" Name="任务用剧毒" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="-15"/>
+	<Property ID="buff_task_9600_1_ad1" Name="召唤旗帜" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" EffectRatioParam="100" NPCConfigID="rw_dfm_west_01" NPCCreateCount="1" NPCTargetPosType="1"/>
+	<Property ID="battle3v3_buff_big_001_ad1" Name="50%生命恢复" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="50"/>
+	<Property ID="battle3v3_buff_big_003_ad1" Name="清除所有坐骑cd" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="115"/>
+	<Property ID="battle3v3_buff_big_003_ad2" Name="清除所有坐骑cd" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="115"/>
+	<Property ID="battle3v3_buff_big_003_ad3" Name="清除所有坐骑cd" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="115"/>
+	<Property ID="battle3v3_buff_big_003_ad4" Name="清除所有坐骑cd" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="115"/>
+	<Property ID="battle3v3_buff_middle_001_ad1" Name="20%生命恢复" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="20"/>
+	<Property ID="battle3v3_buff_middle_003_ad1" Name="随机清空坐骑cd" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="115"/>
+	<Property ID="battle3v3_buff_small_001_ad1" Name="20%生命恢复" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="20"/>
+	<Property ID="battle3v3_buff_small_003_ad1" Name="随机清空坐骑cd" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="115"/>
+	<Property ID="buff_jinbi_gujian_1_ad2" Name="扣血" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="99" HPPercent="0" HPFirmValue="-1" HPIgnoreImmuneDamage="1"/>
+	<Property ID="buff_task_bus_2200_ad1" Name="上车" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="638" CarrierOn="1" CarrierNpcConfig="ride_dragon_002c" CarrierBufferConfig="buff_task_bus_2200" CarrierPathID="path_8039" CarrierCanFlay="1"/>
+	<Property ID="etd5_mon_yunshi_buff_1_ad1" Name="召唤陨石" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="2" NPCConfigID="etd5_mon_yunshi_1" NPCCreateCount="1" NPCTargetPosType="1" NPCCreateRadiusRange="30" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="8"/>
+	<Property ID="mon_deathfire_buff_1_ad1" Name="减速30" EventTargetRelationType="0" EventTargetClassType="0"/>
+	<Property ID="td_mon_js_buff_1_ad1" Name="回血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="30" HPFirmValue="0"/>
+	<Property ID="common_allheal_001_ad1" Name="完全恢复血量" EventType="3" TargetType="2" FuncNo="99" HPPercent="100"/>
+	<Property ID="buff_soldier_xy_ad1" Name="眩晕保护" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_soldier_xy_1"/>
+	<Property ID="buff_bombman_001_ad1" Name="爆弹变身" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="619" EffectRatioParam="100" ChangeModelSkillID="skill_putbomb_001;;;;;" ChangeModelScale="0" ChangeModelHeight="1.5"/>
+	<Property ID="buff_bombman_001_ad2" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="129" EffectRatioParam="100" CommonActionAppend="_heave"/>
+	<Property ID="buff_bombman_001_ad3" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="129" EffectRatioParam="100"/>
+	<Property ID="buff_bombman_001_ad4" Name="爆弹变身" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="619" EffectRatioParam="100" ChangeModelHeight="0" ChangeModelOff="1"/>
+	<Property ID="buff_bombman_001_ad5" Name="炸弹buff结束后创建炸弹" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="2" EffectRatioParam="100" NPCConfigID="tasknpc_putbomb_001" NPCCreateCount="1" NPCTargetPosType="1" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="99" NPCCreateDistance="0.3" ChangeModelHeight="0" ChangeModelOff="1"/>
+	<Property ID="nek_hudun_eff_1" Name="尼克补盾" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="1" BuffID="nek_shield_buff_1"/>
+	<Property ID="nek_shield_buff_ad1" Name="护盾效果" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="90" ImmunityConfirmValue="0"/>
+	<Property ID="td_boss_nek_bati_buff_1_ad1" Name="尼克霸体" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="1" BuffID="nek_shield_buff_1"/>
+	<Property ID="buff_bombman_001_ad6" Name="受击删除buff" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="15" EffectRatioParam="100" RemoveBufferType="3" RemoveBufferValue="buff_bombman_001" ChangeModelHeight="0" ChangeModelOff="1"/>
+	<Property ID="buff_monster_pet_zhaohuan01" Name="召唤宠物怪物" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" EffectRatioParam="100" NPCConfigID="chufa_npc_monster_pet_01" NPCCreateCount="1" NPCTargetPosType="1" NPCCreateRadiusRange="1" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="1"/>
+	<Property ID="buff_richang_1_ad" EventType="1" TargetType="2" FuncNo="1" BuffID="(buff_richang_a;buff_richang_b;buff_richang_c;buff_richang_d;buff_richang_e;buff_richang_f;buff_richang_g;buff_richang_h;buff_richang_i;buff_richang_j;buff_richang_k;buff_richang_l;buff_richang_m;buff_richang_n;buff_richang_o;buff_richang_p)"/>
+	<Property ID="buff_yabiao_mians_1_ad1" Name="免伤" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="100"/>
+	<Property ID="buff_yabiao_mians_1_ad2" Name="扣血" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="3" FuncNo="655" BufferSenderDamage="1"/>
+	<Property ID="buff_task_8006_1_ad1" Name="召唤NPC8006" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" EffectRatioParam="100" NPCConfigID="chufa_npc_8006_01" NPCCreateCount="1" NPCTargetPosType="1"/>
+	<Property ID="buff_task_8014_1_ad1" Name="召唤NPC8014" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" EffectRatioParam="100" NPCConfigID="chufa_npc_8014_01" NPCCreateCount="1" NPCTargetPosType="1"/>
+	<Property ID="boss_phoenix2_buff_03_ad3" Name="扣除百分之5血量" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="-10"/>
+	<Property ID="buff_talk_xiyou_mon_bear_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_mon_bear"/>
+	<Property ID="buff_talk_xiyou_mon_zjeyu_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_mon_zjeyu"/>
+	<Property ID="buff_talk_xiyou_mon_shuyao_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_mon_shuyao"/>
+	<Property ID="buff_talk_xiyou_west_dayuren_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_west_dayuren_1"/>
+	<Property ID="buff_talk_xiyou_west_yezhu_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_west_yezhu_1"/>
+	<Property ID="buff_talk_xiyou_west_gtr_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_west_gtr_1"/>
+	<Property ID="buff_talk_xiyou_west_xiehuolong_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_west_xiehuolong_1"/>
+	<Property ID="buff_talk_xiyou_west_niaoren_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_west_niaoren_1"/>
+	<Property ID="buff_talk_xiyou_west_wolf_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_west_wolf_1"/>
+	<Property ID="buff_talk_xiyou_west_fox_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_west_fox_1"/>
+	<Property ID="buff_talk_xiyou_west_taobing_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_west_taobing_1"/>
+	<Property ID="buff_talk_xiyou_west_zhizhu_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_west_zhizhu_1"/>
+	<Property ID="buff_talk_xiyou_west_xueyuan_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_west_xueyuan_1"/>
+	<Property ID="buff_talk_xiyou_west_xiaoyuren_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_west_xiaoyuren_1"/>
+	<Property ID="buff_talk_xiyou_west_hama_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_west_hama_1"/>
+	<Property ID="buff_talk_xiyou_east_landbird_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_east_landbird_1"/>
+	<Property ID="buff_talk_xiyou_east_xiniu_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_east_xiniu_1"/>
+	<Property ID="buff_talk_xiyou_east_shanyuan_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_east_shanyuan_1"/>
+	<Property ID="buff_talk_xiyou_east_segui_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_east_segui_1"/>
+	<Property ID="buff_talk_xiyou_east_fox_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_east_fox_1"/>
+	<Property ID="buff_talk_xiyou_east_wolf_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_east_wolf_1"/>
+	<Property ID="buff_talk_xiyou_east_bear_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_east_bear_1"/>
+	<Property ID="buff_talk_xiyou_east_pig_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_east_pig_1"/>
+	<Property ID="buff_talk_xiyou_east_ant_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_east_ant_1"/>
+	<Property ID="buff_talk_xiyou_east_tree_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_east_tree_1"/>
+	<Property ID="buff_talk_xiyou_east_zhizhu_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_east_zhizhu_1"/>
+	<Property ID="buff_talk_xiyou_east_xiehuolong_1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_east_xiehuolong_1"/>
+	<Property ID="buff_talk_xiyou_west_niaoren_3_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_west_niaoren_3"/>
+	<Property ID="buff_talk_xiyou_mid_jianke_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_mid_jianke"/>
+	<Property ID="buff_talk_xiyou_mid_niaoren_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_mid_niaoren"/>
+	<Property ID="buff_talk_xiyou_mid_zjeyu_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_mid_zjeyu"/>
+	<Property ID="buff_talk_xiyou_mid_pig_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_mid_pig"/>
+	<Property ID="buff_talk_xiyou_mid_shuyao_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_mid_shuyao"/>
+	<Property ID="buff_talk_xiyou_mid_wolf_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_mid_wolf"/>
+	<Property ID="buff_talk_xiyou_mid_xiehuolong_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_mid_xiehuolong"/>
+	<Property ID="buff_talk_xiyou_mid_zhizhu_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_mid_zhizhu"/>
+	<Property ID="buff_talk_xiyou_mid_dayuren_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_mid_dayuren"/>
+	<Property ID="buff_talk_xiyou_mid_ant_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_xiyou_mid_ant"/>
+	<Property ID="buff_talk_rw_npc_e53_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_npc_e53"/>
+	<Property ID="buff_talk_rw_npc_e63_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_npc_e63"/>
+	<Property ID="buff_talk_rw_npc_e66_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_npc_e66"/>
+	<Property ID="buff_talk_rw_npc_e67_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_npc_e67"/>
+	<Property ID="buff_talk_rw_npc_e68_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_npc_e68"/>
+	<Property ID="buff_talk_rw_npc_e69_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_npc_e69"/>
+	<Property ID="buff_talk_rw_npc_e64_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_npc_e64"/>
+	<Property ID="buff_talk_rw_npc_e65_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_npc_e65"/>
+	<Property ID="buff_talk_rw_npc_m1_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_npc_m1"/>
+	<Property ID="buff_talk_rw_xfn_zlkhm_01_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_xfn_zlkhm_01"/>
+	<Property ID="buff_talk_rw_npc_m2_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_npc_m2"/>
+	<Property ID="buff_talk_rw_npc_m7_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_npc_m7"/>
+	<Property ID="buff_talk_rw_npc_m3_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_npc_m3"/>
+	<Property ID="buff_talk_rw_npc_m8_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_npc_m8"/>
+	<Property ID="buff_talk_rw_npc_e85_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_npc_e85"/>
+	<Property ID="buff_talk_rw_npc_m4_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_npc_m4"/>
+	<Property ID="buff_talk_rw_npc_e84_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_npc_e84"/>
+	<Property ID="buff_talk_rw_npc_m5_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_npc_m5"/>
+	<Property ID="buff_talk_rw_npc_m6_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_npc_m6"/>
+	<Property ID="buff_talk_rw_xfn_zlkhm_05_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_xfn_zlkhm_05"/>
+	<Property ID="buff_talk_rw_xfn_rc_01_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_xfn_rc_01"/>
+	<Property ID="buff_talk_rw_xfn_rc_02_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_xfn_rc_02"/>
+	<Property ID="buff_talk_rw_xfn_rc_03_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_xfn_rc_03"/>
+	<Property ID="buff_talk_rw_xfn_rc_04_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_xfn_rc_04"/>
+	<Property ID="buff_talk_rw_xfn_rc_05_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_xfn_rc_05"/>
+	<Property ID="buff_talk_rw_xfn_rc_06_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_xfn_rc_06"/>
+	<Property ID="buff_talk_rw_xfn_rc_07_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_xfn_rc_07"/>
+	<Property ID="buff_talk_rw_xfn_rc_08_ad1" Name="气泡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="639" TalkBalloonConfigID="talk_rw_xfn_rc_08"/>
+	<Property ID="boss_dragon_skill_04_1_ad3" Name="扣除血量" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="-20"/>
+	<Property ID="boss_dragon_skill_05_ad3" Name="扣除百分之2" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="-1"/>
+	<Property ID="buff_richang_g_ad" EventType="8" TargetType="0" FuncNo="99" HPPercent="1" AbsorbPercent="5"/>
+	<Property ID="buff_richang_h_ad" EventType="8" TargetType="0" FuncNo="99" HPPercent="2" AbsorbPercent="10"/>
+	<Property ID="buff_richang_i_ad" EventType="8" TargetType="0" FuncNo="99" HPPercent="3" AbsorbPercent="15"/>
+	<Property ID="buff_richang_j_ad" EventType="1" TargetType="2" FuncNo="619" AbsorbPercent="15" ChangeModelPath="ini\npc\pet\pet_new_002.ini" ChangeModelSkillID=";;;;;;" ChangeModelScale="2" ChangeModelHeight="2.5"/>
+	<Property ID="buff_richang_k_ad" EventType="8" TargetType="0" FuncNo="110" MPPercent="1" AbsorbPercent="5"/>
+	<Property ID="buff_richang_l_ad" EventType="8" TargetType="0" FuncNo="110" MPPercent="2" AbsorbPercent="5"/>
+	<Property ID="buff_richang_m_ad" EventType="8" TargetType="0" FuncNo="110" MPPercent="3" AbsorbPercent="5"/>
+	<Property ID="buff_richang_n_ad" EventType="1" TargetType="2" FuncNo="619" AbsorbPercent="15" ChangeModelPath="ini\npc\pet\pet_dishu_001.ini" ChangeModelSkillID=";;;;;;;" ChangeModelScale="1.5" ChangeModelHeight="1.7"/>
+	<Property ID="buff_richang_o_ad" EventType="1" TargetType="2" FuncNo="619" AbsorbPercent="15" ChangeModelPath="ini\npc\pet\pet_new_009.ini" ChangeModelSkillID=";;;;;;" ChangeModelScale="1" ChangeModelHeight="1.6"/>
+	<Property ID="buff_richang_p_ad" EventType="1" TargetType="2" FuncNo="619" AbsorbPercent="15" ChangeModelPath="ini\npc\pet\pet_new_008.ini" ChangeModelSkillID=";;;;;;" ChangeModelScale="1.5" ChangeModelHeight="1"/>
+	<Property ID="worldboss_dragon_buff_01_ad" Name="免疫伤害" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="100"/>
 </Object>
-
 

@@ -433,7 +433,10 @@ public:
 	}
 
 	// 是否有水面
-	void SetHasWater(bool value) { m_bHasWater = value; }
+	void SetHasWater(bool value) 
+  { 
+    m_bHasWater = value; 
+  }
 	bool GetHasWater() const { return m_bHasWater; }
 
 	// 加载下一个分块的碰撞信息

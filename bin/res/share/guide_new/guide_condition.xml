@@ -1,454 +1,293 @@
 <?xml version="1.0" encoding="gb2312"?>
-<!---->
-<Object>
-	<!--CRITERIA_TYPE_ACCEPT_QUEST 接取任务
-	<Property ID="1" Event="on_level_change" Param="20" NeedMainUI="true" Desc="等级达到20级"/>
-	<Property ID="2" Event="on_trigger_gui_event" Param="form_talk/main_form/on_click" NeedMainUI="false" Desc="对话界面主窗口点击"/>
-	<Property ID="3" Event="on_level_change" Param="20" NeedMainUI="true" Desc="等级达到20级"/>
-	<Property ID="4" Event="on_trigger_gui_event" Param="form_talk/main_form/on_click" NeedMainUI="false" Desc="对话界面主窗口点击"/>
-	<Property ID="100" Event="on_boss_break" Param="" Desc="boss被破防"/>
-	<Property ID="101" Event="on_level_change" Param="3" NeedMainUI="true" Desc="升到3级"/>
-    NeedMainUI="true" 回到主界面触发 非第一小步时用
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!--
+IsSceneGuide
+NeedPathState
+NeedMainUI 
+CloneNeedGuide
+LastGuideStep
+isMaskNeedAll
+IsGuiTrigger
 -->
-	<Property ID="101" Event="on_trigger_gui_event" Param="form_curtain_cartoon/main_curtain_form/on_close" Desc="黑幕动画界面——关闭后触发"/>
-	<Property ID="102" Event="on_trigger_gui_event" Param="form_curtain_cartoon/main_curtain_form/on_close" Desc="黑幕动画界面——关闭后触发"/>
-	<Property ID="103" Event="on_joystick_touch_begin" Param="" Desc="点击摇杆后触发"/>
-	<Property ID="104" Event="on_trigger_npc_creator" Param="1" Desc="第一波刷怪器触发后触发"/>
-	<Property ID="105" Event="on_trigger_gui_event" Param="form_main_clone/imagegrid_common_attack/on_leftclick_down" Desc="普攻技能——左键点击后触发"/>
-	<Property ID="106" Event="on_trigger_npc_creator" Param="2" Desc="第二波刷怪器触发后触发"/>
-	<Property ID="107" Event="on_trigger_gui_event" Param="form_main_clone/imagegrid_skill_bar/on_leftclick_down" Desc="第一个技能——左键点击后触发"/>
-	<Property ID="108" Event="on_trigger_gui_event" Param="form_clone_finish/groupbox_content/on_show" Desc="副本结算界面“确认”按钮——出现后触发"/>
-	<Property ID="109" Event="on_trigger_gui_event" Param="form_clone_finish/btn_continue/on_click" Desc="副本结算界面“确认”按钮——点击后触发"/>
-	
-	<Property ID="200" Event="CRITERIA_TYPE_SCENECLEAR" Param="701" IsSceneGuide="1" Desc="服务端触发：通关副本"/>
-	<Property ID="201" Event="on_trigger_gui_event" Param="form_curtain/main_form/on_gui_effect_finish" IsSceneGuide="1" Desc="过图动画——播放结束后触发（回到主城）"/>
-	<Property ID="202" Event="on_trigger_gui_event" Param="form_quest_trace/btn_bg_1/on_click" IsSceneGuide="1" Desc="任务追踪界面——点击后触发"/>
-	<Property ID="203" Event="on_trigger_gui_event" Param="form_talk_face_npc/main_form/on_show" IsSceneGuide="1" Desc="NPC对话界面——出现后触发"/>	
-	
-	<Property ID="300" Event="CRITERIA_TYPE_QUEST_COMPLETE" Param="10001" IsSceneGuide="1" Desc="服务端触发：接受任务-拜访"/>
-	<Property ID="301" Event="on_trigger_gui_event" Param="form_talk_face_npc/main_form/on_close" IsSceneGuide="1" Desc="NPC对话界——关闭后触发"/>
-	<Property ID="302" Event="on_trigger_gui_event" Param="form_quest_trace/btn_bg_1/on_click" IsSceneGuide="1" Desc="任务追踪界面——点击后触发"/>
-	
-	<Property ID="400" Event="CRITERIA_TYPE_QUEST_COMPLETE" Param="10002" IsSceneGuide="1" Desc="服务端触发：接受任务-日落遗迹"/>
-	<Property ID="401" Event="on_trigger_gui_event" Param="form_talk_face_npc/main_form/on_close" IsSceneGuide="1" Desc="NPC对话界——关闭后触发"/>
-	<Property ID="402" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" ShowForm="FormGuideSkill" IsSceneGuide="1" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="403" Event="on_trigger_gui_event" Param="form_role_npc_skill/btn_skill_up_1/on_leftclick_down" IsSceneGuide="1" Desc="“升级”按钮——点击后触发,特殊处理，点击事件点下就生效不用抬起"/>
-	<Property ID="404" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" IsSceneGuide="1" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="500" Event="CRITERIA_TYPE_SKILL_LEVEL" Param="1" IsSceneGuide="1" Desc="服务端触发：技能等级变化"/>
-	<Property ID="501" Event="on_trigger_gui_event" Param="form_guide_skill/main_form/on_close" IsSceneGuide="1" Desc="技能界面——关闭后触发"/>
-	<Property ID="502" Event="on_trigger_gui_event" Param="form_quest_trace/btn_bg_1/on_click" IsSceneGuide="1" Desc="任务追踪界面——点击后触发"/>
-	<!--<Property ID="501" Event="on_trigger_gui_event" Param="form_role_npc_base/main_form/on_close" IsSceneGuide="1" Desc="英雄界面——关闭后触发"/>
-	<Property ID="502" Event="on_trigger_gui_event" Param="form_quest_trace/btn_bg_1/on_click" IsSceneGuide="1" Desc="任务追踪界面——点击后触发"/>
-	<Property ID="503" Event="on_trigger_gui_event" Param="form_clone_select/main_form/on_show" IsSceneGuide="1" Desc="副本选择界面——出现后触发"/>
-	<Property ID="504" Event="on_trigger_gui_event" Param="form_clone_scene_info/btn_begin/on_show" IsSceneGuide="1" Desc="副本扫荡界面“进入”按钮——出现后触发"/>
-	<Property ID="505" Event="on_trigger_gui_event" Param="form_clone_scene_info/btn_begin/on_click" IsSceneGuide="1" Desc="副本扫荡界面“进入”按钮——点击后触发"/>
-	<Property ID="506" Event="on_trigger_gui_event" Param="form_clone_finish/groupbox_content/on_show" IsSceneGuide="1" Desc="副本结算界面“确认”按钮——出现后触发"/>
-	<Property ID="507" Event="on_trigger_gui_event" Param="form_clone_finish/btn_continue/on_click" IsSceneGuide="1" Desc="副本结算界面“确认”按钮——点击后触发"/>-->
-	
-	<Property ID="600" Event="CRITERIA_TYPE_SCENECLEAR" Param="702" Desc="服务端触发：通关副本"/>
-	<Property ID="601" Event="on_trigger_gui_event" Param="form_curtain/main_form/on_gui_effect_finish" IsSceneGuide="1" Desc="过图动画——播放结束后触发（第二次回到主城）"/>
-	<Property ID="602" Event="on_trigger_gui_event" Param="form_quest_trace/btn_bg_1/on_click" IsSceneGuide="1" Desc="任务追踪界面——点击后触发"/>
+<object>
+	<!--初始引导-->
+	<Property ID="11" Event="movie_end" Param="movie/guide_heimu_01/project_info.ini" CloneNeedGuide="true" Desc="隐藏界面"/>
+	<Property ID="1" Event="movie_end" Param="movie/kaichang_shu/project_info.ini" CloneNeedGuide="true" Desc="隐藏界面"/>
+	<Property ID="2" Event="on_trigger_gui_event" Param="form_ride_fight/main_form/on_close" CloneNeedGuide="true" Desc="展开摇杆"/>
+	<Property ID="4" Event="on_trigger_gui_event" Param="form_joystick/main_form/on_show_end" CloneNeedGuide="true" Desc="移动引导"/>
+	<Property ID="5" Event="on_trigger_gui_event" Param="form_skill_bar/cbtn_lock_camera/on_checked_changed" Desc="切换2.5D"/>
+	<Property ID="6" Event="on_trigger_gui_event" Param="form_skill_bar/cbtn_lock_camera/on_checked_changed" Desc="切换3D"/>
+	<Property ID="7" Event="on_trigger_gui_event" Param="form_camera_trim/main_form/on_show_end" Desc="视角引导"/>
+	<!--任务寻路引导-->
+	<Property ID="8" Event="on_trigger_gui_event" Param="form_camera_trim/main_form/on_close" Desc="关闭摄像机引导界面"/>
+	<Property ID="9" Event="on_trigger_gui_event" Param="form_task_left/main_form/on_click" Desc="结束"/>	
+	<!--普攻引导-->
+	<!--<Property ID="201" Event="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Param="npc_guide_monster_01" Desc="展开技能按键"/>-->
+	<Property ID="202" Event="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Param="npc_guide_monster_01b" Desc="战斗引导"/>
+	<Property ID="203" Event="on_trigger_gui_event" Param="form_skill_bar/imagegrid_skill_0/on_leftclick_up" Desc="点击普攻"/>
+	<!--技能引导-->
+	<Property ID="204" Event="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Param="npc_guide_monster_01" Desc="技能引导"/>
+	<Property ID="205" Event="on_trigger_gui_event" Param="form_skill_bar/imagegrid_skill_1/on_leftclick_up" Desc="点击技能"/>
+	<!--摄像机事件1-->
+	<Property ID="211" Event="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Param="chufa_npc_117" Desc="摄像机回正引导"/>
+	<Property ID="212" Event="on_trigger_gui_event" Param="form_skill_bar/btn_camera/on_click" Desc="摄像机回正引导"/>
+	<!--给予犀牛坐骑-->
+	<Property ID="3000" Event="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Param="chufa_npc_104" Desc="犀牛引导"/>
+	<!--坐骑引导-->
+	<Property ID="300" Event="on_custom" Param="1270" Desc="给予犀牛"/>
+	<!--<Property ID="301" Event="on_trigger_gui_event" Param="form_ride_fight/main_form/on_show" Desc="骑乘引导"/>-->
+	<Property ID="302" Event="on_trigger_gui_event" Param="form_ride_fight/main_form/on_show" Desc="展开界面"/>
+	<Property ID="303" Event="on_trigger_gui_event" Param="form_ride_fight/imagegrid_fight0/on_leftclick_up" Desc="犀牛普攻"/>
+	<Property ID="304" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="犀牛普攻三段"/>
+	<Property ID="305" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="犀牛技能"/>
+	<Property ID="306" Event="on_trigger_gui_event" Param="form_ride_fight/imagegrid_fight0/on_leftclick_up" Desc="结束"/>
+	<!--平台2引导1-->
+	<Property ID="311" Event="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Param="npc_guide_monboss_01" Desc="犀牛冲锋"/>
+	<Property ID="312" Event="on_trigger_gui_event" Param="form_skill_bar/imagegrid_skill_1/on_leftclick_up" Desc="犀牛普攻"/>
+	<Property ID="313" Event="on_trigger_gui_event" Param="form_skill_bar/imagegrid_skill_0/on_leftclick_up" Desc="关闭界面"/>
 
-	<Property ID="700" Event="CRITERIA_TYPE_QUEST_COMPLETE" Param="9008" Desc="服务端触发：接受任务-流炎洞穴"/>
-	<Property ID="701" Event="on_trigger_gui_event" Param="form_talk_face_npc/main_form/on_close" IsSceneGuide="1" Desc="NPC对话界——关闭后触发"/>
-	<Property ID="702" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" ShowForm="FormGuideSkill" IsSceneGuide="1" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="703" Event="on_trigger_gui_event" Param="form_role_npc_skill/btn_skill_up_2/on_leftclick_down" IsSceneGuide="1" Desc="技能按钮——点击后触发"/>
-	<Property ID="704" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" IsSceneGuide="1" Desc="引导界面任意位置——点击后触发"/>
+	<!--给予飞龙坐骑-->
+	<Property ID="4001" Event="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Param="chufa_guide_3b" Desc="展开移动摇杆"/>
+	<Property ID="4000" Event="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Param="chufa_guide_3" Desc="给予飞龙坐骑"/>	
+	<!--飞行引导-->
+	<Property ID="401" Event="on_custom" Param="1270" Desc="飞行引导"/>
+	<Property ID="402" Event="on_custom" Param="465" Desc="切换飞行坐骑"/>
 	
-	<Property ID="800" Event="CRITERIA_TYPE_SKILL_LEVEL" Param="2" Desc="服务端触发：技能等级变化"/>
-	<Property ID="801" Event="on_trigger_gui_event" Param="form_guide_skill/main_form/on_close" IsSceneGuide="1" Desc="技能界面——关闭后触发"/>
-	<Property ID="802" Event="on_trigger_gui_event" Param="form_quest_trace/btn_bg_1/on_click" IsSceneGuide="1" Desc="任务追踪界面——点击后触发"/>
-	<!--<Property ID="801" Event="on_trigger_gui_event" Param="form_role_npc_base/main_form/on_close" Desc="英雄界面——关闭后触发"/>
-	<Property ID="802" Event="on_trigger_gui_event" Param="form_quest_trace/btn_bg_1/on_click" Desc="任务追踪界面——点击后触发"/>
-	<Property ID="803" Event="on_trigger_gui_event" Param="form_clone_select/main_form/on_show" Desc="副本选择界面——出现后触发"/>
-	<Property ID="804" Event="on_trigger_gui_event" Param="form_clone_scene_info/btn_begin/on_show" Desc="副本扫荡界面“进入”按钮——出现后触发"/>
-	<Property ID="805" Event="on_trigger_gui_event" Param="form_clone_scene_info/btn_begin/on_click" Desc="副本扫荡界面“进入”按钮——点击后触发"/>-->
-	<Property ID="803" Event="on_trigger_gui_event" Param="form_rolenpc_group/groupbox_rolenpc_list/on_show" Desc="副将界面——出现后触发"/>
-	<Property ID="804" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="805" Event="on_trigger_gui_event" Param="form_main_clone/imagegrid_skill_bar/on_leftclick_down" Desc="副本界面太极技技能——点击后触发"/>
-	<Property ID="806" Event="on_trigger_gui_event" Param="form_clone_finish/groupbox_content/on_show" Desc="副本结算界面“确认”按钮——出现后触发"/>
-	<Property ID="807" Event="on_trigger_gui_event" Param="form_clone_finish/btn_continue/on_click" Desc="副本结算界面“确认”按钮——点击后触发"/>
 	
-	<Property ID="900" Event="CRITERIA_TYPE_SCENECLEAR" Param="703" Desc="服务端触发：通关副本"/>
-	<Property ID="901" Event="on_trigger_gui_event" Param="form_curtain/main_form/on_gui_effect_finish" Desc="过图动画——播放结束后触发（回到主城）"/>
-	<Property ID="902" Event="on_trigger_gui_event" Param="form_main_hall/btn_war/on_click" Desc="战役按钮——点击后触发"/>
-	<Property ID="903" Event="on_trigger_gui_event" Param="form_clone_select/main_form/on_show" Desc="副本选择界面——出现后触发"/>
-	<Property ID="904" Event="on_trigger_gui_event" Param="form_clone_reward/main_form/on_show" Desc="战胜的馈赠界面——出现后触发"/>
-	<Property ID="905" Event="on_trigger_gui_event" Param="form_gift_package/main_form/on_show" Desc="获取界面——出现后触发"/>
-	<Property ID="906" Event="on_trigger_gui_event" Param="form_gift_package/main_form/on_close" Desc="领取界面——关闭后触发"/>
+	<Property ID="403" Event="on_trigger_gui_event" Param="form_skill_bar/btn_camera/on_click" Desc="点击摄像机"/>
+	<Property ID="404" Event="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Param="chufa_npc_001" Desc="到达飞行点1"/>	
+	<Property ID="411" Event="on_trigger_gui_event" Param="form_skill_bar/btn_camera/on_click" Desc="点击摄像机"/>		
+	<Property ID="412" Event="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Param="chufa_npc_002" Desc="到达飞行点2"/>
+	<Property ID="413" Event="on_trigger_gui_event" Param="form_skill_bar/btn_camera/on_click" Desc="点击摄像机"/>		
+	<Property ID="414" Event="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Param="chufa_npc_003" Desc="到达飞行点3"/>
+	<Property ID="415" Event="on_trigger_gui_event" Param="form_skill_bar/btn_camera/on_click" Desc="点击摄像机"/>
+	<Property ID="416" Event="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Param="chufa_npc_004" Desc="到达飞行点4"/>
+	<Property ID="417" Event="on_trigger_gui_event" Param="form_skill_bar/btn_camera/on_click" Desc="点击摄像机"/>	
+	<Property ID="418" Event="on_trigger_gui_event" Param="form_joystick/main_form/on_show_end" CloneNeedGuide="true" Desc="展开移动摇杆"/>
+	<Property ID="419" Event="on_joystick_touch_begin" Param="" Desc=" "/>							
+	<!--飞行战斗引导-->
+	<Property ID="501" Event="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Param="chufa_npc_118" Desc="引导技能"/>
+	<Property ID="502" Event="on_trigger_gui_event" Param="form_skill_bar/imagegrid_skill_1/on_leftclick_up" Desc="引导技能"/>
 	
-	<Property ID="1000" Event="CRITERIA_TYPE_OBTAIN_CLONE_REWARD" Param="0,9" Desc="服务端触发：领取战胜的馈赠成功"/>
-	<Property ID="1001" Event="on_trigger_gui_event" Param="form_clone_select/main_form/on_close" Desc="副本选择界面——关闭后触发"/>
-	<Property ID="1002" Event="on_trigger_gui_event" Param="form_quest_trace/btn_bg_1/on_click" Desc="任务追踪界面——点击后触发"/>
-	<Property ID="1003" Event="on_trigger_gui_event" Param="form_talk_face_npc/main_form/on_show" Desc="NPC对话界面——出现后触发"/>	
-	
-	<Property ID="1100" Event="CRITERIA_TYPE_QUEST_COMPLETE" Param="10004" Desc="服务端触发：接受任务-寻医问道"/>
-	<Property ID="1101" Event="on_trigger_gui_event" Param="form_talk_face_npc/main_form/on_close" Desc="NPC对话界——关闭后触发"/>
-	<Property ID="1102" Event="on_trigger_gui_event" Param="form_quest_trace/btn_bg_1/on_click" Desc="任务追踪界面——点击后触发"/>
-	<Property ID="1103" Event="on_trigger_gui_event" Param="form_talk_face_npc/main_form/on_show" Desc="NPC对话界面——出现后触发"/>	
-	
-	<Property ID="1200" Event="CRITERIA_TYPE_QUEST_COMPLETE" Param="10005" Desc="服务端触发：接受任务-跟索拉对话"/>
-	<Property ID="1201" Event="on_trigger_gui_event" Param="form_curtain_cartoon/main_curtain_form/on_close" Desc="黑幕动画界面——关闭后触发"/>
-	<Property ID="1202" Event="on_trigger_gui_event" Param="form_quest_trace/btn_bg_1/on_click" Desc="任务追踪界面——点击后触发"/>
-	<Property ID="1203" Event="on_trigger_gui_event" Param="form_talk_face_npc/main_form/on_show" Desc="NPC对话界面——出现后触发"/>	
-	
-	<Property ID="1300" Event="CRITERIA_TYPE_QUEST_COMPLETE" Param="10006" Desc="服务端触发：接受任务-采集草药"/>
-	<Property ID="1301" Event="on_trigger_gui_event" Param="form_talk_face_npc/main_form/on_close" Desc="NPC对话界——关闭后触发"/>
-    <Property ID="1302" Event="on_trigger_gui_event" Param="form_mystic/main_form/on_show" Desc="“秘境”界面——出现后触发"/>
-	<Property ID="1303" Event="on_trigger_gui_event" Param="form_secret_area_info/main_form/on_show" Desc="秘境信息界面——出现后触发"/>
-	<Property ID="1304" Event="on_trigger_gui_event" Param="form_secret_area_info/btn_begin/on_click" Desc="“进入”按钮——点击后触发"/>
-	<Property ID="1305" Event="on_trigger_gui_event" Param="form_clone_finish/groupbox_content/on_show" Desc="副本结算界面“确认”按钮——出现后触发"/>
-	<!--<Property ID="1305" Event="on_trigger_gui_event" Param="form_treasure_get/lbl_card_0/form_treasure_award_zoom_rotate_2" Desc="“返回”按钮——LBL动画播放完后触发 可通用"/>
-	<Property ID="1306" Event="on_trigger_gui_event" Param="form_treasure_get/btn_close/on_click" Desc="“抽奖获取界面”——关闭后触发"/>-->
-	
-	<Property ID="1400" Event="CRITERIA_TYPE_TREASURE" Param="" Desc="服务端触发：抽取宝藏"/>
-	<Property ID="1401" Event="on_trigger_gui_event" Param="form_curtain/main_form/on_gui_effect_finish" Desc="过图动画——播放结束后触发（回到主城）"/>
-	<Property ID="1402" Event="on_trigger_gui_event" Param="form_bag_copy/main_form/on_show" Desc="“英雄”界面——出现后触发"/>
-	<Property ID="1403" Event="on_trigger_gui_event" Param="form_bag_copy/btn_arrange/on_click" Desc="“背包整理按钮——点击后触发"/>
-	<Property ID="1404" Event="on_trigger_gui_event" Param="form_equip_tips/main_form/on_show" Desc="选中背包中的装备Tips——出现后触发"/>
-	<Property ID="1405" Event="on_trigger_gui_event" Param="form_equip_tips/main_form/on_hide" Desc="选中背包中的装备Tips——隐藏后触发"/>
-	<Property ID="1406" Event="on_trigger_gui_event" Param="form_equip_tips/main_form/on_show" Desc="选中穿戴的装备Tips——出现后触发"/>
-	<Property ID="1407" Event="on_trigger_gui_event" Param="form_strengthen_upgrade/main_form/on_show" Desc="装备强化界面——出现后触发"/>
-	<Property ID="1408" Event="on_trigger_gui_event" Param="form_strengthen_upgrade/btn_all_strengthen/on_click" Desc="“强化所有装备”——点击后触发"/>
-	<Property ID="1409" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="1410" Event="on_trigger_gui_event" Param="form_strengthen_upgrade/rbtn_upgrade/on_checked_changed" Desc="“精练页签——点击后触发"/>
-	<Property ID="1411" Event="on_trigger_gui_event" Param="form_strengthen_upgrade/btn_upgrade/on_click" Desc="精练按钮——点击后触发"/>
-	<Property ID="1412" Event="on_trigger_gui_event" Param="form_strengthen_upgrade/main_form/on_hide" Desc="装备强化界面——隐藏后触发"/>
-	
-	<Property ID="1500" Event="CRITERIA_TYPE_EQUIP" Param="Equip_P_15GJAD_Weapon" Desc="服务端触发：穿戴装备"/>
-	<Property ID="1501" Event="on_trigger_gui_event" Param="form_role_npc_base/main_form/on_close" Desc="英雄界面——关闭后触发"/>
-	<Property ID="1502" Event="on_trigger_gui_event" Param="form_black_market/main_form/on_show" Desc="黑市界面——出现后触发"/>
-	<Property ID="1503" Event="on_trigger_gui_event" Param="form_select_bag/main_form/on_show" Desc="品质选择界面——出现后触发"/>
-	<Property ID="1504" Event="on_trigger_gui_event" Param="form_select_bag/cbtn_green/on_checked_changed" Desc="绿色品质按钮——点击后触发"/>
-	<Property ID="1505" Event="on_trigger_gui_event" Param="form_select_bag/btn_put/on_click" Desc="确定按钮——点击后触发"/>	
-	<Property ID="1506" Event="on_trigger_gui_event" Param="form_gift_package/main_form/on_show" Desc="获取界面——出现后触发"/>	
-	<Property ID="1507" Event="on_trigger_gui_event" Param="form_gift_package/main_form/on_close" Desc="获取界面——关闭后触发"/>	
-	<Property ID="1508" Event="on_trigger_gui_event" Param="form_black_market/rbtn_rebuild/on_checked_changed" Desc="重铸按钮——点击后触发"/>	
-	<Property ID="1509" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="1510" Event="on_trigger_gui_event" Param="form_black_market/btn_close/on_click" Desc="关闭按钮——点击后触发"/>
+	<Property ID="503" Event="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Param="mon_guide_fly_05" Desc="飞行引导"/>
+	<Property ID="504" Event="on_joystick_touch_begin" Param="" Desc="推动移动摇杆"/>
+	<Property ID="505" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="点击向上"/>
+	<Property ID="506" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="点击向下"/>
+	<Property ID="507" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="点击持续飞行1"/>
+	<Property ID="508" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="点击持续飞行2"/>
+	<Property ID="509" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="技能"/>	
+	<!--给予狼骑坐骑-->
+	<Property ID="6000" Event="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Param="chufa_npc_111" Desc="给予狼骑坐骑"/>	
+	<!--狼骑引导-->
+	<Property ID="601" Event="on_custom" Param="1270" Desc="切换狼骑"/>
+	<Property ID="602" Event="on_trigger_gui_event" Param="form_ride_fight/imagegrid_fight2/on_leftclick_up" Desc="锁定目标"/>
+	<Property ID="603" Event="on_trigger_gui_event" Param="form_skill_bar/btn_tab/on_click" Desc="使用捕获"/>
+	<Property ID="604" Event="on_trigger_gui_event" Param="form_skill_bar/imagegrid_skill_1/on_leftclick_up" Desc="结束"/>	
+	<!--坐骑提示-->
+	<Property ID="701" Event="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Param="chufa_npc_112" Desc="坐骑提示"/>
+	<Property ID="702" Event="on_trigger_gui_event" Param="form_ride_guide/main_form/on_show_end" Desc="展开界面"/>	
+	<Property ID="703" Event="on_trigger_gui_event" Param="form_ride_guide/main_form/on_show_end" Desc="点击关闭"/>	
+	<!--战斗提示-->	
+	<Property ID="704" Event="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Param="chufa_npc_119" Desc="摄像机回正引导"/>
+	<Property ID="705" Event="on_trigger_gui_event" Param="form_skill_bar/btn_camera/on_click" Desc="切换目标"/>	
+	<Property ID="706" Event="on_trigger_gui_event" Param="form_skill_bar/btn_tab/on_click" Desc="双击取消目标"/>	
+	<Property ID="707" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="点击关闭"/>	
+	<!--任务-西方-->
+	<Property ID="800" Event="on_stage_passed" Param="4" Desc="播放黑幕动画"/>
+	<Property ID="801" Event="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Param="start_guide_01" Desc="引导摄像机视角"/>
+	<Property ID="805" Event="on_trigger_gui_event" Param="form_skill_bar/btn_camera/on_click" Desc="摄像机缩放"/>
+	<Property ID="806" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="摄像机拖动"/>	
+	<Property ID="807" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="点击2.5D模式"/>	
+	<Property ID="808" Event="on_trigger_gui_event" Param="form_small_map/cbtn_camertype/on_click" Desc="点击3D模式"/>	
+	<Property ID="802" Event="on_trigger_gui_event" Param="form_small_map/cbtn_camertype/on_click" Desc="引导跳跃"/>	
+	<Property ID="803" Event="on_trigger_gui_event" Param="form_skill_bar/btn_camera/on_click" Desc="引导任务"/>
+	<Property ID="804" Event="on_trigger_gui_event" Param="form_task_left/main_form/on_click" Desc="结束"/>
+	<!--任务-东方-->
+	<Property ID="810" Event="on_stage_passed" Param="8" Desc="播放黑幕动画"/>
+	<Property ID="811" Event="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Param="start_guide_03" Desc="引导摄像机视角"/>
+	<Property ID="815" Event="on_trigger_gui_event" Param="form_skill_bar/btn_camera/on_click" Desc="摄像机缩放"/>
+	<Property ID="816" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="摄像机拖动"/>	
+	<Property ID="817" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="点击2.5D模式"/>	
+	<Property ID="818" Event="on_trigger_gui_event" Param="form_small_map/cbtn_camertype/on_click" Desc="点击3D模式"/>	
 
-	<Property ID="1600" Event="CRITERIA_TYPE_BLACKMARKET_FURNACE_SUCCESS" Param="" Desc="服务端触发：熔炼成功"/>
-    <Property ID="1601" Event="on_trigger_gui_event" Param="form_black_market/main_form/on_close" Desc="黑市界面——关闭后触发"/>
-    <Property ID="1602" Event="on_trigger_gui_event" Param="form_quest_trace/btn_bg_1/on_click" Desc="任务追踪界面——点击后触发"/>
-    
-    <!--野外阶段开始-->
-    
-    <Property ID="1700" Event="CRITERIA_TYPE_QUEST_COMPLETE" Param="10009" IsSceneGuide="1" Desc="服务端触发：接受任务-风语之乱"/>
-    <Property ID="1701" Event="on_trigger_gui_event" Param="form_talk_face_npc/main_form/on_close" IsSceneGuide="1" Desc="NPC对话界——关闭后触发"/>
-    <Property ID="1702" Event="on_trigger_gui_event" Param="form_main_groupscene/main_form/on_show" IsSceneGuide="1" Desc="换线界面界面——出现后触发"/>
-    <Property ID="1703" Event="on_trigger_gui_event" Param="form_main_groupscene/main_form/on_close" IsSceneGuide="1" Desc="换线界面界面——关闭后触发"/>
-    <Property ID="1704" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" IsSceneGuide="1" isMaskNeedAll="true" Desc="引导界面任意位置——点击后触发"/>
-    <!--<Property ID="1704" Event="on_trigger_gui_event" Param="form_quest_trace/btn_bg_1/on_click" IsSceneGuide="1" Desc="任务追踪界面——点击后触发"/>-->
-    
-    <Property ID="1800" Event="CRITERIA_TYPE_QUEST_COMPLETE" Param="10012" IsSceneGuide="1" Desc="服务端触发：提交任务-罪魁祸首"/>
-    <Property ID="1801" Event="on_trigger_gui_event" Param="form_talk_face_npc/main_form/on_close" IsSceneGuide="1" Desc="NPC对话界——关闭后触发"/>
-    <Property ID="1802" Event="on_trigger_gui_event" Param="form_map/main_form/on_show" IsSceneGuide="1" Desc="地图界面——出现后触发"/>
-    <Property ID="1803" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" IsSceneGuide="1" isMaskNeedAll="true" Desc="引导界面任意位置——点击后触发"/>
-    <!--会断掉自动寻路 所以屏蔽 <Property ID="1801" Event="on_trigger_gui_event" Param="form_talk_face_npc/main_form/on_close" IsSceneGuide="1" Desc="NPC对话界——关闭后触发"/>-->
-    
-    <!--野外阶段结束-->     
+	<Property ID="819" Event="on_trigger_gui_event" Param="form_small_map/cbtn_camertype/on_click" Desc="点击头像"/>	
+	<Property ID="820" Event="on_trigger_gui_event" Param="form_main_function/main_form/on_show_end" Desc="点击系统"/>
+	<Property ID="821" Event="on_trigger_gui_event" Param="form_main_function/btn_system/on_click" Desc="低配模式"/>
+	<Property ID="825" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="关闭系统"/>
+	<Property ID="826" Event="on_trigger_gui_event" Param="form_system_option/btn_close/on_click" Desc="关闭选单"/>	
+	
+	<Property ID="812" Event="on_trigger_gui_event" Param="form_main_function/main_form/on_close" Desc="引导跳跃"/>	
+	<Property ID="813" Event="on_trigger_gui_event" Param="form_skill_bar/btn_camera/on_click" Desc="引导任务"/>
+	<Property ID="814" Event="on_trigger_gui_event" Param="form_task_left/main_form/on_click" Desc="结束"/>	
+	<Property ID="830" Event="movie_end" Param="movie/xifang_shuijinkaichang/project_info.ini" CloneNeedGuide="true" Desc="隐藏界面"/>
+	<Property ID="831" Event="movie_end" Param="movie/dongfang_shuijinkaichang/project_info.ini" CloneNeedGuide="true" Desc="隐藏界面"/>
 
-	<Property ID="1900" Event="CRITERIA_TYPE_QUEST_COMPLETE" Param="10013" Desc="服务端触发：接受任务-赴约疗伤"/>
-	<Property ID="1901" Event="on_trigger_gui_event" Param="form_talk_face_npc/main_form/on_close" Desc="NPC对话界——关闭后触发"/>
-	<Property ID="1902" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" isMaskNeedAll="true" Desc="引导界面任意位置——点击后触发"/>
+	<!--技能1引导-东方-->
+	<Property ID="901" Event="CRITERIA_TYPE_QUEST_GET_TASK" Param="2003" Desc="点击角色头像"/>
+	<Property ID="902" Event="on_trigger_gui_event" Param="form_main_function/main_form/on_show_end" Desc="点击角色按键"/>	
+	<Property ID="903" Event="on_trigger_gui_event" Param="form_main_function/btn_role/on_click" Desc="选择技能分页"/>
+	<Property ID="904" Event="on_trigger_gui_event" Param="form_main_menu/rbtn_3/on_click" Desc="选择第一个技能"/>	
+	<Property ID="905" Event="on_trigger_gui_event" Param="form_skill/cbtn_select0/on_click" Desc="点击升级"/>	
+	<Property ID="906" Event="on_trigger_gui_event" Param="form_skill/btn_upgrade/on_click" Desc="点击返回"/>
+	<Property ID="907" Event="on_trigger_gui_event" Param="form_main_menu/btn_close/on_click" Desc="点击返回"/>
+	<!--技能1引导-西方-->
+	<Property ID="911" Event="movie_end" Param="movie/task_8001/project_info.ini" Desc="点击角色头像"/>
+	<Property ID="912" Event="on_trigger_gui_event" Param="form_main_function/main_form/on_show_end" Desc="点击角色按键"/>	
+	<Property ID="913" Event="on_trigger_gui_event" Param="form_main_function/btn_role/on_click" Desc="选择技能分页"/>
+	<Property ID="914" Event="on_trigger_gui_event" Param="form_main_menu/rbtn_3/on_click" Desc="选择第一个技能"/>	
+	<Property ID="915" Event="on_trigger_gui_event" Param="form_skill/cbtn_select0/on_click" Desc="点击升级"/>	
+	<Property ID="916" Event="on_trigger_gui_event" Param="form_skill/btn_upgrade/on_click" Desc="点击返回"/>
+	<Property ID="917" Event="on_trigger_gui_event" Param="form_main_menu/btn_close/on_click" Desc="点击返回"/>	
+	<!--狩猎引导-->
+	<Property ID="1001" Event="hunt_guide" Param="1" Desc="狩猎引导步骤1——开始"/>
+	<Property ID="1002" Event="hunt_guide" Param="2" Desc="狩猎引导步骤2——偏移到左侧"/>
+	<Property ID="1003" Event="hunt_guide" Param="3" Desc="狩猎引导步骤3——吃到宝箱"/>
+	<Property ID="1004" Event="hunt_guide" Param="4" Desc="狩猎引导步骤4——触发事件"/>
+	<Property ID="1005" Event="on_trigger_gui_event" Param="form_hunt_guide/main_form/on_show_end" Desc="狩猎引导步骤5——打开介绍"/>
+	<Property ID="1006" Event="on_trigger_gui_event" Param="form_hunt_guide/btn_close/on_click" Desc="狩猎引导步骤6——关闭介绍"/>
+	<Property ID="1007" Event="on_trigger_gui_event" Param="form_hunt_guide/main_form/on_close" Desc="结束引导"/>
+	<Property ID="1008" Event="on_trigger_gui_event" Param="form_tame_success/main_form/on_show_end" Desc="点击角色头像"/>
 
-    <Property ID="2000" Event="CRITERIA_TYPE_QUEST_COMPLETE" Param="10014" Desc="服务端触发：提交任务-赴约疗伤"/>
-    <Property ID="2001" Event="on_trigger_gui_event" Param="form_chapter_trace/btn_submit/on_show" Desc="章节奖励“领取”按钮出现后触发"/>
-    <!--<Property ID="2002" Event="on_trigger_gui_event" Param="form_gift_package/main_form/on_show" Desc="领取界面——出现后触发"/>-->
-    <Property ID="2002" Event="on_trigger_gui_event" Param="form_chapter_trace/btn_submit/on_click" Desc="章节奖励“领取”按钮点击后触发"/>
-    
-    <Property ID="2100" Event="CRITERIA_TYPE_CHAPTER_FINISH" Param="1" Desc="服务端触发：领取章节奖励成功"/>
-    <!--<Property ID="2101" Event="on_trigger_gui_event" Param="form_gift_package/main_form/on_close" Desc="领取界面——关闭后触发"/>
-    <Property ID="2102" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" isMaskNeedAll="true" Desc="引导界面任意位置——点击后触发"/>-->
-    
-	<Property ID="2200" Event="CRITERIA_TYPE_QUEST_COMPLETE" Param="10015" Desc="服务端触发：提交任务-赴约疗伤"/>
-	<Property ID="2201" Event="on_trigger_gui_event" Param="form_talk_face_npc/main_form/on_close" Desc="NPC对话界——关闭后触发"/>
-	<Property ID="2202" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" isMaskNeedAll="true" Desc="引导界面任意位置——点击后触发"/>    
-
-    <Property ID="2300" Event="CRITERIA_TYPE_QUEST_COMPLETE" Param="10016" Desc="服务端触发：提交任务-红颜别过"/>   
-    <Property ID="2301" Event="on_trigger_gui_event" Param="form_talk_face_npc/main_form/on_close" Desc="NPC对话界——关闭后触发"/>
-    <!--<Property ID="2302" Event="on_trigger_gui_event" Param="form_activity/groupbox_activity_5/on_show" Desc="“缤纷礼包”按钮——出现后触发"/>-->
-	<Property ID="2302" Event="on_trigger_gui_event" Param="form_gift/groupbox_example_gift_1/on_show" Desc="“领取”按钮——出现后触发"/>
-	<Property ID="2303" Event="on_trigger_gui_event" Param="form_gift_package/main_form/on_show" Desc="领取界面“确认”按钮——出现后触发"/>
-	<Property ID="2304" Event="on_trigger_gui_event" Param="form_gift_package/btn_ok/on_click" Desc="领取界面“确认”按钮——点击后触发"/>
+	<Property ID="1009" Event="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Param="hunt_horse_001" Desc="点击取消图片显示"/>	
+	<Property ID="1010" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="点击取消图片显示"/>	
+	<Property ID="1011" Event="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Param="hunt_horse_002" Desc="点击取消图片显示"/>	
+	<Property ID="1012" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="点击取消图片显示"/>	
+	<!--坐骑上阵-->
+	<Property ID="1101" Event="on_trigger_gui_event" Param="form_tame_success/main_form/on_close" Desc="点击角色头像"/>
+	<Property ID="1102" Event="on_trigger_gui_event" Param="form_main_function/main_form/on_show_end" Desc="点击坐骑"/>
+	<Property ID="1103" Event="on_trigger_gui_event" Param="form_main_function/btn_ride/on_click" Desc="坐骑上阵"/>
+	<Property ID="1104" Event="on_custom" Param="465" Desc="返回键"/>
+	<Property ID="1105" Event="on_trigger_gui_event" Param="form_ride_stable/main_form/on_close" Desc="关闭功能主界面"/>
+	<Property ID="1106" Event="on_trigger_gui_event" Param="form_main_function/main_form/on_close" Desc="结束"/>
+	<Property ID="1107" Event="on_trigger_gui_event" Param="form_chat_preview/btn_ride/on_click" Desc="结束"/>
+	<Property ID="1108" Event="on_trigger_gui_event" Param="form_main_function/main_form/on_show_end" Desc="点击角色头像"/>
+	<Property ID="1109" Event="on_trigger_gui_event" Param="form_main_function/btn_hunt/on_click" Desc="点击狩猎殿"/>
+	<Property ID="1114" Event="on_trigger_gui_event" Param="form_ride_hunt/main_form/on_show_end" Desc="点击狩猎殿"/>
+	<Property ID="1110" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="查看地形"/>
+	<Property ID="1111" Event="on_trigger_gui_event" Param="form_ride_hunt/btn_help/on_click" Desc="查看地形帮助"/>
+	<Property ID="1112" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="查看技能"/>
+	<Property ID="1113" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="选择难度"/>
+	<!--装备背包引导-->
+	<Property ID="1200" Event="on_trigger_gui_event" Param="form_new_equip_tips/main_form/on_show_end" Desc="获得新装备"/>
+	<Property ID="1201" Event="CRITERIA_TYPE_QUEST_GET_TASK" Param="2008,8008" Desc="获得新装备"/>
+	<Property ID="1202" Event="on_trigger_gui_event" Param="form_chat_preview/btn_bag/on_click" Desc="打开背包界面"/>
+	<Property ID="1203" Event="on_trigger_gui_event" Param="form_equip_tips/main_form/on_show_end" Desc="点开装备tips"/>
+	<Property ID="1204" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="讲解装备"/>
+	<Property ID="1205" Event="on_trigger_gui_event" Param="form_equip_tips/main_form/on_close" Desc="关闭tips"/>	
+	<Property ID="1207" Event="on_trigger_gui_event" Param="form_bag/btn_retrieve/on_click" Desc="点击装备回收"/>
+	<Property ID="1208" Event="on_trigger_gui_event" Param="form_bag/btn_cancel_retrieve/on_click" Desc="取消装备回收"/>	
+	<Property ID="1206" Event="on_trigger_gui_event" Param="form_bag/btn_cancel_retrieve/on_click" Desc="点击返回"/>
+	<!--奇遇引导-->
+	<Property ID="1301" Event="CRITERIA_TYPE_QUEST_GUIDE_NPC_TRIGGER" Param="start_guide_02" Desc="进入奇遇事件范围"/>
+	<Property ID="1302" Event="on_trigger_gui_event" Param="form_task_left/cbtn_watch_wtask/on_click" Desc="点击任务"/>
+	<Property ID="1303" Event="on_trigger_gui_event" Param="form_task_world/btn_accept/on_click" Desc="点击接取"/>
+	<Property ID="1304" Event="on_trigger_gui_event" Param="form_task_left/main_form/on_click" Desc="点击寻路"/>
+	<!--飞行引导-->
+	<Property ID="1401" Event="on_trigger_gui_event" Param="form_ride_fly_control_select/main_form/on_show_end" Desc="展开飞行选择"/>
+	<Property ID="1402" Event="on_trigger_gui_event" Param="form_ride_fly_control_select/btn_lielong_mode/on_click" Desc="选择猎龙模式"/>
+	<Property ID="1403" Event="on_trigger_gui_event" Param="form_ride_fly_control_select/btn_confirm/on_click" Desc="点击确定"/>	
+	<Property ID="1404" Event="on_joystick_touch_begin" Param="" Desc="上升"/>
+	<Property ID="1405" Event="on_joystick_touch_begin" Param="" Desc="下降"/>		
+	<Property ID="1406" Event="on_trigger_gui_event" Param="form_skill_bar/imagegrid_fly_special/on_leftclick_up" Desc="飞行按键弹起"/>	
+	<Property ID="1407" Event="on_trigger_gui_event" Param="form_skill_bar/btn_jump/on_click" Desc="拖拽飞行按键"/>	
+	<Property ID="1408" Event="on_trigger_gui_event" Param="form_skill_bar/imagegrid_fly_special/on_leftclick_up" Desc="飞行按键弹起"/>	
+	<Property ID="1409" Event="on_trigger_gui_event" Param="form_ride_fly_control_select/main_form/on_show_end" Desc="展开飞行选择"/>
+	<Property ID="1410" Event="on_trigger_gui_event" Param="form_ride_fly_control_select/btn_normal_mode/on_click" Desc="展开飞行选择"/>
+	<Property ID="1411" Event="on_trigger_gui_event" Param="form_ride_fly_control_select/main_form/on_close" Desc="点击确定"/>	
+	<Property ID="1412" Event="on_trigger_gui_event" Param="form_main_function/main_form/on_show_end" Desc="点击头像"/>
+	<Property ID="1413" Event="on_trigger_gui_event" Param="form_main_function/btn_system/on_click" Desc="点击系统"/>
+	<Property ID="1414" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="展示结束"/>
+	<!--副本引导-->	
+	<Property ID="1501" Event="CRITERIA_TYPE_QUEST_GET_TASK" Param="9001,9002" Desc="接到支线任务"/>
+	<Property ID="1502" Event="on_trigger_gui_event" Param="form_team_clone_select/main_form/on_show_end" Desc="点击任务展开副本界面"/>
+	<Property ID="1503" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="展示战斗等级"/>
+	<Property ID="1504" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="展示副本奖励"/>
+	<Property ID="1505" Event="on_trigger_gui_event" Param="form_team_clone_select/cb_diff_hard/on_checked_changed" Desc="展示副本奖励"/>
+	<Property ID="1506" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="展示战斗等级"/>
+	<Property ID="1507" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="展示战斗等级"/>
+	<Property ID="1508" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="展示战斗等级"/>
+	<!--战场引导-->	
+	<Property ID="1601" Event="CRITERIA_TYPE_QUEST_GET_TASK" Param="2032,8030" Desc="升到17级"/>
+	<Property ID="1602" Event="on_trigger_gui_event" Param="form_main_function/main_form/on_show_end" Desc="展开功能界面"/>
+	<Property ID="1603" Event="on_trigger_gui_event" Param="form_battle_field_select/main_form/on_show_end" Desc="展开战场选择"/>
+	<Property ID="1604" Event="on_trigger_gui_event" Param="form_battle_field_prepare/main_form/on_show_end" Desc="展开准备界面"/>
+	<Property ID="1605" Event="on_trigger_gui_event" Param="form_ride_stable/main_form/on_show_end" Desc="点击调整阵型"/>
+	<Property ID="1606" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="指引阵型"/>
+	<Property ID="1607" Event="on_trigger_gui_event" Param="form_ride_stable/main_form/on_close" Desc="关闭阵型界面"/>
+	<Property ID="1608" Event="on_trigger_gui_event" Param="form_battle_field_prepare/main_form/on_show_end" Desc="点击一键推荐"/>
+	<Property ID="1609" Event="on_trigger_gui_event" Param="form_battle_field_prepare/btn_hyperlink/on_click" Desc="点击超链接"/>
+	<Property ID="1610" Event="on_trigger_gui_event" Param="form_battle_field_level_limit/main_form/on_close" Desc="关闭超链接"/>
+	<Property ID="1611" Event="on_trigger_gui_event" Param="form_battle_field_prepare/btn_help/on_click" Desc="点击帮助按键"/>
+	<Property ID="1612" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="展示帮助"/>	
+	<Property ID="1613" Event="on_trigger_gui_event" Param="form_battle_field_intro/main_form/on_close" Desc="关闭帮助"/>
+	<Property ID="1614" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="点击准备"/>
+	<!--龙纹引导-->	
+	<Property ID="1701" Event="CRITERIA_TYPE_QUEST_GET_TASK" Param="2034,8033" Desc="升到18级"/>
+	<Property ID="1702" Event="on_trigger_gui_event" Param="form_chat_preview/btn_bag/on_click" Desc="点击背包"/>
+	<Property ID="1703" Event="on_trigger_gui_event" Param="form_main_menu/rbtn_4/on_click" Desc="点击龙纹页签"/>
+	<Property ID="1704" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="选择1号天赋"/>
+	<Property ID="1705" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="展示龙纹点数"/>
+	<Property ID="1706" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="点击龙纹套"/>
+	<!--队伍引导-->	
+	<Property ID="1801" Event="CRITERIA_TYPE_QUEST_GET_TASK" Param="2015,7001" Desc="升到20级"/>
+	<Property ID="1802" Event="on_trigger_gui_event" Param="form_left_list/rbtn_team/on_click" Desc="点击交互"/>
+	<Property ID="1803" Event="on_trigger_gui_event" Param="form_social_main/rbtn_team/on_checked_changed" Desc="选择队伍"/>
+	<Property ID="1804" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="展示创建"/>
+	<!--装备强化引导-->	
+	<Property ID="1901" Event="CRITERIA_TYPE_QUEST_GET_TASK" Param="2030,8027" Desc="接到任务"/>	
+	<Property ID="1902" Event="on_trigger_gui_event" Param="form_chat_preview/btn_bag/on_click" Desc="点击背包"/>
+	<Property ID="1903" Event="on_trigger_gui_event" Param="form_equip_tips/main_form/on_show_end" Desc="点击武器"/>
+	<Property ID="1904" Event="on_trigger_gui_event" Param="form_equip_tips/btn_strengthen/on_click" Desc="点击强化"/>
+	<Property ID="1905" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="展示区域1"/>
+	<Property ID="1906" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="展示区域2"/>
+	<Property ID="1907" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="展示区域3"/>
+	<!--翅膀引导-->	
+	<Property ID="2001" Event="CRITERIA_TYPE_QUEST_GET_TASK" Param="2041,7003" Desc="接到任务"/>	
+	<Property ID="2002" Event="on_trigger_gui_event" Param="form_chat_preview/btn_bag/on_click" Desc="点击背包"/>
+	<Property ID="2003" Event="on_trigger_gui_event" Param="form_amulet/main_form/on_show_end" Desc="点击翅膀"/>
+	<Property ID="2004" Event="on_trigger_gui_event" Param="form_amulet/Button_Enter/on_click" Desc="点击升级"/>
+	<!--美拍引导-->	
+	<Property ID="2101" Event="CRITERIA_TYPE_QUEST_GET_TASK" Param="8008,2005" Desc="接到任务"/>	
+	<Property ID="2102" Event="on_trigger_gui_event" Param="form_main_function/main_form/on_show_end" Desc="点击头像"/>
+	<Property ID="2103" Event="on_trigger_gui_event" Param="form_main_function/btn_system/on_click" Desc="点击系统"/>
+	<Property ID="2104" Event="on_trigger_gui_event" Param="form_system_option/btn_shot/on_click" Desc="点击美拍"/>
+	<Property ID="2105" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="展示区域1"/>
+	<Property ID="2106" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="展示区域2"/>
+	<Property ID="2107" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="展示区域3"/>
+	<Property ID="2108" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="展示区域4"/>
+	<!--摄像机跟随引导-->
+	<Property ID="2201" Event="CRITERIA_TYPE_QUEST_GET_TASK" Param="8004,2006" Desc="接到任务"/>	
+	<Property ID="2202" Event="on_trigger_gui_event" Param="form_main_function/main_form/on_show_end" Desc="点击头像"/>	
+	<Property ID="2203" Event="on_trigger_gui_event" Param="form_main_function/btn_system/on_click" Desc="点击系统"/>	
+	<Property ID="2204" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="摄像机跟随"/>
+	<Property ID="2205" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="灵敏度"/>	
+	<!--战场小地图-->
+	<Property ID="2301" Event="on_stage_passed" Param="5" Desc="战场场景"/>	
+	<Property ID="2302" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="回城"/>	
+	<Property ID="2303" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="结束"/>	
+	<!--攻城战引导-->	
+	<Property ID="2401" Event="CRITERIA_TYPE_QUEST_GET_TASK" Param="9050" Desc="接到任务"/>
+	<Property ID="2402" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="点特殊技能"/>
+	<Property ID="2403" Event="on_trigger_gui_event" Param="form_task_left/main_form/on_click" Desc="点击寻路"/>	
 	
-	<Property ID="2400" Event="CRITERIA_TYPE_GIFT_AWARD" Param="1,6" Desc="服务端触发：等级礼包领取成功"/>   
-	<Property ID="2401" Event="on_trigger_gui_event" Param="form_activity/main_form/on_close" Desc="“缤纷礼包”界面——关闭后触发"/>
-	<Property ID="2402" Event="on_trigger_gui_event" Param="form_role_npc_array/main_form/on_show" Desc="阵容设置界面——出现后触发"/>
-	<Property ID="2403" Event="on_trigger_gui_event" Param="form_role_npc_array/btn_active_3/on_click" Desc="点击召唤按钮后触发"/>
-	<Property ID="2404" Event="on_trigger_new_role_show" Param="" Desc="召唤成功界面——出现后触发--特殊处理 指定召唤界面动画播放完成后触发"/>
-	<Property ID="2405" Event="on_trigger_gui_event" Param="form_role_npc_array_effect/btn_close/on_click" Desc="召唤成功界面“确认”按钮——点击后触发"/>
-	<Property ID="2406" Event="on_trigger_gui_event" Param="form_role_npc_array/lbl_is_fight_3/on_show" Desc="设置副将成功后触发"/>
+	<Property ID="2501" Event="CRITERIA_TYPE_QUEST_GET_TASK" Param="9051" Desc="接到任务"/>
+	<Property ID="2502" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="点矿"/>
+	<Property ID="2503" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="点魔能机甲"/>
+	<Property ID="2504" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="点水晶塔"/>
 	
-	<Property ID="2500" Event="CRITERIA_TYPE_NEW_ROLENPC_CREATE" Param="role_npc_base2" Desc="服务端触发：新英雄召唤成功"/>
-	<Property ID="2501" Event="on_trigger_gui_event" Param="form_role_npc_array/main_form/on_close" Desc="战队界面—关闭后触发"/>  
-	<Property ID="2502" Event="on_trigger_gui_event" Param="form_bag_copy/main_form/on_show" Desc="英雄界面——出现后触发"/>
-	<Property ID="2503" Event="on_trigger_gui_event" Param="form_role_npc_arrange/lbl_big_back_image_3/on_click" Desc="幻术师头像——选择后触发"/>
-	<Property ID="2504" Event="on_trigger_gui_event" Param="form_role_npc_base/rbtn_2/on_click" Desc="“属性”按钮——点击后触发"/>
-	<Property ID="2505" Event="on_trigger_gui_event" Param="form_add_experience/main_form/on_show" Desc="经验界面——出现后触发"/>
-	<Property ID="2506" Event="on_trigger_gui_event" Param="form_add_experience/image_click_3/on_leftclick_down" Desc="“幻术师”头像——点击后触发"/>
-	<Property ID="2507" Event="on_trigger_gui_event" Param="form_add_experience/btn_close/on_click" Desc="经验界面“关闭”按钮——点击后触发"/>
-	<Property ID="2508" Event="on_trigger_gui_event" Param="form_role_npc_base/rbtn_3/on_click" Desc="技能按钮——点击后触发"/>
-	<Property ID="2509" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" isMaskNeedAll="true" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="2510" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" isMaskNeedAll="true" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="2511" Event="on_trigger_gui_event" Param="form_role_npc_base/btn_close/on_click" Desc="英雄界面关闭按钮——点击后触发"/>
-
-    <Property ID="2600" Event="CRITERIA_TYPE_ROLENPC_LEVEL_CHANGE" Param="" Desc="服务端触发：提升英雄等级成功"/>
-	<Property ID="2601" Event="on_trigger_gui_event" Param="form_role_npc_base/main_form/on_close" Desc="英雄界面——关闭后触发"/>
-	<Property ID="2602" Event="on_trigger_gui_event" Param="form_role_npc_array/main_form/on_show" Desc="阵容设置界面——出现后触发"/>
-	<Property ID="2603" Event="on_trigger_gui_event" Param="form_role_npc_array/imagegrid_fight_11/on_drag_leave" Desc="幻术师头像——移动后触发"/>
-	<Property ID="2604" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
+	<Property ID="2601" Event="CRITERIA_TYPE_QUEST_GET_TASK" Param="9052" Desc="接到任务"/>
+	<Property ID="2602" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="点特殊技能"/>
+	<Property ID="2603" Event="on_trigger_gui_event" Param="form_task_left/main_form/on_click" Desc="点击寻路"/>	
 	
-	<Property ID="2700" Event="CRITERIA_TYPE_FORMATION_EXCHANGE" Param="" Desc="服务端触发：战队阵容发生变化"/>
-	<Property ID="2701" Event="on_trigger_gui_event" Param="form_role_npc_array/main_form/on_close" Desc="战队界面—关闭后触发,必须回到主界面"/>		
-
-	<Property ID="2801" Event="on_level_change" Param="7" Desc="等级7——等级达到回主城后触发"/>
-	<Property ID="2802" Event="on_trigger_gui_event" Param="form_exercise/main_form/on_show" Desc="历练界面——出现后触发"/>
-	<Property ID="2803" Event="on_trigger_gui_event" Param="form_arena_main/main_form/on_show" Desc="竞技场界面——出现后触发"/>
-	<Property ID="2804" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>	
-	<Property ID="2805" Event="on_trigger_gui_event" Param="form_arena_main/rbtn_rank/on_checked_changed" Desc="“排行”按钮——点击后触发"/>
-	<Property ID="2806" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<!--<Property ID="2807" Event="on_trigger_gui_event" Param="form_arena_main/rbtn_shop/on_checked_changed" Desc="“兑换”按钮——点击后触发"/>
-	<Property ID="2808" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>-->
-	<Property ID="2807" Event="on_trigger_gui_event" Param="form_arena_main/rbtn_arena/on_checked_changed" Desc="“竞技”按钮——点击后触发"/>
-	<Property ID="2808" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
+	<Property ID="2701" Event="CRITERIA_TYPE_QUEST_GET_TASK" Param="9053" Desc="接到任务"/>
+	<Property ID="2702" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="采矿"/>
+	<Property ID="2703" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="点矿"/>
 	
-	<!--
-	<Property ID="2901" Event="on_level_change" Param="8" Desc="等级8——等级达到回主城后触发"/>
-	<Property ID="2902" Event="on_trigger_gui_event" Param="form_activity/main_form/on_show" Desc="“月签到”按钮——出现后触发"/>
-	<Property ID="2903" Event="on_trigger_gui_event" Param="form_activity/cbtn_activity_1/on_checked_changed" Desc="“月签到”按钮——点击后触发"/>
-	<Property ID="2904" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	首测不开放充值，暂时屏蔽充值引导
-	<Property ID="2905" Event="on_trigger_gui_event" Param="form_activity/main_form/on_close" NeedMainUI="true" Desc="精彩活动界面——关闭后触发，必须回到主界面"/>
-	<Property ID="2906" Event="on_trigger_gui_event" Param="form_pay/main_form/on_show" Desc="商店界面——出现后触发"/>
-	<Property ID="2907" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="2908" Event="on_trigger_gui_event" Param="form_pay/btn_vip_help/on_click" Desc="“查看特权”按钮——点击后触发"/>
-	<Property ID="2909" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="2910" Event="on_trigger_gui_event" Param="form_pay/btn_right/on_click" Desc="“向右翻页”按钮——点击后触发"/>
-	<Property ID="2911" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	-->
-
-	<Property ID="2901" Event="on_level_change" Param="8" Desc="等级8——等级达到回主城后触发"/>
-	<Property ID="2902" Event="on_trigger_gui_event" Param="form_day_activity_main/main_form/on_show" Desc="活跃度界面——出现后触发"/>
-	<Property ID="2903" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="2904" Event="on_trigger_gui_event" Param="form_day_activity_main/rbtn_limit_time/on_checked_changed" Desc="“限时活动”按钮——点击后触发"/>
-	<Property ID="2905" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
+	<Property ID="2801" Event="CRITERIA_TYPE_QUEST_GET_TASK" Param="9054" Desc="接到任务"/>
+	<Property ID="2802" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="点特殊技能"/>
+	<Property ID="2803" Event="on_trigger_gui_event" Param="form_task_left/main_form/on_click" Desc="点击寻路"/>	
 	
-	<Property ID="3001" Event="on_level_change" Param="9" Desc="等级10——等级达到回主城后触发"/>
-	<!--
-	<Property ID="3002" Event="on_trigger_gui_event" Param="form_exercise/main_form/on_show" Desc="历练界面——出现后触发"/>
-	<Property ID="3003" Event="on_trigger_gui_event" Param="form_transport_mine/main_form/on_show" Desc="荒野奇袭界面——出现后触发"/>
-	<Property ID="3004" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>-->
-	
-	<Property ID="3101" Event="on_level_change" Param="10" Desc="等级10——等级达到回主城后触发"/>
-	<Property ID="3102" Event="on_trigger_gui_event" Param="form_bag_copy/main_form/on_show" Desc="英雄界面——出现后触发"/>
-	<Property ID="3103" Event="on_trigger_gui_event" Param="form_role_npc_uplevel/main_form/on_show" Desc="英雄升阶界面——出现后触发"/>
-	<Property ID="3104" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="3105" Event="on_trigger_gui_event" Param="form_patch_source/main_form/on_show" Desc="英雄碎片获取界面——出现后触发"/>
-	<Property ID="3106" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="3107" Event="on_trigger_gui_event" Param="form_patch_source/btn_ok/on_click" Desc="“确定”按钮——点击后触发"/>
-	<Property ID="3108" Event="on_trigger_gui_event" Param="form_patch_source/main_form/on_show" Desc="进阶材料获取界面——出现后触发"/>
-	<Property ID="3109" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="3110" Event="on_trigger_gui_event" Param="form_patch_source/btn_ok/on_click" Desc="“确定”按钮——点击后触发"/>
-	<Property ID="3111" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="3201" Event="on_level_change" Param="12" Desc="等级11——等级达到回主城后触发"/>
-	<Property ID="3202" Event="on_trigger_gui_event" Param="form_exercise/main_form/on_show" Desc="历练界面——出现后触发"/>
-	<Property ID="3203" Event="on_trigger_gui_event" Param="form_transport_mine/main_form/on_show" Desc="国家宝藏界面——出现后触发"/>
-	<Property ID="3204" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="3301" Event="on_level_change" Param="13" Desc="等级13——等级达到回主城后触发"/>
-	<Property ID="3302" Event="on_trigger_gui_event" Param="form_exercise/main_form/on_show" Desc="历练界面——出现后触发"/>
-	<Property ID="3303" Event="on_trigger_gui_event" Param="form_mine_transcript/main_form/on_show" Desc="藏宝副本界面——出现后触发"/>
-	<Property ID="3304" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="3305" Event="on_trigger_gui_event" Param="form_mine_transcript/rbtn_elite/on_checked_changed" Desc="精英副本——点击后触发"/>
-	<Property ID="3306" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="3307" Event="on_trigger_gui_event" Param="form_mine_transcript/rbtn_left/on_checked_changed" Desc="生存副本——点击后触发"/>
-	<Property ID="3308" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="3309" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="3401" Event="on_level_change" Param="14" Desc="等级14——等级达到回主城后触发"/>
-	<Property ID="3402" Event="on_trigger_gui_event" Param="form_exercise/main_form/on_show" Desc="历练界面——出现后触发"/>
-	<Property ID="3403" Event="on_trigger_gui_event" Param="form_teams_clone/main_form/on_show" Desc="组队副本界面——出现后触发"/>
-	<Property ID="3404" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="3405" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="3406" Event="on_trigger_gui_event" Param="form_exercise_shop/main_form/on_show" Desc="勇者商店界面——出现后触发"/>
-	<Property ID="3407" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="3408" Event="on_trigger_gui_event" Param="form_exercise_shop/main_form/on_close" Desc="勇者商店界面——关闭后触发"/>
-	<Property ID="3409" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="3501" Event="on_level_change" Param="15" Desc="等级15——等级达到回主城后触发"/>
-	<Property ID="3502" Event="on_trigger_gui_event" Param="form_exercise/main_form/on_show" Desc="历练界面——出现后触发"/>
-	<Property ID="3503" Event="on_trigger_gui_event" Param="form_exercise/lbl_right/on_click" Desc="翻页按钮——点击后触发"/>
-	<Property ID="3504" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="3601" Event="on_level_change" Param="16" Desc="等级16——等级达到回主城后触发"/>
-	<Property ID="3602" Event="on_trigger_gui_event" Param="form_role_npc_array/main_form/on_show" Desc="战队界面—出现后触发"/>
-	<Property ID="3603" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="3701" Event="on_level_change" Param="16" Desc="等级16——等级达到回主城后触发"/>
-	<!--<Property ID="3604" Event="on_trigger_gui_event" Param="form_role_npc_array/main_form/on_close" NeedMainUI="true" Desc="战队界面—关闭后触发，必须回到主界面"/>-->
-	<Property ID="3702" Event="on_trigger_gui_event" Param="form_exercise/main_form/on_show" Desc="历练界面——出现后触发"/>
-	<Property ID="3703" Event="on_trigger_gui_event" Param="form_ladder_select/main_form/on_show" Desc="天梯对决界面——出现后触发"/>
-	<Property ID="3704" Event="on_trigger_gui_event" Param="form_pk/main_form/on_show" Desc="巅峰对决界面——出现后触发"/>
-	<Property ID="3705" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="3706" Event="on_trigger_gui_event" Param="form_pk/btn_show_rank/on_click" Desc="巅峰排名按钮——点击后触发"/>
-	<Property ID="3707" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="3708" Event="on_trigger_gui_event" Param="form_pk/btn_help_info/on_click" Desc="帮助按钮——点击后触发"/>
-	<Property ID="3709" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="3710" Event="on_trigger_gui_event" Param="form_help/btn_close/on_click" Desc="帮助确定按钮——点击后触发"/>
-	<Property ID="3711" Event="on_trigger_gui_event" Param="form_exercise_shop/main_form/on_show" Desc="巅峰商店界面——出现后触发"/>
-	<Property ID="3712" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="3713" Event="on_trigger_gui_event" Param="form_exercise_shop/main_form/on_close" Desc="巅峰商店界面——关闭后触发"/>
-	<Property ID="3714" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="3801" Event="on_level_change" Param="17" Desc="等级17——等级达到回主城后触发"/>
-	<!--<Property ID="3706" Event="on_trigger_gui_event" Param="form_trade/main_form/on_close" NeedMainUI="true" Desc="交易行界面—关闭后触发，必须回到主界面"/>-->
-	<Property ID="3802" Event="on_trigger_gui_event" Param="form_bag_copy/main_form/on_show" Desc="英雄界面——出现后触发"/>
-	<Property ID="3803" Event="on_trigger_gui_event" Param="form_role_npc_tattoo/main_form/on_show" Desc="符文界面——出现后触发"/>
-	<Property ID="3804" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="3805" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="3901" Event="on_level_change" Param="17" Desc="等级17——等级达到回主城后触发"/>
-	<Property ID="3902" Event="on_trigger_gui_event" Param="form_trade/main_form/on_show" Desc="交易行界面—出现后触发"/>
-	<Property ID="3903" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="3904" Event="on_trigger_gui_event" Param="form_trade/rbtn_sell/on_checked_changed" Desc="我要出售按钮——点击后触发"/>
-	<Property ID="3905" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="4001" Event="on_level_change" Param="18" Desc="等级18——等级达到回主城后触发"/>
-	<Property ID="4002" Event="on_trigger_gui_event" Param="form_exercise/main_form/on_show" Desc="历练界面——出现后触发"/>
-	<Property ID="4003" Event="on_trigger_gui_event" Param="form_war_select/main_form/on_show" Desc="实时战场界面——出现后触发"/>
-	<Property ID="4004" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="4005" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="4006" Event="on_trigger_gui_event" Param="form_exercise_shop/main_form/on_show" Desc="荣誉商店界面——出现后触发"/>
-	<Property ID="4007" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="4008" Event="on_trigger_gui_event" Param="form_exercise_shop/main_form/on_close" Desc="荣誉商店界面——关闭后触发"/>
-	<Property ID="4009" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="4101" Event="on_level_change" Param="20" Desc="等级20——等级达到回主城后触发"/>
-	<Property ID="4102" Event="on_trigger_gui_event" Param="form_main_hall/btn_function_ex/on_click" Desc="社交按钮——点击后触发"/>
-	<Property ID="4103" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" isMaskNeedAll="true" Desc="引导界面任意位置——点击后触发"/>
-	
-	<!--
-	<Property ID="4101" Event="on_level_change" Param="21" Desc="等级21——等级达到回主城后触发引导稀有技"/>
-	<Property ID="4102" Event="on_trigger_gui_event" Param="form_bag_copy/main_form/on_show" Desc="英雄界面——出现后触发"/>
-	<Property ID="4103" Event="on_trigger_gui_event" Param="form_role_npc_base/rbtn_3/on_click" Desc="技能按钮——点击后触发"/>
-	<Property ID="4104" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>	
-	<Property ID="4105" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="4106" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="4201" Event="on_level_change" Param="22" Desc="等级22——等级达到回主城后触发引导称号"/>	
-	<Property ID="4202" Event="on_trigger_gui_event" Param="form_role_npc_array/main_form/on_show" Desc="战队界面—出现后触发"/>
-	<Property ID="4203" Event="on_trigger_gui_event" Param="form_title/main_form/on_show" Desc="称号界面—出现后触发"/>
-	<Property ID="4204" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="4205" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	-->
-
-	<Property ID="4201" Event="on_level_change" Param="23" Desc="等级23——等级达到回主城后触发"/>
-	<Property ID="4202" Event="on_trigger_gui_event" Param="form_role_npc_array/main_form/on_show" Desc="战队界面—出现后触发"/>
-	<Property ID="4203" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>	
-	<Property ID="4204" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="4301" Event="on_level_change" Param="24" Desc="等级24——等级达到回主城后触发，引导内容为空，过度外网数据用"/>
-	
-	<Property ID="4401" Event="on_level_change" Param="25" Desc="等级25——等级达到回主城后触发，引导25vs25战场"/>
-	<Property ID="4402" Event="on_trigger_gui_event" Param="form_exercise/main_form/on_show" Desc="历练界面——出现后触发"/>
-	<Property ID="4403" Event="on_trigger_gui_event" Param="form_exercise/lbl_right/on_click" Desc="翻页按钮——点击后触发"/>
-	<Property ID="4404" Event="on_trigger_gui_event" Param="form_king_ship_war/main_form/on_show" Desc="浴血沙场界面——出现后触发"/>
-	<Property ID="4405" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="4501" Event="on_level_change" Param="25" Desc="等级25——等级达到回主城后触发，引导军衔"/>
-	<Property ID="4502" Event="on_trigger_gui_event" Param="form_role_npc_array/main_form/on_show" Desc="战队界面—出现后触发"/>
-	<Property ID="4503" Event="on_trigger_gui_event" Param="form_military_rank/main_form/on_open" Desc="军衔界面——打开后触发"/>
-	<Property ID="4504" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="4505" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="4601" Event="on_level_change" Param="28" Desc="等级28——等级达到回主城后触发"/>
-	<!--<Property ID="4602" Event="on_trigger_gui_event" Param="form_exercise/main_form/on_show" Desc="历练界面——出现后触发"/>
-	<Property ID="4603" Event="on_trigger_gui_event" Param="form_exercise/lbl_right/on_click" Desc="翻页按钮——点击后触发"/>
-	<Property ID="4604" Event="on_trigger_gui_event" Param="form_transport_mine/main_form/on_show" Desc="荒野镖客界面——出现后触发"/>
-	<Property ID="4605" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>-->
-		
-	<Property ID="4701" Event="on_level_change" Param="29" Desc="等级29——等级达到回主城后触发，引导骑术"/>
-	<Property ID="4702" Event="on_trigger_gui_event" Param="form_ride/main_form/on_show" Desc="坐骑界面——出现后触发"/>
-	<Property ID="4703" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="4704" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="4801" Event="on_level_change" Param="30" Desc="等级30——等级达到回主城后触发，引导荒野狂飙"/>
-	<Property ID="4802" Event="on_trigger_gui_event" Param="form_exercise/main_form/on_show" Desc="历练界面——出现后触发"/>
-	<Property ID="4803" Event="on_trigger_gui_event" Param="form_exercise/lbl_right/on_click" Desc="翻页按钮——点击后触发"/>
-	<Property ID="4804" Event="on_trigger_gui_event" Param="form_transport_mine/main_form/on_show" Desc="荒野狂飙界面——出现后触发"/>
-	<Property ID="4805" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="4901" Event="on_level_change" Param="35" Desc="等级35——等级达到回主城后触发，引导王者对决"/>
-	<Property ID="4902" Event="on_trigger_gui_event" Param="form_exercise/main_form/on_show" Desc="历练界面——出现后触发"/>
-	<Property ID="4903" Event="on_trigger_gui_event" Param="form_ladder_select/main_form/on_show" Desc="天梯对决界面——出现后触发"/>
-	<Property ID="4904" Event="on_trigger_gui_event" Param="form_pk/main_form/on_show" Desc="王者对决界面——出现后触发"/>
-	<Property ID="4905" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="4906" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="5001" Event="on_level_change" Param="35" Desc="等级35——等级达到回主城后触发，引导内容为空，过度外网数据用"/>
-	
-	<Property ID="5101" Event="on_level_change" Param="36" Desc="等级36——等级达到回主城后触发，引导阵营"/>
-	<Property ID="5102" Event="on_trigger_gui_event" Param="form_main_hall/btn_function_ex/on_click" Desc="社交按钮——点击后触发"/>
-	<Property ID="5103" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" isMaskNeedAll="true" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="5201" Event="on_level_change" Param="37" Desc="等级37——等级达到回主城后触发，引导内容为空，过度外网数据用"/>
-	
-	<Property ID="5301" Event="on_level_change" Param="40" Desc="等级40——等级达到回主城后触发，引导附魔"/>
-	<Property ID="5302" Event="on_trigger_gui_event" Param="form_bag_copy/main_form/on_show" Desc="“英雄”界面——出现后触发"/>
-	<Property ID="5303" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" isMaskNeedAll="true" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="5304" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" isMaskNeedAll="true" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="5305" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" isMaskNeedAll="true" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="5306" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" isMaskNeedAll="true" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="5401" Event="on_level_change" Param="45" Desc="等级45——等级达到回主城后触发，引导天赋"/>
-	<Property ID="5402" Event="on_trigger_gui_event" Param="form_role_npc_array/main_form/on_show" Desc="战队界面—出现后触发"/>
-	<Property ID="5403" Event="on_trigger_gui_event" Param="form_talent/main_form/on_open" Desc="天赋界面——打开后触发"/>
-	<Property ID="5404" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="5405" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="5501" Event="on_level_change" Param="50" Desc="等级50——等级达到回主城后触发，引导王者联赛"/>
-	<Property ID="5502" Event="on_trigger_gui_event" Param="form_exercise/main_form/on_show" Desc="历练界面——出现后触发"/>
-	<Property ID="5503" Event="on_trigger_gui_event" Param="form_ladder_select/main_form/on_show" Desc="天梯对决界面——出现后触发"/>
-	<Property ID="5504" Event="on_trigger_gui_event" Param="form_team_league/main_form/on_show" Desc="王者联赛界面——出现后触发"/>
-	<Property ID="5505" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="5601" Event="on_level_change" Param="50" Desc="等级50——等级达到回主城后触发，引导无双联赛"/>
-	<Property ID="5602" Event="on_trigger_gui_event" Param="form_exercise/main_form/on_show" Desc="历练界面——出现后触发"/>
-	<Property ID="5603" Event="on_trigger_gui_event" Param="form_ladder_select/main_form/on_show" Desc="联赛界面——出现后触发"/>
-	<Property ID="5604" Event="on_trigger_gui_event" Param="form_league_main/main_form/on_show" Desc="无双联赛界面——出现后触发"/>
-	<Property ID="5605" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="5701" Event="on_level_change" Param="51" Desc="等级51——等级达到回主城后触发，引导内容为空，过度外网数据用"/>
-	
-	<Property ID="5801" Event="on_level_change" Param="58" Desc="等级58——等级达到回主城后触发，引导星魂"/>
-	<Property ID="5802" Event="on_trigger_gui_event" Param="form_main_hall/btn_function_ex/on_click" Desc="社交按钮——点击后触发"/>
-	<Property ID="5803" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" isMaskNeedAll="true" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="5901" Event="on_level_change" Param="59" Desc="等级59——过渡"/>
-	
-	<Property ID="6001" Event="on_level_change" Param="60" Desc="等级60——等级达到回主城后触发，引导家园"/>
-	<Property ID="6002" Event="on_trigger_gui_event" Param="form_main_hall/btn_function_ex/on_click" Desc="社交按钮——点击后触发"/>
-	<Property ID="6003" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" isMaskNeedAll="true" Desc="引导界面任意位置——点击后触发"/>
-	<Property ID="6004" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" isMaskNeedAll="true" Desc="家园系统界面——出现后触发"/>
-	
-	<Property ID="6101" Event="on_level_change" Param="60" Desc="等级60——过渡"/>
-	
-	<Property ID="6201" Event="on_level_change" Param="61"  Desc="等级61——等级达到回主城后触发--引导成就"/>
-	<Property ID="6202" Event="on_trigger_gui_event" Param="form_main_hall/btn_function_ex/on_click" Desc="社交按钮——点击后触发"/>
-	<Property ID="6203" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" isMaskNeedAll="true" Desc="引导界面任意位置——点击后触发"/>
-	
-	<Property ID="6301" Event="on_level_change" Param="62" LastGuideStep="true" Desc="等级61——等级达到回主城后触发--引导全部结束"/>
-	
-    <!--无序引导
-	<Property ID="10001" Event="on_boss_break" Param="" Desc="BOSS破防"/>
-	<Property ID="10002" Event="on_trigger_gui_event" Param="form_main_clone_head/pbar_boss_break/on_click" Desc="点击破防槽"/>
-    -->
-    <Property ID="10001" Event="on_clone_into" Param="705" Desc="第一次进入关卡，第一章第一关"/>
- 	<Property ID="10002" Event="on_trigger_gui_event" Param="form_curtain_cartoon/main_curtain_form/on_close" Desc="黑幕动画界面——关闭后触发"/>
- 	<Property ID="10003" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" isMaskNeedAll="true" Desc="引导界面任意位置——点击后触发"/>
-	<!--<Property ID="10003" Event="on_trigger_gui_event" Param="form_main_clone/btn_start_auto_skill/on_click" Desc="自动战斗——点击后触发"/>-->
- 
-</Object>
+	<Property ID="2901" Event="CRITERIA_TYPE_QUEST_GET_TASK" Param="9055" Desc="接到任务"/>
+	<Property ID="2902" Event="on_trigger_gui_event" Param="form_guide/main_form/on_click" Desc="点魔能机甲"/>
+	<Property ID="2903" Event="on_trigger_gui_event" Param="form_task_left/main_form/on_click" Desc="点击寻路"/>	
+</object>

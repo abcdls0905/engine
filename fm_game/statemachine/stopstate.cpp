@@ -19,7 +19,7 @@ bool StopState::StateStopEnter(ITerrain* pTerrain, IVisBase* pRole, int inPutTyp
   {
     CVarList result;
     pActor->ClearBlendAction();
-    pActor->BlendAction(CVarList()<< "pe_stand" << true << false, result);
+    pActor->BlendAction(CVarList()<< "pos_0h_stand" << true << false, result);
   }
   return true;
 }

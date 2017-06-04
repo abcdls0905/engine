@@ -23,7 +23,7 @@ bool MoveState::StateMotionEnter(ITerrain* pTerrain, IVisBase* pRole, int inPutT
   if (pActor)
   {
     CVarList result;
-    pActor->BlendAction(CVarList()<< "pe_run" << true << false, result);
+    pActor->BlendAction(CVarList()<< "fi_1h_run" << true << false, result);
   }
   return true;
 }

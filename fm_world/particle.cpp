@@ -146,6 +146,7 @@ void Particle::Realize()
 
 	m_pNode->SetShowState(true);
 
+  m_bShowBoundBox = true;
 	if (m_bShowBoundBox)
 	{
 		FmMat4 mat;

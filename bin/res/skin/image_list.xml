@@ -1,1363 +1,1228 @@
 <?xml version="1.0" encoding="gb2312"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
 <!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
-<!-- 图元配置 -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 
+图元配置 
+ID    代码中图片名称
+image 图片路径
+desc  说明 
+-->
 <Object>
-	<!--商店-->
-	<Property ID="month" image="gui\tp2_main\shop\ykbg2.png"/>
-	<Property ID="quarter" image="gui\tp2_main\shop\ykbg2.png"/>
-	<Property ID="year" image="gui\tp2_main\shop\ykbg2.png"/>
-	<Property ID="fuli" image="gui\tp2_main\shop\ykbg.png"/>
-	<Property ID="tequan" image="gui\tp2_main\shop\ykbg2.png"/>
-	<Property ID="charge_product_bg_0" image="gui\tp2_main\shop\ykbg.png,5,5,742,127"/>
-	<Property ID="charge_product_bg_1" image="gui\tp2_main\shop\ykbg.png,5,5,742,127"/>
-	<Property ID="charge_product_bg_2" image="gui\tp2_main\shop\ykbg.png,5,5,742,127"/>
-	<Property ID="charge_product_bg_3" image="gui\tp2_main\shop\ykbg.png,5,5,742,127"/>
-	<Property ID="gift_001" image="icon\xm2_item\gift_002.jpg"/>
-	<Property ID="gift_002" image="icon\xm2_item\gift_002.jpg"/>
-	<Property ID="gift_003" image="icon\xm2_item\gift_003.jpg"/>
-	<Property ID="gift_004" image="icon\xm2_item\gift_004.jpg"/>
-	<Property ID="gift_005" image="icon\xm2_item\gift_005.jpg"/>
-	<Property ID="Consume_Capital_1" image="gui\xm2_main\hall\jingbi.png"/>
-	<Property ID="Consume_Capital_2" image="gui\xm2_main\hall\zhuanshi.png"/>
-	<Property ID="Consume_Capital_3" image="gui\xm2_main\hall\zhuanshi_bang.png"/>
-	<Property ID="Consume_Capital_5" image="gui\xm2_common\window\js_1.png"/>
-	<Property ID="Consume_Capital_6" image="gui/common/window/shengwang.png"/>
-	<Property ID="Consume_Capital_7" image="gui/common/window/rongyu.png"/>
-	<Property ID="Consume_Capital_8" image="gui/common/window/dianfengling.png"/>
-	<Property ID="Consume_Capital_9" image="gui/common/window/yongzhezhizheng.png"/>
-	<Property ID="Consume_Capital_12" image="gui/common/window/yuxue.png"/>
-	<Property ID="Item_slst" image="gui\tp2_main\wing\xilian.png"/>
-	<Property ID="Item_clst" image="gui\tp2_main\wing\cuiqu.png"/>
-
-	<Property ID="Consume_Capital_13"/>
-	<Property ID="GuildDevote"/>
-	<Property ID="deposit_jiesuo" image="gui/tp2_main/fumo/suo.png"/>
-	<Property ID="Gold" image="gui/common/window/gold_big.jpg"/>
-	<Property ID="Diamond" image="icon\xm2_item\zuanshi.jpg"/>
-	<Property ID="BindDiamond" image="icon/xm2_item/bangzuan.jpg"/>
-	<Property ID="SkyOutIron"/>
-	<Property ID="IceStone" image="icon\xm2_item\jingshi.jpg"/>
-	<Property ID="Reputation" image="gui/common/window/shengwang.jpg"/>
-	<Property ID="Glory" image="gui/common/window/rongyu.jpg"/>
-	<Property ID="DFL" image="gui/common/window/dianfengling.jpg"/>
-	<Property ID="YZZZ" image="gui/common/window/yongzhezhizheng.jpg"/>
-	<Property ID="GloryPng" image="gui/common/window/rongyu.png"/>
-	<Property ID="DFLPng" image="gui/common/window/dianfengling.png"/>
-	<Property ID="YZZZPng" image="gui/common/window/yongzhezhizheng.png"/>
-	<Property ID="JFPng" image="gui/xm2_main/treasure/jifen.png"/>
-	<Property ID="SMSDPng" image="gui/common/window/yuxue.png"/>
-	<Property ID="JJSDPng" image="gui/common/window/shengwang.png"/>
-	<Property ID="ZYPPng" image="gui/common/window/zhenying.png"/>
-	<Property ID="ZhenYingPoint" image="gui/common/window/zhenying.jpg"/>
-	<Property ID="SoulNum" image="icon/xm2_item/linghunsuipian.jpg"/>
-	<Property ID="shop_ticket_pic" image="gui\common\window\rolenpc_ticket.png"/>
-	<Property ID="awake_prop_type_1" image="gui\tp2_main\fumo\jin1.png"/>
-	<Property ID="awake_prop_type_2" image="gui\tp2_main\fumo\mu1.png"/>
-	<Property ID="awake_prop_type_3" image="gui\tp2_main\fumo\shui1.png"/>
-	<Property ID="awake_prop_type_4" image="gui\tp2_main\fumo\huo1.png"/>
-	<Property ID="awake_prop_type_5" image="gui\tp2_main\fumo\tu1.png"/>
-	<Property ID="DiscountTavern1" image="gui\tp2_main\shop\1.png"/>
-	<Property ID="DiscountTavern2" image="gui\tp2_main\shop\2.png"/>
-	<Property ID="DiscountTavern3" image="gui\tp2_main\shop\3.png"/>
-	<Property ID="DiscountTavern4" image="gui\tp2_main\shop\4.png"/>
-	<Property ID="DiscountTavern5" image="gui\tp2_main\shop\5.png"/>
-	<Property ID="DiscountTavern6" image="gui\tp2_main\shop\6.png"/>
-	<Property ID="DiscountTavern7" image="gui\tp2_main\shop\7.png"/>
-	<Property ID="DiscountTavern8" image="gui\tp2_main\shop\8.png"/>
-	<Property ID="DiscountTavern9" image="gui\tp2_main\shop\9.png"/>
-	<!--黑市-->
-	<Property ID="jinbi"/>
-	<Property ID="zuanshi" image="gui\xm2_main\hall\zhuanshi_bang.png"/>
-	<Property ID="bingjing_xiao" image="gui\xm2_common\window\js_1.png"/>
-	<Property ID="heishi_shuaxin_ff1" image="gui\tp2_main\blackmarket\bm_8.png"/>
-	<Property ID="heishi_shuaxin_ff2" image="gui\tp2_main\blackmarket\bm_10.png"/>
-	<Property ID="shop_09" image="gui\tp2_main\shop\seasoncard.png"/>
-	<Property ID="shop_10" image="gui\tp2_main\shop\yearcard.png"/>
-	<Property ID="shop_11" image="gui\tp2_main\shop\fulicard.png"/>
-	<Property ID="shop_12" image="gui\tp2_main\shop\tequancard.png"/>
-	<Property ID="beibao_12"/>
-	<Property ID="jineng_k_up"/>
-	<Property ID="jineng_k_over"/>
-	<Property ID="bg_zhi"/>
-	<!--背包-->
-	<Property ID="beibao_daoju1"/>
-	<Property ID="beibao_daoju2"/>
-	<Property ID="beibao_suipian1"/>
-	<Property ID="beibao_suipian2"/>
-	<Property ID="zhuangbeixuanze" image="gui\tp2_main\roles\uplevel_26.png"/>
-	<Property ID="beibao_daoju_sp78" image="icon/xm2_item/patch.png"/>
-	<Property ID="beibao_daoju_sp94" image="icon/xm2_item/patch.png"/>
-	<Property ID="beibao_daoju_sp126" image="icon/xm2_item/patch.png"/>
-	<Property ID="beibao_daoju_dbsp78" image="icon/xm2_item/patch.png"/>
-	<Property ID="beibao_daoju_dbsp94" image="icon/xm2_item/patch.png"/>
-	<Property ID="beibao_daoju_dbsp126" image="icon/xm2_item/patch.png"/>
-	<Property ID="beibao_wupin_khc94" image=""/>
-	<Property ID="beibao_weapons" image="icon\xm2_item\Zb_1.jpg"/>
-	<!--skill-->
-	<Property ID="border_wushenji"/>
-	<Property ID="border_wushenji2"/>
-	<Property ID="fight_word_pic" image="gui/common/special/special.png"/>
+	<!--狩猎驯服成功界面-->
+	<Property ID="beibao_lock_grid" image="gui/dragon_main/new_common/back/common_lock.png"/>
+	<Property ID="small_lock_grid" image="gui/dragon_main/mainfunction/fashion/suo1.png"/>
+	<Property ID="fts_score_s" image="gui/dragon_main/hunt/jiesuan_picwords_s.png"/>
+	<Property ID="fts_score_a" image="gui/dragon_main/hunt/jiesuan_picwords_a.png"/>
+	<Property ID="fts_score_b" image="gui/dragon_main/hunt/jiesuan_picwords_b.png"/>
+	<Property ID="fts_score_c" image="gui/dragon_main/hunt/jiesuan_picwords_c.png"/>
+	<Property ID="fts_score_1" image="gui/dragon_main/ride/ride_tips_s.png"/>
+	<Property ID="fts_score_2" image="gui/dragon_main/ride/ride_tips_a.png"/>
+	<Property ID="fts_score_3" image="gui/dragon_main/ride/ride_tips_b.png"/>
+	<Property ID="fts_score_4" image="gui/dragon_main/ride/ride_tips_c.png"/>
+	<Property ID="fts_score_0" image="gui/dragon_main/ride/ride_tips_c.png"/>
+	<Property ID="fts_ride_quality_0" image="gui/dragon_main/hunt/hunt_quality_ordinary.png"/>
+	<Property ID="fts_ride_quality_1" image="gui/dragon_main/hunt/hunt_quality_excellent.png"/>
+	<Property ID="frt_num_1" image="gui/dragon_main/hunt/seconds_num_1.png"/>
+	<Property ID="frt_num_2" image="gui/dragon_main/hunt/seconds_num_2.png"/>
+	<!--坐骑头像-->
+	<Property ID="ride_xiniu_001" image="icon/ride/ride_xiniu_001.png"/>
+	<Property ID="ride_xiniu_002" image="icon/ride/ride_xiniu_001.png"/>
+	<Property ID="ride_dragon_001" image="icon/ride/ride_dragon_001.png"/>
+	<Property ID="ride_wolf_001" image="icon/ride/ride_wolf_001.png"/>
+	<Property ID="ride_wolf_002" image="icon/ride/ride_wolf_001.png"/>
+	<Property ID="ride_wolf_003" image="icon/ride/ride_wolf_003.png"/>
+	<Property ID="ride_dragon_002" image="icon/ride/ride_dragon_002.png"/>
+	<Property ID="task_ride_dragon_002" image="icon/ride/ride_dragon_002.png"/>
+	<Property ID="ride_horse_001" image="icon/ride/ride_horse_001.png"/>
+	<Property ID="ride_horse_002" image="icon/ride/ride_horse_002.png"/>
+	<Property ID="ride_horse_003" image="icon/ride/ride_horse_003.png"/>
+	<Property ID="ride_horse_004" image="icon/ride/ride_horse_004.png"/>
+	<Property ID="ride_dragon_003" image="icon/ride/ride_dragon_003.png"/>
+	<Property ID="ride_bear_001" image="icon/ride/ride_bear_001.png"/>
+	<Property ID="ride_landbird_001" image="icon/ride/ride_landbird_001.png"/>
+	<Property ID="ride_eagle_001" image="icon/ride/ride_eagle_001.png"/>
+	<Property ID="ride_eagle_002" image="icon/ride/ride_eagle_001.png"/>
+	<Property ID="ride_dragon_001b" image="icon/ride/ride_dragon_001.png"/>
+	<Property ID="ride_dragon_005" image="icon/ride/ride_dragon_005.png"/>
+	<Property ID="ride_kingkong_001" image="icon/ride/ride_kingkong_001.png"/>
+	<Property ID="ride_dragon_004" image="icon/ride/ride_dragon_004.png"/>
+	<Property ID="ride_phoenix_001" image="icon/ride/ride_phoenix_001.png"/>
+	<Property ID="ride_tiger_001" image="icon/ride/ride_tiger_001.png"/>
+	<!--坐骑图片-->
+	<Property ID="pic_ride_xiniu_001" image="gui/dragon_main/mainfunction/hunt_clone/slkp_lzxn.jpg"/>
+	<Property ID="pic_ride_xiniu_002" image="gui/dragon_main/mainfunction/hunt_clone/slkp_lzxn.jpg/"/>
+	<Property ID="pic_ride_dragon_001" image="gui/dragon_main/mainfunction/hunt_clone/slkp_hdjl.jpg"/>
+	<Property ID="pic_ride_wolf_001" image="gui/dragon_main/mainfunction/hunt_clone/slkp_yylq.jpg"/>
+	<Property ID="pic_ride_wolf_002" image="gui/dragon_main/mainfunction/hunt_clone/slkp_yylq.jpg"/>
+	<Property ID="pic_ride_wolf_003" image="gui/dragon_main/mainfunction/hunt_clone/slkp_youylq.jpg"/>
+	<Property ID="pic_ride_dragon_002" image="gui/dragon_main/mainfunction/hunt_clone/slkp_qscn.jpg"/>
+	<Property ID="pic_task_ride_dragon_002" image="gui/dragon_main/mainfunction/hunt_clone/slkp_hdjl.jpg"/>
+	<Property ID="pic_ride_horse_001" image="gui/dragon_main/mainfunction/hunt_clone/slkp_dlkm.jpg"/>
+	<Property ID="pic_ride_horse_002" image="gui/dragon_main/mainfunction/hunt_clone/slkp_djs.jpg"/>
+	<Property ID="pic_ride_dragon_003" image="gui/dragon_main/mainfunction/hunt_clone/slkp_zdll.jpg"/>
+	<Property ID="pic_ride_bear_001" image="gui/dragon_main/mainfunction/hunt_clone/slkp_bnzx.jpg"/>
+	<Property ID="pic_ride_landbird_001" image="gui/dragon_main/mainfunction/hunt_clone/slkp_lxn.jpg"/>
+	<Property ID="pic_ride_eagle_001" image="gui/dragon_main/mainfunction/hunt_clone/slkp_bysj.jpg"/>
+	<Property ID="pic_ride_eagle_002" image="gui/dragon_main/mainfunction/hunt_clone/slkp_bysj.jpg"/>
+	<Property ID="pic_ride_horse_003" image="gui/dragon_main/mainfunction/hunt_clone/slkp_ymzm.jpg"/>
+	<Property ID="pic_ride_kingkong_001" image="gui/dragon_main/mainfunction/hunt_clone/slkp_tqjg.jpg"/>
+	<Property ID="pic_ride_dragon_005" image="gui/dragon_main/mainfunction/hunt_clone/slkp_xml.jpg"/>
+	<Property ID="pic_ride_dragon_004" image="gui/dragon_main/mainfunction/hunt_clone/slkp_bwl.jpg"/>
+	<Property ID="pic_ride_horse_004" image="gui/dragon_main/mainfunction/hunt_clone/slkp_tm.jpg"/>
+	<Property ID="pic_ride_phoenix_001" image="gui/dragon_main/mainfunction/hunt_clone/slkp_fh.jpg"/>
+	<Property ID="pic_ride_tiger_001" image="gui/dragon_main/mainfunction/hunt_clone/slkp_jch.jpg"/>
+	<!--难度-->
+	<Property ID="difficult_1" image="gui/dragon_main/mainfunction/hunt_clone/sl_jd_z.png"/>
+	<Property ID="difficult_2" image="gui/dragon_main/mainfunction/hunt_clone/sl_pt_z.png"/>
+	<Property ID="difficult_3" image="gui/dragon_main/mainfunction/hunt_clone/sl_kn_z.png"/>
+	<Property ID="difficult_4" image="gui/dragon_main/mainfunction/hunt_clone/sl_em_z.png"/>
+	<Property ID="pic_difficult_1" image="gui/dragon_main/mainfunction/hunt_clone/sl_jd.png"/>
+	<Property ID="pic_difficult_2" image="gui/dragon_main/mainfunction/hunt_clone/sl_pt.png"/>
+	<Property ID="pic_difficult_3" image="gui/dragon_main/mainfunction/hunt_clone/sl_kn.png"/>
+	<Property ID="pic_difficult_4" image="gui/dragon_main/mainfunction/hunt_clone/sl_em.png"/>
+	<!--坐骑界面-->
+	<Property ID="button_add" image="gui/dragon_main/new_common/button/common_empty.png"/>
+	<Property ID="select" image="gui/dragon_main/mainicon/main_arrow_big_right_46.png"/>
+	<Property ID="on_battle" image="gui/dragon_main/ride/bag_label_intobattle.png"/>
+	<Property ID="ride_type_1" image="gui/dragon_main/hunt/hunting_button_bear1.png"/>
+	<Property ID="ride_type_s_1" image="gui/dragon_main/hunt/hunting_button_bear2.png"/>
+	<Property ID="ride_type_2" image="gui/dragon_main/hunt/hunting_button_wolf1.png"/>
+	<Property ID="ride_type_s_2" image="gui/dragon_main/hunt/hunting_button_wolf2.png"/>
+	<Property ID="ride_type_3" image="gui/dragon_main/hunt/hunting_button_dragon1.png"/>
+	<Property ID="ride_type_s_3" image="gui/dragon_main/hunt/hunting_button_dragon2.png"/>
+	<Property ID="ride_type_4" image="gui/dragon_main/hunt/hunting_button_tiger1.png"/>
+	<Property ID="ride_type_s_4" image="gui/dragon_main/hunt/hunting_button_tiger2.png"/>
+	<Property ID="ride_type_5" image="gui/dragon_main/hunt/hunting_button_skeleton1.png"/>
+	<Property ID="ride_type_s_5" image="gui/dragon_main/hunt/hunting_button_skeleton2.png"/>
+	<Property ID="ride_hunt_zone_1" image="gui/dragon_main/hunt/trainer_circle_s.png"/>
+	<Property ID="ride_hunt_zone_2" image="gui/dragon_main/hunt/trainer_circle_a.png"/>
+	<Property ID="ride_hunt_zone_3" image="gui/dragon_main/hunt/trainer_circle_b.png"/>
+	<Property ID="ride_hunt_zone_4" image="gui/dragon_main/hunt/trainer_circle_c.png"/>
+	<Property ID="ride_hunt_zone_5" image="gui/dragon_main/hunt/trainer_circle_f.png"/>
+	<Property ID="ride_hunt_zone_6" image="gui/dragon_main/hunt/trainer_circle_f.png"/>
+	<Property ID="ride_hunt_box_1" image="gui/dragon_main/hunt/trainer_treasure_gold.png"/>
+	<Property ID="ride_hunt_box_o_1" image="gui/dragon_main/hunt/trainer_treasure_gold_shine.png"/>
+	<Property ID="ride_hunt_box_2" image="gui/dragon_main/hunt/trainer_treasure_silver.png"/>
+	<Property ID="ride_hunt_box_o_2" image="gui/dragon_main/hunt/trainer_treasure_silver_shine.png"/>
+	<Property ID="ride_hunt_box_3" image="gui/dragon_main/hunt/trainer_treasure_wood.png"/>
+	<Property ID="ride_hunt_box_o_3" image="gui/dragon_main/hunt/trainer_treasure_wood_shine.png"/>
+	<Property ID="ride_shake_left" image="gui/dragon_main/hunt/trainer_pointerball_jumpleft.png"/>
+	<Property ID="ride_shake_right" image="gui/dragon_main/hunt/trainer_pointerball_jumpright.png"/>
+	<Property ID="ride_cover_0" image="gui/dragon_main/hunt/hunt_niba1.png"/>
+	<Property ID="ride_cover_1" image="gui/dragon_main/hunt/hunt_niba2.png"/>
+	<Property ID="ride_cover_2" image="gui/dragon_main/hunt/hunt_niba3.png"/>
+	<Property ID="ride_love_right_1" image="uiparticles_016"/>
+	<Property ID="ride_love_right_1_1" image="uiparticles_017"/>
+	<Property ID="ride_love_right_2" image="uiparticles_018"/>
+	<Property ID="ride_love_right_2_1" image="uiparticles_019"/>
+	<Property ID="ride_love_right_3" image="uiparticles_020"/>
+	<Property ID="ride_love_right_3_1" image="uiparticles_021"/>
+	<Property ID="ride_love_right_4" image="uiparticles_022"/>
+	<Property ID="ride_love_right_4_1" image="uiparticles_023"/>
+	<Property ID="ride_love_left_1" image="r-uiparticles_016"/>
+	<Property ID="ride_love_left_1_1" image="r-uiparticles_017"/>
+	<Property ID="ride_love_left_2" image="r-uiparticles_018"/>
+	<Property ID="ride_love_left_2_1" image="r-uiparticles_019"/>
+	<Property ID="ride_love_left_3" image="r-uiparticles_020"/>
+	<Property ID="ride_love_left_3_1" image="r-uiparticles_021"/>
+	<Property ID="ride_love_left_4" image="r-uiparticles_022"/>
+	<Property ID="ride_love_left_4_1" image="r-uiparticles_023"/>
+	<Property ID="ride_hunt_fail1" image="uiparticles_015"/>
+	<Property ID="ride_hunt_fail2" image="uiparticles_014"/>
+	<Property ID="ride_alarm_1" image="gui/dragon_main/hunt/picword_zzzt.png"/>
+	<Property ID="ride_alarm_2" image="gui/dragon_main/hunt/picword_yxzt.png"/>
+	<Property ID="ride_alarm_3" image="gui/dragon_main/hunt/picword_bnzt.png"/>
+	<Property ID="ride_alarm_4" image="gui/dragon_main/hunt/picword_bnzt.png"/>
+	<Property ID="ride_alarm_5" image="gui/dragon_main/hunt/picword_bnzt.png"/>
+	<Property ID="ride_alarm_6" image="gui/dragon_main/hunt/picword_bnzt.png"/>
+	<Property ID="ride_play_1" image="gui/dragon_main/hunt/picword_zzzt.png"/>
+	<Property ID="ride_play_2" image="gui/dragon_main/hunt/picword_yxzt.png"/>
+	<Property ID="ride_play_3" image="gui/dragon_main/hunt/picword_bnzt.png"/>
+	<Property ID="ride_play_4" image="gui/dragon_main/hunt/picword_bnzt.png"/>
+	<Property ID="ride_play_5" image="gui/dragon_main/hunt/picword_bnzt.png"/>
+	<Property ID="ride_play_6" image="gui/dragon_main/hunt/picword_bnzt.png"/>
+	<Property ID="ride_on" image="gui/dragon_main/mainicon/main_ride_up.png"/>
+	<Property ID="ride_off" image="gui/dragon_main/mainicon/main_ride_down.png"/>
+	<Property ID="ride_cheer_0" image="gui/dragon_main/hunt/hunt_zan.png"/>
+	<Property ID="ride_cheer_1" image="gui/dragon_main/hunt/hunt_good.png"/>
+	<Property ID="ride_cheer_2" image="gui/dragon_main/hunt/hunt_goup.png"/>
+	<Property ID="ride_hunt_effect_0" image="gui/dragon_main/hunt/hunt_kulou.png"/>
+	<Property ID="ride_hunt_effect_1" image="gui/dragon_main/hunt/hunt_aixin.png"/>
+	<Property ID="ride_group_0" image="gui/dragon_main/ride/picword_zhenxing1.png"/>
+	<Property ID="ride_group_1" image="gui/dragon_main/ride/picword_zhenxing2.png"/>
+	<Property ID="ride_group_2" image="gui/dragon_main/ride/picword_zhenxing3.png"/>
+	<Property ID="ride_openbox_0" image="mg_suns_299"/>
+	<Property ID="ride_openbox_1" image="mg_suns_300"/>
+	<Property ID="ride_openbox_2" image="mg_suns_019"/>
+	<Property ID="ride_openbox_3" image="mg_suns_020"/>
+	<Property ID="ride_swing_4_0" image="mg_suns_005"/>
+	<Property ID="ride_swing_4_1" image="mg_suns_006"/>
+	<Property ID="ride_swing_4_2" image="mg_suns_007"/>
+	<Property ID="ride_swing_4_3" image="mg_suns_008"/>
+	<Property ID="ride_swing_5_0" image="mg_suns_013"/>
+	<Property ID="ride_swing_5_1" image="mg_suns_014"/>
+	<Property ID="ride_swing_5_2" image="mg_suns_015"/>
+	<Property ID="ride_swing_5_3" image="mg_suns_016"/>
+	<Property ID="ride_swing_7_0" image="mg_suns_001"/>
+	<Property ID="ride_swing_7_1" image="mg_suns_002"/>
+	<Property ID="ride_swing_7_2" image="mg_suns_003"/>
+	<Property ID="ride_swing_7_3" image="mg_suns_004"/>
+	<Property ID="ride_swing_8_0" image="mg_suns_001"/>
+	<Property ID="ride_swing_8_1" image="mg_suns_002"/>
+	<Property ID="ride_swing_8_2" image="mg_suns_003"/>
+	<Property ID="ride_swing_8_3" image="mg_suns_004"/>
+	<Property ID="ride_hunt_score_1_1" image="mg_suns_033"/>
+	<Property ID="ride_hunt_score_1_2" image="mg_suns_034"/>
+	<Property ID="ride_hunt_score_1_3" image="mg_suns_035"/>
+	<Property ID="ride_hunt_score_1_4" image="mg_suns_036"/>
+	<Property ID="ride_hunt_score_1_5" image="mg_suns_037"/>
+	<Property ID="ride_hunt_score_2_1" image="mg_suns_033"/>
+	<Property ID="ride_hunt_score_2_2" image="mg_suns_034"/>
+	<Property ID="ride_hunt_score_2_3" image="mg_suns_035"/>
+	<Property ID="ride_hunt_score_2_4" image="mg_suns_037"/>
+	<Property ID="ride_hunt_score_2_5" image="mg_suns_038"/>
+	<Property ID="ride_hunt_score_3_1" image="mg_suns_033"/>
+	<Property ID="ride_hunt_score_3_2" image="mg_suns_034"/>
+	<Property ID="ride_hunt_score_3_3" image="mg_suns_035"/>
+	<Property ID="ride_hunt_score_3_4" image="mg_suns_037"/>
+	<Property ID="ride_hunt_score_3_5" image="mg_suns_039"/>
+	<Property ID="ride_hunt_score_4_1" image="mg_suns_033"/>
+	<Property ID="ride_hunt_score_4_2" image="mg_suns_034"/>
+	<Property ID="ride_hunt_score_4_3" image="mg_suns_035"/>
+	<Property ID="ride_hunt_score_4_4" image="mg_suns_037"/>
+	<Property ID="ride_hunt_score_4_5" image="mg_suns_040"/>
+	<Property ID="ride_star_0" image="gui/dragon_main/ride/0.png"/>
+	<Property ID="ride_star_1" image="gui/dragon_main/ride/1.png"/>
+	<Property ID="ride_star_2" image="gui/dragon_main/ride/2.png"/>
+	<Property ID="ride_star_3" image="gui/dragon_main/ride/3.png"/>
+	<Property ID="ride_star_4" image="gui/dragon_main/ride/4.png"/>
+	<Property ID="ride_star_5" image="gui/dragon_main/ride/5.png"/>
+	<Property ID="ride_star_6" image="gui/dragon_main/ride/6.png"/>
+	<Property ID="ride_star_7" image="gui/dragon_main/ride/7.png"/>
+	<Property ID="ride_star_8" image="gui/dragon_main/ride/8.png"/>
+	<Property ID="ride_star_9" image="gui/dragon_main/ride/9.png"/>
+	<Property ID="ride_star_10" image="gui/dragon_main/ride/10.png"/>
+	<Property ID="ride_star_big_0" image="gui/dragon_main/ride/1.png"/>
+	<Property ID="ride_star_big_1" image="gui/dragon_main/ride/1.png"/>
+	<Property ID="ride_star_big_2" image="gui/dragon_main/ride/2.png"/>
+	<Property ID="ride_star_big_3" image="gui/dragon_main/ride/3.png"/>
+	<Property ID="ride_star_big_4" image="gui/dragon_main/ride/4.png"/>
+	<Property ID="ride_star_big_5" image="gui/dragon_main/ride/5.png"/>
+	<Property ID="hunter_star_0" image="gui/dragon_main/ride/xing0.png"/>
+	<Property ID="hunter_star_1" image="gui/dragon_main/ride/xing1.png"/>
+	<Property ID="hunter_star_2" image="gui/dragon_main/ride/xing2.png"/>
+	<Property ID="hunter_star_3" image="gui/dragon_main/ride/xing3.png"/>
+	<Property ID="hunter_star_4" image="gui/dragon_main/ride/xing4.png"/>
+	<Property ID="hunter_star_5" image="gui/dragon_main/ride/xing5.png"/>
+	<Property ID="hunter_star_6" image="gui/dragon_main/ride/xing6.png"/>
+	<Property ID="hunter_star_7" image="gui/dragon_main/ride/xing7.png"/>
+	<Property ID="hunter_star_8" image="gui/dragon_main/ride/xing8.png"/>
+	<Property ID="hunter_star_9" image="gui/dragon_main/ride/xing9.png"/>
+	<Property ID="hunter_star_10" image="gui/dragon_main/ride/xing10.png"/>
+	<Property ID="hunter_0" image="gui/dragon_main/ride/lieren_0.png"/>
+	<Property ID="hunter_1" image="gui/dragon_main/ride/lieren_1.png"/>
+	<Property ID="hunter_2" image="gui/dragon_main/ride/lieren_2.png"/>
+	<Property ID="hunter_3" image="gui/dragon_main/ride/lieren_3.png"/>
+	<Property ID="hunter_4" image="gui/dragon_main/ride/lieren_4.png"/>
+	<Property ID="hunter_5" image="gui/dragon_main/ride/lieren_5.png"/>
+	<Property ID="hunter_6" image="gui/dragon_main/ride/lieren_6.png"/>
+	<Property ID="hunter_7" image="gui/dragon_main/ride/lieren_7.png"/>
+	<Property ID="hunter_8" image="gui/dragon_main/ride/lieren_8.png"/>
+	<Property ID="hunter_9" image="gui/dragon_main/ride/lieren_9.png"/>
+	<Property ID="hunter_10" image="gui/dragon_main/ride/lieren_10.png"/>
+	<Property ID="hunter_num_0" image="gui/dragon_main/mainfunction/hunt_clone/"/>
+	<Property ID="hunter_num_1" image="gui/dragon_main/mainfunction/hunt_clone/xjlr_1.png"/>
+	<Property ID="hunter_num_2" image="gui/dragon_main/mainfunction/hunt_clone/xjlr_2.png"/>
+	<Property ID="hunter_num_3" image="gui/dragon_main/mainfunction/hunt_clone/xjlr_3.png"/>
+	<Property ID="hunter_num_4" image="gui/dragon_main/mainfunction/hunt_clone/xjlr_4.png"/>
+	<Property ID="hunter_num_5" image="gui/dragon_main/mainfunction/hunt_clone/xjlr_5.png"/>
+	<Property ID="hunter_num_6" image="gui/dragon_main/mainfunction/hunt_clone/xjlr_6.png"/>
+	<Property ID="hunter_num_7" image="gui/dragon_main/mainfunction/hunt_clone/xjlr_7.png"/>
+	<Property ID="hunter_num_8" image="gui/dragon_main/mainfunction/hunt_clone/xjlr_8.png"/>
+	<Property ID="hunter_num_9" image="gui/dragon_main/mainfunction/hunt_clone/xjlr_9.png"/>
+	<Property ID="hunter_num_10" image="gui/dragon_main/mainfunction/hunt_clone/xjlr_10.png"/>
+	<Property ID="ride_special_icon_1" image="gui/dragon_main/hunt/icon_kaihua.png"/>
+	<Property ID="ride_special_icon_hui_1" image="gui/dragon_main/hunt/icon_kaihua_hui.png"/>
+	<Property ID="ride_special_icon_2" image="gui/dragon_main/hunt/icon_yiyan.png"/>
+	<Property ID="ride_special_icon_hui_2" image="gui/dragon_main/hunt/icon_yiyan_hui.png"/>
+	<Property ID="ride_special_icon_3" image="gui/dragon_main/hunt/icon_tipo.png"/>
+	<Property ID="ride_special_icon_hui_3" image="gui/dragon_main/hunt/icon_tipo_hui.png"/>
+	<Property ID="ride_special_1" image="gui/dragon_main/hunt/kaihua.png"/>
+	<Property ID="ride_special_hui_1" image="gui/dragon_main/hunt/kaihua_hui.png"/>
+	<Property ID="ride_special_2" image="gui/dragon_main/hunt/yiyan.png"/>
+	<Property ID="ride_special_hui_2" image="gui/dragon_main/hunt/yiyan_hui.png"/>
+	<Property ID="ride_special_3" image="gui/dragon_main/hunt/tipo.png"/>
+	<Property ID="ride_special_hui_3" image="gui/dragon_main/hunt/tipo_hui.png"/>
+	<Property ID="ride_special" image="gui/dragon_main/hunt/bianyi.png"/>
+	<Property ID="ride_special_hui" image="gui/dragon_main/hunt/nobianyi.png"/>
+	<Property ID="ride_unbind" image="gui/dragon_main/ride/sl_bd.png"/>
+	<Property ID="ride_bind" image="gui/dragon_main/ride/sl_wbd.png"/>
+	<!--地形适应性-->
+	<Property ID="terrain_1" image="gui/dragon_main/hunt/ride_terrain1.png"/>
+	<Property ID="terrain_2" image="gui/dragon_main/hunt/ride_terrain1.png"/>
+	<Property ID="terrain_3" image="gui/dragon_main/hunt/ride_terrain2.png"/>
+	<Property ID="terrain_4" image="gui/dragon_main/hunt/ride_terrain3.png"/>
+	<Property ID="terrain_5" image="gui/dragon_main/hunt/ride_terrain4.png"/>
+	<Property ID="terrain_6" image="gui/dragon_main/hunt/ride_terrain5.png"/>
+	<Property ID="terrain_fit_0" image="gui/dragon_main/hunt/ride_terrain_level2.png"/>
+	<Property ID="terrain_fit_1" image="gui/dragon_main/hunt/ride_terrain_level3.png"/>
+	<Property ID="terrain_fit_2" image="gui/dragon_main/hunt/ride_terrain_level1.png"/>
+	<Property ID="terrain_fit_3" image="gui/dragon_main/hunt/ride_terrain_level4.png"/>
+	<Property ID="terrain_fit_4" image="gui/dragon_main/hunt/ride_terrain_level5.png"/>
+	<!--loading界面-->
+	<Property ID="fl_back_image_main" image="gui/dragon_main/new_common/back/hunt_bg_di.jpg"/>
+	<!--飞行及跳跃图标-->
+	<Property ID="normal_skill_image" image="gui/dragon_main/mainicon/main_skill_sword.png"/>
+	<Property ID="fly_forward_image" image="gui/dragon_main/mainicon/main_skill_fly.png"/>
+	<Property ID="fly_up_image" image="gui/dragon_main/mainicon/main_skill_up.png"/>
+	<Property ID="fly_down_image" image="gui/dragon_main/mainicon/main_skill_down.png"/>
+	<Property ID="jump_image" image="gui/dragon_main/mainicon/main_jump.png"/>
+	<Property ID="fly_fall_image_normal" image="gui/dragon_main/mainicon/main_fly_1.png"/>
+	<Property ID="fly_fall_image_push" image="gui/dragon_main/mainicon/main_fly_2.png"/>
+	<!--聊天扩展功能界面-->
+	<Property ID="fcef_func_1_u" image="gui/dragon_main/chat/chat_1.png"/>
+	<Property ID="fcef_func_1_d" image="gui/dragon_main/chat/chat_1_down.png"/>
+	<Property ID="fcef_func_2_u" image="gui/dragon_main/chat/chat_2.png"/>
+	<Property ID="fcef_func_2_d" image="gui/dragon_main/chat/chat_2_down.png"/>
+	<Property ID="fcef_func_3_u" image="gui/dragon_main/chat/chat_3.png"/>
+	<Property ID="fcef_func_3_d" image="gui/dragon_main/chat/chat_3_down.png"/>
+	<Property ID="fcef_func_4_u" image="gui/dragon_main/chat/chat_4.png"/>
+	<Property ID="fcef_func_4_d" image="gui/dragon_main/chat/chat_4_down.png"/>
+	<Property ID="fcef_func_5_u" image="gui/dragon_main/chat/chat_6.png"/>
+	<Property ID="fcef_func_5_d" image="gui/dragon_main/chat/chat_6_down.png"/>
+	<Property ID="fcef_func_6_u" image="gui/dragon_main/chat/chat_7.png"/>
+	<Property ID="fcef_func_6_d" image="gui/dragon_main/chat/chat_7_down.png"/>
+	<Property ID="fcef_func_7_u" image="gui/dragon_main/chat/chat_8.png"/>
+	<Property ID="fcef_func_7_d" image="gui/dragon_main/chat/chat_8_down.png"/>
+	<Property ID="fcef_func_8_u" image="gui/dragon_main/chat/chat_3.png"/>
+	<Property ID="fcef_func_8_d" image="gui/dragon_main/chat/chat_3_down.png"/>
+	<!--聊天界面用到的阵营图标-->
+	<Property ID="role_camp_icon_1" image="gui/dragon_main/chat/qianbiao_lianmeng.png"/>
+	<Property ID="role_camp_icon_2" image="gui/dragon_main/chat/qianbiao_diguo.png"/>
+	<!--聊天频道-->
+	<Property ID="channel_1" image="gui/dragon_main/chat/shijie_1.png"/>
+	<Property ID="channel_2" image=""/>
+	<Property ID="channel_3" image="gui/dragon_main/chat/duiwu_1.png"/>
+	<Property ID="channel_4" image="gui/dragon_main/chat/gonghui_1.png"/>
+	<Property ID="channel_5" image="gui/dragon_main/chat/fujin_1.png"/>
+	<Property ID="channel_6" image="gui/dragon_main/chat/xitong_1.png"/>
+	<Property ID="channel_7" image="gui/dragon_main/chat/zhengyin_1.png"/>
+	<Property ID="channel_8" image=""/>
+	<Property ID="chat_sys_image" image="gui/dragon_main/touxiang/role_system.png"/>
+	<!-- 主界面语音聊天图标 -->
+	<Property ID="chat_voice_main_1" image="gui/dragon_main/chat/chat_bubble_main.png"/>
+	<!--角色头像-->
+	<Property ID="role_show_icon_1" image="gui/dragon_main/touxiang/role_fangzhan1.png"/>
+	<Property ID="role_show_icon_2" image="gui/dragon_main/touxiang/role_fashi.png"/>
+	<Property ID="role_show_icon_3" image="gui/dragon_main/touxiang/role_zhoushushi.png"/>
+	<Property ID="role_show_icon_4" image="gui/dragon_main/touxiang/role_mushi1.png"/>
+	<Property ID="role_show_icon_5" image="gui/dragon_main/touxiang/role_gongjianshou.png"/>
+	<Property ID="role_show_icon_6" image="gui/dragon_main/touxiang/role_fangzhan2.png"/>
+	<Property ID="role_show_icon_7" image="gui/dragon_main/touxiang/role_mushi2.png"/>
+	<Property ID="role_show_icon_8" image="gui/dragon_main/touxiang/role_gongjianshou.png"/>
+	<!--角色选择头像-->
+	<Property ID="choose_role_icon_up_1" image="gui/dragon_main/createrole/role_choice_fangzhan1.png"/>
+	<Property ID="choose_role_icon_down_1" image="gui/dragon_main/createrole/role_choice_fangzhan2.png"/>
+	<Property ID="choose_role_icon_up_2" image="gui/dragon_main/createrole/role_choice_fashi1.png"/>
+	<Property ID="choose_role_icon_down_2" image="gui/dragon_main/createrole/role_choice_fashi2.png"/>
+	<Property ID="choose_role_icon_up_3" image="gui/dragon_main/createrole/role_choice_zhoushushi1.png"/>
+	<Property ID="choose_role_icon_down_3" image="gui/dragon_main/createrole/role_choice_zhoushushi2.png"/>
+	<Property ID="choose_role_icon_up_4" image="gui/dragon_main/createrole/role_choice_mushi1.png"/>
+	<Property ID="choose_role_icon_down_4" image="gui/dragon_main/createrole/role_choice_mushi2.png"/>
+	<Property ID="choose_role_icon_up_5" image="gui/dragon_main/createrole/role_choice_gongjianshou1.png"/>
+	<Property ID="choose_role_icon_down_5" image="gui/dragon_main/createrole/role_choice_gongjianshou2.png"/>
+	<Property ID="choose_role_icon_up_6" image="gui/dragon_main/createrole/role_choice_fangzhan1.png"/>
+	<Property ID="choose_role_icon_down_6" image="gui/dragon_main/createrole/role_choice_fangzhan2.png"/>
+	<Property ID="choose_role_icon_up_7" image="gui/dragon_main/createrole/role_choice_mushi1.png"/>
+	<Property ID="choose_role_icon_down_7" image="gui/dragon_main/createrole/role_choice_mushi2.png"/>
+	<Property ID="choose_role_icon_up_8" image="gui/dragon_main/createrole/role_choice_gongjianshou1.png"/>
+	<Property ID="choose_role_icon_down_8" image="gui/dragon_main/createrole/role_choice_gongjianshou2.png"/>
+	<!--聊天界面-->
+	<Property ID="chat_info_1" image="gui/dragon_main/chat/chat_bubble_1.png"/>
+	<Property ID="chat_info_2" image="gui/dragon_main/chat/chat_bubble_2.png"/>
+	<Property ID="chat_info_3" image="gui/dragon_main/chat/chat_yuyin_1.png"/>
+	<Property ID="chat_info_4" image="gui/dragon_main/chat/chat_yuyin_2.png"/>
+	<Property ID="chat_info_5" image="gui/dragon_main/chat/chat_yuyin_3.png"/>
+	<Property ID="chat_info_6" image="gui/dragon_main/chat/chat_yuyin_3.png"/>
+	<Property ID="chat_info_7" image="gui/dragon_main/chat/chat_yuyin_3.png"/>
+	<Property ID="chat_info_8" image="gui/dragon_main/chat/chat_yuyin_3.png"/>
+	<!--背包界面-->
+	<Property ID="form_bag_1" image="gui/dragon_main/new_common/button/check_9.png"/>
+	<Property ID="form_bag_2" image="gui/dragon_main/new_common/button/check_9_up.png"/>
+	<Property ID="bind_image" image="gui/dragon_main/new_common/back/lock.png"/>
+    <Property ID="corner_mark_image" image="gui/dragon_main/new_common/back/tishi.png"/>
+	<Property ID="cover_choose_floor" image="gui/dragon_main/mainfunction/skill/gouxuan.png"/>
+	<Property ID="new_item_image" image="gui/dragon_main/new_common/back/new.png"/>
+	<Property ID="equip_limit_image" image="gui/dragon_main/new_common/back/red_01.png"/>
+	<Property ID="cmp_imag_up" image="gui/dragon_main/new_common/back/up.png"/>
+	<Property ID="cmp_imag_down" image="gui/dragon_main/new_common/back/down.png"/>
+	<Property ID="patch_flag" image="gui/dragon_main/new_common/back/xuanzhongkuang.png"/>
+	<!--装备品质框-->
+	<Property ID="ColorLevel_0" image="gui/dragon_main/new_common/back/bag_item_gray64.png"/>
+	<Property ID="ColorLevel_10" image="gui/dragon_main/new_common/back/bag_item_green64.png"/>
+	<Property ID="ColorLevel_20" image="gui/dragon_main/new_common/back/bag_item_blue64.png"/>
+	<Property ID="ColorLevel_30" image="gui/dragon_main/new_common/back/bag_item_purple64.png"/>
+	<Property ID="ColorLevel_40" image="gui/dragon_main/new_common/back/bag_item_gold64.png"/>
+	<Property ID="ColorLevel_50" image="gui/dragon_main/new_common/back/bag_item_orange64.png"/>
+	<Property ID="ColorLevel_Small_0" image="gui/dragon_main/new_common/back/bag_item_gray32.png"/>
+	<Property ID="ColorLevel_Small_10" image="gui/dragon_main/new_common/back/bag_item_green32.png"/>
+	<Property ID="ColorLevel_Small_20" image="gui/dragon_main/new_common/back/bag_item_blue32.png"/>
+	<Property ID="ColorLevel_Small_30" image="gui/dragon_main/new_common/back/bag_item_purple32.png"/>
+	<Property ID="ColorLevel_Small_40" image="gui/dragon_main/new_common/back/bag_item_gold32.png"/>
+	<Property ID="ColorLevel_Small_50" image="gui/dragon_main/new_common/back/bag_item_orange32.png"/>
+	<!--礼包品质图片-->
+	<Property ID="pay_package_0" image="gui/dragon_main/activity/hyd_dbx1.png"/>
+	<Property ID="pay_package_10" image="gui/dragon_main/activity/hyd_dbx1.png"/>
+	<Property ID="pay_package_20" image="gui/dragon_main/activity/hyd_dbx2.png"/>
+	<Property ID="pay_package_30" image="gui/dragon_main/activity/hyd_dbx2.png"/>
+	<Property ID="pay_package_40" image="gui/dragon_main/activity/hyd_dbx3.png"/>
+	<Property ID="pay_package_50" image="gui/dragon_main/activity/hyd_dbx.png"/>
+	<!--货币品质框-->
+	<Property ID="ColorLevel_Gold" image="gui/dragon_main/new_common/back/bag_item_blue64.png"/>
+	<Property ID="ColorLevel_BindDiamond" image="gui/dragon_main/new_common/back/bag_item_purple64.png"/>
+	<Property ID="ColorLevel_Exp" image="gui/dragon_main/new_common/back/bag_item_purple64.png"/>
+	<Property ID="ColorLevel_Spar" image="gui/dragon_main/new_common/back/bag_item_blue64.png"/>
+	<Property ID="ColorLevel_GuildDevote" image="gui/dragon_main/new_common/back/bag_item_blue64.png"/>
+	<Property ID="ColorLevel_Diamond" image="gui/dragon_main/new_common/back/bag_item_purple64.png"/>
+	<!--装备部位图标-->
+	<Property ID="ui_EquipType_RWeapon" image="gui/dragon_main/mainfunction/equipt/tips_equip_weapon.png"/>
+	<Property ID="ui_EquipType_LWeapon" image="gui/dragon_main/mainfunction/equipt/tips_equip_shield.png"/>
+	<Property ID="ui_EquipType_Helmet" image="gui/dragon_main/mainfunction/equipt/tips_equip_head.png"/>
+	<Property ID="ui_EquipType_Cloth" image="gui/dragon_main/mainfunction/equipt/tips_equip_clothes.png"/>
+	<Property ID="ui_EquipType_Pants" image="gui/dragon_main/mainfunction/equipt/tips_equip_trousers.png"/>
+	<Property ID="ui_EquipType_Hands" image="gui/dragon_main/mainfunction/equipt/tips_equip_hand.png"/>
+	<Property ID="ui_EquipType_Shoes" image="gui/dragon_main/mainfunction/equipt/tips_equip_shoes.png"/>
+	<Property ID="ui_EquipType_Coat" image="gui/dragon_main/mainfunction/equipt/tips_equip_jian.png"/>
+	<Property ID="ui_EquipType_Ring" image="gui/dragon_main/mainfunction/equipt/tips_equip_ring.png"/>
+	<Property ID="ui_EquipType_Necklace" image="gui/dragon_main/mainfunction/equipt/tips_equip_necklace.png"/>
+	<Property ID="ui_EquipType_Earring" image="gui/dragon_main/mainfunction/equipt/tips_equip_er.png"/>
+	<!--宝石-->
+	<Property ID="gem_hole_1" image="gui/dragon_main/mainfunction/equipt/equip_jewel_hole_red.png"/>
+	<Property ID="gem_hole_2" image="gui/dragon_main/mainfunction/equipt/equip_jewel_hole_green.png"/>
+	<Property ID="gem_hole_3" image="gui/dragon_main/mainfunction/equipt/equip_jewel_hole_blue.png"/>
+	<Property ID="gem_hole_4" image="gui/dragon_main/mainfunction/equipt/equip_jewel_hole_yellow.png"/>
+	<Property ID="gem_hole_5" image="gui/dragon_main/mainfunction/equipt/equip_jewel_hole_purple.png"/>
+	<Property ID="gem_hole_big_1" image="gui/dragon_main/mainfunction/equipt/equip_jewel_hole_red2.png"/>
+	<Property ID="gem_hole_big_2" image="gui/dragon_main/mainfunction/equipt/equip_jewel_hole_green2.png"/>
+	<Property ID="gem_hole_big_3" image="gui/dragon_main/mainfunction/equipt/equip_jewel_hole_blue2.png"/>
+	<Property ID="gem_hole_big_4" image="gui/dragon_main/mainfunction/equipt/equip_jewel_hole_yellow2.png"/>
+	<Property ID="gem_hole_big_5" image="gui/dragon_main/mainfunction/equipt/equip_jewel_hole_purple2.png"/>
+	<!--货币图标-->
+	<Property ID="Gold" image="gui/dragon_main/function/icon_gold.png" desc="金币"/>
+	<Property ID="Gold_mini" image="gui/dragon_main/function/icon_gold_min.png" desc="金币"/>
+	<Property ID="Gold_big" image="gui/dragon_main/function/gold.png" desc="金币"/>
+	<Property ID="Diamond" image="gui/dragon_main/function/icon_diamond.png" desc="钻石"/>
+	<Property ID="Diamond_mini" image="gui/dragon_main/function/icon_diamond_min.png" desc="钻石"/>
+	<Property ID="Diamond_big" image="gui/dragon_main/function/diamond.png" desc="钻石"/>
+	<Property ID="BindDiamond" image="gui/dragon_main/function/icon_binddiamond.png" desc="绑定钻石"/>
+	<Property ID="BindDiamond_mini" image="gui/dragon_main/function/icon_binddiamond_min.png" desc="绑定钻石"/>
+	<Property ID="BindDiamond_big" image="gui/dragon_main/function/binddiamond.png" desc="绑定钻石"/>
+	<Property ID="Exp_mini" image="gui/dragon_main/mainfunction/battle/jinyan.png" desc="经验"/>
+	<Property ID="Exp" image="gui/dragon_main/function/jingyan.png" desc="经验"/>
+	<Property ID="Exp_big" image="gui/dragon_main/function/jingyan.png" desc="经验"/>
+	<Property ID="Spar" image="gui/dragon_main/function/icon_jiejing.png" desc="晶石"/>
+	<Property ID="Spar_mini" image="gui/dragon_main/function/icon_jiejing_min.png" desc="晶石"/>
+	<Property ID="Spar_big" image="gui/dragon_main/function/jiejing.png" desc="晶石"/>
+	<Property ID="GuildDevote" image="gui/dragon_main/function/icon_gongxian.png" desc="公会贡献"/>
+	<Property ID="GuildDevote_mini" image="gui/dragon_main/function/icon_gongxian_min.png" desc="公会贡献"/>
+	<Property ID="Devote_big" image="gui/dragon_main/function/gongxian.png" desc="公会贡献"/>
+	<Property ID="GuildDevote_big" image="gui/dragon_main/function/gongxian.png" desc="公会贡献"/>
+	<Property ID="BattleGlory" image="gui/dragon_main/function/icon_glory.png" desc="荣誉值"/>
+	<Property ID="BattleGlory_mini" image="gui/dragon_main/function/icon_glory_min.png" desc="荣誉值"/>
+	<Property ID="BattleGlory_big" image="gui/dragon_main/function/glory.png" desc="荣誉值"/>
+	<Property ID="RPGPoint" image="gui/dragon_main/function/icon_shouwei.png" desc="守卫徽章"/>
+	<Property ID="RPGPoint_mini" image="gui/dragon_main/function/icon_shouwei_min.png" desc="守卫徽章"/>
+	<Property ID="RPGPoint_big" image="gui/dragon_main/function/shouwei.png" desc="守卫徽章"/>
+	<Property ID="TeamClonePoint" image="gui/dragon_main/function/icon_yongzhe.png" desc="勇者之证"/>
+	<Property ID="TeamClonePoint_mini" image="gui/dragon_main/function/icon_yongzhe_min.png" desc="勇者之证"/>
+	<Property ID="TeamClonePoint_big" image="gui/dragon_main/function/yongzhe.png" desc="勇者之证"/>
+	<Property ID="TaskPoint" image="gui/dragon_main/function/icon_handi.png" desc="汗滴石"/>
+	<Property ID="TaskPoint_mini" image="gui/dragon_main/function/icon_handi_min.png" desc="汗滴石"/>
+	<Property ID="TaskPoint_big" image="gui/dragon_main/function/handi.png" desc="汗滴石"/>
+	<Property ID="HonorPoint" image="gui/dragon_main/function/icon_dianfeng.png" desc="巅峰令"/>
+	<Property ID="HonorPoint_mini" image="gui/dragon_main/function/icon_dianfeng_min.png" desc="巅峰令"/>
+	<Property ID="HonorPoint_big" image="gui/dragon_main/function/dianfeng.png" desc="巅峰令"/>
+	<Property ID="TowerPoint" image="gui/dragon_main/function/icon_wujing.png" desc="无尽印记"/>
+	<Property ID="TowerPoint_mini" image="gui/dragon_main/function/icon_wujing_min.png" desc="无尽印记"/>
+	<Property ID="TowerPoint_big" image="gui/dragon_main/function/wujing.png" desc="无尽印记"/>
+	<Property ID="CardBuy" image="gui/dragon_main/pay/card_9.png" desc="购买"/>
+	<Property ID="CardBuy_xf" image="gui/dragon_main/pay/card_11.png" desc="续费"/>
+	<Property ID="CardBuy_update" image="gui/dragon_main/pay/card_10.png" desc="升级"/>
+	<!--好友-->
+	<Property ID="common_select_photo" image="gui/dragon_main/new_common/button/check_4_up.png"/>
+	<!--邮件-->
+	<Property ID="read_mail_icon" image="gui/dragon_main/new_common/button/common_empty.png"/>
+	<Property ID="unread_mail_icon" image="gui/dragon_main/new_common/back/common_new.png"/>
+	<Property ID="normal_mail_icon" image="gui/dragon_main/new_common/button/check_6.png"/>
+	<Property ID="checked_mail_icon" image="gui/dragon_main/new_common/button/check_6_up.png"/>
+	<!--竞技场(跨服)-->
+	<Property ID="my_ranking" image="gui/dragon_main/mainfunction/arena/list_mine.png"/>
+	<Property ID="all_ranking" image="gui/dragon_main/mainfunction/arena/list_top.png"/>
+	<Property ID="arena_first_back" image="gui/dragon_main/mainfunction/arena/jingjichang_111.png"/>
+	<Property ID="arena_second_back" image="gui/dragon_main/mainfunction/arena/jingjichang_115.png"/>
+	<Property ID="arena_third_back" image="gui/dragon_main/mainfunction/arena/jingjichang_120.png"/>
+	<Property ID="arena_first_mark" image="gui/dragon_main/mainfunction/arena/ranking_1st_b.png"/>
+	<Property ID="arena_second_mark" image="gui/dragon_main/mainfunction/arena/ranking_2nd_b.png"/>
+	<Property ID="arena_third_mark" image="gui/dragon_main/mainfunction/arena/ranking_3rd_b.png"/>
+	<Property ID="arena_result_win" image="gui/dragon_main/mainfunction/arena/jingjichang_03.png"/>
+	<Property ID="arena_result_loss" image="gui/dragon_main/mainfunction/arena/shibai.png"/>
+	<Property ID="arena_result_draw" image="gui/dragon_main/mainfunction/arena/pingju.png"/>
+	<Property ID="arena_ba_digit_1" image="gui/dragon_main/mainfunction/arena/jingjichang_51.png"/>
+	<Property ID="arena_ba_digit_2" image="gui/dragon_main/mainfunction/arena/jingjichang_53.png"/>
+	<Property ID="arena_ba_digit_3" image="gui/dragon_main/mainfunction/arena/jingjichang_55.png"/>
+	<Property ID="arena_ba_digit_4" image="gui/dragon_main/mainfunction/arena/jingjichang_57.png"/>
+	<Property ID="arena_ba_digit_5" image="gui/dragon_main/mainfunction/arena/jingjichang_59.png"/>
+	<Property ID="arena_ba_digit_6" image="gui/dragon_main/mainfunction/arena/jingjichang_61.png"/>
+	<Property ID="arena_ba_digit_7" image="gui/dragon_main/mainfunction/arena/jingjichang_63.png"/>
+	<Property ID="arena_ba_digit_8" image="gui/dragon_main/mainfunction/arena/jingjichang_65.png"/>
+	<Property ID="arena_ba_digit_9" image="gui/dragon_main/mainfunction/arena/jingjichang_67.png"/>
+	<Property ID="arena_ba_digit_0" image="gui/dragon_main/mainfunction/arena/jingjichang_69.png"/>
+	<Property ID="arena_count_down_digit_0" image="gui/dragon_main/mainfunction/arena/jingjichang_29.png"/>
+	<Property ID="arena_count_down_digit_1" image="gui/dragon_main/mainfunction/arena/jingjichang_11.png"/>
+	<Property ID="arena_count_down_digit_2" image="gui/dragon_main/mainfunction/arena/jingjichang_13.png"/>
+	<Property ID="arena_count_down_digit_3" image="gui/dragon_main/mainfunction/arena/jingjichang_15.png"/>
+	<Property ID="arena_count_down_digit_4" image="gui/dragon_main/mainfunction/arena/jingjichang_17.png"/>
+	<Property ID="arena_count_down_digit_5" image="gui/dragon_main/mainfunction/arena/jingjichang_19.png"/>
+	<!--登录服务器状态-->
+	<Property ID="server_new" image="gui/dragon_main/login/x.png"/>
+	<Property ID="server_good" image="gui/dragon_main/login/login_free.png"/>
+	<Property ID="server_stop" image="gui/dragon_main/login/login_hui.png"/>
+	<Property ID="server_normal" image="gui/dragon_main/login/login_normal.png"/>
+	<Property ID="server_hot" image="gui/dragon_main/login/login_busy.png"/>
+	<Property ID="server_recommand" image="gui/dragon_main/login/recommend.png"/>
+	<Property ID="notice_left_0" image="gui/dragon_main/login/cuxiao.png"/>
+	<Property ID="notice_left_1" image="gui/dragon_main/login/libao.png"/>
+	<Property ID="notice_left_2" image="gui/dragon_main/login/gonggao.png"/>
+	<Property ID="notice_left_3" image="gui/dragon_main/login/xianshi.png"/>
+	<Property ID="notice_left_4" image="gui/dragon_main/login/huodong.png"/>
+	<Property ID="notice_right_0" image="gui/dragon_main/login/tip_hot.png"/>
+	<Property ID="notice_right_1" image="gui/dragon_main/login/tip_new.png"/>
+	<Property ID="notice_right_2" image=""/>
+	<Property ID="notice_right_3" image=""/>
+	<Property ID="notice_right_4" image=""/>
+	<Property ID="switch_black_screen" image="gui/dragon_main/login/heimu.png"/>
+	<Property ID="QRCodeIcon" image="gui/dragon_main/login/qr_image.png"/>
+	<!--分线状态-->
+	<Property ID="line_hot" image="gui/dragon_main/map/fxxt_hong.png"/>
+	<Property ID="line_normal" image="gui/dragon_main/map/fxxt_huang.png"/>
+	<Property ID="line_good" image="gui/dragon_main/map/fxxt_lv.png"/>
+	<!--角色创建形象选择-->
+	<Property ID="style_hair_icon_1_0" image="gui/dragon_main/createrole/role_choice_hair01.png"/>
+	<Property ID="style_hair_icon_1_1" image="gui/dragon_main/createrole/role_choice_hair02.png"/>
+	<Property ID="style_hair_icon_1_2" image="gui/dragon_main/createrole/role_choice_hair03.png"/>
+	<Property ID="style_face_icon_1_0" image="gui/dragon_main/createrole/role_choice_face1.png"/>
+	<Property ID="style_face_icon_1_1" image="gui/dragon_main/createrole/role_choice_face2.png"/>
+	<Property ID="style_face_icon_1_2" image="gui/dragon_main/createrole/role_choice_face3.png"/>
+	<Property ID="style_face_icon_1_3" image="gui/dragon_main/createrole/role_choice_face21.png"/>
+	<Property ID="style_face_icon_1_4" image="gui/dragon_main/createrole/role_choice_face22.png"/>
+	<Property ID="style_face_icon_1_5" image="gui/dragon_main/createrole/role_choice_face23.png"/>
+	<Property ID="style_hair_icon_2_0" image="gui/dragon_main/createrole/role_choice_hair41.png"/>
+	<Property ID="style_hair_icon_2_1" image="gui/dragon_main/createrole/role_choice_hair42.png"/>
+	<Property ID="style_hair_icon_2_2" image="gui/dragon_main/createrole/role_choice_hair43.png"/>
+	<Property ID="style_face_icon_2_0" image="gui/dragon_main/createrole/role_choice_face4.png"/>
+	<Property ID="style_face_icon_2_1" image="gui/dragon_main/createrole/role_choice_face5.png"/>
+	<Property ID="style_face_icon_2_2" image="gui/dragon_main/createrole/role_choice_face6.png"/>
+	<Property ID="style_face_icon_2_3" image="gui/dragon_main/createrole/role_choice_face27.png"/>
+	<Property ID="style_face_icon_2_4" image="gui/dragon_main/createrole/role_choice_face28.png"/>
+	<Property ID="style_face_icon_2_5" image="gui/dragon_main/createrole/role_choice_face29.png"/>
+	<Property ID="style_hair_icon_3_0" image="gui/dragon_main/createrole/role_choice_hair45.png"/>
+	<Property ID="style_hair_icon_3_1" image="gui/dragon_main/createrole/role_choice_hair32.png"/>
+	<Property ID="style_hair_icon_3_2" image="gui/dragon_main/createrole/role_choice_hair33.png"/>
+	<Property ID="style_face_icon_3_0" image="gui/dragon_main/createrole/role_choice_face7.png"/>
+	<Property ID="style_face_icon_3_1" image="gui/dragon_main/createrole/role_choice_face8.png"/>
+	<Property ID="style_face_icon_3_2" image="gui/dragon_main/createrole/role_choice_face9.png"/>
+	<Property ID="style_face_icon_3_3" image="gui/dragon_main/createrole/role_choice_face24.png"/>
+	<Property ID="style_face_icon_3_4" image="gui/dragon_main/createrole/role_choice_face25.png"/>
+	<Property ID="style_face_icon_3_5" image="gui/dragon_main/createrole/role_choice_face26.png"/>
+	<Property ID="style_hair_icon_4_0" image="gui/dragon_main/createrole/role_choice_hair41.png"/>
+	<Property ID="style_hair_icon_4_1" image="gui/dragon_main/createrole/role_choice_hair42.png"/>
+	<Property ID="style_hair_icon_4_2" image="gui/dragon_main/createrole/role_choice_hair44.png"/>
+	<Property ID="style_face_icon_4_0" image="gui/dragon_main/createrole/role_choice_face4.png"/>
+	<Property ID="style_face_icon_4_1" image="gui/dragon_main/createrole/role_choice_face19.png"/>
+	<Property ID="style_face_icon_4_2" image="gui/dragon_main/createrole/role_choice_face20.png"/>
+	<Property ID="style_face_icon_4_3" image="gui/dragon_main/createrole/role_choice_face41.png"/>
+	<Property ID="style_face_icon_4_4" image="gui/dragon_main/createrole/role_choice_face42.png"/>
+	<Property ID="style_face_icon_4_5" image="gui/dragon_main/createrole/role_choice_face43.png"/>
+	<Property ID="style_hair_icon_5_0" image="gui/dragon_main/createrole/role_choice_hair21.png"/>
+	<Property ID="style_hair_icon_5_1" image="gui/dragon_main/createrole/role_choice_hair22.png"/>
+	<Property ID="style_hair_icon_5_2" image="gui/dragon_main/createrole/role_choice_hair23.png"/>
+	<Property ID="style_hair_icon_5_3" image="gui/dragon_main/createrole/role_choice_face3.png"/>
+	<Property ID="style_hair_icon_5_4" image="gui/dragon_main/createrole/role_choice_face3.png"/>
+	<Property ID="style_face_icon_5_0" image="gui/dragon_main/createrole/role_choice_face13.png"/>
+	<Property ID="style_face_icon_5_1" image="gui/dragon_main/createrole/role_choice_face14.png"/>
+	<Property ID="style_face_icon_5_2" image="gui/dragon_main/createrole/role_choice_face15.png"/>
+	<Property ID="style_face_icon_5_3" image="gui/dragon_main/createrole/role_choice_face38.png"/>
+	<Property ID="style_face_icon_5_4" image="gui/dragon_main/createrole/role_choice_face39.png"/>
+	<Property ID="style_face_icon_5_5" image="gui/dragon_main/createrole/role_choice_face40.png"/>
+	<Property ID="style_hair_icon_6_0" image="gui/dragon_main/createrole/role_choice_hair11.png"/>
+	<Property ID="style_hair_icon_6_1" image="gui/dragon_main/createrole/role_choice_hair12.png"/>
+	<Property ID="style_hair_icon_6_2" image="gui/dragon_main/createrole/role_choice_hair13.png"/>
+	<Property ID="style_face_icon_6_0" image="gui/dragon_main/createrole/role_choice_face16.png"/>
+	<Property ID="style_face_icon_6_1" image="gui/dragon_main/createrole/role_choice_face17.png"/>
+	<Property ID="style_face_icon_6_2" image="gui/dragon_main/createrole/role_choice_face18.png"/>
+	<Property ID="style_face_icon_6_3" image="gui/dragon_main/createrole/role_choice_face30.png"/>
+	<Property ID="style_face_icon_6_4" image="gui/dragon_main/createrole/role_choice_face31.png"/>
+	<Property ID="style_face_icon_6_5" image="gui/dragon_main/createrole/role_choice_face32.png"/>
+	<Property ID="style_hair_icon_7_0" image="gui/dragon_main/createrole/role_choice_hair31.png"/>
+	<Property ID="style_hair_icon_7_1" image="gui/dragon_main/createrole/role_choice_hair32.png"/>
+	<Property ID="style_hair_icon_7_2" image="gui/dragon_main/createrole/role_choice_hair33.png"/>
+	<Property ID="style_face_icon_7_0" image="gui/dragon_main/createrole/role_choice_face10.png"/>
+	<Property ID="style_face_icon_7_1" image="gui/dragon_main/createrole/role_choice_face11.png"/>
+	<Property ID="style_face_icon_7_2" image="gui/dragon_main/createrole/role_choice_face12.png"/>
+	<Property ID="style_face_icon_7_3" image="gui/dragon_main/createrole/role_choice_face33.png"/>
+	<Property ID="style_face_icon_7_4" image="gui/dragon_main/createrole/role_choice_face34.png"/>
+	<Property ID="style_face_icon_7_5" image="gui/dragon_main/createrole/role_choice_face35.png"/>
+	<Property ID="style_hair_icon_8_0" image="gui/dragon_main/createrole/role_choice_hair21.png"/>
+	<Property ID="style_hair_icon_8_1" image="gui/dragon_main/createrole/role_choice_hair22.png"/>
+	<Property ID="style_hair_icon_8_2" image="gui/dragon_main/createrole/role_choice_hair23.png"/>
+	<Property ID="style_hair_icon_8_3" image="gui/dragon_main/createrole/role_choice_face3.png"/>
+	<Property ID="style_hair_icon_8_4" image="gui/dragon_main/createrole/role_choice_face3.png"/>
+	<Property ID="style_face_icon_8_0" image="gui/dragon_main/createrole/role_choice_face13.png"/>
+	<Property ID="style_face_icon_8_1" image="gui/dragon_main/createrole/role_choice_face14.png"/>
+	<Property ID="style_face_icon_8_2" image="gui/dragon_main/createrole/role_choice_face15.png"/>
+	<Property ID="style_face_icon_8_3" image="gui/dragon_main/createrole/role_choice_face38.png"/>
+	<Property ID="style_face_icon_8_4" image="gui/dragon_main/createrole/role_choice_face39.png"/>
+	<Property ID="style_face_icon_8_5" image="gui/dragon_main/createrole/role_choice_face40.png"/>
+	<Property ID="style_colour_1" image="gui/dragon_main/createrole/fu-se_02.png"/>
+	<Property ID="style_colour_2" image="gui/dragon_main/createrole/fu-se_03.png"/>
+	<Property ID="style_colour_3" image="gui/dragon_main/createrole/fu-se_04.png"/>
+	<Property ID="style_colour_4" image="gui/dragon_main/createrole/fu-se_05.png"/>
+	<Property ID="style_colour_5" image="gui/dragon_main/createrole/fu-se_06.png"/>
+	<Property ID="style_colour_6" image="gui/dragon_main/createrole/fu-se_07.png"/>
+	<!--排行榜-->
+	<Property ID="rank_ji_1" image="gui/dragon_main/mainfunction/rank/rank_4.png"/>
+	<Property ID="rank_ou_1" image="gui/dragon_main/mainfunction/rank/rank_4.png"/>
+	<Property ID="rank_no_1" image="gui/dragon_main/mainfunction/arena/ranking_1st_b.png"/>
+	<Property ID="rank_no_2" image="gui/dragon_main/mainfunction/arena/ranking_2nd_b.png"/>
+	<Property ID="rank_no_3" image="gui/dragon_main/mainfunction/arena/ranking_3rd_b.png"/>
+	<Property ID="rank_back_1" image="gui/dragon_main/mainfunction/rank/rank_1.png"/>
+	<Property ID="rank_back_2" image="gui/dragon_main/mainfunction/rank/rank_2.png"/>
+	<Property ID="rank_back_3" image="gui/dragon_main/mainfunction/rank/rank_3.png"/>
+	<!--聊天动作-->
+	<Property ID="chat_action_icon_1" image="icon/ride/ride_bear_001.png"/>
+	<Property ID="chat_action_icon_2" image="icon/ride/ride_dragon_001.png"/>
+	<Property ID="chat_action_icon_3" image="icon/ride/ride_dragon_002.png"/>
+	<Property ID="chat_action_icon_4" image="icon/ride/ride_dragon_003.png"/>
+	<Property ID="chat_action_icon_5" image="icon/ride/ride_horse_001.png"/>
+	<!--装备tips-->
+	<Property ID="tips_imag_1" image="gui/dragon_main/new_common/back/up.png"/>
+	<Property ID="tips_imag_2" image="gui/dragon_main/new_common/back/down.png"/>
+	<Property ID="tips_imag_3" image="gui/dragon_main/mainfunction/equipt/bag_item_box64_missmatch.png"/>
+	<!--角色属性icon-->
+	<Property ID="player_prop_icon_Str" image="gui/dragon_main/mainfunction/rule/attribute_image_liliang.png"/>
+	<Property ID="player_prop_icon_Dex" image="gui/dragon_main/mainfunction/rule/attribute_image_minjie.png"/>
+	<Property ID="player_prop_icon_Int" image="gui/dragon_main/mainfunction/rule/attribute_image_zhili.png"/>
+	<Property ID="player_prop_icon_Con" image="gui/dragon_main/mainfunction/rule/attribute_image_naili.png"/>
+	<Property ID="player_prop_icon_Ten" image="gui/dragon_main/mainfunction/rule/attribute_image_renxing.png"/>
+	<Property ID="player_prop_icon_MaxHP" image="gui/dragon_main/mainfunction/rule/attribute_image_shengming.png"/>
+	<Property ID="player_prop_icon_MaxMP" image="gui/dragon_main/mainfunction/rule/attribute_image_fali.png"/>
+	<Property ID="player_prop_icon_Atk" image="gui/dragon_main/mainfunction/rule/attribute_image_gongji.png"/>
+	<Property ID="player_prop_icon_Def" image="gui/dragon_main/mainfunction/rule/attribute_image_fangyu.png"/>
+	<Property ID="player_prop_icon_RealDam" image="gui/dragon_main/mainfunction/rule/attribute_image_zuizhongshanghai.png"/>
+	<Property ID="player_prop_icon_Miss" image="gui/dragon_main/mainfunction/rule/attribute_image_shanbi.png"/>
+	<Property ID="player_prop_icon_Hit" image="gui/dragon_main/mainfunction/rule/attribute_image_mingzhong.png"/>
+	<Property ID="player_prop_icon_Toug" image="gui/dragon_main/mainfunction/rule/attribute_image_kangbao.png"/>
+	<Property ID="player_prop_icon_Crit" image="gui/dragon_main/mainfunction/rule/attribute_image_baoji.png"/>
+	<Property ID="player_prop_icon_TougDam" image="gui/dragon_main/mainfunction/rule/attribute_image_baomian.png"/>
+	<Property ID="player_prop_icon_CritDam" image="gui/dragon_main/mainfunction/rule/attribute_image_baoshang.png"/>
+	<Property ID="player_prop_icon_HPReg" image="gui/dragon_main/mainfunction/rule/attribute_image_huihong.png"/>
+	<Property ID="player_prop_icon_MPReg" image="gui/dragon_main/mainfunction/rule/attribute_image_huilan.png"/>
+	<Property ID="player_prop_icon_BlockValue" image="gui/dragon_main/mainfunction/rule/attribute_image_gedangjilv.png"/>
+	<Property ID="player_prop_icon_Block" image="gui/dragon_main/mainfunction/rule/attribute_image_gedangzhi.png"/>
+	<Property ID="player_prop_icon_DamIncrease" image="gui/dragon_main/mainfunction/rule/attribute_image_shangzeng.png"/>
+	<Property ID="player_prop_icon_DamDecrease" image="gui/dragon_main/mainfunction/rule/attribute_image_jianshang.png"/>
+	<Property ID="player_prop_icon_StrAdd" image="gui/dragon_main/mainfunction/rule/attribute_image_liliang.png"/>
+	<Property ID="player_prop_icon_DexAdd" image="gui/dragon_main/mainfunction/rule/attribute_image_minjie.png"/>
+	<Property ID="player_prop_icon_IntAdd" image="gui/dragon_main/mainfunction/rule/attribute_image_zhili.png"/>
+	<Property ID="player_prop_icon_ConAdd" image="gui/dragon_main/mainfunction/rule/attribute_image_naili.png"/>
+	<Property ID="player_prop_icon_TenAdd" image="gui/dragon_main/mainfunction/rule/attribute_image_renxing.png"/>
+	<Property ID="player_prop_icon_MaxHPAdd" image="gui/dragon_main/mainfunction/rule/attribute_image_shengming.png"/>
+	<Property ID="player_prop_icon_MaxMPAdd" image="gui/dragon_main/mainfunction/rule/attribute_image_fali.png"/>
+	<Property ID="player_prop_icon_AtkAdd" image="gui/dragon_main/mainfunction/rule/attribute_image_gongji.png"/>
+	<Property ID="player_prop_icon_DefAdd" image="gui/dragon_main/mainfunction/rule/attribute_image_fangyu.png"/>
+	<Property ID="player_prop_icon_RealDamAdd" image="gui/dragon_main/mainfunction/rule/attribute_image_zuizhongshanghai.png"/>
+	<Property ID="player_prop_icon_MissAdd" image="gui/dragon_main/mainfunction/rule/attribute_image_shanbi.png"/>
+	<Property ID="player_prop_icon_HitAdd" image="gui/dragon_main/mainfunction/rule/attribute_image_mingzhong.png"/>
+	<Property ID="player_prop_icon_TougAdd" image="gui/dragon_main/mainfunction/rule/attribute_image_kangbao.png"/>
+	<Property ID="player_prop_icon_CritAdd" image="gui/dragon_main/mainfunction/rule/attribute_image_baoji.png"/>
+	<Property ID="player_prop_icon_TougDamAdd" image="gui/dragon_main/mainfunction/rule/attribute_image_baomian.png"/>
+	<Property ID="player_prop_icon_CritDamAdd" image="gui/dragon_main/mainfunction/rule/attribute_image_baoshang.png"/>
+	<Property ID="player_prop_icon_HPRegAdd" image="gui/dragon_main/mainfunction/rule/attribute_image_huihong.png"/>
+	<Property ID="player_prop_icon_MPRegAdd" image="gui/dragon_main/mainfunction/rule/attribute_image_huilan.png"/>
+	<Property ID="player_prop_icon_BlockValueAdd" image="gui/dragon_main/mainfunction/rule/attribute_image_gedangjilv.png"/>
+	<Property ID="player_prop_icon_BlockAdd" image="gui/dragon_main/mainfunction/rule/attribute_image_gedangzhi.png"/>
+	<Property ID="player_prop_icon_DamIncreaseAdd" image="gui/dragon_main/mainfunction/rule/attribute_image_shangzeng.png"/>
+	<Property ID="player_prop_icon_DamDecreaseAdd" image="gui/dragon_main/mainfunction/rule/attribute_image_jianshang.png"/>
+	<!--拍照-->
+	<Property ID="shot_effect_select" image="gui/dragon_main/shot/xuanzhong.png"/>
+	<!--地图-->
+	<Property ID="smallmap_player" image="gui/dragon_main/map/map_direction.png"/>
+	<!--战场-->
+	<Property ID="bf_minimap_player" image="gui/dragon_main/map/map_direction.png"/>
+	<Property ID="cancel_ready" image="gui/dragon_main/mainfunction/battle/zhunbei_up.png"/>
+	<Property ID="player_ready" image="gui/dragon_main/mainfunction/battle/zhunbei_over.png"/>
+	<Property ID="battle_result_win" image="gui/dragon_main/mainfunction/arena/jingjichang_03.png"/>
+	<Property ID="battle_result_peace" image="gui/dragon_main/mainfunction/arena/pingju.png"/>
+	<Property ID="battle_result_failed" image="gui/dragon_main/mainfunction/arena/shibai.png"/>
+	<Property ID="dikuang_lan" image="gui/dragon_main/mainfunction/battle/dikuang_lan.png"/>
+	<Property ID="dikuang_hong" image="gui/dragon_main/mainfunction/battle/dikuang_hong.png"/>
+	<Property ID="zhugongdikuang_lan" image="gui/dragon_main/mainfunction/battle/zhugongdikuang_lan.png"/>
+	<Property ID="zhugongdikuang_hong" image="gui/dragon_main/mainfunction/battle/zhugongdikuang_hong.png"/>
+	<Property ID="wenzi_dydx" image="gui/dragon_main/mainfunction/battle/wenzi_dydx.png"/>
+	<Property ID="ui_war_combokill2" image="gui/dragon_main/mainfunction/battle/wenzi_jp.png"/>
+	<Property ID="ui_war_combokill3" image="gui/dragon_main/mainfunction/battle/wenzi_srpz.png"/>
+	<Property ID="ui_war_combokill4" image="gui/dragon_main/mainfunction/battle/wenzi_zzbs.png"/>
+	<Property ID="ui_war_combokill5" image="gui/dragon_main/mainfunction/battle/wenzi_yrsz.png"/>
+	<Property ID="ui_war_combokill6" image="gui/dragon_main/mainfunction/battle/wenzi_wrnd.png"/>
+	<Property ID="ui_war_combokill7" image="gui/dragon_main/mainfunction/battle/wenzi_zwbs.png"/>
+	<Property ID="ui_war_combokill8" image="gui/dragon_main/mainfunction/battle/wenzi_gygyy.png"/>
+	<Property ID="ui_war_combokill9" image="gui/dragon_main/mainfunction/battle/wenzi_rtsyy.png"/>
+	<Property ID="ui_war_combokill10" image="gui/dragon_main/mainfunction/battle/wenzi_cysl.png"/>
+	<Property ID="wenzi_zj" image="gui/dragon_main/mainfunction/battle/wenzi_zj.png"/>
+	<Property ID="wenzi_ss" image="gui/dragon_main/mainfunction/battle/wenzi_ss.png"/>
+	<Property ID="wenzi_sas" image="gui/dragon_main/mainfunction/battle/wenzi_sas.png"/>
+	<Property ID="wenzi_sis" image="gui/dragon_main/mainfunction/battle/wenzi_sis.png"/>
+	<Property ID="wenzi_wus" image="gui/dragon_main/mainfunction/battle/wenzi_wus.png"/>
+	<Property ID="wenzi_tm" image="gui/dragon_main/mainfunction/battle/wenzi_tm.png"/>
+	<Property ID="tips_dxbjycx" image="gui/dragon_main/mainfunction/battle/tips_dxbjycx.png"/>
+	<Property ID="tips_hqdxbj" image="gui/dragon_main/mainfunction/battle/tips_hqdxbj.png"/>
+	<Property ID="tips_hqxxbj" image="gui/dragon_main/mainfunction/battle/tips_hqxxbj.png"/>
+	<Property ID="tips_xxbjycx" image="gui/dragon_main/mainfunction/battle/tips_xxbjycx.png"/>
+	<Property ID="tips_zllycdq" image="gui/dragon_main/mainfunction/battle/tips_zllycdq.png"/>
+	<Property ID="tips_zllzcdq" image="gui/dragon_main/mainfunction/battle/tips_zllzcdq.png"/>
+	<Property ID="tips_zllzydq" image="gui/dragon_main/mainfunction/battle/tips_zllzydq.png"/>
+	<Property ID="tips_dsxzqc" image="gui/dragon_main/mainfunction/battle/tips_dsxzqc.png"/>
+	<Property ID="tips_hdzy" image="gui/dragon_main/mainfunction/battle/tips_hdzy.png"/>
+	<Property ID="tips_sjzqqccd" image="gui/dragon_main/mainfunction/battle/tips_sjzqqccd.png"/>
+	<Property ID="tips_tdhdzy" image="gui/dragon_main/mainfunction/battle/tips_tdhdzy.png"/>
+	<Property ID="tips_tdsjzjqccd" image="gui/dragon_main/mainfunction/battle/tips_tdsjzjqccd.png"/>
+	<Property ID="tips_tdwqzy" image="gui/dragon_main/mainfunction/battle/tips_tdwqzy.png"/>
+	<Property ID="tips_tdzjqccd" image="gui/dragon_main/mainfunction/battle/tips_tdzjqccd.png"/>
+	<Property ID="tips_tdzlbz" image="gui/dragon_main/mainfunction/battle/tips_tdzlbz.png"/>
+	<Property ID="tips_tdzqzl" image="gui/dragon_main/mainfunction/battle/tips_tdzqzl.png"/>
+	<Property ID="tips_tmxszyzj" image="gui/dragon_main/mainfunction/battle/tips_tmxszyzj.png"/>
+	<Property ID="tips_zqzl" image="gui/dragon_main/mainfunction/battle/tips_zqzl.png"/>
+	<Property ID="tips_dfqthdzy" image="gui/dragon_main/mainfunction/battle/tips_dfqthdzy.png"/>
+	<Property ID="tips_dfqtsjzjcz" image="gui/dragon_main/mainfunction/battle/tips_dfqtsjzjcz.png"/>
+	<Property ID="tips_dfqtwqzy" image="gui/dragon_main/mainfunction/battle/tips_dfqtwqzy.png"/>
+	<Property ID="tips_dfqtzlbz" image="gui/dragon_main/mainfunction/battle/tips_dfqtzlbz.png"/>
+	<Property ID="tips_dfqtzqcz" image="gui/dragon_main/mainfunction/battle/tips_dfqtzqcz.png"/>
+	<Property ID="tips_dfqtzqzl" image="gui/dragon_main/mainfunction/battle/tips_dfqtzqzl.png"/>
+	<Property ID="tips_wfqtxzqc" image="gui/dragon_main/mainfunction/battle/tips_wfqtxzqc.png"/>
+	<Property ID="mvp_win" image="gui/dragon_main/mainfunction/battle/mvp_03.png"/>
+	<Property ID="mvp_fail" image="gui/dragon_main/mainfunction/battle/mvp_04.png"/>
+	<Property ID="battle_field_intro_4" image="gui/dragon_main/mainfunction/battle/zcwfsm_dt.png"/>
+	<Property ID="battle_field_intro_5" image="gui/dragon_main/mainfunction/battle/zcwfsm_dt2.png"/>
+	<!--战场成就-->
+	<Property ID="triple_kill" image="gui/dragon_main/mainfunction/battle/battle_chive_4.png"/>
+	<Property ID="quatary_kill" image="gui/dragon_main/mainfunction/battle/battle_chive_5.png"/>
+	<Property ID="panta_kill" image="gui/dragon_main/mainfunction/battle/battle_chive_8.png"/>
+	<Property ID="max_help_kill" image="gui/dragon_main/mainfunction/battle/battle_chive_1.png"/>
+	<Property ID="max_attack_damage" image="gui/dragon_main/mainfunction/battle/battle_chive_7.png"/>
+	<Property ID="max_kill" image="gui/dragon_main/mainfunction/battle/battle_chive_2.png"/>
+	<Property ID="max_hurt_damage" image="gui/dragon_main/mainfunction/battle/battle_chive_6.png"/>
+	<Property ID="max_combo_kill" image="gui/dragon_main/mainfunction/battle/battle_chive_3.png"/>
+	<!--时装-->
+	<Property ID="decompose_empty_photo" image="gui/dragon_main/mainfunction/fashion/sz_07.png"/>
+	<Property ID="decompose_fashion_photo" image="gui/dragon_main/mainfunction/fashion/fashion.png."/>
+	<Property ID="decompose_badge_photo" image="gui/dragon_main/mainfunction/fashion/badge.png."/>
+	<Property ID="try_fashion" image="gui/dragon_main/mainfunction/fashion/sz_05.png"/>
+	<Property ID="select_image_grid" image="gui/dragon_main/new_common/back/xuanzhongkuang.png"/>
+	<Property ID="cover_choose_floor" image="gui/dragon_main/mainfunction/fashion/gou.png"/>
+	<!--运营活动图标-->
+	<Property ID="game_activity_2" image="gui/dragon_main/activity_main/activity_main_1.png"/>
+	<Property ID="game_activity_3" image="gui/dragon_main/activity_main/activity_main_2.png"/>
+	<Property ID="game_activity_4" image="gui/dragon_main/activity_main/activity_main_3.png"/>
+	<Property ID="game_activity_5" image="gui/dragon_main/activity_main/activity_main_3.png"/>
+	<Property ID="game_activity_6" image="gui/dragon_main/activity_main/activity_main_1.png"/>
+	<Property ID="game_activity_101" image="gui/dragon_main/activity_main/activity_main_3.png"/>
+	<Property ID="game_activity_102" image="gui/dragon_main/activity_main/activity_main_3.png"/>
+	<Property ID="game_activity_201" image="gui/dragon_main/activity_main/activity_main_3.png"/>
+	<Property ID="game_activity_202" image="gui/dragon_main/activity_main/activity_main_3.png"/>
+	<Property ID="game_activity_203" image="gui/dragon_main/activity_main/activity_main_3.png"/>
+	<Property ID="game_activity_204" image="gui/dragon_main/activity_main/activity_main_3.png"/>
+	<Property ID="game_activity_301" image="gui/dragon_main/activity_main/activity_main_2.png"/>
+	<Property ID="game_activity_303" image="gui/dragon_main/activity_main/activity_main_2.png"/>
+	<!--内置活动图标-->
+	<Property ID="common_activity_1" image="gui/dragon_main/activity_main/activity_main_8.png"/>
+	<Property ID="common_activity_2" image="gui/dragon_main/activity_main/activity_main_9.png"/>
+	<Property ID="common_activity_3" image="gui/dragon_main/activity_main/activity_main_12.png"/>
+	<Property ID="common_activity_4" image="gui/dragon_main/activity_main/activity_main_10.png"/>
+	<Property ID="common_activity_5" image="gui/dragon_main/activity_main/activity_main_11.png"/>
+	<Property ID="common_activity_6" image="gui/dragon_main/activity_main/activity_main_13.png"/>
+	<Property ID="common_activity_7" image="gui/dragon_main/activity_main/activity_main_14.png"/>
+	<Property ID="common_activity_8" image="gui/dragon_main/mainfunction/redeem/zysh_an.png"/>
+	<Property ID="month_sign_cant" image="gui/dragon_main/activity_main/activity_main_15.png"/>
+	<Property ID="month_sign_can" image="gui/dragon_main/activity_main/activity_main_16.png"/>
+	<Property ID="month_sign_had" image="gui/dragon_main/activity_main/activity_main_17.png"/>
+	<!--职业名称图片-->
+	<Property ID="profession_name_1" image="gui/dragon_main/createrole/role_name_1.png"/>
+	<Property ID="profession_name_2" image="gui/dragon_main/createrole/role_name_2.png"/>
+	<Property ID="profession_name_3" image="gui/dragon_main/createrole/role_name_3.png"/>
+	<Property ID="profession_name_4" image="gui/dragon_main/createrole/role_name_4.png"/>
+	<Property ID="profession_name_5" image="gui/dragon_main/createrole/role_name_5.png"/>
+	<Property ID="profession_name_6" image="gui/dragon_main/createrole/role_name_6.png"/>
+	<Property ID="profession_name_7" image="gui/dragon_main/createrole/role_name_7.png"/>
+	<Property ID="profession_name_8" image="gui/dragon_main/createrole/role_name_5.png"/>
+	<!--部件类型图片-->
+	<Property ID="role_part_type_name_1" image="gui/dragon_main/createrole/title_faxing.png"/>
+	<Property ID="role_part_type_name_2" image="gui/dragon_main/createrole/title_face.png"/>
+	<Property ID="role_part_type_name_4" image="gui/dragon_main/createrole/title_equpt.png"/>
+	<Property ID="role_part_type_name_5" image="gui/dragon_main/createrole/title_shizhuang.png"/>
+	<!--迷你小游戏-->
+	<Property ID="unlocking_fit" image="gui/dragon_main/quest/game_lock_wire3.png"/>
+	<Property ID="unlocking_notfit" image="gui/dragon_main/quest/game_lock_wire2.png"/>
+	<Property ID="qte_common_1" image="gui/dragon_main/quest/game_qta_c_1.png"/>
+	<Property ID="qte_common_2" image="gui/dragon_main/quest/game_qta_c_2.png"/>
+	<Property ID="qte_common_3" image="gui/dragon_main/quest/game_qta_c_3.png"/>
+	<Property ID="qte_common_4" image="gui/dragon_main/quest/game_qta_c_4.png"/>
+	<Property ID="qte_light_1" image="gui/dragon_main/quest/game_qta_l_1.png"/>
+	<Property ID="qte_light_2" image="gui/dragon_main/quest/game_qta_l_2.png"/>
+	<Property ID="qte_light_3" image="gui/dragon_main/quest/game_qta_l_3.png"/>
+	<Property ID="qte_light_4" image="gui/dragon_main/quest/game_qta_l_4.png"/>
+	<!--角色血条-->
+	<Property ID="xuetiao_red" image="gui/dragon_main/role/mxtdxt_hong.png"/>
+	<Property ID="xiaoxuetiao_green" image="gui/dragon_main/role/mxtdxt_lv.png"/>
+	<Property ID="xiaoxuetiao_blue" image="gui/dragon_main/role/mxtdxt_lan_ziji.png"/>
+	<!--npc血条-->
+	<Property ID="xiaoxuetiao_npc_green" image="gui/dragon_main/role/mxtdxt_gw_lv.png"/>
+	<Property ID="xuetiao_npc_red" image="gui/dragon_main/role/mxtdxt_gw_hong.png"/>
+	<!--角色蓝条-->
+	<Property ID="stamina_image" image="gui/dragon_main/role/mxtdxt_huang.png"/>
+	<Property ID="mp_image" image="gui/dragon_main/role/mxtdxt_lan.png"/>
+	<!--主玩家角色蓝条-->
+	<Property ID="main_player_stamina_image" image="gui/dragon_main/mainicon/main_head_naili.png"/>
+	<Property ID="main_player_mp_image" image="gui/dragon_main/mainicon/main_head_mana.png"/>
+	<!--其他玩家角色蓝条-->
+	<Property ID="other_player_stamina_image" image="gui/dragon_main/mainicon/main_enemy_head_nali.png"/>
+	<Property ID="other_player_mp_image" image="gui/dragon_main/mainicon/main_enemy_head_mana.png"/>
+	<!--功能标题图标-->
+	<Property ID="fun_title_0" image="gui/dragon_main/new_common/title/biaoti (2).png"/>
+	<Property ID="fun_title_2" image="gui/dragon_main/new_common/title/biaoti (2).png"/>
+	<Property ID="fun_title_18" image="gui/dragon_main/new_common/title/zhuangbei.png"/>
+	<Property ID="fun_title_21" image="gui/dragon_main/new_common/title/zhuangbei.png"/>
+	<Property ID="fun_title_24" image="gui/dragon_main/new_common/title/zhuangbei.png"/>
+	<Property ID="fun_title_32" image="gui/dragon_main/new_common/title/biaoti (2).png"/>
+	<Property ID="fun_title_33" image="gui/dragon_main/new_common/title/biaoti (2).png"/>
+	<Property ID="fun_title_34" image="gui/dragon_main/new_common/title/biaoti (2).png"/>
+	<Property ID="fun_title_15" image="gui/dragon_main/new_common/title/biaoti (15).png"/>
+	<Property ID="fun_title_35" image="gui/dragon_main/new_common/title/biaoti (32).png"/>
+	<Property ID="fun_title_36" image="gui/dragon_main/new_common/title/biaoti (33).png"/>
+	<Property ID="fun_title_37" image="gui/dragon_main/new_common/title/biaoti (34).png"/>
+	<Property ID="fun_title_38" image="gui/dragon_main/new_common/title/biaoti (35).png"/>
+	<Property ID="fun_title_39" image="gui/dragon_main/new_common/title/biaoti (36).png"/>
+	<Property ID="fun_title_40" image="gui/dragon_main/new_common/title/biaoti (37).png"/>
+	<Property ID="fun_title_41" image="gui/dragon_main/new_common/title/biaoti (38).png"/>
+	<Property ID="fun_huoyuedu" image="gui/dragon_main/new_common/title/huoyuedu.png"/>
+	<Property ID="fun_huodong" image="gui/dragon_main/new_common/title/biaoti (23).png"/>
+	<Property ID="fun_jinji" image="gui/dragon_main/new_common/title/biaoti (13).png"/>
+	<Property ID="fun_fuben" image="gui/dragon_main/new_common/title/biaoti (6).png"/>
+	<!--任务-->
+	<Property ID="task_type_main_photo" image="gui/dragon_main/quest/quest_2.png"/>
+	<Property ID="task_type_branch_photo" image="gui/dragon_main/quest/quest_1.png"/>
+	<Property ID="task_type_branch_world" image="gui/dragon_main/quest/quest_1.png"/>
+	<Property ID="task_status_fail" image="gui/dragon_main/quest/fail.png"/>
+	<Property ID="task_status_complete" image="gui/dragon_main/quest/complete.png"/>
+	<Property ID="task_status_manual" image="gui/dragon_main/quest/zysh_djtj.png"/>
+	<!--任务章节-->
+	<Property ID="task_chapter_pic1" image="gui/dragon_main/quest/1.png"/>
+	<Property ID="task_chapter_text1" image="gui/dragon_main/quest/1_1.png"/>
+	<Property ID="task_chapter_pic2" image="gui/dragon_main/quest/2.png"/>
+	<Property ID="task_chapter_text2" image="gui/dragon_main/quest/2_1.png"/>
+	<Property ID="task_chapter_pic3" image="gui/dragon_main/quest/3.png"/>
+	<Property ID="task_chapter_text3" image="gui/dragon_main/quest/3_1.png"/>
+	<Property ID="task_chapter_pic4" image="gui/dragon_main/quest/4.png"/>
+	<Property ID="task_chapter_text4" image="gui/dragon_main/quest/4_1.png"/>
+	<Property ID="task_chapter_pic5" image="gui/dragon_main/quest/5.png"/>
+	<Property ID="task_chapter_text5" image="gui/dragon_main/quest/5_1.png"/>
+	<Property ID="task_chapter_pic6" image="gui/dragon_main/quest/6.png"/>
+	<Property ID="task_chapter_text6" image="gui/dragon_main/quest/6_1.png"/>
+	<!--符文-->
+	<Property ID="symbol_tattoo_title_1" image="gui/dragon_main/new_common/title/fuwenxiangqian.png"/>
+	<Property ID="symbol_tattoo_title_2" image="gui/dragon_main/new_common/title/fuwenxilian.png"/>
+	<Property ID="symbol_tattoo_title_3" image="gui/dragon_main/new_common/title/shenfuzhiyu.png"/>
+	<!--充值相关-->
+	<Property ID="pay_monthcard_mark" image="gui/dragon_main/pay/yueka.png"/>
+	<Property ID="pay_quartercard_mark" image="gui/dragon_main/pay/jika.png"/>
+	<Property ID="pay_yearcard_mark" image="gui/dragon_main/pay/nianka.png"/>
+	<Property ID="pay_forevercard_mark" image="gui/dragon_main/pay/zunxiangka.png"/>
+	<Property ID="pay_648" image="gui/dragon_main/pay/648yuan_back.png"/>
+	<Property ID="pay_488" image="gui/dragon_main/pay/488yuan_back.png"/>
+	<Property ID="pay_298" image="gui/dragon_main/pay/298yuan_back.png"/>
+	<Property ID="pay_198" image="gui/dragon_main/pay/198yuan_back.png"/>
+	<Property ID="pay_98" image="gui/dragon_main/pay/98yuan_back.png"/>
+	<Property ID="pay_50" image="gui/dragon_main/pay/50yuan_back.png"/>
+	<Property ID="pay_30" image="gui/dragon_main/pay/30yuan_back.png"/>
+	<Property ID="pay_6" image="gui/dragon_main/pay/6yuan_back.png"/>
+	<Property ID="pay_monthcard" image="gui/dragon_main/pay/card_8.png"/>
+	<Property ID="pay_quartercard" image="gui/dragon_main/pay/card_7.png"/>
+	<Property ID="pay_yearcard" image="gui/dragon_main/pay/card_6.png"/>
+	<Property ID="pay_forevercard" image="gui/dragon_main/pay/year_card_back.png"/>
+	<Property ID="pay_recommand" image="gui/dragon_main/pay/tuijian.png"/>
+	<Property ID="pay_only_once" image="gui/dragon_main/pay/xianyici.png"/>
+	<Property ID="pay_first_ok" image="gui/dragon_main/pay/sc_lqjl.png"/>
+	<!--公会-->
+	<Property ID="guild_captain" image="gui/dragon_main/guild/huizhang_1.png"/>
+	<Property ID="guild_agent" image="gui/dragon_main/guild/fuhuizhang_1.png"/>
+	<Property ID="guild_official" image="gui/dragon_main/guild/guanyuan_1.png"/>
+	<Property ID="guild_member" image="gui/dragon_main/guild/chengyuan_1.png"/>
+	<Property ID="online" image="gui/dragon_main/guild/zaixian_1.png"/>
+	<Property ID="offline" image="gui/dragon_main/guild/lixian_1.png"/>
+	<Property ID="guild_button_blue" image="gui/dragon_main/new_common/button/common_button_2_up.png"/>
+	<Property ID="guild_button_yellow" image="gui/dragon_main/new_common/button/common_button_1_up.png"/>
+	<!--神器-->
+	<Property ID="amulet_now_level" image="gui/dragon_main/mainfunction/shenqi/dangqian_jiaobiao.png"/>
+	<Property ID="amulet_select" image="gui/dragon_main/mainfunction/equipt/xuanzhongkuan.png"/>
+	<Property ID="amulet_unselect" image="gui/dragon_main/mainfunction/equipt/weixuanzhong.png"/>
+	<Property ID="amulet_title_1" image="gui/dragon_main/new_common/title/pifeng.png"/>
+	<Property ID="amulet_title_2" image="gui/dragon_main/new_common/title/chibang.png"/>
+	<Property ID="amulet_title_3" image="gui/dragon_main/new_common/title/chibang.png"/>
+	<Property ID="amulet_title_4" image="gui/dragon_main/new_common/title/chibang.png"/>
+	<Property ID="amulet_title_5" image="gui/dragon_main/new_common/title/chibang.png"/>
+	<Property ID="amulet_title_6" image="gui/dragon_main/new_common/title/pifeng.png"/>
+	<Property ID="amulet_title_7" image="gui/dragon_main/new_common/title/chibang.png"/>
+	<Property ID="amulet_title_8" image="gui/dragon_main/new_common/title/chibang.png"/>
+	<!--称号-->
+	<Property ID="title_get" image="gui/dragon_main/title/get.png"/>
+	<Property ID="title_check" image="gui/dragon_main/title/check.png"/>
+	<Property ID="title_abi_up" image="gui/dragon_main/new_common/back/up_01.png"/>
+	<Property ID="title_abi_down" image="gui/dragon_main/new_common/back/down_01.png"/>
+	<!--战役-->
+	<Property ID="rpg_01" image="gui/dragon_main/mainfunction/zhanyi/jiangzhushi.png"/>
+	<Property ID="rpg_02" image="gui/dragon_main/mainfunction/zhanyi/kuanggong.png"/>
+	<Property ID="rpg_03" image="gui/dragon_main/mainfunction/zhanyi/gongchengshi.png"/>
+	<Property ID="rpg_04" image="gui/dragon_main/mainfunction/zhanyi/ride_terrain4.png"/>
+	<Property ID="rpg_05" image="gui/dragon_main/mainfunction/zhanyi/ride_terrain5.png"/>
+	<Property ID="rpg_select_01" image="gui/dragon_main/mainfunction/zhanyi/zhanyi_1.png"/>
+	<Property ID="rpg_select_02" image="gui/dragon_main/mainfunction/zhanyi/zhanyi_2.png"/>
+	<Property ID="rpg_select_03" image="gui/dragon_main/mainfunction/zhanyi/zhanyi_3.png"/>
+	<!--技能图标-->
 	<Property ID="skill_bar_big" image=""/>
 	<Property ID="skill_bar_small" image=""/>
-	<Property ID="skill_bar_cooling" image=""/>
-	<Property ID="skill_bar_ani_cooling"/>
-	<Property ID="skill_zhandou_3lv" image="gui\xm2_main\battlearray\zhandou_2lv.png"/>
-	<Property ID="skill_zhandou_5lv" image="gui\xm2_main\battlearray\zhandou_3lv.png"/>
-	<Property ID="skill_zhandou_10lvg" image="gui\xm2_main\battlearray\zhandou_5lv.png"/>
-	<Property ID="skill_jiesuo_35lv"/>
-	<Property ID="skill_jiesuo_45lv"/>
-	<Property ID="skill_bar_back_big" image=""/>
-	<Property ID="skill_bar_back_small" image=""/>
-	<Property ID="skill_back_image_selected" image="gui/tp2_main/roles/roles.png,98,484,98,98"/>
-	<Property ID="skill_back_image_normal" image="gui/tp2_main/roles/roles.png,0,484,98,98"/>
-	<Property ID="skill_taiji_image_bg" image="gui/tp2_main/roles/jinengdi.png"/>
-	<Property ID="skill_normal_image_bg" image="gui/tp2_main/roles/roles.png,391,100,200,200"/>
-	<Property ID="skill_replace_count_1" image="gui/tp2_main/artcle_skills/1_1.png"/>
-	<Property ID="skill_replace_count_1a" image="gui/tp2_main/artcle_skills/1_2.png"/>
-	<Property ID="skill_replace_count_2" image="gui/tp2_main/artcle_skills/2_1.png"/>
-	<Property ID="skill_replace_count_2a" image="gui/tp2_main/artcle_skills/2_2.png"/>
-	<Property ID="skill_replace_count_3" image="gui/tp2_main/artcle_skills/3_1.png"/>
-	<Property ID="skill_replace_count_3a" image="gui/tp2_main/artcle_skills/3_2.png"/>
-	<Property ID="skill_replace_count_4" image="gui/tp2_main/artcle_skills/4_1.png"/>
-	<Property ID="skill_replace_count_4a" image="gui/tp2_main/artcle_skills/4_2.png"/>
-	<Property ID="skill_replace_tiao" image="gui/tp2_main/artcle_skills/skill_tiao.png"/>
-	<Property ID="skill_replace_tiao_bg" image="gui/tp2_main/artcle_skills/skill_tiaodi.png"/>
-	<!--buffer-->
-	<Property ID="buffer_bar_cooling" image="gui\xm2_main\buff\jineng_zhezhao.png"/>
-	<Property ID="buffer_teambar_cooling" image="icon\xm2_item\jinyandandaojishi.png"/>
-	<!--mail-->
-	<Property ID="read_mail_icon" image="gui\tp2_common\nine\mail_di.png "/>
-	<Property ID="unread_mail_icon" image="gui\tp2_common\nine\mop_up_29.png"/>
-	<!--talk-->
-	<Property ID="talk_continue"/>
-	<Property ID="talk_end"/>
-	<!--秘境-->
-	<Property ID="raffle_gold" image="gui\xm2_main\hall\jingbi.png"/>
-	<Property ID="raffle_diamond" image="gui\xm2_main\hall\zhuanshi_bang.png"/>
-	<Property ID="raffle_tickets" image="gui\common\window\rolenpc_ticket.png "/>
-	<!--任务-->
-	<Property ID="renwu_zhuxian"/>
-	<Property ID="renwu_shangjin"/>
-	<Property ID="renwu_richang"/>
-	<Property ID="renwu_diban2"/>
-	<Property ID="renwu_diban1" image=""/>
-	<Property ID="renwu_zhuangshi2"/>
-	<Property ID="renwu_zhuangshi1" image=""/>
-	<Property ID="zuanshi3" image=""/>
-	<Property ID="gold_001" image="icon/item/gold_001.jpg"/>
-	<Property ID="gold_big" image="gui/common/window/gold_big.jpg"/>
-	<Property ID="jinbi_da" image=""/>
-	<Property ID="tishiwancheng" image="gui/tp2_main/hall/tishidian1.png"/>
-	<Property ID="new_quest_bg" image="gui/tp2_main/hall/tishidian.png"/>
-	<Property ID="suipian"/>
-	<Property ID="fanpai"/>
-	<Property ID="fanpai_donghua_1"/>
-	<Property ID="jiantou_1" image="gui/xm2_animation/arrows.png"/>
-	<Property ID="jiantou_2" image="gui/xm2_animation/arrows.png"/>
-	<Property ID="zuanshi_da" image=""/>
-	<Property ID="jingyan" image="gui/xm2_common/window/jingyan.png"/>
-	<Property ID="Zdjy_1" image="icon/xm2_item/Zdjy_1.jpg"/>
-	<!--角色信息-->
-	<Property ID="role_icon_1"/>
-	<Property ID="role_icon_2" image=""/>
-	<Property ID="role_icon_3"/>
-	<Property ID="role_jianshi"/>
-	<Property ID="role_daozei"/>
-	<Property ID="role_xiangmao"/>
-	<Property ID="role_quest_jianshi"/>
-	<Property ID="role_quest_cike"/>
-	<Property ID="role_quest_xiangmao"/>
-	<!--宠物-->
-	<Property ID="pet_1"/>
-	<Property ID="pet_2"/>
-	<Property ID="pet_3"/>
-	<Property ID="pet_4"/>
-	<Property ID="pet_5"/>
-	<Property ID="pet_6"/>
-	<Property ID="pet_7"/>
-	<Property ID="pet_8"/>
-	<Property ID="pet_9"/>
-	<Property ID="pet_10"/>
-	<Property ID="pet_11"/>
-	<Property ID="pet_12"/>
-	<Property ID="pet_13"/>
-	<Property ID="pet_14"/>
-	<Property ID="pet_15"/>
-	<Property ID="pet_16"/>
-	<Property ID="pet_17"/>
-	<Property ID="pet_18"/>
-	<Property ID="pet_19"/>
-	<Property ID="pet_20"/>
-	<Property ID="pet_21"/>
-	<Property ID="pet_22"/>
-	<Property ID="pet_23"/>
-	<Property ID="pet_24"/>
-	<Property ID="pet_25"/>
-	<Property ID="pet_26"/>
-	<Property ID="pet_27"/>
-	<Property ID="pet_28"/>
-	<Property ID="pet_29"/>
-	<Property ID="pet_30"/>
-	<Property ID="pet_31"/>
-	<Property ID="pet_32"/>
-	<Property ID="pet_33"/>
-	<Property ID="equip_kuang_1" image="gui/xm2_main/treasure/lvsekuang.png"/>
-	<Property ID="equip_kuang_2" image="gui/xm2_main/treasure/lansekuang.png"/>
-	<Property ID="equip_kuang_3" image="gui/xm2_main/treasure/zisekuang.png"/>
-	<Property ID="equip_kuang_4" image="gui/xm2_main/treasure/chengsekuang.png"/>
-	<Property ID="equip_kuang_5" image="gui/xm2_main/treasure/hongsekuang.png"/>
-	<Property ID="equip_bag_big_1" image="gui/xm2_main/treasure/lvsekuang.png"/>
-	<Property ID="equip_bag_big_2" image="gui/xm2_main/treasure/lansekuang.png"/>
-	<Property ID="equip_bag_big_3" image="gui/xm2_main/treasure/zisekuang.png"/>
-	<Property ID="equip_bag_big_4" image="gui/xm2_main/treasure/chengsekuang.png"/>
-	<Property ID="equip_bag_big_5" image="gui/xm2_main/treasure/hongsekuang.png"/>
-	<Property ID="equip_bag_big_upgrade_4"/>
-	<Property ID="equip_bag_big_upgrade_5"/>
-	<Property ID="equip_bag_big_upgrade_6"/>
-	<Property ID="equip_bag_big_upgrade_7"/>
-	<Property ID="equip_bag_big_upgrade_8"/>
-	<Property ID="equip_bag_upgrade_4"/>
-	<Property ID="equip_bag_upgrade_5"/>
-	<Property ID="equip_bag_upgrade_6"/>
-	<Property ID="equip_bag_upgrade_7"/>
-	<Property ID="equip_bag_upgrade_8"/>
-	<Property ID="equip_bag_64_1" image="gui/xm2_main/treasure/lvsekuang.png"/>
-	<Property ID="equip_bag_64_2" image="gui/xm2_main/treasure/lansekuang.png"/>
-	<Property ID="equip_bag_64_3" image="gui/xm2_main/treasure/zisekuang.png"/>
-	<Property ID="equip_bag_64_4" image="gui/xm2_main/treasure/chengsekuang.png"/>
-	<Property ID="equip_bag_64_5" image="gui/xm2_main/treasure/hongsekuang.png"/>
-	<Property ID="equip_bag_new" image="gui/tp2_main/hall/new.png"/>
-	<Property ID="equip_bag_fashion_storage" image="icon\xm2_item\store.png"/>
-	<Property ID="pet_stone"/>
-	<Property ID="pet_stone_samll"/>
-	<Property ID="pet_stone_big"/>
-	<Property ID="war_compare_1"/>
-	<Property ID="war_compare_2"/>
-	<Property ID="war_compare_3"/>
-	<Property ID="war_result_0" image="gui\tp2_main\war\pingju.png"/>
-	<Property ID="war_result_1" image="gui\tp2_main\war\shengli.png"/>
-	<Property ID="war_result_2" image="gui\tp2_main\war\tiaozhanshibai.png"/>
-	<Property ID="war_result_3"/>
-	<Property ID="war_result_watch" image="gui\tp2_main\war\guanzhanjieshu.png"/>
-	<Property ID="war_result_jiesuan" image=""/>
-	<Property ID="anniu_gift_1"/>
-	<Property ID="anniu_gift_2"/>
-	<Property ID="tattoo_type_gold" image="gui/tp2_main/tattoo/fw_1.png"/>
-	<Property ID="tattoo_type_wood" image="gui/tp2_main/tattoo/fw_2.png"/>
-	<Property ID="tattoo_type_water" image="gui/tp2_main/tattoo/fw_3.png"/>
-	<Property ID="tattoo_type_fire" image="gui/tp2_main/tattoo/fw_4.png"/>
-	<Property ID="tattoo_type_earth" image="gui/tp2_main/tattoo/fw_5.png"/>
-	<Property ID="war_head" image="gui\tp2_main\war\hongtiao.png"/>
-	<Property ID="server_new" image="gui/xm2_login/fwq_xinfu.png" width="10" height="5"/>
-	<Property ID="server_hot" image="gui/xm2_login/fwq_huobao.png" width="10" height="5"/>
-	<Property ID="server_good" image="gui/xm2_login/fwq_youxiu.png" width="10" height="5"/>
-	<Property ID="server_stop" image="gui/xm2_login/fwq_weihu.png" width="10" height="5"/>
-	<!--符文进阶-->
-	<Property ID="tattoo_adv_prop_tian_5_0" image="gui/tp2_main/tattoo/tattoo_skill_tian_0.png"/>
-	<Property ID="tattoo_adv_prop_tian_10_0" image="gui/tp2_main/tattoo/tattoo_skill_tian_0.png"/>
-	<Property ID="tattoo_adv_prop_tian_15_0" image="gui/tp2_main/tattoo/tattoo_skill_tian_0.png"/>
-	<Property ID="tattoo_adv_prop_tian_5_1" image="gui/tp2_main/tattoo/tattoo_skill_tian_1.png"/>
-	<Property ID="tattoo_adv_prop_tian_10_1" image="gui/tp2_main/tattoo/tattoo_skill_tian_1.png"/>
-	<Property ID="tattoo_adv_prop_tian_15_1" image="gui/tp2_main/tattoo/tattoo_skill_tian_1.png"/>
-	<Property ID="tattoo_adv_prop_di_5_0" image="gui/tp2_main/tattoo/tattoo_skill_di_0.png"/>
-	<Property ID="tattoo_adv_prop_di_10_0" image="gui/tp2_main/tattoo/tattoo_skill_di_0.png"/>
-	<Property ID="tattoo_adv_prop_di_15_0" image="gui/tp2_main/tattoo/tattoo_skill_di_0.png"/>
-	<Property ID="tattoo_adv_prop_di_5_1" image="gui/tp2_main/tattoo/tattoo_skill_di_1.png"/>
-	<Property ID="tattoo_adv_prop_di_10_1" image="gui/tp2_main/tattoo/tattoo_skill_di_1.png"/>
-	<Property ID="tattoo_adv_prop_di_15_1" image="gui/tp2_main/tattoo/tattoo_skill_di_1.png"/>
-	<Property ID="tattoo_adv_prop_ren_5_0" image="gui/tp2_main/tattoo/tattoo_skill_ren_0.png"/>
-	<Property ID="tattoo_adv_prop_ren_10_0" image="gui/tp2_main/tattoo/tattoo_skill_ren_0.png"/>
-	<Property ID="tattoo_adv_prop_ren_15_0" image="gui/tp2_main/tattoo/tattoo_skill_ren_0.png"/>
-	<Property ID="tattoo_adv_prop_ren_5_1" image="gui/tp2_main/tattoo/tattoo_skill_ren_1.png"/>
-	<Property ID="tattoo_adv_prop_ren_10_1" image="gui/tp2_main/tattoo/tattoo_skill_ren_1.png"/>
-	<Property ID="tattoo_adv_prop_ren_15_1" image="gui/tp2_main/tattoo/tattoo_skill_ren_1.png"/>
-	<!--分享朋友圈-->
-	<Property ID="share_enable" image="gui\tp2_main\system\system_bg_02.png"/>
-	<Property ID="share_disable" image="gui\tp2_main\system\system_bg_02.png"/>
-	<!--聊天-->
-	<Property ID="chat_vip_0" image=""/>
-	<Property ID="chat_vip_1" image="gui\tp2_main\chat\vip_1.png"/>
-	<Property ID="chat_vip_2" image="gui\tp2_main\chat\vip_1.png"/>
-	<Property ID="chat_vip_3" image="gui\tp2_main\chat\vip_1.png"/>
-	<Property ID="chat_vip_4" image="gui\tp2_main\chat\vip_2.png"/>
-	<Property ID="chat_vip_5" image="gui\tp2_main\chat\vip_2.png"/>
-	<Property ID="chat_vip_6" image="gui\tp2_main\chat\vip_2.png"/>
-	<Property ID="chat_vip_7" image="gui\tp2_main\chat\vip_3.png"/>
-	<Property ID="chat_vip_8" image="gui\tp2_main\chat\vip_3.png"/>
-	<Property ID="chat_vip_9" image="gui\tp2_main\chat\vip_3.png"/>
-	<Property ID="chat_vip_10" image="gui\tp2_main\chat\vip_4.png"/>
-	<Property ID="chat_vip_11" image="gui\tp2_main\chat\vip_4.png"/>
-	<Property ID="chat_vip_12" image="gui\tp2_main\chat\vip_4.png"/>
-	<Property ID="chat_vip_13" image="gui\tp2_main\chat\vip_5.png"/>
-	<Property ID="chat_vip_14" image="gui\tp2_main\chat\vip_5.png"/>
-	<Property ID="chat_vip_15" image="gui\tp2_main\chat\vip_5.png"/>
-	<Property ID="chat_self_bg" image="gui/tp2_main/chat/di2.png"/>
-	<Property ID="chat_self_photo_bg" image="gui/tp2_main/chat/hall1.png"/>
-	<Property ID="chat_yuyin" image="gui\tp2_main\chat\yuyintubiao.png"/>
-	<!--符文-->
-	<Property ID="fuwen_inlay_back_1"/>
-	<Property ID="fuwen_inlay_back_2"/>
-	<Property ID="fuwen_inlay_back_3"/>
-	<Property ID="fuwen_inlay_back_4"/>
-	<Property ID="fuwen_inlay_back_5"/>
-	<Property ID="fuwen_inlay_back_6"/>
-	<Property ID="fuwen_inlay_back_7"/>
-	<Property ID="fuwen_bag_15"/>
-	<Property ID="fuwen_bag_24"/>
-	<Property ID="fuwen_bag_45"/>
-	<Property ID="fuwen_bag_46"/>
-	<Property ID="fuwen_bag_35"/>
-	<Property ID="fuwen_bag_17"/>
-	<Property ID="fuwen_bag_25"/>
-	<Property ID="fuwen_bag_36"/>
-	<Property ID="fuwen_compound_succeed" image="gui/tp2_main/tattoo/succeed.png"/>
-	<Property ID="fuwen_compound_failed"/>
-	<Property ID="clone_blank"/>
-	<Property ID="notice_left_0" image="gui/tp2_login/gg_update.png"/>
-	<Property ID="notice_left_1" image="gui/tp2_login/gg_notice.png"/>
-	<Property ID="notice_left_2" image="gui/tp2_login/gg_exercise.png"/>
-	<Property ID="notice_left_3" image="gui/tp2_login/gg_sales.png"/>
-	<Property ID="notice_right_0" image="gui/tp2_login/gg_new.png"/>
-	<Property ID="notice_right_1" image="gui/tp2_login/gg_hot.png"/>
-	<Property ID="gmcc_appraise_kuang" image="gui/tp2_main/blackmarket/bm_8.png"/>
-	<Property ID="gmcc_appraise_gou" image="gui/tp2_main/blackmarket/bm_10.png"/>
-	<!--活动-->
-	<Property ID="huodong_touzi" image=""/>
-	<Property ID="huodong_chidacan"/>
-	<Property ID="huodong_jieri"/>
-	<Property ID="huodong_gold_big" image="gui/common/window/gold_big.jpg"/>
-	<Property ID="huodong_zuanshi"/>
-	<Property ID="huodong_gift_on" image="gui\tp2_main\day_activity\label_act_click.png"/>
-	<Property ID="huodong_gift_off" image="gui\tp2_main\day_activity\label_act_01.png"/>
-	<Property ID="huodong_libao" image="gui\tp2_main\day_activity\active_all.png,922,275,69,69"/>
-	<Property ID="huodong_jinbi" image="gui\common\window\gold_big.jpg"/>
-	<Property ID="sign_in_vip_1" image="gui\tp2_main\shop\v1.png"/>
-	<Property ID="sign_in_vip_2" image="gui\tp2_main\shop\v2.png"/>
-	<Property ID="sign_in_vip_3" image="gui\tp2_main\shop\v3.png"/>
-	<Property ID="sign_in_vip_4" image="gui\tp2_main\shop\v4.png"/>
-	<Property ID="sign_in_vip_5" image="gui\tp2_main\shop\v5.png"/>
-	<Property ID="sign_in_vip_6" image="gui\tp2_main\shop\v6.png"/>
-	<Property ID="sign_in_vip_7" image="gui\tp2_main\shop\v7.png"/>
-	<Property ID="sign_in_vip_8" image="gui\tp2_main\shop\v8.png"/>
-	<Property ID="sign_in_vip_9" image="gui\tp2_main\shop\v9.png"/>
-	<Property ID="sign_in_vip_10" image="gui\tp2_main\shop\v10.png"/>
-	<Property ID="sign_in_vip_11" image="gui\tp2_main\shop\v11.png"/>
-	<Property ID="sign_in_vip_12" image="gui\tp2_main\shop\v12.png"/>
-	<Property ID="sign_in_vip_13" image="gui\tp2_main\shop\v13.png"/>
-	<Property ID="sign_in_vip_14" image="gui\tp2_main\shop\v14.png"/>
-	<Property ID="sign_in_vip_15" image="gui\tp2_main\shop\v15.png"/>
-	<Property ID="limit_activity_0" image="gui\tp2_main\hall\rw_exercise.png"/>
-	<Property ID="limit_activity_1" image="gui\tp2_main\hall\rw_exercise.png"/>
-	<Property ID="limit_activity_2" image="gui\tp2_main\hall\rw_exercise.png"/>
-	<Property ID="limit_activity_3" image="gui\tp2_main\hall\rw_exercise.png"/>
-	<Property ID="limit_activity_4" image="gui\tp2_main\hall\rw_exercise.png"/>
-	<Property ID="limit_activity_5" image="gui\tp2_main\hall\rw_exercise.png"/>
-	<Property ID="limit_activity_7" image="gui\tp2_main\hall\rw_exercise.png"/>
-	<Property ID="limit_activity_8" image="gui\tp2_main\hall\rw_exercise.png"/>
-	<Property ID="limit_activity_10" image="gui\tp2_main\hall\rw_exercise.png"/>
-	<Property ID="limit_activity_11" image="gui\tp2_main\hall\rw_exercise.png"/>
-	<Property ID="limit_activity_12" image="gui\tp2_main\hall\rw_exercise.png"/>
-	<Property ID="limit_activity_13" image="gui\tp2_main\hall\rw_exercise.png"/>
-	<Property ID="limit_activity_14" image="gui\tp2_main\hall\rw_exercise.png"/>
-	<Property ID="limit_activity_15" image="gui\tp2_main\hall\rw_exercise.png"/>
-	<Property ID="limit_activity_16" image="gui\tp2_main\hall\rw_exercise.png"/>
-	<Property ID="limit_activity_17" image="gui\tp2_main\hall\rw_exercise.png"/>
-	<Property ID="limit_activity_18" image="gui\tp2_main\hall\rw_exercise.png"/>
-	<Property ID="limit_activity_19" image="gui\tp2_main\hall\rw_exercise.png"/>
-	<Property ID="limit_activity_22" image="gui\tp2_main\hall\rw_exercise.png"/>
-	<!--W1活动-->
-	<Property ID="w1_huodong_1"/>
-	<Property ID="w1_huodong_2"/>
-	<Property ID="w1_huodong_3"/>
-	<!--战场-->
-	<Property ID="war_phb" image="gui\tp2_common\window\guild_xuanzhongkuang.png"/>
-	<Property ID="war_phb3" image="gui\tp2_common\nine\active_39.png"/>
-	<Property ID="war_phb4" image="gui\tp2_common\window\guild_xuanzhongkuang.png"/>
-	<!--关卡-->
-	<Property ID="paihangbang_ditiao_1" image="gui/tp2_common/nine/bm_background_04.png"/>
-	<Property ID="paihangbang_ditiao_2" image="gui/tp2_common/nine/bm_background_04.png"/>
-	<Property ID="paihangbang_ditiao_3" image="gui/tp2_common/nine/bm_background_04.png"/>
-	<Property ID="paihangbang_ditiao_4" image="gui/tp2_common/nine/bm_background_04.png"/>
-	<!--勇士之路-->
-	<Property ID="yszl_0" image="gui\tp2_main\exercise\yszl01.png"/>
-	<Property ID="yszl_1" image="gui\tp2_main\exercise\yszl02.png"/>
-	<Property ID="yszl_2" image="gui\tp2_main\exercise\yszl03.png"/>
-	<Property ID="yszl_3" image="gui\tp2_main\exercise\yszl04.png"/>
-	<!--夺宝-->
-	<Property ID="duobao_digailv"/>
-	<Property ID="duobao_jiaodigailv"/>
-	<Property ID="duobao_jiaogaogailv"/>
-	<Property ID="duobao_gaogailv"/>
-	<Property ID="qiangduo_shibai" image="gui\tp2_main\war\tiaozhanshibai.png"/>
-	<Property ID="qiangduo_shengli" image="gui\tp2_main\war\shengli.png"/>
-	<Property ID="qiangduo_fanpai_1"/>
-	<Property ID="qiangduo_fanpai_2"/>
-	<Property ID="qiangduo_fanpai_3"/>
-	<Property ID="qiangduo_fanpai_4"/>
-	<Property ID="qiangduo_fanpai_5"/>
-	<Property ID="qiangduo_fanpai_6"/>
-	<Property ID="qiangduo_fanpai_7"/>
-	<Property ID="qiangduo_fanpai_8"/>
-	<Property ID="qiangduo_fanpai_9"/>
-	<Property ID="qiangduo_fanpai_10"/>
-	<Property ID="qiangduo_fanpai_11"/>
-	<Property ID="role_suduxian_jianshi"/>
-	<Property ID="role_suduxian_daozei"/>
-	<Property ID="role_suduxian_xiangmao"/>
-	<Property ID="qiangduo_baozha_1"/>
-	<Property ID="qiangduo_baozha_2"/>
-	<Property ID="qiangduo_baozha_3"/>
-	<!--鼠标点击-->
-	<Property ID="clickicon" image="gui/common/window/clickicon.png"/>
-	<!--公会-->
-	<Property ID="gonghui_1hao" image=""/>
-	<Property ID="gonghui_2hao" image=""/>
-	<Property ID="gonghui_3hao" image=""/>
-	<Property ID="gonghui_nhao" image=""/>
-	<Property ID="gonghui_ssboss_passed" image="gui/tp2_main/guild/guild_killed.png"/>
-	<Property ID="gonghui_ssboss_not_passed" image="gui/tp2_main/guild/guild_proceed.png"/>
-	<Property ID="gonghui_ssboss_color" image="gui/tp2_main/guild/guild_blue.png"/>
-	<Property ID="gonghui_ssboss_black" image="gui/tp2_main/guild/guild_black.png"/>
-	<!--支付-->
-	<Property ID="zhifu_gift_001_o" image="icon/xm2_item/gift_005.jpg"/>
-	<!--宝藏-->
-	<Property ID="treasure_comp_1"/>
-	<Property ID="treasure_comp_2"/>
-	<Property ID="treasure_comp_3"/>
-	<Property ID="treasure_comp_4"/>
-	<Property ID="treasure_comp_5"/>
-	<Property ID="treasure_comp_6"/>
-	<Property ID="treasure_comp_7"/>
-	<Property ID="treasure_comp_8"/>
-	<Property ID="treasure_comp_9"/>
-	<Property ID="treasure_comp_10"/>
-	<Property ID="treasure_comp_11"/>
-	<Property ID="treasure_comp_12"/>
-	<Property ID="treasure_comp_13"/>
-	<Property ID="treasure_comp_14"/>
-	<Property ID="treasure_full_card_bg"/>
-	<Property ID="treasure_color_level_2" image="gui/xm2_main/treasure/lvsekuang.png"/>
-	<Property ID="treasure_color_level_3" image="gui/xm2_main/treasure/lansekuang.png"/>
-	<Property ID="treasure_color_level_4" image="gui/xm2_main/treasure/zisekuang.png"/>
-	<Property ID="treasure_color_level_5" image="gui/xm2_main/treasure/chengsekuang.png"/>
-	<Property ID="treasure_color_level_6" image="gui/xm2_main/treasure/hongsekuang.png"/>
-	<Property ID="treasure_color_level_7"/>
-	<Property ID="treasure_color_level_8"/>
-	<Property ID="treasure_color_xuanzhuan_3" image="gui/xm2_main/treasure/lanseguang.png"/>
-	<Property ID="treasure_color_xuanzhuan_4" image="gui/xm2_main/treasure/ziseguang.png"/>
-	<Property ID="treasure_color_xuanzhuan_5" image="gui/xm2_main/treasure/huangseguang.png"/>
-	<Property ID="treasure_color1_particles2d_3" image="particleeffects_016c"/>
-	<Property ID="treasure_color1_particles2d_4" image="particleeffects_016d"/>
-	<Property ID="treasure_color1_particles2d_5" image="particleeffects_016b"/>
-	<Property ID="treasure_color2_particles2d_3" image="particleeffects_017c"/>
-	<Property ID="treasure_color2_particles2d_4" image="particleeffects_017d"/>
-	<Property ID="treasure_color2_particles2d_5" image="particleeffects_017b"/>
-	<!--限时武神粒子特效-->
-	<Property ID="activity_color1_particles2d_3" image="particleeffects_016f"/>
-	<Property ID="activity_color1_particles2d_4" image="particleeffects_016g"/>
-	<Property ID="activity_color1_particles2d_5" image="particleeffects_016h"/>
-	<Property ID="activity_color2_particles2d_3" image="particleeffects_017f"/>
-	<Property ID="activity_color2_particles2d_4" image="particleeffects_017g"/>
-	<Property ID="activity_color2_particles2d_5" image="particleeffects_017h"/>
-	<!--太极熊猫2主界面头像 正面-->
-	<Property ID="role_npc_base" image="gui/xm2_main/hall/tx_ws1.png"/>
-	<Property ID="role_npc_base1" image="gui\xm2_main\hall\tx_ck1.png"/>
-	<Property ID="role_npc_base2" image="gui\xm2_main\hall\tx_ds1.png"/>
-	<Property ID="role_npc_base3" image="gui\xm2_main\hall\tx_hs1.png"/>
-	<Property ID="role_npc_base4" image="gui\xm2_main\hall\tx_dk1.png"/>
-	<Property ID="role_npc_base5" image="gui\xm2_main\hall\tx_xys1.png"/>
-	<Property ID="role_npc_base6" image="gui\xm2_main\hall\tx_fh1.png"/>
-	<Property ID="role_npc_base7" image="gui\xm2_main\hall\tx_sd1.png"/>
-	<Property ID="role_npc_base8" image="gui\xm2_main\hall\tx_hk1.png"/>
-	<Property ID="role_npc_base9" image="gui\xm2_main\hall\tx_qg2.png"/>
-	<Property ID="role_npc_base10" image="gui\xm2_main\hall\tx_qv1.png"/>
-	<Property ID="role_npc_base11" image="gui\xm2_main\hall\tx_ll1.png"/>
-	<Property ID="role_npc_base12" image="gui\xm2_main\hall\tx_bzjx1.png"/>
-	<Property ID="role_npc_base13" image="gui\xm2_main\hall\tx_wyss1.png"/>
-	<Property ID="role_npc_base14" image="gui\xm2_main\hall\tx_wyjk1.png"/>
-	<Property ID="role_npc_base15" image="gui\xm2_main\hall\tx_ymnw1.png"/>
-	<Property ID="role_npc_base16" image="gui\xm2_main\hall\tx_sqs1.png"/>
-	<Property ID="role_npc_base17" image="gui\xm2_main\hall\tx_ylcz1.png"/>
-	<Property ID="role_npc_base18" image="gui\xm2_main\hall\tx_qtds1.png"/>
-	<Property ID="role_npc_base19" image="gui\xm2_main\hall\tx_yyhx1.png"/>
-	<Property ID="role_npc_base20" image="gui\xm2_main\hall\tx_phfs1.png"/>
-	<Property ID="role_npc_base21" image="gui\xm2_main\hall\tx_fhqs1.png"/>
-	<Property ID="role_npc_base22" image="gui\xm2_main\hall\tx_ymzy1.png"/>
-	<Property ID="role_npc_base23" image="gui\xm2_main\hall\tx_ghjs1.png"/>
-	<Property ID="role_npc_base24" image="gui\xm2_main\hall\tx_swzg1.png"/>
-	<Property ID="role_npc_base25" image="gui\xm2_main\hall\tx_bv1.png"/>
-	<Property ID="role_npc_base26" image="gui\xm2_main\hall\tx_mssgz1.png"/>
-	<Property ID="role_npc_base27" image="gui\xm2_main\hall\tx_zy1.png"/>
-	<Property ID="role_npc_base28" image="gui\xm2_main\hall\tx_sw1.png"/>
-	<Property ID="role_npc_base29" image="gui\xm2_main\hall\tx_qs1.png"/>
-	<!--太极熊猫2主界面头像 反面-->
-	<Property ID="role_npc_base_r" image="gui/xm2_main/hall/tx_ws2.png"/>
-	<Property ID="role_npc_base1_r" image="gui\xm2_main\hall\tx_ck2.png"/>
-	<Property ID="role_npc_base2_r" image="gui\xm2_main\hall\tx_ds2.png"/>
-	<Property ID="role_npc_base3_r" image="gui\xm2_main\hall\tx_hs2.png"/>
-	<Property ID="role_npc_base4_r" image="gui\xm2_main\hall\tx_dk2.png"/>
-	<Property ID="role_npc_base5_r" image="gui\xm2_main\hall\tx_xys2.png"/>
-	<Property ID="role_npc_base6_r" image="gui\xm2_main\hall\tx_fh2.png"/>
-	<Property ID="role_npc_base7_r" image="gui\xm2_main\hall\tx_sd2.png"/>
-	<Property ID="role_npc_base8_r" image="gui\xm2_main\hall\tx_hk2.png"/>
-	<Property ID="role_npc_base9_r" image="gui\xm2_main\hall\tx_qg1.png"/>
-	<Property ID="role_npc_base10_r" image="gui\xm2_main\hall\tx_qv2.png"/>
-	<Property ID="role_npc_base11_r" image="gui\xm2_main\hall\tx_ll2.png"/>
-	<Property ID="role_npc_base12_r" image="gui\xm2_main\hall\tx_bzjx2.png"/>
-	<Property ID="role_npc_base13_r" image="gui\xm2_main\hall\tx_wyss2.png"/>
-	<Property ID="role_npc_base14_r" image="gui\xm2_main\hall\tx_wyjk2.png"/>
-	<Property ID="role_npc_base15_r" image="gui\xm2_main\hall\tx_ymnw2.png"/>
-	<Property ID="role_npc_base16_r" image="gui\xm2_main\hall\tx_sqs2.png"/>
-	<Property ID="role_npc_base17_r" image="gui\xm2_main\hall\tx_ylcz2.png"/>
-	<Property ID="role_npc_base18_r" image="gui\xm2_main\hall\tx_qtds2.png"/>
-	<Property ID="role_npc_base19_r" image="gui\xm2_main\hall\tx_yyhx2.png"/>
-	<Property ID="role_npc_base20_r" image="gui\xm2_main\hall\tx_phfs2.png"/>
-	<Property ID="role_npc_base21_r" image="gui\xm2_main\hall\tx_fhqs2.png"/>
-	<Property ID="role_npc_base22_r" image="gui\xm2_main\hall\tx_ymzy2.png"/>
-	<Property ID="role_npc_base23_r" image="gui\xm2_main\hall\tx_ghjs2.png"/>
-	<Property ID="role_npc_base24_r" image="gui\xm2_main\hall\tx_swzg2.png"/>
-	<Property ID="role_npc_base25_r" image="gui\xm2_main\hall\tx_bv2.png"/>
-	<Property ID="role_npc_base26_r" image="gui\xm2_main\hall\tx_mssgz2.png"/>
-	<Property ID="role_npc_base27_r" image="gui\xm2_main\hall\tx_zy2.png"/>
-	<Property ID="role_npc_base28_r" image="gui\xm2_main\hall\tx_sw2.png"/>
-	<Property ID="role_npc_base29_r" image="gui\xm2_main\hall\tx_qs2.png"/>
-	<!--太极熊猫2抽卡整卡-->
-	<Property ID="zk_role_npc_base"/>
-	<Property ID="zk_role_npc_base1"/>
-	<Property ID="zk_role_npc_base2"/>
-	<Property ID="zk_role_npc_base3"/>
-	<Property ID="zk_role_npc_base4"/>
-	<Property ID="zk_role_npc_base5"/>
-	<Property ID="zk_role_npc_base6"/>
-	<Property ID="zk_role_npc_base7"/>
-	<Property ID="zk_role_npc_base8"/>
-	<Property ID="zk_role_npc_base9"/>
-	<Property ID="zk_role_npc_base10"/>
-	<Property ID="zk_role_npc_base11"/>
-	<Property ID="zk_role_npc_base12" image=""/>
-	<Property ID="zk_role_npc_base13" image=""/>
-	<Property ID="zk_role_npc_base14" image=""/>
-	<!--太极熊猫2阵容设置界面-->
-	<Property ID="tx_role_npc_base" image="gui\xm2_main\hall\tx_ws1.png"/>
-	<Property ID="tx_role_npc_base1" image="gui\xm2_main\hall\tx_ck1.png"/>
-	<Property ID="tx_role_npc_base2" image="gui\xm2_main\hall\tx_ds1.png"/>
-	<Property ID="tx_role_npc_base3" image="gui\xm2_main\hall\tx_hs1.png"/>
-	<Property ID="tx_role_npc_base4" image="gui\xm2_main\hall\tx_dk1.png"/>
-	<Property ID="tx_role_npc_base5" image="gui\xm2_main\hall\tx_xys1.png"/>
-	<Property ID="tx_role_npc_base6" image="gui\xm2_main\hall\tx_fh1.png"/>
-	<Property ID="tx_role_npc_base7" image="gui\xm2_main\hall\tx_sd1.png"/>
-	<Property ID="tx_role_npc_base8" image="gui\xm2_main\hall\tx_hk1.png"/>
-	<Property ID="tx_role_npc_base9" image="gui\xm2_main\hall\tx_qg2.png"/>
-	<Property ID="tx_role_npc_base10" image="gui\xm2_main\hall\tx_qv1.png"/>
-	<Property ID="tx_role_npc_base11" image="gui\xm2_main\hall\tx_ll1.png"/>
-	<Property ID="tx_role_npc_base12" image="gui\xm2_main\hall\tx_bzjx1.png"/>
-	<Property ID="tx_role_npc_base13" image="gui\xm2_main\hall\tx_wyss1.png"/>
-	<Property ID="tx_role_npc_base14" image="gui\xm2_main\hall\tx_wyjk1.png"/>
-	<Property ID="tx_role_npc_base15" image="gui\xm2_main\hall\tx_ymnw1.png"/>
-	<Property ID="tx_role_npc_base16" image="gui\xm2_main\hall\tx_sqs1.png"/>
-	<Property ID="tx_role_npc_base17" image="gui\xm2_main\hall\tx_ylcz1.png"/>
-	<Property ID="tx_role_npc_base18" image="gui\xm2_main\hall\tx_qtds1.png"/>
-	<Property ID="tx_role_npc_base19" image="gui\xm2_main\hall\tx_yyhx1.png"/>
-	<Property ID="tx_role_npc_base20" image="gui\xm2_main\hall\tx_phfs1.png"/>
-	<Property ID="tx_role_npc_base21" image="gui\xm2_main\hall\tx_fhqs1.png"/>
-	<Property ID="tx_role_npc_base22" image="gui\xm2_main\hall\tx_ymzy1.png"/>
-	<Property ID="tx_role_npc_base23" image="gui\xm2_main\hall\tx_ghjs1.png"/>
-	<Property ID="tx_role_npc_base24" image="gui\xm2_main\hall\tx_swzg1.png"/>
-	<Property ID="tx_role_npc_base25" image="gui\xm2_main\hall\tx_bv1.png"/>
-	<Property ID="tx_role_npc_base26" image="gui\xm2_main\hall\tx_mssgz1.png"/>
-	<Property ID="tx_role_npc_base27" image="gui\xm2_main\hall\tx_zy1.png"/>
-	<Property ID="tx_role_npc_base28" image="gui\xm2_main\hall\tx_sw1.png"/>
-	<Property ID="tx_role_npc_base29" image="gui\xm2_main\hall\tx_qs1.png"/>
-	<Property ID="tx_null" image="gui\tp2_main\roles\fetter_4.png"/>
-	<!--太极熊猫2活动输出排行榜-->
-	<Property ID="tx_role_index_1" image="gui\xm2_main\hall\tx_ws1.png"/>
-	<Property ID="tx_role_index_2" image="gui\xm2_main\hall\tx_ck1.png"/>
-	<Property ID="tx_role_index_3" image="gui\xm2_main\hall\tx_ds1.png"/>
-	<Property ID="tx_role_index_4" image="gui\xm2_main\hall\tx_hs1.png"/>
-	<Property ID="tx_role_index_5" image="gui\xm2_main\hall\tx_dk1.png"/>
-	<Property ID="tx_role_index_6" image="gui\xm2_main\hall\tx_xys1.png"/>
-	<Property ID="tx_role_index_7" image="gui\xm2_main\hall\tx_fh1.png"/>
-	<Property ID="tx_role_index_8" image="gui\xm2_main\hall\tx_sd1.png"/>
-	<Property ID="tx_role_index_9" image="gui\xm2_main\hall\tx_hk1.png"/>
-	<Property ID="tx_role_index_10" image="gui\xm2_main\hall\tx_qg2.png"/>
-	<Property ID="tx_role_index_11" image="gui\xm2_main\hall\tx_qv1.png"/>
-	<Property ID="tx_role_index_12" image="gui\xm2_main\hall\tx_ll1.png"/>
-	<Property ID="tx_role_index_13" image="gui\xm2_main\hall\tx_bzjx1.png"/>
-	<Property ID="tx_role_index_14" image="gui\xm2_main\hall\tx_wyss1.png"/>
-	<Property ID="tx_role_index_15" image="gui\xm2_main\hall\tx_wyjk1.png"/>
-	<Property ID="tx_role_index_16" image="gui\xm2_main\hall\tx_ymnw1.png"/>
-	<Property ID="tx_role_index_17" image="gui\xm2_main\hall\tx_sqs1.png"/>
-	<Property ID="tx_role_index_18" image="gui\xm2_main\hall\tx_ylcz1.png"/>
-	<Property ID="tx_role_index_19" image="gui\xm2_main\hall\tx_qtds1.png"/>
-	<Property ID="tx_role_index_20" image="gui\xm2_main\hall\tx_yyhx1.png"/>
-	<Property ID="tx_role_index_21" image="gui\xm2_main\hall\tx_phfs1.png"/>
-	<Property ID="tx_role_index_22" image="gui\xm2_main\hall\tx_fhqs1.png"/>
-	<Property ID="tx_role_index_23" image="gui\xm2_main\hall\tx_ymzy1.png"/>
-	<Property ID="tx_role_index_24" image="gui\xm2_main\hall\tx_ghjs1.png"/>
-	<Property ID="tx_role_index_25" image="gui\xm2_main\hall\tx_swzg1.png"/>
-	<Property ID="tx_role_index_26" image="gui\xm2_main\hall\tx_bv1.png"/>
-	<Property ID="tx_role_index_27" image="gui\xm2_main\hall\tx_mssgz1.png"/>
-	<Property ID="tx_role_index_28" image="gui\xm2_main\hall\tx_zy1.png"/>
-	<Property ID="tx_role_index_29" image="gui\xm2_main\hall\tx_sw1.png"/>
-	<Property ID="tx_role_index_30" image="gui\xm2_main\hall\tx_qs1.png"/>
-	<!--战斗成就-->
-	<Property ID="battle_achieve_1" image="gui/xm2_common/special/liansha.png"/>
-	<Property ID="battle_achieve_2" image="gui/xm2_common/special/jisha.png"/>
-	<Property ID="battle_achieve_3" image="gui/xm2_common/special/combo.png"/>
-	<Property ID="battle_achieve_4" image="gui/xm2_common/special/lianji_01.png"/>
-	<!--太极熊猫2boss战boss头像-->
-	<Property ID="boss_ani_0001"/>
-	<Property ID="boss_ani_0003"/>
-	<Property ID="boss_shu_0001"/>
-	<Property ID="boss_shu_0002"/>
-	<Property ID="boss_shu_0003"/>
-	<Property ID="boss_shu_0005"/>
-	<Property ID="mon_ani_0005"/>
-	<Property ID="mon_ani_0005_a"/>
-	<Property ID="mon_shu_0005"/>
-	<Property ID="mon_shu_0010"/>
-	<Property ID="mon_shu_0020"/>
-	<Property ID="mon_shu_0021"/>
-	<Property ID="mon_shu_0022"/>
-	<Property ID="mon_shu_0023"/>
-	<Property ID="mon_shu_0026"/>
-	<Property ID="mon_shu_0027"/>
-	<Property ID="mon_shu_0028"/>
-	<Property ID="mon_shu_0031"/>
-	<Property ID="1_1_mojun_zs01"/>
-	<Property ID="1_2_lbg_shoulin"/>
-	<Property ID="1_3_dy_boss"/>
-	<Property ID="1_4_vampireb01"/>
-	<Property ID="1_5_vampireb01"/>
-	<Property ID="1_6_jumo_dp01"/>
-	<Property ID="1_7_jumo_dd03"/>
-	<Property ID="1_8_jumo_dp01"/>
-	<Property ID="1_9_boss"/>
-	<!--太极熊猫2主界面 -->
-	<Property ID="pvpstate_0" image="gui\tp2_main\heedbar\attzk.png,380,347,75,41"/>
-	<Property ID="pvpstate_1" image="gui\tp2_main\heedbar\attzk.png,380,388,75,41"/>
-	<Property ID="pvpstate_2" image="gui\tp2_main\heedbar\attzk.png,380,429,75,41"/>
-	<Property ID="pvpstate_3" image="gui\tp2_main\heedbar\attzk.png,380,470,75,41"/>
-	<Property ID="pvpstate_4" image="gui\tp2_main\heedbar\attzk.png,295,429,75,41"/>
-	<Property ID="bag_group" image="gui\tp2_main\hall\bag.png"/>
-	<!--太极熊猫2升阶图像-->
-	<Property ID="sj_role_npc_base" image="gui\xm2_quest\wuseng.jpg"/>
-	<Property ID="sj_role_npc_base1" image="gui\xm2_quest\cike.jpg"/>
-	<Property ID="sj_role_npc_base2" image="gui\xm2_quest\daoshi.jpg"/>
-	<Property ID="sj_role_npc_base3" image="gui\xm2_quest\huanshushi.jpg"/>
-	<Property ID="sj_role_npc_base4" image="gui\xm2_quest\badaoke.jpg"/>
-	<Property ID="sj_role_npc_base5" image="gui\xm2_quest\shunyingshi.jpg"/>
-	<Property ID="sj_role_npc_base6" image="gui\xm2_quest\fenghuang.jpg"/>
-	<Property ID="sj_role_npc_base7" image="gui\xm2_quest\shuangdun.jpg"/>
-	<Property ID="sj_role_npc_base8" image="gui\xm2_quest\hanke.jpg"/>
-	<Property ID="sj_role_npc_base9" image="gui\xm2_quest\qigong.jpg"/>
-	<Property ID="sj_role_npc_base10" image="gui\xm2_quest\youle.jpg"/>
-	<Property ID="sj_role_npc_base11" image="gui\xm2_quest\tianxin.jpg"/>
-	<Property ID="sj_role_npc_base12" image="gui\xm2_quest\jiuxian.jpg"/>
-	<Property ID="sj_role_npc_base13" image="gui\xm2_quest\wenyi.jpg"/>
-	<Property ID="sj_role_npc_base14" image="gui\xm2_quest\jianke.jpg"/>
-	<Property ID="sj_role_npc_base15" image="gui\xm2_quest\yanmie.jpg"/>
-	<Property ID="sj_role_npc_base16" image="gui\xm2_quest\shenqiang.jpg"/>
-	<Property ID="sj_role_npc_base17" image="gui\xm2_quest\chuanzhang.jpg"/>
-	<Property ID="sj_role_npc_base18" image="gui\xm2_quest\wukong.jpg"/>
-	<Property ID="sj_role_npc_base19" image="gui\xm2_quest\huxian.jpg"/>
-	<Property ID="sj_role_npc_base20" image="gui\xm2_quest\saman.jpg"/>
-	<Property ID="sj_role_npc_base21" image="gui\xm2_quest\fuhu.jpg"/>
-	<Property ID="sj_role_npc_base22" image="gui\xm2_quest\emo.jpg"/>
-	<Property ID="sj_role_npc_base23" image="gui\xm2_quest\ghjs.jpg"/>
-	<Property ID="sj_role_npc_base24" image="gui\xm2_quest\ljss.jpg"/>
-	<Property ID="sj_role_npc_base25" image="gui\xm2_quest\bingnv.jpg"/>
-	<Property ID="sj_role_npc_base26" image="gui\xm2_quest\muse.jpg"/>
-	<Property ID="sj_role_npc_base27" image="gui\xm2_quest\zhaoyun.jpg"/>
-	<Property ID="sj_role_npc_base28" image="gui\xm2_quest\shouwang.jpg"/>
-	<Property ID="sj_role_npc_base29" image="gui\xm2_quest\quansheng.jpg"/>
-	<!--太极熊猫2多角色头像品质框-->
-	<Property ID="role_npc+0" image="gui/tp2_main/roles/roles.png,691,0,100,100"/>
-	<Property ID="role_npc+1" image="gui/tp2_main/roles/roles.png,691,0,100,100"/>
-	<Property ID="role_npc+2" image="gui/tp2_main/roles/roles.png,691,0,100,100"/>
-	<Property ID="role_npc+3" image="gui/tp2_main/roles/roles.png,691,0,100,100"/>
-	<Property ID="role_npc+4" image="gui/tp2_main/roles/roles.png,591,0,100,100"/>
-	<Property ID="role_npc+5" image="gui/tp2_main/roles/roles.png,591,0,100,100"/>
-	<Property ID="role_npc+6" image="gui/tp2_main/roles/roles.png,591,0,100,100"/>
-	<Property ID="role_npc+7" image="gui/tp2_main/roles/roles.png,491,0,100,100"/>
-	<Property ID="role_npc+8" image="gui/tp2_main/roles/roles.png,491,0,100,100"/>
-	<Property ID="role_npc+9" image="gui/tp2_main/roles/roles.png,491,0,100,100"/>
-	<Property ID="role_npc+10" image="gui/tp2_main/roles/roles.png,491,0,100,100"/>
-	<Property ID="role_npc+11" image="gui/tp2_main/roles/roles.png,391,0,100,100"/>
-	<Property ID="role_npc+12" image="gui/tp2_main/roles/roles.png,391,0,100,100"/>
-	<Property ID="role_npc+13" image="gui/tp2_main/roles/roles.png,391,0,100,100"/>
-	<Property ID="role_npc+14" image="gui/tp2_main/roles/roles.png,391,0,100,100"/>
-	<Property ID="role_npc+15" image="gui/tp2_main/roles/roles.png,391,0,100,100"/>
-	<Property ID="role_npc+16" image="gui/tp2_main/roles/roles.png,820,390,100,100"/>
-	<Property ID="role_npc+17" image="gui/tp2_main/roles/roles.png,820,390,100,100"/>
-	<Property ID="role_npc+18" image="gui/tp2_main/roles/roles.png,820,390,100,100"/>
-	<Property ID="role_npc+19" image="gui/tp2_main/roles/roles.png,820,390,100,100"/>
-	<Property ID="role_npc+20" image="gui/tp2_main/roles/roles.png,820,390,100,100"/>
-	<!--太极熊猫2角色进阶界面背景图片-->
-	<Property ID="uplevel_role_npc+1" image="gui/tp2_main/roles/uplevel_38.png"/>
-	<Property ID="uplevel_role_npc+2" image="gui/tp2_main/roles/uplevel_38.png"/>
-	<Property ID="uplevel_role_npc+3" image="gui/tp2_main/roles/uplevel_38.png"/>
-	<Property ID="uplevel_role_npc+4" image="gui/tp2_main/roles/uplevel_40.png"/>
-	<Property ID="uplevel_role_npc+5" image="gui/tp2_main/roles/uplevel_40.png"/>
-	<Property ID="uplevel_role_npc+6" image="gui/tp2_main/roles/uplevel_40.png"/>
-	<Property ID="uplevel_role_npc+7" image="gui/tp2_main/roles/uplevel_06.png"/>
-	<Property ID="uplevel_role_npc+8" image="gui/tp2_main/roles/uplevel_06.png"/>
-	<Property ID="uplevel_role_npc+9" image="gui/tp2_main/roles/uplevel_06.png"/>
-	<Property ID="uplevel_role_npc+10" image="gui/tp2_main/roles/uplevel_06.png"/>
-	<Property ID="uplevel_role_npc+11" image="gui/tp2_main/roles/uplevel_08.png"/>
-	<Property ID="uplevel_role_npc+12" image="gui/tp2_main/roles/uplevel_08.png"/>
-	<Property ID="uplevel_role_npc+13" image="gui/tp2_main/roles/uplevel_08.png"/>
-	<Property ID="uplevel_role_npc+14" image="gui/tp2_main/roles/uplevel_08.png"/>
-	<Property ID="uplevel_role_npc+15" image="gui/tp2_main/roles/uplevel_08.png"/>
-	<Property ID="uplevel_role_npc+16" image="gui/tp2_main/roles/uplevel_41.png"/>
-	<Property ID="uplevel_role_npc+17" image="gui/tp2_main/roles/uplevel_41.png"/>
-	<Property ID="uplevel_role_npc+18" image="gui/tp2_main/roles/uplevel_41.png"/>
-	<Property ID="uplevel_role_npc+19" image="gui/tp2_main/roles/uplevel_41.png"/>
-	<Property ID="uplevel_role_npc+20" image="gui/tp2_main/roles/uplevel_41.png"/>
-	<!--太极熊猫2升阶动画-->
-	<Property ID="steplevel_effect_1" image="form_role_npc_dianxuanlv"/>
-	<Property ID="steplevel_effect_2" image="form_role_npc_dianxuanlv"/>
-	<Property ID="steplevel_effect_3" image="form_role_npc_dianxuanlv"/>
-	<Property ID="steplevel_effect_4" image="form_role_npc_dianxuanlan"/>
-	<Property ID="steplevel_effect_5" image="form_role_npc_dianxuanlan"/>
-	<Property ID="steplevel_effect_6" image="form_role_npc_dianxuanlan"/>
-	<Property ID="steplevel_effect_7" image="form_role_npc_dianxuanzi"/>
-	<Property ID="steplevel_effect_8" image="form_role_npc_dianxuanzi"/>
-	<Property ID="steplevel_effect_9" image="form_role_npc_dianxuanzi"/>
-	<Property ID="steplevel_effect_10" image="form_role_npc_dianxuanch"/>
-	<Property ID="steplevel_effect_11" image="form_role_npc_dianxuanch"/>
-	<Property ID="steplevel_effect_12" image="form_role_npc_dianxuanch"/>
-	<!--时装-->
-	<Property ID="fashion_photo_1_1"/>
-	<Property ID="fashion_photo_1_2"/>
-	<Property ID="fashion_photo_2_1"/>
-	<Property ID="fashion_photo_2_2"/>
-	<Property ID="fashion_photo_3_1"/>
-	<Property ID="fashion_photo_3_2"/>
-	<Property ID="fashion_photo_4_1"/>
-	<Property ID="fashion_photo_4_2"/>
-	<!--网络状态图
-	<Property ID="net_status_1" image="gui/tp2_main/hall/pin_4.png"/>
-	<Property ID="net_status_2" image="gui/tp2_main/hall/pin_3.png"/>
-	<Property ID="net_status_3" image="gui/tp2_main/hall/pin_2.png"/>
-	<Property ID="net_status_4" image="gui/tp2_main/hall/pin_1.png"/>
-	<Property ID="net_status_5" image="gui/tp2_main/hall/pin_0.png"/>
--->
-	<!--可装备图-->
-	<Property ID="can_trade" image="gui/xm2_use/bag/trade.png"/>
-	<!--可提升(强化精炼)图-->
-	<Property ID="can_promote" image="gui\tp2_common\window\hongdian.png"/>
+	<Property ID="skill_bar_cover_image_1" image="gui/dragon_main/mainicon/skill_uncloc_3.png"/>
+	<Property ID="skill_bar_cover_image_2" image="gui/dragon_main/mainicon/skill_uncloc_3.png"/>
+	<Property ID="skill_bar_cover_image_3" image="gui/dragon_main/mainicon/skill_uncloc_7.png"/>
+	<Property ID="skill_bar_cover_image_4" image="gui/dragon_main/mainicon/skill_uncloc_10.png"/>
+	<Property ID="skill_bar_cooling" image="gui/dragon_main/mainicon/di.png"/>
+	<Property ID="skill_bar_cooling_image_4" image="gui/dragon_main/mainicon/cd_icon.png"/>
+	<Property ID="skill_bar_ani_cooling" image=""/>
+	<Property ID="skill_bar_guangxiao" image="gui/dragon_main/mainicon/guangxiao.png"/>
+	<Property ID="yao_cooling_image" image="gui/dragon_main/new_common/back/yaocd.png"/>
+	<!--buffer图标-->
+	<Property ID="buffer_bar_cooling" image="icon/buff/zhezhao.png"/>
+	<!--活跃度-->
+	<Property ID="daily_clone" image="gui/dragon_main/activity/fuben_gn.png"/>
+	<Property ID="daily_battle" image="gui/dragon_main/activity/zhanchang_gn.png"/>
+	<Property ID="daily_arena" image="gui/dragon_main/activity/jinjichang_gn.png"/>
+	<Property ID="daily_task" image="gui/dragon_main/activity/richang_gn.png"/>
+	<Property ID="daily_monster" image="gui/dragon_main/activity/shuaguai_gn.png"/>
+	<Property ID="daily_worldboss" image="gui/dragon_main/activity/shijieboss_gn.png"/>
+	<Property ID="daily_killenemyplayer" image="gui/dragon_main/activity/cishadifang_gn.png"/>
+	<Property ID="daily_hunt" image="gui/dragon_main/activity/shoulie_gn.png"/>
+	<Property ID="daily_monsterassault" image="gui/dragon_main/activity/guaiwugongchen_gn.png"/>
+	<Property ID="daily_guildbuild" image="gui/dragon_main/activity/juanxian_gn.png"/>
+	<Property ID="daily_strengthequip" image="gui/dragon_main/activity/zhuangbeiqh_gn.png"/>
+	<Property ID="daily_worship" image="gui/dragon_main/activity/mobai_gn.png"/>
+	<Property ID="daily_friendshare" image="gui/dragon_main/activity/fenxiang_gn.png"/>
+	<Property ID="daily_expect" image="gui/dragon_main/activity/jinqingqidai_gn.png"/>
+	<Property ID="daily_effect" image="gui/dragon_main/activity/jingdutiaotou.png"/>
+	<Property ID="daily_camptask" image="gui/dragon_main/activity/daily_camptask.png"/>
+	<Property ID="daily_guildpray" image="gui/dragon_main/activity/guildpray.png"/>
+	<Property ID="daily_dailyclone" image="gui/dragon_main/activity/dailyclone.png"/>
+	<Property ID="daily_roomhunt" image="gui/dragon_main/activity/roomhunt.png"/>
+	<Property ID="daily_sweep" image="gui/dragon_main/activity/sweep.png"/>
+	<Property ID="daily_open_10" image="gui/dragon_main/activity/box_bronze_2.png"/>
+	<Property ID="daily_open_30" image="gui/dragon_main/activity/box_bronze_2.png"/>
+	<Property ID="daily_open_50" image="gui/dragon_main/activity/box_silver_2.png"/>
+	<Property ID="daily_open_80" image="gui/dragon_main/activity/box_silver_2.png"/>
+	<Property ID="daily_open_120" image="gui/dragon_main/activity/box_gold_2.png"/>
+	<Property ID="weekly_open_500" image="gui/dragon_main/activity/hyd_dbx3_k.png"/>
+	<Property ID="weekly_open_700" image="gui/dragon_main/activity/hyd_dbx_k.png"/>
+	<Property ID="weekly_open_500" image="gui/dragon_main/activity/box_gold_2.png"/>
+	<!--寻宝宝箱-->
+	<Property ID="tre_box_open_1" image="gui/dragon_main/activity/box_bronze_2.png"/>
+	<Property ID="tre_box_open_2" image="gui/dragon_main/activity/box_bronze_2.png"/>
+	<Property ID="tre_box_open_3" image="gui/dragon_main/activity/box_silver_2.png"/>
+	<Property ID="tre_box_open_4" image="gui/dragon_main/activity/box_silver_2.png"/>
+	<Property ID="tre_box_open_5" image="gui/dragon_main/activity/box_gold_2.png"/>
+	<Property ID="tre_box_gather" image="gui/dragon_main/quest/main_dongzuo_caiji.png"/>
+	
+	<!--boss血条背景图片-->
+	<Property ID="boss_hp_image_0" image="gui/dragon_main/npc_blood/bossxt_hong.png"/>
+	<Property ID="boss_hp_image_1" image="gui/dragon_main/npc_blood/bossxt_lan.png"/>
+	<Property ID="boss_hp_image_2" image="gui/dragon_main/npc_blood/bossxt_zi.png"/>
+	<Property ID="boss_hp_image_3" image="gui/dragon_main/npc_blood/bossxt_pinhong.png"/>
+	<Property ID="boss_hp_image_4" image="gui/dragon_main/npc_blood/bossxt_cheng.png"/>
+	<Property ID="boss_hp_image_5" image="gui/dragon_main/npc_blood/bossxt_qing.png"/>
+	<Property ID="boss_hp_image_6" image="gui/dragon_main/npc_blood/bossxt_huang.png"/>
+	<!--战斗力表现-->
+	<Property ID="fight_power_1" image="gui/dragon_main/mainfunction/zhandoudengji/1.png"/>
+	<Property ID="fight_power_2" image="gui/dragon_main/mainfunction/zhandoudengji/2.png"/>
+	<Property ID="fight_power_3" image="gui/dragon_main/mainfunction/zhandoudengji/3.png"/>
+	<Property ID="fight_power_4" image="gui/dragon_main/mainfunction/zhandoudengji/4.png"/>
+	<Property ID="fight_power_5" image="gui/dragon_main/mainfunction/zhandoudengji/5.png"/>
+	<Property ID="fight_power_6" image="gui/dragon_main/mainfunction/zhandoudengji/6.png"/>
+	<Property ID="fight_power_7" image="gui/dragon_main/mainfunction/zhandoudengji/7.png"/>
+	<Property ID="fight_power_8" image="gui/dragon_main/mainfunction/zhandoudengji/8.png"/>
+	<Property ID="fight_power_9" image="gui/dragon_main/mainfunction/zhandoudengji/9.png"/>
+	<Property ID="fight_power_0" image="gui/dragon_main/mainfunction/zhandoudengji/0.png"/>
+	<!--左上角战斗等级表现-->
+	<Property ID="fight_level_1" image="gui/dragon_main/mainfunction/zhandoudengji/11.png"/>
+	<Property ID="fight_level_2" image="gui/dragon_main/mainfunction/zhandoudengji/12.png"/>
+	<Property ID="fight_level_3" image="gui/dragon_main/mainfunction/zhandoudengji/13.png"/>
+	<Property ID="fight_level_4" image="gui/dragon_main/mainfunction/zhandoudengji/14.png"/>
+	<Property ID="fight_level_5" image="gui/dragon_main/mainfunction/zhandoudengji/15.png"/>
+	<Property ID="fight_level_6" image="gui/dragon_main/mainfunction/zhandoudengji/16.png"/>
+	<Property ID="fight_level_7" image="gui/dragon_main/mainfunction/zhandoudengji/17.png"/>
+	<Property ID="fight_level_8" image="gui/dragon_main/mainfunction/zhandoudengji/18.png"/>
+	<Property ID="fight_level_9" image="gui/dragon_main/mainfunction/zhandoudengji/19.png"/>
+	<Property ID="fight_level_0" image="gui/dragon_main/mainfunction/zhandoudengji/10.png"/>
+	<Property ID="fight_level" image="gui/dragon_main/mainfunction/zhandoudengji/power.png"/>
+	<!--属性表现-属性增加-->
+	<Property ID="ui_prop_Str_change" image="gui/dragon_main/mainfunction/shuxingbianhua/11.png"/>
+	<Property ID="ui_prop_Dex_change" image="gui/dragon_main/mainfunction/shuxingbianhua/12.png"/>
+	<Property ID="ui_prop_Int_change" image="gui/dragon_main/mainfunction/shuxingbianhua/13.png"/>
+	<Property ID="ui_prop_Con_change" image="gui/dragon_main/mainfunction/shuxingbianhua/14.png"/>
+	<Property ID="ui_prop_Ten_change" image="gui/dragon_main/mainfunction/shuxingbianhua/15.png"/>
+	<Property ID="ui_prop_MaxHP_change" image="gui/dragon_main/mainfunction/shuxingbianhua/16.png"/>
+	<Property ID="ui_prop_MaxMP_change" image="gui/dragon_main/mainfunction/shuxingbianhua/17.png"/>
+	<Property ID="ui_prop_Atk_change" image="gui/dragon_main/mainfunction/shuxingbianhua/18.png"/>
+	<Property ID="ui_prop_Def_change" image="gui/dragon_main/mainfunction/shuxingbianhua/19.png"/>
+	<Property ID="ui_prop_Hit_change" image="gui/dragon_main/mainfunction/shuxingbianhua/21.png"/>
+	<Property ID="ui_prop_Miss_change" image="gui/dragon_main/mainfunction/shuxingbianhua/20.png"/>
+	<Property ID="ui_prop_Crit_change" image="gui/dragon_main/mainfunction/shuxingbianhua/23.png"/>
+	<Property ID="ui_prop_Toug_change" image="gui/dragon_main/mainfunction/shuxingbianhua/22.png"/>
+	<Property ID="ui_prop_CritDam_change" image="gui/dragon_main/mainfunction/shuxingbianhua/25.png"/>
+	<Property ID="ui_prop_TougDam_change" image="gui/dragon_main/mainfunction/shuxingbianhua/24.png"/>
+	<Property ID="ui_prop_BlockValue_change" image="gui/dragon_main/mainfunction/shuxingbianhua/32.png"/>
+	<Property ID="ui_prop_HPReg_change" image="gui/dragon_main/mainfunction/shuxingbianhua/27.png"/>
+	<Property ID="ui_prop_MPReg_change" image="gui/dragon_main/mainfunction/shuxingbianhua/28.png"/>
+	<Property ID="ui_prop_RealDam_change" image="gui/dragon_main/mainfunction/shuxingbianhua/26.png"/>
+	<Property ID="ui_prop_DamIncrease_change" image="gui/dragon_main/mainfunction/shuxingbianhua/30.png"/>
+	<Property ID="ui_prop_DamDecrease_change" image="gui/dragon_main/mainfunction/shuxingbianhua/31.png"/>
+	<Property ID="ui_attribute_up" image="gui/dragon_main/mainfunction/shuxingbianhua/34.png"/>
+	<Property ID="ui_attribute_down" image="gui/dragon_main/mainfunction/shuxingbianhua/33.png"/>
+	<Property ID="ui_attribute_11" image="gui/dragon_main/mainfunction/shuxingbianhua/35.png"/>
+	<Property ID="ui_attribute_12" image="gui/dragon_main/mainfunction/shuxingbianhua/36.png"/>
+	<Property ID="ui_attribute_1" image="gui/dragon_main/mainfunction/shuxingbianhua/2.png"/>
+	<Property ID="ui_attribute_2" image="gui/dragon_main/mainfunction/shuxingbianhua/3.png"/>
+	<Property ID="ui_attribute_3" image="gui/dragon_main/mainfunction/shuxingbianhua/4.png"/>
+	<Property ID="ui_attribute_4" image="gui/dragon_main/mainfunction/shuxingbianhua/5.png"/>
+	<Property ID="ui_attribute_5" image="gui/dragon_main/mainfunction/shuxingbianhua/6.png"/>
+	<Property ID="ui_attribute_6" image="gui/dragon_main/mainfunction/shuxingbianhua/7.png"/>
+	<Property ID="ui_attribute_7" image="gui/dragon_main/mainfunction/shuxingbianhua/8.png"/>
+	<Property ID="ui_attribute_8" image="gui/dragon_main/mainfunction/shuxingbianhua/9.png"/>
+	<Property ID="ui_attribute_9" image="gui/dragon_main/mainfunction/shuxingbianhua/10.png"/>
+	<Property ID="ui_attribute_0" image="gui/dragon_main/mainfunction/shuxingbianhua/1.png"/>
+	<!--属性表现-属性减少-->
+	<Property ID="ui_prop_Str_change_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/11.png"/>
+	<Property ID="ui_prop_Dex_change_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/12.png"/>
+	<Property ID="ui_prop_Int_change_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/13.png"/>
+	<Property ID="ui_prop_Con_change_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/14.png"/>
+	<Property ID="ui_prop_Ten_change_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/15.png"/>
+	<Property ID="ui_prop_MaxHP_change_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/16.png"/>
+	<Property ID="ui_prop_MaxMP_change_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/17.png"/>
+	<Property ID="ui_prop_Atk_change_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/18.png"/>
+	<Property ID="ui_prop_Def_change_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/19.png"/>
+	<Property ID="ui_prop_Hit_change_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/21.png"/>
+	<Property ID="ui_prop_Miss_change_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/20.png"/>
+	<Property ID="ui_prop_Crit_change_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/23.png"/>
+	<Property ID="ui_prop_Toug_change_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/22.png"/>
+	<Property ID="ui_prop_CritDam_change_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/25.png"/>
+	<Property ID="ui_prop_TougDam_change_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/24.png"/>
+	<Property ID="ui_prop_BlockValue_change_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/32.png"/>
+	<Property ID="ui_prop_HPReg_change_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/27.png"/>
+	<Property ID="ui_prop_MPReg_change_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/28.png"/>
+	<Property ID="ui_prop_RealDam_change_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/26.png"/>
+	<Property ID="ui_prop_DamIncrease_change_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/30.png"/>
+	<Property ID="ui_prop_DamDecrease_change_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/31.png"/>
+	<Property ID="ui_attribute_up_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/34.png"/>
+	<Property ID="ui_attribute_down_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/33.png"/>
+	<Property ID="ui_attribute_11_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/35.png"/>
+	<Property ID="ui_attribute_12_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/36.png"/>
+	<Property ID="ui_attribute_1_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/2.png"/>
+	<Property ID="ui_attribute_2_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/3.png"/>
+	<Property ID="ui_attribute_3_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/4.png"/>
+	<Property ID="ui_attribute_4_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/5.png"/>
+	<Property ID="ui_attribute_5_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/6.png"/>
+	<Property ID="ui_attribute_6_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/7.png"/>
+	<Property ID="ui_attribute_7_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/8.png"/>
+	<Property ID="ui_attribute_8_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/9.png"/>
+	<Property ID="ui_attribute_9_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/10.png"/>
+	<Property ID="ui_attribute_0_down" image="gui/dragon_main/mainfunction/shuxingbianhua_down/1.png"/>
+	<!--战役按钮-->
+	<Property ID="building_1" image="gui/dragon_main/mainfunction/zhanyi/shuijingta_icon.png"/>
+	<Property ID="building_2" image="gui/dragon_main/mainfunction/zhanyi/daocaoren_icon.png"/>
+	<Property ID="building_3" image="gui/dragon_main/mainfunction/zhanyi/mnjijia_icon.png"/>
+	<!--物品类型角标-->
+	<Property ID="item_type_22" image="gui/dragon_main/mainfunction/bag/suipian_1.png"/>
+	<Property ID="item_type_57" image="gui/dragon_main/mainfunction/bag/hunpo.png"/>
 	<!--交易行-->
-	<Property ID="ui_trade0101" image="icon\xm2_item\fushi_01.jpg"/>
-	<Property ID="ui_trade0102" image="icon\xm2_item\fushi_02.jpg"/>
-	<Property ID="ui_trade0201" image="icon\xm2_tattoo\tattoo_center_4_A1.png"/>
-	<Property ID="ui_trade0202" image="icon\xm2_tattoo\tattoo_center_4_A2.png"/>
-	<Property ID="ui_trade0203" image="icon\xm2_tattoo\tattoo_center_4_B1.png"/>
-	<Property ID="ui_trade0204" image="icon\xm2_tattoo\tattoo_center_4_B2.png"/>
-	<Property ID="ui_trade0205" image="icon\xm2_tattoo\tattoo_center_4_C1.png"/>
-	<Property ID="ui_trade0206" image="icon\xm2_tattoo\tattoo_center_4_C2.png"/>
-	<Property ID="ui_trade0207" image="icon\xm2_tattoo\tattoo_center_4_D1.png"/>
-	<Property ID="ui_trade0208" image="icon\xm2_tattoo\tattoo_center_4_D2.png"/>
-	<Property ID="ui_trade0209" image="icon\xm2_tattoo\tattoo_center_4_E1.png"/>
-	<Property ID="ui_trade0210" image="icon\xm2_tattoo\tattoo_center_4_E2.png"/>
-	<Property ID="ui_trade0211" image="icon\xm2_tattoo\tattoo_center_4_F1.png"/>
-	<Property ID="ui_trade0212" image="icon\xm2_tattoo\tattoo_center_4_F2.png"/>
-	<Property ID="ui_trade0301" image="icon\xm2_item\fbsp.jpg"/>
-	<Property ID="ui_trade0302" image="icon\xm2_item\Talisman_01.jpg"/>
-	<Property ID="ui_trade0303" image="icon\xm2_item\Talisman_02.jpg"/>
-	<Property ID="ui_trade0304" image="icon\xm2_item\Talisman_03.jpg"/>
-	<Property ID="ui_trade0305" image="icon\xm2_item\Talisman_04.jpg"/>
-	<Property ID="ui_trade0306" image="icon\xm2_item\Talisman_05.jpg"/>
-	<Property ID="ui_trade0307" image="icon\xm2_item\Talisman_06.jpg"/>
-	<Property ID="ui_trade0308" image="icon\xm2_item\Talisman_07.jpg"/>
-	<Property ID="ui_trade0309" image="icon\xm2_item\Talisman_08.jpg"/>
-	<Property ID="ui_trade0310" image="icon\xm2_item\Talisman_09.jpg"/>
-	<Property ID="ui_trade0311" image="icon\xm2_item\Talisman_10.jpg"/>
-	<Property ID="ui_trade0312" image="icon\xm2_item\Talisman_11.jpg"/>
-	<Property ID="ui_trade0313" image="icon\xm2_item\Talisman_12.jpg"/>
-	<Property ID="ui_trade0314" image="icon\xm2_item\Talisman_13.jpg"/>
-	<Property ID="ui_trade0315" image="icon\xm2_item\Talisman_14.jpg"/>
-	<Property ID="ui_trade0316" image="icon\xm2_item\Talisman_15.jpg"/>
-	<Property ID="ui_trade0317" image="icon\xm2_item\Talisman_16.jpg"/>
-	<Property ID="ui_trade0318" image="icon\xm2_item\Talisman_17.jpg"/>
-	<Property ID="ui_trade0319" image="icon\xm2_item\Talisman_18.jpg"/>
-	<Property ID="ui_trade0320" image="icon\xm2_item\Talisman_19.jpg"/>
-	<Property ID="ui_trade0321" image="icon\xm2_item\Talisman_20.jpg"/>
-	<Property ID="ui_trade0322" image="icon\xm2_item\Talisman_21.jpg"/>
-	<Property ID="ui_trade0323" image="icon\xm2_item\Talisman_22.jpg"/>
-	<Property ID="ui_trade0324" image="icon\xm2_item\Talisman_23.jpg"/>
-	<Property ID="ui_trade0325" image="icon\xm2_item\Talisman_24.jpg"/>
-	<Property ID="ui_trade0326" image="icon\xm2_item\Talisman_25.jpg"/>
-	<Property ID="ui_trade0327" image="icon\xm2_item\Talisman_26.jpg"/>
-	<Property ID="ui_trade0328" image="icon\xm2_item\Talisman_27.jpg"/>
-	<Property ID="ui_trade0329" image="icon\xm2_item\Talisman_28.jpg"/>
-	<Property ID="ui_trade0330" image="icon\xm2_item\Talisman_29.jpg"/>
-	<Property ID="ui_trade0331" image="icon\xm2_item\Talisman_30.jpg"/>
-	<Property ID="ui_trade0401" image="icon\xm2_item\sp_hzwl01.jpg"/>
-	<Property ID="ui_trade0402" image="icon\xm2_item\sp_hzfs02.jpg"/>
-	<Property ID="ui_trade0403" image="icon\xm2_equip\weapon\weapon_40_004.jpg"/>
-	<Property ID="ui_trade0404" image="icon\xm2_equip\weapon\weapon_40_001.jpg"/>
-	<Property ID="ui_trade0405" image="icon\xm2_equip\weapon\weapon_40_005.jpg"/>
-	<Property ID="ui_trade0406" image="icon\xm2_equip\weapon\weapon_40_002.jpg"/>
-	<Property ID="ui_trade0407" image="icon\xm2_equip\weapon\weapon_40_006.jpg"/>
-	<Property ID="ui_trade0408" image="icon\xm2_equip\weapon\weapon_40_003.jpg"/>
-	<Property ID="ui_trade0409" image="icon\xm2_equip\ring\ring_40_004.jpg"/>
-	<Property ID="ui_trade0410" image="icon\xm2_equip\ring\ring_40_001.jpg"/>
-	<Property ID="ui_trade0411" image="icon\xm2_equip\ring\ring_40_005.jpg"/>
-	<Property ID="ui_trade0412" image="icon\xm2_equip\ring\ring_40_002.jpg"/>
-	<Property ID="ui_trade0413" image="icon\xm2_equip\ring\ring_40_006.jpg"/>
-	<Property ID="ui_trade0414" image="icon\xm2_equip\ring\ring_40_003.jpg"/>
-	<Property ID="ui_trade0415" image="icon\xm2_equip\bangle\bangle_40_004.jpg"/>
-	<Property ID="ui_trade0416" image="icon\xm2_equip\bangle\bangle_40_001.jpg"/>
-	<Property ID="ui_trade0417" image="icon\xm2_equip\bangle\bangle_40_005.jpg"/>
-	<Property ID="ui_trade0418" image="icon\xm2_equip\bangle\bangle_40_002.jpg"/>
-	<Property ID="ui_trade0419" image="icon\xm2_equip\bangle\bangle_40_006.jpg"/>
-	<Property ID="ui_trade0420" image="icon\xm2_equip\bangle\bangle_40_003.jpg"/>
-	<Property ID="ui_trade0421" image="icon\xm2_equip\helmet\helmet_40_004.jpg"/>
-	<Property ID="ui_trade0422" image="icon\xm2_equip\helmet\helmet_40_001.jpg"/>
-	<Property ID="ui_trade0423" image="icon\xm2_equip\helmet\helmet_40_005.jpg"/>
-	<Property ID="ui_trade0424" image="icon\xm2_equip\helmet\helmet_40_002.jpg"/>
-	<Property ID="ui_trade0425" image="icon\xm2_equip\helmet\helmet_40_006.jpg"/>
-	<Property ID="ui_trade0426" image="icon\xm2_equip\helmet\helmet_40_003.jpg"/>
-	<Property ID="ui_trade0427" image="icon\xm2_equip\necklace\necklace_40_004.jpg"/>
-	<Property ID="ui_trade0428" image="icon\xm2_equip\necklace\necklace_40_001.jpg"/>
-	<Property ID="ui_trade0429" image="icon\xm2_equip\necklace\necklace_40_005.jpg"/>
-	<Property ID="ui_trade0430" image="icon\xm2_equip\necklace\necklace_40_002.jpg"/>
-	<Property ID="ui_trade0431" image="icon\xm2_equip\necklace\necklace_40_006.jpg"/>
-	<Property ID="ui_trade0432" image="icon\xm2_equip\necklace\necklace_40_003.jpg"/>
-	<Property ID="ui_trade0433" image="icon\xm2_equip\shoes\shoes_40_004.jpg"/>
-	<Property ID="ui_trade0434" image="icon\xm2_equip\shoes\shoes_40_001.jpg"/>
-	<Property ID="ui_trade0435" image="icon\xm2_equip\shoes\shoes_40_005.jpg"/>
-	<Property ID="ui_trade0436" image="icon\xm2_equip\shoes\shoes_40_002.jpg"/>
-	<Property ID="ui_trade0437" image="icon\xm2_equip\shoes\shoes_40_006.jpg"/>
-	<Property ID="ui_trade0438" image="icon\xm2_equip\shoes\shoes_40_003.jpg"/>
-	<Property ID="ui_trade0501" image="icon\xm2_item\rn_28.jpg"/>
-	<Property ID="ui_trade0601" image="icon\xm2_item\guanghuiyaoshui.jpg"/>
-	<Property ID="ui_trade0602" image="icon\xm2_item\shengmingyaoshui.jpg"/>
-	<Property ID="ui_trade0701" image="icon\xm2_item\mount_horse_004.jpg"/>
-	<Property ID="ui_trade0702" image="icon\xm2_item\mount_horse_005.jpg"/>
-	<Property ID="ui_trade0801" image="icon\xm2_item\Item_sjdj01.jpg"/>
-	<Property ID="ui_trade0802" image="icon\xm2_item\Item_sjdj02.jpg"/>
-	<Property ID="ui_trade0803" image="icon\xm2_item\Item_sjdj03.jpg"/>
-	<Property ID="ui_trade0804" image="icon\xm2_item\Item_sjdj04.jpg"/>
-	<Property ID="ui_trade0805" image="icon\xm2_item\Item_sjdj05.jpg"/>
-	<Property ID="ui_trade0806" image="icon\xm2_item\Item_sjxz01.jpg"/>
-	<Property ID="ui_trade0807" image="icon\xm2_item\Item_sjxz02.jpg"/>
-	<Property ID="ui_trade0808" image="icon\xm2_item\Item_sjxz03.jpg"/>
-	<Property ID="ui_trade0809" image="icon\xm2_item\Item_sjxz04.jpg"/>
-	<Property ID="ui_trade0810" image="icon\xm2_item\Item_sjxz05.jpg"/>
-	<Property ID="ui_trade0811" image="icon\xm2_item\Item_sjxz06.jpg"/>
-	<Property ID="ui_trade0812" image="icon\xm2_item\Item_sjxz07.jpg"/>
-	<Property ID="ui_trade0813" image="icon\xm2_item\Item_sjxz08.jpg"/>
-	<Property ID="ui_trade0814" image="icon\xm2_item\Item_sjxz09.jpg"/>
-	<Property ID="ui_trade0815" image="icon\xm2_item\Item_sjxz10.jpg"/>
-	<Property ID="ui_trade0816" image="icon\xm2_item\Item_sjxz11.jpg"/>
-	<Property ID="ui_trade0817" image="icon\xm2_item\Item_sjxz12.jpg"/>
-	<Property ID="ui_trade0703" image="icon\xm2_item\mount_phoenix_001.jpg"/>
-	<Property ID="ui_trade0103" image="icon\xm2_item\tattoo_skillT.jpg"/>
-	<Property ID="ui_trade0104" image="icon\xm2_item\tattoo_skillD.jpg"/>
-	<Property ID="ui_trade0105" image="icon\xm2_item\tattoo_skillR.jpg"/>
-	<Property ID="ui_trade0704" image="icon\xm2_item\mount_ship_001.jpg"/>
-	<Property ID="ui_trade0705" image="icon\xm2_item\mount_dragon_002.jpg"/>
-	<Property ID="ui_trade0706" image="icon\xm2_item\mount_horse_002.jpg"/>
-	<Property ID="ui_trade0707" image="icon\xm2_item\mount_rabbit_001.jpg"/>
-	<Property ID="ui_trade0708" image="icon\xm2_item\mount_rabbit_002.jpg"/>
-	<Property ID="ui_trade0901" image="icon\xm2_item\pf02.jpg"/>
-	<Property ID="ui_trade0902" image="icon\xm2_item\pf01.jpg"/>
-	<!--运镖界面  刷新镖车  货币图片-->
-	<Property ID="transport_cargo_money_1" image="gui\xm2_main\hall\jingbi.png"/>
-	<Property ID="transport_cargo_money_2" image="gui\xm2_main\hall\zhuanshi_bang.png"/>
-	<Property ID="transport_cargo_money_3" image="gui\xm2_main\hall\zhuanshi_bang.png"/>
-	<!--运镖界面  刷新镖车  货币图片 end-->
-	<!--活动界面绑钻图标-->
-	<Property ID="diamond_binding" image="icon/xm2_item/bangzuan.jpg"/>
-	<!--副本战斗界面BOSS血条-->
-	<Property ID="boss_hp_stage_0" image="gui\tp2_main\boss\hong.png"/>
-	<Property ID="boss_hp_stage_1" image="gui\tp2_main\boss\cheng.png"/>
-	<Property ID="boss_hp_stage_2" image="gui\tp2_main\boss\huang.png"/>
-	<Property ID="boss_hp_stage_3" image="gui\tp2_main\boss\zi.png"/>
-	<Property ID="boss_hp_stage_4" image="gui\tp2_main\boss\lv.png"/>
-	<Property ID="boss_hp_stage_5" image="gui\tp2_main\boss\hong.png"/>
-	<Property ID="boss_hp_stage_6" image="gui\tp2_main\boss\cheng.png"/>
-	<Property ID="boss_hp_stage_7" image="gui\tp2_main\boss\huang.png"/>
-	<Property ID="boss_hp_stage_8" image="gui\tp2_main\boss\zi.png"/>
-	<Property ID="boss_hp_stage_9" image="gui\tp2_main\boss\lv.png"/>
-	<Property ID="boss_hp_stage_10" image="gui\tp2_main\boss\hong.png"/>
-	<Property ID="boss_hp_stage_11" image="gui\tp2_main\boss\cheng.png"/>
-	<Property ID="boss_hp_stage_12" image="gui\tp2_main\boss\huang.png"/>
-	<Property ID="boss_hp_stage_13" image="gui\tp2_main\boss\zi.png"/>
-	<Property ID="boss_hp_stage_14" image="gui\tp2_main\boss\lv.png"/>
-	<Property ID="boss_hp_stage_15" image="gui\tp2_main\boss\hong.png"/>
-	<Property ID="boss_hp_stage_16" image="gui\tp2_main\boss\cheng.png"/>
-	<Property ID="boss_hp_stage_17" image="gui\tp2_main\boss\huang.png"/>
-	<Property ID="boss_hp_stage_18" image="gui\tp2_main\boss\zi.png"/>
-	<Property ID="boss_hp_stage_19" image="gui\tp2_main\boss\lv.png"/>
-	<!--主城 groupboxlist背景图片-->
-	<Property ID="form_main_hall_quest_back" image=""/>
-	<!-- 卷轴动画结束后的图片-->
-	<Property ID="juanzhou_left_start" image="gui\xm2_animation\juanzhou\juanzhou.png"/>
-	<Property ID="juanzhou_right_start" image="gui\xm2_animation\juanzhou\juanzhou.png"/>
-	<Property ID="juanzhou_left_end" image="gui\xm2_animation\juanzhou\juanzhou9.png"/>
-	<Property ID="juanzhou_right_end" image="gui\xm2_animation\juanzhou\juanzhou9.png"/>
-	<!-- 卷轴动画结束后的图片 end-->
-	<!-- 角色装备类型和圆盘背景类型-->
-	<Property ID="role_equip_page_1" image="gui\tp2_common\window\bj_1.png"/>
-	<Property ID="role_equip_page_2" image="gui\tp2_common\window\bj_2.png"/>
-	<Property ID="role_equip_page_3" image="gui\tp2_common\window\bj_3.png"/>
-	<Property ID="role_disc_type_1"/>
-	<Property ID="role_disc_type_2"/>
-	<Property ID="role_disc_type_3"/>
-	<!-- 角色装备类型和圆盘背景类型-->
-	<!-- 弹窗说明图片-->
-	<Property ID="introduce_title_fashion"/>
-	<Property ID="introduce_title_guild" image="gui\tp2_common\window\guild_bangzhu.png"/>
-	<Property ID="introduce_title_guild_boss" image="gui\tp2_common\window\guild_bangzhu.png"/>
-	<Property ID="guildshop" image="gui\tp2_battle\scene_account\mop_up_10.png"/>
-	<!-- 夺宝采集NPC标示-->
-	<Property ID="mine_01" image="gui\tp2_main\mine\duoshu_01.png"/>
-	<Property ID="mine_02" image="gui\tp2_main\mine\duoshu_02.png"/>
-	<Property ID="mine_03" image="gui\tp2_main\mine\duoshu_03.png"/>
-	<Property ID="mine_04" image="gui\tp2_main\mine\duoshu_04.png"/>
-	<!-- 公会祈福图标-->
-	<Property ID="guild_001" image="icon\xm2_item\tili.jpg"/>
-	<!--任务界面图标-->
-	<Property ID="task_zuxian" image="gui/tp2_main/hall/rw_zuxian.png"/>
-	<Property ID="task_xuanshang" image="gui/tp2_main/hall/rw_xuanshang.png"/>
-	<Property ID="task_daily" image="gui/tp2_main/hall/rw_richang.png"/>
-	<Property ID="task_exercise" image="gui/tp2_main/hall/rw_exercise.png"/>
-	<Property ID="task_state_jiequ" image="gui/xm2_quest/rwyd_kejiequ.png"/>
-	<Property ID="task_state_doing" image="gui/xm2_quest/rwyd_jinxingzhong.png"/>
-	<Property ID="task_state_cansubmit" image="gui/tp2_battle/scene_info_show/finish.png"/>
-	<Property ID="goal_state_fail" image="gui/tp2_battle/scene_info_show/fail.png"/>
-	<Property ID="zhenying_image" image="gui\tp2_main\hall\rw_zhenying.png"/>
-	<Property ID="task_btn_icon_doing" image="gui\tp2_common\window\btn1.png"/>
-	<Property ID="task_btn_icon_doing2" image="gui\tp2_common\window\btn2.png"/>
-	<Property ID="task_btn_icon_cansubmit" image="gui\tp2_common\window\activate_1.png"/>
-	<Property ID="task_btn_icon_cansubmit2" image="gui\tp2_common\window\activate_2.png"/>
-	<!--本地副本-->
-	<Property ID="fb_time_over" image="gui/tp2_main/war/timeover.png"/>
-	<Property ID="goal_doing"/>
-	<Property ID="goal_finished"/>
-	<Property ID="goal_not_finished"/>
-	<Property ID="scene_star_doing" image="gui/xm2_battle/scene_account/jiesuan_xing.png"/>
-	<Property ID="scene_finished" image="gui/xm2_battle/scene_account/jiesuan_xing1.png"/>
-	<Property ID="scene_not_finished"/>
-	<Property ID="scene_goal_open"/>
-	<Property ID="scene_goal_close"/>
-	<!--组队副本-->
-	<Property ID="battleAbilityImage0" image="gui/tp2_team/team_num.png,0,0,19,32"/>
-	<Property ID="battleAbilityImage1" image="gui/tp2_team/team_num.png,24,0,14,32"/>
-	<Property ID="battleAbilityImage2" image="gui/tp2_team/team_num.png,44,0,18,32"/>
-	<Property ID="battleAbilityImage3" image="gui/tp2_team/team_num.png,68,0,19,32"/>
-	<Property ID="battleAbilityImage4" image="gui/tp2_team/team_num.png,92,0,20,32"/>
-	<Property ID="battleAbilityImage5" image="gui/tp2_team/team_num.png,0,35,19,32"/>
-	<Property ID="battleAbilityImage6" image="gui/tp2_team/team_num.png,25,35,19,32"/>
-	<Property ID="battleAbilityImage7" image="gui/tp2_team/team_num.png,49,35,16,32"/>
-	<Property ID="battleAbilityImage8" image="gui/tp2_team/team_num.png,70,35,19,32"/>
-	<Property ID="battleAbilityImage9" image="gui/tp2_team/team_num.png,95,35,19,32"/>
-	<!--资源找回-->
-	<Property ID="find_res_icon1" image="gui/xm2_battle/scene_account/jiantou2.png"/>
-	<Property ID="find_res_money1" image="gui\common\window\yongzhezhizheng.png"/>
-	<Property ID="find_res_money2" image="gui\common\window\rongyu.png"/>
-	<Property ID="find_res_money3" image="gui\common\window\yuxue.png"/>
-	<!--抽宝藏获得界面-->
-	<Property ID="treasure_get_card1" image="gui/xm2_main/treasure/daojubeijing1.png"/>
-	<Property ID="treasure_get_card2" image="gui/xm2_main/treasure/daojubeijing.png"/>
-	<!--活跃度界面 领奖按钮背景-->
-	<Property ID="form_dayactivity_btn_join_1" image="gui/tp2_common/window/ban1.png"/>
-	<Property ID="form_dayactivity_btn_join_2" image="gui/tp2_common/window/cancel1.png"/>
-	<Property ID="form_dayactivity_btn_join_3" image="gui/tp2_common/window/cancel.png"/>
-	<Property ID="form_dayactivity_btn_join_4" image="gui/tp2_common/window/cancel1.png"/>
-	<!--野外切换太极技冷却-->
-	<Property ID="form_role_npc_exchange_back" image="gui/tp2_main/heedbar/di.png"/>
-	<Property ID="form_role_npc_exchange_daoji" image="gui/tp2_main/heedbar/daojishi.png"/>
-	<!--引导低配背景图片-->
-	<Property ID="form_guide_new_click" image="gui/xm2_animation/guide_click/A0012.png"/>
-	<Property ID="form_guide_new_move" image="gui/xm2_animation/guide_move/01.png"/>
-	<!--称号按钮显示相关-->
-	<Property ID="form_title_active_out" image="gui\tp2_common\window\activate_2.png"/>
-	<Property ID="form_title_active_down" image="gui\tp2_common\window\activate_1.png"/>
-	<Property ID="form_title_noactive_out" image="gui\tp2_common\window\refurbish1.png"/>
-	<Property ID="form_title_noactive_down" image="gui\tp2_common\window\refurbish.png"/>
-	<!--角色技能相关-->
-	<Property ID="role_npc_taiji_skill_1" image="gui\tp2_main\outside\yewai.png,-1,602,119,119"/>
-	<Property ID="role_npc_taiji_skill_2" image="gui\tp2_main\outside\yewai.png,122,602,119,119"/>
-	<!--网络状态图-->
-	<Property ID="net_status_1" image="gui/tp2_main/hall/hall.png,106,762,56,11"/>
-	<Property ID="net_status_2" image="gui/tp2_main/hall/hall.png,106,777,56,11"/>
-	<Property ID="net_status_3" image="gui/tp2_main/hall/hall.png,106,792,56,11"/>
-	<Property ID="net_status_4" image="gui/tp2_main/hall/hall.png,106,807,56,11"/>
-	<Property ID="net_status_5" image="gui/tp2_main/hall/hall.png,106,822,56,11"/>
-	<Property ID="red_battery" image="gui/tp2_main/hall/hall.png,0,32,49,25"/>
-	<Property ID="green_battery" image="gui/tp2_main/hall/hall.png,0,2,49,25"/>
-	<!-- 蓝条不同颜色-->
-	<Property ID="progress_1" image="gui\tp2_main\heedbar\attzk.png,425,202,80,8"/>
-	<Property ID="progress_2" image="gui\tp2_main\heedbar\fjtx_11.png"/>
-	<Property ID="progress_3" image="gui\tp2_main\heedbar\fjtx_12.png"/>
-	<Property ID="progress_4" image="gui\tp2_main\heedbar\fjtx_13.png"/>
-	<!--网络状态图野外-->
-	<Property ID="net_status_scene_1" image="gui/tp2_main/outside/yewai.png,362.5,290.5,56,11"/>
-	<Property ID="net_status_scene_2" image="gui/tp2_main/outside/yewai.png,362.5,302.5,56,11"/>
-	<Property ID="net_status_scene_3" image="gui/tp2_main/outside/yewai.png,362.5,314.5,56,11"/>
-	<Property ID="net_status_scene_4" image="gui/tp2_main/outside/yewai.png,362.5,326.5,56,11"/>
-	<Property ID="net_status_scene_5" image="gui/tp2_main/outside/yewai.png,362.5,338.5,56,11"/>
-	<Property ID="red_scene_battery" image="gui/tp2_main/outside/yewai.png,362.5,376.5,49,25"/>
-	<Property ID="green_scene_battery" image="gui/tp2_main/outside/yewai.png,362.5,350.5,49,25"/>
-	<!--切磋倒计时和胜负-->
-	<Property ID="form_pk_account_3" image="gui/tp2_main/war/3.png"/>
-	<Property ID="form_pk_account_2" image="gui/tp2_main/war/2.png"/>
-	<Property ID="form_pk_account_1" image="gui/tp2_main/war/1.png"/>
-	<Property ID="form_pk_account_4" image="gui/tp2_main/war/sheng.png"/>
-	<Property ID="form_pk_account_5" image="gui/tp2_main/war/bai.png"/>
-	<Property ID="form_pk_account_6" image="gui/tp2_main/war/ping.png"/>
-	<Property ID="form_pk_account_7" image="gui/tp2_main/pvp/juedou_tuisong1.png"/>
-	<Property ID="form_pk_account_8" image="gui/tp2_main/pvp/juedou_tuisong2.png"/>
-	<!--赛马活动开启倒计时-->
-	<Property ID="form_horse_race_time_10" image="gui\tp2_main\mine\sm09.png"/>
-	<Property ID="form_horse_race_time_9" image="gui\tp2_main\mine\sm08.png"/>
-	<Property ID="form_horse_race_time_8" image="gui\tp2_main\mine\sm07.png"/>
-	<Property ID="form_horse_race_time_7" image="gui\tp2_main\mine\sm06.png"/>
-	<Property ID="form_horse_race_time_6" image="gui\tp2_main\mine\sm05.png"/>
-	<Property ID="form_horse_race_time_5" image="gui\tp2_main\mine\sm04.png"/>
-	<Property ID="form_horse_race_time_4" image="gui\tp2_main\mine\sm03.png"/>
-	<Property ID="form_horse_race_time_3" image="gui\tp2_main\mine\sm02.png"/>
-	<Property ID="form_horse_race_time_2" image="gui\tp2_main\war\go.png"/>
-	<Property ID="form_horse_race_time_1" image="gui\tp2_main\war\go.png"/>
-	<!--赛马活动开启倒计时 end-->
-	<!--赛马活动结束显示-->
-	<Property ID="form_horse_race_rank_0" image="gui\tp2_main\mine\smjs.png"/>
-	<Property ID="form_horse_race_rank_1" image="gui\tp2_main\mine\sm1st.png"/>
-	<Property ID="form_horse_race_rank_2" image="gui\tp2_main\mine\sm2st.png"/>
-	<Property ID="form_horse_race_rank_3" image="gui\tp2_main\mine\sm3st.png"/>
-	<Property ID="form_horse_race_rank_cur" image="gui\tp2_main\mine\placing_now.png"/>
-	<Property ID="form_horse_race_rank_last" image="gui\tp2_main\mine\placing_old.png"/>
-	<!--赛马活动结束显示-->
-	<!--组队主界面-->
-	<Property ID="form_main_team_1" image="gui/tp2_team/duizhang.png"/>
-	<Property ID="form_main_team_2" image="gui/tp2_team/duiyuan.png"/>
-	<Property ID="form_main_team_3" image="gui/tp2_common/window/activate_1.png"/>
-	<Property ID="form_main_team_4" image="gui/tp2_common/window/activate_2.png"/>
-	<!--战场-->
-	<Property ID="map_wzzd" image="gui\tp2_main\war\25vs25_minimap.png"/>
-	<Property ID="map_yxsc2" image="gui\tp2_main\war\zhanchang_sea.png"/>
-	<Property ID="map_gbs" image="gui\tp2_main\relic\smallmap.png"/>
-	<Property ID="map_wzdj" image="gui\tp2_main\pk\3vs3_minimap.png"/>
-	<Property ID="war_mapback" image="gui\tp2_main\relic\map_bk.png,71,20,144,137"/>
-	<Property ID="war_maprighttop"/>
-	<Property ID="war_bigboss" image="gui/tp2_main/outside/yewai.png,468.5,48.5,21,25"/>
-	<Property ID="war_smallboss1" image="gui/tp2_main/outside/yewai.png,468.5,48.5,21,25"/>
-	<Property ID="war_smallboss2"/>
-	<Property ID="war_campaguard1" image="gui/tp2_main/outside/yewai.png,488.5,101.5,16,20"/>
-	<Property ID="war_campaguard2"/>
-	<Property ID="war_campbguard1" image="gui/tp2_main/outside/yewai.png,468.5,119.5,16,20"/>
-	<Property ID="war_campbguard2"/>
-	<Property ID="war_lowwanted" image="gui/xm2_main/outside/ditu.png,109,105,10,10"/>
-	<Property ID="war_highwanted" image="gui/xm2_main/outside/ditu.png,109,105,10,10"/>
-	<Property ID="war_campaplayer1" image="gui\tp2_main\relic\blueplayer.png"/>
-	<Property ID="war_campaplayer2" image=""/>
-	<Property ID="war_campbplayer1" image="gui\tp2_main\relic\redplayer.png"/>
-	<Property ID="war_campbplayer2" image=""/>
-	<Property ID="war_warnpc" image="gui/tp2_main/outside/yewai.png,467,49,21,24"/>
-	<Property ID="war_changnpc" image="gui/tp2_main/outside/yewai.png,465,95,21,24"/>
-	<Property ID="war_sourcea" image="gui\tp2_main\relic\blue.png"/>
-	<Property ID="war_sourceb" image="gui\tp2_main\relic\red.png"/>
-	<Property ID="war_gboss_def_1"/>
-	<Property ID="war_gboss_def_2"/>
-	<Property ID="war_gboss_def_3"/>
-	<Property ID="war_gboss_2"/>
-	<Property ID="war_gboss_1"/>
-	<Property ID="map_qiankun"/>
-	<Property ID="flag_red"/>
-	<Property ID="flag_yellow"/>
-	<Property ID="flag_blue"/>
-	<Property ID="flag_gray"/>
-	<Property ID="war_map_enlarge1" image="gui\tp2_common\backdrop\guild_sousuo.png"/>
-	<Property ID="war_map_enlarge2" image="gui\tp2_common\backdrop\guild_sousuo_over.png"/>
-	<Property ID="war_map_shrink1" image="gui\tp2_common\backdrop\guild_sousuo.png"/>
-	<Property ID="war_map_shrink2" image="gui\tp2_common\backdrop\guild_sousuo_over.png"/>
-	<Property ID="relic_fighting" image="gui\tp2_main\relic\fighting_txt.png,-15,0,115,28"/>
-	<Property ID="relic_fight_end" image="gui\tp2_main\relic\ended_txt.png"/>
-	<Property ID="relic_cmd_atk" image="gui\tp2_main\relic\jingong.png"/>
-	<Property ID="relic_cmd_def" image="gui\tp2_main\relic\fangshou.png"/>
-	<Property ID="war_killboss" image="gui\tp2_main\war\war_25_killboss.png"/>
-	<Property ID="war_finaler" image="gui\tp2_main\war\war_25_finaler.png"/>
-	<Property ID="war_kill100" image="gui\tp2_main\war\war_25_kill100.png"/>
-	<Property ID="war_comb50" image="gui\tp2_main\war\war_25_lz.png"/>
-	<!--遗迹不同颜色的图标-->
-	<Property ID="relic_icon_color_1" image="gui\map\scene\woeld\yiji03.png"/>
-	<Property ID="relic_icon_color_2" image="gui\map\scene\woeld\yiji02.png"/>
-	<Property ID="relic_icon_color_3" image="gui\map\scene\woeld\yiji03.png"/>
-	<Property ID="relic_icon_color_4" image="gui\map\scene\woeld\yiji01.png"/>
-	<Property ID="zhenying_icon_color_1" image="gui\map\scene\woeld\zy04.png"/>
-	<Property ID="war_gwb_source_null" image="gui\tp2_main\relic\bw1.png"/>
-	<Property ID="war_gwb_source_campb" image="gui\tp2_main\relic\red1.png"/>
-	<Property ID="war_gwb_source_campa" image="gui\tp2_main\relic\blue1.png"/>
-	<!--充值大反馈图片-->
-	<Property ID="charge_1" image="gui/tp2_main/hall/chongzhi.png"/>
-	<Property ID="charge_2" image="gui/tp2_main/hall/chongzhi1.png"/>
-	<Property ID="image_people_1" image="gui\tp2_main\chongzhi\renwu_1.jpg"/>
-	<Property ID="image_people_2" image="gui\tp2_main\chongzhi\renwu_2.jpg"/>
-	<Property ID="image_people_3" image="gui\tp2_main\chongzhi\renwu_3.jpg"/>
-	<Property ID="image_people_4" image="gui\tp2_main\chongzhi\renwu_4.jpg"/>
-	<Property ID="image_people_5" image="gui\tp2_main\chongzhi\renwu_5.jpg"/>
-	<Property ID="title_1" image="gui\tp2_main\chongzhi\biaoti_1.png"/>
-	<Property ID="title_2" image="gui\tp2_main\chongzhi\biaoti_2.png"/>
-	<Property ID="title_3" image="gui\tp2_main\chongzhi\biaoti_3.png"/>
-	<Property ID="title_4" image="gui\tp2_main\chongzhi\biaoti_4.png"/>
-	<Property ID="title_5" image="gui\tp2_main\chongzhi\biaoti_5.png"/>
-	<Property ID="lbl_vip_1" image="gui\tp2_main\chongzhi\neirong_1.png"/>
-	<Property ID="lbl_vip_2" image="gui\tp2_main\chongzhi\neirong_2.png"/>
-	<Property ID="lbl_vip_3" image="gui\tp2_main\chongzhi\neirong_3.png"/>
-	<Property ID="lbl_vip_4" image="gui\tp2_main\chongzhi\neirong_4.png"/>
-	<Property ID="lbl_vip_5" image="gui\tp2_main\chongzhi\neirong_5.png"/>
-	<Property ID="vip_gift_get_1" image="gui\tp2_main\chongzhi\libao_1.png"/>
-	<Property ID="vip_gift_get_2" image="gui\tp2_main\chongzhi\libao_2.png"/>
-	<Property ID="vip_gift_get_3" image="gui\tp2_main\chongzhi\libao_3.png"/>
-	<Property ID="vip_gift_get_4" image="gui\tp2_main\chongzhi\libao_4.png"/>
-	<Property ID="vip_gift_get_5" image="gui\tp2_main\chongzhi\libao_5.png"/>
-	<Property ID="Label10_1" image="gui\tp2_main\chongzhi\yuan.png"/>
-	<Property ID="Label10_2" image="gui\tp2_main\chongzhi\yuan.png"/>
-	<Property ID="Label10_3" image="gui\tp2_main\chongzhi\yuan.png"/>
-	<Property ID="Label10_4" image="gui\tp2_main\chongzhi\yuan.png"/>
-	<Property ID="Label10_5" image="gui\tp2_main\chongzhi\yuan.png"/>
-	<Property ID="Label11_1" image="gui\tp2_main\chongzhi\yuan.png"/>
-	<Property ID="Label11_2" image="gui\tp2_main\chongzhi\yuan.png"/>
-	<Property ID="Label11_3" image="gui\tp2_main\chongzhi\yuan.png"/>
-	<Property ID="Label11_4" image="gui\tp2_main\chongzhi\yuan.png"/>
-	<Property ID="Label11_5" image="gui\tp2_main\chongzhi\yuan.png"/>
-	<!--录像功能背景图片-->
-	<Property ID="video_tape_0" image="gui\tp2_main\rec\luzhi_off.png"/>
-	<Property ID="video_tape_1" image="gui\tp2_main\rec\luzhi_on.png"/>
-	<!--活动推送框图标-->
-	<Property ID="icon_activity_1" image="gui\tp2_main\exercise\biaoke_up.png"/>
-	<Property ID="icon_activity_2" image="gui\xm2_main\transport\boss1.png"/>
-	<Property ID="icon_activity_5" image="gui\tp2_main\exercise\lianmeng_up.png"/>
-	<Property ID="icon_activity_6" image="gui\tp2_main\exercise\saima_up.png"/>
-	<Property ID="icon_activity_8" image="gui\tp2_main\exercise\zhenyingzhan_up.png"/>
-	<Property ID="icon_activity_9" image="gui\tp2_main\exercise\digong_up.png"/>
-	<!-- 历练界面页数角标 -->
-	<Property ID="page_num_normal" image="gui\tp2_main\exercise\page_off.png"/>
-	<Property ID="page_num_select" image="gui\tp2_main\exercise\page_on.png"/>
-	<!--仓库-->
-	<Property ID="storage_lock" image="gui\tp2_main\tattoo\fwdt_suo.png"/>
-	<!-- 坐骑界面 -->
-	<Property ID="ride_step_level_1" image=""/>
-	<Property ID="ride_equip_active" image="gui/tp2_main/roles/uplevel_26.png"/>
-	<Property ID="ride_equip_unactive" image="gui/tp2_main/roles/uplevel_29.png"/>
-	<!-- 坐骑家园 -->
-	<Property ID="rh_currency" image="icon\xm2_item\jiayuan.jpg"/>
-	<Property ID="rh_sp_currency" image="icon\xm2_item\jiayuan_ts.jpg"/>
-	<Property ID="rh_is_producting" image="gui\tp2_ride\tishi_2.png"/>
-	<Property ID="rh_have_producted" image="gui\tp2_ride\tishi_4.png"/>
-	<Property ID="rh_not_have" image="gui\tp2_ride\tishi_1.png"/>
-	<Property ID="rh_can_product" image="gui\tp2_ride\tishi_5.png"/>
-	<Property ID="rh_double" image="icon\xm2_item\xx2.png"/>
-	<Property ID="rh_triple" image="icon\xm2_item\xx3.png"/>
-	<Property ID="rh_win" image="gui/tp2_ride/shengli_1.png"/>
-	<Property ID="rh_lose" image="gui/tp2_ride/shibai_1.png"/>
-	<Property ID="rh_count_not_arrive" image="gui/tp2_ride/dot_1.png"/>
-	<Property ID="rh_count_arrive" image="gui/tp2_ride/dot_2.png"/>
-	<!--环任务宝箱-->
-	<Property ID="lq_treasure1" image="gui/tp2_main/friend/present.png"/>
-	<Property ID="lq_treasure2" image="gui/tp2_main/friend/present.png"/>
-	<Property ID="lq_treasure3" image="gui/tp2_main/friend/present.png"/>
-	<Property ID="lq_treasure4" image="gui/tp2_main/friend/present.png"/>
-	<Property ID="lq_treasure5" image="gui/tp2_main/friend/present.png"/>
-	<Property ID="lq_treasure_null1" image="gui/tp2_main/friend/present2.png"/>
-	<Property ID="lq_treasure_null2" image="gui/tp2_main/friend/present2.png"/>
-	<Property ID="lq_treasure_null3" image="gui/tp2_main/friend/present2.png"/>
-	<Property ID="lq_treasure_null4" image="gui/tp2_main/friend/present2.png"/>
-	<Property ID="lq_treasure_null5" image="gui/tp2_main/friend/present2.png"/>
-	<!--翻牌动画-->
-	<Property ID="turncard1" image="gui/xm2_animation/chouka/07.png"/>
-	<Property ID="turncard2" image="gui/xm2_animation/chouka/06.png"/>
-	<Property ID="turncard3" image="gui/xm2_animation/chouka/05.png"/>
-	<Property ID="turncard4" image="gui/xm2_animation/chouka/04.png"/>
-	<Property ID="turncard5" image="gui/xm2_animation/chouka/03.png"/>
-	<Property ID="turncard6" image="gui/xm2_animation/chouka/02.png"/>
-	<Property ID="turncard7" image="gui/xm2_animation/chouka/01.png"/>
-	<!--坐骑-->
-	<Property ID="mount_up" image="gui/tp2_ride/mount_up.png"/>
-	<Property ID="mount_down" image="gui/tp2_ride/mount_down.png"/>
-	<Property ID="mount_jihuo" image="gui/tp2_ride/jihuo.png"/>
-	<Property ID="mount_weijihuo" image="gui/tp2_ride/weijihuo.png"/>
-	<Property ID="mount_tiger_001" image="gui/tp2_ride/mount_tiger_001.png"/>
-	<Property ID="mount_bird_001" image="gui/tp2_ride/mount_bird_001.png"/>
-	<Property ID="mount_bird_001a" image="gui/tp2_ride/mount_bird_001a.png"/>
-	<Property ID="mount_scorpion_001" image="gui/tp2_ride/mount_scorpion_001.png"/>
-	<Property ID="mount_tiger_001a" image="gui/tp2_ride/mount_tiger_001a.png"/>
-	<Property ID="mount_tiger_002" image="gui/tp2_ride/mount_tiger_002.png"/>
-	<Property ID="mount_horse_001" image="gui/tp2_ride/mount_horse_001.png"/>
-	<Property ID="mount_horse_001a" image="gui/tp2_ride/mount_horse_001a.png"/>
-	<Property ID="mount_kirin_001" image="gui/tp2_ride/mount_kirin_001.png"/>
-	<Property ID="mount_dragon_001" image="gui/tp2_ride/mount_dragon_001.png"/>
-	<Property ID="mount_dragon_001a" image="gui/tp2_ride/mount_dragon_001a.png"/>
-	<Property ID="mount_dragon_001b" image="gui/tp2_ride/mount_dragon_001b.png"/>
-	<Property ID="mount_dragon_001c" image="gui/tp2_ride/mount_dragon_001c.png"/>
-	<Property ID="mount_trex_001" image="gui/tp2_ride/mount_trex_001.png"/>
-	<Property ID="mount_dragon_002" image="gui/tp2_ride/mount_dragon_002.png"/>
-	<Property ID="mount_rabbit_001" image="gui/tp2_ride/mount_rabbit_001.png"/>
-	<Property ID="mount_trex_002" image="gui/tp2_ride/mount_trex_002.png"/>
-	<Property ID="mount_tiger_003" image="gui/tp2_ride/mount_tiger_003.png"/>
-	<Property ID="mount_horse_002" image="gui/tp2_ride/mount_horse_002.png"/>
-	<Property ID="mount_scorpion_002" image="gui/tp2_ride/mount_scorpion_002.png"/>
-	<Property ID="mount_bird_002" image="gui/tp2_ride/mount_bird_002.png"/>
-	<Property ID="mount_horse_003" image="gui/tp2_ride/mount_horse_003.png"/>
-	<Property ID="mount_bird_001b" image="gui/tp2_ride/mount_bird_001b.png"/>
-	<Property ID="mount_tiger_001b" image="gui/tp2_ride/mount_tiger_001b.png"/>
-	<Property ID="mount_scorpion_003" image="gui/tp2_ride/mount_scorpion_003.png"/>
-	<Property ID="mount_rhino_001" image="gui/tp2_ride/mount_rhino_001.png"/>
-	<Property ID="mount_dragon_003" image="gui/tp2_ride/mount_dragon_003.png"/>
-	<Property ID="mount_horse_004" image="gui/tp2_ride/mount_horse_004.png"/>
-	<Property ID="mount_horse_005" image="gui/tp2_ride/mount_horse_005.png"/>
-	<Property ID="mount_rabbit_002" image="gui/tp2_ride/mount_rabbit_002.png"/>
-	<Property ID="mount_ship_001" image="gui/tp2_ride/mount_ship_001.png"/>
-	<Property ID="mount_phoenix_001" image="gui/tp2_ride/mount_phoenix_001.png"/>
-	<Property ID="mount_dragon_004" image="gui/tp2_ride/mount_dragon_004.png"/>
-	<Property ID="mount_elk_001" image="gui/tp2_ride/mount_elk_001.png"/>
-	<Property ID="ride_step_0" image="gui/tp2_ride/qishu_chu.png"/>
-	<Property ID="ride_step_1" image="gui/tp2_ride/qishu_chu1.png"/>
-	<Property ID="ride_step_2" image="gui/tp2_ride/qishu_chu2.png"/>
-	<Property ID="ride_step_3" image="gui/tp2_ride/qishu_zhong.png"/>
-	<Property ID="ride_step_4" image="gui/tp2_ride/qishu_zhong1.png"/>
-	<Property ID="ride_step_5" image="gui/tp2_ride/qishu_zhong2.png"/>
-	<Property ID="ride_step_6" image="gui/tp2_ride/qishu_gao.png"/>
-	<Property ID="ride_step_7" image="gui/tp2_ride/qishu_gao1.png"/>
-	<Property ID="ride_step_8" image="gui/tp2_ride/qishu_gao2.png"/>
-	<Property ID="ride_step_bg_0" image="gui/tp2_ride/lvse.png"/>
-	<Property ID="ride_step_bg_1" image="gui/tp2_ride/lvse.png"/>
-	<Property ID="ride_step_bg_2" image="gui/tp2_ride/lvse.png"/>
-	<Property ID="ride_step_bg_3" image="gui/tp2_ride/lanse.png"/>
-	<Property ID="ride_step_bg_4" image="gui/tp2_ride/lanse.png"/>
-	<Property ID="ride_step_bg_5" image="gui/tp2_ride/lanse.png"/>
-	<Property ID="ride_step_bg_6" image="gui/tp2_ride/zise.png"/>
-	<Property ID="ride_step_bg_7" image="gui/tp2_ride/zise.png"/>
-	<Property ID="ride_step_bg_8" image="gui/tp2_ride/zise.png"/>
-	<Property ID="ride_up" image="gui/tp2_ride/up.png"/>
-	<Property ID="ride_no_up" image="gui/tp2_ride/no_up.png"/>
-	<Property ID="ride_not_have" image="gui/tp2_ride/not_have.png"/>
-	<!--王者联赛本轮状态-->
-	<Property ID="league_state_0" image="gui\tp2_main\league\league_seed.png"/>
-	<Property ID="league_state_2"/>
-	<Property ID="league_state_3"/>
-	<Property ID="league_state_4" image="gui\tp2_main\league\league_win.png"/>
-	<Property ID="league_state_5" image="gui\tp2_main\league\league_lose.png"/>
-	<Property ID="league_is_balance" image="gui\tp2_main\pk\pingheng.png"/>
-	<Property ID="league_is_not_balance" image="gui\tp2_main\pk\zhanli.png"/>
-	<!--巅峰联赛-->
-	<Property ID="league_kof_win" image="gui\tp2_main\league\v_2.png"/>
-	<Property ID="league_kof_balance" image="gui\tp2_main\league\v_2.png"/>
-	<Property ID="league_kof_not_balance" image="gui\tp2_main\league\v_2.png"/>
-	<Property ID="league_kof_select" image="gui\tp2_main\day_activity\yeqian_over.png"/>
-	<Property ID="league_kof_not_select" image="gui\tp2_main\day_activity\yeqian_oup.png"/>
-	<!--问答-->
-	<Property ID="wenda_danxuan" image="gui\tp2_main\quest\danxuan.png"/>
-	<Property ID="wenda_duoxuan" image="gui\tp2_main\quest\xuanxiang_1.png"/>
-	<!--红条-->
-	<Property ID="kof_hongtiao" image="gui\tp2_main\war\hongtiao.png"/>
-	<!--阵营-->
-	<Property ID="zhenying_gold" image="gui\common\window\gold_big.jpg"/>
-	<Property ID="zhenying_exp" image="gui\common\window\jingyan.jpg"/>
-	<Property ID="zhenying_capital" image="gui/common/window/zhenying.jpg"/>
-	<Property ID="zhenying_wulin" image="gui\tp2_main\relic\wulin.png"/>
-	<Property ID="zhenying_cike" image="gui\tp2_main\relic\cike.png"/>
-	<Property ID="zhenying_ping" image="gui\tp2_main\relic\ping.png"/>
-	<!--阶段目标-->
-	<Property ID="jieduan00" image="gui\tp2_main\exercise\jieduan00.png"/>
-	<Property ID="jieduan01" image="gui\tp2_main\exercise\jieduan01.png"/>
-	<Property ID="jieduan02" image="gui\tp2_main\exercise\jieduan02.png"/>
-	<Property ID="jieduan03" image="gui\tp2_main\exercise\jieduan03.png"/>
-	<Property ID="jieduan04" image="gui\tp2_main\exercise\jieduan04.png"/>
-	<Property ID="jieduan05" image="gui\tp2_main\exercise\jieduan05.png"/>
-	<Property ID="jieduan06" image="gui\tp2_main\exercise\jieduan06.png"/>
-	<Property ID="jieduan07" image="gui\tp2_main\exercise\jieduan07.png"/>
-	<Property ID="jieduan08" image="gui\tp2_main\exercise\jieduan08.png"/>
-	<Property ID="jieduan09" image="gui\tp2_main\exercise\jieduan09.png"/>
-	<Property ID="jieduan10" image="gui\tp2_main\exercise\jieduan10.png"/>
-	<Property ID="jieduan11" image="gui\tp2_main\exercise\jieduan11.png"/>
-	<Property ID="jieduan12" image="gui\tp2_main\exercise\jieduan12.png"/>
-	<Property ID="jieduan13" image="gui\tp2_main\exercise\jieduan13.png"/>
-	<Property ID="jieduan14" image="gui\tp2_main\exercise\jieduan14.png"/>
-	<Property ID="jieduan15" image="gui\tp2_main\exercise\jieduan15.png"/>
-	<Property ID="jieduan16" image="gui\tp2_main\exercise\jieduan16.png"/>
-	<Property ID="jieduan17" image="gui\tp2_main\exercise\jieduan17.png"/>
-	<Property ID="jieduan18" image="gui\tp2_main\exercise\jieduan18.png"/>
-	<Property ID="jieduan19" image="gui\tp2_main\exercise\jieduan19.png"/>
-	<Property ID="jieduan20" image="gui\tp2_main\exercise\jieduan20.png"/>
-	<Property ID="jieduan21" image="gui\tp2_main\exercise\jieduan07.png"/>
-	<Property ID="jieduan22" image="gui\tp2_main\exercise\jieduan10.png"/>
-	<!--地宫-->
-	<Property ID="cellar_selected" image="gui\tp2_task\task_05.png"/>
-	<Property ID="cellar_not_selected" image="gui\tp2_task\task_12.png"/>
-	<!--法宝-->
-	<Property ID="talisman_locked" image="gui\tp2_main\talisman\suo.png"/>
-	<Property ID="talisman_unlocked" image="tp2_main\talisman\jiahao_1.png"/>
-	<Property ID="talisman_xilian1" image="gui\tp2_main\talisman\xilian01.png"/>
-	<Property ID="talisman_xilian2" image="gui\tp2_main\talisman\xilian02.png"/>
-	<Property ID="talisman_xilian3" image="gui\tp2_main\talisman\xilian03.png"/>
-	<Property ID="talisman_xilian4" image="gui\tp2_main\talisman\xilian04.png"/>
-	<Property ID="talisman_xilian5" image="gui\tp2_main\talisman\xilian05.png"/>
-	<Property ID="talisman_xilian_have" image="gui\tp2_main\talisman\shang_1.png"/>
-	<Property ID="talisman_xilian_not_have" image="gui\tp2_main\talisman\shang_2.png"/>
-	<Property ID="talisman_pinzhi_1" image="gui\xm2_use\bag\bq_putong.png"/>
-	<Property ID="talisman_pinzhi_2" image="gui\xm2_use\bag\bq_jingliang.png"/>
-	<Property ID="talisman_pinzhi_3" image="gui\xm2_use\bag\bq_shishi.png"/>
-	<Property ID="talisman_pinzhi_4" image="gui\xm2_use\bag\bq_chuanshuo.png"/>
-	<Property ID="talisman_pinzhi_5" image=""/>
-	<Property ID="talisman_jindu_3" image="gui\tp2_main\talisman\tiao_3.png"/>
-	<Property ID="talisman_jindu_4" image="gui\tp2_main\talisman\tiao_4.png"/>
+	<Property ID="bg_gray" image="gui/dragon_main/new_common/back/bag_item_gray.png"/>
+	<Property ID="trade_up" image="gui/dragon_main/new_common/back/up_01.png"/>
+	<Property ID="trade_down" image="gui/dragon_main/new_common/back/down_01.png"/>
+	<!--画质预览界面-->
+	<Property ID="proview_image_1" image="gui/dragon_main/quality/1.jpg"/>
+	<Property ID="proview_image_2" image="gui/dragon_main/quality/2.jpg"/>
+	<Property ID="proview_image_3" image="gui/dragon_main/quality/3.jpg"/>
+	<Property ID="proview_image_4" image="gui/dragon_main/quality/4.jpg"/>
+	<!--gmcc-->
+	<Property ID="gmcc_appraise_gou" image="gui/dragon_main/new_common/button/qietu_18.jpg"/>
+	<Property ID="gmcc_appraise_kuang" image="gui/dragon_main/new_common/button/qietu_17.jpg"/>
+	<!--角色主属性icon-->
+	<Property ID="player_main_icon_Str" image="gui/dragon_main/mainfunction/rule/zsx.png"/>
+	<Property ID="player_main_icon_Dex" image="gui/dragon_main/mainfunction/rule/zsx.png"/>
+	<Property ID="player_main_icon_Int" image="gui/dragon_main/mainfunction/rule/zsx.png"/>
+	<!--活动-世界BOSS-->
+	<Property ID="worldboss_rankicon_1" image="gui/dragon_main/mainfunction/huodong/hd_pmjl_d1m.png"/>
+	<Property ID="worldboss_rankicon_2" image="gui/dragon_main/mainfunction/huodong/hd_pmjl_d2m.png"/>
+	<Property ID="worldboss_rankicon_3" image="gui/dragon_main/mainfunction/huodong/hd_pmjl_d3m.png"/>
+	<!--变强功能-->
+	<Property ID="strength_function_bottom_0" image="gui/dragon_main/mainfunction/strength/beijing_1.png"/>
+	<Property ID="strength_function_bottom_1" image="gui/dragon_main/mainfunction/strength/beijing_2.png"/>
+	<!--副本超时-->
+	<Property ID="clone_time_out" image="mg_suns_297"/>
+	<!--武神-->
+	<Property ID="pokemon_1xing" image="gui/dragon_main/mainfunction/pokemon/pokemon_1xing.png"/>
+	<Property ID="pokemon_2xing" image="gui/dragon_main/mainfunction/pokemon/pokemon_2xing.png"/>
+	<Property ID="pokemon_3xing" image="gui/dragon_main/mainfunction/pokemon/pokemon_3xing.png"/>
+	<Property ID="pokemon_4xing" image="gui/dragon_main/mainfunction/pokemon/pokemon_4xing.png"/>
+	<Property ID="pokemon_5xing" image="gui/dragon_main/mainfunction/pokemon/pokemon_5xing.png"/>
+	<Property ID="pokemon_6xing" image="gui/dragon_main/mainfunction/pokemon/pokemon_6xing.png"/>
+	<!--3v3战场提示-->
+	<Property ID="battle3v3_txt1_1" image="gui/dragon_main/mainfunction/battle/tips_tdwqzy.png"/>
+	<Property ID="battle3v3_txt1_2" image="gui/dragon_main/mainfunction/battle/tips_tdzlbz.png"/>
+	<Property ID="battle3v3_txt1_3" image="gui/dragon_main/mainfunction/battle/tips_tdzjqccd.png"/>
+	<Property ID="battle3v3_txt1_4" image="gui/dragon_main/mainfunction/battle/tips_dsxzqc.png"/>
+	<Property ID="battle3v3_txt1_1b" image="gui/dragon_main/mainfunction/battle/tips_dfqtwqzy.png"/>
+	<Property ID="battle3v3_txt1_2b" image="gui/dragon_main/mainfunction/battle/tips_dfqtzlbz.png"/>
+	<Property ID="battle3v3_txt1_3b" image="gui/dragon_main/mainfunction/battle/tips_dfqtzqcz.png"/>
+	<Property ID="battle3v3_txt1_4b" image="gui/dragon_main/mainfunction/battle/tips_wfqtxzqc.png"/>
+	<Property ID="battle3v3_txt2_1" image="gui/dragon_main/mainfunction/battle/tips_tdhdzy.png"/>
+	<Property ID="battle3v3_txt2_2" image="gui/dragon_main/mainfunction/battle/tips_tdzqzl.png"/>
+	<Property ID="battle3v3_txt2_3" image="gui/dragon_main/mainfunction/battle/tips_tdsjzjqccd.png"/>
+	<Property ID="battle3v3_txt2_1b" image="gui/dragon_main/mainfunction/battle/tips_dfqthdzy.png"/>
+	<Property ID="battle3v3_txt2_2b" image="gui/dragon_main/mainfunction/battle/tips_dfqtzqzl.png"/>
+	<Property ID="battle3v3_txt2_3b" image="gui/dragon_main/mainfunction/battle/tips_dfqtsjzjcz.png"/>
+	<Property ID="battle3v3_txt3_1" image="gui/dragon_main/mainfunction/battle/tips_hdzy.png"/>
+	<Property ID="battle3v3_txt3_2" image="gui/dragon_main/mainfunction/battle/tips_zqzl.png"/>
+	<Property ID="battle3v3_txt3_3" image="gui/dragon_main/mainfunction/battle/tips_sjzqqccd.png"/>
+	<Property ID="battle3v3_txt3_1b" image="gui/dragon_main/mainfunction/battle/tips_hdzy.png"/>
+	<Property ID="battle3v3_txt3_2b" image="gui/dragon_main/mainfunction/battle/tips_zqzl.png"/>
+	<Property ID="battle3v3_txt3_3b" image="gui/dragon_main/mainfunction/battle/tips_sjzqqccd.png"/>
+	<!--宠物-->
+	<Property ID="pokemon_fightting" image="gui/dragon_main/mainfunction/pokemon/bag_label_intobattle.png"/>
+	<!--地图-->
+	<Property ID="smallmap_team_mate" image="gui/dragon_main/map/2jidituqiepian_19.png"/>
+	<!--奖励框-->
+	<Property ID="gift_package_title_1" image="gui/dragon_main/title/hqtj_yl.png"/>
+	<!--奖励框-->
+	<Property ID="guild_dcraft_1" image="gui/dragon_main/guild_dcraft/first.png"/>
+	<Property ID="guild_dcraft_2" image="gui/dragon_main/guild_dcraft/second.png"/>
+	<Property ID="guild_dcraft_3" image="gui/dragon_main/guild_dcraft/third.png"/>
+	<Property ID="guild_dcraft_4" image="gui/dragon_main/guild_dcraft/forth.png"/>
+	<Property ID="guild_dcraft_5" image="gui/dragon_main/guild_dcraft/fifth.png"/>
+	<Property ID="guild_dcraft_n" image="gui/dragon_main/new_common/back/di2.png"/>
+	<Property ID="guild_dcraft_h" image="gui/dragon_main/guild_dcraft/ghzb_xzk.png"/>
+	<Property ID="guild_dcraft_bosstxdk" image="gui/dragon_main/guild_dcraft/boss_txdk.png"/>
+	<!--公会答题排名-->
+	<Property ID="guild_q_rank_1" image="gui/dragon_main/guild_activity/1st.png"/>
+	<Property ID="guild_q_rank_2" image="gui/dragon_main/guild_activity/2nd.png"/>
+	<Property ID="guild_q_rank_3" image="gui/dragon_main/guild_activity/3nd.png"/>
+	<!--公会答题倍率-->
+	<Property ID="guild_q_multi_1" image="gui/dragon_main/new_common/button/common_empty.png"/>
+	<Property ID="guild_q_multi_2" image="gui/dragon_main/guild_activity/shuangbei.png"/>
+	<Property ID="guild_q_multi_3" image="gui/dragon_main/guild_activity/sanbei.png"/>
+	<Property ID="guild_q_multi_4" image="gui/dragon_main/guild_activity/sibei.png"/>
 	<!--军阶-->
-	<Property ID="junjie_001" image="gui\tp2_main\rank\\liebing_up_1.png"/>
-	<Property ID="junjie_002" image="gui\tp2_main\rank\weibing_up_1.png"/>
-	<Property ID="junjie_003" image="gui\tp2_main\rank\xueweishi_up_1.png"/>
-	<Property ID="junjie_004" image="gui\tp2_main\rank\qishi_up_1.png"/>
-	<Property ID="junjie_005" image="gui\tp2_main\rank\huweiqishi_up_1.png"/>
-	<Property ID="junjie_006" image="gui\tp2_main\rank\shenqishi_up_1.png"/>
-	<Property ID="junjie_007" image="gui\tp2_main\rank\jiangjun_up_1.png"/>
-	<Property ID="junjie_008" image="gui\tp2_main\rank\dunjun_up_1.png"/>
-	<Property ID="junjie_009" image="gui\tp2_main\rank\hunwei_1.png"/>
-	<Property ID="junjie_010" image="gui\tp2_main\rank\dayuanshuai_1.png"/>
-	<Property ID="junjie_011" image="gui\tp2_main\rank\dujunyuanshuai_1.png"/>
-	<Property ID="junjie_012" image="gui\tp2_main\rank\sanjunyuanshuai_1.png"/>
-	<Property ID="junjie_013" image="gui\tp2_main\rank\zhenmojunzhu_1.png"/>
-	<Property ID="junjie_014" image="gui\tp2_main\rank\minmojunzhu_1.png"/>
-	<Property ID="junjie_015" image="gui\tp2_main\rank\shimojunzhu_1.png"/>
-	<!--跳引导-->
-	<Property ID="skip_scene_title" image="gui\xm2_quest\skip_scenario_title.png"/>
-	<Property ID="skip_guide_title" image="gui\xm2_quest\skip_guidance_title.png"/>
-	<Property ID="skip_guide_off" image="gui\xm2_quest\skip_guidance_off.png"/>
-	<Property ID="skip_guide_on" image="gui\xm2_quest\skip_guidance_on.png"/>
-	<Property ID="skip_scene_off" image="gui\xm2_quest\skip_scenario_off.png"/>
-	<Property ID="skip_scene_on" image="gui\xm2_quest\skip_scenario_on.png"/>
-	<!--成就-->
-	<Property ID="got_award_photo" image="gui\tp2_battle\scene_select\muxiang_down.png"/>
-	<Property ID="uncomplete_star_photo" image="gui\xm2_battle\scene_account\jiesuan_xing.png"/>
-	<Property ID="complete_star_photo" image="gui\xm2_battle\scene_account\jiesuan_xing1.png"/>
-	<!--宝石-->
-	<Property ID="wing_greenstore_001" image="icon\xm2_item\wing_greenstore_001.jpg"/>
-	<Property ID="wing_greenstore_002" image="icon\xm2_item\wing_greenstore_002.jpg"/>
-	<Property ID="wing_greenstore_003" image="icon\xm2_item\wing_greenstore_003.jpg"/>
-	<Property ID="wing_greenstore_004" image="icon\xm2_item\wing_greenstore_004.jpg"/>
-	<Property ID="wing_greenstore_005" image="icon\xm2_item\wing_greenstore_005.jpg"/>
-	<Property ID="wing_bluestore_001" image="icon\xm2_item\wing_bluestore_001.jpg"/>
-	<Property ID="wing_bluestore_002" image="icon\xm2_item\wing_bluestore_002.jpg"/>
-	<Property ID="wing_bluestore_003" image="icon\xm2_item\wing_bluestore_003.jpg"/>
-	<Property ID="wing_bluestore_004" image="icon\xm2_item\wing_bluestore_004.jpg"/>
-	<Property ID="wing_bluestore_005" image="icon\xm2_item\wing_bluestore_005.jpg"/>
-	<Property ID="wing_zisestore_001" image="icon\xm2_item\wing_zisestore_001.jpg"/>
-	<Property ID="wing_zisestore_002" image="icon\xm2_item\wing_zisestore_002.jpg"/>
-	<Property ID="wing_zisestore_003" image="icon\xm2_item\wing_zisestore_003.jpg"/>
-	<Property ID="wing_zisestore_004" image="icon\xm2_item\wing_zisestore_004.jpg"/>
-	<Property ID="wing_zisestore_005" image="icon\xm2_item\wing_zisestore_005.jpg"/>
-	<Property ID="wing_cesestore_001" image="icon\xm2_item\wing_cesestore_001.jpg"/>
-	<Property ID="wing_cesestore_002" image="icon\xm2_item\wing_cesestore_002.jpg"/>
-	<Property ID="wing_cesestore_003" image="icon\xm2_item\wing_cesestore_003.jpg"/>
-	<Property ID="wing_cesestore_004" image="icon\xm2_item\wing_cesestore_004.jpg"/>
-	<Property ID="wing_cesestore_005" image="icon\xm2_item\wing_cesestore_005.jpg"/>
-	<Property ID="wing_hongsestore_001" image="icon\xm2_item\wing_hongsestore_001.jpg"/>
-	<Property ID="wing_hongsestore_002" image="icon\xm2_item\wing_hongsestore_002.jpg"/>
-	<Property ID="wing_hongsestore_003" image="icon\xm2_item\wing_hongsestore_003.jpg"/>
-	<Property ID="wing_hongsestore_004" image="icon\xm2_item\wing_hongsestore_004.jpg"/>
-	<Property ID="wing_hongsestore_005" image="icon\xm2_item\wing_hongsestore_005.jpg"/>
-	<Property ID="wing_slot_closed" image="gui\tp2_main\tattoo\fwdt_suo.png"/>
+	<Property ID="army_grade_1" image="gui/dragon_main/mainfunction/grade/grade_1.png"/>
+	<Property ID="army_grade_2" image="gui/dragon_main/mainfunction/grade/grade_2.png"/>
+	<Property ID="army_grade_3" image="gui/dragon_main/mainfunction/grade/grade_3.png"/>
+	<Property ID="army_grade_4" image="gui/dragon_main/mainfunction/grade/grade_4.png"/>
+	<Property ID="army_grade_5" image="gui/dragon_main/mainfunction/grade/grade_5.png"/>
+	<Property ID="army_grade_6" image="gui/dragon_main/mainfunction/grade/grade_6.png"/>
+	<Property ID="army_grade_7" image="gui/dragon_main/mainfunction/grade/grade_7.png"/>
+	<Property ID="army_grade_8" image="gui/dragon_main/mainfunction/grade/grade_8.png"/>
+	<Property ID="army_grade_9" image="gui/dragon_main/mainfunction/grade/grade_9.png"/>
+	<Property ID="army_grade_10" image="gui/dragon_main/mainfunction/grade/grade_10.png"/>
+	<Property ID="army_grade_11" image="gui/dragon_main/mainfunction/grade/grade_11.png"/>
+	<Property ID="army_grade_12" image="gui/dragon_main/mainfunction/grade/grade_12.png"/>
+	<Property ID="army_grade_13" image="gui/dragon_main/mainfunction/grade/grade_13.png"/>
+	<Property ID="army_grade_14" image="gui/dragon_main/mainfunction/grade/grade_14.png"/>
+	<Property ID="army_grade_15" image="gui/dragon_main/mainfunction/grade/grade_15.png"/>
+	<Property ID="army_grade_16" image="gui/dragon_main/mainfunction/grade/grade_1.png"/>
+	<Property ID="army_grade_17" image="gui/dragon_main/mainfunction/grade/grade_2.png"/>
+	<Property ID="army_grade_18" image="gui/dragon_main/mainfunction/grade/grade_3.png"/>
+	<Property ID="army_grade_headbar_1" image="gui/dragon_main/mainfunction/grade/grade_min_1.png"/>
+	<Property ID="army_grade_headbar_2" image="gui/dragon_main/mainfunction/grade/grade_min_2.png"/>
+	<Property ID="army_grade_headbar_3" image="gui/dragon_main/mainfunction/grade/grade_min_3.png"/>
+	<Property ID="army_grade_headbar_4" image="gui/dragon_main/mainfunction/grade/grade_min_4.png"/>
+	<Property ID="army_grade_headbar_5" image="gui/dragon_main/mainfunction/grade/grade_min_5.png"/>
+	<Property ID="army_grade_headbar_6" image="gui/dragon_main/mainfunction/grade/grade_min_6.png"/>
+	<Property ID="army_grade_headbar_7" image="gui/dragon_main/mainfunction/grade/grade_min_7.png"/>
+	<Property ID="army_grade_headbar_8" image="gui/dragon_main/mainfunction/grade/grade_min_8.png"/>
+	<Property ID="army_grade_headbar_9" image="gui/dragon_main/mainfunction/grade/grade_min_9.png"/>
+	<Property ID="army_grade_headbar_10" image="gui/dragon_main/mainfunction/grade/grade_min_10.png"/>
+	<Property ID="army_grade_headbar_11" image="gui/dragon_main/mainfunction/grade/grade_min_11.png"/>
+	<Property ID="army_grade_headbar_12" image="gui/dragon_main/mainfunction/grade/grade_min_12.png"/>
+	<Property ID="army_grade_headbar_13" image="gui/dragon_main/mainfunction/grade/grade_min_13.png"/>
+	<Property ID="army_grade_headbar_14" image="gui/dragon_main/mainfunction/grade/grade_min_14.png"/>
+	<Property ID="army_grade_headbar_15" image="gui/dragon_main/mainfunction/grade/grade_min_15.png"/>
+	<Property ID="army_grade_headbar_16" image="gui/dragon_main/mainfunction/grade/grade_min_1.png"/>
+	<Property ID="army_grade_headbar_17" image="gui/dragon_main/mainfunction/grade/grade_min_2.png"/>
+	<Property ID="army_grade_headbar_18" image="gui/dragon_main/mainfunction/grade/grade_min_3.png"/>
+	<Property ID="army_grade_title_1_1" image="gui/dragon_main/mainfunction/grade/grade_camp1_1.png"/>
+	<Property ID="army_grade_title_1_2" image="gui/dragon_main/mainfunction/grade/grade_camp1_2.png"/>
+	<Property ID="army_grade_title_1_3" image="gui/dragon_main/mainfunction/grade/grade_camp1_3.png"/>
+	<Property ID="army_grade_title_1_4" image="gui/dragon_main/mainfunction/grade/grade_camp1_4.png"/>
+	<Property ID="army_grade_title_1_5" image="gui/dragon_main/mainfunction/grade/grade_camp1_5.png"/>
+	<Property ID="army_grade_title_1_6" image="gui/dragon_main/mainfunction/grade/grade_camp1_6.png"/>
+	<Property ID="army_grade_title_1_7" image="gui/dragon_main/mainfunction/grade/grade_camp1_7.png"/>
+	<Property ID="army_grade_title_1_8" image="gui/dragon_main/mainfunction/grade/grade_camp1_8.png"/>
+	<Property ID="army_grade_title_1_9" image="gui/dragon_main/mainfunction/grade/grade_camp1_9.png"/>
+	<Property ID="army_grade_title_1_10" image="gui/dragon_main/mainfunction/grade/grade_camp1_10.png"/>
+	<Property ID="army_grade_title_1_11" image="gui/dragon_main/mainfunction/grade/grade_camp1_11.png"/>
+	<Property ID="army_grade_title_1_12" image="gui/dragon_main/mainfunction/grade/grade_camp1_12.png"/>
+	<Property ID="army_grade_title_1_13" image="gui/dragon_main/mainfunction/grade/grade_camp1_13.png"/>
+	<Property ID="army_grade_title_1_14" image="gui/dragon_main/mainfunction/grade/grade_camp1_14.png"/>
+	<Property ID="army_grade_title_1_15" image="gui/dragon_main/mainfunction/grade/grade_camp1_15.png"/>
+	<Property ID="army_grade_title_1_16" image="gui/dragon_main/mainfunction/grade/grade_camp1_16.png"/>
+	<Property ID="army_grade_title_1_17" image="gui/dragon_main/mainfunction/grade/grade_camp1_17.png"/>
+	<Property ID="army_grade_title_1_18" image="gui/dragon_main/mainfunction/grade/grade_camp1_18.png"/>
+	<Property ID="army_grade_title_2_1" image="gui/dragon_main/mainfunction/grade/grade_camp2_1.png"/>
+	<Property ID="army_grade_title_2_2" image="gui/dragon_main/mainfunction/grade/grade_camp2_2.png"/>
+	<Property ID="army_grade_title_2_3" image="gui/dragon_main/mainfunction/grade/grade_camp2_3.png"/>
+	<Property ID="army_grade_title_2_4" image="gui/dragon_main/mainfunction/grade/grade_camp2_4.png"/>
+	<Property ID="army_grade_title_2_5" image="gui/dragon_main/mainfunction/grade/grade_camp2_5.png"/>
+	<Property ID="army_grade_title_2_6" image="gui/dragon_main/mainfunction/grade/grade_camp2_6.png"/>
+	<Property ID="army_grade_title_2_7" image="gui/dragon_main/mainfunction/grade/grade_camp2_7.png"/>
+	<Property ID="army_grade_title_2_8" image="gui/dragon_main/mainfunction/grade/grade_camp2_8.png"/>
+	<Property ID="army_grade_title_2_9" image="gui/dragon_main/mainfunction/grade/grade_camp2_9.png"/>
+	<Property ID="army_grade_title_2_10" image="gui/dragon_main/mainfunction/grade/grade_camp2_10.png"/>
+	<Property ID="army_grade_title_2_11" image="gui/dragon_main/mainfunction/grade/grade_camp2_11.png"/>
+	<Property ID="army_grade_title_2_12" image="gui/dragon_main/mainfunction/grade/grade_camp2_12.png"/>
+	<Property ID="army_grade_title_2_13" image="gui/dragon_main/mainfunction/grade/grade_camp2_13.png"/>
+	<Property ID="army_grade_title_2_14" image="gui/dragon_main/mainfunction/grade/grade_camp2_14.png"/>
+	<Property ID="army_grade_title_2_15" image="gui/dragon_main/mainfunction/grade/grade_camp2_15.png"/>
+	<Property ID="army_grade_title_2_16" image="gui/dragon_main/mainfunction/grade/grade_camp2_16.png"/>
+	<Property ID="army_grade_title_2_17" image="gui/dragon_main/mainfunction/grade/grade_camp2_17.png"/>
+	<Property ID="army_grade_title_2_18" image="gui/dragon_main/mainfunction/grade/grade_camp2_18.png"/>
+	<Property ID="army_grade_up" image="gui/dragon_main/mainfunction/grade/jjts.png"/>
+	<Property ID="army_grade_down" image="gui/dragon_main/mainfunction/grade/jjts.png"/>
+	<!--战报-->
+	<Property ID="report_rank_no_1" image="gui/dragon_main/mainfunction/arena/ranking_1st_b.png"/>
+	<Property ID="report_rank_no_2" image="gui/dragon_main/mainfunction/arena/ranking_2nd_b.png"/>
+	<Property ID="report_rank_no_3" image="gui/dragon_main/mainfunction/arena/ranking_3rd_b.png"/>
+	<Property ID="report_rank_back_1" image="gui/dragon_main/mainfunction/grade/report_1.png"/>
+	<Property ID="report_rank_back_2" image="gui/dragon_main/mainfunction/grade/report_2.png"/>
+	<Property ID="report_rank_back_3" image="gui/dragon_main/mainfunction/grade/report_3.png"/>
 </Object>

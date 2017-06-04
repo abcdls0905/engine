@@ -2,13 +2,13 @@
 <object>
     <internals />
     <properties>
-        <property name="BaseCap" type="int" public="false" private="true" save="false" realtime="" desc="基础容量, 为0时使用最大容量" />
+        <property name="BaseCap" type="dword" public="false" private="true" save="false" realtime="" desc="基础容量, 为0时使用最大容量" />
         <property name="AddContainer" type="object" public="false" private="false" save="false" realtime="" desc="附加的容器, 此附加的容器包含n个Bag道具，每个Bag道具可激活基础容量之外的一些容量" />
-        <property name="CantAdd" type="int" public="false" private="false" save="false" realtime="" desc="是否不能添加物品到容器中" />
-        <property name="CantRemove" type="int" public="false" private="false" save="false" realtime="" desc="是否不能将物品从容器中移走" />
-        <property name="CantArrange" type="int" public="false" private="false" save="false" realtime="" desc="是否不能执行整理操作" />
-        <property name="CanOP" type="int" public="false" private="false" save="false" realtime="" desc="是否不能执行整理操作" />
-        <property name="IsCanBW" type="int" public="false" private="false" save="false" realtime="false" desc="是否玩家可操作的弱关联容器标志" />
+        <property name="CantAdd" type="dword" public="false" private="false" save="false" realtime="" desc="是否不能添加物品到容器中" />
+        <property name="CantRemove" type="dword" public="false" private="false" save="false" realtime="" desc="是否不能将物品从容器中移走" />
+        <property name="CantArrange" type="dword" public="false" private="false" save="false" realtime="" desc="是否不能执行整理操作" />
+        <property name="CanOP" type="dword" public="false" private="false" save="false" realtime="" desc="是否不能执行整理操作" />
+        <property name="IsCanBW" type="dword" public="false" private="false" save="false" realtime="false" desc="是否玩家可操作的弱关联容器标志" />
     </properties>
     <records />
     <includes />

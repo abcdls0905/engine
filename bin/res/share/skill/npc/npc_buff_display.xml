@@ -1,391 +1,183 @@
 <?xml version="1.0" encoding="gb2312"?>
-<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
 <Object>
-	<Property ID="batibuff" Name="霸体" CanOutLine="0" OutLineColor="1.0,0,0"/>
-	<Property ID="common_kuangbao_1" effect="common_kuangbao_1"/>
-	<Property ID="buff_dead_dis"/>
-	<Property ID="common_buff_zd_1_per" Name="中毒" effect="common_poison"/>
-	<Property ID="common_buff_atk_01_per" Name="战神附体" effect="common_buff_atk"/>
-	<Property ID="common_buff_def_01_per" Name="坚盾附体" effect="common_buff_def"/>
-	<Property ID="common_buff_stun_01_per" Name="眩晕buff" action="stun" effect="common_stun"/>
-	<Property ID="common_buff_freeze_per" Name="冰冻" effect="common_frozen_1"/>
-	<Property ID="buff_boss_lsjs_001" Name="格挡" action="npc_smdd_atk_9"/>
-	<Property ID="buff_boss_hssz_002" Name="格挡反击"/>
-	<Property ID="buff_boss_jmlz_001" Name="绝对防御"/>
-	<Property ID="buff_boss_jmdsls_001" Name="毒镖投掷之中毒"/>
-	<Property ID="buff_item_jiaxue_001" Name="1级血瓶"/>
-	<Property ID="speeddown" effect="common_slow"/>
-	<Property ID="buff_boss_xh_002" Name="雪地重击之减速"/>
-	<Property ID="sacrifice_halo1" effect="common_xianji"/>
-	<Property ID="smdd_bati_buff_per" Name="突刺阵（霸体）" effect="common_kuangbao_1" OutLineEffect="test3"/>
-	<Property ID="xy_lv2_kb_buff_1_per" Name="中级雪猿狂暴" effect="xy_xy_lv2_kb2" OutLineEffect="test3"/>
-	<Property ID="xy_lv3_kb_buff_1_per" Name="高级雪猿狂暴" effect="xy_xy_lv2_kb2" OutLineEffect="test3"/>
-	<Property ID="xy_lv3_kb_buff_2_per" Name="高级雪猿狂暴" effect="xy_xy_lv2_kb2"/>
-	<Property ID="kl_ss_lv3_zuzhou_per" Name="虚弱诅咒" effect="kl_zuzhouatk_1"/>
-	<Property ID="buff_health_1_per" Name="治疗" effect="gbl_wy_zleffect"/>
-	<Property ID="boss2_tanfei_dis" Name="弹飞盾" effect="common_buff_sld"/>
-	<Property ID="buff_strom_speeddown" Name="风暴减速" effect="common_slow"/>
-	<Property ID="break_buff" Name="破防buff" OutLineEffect="test3"/>
-	<Property ID="buff_ws6_001" Name="嗜血术" effect="buff_ws6_001"/>
-	<Property ID="buff_ws7_001" Name="狙击晕眩" action="stun" effect="buff_ws7_001"/>
-	<Property ID="buff_ws10_001" Name="毁灭怒吼减攻击" effect="buff_ws10_001"/>
-	<Property ID="buff_ws14_001" Name="冰霜冲击之减速" effect="buff_ws14_001"/>
-	<Property ID="buff_ws13_001" Name="烈焰冲击之灼烧" effect="buff_ws13_001"/>
-	<Property ID="buff_ws9_001" Name="攻击怒吼之加攻击" effect="buff_ws9_001"/>
-	<Property ID="buff_50speeddown" Name="50%减速" effect="common_slow"/>
-	<Property ID="buff_20cantmove" Name="20%禁足" effect="common_mabi"/>
-	<Property ID="spd_dis" Name="风行" effect="common_buff_spd"/>
-	<Property ID="buff_light_fanji_1" Name="雷电反伤" effect="yuansu_st_1"/>
-	<Property ID="buff_fire_zhiliao_1" Name="火焰治疗" effect="yuansu_st_2"/>
-	<Property ID="buff_freeze_jiansu_1" Name="霜冻减速" OutLineEffect="test5"/>
-	<Property ID="buff_fire_shaozhuo_1" Name="火焰灼烧" effect="yuansu_st_3"/>
-	<Property ID="buff_ws_skill_20_3" Name="超重力减速" effect="buff_ws14_001"/>
-	<Property ID="buff_ws_skill_18_3" Name="石化" OutLineEffect="test4"/>
-	<Property ID="buff_firecare" Name="火焰特效" effect="yuansu_st_3"/>
-	<Property ID="froster_slowdown" Name="大冰人减速" effect="ice_slowdown"/>
-	<Property ID="buff_ws5_001" Name="治疗加血" effect="ws_skill_5_2"/>
-	<Property ID="buff_ws11_001" Name="腐蚀之掉血"/>
-	<Property ID="buff_ws11_002" Name="治疗雨回血" effect="buff_ws11_002"/>
-	<Property ID="buff_ws19_001" Name="生命汲取之反馈"/>
-	<Property ID="buff_wsty_001" Name="提高10%主人攻击力"/>
-	<Property ID="buff_wsty_002" Name="提高20%主人攻击力"/>
-	<Property ID="buff_wsty_003" Name="提高30%主人攻击力"/>
-	<Property ID="buff_wsty_004" Name="提高40%主人攻击力"/>
-	<Property ID="buff_wsty_005" Name="提高50%主人攻击力"/>
-	<Property ID="buff_wsty_006" Name="提高60%主人攻击力"/>
-	<Property ID="buff_wsty_007" Name="提高70%主人攻击力"/>
-	<Property ID="buff_wsty_008" Name="提高80%主人攻击力"/>
-	<Property ID="buff_wsty_009" Name="提高90%主人攻击力"/>
-	<Property ID="buff_wsty_010" Name="提高100%主人攻击力"/>
-	<Property ID="buff_wsty_011" Name="提高20%主人基础生命"/>
-	<Property ID="buff_wsty_012" Name="提高25%主人基础生命"/>
-	<Property ID="buff_wsty_013" Name="提高30%主人基础生命"/>
-	<Property ID="buff_wsty_014" Name="提高35%主人基础生命"/>
-	<Property ID="buff_wsty_015" Name="提高40%主人基础生命"/>
-	<Property ID="buff_wsty_016" Name="提高45%主人基础生命"/>
-	<Property ID="buff_wsty_017" Name="提高50%主人基础生命"/>
-	<Property ID="buff_wsty_018" Name="提高55%主人基础生命"/>
-	<Property ID="buff_wsty_019" Name="提高60%主人基础生命"/>
-	<Property ID="buff_wsty_020" Name="提高65%主人基础生命"/>
-	<Property ID="buff_wsty_021" Name="提高5%主人暴击率"/>
-	<Property ID="buff_wsty_022" Name="提高10%主人暴击率"/>
-	<Property ID="buff_wsty_023" Name="提高15%主人暴击率"/>
-	<Property ID="buff_wsty_024" Name="提高20%主人暴击率"/>
-	<Property ID="buff_wsty_025" Name="提高25%主人暴击率"/>
-	<Property ID="buff_wsty_026" Name="提高30%主人暴击率"/>
-	<Property ID="buff_wsty_027" Name="提高35%主人暴击率"/>
-	<Property ID="buff_wsty_028" Name="提高40%主人暴击率"/>
-	<Property ID="buff_wsty_029" Name="提高45%主人暴击率"/>
-	<Property ID="buff_wsty_030" Name="提高50%主人暴击率"/>
-	<Property ID="buff_wsty_031" Name="提高5%主人闪避"/>
-	<Property ID="buff_wsty_032" Name="提高10%主人闪避"/>
-	<Property ID="buff_wsty_033" Name="提高15%主人闪避"/>
-	<Property ID="buff_wsty_034" Name="提高20%主人闪避"/>
-	<Property ID="buff_wsty_035" Name="提高25%主人闪避"/>
-	<Property ID="buff_wsty_036" Name="提高30%主人闪避"/>
-	<Property ID="buff_wsty_037" Name="提高35%主人闪避"/>
-	<Property ID="buff_wsty_038" Name="提高40%主人闪避"/>
-	<Property ID="buff_wsty_039" Name="提高45%主人闪避"/>
-	<Property ID="buff_wsty_040" Name="提高50%主人闪避"/>
-	<Property ID="buff_wsty_041" Name="提高10%主人暴击伤害"/>
-	<Property ID="buff_wsty_042" Name="提高20%主人暴击伤害"/>
-	<Property ID="buff_wsty_043" Name="提高30%主人暴击伤害"/>
-	<Property ID="buff_wsty_044" Name="提高40%主人暴击伤害"/>
-	<Property ID="buff_wsty_045" Name="提高50%主人暴击伤害"/>
-	<Property ID="buff_wsty_046" Name="提高60%主人暴击伤害"/>
-	<Property ID="buff_wsty_047" Name="提高70%主人暴击伤害"/>
-	<Property ID="buff_wsty_048" Name="提高80%主人暴击伤害"/>
-	<Property ID="buff_wsty_049" Name="提高90%主人暴击伤害"/>
-	<Property ID="buff_wsty_050" Name="提高100%主人暴击伤害"/>
-	<Property ID="buff_wsty_051" Name="提高10%主人免伤"/>
-	<Property ID="buff_wsty_052" Name="提高15%主人免伤"/>
-	<Property ID="buff_wsty_053" Name="提高20%主人免伤"/>
-	<Property ID="buff_wsty_054" Name="提高25%主人免伤"/>
-	<Property ID="buff_wsty_055" Name="提高30%主人免伤"/>
-	<Property ID="buff_wsty_056" Name="提高35%主人免伤"/>
-	<Property ID="buff_wsty_057" Name="提高40%主人免伤"/>
-	<Property ID="buff_wsty_058" Name="提高45%主人免伤"/>
-	<Property ID="buff_wsty_059" Name="提高55%主人免伤"/>
-	<Property ID="buff_wsty_060" Name="提高60%主人免伤"/>
-	<Property ID="wy_common_bati" Name="巫医霸体" effect="wy_common_def"/>
-	<Property ID="buff_ws23_001" Name="践踏晕眩" effect="buff_ws7_001"/>
-	<Property ID="copy_boss2_tanfei_dis" Name="弹飞盾" effect="common_buff_fhd"/>
-	<Property ID="buff_ws10_002" Name="黑暗吐息之诅咒" effect="buff_ws10_002"/>
-	<Property ID="common_burn_dis" Name="引燃" effect="pan_rpg12"/>
-	<Property ID="buff_ws24_001" Name="狂吠减速"/>
-	<Property ID="buff_ws24_002" Name="狂吠加速"/>
-	<Property ID="buff_ws24_003" Name="撕咬流血"/>
-	<Property ID="buff_wsty_061" Name="提高主人4%火元素伤害"/>
-	<Property ID="buff_wsty_062" Name="提高主人8%火元素伤害"/>
-	<Property ID="buff_wsty_063" Name="提高主人12%火元素伤害"/>
-	<Property ID="buff_wsty_064" Name="提高主人16%火元素伤害"/>
-	<Property ID="buff_wsty_065" Name="提高主人20%火元素伤害"/>
-	<Property ID="buff_wsty_066" Name="提高主人24%火元素伤害"/>
-	<Property ID="buff_wsty_067" Name="提高主人28%火元素伤害"/>
-	<Property ID="buff_wsty_068" Name="提高主人32%火元素伤害"/>
-	<Property ID="buff_wsty_069" Name="提高主人36%火元素伤害"/>
-	<Property ID="buff_wsty_070" Name="提高主人40%火元素伤害"/>
-	<Property ID="buff_wsty_071" Name="提高主人4%冰元素伤害"/>
-	<Property ID="buff_wsty_072" Name="提高主人8%冰元素伤害"/>
-	<Property ID="buff_wsty_073" Name="提高主人12%冰元素伤害"/>
-	<Property ID="buff_wsty_074" Name="提高主人16%冰元素伤害"/>
-	<Property ID="buff_wsty_075" Name="提高主人20%冰元素伤害"/>
-	<Property ID="buff_wsty_076" Name="提高主人24%冰元素伤害"/>
-	<Property ID="buff_wsty_077" Name="提高主人28%冰元素伤害"/>
-	<Property ID="buff_wsty_078" Name="提高主人32%冰元素伤害"/>
-	<Property ID="buff_wsty_079" Name="提高主人36%冰元素伤害"/>
-	<Property ID="buff_wsty_080" Name="提高主人40%冰元素伤害"/>
-	<Property ID="buff_wsty_081" Name="提高主人4%电元素伤害"/>
-	<Property ID="buff_wsty_082" Name="提高主人8%电元素伤害"/>
-	<Property ID="buff_wsty_083" Name="提高主人12%电元素伤害"/>
-	<Property ID="buff_wsty_084" Name="提高主人16%电元素伤害"/>
-	<Property ID="buff_wsty_085" Name="提高主人20%电元素伤害"/>
-	<Property ID="buff_wsty_086" Name="提高主人24%电元素伤害"/>
-	<Property ID="buff_wsty_087" Name="提高主人28%电元素伤害"/>
-	<Property ID="buff_wsty_088" Name="提高主人32%电元素伤害"/>
-	<Property ID="buff_wsty_089" Name="提高主人36%电元素伤害"/>
-	<Property ID="buff_wsty_090" Name="提高主人40%电元素伤害"/>
-	<Property ID="buff_wsty_091" Name="提高主人1%火元素触发几率"/>
-	<Property ID="buff_wsty_092" Name="提高主人2%火元素触发几率"/>
-	<Property ID="buff_wsty_093" Name="提高主人3%火元素触发几率"/>
-	<Property ID="buff_wsty_094" Name="提高主人4%火元素触发几率"/>
-	<Property ID="buff_wsty_095" Name="提高主人5%火元素触发几率"/>
-	<Property ID="buff_wsty_096" Name="提高主人6%火元素触发几率"/>
-	<Property ID="buff_wsty_097" Name="提高主人7%火元素触发几率"/>
-	<Property ID="buff_wsty_098" Name="提高主人8%火元素触发几率"/>
-	<Property ID="buff_wsty_099" Name="提高主人9%火元素触发几率"/>
-	<Property ID="buff_wsty_100" Name="提高主人10%火元素触发几率"/>
-	<Property ID="buff_wsty_101" Name="提高主人1%冰元素触发几率"/>
-	<Property ID="buff_wsty_102" Name="提高主人2%冰元素触发几率"/>
-	<Property ID="buff_wsty_103" Name="提高主人3%冰元素触发几率"/>
-	<Property ID="buff_wsty_104" Name="提高主人4%冰元素触发几率"/>
-	<Property ID="buff_wsty_105" Name="提高主人5%冰元素触发几率"/>
-	<Property ID="buff_wsty_106" Name="提高主人6%冰元素触发几率"/>
-	<Property ID="buff_wsty_107" Name="提高主人7%冰元素触发几率"/>
-	<Property ID="buff_wsty_108" Name="提高主人8%冰元素触发几率"/>
-	<Property ID="buff_wsty_109" Name="提高主人9%冰元素触发几率"/>
-	<Property ID="buff_wsty_110" Name="提高主人10%冰元素触发几率"/>
-	<Property ID="buff_wsty_111" Name="提高主人1%电元素触发几率"/>
-	<Property ID="buff_wsty_112" Name="提高主人2%电元素触发几率"/>
-	<Property ID="buff_wsty_113" Name="提高主人3%电元素触发几率"/>
-	<Property ID="buff_wsty_114" Name="提高主人4%电元素触发几率"/>
-	<Property ID="buff_wsty_115" Name="提高主人5%电元素触发几率"/>
-	<Property ID="buff_wsty_116" Name="提高主人6%电元素触发几率"/>
-	<Property ID="buff_wsty_117" Name="提高主人7%电元素触发几率"/>
-	<Property ID="buff_wsty_118" Name="提高主人8%电元素触发几率"/>
-	<Property ID="buff_wsty_119" Name="提高主人9%电元素触发几率"/>
-	<Property ID="buff_wsty_120" Name="提高主人10%电元素触发几率"/>
-	<Property ID="buff_healball_1" Name="治疗飞弹" effect="sv_healball_2"/>
-	<Property ID="gold_zhanshen_buff" Name="金币战神吼" effect="gold_addatk_1"/>
-	<Property ID="buff_chest_destory_15s" Name="宝箱15秒销毁" effect="chest_destory_15s"/>
-	<Property ID="buff_chest_destory_12s" Name="宝箱12秒销毁" effect="chest_destory_12s"/>
-	<Property ID="buff_chest_destory_8s" Name="宝箱8秒销毁" effect="chest_destory_8s"/>
-	<Property ID="buff_ws17_001" Name="磁力引晕眩" action="stun" effect="buff_ws7_001"/>
-	<Property ID="buff_ws_skill_20_1" Name="普攻回血" effect="buff_ws_skill_20_1"/>
-	<Property ID="buff_goldenhit" Name="金币命中" effect="golddown_goldenhit"/>
-	<Property ID="buff_ws_skill_7_1" Name="爆炎弹灼烧" effect="buff_ws13_001"/>
-	<Property ID="buff_ws_skill_17_1" Name="磁力引晕眩" action="stun" effect="buff_ws7_001"/>
-	<Property ID="buff_ws_skill_15_1" Name="10%攻击吸血"/>
-	<Property ID="buff_gbldef_133" Name="133哥布林防反" effect="jy_gbl_def_1"/>
-	<Property ID="buff_gbl_atk_133" Name="133哥布林攻击增益" effect="common_buff_atk"/>
-	<Property ID="buff_gbl_def_133" Name="133哥布林防御增益" effect="common_buff_def"/>
-	<Property ID="buff_timetodie" effect="timetodie"/>
-	<Property ID="buff_ws_skill_26_1" Name="回春回血" effect="buff_ws_skill_20_1"/>
-	<Property ID="buff_ws_skill_26_2" Name="太极之力晕眩" action="stun" effect="buff_ws7_001"/>
-	<Property ID="deepfrozen" Name="极寒诅咒" effect="deepfrozen_1"/>
-	<Property ID="st_healself_buff" Name="石像恢复" effect="st_boom_sk2_1"/>
-	<Property ID="axiuluo" Name="阿修罗" effect="stage16_3_klyz_1"/>
-	<Property ID="defdown" Name="破甲" effect="stage16_3_klyz_7"/>
-	<Property ID="buff_end" Name="5秒死" effect="stage19_2_zzl_2"/>
-	<Property ID="abyss_anti_dis" Name="反击风暴" effect="npc_abyss2"/>
-	<Property ID="hq_buff_dis" Name="火拳" effect="npc_ryjs7"/>
-	<Property ID="souleater" Name="吸魂" effect="stage18_3_king_4"/>
-	<Property ID="buff_ws_skill_28_2" Name="额外1%当前生命伤害"/>
-	<Property ID="buff_ws_skill_28_3" Name="削弱3%攻击，可叠加"/>
-	<Property ID="team3_lzwk_dis" Name="离子外壳" effect="buff_lzwk"/>
-	<Property ID="team4_hbjs_dis" Name="寒冰寄生" effect="team4_ice1"/>
-	<Property ID="team3_lzwk1_dis" HurtEffect="lzwk_shouji"/>
-	<Property ID="buff_sk_atkup" effect="common_buff_atk2"/>
-	<Property ID="buff_team2_atkdown" Name="攻击减少" effect="stage18_3_king_11"/>
-	<Property ID="hteam1_halo_atk_buff" Name="协同光环" effect="team1_atk_buff"/>
-	<Property ID="hteam1_halo_buff_dis" Name="协同光环" effect="team1_atk_halo"/>
-	<Property ID="team4_hbxw_buff_dis" Name="寒冰漩涡" effect="common_hbxw"/>
-	<Property ID="buff_ws_skill_30_2" Name="蛛丝减速" effect="common_slow"/>
-	<Property ID="buff_ws_skill_30_3" Name="无处可逃禁锢" effect="buff_ws_skill_31"/>
-	<Property ID="team4_hbxw11_buff_dis" Name="寒冰漩涡吸附" effect="buff_freeze"/>
-	<Property ID="hteam3_zj_buff_dis" Name="斩击" action="stun" effect="boss_sword92"/>
-	<Property ID="buff_soulblade" Name="魂剑" effect="hard_team2_sk_1" OutLineEffect="test6"/>
-	<Property ID="buff_soulup_1" Name="魂吸" effect="hard_team2_sk_8"/>
-	<Property ID="buff_soulup_2" Name="强攻" effect="hard_team2_atk"/>
-	<Property ID="buff_soulspeed" Name="神行" effect="hard_team2_speed"/>
-	<Property ID="buff_tomb_speed_1" Name="神行墓碑" effect="hard_team2_tomb_speed"/>
-	<Property ID="buff_tomb_atk_1" Name="强攻墓碑" effect="hard_team2_tomb_atk"/>
-	<Property ID="buff_tomb_def_1" Name="弹反墓碑" effect="hard_team2_tomb_def"/>
-	<Property ID="buff_tomb_heal_1" Name="魂愈墓碑" effect="hard_team2_tomb_heal"/>
-	<Property ID="buff_souldef" Name="弹反" effect="hard_team2_def"/>
-	<Property ID="buff_ht5_slow" Name="缓足禁锢" effect="hard_team5_death_4"/>
-	<Property ID="buff_ht5_atk" Name="背水一战" effect="hard_team5_death_5"/>
-	<Property ID="buff_ht5_dead" Name="致死咒怨" effect="hard_team5_death_3"/>
-	<Property ID="buff_common_nodis" Name="通用无表现"/>
-	<Property ID="buff_ws_skill_14_2" effect="buff_weapon_bing001"/>
-	<Property ID="buff_ws_skill_27_3" Name="飞剑光环" effect="buff_pet_skill_015A"/>
-	<Property ID="buff_ws_skill_27_3a"/>
-	<Property ID="titan273_buff_1" Name="狂暴" effect="titan273_6"/>
-	<Property ID="titan273_buff_2" Name="药剂调配" effect="titan273_2"/>
-	<Property ID="titan273_buff_3" Name="药剂中和"/>
-	<Property ID="titan273_buff_4" Name="药剂失控" effect="titan273_5"/>
-	<Property ID="buff_ws_skill_33_2" Name="乾坤一掷禁锢" effect="buff_ws_skill_31"/>
-	<Property ID="rdevent_buff_1" Name="神速" effect="rdevent_eff_2"/>
-	<Property ID="rdevent_buff_2" Name="强攻" effect="Demo_huo"/>
-	<Property ID="rdevent_buff_3" Name="吸血" effect="rdevent_eff_3"/>
-	<Property ID="rdevent_buff_4" Name="爆破"/>
-	<Property ID="rdevent_buff_5" Name="破甲" effect="rdevent_eff_4"/>
-	<Property ID="rdevent_buff_6" Name="治愈" effect="sv_healball_2"/>
-	<Property ID="buff_63dam_1" Name="额外伤害" effect="nor_yuangu_1"/>
-	<Property ID="Demo_wq_001_b" Name="火武器" effect="combat_fire_001a"/>
-	<Property ID="Demo_wq_002_b" Name="冰武器" effect="Demo_bin"/>
-	<Property ID="Demo_wq_003_b" Name="雷武器" effect="Demo_lei"/>
-	<Property ID="xixuebuff_001f" Name="吸血表现"/>
-	<Property ID="speeddown_001f" Name="减速" Photo="gui\xm2_main\buff\jiansu.png" effect="common_slow"/>
-	<Property ID="xuanyun_001" Name="眩晕buff" Photo="gui\xm2_main\buff\xuanyun.png" action="stun" effect="xuanyun"/>
-	<Property ID="jiangshi_jiangshi_skill05_01" Name="尸暴"/>
-	<Property ID="buff_lgt_skill_4" Name="反伤" effect="mon_shu_lgt_sk4"/>
-	<Property ID="buff_klw_skill_10" Name="加血" effect="klw_skill_10"/>
-	<Property ID="deeppoison" Name="剧毒" effect="common_poison"/>
-	<Property ID="klw_huixuebuff" Name="回血40%" effect="klw_skill_9_1"/>
-	<Property ID="buff_pangzi_skill_7" Name="护甲" effect="pangzi_skill_8"/>
-	<Property ID="xuruobuff_001" Name="虚弱，减护甲"/>
-	<Property ID="buff_jiaohui_fs_skill_006" Name="束缚术" action="stun" effect="jiaohui_fs_skill_06_1"/>
-	<Property ID="buff_lgt_skill_5a" Name="回春" effect="lgt_skill_5a"/>
-	<Property ID="lgt_skill_5b" Name="天谴" effect="flash_skill_2"/>
-	<Property ID="buff_lgt_skill_5c" Name="加防"/>
-	<Property ID="buff_lgt_skill_5d" Name="减防" effect="lgt_skill_5d"/>
-	<Property ID="yiji_fashi_skill08a" Name="寒气入体" effect="combat_ice_001"/>
-	<Property ID="buff_team1_bianshen_skill_2" Name="加速" effect="common_addspeed"/>
-	<Property ID="buff_team1_bianshen_skill_3" Name="加攻" effect="buff_lutanist_sk01a"/>
-	<Property ID="buff_jiaohui_fs_skill_010" Name="藤蔓禁锢" effect="jiaohui_fs_skill_13"/>
-	<Property ID="buff_jinbi_pk_skill_4_1" Name="免疫控制" effect="jinbi_pk_5"/>
-	<Property ID="buff_gbl_xdzhanshi_skill09" Name="火焰纹章" effect="gbl_xdzhanshi_skill12"/>
-	<Property ID="buff_gbl_xdzhanshi_skill10" Name="寒冰纹章" effect="gbl_xdzhanshi_skill05a"/>
-	<Property ID="debuff_du" Name="中毒0.01" effect="common_du"/>
-	<Property ID="buff_judunvw_skill_7" Name="束缚" Photo="gui\xm2_main\buff\xuanyun.png" effect="buff_shufu"/>
-	<Property ID="buff_gongji_50" Name="攻击增强50%" effect="xingxing_skill06"/>
-	<Property ID="jingyan_zhadan" Name="清屏炸弹"/>
-	<Property ID="buff_jingyan_huoli" Name="火力全开" effect="common_superman"/>
-	<Property ID="buff_rikishi_05" Name="狂热" ModelScale="1.3"/>
-	<Property ID="buff_blackman_05" Name="雷劫" effect="boss_blackman_05_002"/>
-	<Property ID="buff_tamer_05" Name="飓风护体" effect="boss_tamer_05_002"/>
-	<Property ID="buff_winebibber_05" Name="醉酒" effect="boss_winebibber_05_002"/>
-	<Property ID="buff_shibao50" Name="尸暴" effect="jiangshi_jiangshi_skill05_1"/>
-	<Property ID="buff_azrael_skill_07_2" Name="钩镰加魔抗" effect="skill_azrael_07"/>
-	<Property ID="buff_shooter_skill_04" Name="冲击箭上DOT" effect="boss_shooter04_1"/>
-	<Property ID="buff_niutou_bianshen_01" Name="变身" Index="bglwy_skill00"/>
-	<Property ID="buff_jumo_shuangdao_skill_06" Name="刀锋" effect="xingxing_skill06"/>
-	<Property ID="buff_yzr_zhanshi_skill05" Name="冰冻" Photo="gui\xm2_main\buff\bindong.png" effect="common_frozen_1"/>
-	<Property ID="buff_mubeilx_skill_2" Name="墓碑连线" effect="mubei_lianjie_1"/>
-	<Property ID="Buff_quicksand_halo_01" Name="流沙减速光环" Index="" effect="quicksand_01"/>
-	<Property ID="Buff_fete_01" Name="祭祀效果" effect="fete_01"/>
-	<Property ID="Buff_fete_halo_01" Name="祭祀光环效果" effect="fete_halo_01"/>
-	<Property ID="buff_mgn_zitexiao" Name="传送子" effect="mgn_chuansong"/>
-	<Property ID="buff_kljk_TimeStatic_01" Name="时间静止" Photo="gui\xm2_main\buff\bindong.png" effect="mon_shu_kljk_sk5b"/>
-	<Property ID="halo_kljk_TimeStatic_01" Name="时间静止光环" effect="mon_shu_kljk_sk5a"/>
-	<Property ID="buff_xixue_001" Name="吸血通用表现包"/>
-	<Property ID="buff_yanlang_skill_6" Name="炎狼" effect="mon_shu_yanlang_sk6"/>
-	<Property ID="buff_zhimang_001" Name="致盲" effect="common_buff_miss"/>
-	<Property ID="buff_pojia_001" Name="破甲" effect="common_buff_pojia"/>
-	<Property ID="buff_Display_lutanist_04" Name="琵琶颂歌-加血" effect="buff_boss_lutanist04_01"/>
-	<Property ID="buff_Display_wupao_fashi_04" Name="生命汲取-连线" effect="mon_wupao_fashi_20"/>
-	<Property ID="buff_halo_zhenfen" Name="振奋光环" effect="buff_halo_zhenfen"/>
-	<Property ID="buff_skjiaren_skill_2" Name="夹人" effect="mon_shu_shawang_sk9b"/>
-	<Property ID="bluebase_buff_1" Name="蓝色旗帜" effect="gonghui_zhanling_2"/>
-	<Property ID="redbase_buff_1" Name="红色旗帜" effect="gonghui_zhanling_3"/>
-	<Property ID="normalbase_buff_1" Name="灰色旗帜" effect="gonghui_zhanling_1"/>
-	<Property ID="buff_hujia_1" Name="加护甲" effect="common_hujia"/>
-	<Property ID="buff_mokang_1" Name="加魔抗" effect="common_mokang"/>
-	<Property ID="buff_yhfs_skill2" Name="冤魂护体2" effect="mon_shu_guihun_sk9"/>
-	<Property ID="buff_jiebei01" Name="界碑特效" effect="gonghui_zhanling"/>
-	<Property ID="buff_fanshang_001" Name="反伤" effect="boss_soldier_6"/>
-	<Property ID="control_buff_chaofeng_001" Name="嘲讽" Photo="gui\xm2_main\buff\chaofeng.png" effect="buff_chaofeng_001"/>
-	<Property ID="halo_zhuoshao_001" Name="灼烧光环" effect="boss_soldier_7_1"/>
-	<Property ID="buff_zhuoshao_001" Name="灼烧" HurtEffect="boss_soldier_7_2"/>
-	<Property ID="buff_skjiaren_skill_3" Name="解除夹人" effect="klw_skill_9_1"/>
-	<Property ID="buff_mgn_skill_7_1" Name="玛古纳下沉闪避"/>
-	<Property ID="buff_wuopao_sishen_skill20" Name="黑暗光环" effect="wuopao_sishen_skill18"/>
-	<Property ID="buff_wuopao_sishen_skill20a" Name="黑暗光混灼烧" HurtEffect="dark_hit"/>
-	<Property ID="buff_shitu_002" Photo="gui\xm2_main\buff\tuanjie.png"/>
-	<Property ID="buff_shitu_003" Photo="gui\xm2_main\buff\tuanjie.png"/>
-	<Property ID="buff_shitu_004" Photo="gui\xm2_main\buff\tuanjie.png"/>
-	<Property ID="buff_shitu_005" Photo="gui\xm2_main\buff\tuanjie.png"/>
-	<Property ID="battle_3v3_buff_1" Name="强攻光环" effect="battle3v3_eff_4"/>
-	<Property ID="battle_3v3_buff_1b" Name="强攻buff" effect="battle3v3_eff_8"/>
-	<Property ID="battle_3v3_buff_2" Name="神速光环" effect="battle3v3_eff_2"/>
-	<Property ID="battle_3v3_buff_2b" Name="神速buff" effect="battle3v3_eff_7"/>
-	<Property ID="battle_3v3_buff_3" Name="治疗光环" effect="battle3v3_eff_6"/>
-	<Property ID="battle_3v3_buff_3b" Name="治疗buff" effect="battle3v3_eff_9"/>
-	<Property ID="buff_team7_yishang_01" Name="易伤" effect="common_buff_pojia"/>
-	<Property ID="buff_team7_ningshi_01" Name="死亡凝视" effect="effect_boss_shu_0009_02b"/>
-	<Property ID="buff_team7_ningshi_02" Name="死亡凝视"/>
-	<Property ID="buff_team7_ningshi_03" Name="冰冻" effect="common_frozen_1"/>
-	<Property ID="buff_team7_fazhen_01" Name="法阵-主BUFF" effect="effect_boss_shu_0009_04b"/>
-	<Property ID="buff_team7_fazhen_02" Name="法阵-NPC加攻击"/>
-	<Property ID="buff_team7_fazhen_03" Name="法阵-玩家加攻击"/>
-	<Property ID="buff_team7_zhuoshao_01" Name="冷焰灼烧" effect="Demo_bin"/>
-	<Property ID="buff_team7_fazhen_02a" Name="提升50%攻击力" effect="Demo_huo"/>
-	<Property ID="buff_team7_fazhen_03a" Name="提升10%攻击力" effect="Demo_huo"/>
-	<Property ID="speeddown_007f" Name="减速100%"/>
-	<Property ID="debuff_du_1" Name="中毒0.002"/>
-	<Property ID="buff_yewaiwudi_skill_1a" Name="最终免伤"/>
-	<Property ID="buff_xueruo_01" effect="buff_jihanlingyu_01"/>
-	<Property ID="halo_jiasu_1" Name="加速光环"/>
-	<Property ID="halo_bingdong_1" Name="冰冻光环"/>
-	<Property ID="buff_jiasu_1" Name="加速" Photo="gui\xm2_main\buff\bati.png" effect="jiasu_1"/>
-	<Property ID="halo_jiansu_1" Name="减速光环"/>
-	<Property ID="buff_25_def_1" Name="守护神光环" effect="klw_skill_9_1"/>
-	<Property ID="bf_zhenfen_buff_1" Name="振奋" effect="common_addspeed_001"/>
-	<Property ID="buff_zym832_boss_03" Name="恐惧" Photo="gui\xm2_main\buff\fanxiang.png" effect="common_curse_001a"/>
-	<Property ID="buff_huanxiang_01" Name="幻象" color="255,193,207,251"/>
-	<Property ID="buff_zym833_boss_01a" Name="剧毒" Photo="gui\xm2_main\buff\bianshen.png" effect="effect_shu_shiwang_10a"/>
-	<Property ID="buff_zym833_boss_03a" Name="尸毒" Photo="gui\xm2_main\buff\bianshen.png" effect="effect_shu_shiwang_10a"/>
-	<Property ID="buff_zym833_boss_02" Name="毒痰" Photo="gui\xm2_main\buff\chenmo.png"/>
-	<Property ID="buff_zym834_boss_03" Name="冰箱" effect="effect_shu_guihun_12"/>
-	<Property ID="buff_zym834_boss_04" Name="生命收集诅咒" effect="effect_shu_shiwang_10a"/>
-	<Property ID="buff_mon_ani_0014_01" Name="暗影侵袭" effect="buff_mon_ani_0014_01a"/>
-	<Property ID="buff_mon_ani_0014_02" Name="灼烧" effect="buff_mon_ani_0014_01b"/>
-	<Property ID="buff_mon_ani_0014_03" Name="提升50%攻击力" effect="buff_mon_ani_0014_03"/>
-	<Property ID="buff_mon_ani_0014_01a" Name="沉默" Photo="gui\xm2_main\buff\chenmo.png"/>
-	<Property ID="buff_mon_shu_0028a_02" Name="战斗姿态" effect="buff_niutou_bangzi_13a"/>
-	<Property ID="buff_mon_shu_0028a_03" Name="防御姿态" effect="buff_niutou_bangzi_13b"/>
-	<Property ID="buff_mon_shu_0028a_04" Name="狂暴姿态" effect="buff_niutou_bangzi_13c"/>
-	<Property ID="buff_mon_shu_0028a_06" Name="战争怒吼" effect="buff_niutou_bangzi_18"/>
-	<Property ID="buff_mon_shu_0028a_07" Name="嘲讽"/>
-	<Property ID="buff_mon_shu_0028a_08" Name="盾反" effect="buff_niutou_bangzi_15"/>
-	<Property ID="buff_mon_shu_0028a_07a" Name="嘲讽" Photo="gui\xm2_main\buff\chaofeng.png"/>
-	<Property ID="buff_mon_shu_0028a_09" Name="治疗术" effect="buff_gbl_xdfashi_07"/>
-	<Property ID="buff_pet_01" Name="请关爱小动物" Photo="gui\xm2_main\buff\chaofeng.png"/>
-	<Property ID="halo_zhuoshao_002" Name="灼烧光环" effect="shenen_skill09b"/>
-	<Property ID="buff_zhuoshao_002" Name="灼烧" HurtEffect="light_hit"/>
-	<Property ID="buff_lastblood_01" Name="百分比扣血通用"/>
-	<Property ID="buff_com_flags_1" Name="灰熊旗帜" effect="common_flag_001"/>
-	<Property ID="buff_com_flags_2" Name="独狼旗帜" effect="common_flag_002"/>
-	<Property ID="buff_zhenying_bianshen1" Name="阵营变身1"/>
-	<Property ID="buff_jiasu_2" Name="加速" Photo="gui\xm2_main\buff\bati.png" effect="jiasu_2"/>
-	<Property ID="buff_attackup_ws" Name="无双增伤" effect="common_buff_addatt_001"/>
-	<Property ID="buff_zhenying_bianshen0a" Name="阵营变身清除"/>
-	<Property ID="buff_zym851_boss_1" Name="分裂后缩小BUFF" ModelScale="0.67"/>
-	<Property ID="buff_zym858_boss_2" Name="闪电光环"/>
-	<Property ID="buff_zym858_boss_2a" Name="闪电效果"/>
-	<Property ID="buff_zym858_boss_2b" Name="接技能"/>
-	<Property ID="buff_zym864_boss_01" Name="护盾" effect="effect_mon_shu_0058_05"/>
-	<Property ID="buff_zym865_boss_01" Name="无敌护盾" effect="effect_mon_shu_0050_04"/>
-	<Property ID="buff_zym869_boss_01" Name="墨汁" effect="effect_boss_shu_0013_02a"/>
-	<Property ID="buff_gongji_100" Name="攻击增强100%" effect="mon_wuyao05c"/>
-	<Property ID="buff_boss_ani_0002_05" Name="防护墓碑" effect="effect_boss_ani_0002_06"/>
-	<Property ID="debuff_daofeng_jingu" Name="骨牢禁锢" effect="daofengnv_06a"/>
-	<Property ID="debuff_chuxue" Name="出血0.01" effect="debuff_chuxue"/>
-	<Property ID="buff_display_addHurt_01" Name="增伤BUFF" Photo="gui\xm2_main\buff\bianshen.png" effect="effect_mon_shu_0060_03"/>
-	<Property ID="buff_ShaoJP_01" Name="哨戒炮（激光）" TimeAction="shaojiepao_lianxian_01" effect="shaojiepao_lianxian_01"/>
-	<Property ID="buff_zym887_boss_03" Name="狂暴" color="234,15,15,200" ModelScale="1.5,1.5,1.5"/>
-	<Property ID="buff_Treat_01" Name="治疗" effect="mon_panzi_boss_17"/>
+	<Property ID="buff_cz_001d" Name="器械加速" effect="tt_cz_qixie001c"/>
+	<Property ID="buff_boss_bati001d"/>
+	<Property ID="mount_speed_01" effect=""/>
+	<Property ID="buff_tt_stop001d"/>
+	<Property ID="buff_wild_001d"/>
+	<Property ID="buff_fl_mb001d" effect="tt_buff_mabi" HurtEffect="tt_buff_mabi"/>
+	<Property ID="mount_speed_02d"/>
+	<Property ID="buff_npc_yyr_003d"/>
+	<Property ID="buff_demo_test_001" action="fi_0h_change_1"/>
+	<Property ID="boss_bati_buff_2" Name="可狩猎特效" effect=""/>
+	<Property ID="ride_hunt_buff_1" Name="狩猎buff" effect="ride_xiniu_006"/>
+	<Property ID="battle_fire_buff_1" Name="战场火焰" effect="battle_eff_2"/>
+	<Property ID="buff_foot_1" effect="foot_water"/>
+	<Property ID="boss_buff_js_1" Name="减速" Photo="icon\buff\buff_jiansu_001.png" PhotoName="icon\buff\buff_jiansu_002.png" effect="boss_buff_xy_1"/>
+	<Property ID="boss_buff_xy_2" Name="眩晕" Photo="icon\buff\buff_yunxuan_001.png" PhotoName="icon\buff\buff_yunxuan_002.png" effect="boss_buff_xy_2"/>
+	<Property ID="boss_buff_xs_01" Name="显示" effect="mon_shu_sjxy_sk8"/>
+	<Property ID="buff_fenwei_001" Name="氛围-talk1" action="talk1"/>
+	<Property ID="buff_fenwei_001b" Name="氛围-talk1" action="talk1" effect="guard_sp_01a"/>
+	<Property ID="buff_fenwei_001c" Name="氛围-talk1" action="talk1" effect="guard_sp_02a"/>
+	<Property ID="buff_fenwei_002" Name="氛围-talk2" action="talk2"/>
+	<Property ID="buff_fenwei_003" Name="氛围-talk3" action="talk2"/>
+	<Property ID="buff_fenwei_003b" Name="氛围-talk3" effect="shop_sp_01a"/>
+	<Property ID="buff_fenwei_004" Name="氛围-smile" action="smile"/>
+	<Property ID="buff_fenwei_005" Name="氛围-interact067" action="interact067"/>
+	<Property ID="buff_fenwei_006" Name="氛围-interact235" action="interact235"/>
+	<Property ID="buff_fenwei_007" Name="氛围-interact275" action="interact275"/>
+	<Property ID="buff_fenwei_008" Name="氛围-interact322" action="interact322"/>
+	<Property ID="buff_fenwei_009" Name="氛围-interact323" action="interact323"/>
+	<Property ID="buff_fenwei_009b" Name="氛围-interact323" effect="shop_sp_02a"/>
+	<Property ID="buff_fenwei_010" Name="氛围-interact341" action="interact341"/>
+	<Property ID="buff_fenwei_011" Name="氛围-interact342" action="interact342"/>
+	<Property ID="buff_fenwei_012" Name="氛围-fun001" action="g_fun001"/>
+	<Property ID="buff_fenwei_013" Name="氛围-fun002" action="g_fun002"/>
+	<Property ID="buff_fenwei_014" Name="氛围-fun003" action="g_fun003"/>
+	<Property ID="buff_fenwei_015" Name="氛围-fun004" action="fun004"/>
+	<Property ID="buff_guide_drafire_001" Name="喷火龙" effect="buff_ride_state_004"/>
+	<Property ID="buff_standtalk_001" action="talk1"/>
+	<Property ID="buff_task_dead_1" effect="buff_task_dead_1"/>
+	<Property ID="buff_task_dead_2" effect="task_yingyan_1"/>
+	<Property ID="buff_task_ko_1" effect="task_hurt_1"/>
+	<Property ID="buff_task_cangying_1" effect="task_cangying_1"/>
+	<Property ID="buff_task_nangua_1" effect="task_nangua_1"/>
+	<Property ID="buff_task_nangua_2" effect="task_nangua_2"/>
+	<Property ID="buff_task_nangua_3" effect="task_nangua_3"/>
+	<Property ID="battle_fenwei_001" effect="guide_talk_001"/>
+	<Property ID="battle_fenwei_002" effect="guide_talk_002"/>
+	<Property ID="battle_fenwei_003" effect="guide_talk_003"/>
+	<Property ID="battle_fenwei_004" Name="尸体燃烧销毁" effect="guide_eff_004"/>
+	<Property ID="battle_fenwei_005" Name="魔物出场" effect="guide_sound_001"/>
+	<Property ID="battle_fenwei_006" Name="巨龙喷火形成火墙" effect="guide_eff_006"/>
+	<Property ID="buff_task_leidian_1" effect="task_leidian_3"/>
+	<Property ID="buff_rw_fenwei_01" Name="任务氛围-atk1" action="world_de_007_1" CantBreakAction="1"/>
+	<Property ID="buff_task_wc_2" effect="task_wc_2"/>
+	<Property ID="buff_task_wc_3" action="task_house_01"/>
+	<Property ID="boss_huolong_xy_01" Name="眩晕" Photo="icon\buff\buff_yunxuan_001.png" PhotoName="icon\buff\buff_yunxuan_002.png" effect="boss_huolong_xy_1"/>
+	<Property ID="boss_huolong_hp_1" Name="掉血" effect="boss_huolong_hp_1"/>
+	<Property ID="jc_buff_js_01" Name="减速" Photo="icon\buff\buff_jiansu_001.png" PhotoName="icon\buff\buff_jiansu_002.png" effect="boss_buff_xy_1"/>
+	<Property ID="battle_fenwei_013" effect="guideboss_talk_001"/>
+	<Property ID="battle_fenwei_014" effect="guideboss_talk_002"/>
+	<Property ID="battle_fenwei_015" effect="guideboss_talk_003"/>
+	<Property ID="battle_fenwei_016" effect="guide_get_001"/>
+	<Property ID="boss_jiachou_hp" Name="百分比掉血" effect="boss_huolong_hp_1"/>
+	<Property ID="boss_jiachou_js" Name="减速50%" effect="boss_buff_xy_1"/>
+	<Property ID="buff_guanghuan_HP" Name="黄色光环" CantBreakAction="0" effect="boss_jiachong_010"/>
+	<Property ID="buff_task_zhencha_1" Name="侦察" effect="task_zhencha_1"/>
+	<Property ID="buff_task_zhencha_2" Name="眩晕" effect="boss_buff_xy_2"/>
+	<Property ID="buff_task_demon_2" Name="变身雷电" effect="task_bsdemon_1"/>
+	<Property ID="buff_task_zhixiang_1" Name="变身前特效" effect="task_bsdemon_1"/>
+	<Property ID="buff_aixin_1" Name="爱心" effect="task_aixin_2"/>
+	<Property ID="buff_task_jingzi1_1" Name="镜子光线" effect="task_jingzi1_1"/>
+	<Property ID="buff_task_jingzi1_2" Name="镜子光线" effect="task_jingzi1_2"/>
+	<Property ID="buff_task_jingzi1_3" Name="镜子光线" effect="task_jingzi1_3"/>
+	<Property ID="buff_task_jingzi2_1" Name="镜子光线" effect="task_jingzi2_1"/>
+	<Property ID="buff_task_jingzi2_2" Name="镜子光线" effect="task_jingzi2_2"/>
+	<Property ID="buff_task_jingzi2_3" Name="镜子光线" effect="task_jingzi2_3"/>
+	<Property ID="buff_task_jingzi3_1" Name="镜子光线" effect="task_jingzi3_1"/>
+	<Property ID="buff_task_jingzi3_2" Name="镜子光线" effect="task_jingzi3_2"/>
+	<Property ID="buff_task_jingzi3_3" Name="镜子光线" effect="task_jingzi3_3"/>
+	<Property ID="battle_fenwei_017" Name="1s麻痹buff" effect="guide_eff_007"/>
+	<Property ID="buff_task_jingzi_dead" Name="晶妖死亡" effect="task_jingzi_dead"/>
+	<Property ID="buff_task_fuhuanpc_6" Name="孵化"/>
+	<Property ID="buff_task_yezhuwang_2" Name="藤蔓缠绕" effect="task_chanrao_1"/>
+	<Property ID="buff_task_yezhuwang_1" Name="藤蔓缠绕" effect="task_chanrao_2"/>
+	<Property ID="buff_task_dadishu_1" Name="变身" effect="task_bianshen_1"/>
+	<Property ID="buff_zz_jingu_1" Name=" 禁锢" Photo="icon\buff\buff_jingu_001.png" PhotoName="icon\buff\buff_jingu_002.png" effect="buff_zhiwang_1"/>
+	<Property ID="buff_task_nvwujingu_1" Name="禁锢光环" action="stun"/>
+	<Property ID="buff_task_nvwujingu_2" Name="禁锢" action="stun" effect="task_jingu_1"/>
+	<Property ID="buff_task_ll_1" Name="牢笼开门" action="task_cage_1"/>
+	<Property ID="buff_task_xiaoma_1" Name="小马惊吓" effect="task_xiaoma_1"/>
+	<Property ID="buff_task_longdantexiao_1" Name="龙蛋发光" effect="task_longdan_texiao"/>
+	<Property ID="common_buff_jiguang_01" Name="激光" effect="task_fudan_5"/>
+	<Property ID="buff_task_liandao_1" Name="镰刀" effect="task_liandao_1"/>
+	<Property ID="common_buff_jiguang_02" Name="激光" effect="task_fudan_6"/>
+	<Property ID="common_buff_jiguang_03" Name="激光" effect="task_fudan_7"/>
+	<Property ID="common_buff_jiguang_04" Name="激光" effect="task_fudan_8"/>
+	<Property ID="common_buff_chenfa_01" Name="激光" effect="task_fudan_9"/>
+	<Property ID="common_buff_start_01" effect="task_fudan_10"/>
+	<Property ID="buff_eggborn_001" Name="生蛋" effect="task_wumangxing_1"/>
+	<Property ID="buff_task_apple_1" Name="掉苹果" effect="boss_buff_xy_2"/>
+	<Property ID="buff_task_apple_3" Name="掉苹果" effect="boss_buff_xy_2"/>
+	<Property ID="buff_task_bw_1" Name="宝物打开" action="open"/>
+	<Property ID="buff_task_chuansong_1" Name="传送特效" effect="task_chuansong_1"/>
+	<Property ID="buff_task_jiutan" effect="task_jiutan"/>
+	<Property ID="buff_task_guoshi_1" Name="传送特效" effect="task_guoshi_1"/>
+	<Property ID="buff_task_huti" Name="任务2024护体" effect="task_yingyan_1"/>
+	<Property ID="buff_dyy_mianshang_2" Name="免伤" action="fi_0h_stand" effect="boss_shuijing_xixue"/>
+	<Property ID="buff_boss_dragon_skill_6" Name="眩晕一秒" effect="boss_huolong_xy_1"/>
+	<Property ID="buff_dyy_hphx_1" Name="回血" effect="buff_dyy_hphx"/>
+	<Property ID="buff_dyy_boom_2" Name="爆炸光环" action="combat" effect="dyy_boom_1"/>
+	<Property ID="buff_dyy_boom_3" Name="爆炸" effect="dyy_boom_2"/>
+	<Property ID="boss_sjxy_buff_008a" Name="地震光环" CantBreakAction="0" effect="boss_xy_dizheng_1"/>
+	<Property ID="boss_sjxy_buff_008a_1" Name="地震光环" CantBreakAction="0" effect="boss_xy_dizheng_2"/>
+	<Property ID="boss_sjxy_buff_008a_5" Name="地震光环" action="fi_0h_stand" CantBreakAction="0" effect="boss_xy_dizheng_6"/>
+	<Property ID="boss_sjxy_buff_008a_2" Name="地震光环" CantBreakAction="0" effect="boss_jiachong_09a"/>
+	<Property ID="boss_sjxy_buff_008a_4" Name="地震光环" CantBreakAction="0" effect="boss_xy_dizheng_5"/>
+	<Property ID="boss_sjxy_buff_008a_3" Name="地震光环" CantBreakAction="0" effect="boss_xy_dizheng_4"/>
+	<Property ID="buff_war_jingshisw_1" Name="守卫光环" effect="buff_war_jingshisw_1"/>
+	<Property ID="buff_war_stsm_caikuang_1" Name="采矿" effect="war_stsm_kuangshi1"/>
+	<Property ID="buff_war_stsm_caikuang_2" Name="采矿" effect="war_stsm_kuangshi2"/>
+	<Property ID="buff_war_stsm_huoyan_2" Name="火焰燃烧" effect="buff_war_stsm_huoyan"/>
+	<Property ID="buff_war_stsm_hanbing_3" Name="免疫燃烧" effect="buff_war_stsm_hanbing"/>
+	<Property ID="buff_tongyong_nothing" Name="buff通用空表现包"/>
+	<Property ID="buff_war_stsm_judu_3" Name="免疫剧毒" effect="buff_war_mianyi_judu"/>
+	<Property ID="buff_task_jingzi2_4" Name="镜子光线" effect="task_jingzi2_4"/>
+	<Property ID="buff_task_jingzi3_4" Name="镜子光线" effect="task_jingzi3_4"/>
+	<Property ID="boss_jiachong_buff_007" Name=" 禁锢" Photo="icon\buff\buff_mabi_001.png" PhotoName="icon\buff\buff_mabi_002.png" effect="boss_jiachong_011"/>
+	<Property ID="td_buff_diaoxue_1" effect="boss_jiachong_010a"/>
+	<Property ID="buff_war_daocaoren_skill_1" Name="禁锢" effect="war_daocaoren_2"/>
+	<Property ID="battle_fenwei_021b" effect="flypos_eff_001b"/>
+	<Property ID="battle_fenwei_022" Name="拉回原点" effect="skill_chuansong_001_1" script="Buffer" Buff_Main="battle_fenwei_021" Buff_Display="battle_fenwei_021" PropModifyPackID="0"/>
+	<Property ID="mon_illtree_buff_1" Name="枯木回春" effect="mon_illtree_002"/>
+	<Property ID="mon_bluestone_buff_1" Name="蓝晶爆炸" effect="mon_stone_001"/>
+	<Property ID="buff_war_jianzhushi_skill_1" effect="war_jianzhushu_huixue"/>
+	<Property ID="buff_war_jianzhushi_skill_2" Name="变羊" effect="war_bianyang_1"/>
+	<Property ID="buff_war_heidong_2" Name="黑洞缠绕" effect="war_heidong_2"/>
+	<Property ID="common_buff_protect_001" effect="buff_protect_001"/>
+	<Property ID="buff_war_armor_atk_1" Name="机甲普攻" effect="boss_combat_1"/>
+	<Property ID="buff_dragon_xy" Name="眩晕" Photo="icon\buff\buff_yunxuan_001.png" PhotoName="icon\buff\buff_yunxuan_002.png" effect="boss_buff_xy_2"/>
+	<Property ID="td_buff_diaoxue_2" effect="boss_jiachong_014"/>
+	<Property ID="buff_task_baotong" effect="task_baoitong_1"/>
+	<Property ID="buff_jinbi_xianjing_2" effect="buff_jinbi_xianjing_2"/>
+	<Property ID="buff_task_heishou" effect="task_heishou_1"/>
+	<Property ID="buff_task_kuangshi_01" effect="task_kuangshi_01"/>
+	<Property ID="buff_task_kuangshi_02" effect="task_kuangshi_02"/>
+	<Property ID="buff_xiyou_taobing_1" Name="不可被击杀" effect="west_taobing_2"/>
+	<Property ID="buff_task_zhayao" effect="task_zhayao_05"/>
+	<Property ID="buff_jinbi_norun_2" Name="禁止加速" effect="buff_norun_1"/>
+	<Property ID="battle3v3_buff_big_001" effect="battle5v5_buff_001a"/>
+	<Property ID="battle3v3_buff_big_002" effect="battle5v5_buff_002a"/>
+	<Property ID="battle3v3_buff_big_003" effect="battle5v5_buff_004a"/>
+	<Property ID="battle3v3_buff_big_004" effect="buff_gongjian_002"/>
+	<Property ID="battle3v3_buff_middle_001" effect="battle5v5_buff_001a"/>
+	<Property ID="battle3v3_buff_middle_002" effect="battle5v5_buff_002a"/>
+	<Property ID="battle3v3_buff_middle_003" effect="battle5v5_buff_004a"/>
+	<Property ID="battle3v3_buff_small_001" effect="battle5v5_buff_001a"/>
+	<Property ID="battle3v3_buff_small_002" effect="battle5v5_buff_002a"/>
+	<Property ID="battle3v3_buff_small_003" effect="battle5v5_buff_004a"/>
+	<Property ID="buff_jinbi_kulou_skill_1" Name="眩晕" Photo="icon\buff\buff_yunxuan_001.png" PhotoName="icon\buff\buff_yunxuan_002.png" effect="boss_huolong_xy_1"/>
+	<Property ID="buff_task_baotong_shamo" effect="task_baoitong_2"/>
+	<Property ID="buff_battleprotect_001" effect="battleprotect_eff_001" OutLineEffect="outline7"/>
+	<Property ID="buff_shilian_nowar_2" effect="buff_wzsl_noatk"/>
+	<Property ID="buff_jinbishiqu_001" effect="common_box_ui_1"/>
+	<Property ID="buff_jinbishiqu_002" Name="金币拾取" effect="common_gold_002"/>
+	<Property ID="buff_swordup_001" effect="event_buff_001"/>
+	<Property ID="buff_sworddown_001" effect="event_buff_002"/>
+	<Property ID="buff_bombman_001" Name="爆弹" effect="task_bomb_001"/>
+	<Property ID="nek_shield_buff_1" Name="尼克护盾" effect="shield_nek_buff_1" DeleteEffect="shield_nek_buff_1a"/>
+	<Property ID="buff_pumkup_001" effect="event_buff_003"/>
+	<Property ID="buff_pumkdown_001" effect="event_buff_004"/>
+	<Property ID="buff_task_nangua_4" effect="task_nangua_6"/>
+	<Property ID="buff_task_jiutan_01" effect="task_jiutan_2"/>
+	<Property ID="buff_task_baotong_01" effect="task_tong_1"/>
+	<Property ID="buff_taskyahaha_001" effect="task_bomb_004"/>
+	<Property ID="boss_dragon_skill_05_ad1" Name="减速" Photo="icon\buff\buff_jiansu_001.png" effect="dragon_skill_jiansu_1"/>
+	<Property ID="buff_richang_a" effect="buff_richang_1"/>
+	<Property ID="buff_richang_d" effect="buff_richang_2"/>
+	<Property ID="buff_richang_k" effect="buff_richang_3"/>
+	<Property ID="buff_richang_g" effect="buff_richang_4"/>
+	<Property ID="buff_richang_2" effect="buff_richang_5"/>
 </Object>
-
 

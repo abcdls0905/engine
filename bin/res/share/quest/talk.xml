@@ -1,673 +1,101 @@
-<?xml version="1.0" encoding="gb2312"?>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 缂栬緫浣跨敤 XMLSpy v2006 U (http://www.altova.com) 鐢� any (any) -->
 <Object>
-	<Property ID="1" Name="0-1进入副本" TalkNpc0="@player" TalkNpc1="nwr_r" TalkNpc2="@player" TalkNpc3="nwr_r" TalkNpc4="@player" TalkNpc5="nwr_r" DialogID0="Dialog0001_101" DialogID1="Dialog0001_102" DialogID2="Dialog0001_103" DialogID3="Dialog0001_104" DialogID4="Dialog0001_105" DialogID5="Dialog0001_106"/>
-	<Property ID="2"/>
-	<Property ID="3"/>
-	<Property ID="4"/>
-	<Property ID="5"/>
-	<Property ID="6"/>
-	<Property ID="7"/>
-	<Property ID="8"/>
-	<Property ID="9"/>
-	<Property ID="10"/>
-	<Property ID="11" Name="0-3BOSS死亡" TalkNpc0="nwr_r" TalkNpc1="@player" TalkNpc2="nwr_r" DialogID0="Dialog0003_301" DialogID1="Dialog0003_302" DialogID2="Dialog0003_303"/>
-	<Property ID="16" Name="剧情对话[707]进入关卡" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="speak707_01_01" DialogID1="speak707_01_02"/>
-	<Property ID="17" Name="剧情对话[708]关卡通关" TalkNpc0="npc_city_018" TalkNpc1="@player" DialogID0="speak708_01_01" DialogID1="speak708_01_02"/>
-	<Property ID="18" Name="剧情对话[710]投石车提醒" TalkNpc0="npc_city_018" DialogID0="speak710_01_01"/>
-	<Property ID="19" Name="剧情对话[712]关卡通关" TalkNpc0="npc_city_018" TalkNpc1="@player" DialogID0="speak712_01_01" DialogID1="speak712_01_02"/>
-	<Property ID="20" Name="剧情对话[713]若兰解除结界对白" TalkNpc0="npc_city_014" TalkNpc1="@player" TalkNpc2="npc_city_014" DialogID0="speak713_01_01" DialogID1="speak713_01_02" DialogID2="speak713_01_03"/>
-	<Property ID="21" Name="剧情对话[728]关卡通关" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="speak728_01_01" DialogID1="speak728_01_02" DialogID2="speak728_01_03" DialogID3="speak728_01_04"/>
-	<Property ID="100013" Name="10001交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm300_002" TalkNpc2="@player" TalkNpc3="npc_sjm300_002" TalkNpc4="@player" DialogID0="Dialog_10001_3_1" DialogID1="Dialog_10001_3_2" DialogID2="Dialog_10001_3_3" DialogID3="Dialog_10001_3_4" DialogID4="Dialog_10001_3_5"/>
-	<Property ID="90013" Name="9001交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm300_003" TalkNpc2="@player" DialogID0="Dialog_9001_3_1" DialogID1="Dialog_9001_3_2" DialogID2="Dialog_9001_3_3"/>
-	<Property ID="90023" Name="9002交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm300_003" TalkNpc2="@player" TalkNpc3="npc_sjm300_003" TalkNpc4="@player" DialogID0="Dialog_9002_3_1" DialogID1="Dialog_9002_3_2" DialogID2="Dialog_9002_3_3" DialogID3="Dialog_9002_3_4" DialogID4="Dialog_9002_3_5"/>
-	<Property ID="100023" Name="10002交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm300_004" TalkNpc2="@player" DialogID0="Dialog_10002_3_1" DialogID1="Dialog_10002_3_2" DialogID2="Dialog_10002_3_3"/>
-	<Property ID="90033" Name="9003交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm300_004" TalkNpc2="@player" TalkNpc3="npc_sjm300_004" TalkNpc4="@player" DialogID0="Dialog_9003_3_1" DialogID1="Dialog_9003_3_2" DialogID2="Dialog_9003_3_3" DialogID3="Dialog_9003_3_4" DialogID4="Dialog_9003_3_5"/>
-	<Property ID="90043" Name="9004交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm300_009" TalkNpc2="@player" TalkNpc3="npc_sjm300_009" TalkNpc4="@player" DialogID0="Dialog_9004_3_1" DialogID1="Dialog_9004_3_2" DialogID2="Dialog_9004_3_3" DialogID3="Dialog_9004_3_4" DialogID4="Dialog_9004_3_5"/>
-	<Property ID="90053" Name="9005交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm300_005" TalkNpc2="@player" DialogID0="Dialog_9005_3_1" DialogID1="Dialog_9005_3_2" DialogID2="Dialog_9005_3_3"/>
-	<Property ID="90063" Name="9006交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm300_005" TalkNpc2="@player" DialogID0="Dialog_9006_3_1" DialogID1="Dialog_9006_3_2" DialogID2="Dialog_9006_3_3"/>
-	<Property ID="90073" Name="9007交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm300_005" DialogID0="Dialog_9007_3_1" DialogID1="Dialog_9007_3_2"/>
-	<Property ID="90083" Name="9008交任务对话" TalkNpc0="npc_sjm300_007" TalkNpc1="@player" TalkNpc2="npc_sjm300_007" DialogID0="Dialog_9008_3_1" DialogID1="Dialog_9008_3_2" DialogID2="Dialog_9008_3_3"/>
-	<Property ID="100053" Name="10005交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_002" TalkNpc2="@player" TalkNpc3="npc_city_002" DialogID0="Dialog_10005_3_1" DialogID1="Dialog_10005_3_2" DialogID2="Dialog_10005_3_3" DialogID3="Dialog_10005_3_4"/>
-	<Property ID="100061" Name="10006接任务对话"/>
-	<Property ID="100062" Name="10006进行中对话"/>
-	<Property ID="100063" Name="10006交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_005" TalkNpc2="@player" DialogID0="Dialog_10006_3_1" DialogID1="Dialog_10006_3_2" DialogID2="Dialog_10006_3_3"/>
-	<Property ID="100071" Name="10007接任务对话"/>
-	<Property ID="100072" Name="10007进行中对话"/>
-	<Property ID="100073" Name="10007交任务对话"/>
-	<Property ID="100081" Name="10008接任务对话"/>
-	<Property ID="100082" Name="10008进行中对话"/>
-	<Property ID="100083" Name="10008交任务对话" TalkNpc0="npc_sjm_003" TalkNpc1="@player" TalkNpc2="npc_sjm_003" TalkNpc3="@player" DialogID0="Dialog_10008_3_1" DialogID1="Dialog_10008_3_2" DialogID2="Dialog_10008_3_3" DialogID3="Dialog_10008_3_4"/>
-	<Property ID="100091" Name="10009接任务对话"/>
-	<Property ID="100092" Name="10009进行中对话"/>
-	<Property ID="100093" Name="10009交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm_002" TalkNpc2="@player" DialogID0="Dialog_10009_3_1" DialogID1="Dialog_10009_3_2" DialogID2="Dialog_10009_3_3"/>
-	<Property ID="100101" Name="10010接任务对话"/>
-	<Property ID="100102" Name="10010进行中对话"/>
-	<Property ID="100103" Name="10010交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm_002" TalkNpc2="@player" DialogID0="Dialog_10010_3_1" DialogID1="Dialog_10010_3_2" DialogID2="Dialog_10010_3_3"/>
-	<Property ID="100111" Name="10011接任务对话"/>
-	<Property ID="100112" Name="10011进行中对话"/>
-	<Property ID="100113" Name="10011交任务对话" TalkNpc0="npc_sjm_003" TalkNpc1="@player" TalkNpc2="npc_sjm_003" TalkNpc3="@player" DialogID0="Dialog_10011_3_1" DialogID1="Dialog_10011_3_2" DialogID2="Dialog_10011_3_3" DialogID3="Dialog_10011_3_4"/>
-	<Property ID="100121" Name="10012接任务对话"/>
-	<Property ID="100122" Name="10012进行中对话"/>
-	<Property ID="100123" Name="10012交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm_003" TalkNpc2="@player" DialogID0="Dialog_10012_3_1" DialogID1="Dialog_10012_3_2" DialogID2="Dialog_10012_3_3"/>
-	<Property ID="100131" Name="10013接任务对话"/>
-	<Property ID="100132" Name="10013进行中对话"/>
-	<Property ID="100133" Name="10013交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_005" TalkNpc2="npc_city_005" TalkNpc3="@player" DialogID0="Dialog_10013_3_1" DialogID1="Dialog_10013_3_2" DialogID2="Dialog_10013_3_3" DialogID3="Dialog_10013_3_4"/>
-	<Property ID="100141" Name="10014接任务对话"/>
-	<Property ID="100142" Name="10014进行中对话"/>
-	<Property ID="100143" Name="10014交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="npc_city_018" TalkNpc3="@player" TalkNpc4="npc_city_018" DialogID0="Dialog_10014_3_1" DialogID1="Dialog_10014_3_2" DialogID2="Dialog_10014_3_3" DialogID3="Dialog_10014_3_4" DialogID4="Dialog_10014_3_5"/>
-	<Property ID="100151" Name="10015接任务对话"/>
-	<Property ID="100152" Name="10015进行中对话"/>
-	<Property ID="100153" Name="10015交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_002" TalkNpc2="@player" TalkNpc3="npc_city_002" TalkNpc4="@player" DialogID0="Dialog_10015_3_1" DialogID1="Dialog_10015_3_2" DialogID2="Dialog_10015_3_3" DialogID3="Dialog_10015_3_4" DialogID4="Dialog_10015_3_5"/>
-	<Property ID="100161" Name="10016接任务对话"/>
-	<Property ID="100162" Name="10016进行中对话"/>
-	<Property ID="100163" Name="10016交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="Dialog_10016_3_1" DialogID1="Dialog_10016_3_2" DialogID2="Dialog_10016_3_3" DialogID3="Dialog_10016_3_4"/>
-	<Property ID="100171" Name="10017接任务对话"/>
-	<Property ID="100172" Name="10017进行中对话"/>
-	<Property ID="100173" Name="10017交任务对话"/>
-	<Property ID="100181" Name="10018接任务对话"/>
-	<Property ID="100182" Name="10018进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="Dialog_10018_2_1" DialogID1="Dialog_10018_2_2" DialogID2="Dialog_10018_2_3" DialogID3="Dialog_10018_2_4"/>
-	<Property ID="100183" Name="10018交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="Dialog_10018_3_1" DialogID1="Dialog_10018_3_2" DialogID2="Dialog_10018_3_3" DialogID3="Dialog_10018_3_4"/>
-	<Property ID="100191" Name="10019接任务对话"/>
-	<Property ID="100192" Name="10019进行中对话"/>
-	<Property ID="100193" Name="10019交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="Dialog_10019_3_1" DialogID1="Dialog_10019_3_2" DialogID2="Dialog_10019_3_3" DialogID3="Dialog_10019_3_4"/>
-	<Property ID="100201" Name="10020接任务对话"/>
-	<Property ID="100202" Name="10020进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_009" TalkNpc2="@player" TalkNpc3="npc_city_009" TalkNpc4="npc_city_009" DialogID0="Dialog_10020_2_1" DialogID1="Dialog_10020_2_2" DialogID2="Dialog_10020_2_3" DialogID3="Dialog_10020_2_4" DialogID4="Dialog_10020_2_5"/>
-	<Property ID="100203" Name="10020交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_009" TalkNpc2="@player" TalkNpc3="npc_city_009" TalkNpc4="npc_city_009" DialogID0="Dialog_10020_3_1" DialogID1="Dialog_10020_3_2" DialogID2="Dialog_10020_3_3" DialogID3="Dialog_10020_3_4" DialogID4="Dialog_10020_3_5"/>
-	<Property ID="100211" Name="10021接任务对话"/>
-	<Property ID="100212" Name="10021进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_014" TalkNpc2="@player" DialogID0="Dialog_10021_2_1" DialogID1="Dialog_10021_2_2" DialogID2="Dialog_10021_2_3"/>
-	<Property ID="100213" Name="10021交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_014" TalkNpc2="@player" DialogID0="Dialog_10021_3_1" DialogID1="Dialog_10021_3_2" DialogID2="Dialog_10021_3_3"/>
-	<Property ID="100221" Name="10022接任务对话"/>
-	<Property ID="100222" Name="10022进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10022_2_1" DialogID1="Dialog_10022_2_2"/>
-	<Property ID="100223" Name="10022交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10022_3_1" DialogID1="Dialog_10022_3_2"/>
-	<Property ID="100231" Name="10023接任务对话"/>
-	<Property ID="100232" Name="10023进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" DialogID0="Dialog_10023_2_1" DialogID1="Dialog_10023_2_2" DialogID2="Dialog_10023_2_3"/>
-	<Property ID="100233" Name="10023交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" DialogID0="Dialog_10023_3_1" DialogID1="Dialog_10023_3_2" DialogID2="Dialog_10023_3_3"/>
-	<Property ID="100241" Name="10024接任务对话"/>
-	<Property ID="100242" Name="10024进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10024_2_1" DialogID1="Dialog_10024_2_2"/>
-	<Property ID="100243" Name="10024交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10024_3_1" DialogID1="Dialog_10024_3_2"/>
-	<Property ID="100251" Name="10025接任务对话"/>
-	<Property ID="100252" Name="10025进行中对话" TalkNpc0="npc_city_018" TalkNpc1="@player" TalkNpc2="npc_city_018" TalkNpc3="@player" DialogID0="Dialog_10025_2_1" DialogID1="Dialog_10025_2_2" DialogID2="Dialog_10025_2_3" DialogID3="Dialog_10025_2_4"/>
-	<Property ID="100253" Name="10025交任务对话" TalkNpc0="npc_city_018" TalkNpc1="@player" TalkNpc2="npc_city_018" TalkNpc3="@player" DialogID0="Dialog_10025_3_1" DialogID1="Dialog_10025_3_2" DialogID2="Dialog_10025_3_3" DialogID3="Dialog_10025_3_4"/>
-	<Property ID="100261" Name="10026接任务对话"/>
-	<Property ID="100262" Name="10026进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_014" TalkNpc2="@player" TalkNpc3="npc_city_014" TalkNpc4="@player" DialogID0="Dialog_10026_2_1" DialogID1="Dialog_10026_2_2" DialogID2="Dialog_10026_2_3" DialogID3="Dialog_10026_2_4" DialogID4="Dialog_10026_2_5"/>
-	<Property ID="100263" Name="10026交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_014" TalkNpc2="@player" TalkNpc3="npc_city_014" TalkNpc4="@player" DialogID0="Dialog_10026_3_1" DialogID1="Dialog_10026_3_2" DialogID2="Dialog_10026_3_3" DialogID3="Dialog_10026_3_4" DialogID4="Dialog_10026_3_5"/>
-	<Property ID="100271" Name="10027接任务对话"/>
-	<Property ID="100272" Name="10027进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_002" DialogID0="Dialog_10027_2_1" DialogID1="Dialog_10027_2_2"/>
-	<Property ID="100273" Name="10027交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_002" DialogID0="Dialog_10027_3_1" DialogID1="Dialog_10027_3_2"/>
-	<Property ID="100281" Name="10028接任务对话"/>
-	<Property ID="100282" Name="10028进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm_001" TalkNpc2="@player" DialogID0="Dialog_10028_2_1" DialogID1="Dialog_10028_2_2" DialogID2="Dialog_10028_2_3"/>
-	<Property ID="100283" Name="10028交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm_001" TalkNpc2="@player" DialogID0="Dialog_10028_3_1" DialogID1="Dialog_10028_3_2" DialogID2="Dialog_10028_3_3"/>
-	<Property ID="100291" Name="10029接任务对话"/>
-	<Property ID="100292" Name="10029进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm_001" DialogID0="Dialog_10029_2_1" DialogID1="Dialog_10029_2_2"/>
-	<Property ID="100293" Name="10029交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm_001" TalkNpc2="@player" DialogID0="Dialog_10029_3_1" DialogID1="Dialog_10029_3_2" DialogID2="Dialog_10029_3_3"/>
-	<Property ID="100301" Name="10030接任务对话"/>
-	<Property ID="100302" Name="10030进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_014" TalkNpc2="@player" TalkNpc3="npc_city_014" DialogID0="Dialog_10030_2_1" DialogID1="Dialog_10030_2_2" DialogID2="Dialog_10030_2_3" DialogID3="Dialog_10030_2_4"/>
-	<Property ID="100303" Name="10030交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_014" TalkNpc2="@player" TalkNpc3="npc_city_014" DialogID0="Dialog_10030_3_1" DialogID1="Dialog_10030_3_2" DialogID2="Dialog_10030_3_3" DialogID3="Dialog_10030_3_4"/>
-	<Property ID="100311" Name="10031接任务对话"/>
-	<Property ID="100312" Name="10031进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10031_2_1" DialogID1="Dialog_10031_2_2"/>
-	<Property ID="100313" Name="10031交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10031_3_1" DialogID1="Dialog_10031_3_2"/>
-	<Property ID="100321" Name="10032接任务对话"/>
-	<Property ID="100322" Name="10032进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" DialogID0="Dialog_10032_2_1" DialogID1="Dialog_10032_2_2" DialogID2="Dialog_10032_2_3"/>
-	<Property ID="100323" Name="10032交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" DialogID0="Dialog_10032_3_1" DialogID1="Dialog_10032_3_2" DialogID2="Dialog_10032_3_3"/>
-	<Property ID="100331" Name="10033接任务对话"/>
-	<Property ID="100332" Name="10033进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10033_2_1" DialogID1="Dialog_10033_2_2"/>
-	<Property ID="100333" Name="10033交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" DialogID0="Dialog_10033_3_1" DialogID1="Dialog_10033_3_2" DialogID2="Dialog_10033_3_3"/>
-	<Property ID="100341" Name="10034接任务对话"/>
-	<Property ID="100342" Name="10034进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10034_2_1" DialogID1="Dialog_10034_2_2"/>
-	<Property ID="100343" Name="10034交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" DialogID0="Dialog_10034_3_1" DialogID1="Dialog_10034_3_2" DialogID2="Dialog_10034_3_3"/>
-	<Property ID="100351" Name="10035接任务对话"/>
-	<Property ID="100352" Name="10035进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10035_2_1" DialogID1="Dialog_10035_2_2"/>
-	<Property ID="100353" Name="10035交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10035_3_1" DialogID1="Dialog_10035_3_2"/>
-	<Property ID="100361" Name="10036接任务对话"/>
-	<Property ID="100362" Name="10036进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_014" TalkNpc2="@player" TalkNpc3="npc_city_014" TalkNpc4="@player" DialogID0="Dialog_10036_2_1" DialogID1="Dialog_10036_2_2" DialogID2="Dialog_10036_2_3" DialogID3="Dialog_10036_2_4" DialogID4="Dialog_10036_2_5"/>
-	<Property ID="100363" Name="10036交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_014" TalkNpc2="@player" TalkNpc3="npc_city_014" TalkNpc4="@player" DialogID0="Dialog_10036_3_1" DialogID1="Dialog_10036_3_2" DialogID2="Dialog_10036_3_3" DialogID3="Dialog_10036_3_4" DialogID4="Dialog_10036_3_5"/>
-	<Property ID="100371" Name="10037接任务对话"/>
-	<Property ID="100372" Name="10037进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_002" DialogID0="Dialog_10037_2_1" DialogID1="Dialog_10037_2_2"/>
-	<Property ID="100373" Name="10037交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_002" DialogID0="Dialog_10037_3_1" DialogID1="Dialog_10037_3_2"/>
-	<Property ID="100381" Name="10038接任务对话"/>
-	<Property ID="100382" Name="10038进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_014" DialogID0="Dialog_10038_2_1" DialogID1="Dialog_10038_2_2"/>
-	<Property ID="100383" Name="10038交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_014" TalkNpc2="@player" DialogID0="Dialog_10038_3_1" DialogID1="Dialog_10038_3_2" DialogID2="Dialog_10038_3_3"/>
-	<Property ID="100391" Name="10039接任务对话"/>
-	<Property ID="100392" Name="10039进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_014" DialogID0="Dialog_10039_2_1" DialogID1="Dialog_10039_2_2"/>
-	<Property ID="100393" Name="10039交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_014" DialogID0="Dialog_10039_3_1" DialogID1="Dialog_10039_3_2"/>
-	<Property ID="100401" Name="10040接任务对话"/>
-	<Property ID="100402" Name="10040进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_009" TalkNpc2="@player" DialogID0="Dialog_10040_2_1" DialogID1="Dialog_10040_2_2" DialogID2="Dialog_10040_2_3"/>
-	<Property ID="100403" Name="10040交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_014" TalkNpc2="@player" DialogID0="Dialog_10040_3_1" DialogID1="Dialog_10040_3_2" DialogID2="Dialog_10040_3_3"/>
-	<Property ID="100411" Name="10041接任务对话"/>
-	<Property ID="100412" Name="10041进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_002" TalkNpc2="@player" TalkNpc3="npc_city_002" DialogID0="Dialog_10041_2_1" DialogID1="Dialog_10041_2_2" DialogID2="Dialog_10041_2_3" DialogID3="Dialog_10041_2_4"/>
-	<Property ID="100413" Name="10041交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_002" TalkNpc2="@player" TalkNpc3="npc_city_002" DialogID0="Dialog_10041_3_1" DialogID1="Dialog_10041_3_2" DialogID2="Dialog_10041_3_3" DialogID3="Dialog_10041_3_4"/>
-	<Property ID="100421" Name="10042接任务对话"/>
-	<Property ID="100422" Name="10042进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_001" TalkNpc2="@player" TalkNpc3="npc_city_001" TalkNpc4="@player" DialogID0="Dialog_10042_2_1" DialogID1="Dialog_10042_2_2" DialogID2="Dialog_10042_2_3" DialogID3="Dialog_10042_2_4" DialogID4="Dialog_10042_2_5"/>
-	<Property ID="100423" Name="10042交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_001" TalkNpc2="@player" TalkNpc3="npc_city_001" TalkNpc4="@player" DialogID0="Dialog_10042_3_1" DialogID1="Dialog_10042_3_2" DialogID2="Dialog_10042_3_3" DialogID3="Dialog_10042_3_4" DialogID4="Dialog_10042_3_5"/>
-	<Property ID="100431" Name="10043接任务对话"/>
-	<Property ID="100432" Name="10043进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10043_2_1" DialogID1="Dialog_10043_2_2"/>
-	<Property ID="100433" Name="10043交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" DialogID0="Dialog_10043_3_1" DialogID1="Dialog_10043_3_2" DialogID2="Dialog_10043_3_3"/>
-	<Property ID="100441" Name="10044接任务对话"/>
-	<Property ID="100442" Name="10044进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10044_2_1" DialogID1="Dialog_10044_2_2"/>
-	<Property ID="100443" Name="10044交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" DialogID0="Dialog_10044_3_1" DialogID1="Dialog_10044_3_2" DialogID2="Dialog_10044_3_3"/>
-	<Property ID="100451" Name="10045接任务对话"/>
-	<Property ID="100452" Name="10045进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10045_2_1" DialogID1="Dialog_10045_2_2"/>
-	<Property ID="100453" Name="10045交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" DialogID0="Dialog_10045_3_1" DialogID1="Dialog_10045_3_2" DialogID2="Dialog_10045_3_3"/>
-	<Property ID="100461" Name="10046接任务对话"/>
-	<Property ID="100462" Name="10046进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_001" TalkNpc2="@player" DialogID0="Dialog_10046_2_1" DialogID1="Dialog_10046_2_2" DialogID2="Dialog_10046_2_3"/>
-	<Property ID="100463" Name="10046交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_001" TalkNpc2="@player" DialogID0="Dialog_10046_3_1" DialogID1="Dialog_10046_3_2" DialogID2="Dialog_10046_3_3"/>
-	<Property ID="100471" Name="10047接任务对话"/>
-	<Property ID="100472" Name="10047进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10047_2_1" DialogID1="Dialog_10047_2_2"/>
-	<Property ID="100473" Name="10047交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="Dialog_10047_3_1" DialogID1="Dialog_10047_3_2" DialogID2="Dialog_10047_3_3" DialogID3="Dialog_10047_3_4"/>
-	<Property ID="100481" Name="10048接任务对话"/>
-	<Property ID="100482" Name="10048进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_005" TalkNpc2="@player" TalkNpc3="npc_city_005" TalkNpc4="@player" DialogID0="Dialog_10048_2_1" DialogID1="Dialog_10048_2_2" DialogID2="Dialog_10048_2_3" DialogID3="Dialog_10048_2_4" DialogID4="Dialog_10048_2_5"/>
-	<Property ID="100483" Name="10048交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_005" TalkNpc2="@player" TalkNpc3="npc_city_005" TalkNpc4="@player" DialogID0="Dialog_10048_3_1" DialogID1="Dialog_10048_3_2" DialogID2="Dialog_10048_3_3" DialogID3="Dialog_10048_3_4" DialogID4="Dialog_10048_3_5"/>
-	<Property ID="100491" Name="10049接任务对话"/>
-	<Property ID="100492" Name="10049进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm_003" TalkNpc2="@player" DialogID0="Dialog_10049_2_1" DialogID1="Dialog_10049_2_2" DialogID2="Dialog_10049_2_3"/>
-	<Property ID="100493" Name="10049交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm_003" TalkNpc2="@player" DialogID0="Dialog_10049_3_1" DialogID1="Dialog_10049_3_2" DialogID2="Dialog_10049_3_3"/>
-	<Property ID="100501" Name="10050接任务对话"/>
-	<Property ID="100502" Name="10050进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm_003" DialogID0="Dialog_10050_2_1" DialogID1="Dialog_10050_2_2"/>
-	<Property ID="100503" Name="10050交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm_003" DialogID0="Dialog_10050_3_1" DialogID1="Dialog_10050_3_2"/>
-	<Property ID="100511" Name="10051接任务对话"/>
-	<Property ID="100512" Name="10051进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm302_001" TalkNpc2="@player" TalkNpc3="npc_sjm302_001" DialogID0="Dialog_10051_2_1" DialogID1="Dialog_10051_2_2" DialogID2="Dialog_10051_2_3" DialogID3="Dialog_10051_2_4"/>
-	<Property ID="100513" Name="10051交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm302_001" TalkNpc2="@player" TalkNpc3="npc_sjm302_001" DialogID0="Dialog_10051_3_1" DialogID1="Dialog_10051_3_2" DialogID2="Dialog_10051_3_3" DialogID3="Dialog_10051_3_4"/>
-	<Property ID="100521" Name="10052接任务对话"/>
-	<Property ID="100522" Name="10052进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm302_001" DialogID0="Dialog_10052_2_1" DialogID1="Dialog_10052_2_2"/>
-	<Property ID="100523" Name="10052交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm302_001" TalkNpc2="@player" TalkNpc3="npc_sjm302_001" TalkNpc4="@player" DialogID0="Dialog_10052_3_1" DialogID1="Dialog_10052_3_2" DialogID2="Dialog_10052_3_3" DialogID3="Dialog_10052_3_4" DialogID4="Dialog_10052_3_5"/>
-	<Property ID="100531" Name="10053接任务对话"/>
-	<Property ID="100532" Name="10053进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_005" TalkNpc2="npc_city_005" TalkNpc3="@player" DialogID0="Dialog_10053_2_1" DialogID1="Dialog_10053_2_2" DialogID2="Dialog_10053_2_3" DialogID3="Dialog_10053_2_4"/>
-	<Property ID="100533" Name="10053交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_005" TalkNpc2="npc_city_005" TalkNpc3="@player" DialogID0="Dialog_10053_3_1" DialogID1="Dialog_10053_3_2" DialogID2="Dialog_10053_3_3" DialogID3="Dialog_10053_3_4"/>
-	<Property ID="100541" Name="10054接任务对话"/>
-	<Property ID="100542" Name="10054进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10054_2_1" DialogID1="Dialog_10054_2_2"/>
-	<Property ID="100543" Name="10054交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" DialogID0="Dialog_10054_3_1" DialogID1="Dialog_10054_3_2" DialogID2="Dialog_10054_3_3"/>
-	<Property ID="100551" Name="10055接任务对话"/>
-	<Property ID="100552" Name="10055进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_002" DialogID0="Dialog_10055_2_1" DialogID1="Dialog_10055_2_2"/>
-	<Property ID="100553" Name="10055交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" TalkNpc4="@player" DialogID0="Dialog_10055_3_1" DialogID1="Dialog_10055_3_2" DialogID2="Dialog_10055_3_3" DialogID3="Dialog_10055_3_4" DialogID4="Dialog_10055_3_5"/>
-	<Property ID="100561" Name="10056接任务对话"/>
-	<Property ID="100562" Name="10056进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10056_2_1" DialogID1="Dialog_10056_2_2"/>
-	<Property ID="100563" Name="10056交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="Dialog_10056_3_1" DialogID1="Dialog_10056_3_2" DialogID2="Dialog_10056_3_3" DialogID3="Dialog_10056_3_4"/>
-	<Property ID="100571" Name="10057接任务对话"/>
-	<Property ID="100572" Name="10057进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_002" DialogID0="Dialog_10057_2_1" DialogID1="Dialog_10057_2_2"/>
-	<Property ID="100573" Name="10057交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_002" DialogID0="Dialog_10057_3_1" DialogID1="Dialog_10057_3_2"/>
-	<Property ID="100581" Name="10058接任务对话"/>
-	<Property ID="100582" Name="10058进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_014" TalkNpc2="@player" TalkNpc3="npc_city_014" TalkNpc4="@player" DialogID0="Dialog_10058_2_1" DialogID1="Dialog_10058_2_2" DialogID2="Dialog_10058_2_3" DialogID3="Dialog_10058_2_4" DialogID4="Dialog_10058_2_5"/>
-	<Property ID="100583" Name="10058交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_014" TalkNpc2="@player" TalkNpc3="npc_city_014" TalkNpc4="@player" DialogID0="Dialog_10058_3_1" DialogID1="Dialog_10058_3_2" DialogID2="Dialog_10058_3_3" DialogID3="Dialog_10058_3_4" DialogID4="Dialog_10058_3_5"/>
-	<Property ID="100591" Name="10059接任务对话"/>
-	<Property ID="100592" Name="10059进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_002" TalkNpc2="@player" TalkNpc3="npc_city_002" DialogID0="Dialog_10059_2_1" DialogID1="Dialog_10059_2_2" DialogID2="Dialog_10059_2_3" DialogID3="Dialog_10059_2_4"/>
-	<Property ID="100593" Name="10059交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_002" TalkNpc2="@player" TalkNpc3="npc_city_002" DialogID0="Dialog_10059_3_1" DialogID1="Dialog_10059_3_2" DialogID2="Dialog_10059_3_3" DialogID3="Dialog_10059_3_4"/>
-	<Property ID="100601" Name="10060接任务对话"/>
-	<Property ID="100602" Name="10060进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm302_001" TalkNpc2="@player" TalkNpc3="npc_sjm302_001" DialogID0="Dialog_10060_2_1" DialogID1="Dialog_10060_2_2" DialogID2="Dialog_10060_2_3" DialogID3="Dialog_10060_2_4"/>
-	<Property ID="100603" Name="10060交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm302_001" TalkNpc2="@player" TalkNpc3="npc_sjm302_001" DialogID0="Dialog_10060_3_1" DialogID1="Dialog_10060_3_2" DialogID2="Dialog_10060_3_3" DialogID3="Dialog_10060_3_4"/>
-	<Property ID="100611" Name="10061接任务对话"/>
-	<Property ID="100612" Name="10061进行中对话" TalkNpc0="@player" TalkNpc1="sjm302_002" DialogID0="Dialog_10061_2_1" DialogID1="Dialog_10061_2_2"/>
-	<Property ID="100613" Name="10061交任务对话" TalkNpc0="@player" TalkNpc1="sjm302_002" DialogID0="Dialog_10061_3_1" DialogID1="Dialog_10061_3_2"/>
-	<Property ID="100621" Name="10062接任务对话"/>
-	<Property ID="100622" Name="10062进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm302_002" TalkNpc2="@player" TalkNpc3="npc_sjm302_002" TalkNpc4="@player" TalkNpc5="npc_sjm302_002" DialogID0="Dialog_10062_2_1" DialogID1="Dialog_10062_2_2" DialogID2="Dialog_10062_2_3" DialogID3="Dialog_10062_2_4" DialogID4="Dialog_10062_2_5" DialogID5="Dialog_10062_2_6"/>
-	<Property ID="100623" Name="10062交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm302_002" TalkNpc2="@player" TalkNpc3="npc_sjm302_002" TalkNpc4="@player" TalkNpc5="npc_sjm302_002" DialogID0="Dialog_10062_3_1" DialogID1="Dialog_10062_3_2" DialogID2="Dialog_10062_3_3" DialogID3="Dialog_10062_3_4" DialogID4="Dialog_10062_3_5" DialogID5="Dialog_10062_3_6"/>
-	<Property ID="100631" Name="10063接任务对话"/>
-	<Property ID="100632" Name="10063进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm302_001" DialogID0="Dialog_10063_2_1" DialogID1="Dialog_10063_2_2"/>
-	<Property ID="100633" Name="10063交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm302_001" TalkNpc2="@player" DialogID0="Dialog_10063_3_1" DialogID1="Dialog_10063_3_2" DialogID2="Dialog_10063_3_3"/>
-	<Property ID="100641" Name="10064接任务对话"/>
-	<Property ID="100642" Name="10064进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="Dialog_10064_2_1" DialogID1="Dialog_10064_2_2" DialogID2="Dialog_10064_2_3" DialogID3="Dialog_10064_2_4"/>
-	<Property ID="100643" Name="10064交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="Dialog_10064_3_1" DialogID1="Dialog_10064_3_2" DialogID2="Dialog_10064_3_3" DialogID3="Dialog_10064_3_4"/>
-	<Property ID="100651" Name="10065接任务对话"/>
-	<Property ID="100652" Name="10065进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10065_2_1" DialogID1="Dialog_10065_2_2"/>
-	<Property ID="100653" Name="10065交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10065_3_1" DialogID1="Dialog_10065_3_2"/>
-	<Property ID="100661" Name="10066接任务对话"/>
-	<Property ID="100662" Name="10066进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" TalkNpc4="@player" DialogID0="Dialog_10066_2_1" DialogID1="Dialog_10066_2_2" DialogID2="Dialog_10066_2_3" DialogID3="Dialog_10066_2_4" DialogID4="Dialog_10066_2_5"/>
-	<Property ID="100663" Name="10066交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" TalkNpc4="@player" DialogID0="Dialog_10066_3_1" DialogID1="Dialog_10066_3_2" DialogID2="Dialog_10066_3_3" DialogID3="Dialog_10066_3_4" DialogID4="Dialog_10066_3_5"/>
-	<Property ID="100671" Name="10067接任务对话"/>
-	<Property ID="100672" Name="10067进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10067_2_1" DialogID1="Dialog_10067_2_2"/>
-	<Property ID="100673" Name="10067交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10067_3_1" DialogID1="Dialog_10067_3_2"/>
-	<Property ID="100681" Name="10068接任务对话"/>
-	<Property ID="100682" Name="10068进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" DialogID0="Dialog_10068_2_1" DialogID1="Dialog_10068_2_2" DialogID2="Dialog_10068_2_3"/>
-	<Property ID="100683" Name="10068交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" DialogID0="Dialog_10068_3_1" DialogID1="Dialog_10068_3_2" DialogID2="Dialog_10068_3_3"/>
-	<Property ID="100691" Name="10069接任务对话"/>
-	<Property ID="100692" Name="10069进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10069_2_1" DialogID1="Dialog_10069_2_2"/>
-	<Property ID="100693" Name="10069交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10069_3_1" DialogID1="Dialog_10069_3_2"/>
-	<Property ID="100701" Name="10070接任务对话"/>
-	<Property ID="100702" Name="10070进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="Dialog_10070_2_1" DialogID1="Dialog_10070_2_2" DialogID2="Dialog_10070_2_3" DialogID3="Dialog_10070_2_4"/>
-	<Property ID="100703" Name="10070交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="Dialog_10070_3_1" DialogID1="Dialog_10070_3_2" DialogID2="Dialog_10070_3_3" DialogID3="Dialog_10070_3_4"/>
-	<Property ID="100711" Name="10071接任务对话"/>
-	<Property ID="100712" Name="10071进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10071_2_1" DialogID1="Dialog_10071_2_2"/>
-	<Property ID="100713" Name="10071交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10071_3_1" DialogID1="Dialog_10071_3_2"/>
-	<Property ID="100721" Name="10072接任务对话"/>
-	<Property ID="100722" Name="10072进行中对话" TalkNpc0="npc_city_018" TalkNpc1="@player" TalkNpc2="npc_city_018" TalkNpc3="@player" TalkNpc4="npc_city_018" DialogID0="Dialog_10072_2_1" DialogID1="Dialog_10072_2_2" DialogID2="Dialog_10072_2_3" DialogID3="Dialog_10072_2_4" DialogID4="Dialog_10072_2_5"/>
-	<Property ID="100723" Name="10072交任务对话" TalkNpc0="npc_city_018" TalkNpc1="@player" TalkNpc2="npc_city_018" TalkNpc3="@player" TalkNpc4="npc_city_018" DialogID0="Dialog_10072_3_1" DialogID1="Dialog_10072_3_2" DialogID2="Dialog_10072_3_3" DialogID3="Dialog_10072_3_4" DialogID4="Dialog_10072_3_5"/>
-	<Property ID="100731" Name="10073接任务对话"/>
-	<Property ID="100732" Name="10073进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm302_002" DialogID0="Dialog_10073_2_1" DialogID1="Dialog_10073_2_2"/>
-	<Property ID="100733" Name="10073交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm302_002" DialogID0="Dialog_10073_3_1" DialogID1="Dialog_10073_3_2"/>
-	<Property ID="100741" Name="10074接任务对话"/>
-	<Property ID="100742" Name="10074进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm302_002" TalkNpc2="@player" TalkNpc3="npc_sjm302_002" TalkNpc4="@player" TalkNpc5="npc_sjm302_002" DialogID0="Dialog_10074_2_1" DialogID1="Dialog_10074_2_2" DialogID2="Dialog_10074_2_3" DialogID3="Dialog_10074_2_4" DialogID4="Dialog_10074_2_5" DialogID5="Dialog_10074_2_6"/>
-	<Property ID="100743" Name="10074交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm302_002" TalkNpc2="@player" TalkNpc3="npc_sjm302_002" TalkNpc4="@player" TalkNpc5="npc_sjm302_002" DialogID0="Dialog_10074_3_1" DialogID1="Dialog_10074_3_2" DialogID2="Dialog_10074_3_3" DialogID3="Dialog_10074_3_4" DialogID4="Dialog_10074_3_5" DialogID5="Dialog_10074_3_6"/>
-	<Property ID="100751" Name="10075接任务对话"/>
-	<Property ID="100752" Name="10075进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm302_001" TalkNpc2="@player" DialogID0="Dialog_10075_2_1" DialogID1="Dialog_10075_2_2" DialogID2="Dialog_10075_2_3"/>
-	<Property ID="100753" Name="10075交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm302_001" TalkNpc2="@player" DialogID0="Dialog_10075_3_1" DialogID1="Dialog_10075_3_2" DialogID2="Dialog_10075_3_3"/>
-	<Property ID="100761" Name="10076接任务对话"/>
-	<Property ID="100762" Name="10076进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="Dialog_10076_2_1" DialogID1="Dialog_10076_2_2" DialogID2="Dialog_10076_2_3" DialogID3="Dialog_10076_2_4"/>
-	<Property ID="100763" Name="10076交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="Dialog_10076_3_1" DialogID1="Dialog_10076_3_2" DialogID2="Dialog_10076_3_3" DialogID3="Dialog_10076_3_4"/>
-	<Property ID="100771" Name="10077接任务对话"/>
-	<Property ID="100772" Name="10077进行中对话" DialogID0="Dialog_10077_2_1" DialogID1="Dialog_10077_2_2"/>
-	<Property ID="100773" Name="10077交任务对话" DialogID0="Dialog_10077_3_1" DialogID1="Dialog_10077_3_2"/>
-	<Property ID="100781" Name="10078接任务对话"/>
-	<Property ID="100782" Name="10078进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10078_2_1" DialogID1="Dialog_10078_2_2"/>
-	<Property ID="100783" Name="10078交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10078_3_1" DialogID1="Dialog_10078_3_2"/>
-	<Property ID="100791" Name="10079接任务对话"/>
-	<Property ID="100792" Name="10079进行中对话" DialogID0="Dialog_10079_2_1" DialogID1="Dialog_10079_2_2"/>
-	<Property ID="100793" Name="10079交任务对话" DialogID0="Dialog_10079_3_1" DialogID1="Dialog_10079_3_2"/>
-	<Property ID="100801" Name="10080接任务对话"/>
-	<Property ID="100802" Name="10080进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_003" DialogID0="Dialog_10080_2_1" DialogID1="Dialog_10080_2_2"/>
-	<Property ID="100803" Name="10080交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_003" DialogID0="Dialog_10080_3_1" DialogID1="Dialog_10080_3_2"/>
-	<Property ID="100811" Name="10081接任务对话"/>
-	<Property ID="100812" Name="10081进行中对话" DialogID0="Dialog_10081_2_1" DialogID1="Dialog_10081_2_2"/>
-	<Property ID="100813" Name="10081交任务对话" DialogID0="Dialog_10081_3_1" DialogID1="Dialog_10081_3_2"/>
-	<Property ID="100821" Name="10082接任务对话"/>
-	<Property ID="100822" Name="10082进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10082_2_1" DialogID1="Dialog_10082_2_2"/>
-	<Property ID="100823" Name="10082交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10082_3_1" DialogID1="Dialog_10082_3_2"/>
-	<Property ID="100831" Name="10083接任务对话"/>
-	<Property ID="100832" Name="10083进行中对话" DialogID0="Dialog_10083_2_1" DialogID1="Dialog_10083_2_2"/>
-	<Property ID="100833" Name="10083交任务对话" DialogID0="Dialog_10083_3_1" DialogID1="Dialog_10083_3_2"/>
-	<Property ID="100841" Name="10084接任务对话"/>
-	<Property ID="100842" Name="10084进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_003" DialogID0="Dialog_10084_2_1" DialogID1="Dialog_10084_2_2"/>
-	<Property ID="100843" Name="10084交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_003" DialogID0="Dialog_10084_3_1" DialogID1="Dialog_10084_3_2"/>
-	<Property ID="100851" Name="10085接任务对话"/>
-	<Property ID="100852" Name="10085进行中对话" DialogID0="Dialog_10085_2_1" DialogID1="Dialog_10085_2_2"/>
-	<Property ID="100853" Name="10085交任务对话" DialogID0="Dialog_10085_3_1" DialogID1="Dialog_10085_3_2"/>
-	<Property ID="100861" Name="10086接任务对话"/>
-	<Property ID="100862" Name="10086进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_003" TalkNpc2="@player" DialogID0="Dialog_10086_2_1" DialogID1="Dialog_10086_2_2" DialogID2="Dialog_10086_2_3"/>
-	<Property ID="100863" Name="10086交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_003" TalkNpc2="@player" DialogID0="Dialog_10086_3_1" DialogID1="Dialog_10086_3_2" DialogID2="Dialog_10086_3_3"/>
-	<Property ID="100871" Name="10087接任务对话"/>
-	<Property ID="100872" Name="10087进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm302_001" TalkNpc2="@player" DialogID0="Dialog_10087_2_1" DialogID1="Dialog_10087_2_2" DialogID2="Dialog_10087_2_3"/>
-	<Property ID="100873" Name="10087交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm302_001" TalkNpc2="@player" DialogID0="Dialog_10087_3_1" DialogID1="Dialog_10087_3_2" DialogID2="Dialog_10087_3_3"/>
-	<Property ID="100881" Name="10088接任务对话"/>
-	<Property ID="100882" Name="10088进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm302_001" DialogID0="Dialog_10088_2_1" DialogID1="Dialog_10088_2_2"/>
-	<Property ID="100883" Name="10088交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm302_001" DialogID0="Dialog_10088_3_1" DialogID1="Dialog_10088_3_2"/>
-	<Property ID="100891" Name="10089接任务对话"/>
-	<Property ID="100892" Name="10089进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm302_002" DialogID0="Dialog_10089_2_1" DialogID1="Dialog_10089_2_2"/>
-	<Property ID="100893" Name="10089交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm302_002" DialogID0="Dialog_10089_3_1" DialogID1="Dialog_10089_3_2"/>
-	<Property ID="100901" Name="10090接任务对话"/>
-	<Property ID="100902" Name="10090进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm303_001" DialogID0="Dialog_10090_2_1" DialogID1="Dialog_10090_2_2"/>
-	<Property ID="100903" Name="10090交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm303_001" DialogID0="Dialog_10090_3_1" DialogID1="Dialog_10090_3_2"/>
-	<Property ID="100911" Name="10091接任务对话"/>
-	<Property ID="100912" Name="10091进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm303_001" DialogID0="Dialog_10091_2_1" DialogID1="Dialog_10091_2_2"/>
-	<Property ID="100913" Name="10091交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm303_001" DialogID0="Dialog_10091_3_1" DialogID1="Dialog_10091_3_2"/>
-	<Property ID="100921" Name="10092接任务对话"/>
-	<Property ID="100922" Name="10092进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10092_2_1" DialogID1="Dialog_10092_2_2"/>
-	<Property ID="100923" Name="10092交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10092_3_1" DialogID1="Dialog_10092_3_2"/>
-	<Property ID="100931" Name="10093接任务对话"/>
-	<Property ID="100932" Name="10093进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_002" DialogID0="Dialog_10093_2_1" DialogID1="Dialog_10093_2_2"/>
-	<Property ID="100933" Name="10093交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_002" DialogID0="Dialog_10093_3_1" DialogID1="Dialog_10093_3_2"/>
-	<Property ID="100941" Name="10094接任务对话"/>
-	<Property ID="100942" Name="10094进行中对话" DialogID0="Dialog_10094_2_1" DialogID1="Dialog_10094_2_2"/>
-	<Property ID="100943" Name="10094交任务对话" DialogID0="Dialog_10094_3_1" DialogID1="Dialog_10094_3_2"/>
-	<Property ID="100951" Name="10095接任务对话"/>
-	<Property ID="100952" Name="10095进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="Dialog_10095_2_1" DialogID1="Dialog_10095_2_2" DialogID2="Dialog_10095_2_3" DialogID3="Dialog_10095_2_4"/>
-	<Property ID="100953" Name="10095交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="Dialog_10095_3_1" DialogID1="Dialog_10095_3_2" DialogID2="Dialog_10095_3_3" DialogID3="Dialog_10095_3_4"/>
-	<Property ID="100961" Name="10096接任务对话"/>
-	<Property ID="100962" Name="10096进行中对话" DialogID0="Dialog_10096_2_1" DialogID1="Dialog_10096_2_2"/>
-	<Property ID="100963" Name="10096交任务对话" DialogID0="Dialog_10096_3_1" DialogID1="Dialog_10096_3_2"/>
-	<Property ID="100971" Name="10097接任务对话"/>
-	<Property ID="100972" Name="10097进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_009" TalkNpc2="@player" TalkNpc3="npc_city_009" DialogID0="Dialog_10097_2_1" DialogID1="Dialog_10097_2_2" DialogID2="Dialog_10097_2_3" DialogID3="Dialog_10097_2_4"/>
-	<Property ID="100973" Name="10097交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_009" TalkNpc2="@player" TalkNpc3="npc_city_009" DialogID0="Dialog_10097_3_1" DialogID1="Dialog_10097_3_2" DialogID2="Dialog_10097_3_3" DialogID3="Dialog_10097_3_4"/>
-	<Property ID="100981" Name="10098接任务对话"/>
-	<Property ID="100982" Name="10098进行中对话" DialogID0="Dialog_10098_2_1" DialogID1="Dialog_10098_2_2"/>
-	<Property ID="100983" Name="10098交任务对话" DialogID0="Dialog_10098_3_1" DialogID1="Dialog_10098_3_2"/>
-	<Property ID="100991" Name="10099接任务对话"/>
-	<Property ID="100992" Name="10099进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_009" TalkNpc2="@player" TalkNpc3="npc_city_009" DialogID0="Dialog_10099_2_1" DialogID1="Dialog_10099_2_2" DialogID2="Dialog_10099_2_3" DialogID3="Dialog_10099_2_4"/>
-	<Property ID="100993" Name="10099交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_009" TalkNpc2="@player" TalkNpc3="npc_city_009" DialogID0="Dialog_10099_3_1" DialogID1="Dialog_10099_3_2" DialogID2="Dialog_10099_3_3" DialogID3="Dialog_10099_3_4"/>
-	<Property ID="101001" Name="10100接任务对话"/>
-	<Property ID="101002" Name="10100进行中对话" DialogID0="Dialog_10100_2_1" DialogID1="Dialog_10100_2_2"/>
-	<Property ID="101003" Name="10100交任务对话" DialogID0="Dialog_10100_3_1" DialogID1="Dialog_10100_3_2"/>
-	<Property ID="101011" Name="10101接任务对话"/>
-	<Property ID="101012" Name="10101进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="Dialog_10101_2_1" DialogID1="Dialog_10101_2_2" DialogID2="Dialog_10101_2_3" DialogID3="Dialog_10101_2_4"/>
-	<Property ID="101013" Name="10101交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="Dialog_10101_3_1" DialogID1="Dialog_10101_3_2" DialogID2="Dialog_10101_3_3" DialogID3="Dialog_10101_3_4"/>
-	<Property ID="101021" Name="10102接任务对话"/>
-	<Property ID="101022" Name="10102进行中对话" DialogID0="Dialog_10102_2_1" DialogID1="Dialog_10102_2_2"/>
-	<Property ID="101023" Name="10102交任务对话" DialogID0="Dialog_10102_3_1" DialogID1="Dialog_10102_3_2"/>
-	<Property ID="101031" Name="10103接任务对话"/>
-	<Property ID="101032" Name="10103进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_009" TalkNpc2="@player" TalkNpc3="npc_city_009" DialogID0="Dialog_10103_2_1" DialogID1="Dialog_10103_2_2" DialogID2="Dialog_10103_2_3" DialogID3="Dialog_10103_2_4"/>
-	<Property ID="101033" Name="10103交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_009" TalkNpc2="@player" TalkNpc3="npc_city_009" DialogID0="Dialog_10103_3_1" DialogID1="Dialog_10103_3_2" DialogID2="Dialog_10103_3_3" DialogID3="Dialog_10103_3_4"/>
-	<Property ID="101041" Name="10104接任务对话"/>
-	<Property ID="101042" Name="10104进行中对话" DialogID0="Dialog_10104_2_1" DialogID1="Dialog_10104_2_2"/>
-	<Property ID="101043" Name="10104交任务对话" DialogID0="Dialog_10104_3_1" DialogID1="Dialog_10104_3_2"/>
-	<Property ID="101051" Name="10105接任务对话"/>
-	<Property ID="101052" Name="10105进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="Dialog_10105_2_1" DialogID1="Dialog_10105_2_2" DialogID2="Dialog_10105_2_3" DialogID3="Dialog_10105_2_4"/>
-	<Property ID="101053" Name="10105交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="Dialog_10105_3_1" DialogID1="Dialog_10105_3_2" DialogID2="Dialog_10105_3_3" DialogID3="Dialog_10105_3_4"/>
-	<Property ID="101061" Name="10106接任务对话"/>
-	<Property ID="101062" Name="10106进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm303_001" TalkNpc2="@player" TalkNpc3="npc_sjm303_001" DialogID0="Dialog_10106_2_1" DialogID1="Dialog_10106_2_2" DialogID2="Dialog_10106_2_3" DialogID3="Dialog_10106_2_4"/>
-	<Property ID="101063" Name="10106交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm303_001" TalkNpc2="@player" TalkNpc3="npc_sjm303_001" DialogID0="Dialog_10106_3_1" DialogID1="Dialog_10106_3_2" DialogID2="Dialog_10106_3_3" DialogID3="Dialog_10106_3_4"/>
-	<Property ID="101071" Name="10107接任务对话"/>
-	<Property ID="101072" Name="10107进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm303_001" DialogID0="Dialog_10107_2_1" DialogID1="Dialog_10107_2_2"/>
-	<Property ID="101073" Name="10107交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm303_001" TalkNpc2="@player" TalkNpc3="npc_sjm303_001" DialogID0="Dialog_10107_3_1" DialogID1="Dialog_10107_3_2" DialogID2="Dialog_10107_3_3" DialogID3="Dialog_10107_3_4"/>
-	<Property ID="101081" Name="10108接任务对话"/>
-	<Property ID="101082" Name="10108进行中对话" DialogID0="Dialog_10108_2_1" DialogID1="Dialog_10108_2_2"/>
-	<Property ID="101083" Name="10108交任务对话" DialogID0="Dialog_10108_3_1" DialogID1="Dialog_10108_3_2"/>
-	<Property ID="101091" Name="10109接任务对话"/>
-	<Property ID="101092" Name="10109进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm303_001" DialogID0="Dialog_10109_2_1" DialogID1="Dialog_10109_2_2"/>
-	<Property ID="101093" Name="10109交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm303_001" TalkNpc2="@player" TalkNpc3="npc_sjm303_001" DialogID0="Dialog_10109_3_1" DialogID1="Dialog_10109_3_2" DialogID2="Dialog_10109_3_3" DialogID3="Dialog_10109_3_4"/>
-	<Property ID="101101" Name="10110接任务对话"/>
-	<Property ID="101102" Name="10110进行中对话" DialogID0="Dialog_10110_2_1" DialogID1="Dialog_10110_2_2"/>
-	<Property ID="101103" Name="10110交任务对话" DialogID0="Dialog_10110_3_1" DialogID1="Dialog_10110_3_2"/>
-	<Property ID="101111" Name="10111接任务对话"/>
-	<Property ID="101112" Name="10111进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="Dialog_10111_2_1" DialogID1="Dialog_10111_2_2" DialogID2="Dialog_10111_2_3" DialogID3="Dialog_10111_2_4"/>
-	<Property ID="101113" Name="10111交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="Dialog_10111_3_1" DialogID1="Dialog_10111_3_2" DialogID2="Dialog_10111_3_3" DialogID3="Dialog_10111_3_4"/>
-	<Property ID="101121" Name="10112接任务对话"/>
-	<Property ID="101122" Name="10112进行中对话" DialogID0="Dialog_10112_2_1" DialogID1="Dialog_10112_2_2"/>
-	<Property ID="101123" Name="10112交任务对话" DialogID0="Dialog_10112_3_1" DialogID1="Dialog_10112_3_2"/>
-	<Property ID="101131" Name="10113接任务对话"/>
-	<Property ID="101132" Name="10113进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_002" TalkNpc2="@player" TalkNpc3="npc_city_002" DialogID0="Dialog_10113_2_1" DialogID1="Dialog_10113_2_2" DialogID2="Dialog_10113_2_3" DialogID3="Dialog_10113_2_4"/>
-	<Property ID="101133" Name="10113交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_002" TalkNpc2="@player" TalkNpc3="npc_city_002" DialogID0="Dialog_10113_3_1" DialogID1="Dialog_10113_3_2" DialogID2="Dialog_10113_3_3" DialogID3="Dialog_10113_3_4"/>
-	<Property ID="101141" Name="10114接任务对话"/>
-	<Property ID="101142" Name="10114进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="Dialog_10114_2_1" DialogID1="Dialog_10114_2_2" DialogID2="Dialog_10114_2_3" DialogID3="Dialog_10114_2_4"/>
-	<Property ID="101143" Name="10114交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" TalkNpc2="@player" TalkNpc3="npc_city_018" DialogID0="Dialog_10114_3_1" DialogID1="Dialog_10114_3_2" DialogID2="Dialog_10114_3_3" DialogID3="Dialog_10114_3_4"/>
-	<Property ID="101151" Name="10115接任务对话"/>
-	<Property ID="101152" Name="10115进行中对话" DialogID0="Dialog_10115_2_1" DialogID1="Dialog_10115_2_2"/>
-	<Property ID="101153" Name="10115交任务对话" DialogID0="Dialog_10115_3_1" DialogID1="Dialog_10115_3_2"/>
-	<Property ID="101161" Name="10116接任务对话"/>
-	<Property ID="101162" Name="10116进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10116_2_1" DialogID1="Dialog_10116_2_2"/>
-	<Property ID="101163" Name="10116交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10116_3_1" DialogID1="Dialog_10116_3_2"/>
-	<Property ID="101171" Name="10117接任务对话"/>
-	<Property ID="101172" Name="10117进行中对话" DialogID0="Dialog_10117_2_1" DialogID1="Dialog_10117_2_2"/>
-	<Property ID="101173" Name="10117交任务对话" DialogID0="Dialog_10117_3_1" DialogID1="Dialog_10117_3_2"/>
-	<Property ID="101181" Name="10118接任务对话"/>
-	<Property ID="101182" Name="10118进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10118_2_1" DialogID1="Dialog_10118_2_2"/>
-	<Property ID="101183" Name="10118交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10118_3_1" DialogID1="Dialog_10118_3_2"/>
-	<Property ID="101191" Name="10119接任务对话"/>
-	<Property ID="101192" Name="10119进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_003" DialogID0="Dialog_10119_2_1" DialogID1="Dialog_10119_2_2"/>
-	<Property ID="101193" Name="10119交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_003" DialogID0="Dialog_10119_3_1" DialogID1="Dialog_10119_3_2"/>
-	<Property ID="101201" Name="10120接任务对话"/>
-	<Property ID="101202" Name="10120进行中对话" DialogID0="Dialog_10120_2_1" DialogID1="Dialog_10120_2_2"/>
-	<Property ID="101203" Name="10120交任务对话" DialogID0="Dialog_10120_3_1" DialogID1="Dialog_10120_3_2"/>
-	<Property ID="101211" Name="10121接任务对话"/>
-	<Property ID="101212" Name="10121进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_003" DialogID0="Dialog_10121_2_1" DialogID1="Dialog_10121_2_2"/>
-	<Property ID="101213" Name="10121交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_003" DialogID0="Dialog_10121_3_1" DialogID1="Dialog_10121_3_2"/>
-	<Property ID="101221" Name="10122接任务对话"/>
-	<Property ID="101222" Name="10122进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_005" DialogID0="Dialog_10122_2_1" DialogID1="Dialog_10122_2_2"/>
-	<Property ID="101223" Name="10122交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_005" DialogID0="Dialog_10122_3_1" DialogID1="Dialog_10122_3_2"/>
-	<Property ID="101231" Name="10123接任务对话"/>
-	<Property ID="101232" Name="10123进行中对话" DialogID0="Dialog_10123_2_1" DialogID1="Dialog_10123_2_2"/>
-	<Property ID="101233" Name="10123交任务对话" DialogID0="Dialog_10123_3_1" DialogID1="Dialog_10123_3_2"/>
-	<Property ID="101241" Name="10124接任务对话"/>
-	<Property ID="101242" Name="10124进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10124_2_1" DialogID1="Dialog_10124_2_2"/>
-	<Property ID="101243" Name="10124交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10124_3_1" DialogID1="Dialog_10124_3_2"/>
-	<Property ID="101251" Name="10125接任务对话"/>
-	<Property ID="101252" Name="10125进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_005" DialogID0="Dialog_10125_2_1" DialogID1="Dialog_10125_2_2"/>
-	<Property ID="101253" Name="10125交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_005" DialogID0="Dialog_10125_3_1" DialogID1="Dialog_10125_3_2"/>
-	<Property ID="101261" Name="10126接任务对话"/>
-	<Property ID="101262" Name="10126进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_005" DialogID0="Dialog_10126_2_1" DialogID1="Dialog_10126_2_2"/>
-	<Property ID="101263" Name="10126交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_005" DialogID0="Dialog_10126_3_1" DialogID1="Dialog_10126_3_2"/>
-	<Property ID="101271" Name="10127接任务对话"/>
-	<Property ID="101272" Name="10127进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10127_2_1" DialogID1="Dialog_10127_2_2"/>
-	<Property ID="101273" Name="10127交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_018" DialogID0="Dialog_10127_3_1" DialogID1="Dialog_10127_3_2"/>
-	<Property ID="101281" Name="10128接任务对话"/>
-	<Property ID="101282" Name="10128进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_012" TalkNpc2="@player" TalkNpc3="npc_city_012" TalkNpc4="@player" TalkNpc5="npc_city_012" DialogID0="Dialog_10128_2_1" DialogID1="Dialog_10128_2_2" DialogID2="Dialog_10128_2_3" DialogID3="Dialog_10128_2_4" DialogID4="Dialog_10128_2_5" DialogID5="Dialog_10128_2_6"/>
-	<Property ID="101283" Name="10128交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_012" TalkNpc2="@player" TalkNpc3="npc_city_012" TalkNpc4="@player" TalkNpc5="npc_city_012" DialogID0="Dialog_10128_3_1" DialogID1="Dialog_10128_3_2" DialogID2="Dialog_10128_3_3" DialogID3="Dialog_10128_3_4" DialogID4="Dialog_10128_3_5" DialogID5="Dialog_10128_3_6"/>
-	<Property ID="101291" Name="10129接任务对话"/>
-	<Property ID="101292" Name="10129进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_012" DialogID0="Dialog_10129_2_1" DialogID1="Dialog_10129_2_2"/>
-	<Property ID="101293" Name="10129交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_012" DialogID0="Dialog_10129_3_1" DialogID1="Dialog_10129_3_2"/>
-	<Property ID="101301" Name="10130接任务对话"/>
-	<Property ID="101302" Name="10130进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm303_001" TalkNpc2="@player" TalkNpc3="npc_sjm303_001" DialogID0="Dialog_10130_2_1" DialogID1="Dialog_10130_2_2" DialogID2="Dialog_10130_2_3" DialogID3="Dialog_10130_2_4"/>
-	<Property ID="101303" Name="10130交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm303_001" TalkNpc2="@player" TalkNpc3="npc_sjm303_001" DialogID0="Dialog_10130_3_1" DialogID1="Dialog_10130_3_2" DialogID2="Dialog_10130_3_3" DialogID3="Dialog_10130_3_4"/>
-	<Property ID="101311" Name="10131接任务对话"/>
-	<Property ID="101312" Name="10131进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm303_001" DialogID0="Dialog_10131_2_1" DialogID1="Dialog_10131_2_2"/>
-	<Property ID="101313" Name="10131交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm303_001" DialogID0="Dialog_10131_3_1" DialogID1="Dialog_10131_3_2"/>
-	<Property ID="101321" Name="10132接任务对话"/>
-	<Property ID="101322" Name="10132进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm303_001" DialogID0="Dialog_10132_2_1" DialogID1="Dialog_10132_2_2"/>
-	<Property ID="101323" Name="10132交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm303_001" TalkNpc2="@player" TalkNpc3="npc_sjm303_001" DialogID0="Dialog_10132_3_1" DialogID1="Dialog_10132_3_2" DialogID2="Dialog_10132_3_3" DialogID3="Dialog_10132_3_4"/>
-	<Property ID="101331" Name="10133接任务对话"/>
-	<Property ID="101332" Name="10133进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_012" TalkNpc2="npc_city_012" DialogID0="Dialog_10133_2_1" DialogID1="Dialog_10133_2_2" DialogID2="Dialog_10133_2_3"/>
-	<Property ID="101333" Name="10133交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_012" TalkNpc2="npc_city_012" DialogID0="Dialog_10133_3_1" DialogID1="Dialog_10133_3_2" DialogID2="Dialog_10133_3_3"/>
-	<Property ID="101341" Name="10134接任务对话"/>
-	<Property ID="101342" Name="10134进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_012" DialogID0="Dialog_10134_2_1" DialogID1="Dialog_10134_2_2"/>
-	<Property ID="101343" Name="10134交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_012" DialogID0="Dialog_10134_3_1" DialogID1="Dialog_10134_3_2"/>
-	<Property ID="101351" Name="10135接任务对话"/>
-	<Property ID="101352" Name="10135进行中对话" TalkNpc0="npc_city_012" TalkNpc1="@player" DialogID0="Dialog_10135_2_1" DialogID1="Dialog_10135_2_2"/>
-	<Property ID="101353" Name="10135交任务对话" TalkNpc0="npc_city_012" TalkNpc1="@player" DialogID0="Dialog_10135_3_1" DialogID1="Dialog_10135_3_2"/>
-	<Property ID="101361" Name="10136接任务对话"/>
-	<Property ID="101362" Name="10136进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_012" DialogID0="Dialog_10136_2_1" DialogID1="Dialog_10136_2_2"/>
-	<Property ID="101363" Name="10136交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_012" DialogID0="Dialog_10136_3_1" DialogID1="Dialog_10136_3_2"/>
-	<Property ID="101371" Name="10137接任务对话"/>
-	<Property ID="101372" Name="10137进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_012" TalkNpc2="@player" DialogID0="Dialog_10137_2_1" DialogID1="Dialog_10137_2_2" DialogID2="Dialog_10137_2_3"/>
-	<Property ID="101373" Name="10137交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_012" TalkNpc2="@player" DialogID0="Dialog_10137_3_1" DialogID1="Dialog_10137_3_2" DialogID2="Dialog_10137_3_3"/>
-	<Property ID="101381" Name="10138接任务对话"/>
-	<Property ID="101382" Name="10138进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_012" DialogID0="Dialog_10138_2_1" DialogID1="Dialog_10138_2_2"/>
-	<Property ID="101383" Name="10138交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_012" DialogID0="Dialog_10138_3_1" DialogID1="Dialog_10138_3_2"/>
-	<Property ID="101391" Name="10139接任务对话"/>
-	<Property ID="101392" Name="10139进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_012" DialogID0="Dialog_10139_2_1" DialogID1="Dialog_10139_2_2"/>
-	<Property ID="101393" Name="10139交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_012" DialogID0="Dialog_10139_3_1" DialogID1="Dialog_10139_3_2"/>
-	<Property ID="101401" Name="10140接任务对话"/>
-	<Property ID="101402" Name="10140进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_012" DialogID0="Dialog_10140_2_1" DialogID1="Dialog_10140_2_2"/>
-	<Property ID="101403" Name="10140交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_012" DialogID0="Dialog_10140_3_1" DialogID1="Dialog_10140_3_2"/>
-	<Property ID="101411" Name="10141接任务对话"/>
-	<Property ID="101412" Name="10141进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_009" TalkNpc2="@player" TalkNpc3="npc_city_009" DialogID0="Dialog_10141_2_1" DialogID1="Dialog_10141_2_2" DialogID2="Dialog_10141_2_3" DialogID3="Dialog_10141_2_4"/>
-	<Property ID="101413" Name="10141交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_009" TalkNpc2="@player" TalkNpc3="npc_city_009" DialogID0="Dialog_10141_3_1" DialogID1="Dialog_10141_3_2" DialogID2="Dialog_10141_3_3" DialogID3="Dialog_10141_3_4"/>
-	<Property ID="101421" Name="10142接任务对话"/>
-	<Property ID="101422" Name="10142进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm303_001" TalkNpc2="@player" TalkNpc3="npc_sjm303_001" TalkNpc4="@player" DialogID0="Dialog_10142_2_1" DialogID1="Dialog_10142_2_2" DialogID2="Dialog_10142_2_3" DialogID3="Dialog_10142_2_4" DialogID4="Dialog_10142_2_5"/>
-	<Property ID="101423" Name="10142交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm303_001" TalkNpc2="@player" TalkNpc3="npc_sjm303_001" TalkNpc4="@player" DialogID0="Dialog_10142_3_1" DialogID1="Dialog_10142_3_2" DialogID2="Dialog_10142_3_3" DialogID3="Dialog_10142_3_4" DialogID4="Dialog_10142_3_5"/>
-	<Property ID="101431" Name="10143接任务对话"/>
-	<Property ID="101432" Name="10143进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm303_001" DialogID0="Dialog_10143_2_1" DialogID1="Dialog_10143_2_2"/>
-	<Property ID="101433" Name="10143交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm303_001" DialogID0="Dialog_10143_3_1" DialogID1="Dialog_10143_3_2"/>
-	<Property ID="101441" Name="10144接任务对话"/>
-	<Property ID="101442" Name="10144进行中对话" TalkNpc0="@player" TalkNpc1="npc_sjm303_001" TalkNpc2="@player" DialogID0="Dialog_10144_2_1" DialogID1="Dialog_10144_2_2" DialogID2="Dialog_10144_2_3"/>
-	<Property ID="101443" Name="10144交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm303_001" DialogID0="Dialog_10144_3_1" DialogID1="Dialog_10144_3_2"/>
-	<Property ID="101451" Name="10145接任务对话"/>
-	<Property ID="101452" Name="10145进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_002" TalkNpc2="@player" TalkNpc3="npc_city_002" DialogID0="Dialog_10145_2_1" DialogID1="Dialog_10145_2_2" DialogID2="Dialog_10145_2_3" DialogID3="Dialog_10145_2_4"/>
-	<Property ID="101453" Name="10145交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_002" TalkNpc2="@player" TalkNpc3="npc_city_002" DialogID0="Dialog_10145_3_1" DialogID1="Dialog_10145_3_2" DialogID2="Dialog_10145_3_3" DialogID3="Dialog_10145_3_4"/>
-	<Property ID="101461" Name="10146接任务对话"/>
-	<Property ID="101462" Name="10146进行中对话" TalkNpc0="@player" TalkNpc1="npc_city_012" TalkNpc2="@player" DialogID0="Dialog_10146_2_1" DialogID1="Dialog_10146_2_2" DialogID2="Dialog_10146_2_3"/>
-	<Property ID="101463" Name="10146交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_012" TalkNpc2="@player" DialogID0="Dialog_10146_3_1" DialogID1="Dialog_10146_3_2" DialogID2="Dialog_10146_3_3"/>
-	<Property ID="101473" Name="10147交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_018" TalkNpc2="@player" TalkNpc3="npc_city2_018" DialogID0="Dialog_10147_3_1" DialogID1="Dialog_10147_3_2" DialogID2="Dialog_10147_3_3" DialogID3="Dialog_10147_3_4"/>
-	<Property ID="101483" Name="10148交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10148_3_1" DialogID1="Dialog_10148_3_2" DialogID2="Dialog_10148_3_3" DialogID3="Dialog_10148_3_4"/>
-	<Property ID="101503" Name="10150交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_018" TalkNpc2="@player" TalkNpc3="npc_city2_018" DialogID0="Dialog_10150_3_1" DialogID1="Dialog_10150_3_2" DialogID2="Dialog_10150_3_3" DialogID3="Dialog_10150_3_4"/>
-	<Property ID="101513" Name="10151交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_002" TalkNpc2="@player" TalkNpc3="npc_city2_002" DialogID0="Dialog_10151_3_1" DialogID1="Dialog_10151_3_2" DialogID2="Dialog_10151_3_3" DialogID3="Dialog_10151_3_4"/>
-	<Property ID="101523" Name="10152交任务对话" TalkNpc0="npc_city2_024" TalkNpc1="@player" TalkNpc2="npc_city2_024" TalkNpc3="@player" DialogID0="Dialog_10152_3_1" DialogID1="Dialog_10152_3_2" DialogID2="Dialog_10152_3_3" DialogID3="Dialog_10152_3_4"/>
-	<Property ID="101543" Name="10154交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_024" TalkNpc2="@player" TalkNpc3="npc_city2_024" DialogID0="Dialog_10154_3_1" DialogID1="Dialog_10154_3_2" DialogID2="Dialog_10154_3_3" DialogID3="Dialog_10154_3_4"/>
-	<Property ID="101553" Name="10155交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_006" TalkNpc2="@player" TalkNpc3="npc_city2_006" DialogID0="Dialog_10155_3_1" DialogID1="Dialog_10155_3_2" DialogID2="Dialog_10155_3_3" DialogID3="Dialog_10155_3_4"/>
-	<Property ID="101563" Name="10156交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm304_001" TalkNpc2="@player" TalkNpc3="npc_sjm304_001" DialogID0="Dialog_10156_3_1" DialogID1="Dialog_10156_3_2" DialogID2="Dialog_10156_3_3" DialogID3="Dialog_10156_3_4"/>
-	<Property ID="101573" Name="10157交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm304_001" TalkNpc2="@player" TalkNpc3="npc_sjm304_001" DialogID0="Dialog_10157_3_1" DialogID1="Dialog_10157_3_2" DialogID2="Dialog_10157_3_3" DialogID3="Dialog_10157_3_4"/>
-	<Property ID="101583" Name="10158交任务对话" TalkNpc0="npc_sjm304_002" TalkNpc1="@player" TalkNpc2="npc_sjm304_002" TalkNpc3="@player" DialogID0="Dialog_10158_3_1" DialogID1="Dialog_10158_3_2" DialogID2="Dialog_10158_3_3" DialogID3="Dialog_10158_3_4"/>
-	<Property ID="101593" Name="10159交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm304_002" TalkNpc2="@player" TalkNpc3="npc_sjm304_002" DialogID0="Dialog_10159_3_1" DialogID1="Dialog_10159_3_2" DialogID2="Dialog_10159_3_3" DialogID3="Dialog_10159_3_4"/>
-	<Property ID="101603" Name="10160交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm304_001" TalkNpc2="@player" TalkNpc3="npc_sjm304_001" DialogID0="Dialog_10160_3_1" DialogID1="Dialog_10160_3_2" DialogID2="Dialog_10160_3_3" DialogID3="Dialog_10160_3_4"/>
-	<Property ID="101613" Name="10161交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_006" TalkNpc2="@player" TalkNpc3="npc_city2_006" DialogID0="Dialog_10161_3_1" DialogID1="Dialog_10161_3_2" DialogID2="Dialog_10161_3_3" DialogID3="Dialog_10161_3_4"/>
-	<Property ID="101623" Name="10162交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_003" TalkNpc2="@player" TalkNpc3="npc_city2_003" DialogID0="Dialog_10162_3_1" DialogID1="Dialog_10162_3_2" DialogID2="Dialog_10162_3_3" DialogID3="Dialog_10162_3_4"/>
-	<Property ID="101643" Name="10164交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_018" TalkNpc2="@player" TalkNpc3="npc_city2_018" DialogID0="Dialog_10164_3_1" DialogID1="Dialog_10164_3_2" DialogID2="Dialog_10164_3_3" DialogID3="Dialog_10164_3_4"/>
-	<Property ID="101663" Name="10166交任务对话" TalkNpc0="npc_city2_003" TalkNpc1="@player" TalkNpc2="npc_city2_003" TalkNpc3="@player" DialogID0="Dialog_10166_3_1" DialogID1="Dialog_10166_3_2" DialogID2="Dialog_10166_3_3" DialogID3="Dialog_10166_3_4"/>
-	<Property ID="101673" Name="10167交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm304_001" TalkNpc2="@player" TalkNpc3="npc_sjm304_001" DialogID0="Dialog_10167_3_1" DialogID1="Dialog_10167_3_2" DialogID2="Dialog_10167_3_3" DialogID3="Dialog_10167_3_4"/>
-	<Property ID="101683" Name="10168交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm304_002" TalkNpc2="@player" TalkNpc3="npc_sjm304_002" DialogID0="Dialog_10168_3_1" DialogID1="Dialog_10168_3_2" DialogID2="Dialog_10168_3_3" DialogID3="Dialog_10168_3_4"/>
-	<Property ID="101693" Name="10169交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm304_002" TalkNpc2="@player" TalkNpc3="npc_sjm304_002" DialogID0="Dialog_10169_3_1" DialogID1="Dialog_10169_3_2" DialogID2="Dialog_10169_3_3" DialogID3="Dialog_10169_3_4"/>
-	<Property ID="101703" Name="10170交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm304_002" TalkNpc2="@player" TalkNpc3="npc_sjm304_002" DialogID0="Dialog_10170_3_1" DialogID1="Dialog_10170_3_2" DialogID2="Dialog_10170_3_3" DialogID3="Dialog_10170_3_4"/>
-	<Property ID="101713" Name="10171交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm304_001" TalkNpc2="@player" TalkNpc3="npc_sjm304_001" DialogID0="Dialog_10171_3_1" DialogID1="Dialog_10171_3_2" DialogID2="Dialog_10171_3_3" DialogID3="Dialog_10171_3_4"/>
-	<Property ID="101723" Name="10172交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_006" TalkNpc2="@player" TalkNpc3="npc_city2_006" DialogID0="Dialog_10172_3_1" DialogID1="Dialog_10172_3_2" DialogID2="Dialog_10172_3_3" DialogID3="Dialog_10172_3_4"/>
-	<Property ID="101733" Name="10173交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_004" TalkNpc2="@player" TalkNpc3="npc_city2_004" DialogID0="Dialog_10173_3_1" DialogID1="Dialog_10173_3_2" DialogID2="Dialog_10173_3_3" DialogID3="Dialog_10173_3_4"/>
-	<Property ID="101753" Name="10175交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_018" TalkNpc2="@player" TalkNpc3="npc_city2_018" DialogID0="Dialog_10175_3_1" DialogID1="Dialog_10175_3_2" DialogID2="Dialog_10175_3_3" DialogID3="Dialog_10175_3_4"/>
-	<Property ID="101773" Name="10177交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_003" TalkNpc2="@player" TalkNpc3="npc_city2_003" DialogID0="Dialog_10177_3_1" DialogID1="Dialog_10177_3_2" DialogID2="Dialog_10177_3_3" DialogID3="Dialog_10177_3_4"/>
-	<Property ID="101783" Name="10178交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm304_001" TalkNpc2="@player" TalkNpc3="npc_sjm304_001" DialogID0="Dialog_10178_3_1" DialogID1="Dialog_10178_3_2" DialogID2="Dialog_10178_3_3" DialogID3="Dialog_10178_3_4"/>
-	<Property ID="101793" Name="10179交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm304_001" TalkNpc2="@player" TalkNpc3="npc_sjm304_001" DialogID0="Dialog_10179_3_1" DialogID1="Dialog_10179_3_2" DialogID2="Dialog_10179_3_3" DialogID3="Dialog_10179_3_4"/>
-	<Property ID="101803" Name="10180交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm304_001" TalkNpc2="@player" TalkNpc3="npc_sjm304_001" DialogID0="Dialog_10180_3_1" DialogID1="Dialog_10180_3_2" DialogID2="Dialog_10180_3_3" DialogID3="Dialog_10180_3_4"/>
-	<Property ID="101813" Name="10181交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_003" TalkNpc2="@player" TalkNpc3="npc_city2_003" DialogID0="Dialog_10181_3_1" DialogID1="Dialog_10181_3_2" DialogID2="Dialog_10181_3_3" DialogID3="Dialog_10181_3_4"/>
-	<Property ID="101823" Name="10182交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_004" TalkNpc2="@player" TalkNpc3="npc_city2_004" DialogID0="Dialog_10182_3_1" DialogID1="Dialog_10182_3_2" DialogID2="Dialog_10182_3_3" DialogID3="Dialog_10182_3_4"/>
-	<Property ID="101843" Name="10184交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_018" TalkNpc2="@player" TalkNpc3="npc_city2_018" DialogID0="Dialog_10184_3_1" DialogID1="Dialog_10184_3_2" DialogID2="Dialog_10184_3_3" DialogID3="Dialog_10184_3_4"/>
-	<Property ID="101863" Name="10186交任务对话" TalkNpc0="npc_city2_002" TalkNpc1="@player" TalkNpc2="npc_city2_002" TalkNpc3="@player" DialogID0="Dialog_10186_3_1" DialogID1="Dialog_10186_3_2" DialogID2="Dialog_10186_3_3" DialogID3="Dialog_10186_3_4"/>
-	<Property ID="101873" Name="10187交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_006" TalkNpc2="@player" TalkNpc3="npc_city2_006" DialogID0="Dialog_10187_3_1" DialogID1="Dialog_10187_3_2" DialogID2="Dialog_10187_3_3" DialogID3="Dialog_10187_3_4"/>
-	<Property ID="101883" Name="10188交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_004" TalkNpc2="@player" TalkNpc3="npc_city2_004" DialogID0="Dialog_10188_3_1" DialogID1="Dialog_10188_3_2" DialogID2="Dialog_10188_3_3" DialogID3="Dialog_10188_3_4"/>
-	<Property ID="101893" Name="10189交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm304_001" TalkNpc2="@player" TalkNpc3="npc_sjm304_001" TalkNpc4="@player" DialogID0="Dialog_10189_3_1" DialogID1="Dialog_10189_3_2" DialogID2="Dialog_10189_3_3" DialogID3="Dialog_10189_3_4" DialogID4="Dialog_10189_3_5"/>
-	<Property ID="101903" Name="10190交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm304_001" TalkNpc2="@player" TalkNpc3="npc_sjm304_001" DialogID0="Dialog_10190_3_1" DialogID1="Dialog_10190_3_2" DialogID2="Dialog_10190_3_3" DialogID3="Dialog_10190_3_4"/>
-	<Property ID="101913" Name="10191交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm304_002" TalkNpc2="@player" TalkNpc3="npc_sjm304_002" DialogID0="Dialog_10191_3_1" DialogID1="Dialog_10191_3_2" DialogID2="Dialog_10191_3_3" DialogID3="Dialog_10191_3_4"/>
-	<Property ID="101923" Name="10192交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm304_002" TalkNpc2="@player" TalkNpc3="npc_sjm304_002" DialogID0="Dialog_10192_3_1" DialogID1="Dialog_10192_3_2" DialogID2="Dialog_10192_3_3" DialogID3="Dialog_10192_3_4"/>
-	<Property ID="101933" Name="10193交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_018" TalkNpc2="@player" TalkNpc3="npc_city2_018" DialogID0="Dialog_10193_3_1" DialogID1="Dialog_10193_3_2" DialogID2="Dialog_10193_3_3" DialogID3="Dialog_10193_3_4"/>
-	<Property ID="101963" Name="10196交任务对话" TalkNpc0="npc_city2_003" TalkNpc1="@player" TalkNpc2="npc_city2_003" TalkNpc3="@player" DialogID0="Dialog_10196_3_1" DialogID1="Dialog_10196_3_2" DialogID2="Dialog_10196_3_3" DialogID3="Dialog_10196_3_4"/>
-	<Property ID="101973" Name="10197交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_006" TalkNpc2="@player" TalkNpc3="npc_city2_006" DialogID0="Dialog_10197_3_1" DialogID1="Dialog_10197_3_2" DialogID2="Dialog_10197_3_3" DialogID3="Dialog_10197_3_4"/>
-	<Property ID="101983" Name="10198交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm304_001" TalkNpc2="@player" TalkNpc3="npc_sjm304_001" DialogID0="Dialog_10198_3_1" DialogID1="Dialog_10198_3_2" DialogID2="Dialog_10198_3_3" DialogID3="Dialog_10198_3_4"/>
-	<Property ID="101993" Name="10199交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm304_002" TalkNpc2="@player" TalkNpc3="npc_sjm304_002" DialogID0="Dialog_10199_3_1" DialogID1="Dialog_10199_3_2" DialogID2="Dialog_10199_3_3" DialogID3="Dialog_10199_3_4"/>
-	<Property ID="102003" Name="10200交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm304_002" TalkNpc2="@player" TalkNpc3="npc_sjm304_002" DialogID0="Dialog_10200_3_1" DialogID1="Dialog_10200_3_2" DialogID2="Dialog_10200_3_3" DialogID3="Dialog_10200_3_4"/>
-	<Property ID="102013" Name="10201交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm304_001" TalkNpc2="npc_sjm304_001" TalkNpc3="@player" DialogID0="Dialog_10201_3_1" DialogID1="Dialog_10201_3_2" DialogID2="Dialog_10201_3_3" DialogID3="Dialog_10201_3_4"/>
-	<Property ID="102023" Name="10202交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_004" TalkNpc2="@player" TalkNpc3="npc_city2_004" DialogID0="Dialog_10202_3_1" DialogID1="Dialog_10202_3_2" DialogID2="Dialog_10202_3_3" DialogID3="Dialog_10202_3_4"/>
-	<Property ID="102043" Name="10204交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_018" TalkNpc2="@player" TalkNpc3="npc_city2_018" DialogID0="Dialog_10204_3_1" DialogID1="Dialog_10204_3_2" DialogID2="Dialog_10204_3_3" DialogID3="Dialog_10204_3_4"/>
-	<Property ID="102053" Name="10205交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_024" TalkNpc2="@player" TalkNpc3="npc_city2_024" DialogID0="Dialog_10205_3_1" DialogID1="Dialog_10205_3_2" DialogID2="Dialog_10205_3_3" DialogID3="Dialog_10205_3_4"/>
-	<Property ID="102063" Name="10206交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm305_001" TalkNpc2="@player" TalkNpc3="npc_sjm305_001" DialogID0="Dialog_10206_3_1" DialogID1="Dialog_10206_3_2" DialogID2="Dialog_10206_3_3" DialogID3="Dialog_10206_3_4"/>
-	<Property ID="102073" Name="10207交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm305_001" DialogID0="Dialog_10207_3_1" DialogID1="Dialog_10207_3_2"/>
-	<Property ID="102083" Name="10208交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm305_002" TalkNpc2="@player" TalkNpc3="npc_sjm305_002" DialogID0="Dialog_10208_3_1" DialogID1="Dialog_10208_3_2" DialogID2="Dialog_10208_3_3" DialogID3="Dialog_10208_3_4"/>
-	<Property ID="102093" Name="10209交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm305_002" TalkNpc2="@player" TalkNpc3="npc_sjm305_002" DialogID0="Dialog_10209_3_1" DialogID1="Dialog_10209_3_2" DialogID2="Dialog_10209_3_3" DialogID3="Dialog_10209_3_4"/>
-	<Property ID="102103" Name="10210交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm305_001" TalkNpc2="@player" TalkNpc3="npc_sjm305_001" DialogID0="Dialog_10210_3_1" DialogID1="Dialog_10210_3_2" DialogID2="Dialog_10210_3_3" DialogID3="Dialog_10210_3_4"/>
-	<Property ID="102113" Name="10211交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_009" TalkNpc2="@player" TalkNpc3="npc_city2_009" DialogID0="Dialog_10211_3_1" DialogID1="Dialog_10211_3_2" DialogID2="Dialog_10211_3_3" DialogID3="Dialog_10211_3_4"/>
-	<Property ID="102133" Name="10213交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_018" TalkNpc2="@player" TalkNpc3="npc_city2_018" DialogID0="Dialog_10213_3_1" DialogID1="Dialog_10213_3_2" DialogID2="Dialog_10213_3_3" DialogID3="Dialog_10213_3_4"/>
-	<Property ID="102143" Name="10214交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_007" TalkNpc2="@player" TalkNpc3="npc_city2_007" DialogID0="Dialog_10214_3_1" DialogID1="Dialog_10214_3_2" DialogID2="Dialog_10214_3_3" DialogID3="Dialog_10214_3_4"/>
-	<Property ID="102163" Name="10216交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_009" TalkNpc2="@player" TalkNpc3="npc_city2_009" DialogID0="Dialog_10216_3_1" DialogID1="Dialog_10216_3_2" DialogID2="Dialog_10216_3_3" DialogID3="Dialog_10216_3_4"/>
-	<Property ID="102173" Name="10217交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm305_001" TalkNpc2="@player" TalkNpc3="npc_sjm305_001" DialogID0="Dialog_10217_3_1" DialogID1="Dialog_10217_3_2" DialogID2="Dialog_10217_3_3" DialogID3="Dialog_10217_3_4"/>
-	<Property ID="102183" Name="10218交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm305_001" TalkNpc2="@player" TalkNpc3="npc_sjm305_001" DialogID0="Dialog_10218_3_1" DialogID1="Dialog_10218_3_2" DialogID2="Dialog_10218_3_3" DialogID3="Dialog_10218_3_4"/>
-	<Property ID="102193" Name="10219交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm305_002" TalkNpc2="@player" TalkNpc3="npc_sjm305_002" TalkNpc4="@player" DialogID0="Dialog_10219_3_1" DialogID1="Dialog_10219_3_2" DialogID2="Dialog_10219_3_3" DialogID3="Dialog_10219_3_4" DialogID4="Dialog_10219_3_5"/>
-	<Property ID="102203" Name="10220交任务对话" TalkNpc0="npc_sjm305_001" TalkNpc1="npc_sjm305_001" TalkNpc2="@player" DialogID0="Dialog_10220_3_1" DialogID1="Dialog_10220_3_2" DialogID2="Dialog_10220_3_3"/>
-	<Property ID="102213" Name="10221交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_007" TalkNpc2="@player" DialogID0="Dialog_10221_3_1" DialogID1="Dialog_10221_3_2" DialogID2="Dialog_10221_3_3"/>
-	<Property ID="102223" Name="10222交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_003" TalkNpc2="@player" DialogID0="Dialog_10222_3_1" DialogID1="Dialog_10222_3_2" DialogID2="Dialog_10222_3_3"/>
-	<Property ID="102243" Name="10224交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_004" TalkNpc2="@player" TalkNpc3="npc_city2_004" DialogID0="Dialog_10224_3_1" DialogID1="Dialog_10224_3_2" DialogID2="Dialog_10224_3_3" DialogID3="Dialog_10224_3_4"/>
-	<Property ID="102263" Name="10226交任务对话" TalkNpc0="npc_city2_004" TalkNpc1="@player" TalkNpc2="npc_city2_004" TalkNpc3="@player" DialogID0="Dialog_10226_3_1" DialogID1="Dialog_10226_3_2" DialogID2="Dialog_10226_3_3" DialogID3="Dialog_10226_3_4"/>
-	<Property ID="102273" Name="10227交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm305_001" TalkNpc2="@player" TalkNpc3="npc_sjm305_001" DialogID0="Dialog_10227_3_1" DialogID1="Dialog_10227_3_2" DialogID2="Dialog_10227_3_3" DialogID3="Dialog_10227_3_4"/>
-	<Property ID="102283" Name="10228交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm305_002" TalkNpc2="@player" TalkNpc3="npc_sjm305_002" DialogID0="Dialog_10228_3_1" DialogID1="Dialog_10228_3_2" DialogID2="Dialog_10228_3_3" DialogID3="Dialog_10228_3_4"/>
-	<Property ID="102293" Name="10229交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm305_002" TalkNpc2="@player" TalkNpc3="npc_sjm305_002" DialogID0="Dialog_10229_3_1" DialogID1="Dialog_10229_3_2" DialogID2="Dialog_10229_3_3" DialogID3="Dialog_10229_3_4"/>
-	<Property ID="102303" Name="10230交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm305_001" TalkNpc2="@player" TalkNpc3="npc_sjm305_001" DialogID0="Dialog_10230_3_1" DialogID1="Dialog_10230_3_2" DialogID2="Dialog_10230_3_3" DialogID3="Dialog_10230_3_4"/>
-	<Property ID="102313" Name="10231交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_018" TalkNpc2="@player" TalkNpc3="npc_city2_018" DialogID0="Dialog_10231_3_1" DialogID1="Dialog_10231_3_2" DialogID2="Dialog_10231_3_3" DialogID3="Dialog_10231_3_4"/>
-	<Property ID="102333" Name="10233交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_018" TalkNpc2="@player" TalkNpc3="npc_city2_018" DialogID0="Dialog_10233_3_1" DialogID1="Dialog_10233_3_2" DialogID2="Dialog_10233_3_3" DialogID3="Dialog_10233_3_4"/>
-	<Property ID="102353" Name="10235交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_018" TalkNpc2="@player" TalkNpc3="npc_city2_018" DialogID0="Dialog_10235_3_1" DialogID1="Dialog_10235_3_2" DialogID2="Dialog_10235_3_3" DialogID3="Dialog_10235_3_4"/>
-	<Property ID="102373" Name="10237交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_018" TalkNpc2="@player" TalkNpc3="npc_city2_018" DialogID0="Dialog_10237_3_1" DialogID1="Dialog_10237_3_2" DialogID2="Dialog_10237_3_3" DialogID3="Dialog_10237_3_4"/>
-	<Property ID="102393" Name="10239交任务对话" TalkNpc0="npc_city2_004" TalkNpc1="@player" TalkNpc2="npc_city2_004" TalkNpc3="npc_city2_004" DialogID0="Dialog_10239_3_1" DialogID1="Dialog_10239_3_2" DialogID2="Dialog_10239_3_3" DialogID3="Dialog_10239_3_4"/>
-	<Property ID="102403" Name="10240交任务对话" TalkNpc0="npc_sjm305_005" TalkNpc1="@player" TalkNpc2="npc_sjm305_005" DialogID0="Dialog_10240_3_1" DialogID1="Dialog_10240_3_2" DialogID2="Dialog_10240_3_3"/>
-	<Property ID="102413" Name="10241交任务对话" TalkNpc0="npc_sjm305_005" TalkNpc1="@player" TalkNpc2="npc_sjm305_005" DialogID0="Dialog_10241_3_1" DialogID1="Dialog_10241_3_2" DialogID2="Dialog_10241_3_3"/>
-	<Property ID="102423" Name="10242交任务对话" TalkNpc0="npc_sjm305_005" TalkNpc1="@player" DialogID0="Dialog_10242_3_1" DialogID1="Dialog_10242_3_2"/>
-	<Property ID="102433" Name="10243交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_004" DialogID0="Dialog_10243_3_1" DialogID1="Dialog_10243_3_2"/>
-	<Property ID="102453" Name="10245交任务对话" TalkNpc0="npc_city2_001" TalkNpc1="@player" TalkNpc2="npc_city2_001" DialogID0="Dialog_10245_3_1" DialogID1="Dialog_10245_3_2" DialogID2="Dialog_10245_3_3"/>
-	<Property ID="102473" Name="10247交任务对话" TalkNpc0="npc_city2_003" TalkNpc1="@player" DialogID0="Dialog_10247_3_1" DialogID1="Dialog_10247_3_2"/>
-	<Property ID="102483" Name="10248交任务对话" TalkNpc0="npc_sjm305_005" TalkNpc1="@player" TalkNpc2="npc_sjm305_005" DialogID0="Dialog_10248_3_1" DialogID1="Dialog_10248_3_2" DialogID2="Dialog_10248_3_3"/>
-	<Property ID="102493" Name="10249交任务对话" TalkNpc0="npc_sjm305_005" TalkNpc1="@player" TalkNpc2="npc_sjm305_005" DialogID0="Dialog_10249_3_1" DialogID1="Dialog_10249_3_2" DialogID2="Dialog_10249_3_3"/>
-	<Property ID="102503" Name="10250交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm305_005" DialogID0="Dialog_10250_3_1" DialogID1="Dialog_10250_3_2"/>
-	<Property ID="102513" Name="10251交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_003" TalkNpc2="@player" TalkNpc3="npc_city2_003" DialogID0="Dialog_10251_3_1" DialogID1="Dialog_10251_3_2" DialogID2="Dialog_10251_3_3" DialogID3="Dialog_10251_3_4"/>
-	<Property ID="102533" Name="10253交任务对话" TalkNpc0="npc_city2_001" TalkNpc1="@player" DialogID0="Dialog_10253_3_1" DialogID1="Dialog_10253_3_2"/>
-	<Property ID="102543" Name="10254交任务对话" TalkNpc0="npc_sjm305_005" TalkNpc1="@player" TalkNpc2="npc_sjm305_005" DialogID0="Dialog_10254_3_1" DialogID1="Dialog_10254_3_2" DialogID2="Dialog_10254_3_3"/>
-	<Property ID="102553" Name="10255交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm305_005" TalkNpc2="@player" DialogID0="Dialog_10255_3_1" DialogID1="Dialog_10255_3_2" DialogID2="Dialog_10255_3_3"/>
-	<Property ID="102563" Name="10256交任务对话" TalkNpc0="npc_sjm305_005" TalkNpc1="@player" TalkNpc2="npc_sjm305_005" TalkNpc3="@player" DialogID0="Dialog_10256_3_1" DialogID1="Dialog_10256_3_2" DialogID2="Dialog_10256_3_3" DialogID3="Dialog_10256_3_4"/>
-	<Property ID="102573" Name="10257交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10257_3_1" DialogID1="Dialog_10257_3_2" DialogID2="Dialog_10257_3_3" DialogID3="Dialog_10257_3_4"/>
-	<Property ID="102593" Name="10259交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_018" TalkNpc2="@player" TalkNpc3="npc_city2_018" DialogID0="Dialog_10259_3_1" DialogID1="Dialog_10259_3_2" DialogID2="Dialog_10259_3_3" DialogID3="Dialog_10259_3_4"/>
-	<Property ID="102613" Name="10261交任务对话" TalkNpc0="npc_city2_006" TalkNpc1="@player" TalkNpc2="npc_city2_006" TalkNpc3="@player" DialogID0="Dialog_10261_3_1" DialogID1="Dialog_10261_3_2" DialogID2="Dialog_10261_3_3" DialogID3="Dialog_10261_3_4"/>
-	<Property ID="102623" Name="10262交任务对话" TalkNpc0="npc_sjm306_001" TalkNpc1="@player" TalkNpc2="npc_sjm306_001" TalkNpc3="@player" DialogID0="Dialog_10262_3_1" DialogID1="Dialog_10262_3_2" DialogID2="Dialog_10262_3_3" DialogID3="Dialog_10262_3_4"/>
-	<Property ID="102633" Name="10263交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm306_001" TalkNpc2="@player" DialogID0="Dialog_10263_3_1" DialogID1="Dialog_10263_3_2" DialogID2="Dialog_10263_3_3"/>
-	<Property ID="102643" Name="10264交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm306_001" DialogID0="Dialog_10264_3_1" DialogID1="Dialog_10264_3_2"/>
-	<Property ID="102653" Name="10265交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_004" TalkNpc2="@player" DialogID0="Dialog_10265_3_1" DialogID1="Dialog_10265_3_2" DialogID2="Dialog_10265_3_3"/>
-	<Property ID="102673" Name="10267交任务对话" TalkNpc0="npc_city2_018" TalkNpc1="npc_city2_018" TalkNpc2="@player" DialogID0="Dialog_10267_3_1" DialogID1="Dialog_10267_3_2" DialogID2="Dialog_10267_3_3"/>
-	<Property ID="102693" Name="10269交任务对话" TalkNpc0="npc_city2_004" TalkNpc1="@player" DialogID0="Dialog_10269_3_1" DialogID1="Dialog_10269_3_2"/>
-	<Property ID="102703" Name="10270交任务对话" TalkNpc0="npc_sjm306_001" TalkNpc1="@player" TalkNpc2="npc_sjm306_001" DialogID0="Dialog_10270_3_1" DialogID1="Dialog_10270_3_2" DialogID2="Dialog_10270_3_3"/>
-	<Property ID="102713" Name="10271交任务对话" TalkNpc0="npc_sjm306_001" TalkNpc1="@player" DialogID0="Dialog_10271_3_1" DialogID1="Dialog_10271_3_2"/>
-	<Property ID="102723" Name="10272交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm306_001" DialogID0="Dialog_10272_3_1" DialogID1="Dialog_10272_3_2"/>
-	<Property ID="102733" Name="10273交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_004" TalkNpc2="@player" DialogID0="Dialog_10273_3_1" DialogID1="Dialog_10273_3_2" DialogID2="Dialog_10273_3_3"/>
-	<Property ID="102753" Name="10275交任务对话" TalkNpc0="npc_city2_004" TalkNpc1="@player" TalkNpc2="npc_city2_004" DialogID0="Dialog_10275_3_1" DialogID1="Dialog_10275_3_2" DialogID2="Dialog_10275_3_3"/>
-	<Property ID="102773" Name="10277交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_018" TalkNpc2="@player" DialogID0="Dialog_10277_3_1" DialogID1="Dialog_10277_3_2" DialogID2="Dialog_10277_3_3"/>
-	<Property ID="102783" Name="10278交任务对话" TalkNpc0="npc_city2_003" TalkNpc1="@player" DialogID0="Dialog_10278_3_1" DialogID1="Dialog_10278_3_2"/>
-	<Property ID="102793" Name="10279交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm306_001" TalkNpc2="@player" DialogID0="Dialog_10279_3_1" DialogID1="Dialog_10279_3_2" DialogID2="Dialog_10279_3_3"/>
-	<Property ID="102803" Name="10280交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm306_001" TalkNpc2="@player" DialogID0="Dialog_10280_3_1" DialogID1="Dialog_10280_3_2" DialogID2="Dialog_10280_3_3"/>
-	<Property ID="102813" Name="10281交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm306_001" TalkNpc2="@player" DialogID0="Dialog_10281_3_1" DialogID1="Dialog_10281_3_2" DialogID2="Dialog_10281_3_3"/>
-	<Property ID="102823" Name="10282交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_004" TalkNpc2="@player" TalkNpc3="npc_city2_004" DialogID0="Dialog_10282_3_1" DialogID1="Dialog_10282_3_2" DialogID2="Dialog_10282_3_3" DialogID3="Dialog_10282_3_4"/>
-	<Property ID="102833" Name="10283交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_004" TalkNpc2="@player" TalkNpc3="npc_city2_004" DialogID0="Dialog_10283_3_1" DialogID1="Dialog_10283_3_2" DialogID2="Dialog_10283_3_3" DialogID3="Dialog_10283_3_4"/>
-	<Property ID="102843" Name="10284交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_018" TalkNpc2="@player" TalkNpc3="npc_city2_018" DialogID0="Dialog_10284_3_1" DialogID1="Dialog_10284_3_2" DialogID2="Dialog_10284_3_3" DialogID3="Dialog_10284_3_4"/>
-	<Property ID="102853" Name="10285交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_018" TalkNpc2="@player" TalkNpc3="npc_city2_018" DialogID0="Dialog_10285_3_1" DialogID1="Dialog_10285_3_2" DialogID2="Dialog_10285_3_3" DialogID3="Dialog_10285_3_4"/>
-	<Property ID="102863" Name="10286交任务对话" TalkNpc0="@player" TalkNpc1=" npc_sjm307_001" TalkNpc2="@player" TalkNpc3=" npc_sjm307_001" DialogID0="Dialog_10286_3_1" DialogID1="Dialog_10286_3_2" DialogID2="Dialog_10286_3_3" DialogID3="Dialog_10286_3_4"/>
-	<Property ID="102873" Name="10287交任务对话" TalkNpc0="@player" TalkNpc1=" npc_sjm307_001" TalkNpc2="@player" TalkNpc3=" npc_sjm307_001" DialogID0="Dialog_10287_3_1" DialogID1="Dialog_10287_3_2" DialogID2="Dialog_10287_3_3" DialogID3="Dialog_10287_3_4"/>
-	<Property ID="102883" Name="10288交任务对话" TalkNpc0="@player" TalkNpc1=" npc_sjm307_001" TalkNpc2="@player" TalkNpc3=" npc_sjm307_001" DialogID0="Dialog_10288_3_1" DialogID1="Dialog_10288_3_2" DialogID2="Dialog_10288_3_3" DialogID3="Dialog_10288_3_4"/>
-	<Property ID="102893" Name="10289交任务对话" TalkNpc0="npc_city2_018" TalkNpc1="@player" TalkNpc2="npc_city2_018" TalkNpc3="@player" DialogID0="Dialog_10289_3_1" DialogID1="Dialog_10289_3_2" DialogID2="Dialog_10289_3_3" DialogID3="Dialog_10289_3_4"/>
-	<Property ID="102903" Name="10290交任务对话" TalkNpc0=" npc_city2_001" TalkNpc1="@player" TalkNpc2=" npc_city2_001" TalkNpc3="@player" DialogID0="Dialog_10290_3_1" DialogID1="Dialog_10290_3_2" DialogID2="Dialog_10290_3_3" DialogID3="Dialog_10290_3_4"/>
-	<Property ID="102913" Name="10291交任务对话" TalkNpc0="@player" TalkNpc1=" npc_sjm307_001" TalkNpc2="@player" TalkNpc3=" npc_sjm307_001" DialogID0="Dialog_10291_3_1" DialogID1="Dialog_10291_3_2" DialogID2="Dialog_10291_3_3" DialogID3="Dialog_10291_3_4"/>
-	<Property ID="102923" Name="10292交任务对话" TalkNpc0=" npc_sjm307_001" TalkNpc1="@player" TalkNpc2=" npc_sjm307_001" TalkNpc3="@player" DialogID0="Dialog_10292_3_1" DialogID1="Dialog_10292_3_2" DialogID2="Dialog_10292_3_3" DialogID3="Dialog_10292_3_4"/>
-	<Property ID="102933" Name="10293交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_006" TalkNpc2="@player" TalkNpc3="npc_city2_006" DialogID0="Dialog_10293_3_1" DialogID1="Dialog_10293_3_2" DialogID2="Dialog_10293_3_3" DialogID3="Dialog_10293_3_4"/>
-	<Property ID="102943" Name="10294交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_008" TalkNpc2="@player" TalkNpc3="npc_city2_008" DialogID0="Dialog_10294_3_1" DialogID1="Dialog_10294_3_2" DialogID2="Dialog_10294_3_3" DialogID3="Dialog_10294_3_4"/>
-	<Property ID="102953" Name="10295交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_006" TalkNpc2="@player" TalkNpc3="npc_city2_006" DialogID0="Dialog_10295_3_1" DialogID1="Dialog_10295_3_2" DialogID2="Dialog_10295_3_3" DialogID3="Dialog_10295_3_4"/>
-	<Property ID="102963" Name="10296交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10296_3_1" DialogID1="Dialog_10296_3_2" DialogID2="Dialog_10296_3_3" DialogID3="Dialog_10296_3_4"/>
-	<Property ID="102973" Name="10297交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm307_002" TalkNpc2="@player" TalkNpc3="npc_sjm307_002" DialogID0="Dialog_10297_3_1" DialogID1="Dialog_10297_3_2" DialogID2="Dialog_10297_3_3" DialogID3="Dialog_10297_3_4"/>
-	<Property ID="102983" Name="10298交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm307_002" TalkNpc2="@player" TalkNpc3="npc_sjm307_002" DialogID0="Dialog_10298_3_1" DialogID1="Dialog_10298_3_2" DialogID2="Dialog_10298_3_3" DialogID3="Dialog_10298_3_4"/>
-	<Property ID="102993" Name="10299交任务对话" DialogID0="Dialog_10299_3_1" DialogID1="Dialog_10299_3_2" DialogID2="Dialog_10299_3_3" DialogID3="Dialog_10299_3_4"/>
-	<Property ID="103003" Name="10300交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm307_002" TalkNpc2="@player" TalkNpc3="npc_sjm307_002" DialogID0="Dialog_10300_3_1" DialogID1="Dialog_10300_3_2" DialogID2="Dialog_10300_3_3" DialogID3="Dialog_10300_3_4"/>
-	<Property ID="103013" Name="10301交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm307_002" TalkNpc2="@player" TalkNpc3="npc_sjm307_002" DialogID0="Dialog_10301_3_1" DialogID1="Dialog_10301_3_2" DialogID2="Dialog_10301_3_3" DialogID3="Dialog_10301_3_4"/>
-	<Property ID="103023" Name="10302交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_006" TalkNpc2="@player" TalkNpc3="npc_city2_006" DialogID0="Dialog_10302_3_1" DialogID1="Dialog_10302_3_2" DialogID2="Dialog_10302_3_3" DialogID3="Dialog_10302_3_4"/>
-	<Property ID="103033" Name="10303交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_006" TalkNpc2="@player" TalkNpc3="npc_city2_006" DialogID0="Dialog_10303_3_1" DialogID1="Dialog_10303_3_2" DialogID2="Dialog_10303_3_3" DialogID3="Dialog_10303_3_4"/>
-	<Property ID="103043" Name="10304交任务对话" TalkNpc0="@player" TalkNpc1=" npc_sjm307_002" TalkNpc2="@player" TalkNpc3=" npc_sjm307_002" DialogID0="Dialog_10304_3_1" DialogID1="Dialog_10304_3_2" DialogID2="Dialog_10304_3_3" DialogID3="Dialog_10304_3_4"/>
-	<Property ID="103053" Name="10305交任务对话" TalkNpc0="@player" TalkNpc1=" npc_sjm307_002" TalkNpc2="@player" TalkNpc3=" npc_sjm307_002" DialogID0="Dialog_10305_3_1" DialogID1="Dialog_10305_3_2" DialogID2="Dialog_10305_3_3" DialogID3="Dialog_10305_3_4"/>
-	<Property ID="103063" Name="10306交任务对话" TalkNpc0="@player" TalkNpc1=" npc_sjm307_002" TalkNpc2="@player" TalkNpc3=" npc_sjm307_002" DialogID0="Dialog_10306_3_1" DialogID1="Dialog_10306_3_2" DialogID2="Dialog_10306_3_3" DialogID3="Dialog_10306_3_4"/>
-	<Property ID="103073" Name="10307交任务对话" TalkNpc0="@player" TalkNpc1=" npc_sjm307_002" TalkNpc2="@player" TalkNpc3=" npc_sjm307_002" DialogID0="Dialog_10307_3_1" DialogID1="Dialog_10307_3_2" DialogID2="Dialog_10307_3_3" DialogID3="Dialog_10307_3_4"/>
-	<Property ID="103083" Name="10308交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm307_002" TalkNpc2="@player" TalkNpc3="npc_sjm307_002" DialogID0="Dialog_10308_3_1" DialogID1="Dialog_10308_3_2" DialogID2="Dialog_10308_3_3" DialogID3="Dialog_10308_3_4"/>
-	<Property ID="103093" Name="10309交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10309_3_1" DialogID1="Dialog_10309_3_2" DialogID2="Dialog_10309_3_3" DialogID3="Dialog_10309_3_4"/>
-	<Property ID="103103" Name="10310交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10310_3_1" DialogID1="Dialog_10310_3_2" DialogID2="Dialog_10310_3_3" DialogID3="Dialog_10310_3_4"/>
-	<Property ID="103113" Name="10311交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10311_3_1" DialogID1="Dialog_10311_3_2" DialogID2="Dialog_10311_3_3" DialogID3="Dialog_10311_3_4"/>
-	<Property ID="103123" Name="10312交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_003" TalkNpc2="@player" TalkNpc3="npc_city2_003" DialogID0="Dialog_10312_3_1" DialogID1="Dialog_10312_3_2" DialogID2="Dialog_10312_3_3" DialogID3="Dialog_10312_3_4"/>
-	<Property ID="103133" Name="10313交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_003" TalkNpc2="@player" TalkNpc3="npc_city2_003" DialogID0="Dialog_10313_3_1" DialogID1="Dialog_10313_3_2" DialogID2="Dialog_10313_3_3" DialogID3="Dialog_10313_3_4"/>
-	<Property ID="103143" Name="10314交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_002" TalkNpc2="@player" TalkNpc3="npc_city_002" DialogID0="Dialog_10314_3_1" DialogID1="Dialog_10314_3_2" DialogID2="Dialog_10314_3_3" DialogID3="Dialog_10314_3_4"/>
-	<Property ID="103153" Name="10315交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_003" TalkNpc2="@player" TalkNpc3="npc_city2_003" DialogID0="Dialog_10315_3_1" DialogID1="Dialog_10315_3_2" DialogID2="Dialog_10315_3_3" DialogID3="Dialog_10315_3_4"/>
-	<Property ID="103163" Name="10316交任务对话" TalkNpc0="npc_city2_007 " TalkNpc1="@player" TalkNpc2="npc_city2_007 " TalkNpc3="@player" DialogID0="Dialog_10316_3_1" DialogID1="Dialog_10316_3_2" DialogID2="Dialog_10316_3_3" DialogID3="Dialog_10316_3_4"/>
-	<Property ID="103173" Name="10317交任务对话" TalkNpc0="npc_city2_007" TalkNpc1="@player" TalkNpc2="npc_city2_007" TalkNpc3="@player" DialogID0="Dialog_10317_3_1" DialogID1="Dialog_10317_3_2" DialogID2="Dialog_10317_3_3" DialogID3="Dialog_10317_3_4"/>
-	<Property ID="103183" Name="10318交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm307_002" TalkNpc2="@player" TalkNpc3="npc_sjm307_002" DialogID0="Dialog_10318_3_1" DialogID1="Dialog_10318_3_2" DialogID2="Dialog_10318_3_3" DialogID3="Dialog_10318_3_4"/>
-	<Property ID="103193" Name="10319交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm307_002" TalkNpc2="@player" TalkNpc3="npc_sjm307_002" DialogID0="Dialog_10319_3_1" DialogID1="Dialog_10319_3_2" DialogID2="Dialog_10319_3_3" DialogID3="Dialog_10319_3_4"/>
-	<Property ID="103203" Name="103203交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm307_002" TalkNpc2="@player" TalkNpc3="npc_sjm307_002" DialogID0="Dialog_10320_3_1" DialogID1="Dialog_10320_3_2" DialogID2="Dialog_10320_3_3" DialogID3="Dialog_10320_3_4"/>
-	<Property ID="103213" Name="103213交任务对话" TalkNpc0="@player" TalkNpc1="npc_zhenying_09" TalkNpc2="@player" TalkNpc3="npc_zhenying_09" DialogID0="Dialog_10321_3_1" DialogID1="Dialog_10321_3_2" DialogID2="Dialog_10321_3_3" DialogID3="Dialog_10321_3_4"/>
-	<Property ID="103223" Name="103223交任务对话" TalkNpc0="@player" TalkNpc1="npc_zhenying_09" TalkNpc2="@player" TalkNpc3="npc_zhenying_09" DialogID0="Dialog_10322_3_1" DialogID1="Dialog_10322_3_2" DialogID2="Dialog_10322_3_3" DialogID3="Dialog_10322_3_4"/>
-	<Property ID="103233" Name="103233交任务对话" TalkNpc0="@player" TalkNpc1="npc_zhenying_03" TalkNpc2="@player" TalkNpc3="npc_zhenying_03" DialogID0="Dialog_10323_3_1" DialogID1="Dialog_10323_3_2" DialogID2="Dialog_10323_3_3" DialogID3="Dialog_10323_3_4"/>
-	<Property ID="103243" Name="103243交任务对话" TalkNpc0="@player" TalkNpc1="npc_zhenying_09" TalkNpc2="@player" TalkNpc3="npc_zhenying_09" DialogID0="Dialog_10324_3_1" DialogID1="Dialog_10324_3_2" DialogID2="Dialog_10324_3_3" DialogID3="Dialog_10324_3_4"/>
-	<Property ID="103253" Name="103253交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm307_002" TalkNpc2="@player" TalkNpc3="npc_sjm307_002" DialogID0="Dialog_10325_3_1" DialogID1="Dialog_10325_3_2" DialogID2="Dialog_10325_3_3" DialogID3="Dialog_10325_3_4"/>
-	<Property ID="103263" Name="103263交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm307_002" TalkNpc2="@player" TalkNpc3="npc_sjm307_002" DialogID0="Dialog_10326_3_1" DialogID1="Dialog_10326_3_2" DialogID2="Dialog_10326_3_3" DialogID3="Dialog_10326_3_4"/>
-	<Property ID="103273" Name="103273交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10327_3_1" DialogID1="Dialog_10327_3_2" DialogID2="Dialog_10327_3_3" DialogID3="Dialog_10327_3_4"/>
-	<Property ID="103283" Name="103283交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10328_3_1" DialogID1="Dialog_10328_3_2" DialogID2="Dialog_10328_3_3" DialogID3="Dialog_10328_3_4"/>
-	<Property ID="103293" Name="103293交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm307_002" TalkNpc2="@player" TalkNpc3="npc_sjm307_002" DialogID0="Dialog_10329_3_1" DialogID1="Dialog_10329_3_2" DialogID2="Dialog_10329_3_3" DialogID3="Dialog_10329_3_4"/>
-	<Property ID="103303" Name="103303交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm307_002" TalkNpc2="@player" TalkNpc3="npc_sjm307_002" DialogID0="Dialog_10330_3_1" DialogID1="Dialog_10330_3_2" DialogID2="Dialog_10330_3_3" DialogID3="Dialog_10330_3_4"/>
-	<Property ID="103313" Name="103313交任务对话" TalkNpc0="npc_sjm307_002" TalkNpc1="@player" TalkNpc2="npc_sjm307_002" TalkNpc3="@player" DialogID0="Dialog_10331_3_1" DialogID1="Dialog_10331_3_2" DialogID2="Dialog_10331_3_3" DialogID3="Dialog_10331_3_4"/>
-	<Property ID="103323" Name="103323交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm307_002" TalkNpc2="@player" TalkNpc3="npc_sjm307_002" DialogID0="Dialog_10332_3_1" DialogID1="Dialog_10332_3_2" DialogID2="Dialog_10332_3_3" DialogID3="Dialog_10332_3_4"/>
-	<Property ID="103333" Name="103333交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10333_3_1" DialogID1="Dialog_10333_3_2" DialogID2="Dialog_10333_3_3" DialogID3="Dialog_10333_3_4"/>
-	<Property ID="103343" Name="103343交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10334_3_1" DialogID1="Dialog_10334_3_2" DialogID2="Dialog_10334_3_3" DialogID3="Dialog_10334_3_4"/>
-	<Property ID="103353" Name="103353交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_005" TalkNpc2="@player" TalkNpc3="npc_city_005" DialogID0="Dialog_10335_3_1" DialogID1="Dialog_10335_3_2" DialogID2="Dialog_10335_3_3" DialogID3="Dialog_10335_3_4"/>
-	<Property ID="103363" Name="103363交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_005" TalkNpc2="@player" TalkNpc3="npc_city_005" DialogID0="Dialog_10336_3_1" DialogID1="Dialog_10336_3_2" DialogID2="Dialog_10336_3_3" DialogID3="Dialog_10336_3_4"/>
-	<Property ID="103373" Name="103373交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_005" TalkNpc2="@player" TalkNpc3="npc_city_005" DialogID0="Dialog_10337_3_1" DialogID1="Dialog_10337_3_2" DialogID2="Dialog_10337_3_3" DialogID3="Dialog_10337_3_4"/>
-	<Property ID="103383" Name="103383交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10338_3_1" DialogID1="Dialog_10338_3_2" DialogID2="Dialog_10338_3_3" DialogID3="Dialog_10338_3_4"/>
-	<Property ID="103393" Name="103393交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10339_3_1" DialogID1="Dialog_10339_3_2" DialogID2="Dialog_10339_3_3" DialogID3="Dialog_10339_3_4"/>
-	<Property ID="103403" Name="103403交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10340_3_1" DialogID1="Dialog_10340_3_2" DialogID2="Dialog_10340_3_3" DialogID3="Dialog_10340_3_4"/>
-	<Property ID="103413" Name="103413交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10341_3_1" DialogID1="Dialog_10341_3_2" DialogID2="Dialog_10341_3_3" DialogID3="Dialog_10341_3_4"/>
-	<Property ID="103423" Name="103423交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10342_3_1" DialogID1="Dialog_10342_3_2" DialogID2="Dialog_10342_3_3" DialogID3="Dialog_10342_3_4"/>
-	<Property ID="103433" Name="103433交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10343_3_1" DialogID1="Dialog_10343_3_2" DialogID2="Dialog_10343_3_3" DialogID3="Dialog_10343_3_4"/>
-	<Property ID="103443" Name="103443交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10344_3_1" DialogID1="Dialog_10344_3_2" DialogID2="Dialog_10344_3_3" DialogID3="Dialog_10344_3_4"/>
-	<Property ID="103453" Name="103453交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm308_001" TalkNpc2="@player" TalkNpc3="npc_sjm308_001" DialogID0="Dialog_10345_3_1" DialogID1="Dialog_10345_3_2" DialogID2="Dialog_10345_3_3" DialogID3="Dialog_10345_3_4"/>
-	<Property ID="103463" Name="103463交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm308_001" TalkNpc2="@player" TalkNpc3="npc_sjm308_001" DialogID0="Dialog_10346_3_1" DialogID1="Dialog_10346_3_2" DialogID2="Dialog_10346_3_3" DialogID3="Dialog_10346_3_4"/>
-	<Property ID="103473" Name="103473交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm308_001" TalkNpc2="@player" TalkNpc3="npc_sjm308_001" DialogID0="Dialog_10347_3_1" DialogID1="Dialog_10347_3_2" DialogID2="Dialog_10347_3_3" DialogID3="Dialog_10347_3_4"/>
-	<Property ID="103483" Name="103483交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm308_001" TalkNpc2="@player" TalkNpc3="npc_sjm308_001" DialogID0="Dialog_10348_3_1" DialogID1="Dialog_10348_3_2" DialogID2="Dialog_10348_3_3" DialogID3="Dialog_10348_3_4"/>
-	<Property ID="103493" Name="103493交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm308_001" TalkNpc2="@player" TalkNpc3="npc_sjm308_001" DialogID0="Dialog_10349_3_1" DialogID1="Dialog_10349_3_2" DialogID2="Dialog_10349_3_3" DialogID3="Dialog_10349_3_4"/>
-	<Property ID="103503" Name="103503交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_006" TalkNpc2="@player" TalkNpc3="npc_city2_006" DialogID0="Dialog_10350_3_1" DialogID1="Dialog_10350_3_2" DialogID2="Dialog_10350_3_3" DialogID3="Dialog_10350_3_4"/>
-	<Property ID="103513" Name="103513交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10351_3_1" DialogID1="Dialog_10351_3_2" DialogID2="Dialog_10351_3_3" DialogID3="Dialog_10351_3_4"/>
-	<Property ID="103523" Name="103523交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_006" TalkNpc2="@player" TalkNpc3="npc_city2_006" DialogID0="Dialog_10352_3_1" DialogID1="Dialog_10352_3_2" DialogID2="Dialog_10352_3_3" DialogID3="Dialog_10352_3_4"/>
-	<Property ID="103533" Name="103533交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm308_001" TalkNpc2="@player" TalkNpc3="npc_sjm308_001" DialogID0="Dialog_10353_3_1" DialogID1="Dialog_10353_3_2" DialogID2="Dialog_10353_3_3" DialogID3="Dialog_10353_3_4"/>
-	<Property ID="103543" Name="103543交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm308_001" TalkNpc2="@player" TalkNpc3="npc_sjm308_001" DialogID0="Dialog_10354_3_1" DialogID1="Dialog_10354_3_2" DialogID2="Dialog_10354_3_3" DialogID3="Dialog_10354_3_4"/>
-	<Property ID="103553" Name="103553交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_006" TalkNpc2="@player" TalkNpc3="npc_city2_006" DialogID0="Dialog_10355_3_1" DialogID1="Dialog_10355_3_2" DialogID2="Dialog_10355_3_3" DialogID3="Dialog_10355_3_4"/>
-	<Property ID="103563" Name="103563交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10356_3_1" DialogID1="Dialog_10356_3_2" DialogID2="Dialog_10356_3_3" DialogID3="Dialog_10356_3_4"/>
-	<Property ID="103573" Name="103573交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_006" TalkNpc2="@player" TalkNpc3="npc_city2_006" DialogID0="Dialog_10357_3_1" DialogID1="Dialog_10357_3_2" DialogID2="Dialog_10357_3_3" DialogID3="Dialog_10357_3_4"/>
-	<Property ID="103583" Name="103583交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10358_3_1" DialogID1="Dialog_10358_3_2" DialogID2="Dialog_10358_3_3" DialogID3="Dialog_10358_3_4"/>
-	<Property ID="103593" Name="103593交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10359_3_1" DialogID1="Dialog_10359_3_2" DialogID2="Dialog_10359_3_3" DialogID3="Dialog_10359_3_4"/>
-	<Property ID="103603" Name="103603交任务对话" TalkNpc0="npc_city2_001" TalkNpc1="@player" TalkNpc2="npc_city2_001" TalkNpc3="@player" DialogID0="Dialog_10360_3_1" DialogID1="Dialog_10360_3_2" DialogID2="Dialog_10360_3_3" DialogID3="Dialog_10360_3_4"/>
-	<Property ID="103613" Name="103613交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_002" TalkNpc2="@player" TalkNpc3="npc_city_002" DialogID0="Dialog_10361_3_1" DialogID1="Dialog_10361_3_2" DialogID2="Dialog_10361_3_3" DialogID3="Dialog_10361_3_4"/>
-	<Property ID="103623" Name="103623交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm_004" TalkNpc2="@player" TalkNpc3="npc_sjm_004" DialogID0="Dialog_10362_3_1" DialogID1="Dialog_10362_3_2" DialogID2="Dialog_10362_3_3" DialogID3="Dialog_10362_3_4"/>
-	<Property ID="103633" Name="103633交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm_004" TalkNpc2="@player" TalkNpc3="npc_sjm_004" DialogID0="Dialog_10363_3_1" DialogID1="Dialog_10363_3_2" DialogID2="Dialog_10363_3_3" DialogID3="Dialog_10363_3_4"/>
-	<Property ID="103643" Name="103643交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm_004" TalkNpc2="@player" TalkNpc3="npc_sjm_004" DialogID0="Dialog_10364_3_1" DialogID1="Dialog_10364_3_2" DialogID2="Dialog_10364_3_3" DialogID3="Dialog_10364_3_4"/>
-	<Property ID="103653" Name="103653交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm_004" TalkNpc2="@player" TalkNpc3="npc_sjm_004" DialogID0="Dialog_10365_3_1" DialogID1="Dialog_10365_3_2" DialogID2="Dialog_10365_3_3" DialogID3="Dialog_10365_3_4"/>
-	<Property ID="103663" Name="103663交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_002" TalkNpc2="@player" TalkNpc3="npc_city_002" DialogID0="Dialog_10366_3_1" DialogID1="Dialog_10366_3_2" DialogID2="Dialog_10366_3_3" DialogID3="Dialog_10366_3_4"/>
-	<Property ID="103673" Name="103673交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_002" TalkNpc2="@player" TalkNpc3="npc_city_002" DialogID0="Dialog_10367_3_1" DialogID1="Dialog_10367_3_2" DialogID2="Dialog_10367_3_3" DialogID3="Dialog_10367_3_4"/>
-	<Property ID="103683" Name="103683交任务对话" TalkNpc0="@player" TalkNpc1="npc_city_002" TalkNpc2="@player" TalkNpc3="npc_city_002" DialogID0="Dialog_10368_3_1" DialogID1="Dialog_10368_3_2" DialogID2="Dialog_10368_3_3" DialogID3="Dialog_10368_3_4"/>
-	<Property ID="103693" Name="103693交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm_004" TalkNpc2="@player" TalkNpc3="npc_sjm_004" DialogID0="Dialog_10369_3_1" DialogID1="Dialog_10369_3_2" DialogID2="Dialog_10369_3_3" DialogID3="Dialog_10369_3_4"/>
-	<Property ID="103703" Name="103703交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm_004" TalkNpc2="@player" TalkNpc3="npc_sjm_004" DialogID0="Dialog_10370_3_1" DialogID1="Dialog_10370_3_2" DialogID2="Dialog_10370_3_3" DialogID3="Dialog_10370_3_4"/>
-	<Property ID="103713" Name="103713交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_018" TalkNpc2="@player" TalkNpc3="npc_city2_018" DialogID0="Dialog_10371_3_1" DialogID1="Dialog_10371_3_2" DialogID2="Dialog_10371_3_3" DialogID3="Dialog_10371_3_4"/>
-	<Property ID="103723" Name="103723交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10372_3_1" DialogID1="Dialog_10372_3_2" DialogID2="Dialog_10372_3_3" DialogID3="Dialog_10372_3_4"/>
-	<Property ID="103733" Name="103733交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_001" TalkNpc2="@player" TalkNpc3="npc_city2_001" DialogID0="Dialog_10373_3_1" DialogID1="Dialog_10373_3_2" DialogID2="Dialog_10373_3_3" DialogID3="Dialog_10373_3_4"/>
-	<Property ID="103743" Name="103743交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_008" TalkNpc2="@player" TalkNpc3="npc_city2_008" DialogID0="Dialog_10374_3_1" DialogID1="Dialog_10374_3_2" DialogID2="Dialog_10374_3_3" DialogID3="Dialog_10374_3_4"/>
-	<Property ID="103753" Name="103753交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_008" TalkNpc2="@player" TalkNpc3="npc_city2_008" DialogID0="Dialog_10375_3_1" DialogID1="Dialog_10375_3_2" DialogID2="Dialog_10375_3_3" DialogID3="Dialog_10375_3_4"/>
-	<Property ID="103763" Name="103763交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_006" TalkNpc2="@player" TalkNpc3="npc_city2_006" DialogID0="Dialog_10376_3_1" DialogID1="Dialog_10376_3_2" DialogID2="Dialog_10376_3_3" DialogID3="Dialog_10376_3_4"/>
-	<Property ID="103773" Name="103773交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_009" TalkNpc2="@player" TalkNpc3="npc_city2_009" DialogID0="Dialog_10377_3_1" DialogID1="Dialog_10377_3_2" DialogID2="Dialog_10377_3_3" DialogID3="Dialog_10377_3_4"/>
-	<Property ID="103783" Name="103783交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_009" TalkNpc2="@player" TalkNpc3="npc_city2_009" DialogID0="Dialog_10378_3_1" DialogID1="Dialog_10378_3_2" DialogID2="Dialog_10378_3_3" DialogID3="Dialog_10378_3_4"/>
-	<Property ID="103793" Name="103793交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_006" TalkNpc2="@player" TalkNpc3="npc_city2_006" DialogID0="Dialog_10379_3_1" DialogID1="Dialog_10379_3_2" DialogID2="Dialog_10379_3_3" DialogID3="Dialog_10379_3_4"/>
-	<Property ID="103803" Name="103803交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_006" TalkNpc2="@player" TalkNpc3="npc_city2_006" DialogID0="Dialog_10380_3_1" DialogID1="Dialog_10380_3_2" DialogID2="Dialog_10380_3_3" DialogID3="Dialog_10380_3_4"/>
-	<Property ID="103813" Name="103813交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_006" TalkNpc2="@player" TalkNpc3="npc_city2_006" DialogID0="Dialog_10381_3_1" DialogID1="Dialog_10381_3_2" DialogID2="Dialog_10381_3_3" DialogID3="Dialog_10381_3_4"/>
-	<Property ID="103823" Name="103823交任务对话" TalkNpc0="@player" TalkNpc1="npc_city2_006" TalkNpc2="@player" TalkNpc3="npc_city2_006" DialogID0="Dialog_10382_3_1" DialogID1="Dialog_10382_3_2" DialogID2="Dialog_10382_3_3" DialogID3="Dialog_10382_3_4"/>
-	<Property ID="103833" Name="103833交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm309_001" TalkNpc2="@player" TalkNpc3="npc_sjm309_001" DialogID0="Dialog_10383_3_1" DialogID1="Dialog_10383_3_2" DialogID2="Dialog_10383_3_3" DialogID3="Dialog_10383_3_4"/>
-	<Property ID="103843" Name="103843交任务对话" TalkNpc0="@player" TalkNpc1="npc_city3_001" TalkNpc2="@player" TalkNpc3="npc_city3_001" DialogID0="Dialog_10384_3_1" DialogID1="Dialog_10384_3_2" DialogID2="Dialog_10384_3_3" DialogID3="Dialog_10384_3_4"/>
-	<Property ID="103853" Name="103853交任务对话" TalkNpc0="@player" TalkNpc1="npc_city3_001" TalkNpc2="@player" TalkNpc3="npc_city3_001" DialogID0="Dialog_10385_3_1" DialogID1="Dialog_10385_3_2" DialogID2="Dialog_10385_3_3" DialogID3="Dialog_10385_3_4"/>
-	<Property ID="103863" Name="103863交任务对话" TalkNpc0="@player" TalkNpc1="npc_city3_001" TalkNpc2="@player" TalkNpc3="npc_city3_001" DialogID0="Dialog_10386_3_1" DialogID1="Dialog_10386_3_2" DialogID2="Dialog_10386_3_3" DialogID3="Dialog_10386_3_4"/>
-	<Property ID="103873" Name="103873交任务对话" TalkNpc0="@player" TalkNpc1="npc_city3_001" TalkNpc2="@player" TalkNpc3="npc_city3_001" DialogID0="Dialog_10387_3_1" DialogID1="Dialog_10387_3_2" DialogID2="Dialog_10387_3_3" DialogID3="Dialog_10387_3_4"/>
-	<Property ID="103883" Name="103883交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm309_002" TalkNpc2="@player" TalkNpc3="npc_sjm309_002" DialogID0="Dialog_10388_3_1" DialogID1="Dialog_10388_3_2" DialogID2="Dialog_10388_3_3" DialogID3="Dialog_10388_3_4"/>
-	<Property ID="103893" Name="103893交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm309_002" TalkNpc2="@player" TalkNpc3="npc_sjm309_002" DialogID0="Dialog_10389_3_1" DialogID1="Dialog_10389_3_2" DialogID2="Dialog_10389_3_3" DialogID3="Dialog_10389_3_4"/>
-	<Property ID="103903" Name="103903交任务对话" TalkNpc0="@player" TalkNpc1="npc_sjm309_002" TalkNpc2="@player" TalkNpc3="npc_sjm309_002" DialogID0="Dialog_10390_3_1" DialogID1="Dialog_10390_3_2" DialogID2="Dialog_10390_3_3" DialogID3="Dialog_10390_3_4"/>
-	<Property ID="103913" Name="103913交任务对话" TalkNpc0="@player" TalkNpc1="npc_city3_001" TalkNpc2="@player" TalkNpc3="npc_city3_001" DialogID0="Dialog_10391_3_1" DialogID1="Dialog_10391_3_2" DialogID2="Dialog_10391_3_3" DialogID3="Dialog_10391_3_4"/>
-	<Property ID="103923" Name="103923交任务对话" TalkNpc0="@player" TalkNpc1="npc_city3_001" TalkNpc2="@player" TalkNpc3="npc_city3_001" DialogID0="Dialog_10392_3_1" DialogID1="Dialog_10392_3_2" DialogID2="Dialog_10392_3_3" DialogID3="Dialog_10392_3_4"/>
-	<Property ID="103933" Name="103933交任务对话" TalkNpc0="@player" TalkNpc1="npc_city3_001" TalkNpc2="@player" TalkNpc3="npc_city3_001" DialogID0="Dialog_10393_3_1" DialogID1="Dialog_10393_3_2" DialogID2="Dialog_10393_3_3" DialogID3="Dialog_10393_3_4"/>
+	<!--Property ID="104" Name="100_104" TalkNpc0="@player" TalkNpc1="bos_1_1" TalkNpc2="@player" TalkNpc3="bos_1_1" DialogID0="Dialog104_1" DialogID1="Dialog104_2" DialogID2="Dialog104_3" DialogID3="Dialog104_4" DelayTime0="2000" DelayTime1="5000" DelayTime2="4000" DelayTime3="4000"/>
+	<Property ID="107" Name="101_107" TalkNpc0="bos_1_2" TalkNpc1="@player" DialogID0="Dialog107_1" DialogID1="Dialog107_2" DelayTime0="2000" DelayTime1="2000"/>
+	<Property ID="1111" Name="104_111_1" TalkNpc0="bos_1_5" TalkNpc1="@player" DialogID0="Movie111_1_1" DialogID1="Movie111_1_2" DelayTime0="3000" DelayTime1="3000"/>
+	<Property ID="112" Name="105_112" TalkNpc0="mov_112_1" TalkNpc1="mov_112_2" TalkNpc2="@player" DialogID0="Movie112_1" DialogID1="Movie112_2" DialogID2="Movie112_3" DelayTime0="4000" DelayTime1="4000" DelayTime2="3000"/>
+	<Property ID="113" Name="105_113" TalkNpc0="mov_113_1" TalkNpc1="@player" DialogID0="Movie113_1" DialogID1="Movie113_2" DelayTime0="5000" DelayTime1="3000"/>
+	<Property ID="1151" Name="106_115_1" TalkNpc0="bos_1_7" TalkNpc1="@player" DialogID0="Movie115_1_1" DialogID1="Movie115_1_2" DelayTime0="4000" DelayTime1="3000"/>
+	<Property ID="11" Name="1-(h)" TalkNpc0="@player" TalkNpc1="npc101" DialogID0="DialogID0_11" DialogID1="DialogID1_11" DelayTime0="2000" DelayTime1="2000"/>
+	<Property ID="1012" Name="101-(h)" TalkNpc0="@player" TalkNpc1="@player" DialogID0="DialogID0_1012" DialogID1="DialogID1_1012" DelayTime0="2000" DelayTime1="2000"/>
+	<Property ID="12" Name="1-(h)" TalkNpc0="npc101" TalkNpc1="@player" TalkNpc2="npc101" DialogID0="DialogID0_12" DialogID1="DialogID1_12" DialogID2="DialogID2_12" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000"/>
+	<Property ID="1022" Name="102-(h)" TalkNpc0="heimu10011" TalkNpc1="heimu10011" DialogID0="DialogID0_1022" DialogID1="DialogID1_1022" DelayTime0="2000" DelayTime1="2000"/>
+	<Property ID="1023" Name="102-(h)" TalkNpc0="bos_10201" TalkNpc1="@player" TalkNpc2="bos_10201" DialogID0="DialogID0_1023" DialogID1="DialogID1_1023" DialogID2="DialogID2_1023" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000"/>
+	<Property ID="145" Name="206_145" TalkNpc0="mov_206_1" TalkNpc1="mov_206_2" TalkNpc2="mov_206_1" TalkNpc3="mov_206_1" TalkNpc4="mov_206_2" TalkNpc5="mov_206_1" TalkNpc6="mov_206_1" TalkNpc7="@player" TalkNpc8="mov_206_1" TalkNpc9="@player" TalkNpc10="mov_206_1" DialogID0="Movie145_1" DialogID1="Movie145_2" DialogID2="Movie145_3" DialogID3="Movie145_4" DialogID4="Movie145_5" DialogID5="Movie145_6" DialogID6="Movie145_7" DialogID7="Movie145_8" DialogID8="Movie145_9" DialogID9="Movie145_10" DialogID10="Movie145_11" DelayTime0="2000" DelayTime1="1000" DelayTime2="3000" DelayTime3="2000" DelayTime4="2000" DelayTime5="2000" DelayTime6="3000" DelayTime7="2000" DelayTime8="1000" DelayTime9="3000" DelayTime10="2000"/>
+	<Property ID="117" Name="107_117" TalkNpc0="bos_2_1" TalkNpc1="@player" DialogID0="Movie117_1" DialogID1="Movie117_2" DelayTime0="3000" DelayTime1="2000"/>
+	<Property ID="1171" Name="108_1171" TalkNpc0="bos_2_2" TalkNpc1="@player" DialogID0="Movie1171_1" DialogID1="Movie1171_2" DelayTime0="2000" DelayTime1="2000"/>
+	<Property ID="119" Name="110_119" TalkNpc0="@player" TalkNpc1="@player" DialogID0="Movie119_1" DialogID1="Movie119_2" DelayTime0="3000" DelayTime1="2000"/>
+	<Property ID="121" Name="111_121" TalkNpc0="bos_2_5" TalkNpc1="@player" DialogID0="Movie121_1" DialogID1="Movie121_2" DelayTime0="3000" DelayTime1="4000"/>
+	<Property ID="122" Name="111_122" TalkNpc0="bos_2_6" TalkNpc1="@player" TalkNpc2="bos_2_6" TalkNpc3="@player" TalkNpc4="bos_2_6" DialogID0="Movie122_1" DialogID1="Movie122_2" DialogID2="Movie122_3" DialogID3="Movie122_4" DialogID4="Movie122_5" DelayTime0="4000" DelayTime1="2000" DelayTime2="3000" DelayTime3="4000" DelayTime4="3000"/>
+	<Property ID="124" Name="114_124" TalkNpc0="@player" TalkNpc1="bos_3_1" TalkNpc2="@player" DialogID0="Movie124_1" DialogID1="Movie124_2" DialogID2="Movie124_3" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000"/>
+	<Property ID="125" Name="115_125" TalkNpc0="@player" TalkNpc1="bos_3_2" TalkNpc2="@player" TalkNpc3="bos_3_2" DialogID0="Movie125_1" DialogID1="Movie125_2" DialogID2="Movie125_3" DialogID3="Movie125_4" DelayTime0="3000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000"/>
+	<Property ID="126" Name="116_126" TalkNpc0="mov_126_1" TalkNpc1="atk_3_3_1" TalkNpc2="mov_126_1" TalkNpc3="atk_3_3_1" TalkNpc4="mov_126_1" DialogID0="Movie126_1" DialogID1="Movie126_2" DialogID2="Movie126_3" DialogID3="Movie126_4" DialogID4="Movie126_5" DelayTime0="2000" DelayTime1="2000" DelayTime2="3000" DelayTime3="3000" DelayTime4="3000"/>
+	<Property ID="129" Name="117_129" TalkNpc0="@player" TalkNpc1="bos_3_4" TalkNpc2="@player" TalkNpc3="bos_3_4" DialogID0="Movie129_1" DialogID1="Movie129_2" DialogID2="Movie129_3" DialogID3="Movie129_4" DelayTime0="2000" DelayTime1="3000" DelayTime2="2000" DelayTime3="3000"/>
+	<Property ID="136" Name="200_136" TalkNpc0="bos_4_1" TalkNpc1="atk_4_1_2" TalkNpc2="@player" TalkNpc3="bos_4_1" DialogID0="Movie136_1" DialogID1="Movie136_2" DialogID2="Movie136_3" DialogID3="Movie136_4" DelayTime0="3000" DelayTime1="3000" DelayTime2="2000" DelayTime3="3000"/>
+	<Property ID="137" Name="200_137" TalkNpc0="bos_4_1" TalkNpc1="@player" TalkNpc2="bos_4_1" DialogID0="Movie137_1" DialogID1="Movie137_2" DialogID2="Movie137_3" DelayTime0="3000" DelayTime1="4000" DelayTime2="4000"/>
+	<Property ID="138" Name="201_138" TalkNpc0="bos_4_2" TalkNpc1="@player" TalkNpc2="atk_4_2_1" TalkNpc3="bos_4_2" DialogID0="Movie138_1" DialogID1="Movie138_2" DialogID2="Movie138_3" DialogID3="Movie138_4" DelayTime0="3000" DelayTime1="3000" DelayTime2="2000" DelayTime3="2000"/>
+	<Property ID="143" Name="204_143" TalkNpc0="bos_4_5" TalkNpc1="@player" TalkNpc2="bos_4_5" TalkNpc3="@player" TalkNpc4="bos_4_5" DialogID0="Movie143_1" DialogID1="Movie143_2" DialogID2="Movie143_3" DialogID3="Movie143_4" DialogID4="Movie143_5" DelayTime0="5000" DelayTime1="4000" DelayTime2="3000" DelayTime3="4000" DelayTime4="2000"/>
+	<Property ID="144" Name="205_144" TalkNpc0="bos_4_6" TalkNpc1="@player" TalkNpc2="bos_4_6" TalkNpc3="@player" DialogID0="Movie144_1" DialogID1="Movie144_2" DialogID2="Movie144_3" DialogID3="Movie144_4" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000"/>
+	<Property ID="146" Name="207_146" TalkNpc0="bos_5_1" TalkNpc1="@player" TalkNpc2="bos_5_1" TalkNpc3="@player" DialogID0="Movie146_1" DialogID1="Movie146_2" DialogID2="Movie146_3" DialogID3="Movie146_4" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000"/>
+	<Property ID="150" Name="210_150" TalkNpc0="bos_5_4" TalkNpc1="@player" TalkNpc2="bos_5_4" TalkNpc3="@player" TalkNpc4="bos_5_4" DialogID0="Movie150_1" DialogID1="Movie150_2" DialogID2="Movie150_3" DialogID3="Movie150_4" DialogID4="Movie150_5" DelayTime0="2000" DelayTime1="4000" DelayTime2="3000" DelayTime3="3000" DelayTime4="3000"/>
+	<Property ID="153" Name="213_153" TalkNpc0="bos_5_7" TalkNpc1="@player" TalkNpc2="bos_5_7" TalkNpc3="@player" TalkNpc4="bos_5_7" DialogID0="Movie153_1" DialogID1="Movie153_2" DialogID2="Movie153_3" DialogID3="Movie153_4" DialogID4="Movie153_5" DelayTime0="2000" DelayTime1="2000" DelayTime2="3000" DelayTime3="2000" DelayTime4="2000"/>
+	<Property ID="154" Name="214_154" TalkNpc0="atk_6_1_1" TalkNpc1="@player" TalkNpc2="bos_6_1" TalkNpc3="@player" DialogID0="Movie154_1" DialogID1="Movie154_2" DialogID2="Movie154_3" DialogID3="Movie154_4" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000"/>
+	<Property ID="155" Name="215_155" TalkNpc0="bos_6_2" TalkNpc1="@player" TalkNpc2="bos_6_2" TalkNpc3="@player" DialogID0="Movie155_1" DialogID1="Movie155_2" DialogID2="Movie155_3" DialogID3="Movie155_4" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000"/>
+	<Property ID="157" Name="217_157" TalkNpc0="bos_6_4" TalkNpc1="@player" TalkNpc2="bos_6_4" DialogID0="Movie157_1" DialogID1="Movie157_2" DialogID2="Movie157_3" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000"/>
+	<Property ID="158" Name="218_158" TalkNpc0="@player" TalkNpc1="bos_6_5" TalkNpc2="@player" TalkNpc3="bos_6_5" DialogID0="Movie158_1" DialogID1="Movie158_2" DialogID2="Movie158_3" DialogID3="Movie158_4" DelayTime0="2000" DelayTime1="2000" DelayTime2="1000" DelayTime3="2000"/>
+	<Property ID="159" Name="218_159" TalkNpc0="@player" TalkNpc1="bos_6_5" TalkNpc2="@player" DialogID0="Movie159_1" DialogID1="Movie159_2" DialogID2="Movie159_3" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000"/>
+	<Property ID="160" Name="218_160" TalkNpc0="@player" TalkNpc1="bos_6_6" TalkNpc2="@player" TalkNpc3="bos_6_6" TalkNpc4="@player" TalkNpc5="bos_6_6" DialogID0="Movie160_1" DialogID1="Movie160_2" DialogID2="Movie160_3" DialogID3="Movie160_4" DialogID4="Movie160_5" DialogID5="Movie160_6" DelayTime0="4000" DelayTime1="4000" DelayTime2="2000" DelayTime3="5000" DelayTime4="2000" DelayTime5="2000"/>
+	<Property ID="163" Name="221_163" TalkNpc0="bos_7_1" TalkNpc1="@player" TalkNpc2="bos_7_1" TalkNpc3="@player" TalkNpc4="bos_7_1" TalkNpc5="@player" DialogID0="Movie163_1" DialogID1="Movie163_2" DialogID2="Movie163_3" DialogID3="Movie163_4" DialogID4="Movie163_5" DialogID5="Movie163_6" DelayTime0="3000" DelayTime1="3000" DelayTime2="1000" DelayTime3="1000" DelayTime4="5000" DelayTime5="2000"/>
+	<Property ID="165" Name="223_165" TalkNpc0="@player" TalkNpc1="bos_7_3" TalkNpc2="@player" TalkNpc3="bos_7_3" DialogID0="Movie165_1" DialogID1="Movie165_2" DialogID2="Movie165_3" DialogID3="Movie165_4" DelayTime0="3000" DelayTime1="2000" DelayTime2="3000" DelayTime3="2000"/>
+	<Property ID="166" Name="225_166" TalkNpc0="@player" TalkNpc1="bos_7_5" DialogID0="Movie166_1" DialogID1="Movie166_2" DelayTime0="3000" DelayTime1="3000"/>
+	<Property ID="167" Name="226_167" TalkNpc0="@player" TalkNpc1="bos_7_6" TalkNpc2="@player" TalkNpc3="bos_7_6" DialogID0="Movie167_1" DialogID1="Movie167_2" DialogID2="Movie167_3" DialogID3="Movie167_4" DelayTime0="3000" DelayTime1="2000" DelayTime2="3000" DelayTime3="2000"/>
+	<Property ID="169" Name="227_169" TalkNpc0="@player" TalkNpc1="atk_7_7_2" TalkNpc2="@player" TalkNpc3="atk_7_7_2" DialogID0="Movie169_1" DialogID1="Movie169_2" DialogID2="Movie169_3" DialogID3="Movie169_4" DelayTime0="4000" DelayTime1="4000" DelayTime2="5000" DelayTime3="3000"/>
+	<Property ID="172" Name="boss_world_001" TalkNpc0="boss_world_001" DialogID0="Talk_boss_world_001" DelayTime0="6000"/>
+	<Property ID="173" Name="boss_world_002" TalkNpc0="boss_world_002" DialogID0="Talk_boss_world_002" DelayTime0="6000"/>
+	<Property ID="174" Name="boss_world_003" TalkNpc0="boss_world_003" DialogID0="Talk_boss_world_003" DelayTime0="6000"/>
+	<Property ID="175" Name="prisoner" TalkNpc0="prisoner" DialogID0="Talk_prisoner" DelayTime0="6000"/>
+	<Property ID="13" Name="1-(h)" TalkNpc0="npc102" TalkNpc1="@player" TalkNpc2="npc102" TalkNpc3="@player" DialogID0="DialogID0_13" DialogID1="DialogID1_13" DialogID2="DialogID2_13" DialogID3="DialogID3_13" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000"/>
+	<Property ID="14" Name="1-(h)" TalkNpc0="npc102" TalkNpc1="@player" TalkNpc2="npc102" TalkNpc3="@player" DialogID0="DialogID0_14" DialogID1="DialogID1_14" DialogID2="DialogID2_14" DialogID3="DialogID3_14" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000"/>
+	<Property ID="15" Name="1-(h)" TalkNpc0="npc102" TalkNpc1="@player" TalkNpc2="npc102" TalkNpc3="@player" TalkNpc4="npc102" TalkNpc5="@player" DialogID0="DialogID0_15" DialogID1="DialogID1_15" DialogID2="DialogID2_15" DialogID3="DialogID3_15" DialogID4="DialogID4_15" DialogID5="DialogID5_15" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000" DelayTime4="2000" DelayTime5="2000"/>
+	<Property ID="1051" Name="105-(h)" TalkNpc0="npc103" TalkNpc1="@player" TalkNpc2="npc103" TalkNpc3="@player" DialogID0="DialogID0_1051" DialogID1="DialogID1_1051" DialogID2="DialogID2_1051" DialogID3="DialogID3_1051" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000"/>
+	<Property ID="1052" Name="105-(h)" TalkNpc0="heimu10011" TalkNpc1="@player" TalkNpc2="heimu10011" TalkNpc3="@player" TalkNpc4="heimu10011" TalkNpc5="@player" TalkNpc6="heimu10011" DialogID0="DialogID0_1052" DialogID1="DialogID1_1052" DialogID2="DialogID2_1052" DialogID3="DialogID3_1052" DialogID4="DialogID4_1052" DialogID5="DialogID5_1052" DialogID6="DialogID6_1052" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000" DelayTime4="2000" DelayTime5="2000" DelayTime6="2000"/>
+	<Property ID="16" Name="1-(h)" TalkNpc0="npc102" TalkNpc1="@player" TalkNpc2="npc102" TalkNpc3="@player" DialogID0="DialogID0_16" DialogID1="DialogID1_16" DialogID2="DialogID2_16" DialogID3="DialogID3_16" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000"/>
+	<Property ID="1061" Name="106-(h)" TalkNpc0="@player" DialogID0="DialogID0_1061" DelayTime0="2000"/>
+	<Property ID="17" Name="1-(h)" TalkNpc0="npc103" TalkNpc1="@player" TalkNpc2="npc103" TalkNpc3="@player" TalkNpc4="npc103" TalkNpc5="@player" DialogID0="DialogID0_17" DialogID1="DialogID1_17" DialogID2="DialogID2_17" DialogID3="DialogID3_17" DialogID4="DialogID4_17" DialogID5="DialogID5_17" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000" DelayTime4="2000" DelayTime5="2000"/>
+	<Property ID="18" Name="1-(h)" TalkNpc0="npc103" TalkNpc1="@player" DialogID0="DialogID0_18" DialogID1="DialogID1_18" DelayTime0="2000" DelayTime1="2000"/>
+	<Property ID="19" Name="1-(h)" TalkNpc0="npc103" TalkNpc1="@player" TalkNpc2="npc103" TalkNpc3="@player" TalkNpc4="npc103" TalkNpc5="@player" DialogID0="DialogID0_19" DialogID1="DialogID1_19" DialogID2="DialogID2_19" DialogID3="DialogID3_19" DialogID4="DialogID4_19" DialogID5="DialogID5_19" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000" DelayTime4="2000" DelayTime5="2000"/>
+	<Property ID="20" Name="1-(h)" TalkNpc0="npc103" TalkNpc1="@player" TalkNpc2="npc103" TalkNpc3="@player" DialogID0="DialogID0_20" DialogID1="DialogID1_20" DialogID2="DialogID2_20" DialogID3="DialogID3_20" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000"/>
+	<Property ID="21" Name="1-(h)" TalkNpc0="npc103" TalkNpc1="@player" TalkNpc2="npc103" TalkNpc3="@player" DialogID0="DialogID0_21" DialogID1="DialogID1_21" DialogID2="DialogID2_21" DialogID3="DialogID3_21" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000"/>
+	<Property ID="22" Name="1-(h)" TalkNpc0="npc103" TalkNpc1="@player" TalkNpc2="npc103" TalkNpc3="@player" DialogID0="DialogID0_21" DialogID1="DialogID1_21" DialogID2="DialogID2_21" DialogID3="DialogID3_21" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000"/>
+	<Property ID="1091" Name="109-(h)" TalkNpc0="@player" DialogID0="DialogID0_1091" DelayTime0="2000"/>
+	<Property ID="1131" Name="113-(h)" TalkNpc0="bos_11301" TalkNpc1="@player" TalkNpc2="bos_11301" TalkNpc3="@player" TalkNpc4="bos_11301" TalkNpc5="@player" TalkNpc6="bos_11301" DialogID0="DialogID0_1131" DialogID1="DialogID1_1131" DialogID2="DialogID2_1131" DialogID3="DialogID3_1131" DialogID4="DialogID4_1131" DialogID5="DialogID5_1131" DialogID6="DialogID6_1131" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000" DelayTime4="2000" DelayTime5="2000" DelayTime6="2000"/>
+	<Property ID="1001" Name="鏂版墜鍒涘缓" TalkNpc0="@player" TalkNpc1="sectnpc199" TalkNpc2="@player" TalkNpc3="sectnpc199" DialogID0="DialogID0_1001" DialogID1="DialogID1_1001" DialogID2="DialogID2_1001" DialogID3="DialogID3_1001" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000"/>
+	<Property ID="1003" Name="鏂版墜鍒涘缓BOSS" TalkNpc0="bos103" TalkNpc1="@player" TalkNpc2="bos103" TalkNpc3="@player" DialogID0="DialogID0_101" DialogID1="DialogID1_101" DialogID2="DialogID2_101" DialogID3="DialogID4_101" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000"/>
+	<Property ID="1002" Name="鏂版墜鍒涘缓end" TalkNpc0="@player" TalkNpc1="@player" DialogID0="DialogID0_1002" DialogID1="DialogID1_1002" DelayTime0="2000" DelayTime1="2000"/>
+	<Property ID="1" Name="1-(h)" TalkNpc0="@player" TalkNpc1="npc101" DialogID0="Dialog_1_1" DialogID1="Dialog_1_2" DelayTime0="2000" DelayTime1="2000"/>
+	<Property ID="2" Name="1-(h)" TalkNpc0="@player" TalkNpc1="npc102" TalkNpc2="@player" DialogID0="Dialog_2_1" DialogID1="Dialog_2_2" DialogID2="Dialog_2_3" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000"/>
+	<Property ID="3" Name="1-(h)" TalkNpc0="@player" TalkNpc1="npc102" TalkNpc2="@player" DialogID0="Dialog_3_1" DialogID1="Dialog_3_2" DialogID2="Dialog_3_3" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000"/>
+	<Property ID="4" Name="1-(h)" TalkNpc0="npc102" TalkNpc1="@player" TalkNpc2="npc102" TalkNpc3="@player" DialogID0="Dialog_4_1" DialogID1="Dialog_4_2" DialogID2="Dialog_4_3" DialogID3="Dialog_4_4" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000"/>
+	<Property ID="5" Name="1-(h)" TalkNpc0="@player" TalkNpc1="npc102" TalkNpc2="@player" TalkNpc3="npc102" DialogID0="Dialog_5_1" DialogID1="Dialog_5_2" DialogID2="Dialog_5_3" DialogID3="Dialog_5_4" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000"/>
+	<Property ID="6" Name="1-(h)" TalkNpc0="npc102" TalkNpc1="@player" TalkNpc2="npc102" TalkNpc3="@player" TalkNpc4="npc102" TalkNpc5="@player" DialogID0="Dialog_6_1" DialogID1="Dialog_6_2" DialogID2="Dialog_6_3" DialogID3="Dialog_6_4" DialogID4="Dialog_6_5" DialogID5="Dialog_6_6" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000" DelayTime4="2000" DelayTime5="2000"/>
+	<Property ID="7" Name="1-(h)" TalkNpc0="npc103" TalkNpc1="@player" TalkNpc2="npc103" TalkNpc3="@player" DialogID0="Dialog_7_1" DialogID1="Dialog_7_2" DialogID2="Dialog_7_3" DialogID3="Dialog_7_4" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000"/>
+	<Property ID="8" Name="1-(h)" TalkNpc0="@player" TalkNpc1="npc104" TalkNpc2="@player" DialogID0="Dialog_8_1" DialogID1="Dialog_8_2" DialogID2="Dialog_8_3" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000"/>
+	<Property ID="9" Name="1-(h)" TalkNpc0="@player" TalkNpc1="npc105" TalkNpc2="@player" TalkNpc3="npc105" TalkNpc4="@player" DialogID0="Dialog_9_1" DialogID1="Dialog_9_2" DialogID2="Dialog_9_3" DialogID3="Dialog_9_4" DialogID4="Dialog_9_5" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000" DelayTime4="2000"/>
+	<Property ID="10" Name="1-(h)" TalkNpc0="npc105" TalkNpc1="@player" TalkNpc2="npc105" TalkNpc3="@player" TalkNpc4="npc105" TalkNpc5="@player" DialogID0="Dialog_10_1" DialogID1="Dialog_10_2" DialogID2="Dialog_10_3" DialogID3="Dialog_10_4" DialogID4="Dialog_10_5" DialogID5="Dialog_10_6" DelayTime0="2000" DelayTime1="2000" DelayTime2="2000" DelayTime3="2000" DelayTime4="2000" DelayTime5="2000"/>
+	 浠诲姟瀵硅瘽 -->
+	<Property ID="10011" TalkNpc0="func_world_gld0040" TalkNpc1="func_world_gld0040" TalkNpc2="@player" DialogID0="TaskAccept_1_1" DialogID1="TaskAccept_1_2" DialogID2="TaskAccept_1_3"/>
+	<Property ID="10021" TalkNpc0="func_world_gld0041" TalkNpc1="func_world_gld0041" TalkNpc2="@player" TalkNpc3="func_world_gld0041" TalkNpc4="@player" DialogID0="TaskAccept_2_1" DialogID1="TaskAccept_2_2" DialogID2="TaskAccept_2_3" DialogID3="TaskAccept_2_4" DialogID4="TaskAccept_2_5"/>
+	<Property ID="10033" TalkNpc0="func_world_gld0001" TalkNpc1="func_world_gld0001" DialogID0="TaskComplete_3_1" DialogID1="TaskComplete_3_2"/>
+	<Property ID="10071" TalkNpc0="func_world_gld0006" TalkNpc1="func_world_gld0006" TalkNpc2="@player" DialogID0="TaskAccept_7_1" DialogID1="TaskAccept_7_2" DialogID2="TaskAccept_7_3"/>
+	<Property ID="10093" TalkNpc0="func_world_gld0007" TalkNpc1="@player" TalkNpc2="func_world_gld0007" TalkNpc3="@player" DialogID0="TaskComplete_9_1" DialogID1="TaskComplete_9_2" DialogID2="TaskComplete_9_3" DialogID3="TaskComplete_9_4"/>
+	<Property ID="10131" TalkNpc0="func_world_gld0011" TalkNpc1="@player" TalkNpc2="func_world_gld0011" TalkNpc3="@player" DialogID0="TaskAccept_13_1" DialogID1="TaskAccept_13_2" DialogID2="TaskAccept_13_3" DialogID3="TaskAccept_13_4"/>
+	<Property ID="10141" TalkNpc0="func_world_gld0008" TalkNpc1="@player" TalkNpc2="func_world_gld0008" TalkNpc3="@player" DialogID0="TaskAccept_14_1" DialogID1="TaskAccept_14_2" DialogID2="TaskAccept_14_3" DialogID3="TaskAccept_14_4"/>
+	<Property ID="10151" TalkNpc0="func_world_gld0008" TalkNpc1="@player" TalkNpc2="func_world_gld0008" TalkNpc3="@player" DialogID0="TaskAccept_15_1" DialogID1="TaskAccept_15_2" DialogID2="TaskAccept_15_3" DialogID3="TaskAccept_15_4"/>
+    <Property ID="39252" TalkNpc0="@player" DialogID0="Dialog_3925_1"/> 
+    <Property ID="39262" TalkNpc0="func_world_gcz0002" TalkNpc1="func_world_gcz0002" TalkNpc2="@player" DialogID0="Dialog_3926_1" DialogID1="Dialog_3926_2" DialogID2="Dialog_3926_3"/> 
+    <Property ID="39011" TalkNpc0="func_clone_gc001" TalkNpc1="func_clone_gc001" TalkNpc2="@player" DialogID0="DialogID_3901_1" DialogID1="DialogID_3901_2" DialogID2="DialogID_3901_3"/> 
+    <Property ID="39021" TalkNpc0="func_clone_gc001" TalkNpc1="func_clone_gc001" TalkNpc2="func_clone_gc001" DialogID0="DialogID_3902_1" DialogID1="DialogID_3902_2" DialogID2="DialogID_3902_3"/> 
+    <Property ID="39051" TalkNpc0="func_clone_gc001" TalkNpc1="func_clone_gc001" DialogID0="DialogID_3905_1" DialogID1="DialogID_3905_2"/> 
+    <Property ID="39061" TalkNpc0="func_clone_gc001" TalkNpc1="func_clone_gc001" DialogID0="DialogID_3906_1" DialogID1="DialogID_3906_2"/> 
+    <Property ID="39091" TalkNpc0="func_world_ydc0001" TalkNpc1="@player" TalkNpc2="func_world_ydc0001" DialogID0="accept_3909_1" DialogID1="accept_3909_2" DialogID2="accept_3909_3"/> 
+    <Property ID="39101" TalkNpc0="func_world_ydc0002" TalkNpc1="func_world_ydc0002" TalkNpc2="@player" TalkNpc3="func_world_ydc0002" TalkNpc4="@player" DialogID0="complete_3910_1" DialogID1="complete_3910_2" DialogID2="complete_3910_3" DialogID3="complete_3910_4" DialogID4="complete_3910_5"/> 
+    <Property ID="39111" TalkNpc0="func_world_ydc0002" TalkNpc1="func_world_ydc0001" TalkNpc2="@player" DialogID0="accept_3911_1" DialogID1="accept_3911_2" DialogID2="accept_3911_3"/> 
+    <Property ID="10231" TalkNpc0="func_world_ydc0003" TalkNpc1="@player" TalkNpc2="func_world_ydc0003" TalkNpc3="@player" DialogID0="accept_23_1" DialogID1="accept_23_2" DialogID2="accept_23_3" DialogID3="accept_23_4"/> 
+    <Property ID="10241" TalkNpc0="func_world_ydc0003" TalkNpc1="@player" TalkNpc2="func_world_ydc0003" TalkNpc3="@player" DialogID0="complete_24_1" DialogID1="complete_24_2" DialogID2="complete_24_3" DialogID3="complete_24_4"/> 
+    <Property ID="10261" TalkNpc0="func_world_ydc0001" TalkNpc1="@player" TalkNpc2="func_world_ydc0001" TalkNpc3="@player" DialogID0="accept_26_1" DialogID1="accept_26_2" DialogID2="accept_26_3" DialogID3="accept_26_4"/> 
+    <Property ID="10271" TalkNpc0="func_world_ydc0005" TalkNpc1="@player" TalkNpc2="func_world_ydc0005" TalkNpc3="@player" DialogID0="accept_27_1" DialogID1="accept_27_2" DialogID2="accept_27_3" DialogID3="accept_27_4"/> 
+    <Property ID="10301" TalkNpc0="func_world_ydc0006" TalkNpc1="@player" TalkNpc2="func_world_ydc0006" TalkNpc3="@player" TalkNpc4="func_world_ydc0006" TalkNpc5="@player" DialogID0="accept_30_1" DialogID1="accept_30_2" DialogID2="accept_30_3" DialogID3="accept_30_4" DialogID4="accept_30_5" DialogID5="accept_30_6"/> 
+    <Property ID="10311" TalkNpc0="func_world_ydc0006" TalkNpc1="@player" TalkNpc2="func_world_ydc0006" TalkNpc3="@player" DialogID0="accept_31_1" DialogID1="accept_31_2" DialogID2="accept_31_3" DialogID3="accept_31_4"/> 
+    <Property ID="10321" TalkNpc0="func_world_ydc0007" TalkNpc1="@player" TalkNpc2="func_world_ydc0007" TalkNpc3="@player" DialogID0="complete_32_1" DialogID1="complete_32_2" DialogID2="complete_32_3" DialogID3="complete_32_4"/> 
 </Object>

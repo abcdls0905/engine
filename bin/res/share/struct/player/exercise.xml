@@ -1,43 +1,10 @@
-<?xml version="1.0" encoding="gb2312"?>
+<?xml version="1.0" encoding="gb2312" ?>
 <!-- 被2011 rel. 2 sp1 (Lonely Knight) 使用XMLSpy vLK编辑的 (http://www.altova.com) by -->
 <!--历练系统-->
 <object>
-	<properties>
-		<property name="ArenaShopLastFreshTime" type="double" public="false" private="true" save="true" realtime="" desc="竞技场商店上次刷新时间"/>
-		<property name="ArenaAwardFreshTime" type="double" public="false" private="true" save="false" realtime="" desc="竞技场奖励刷新时间"/>
-		<property name="ArenaEnemyUid" type="string" public="false" private="false" save="false" realtime="" desc="竞技场奖励刷新时间"/>
-		<property name="ArenaRank" type="int" public="false" private="true" save="true" realtime="" desc="竞技场排名"/>
-		<property name="HighestArenaRecord" type="int" public="false" private="true" save="true" desc="竞技场个人排名纪录"/>
-		<property name="SportRewardFlag" type="int" public="false" private="true" save="false" desc="战斗标志位"/>
-	</properties>
-	<records>
-		<record name="ArenaFightRec" cols="7" maxrows="20" save="true" public="false" private="true" desc="竞技场配对挑战榜">
-			<column type="string" desc="玩家uid"/>
-			<column type="widestr" desc="玩家名字"/>
-			<column type="dword" desc="玩家排名"/>
-			<column type="dword" desc="金钱奖励"/>
-			<column type="dword" desc="声望奖励"/>
-			<column type="word" desc="等级"/>
-			<column type="byte" desc="角色"/>
-		</record>
-		<record name="ArenaRankRec" cols="7" maxrows="20" save="false" public="false" private="true" desc="竞技场挑战榜">
-			<column type="string" desc="玩家uid"/>
-			<column type="widestr" desc="玩家名字"/>
-			<column type="dword" desc="玩家排名"/>
-			<column type="dword" desc="金钱奖励"/>
-			<column type="dword" desc="声望奖励"/>
-			<column type="word" desc="等级"/>
-			<column type="byte" desc="角色"/>
-		</record>
-		<record name="ArenaShopRec" cols="8" maxrows="20" save="true" public="false" private="true" desc="竞技场玩家所在名次">
-			<column type="word" desc="条目id"/>
-			<column type="string" desc="物品id"/>
-			<column type="dword" desc="物品数目"/>
-			<column type="dword" desc="已兑换数量"/>
-			<column type="dword" desc="当日可兑换数量"/>
-			<column type="dword" desc="总共可兑换数量"/>
-			<column type="dword" desc="价格"/>
-			<column type="byte" desc="是否推荐"/>
-		</record>
-	</records>
+    <properties>
+        <property name="ArenaShopLastFreshTime" type="double" public="false" private="false" save="true" realtime="" desc="竞技场商店上次刷新时间" />
+        <property name="ArenaAwardFreshTime" type="double" public="false" private="false" save="false" realtime="" desc="竞技场奖励刷新时间" />
+        <property name="ArenaRank" type="dword" public="false" private="false" save="true" realtime="" desc="竞技场排名" />
+    </properties>
 </object>

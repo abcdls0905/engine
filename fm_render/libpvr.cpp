@@ -1901,7 +1901,7 @@ EPVRTError PVRTTextureLoadFromPointer(	const void* pointer,
 		if(bIsETCSupported)
 		{
 			bIsCompressedFormatSupported = bIsCompressedFormat = true;
-			eTextureFormat = GL_ETC1_RGB8_OES;
+			//eTextureFormat = GL_ETC1_RGB8_OES;
 		}
 		else
 		{

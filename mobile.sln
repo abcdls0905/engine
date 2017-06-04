@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{4EE85FDD-2C0E-4415-B72C-05500B032C52}"
 	ProjectSection(SolutionItems) = preProject
 		readme.txt = readme.txt
@@ -19,46 +19,44 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tools", "Tools", "{6C7977A9
 		build\filename_to_lowercase.bat = build\filename_to_lowercase.bat
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_core", "fm_core\fm_core.vcproj", "{417353AC-9519-4E44-8240-7F4D1C0C0B8B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_core", "fm_core\fm_core.vcxproj", "{417353AC-9519-4E44-8240-7F4D1C0C0B8B}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_math", "fm_math\fm_math.vcproj", "{EDBEDFA1-D851-44AE-A6FF-A9C9B3E8A514}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_math", "fm_math\fm_math.vcxproj", "{EDBEDFA1-D851-44AE-A6FF-A9C9B3E8A514}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_render", "fm_render\fm_render.vcproj", "{D121E7EE-6928-4F03-B4BD-C7F9FC7E4C55}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_render", "fm_render\fm_render.vcxproj", "{D121E7EE-6928-4F03-B4BD-C7F9FC7E4C55}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_world", "fm_world\fm_world.vcproj", "{062E681C-A4B2-4F2F-B008-308DE8CF933A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_world", "fm_world\fm_world.vcxproj", "{062E681C-A4B2-4F2F-B008-308DE8CF933A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_sound", "fm_sound\fm_sound.vcproj", "{1A0855DA-C6C2-4925-BD56-78E0755F9613}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_sound", "fm_sound\fm_sound.vcxproj", "{1A0855DA-C6C2-4925-BD56-78E0755F9613}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_main", "fm_main\fm_main.vcproj", "{D2F8E97E-F140-48D7-BD25-A781222E41F9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_main", "fm_main\fm_main.vcxproj", "{D2F8E97E-F140-48D7-BD25-A781222E41F9}"
 	ProjectSection(ProjectDependencies) = postProject
-		{FEA667C8-8B8D-49EE-860C-D9524F7739DD} = {FEA667C8-8B8D-49EE-860C-D9524F7739DD}
+		{76FBC400-9044-478F-BAC6-14D9F92AC441} = {76FBC400-9044-478F-BAC6-14D9F92AC441}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_shader", "fm_shader\fm_shader.vcproj", "{8A6E361E-8B40-4A25-ABD3-AA2F3308F0AC}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_shader", "fm_shader\fm_shader.vcxproj", "{8A6E361E-8B40-4A25-ABD3-AA2F3308F0AC}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_model", "fm_model\fm_model.vcproj", "{39FC89E9-64DE-498D-A9DF-B74C33D97AB9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_model", "fm_model\fm_model.vcxproj", "{39FC89E9-64DE-498D-A9DF-B74C33D97AB9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_terrain", "fm_terrain\fm_terrain.vcproj", "{5B0058F4-51E7-4A65-8CE5-627B10865030}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_terrain", "fm_terrain\fm_terrain.vcxproj", "{5B0058F4-51E7-4A65-8CE5-627B10865030}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Build_Ver", "build\Build_Ver.vcproj", "{D75405A9-4FB8-47BE-849A-265C0BE26EE7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Build_Ver", "build\Build_Ver.vcxproj", "{D75405A9-4FB8-47BE-849A-265C0BE26EE7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_input", "fm_input\fm_input.vcproj", "{8B65FEF2-19D1-48FB-9C50-B3D88E5B30F7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_input", "fm_input\fm_input.vcxproj", "{8B65FEF2-19D1-48FB-9C50-B3D88E5B30F7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_ui3d", "fm_ui3d\fm_ui3d.vcproj", "{52C97FFC-CDA2-4214-9727-F47E238F9288}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_ui3d", "fm_ui3d\fm_ui3d.vcxproj", "{52C97FFC-CDA2-4214-9727-F47E238F9288}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_geometry", "fm_geometry\fm_geometry.vcproj", "{565CF7B3-774B-4AC5-94A0-1F72D32BE658}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_geometry", "fm_geometry\fm_geometry.vcxproj", "{565CF7B3-774B-4AC5-94A0-1F72D32BE658}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_physics_bullet", "fm_physics_bullet\fm_physics_bullet.vcproj", "{85D8EB20-12AD-473C-BC88-03975944B270}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_physics_bullet", "fm_physics_bullet\fm_physics_bullet.vcxproj", "{85D8EB20-12AD-473C-BC88-03975944B270}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_movie", "fm_movie\fm_movie.vcproj", "{A5082A96-0142-4572-B5B0-249DB4CA9EDE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_movie", "fm_movie\fm_movie.vcxproj", "{A5082A96-0142-4572-B5B0-249DB4CA9EDE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_render_3_0", "fm_render\fm_render_3_0.vcproj", "{8D4F3F79-2ABD-4186-BD1D-36C4892FE1D7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_game", "fm_game\fm_game.vcxproj", "{FEA667C8-8B8D-49EE-860C-D9524F7739DD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_game", "fm_game\fm_game.vcproj", "{FEA667C8-8B8D-49EE-860C-D9524F7739DD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_gui", "fm_gui\fm_gui.vcxproj", "{76FBC400-9044-478F-BAC6-14D9F92AC441}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_gui", "fm_gui\fm_gui.vcproj", "{76FBC400-9044-478F-BAC6-14D9F92AC441}"
-EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_net", "fm_net\fm_net.vcproj", "{7FDF4973-B57D-4D23-9AB0-31023A9DE228}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fm_net", "fm_net\fm_net.vcxproj", "{7FDF4973-B57D-4D23-9AB0-31023A9DE228}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -219,16 +217,6 @@ Global
 		{A5082A96-0142-4572-B5B0-249DB4CA9EDE}.Release|Win32.Build.0 = Release|Win32
 		{A5082A96-0142-4572-B5B0-249DB4CA9EDE}.RT_Debug|Win32.ActiveCfg = Debug|Win32
 		{A5082A96-0142-4572-B5B0-249DB4CA9EDE}.RT_Debug|Win32.Build.0 = Debug|Win32
-		{8D4F3F79-2ABD-4186-BD1D-36C4892FE1D7}.Debug|Win32.ActiveCfg = Debug|Win32
-		{8D4F3F79-2ABD-4186-BD1D-36C4892FE1D7}.Debug|Win32.Build.0 = Debug|Win32
-		{8D4F3F79-2ABD-4186-BD1D-36C4892FE1D7}.Full_MSG_Perf|Win32.ActiveCfg = Perf_Debug|Win32
-		{8D4F3F79-2ABD-4186-BD1D-36C4892FE1D7}.Full_MSG_Perf|Win32.Build.0 = Perf_Debug|Win32
-		{8D4F3F79-2ABD-4186-BD1D-36C4892FE1D7}.Perf_Debug|Win32.ActiveCfg = Perf_Debug|Win32
-		{8D4F3F79-2ABD-4186-BD1D-36C4892FE1D7}.Perf_Debug|Win32.Build.0 = Perf_Debug|Win32
-		{8D4F3F79-2ABD-4186-BD1D-36C4892FE1D7}.Release|Win32.ActiveCfg = Release|Win32
-		{8D4F3F79-2ABD-4186-BD1D-36C4892FE1D7}.Release|Win32.Build.0 = Release|Win32
-		{8D4F3F79-2ABD-4186-BD1D-36C4892FE1D7}.RT_Debug|Win32.ActiveCfg = Debug|Win32
-		{8D4F3F79-2ABD-4186-BD1D-36C4892FE1D7}.RT_Debug|Win32.Build.0 = Debug|Win32
 		{FEA667C8-8B8D-49EE-860C-D9524F7739DD}.Debug|Win32.ActiveCfg = Debug|Win32
 		{FEA667C8-8B8D-49EE-860C-D9524F7739DD}.Debug|Win32.Build.0 = Debug|Win32
 		{FEA667C8-8B8D-49EE-860C-D9524F7739DD}.Full_MSG_Perf|Win32.ActiveCfg = Perf_Debug|Win32

@@ -2,12 +2,36 @@
 <!-- 
 MainComponent 主部件编号
 SubComponentList
-子部件集合(子部件NPCID,子部件挂接点x坐标,子部件挂接点y坐标,子部件挂接点z坐标,子部件对应skin挂点名字,子部件播放动画时高度,父NPC倒地，保持，起身招式,父NPC开始变为倒地状态时间,父NPC开始取消倒地状态时间,父NPC恢复AI时间;(父NPC倒地，保持，起身招式、父NPC开始变为倒地状态时间、父NPC开始取消倒地状态时间、父NPC恢复AI时间)......)
+子部件集合(子部件NPCID,子部件挂接点x坐标,子部件挂接点y坐标,子部件挂接点z坐标;子部件NPCID,子部件挂接点x坐标,子部件挂接点y坐标,子部件挂接点z坐标;;....
+MainBuffer 无敌
+bufferActionAppend 动作后缀
+DeadChangeStepValue 所以子部件死亡切换状态
+ConditionType 1=时间条件 2=血量条件 默认为0
+ConditionValue 切换阶段条件值 格式为时间切换阶段=1,30000;2,60000;3,90000?血量切换阶段=1,80;2,60;3,30
 -->
 <Object>
-	<Property ID="1" MainComponent="Demo_Boss_001" SubComponentList="Demo_Boss_002,1.0,2.0,3.0,Model::bomb_gua01,part_a,5.45,bomb,Demo_boss_011,2000,5000,7000,0.9;,,,,,,,,Demo_boss_011_2,2000,7500,9500"/>
-	<Property ID="2" MainComponent="zym728_boss_1" SubComponentList="boss_ani_0003_1,1.0,2.0,3.0,tpose::effect_02,part_b,5.45,boomdown3,mon_kl_king_skill_12,2000,5000,7000,0.7;,,,,,,,,mon_kl_king_skill_12_2,2000,7500,9500"/>
-	<Property ID="3" MainComponent="zym748_boss_1" SubComponentList="boss_ani_0005_1,1.0,2.0,3.0,Model::boss_ani_0005_neck,part_a,5.45,bomb,mon_shu_bd_sk15,2000,5000,7000,0.7;,,,,,,,,mon_shu_bd_sk15_2,2000,7000,9000"/>
-	<Property ID="4" MainComponent="zym778_boss_1" SubComponentList="boss_ani_0006_1,1.0,2.0,3.0,Model::boss_ani_0006_belly,part_a,5.45,bomb,mon_shu_judunvw_sk14,2000,5000,7000,0.5;,,,,,,,,mon_shu_judunvw_sk15,2000,7000,9000"/>
-	<Property ID="5" MainComponent="zym798_boss" SubComponentList="Demo_Boss_002,1.0,2.0,3.0,Model::bomb_gua01,part_a,5.45,bomb,Demo_boss_011,2000,5000,7000,0.9;,,,,,,,,Demo_boss_011_2,2000,7500,9500"/>
+	<Property ID="1" MainComponent="Copy_ai001"  MainBuffer="buff_demo_test_001"     
+	DeadChangeStepValue="2" ConditionType ="0" ConditionValue=""
+	SubComponentList="demo_test__link_1,1,0,0;demo_test__link_2,-1,0,0"/>
+	<Property ID="2" MainComponent="Copy_ai001_test1"  MainBuffer="buff_dragon_wudi_1"     
+	DeadChangeStepValue="2" ConditionType ="0" ConditionValue=""
+	SubComponentList="demo_test__link_1,1,0,0;demo_test__link_2,-1,0,0"/>
+	<Property ID="3" MainComponent="boss_sjxy_1"  MainBuffer="buff_dragon_wudi_1"     
+	DeadChangeStepValue="2" ConditionType ="0" ConditionValue=""
+	SubComponentList="weekness_sjxy_1,0,0,0"/>
+	<Property ID="4" MainComponent="boss_monster_tks_01"  MainBuffer="boss_btyd_001"     
+	DeadChangeStepValue="2" ConditionType ="0" ConditionValue=""
+	SubComponentList="weekness_tks_1,0,0,0"/>
+	<Property ID="5" MainComponent="e_boss_sjxy_1"  MainBuffer="buff_dragon_wudi_1"     
+	DeadChangeStepValue="2" ConditionType ="0" ConditionValue=""
+	SubComponentList="e_weekness_sjxy_1,0,0,0"/>
+	<Property ID="6" MainComponent="e_boss_monster_tks_01"  MainBuffer="boss_btyd_001"     
+	DeadChangeStepValue="2" ConditionType ="0" ConditionValue=""
+	SubComponentList="e_weekness_tks_1,0,0,0"/>
+	<Property ID="7" MainComponent="td_boss_dk_1"  MainBuffer="buff_dragon_wudi_1"     
+	DeadChangeStepValue="2" ConditionType ="0" ConditionValue=""
+	SubComponentList="td_boss_ak_p1,0,0,0"/>
+	<Property ID="8" MainComponent="etd_boss_dk"  MainBuffer="buff_dragon_wudi_1"     
+	DeadChangeStepValue="2" ConditionType ="0" ConditionValue=""
+	SubComponentList="etd_boss_ak_p1,0,0,0"/>
 </Object>

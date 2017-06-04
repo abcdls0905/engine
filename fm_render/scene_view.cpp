@@ -1272,6 +1272,7 @@ void CSceneView::EndTopmostBatch()
 
 void CSceneView::TestErr(const char* ident)
 {
+  return;
 #ifdef _DEBUG
 	int err = glGetError();	
 	if(err == GL_NO_ERROR)

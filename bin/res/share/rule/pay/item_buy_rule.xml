@@ -1,17 +1,241 @@
 <?xml version="1.0" encoding="gb2312"?>
-<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 被2011 rel. 2 sp1 (Lonely Knight) 使用XMLSpy vLK编辑的 (http://www.altova.com) by -->
 <!-- 
 	ID对应同目录下的item_shop。xml中BuyRulePackage属性。
-	CanBuyNum为可以购买的基础属性，
+	CanBuyNum: 全服限购数量(只在全服限购中有效)
 	PriceRule数组为购买道具的价格，格式为【第一次购买价格】，【第二次购买价格】，【第三次购买价格】，...,【最后一个价格表示后续可购买的道具均采用此价格】
 	VIPRule数组为VIP增加的可购买上限，格式为【VIP1额外增加次数】，【VIP2额外增加次数】，【VIP3额外增加次数】...
+   
+   增加属性CapitalType，货币种类
+	CAPITAL_TYPE_GOLD					= 1,    //  $ 1 = 黄金
+	CAPITAL_TYPE_DIAMOND				= 2,    //  $ 2 = 钻石
+	CAPITAL_TYPE_BIND_DIAMOND			= 3,    //  $ 3 = 绑定钻石
+	CAPITAL_TYPE_SKILLPOINT				= 4,    //  $ 4 = 技能点
+	CAPITAL_TYPE_REPPOINT				= 5,    //  $ 5 = 声望点
+	CAPITAL_TYPE_HONORPOINT				= 6,    //  $ 6 = 竞技场荣誉值
+	CAPITAL_TYPE_RUNE					= 7,    //  $ 7 = 符印能量
+    CAPITAL_TYPE_SPAR                   = 8,    //  $ 8 = 晶石
+    CAPITAL_TYPE_CONTRIBUTEPOINT		= 9,	//  $ 9 = 血盟贡献
+	CAPITAL_TYPE_RANKSTONE				= 10,    //	$ 10 = 进阶石（宠物）
+	CAPITAL_TYPE_BILL				    = 11,   //	$ 11 = 抢单任务雇佣值
+    CAPITAL_TYPE_BATTLEGLORY            = 12,	//  $ 12 = 战场荣誉点
+    CAPITAL_TYPE_TALENTPOINT            = 13,   //  $ 13 = 天赋点
+	CAPITAL_TYPE_GUILDDEVOTE			= 14,   //	$ 14 =帮派贡献
+    CAPITAL_TYPE_TASKPOINT  			= 15,   //	$ 15 =任务货币
+    CAPITAL_TYPE_RPGPOINT   			= 16,   //	$ 16 =怪物攻城货币
+    CAPITAL_TYPE_PATAPOINT  			= 17,   //	$ 17 =爬塔货币
+    CAPITAL_TYPE_TEAMCLONEPOINT			= 18,   //	$ 18 =组队副本货币
+		
+	LimitType:限制类型 0 - 不限购
+					   1 - 日限购
+					   2 - 时间段限购    (没有需求)
+					   3 - 总量限购
+	NumLimit:限购数量
+   增加BuyStartDate、BuyEndDate定义限时购买的起止时间，-1时代表参数无效,标准格式是2016-04-25 10:00:00
+    
+	新增限制条件
+   ConditionType,  配置格式:类型，属性=1,5
+   1-工会等级
+   2-历史最高帮贡
+   3-历史最高荣誉
+   4-军阶等级
+   
+   显示条件
+   ShowCondition 配置格式: 类型,属性;类型,属性 : 1，2|3|4|5|6;2,60
+   1-职业
+   2-等级
+
 	-->
 <Object>
-	<Property ID="0" Name="金币袋（大）" CanBuyNum="10" PriceRule="1,1,1,1,1,2,2,2,2,2,3,3,3,3,3,4,4,4,4,4,6,6,6,6,6,8,8,8,8,8,10,10,10,10,10,12,12,12,12,12,14,14,14,14,14,16,16,16,16,16,18,18,18,18,18,20" VipRule="5,10,15,20,25,30,40,50,60,70,80,90,100,120,140"/>
-	<Property ID="1" Name="体力丹出售规则" CanBuyNum="1" PriceRule="20,30,40,50,60,70,80,90,100,120,140,160,180,200,240,280,320,360,400,450,500" VipRule="1,2,3,4,5,6,8,10,12,14,16,18,20,22,24"/>
-	<Property ID="2" Name="历练丹出售规则" CanBuyNum="1" PriceRule="20,30,40,50,60,70,80,90,100,120,140,160,180,200,240,280,320,360,400,450,500" VipRule="1,2,3,4,5,6,8,10,12,14,16,18,20,22,24"/>
-	<Property ID="3" Name="1级符文出售规则" CanBuyNum="3" PriceRule="20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,95,100" VipRule="2,4,6,8,10,12,14,16,18,20,22,24,26,28,30"/>
-	<Property ID="4" Name="精炼石袋出售规则" CanBuyNum="1" PriceRule="30,35,40,45,50,55,60,65,70,75,80,85,90,95,100,105,110,115,120,125,130,135,140,145,150" VipRule="1,3,5,7,9,11,13,15,17,19,29,39,49,69,99"/>
-	<Property ID="5" Name="净魂石（100）出售规则" CanBuyNum="99" PriceRule="50" VipRule="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
-	<Property ID="6" Name="大经验药出售规则" CanBuyNum="9999" PriceRule="5" VipRule="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
+	<!--钻石商城-->
+	<Property ID="1" Name="5万金币" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="10" VipRule="0" Discount="100"/>
+	<Property ID="2" Name="武器强化石" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="20" VipRule="0" Discount="100"/>
+	<Property ID="3" Name="武器强化辅助石" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="30" VipRule="0" Discount="100"/>
+	<Property ID="4" Name="装备强化石" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="10" VipRule="0" Discount="100"/>
+	<Property ID="5" Name="装备强化辅助石" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="15" VipRule="0" Discount="100"/>
+	<Property ID="6" Name="精铁" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="10" VipRule="0" Discount="100"/>
+	<Property ID="7" Name="1级红宝石" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="20" VipRule="0" Discount="100"/>
+	<Property ID="8" Name="1级绿宝石" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="20" VipRule="0" Discount="100"/>
+	<Property ID="9" Name="1级蓝宝石" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="20" VipRule="0" Discount="100"/>
+	<Property ID="10" Name="1级黄宝石" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="20" VipRule="0" Discount="100"/>
+	<Property ID="11" Name="1级紫宝石" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="20" VipRule="0" Discount="100"/>
+	<Property ID="12" Name="低级素食" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="5" VipRule="0" Discount="100"/>
+	<Property ID="13" Name="中级素食" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="20" VipRule="0" Discount="100"/>
+	<Property ID="14" Name="高级素食" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="50" VipRule="0" Discount="100"/>
+	<Property ID="15" Name="低级肉食" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="5" VipRule="0" Discount="100"/>
+	<Property ID="16" Name="中级肉食" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="20" VipRule="0" Discount="100"/>
+	<Property ID="17" Name="高级肉食" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="50" VipRule="0" Discount="100"/>
+	<Property ID="18" Name="低级宝物" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="10" VipRule="0" Discount="100"/>
+	<Property ID="19" Name="中级宝物" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="40" VipRule="0" Discount="100"/>
+	<Property ID="20" Name="高级宝物" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="100" VipRule="0" Discount="100"/>
+	<Property ID="21" Name="坐骑培养丹" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="30" VipRule="0" Discount="100"/>
+	<Property ID="22" Name="奥义秘卷" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="150" VipRule="0" Discount="100"/>
+	<Property ID="23" Name="龙纹石" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="350" VipRule="0" Discount="100"/>
+	<Property ID="24" Name="低级纹章强化石" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="50" VipRule="0" Discount="100"/>
+	<Property ID="25" Name="中级纹章强化石" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="100" VipRule="0" Discount="100"/>
+	<Property ID="26" Name="高级纹章强化石" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="250" VipRule="0" Discount="100"/>
+	<Property ID="27" Name="骑术书" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="50" VipRule="0" Discount="100"/>
+	<Property ID="28" Name="猎术书" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="50" VipRule="0" Discount="100"/>
+	<Property ID="29" Name="宠物宝箱" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="50" VipRule="0" Discount="100"/>
+	<Property ID="30" Name="王试炼门票" CanBuyNum="2" LimitType="1" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="100" VipRule="0" Discount="100"/>
+	<Property ID="31" Name="宠物进阶石" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="10" VipRule="0" Discount="100"/>
+	<Property ID="32" Name="灵露" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="10" VipRule="0" Discount="100"/>
+	<Property ID="33" Name="时装武器-泳装" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1680" VipRule="0" Discount="100"/>
+	<Property ID="34" Name="时装衣服-泳装" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1680" VipRule="0" Discount="100"/>
+	<Property ID="35" Name="角色改名卡" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="300" VipRule="0" Discount="100"/>
+	<Property ID="36" Name="公会改名卡" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="2" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1980" VipRule="0" Discount="100"/>
+	<!--绑钻商城-->
+	<Property ID="201" Name="5万金币,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="15" VipRule="0" Discount="100"/>
+	<Property ID="202" Name="武器强化石,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="30" VipRule="0" Discount="100"/>
+	<Property ID="203" Name="装备强化石,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="15" VipRule="0" Discount="100"/>
+	<Property ID="204" Name="1级红宝石,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="30" VipRule="0" Discount="100"/>
+	<Property ID="205" Name="1级绿宝石,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="30" VipRule="0" Discount="100"/>
+	<Property ID="206" Name="1级蓝宝石,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="30" VipRule="0" Discount="100"/>
+	<Property ID="207" Name="1级黄宝石,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="30" VipRule="0" Discount="100"/>
+	<Property ID="208" Name="1级紫宝石,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="30" VipRule="0" Discount="100"/>
+	<Property ID="209" Name="低级素食,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="8" VipRule="0" Discount="100"/>
+	<Property ID="210" Name="中级素食,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="30" VipRule="0" Discount="100"/>
+	<Property ID="211" Name="高级素食,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="75" VipRule="0" Discount="100"/>
+	<Property ID="212" Name="低级肉食,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="8" VipRule="0" Discount="100"/>
+	<Property ID="213" Name="中级肉食,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="30" VipRule="0" Discount="100"/>
+	<Property ID="214" Name="高级肉食,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="75" VipRule="0" Discount="100"/>
+	<Property ID="215" Name="低级宝物,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="15" VipRule="0" Discount="100"/>
+	<Property ID="216" Name="中级宝物,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="60" VipRule="0" Discount="100"/>
+	<Property ID="217" Name="高级宝物,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="150" VipRule="0" Discount="100"/>
+	<Property ID="218" Name="低级纹章强化石,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="75" VipRule="0" Discount="100"/>
+	<Property ID="219" Name="中纹章强化石,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="150" VipRule="0" Discount="100"/>
+	<Property ID="220" Name="宠物宝箱,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="75" VipRule="0" Discount="100"/>
+	<Property ID="221" Name="宠物进阶石,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="15" VipRule="0" Discount="100"/>
+	<Property ID="222" Name="灵露,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="15" VipRule="0" Discount="100"/>
+	<Property ID="223" Name="角色改名卡,绑钻" CanBuyNum="9999" LimitType="0" NumLimit="1000" CapitalType="3" BuyStartDate="-1" BuyEndDate="-1" PriceRule="450" VipRule="0" Discount="100"/>
+	<!--荣誉商城-->
+	<Property ID="401" Name="格拉斯戒指" CanBuyNum="9999" LimitType="1" NumLimit="2" CapitalType="12" ShowCondition="1,1|6;2,0" BuyStartDate="-1" BuyEndDate="-1" PriceRule="450" VipRule="0" Discount="100"/>
+	<Property ID="402" Name="马纳戒指" CanBuyNum="9999" LimitType="1" NumLimit="2" CapitalType="12" ShowCondition="1,5|8;2,0" BuyStartDate="-1" BuyEndDate="-1" PriceRule="450" VipRule="0" Discount="100"/>
+	<Property ID="403" Name="雷欧戒指" CanBuyNum="9999" LimitType="1" NumLimit="2" CapitalType="12" ShowCondition="1,2|3|4|7;2,0" BuyStartDate="-1" BuyEndDate="-1" PriceRule="450" VipRule="0" Discount="100"/>
+	<Property ID="404" Name="通用80级橙色戒指" CanBuyNum="9999" LimitType="1" NumLimit="2" CapitalType="12" ShowCondition="2,60" BuyStartDate="-1" BuyEndDate="-1" PriceRule="975" VipRule="0" Discount="100"/>
+	<Property ID="405" Name="通用100级橙色戒指" CanBuyNum="9999" LimitType="1" NumLimit="2" CapitalType="12" ShowCondition="2,80" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1350" VipRule="0" Discount="100"/>
+	<Property ID="406" Name="通用120级橙色戒指" CanBuyNum="9999" LimitType="1" NumLimit="2" CapitalType="12" ShowCondition="2,100" BuyStartDate="-1" BuyEndDate="-1" PriceRule="2250" VipRule="0" Discount="100"/>
+	<Property ID="407" Name="装备强化辅助石" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="12" BuyStartDate="-1" BuyEndDate="-1" PriceRule="75" VipRule="0" Discount="100"/>
+	<Property ID="408" Name="骑术书" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="12" BuyStartDate="-1" BuyEndDate="-1" PriceRule="150" VipRule="0" Discount="100"/>
+	<Property ID="409" Name="1级宝石" CanBuyNum="9999" LimitType="1" NumLimit="2" CapitalType="12" BuyStartDate="-1" BuyEndDate="-1" PriceRule="75" VipRule="0" Discount="100"/>
+	<Property ID="410" Name="凯化晶体" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="12" BuyStartDate="-1" BuyEndDate="-1" PriceRule="150" VipRule="0" Discount="100"/>
+	<Property ID="411" Name="紫色纹章 I（上）" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="12" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1350" VipRule="0" Discount="100"/>
+	<Property ID="412" Name="紫色纹章 I（中）" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="12" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1350" VipRule="0" Discount="100"/>
+	<Property ID="413" Name="紫色纹章 I（下）" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="12" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1350" VipRule="0" Discount="100"/>
+	<Property ID="414" Name="灵露" CanBuyNum="9999" LimitType="1" NumLimit="2" CapitalType="12" BuyStartDate="-1" BuyEndDate="-1" PriceRule="75" VipRule="0" Discount="100"/>
+	<Property ID="415" Name="天马" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="12" BuyStartDate="-1" BuyEndDate="-1" PriceRule="4500" VipRule="0" Discount="100"/>
+	<!--贡献商城-->
+	<Property ID="601" Name="武器强化石" CanBuyNum="9999" LimitType="1" NumLimit="10" CapitalType="14" BuyStartDate="-1" BuyEndDate="-1" PriceRule="250" VipRule="0" Discount="100"/>
+	<Property ID="602" Name="装备强化石" CanBuyNum="9999" LimitType="1" NumLimit="10" CapitalType="14" BuyStartDate="-1" BuyEndDate="-1" PriceRule="120" VipRule="0" Discount="100"/>
+	<Property ID="603" Name="猎术书" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="14" BuyStartDate="-1" BuyEndDate="-1" PriceRule="2000" VipRule="0" Discount="100"/>
+	<Property ID="604" Name="骑术书" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="14" BuyStartDate="-1" BuyEndDate="-1" PriceRule="2000" VipRule="0" Discount="100"/>
+	<Property ID="600" Name="坐骑升级丹" CanBuyNum="9999" LimitType="1" NumLimit="5" CapitalType="14" BuyStartDate="-1" BuyEndDate="-1" PriceRule="600" VipRule="0" Discount="100"/>
+	<Property ID="605" Name="龙纹石【5点】" CanBuyNum="9999" LimitType="1" NumLimit="5" CapitalType="14" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1200" VipRule="0" Discount="100"/>
+	<Property ID="606" Name="纹章经验石（5000点）" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="14" BuyStartDate="-1" BuyEndDate="-1" PriceRule="4000" VipRule="0" Discount="100"/>
+	<Property ID="607" Name="灵露" CanBuyNum="9999" LimitType="1" NumLimit="2" CapitalType="14" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1000" VipRule="0" Discount="100"/>
+	<Property ID="608" Name="铁拳" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="14" BuyStartDate="-1" BuyEndDate="-1" PriceRule="60000" VipRule="0" Discount="100"/>
+	<Property ID="609" Name="橙色押运令" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="14" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1000" VipRule="0" Discount="100"/>
+	<!--副本商店-->
+	<Property ID="701" Name="熊猫人60级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,1;2,0" BuyStartDate="-1" BuyEndDate="-1" PriceRule="120" VipRule="0" Discount="100"/>
+	<Property ID="702" Name="狮子人60级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,6;2,0" BuyStartDate="-1" BuyEndDate="-1" PriceRule="120" VipRule="0" Discount="100"/>
+	<Property ID="703" Name="咒术师60级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,3;2,0" BuyStartDate="-1" BuyEndDate="-1" PriceRule="120" VipRule="0" Discount="100"/>
+	<Property ID="704" Name="奥术师60级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,2;2,0" BuyStartDate="-1" BuyEndDate="-1" PriceRule="120" VipRule="0" Discount="100"/>
+	<Property ID="705" Name="药师60级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,4;2,0" BuyStartDate="-1" BuyEndDate="-1" PriceRule="120" VipRule="0" Discount="100"/>
+	<Property ID="706" Name="圣骑士60级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,7;2,0" BuyStartDate="-1" BuyEndDate="-1" PriceRule="120" VipRule="0" Discount="100"/>
+	<Property ID="707" Name="弓箭手60级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,5|8;2,0" BuyStartDate="-1" BuyEndDate="-1" PriceRule="120" VipRule="0" Discount="100"/>
+	<Property ID="708" Name="熊猫人80级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,1;2,60" BuyStartDate="-1" BuyEndDate="-1" PriceRule="260" VipRule="0" Discount="100"/>
+	<Property ID="709" Name="狮子人80级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,6;2,60" BuyStartDate="-1" BuyEndDate="-1" PriceRule="260" VipRule="0" Discount="100"/>
+	<Property ID="710" Name="咒术师80级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,3;2,60" BuyStartDate="-1" BuyEndDate="-1" PriceRule="260" VipRule="0" Discount="100"/>
+	<Property ID="711" Name="奥术师80级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,2;2,60" BuyStartDate="-1" BuyEndDate="-1" PriceRule="260" VipRule="0" Discount="100"/>
+	<Property ID="712" Name="药师80级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,4;2,60" BuyStartDate="-1" BuyEndDate="-1" PriceRule="260" VipRule="0" Discount="100"/>
+	<Property ID="713" Name="圣骑士80级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,7;2,60" BuyStartDate="-1" BuyEndDate="-1" PriceRule="260" VipRule="0" Discount="100"/>
+	<Property ID="714" Name="弓箭手80级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,5|8;2,60" BuyStartDate="-1" BuyEndDate="-1" PriceRule="260" VipRule="0" Discount="100"/>
+	<Property ID="715" Name="熊猫人100级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,1;2,80" BuyStartDate="-1" BuyEndDate="-1" PriceRule="600" VipRule="0" Discount="100"/>
+	<Property ID="716" Name="狮子人100级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,6;2,80" BuyStartDate="-1" BuyEndDate="-1" PriceRule="600" VipRule="0" Discount="100"/>
+	<Property ID="717" Name="咒术师100级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,3;2,80" BuyStartDate="-1" BuyEndDate="-1" PriceRule="600" VipRule="0" Discount="100"/>
+	<Property ID="718" Name="奥术师100级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,2;2,80" BuyStartDate="-1" BuyEndDate="-1" PriceRule="600" VipRule="0" Discount="100"/>
+	<Property ID="719" Name="药师100级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,4;2,80" BuyStartDate="-1" BuyEndDate="-1" PriceRule="600" VipRule="0" Discount="100"/>
+	<Property ID="720" Name="圣骑士100级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,7;2,80" BuyStartDate="-1" BuyEndDate="-1" PriceRule="600" VipRule="0" Discount="100"/>
+	<Property ID="721" Name="弓箭手100级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,5|8;2,80" BuyStartDate="-1" BuyEndDate="-1" PriceRule="600" VipRule="0" Discount="100"/>
+	<Property ID="722" Name="熊猫人120级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,1;2,100" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1200" VipRule="0" Discount="100"/>
+	<Property ID="723" Name="狮子人120级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,6;2,100" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1200" VipRule="0" Discount="100"/>
+	<Property ID="724" Name="咒术师120级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,3;2,100" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1200" VipRule="0" Discount="100"/>
+	<Property ID="725" Name="奥术师120级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,2;2,100" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1200" VipRule="0" Discount="100"/>
+	<Property ID="726" Name="药师120级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,4;2,100" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1200" VipRule="0" Discount="100"/>
+	<Property ID="727" Name="圣骑士120级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,7;2,100" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1200" VipRule="0" Discount="100"/>
+	<Property ID="728" Name="弓箭手120级橙色副手" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" ShowCondition="1,5|8;2,100" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1200" VipRule="0" Discount="100"/>
+	<Property ID="729" Name="精铁" CanBuyNum="9999" LimitType="1" NumLimit="10" CapitalType="18" BuyStartDate="-1" BuyEndDate="-1" PriceRule="10" VipRule="0" Discount="100"/>
+	<Property ID="730" Name="1级宝石" CanBuyNum="9999" LimitType="1" NumLimit="2" CapitalType="18" BuyStartDate="-1" BuyEndDate="-1" PriceRule="20" VipRule="0" Discount="100"/>
+	<Property ID="731" Name="体魄晶体" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" BuyStartDate="-1" BuyEndDate="-1" PriceRule="40" VipRule="0" Discount="100"/>
+	<Property ID="732" Name="低级纹章强化石" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" BuyStartDate="-1" BuyEndDate="-1" PriceRule="50" VipRule="0" Discount="100"/>
+	<Property ID="733" Name="中级纹章强化石" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" BuyStartDate="-1" BuyEndDate="-1" PriceRule="100" VipRule="0" Discount="100"/>
+	<Property ID="734" Name="紫灵纹章" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" BuyStartDate="-1" BuyEndDate="-1" PriceRule="360" VipRule="0" Discount="100"/>
+	<Property ID="735" Name="紫灵纹章" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" BuyStartDate="-1" BuyEndDate="-1" PriceRule="360" VipRule="0" Discount="100"/>
+	<Property ID="736" Name="紫灵纹章" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" BuyStartDate="-1" BuyEndDate="-1" PriceRule="360" VipRule="0" Discount="100"/>
+	<Property ID="737" Name="幽冥战马" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="18" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1200" VipRule="0" Discount="100"/>
+	<!--巅峰商店-->
+	<Property ID="801" Name="格拉斯耳环" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="6" ShowCondition="1,1|6;2,0" BuyStartDate="-1" BuyEndDate="-1" PriceRule="120" VipRule="0" Discount="100"/>
+	<Property ID="802" Name="马纳耳环" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="6" ShowCondition="1,5|8;2,0" BuyStartDate="-1" BuyEndDate="-1" PriceRule="120" VipRule="0" Discount="100"/>
+	<Property ID="803" Name="雷欧耳环" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="6" ShowCondition="1,2|3|4|7;2,0" BuyStartDate="-1" BuyEndDate="-1" PriceRule="120" VipRule="0" Discount="100"/>
+	<Property ID="804" Name="通用80级橙色耳环" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="6" ShowCondition="2,60" BuyStartDate="-1" BuyEndDate="-1" PriceRule="260" VipRule="0" Discount="100"/>
+	<Property ID="805" Name="通用100级橙色耳环" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="6" ShowCondition="2,80" BuyStartDate="-1" BuyEndDate="-1" PriceRule="600" VipRule="0" Discount="100"/>
+	<Property ID="806" Name="通用120级橙色耳环" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="6" ShowCondition="2,100" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1200" VipRule="0" Discount="100"/>
+	<Property ID="807" Name="武器强化辅助石" CanBuyNum="9999" LimitType="1" NumLimit="2" CapitalType="6" BuyStartDate="-1" BuyEndDate="-1" PriceRule="40" VipRule="0" Discount="100"/>
+	<Property ID="808" Name="猎术书" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="6" BuyStartDate="-1" BuyEndDate="-1" PriceRule="40" VipRule="0" Discount="100"/>
+	<Property ID="809" Name="1级宝石" CanBuyNum="9999" LimitType="1" NumLimit="2" CapitalType="6" BuyStartDate="-1" BuyEndDate="-1" PriceRule="20" VipRule="0" Discount="100"/>
+	<Property ID="810" Name="凯化晶体" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="6" BuyStartDate="-1" BuyEndDate="-1" PriceRule="40" VipRule="0" Discount="100"/>
+	<Property ID="811" Name="纹章经验石（5000点）" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="6" BuyStartDate="-1" BuyEndDate="-1" PriceRule="80" VipRule="0" Discount="100"/>
+	<Property ID="812" Name="灵露" CanBuyNum="9999" LimitType="1" NumLimit="2" CapitalType="6" BuyStartDate="-1" BuyEndDate="-1" PriceRule="20" VipRule="0" Discount="100"/>
+	<Property ID="813" Name="天马" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="6" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1200" VipRule="0" Discount="100"/>
+	<!--守卫商店-->
+	<Property ID="901" Name="力量职业60级橙色肩甲" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="16" ShowCondition="1,1|6;2,0" BuyStartDate="-1" BuyEndDate="-1" PriceRule="120" VipRule="0" Discount="100"/>
+	<Property ID="902" Name="敏捷职业60级橙色肩甲" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="16" ShowCondition="1,5|8;2,0" BuyStartDate="-1" BuyEndDate="-1" PriceRule="120" VipRule="0" Discount="100"/>
+	<Property ID="903" Name="智力职业60级橙色肩甲" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="16" ShowCondition="1,2|3|4|7;2,0" BuyStartDate="-1" BuyEndDate="-1" PriceRule="120" VipRule="0" Discount="100"/>
+	<Property ID="904" Name="力量职业80级橙色肩甲" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="16" ShowCondition="1,1|6;2,60" BuyStartDate="-1" BuyEndDate="-1" PriceRule="260" VipRule="0" Discount="100"/>
+	<Property ID="905" Name="敏捷职业80级橙色肩甲" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="16" ShowCondition="1,5|8;2,60" BuyStartDate="-1" BuyEndDate="-1" PriceRule="260" VipRule="0" Discount="100"/>
+	<Property ID="906" Name="智力职业80级橙色肩甲" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="16" ShowCondition="1,2|3|4|7;2,60" BuyStartDate="-1" BuyEndDate="-1" PriceRule="260" VipRule="0" Discount="100"/>
+	<Property ID="907" Name="力量职业100级橙色肩甲" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="16" ShowCondition="1,1|6;2,80" BuyStartDate="-1" BuyEndDate="-1" PriceRule="600" VipRule="0" Discount="100"/>
+	<Property ID="908" Name="敏捷职业100级橙色肩甲" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="16" ShowCondition="1,5|8;2,80" BuyStartDate="-1" BuyEndDate="-1" PriceRule="600" VipRule="0" Discount="100"/>
+	<Property ID="909" Name="智力职业100级橙色肩甲" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="16" ShowCondition="1,2|3|4|7;2,80" BuyStartDate="-1" BuyEndDate="-1" PriceRule="600" VipRule="0" Discount="100"/>
+	<Property ID="910" Name="力量职业120级橙色肩甲" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="16" ShowCondition="1,1|6;2,100" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1200" VipRule="0" Discount="100"/>
+	<Property ID="911" Name="敏捷职业120级橙色肩甲" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="16" ShowCondition="1,5|8;2,100" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1200" VipRule="0" Discount="100"/>
+	<Property ID="912" Name="智力职业120级橙色肩甲" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="16" ShowCondition="1,2|3|4|7;2,100" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1200" VipRule="0" Discount="100"/>
+	<Property ID="913" Name="低级素食" CanBuyNum="9999" LimitType="1" NumLimit="10" CapitalType="16" BuyStartDate="-1" BuyEndDate="-1" PriceRule="5" VipRule="0" Discount="100"/>
+	<Property ID="914" Name="中级素食" CanBuyNum="9999" LimitType="1" NumLimit="10" CapitalType="16" BuyStartDate="-1" BuyEndDate="-1" PriceRule="20" VipRule="0" Discount="100"/>
+	<Property ID="915" Name="高级素食" CanBuyNum="9999" LimitType="1" NumLimit="10" CapitalType="16" BuyStartDate="-1" BuyEndDate="-1" PriceRule="50" VipRule="0" Discount="100"/>
+	<Property ID="916" Name="异炎晶体" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="16" BuyStartDate="-1" BuyEndDate="-1" PriceRule="40" VipRule="0" Discount="100"/>
+	<Property ID="917" Name="宠物进阶石" CanBuyNum="9999" LimitType="1" NumLimit="5" CapitalType="16" BuyStartDate="-1" BuyEndDate="-1" PriceRule="30" VipRule="0" Discount="100"/>
+	<Property ID="918" Name="小冰龙宠物" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="16" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1000" VipRule="0" Discount="100"/>
+	<!--无尽商店-->
+	<Property ID="1001" Name="格拉斯护腕" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="17" ShowCondition="1,1|6;2,0" BuyStartDate="-1" BuyEndDate="-1" PriceRule="120" VipRule="0" Discount="100"/>
+	<Property ID="1002" Name="马纳护腕" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="17" ShowCondition="1,5|8;2,0" BuyStartDate="-1" BuyEndDate="-1" PriceRule="120" VipRule="0" Discount="100"/>
+	<Property ID="1003" Name="雷欧护腕" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="17" ShowCondition="1,2|3|4|7;2,0" BuyStartDate="-1" BuyEndDate="-1" PriceRule="120" VipRule="0" Discount="100"/>
+	<Property ID="1004" Name="通用80级橙色护腕" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="17" ShowCondition="2,60" BuyStartDate="-1" BuyEndDate="-1" PriceRule="260" VipRule="0" Discount="100"/>
+	<Property ID="1005" Name="通用100级橙色护腕" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="17" ShowCondition="2,80" BuyStartDate="-1" BuyEndDate="-1" PriceRule="600" VipRule="0" Discount="100"/>
+	<Property ID="1006" Name="通用120级橙色护腕" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="17" ShowCondition="2,100" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1200" VipRule="0" Discount="100"/>
+	<Property ID="1007" Name="精铁" CanBuyNum="9999" LimitType="1" NumLimit="10" CapitalType="17" BuyStartDate="-1" BuyEndDate="-1" PriceRule="10" VipRule="0" Discount="100"/>
+	<Property ID="1008" Name="低级宝物" CanBuyNum="9999" LimitType="1" NumLimit="10" CapitalType="17" BuyStartDate="-1" BuyEndDate="-1" PriceRule="10" VipRule="0" Discount="100"/>
+	<Property ID="1009" Name="中级宝物" CanBuyNum="9999" LimitType="1" NumLimit="10" CapitalType="17" BuyStartDate="-1" BuyEndDate="-1" PriceRule="40" VipRule="0" Discount="100"/>
+	<Property ID="1010" Name="高级宝物" CanBuyNum="9999" LimitType="1" NumLimit="10" CapitalType="17" BuyStartDate="-1" BuyEndDate="-1" PriceRule="100" VipRule="0" Discount="100"/>
+	<Property ID="1011" Name="体魄晶体" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="17" BuyStartDate="-1" BuyEndDate="-1" PriceRule="40" VipRule="0" Discount="100"/>
+	<Property ID="1012" Name="低级纹章强化石" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="17" BuyStartDate="-1" BuyEndDate="-1" PriceRule="50" VipRule="0" Discount="100"/>
+	<Property ID="1013" Name="中级纹章强化石" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="17" BuyStartDate="-1" BuyEndDate="-1" PriceRule="100" VipRule="0" Discount="100"/>
+	<Property ID="1014" Name="宠物进阶石" CanBuyNum="9999" LimitType="1" NumLimit="5" CapitalType="17" BuyStartDate="-1" BuyEndDate="-1" PriceRule="30" VipRule="0" Discount="100"/>
+	<Property ID="1015" Name="花仙子宠物" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="17" BuyStartDate="-1" BuyEndDate="-1" PriceRule="600" VipRule="0" Discount="100"/>
+	<!--日常商店-->
+	<Property ID="1101" Name="格拉斯项链" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="15" ShowCondition="1,1|6;2,0" BuyStartDate="-1" BuyEndDate="-1" PriceRule="120" VipRule="0" Discount="100"/>
+	<Property ID="1102" Name="马纳项链" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="15" ShowCondition="1,5|8;2,0" BuyStartDate="-1" BuyEndDate="-1" PriceRule="120" VipRule="0" Discount="100"/>
+	<Property ID="1103" Name="雷欧项链" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="15" ShowCondition="1,2|3|4|7;2,0" BuyStartDate="-1" BuyEndDate="-1" PriceRule="120" VipRule="0" Discount="100"/>
+	<Property ID="1104" Name="通用80级橙色项链" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="15" ShowCondition="2,60" BuyStartDate="-1" BuyEndDate="-1" PriceRule="260" VipRule="0" Discount="100"/>
+	<Property ID="1105" Name="通用100级橙色项链" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="15" ShowCondition="2,80" BuyStartDate="-1" BuyEndDate="-1" PriceRule="600" VipRule="0" Discount="100"/>
+	<Property ID="1106" Name="通用120级橙色项链" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="15" ShowCondition="2,100" BuyStartDate="-1" BuyEndDate="-1" PriceRule="1200" VipRule="0" Discount="100"/>
+	<Property ID="1107" Name="低级素食" CanBuyNum="9999" LimitType="1" NumLimit="10" CapitalType="15" BuyStartDate="-1" BuyEndDate="-1" PriceRule="5" VipRule="0" Discount="100"/>
+	<Property ID="1108" Name="中级素食" CanBuyNum="9999" LimitType="1" NumLimit="10" CapitalType="15" BuyStartDate="-1" BuyEndDate="-1" PriceRule="20" VipRule="0" Discount="100"/>
+	<Property ID="1109" Name="高级素食" CanBuyNum="9999" LimitType="1" NumLimit="10" CapitalType="15" BuyStartDate="-1" BuyEndDate="-1" PriceRule="50" VipRule="0" Discount="100"/>
+	<Property ID="1110" Name="异炎晶体" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="15" BuyStartDate="-1" BuyEndDate="-1" PriceRule="40" VipRule="0" Discount="100"/>
+	<Property ID="1111" Name="龙纹石【5点】" CanBuyNum="9999" LimitType="1" NumLimit="5" CapitalType="15" BuyStartDate="-1" BuyEndDate="-1" PriceRule="100" VipRule="0" Discount="100"/>
+	<Property ID="1112" Name="纹章经验石（5000点）" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="15" BuyStartDate="-1" BuyEndDate="-1" PriceRule="80" VipRule="0" Discount="100"/>
+	<Property ID="1113" Name="宠物进阶石" CanBuyNum="9999" LimitType="1" NumLimit="5" CapitalType="15" BuyStartDate="-1" BuyEndDate="-1" PriceRule="30" VipRule="0" Discount="100"/>
+	<Property ID="1114" Name="小绵羊宠物" CanBuyNum="9999" LimitType="1" NumLimit="1" CapitalType="15" BuyStartDate="-1" BuyEndDate="-1" PriceRule="600" VipRule="0" Discount="100"/>
 </Object>

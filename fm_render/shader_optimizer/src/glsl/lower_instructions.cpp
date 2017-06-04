@@ -367,7 +367,7 @@ lower_instructions_visitor::ldexp_to_arith(ir_expression *ir)
     *    resulting_biased_exp = extracted_biased_exp + exp;
     *
     *    is_not_zero_or_underflow = gequal(resulting_biased_exp, 1);
-    *    x = csel(is_not_zero_or_underflow, x, copysign(0.0f, x));
+    *    x = csel(is_not_zero_or_underflow, x, xxcopysign(0.0f, x));
     *    resulting_biased_exp = csel(is_not_zero_or_underflow,
     *                                resulting_biased_exp, 0);
     *

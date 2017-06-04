@@ -1,436 +1,488 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <form>
-    <control name="main_form" entity="Form" script="move_test\form_collide_test" init="init">
-        <prop LimitInScreen="true" ShowGrid="true" IsGC="true" Left="21" Top="21" Width="302" Height="790" BackColor="74,0,0,255" ShadowColor="0,0,0,0" />
-        <event on_open="on_main_form_open" on_close="on_main_form_close" />
-        <control name="textgrid_floors" entity="Grid" script="" init="">
-            <prop ShowComment="true" CanSelectRow="true" ColWidth="50" ColWidths="30,30,30,80,80,80,80" RowHeight="24" ColCount="7" ScrollSize="17" HasHScroll="true" Left="8" Top="512" Width="270" Height="270" BackColor="43,255,255,255" ShadowColor="0,0,0,0" Text="textgrid_1" TabStop="true" />
-            <subor name="HScrollBar">
-                <prop Maximum="2" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0" />
-                <subor name="DecButton">
-                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                </subor>
-                <subor name="IncButton">
-                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                </subor>
-                <subor name="TrackButton">
-                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="171" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                </subor>
-            </subor>
-            <subor name="VScrollBar">
-                <prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0" />
-                <subor name="DecButton">
-                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                </subor>
-                <subor name="IncButton">
-                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                </subor>
-                <subor name="TrackButton">
-                    <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                </subor>
-            </subor>
-            <subor name="CornerLabel">
-                <prop Solid="true" RefCursor="WIN_HELP" ShadowColor="0,0,0,0" NoFrame="false" />
-            </subor>
-        </control>
-        <control name="lbl_move_mode" entity="Label" script="" init="">
-            <prop RefCursor="WIN_HELP" Left="32" Top="67" Width="174" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="move_mode:" />
-        </control>
-        <control name="lbl_x" entity="Label" script="" init="">
-            <prop RefCursor="WIN_HELP" Left="32" Top="118" Width="174" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="X=" />
-        </control>
-        <control name="lbl_y" entity="Label" script="" init="">
-            <prop RefCursor="WIN_HELP" Left="32" Top="140" Width="174" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Y=" />
-        </control>
-        <control name="lbl_z" entity="Label" script="" init="">
-            <prop RefCursor="WIN_HELP" Left="32" Top="166" Width="166" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Z=" />
-        </control>
-        <control name="lbl_5" entity="Label" script="" init="">
-            <prop RefCursor="WIN_HELP" Left="32" Top="376" Width="134" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="terrain_floors" />
-        </control>
-        <control name="lbl_floor_index" entity="Label" script="" init="">
-            <prop RefCursor="WIN_HELP" Left="32" Top="328" Width="166" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="floor_index =" />
-        </control>
-        <control name="lbl_1" entity="Label" script="" init="">
-            <prop Align="Center" RefCursor="WIN_HELP" Left="16" Top="8" Width="214" Height="16" ForeColor="255,255,253,255" ShadowColor="0,0,0,0" Text="地形碰撞和人物动作观察器" />
-        </control>
-        <control name="lbl_angley" entity="Label" script="" init="">
-            <prop RefCursor="WIN_HELP" Left="32" Top="188" Width="166" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Angle=" />
-        </control>
-        <control name="cbtn_target" entity="CheckButton" script="" init="">
-            <prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="32" Top="36" Width="80" Height="24" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="目标" HintText="显示选择对像的参数" TabStop="true" />
-            <event on_checked_changed="on_cbtn_target_checked_changed" />
-        </control>
-        <control name="lbl_move_speed" entity="Label" script="" init="">
-            <prop RefCursor="WIN_HELP" Left="32" Top="211" Width="166" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="move_speed =" />
-        </control>
-        <control name="lbl_basespeed" entity="Label" script="" init="">
-            <prop RefCursor="WIN_HELP" Left="32" Top="232" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="BaseSpeed=" />
-        </control>
-        <control name="lbl_actionscale" entity="Label" script="" init="">
-            <prop RefCursor="WIN_HELP" Left="32" Top="280" Width="254" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="ActionScale=" />
-        </control>
-        <control name="lbl_actionspeed" entity="Label" script="" init="">
-            <prop RefCursor="WIN_HELP" Left="32" Top="304" Width="254" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="ActionSpeed=" />
-        </control>
-        <control name="lbl_ident" entity="Label" script="" init="">
-            <prop RefCursor="WIN_HELP" Left="32" Top="400" Width="174" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Ident:" />
-        </control>
-        <control name="groupbox_info3" entity="GroupBox" script="" init="">
-            <prop Left="304" Top="112" Width="286" Height="414" BackColor="170,0,0,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Visible="false" />
-            <control name="lbl_logicstate" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="8" Top="96" Width="198" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="logic_state=" />
-            </control>
-            <control name="lbl_4" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="11" Top="79" Width="110" Height="16" ForeColor="255,255,0,0" ShadowColor="0,0,0,0" Text="战斗相关调试" />
-            </control>
-            <control name="lbl_pathfinding" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="9" Top="120" Width="198" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="path_finding=" />
-            </control>
-            <control name="lbl_pathfinding_old" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="8" Top="144" Width="198" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="old_path_finding=" />
-            </control>
-            <control name="lbl_10" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="8" Top="248" Width="94" Height="16" ForeColor="255,255,0,0" ShadowColor="0,0,0,0" Text="actor_role链接列表" />
-            </control>
-            <control name="mltbox_1" entity="MultiTextBox" script="" init="">
-                <prop ViewRect="0,0,270,110" LineHeight="20" ScrollSize="17" Left="8" Top="272" Width="270" Height="110" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="333" NoFrame="true" />
-            </control>
-            <control name="lbl_pathfinding_type" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="8" Top="168" Width="222" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="path_find_type=" />
-            </control>
-            <control name="lbl_stifftimeandtype" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="8" Top="224" Width="222" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="技能硬直时间" />
-            </control>
-            <control name="lbl_autocontrol" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="8" Top="200" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="自动控制状态" />
-            </control>
-        </control>
-        <control name="groupbox_action" entity="GroupBox" script="" init="">
-            <prop Left="304" Top="32" Width="278" Height="694" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Visible="false" />
-            <control name="lbl_12" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="8" Top="8" Width="182" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="选中目标移动参数" />
-            </control>
-            <control name="lbl_posix" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="8" Top="56" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="PosiX =" />
-            </control>
-            <control name="lbl_posiy" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="8" Top="80" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="PosiY =" />
-            </control>
-            <control name="lbl_posiz" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="8" Top="104" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="PosiZ =" />
-            </control>
-            <control name="lbl_orient" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="8" Top="128" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Orient =" />
-            </control>
-            <control name="lbl_dest_posix" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="8" Top="152" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="DestPosiX =" />
-            </control>
-            <control name="lbl_dest_posiy" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="8" Top="176" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="DestPosiY =" />
-            </control>
-            <control name="lbl_dest_posiz" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="8" Top="200" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="DestPosiZ =" />
-            </control>
-            <control name="lbl_dest_orient" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="8" Top="224" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="DestOrient =" />
-            </control>
-            <control name="lbl_move_dist" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="8" Top="248" Width="254" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="move_distance" />
-            </control>
-            <control name="lbl_max_move_dist" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="8" Top="272" Width="254" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="max_move_distance" />
-            </control>
-            <control name="lbl_state" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="8" Top="32" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Prop State =" />
-            </control>
-            <control name="lbl_2" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="8" Top="320" Width="198" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="cur blending action" />
-            </control>
-            <control name="lbl_actionset" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="8" Top="296" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="CurActionSet = " />
-            </control>
-            <control name="textgrid_actions" entity="Grid" script="" init="">
-                <prop CanSelectRow="true" ColWidth="40" ColWidths="20,200" RowHeight="24" ColCount="4" ScrollSize="17" HasHScroll="true" Left="8" Top="344" Width="262" Height="326" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Text="textgrid_1" TabStop="true" />
-                <subor name="HScrollBar">
-                    <prop Maximum="3" SmallChange="1" LargeChange="1" BackColor="255,224,224,224" ShadowColor="0,0,0,0" />
-                    <subor name="DecButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="IncButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="TrackButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="174" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                </subor>
-                <subor name="VScrollBar">
-                    <prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0" />
-                    <subor name="DecButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="IncButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="TrackButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                </subor>
-                <subor name="CornerLabel">
-                    <prop Solid="true" RefCursor="WIN_HELP" ShadowColor="0,0,0,0" NoFrame="false" />
-                </subor>
-            </control>
-        </control>
-        <control name="cbtn_page2" entity="CheckButton" script="" init="">
-            <prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="151" Top="37" Width="80" Height="24" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="第二分页" TabStop="true" />
-            <event on_checked_changed="on_cbtn_page2_checked_changed" />
-        </control>
-        <control name="groupbox_pages" entity="GroupBox" script="" init="">
-            <prop Left="296" Top="8" Width="318" Height="38" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" />
-            <control name="rbtn_actionlist" entity="RadioButton" script="" init="">
-                <prop Checked="true" BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="8" Top="7" Width="102" Height="24" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="动作混合列表" HintText="show action list" TabStop="true" />
-                <event on_checked_changed="on_rbtn_actionlist_checked_changed" />
-            </control>
-            <control name="rbtn_add_info" entity="RadioButton" script="" init="">
-                <prop ClickEvent="true" BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="132" Top="6" Width="80" Height="24" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="附加信息" TabStop="true" />
-                <event on_checked_changed="on_rbtn_add_info_checked_changed" />
-            </control>
-            <control name="rbtn_boneangle" entity="RadioButton" script="" init="">
-                <prop ClickEvent="true" BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="225" Top="6" Width="80" Height="24" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="骨骼旋转" TabStop="true" />
-                <event on_checked_changed="on_rbtn_boneangle_checked_changed" />
-            </control>
-            <control name="cbtn_1" entity="CheckButton" script="" init="">
-                <prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="228" Top="36" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="cbtn_1" TabStop="true" />
-            </control>
-        </control>
-        <control name="groupbox_bones" entity="GroupBox" script="" init="">
-            <prop Left="312" Top="40" Width="286" Height="662" BackColor="153,0,0,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Visible="false" />
-            <control name="lbl_aimobj" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="16" Top="542" Width="198" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="AimObject=" />
-            </control>
-            <control name="lbl_aimobjendtime" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="16" Top="563" Width="198" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="aim_obj_end_time=" />
-            </control>
-            <control name="lbl_6" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="-8" Top="8" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Bip01 Head" NoFrame="false" />
-            </control>
-            <control name="textgrid_head" entity="Grid" script="" init="">
-                <prop CanSelectRow="true" ColWidth="89" RowHeight="20" ColCount="3" ScrollSize="17" HasHScroll="true" Left="8" Top="29" Width="270" Height="102" BackColor="87,255,255,255" ShadowColor="0,0,0,0" Text="textgrid_1" TabStop="true" />
-                <subor name="HScrollBar">
-                    <prop Maximum="3" SmallChange="1" LargeChange="1" BackColor="255,224,224,224" ShadowColor="0,0,0,0" />
-                    <subor name="DecButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="IncButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="TrackButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="120" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                </subor>
-                <subor name="VScrollBar">
-                    <prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0" />
-                    <subor name="DecButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="IncButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="TrackButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                </subor>
-                <subor name="CornerLabel">
-                    <prop Solid="true" RefCursor="WIN_HELP" ShadowColor="0,0,0,0" NoFrame="false" />
-                </subor>
-            </control>
-            <control name="lbl_7" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="8" Top="138" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Bip01 Neck" />
-            </control>
-            <control name="textgrid_neck" entity="Grid" script="" init="">
-                <prop CanSelectRow="true" ColWidth="89" RowHeight="20" ColCount="3" ScrollSize="17" HasHScroll="true" Left="8" Top="143" Width="270" Height="62" BackColor="87,255,255,255" ShadowColor="0,0,0,0" Text="textgrid_1" TabStop="true" />
-                <subor name="HScrollBar">
-                    <prop Maximum="3" SmallChange="1" LargeChange="1" BackColor="255,224,224,224" ShadowColor="0,0,0,0" />
-                    <subor name="DecButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="IncButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="TrackButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="160" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                </subor>
-                <subor name="VScrollBar">
-                    <prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0" />
-                    <subor name="DecButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="IncButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="TrackButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                </subor>
-                <subor name="CornerLabel">
-                    <prop Solid="true" RefCursor="WIN_HELP" ShadowColor="0,0,0,0" NoFrame="false" />
-                </subor>
-            </control>
-            <control name="lbl_8" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="9" Top="216" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Bip01 Spine1" />
-            </control>
-            <control name="textgrid_spine1" entity="Grid" script="" init="">
-                <prop CanSelectRow="true" ColWidth="89" RowHeight="20" ColCount="3" ScrollSize="17" HasHScroll="true" Left="9" Top="236" Width="270" Height="62" BackColor="87,255,255,255" ShadowColor="0,0,0,0" Text="textgrid_1" TabStop="true" />
-                <subor name="HScrollBar">
-                    <prop Maximum="3" SmallChange="1" LargeChange="1" BackColor="255,224,224,224" ShadowColor="0,0,0,0" />
-                    <subor name="DecButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="IncButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="TrackButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="160" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                </subor>
-                <subor name="VScrollBar">
-                    <prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0" />
-                    <subor name="DecButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="IncButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="TrackButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                </subor>
-                <subor name="CornerLabel">
-                    <prop Solid="true" RefCursor="WIN_HELP" ShadowColor="0,0,0,0" NoFrame="false" />
-                </subor>
-            </control>
-            <control name="lbl_9" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="8" Top="303" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Bip01 Spine" />
-            </control>
-            <control name="textgrid_spine" entity="Grid" script="" init="">
-                <prop CanSelectRow="true" ColWidth="89" RowHeight="20" ColCount="3" ScrollSize="17" HasHScroll="true" Left="9" Top="324" Width="270" Height="62" BackColor="87,255,255,255" ShadowColor="0,0,0,0" Text="textgrid_1" TabStop="true" />
-                <subor name="HScrollBar">
-                    <prop Maximum="3" SmallChange="1" LargeChange="1" BackColor="255,224,224,224" ShadowColor="0,0,0,0" />
-                    <subor name="DecButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="IncButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="TrackButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="160" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                </subor>
-                <subor name="VScrollBar">
-                    <prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0" />
-                    <subor name="DecButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="IncButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="TrackButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                </subor>
-                <subor name="CornerLabel">
-                    <prop Solid="true" RefCursor="WIN_HELP" ShadowColor="0,0,0,0" NoFrame="false" />
-                </subor>
-            </control>
-            <control name="lbl_pelvis" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="13" Top="394" Width="246" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Bip01 Pelvis =" />
-            </control>
-            <control name="btn_clearaim" entity="Button" script="" init="">
-                <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="16" Top="510" Width="110" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="清除目标" TabStop="true" />
-                <event on_click="on_btn_clearaim_click" />
-            </control>
-            <control name="cbtn_stopradomlook" entity="CheckButton" script="" init="">
-                <prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="143" Top="509" Width="134" Height="24" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="停止随机看目标" TabStop="true" />
-                <event on_checked_changed="on_cbtn_stopradomlook_checked_changed" />
-            </control>
-            <control name="textgrid_turn" entity="Grid" script="" init="">
-                <prop CanSelectRow="true" ColWidth="89" RowHeight="20" ColCount="3" ScrollSize="17" HasHScroll="true" Left="9" Top="414" Width="270" Height="80" BackColor="87,255,255,255" ShadowColor="0,0,0,0" Text="textgrid_1" TabStop="true" />
-                <subor name="HScrollBar">
-                    <prop Maximum="3" SmallChange="1" LargeChange="1" BackColor="255,224,224,224" ShadowColor="0,0,0,0" />
-                    <subor name="DecButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="IncButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="TrackButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="160" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                </subor>
-                <subor name="VScrollBar">
-                    <prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0" />
-                    <subor name="DecButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="IncButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                    <subor name="TrackButton">
-                        <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0" />
-                    </subor>
-                </subor>
-                <subor name="CornerLabel">
-                    <prop Solid="true" RefCursor="WIN_HELP" ShadowColor="0,0,0,0" NoFrame="false" />
-                </subor>
-            </control>
-            <control name="lbl_3" entity="Label" script="" init="">
-                <prop RefCursor="WIN_HELP" Left="87" Top="652" Width="80" Height="16" ShadowColor="0,0,0,0" Text="lbl_3" />
-            </control>
-            <control name="btn_action_pause" entity="Button" script="" init="">
-                <prop NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="162" Top="609" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="动作暂停" TabStop="true" />
-                <event on_click="on_btn_action_pause_click" />
-            </control>
-        </control>
-        <control name="lbl_sync" entity="Label" script="" init="">
-            <prop RefCursor="WIN_HELP" Left="32" Top="89" Width="174" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="sync_state:" />
-        </control>
-        <control name="lbl_delay" entity="Label" script="" init="">
-            <prop RefCursor="WIN_HELP" Left="32" Top="424" Width="102" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Delay:" />
-        </control>
-        <control name="cbtn_2" entity="CheckButton" script="" init="">
-            <prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="520" Top="48" Width="89" Height="24" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="第一分页" TabStop="true" />
-            <event on_checked_changed="on_cbtn_page1_checked_changed" />
-        </control>
-        <control name="lbl_rotate_speed" entity="Label" script="" init="">
-            <prop RefCursor="WIN_HELP" Left="32" Top="256" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="RotateSpeed=" />
-        </control>
-        <control name="lbl_attack_speed" entity="Label" script="" init="">
-            <prop RefCursor="WIN_HELP" Left="32" Top="352" Width="174" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="AttackSpeed=" />
-        </control>
-        <control name="ipt_my_propname" entity="Edit" script="" init="">
-            <prop TextOffsetX="2" Caret="Default" Left="32" Top="448" Width="102" Height="20" ShadowColor="0,0,0,0" Cursor="WIN_IBEAM" TabStop="true" />
-        </control>
-        <control name="lbl_my_value" entity="Label" script="" init="">
-            <prop RefCursor="WIN_HELP" Left="136" Top="448" Width="46" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" />
-        </control>
-        <control name="lbl_getTraceMask" entity="Label" script="" init="">
-            <prop RefCursor="WIN_HELP" Left="24" Top="480" Width="134" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="地形getTraceMask" />
-        </control>
-        <control name="ipt_getTraceMaskPara" entity="Edit" script="" init="">
-            <prop TextOffsetX="2" Caret="Default" Left="168" Top="480" Width="70" Height="20" ShadowColor="0,0,0,0" Cursor="WIN_IBEAM" TabStop="true" />
-        </control>
-        <control name="lbl_getTraceMaskValue" entity="Label" script="" init="">
-            <prop RefCursor="WIN_HELP" Left="240" Top="480" Width="54" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" />
-        </control>
-        <control name="lbl_isstiff" entity="Label" script="" init="">
-            <prop RefCursor="WIN_HELP" Left="192" Top="448" Width="102" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="IsStiff：" />
-        </control>
-        <control name="btn_close" entity="Button" script="" init="">
-            <prop NormalImage="gui\use\haoyoujiemian\xinhaoyou_guanbi_up.png" FocusImage="gui\use\haoyoujiemian\xinhaoyou_guanbi_over.png" PushImage="gui\use\haoyoujiemian\xinhaoyou_guanbi_down.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="276" Top="3" Width="21" Height="21" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" />
-        </control>
-        <control name="lbl_effectnum" entity="Label" script="" init="">
-            <prop RefCursor="WIN_HELP" Left="152" Top="120" Width="150" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="特效面数：" />
-        </control>
-    </control>
+	<control name="main_form" entity="Form" script="move_test\form_collide_test" init="init">
+		<prop ShowGrid="true" Transparent="true" Left="21" Top="21" Width="360" Height="790" BackColor="74,0,0,255" ShadowColor="0,0,0,0" BackImage="gui/dragon_main/new_common/button/common_empty.png"/>
+		<event on_open="on_main_form_open" on_close="on_main_form_close"/>
+		<control name="textgrid_floors" entity="Grid" script="" init="">
+			<prop ShowComment="true" CanSelectRow="true" ColWidth="50" ColWidths="30,30,30,80,80,80,80" RowHeight="24" ColCount="7" ScrollSize="17" HasHScroll="true" Left="35" Top="512" Width="270" Height="270" BackColor="43,255,255,255" ShadowColor="0,0,0,0" Text="textgrid_1" TabStop="true"/>
+			<subor name="HScrollBar">
+				<prop Maximum="2" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0"/>
+				<subor name="DecButton">
+					<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+				</subor>
+				<subor name="IncButton">
+					<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+				</subor>
+				<subor name="TrackButton">
+					<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="171" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+				</subor>
+			</subor>
+			<subor name="VScrollBar">
+				<prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0" Visible="false"/>
+				<subor name="DecButton">
+					<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+				</subor>
+				<subor name="IncButton">
+					<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+				</subor>
+				<subor name="TrackButton">
+					<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+				</subor>
+			</subor>
+			<subor name="CornerLabel">
+				<prop Solid="true" RefCursor="WIN_HELP" ShadowColor="0,0,0,0" Visible="false" NoFrame="false"/>
+			</subor>
+		</control>
+		<control name="lbl_move_mode" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="54" Top="56" Width="174" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="move_mode:"/>
+		</control>
+		<control name="lbl_x" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="54" Top="144" Width="174" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="X="/>
+		</control>
+		<control name="lbl_y" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="54" Top="168" Width="174" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Y="/>
+		</control>
+		<control name="lbl_z" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="54" Top="192" Width="166" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Z="/>
+		</control>
+		<control name="lbl_5" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="56" Top="400" Width="134" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="terrain_floors"/>
+		</control>
+		<control name="lbl_floor_index" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="56" Top="352" Width="166" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="floor_index ="/>
+		</control>
+		<control name="lbl_1" entity="Label" script="" init="">
+			<prop Align="Center" RefCursor="WIN_HELP" Left="39" Top="8" Width="214" Height="16" ForeColor="255,255,253,255" ShadowColor="0,0,0,0" Text="地形碰撞和人物动作观察器"/>
+		</control>
+		<control name="lbl_angley" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="54" Top="208" Width="166" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Angle="/>
+		</control>
+		<control name="cbtn_target" entity="CheckButton" script="" init="">
+			<prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" Left="45" Top="36" Width="80" Height="24" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="目标" HintText="显示选择对像的参数" TabStop="true"/>
+			<event on_checked_changed="on_cbtn_target_checked_changed"/>
+		</control>
+		<control name="lbl_move_speed" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="54" Top="232" Width="166" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="move_speed ="/>
+		</control>
+		<control name="lbl_basespeed" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="56" Top="256" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="BaseSpeed="/>
+		</control>
+		<control name="lbl_actionscale" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="56" Top="304" Width="254" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="ActionScale="/>
+		</control>
+		<control name="lbl_actionspeed" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="56" Top="328" Width="254" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="ActionSpeed="/>
+		</control>
+		<control name="lbl_ident" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="56" Top="424" Width="174" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Ident:"/>
+		</control>
+		<control name="groupbox_info3" entity="GroupBox" script="" init="">
+			<prop Left="389" Top="112" Width="286" Height="414" BackColor="170,0,0,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Visible="false"/>
+			<control name="lbl_logicstate" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="96" Width="198" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="logic_state="/>
+			</control>
+			<control name="lbl_4" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="11" Top="79" Width="110" Height="16" ForeColor="255,255,0,0" ShadowColor="0,0,0,0" Text="战斗相关调试"/>
+			</control>
+			<control name="lbl_pathfinding" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="9" Top="120" Width="198" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="path_finding="/>
+			</control>
+			<control name="lbl_pathfinding_old" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="144" Width="198" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="old_path_finding="/>
+			</control>
+			<control name="lbl_10" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="248" Width="94" Height="16" ForeColor="255,255,0,0" ShadowColor="0,0,0,0" Text="actor_role链接列表"/>
+			</control>
+			<control name="mltbox_1" entity="MultiTextBox" script="" init="">
+				<prop ViewRect="0,0,270,110" LineHeight="20" ScrollSize="17" Left="8" Top="272" Width="270" Height="110" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="333" NoFrame="true"/>
+			</control>
+			<control name="lbl_pathfinding_type" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="168" Width="222" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="path_find_type="/>
+			</control>
+			<control name="lbl_stifftimeandtype" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="224" Width="222" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="技能硬直时间"/>
+			</control>
+			<control name="lbl_autocontrol" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="200" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="自动控制状态"/>
+			</control>
+		</control>
+		<control name="groupbox_action" entity="GroupBox" script="" init="">
+			<prop Transparent="true" Left="389" Top="90" Width="542" Height="694" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Visible="false"/>
+			<control name="lbl_12" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="8" Width="182" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="选中目标移动参数"/>
+			</control>
+			<control name="lbl_posix" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="56" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="PosiX ="/>
+			</control>
+			<control name="lbl_posiy" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="80" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="PosiY ="/>
+			</control>
+			<control name="lbl_posiz" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="104" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="PosiZ ="/>
+			</control>
+			<control name="lbl_orient" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="128" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Orient ="/>
+			</control>
+			<control name="lbl_dest_posix" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="152" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="DestPosiX ="/>
+			</control>
+			<control name="lbl_dest_posiy" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="176" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="DestPosiY ="/>
+			</control>
+			<control name="lbl_dest_posiz" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="200" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="DestPosiZ ="/>
+			</control>
+			<control name="lbl_dest_orient" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="224" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="DestOrient ="/>
+			</control>
+			<control name="lbl_move_dist" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="248" Width="254" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="move_distance"/>
+			</control>
+			<control name="lbl_max_move_dist" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="272" Width="254" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="max_move_distance"/>
+			</control>
+			<control name="lbl_state" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="32" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Prop State ="/>
+			</control>
+			<control name="lbl_2" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="320" Width="198" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="cur blending action"/>
+			</control>
+			<control name="lbl_actionset" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="296" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="CurActionSet = "/>
+			</control>
+			<control name="textgrid_actions" entity="Grid" script="" init="">
+				<prop CanSelectRow="true" ColWidth="450" ColWidths="20,450" RowHeight="24" ColCount="4" ScrollSize="17" HasHScroll="true" Transparent="true" Left="8" Top="344" Width="450" Height="326" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Enabled="false" Text="textgrid_1" TabStop="true"/>
+				<subor name="HScrollBar">
+					<prop Maximum="3" SmallChange="1" LargeChange="1" BackColor="255,224,224,224" ShadowColor="0,0,0,0"/>
+					<subor name="DecButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="IncButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="TrackButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="105" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+				</subor>
+				<subor name="VScrollBar">
+					<prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0" Visible="false"/>
+					<subor name="DecButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="IncButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="TrackButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+				</subor>
+				<subor name="CornerLabel">
+					<prop Solid="true" RefCursor="WIN_HELP" ShadowColor="0,0,0,0" Visible="false" NoFrame="false"/>
+				</subor>
+			</control>
+		</control>
+		<control name="cbtn_page2" entity="CheckButton" script="" init="">
+			<prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" Left="160" Top="36" Width="80" Height="24" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="第二分页" TabStop="true"/>
+			<event on_checked_changed="on_cbtn_page2_checked_changed"/>
+		</control>
+		<control name="groupbox_pages" entity="GroupBox" script="" init="">
+			<prop Left="402" Width="318" Height="75" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+			<control name="rbtn_actionlist" entity="RadioButton" script="" init="">
+				<prop Checked="true" BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="10" Top="5" Width="102" Height="24" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="动作混合列表" HintText="show action list" TabStop="true"/>
+				<event on_checked_changed="on_rbtn_actionlist_checked_changed"/>
+			</control>
+			<control name="rbtn_add_info" entity="RadioButton" script="" init="">
+				<prop ClickEvent="true" BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="134" Top="5" Width="80" Height="24" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="附加信息" TabStop="true"/>
+				<event on_checked_changed="on_rbtn_add_info_checked_changed"/>
+			</control>
+			<control name="rbtn_boneangle" entity="RadioButton" script="" init="">
+				<prop ClickEvent="true" BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="227" Top="5" Width="80" Height="24" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="骨骼旋转" TabStop="true"/>
+				<event on_checked_changed="on_rbtn_boneangle_checked_changed"/>
+			</control>
+			<control name="rbtn_nodelist" entity="RadioButton" script="" init="">
+				<prop ClickEvent="true" BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="10" Top="35" Width="80" Height="24" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="辅助点节点列表" TabStop="true"/>
+			</control>
+			<control name="cbtn_1" entity="CheckButton" script="" init="">
+				<prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" Left="225" Top="85" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="cbtn_1" TabStop="true"/>
+			</control>
+		</control>
+		<control name="groupbox_bones" entity="GroupBox" script="" init="">
+			<prop Left="399" Top="90" Width="286" Height="662" BackColor="153,0,0,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Visible="false"/>
+			<control name="lbl_aimobj" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="16" Top="542" Width="198" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="AimObject="/>
+			</control>
+			<control name="lbl_aimobjendtime" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="16" Top="563" Width="198" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="aim_obj_end_time="/>
+			</control>
+			<control name="lbl_6" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="-8" Top="8" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Bip01 Head" NoFrame="false"/>
+			</control>
+			<control name="textgrid_head" entity="Grid" script="" init="">
+				<prop CanSelectRow="true" ColWidth="89" RowHeight="20" ColCount="3" ScrollSize="17" HasHScroll="true" Left="8" Top="29" Width="270" Height="102" BackColor="87,255,255,255" ShadowColor="0,0,0,0" Text="textgrid_1" TabStop="true"/>
+				<subor name="HScrollBar">
+					<prop Maximum="3" SmallChange="1" LargeChange="1" BackColor="255,224,224,224" ShadowColor="0,0,0,0" Visible="false"/>
+					<subor name="DecButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="IncButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="TrackButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="120" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+				</subor>
+				<subor name="VScrollBar">
+					<prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0" Visible="false"/>
+					<subor name="DecButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="IncButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="TrackButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+				</subor>
+				<subor name="CornerLabel">
+					<prop Solid="true" RefCursor="WIN_HELP" ShadowColor="0,0,0,0" Visible="false" NoFrame="false"/>
+				</subor>
+			</control>
+			<control name="lbl_7" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="138" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Bip01 Neck"/>
+			</control>
+			<control name="textgrid_neck" entity="Grid" script="" init="">
+				<prop CanSelectRow="true" ColWidth="89" RowHeight="20" ColCount="3" ScrollSize="17" HasHScroll="true" Left="8" Top="143" Width="270" Height="62" BackColor="87,255,255,255" ShadowColor="0,0,0,0" Text="textgrid_1" TabStop="true"/>
+				<subor name="HScrollBar">
+					<prop Maximum="3" SmallChange="1" LargeChange="1" BackColor="255,224,224,224" ShadowColor="0,0,0,0" Visible="false"/>
+					<subor name="DecButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="IncButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="TrackButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="160" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+				</subor>
+				<subor name="VScrollBar">
+					<prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0" Visible="false"/>
+					<subor name="DecButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="IncButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="TrackButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+				</subor>
+				<subor name="CornerLabel">
+					<prop Solid="true" RefCursor="WIN_HELP" ShadowColor="0,0,0,0" Visible="false" NoFrame="false"/>
+				</subor>
+			</control>
+			<control name="lbl_8" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="9" Top="216" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Bip01 Spine1"/>
+			</control>
+			<control name="textgrid_spine1" entity="Grid" script="" init="">
+				<prop CanSelectRow="true" ColWidth="89" RowHeight="20" ColCount="3" ScrollSize="17" HasHScroll="true" Left="9" Top="236" Width="270" Height="62" BackColor="87,255,255,255" ShadowColor="0,0,0,0" Text="textgrid_1" TabStop="true"/>
+				<subor name="HScrollBar">
+					<prop Maximum="3" SmallChange="1" LargeChange="1" BackColor="255,224,224,224" ShadowColor="0,0,0,0" Visible="false"/>
+					<subor name="DecButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="IncButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="TrackButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="160" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+				</subor>
+				<subor name="VScrollBar">
+					<prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0" Visible="false"/>
+					<subor name="DecButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="IncButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="TrackButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+				</subor>
+				<subor name="CornerLabel">
+					<prop Solid="true" RefCursor="WIN_HELP" ShadowColor="0,0,0,0" Visible="false" NoFrame="false"/>
+				</subor>
+			</control>
+			<control name="lbl_9" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="8" Top="303" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Bip01 Spine"/>
+			</control>
+			<control name="textgrid_spine" entity="Grid" script="" init="">
+				<prop CanSelectRow="true" ColWidth="89" RowHeight="20" ColCount="3" ScrollSize="17" HasHScroll="true" Left="9" Top="324" Width="270" Height="62" BackColor="87,255,255,255" ShadowColor="0,0,0,0" Text="textgrid_1" TabStop="true"/>
+				<subor name="HScrollBar">
+					<prop Maximum="3" SmallChange="1" LargeChange="1" BackColor="255,224,224,224" ShadowColor="0,0,0,0" Visible="false"/>
+					<subor name="DecButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="IncButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="TrackButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="160" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+				</subor>
+				<subor name="VScrollBar">
+					<prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0" Visible="false"/>
+					<subor name="DecButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="IncButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="TrackButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+				</subor>
+				<subor name="CornerLabel">
+					<prop Solid="true" RefCursor="WIN_HELP" ShadowColor="0,0,0,0" Visible="false" NoFrame="false"/>
+				</subor>
+			</control>
+			<control name="lbl_pelvis" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="13" Top="394" Width="246" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Bip01 Pelvis ="/>
+			</control>
+			<control name="btn_clearaim" entity="Button" script="" init="">
+				<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="16" Top="510" Width="110" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="清除目标" TabStop="true"/>
+				<event on_click="on_btn_clearaim_click"/>
+			</control>
+			<control name="cbtn_stopradomlook" entity="CheckButton" script="" init="">
+				<prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" Left="143" Top="509" Width="134" Height="24" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="停止随机看目标" TabStop="true"/>
+				<event on_checked_changed="on_cbtn_stopradomlook_checked_changed"/>
+			</control>
+			<control name="textgrid_turn" entity="Grid" script="" init="">
+				<prop CanSelectRow="true" ColWidth="89" RowHeight="20" ColCount="3" ScrollSize="17" HasHScroll="true" Left="9" Top="414" Width="270" Height="80" BackColor="87,255,255,255" ShadowColor="0,0,0,0" Text="textgrid_1" TabStop="true"/>
+				<subor name="HScrollBar">
+					<prop Maximum="3" SmallChange="1" LargeChange="1" BackColor="255,224,224,224" ShadowColor="0,0,0,0" Visible="false"/>
+					<subor name="DecButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="IncButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="TrackButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="160" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+				</subor>
+				<subor name="VScrollBar">
+					<prop Maximum="10" SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0" Visible="false"/>
+					<subor name="DecButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="IncButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="TrackButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="10" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+				</subor>
+				<subor name="CornerLabel">
+					<prop Solid="true" RefCursor="WIN_HELP" ShadowColor="0,0,0,0" Visible="false" NoFrame="false"/>
+				</subor>
+			</control>
+			<control name="lbl_3" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="87" Top="652" Width="80" Height="16" ShadowColor="0,0,0,0" Text="lbl_3"/>
+			</control>
+			<control name="btn_action_pause" entity="Button" script="" init="">
+				<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="162" Top="609" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="动作暂停" TabStop="true"/>
+				<event on_click="on_btn_action_pause_click"/>
+			</control>
+		</control>
+		<control name="groupbox_nodelist" entity="GroupBox" script="" init="">
+			<prop Left="376" Top="90" Width="360" Height="662" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Visible="false"/>
+			<control name="grid_node_list" entity="Grid" script="" init="">
+				<prop RowHeaderVisible="false" CanSelectRow="true" ColWidth="360" RowHeight="24" ColCount="1" ScrollSize="17" HasHScroll="true" AlwaysVScroll="true" AlwaysHScroll="true" Top="100" Width="360" Height="450" BackColor="153,87,198,106" ShadowColor="0,0,0,0" Text="Grid1" TabStop="true"/>
+				<subor name="HScrollBar">
+					<prop Maximum="1" SmallChange="1" LargeChange="1" BackColor="255,224,224,224" ShadowColor="0,0,0,0" AutoSize="true"/>
+					<subor name="DecButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="IncButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="15" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="TrackButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="157" Height="17" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+				</subor>
+				<subor name="VScrollBar">
+					<prop SmallChange="1" LargeChange="5" BackColor="255,224,224,224" ShadowColor="0,0,0,0"/>
+					<subor name="DecButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="IncButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="15" BackColor="255,192,192,192" ShadowColor="0,0,0,0"/>
+					</subor>
+					<subor name="TrackButton">
+						<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="17" Height="404" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Visible="false"/>
+					</subor>
+				</subor>
+				<subor name="CornerLabel">
+					<prop Solid="true" RefCursor="WIN_HELP" ShadowColor="0,0,0,0" NoFrame="false"/>
+				</subor>
+			</control>
+			<control name="btn_actor" entity="Button" script="" init="">
+				<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="135" Top="6" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="角色模型" DataSource="actor"/>
+			</control>
+			<control name="btn_root" entity="Button" script="" init="">
+				<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="261" Top="6" Width="80" Height="24" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="坐骑模型" DataSource="root"/>
+			</control>
+			<control name="lab_nodelist_name" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="9" Top="6" Width="80" Height="16" ShadowColor="0,0,0,0" Text="NodeListName"/>
+			</control>
+		</control>
+		<control name="lbl_sync" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="54" Top="80" Width="174" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="sync_state:"/>
+		</control>
+		<control name="lbl_delay" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="56" Top="440" Width="102" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="Delay:"/>
+		</control>
+		<control name="cbtn_2" entity="CheckButton" script="" init="">
+			<prop BoxSize="12" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" Left="628" Top="48" Width="89" Height="24" ForeColor="255,255,255,255" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="第一分页" TabStop="true"/>
+			<event on_checked_changed="on_cbtn_page1_checked_changed"/>
+		</control>
+		<control name="lbl_rotate_speed" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="56" Top="280" Width="262" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="RotateSpeed="/>
+		</control>
+		<control name="lbl_attack_speed" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="56" Top="376" Width="174" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="AttackSpeed="/>
+		</control>
+		<control name="ipt_my_propname" entity="Edit" script="" init="">
+			<prop TextOffsetX="2" Caret="Default" Left="47" Top="464" Width="102" Height="20" ShadowColor="0,0,0,0" Cursor="WIN_IBEAM" TabStop="true"/>
+		</control>
+		<control name="lbl_my_value" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="166" Top="448" Width="46" Height="22" ForeColor="255,255,255,255" ShadowColor="0,0,0,0"/>
+		</control>
+		<control name="lbl_getTraceMask" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="41" Top="488" Width="134" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="地形getTraceMask"/>
+		</control>
+		<control name="ipt_getTraceMaskPara" entity="Edit" script="" init="">
+			<prop TextOffsetX="2" Caret="Default" Left="206" Top="480" Width="70" Height="20" ShadowColor="0,0,0,0" Cursor="WIN_IBEAM" TabStop="true"/>
+		</control>
+		<control name="lbl_getTraceMaskValue" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="291" Top="480" Width="54" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0"/>
+		</control>
+		<control name="lbl_isstiff" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="238" Top="448" Width="102" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="IsStiff："/>
+		</control>
+		<control name="btn_close" entity="Button" script="" init="">
+			<prop FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="331" Top="3" Width="21" Height="21" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true"/>
+		</control>
+		<control name="lbl_effectnum" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="195" Top="144" Width="150" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="特效面数："/>
+		</control>
+		<control name="lbl_camera_pos" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Top="104" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="camera_pos="/>
+		</control>
+		<control name="lbl_camera_angle" entity="Label" script="" init="">
+			<prop RefCursor="WIN_HELP" Left="8" Top="120" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="cam_angle="/>
+		</control>
+	</control>
 </form>
+

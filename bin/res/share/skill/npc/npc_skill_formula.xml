@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="gb2312"?>
 <Object>
-	<Property ID="forest_test" Name="旋风斩" FormulaType="2" DamageCategory="1" Formula="R[10,15]"/>
-	<Property ID="lj1_dam" Name="连击1" FormulaType="2" DamageCategory="1" Formula="R[4,7]"/>
-	<Property ID="Normal_Attack_dam" Name="普攻伤害" FormulaType="2" DamageCategory="1" Formula="0"/>
-	<Property ID="item_jiaxue_001" Name="1级血瓶" FormulaType="2" DamageCategory="1"/>
+	<Property ID="TT_npc_jzpg_001" FormulaType="1" DamageCategory="1" Formula="P1*P2" Src1="5" Src2="4" Prop2="0.9;1.1"/>
+	<Property ID="TT_npc_jzpg_002" FormulaType="1" DamageCategory="1" Formula="P1*P2" Src1="5" Src2="4" Prop2="0.9;1.1"/>
+	<Property ID="TT_npc_ycpg_001" FormulaType="1" DamageCategory="1" Formula="P1*P2" Src1="5" Src2="4" Prop2="0.9;1.1"/>
+	<Property ID="TT_npc_ycpg_002" FormulaType="1" DamageCategory="1" Formula="P1*P2" Src1="5" Src2="4" Prop2="0.9;1.1"/>
+	<Property ID="guide_common_skill_1" Name="引导战场通用1" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="50;60"/>
+	<Property ID="ss4_monster_yuren_001_1" Name="普攻左" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="15;20"/>
+	<Property ID="ss4_monster_yuren_001_2" Name="普攻右" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="15;20"/>
+	<Property ID="npc_monster_gsb_01" Name="小怪通用公式包" FormulaType="1" DamageCategory="1" Formula="P1*P2" Src1="5" Src2="4" Prop2="0.9;1.1"/>
+	<Property ID="npc_boss_gsb_01" Name="BOSS多段系数包" FormulaType="1" DamageCategory="1" Formula="P1*P2" Src1="5" Src2="4" Prop2="0.9;1.1"/>
 </Object>
-
 

@@ -1,11 +1,3 @@
-//--------------------------------------------------------------------
-// 文件名:		dx_render_resource.cpp
-// 内  容:		
-// 说  明:		
-// 创建日期:	2007年3月26日
-// 创建人:		陆利民
-// 版权所有:	苏州蜗牛电子有限公司
-//--------------------------------------------------------------------
 
 #include "render.h"
 #include "texture.h"
@@ -499,7 +491,8 @@ bool Render::UpdateDynamicVB(IDynamicVB* pVBuffer, unsigned int offset,
 	this->GetPerformance()->dLoadVBData +=size/1024.0f;
 #endif	
 
-	GLenum res = glGetError();
+  //GLenum res = glGetError();
+  GLenum res = 0;
 
 	if (res != GL_NO_ERROR)
 	{
@@ -537,7 +530,8 @@ bool Render::UpdateDynamicIB(IDynamicIB* pIBuffer, unsigned int offset,
 	this->GetPerformance()->dLoadIBData +=size/1024.0f;
 #endif
 
-	GLenum res = glGetError();
+  //GLenum res = glGetError();
+  GLenum res = 0;
 
 	if (res != GL_NO_ERROR)
 	{

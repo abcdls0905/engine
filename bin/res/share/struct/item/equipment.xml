@@ -1,78 +1,74 @@
-<?xml version="1.0" encoding="gb2312"?>
+<?xml version="1.0" encoding="gb2312" ?>
 <!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by  () -->
 <!--Equip_Item的属性表，继承自Nim_Item，所有可装备的物品的基类-->
 <object>
-	<!-- 基本属性 -->
-	<properties>
-		<property name="AdvHP" type="Int" public="false" private="true" save="true" desc="每次进阶增长的血量"/>
-		<property name="AdvAtk" type="Int" public="false" private="true" save="true" desc="每次进阶增长的攻击"/>
-		<property name="StrengthenAtk" type="Int" public="false" private="true" save="true" desc="每次强化增长的攻击"/>
-		<property name="AdvPropPackage" type="string" public="false" private="true" save="true" desc="进阶属性包"/>
-		<property name="StrengthenPropPackage" type="string" public="false" private="true" save="true" desc="强化属性包"/>
-		<property name="StrengthenCurLevel" type="Int" public="false" private="true" save="true" realtime="true" desc="当前强化等级"/>
-		<property name="UpgradeCurLevel" type="Int" public="false" private="true" save="true" realtime="true" desc="当前进阶等级"/>
-		<property name="EquipType" type="string" public="false" private="true" save="false" desc="装备栏位类型, 见EquipDefine.ini文件中的定义"/>
-		<property name="FightingCapacity" type="int" public="false" private="true" save="true" desc="装备战斗力"/>
-		<property name="ElementLabel" type="string" public="false" private="true" save="true" desc="元素标签"/>
-		<property name="SpecialLabel" type="string" public="false" private="true" save="true" desc="特殊标签"/>
-		<property name="ColorLabel" type="int" public="false" private="true" save="true" desc="颜色标签"/>
-		<property name="NameLabel" type="int" public="false" private="true" save="true" desc="装备标签"/>
-		<property name="Suit" type="string" public="false" private="true" save="false" desc="套装ID"/>
-		<property name="RoleFit" type="string" public="false" private="true" save="false" desc="推荐职业包ID"/>
-		<property name="StrengthenHP" type="Int" public="false" private="true" save="false" desc="每次强化增长的HP"/>
-		<property name="StrengthenAD" type="Int" public="false" private="true" save="false" desc="每次强化增长的物理攻击"/>
-		<property name="StrengthenAP" type="Int" public="false" private="true" save="false" desc="每次强化增长的法术攻击"/>
-		<property name="StrengthenADDef" type="Int" public="false" private="true" save="false" desc="每次强化增长的物理防御"/>
-		<property name="StrengthenAPDef" type="Int" public="false" private="true" save="false" desc="每次强化增长的法术防御"/>
-		<property name="UpgradeHP" type="Int" public="false" private="true" save="false" desc="每次精炼增长的HP"/>
-		<property name="UpgradeAD" type="Int" public="false" private="true" save="false" desc="每次精炼增长的物理攻击"/>
-		<property name="UpgradeAP" type="Int" public="false" private="true" save="false" desc="每次精炼增长的法术攻击"/>
-		<property name="UpgradeADDef" type="Int" public="false" private="true" save="false" desc="每次精炼增长的物理防御"/>
-		<property name="UpgradeAPDef" type="Int" public="false" private="true" save="false" desc="每次精炼增长的法术防御"/>
-		<property name="RedBind" type="Int" public="false" private="true" save="true" desc="红装绑定"/>
-    <property name="FlyUp" type="Int" public="false" private="true" save="false" desc="每次精炼增长的法术防御"/>
-    <property name="jcsx" type="int" public="false" private="false" save="false" desc="基础属性"/>
-    <property name="tssx" type="int" public="false" private="false" save="false" desc="初始特殊属性"/>
-    <property name="qhsx" type="int" public="false" private="false" save="false" desc="强化属性"/>
-    <property name="jlsx" type="int" public="false" private="false" save="false" desc="精炼属性"/>
-    <property name="qhjh" type="int" public="false" private="false" save="false" desc="强化激活属性"/>
-    <property name="jljh" type="int" public="false" private="false" save="false" desc="精炼激活属性"/>
-    <property name="tzsx" type="int" public="false" private="false" save="false" desc="套装属性"/>
-		<property name="WingFashion" type="string" public="false" private="true" save="true" realtime="true" desc="翅膀时装configID列表，逗号隔开"/>
-		<property name="ActiveWingFashion" type="string" public="false" private="true" save="true" realtime="true" desc="当前激活的翅膀时装"/>
-  </properties>
-	<!--策划要求装备的修正表必须保存不得重刷-->
-	<records>
-		<record name="OpenLockStrenRec" cols="7" maxrows="16" save="true" public="false" private="true" desc="强化解锁属性表">
-			<column type="string" desc="属性名"/>
-			<column type="DWORD" desc="属性值"/>
-			<column type="DWORD" desc="解锁条件"/>
-			<column type="DWORD" desc="是否为激活状态1为激活0为不激活即不能起到作用"/>
-			<column type="DWORD" desc="是否阴影显示1为显示0为不显示，无论显示与否都不在装备上起作用"/>
-			<column type="string" desc="说明文字ID"/>
-			<column type="string" desc="说明文字ID"/>
-		</record>
-		<record name="OpenLockUpgradeRec" cols="7" maxrows="16" save="true" public="false" private="true" desc="进阶解锁属性表">
-			<column type="string" desc="属性名"/>
-			<column type="DWORD" desc="属性值"/>
-			<column type="DWORD" desc="解锁条件"/>
-			<column type="DWORD" desc="是否为激活状态1为激活0为不激活即不能起到作用"/>
-			<column type="DWORD" desc="是否阴影显示1为显示0为不显示，无论显示与否都不在装备上起作用"/>
-			<column type="string" desc="说明文字ID"/>
-			<column type="string" desc="说明文字ID"/>
-		</record>
-		<record name="AwakeRec" cols="3" maxrows="16" save="true" public="false" private="true" realtime="true" desc="觉醒表">
-            <column type="DWORD" desc="觉醒ID"/>
-			<column type="DWORD" desc="觉醒等级"/>
-			<column type="DWORD" desc="觉醒槽位"/>
-        </record>
-    <record name="WingCellRec" cols="6" maxrows="10" save="true" public="false" private="true" realtime="true" desc="翅膀镶嵌孔，保存孔位类型，品质和镶嵌的宝石">
-      <column type="DWORD" desc="孔位类型，1金2木3水4火5土"/>
-      <column type="DWORD" desc="孔位品质，绿蓝紫橙..."/>
-      <column type="DWORD" desc="此孔位镶嵌的宝石ID"/>
-      <column type="DWORD" desc="此孔位镶嵌的宝石等级"/>
-      <column type="DWORD" desc="临时保存随机品质"/>
-      <column type="DWORD" desc="临时保存随机等级"/>
-    </record>
-  </records>
+    <!-- 基本属性 -->
+    <properties>
+    <property name="EquipType" type="string" public="false" private="true" save="false" desc="装备栏位类型, 见EquipDefine.ini文件中的定义" />
+	<property name="EquipLimit" type="dword" public="false" private="false" save="false" desc="装备此物品的等级条件限制" />
+	<property name="EquipProfessionLimit" type="dword" public="false" private="false" save="false" desc="装备此物品的职业条件限制" />
+	<property name="StrengthenLevel" type="dword" public="true" private="true" save="true" realtime="true" desc="强化等级" />
+	<property name="ForgeLevel" type="dword" public="true" private="true" save="true" desc="锻造等级" />
+	<property name="ForgeAddRate" type="dword" public="false" private="true" save="true" desc="锻造升级失败后增加的概率" />
+	<property name="LastForgeTime" type="int64" public="false" private="true" save="true" desc="最后一次锻造的时间" />
+	
+	<property name="PropModifyPackID" type="dword" public="false" private="true" save="true" desc="基础属性修正包" />
+	<property name="AppendModifyPackID" type="dword" public="false" private="false" save="true" desc="附加属性修正包" />
+	<property name="StrengthenModifyRatio" type="float" public="false" private="true" save="true" desc="强化基础属性提升比率"/>
+	<property name="StrengthenUnlockModifyPack" type="dword" public="false" private="true" save="true" desc="强化解锁属性修正包"/>
+	<property name="ForgeModifyPack" type="dword" public="false" private="false" save="true" desc="锻造属性修正包"/>
+	<property name="SymbolTattooRatio" type="float" public="false" private="false" save="true" desc="神符之语基础属性提升比率。0.1代表提升基础属性的10% "/>
+
+	<property name="BaseBattleAbility" type="string" public="false" private="false" save="false" desc="装备基本的战斗力" />
+	<property name="ForgeBattleAbility" type="string" public="false" private="false" save="false" desc="强化战斗力" />
+	<property name="StrengthenBattleAbility" type="string" public="false" private="false" save="false" desc="锻造战斗力" />
+
+	<!--装备的几个基础属性不用修正包-->
+	<property name="AtkAdd" type="int" public="false" private="false" save="false" realtime="false" desc="攻击附加"/>
+	<property name="DefAdd" type="int" public="false" private="false" save="false" realtime="false" desc="防御附加"/>
+	<property name="StrAdd" type="int" public="false" private="false" save="false" desc="力量附加"/>
+	<property name="DexAdd" type="int" public="false" private="false" save="false" desc="敏捷附加"/>
+	<property name="IntAdd" type="int" public="false" private="false" save="false" desc="智力附加"/>
+	<property name="ConAdd" type="int" public="false" private="false" save="false" desc="耐力附加"/>
+	<property name="TenAdd" type="int" public="false" private="false" save="false" desc="韧性附加"/>
+	
+    <property name="GemHole" type="string" public="false" private="false" save="false" desc="宝石孔"/>	
+	<property name="TattooHoleNum" type="dword" public="false" private="true" save="true" realtime="true" desc="符文孔"/>  
+	<property name="EquipSubType" type="dword" public="false" private="true" save="false" desc="装备分支类型" />
+
+	<property name="ArtPackList" type="string" public="false" private="false" save="false" desc="艺术包" />
+
+    </properties>
+    <!--表格-->
+    <records>
+	<record name="RandomPropRec" cols="4" maxrows="32" save="true" public="true" private="true" desc="随机属性修正表">
+		<column type="string" desc="属性名"/>
+		<column type="float" desc="修正属性值"/>
+        <column type="dword" desc="类型"/>
+        <column type="dword" desc="颜色"/>
+	</record>
+	<record name="TempRandomPropRec" cols="3" maxrows="32" save="false" public="false" private="false" desc="随机属性修正表">
+		<column type="string" desc="属性名"/>
+		<column type="float" desc="修正属性值"/>
+		<column type="float" desc="倍率"/>
+	</record>
+	<record name="gem_rec" cols="3" maxrows="16" save="true" public="false" private="true" desc="宝石镶嵌表">
+		<column type="byte" desc="宝石孔位置"/>
+		<column type="dword" desc="宝石索引"/>
+		<column type="string" desc="宝石ID"/>
+	</record>
+	<record name="tattoo_rec" cols="3" maxrows="10" save="true" public="false" private="true" desc="符文镶嵌表">		
+		<column type="string" desc="符文ID"/>
+		<column type="dword"  desc="符文位置"/>
+		<column type="dword"  desc="符文类型"/>
+	</record>
+	<record name="tattoo_rune_rec" cols="3" maxrows="100" save="true" public="false" private="true" desc="符文之语属性表">
+        <column type="dword"  desc="符文之语类型"/>	
+		<column type="string" desc="附加信息"/>
+		<column type="string" desc="译文ID"/>
+	</record>
+    </records>
+    <!--从其他文件加载属性-->
+    <includes>
+    </includes>
 </object>

@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="gb2312"?>
-
+<!-- 分享配置 -->
+<!--
+	ID 分享平台（1：微信分享；2：朋友圈；3：微博）
+	Award格式:(物品栏代号，物品ID，物品数量；物品栏代号，物品ID，物品数量；..........)
+	Property
+-->
 <Object>
-	<Property ID="first_time" Award="Item_zs100L:1,Item_jb150000:1,Item_JingTieShi:50" desc="首次分享"/>
-	<Property ID="everyday"  Award="Item_jb1N:150000,Item_zs1L:100,Item_fbqh01:1" desc="每日分享"/>
+	<Property ID="1" prop="WeixinShareFriend" mail="sns_share_01"  Award="Gold,100000;BindDiamond,100"/>
+	<Property ID="2" prop="WeixinShareFriend" mail="sns_share_02"  Award="Gold,100000;BindDiamond,100"/>
 </Object>

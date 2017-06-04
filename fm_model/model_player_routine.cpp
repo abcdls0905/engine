@@ -1187,7 +1187,8 @@ void CModelPlayer::SetShaderConstValue(IShaderProgram* pShader, const MatInfo* i
 		FmVec4 light_diffuse = pContext->GetVector4(IRenderContext::V_LIGHT_DIFFUSE);
 		light_ambient.w = pContext->GetFloat(IRenderContext::F_REFLECT_FACTOR);
 		ShaderManager::Inst().SetShaderValue4f(c_LightAmbient, light_ambient);
-		ShaderManager::Inst().SetShaderValue4f(c_LightDiffuse, light_diffuse);
+    //ShaderManager::Inst().SetShaderValue4f(c_LightDiffuse, light_diffuse);
+    ShaderManager::Inst().SetShaderValue4f(c_LightDiffuse, FmVec4(0.5, 0.5, 0.5, 1));
 	}
 
 	if (pContext->GetEnableDynamicShadow())

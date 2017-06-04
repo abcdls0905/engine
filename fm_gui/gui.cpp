@@ -667,6 +667,7 @@ void Gui::Realize()
 	m_fTimeCount += frame_seconds;
 
 
+  //ls test
 	// 显示帧数
 	if (m_bShowFPS)
 	{

@@ -1,966 +1,507 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
 <!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
 <Root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation=".\ImageAnimations.xsd">
 	<!--跟随动画测试2-->
-	<Animation Name="Creat_Smallarrow_Left_Appear_New" Info="特征按钮出现动画（左箭头）跟随动画随着父动画的播放属性播放完成后继续播放" IsPng="true" IsDynamicCreate="true" BlendMode="0" ScaleMotive="" AlphaMotive="0,0;300,255">
-		<ImageFrame FileName="gui\creat\empty.png" KeepTime="300"/>
-		<MoveStep x="40" y="0" TimeIndex="0"/>
-		<MoveStep x="0" y="0" TimeIndex="300"/>
-		<SubAnimation Name="Creat_Smallarrow_Left_Normal" FollowMove="true" FollowAlpha="true" x="0" y="0"/>
-	</Animation>
-	<Animation Name="treasure_liuguang" Info="treasure_liuguang" IsPng="true" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\animation\baoz_cheng_bd0000.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\animation\baoz_cheng_bd0001.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\animation\baoz_cheng_bd0002.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\animation\baoz_cheng_bd0003.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\animation\baoz_cheng_bd0004.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\animation\baoz_cheng_bd0005.png" KeepTime="150"/>
-	</Animation>
-	<Animation Name="cs_result_victory" Info="cs_result_victory" IsPng="true" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\battle\scene_account\victory1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\battle\scene_account\victory2.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\battle\scene_account\victory3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\battle\scene_account\victory4.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\battle\scene_account\victory5.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\battle\scene_account\victory6.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\battle\scene_account\victory7.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\battle\scene_account\victory8.png" KeepTime="100"/>
-	</Animation>
-	<Animation Name="cs_result_star" Info="cs_result_star" IsPng="true" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\battle\scene_account\star1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\battle\scene_account\star2.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\battle\scene_account\star3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\battle\scene_account\star8.png" KeepTime="100"/>
-	</Animation>
-	<Animation Name="combo_tiaozi" Info="combo_tiaozi" IsPng="true" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\common\special\combo_001.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\common\special\combo_002.png" KeepTime="100"/>
-	</Animation>
-	<Animation Name="guanka_go" Info="guanka_go" IsPng="true" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\animation\GO0000.png" KeepTime="200"/>
-		<ImageFrame FileName="gui\animation\GO0001.png" KeepTime="200"/>
-		<ImageFrame FileName="gui\animation\GO0002.png" KeepTime="200"/>
-		<ImageFrame FileName="gui\animation\GO0003.png" KeepTime="200"/>
-		<ImageFrame FileName="gui\animation\GO0004.png" KeepTime="200"/>
-		<ImageFrame FileName="gui\animation\GO0005.png" KeepTime="200"/>
-	</Animation>
-	<Animation Name="talent_blink" Info="talent_blink" IsPng="true" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\staratlas\tianfu_baixingdonghua_1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\staratlas\tianfu_baixingdonghua_2.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\staratlas\tianfu_baixingdonghua_3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\staratlas\tianfu_baixingdonghua_3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\staratlas\tianfu_baixingdonghua_4.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\staratlas\tianfu_baixingdonghua_5.png" KeepTime="100"/>
-	</Animation>
-	<Animation Name="jinglian_chenggong" Info="jinglian_chenggong" IsPng="true" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\animation\jinglian1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\jinglian2.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\jinglian3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\jinglian4.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\jinglian5.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\jinglian6.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\jinglian7.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\jinglian8.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\jinglian9.png" KeepTime="100"/>
-	</Animation>
-	<Animation Name="qianghua_chenggong" Info="qianghua_chenggong" IsPng="true" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\animation\qianghua1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\qianghua2.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\qianghua3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\qianghua4.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\qianghua5.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\qianghua6.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\qianghua7.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\qianghua8.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\qianghua9.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\qianghua10.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\qianghua11.png" KeepTime="100"/>
-	</Animation>
-	<Animation Name="chest_open" Info="chest_open" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\main\treasure\baiox_bihe.jpg" KeepTime="500"/>
-		<ImageFrame FileName="gui\main\treasure\baiox_dakai.jpg" KeepTime="500"/>
-	</Animation>
-	<Animation Name="level_up" Info="level_up" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\common\window\levelup.jpg" KeepTime="500"/>
-	</Animation>
-	<Animation Name="waiting" Info="waiting" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\loading\dian1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\loading\dian2.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\loading\dian3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\loading\dian4.png" KeepTime="100"/>
-	</Animation>
-	<Animation Name="finger_touch" Info="finger_touch" IsPng="true" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\guide\xinshouinterface_01.png" KeepTime="500"/>
-		<ImageFrame FileName="gui\guide\xinshouinterface_02.png" KeepTime="500"/>
-	</Animation>
-	<Animation Name="func_jiesuo" Info="func_jiesuo" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\jiesuo\jiesuo001.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\jiesuo\jiesuo002.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\jiesuo\jiesuo003.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\jiesuo\jiesuo004.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\jiesuo\jiesuo005.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\jiesuo\jiesuo006.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\jiesuo\jiesuo007.png" KeepTime="100"/>
-	</Animation>
-	<Animation Name="gold_ani" Info="gold" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\animation\jinbi1.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\jinbi2.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\jinbi3.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\jinbi4.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\jinbi5.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\jinbi6.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\jinbi7.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\jinbi8.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\jinbi9.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\jinbi10.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\jinbi11.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\jinbi12.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\jinbi13.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\jinbi14.jpg" KeepTime="100"/>
-	</Animation>
-	<Animation Name="diamond_ani" Info="diamond" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\animation\zuanshi1.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\zuanshi2.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\zuanshi3.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\zuanshi4.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\zuanshi5.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\zuanshi6.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\zuanshi7.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\zuanshi8.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\zuanshi9.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\zuanshi10.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\zuanshi11.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\zuanshi12.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\zuanshi13.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\zuanshi14.jpg" KeepTime="100"/>
-	</Animation>
-	<Animation Name="tishishengji" Info="tishishengji" IsPng="true" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\animation\tishishengji1.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\animation\tishishengji2.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\animation\tishishengji3.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\animation\tishishengji2.png" KeepTime="150"/>
-	</Animation>
-	<Animation Name="anniutishi2" Info="anniutishi2" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\animation\anniu_waifaguang_lan1.jpg" KeepTime="150"/>
-		<ImageFrame FileName="gui\animation\anniu_waifaguang_lan2.jpg" KeepTime="150"/>
-		<ImageFrame FileName="gui\animation\anniu_waifaguang_lan3.jpg" KeepTime="150"/>
-	</Animation>
-	<Animation Name="anniutishi3" Info="anniutishi3" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\animation\anniuwaifaguang1.jpg" KeepTime="150"/>
-		<ImageFrame FileName="gui\animation\anniuwaifaguang2.jpg" KeepTime="150"/>
-		<ImageFrame FileName="gui\animation\anniuwaifaguang3.jpg" KeepTime="150"/>
-	</Animation>
-	<Animation Name="teamloading" Info="teamloading" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\teamloading\01.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\teamloading\02.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\teamloading\03.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\teamloading\04.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\teamloading\05.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\teamloading\06.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\teamloading\07.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\teamloading\08.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\teamloading\09.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\teamloading\10.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\teamloading\11.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\teamloading\12.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\teamloading\13.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\teamloading\14.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\teamloading\15.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\teamloading\16.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\teamloading\17.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\teamloading\18.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\teamloading\19.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\teamloading\20.png" KeepTime="100" LowShow="true"/>
-	</Animation>
-	<!--灵魂链接用动画-->
-	<Animation Name="soulc_1" Info="soulc_1" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\animation\soulchaining1\yijie_1.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining1\yijie_2.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining1\yijie_3.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining1\yijie_4.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining1\yijie_5.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining1\yijie_6.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining1\yijie_7.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining1\yijie_8.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining1\yijie_9.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining1\yijie_10.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining1\yijie_11.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining1\yijie_12.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining1\yijie_13.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining1\yijie_14.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining1\yijie_15.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining1\yijie_16.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining1\yijie_17.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining1\yijie_18.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining1\yijie_19.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining1\yijie_20.jpg" KeepTime="100"/>
-	</Animation>
-	<Animation Name="soulc_2" Info="soulc_2" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\animation\soulchaining2\erjie_1.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining2\erjie_2.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining2\erjie_3.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining2\erjie_4.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining2\erjie_5.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining2\erjie_6.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining2\erjie_7.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining2\erjie_8.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining2\erjie_9.jpg" KeepTime="100"/>
-		<ImageFrame FileName="gui\animation\soulchaining2\erjie_10.jpg" KeepTime="100"/>
-	</Animation>
-	<!--太极熊猫2拾取金币动画-->
-	<Animation Name="newCloneGoldAnim" Info="newCloneGoldAnim" IsPng="true" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\animation\chijibdh\1.png" KeepTime="20"/>
-		<ImageFrame FileName="gui\animation\chijibdh\2.png" KeepTime="20"/>
-		<ImageFrame FileName="gui\animation\chijibdh\3.png" KeepTime="20"/>
-		<ImageFrame FileName="gui\animation\chijibdh\4.png" KeepTime="20"/>
-		<ImageFrame FileName="gui\animation\chijibdh\5.png" KeepTime="20"/>
-		<ImageFrame FileName="gui\animation\chijibdh\6.png" KeepTime="20"/>
-		<ImageFrame FileName="gui\animation\chijibdh\7.png" KeepTime="20"/>
-		<ImageFrame FileName="gui\animation\chijibdh\8.png" KeepTime="20"/>
-		<ImageFrame FileName="gui\animation\chijibdh\9.png" KeepTime="20"/>
-		<ImageFrame FileName="gui\animation\chijibdh\10.png" KeepTime="20"/>
-		<ImageFrame FileName="gui\animation\chijibdh\11.png" KeepTime="20"/>
-		<ImageFrame FileName="gui\animation\chijibdh\12.png" KeepTime="20"/>
-		<ImageFrame FileName="gui\animation\chijibdh\13.png" KeepTime="20"/>
-		<ImageFrame FileName="gui\animation\chijibdh\14.png" KeepTime="20"/>
-		<ImageFrame FileName="gui\animation\chijibdh\15.png" KeepTime="20"/>
-		<ImageFrame FileName="gui\animation\chijibdh\16.png" KeepTime="20"/>
-		<ImageFrame FileName="gui\animation\chijibdh\17.png" KeepTime="20"/>
-		<ImageFrame FileName="gui\animation\chijibdh\18.png" KeepTime="20"/>
-		<ImageFrame FileName="gui\animation\chijibdh\19.png" KeepTime="20"/>
-		<ImageFrame FileName="gui\animation\chijibdh\20.png" KeepTime="20"/>
-	</Animation>
-	<!--太极熊猫2主界面功能按钮展开动画-->
-	<Animation Name="zjmglzk" Info="zjmglzk" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\animation\zjmglzk\A01.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglzk\A02.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglzk\A03.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglzk\A04.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglzk\A05.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglzk\A06.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglzk\A07.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglzk\A08.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglzk\A09.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglzk\A10.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglzk\A11.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglzk\A12.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglzk\A13.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglzk\A14.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglzk\A15.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglzk\A16.png" KeepTime="50"/>
-	</Animation>
-	<!--太极熊猫2主界面功能按钮收缩动画-->
-	<Animation Name="zjmglss" Info="zjmglss" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\animation\zjmglss\B01.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglss\B02.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglss\B03.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglss\B04.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglss\B05.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglss\B06.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglss\B07.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglss\B08.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglss\B09.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglss\B10.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglss\B11.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglss\B12.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglss\B13.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglss\B14.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglss\B15.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\animation\zjmglss\B16.png" KeepTime="50"/>
-	</Animation>
-	<!---->
-	<Animation Name="lbl_award_amt_1" Info="zjmglss" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_main\treasure\chukadonghua.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\chukadonghua.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\chukadonghua1.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\chukadonghua1.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\chukadonghua.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\chukadonghua.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\chukadonghua.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\chukadonghua1.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\chukadonghua1.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\chukadonghua1.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\chukadonghua.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\chukadonghua.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\chukadonghua.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\chukadonghua1.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\chukadonghua1.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\chukadonghua1.png" KeepTime="50"/>
-	</Animation>
-	<Animation Name="form_treasure_amt_3" Info="zjmglss" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_main\treasure\kapaibeijing1.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\kapaibeijing2.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\kapaibeijing3.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\kapaibeijing4.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\kapaibeijing5.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\kapaibeijing6.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\kapaibeijing7.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\kapaibeijing8.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\kapaibeijing9.png" KeepTime="50"/>
-	</Animation>
-	<!--太极熊猫2太极技泼墨动画-->
-	<Animation Name="pomo" Info="pomo" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_main\heedbar\pomo.png" KeepTime="40"/>
-		<ImageFrame FileName="gui\xm2_main\heedbar\pomo1.png" KeepTime="40"/>
-		<ImageFrame FileName="gui\xm2_main\heedbar\pomo2.png" KeepTime="40"/>
-		<ImageFrame FileName="gui\xm2_main\heedbar\pomo3.png" KeepTime="40"/>
-		<ImageFrame FileName="gui\xm2_main\heedbar\pomo4.png" KeepTime="40"/>
-		<ImageFrame FileName="gui\xm2_main\heedbar\pomo5.png" KeepTime="40"/>
-		<ImageFrame FileName="gui\xm2_main\heedbar\pomo6.png" KeepTime="40"/>
-		<ImageFrame FileName="gui\xm2_main\heedbar\pomo7.png" KeepTime="40"/>
-		<ImageFrame FileName="gui\xm2_main\heedbar\pomo8.png" KeepTime="40"/>
-		<ImageFrame FileName="gui\xm2_main\heedbar\pomo9.png" KeepTime="40"/>
-		<ImageFrame FileName="gui\xm2_main\heedbar\pomo10.png" KeepTime="40"/>
-		<ImageFrame FileName="gui\xm2_main\heedbar\pomo11.png" KeepTime="40"/>
-		<ImageFrame FileName="gui\xm2_main\heedbar\pomo12.png" KeepTime="40"/>
-		<ImageFrame FileName="gui\xm2_main\heedbar\pomo13.png" KeepTime="40"/>
-		<ImageFrame FileName="gui\xm2_main\heedbar\pomo14.png" KeepTime="40"/>
-	</Animation>
-	<!--太极熊猫2loading动画-->
-	<Animation Name="loading" Info="loading" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\tp2_loading\pandarun.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\tp2_loading\pandarun1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\tp2_loading\pandarun2.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\tp2_loading\pandarun3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\tp2_loading\pandarun4.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\tp2_loading\pandarun5.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\tp2_loading\pandarun6.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\tp2_loading\pandarun7.png" KeepTime="100"/>
-	</Animation>
-	<!--太极熊猫2抽卡光效-->
-	<Animation Name="guangxiao" Info="guangxiao" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_main\treasure\guangxiao1.png" KeepTime="155"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\guangxiao2.png" KeepTime="155"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\guangxiao3.png" KeepTime="155"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\guangxiao4.png" KeepTime="155"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\guangxiao5.png" KeepTime="155"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\guangxiao6.png" KeepTime="155"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\guangxiao7.png" KeepTime="155"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\guangxiao8.png" KeepTime="155"/>
-		<ImageFrame FileName="gui\xm2_main\treasure\guangxiao9.png" KeepTime="155"/>
-	</Animation>
-	<!--太极熊猫2技能冷却-->
-	<Animation Name="lengque" Info="lengque" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_main\heedbar\lengque.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\heedbar\lengque1.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\heedbar\lengque2.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\heedbar\lengque3.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\heedbar\lengque4.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\heedbar\lengque5.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\heedbar\lengque6.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_main\heedbar\lengque7.png" KeepTime="50"/>
-	</Animation>
-	<!--太极熊猫2击杀底图-->
-	<Animation Name="liansha" Info="liansha" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\liansha\1.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\liansha\2.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\liansha\3.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\liansha\4.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\liansha\5.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\liansha\6.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\liansha\7.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\liansha\8.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\liansha\9.png" KeepTime="3000"/>
-	</Animation>
-	<!--太极熊猫2强化-->
-	<Animation Name="qianghua" Info="qianghua" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\qianghua\qianghua.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\qianghua\qianghua1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\qianghua\qianghua2.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\qianghua\qianghua3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\qianghua\qianghua4.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\qianghua\qianghua5.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\qianghua\qianghua6.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\qianghua\qianghua7.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\qianghua\qianghua8.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\qianghua\qianghua9.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\qianghua\qianghua10.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\qianghua\qianghua11.png" KeepTime="100"/>
-	</Animation>
-	<!--太极熊猫2精炼-->
-	<Animation Name="jinglian" Info="jinglian" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\jinglian\jinglian.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\jinglian\jinglian1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\jinglian\jinglian2.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\jinglian\jinglian3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\jinglian\jinglian4.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\jinglian\jinglian5.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\jinglian\jinglian6.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\jinglian\jinglian7.png" KeepTime="500"/>
-	</Animation>
-	<!--太极熊猫2网络连接点点动画-->
-	<Animation Name="diandian" Info="diandian" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\diandian\diandian.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\diandian\diandian1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\diandian\diandian2.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\diandian\diandian3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\diandian\diandian4.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\diandian\diandian5.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\diandian\diandian6.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\diandian\diandian7.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\diandian\diandian8.png" KeepTime="100"/>
-	</Animation>
-	<!--太极熊猫2选中框动画-->
-	<Animation Name="xuanzhongkuang" Info="xuanzhongkuang" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\xuanzhongkuang\xuanzhongkuang.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xuanzhongkuang\xuanzhongkuang1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xuanzhongkuang\xuanzhongkuang2.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xuanzhongkuang\xuanzhongkuang3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xuanzhongkuang\xuanzhongkuang4.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xuanzhongkuang\xuanzhongkuang5.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xuanzhongkuang\xuanzhongkuang6.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xuanzhongkuang\xuanzhongkuang7.png" KeepTime="100"/>
-	</Animation>
-	<!--太极熊猫2角色选择填充动画（绿色）-->
-	<Animation Name="dianxuanlv" Info="dianxuanlv" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\dianxuanlv\1.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\dianxuanlv\2.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\dianxuanlv\3.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\dianxuanlv\4.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\dianxuanlv\5.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\dianxuanlv\6.png" KeepTime="150"/>
-	</Animation>
-	<!--太极熊猫2角色选择填充动画（蓝色）-->
-	<Animation Name="dianxuanlan" Info="dianxuanlan" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\dianxuanlan\1.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\dianxuanlan\2.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\dianxuanlan\3.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\dianxuanlan\4.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\dianxuanlan\5.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\dianxuanlan\6.png" KeepTime="150"/>
-	</Animation>
-	<!--太极熊猫2角色选择填充动画（紫色）-->
-	<Animation Name="dianxuanzi" Info="dianxuanzi" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\dianxuanzi\1.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\dianxuanzi\2.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\dianxuanzi\3.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\dianxuanzi\4.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\dianxuanzi\5.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\dianxuanzi\6.png" KeepTime="150"/>
-	</Animation>
-	<!--太极熊猫2角色选择填充动画（橙色）-->
-	<Animation Name="dianxuanch" Info="dianxuanch" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\dianxuanch\1.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\dianxuanch\2.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\dianxuanch\3.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\dianxuanch\4.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\dianxuanch\5.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\dianxuanch\6.png" KeepTime="150"/>
-	</Animation>
-	<!--太极熊猫2头像选择效果动画-->
-	<Animation Name="jsxuanzhong" Info="jsxuanzhong" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\jsxuanzhong\1.png" KeepTime="120"/>
-		<ImageFrame FileName="gui\xm2_animation\jsxuanzhong\2.png" KeepTime="120"/>
-		<ImageFrame FileName="gui\xm2_animation\jsxuanzhong\3.png" KeepTime="120"/>
-		<ImageFrame FileName="gui\xm2_animation\jsxuanzhong\4.png" KeepTime="120"/>
-		<ImageFrame FileName="gui\xm2_animation\jsxuanzhong\5.png" KeepTime="120"/>
-		<ImageFrame FileName="gui\xm2_animation\jsxuanzhong\6.png" KeepTime="120"/>
-		<ImageFrame FileName="gui\xm2_animation\jsxuanzhong\7.png" KeepTime="120"/>
-	</Animation>
-	<!--太极熊猫2升阶按钮动画1-->
-	<Animation Name="shengjie1" Info="shengjie1" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\shengjie\shengjie1.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\shengjie\shengjie2.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\shengjie\shengjie3.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\shengjie\shengjie4.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\shengjie\shengjie5.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\shengjie\shengjie6.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\shengjie\shengjie7.png" KeepTime="150"/>
-	</Animation>
-	<!--太极熊猫2升阶按钮动画2-->
-	<Animation Name="shengjie2" Info="shengjie2" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\shengjie\jdt1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\shengjie\jdt2.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\shengjie\jdt3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\shengjie\jdt4.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\shengjie\jdt5.png" KeepTime="100"/>
-	</Animation>
-	<!--太极熊猫2金币和钻石的修饰光-->
-	<Animation Name="xsguang" Info="xsguang" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\xsguang\1.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\xsguang\2.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\xsguang\3.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\xsguang\4.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\xsguang\5.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\xsguang\6.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\xsguang\7.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\xsguang\8.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\xsguang\9.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\xsguang\10.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\xsguang\11.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\xsguang\12.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\xsguang\13.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\xsguang\14.png" KeepTime="150"/>
-		<ImageFrame FileName="gui\xm2_animation\xsguang\15.png" KeepTime="500"/>
-	</Animation>
-	<!--太极熊猫2装备成功动画-->
-	<Animation Name="zbcg" Info="zbcg" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\zbcg\1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\zbcg\2.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\zbcg\3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\zbcg\4.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\zbcg\5.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\zbcg\6.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\zbcg\7.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\zbcg\8.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\zbcg\9.png" KeepTime="100"/>
-	</Animation>
-	<!--太极熊猫2右侧按钮选择动画-->
-	<Animation Name="ycdianxuan" Info="ycdianxuan" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\ycdianxuan\1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\ycdianxuan\2.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\ycdianxuan\3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\ycdianxuan\4.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\ycdianxuan\5.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\ycdianxuan\6.png" KeepTime="100"/>
-	</Animation>
-	<!--太极熊猫2卷轴滚动动画-->
-	<Animation Name="juanzhou" Info="juanzhou" IsPng="false" IsDynamicCreate="true" ScaleMotive="0.0,1.0,1.289;">
-		<ImageFrame FileName="gui\xm2_animation\juanzhou\juanzhou.png" KeepTime="30"/>
-		<ImageFrame FileName="gui\xm2_animation\juanzhou\juanzhou1.png" KeepTime="30"/>
-		<ImageFrame FileName="gui\xm2_animation\juanzhou\juanzhou2.png" KeepTime="30"/>
-		<ImageFrame FileName="gui\xm2_animation\juanzhou\juanzhou3.png" KeepTime="30"/>
-		<ImageFrame FileName="gui\xm2_animation\juanzhou\juanzhou4.png" KeepTime="30"/>
-		<ImageFrame FileName="gui\xm2_animation\juanzhou\juanzhou5.png" KeepTime="30"/>
-		<ImageFrame FileName="gui\xm2_animation\juanzhou\juanzhou6.png" KeepTime="30"/>
-		<ImageFrame FileName="gui\xm2_animation\juanzhou\juanzhou7.png" KeepTime="30"/>
-		<ImageFrame FileName="gui\xm2_animation\juanzhou\juanzhou8.png" KeepTime="30"/>
-		<ImageFrame FileName="gui\xm2_animation\juanzhou\juanzhou9.png" KeepTime="30"/>
-	</Animation>
-	<!--太极熊猫2卷轴滚动动画反转-->
-	<Animation Name="juanzhou_fanzhuan" Info="juanzhou_fanzhuan" IsPng="false" IsDynamicCreate="true" ScaleMotive="0.0,1.0,1.289;">
-		<ImageFrame FileName="gui\xm2_animation\juanzhou\juanzhou9.png" KeepTime="30"/>
-		<ImageFrame FileName="gui\xm2_animation\juanzhou\juanzhou8.png" KeepTime="30"/>
-		<ImageFrame FileName="gui\xm2_animation\juanzhou\juanzhou7.png" KeepTime="30"/>
-		<ImageFrame FileName="gui\xm2_animation\juanzhou\juanzhou6.png" KeepTime="30"/>
-		<ImageFrame FileName="gui\xm2_animation\juanzhou\juanzhou5.png" KeepTime="30"/>
-		<ImageFrame FileName="gui\xm2_animation\juanzhou\juanzhou4.png" KeepTime="30"/>
-		<ImageFrame FileName="gui\xm2_animation\juanzhou\juanzhou3.png" KeepTime="30"/>
-		<ImageFrame FileName="gui\xm2_animation\juanzhou\juanzhou2.png" KeepTime="30"/>
-		<ImageFrame FileName="gui\xm2_animation\juanzhou\juanzhou1.png" KeepTime="30"/>
-		<ImageFrame FileName="gui\xm2_animation\juanzhou\juanzhou.png" KeepTime="30"/>
-	</Animation>
-	<!--太极熊猫2粒子框动画-->
-	<Animation Name="lizikuang" Info="lizikuang" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\lizikuang\lizikuang.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\lizikuang\lizikuang1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\lizikuang\lizikuang2.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\lizikuang\lizikuang3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\lizikuang\lizikuang4.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\lizikuang\lizikuang5.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\lizikuang\lizikuang6.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\lizikuang\lizikuang7.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\lizikuang\lizikuang8.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\lizikuang\lizikuang9.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\lizikuang\lizikuang10.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\lizikuang\lizikuang11.png" KeepTime="100"/>
-	</Animation>
-	<!--太极熊猫2战斗消耗条动画(护盾值）-->
-	<Animation Name="df_xht1" Info="df_xht1" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\df_xht1\3.png" KeepTime="80"/>
-		<ImageFrame FileName="gui\xm2_animation\df_xht1\4.png" KeepTime="80"/>
-		<ImageFrame FileName="gui\xm2_animation\df_xht1\5.png" KeepTime="80"/>
-		<ImageFrame FileName="gui\xm2_animation\df_xht1\6.png" KeepTime="80"/>
-		<ImageFrame FileName="gui\xm2_animation\df_xht1\7.png" KeepTime="80"/>
-		<ImageFrame FileName="gui\xm2_animation\df_xht1\8.png" KeepTime="80"/>
-		<ImageFrame FileName="gui\xm2_animation\df_xht1\9.png" KeepTime="80"/>
-		<ImageFrame FileName="gui\xm2_animation\df_xht1\10.png" KeepTime="80"/>
-		<ImageFrame FileName="gui\xm2_animation\df_xht1\11.png" KeepTime="80"/>
-		<ImageFrame FileName="gui\xm2_animation\df_xht1\12.png" KeepTime="80"/>
-	</Animation>
-	<!--太极熊猫2战斗消耗条动画(怒气条）-->
-	<Animation Name="rc_xht2" Info="rc_xht2" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\rc_xht2\1.png" KeepTime="80"/>
-		<ImageFrame FileName="gui\xm2_animation\rc_xht2\3.png" KeepTime="80"/>
-		<ImageFrame FileName="gui\xm2_animation\rc_xht2\5.png" KeepTime="80"/>
-		<ImageFrame FileName="gui\xm2_animation\rc_xht2\7.png" KeepTime="80"/>
-		<ImageFrame FileName="gui\xm2_animation\rc_xht2\9.png" KeepTime="80"/>
-		<ImageFrame FileName="gui\xm2_animation\rc_xht2\11.png" KeepTime="80"/>
-		<ImageFrame FileName="gui\xm2_animation\rc_xht2\13.png" KeepTime="80"/>
-		<ImageFrame FileName="gui\xm2_animation\rc_xht2\15.png" KeepTime="80"/>
-		<ImageFrame FileName="gui\xm2_animation\rc_xht2\17.png" KeepTime="80"/>
-		<ImageFrame FileName="gui\xm2_animation\rc_xht2\19.png" KeepTime="80"/>
-	</Animation>
-	<!--太极熊猫2战斗消耗条动画(能量条）-->
-	<Animation Name="ec_xht3" Info="ec_xht3" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\ec_xht3\1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\ec_xht3\3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\ec_xht3\5.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\ec_xht3\7.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\ec_xht3\9.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\ec_xht3\11.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\ec_xht3\13.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\ec_xht3\15.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\ec_xht3\17.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\ec_xht3\19.png" KeepTime="100"/>
-	</Animation>
-	<!--太极熊猫2技能蓄力槽-->
-	<Animation Name="xulicao" Info="xulicao" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\xulicao\xulicao.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xulicao\xulicao1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xulicao\xulicao2.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xulicao\xulicao3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xulicao\xulicao4.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xulicao\xulicao5.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xulicao\xulicao6.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xulicao\xulicao7.png" KeepTime="100"/>
-	</Animation>
-	<!--太极熊猫2qte-->
-	<Animation Name="qte" Info="qte" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\qte\qte.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\qte\qte1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\qte\qte2.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\qte\qte3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\qte\qte4.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\qte\qte5.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\qte\qte6.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\qte\qte7.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\qte\qte8.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\qte\qte9.png" KeepTime="100"/>
-	</Animation>
-	<!--太极熊猫2烟花特效-->
-	<Animation Name="yanhua" Info="yanhua" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh01.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh02.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh03.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh04.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh05.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh06.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh07.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh08.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh09.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh10.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh11.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh12.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh13.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh14.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh15.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh16.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh17.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh18.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh19.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh20.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh21.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh22.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh23.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh24.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\yanhua\yh25.png" KeepTime="50"/>
-	</Animation>
-	<!--太极熊猫2角色进阶暂用特效-->
-	<Animation Name="guang" Info="guang" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\guang\guang.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guang\guang1.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guang\guang2.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guang\guang3.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guang\guang4.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guang\guang5.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guang\guang6.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guang\guang7.png" KeepTime="50"/>
-	</Animation>
-	<!--太极熊猫2聊天栏特效-->
-	<Animation Name="chat" Info="chat" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\chat\chat.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\chat\chat1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\chat\chat2.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\chat\chat3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\chat\chat4.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\chat\chat5.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\chat\chat6.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\chat\chat7.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\chat\chat8.png" KeepTime="100"/>
-	</Animation>
-	<!--太极熊猫2已达成特效-->
-	<Animation Name="finish" Info="finish" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\finish\finish.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\finish\finish1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\finish\finish2.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\finish\finish3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\finish\finish4.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\finish\finish5.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\finish\finish6.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\finish\finish7.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\finish\finish8.png" KeepTime="100"/>
-	</Animation>
-	<!--太极熊猫2技能解锁特效-->
-	<Animation Name="skilluncoil" Info="skilluncoil" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\skilluncoil\01.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\skilluncoil\02.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\skilluncoil\03.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\skilluncoil\04.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\skilluncoil\05.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\skilluncoil\06.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\skilluncoil\07.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\skilluncoil\08.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\skilluncoil\09.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\skilluncoil\10.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\skilluncoil\11.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\skilluncoil\12.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\skilluncoil\13.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\skilluncoil\14.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\skilluncoil\15.png" KeepTime="100"/>
-	</Animation>
-	<!--太极熊猫2加减特效-->
-	<Animation Name="money" Info="money" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\money\1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\money\2.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\money\3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\money\4.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\money\5.png" KeepTime="100"/>
-	</Animation>
-	<!--太极熊猫2加减特效-->
-	<Animation Name="sanguang" Info="sanguang" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\sanguang\01.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\sanguang\02.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\sanguang\03.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\sanguang\04.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\sanguang\05.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\sanguang\06.png" KeepTime="100"/>
-	</Animation>
-	<!--太极熊猫2物品边框01-->
-	<Animation Name="xuanzhongkuang01" Info="xuanzhongkuang01" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\xuanzhongkuang01\1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xuanzhongkuang01\2.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xuanzhongkuang01\3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xuanzhongkuang01\4.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xuanzhongkuang01\5.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xuanzhongkuang01\6.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xuanzhongkuang01\7.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xuanzhongkuang01\8.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xuanzhongkuang01\9.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\xuanzhongkuang01\10.png" KeepTime="100"/>
-	</Animation>
-	<!--太极熊猫2引导移动-->
-	<Animation Name="guide_move" Info="guide_move" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\guide_move\01.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_move\02.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_move\03.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_move\04.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_move\05.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_move\06.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_move\07.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_move\08.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_move\09.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_move\10.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_move\11.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_move\12.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_move\13.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_move\14.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_move\15.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_move\16.png" KeepTime="100"/>
-	</Animation>
-	<!--太极熊猫2引导点击-->
-	<Animation Name="guide_click" Info="guide_click" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\guide_click\A0001.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_click\A0002.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_click\A0003.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_click\A0004.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_click\A0005.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_click\A0006.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_click\A0007.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_click\A0008.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_click\A0009.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_click\A0010.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_click\A0011.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_click\A0012.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_click\A0013.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_click\A0014.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_click\A0015.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_click\A0016.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_click\A0017.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_click\A0018.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_click\A0019.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\guide_click\A0020.png" KeepTime="50"/>
-	</Animation>
-	<!--太极熊猫2下一步-->
-	<Animation Name="next" Info="next" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\next\01.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\next\02.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\next\03.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\next\04.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\next\05.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\next\06.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\next\07.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\next\08.png" KeepTime="100"/>
-	</Animation>
-	<!--太极熊猫2太极技能组合特效-->
-	<Animation Name="bg_up" Info="bg_up" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\bg_up\001.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\bg_up\002.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\bg_up\003.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\bg_up\004.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\bg_up\005.png" KeepTime="100"/>
-	</Animation>
-	<!--太极熊猫2进度-->
-	<Animation Name="jindu" Info="jindu" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\jindu\001.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\jindu\002.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\jindu\003.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\jindu\004.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\jindu\005.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\jindu\006.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\jindu\007.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\jindu\008.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\jindu\009.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\jindu\010.png" KeepTime="50"/>
-	</Animation>
-	<!--太极熊猫2boss-->
-	<Animation Name="boss" Info="boss" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\boss\1-0001.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\boss\1-0002.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\boss\1-0003.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\boss\1-0004.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\boss\1-0005.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\boss\1-0006.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\boss\1-0007.png" KeepTime="50"/>
-	</Animation>
-	<!--太极熊猫2解锁-->
-	<Animation Name="jiesuo" Info="jiesuo" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\jiesuo\jiesuo001.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\jiesuo\jiesuo002.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\jiesuo\jiesuo003.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\jiesuo\jiesuo004.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\jiesuo\jiesuo005.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\jiesuo\jiesuo006.png" KeepTime="50"/>
-		<ImageFrame FileName="gui\xm2_animation\jiesuo\jiesuo007.png" KeepTime="50"/>
-	</Animation>
-	<!--太极熊猫2物品升级动画-->
-	<Animation Name="up" Info="up" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\up\10001.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\up\10002.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\up\10003.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\up\10004.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\up\10005.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\up\10006.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\up\10007.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\up\10008.png" KeepTime="100"/>
-	</Animation>
-	<!--太极熊猫2公会祈福动画-->
-	<Animation Name="qifu" Info="qifu" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\qifu\1.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\qifu\2.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\qifu\3.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\qifu\4.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\qifu\5.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\qifu\6.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\qifu\7.png" KeepTime="100" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\qifu\8.png" KeepTime="100" LowShow="true"/>
-	</Animation>
-	<!--太极熊猫2语音右-->
-	<Animation Name="yuyin_right" Info="yuyin_right" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\yuyin_right\1.png" KeepTime="300"/>
-		<ImageFrame FileName="gui\xm2_animation\yuyin_right\2.png" KeepTime="300"/>
-		<ImageFrame FileName="gui\xm2_animation\yuyin_right\3.png" KeepTime="300"/>
-	</Animation>
-	<!--太极熊猫2语音左-->
-	<Animation Name="yuyin_left" Info="yuyin_left" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\yuyin_left\1.png" KeepTime="300"/>
-		<ImageFrame FileName="gui\xm2_animation\yuyin_left\2.png" KeepTime="300"/>
-		<ImageFrame FileName="gui\xm2_animation\yuyin_left\3.png" KeepTime="300"/>
-	</Animation>
-	<!--太极熊猫2自动寻路-->
-	<Animation Name="xunlu" Info="xunlu" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\xunlu\1.png" KeepTime="200"/>
-		<ImageFrame FileName="gui\xm2_animation\xunlu\2.png" KeepTime="200"/>
-		<ImageFrame FileName="gui\xm2_animation\xunlu\3.png" KeepTime="200"/>
-		<ImageFrame FileName="gui\xm2_animation\xunlu\4.png" KeepTime="200"/>
-		<ImageFrame FileName="gui\xm2_animation\xunlu\5.png" KeepTime="200"/>
-		<ImageFrame FileName="gui\xm2_animation\xunlu\6.png" KeepTime="200"/>
-		<ImageFrame FileName="gui\xm2_animation\xunlu\7.png" KeepTime="200"/>
-		<ImageFrame FileName="gui\xm2_animation\xunlu\8.png" KeepTime="200"/>
-		<ImageFrame FileName="gui\xm2_animation\xunlu\9.png" KeepTime="200"/>
-	</Animation>
-	<!--太极熊猫2战斗-->
-	<Animation Name="zhandou" Info="zhandou" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\zhandou\1.png" KeepTime="200"/>
-		<ImageFrame FileName="gui\xm2_animation\zhandou\2.png" KeepTime="200"/>
-		<ImageFrame FileName="gui\xm2_animation\zhandou\3.png" KeepTime="200"/>
-		<ImageFrame FileName="gui\xm2_animation\zhandou\4.png" KeepTime="200"/>
-		<ImageFrame FileName="gui\xm2_animation\zhandou\5.png" KeepTime="200"/>
-		<ImageFrame FileName="gui\xm2_animation\zhandou\6.png" KeepTime="200"/>
-		<ImageFrame FileName="gui\xm2_animation\zhandou\7.png" KeepTime="200"/>
-	</Animation>
-	<!--太极熊猫2战斗-->
-	<Animation Name="suoding" Info="suoding" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\suoding\001.png" KeepTime="200" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\suoding\002.png" KeepTime="200" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\suoding\003.png" KeepTime="200" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\suoding\004.png" KeepTime="200" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\suoding\005.png" KeepTime="200" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\suoding\006.png" KeepTime="200" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\suoding\007.png" KeepTime="200" LowShow="true"/>
-	</Animation>
-	<!--太极熊猫23DTOUCH圈1-->
-	<Animation Name="quan1" Info="quan1" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\quan1\1.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\2.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\3.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\4.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\5.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\6.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\7.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\8.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\9.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\10.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\11.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\12.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\13.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\14.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\15.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\16.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\17.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\18.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\19.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\20.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\21.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\22.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\23.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\24.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan1\25.png" KeepTime="50" LowShow="true"/>
-	</Animation>
-	<!--太极熊猫23DTOUCH圈2-->
-	<Animation Name="quan2" Info="quan2" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\quan2\1.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan2\2.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan2\3.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan2\4.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan2\5.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan2\6.png" KeepTime="50" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\quan2\7.png" KeepTime="50" LowShow="true"/>
-	</Animation>
-	<!--太极熊猫2公会战选中效果-->
-	<Animation Name="gonghuizhan" Info="gonghuizhan" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\gonghuizhan\1.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\gonghuizhan\2.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\gonghuizhan\3.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\gonghuizhan\4.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\gonghuizhan\5.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\gonghuizhan\6.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\gonghuizhan\7.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\gonghuizhan\8.png" KeepTime="100"/>
-		<ImageFrame FileName="gui\xm2_animation\gonghuizhan\9.png" KeepTime="100"/>
-	</Animation>	
-	<!--太极熊猫2无双称号-->
-	<Animation Name="wushuang" Info="wushuang" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_animation\wushuang\1.png" KeepTime="200" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\wushuang\2.png" KeepTime="200" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\wushuang\3.png" KeepTime="200" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\wushuang\4.png" KeepTime="200" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\wushuang\5.png" KeepTime="200" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\wushuang\6.png" KeepTime="200" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\wushuang\7.png" KeepTime="200" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\wushuang\8.png" KeepTime="200" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\wushuang\9.png" KeepTime="200" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_animation\wushuang\10.png" KeepTime="200" LowShow="true"/>	
-	</Animation>
-	<!--太极熊猫2qte_1-->
-	<Animation Name="qte_1" Info="qte_1" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_main\buff\a_1.png" KeepTime="200" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_main\buff\a_2.png" KeepTime="200" LowShow="true"/>
-	</Animation>
-	<!--太极熊猫2qte_2-->
-	<Animation Name="qte_2" Info="qte_2" IsPng="false" IsDynamicCreate="true">
-		<ImageFrame FileName="gui\xm2_main\buff\b_1.png" KeepTime="200" LowShow="true"/>
-		<ImageFrame FileName="gui\xm2_main\buff\b_2.png" KeepTime="200" LowShow="true"/>	
-	</Animation>	
+	<Animation Name="sp_ani" Info="怒气图标" IsPng="false" IsDynamicCreate="true">
+		<ImageFrame FileName="gui\animation\anger3.png,2,2,85,83" KeepTime="50"/>
+		<ImageFrame FileName="gui\animation\anger3.png,89,2,85,83" KeepTime="50"/>
+		<ImageFrame FileName="gui\animation\anger3.png,2,87,85,83" KeepTime="50"/>
+		<ImageFrame FileName="gui\animation\anger3.png,89,89,85,83" KeepTime="50"/>
+		<ImageFrame FileName="gui\animation\anger3.png,2,172,85,83" KeepTime="50"/>
+		<ImageFrame FileName="gui\animation\anger3.png,89,172,85,83" KeepTime="50"/>
+		<ImageFrame FileName="gui\animation\anger3.png,2,257,85,83" KeepTime="50"/>
+	</Animation>
+	<Animation Name="sp_fire" Info="怒气图标" IsPng="false" IsDynamicCreate="true">
+		<ImageFrame FileName="" KeepTime="50"/>
+		<ImageFrame FileName="" KeepTime="50"/>
+		<ImageFrame FileName="" KeepTime="50"/>
+		<ImageFrame FileName="" KeepTime="50"/>
+		<ImageFrame FileName="" KeepTime="50"/>
+		<ImageFrame FileName="" KeepTime="50"/>
+		<ImageFrame FileName="" KeepTime="50"/>
+	</Animation>
+	<Animation Name="sp_tiao" Info="怒气图标" IsPng="false" IsDynamicCreate="true">
+		<ImageFrame FileName="" KeepTime="50"/>
+		<ImageFrame FileName="" KeepTime="50"/>
+		<ImageFrame FileName="" KeepTime="50"/>
+		<ImageFrame FileName="" KeepTime="50"/>
+		<ImageFrame FileName="" KeepTime="50"/>
+		<ImageFrame FileName="" KeepTime="50"/>
+		<ImageFrame FileName="" KeepTime="50"/>
+	</Animation>
+	<Animation Name="hunt_ani" Info="狩猎盘小怪兽发怒" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui\dragon_main\emoji_big\11\1.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\11\2.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\11\3.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\11\4.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\11\5.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\11\6.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\11\7.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\11\8.png" KeepTime="100"/>
+	</Animation>
+	<!--聊天大表情动画-->
+	<Animation Name="emoji_big_face_1" Info="emoji_big_face_1" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui\dragon_main\emoji_big\1\1.png" KeepTime="150" LowShow="true"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\1\2.png" KeepTime="150" LowShow="true"/>
+	</Animation>
+	<Animation Name="emoji_big_face_2" Info="emoji_big_face_2" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui\dragon_main\emoji_big\2\1.png" KeepTime="80" LowShow="true"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\2\2.png" KeepTime="80" LowShow="true"/>
+	</Animation>
+	<Animation Name="emoji_big_face_3" Info="emoji_big_face_3" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui\dragon_main\emoji_big\3\1.png" KeepTime="80" LowShow="true"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\3\2.png" KeepTime="80"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\3\3.png" KeepTime="80"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\3\4.png" KeepTime="80" LowShow="true"/>
+	</Animation>
+	<Animation Name="emoji_big_face_4" Info="emoji_big_face_4" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui\dragon_main\emoji_big\4\1.png" KeepTime="151" LowShow="true"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\4\2.png" KeepTime="150"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\4\3.png" KeepTime="200" LowShow="true"/>
+	</Animation>
+	<Animation Name="emoji_big_face_5" Info="emoji_big_face_5" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui\dragon_main\emoji_big\5\1.png" KeepTime="100" LowShow="true"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\5\2.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\5\3.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\5\4.png" KeepTime="100" LowShow="true"/>
+	</Animation>
+	<Animation Name="emoji_big_face_6" Info="emoji_big_face_6" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui\dragon_main\emoji_big\6\1.png" KeepTime="100" LowShow="true"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\6\2.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\6\3.png" KeepTime="100" LowShow="true"/>
+	</Animation>
+	<Animation Name="emoji_big_face_7" Info="emoji_big_face_7" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui\dragon_main\emoji_big\7\1.png" KeepTime="200" LowShow="true"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\7\2.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\7\3.png" KeepTime="400"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\7\4.png" KeepTime="80" LowShow="true"/>
+	</Animation>
+	<Animation Name="emoji_big_face_8" Info="emoji_big_face_8" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui\dragon_main\emoji_big\8\1.png" KeepTime="200" LowShow="true"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\8\2.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\8\3.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\8\4.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\8\5.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\8\6.png" KeepTime="200" LowShow="true"/>
+	</Animation>
+	<Animation Name="emoji_big_face_9" Info="emoji_big_face_9" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui\dragon_main\emoji_big\9\1.png" KeepTime="100" LowShow="true"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\9\2.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\9\3.png" KeepTime="200" LowShow="true"/>
+	</Animation>
+	<Animation Name="emoji_big_face_10" Info="emoji_big_face_10" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui\dragon_main\emoji_big\10\1.png" KeepTime="100" LowShow="true"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\10\2.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\10\3.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\10\4.png" KeepTime="100" LowShow="true"/>
+	</Animation>
+	<Animation Name="emoji_big_face_11" Info="emoji_big_face_11" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui\dragon_main\emoji_big\11\1.png" KeepTime="150" LowShow="true"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\11\2.png" KeepTime="150"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\11\3.png" KeepTime="150"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\11\4.png" KeepTime="150"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\11\5.png" KeepTime="150"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\11\6.png" KeepTime="150"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\11\7.png" KeepTime="150"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\11\8.png" KeepTime="50" LowShow="true"/>
+	</Animation>
+	<Animation Name="emoji_big_face_12" Info="emoji_big_face_12" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui\dragon_main\emoji_big\12\1.png" KeepTime="80" LowShow="true"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\12\2.png" KeepTime="40"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\12\3.png" KeepTime="80"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\12\4.png" KeepTime="20" LowShow="true"/>
+	</Animation>
+	<Animation Name="emoji_big_face_13" Info="emoji_big_face_13" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui\dragon_main\emoji_big\13\1.png" KeepTime="100" LowShow="true"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\13\2.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\13\3.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\13\4.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\13\5.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\13\6.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\13\7.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\13\8.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\13\9.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\13\10.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\13\11.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\13\12.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\13\13.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\13\14.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\13\15.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\13\16.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\13\17.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\13\18.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\13\19.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\13\20.png" KeepTime="200" LowShow="true"/>
+	</Animation>
+	<Animation Name="emoji_big_face_14" Info="emoji_big_face_14" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui\dragon_main\emoji_big\14\1.png" KeepTime="80" LowShow="true"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\14\2.png" KeepTime="80"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\14\3.png" KeepTime="80"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\14\4.png" KeepTime="80"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\14\5.png" KeepTime="80"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\14\6.png" KeepTime="80" LowShow="true"/>
+	</Animation>
+	<Animation Name="emoji_big_face_15" Info="emoji_big_face_15" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui\dragon_main\emoji_big\15\1.png" KeepTime="100" LowShow="true"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\15\2.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\15\3.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\15\4.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\15\5.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\15\6.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\15\7.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\15\8.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\15\9.png" KeepTime="100" LowShow="true"/>
+	</Animation>
+	<Animation Name="emoji_big_face_16" Info="emoji_big_face_16" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui\dragon_main\emoji_big\16\1.png" KeepTime="150" LowShow="true"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\16\2.png" KeepTime="150"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\16\3.png" KeepTime="150"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\16\4.png" KeepTime="150"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\16\5.png" KeepTime="150"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\16\6.png" KeepTime="150"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\16\7.png" KeepTime="150"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\16\8.png" KeepTime="150"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\16\9.png" KeepTime="150" LowShow="true"/>
+	</Animation>
+	<Animation Name="emoji_big_face_17" Info="emoji_big_face_17" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui\dragon_main\emoji_big\17\1.png" KeepTime="120" LowShow="true"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\17\2.png" KeepTime="120"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\17\3.png" KeepTime="120"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\17\4.png" KeepTime="80" LowShow="true"/>
+	</Animation>
+	<Animation Name="emoji_big_face_18" Info="emoji_big_face_18" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui\dragon_main\emoji_big\18\1.png" KeepTime="150" LowShow="true"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\18\2.png" KeepTime="150"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\18\3.png" KeepTime="150"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\18\4.png" KeepTime="150"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\18\5.png" KeepTime="150"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\18\6.png" KeepTime="100"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\18\7.png" KeepTime="150"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\18\8.png" KeepTime="150"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\18\9.png" KeepTime="300"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\18\10.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\18\11.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\18\12.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\18\13.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\18\14.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\18\15.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\18\16.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\18\17.png" KeepTime="200"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\18\18.png" KeepTime="200" LowShow="true"/>
+	</Animation>
+	<Animation Name="emoji_big_face_19" Info="emoji_big_face_19" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui\dragon_main\emoji_big\19\1.png" KeepTime="120" LowShow="true"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\19\2.png" KeepTime="120"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\19\3.png" KeepTime="120"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\19\4.png" KeepTime="120"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\19\5.png" KeepTime="120"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\19\6.png" KeepTime="70"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\19\7.png" KeepTime="70"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\19\8.png" KeepTime="120"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\19\9.png" KeepTime="120"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\19\10.png" KeepTime="120"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\19\11.png" KeepTime="120"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\19\12.png" KeepTime="120"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\19\13.png" KeepTime="120"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\19\14.png" KeepTime="120"/>
+		<ImageFrame FileName="gui\dragon_main\emoji_big\19\15.png" KeepTime="120" LowShow="true"/>
+	</Animation>
+	<Animation Name="guide_01" Info="点击手势" IsPng="false" IsDynamicCreate="true">
+		<ImageFrame FileName="gui/dragon_main/guide/animation/guide/1.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/guide/2.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/guide/3.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/guide/4.png" KeepTime="150"/>
+	</Animation>
+	<Animation Name="guide_02" Info="放大手势" IsPng="false" IsDynamicCreate="true">
+		<ImageFrame FileName="gui/dragon_main/guide/animation/newbie_guide_amplification.png" KeepTime="300"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/newbie_guide_narrow.png" KeepTime="300"/>
+	</Animation>
+	<Animation Name="guide_04" Info="旋转手势" IsPng="false" IsDynamicCreate="true">
+		<ImageFrame FileName="gui/dragon_main/guide/animation/newbie_guide_1.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/newbie_guide_2.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/newbie_guide_3.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/newbie_guide_4.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/newbie_guide_5.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/newbie_guide_6.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/newbie_guide_7.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/newbie_guide_8.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/newbie_guide_9.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/newbie_guide_10.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/newbie_guide_11.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/newbie_guide_12.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/newbie_guide_13.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/newbie_guide_14.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/newbie_guide_15.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/newbie_guide_16.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/newbie_guide_17.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/newbie_guide_18.png" KeepTime="100"/>
+	</Animation>
+	<Animation Name="guide_05" Info="上升手势" IsPng="false" IsDynamicCreate="true">
+		<ImageFrame FileName="gui/dragon_main/guide/animation/up/newbie_guide_up_1.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/up/newbie_guide_up_2.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/up/newbie_guide_up_3.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/up/newbie_guide_up_4.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/up/newbie_guide_up_5.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/up/newbie_guide_up_6.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/up/newbie_guide_up_7.png" KeepTime="150"/>
+	</Animation>
+	<Animation Name="guide_06" Info="点击" IsPng="false" IsDynamicCreate="true">
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/1.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/2.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/3.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/4.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/5.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/6.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/7.png" KeepTime="150"/>
+	</Animation>
+	<Animation Name="guide_07" Info="长按手势" IsPng="false" IsDynamicCreate="true">
+		<ImageFrame FileName="gui/dragon_main/guide/animation/hold/1.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/hold/2.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/hold/3.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/hold/4.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/hold/5.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/hold/6.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/hold/7.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/hold/8.png" KeepTime="150"/>
+	</Animation>
+	<Animation Name="guide_08" Info="跳过按钮" IsPng="false" IsDynamicCreate="true">
+		<ImageFrame FileName="gui/dragon_main/guide/animation/pass/1.png" KeepTime="200"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/pass/2.png" KeepTime="200"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/pass/3.png" KeepTime="200"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/pass/4.png" KeepTime="200"/>
+	</Animation>
+	<Animation Name="guide_09" Info="光圈按钮" IsPng="false" IsDynamicCreate="true">
+		<ImageFrame FileName="gui/dragon_main/guide/animation/guang/1.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/guang/2.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/guang/3.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/guang/4.png" KeepTime="150"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/guang/5.png" KeepTime="150"/>
+	</Animation>
+	<Animation Name="guide_10" Info="双击" IsPng="false" IsDynamicCreate="true">
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/1.png" KeepTime="25"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/2.png" KeepTime="25"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/3.png" KeepTime="25"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/4.png" KeepTime="25"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/5.png" KeepTime="25"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/6.png" KeepTime="25"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/7.png" KeepTime="25"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/1.png" KeepTime="25"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/2.png" KeepTime="25"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/3.png" KeepTime="25"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/4.png" KeepTime="25"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/5.png" KeepTime="25"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/6.png" KeepTime="25"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/7.png" KeepTime="500"/>
+	</Animation>
+	<Animation Name="guide_11" Info="快速点击" IsPng="false" IsDynamicCreate="true">
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/1.png" KeepTime="50"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/2.png" KeepTime="50"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/3.png" KeepTime="50"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/4.png" KeepTime="50"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/5.png" KeepTime="50"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/6.png" KeepTime="50"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/click/7.png" KeepTime="50"/>
+	</Animation>
+	<Animation Name="guide_12" Info="指向箭头" IsPng="false" IsDynamicCreate="true">
+		<ImageFrame FileName="gui/dragon_main/guide/newbie_guide_arrow.png" KeepTime="150"/>
+		<ImageFrame FileName="" KeepTime="150"/>
+	</Animation>
+	<Animation Name="guide_13" Info="拖拽" IsPng="false" IsDynamicCreate="true">
+		<ImageFrame FileName="gui/dragon_main/guide/animation/up/newbie_guide_right_1.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/up/newbie_guide_right_2.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/up/newbie_guide_right_3.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/up/newbie_guide_right_4.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/guide/animation/up/newbie_guide_right_5.png" KeepTime="100"/>
+	</Animation>
+	<Animation Name="guide_14" Info="交替点击" IsPng="false" IsDynamicCreate="true">
+		<ImageFrame FileName="gui/dragon_main/guide/newbie_guide_click1.png" KeepTime="300"/>
+		<ImageFrame FileName="gui/dragon_main/guide/newbie_guide_click2.png" KeepTime="300"/>
+	</Animation>
+	<Animation Name="path_find_ani" Info="寻路提示" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui/dragon_main/quest/newbie_guide_zdxl_1.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/quest/newbie_guide_zdxl_2.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/quest/newbie_guide_zdxl_3.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/quest/newbie_guide_zdxl_4.png" KeepTime="100"/>
+	</Animation>
+	<Animation Name="loading" Info="loaidng" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui/dragon_main/loading/loading0001.png" KeepTime="40"/>
+		<ImageFrame FileName="gui/dragon_main/loading/loading0002.png" KeepTime="40"/>
+		<ImageFrame FileName="gui/dragon_main/loading/loading0003.png" KeepTime="40"/>
+		<ImageFrame FileName="gui/dragon_main/loading/loading0004.png" KeepTime="40"/>
+		<ImageFrame FileName="gui/dragon_main/loading/loading0005.png" KeepTime="40"/>
+		<ImageFrame FileName="gui/dragon_main/loading/loading0006.png" KeepTime="40"/>
+		<ImageFrame FileName="gui/dragon_main/loading/loading0007.png" KeepTime="40"/>
+		<ImageFrame FileName="gui/dragon_main/loading/loading0008.png" KeepTime="40"/>
+		<ImageFrame FileName="gui/dragon_main/loading/loading0009.png" KeepTime="40"/>
+		<ImageFrame FileName="gui/dragon_main/loading/loading0010.png" KeepTime="40"/>
+		<ImageFrame FileName="gui/dragon_main/loading/loading0011.png" KeepTime="40"/>
+		<ImageFrame FileName="gui/dragon_main/loading/loading0012.png" KeepTime="40"/>
+		<ImageFrame FileName="gui/dragon_main/loading/loading0013.png" KeepTime="40"/>
+		<ImageFrame FileName="gui/dragon_main/loading/loading0014.png" KeepTime="40"/>
+		<ImageFrame FileName="gui/dragon_main/loading/loading0015.png" KeepTime="40"/>
+	</Animation>
+	<Animation Name="connect" Info="connect" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui/dragon_main/connect/1.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/2.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/3.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/4.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/5.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/6.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/7.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/8.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/9.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/10.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/11.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/12.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/13.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/14.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/15.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/16.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/17.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/18.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/19.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/20.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/21.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/22.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/23.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/24.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/25.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/26.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/27.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/28.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/29.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/30.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/31.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/32.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/33.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/34.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/connect/35.png" KeepTime="70"/>
+	</Animation>
+	<Animation Name="pipei" Info="pipei" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_1.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_2.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_3.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_4.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_5.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_6.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_7.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_8.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_9.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_10.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_11.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_12.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_13.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_14.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_15.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_16.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_17.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_18.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_19.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_20.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_21.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_22.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_23.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/pipei_24.png" KeepTime="70"/>
+	</Animation>
+	<Animation Name="xpipei" Info="xpipei" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui/dragon_main/pipei/xpipei_1.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/xpipei_3.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/xpipei_5.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/xpipei_7.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/xpipei_9.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/xpipei_11.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/xpipei_13.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/xpipei_15.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/xpipei_17.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/xpipei_19.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/xpipei_21.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/pipei/xpipei_23.png" KeepTime="70"/>
+	</Animation>
+	<Animation Name="caiji" Info="采集" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui/dragon_main/quest/caiji/caiji_01.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/quest/caiji/caiji_02.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/quest/caiji/caiji_03.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/quest/caiji/caiji_04.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/quest/caiji/caiji_05.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/quest/caiji/caiji_06.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/quest/caiji/caiji_07.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/quest/caiji/caiji_08.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/quest/caiji/caiji_09.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/quest/caiji/caiji_10.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/quest/caiji/caiji_11.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/quest/caiji/caiji_12.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/quest/caiji/caiji_13.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/quest/caiji/caiji_14.png" KeepTime="70"/>
+		<ImageFrame FileName="gui/dragon_main/quest/caiji/caiji_15.png" KeepTime="70"/>
+	</Animation>
+	<Animation Name="wait" Info="wait" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui/dragon_main/wait/1.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/wait/2.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/wait/3.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/wait/4.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/wait/5.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/wait/6.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/wait/7.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/wait/8.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/wait/9.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/wait/10.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/wait/11.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/wait/12.png" KeepTime="100"/>
+	</Animation>
+	<Animation Name="time" Info="time" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui\dragon_main\time\1.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\2.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\3.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\4.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\5.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\6.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\7.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\8.png" KeepTime="30" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\9.png" KeepTime="480" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\10.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\11.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\12.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\13.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\14.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\15.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\16.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\17.png" KeepTime="30" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\18.png" KeepTime="480" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\19.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\20.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\21.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\22.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\23.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\24.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\25.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\26.png" KeepTime="30" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\27.png" KeepTime="480" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\28.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\29.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\30.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\31.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\32.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\33.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\34.png" KeepTime="70" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\35.png" KeepTime="30" LowShow="TRUE"/>
+		<ImageFrame FileName="gui\dragon_main\time\36.png" KeepTime="480" LowShow="TRUE"/>
+	</Animation>
+	<Animation Name="gold" Info="gold" IsPng="true" IsDynamicCreate="true">
+		<ImageFrame FileName="gui/dragon_main/mainicon/gold_animations/gold0001.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/mainicon/gold_animations/gold0002.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/mainicon/gold_animations/gold0003.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/mainicon/gold_animations/gold0004.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/mainicon/gold_animations/gold0005.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/mainicon/gold_animations/gold0006.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/mainicon/gold_animations/gold0007.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/mainicon/gold_animations/gold0008.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/mainicon/gold_animations/gold0009.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/mainicon/gold_animations/gold0010.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/mainicon/gold_animations/gold0011.png" KeepTime="100"/>
+		<ImageFrame FileName="gui/dragon_main/mainicon/gold_animations/gold0012.png" KeepTime="100"/>
+	</Animation>
 </Root>
 <!--SNS展开-->

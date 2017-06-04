@@ -1,192 +1,228 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!-- è¢«2011 rel. 2 sp1 (TeaM DJiNN) ä½¿ç”¨XMLSpy vTeaM DJiNNç¼–è¾‘çš„ (http://www.altova.com) by -->
+<?xml version="1.0" encoding="gb2312"?>
+<!-- ±»2012 () Ê¹ÓÃXMLSpy v±à¼­µÄ (http://www.altova.com) by -->
 <!-- edited with XMLSpy v2010 (http://www.altova.com) by MESMERiZE (MiZE) -->
 <object>
-  <properties>
-    <!-- æœ€æ–°æŠ€èƒ½æµç¨‹è®¡ç®—æ‰€éœ€é…ç½®å­—æ®µ -->
-    <property name="HPBase" type="int" public="false" private="true" save="false" desc="åŸºç¡€ç”Ÿå‘½"/>
-    <property name="MaxHPBase" type="int" public="false" private="true" save="false" desc="åŸºç¡€ç”Ÿå‘½"/>
-    <property name="MaxHPMul" type="float" public="false" private="false" save="false" desc="ç”Ÿå‘½ç™¾åˆ†æ¯”"/>
-    <property name="MaxHPAppend" type="int" public="false" private="false" save="false" desc="ç”Ÿå‘½é¢å¤–é™„åŠ "/>
-    <property name="MaxHP" type="int" public="true" private="true" save="false" realtime="true" desc="æœ€å¤§ç”Ÿå‘½å€¼"/>
-    <property name="MaxMPBase" type="int" public="false" private="true" save="false" desc="åŸºç¡€æ³•åŠ›"/>
-    <property name="MaxMPMul" type="float" public="false" private="false" save="false" desc="æ³•åŠ›ç™¾åˆ†æ¯”"/>
-    <property name="MaxMP" type="int" public="true" private="true" save="false" desc="æ³•åŠ›ä¸Šé™"/>
-    <property name="AttackBase" type="int" public="false" private="true" save="false" realtime="" desc="åŸºç¡€æ”»å‡»"/>
-    <property name="AttackRate" type="int" public="false" private="true" save="false" desc="æ”»å‡»ç™¾åˆ†æ¯”"/>
-    <property name="TotalAttack" type="int" public="false" private="true" save="true" realtime="" desc="åŸºç¡€æ”»å‡»"/>
-    <property name="ADBase" type="int" public="false" private="true" save="false" realtime="" desc="ç‰©ç†æ”»å‡»"/>
-    <property name="ADRate" type="int" public="false" private="true" save="false" realtime="" desc="ç‰©ç†æ”»å‡»ç™¾åˆ†æ¯”"/>
-    <property name="ADTotalBase" type="int" public="false" private="true" save="false" realtime="" desc="ç‰©ç†æ€»æ”»å‡»"/>
-    <property name="ADTotalMul" type="float" public="false" private="true" save="false" realtime="" desc="ç‰©ç†æ”»å‡»ç™¾åˆ†æ¯”"/>
-    <property name="ADTotalAppend" type="int" public="false" private="true" save="false" realtime="" desc="ç‰©ç†æ€»æ”»å‡»"/>
-    <property name="ADTotal" type="int" public="false" private="true" save="false" realtime="" desc="ç‰©ç†æ€»æ”»å‡»"/>
-    <property name="ADDefBaseBase" type="int" public="false" private="true" save="false" realtime="" desc="åŸºç¡€ç‰©ç†é˜²å¾¡å€¼"/>
-    <property name="ADDefBaseMul" type="float" public="false" private="true" save="false" realtime="" desc="ç‰©ç†é˜²å¾¡çŽ‡"/>
-    <property name="ADDefBase" type="int" public="false" private="true" save="false" realtime="" desc="ç‰©ç†é˜²å¾¡å€¼"/>
-    <property name="ADDefRateBase" type="int" public="false" private="true" save="false" realtime="" desc="åŸºç¡€ç‰©ç†å‡ä¼¤çŽ‡"/>
-    <property name="ADDefRateMul" type="float" public="false" private="true" save="false" realtime="" desc="ç‰©ç†å‡ä¼¤çŽ‡åŠ æˆ"/>
-    <property name="ADDefRate" type="int" public="false" private="true" save="false" realtime="" desc="ç‰©ç†å‡ä¼¤çŽ‡"/>
-    <property name="TwiceADDefBase" type="int" public="false" private="true" save="false" desc="ç‰©ç†é¢å¤–å‡ä¼¤çŽ‡"/>
-    <property name="TwiceADDefMul" type="float" public="false" private="false" save="false" desc="ç‰©ç†é¢å¤–å‡ä¼¤çŽ‡"/>
-    <property name="TwiceADDef" type="int" public="false" private="true" save="false" realtime="" desc="ç‰©ç†é¢å¤–å‡ä¼¤çŽ‡"/>
-    <property name="ADDefTotal" type="int" public="false" private="true" save="false" desc="ç‰©ç†æ€»å‡ä¼¤çŽ‡"/>
-    <property name="ADDefRiftBase" type="int" public="false" private="true" save="false" desc="ç‰©ç†ç©¿é€çŽ‡"/>
-    <property name="ADDefRiftMul" type="float" public="false" private="false" save="false" desc="ç‰©ç†ç©¿é€çŽ‡"/>
-    <property name="ADDefRift" type="int" public="false" private="true" save="false" desc="ç‰©ç†ç©¿é€çŽ‡"/>
-    <property name="APBase" type="int" public="false" private="true" save="false" realtime="" desc="æ³•æœ¯æ”»å‡»"/>
-    <property name="APRate" type="int" public="false" private="true" save="false" realtime="" desc="æ³•æœ¯æ”»å‡»ç™¾åˆ†æ¯”"/>
-    <property name="APTotalBase" type="int" public="false" private="true" save="false" realtime="" desc="æ³•æœ¯åŸºç¡€æ”»å‡»"/>
-    <property name="APTotalMul" type="float" public="false" private="true" save="false" realtime="" desc="æ³•æœ¯æ”»å‡»åŠ æˆ"/>
-    <property name="APTotalAppend" type="int" public="false" private="true" save="false" realtime="" desc="æ³•æœ¯æ”»å‡»"/>
-    <property name="APTotal" type="int" public="false" private="true" save="false" realtime="" desc="æ³•æœ¯æ€»æ”»å‡»"/>
-    <property name="APDefBaseBase" type="int" public="false" private="true" save="false" realtime="" desc="åŸºç¡€æ³•æœ¯é˜²å¾¡å€¼"/>
-    <property name="APDefBaseMul" type="float" public="false" private="true" save="false" realtime="" desc="æ³•æœ¯é˜²å¾¡å€¼åŠ æˆ"/>
-    <property name="APDefBase" type="int" public="false" private="true" save="false" realtime="" desc="æ³•æœ¯é˜²å¾¡å€¼"/>
-    <property name="APDefRateBase" type="int" public="false" private="true" save="false" realtime="" desc="æ³•æœ¯å‡ä¼¤çŽ‡"/>
-    <property name="APDefRateMul" type="float" public="false" private="false" save="false" realtime="" desc="æ³•æœ¯å‡ä¼¤çŽ‡"/>
-    <property name="APDefRate" type="int" public="false" private="true" save="false" realtime="" desc="æ³•æœ¯å‡ä¼¤çŽ‡"/>
-    <property name="TwiceAPDef" type="int" public="false" private="true" save="false" realtime="" desc="æ³•æœ¯é¢å¤–å‡ä¼¤çŽ‡"/>
-    <property name="TJADDef" type="int" public="false" private="true" save="false" realtime="" desc="å¤ªæžæŠ€ç‰©ç†äºŒæ¬¡å‡ä¼¤çŽ‡"/>
-    <property name="TJAPDef" type="int" public="false" private="true" save="false" realtime="" desc="å¤ªæžæŠ€æ³•æœ¯äºŒæ¬¡å‡ä¼¤çŽ‡"/>
-    <property name="APDefTotal" type="int" public="false" private="true" save="false" desc="æ³•æœ¯æ€»å‡ä¼¤çŽ‡"/>
-    <property name="APDefRiftBase" type="int" public="false" private="true" save="false" desc="æ³•æœ¯ç©¿é€çŽ‡"/>
-    <property name="APDefRiftMul" type="float" public="false" private="false" save="false" desc="æ³•æœ¯ç©¿é€çŽ‡"/>
-    <property name="APDefRift" type="int" public="false" private="true" save="false" desc="æ³•æœ¯ç©¿é€çŽ‡"/>
-    <property name="HitBase" type="int" public="false" private="true" save="false" desc="åŸºç¡€å‘½ä¸­"/>
-    <property name="HitMul" type="float" public="false" private="true" save="false" desc="å‘½ä¸­åŠ æˆç³»æ•°"/>
-    <property name="Hit" type="int" public="false" private="true" save="false" desc="å‘½ä¸­"/>
-    <property name="MissBase" type="int" public="true" private="true" save="false" desc="åŸºç¡€é—ªé¿"/>
-    <property name="MissMul" type="float" public="true" private="true" save="false" desc="é—ªé¿åŠ æˆç³»æ•°"/>
-    <property name="Miss" type="int" public="true" private="true" save="false" desc="é—ªé¿"/>
-    <property name="CritBase" type="int" public="false" private="true" save="false" desc="åŸºç¡€æš´å‡»å‡ çŽ‡"/>
-    <property name="CritMul" type="float" public="false" private="true" save="false" desc="æš´å‡»å‡ çŽ‡åŠ æˆç³»æ•°"/>
-    <property name="Crit" type="int" public="false" private="true" save="false" desc="æš´å‡»å‡ çŽ‡"/>
-    <property name="TougBase" type="int" public="true" private="true" save="false" desc="åŸºç¡€æŠ—æš´å‡»"/>
-    <property name="TougMul" type="float" public="true" private="true" save="false" desc="æŠ—æš´å‡»åŠ æˆ"/>
-    <property name="Toug" type="int" public="true" private="true" save="false" desc="æŠ—æš´å‡»"/>
-    <property name="CritDamBase" type="int" public="false" private="true" save="false" desc="åŸºç¡€æš´å‡»ä¼¤å®³"/>
-    <property name="CritDamMul" type="float" public="false" private="true" save="false" desc="æš´å‡»ä¼¤å®³åŠ æˆ"/>
-    <property name="CritDam" type="int" public="false" private="true" save="false" desc="æš´å‡»ä¼¤å®³"/>
-    <property name="TougDamBase" type="int" public="true" private="true" save="false" desc="æš´å‡»å…ä¼¤"/>
-    <property name="TougDamMul" type="float" public="true" private="true" save="false" desc="åŸºç¡€æš´å‡»å…ä¼¤"/>
-    <property name="TougDam" type="int" public="true" private="true" save="false" desc="æš´å‡»å…ä¼¤åŠ æˆ"/>
-    <property name="DefBase" type="int" public="true" private="true" save="false" desc="åŸºç¡€å…ä¼¤"/>
-    <property name="DefMul" type="float" public="true" private="true" save="false" desc="å…ä¼¤åŠ æˆ"/>
-    <property name="Def" type="int" public="true" private="true" save="false" desc="å…ä¼¤"/>
-    <property name="RealDamBase" type="int" public="false" private="true" save="false" desc="åŸºç¡€çœŸå®žä¼¤å®³"/>
-    <property name="RealDamMul" type="float" public="false" private="true" save="false" desc="çœŸå®žä¼¤å®³åŠ æˆ"/>
-    <property name="RealDam" type="int" public="false" private="true" save="false" desc="çœŸå®žä¼¤å®³"/>
-    <property name="DamTotalBase" type="int" public="true" private="true" save="false" desc="ä¼¤å®³åŠ æˆ"/>
-    <property name="DamTotalMul" type="float" public="true" private="true" save="false" desc="ä¼¤å®³åŠ æˆ"/>
-    <property name="DamTotal" type="int" public="true" private="true" save="false" desc="ä¼¤å®³åŠ æˆ"/>
-    <property name="DodgeBase" type="int" public="true" private="true" save="false" desc="åŸºç¡€æ ¼æŒ¡"/>
-    <property name="DodgeMul" type="float" public="true" private="true" save="false" desc="æ ¼æŒ¡åŠ æˆ"/>
-    <property name="Dodge" type="int" public="true" private="true" save="false" desc="æ ¼æŒ¡"/>
-    <property name="HPReg" type="int" public="false" private="true" save="false" desc="å‘½ä¸­å›žè¡€"/>
-    <property name="MPReg" type="int" public="false" private="true" save="false" desc="å‘½ä¸­å›žè“"/>
-    <property name="RCReg" type="int" public="false" private="true" save="false" desc="å‘½ä¸­å›žæ€’æ°”å€¼"/>
-    <property name="ECReg" type="int" public="false" private="true" save="false" desc="å‘½ä¸­å›žèƒ½é‡å€¼"/>
-    <property name="GPReg" type="int" public="false" private="true" save="false" desc="å‘½ä¸­å›žæ°”åŠ›å€¼"/>
-    <property name="DFReg" type="int" public="false" private="true" save="false" desc="å‘½ä¸­å›žæŠ¤ç›¾å€¼"/>
-    <property name="BornHP" type="int" public="false" private="true" save="false" desc="å‡ºç”Ÿè¡€é‡"/>
-    <property name="BornMP" type="int" public="false" private="true" save="false" desc="å‡ºç”Ÿé­”å€¼"/>
-    <property name="BornRC" type="int" public="false" private="true" save="false" desc="å‡ºç”Ÿæ€’æ°”å€¼"/>
-    <property name="BornEC" type="int" public="false" private="true" save="false" desc="å‡ºç”Ÿèƒ½é‡å€¼"/>
-    <property name="BornGP" type="int" public="false" private="true" save="false" desc="å‡ºç”Ÿæ°”åŠ›å€¼"/>
-    <property name="BornDF" type="int" public="false" private="true" save="false" desc="å‡ºç”ŸæŠ¤ç›¾å€¼"/>
-    <property name="HP" type="int" public="true" private="true" save="fasle" desc="è¡€é‡å½“å‰å€¼"/>
-    <property name="MP" type="int" public="true" private="true" save="false" desc="æ³•åŠ›å½“å‰å€¼"/>
-    <property name="RC" type="int" public="true" private="true" save="false" desc="æ€’æ°”å½“å‰å€¼"/>
-    <property name="MaxRC" type="int" public="true" private="true" save="false" desc="æ€’æ°”ä¸Šé™"/>
-    <property name="EC" type="int" public="true" private="true" save="false" desc="èƒ½é‡å½“å‰å€¼"/>
-    <property name="MaxEC" type="int" public="true" private="true" save="false" desc="èƒ½é‡ä¸Šé™"/>
-    <property name="GP" type="int" public="true" private="true" save="false" desc="æŠ¤ç›¾å½“å‰å€¼"/>
-    <property name="DF" type="int" public="true" private="true" save="false" desc="æ°”åŠ›å½“å‰å€¼"/>
-    <property name="MaxGP" type="int" public="true" private="true" save="false" desc="æ°”åŠ›ä¸Šé™"/>
-    <property name="MaxDF" type="int" public="true" private="true" save="false" desc="æŠ¤ç›¾ä¸Šé™"/>
-    <property name="DisCost1" type="int" public="false" private="true" save="false" desc="å‡å°‘æ¶ˆè€—1"/>
-    <property name="DisCost2" type="int" public="false" private="true" save="false" desc="å‡å°‘æ¶ˆè€—2"/>
-    <property name="DisCost3" type="int" public="false" private="true" save="false" desc="å‡å°‘æ¶ˆè€—3"/>
-    <property name="DisCost4" type="int" public="false" private="true" save="false" desc="å‡å°‘æ¶ˆè€—4"/>
-    <property name="DisCD1Base" type="int" public="false" private="true" save="false" desc="åŸºç¡€å‡CD1"/>
-    <property name="DisCD1Mul" type="float" public="false" private="true" save="false" desc="å‡CD1åŠ æˆ"/>
-    <property name="DisCD1" type="int" public="false" private="true" save="false" desc="å‡CD1"/>
-    <property name="DisCD2Base" type="int" public="false" private="true" save="false" desc="åŸºç¡€å‡CD2"/>
-    <property name="DisCD2Mul" type="float" public="false" private="true" save="false" desc="å‡CD2åŠ æˆ"/>
-    <property name="DisCD2" type="int" public="false" private="true" save="false" desc="å‡CD2"/>
-    <property name="DisCD3Base" type="int" public="false" private="true" save="false" desc="åŸºç¡€å‡CD3"/>
-    <property name="DisCD3Mul" type="float" public="false" private="true" save="false" desc="å‡CD3åŠ æˆ"/>
-    <property name="DisCD3" type="int" public="false" private="true" save="false" desc="å‡CD3"/>
-    <property name="DisCD4" type="int" public="false" private="true" save="false" desc="å‡CD4"/>
-    <property name="RemainRevive" type="int" public="false" private="true" save="false" desc="å‰©ä½™å¤æ´»æ¬¡æ•°"/>
-    <property name="Revive" type="int" public="false" private="true" save="false" desc="å¤æ´»æ¬¡æ•°"/>
-    <property name="LeechBase" type="int" public="false" private="true" save="false" desc="åŸºç¡€å¸è¡€"/>
-    <property name="LeechMul" type="float" public="false" private="true" save="false" desc="å¸è¡€åŠ æˆ"/>
-    <property name="Leech" type="int" public="false" private="true" save="false" desc="å¸è¡€"/>
-    <property name="ReboundBase" type="int" public="false" private="true" save="false" desc="åŸºç¡€åå¼¹ä¼¤å®³"/>
-    <property name="ReboundMul" type="float" public="false" private="true" save="false" desc="åå¼¹ä¼¤å®³åŠ æˆ"/>
-    <property name="Rebound" type="int" public="true" private="true" save="false" desc="åå¼¹ä¼¤å®³"/>
-    <property name="Deadly" type="int" public="false" private="true" save="false" desc="å¿…æ€å‡ çŽ‡"/>
-    <property name="Dizzy" type="int" public="false" private="true" save="false" desc="çœ©æ™•å‡ çŽ‡"/>
-    <property name="DizzyAsist" type="int" public="true" private="true" save="false" desc="çœ©æ™•æŠ—æ€§"/>
-    <property name="Paraly" type="int" public="false" private="true" save="false" desc="éº»ç—¹å‡ çŽ‡"/>
-    <property name="ParalyAsist" type="int" public="true" private="true" save="false" desc="éº»ç—¹æŠ—æ€§"/>
-    <property name="FireDamBase" type="int" public="false" private="true" save="false" desc="åŸºç¡€ç«ä¼¤å®³"/>
-    <property name="FireDamMul" type="float" public="false" private="true" save="false" desc="ç«ä¼¤å®³åŠ æˆ"/>
-    <property name="FireDam" type="int" public="false" private="true" save="false" desc="ç«ä¼¤å®³"/>
-    <property name="FireRateBase" type="int" public="false" private="true" save="false" desc="åŸºç¡€ç«ä¼¤å®³å‡ çŽ‡"/>
-    <property name="FireRateMul" type="float" public="false" private="true" save="false" desc="ç«ä¼¤å®³å‡ çŽ‡åŠ æˆ"/>
-    <property name="FireRate" type="int" public="false" private="true" save="false" desc="ç«ä¼¤å®³å‡ çŽ‡"/>
-    <property name="IceDamBase" type="int" public="false" private="true" save="false" desc="åŸºç¡€å†°ä¼¤å®³"/>
-    <property name="IceDamMul" type="float" public="false" private="true" save="false" desc="å†°ä¼¤å®³åŠ æˆ"/>
-    <property name="IceDam" type="int" public="false" private="true" save="false" desc="å†°ä¼¤å®³"/>
-    <property name="IceRateBase" type="int" public="false" private="true" save="false" desc="åŸºç¡€å†°ä¼¤å®³å‡ çŽ‡"/>
-    <property name="IceRateMul" type="float" public="false" private="true" save="false" desc="å†°ä¼¤å®³å‡ çŽ‡åŠ æˆ"/>
-    <property name="IceRate" type="int" public="false" private="true" save="false" desc="å†°ä¼¤å®³å‡ çŽ‡"/>
-    <property name="IceAsistBase" type="int" public="false" private="true" save="false" desc="åŸºç¡€å†°å†»æŠ—æ€§"/>
-    <property name="IceAsistMul" type="float" public="false" private="true" save="false" desc="å†°å†»æŠ—æ€§åŠ æˆ"/>
-    <property name="IceAsist" type="int" public="false" private="true" save="false" desc="å†°å†»æŠ—æ€§"/>
-    <property name="LightningDamBase" type="int" public="false" private="true" save="false" desc="åŸºç¡€é›·ä¼¤å®³"/>
-    <property name="LightningDamMul" type="float" public="false" private="true" save="false" desc="é›·ä¼¤å®³åŠ æˆ"/>
-    <property name="LightningDam" type="int" public="false" private="true" save="false" desc="é›·ä¼¤å®³"/>
-    <property name="LightningRateBase" type="int" public="false" private="true" save="false" desc="åŸºç¡€é›·ä¼¤å®³å‡ çŽ‡"/>
-    <property name="LightningRateMul" type="float" public="false" private="true" save="false" desc="é›·ä¼¤å®³å‡ çŽ‡åŠ æˆ"/>
-    <property name="LightningRate" type="int" public="false" private="true" save="false" desc="é›·ä¼¤å®³å‡ çŽ‡"/>
-    <property name="WindDamBase" type="int" public="false" private="true" save="false" desc="åŸºç¡€é£Žä¼¤å®³"/>
-    <property name="WindDamMul" type="float" public="false" private="true" save="false" desc="é£Žä¼¤å®³åŠ æˆ"/>
-    <property name="WindDam" type="int" public="false" private="true" save="false" desc="é£Žä¼¤å®³"/>
-    <property name="WindRateBase" type="int" public="false" private="true" save="false" desc="åŸºç¡€é£Žä¼¤å®³å‡ çŽ‡"/>
-    <property name="WindRateMul" type="float" public="false" private="true" save="false" desc="é£Žä¼¤å®³å‡ çŽ‡åŠ æˆ"/>
-    <property name="WindRate" type="int" public="false" private="true" save="false" desc="é£Žä¼¤å®³å‡ çŽ‡"/>
-    <property name="SoilDamBase" type="int" public="false" private="true" save="false" desc="åŸºç¡€åœŸä¼¤å®³"/>
-    <property name="SoilDamMul" type="float" public="false" private="true" save="false" desc="åœŸä¼¤å®³åŠ æˆ"/>
-    <property name="SoilDam" type="int" public="false" private="true" save="false" desc="åœŸä¼¤å®³"/>
-    <property name="SoilRateBase" type="int" public="false" private="true" save="false" desc="åŸºç¡€åœŸä¼¤å®³å‡ çŽ‡"/>
-    <property name="SoilRateMul" type="float" public="false" private="true" save="false" desc="åœŸä¼¤å®³å‡ çŽ‡åŠ æˆ"/>
-    <property name="SoilRate" type="int" public="false" private="true" save="false" desc="åœŸä¼¤å®³å‡ çŽ‡"/>
-    <property name="PoisonDamBase" type="int" public="false" private="true" save="false" desc="åŸºç¡€æ¯’ä¼¤å®³"/>
-    <property name="PoisonDamMul" type="float" public="false" private="true" save="false" desc="æ¯’ä¼¤å®³åŠ æˆ"/>
-    <property name="PoisonDam" type="int" public="false" private="true" save="false" desc="æ¯’ä¼¤å®³"/>
-    <property name="PoisonRateBase" type="int" public="false" private="true" save="false" desc="åŸºç¡€æ¯’ä¼¤å®³å‡ çŽ‡"/>
-    <property name="PoisonRateMul" type="float" public="false" private="true" save="false" desc="æ¯’ä¼¤å®³å‡ çŽ‡åŠ æˆ"/>
-    <property name="PoisonRate" type="int" public="false" private="true" save="false" desc="æ¯’ä¼¤å®³å‡ çŽ‡"/>
-    <property name="MaxBreakBase"  type="int" public="false" private="true" save="false" desc="å½“å‰ç ´é˜²å€¼"/>
-    <property name="MaxBreakMul"  type="int" public="false" private="true" save="false" desc="å½“å‰ç ´é˜²å€¼"/>
-    <property name="Break"  type="int" public="true" private="true" save="false" desc="å½“å‰ç ´é˜²å€¼"/>
-    <property name="MaxBreak"  type="int" public="true" private="true" save="false" desc="å½“å‰ç ´é˜²ä¸Šé™"/>
-    <property name="BreakReturn"  type="int" public="true" private="true" save="false" desc="å½“å‰ç ´é˜²å›žå¤é€Ÿåº¦"/>
-    <property name="BreakReturn2"  type="int" public="false" private="true" save="false" desc="å½“å‰ç ´é˜²å›žå¤é€Ÿåº¦"/>
-    <property name="BuffAbsorb" type="int" public="true" private="true" save="false" desc="Buffæ¯”ä¾‹"/>
-    <property name="CureRateBase"  type="int" public="false" private="true" save="false" desc="æ²»ç–—å±žæ€§æ¯”å€¼"/>
-    <property name="CureRateMul"  type="int" public="false" private="false" save="false" desc="æ²»ç–—å±žæ€§æ¯”å€¼"/>
-    <property name="CureRate"  type="int" public="true" private="true" save="false" desc="æ²»ç–—å±žæ€§æ¯”å€¼"/>
-	<property name="ImmunityBulletDamage" type="byte" public="true" private="true" save="false" desc="æ˜¯å¦å…ç–«å¼¹é“ä¼¤å®³"/>
-	<property name="LeechAsist" type="int" public="false" private="true" save="false" desc="å¸è¡€æŠ—æ€§"/>
-	<property name="LeechAsistBase" type="int" public="false" private="true" save="false" desc="å¸è¡€æŠ—æ€§åŸºç¡€å€¼"/>
-	<property name="LeechAsistMul" type="float" public="false" private="true" save="false" desc="å¸è¡€æŠ—æ€§åŠ æˆ"/>
-	<property name="ReboundAsist" type="int" public="false" private="true" save="false" desc="åä¼¤æŠ—æ€§"/>
-	<property name="ReboundAsistBase" type="int" public="false" private="true" save="false" desc="åä¼¤æŠ—æ€§åŸºç¡€å€¼"/>
-	<property name="ReboundAsistMul" type="float" public="false" private="true" save="false" desc="åä¼¤æŠ—æ€§åŠ æˆ"/>
-  </properties>
+    <properties>
+        <!-- ²»ÐèÒª4¸ö×éµÄÊôÐÔ -->
+        <property name="HPRatio" type="dword" public="false" private="false" save="true" desc="ÑªÁ¿µ±Ç°°Ù·Ö±È"/>
+        <property name="HP" type="int64" public="true" private="true" save="true" desc="ÑªÁ¿µ±Ç°Öµ"/>
+        <property name="MP" type="dword" public="true" private="true" save="true" desc="·¨Á¦µ±Ç°Öµ"/>
+        
+        <property name="FinalDamageRatio" type="float" public="false" private="false" save="false" desc="¹¥»÷Ä¿±êÊ±×îÖÕÉËº¦±ÈÂÊ"/>
+        <property name="FinalDamageValue" type="float" public="false" private="false" save="false" desc="¹¥»÷Ä¿±êÊ±×îÖÕÉËº¦¼ÓÖµ"/>
+        <property name="FinalBeDamageRatio" type="float" public="false" private="false" save="false" desc="±»¹¥»÷Ê±×îÖÕÉËº¦±ÈÂÊ"/>
+        <property name="FinalBeDamageValue" type="float" public="false" private="false" save="false" desc="±»¹¥»÷Ê±×îÖÕÉËº¦¼ÓÖµ"/>
+        
+        <property name="FinalNormalNpcDamageRatio" type="float" public="false" private="false" save="false" desc="¹¥»÷Ä¿±êÊÇÆÕÍ¨npcÊ±×îÖÕÉËº¦±ÈÂÊ"/>
+        <property name="FinalNormalNpcDamageValue" type="float" public="false" private="false" save="false" desc="¹¥»÷Ä¿±êÊÇÆÕÍ¨npcÊ±×îÖÕÉËº¦¼ÓÖµ"/>
+        
+        <property name="IgnoreDamageRate" type="int" public="false" private="false" save="false" desc="ºöÊÓÉËº¦¸ÅÂÊ¡£0µ½10000Ö®¼äµÄËæ»úÖµ"/>
+        <property name="MustCrit" type="int" public="false" private="false" save="false" realtime="false" desc="±Ø¶¨±©»÷×îÖÕÖµ"/>
+        <property name="HPResumeFactor" type="float" public="false" private="false" save="false" realtime="false" desc="»ØÑª±ÈÂÊ×îÖÕÖµ"/>
+
+        <!-- ÐèÒª4¸ö×éµÄÊôÐÔ -->
+        <property name="Str" type="int" public="false" private="true" save="false" desc="Á¦Á¿×îÖÕÖµ"/>
+        <property name="StrBase" type="int" public="false" private="false" save="false" desc="Á¦Á¿Á¿»ù´¡"/>
+        <property name="StrAdd" type="int" public="false" private="false" save="false" desc="Á¦Á¿¸½¼Ó"/>
+        <property name="StrMul" type="float" public="false" private="false" save="false" desc="Á¦Á¿±¶ÂÊ"/>
+        <property name="StrAppend" type="int" public="false" private="false" save="false" desc="Á¦Á¿ÐÞÕý£¬²»ÊÜ±¶ÂÊÓ°Ïì"/>
+        
+        <property name="Dex" type="int" public="false" private="true" save="false" desc="Ãô½Ý×îÖÕÖµ"/>
+        <property name="DexBase" type="int" public="false" private="false" save="false" desc="Ãô½ÝÁ¿»ù´¡"/>
+        <property name="DexAdd" type="int" public="false" private="false" save="false" desc="Ãô½Ý¸½¼Ó"/>
+        <property name="DexMul" type="float" public="false" private="false" save="false" desc="Ãô½Ý±¶ÂÊ"/>
+        <property name="DexAppend" type="int" public="false" private="false" save="false" desc="Ãô½ÝÐÞÕý£¬²»ÊÜ±¶ÂÊÓ°Ïì"/>
+        
+        <property name="Int" type="int" public="false" private="true" save="false" desc="ÖÇÁ¦×îÖÕÖµ"/>
+        <property name="IntBase" type="int" public="false" private="false" save="false" desc="ÖÇÁ¦Á¿»ù´¡"/>
+        <property name="IntAdd" type="int" public="false" private="false" save="false" desc="ÖÇÁ¦¸½¼Ó"/>
+        <property name="IntMul" type="float" public="false" private="false" save="false" desc="ÖÇÁ¦±¶ÂÊ"/>
+        <property name="IntAppend" type="int" public="false" private="false" save="false" desc="ÖÇÁ¦ÐÞÕý£¬²»ÊÜ±¶ÂÊÓ°Ïì"/>
+        
+        <property name="Con" type="int" public="false" private="true" save="false" desc="ÄÍÁ¦×îÖÕÖµ"/>
+        <property name="ConBase" type="int" public="false" private="false" save="false" desc="ÄÍÁ¦Á¿»ù´¡"/>
+        <property name="ConAdd" type="int" public="false" private="false" save="false" desc="ÄÍÁ¦¸½¼Ó"/>
+        <property name="ConMul" type="float" public="false" private="false" save="false" desc="ÄÍÁ¦±¶ÂÊ"/>
+        <property name="ConAppend" type="int" public="false" private="false" save="false" desc="ÄÍÁ¦ÐÞÕý£¬²»ÊÜ±¶ÂÊÓ°Ïì"/>
+        
+        <property name="Ten" type="int" public="false" private="true" save="false" desc="ÈÍÐÔ×îÖÕÖµ"/>
+        <property name="TenBase" type="int" public="false" private="false" save="false" desc="ÈÍÐÔÁ¿»ù´¡"/>
+        <property name="TenAdd" type="int" public="false" private="false" save="false" desc="ÈÍÐÔ¸½¼Ó"/>
+        <property name="TenMul" type="float" public="false" private="false" save="false" desc="ÈÍÐÔ±¶ÂÊ"/>
+        <property name="TenAppend" type="int" public="false" private="false" save="false" desc="ÈÍÐÔÐÞÕý£¬²»ÊÜ±¶ÂÊÓ°Ïì"/>
+
+        <property name="MaxHP" type="int64" public="true" private="true" save="false" realtime="false" desc="×î´óÑªÁ¿×îÖÕÖµ"/>
+        <property name="MaxHPBase" type="int64" public="false" private="false" save="false" realtime="false" desc="×î´óÑªÁ¿»ù´¡"/>
+        <property name="MaxHPAdd" type="int64" public="false" private="false" save="false" realtime="false" desc="×î´óÑªÁ¿ÐÞÕý"/>
+        <property name="MaxHPMul" type="float" public="false" private="false" save="false" realtime="false" desc="×î´óÑªÁ¿±¶ÂÊ"/>
+        <property name="MaxHPAppend" type="int64" public="false" private="false" save="false" realtime="false" desc="×î´óÑªÁ¿ÐÞÕý£¬²»ÊÜ±¶ÂÊÓ°Ïì"/>
+        <property name="MaxHPFinalMul" type="float" public="false" private="false" save="false" realtime="false" desc="×î´óÑªÁ¿×îÖÕ±¶ÂÊ£¬ÔÚÇ°Ãæ¼¸¸öÊôÐÔ¼ÆËã½á¹ûÖ®ºóÔÙ³ËÒÔ£¨1-FinalMul£©"/>
+
+        <property name="MaxMP" type="int" public="true" private="true" save="false" realtime="false" desc="×î´óÀ¶×îÖÕÖµ"/>
+        <property name="MaxMPBase" type="int" public="false" private="false" save="false" realtime="false" desc="×î´óÀ¶»ù´¡"/>
+        <property name="MaxMPAdd" type="int" public="false" private="false" save="false" realtime="false" desc="×î´óÀ¶¸½¼Ó"/>
+        <property name="MaxMPMul" type="float" public="false" private="false" save="false" realtime="false" desc="×î´óÀ¶±¶ÂÊ"/>
+        <property name="MaxMPAppend" type="int" public="false" private="false" save="false" realtime="false" desc="×î´óÀ¶¸½¼Ó£¬²»ÊÜ±¶ÂÊÓ°Ïì"/>
+
+        <property name="Atk" type="int" public="false" private="true" save="false" realtime="false" desc="¹¥»÷"/>
+        <property name="AtkBase" type="int" public="false" private="false" save="false" realtime="false" desc="¹¥»÷»ù´¡"/>
+        <property name="AtkAdd" type="int" public="false" private="false" save="false" realtime="false" desc="¹¥»÷¸½¼Ó"/>
+        <property name="AtkMul" type="float" public="false" private="false" save="false" realtime="false" desc="¹¥»÷±¶ÂÊ"/>
+        <property name="AtkAppend" type="int" public="false" private="false" save="false" realtime="false" desc="¹¥»÷¸½¼Ó£¬²»ÊÜ±¶ÂÊÓ°Ïì"/>
+        <property name="AtkFinalMul" type="float" public="false" private="false" save="false" realtime="false" desc="¹¥»÷×îÖÕ±¶ÂÊ£¬ÔÚÇ°Ãæ¼¸¸öÊôÐÔ¼ÆËã½á¹ûÖ®ºóÔÙ³ËÒÔ£¨1-FinalMul£©"/>
+
+        <property name="Def" type="int" public="false" private="true" save="false" realtime="false" desc="·ÀÓù"/>
+        <property name="DefBase" type="int" public="false" private="false" save="false" realtime="false" desc="·ÀÓù»ù´¡"/>
+        <property name="DefAdd" type="int" public="false" private="false" save="false" realtime="false" desc="·ÀÓù¸½¼Ó"/>
+        <property name="DefMul" type="float" public="false" private="false" save="false" realtime="false" desc="·ÀÓù±¶ÂÊ"/>
+        <property name="DefAppend" type="int" public="false" private="false" save="false" realtime="false" desc="·ÀÓù¸½¼Ó£¬²»ÊÜ±¶ÂÊÓ°Ïì"/>
+
+        <property name="Hit" type="int" public="false" private="true" save="false" realtime="false" desc="ÃüÖÐ×îÖÕÖµ"/>
+        <property name="HitBase" type="int" public="false" private="false" save="false" realtime="false" desc="ÃüÖÐ»ù´¡"/>
+        <property name="HitAdd" type="int" public="false" private="false" save="false" realtime="false" desc="ÃüÖÐÐÞÕý"/>
+        <property name="HitMul" type="float" public="false" private="false" save="false" realtime="false" desc="ÃüÖÐ±¶ÂÊ"/>
+        <property name="HitAppend" type="int" public="false" private="false" save="false" realtime="false" desc="ÃüÖÐÐÞÕý£¬²»ÊÜ±¶ÂÊÓ°Ïì"/>
+
+        <property name="Miss" type="int" public="false" private="true" save="false" realtime="false" desc="ÉÁ±Ü×îÖÕÖµ"/>
+        <property name="MissBase" type="int" public="false" private="false" save="false" realtime="false" desc="ÉÁ±Ü»ù´¡"/>
+        <property name="MissAdd" type="int" public="false" private="false" save="false" realtime="false" desc="ÉÁ±ÜÐÞÕý"/>
+        <property name="MissMul" type="float" public="false" private="false" save="false" realtime="false" desc="ÉÁ±Ü±¶ÂÊ"/>
+        <property name="MissAppend" type="int" public="false" private="false" save="false" realtime="false" desc="ÉÁ±ÜÐÞÕý£¬²»ÊÜ±¶ÂÊÓ°Ïì"/>
+
+        <property name="Crit" type="int" public="false" private="true" save="false" realtime="false" desc="±¬»÷×îÖÕÖµ"/>
+        <property name="CritBase" type="int" public="false" private="false" save="false" realtime="false" desc="±¬»÷»ù´¡"/>
+        <property name="CritAdd" type="int" public="false" private="false" save="false" realtime="false" desc="±¬»÷¸½¼Ó"/>
+        <property name="CritMul" type="float" public="false" private="false" save="false" realtime="false" desc="±¬»÷±¶ÂÊ"/>
+        <property name="CritAppend" type="int" public="false" private="false" save="false" realtime="false" desc="±¬»÷¸½¼Ó£¬²»ÊÜ±¶ÂÊÓ°Ïì"/>
+
+        <property name="Toug" type="int" public="false" private="true" save="false" realtime="false" desc="¿¹±¬×îÖÕÖµ"/>
+        <property name="TougBase" type="int" public="false" private="false" save="false" realtime="false" desc="¿¹±¬»ù´¡"/>
+        <property name="TougAdd" type="int" public="false" private="false" save="false" realtime="false" desc="¿¹±¬¸½¼Ó"/>
+        <property name="TougMul" type="float" public="false" private="false" save="false" realtime="false" desc="¿¹±¬±¶ÂÊ"/>
+        <property name="TougAppend" type="int" public="false" private="false" save="false" realtime="false" desc="¿¹±¬¸½¼Ó£¬²»ÊÜ±¶ÂÊÓ°Ïì"/>
+
+        <property name="CritDam" type="int" public="false" private="true" save="false" realtime="false" desc="±¬ÉË×îÖÕÖµ"/>
+        <property name="CritDamBase" type="int" public="false" private="false" save="false" realtime="false" desc="±¬ÉË»ù´¡"/>
+        <property name="CritDamAdd" type="int" public="false" private="false" save="false" realtime="false" desc="±¬ÉË¸½¼Ó"/>
+        <property name="CritDamMul" type="float" public="false" private="false" save="false" realtime="false" desc="±¬ÉË±¶ÂÊ"/>
+        <property name="CritDamAppend" type="int" public="false" private="false" save="false" realtime="false" desc="±¬ÉË¸½¼Ó£¬²»ÊÜ±¶ÂÊÓ°Ïì"/>
+
+        <property name="TougDam" type="int" public="false" private="true" save="false" realtime="false" desc="±¬Ãâ×îÖÕÖµ"/>
+        <property name="TougDamBase" type="int" public="false" private="false" save="false" realtime="false" desc="±¬Ãâ»ù´¡"/>
+        <property name="TougDamAdd" type="int" public="false" private="false" save="false" realtime="false" desc="±¬Ãâ¸½¼Ó"/>
+        <property name="TougDamMul" type="float" public="false" private="false" save="false" realtime="false" desc="±¬Ãâ±¶ÂÊ"/>
+        <property name="TougDamAppend" type="int" public="false" private="false" save="false" realtime="false" desc="±¬Ãâ¸½¼Ó£¬²»ÊÜ±¶ÂÊÓ°Ïì"/>
+
+        <property name="Block" type="int" public="false" private="true" save="false" realtime="false" desc="¸ñµ²×îÖÕÖµ"/>
+        <property name="BlockBase" type="int" public="false" private="false" save="false" realtime="false" desc="¸ñµ²»ù´¡"/>
+        <property name="BlockAdd" type="int" public="false" private="false" save="false" realtime="false" desc="¸ñµ²¸½¼Ó"/>
+        <property name="BlockMul" type="float" public="false" private="false" save="false" realtime="false" desc="¸ñµ²±¶ÂÊ"/>
+        <property name="BlockAppend" type="int" public="false" private="false" save="false" realtime="false" desc="¸ñµ²¸½¼Ó£¬²»ÊÜ±¶ÂÊÓ°Ïì"/>
+
+        <property name="BlockValue" type="int" public="false" private="true" save="false" realtime="false" desc="¸ñµ²Öµ×îÖÕÖµ"/>
+        <property name="BlockValueBase" type="int" public="false" private="false" save="false" realtime="false" desc="¸ñµ²Öµ»ù´¡"/>
+        <property name="BlockValueAdd" type="int" public="false" private="false" save="false" realtime="false" desc="¸ñµ²Öµ¸½¼Ó"/>
+        <property name="BlockValueMul" type="float" public="false" private="false" save="false" realtime="false" desc="¸ñµ²Öµ±¶ÂÊ"/>
+        <property name="BlockValueAppend" type="int" public="false" private="false" save="false" realtime="false" desc="¸ñµ²Öµ¸½¼Ó£¬²»ÊÜ±¶ÂÊÓ°Ïì"/>
+
+        <property name="RealDam" type="int" public="false" private="true" save="false" realtime="false" desc="×îÖÕÉËº¦×îÖÕÖµ"/>
+        <property name="RealDamBase" type="int" public="false" private="false" save="false" realtime="false" desc="×îÖÕÉËº¦»ù´¡"/>
+        <property name="RealDamAdd" type="int" public="false" private="false" save="false" realtime="false" desc="×îÖÕÉËº¦¸½¼Ó"/>
+        <property name="RealDamMul" type="float" public="false" private="false" save="false" realtime="false" desc="×îÖÕÉËº¦±¶ÂÊ"/>
+        <property name="RealDamAppend" type="int" public="false" private="false" save="false" realtime="false" desc="×îÖÕÉËº¦¸½¼Ó£¬²»ÊÜ±¶ÂÊÓ°Ïì"/>
+
+        <property name="DamIncrease" type="int" public="false" private="true" save="false" realtime="false" desc="ÉËÔö×îÖÕÖµ"/>
+        <property name="DamIncreaseBase" type="int" public="false" private="false" save="false" realtime="false" desc="ÉËÔö»ù´¡"/>
+        <property name="DamIncreaseAdd" type="int" public="false" private="false" save="false" realtime="false" desc="ÉËÔö¸½¼Ó"/>
+        <property name="DamIncreaseMul" type="float" public="false" private="false" save="false" realtime="false" desc="ÉËÔö±¶ÂÊ"/>
+        <property name="DamIncreaseAppend" type="int" public="false" private="false" save="false" realtime="false" desc="ÉËÔö¸½¼Ó£¬²»ÊÜ±¶ÂÊÓ°Ïì"/>
+
+        <property name="DamDecrease" type="int" public="false" private="true" save="false" realtime="false" desc="ÉË¼õ×îÖÕÖµ"/>
+        <property name="DamDecreaseBase" type="int" public="false" private="false" save="false" realtime="false" desc="ÉË¼õ»ù´¡"/>
+        <property name="DamDecreaseAdd" type="int" public="false" private="false" save="false" realtime="false" desc="ÉË¼õ¸½¼Ó"/>
+        <property name="DamDecreaseMul" type="float" public="false" private="false" save="false" realtime="false" desc="ÉË¼õ±¶ÂÊ"/>
+        <property name="DamDecreaseAppend" type="int" public="false" private="false" save="false" realtime="false" desc="ÉË¼õ¸½¼Ó£¬²»ÊÜ±¶ÂÊÓ°Ïì"/>
+
+        <property name="HPReg" type="int" public="false" private="true" save="false" realtime="false" desc="ÉúÃü»Ö¸´ËÙ¶È×îÖÕÖµ"/>
+        <property name="HPRegBase" type="int" public="false" private="false" save="false" realtime="false" desc="ÉúÃü»Ö¸´ËÙ¶È»ù´¡"/>
+        <property name="HPRegAdd" type="int" public="false" private="false" save="false" realtime="false" desc="ÉúÃü»Ö¸´ËÙ¶È¸½¼Ó"/>
+        <property name="HPRegMul" type="float" public="false" private="false" save="false" realtime="false" desc="ÉúÃü»Ö¸´ËÙ¶È±¶ÂÊ"/>
+        <property name="HPRegAppend" type="int" public="false" private="false" save="false" realtime="false" desc="ÉúÃü»Ö¸´ËÙ¶È¸½¼Ó£¬²»ÊÜ±¶ÂÊÓ°Ïì"/>
+
+        <property name="MPReg" type="int" public="false" private="true" save="false" realtime="false" desc="ÄÚÁ¦»Ö¸´ËÙ¶È×îÖÕÖµ"/>
+        <property name="MPRegBase" type="int" public="false" private="false" save="false" realtime="false" desc="ÄÚÁ¦»Ö¸´ËÙ¶È»ù´¡"/>
+        <property name="MPRegAdd" type="int" public="false" private="false" save="false" realtime="false" desc="ÄÚÁ¦»Ö¸´ËÙ¶È¸½¼Ó"/>
+        <property name="MPRegMul" type="float" public="false" private="false" save="false" realtime="false" desc="ÄÚÁ¦»Ö¸´ËÙ¶È±¶ÂÊ"/>
+        <property name="MPRegAppend" type="int" public="false" private="false" save="false" realtime="false" desc="ÄÚÁ¦»Ö¸´ËÙ¶È¸½¼Ó£¬²»ÊÜ±¶ÂÊÓ°Ïì"/>
+		
+		<!-- ×°±¸ÊôÐÔ -->
+        <property name="AdvNoRideDamPer" type="int" public="false" private="false" save="false" realtime="false" desc="¶ÔÎ´³Ë×øÆïÔì³ÉµÄÉËº¦Ìá¸ß×îÖÕÖµ"/>
+        <property name="AdvNoRideDamPerBase" type="int" public="false" private="false" save="false" realtime="false" desc="¶ÔÎ´Æï³Ë×øÆïÔì³ÉµÄÉËº¦Ìá¸ß»ù´¡"/>
+        <property name="AdvNoRideDamPerAdd" type="int" public="false" private="false" save="false" realtime="false" desc="¶ÔÎ´Æï³Ë×øÆïÔì³ÉµÄÉËº¦Ìá¸ß¸½¼Ó"/>
+        <property name="AdvNoRideDamPerMul" type="float" public="false" private="false" save="false" realtime="false" desc="¶ÔÎ´Æï³Ë×øÆïÔì³ÉµÄÉËº¦Ìá¸ß±¶ÂÊ"/>
+        <property name="AdvNoRideDamPerAppend" type="int" public="false" private="false" save="false" realtime="false" desc="¶ÔÎ´Æï³Ë×øÆïÔì³ÉµÄÉËº¦Ìá¸ß¸½¼Ó,²»ÊÜ±¶ÂÊÓ°Ïì"/>
+		
+        <property name="AdvGroundRideDamPer" type="int" public="false" private="false" save="false" realtime="false" desc="¶ÔµØÃæ×øÆïÔì³ÉµÄÉËº¦Ìá¸ß×îÖÕÖµ"/>
+        <property name="AdvGroundRideDamPerBase" type="int" public="false" private="false" save="false" realtime="false" desc="¶ÔµØÃæ×øÆïÔì³ÉµÄÉËº¦Ìá¸ß»ù´¡"/>
+        <property name="AdvGroundRideDamPerAdd" type="int" public="false" private="false" save="false" realtime="false" desc="¶ÔµØÃæ×øÆïÔì³ÉµÄÉËº¦Ìá¸ß¸½¼Ó"/>
+        <property name="AdvGroundRideDamPerMul" type="float" public="false" private="false" save="false" realtime="false" desc="¶ÔµØÃæ×øÆïÔì³ÉµÄÉËº¦Ìá¸ß±¶ÂÊ"/>
+        <property name="AdvGroundRideDamPerAppend" type="int" public="false" private="false" save="false" realtime="false" desc="¶ÔµØÃæ×øÆïÔì³ÉµÄÉËº¦Ìá¸ß¸½¼Ó,²»ÊÜ±¶ÂÊÓ°Ïì"/>		
+        
+		<property name="AdvFlyRideDamPer" type="int" public="false" private="false" save="false" realtime="false" desc="¶Ô¿ÕÖÐ×øÆïÔì³ÉµÄÉËº¦Ìá¸ß×îÖÕÖµ"/>
+	    <property name="AdvFlyRideDamPerBase" type="int" public="false" private="false" save="false" realtime="false" desc="¶Ô¿ÕÖÐ×øÆïÔì³ÉµÄÉËº¦Ìá¸ß»ù´¡"/>
+        <property name="AdvFlyRideDamPerAdd" type="int" public="false" private="false" save="false" realtime="false" desc="¶Ô¿ÕÖÐ×øÆïÔì³ÉµÄÉËº¦Ìá¸ß¸½¼Ó"/>
+        <property name="AdvFlyRideDamPerMul" type="float" public="false" private="false" save="false" realtime="false" desc="¶Ô¿ÕÖÐ×øÆïÔì³ÉµÄÉËº¦Ìá¸ß±¶ÂÊ"/>
+        <property name="AdvFlyRideDamPerAppend" type="int" public="false" private="false" save="false" realtime="false" desc="¶Ô¿ÕÖÐ×øÆïÔì³ÉµÄÉËº¦Ìá¸ß¸½¼Ó,²»ÊÜ±¶ÂÊÓ°Ïì"/>
+
+		<property name="AllRideDecCD" type="int" public="false" private="false" save="false" realtime="false" desc="¶ÔËùÓÐ×øÆïCD¼õÉÙµÄ×îÖÕÖµ"/>
+	    <property name="AllRideDecCDBase" type="int" public="false" private="false" save="false" realtime="false" desc="¶ÔËùÓÐ×øÆïCD¼õÉÙµÄ»ù´¡"/>
+        <property name="AllRideDecCDAdd" type="int" public="false" private="false" save="false" realtime="false" desc="¶ÔËùÓÐ×øÆïCD¼õÉÙµÄ¸½¼Ó"/>
+        <property name="AllRideDecCDMul" type="float" public="false" private="false" save="false" realtime="false" desc="¶ÔËùÓÐ×øÆïCD¼õÉÙµÄ±¶ÂÊ"/>
+        <property name="AllRideDecCDAppend" type="int" public="false" private="false" save="false" realtime="false" desc="¶ÔËùÓÐ×øÆïCD¼õÉÙµÄ¸½¼Ó,²»ÊÜ±¶ÂÊÓ°Ïì"/>
+	
+		<property name="GroundRideDecCD" type="int" public="false" private="false" save="false" realtime="false" desc="¶ÔµØÃæ×øÆïCD¼õÉÙµÄ×îÖÕÖµ"/>
+	    <property name="GroundRideDecCDBase" type="int" public="false" private="false" save="false" realtime="false" desc="¶ÔµØÃæ×øÆïCD¼õÉÙµÄ»ù´¡"/>
+        <property name="GroundRideDecCDAdd" type="int" public="false" private="false" save="false" realtime="false" desc="¶ÔµØÃæ×øÆïCD¼õÉÙµÄ¸½¼Ó"/>
+        <property name="GroundRideDecCDMul" type="float" public="false" private="false" save="false" realtime="false" desc="¶ÔµØÃæ×øÆïCD¼õÉÙµÄ±¶ÂÊ"/>
+        <property name="GroundRideDecCDAppend" type="int" public="false" private="false" save="false" realtime="false" desc="¶ÔµØÃæ×øÆïCD¼õÉÙµÄ¸½¼Ó,²»ÊÜ±¶ÂÊÓ°Ïì"/>
+		
+		<property name="FlyRideDecCD" type="int" public="false" private="false" save="false" realtime="false" desc="¶Ô·ÉÐÐ×øÆïCD¼õÉÙµÄ×îÖÕÖµ"/>
+	    <property name="FlyRideDecCDBase" type="int" public="false" private="false" save="false" realtime="false" desc="¶Ô·ÉÐÐ×øÆïCD¼õÉÙµÄ»ù´¡"/>
+        <property name="FlyRideDecCDAdd" type="int" public="false" private="false" save="false" realtime="false" desc="¶Ô·ÉÐÐ×øÆïCD¼õÉÙµÄ¸½¼Ó"/>
+        <property name="FlyRideDecCDMul" type="float" public="false" private="false" save="false" realtime="false" desc="¶Ô·ÉÐÐ×øÆïCD¼õÉÙµÄ±¶ÂÊ"/>
+        <property name="FlyRideDecCDAppend" type="int" public="false" private="false" save="false" realtime="false" desc="¶Ô·ÉÐÐ×øÆïCD¼õÉÙµÄ¸½¼Ó,²»ÊÜ±¶ÂÊÓ°Ïì"/>
+		
+		<property name="DamCripplePer" type="int" public="false" private="false" save="false" realtime="false" desc="ÖÂ²Ð°Ù·Ö±ÈµÄ×îÖÕÖµ"/>
+	    <property name="DamCripplePerBase" type="int" public="false" private="false" save="false" realtime="false" desc="ÖÂ²Ð°Ù·Ö±ÈµÄ»ù´¡"/>
+        <property name="DamCripplePerAdd" type="int" public="false" private="false" save="false" realtime="false" desc="ÖÂ²Ð°Ù·Ö±ÈµÄ¸½¼Ó"/>
+        <property name="DamCripplePerMul" type="float" public="false" private="false" save="false" realtime="false" desc="ÖÂ²Ð°Ù·Ö±ÈµÄ±¶ÂÊ"/>
+        <property name="DamCripplePerAppend" type="int" public="false" private="false" save="false" realtime="false" desc="ÖÂ²Ð°Ù·Ö±ÈµÄ¸½¼Ó,²»ÊÜ±¶ÂÊÓ°Ïì"/>
+		
+		<property name="Cripple" type="int64" public="true" private="true" save="false" realtime="false" desc="ÖÂ²ÐÖµ"/>
+		
+	    <property name="DamCripplePerDef" type="int" public="false" private="false" save="false" realtime="false" desc="·ÀÓùÖÂ²Ð°Ù·Ö±ÈµÄ×îÖÕÖµ"/>
+	    <property name="DamCripplePerDefBase" type="int" public="false" private="false" save="false" realtime="false" desc="·ÀÓùÖÂ²Ð°Ù·Ö±ÈµÄ»ù´¡"/>
+        <property name="DamCripplePerDefAdd" type="int" public="false" private="false" save="false" realtime="false" desc="·ÀÓùÖÂ²Ð°Ù·Ö±ÈµÄ¸½¼Ó"/>
+        <property name="DamCripplePerDefMul" type="float" public="false" private="false" save="false" realtime="false" desc="·ÀÓùÖÂ²Ð°Ù·Ö±ÈµÄ±¶ÂÊ"/>
+        <property name="DamCripplePerDefAppend" type="int" public="false" private="false" save="false" realtime="false" desc="·ÀÓùÖÂ²Ð°Ù·Ö±ÈµÄ¸½¼Ó,²»ÊÜ±¶ÂÊÓ°Ïì"/>
+
+	    <property name="MPAbsortDamPer" type="int" public="false" private="false" save="false" realtime="false" desc="·¨Á¦ÎüÊÕ°Ù·Ö±ÈµÄ×îÖÕÖµ"/>
+	    <property name="MPAbsortDamPerBase" type="int" public="false" private="false" save="false" realtime="false" desc="·¨Á¦ÎüÊÕ°Ù·Ö±ÈµÄ»ù´¡"/>
+        <property name="MPAbsortDamPerAdd" type="int" public="false" private="false" save="false" realtime="false" desc="·¨Á¦ÎüÊÕ°Ù·Ö±ÈµÄ¸½¼Ó"/>
+        <property name="MPAbsortDamPerMul" type="float" public="false" private="false" save="false" realtime="false" desc="·¨Á¦ÎüÊÕ°Ù·Ö±ÈµÄ±¶ÂÊ"/>
+        <property name="MPAbsortDamPerAppend" type="int" public="false" private="false" save="false" realtime="false" desc="·¨Á¦ÎüÊÕ°Ù·Ö±ÈµÄ¸½¼Ó,²»ÊÜ±¶ÂÊÓ°Ïì"/>
+		
+	    <property name="DamPerTurnToMP" type="int" public="false" private="false" save="false" realtime="false" desc="ÉËº¦×ªÎª·¨Á¦µÄ×îÖÕÖµ"/>
+	    <property name="DamPerTurnToMPBase" type="int" public="false" private="false" save="false" realtime="false" desc="ÉËº¦×ªÎª·¨Á¦µÄ»ù´¡"/>
+        <property name="DamPerTurnToMPAdd" type="int" public="false" private="false" save="false" realtime="false" desc="ÉËº¦×ªÎª·¨Á¦µÄ¸½¼Ó"/>
+        <property name="DamPerTurnToMPMul" type="float" public="false" private="false" save="false" realtime="false" desc="ÉËº¦×ªÎª·¨Á¦µÄ±¶ÂÊ"/>
+        <property name="DamPerTurnToMPAppend" type="int" public="false" private="false" save="false" realtime="false" desc="ÉËº¦×ªÎª·¨Á¦µÄ¸½¼Ó,²»ÊÜ±¶ÂÊÓ°Ïì"/>
+
+	    <property name="ConSumeConP" type="int" public="false" private="false" save="false" realtime="false" desc="ÏûºÄÄÍÁ¦µãÊýµÄ×îÖÕÖµ"/>
+	    <property name="ConSumeConPBase" type="int" public="false" private="false" save="false" realtime="false" desc="ÏûºÄÄÍÁ¦µãÊýµÄ»ù´¡"/>
+        <property name="ConSumeConPAdd" type="int" public="false" private="false" save="false" realtime="false" desc="ÏûºÄÄÍÁ¦µãÊýµÄ¸½¼Ó"/>
+        <property name="ConSumeConPMul" type="float" public="false" private="false" save="false" realtime="false" desc="ÏûºÄÄÍÁ¦µãÊýµÄ±¶ÂÊ"/>
+        <property name="ConSumeConPAppend" type="int" public="false" private="false" save="false" realtime="false" desc="ÏûºÄÄÍÁ¦µãÊýµÄ¸½¼Ó,²»ÊÜ±¶ÂÊÓ°Ïì"/>
+
+    </properties>
 </object>

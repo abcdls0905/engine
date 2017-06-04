@@ -581,8 +581,7 @@ void CTerrainPainter::DrawChunks()
 	bool horizon_cull = pTerrain->GetHorizontalCulling();
 
 	//»æÖÆµØ±í
-	DrawChunksShader(pRenderZones, nRenderZoneNum, horizon_cull,
-		false, -1);
+	DrawChunksShader(pRenderZones, nRenderZoneNum, horizon_cull, false, -1);
 
 	
 	if (pTerrain->GetSmoothHorizontal())

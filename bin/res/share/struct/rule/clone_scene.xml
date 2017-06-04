@@ -1,83 +1,59 @@
-<?xml version="1.0" encoding="gb2312"?>
+<?xml version="1.0" encoding="gb2312" ?>
 <!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by  () -->
 <!--当前玩家拥有的副本ID-->
 <object>
-	<!-- 基本属性 -->
-	<properties>
-		<property name="SweepTime" type="int64" public="false" private="true" save="true" realtime="true" desc="扫荡冷却到期时间"/>
-		<property name="CloneDifficulty" type="int" public="false" private="true" save="true" desc="副本难度(1-简单 2-困难)"/>
-		<property name="ProtoSceneID" type="int" public="false" private="true" save="true" realtime="true" desc="原形场景编号"/>
-		<property name="EnterTimesJ" type="int" public="false" private="true" save="true" desc="精英副本调整次数"/>
-		<property name="TeamsCloneTimes" type="int" public="true" private="true" save="true" desc="组队副本挑战次数"/>
-		<property name="TeamsCloneAdd" type="int" public="false" private="true" save="true" desc="组队副本挑战附加次数"/>
-		<property name="CloneMineTimes" type="byte" public="false" private="true" save="true" desc="宝藏副本每日完成次数"/>
-		<property name="LastCloneMineDoneTime" type="int64" public="false" private="false" save="true" desc="最后1次宝藏副本完成时间"/>
-		<property name="CloneSceneShopRefreshData" type="string" public="false" private="true" save="true" realtime="" desc="刷新副本商店时间"/>
-		<property name="CloneDropNotExist" type="int" public="false" private="false" save="false" desc="副本掉落不存在"/>
-		<property name="CloneDropRadio" type="int" public="false" private="true" save="false" realtime="" desc="副本掉落概率倍率"/>
-		<property name="ActStatus" type="byte" public="false" private="false" save="false" desc="活动状态(影响掉落)"/>
-	</properties>
-	<records>
-		<record name="clone_info_record" cols="10" maxrows="300" save="true" public="false" private="false" desc="副本信息表">
-			<column type="dword" desc="副本原型id"/>
-			<column type="dword" desc="进入次数"/>
-			<column type="dword" desc="副本当前进度"/>
-			<column type="dword" desc="副本难度"/>
-			<column type="dword" desc="副本场景ID"/>
-			<column type="int64" desc="副本刷新时间"/>
-			<column type="string" desc="副本唯一UID"/>
-			<column type="dword" desc="是否开启"/>
-			<column type="widestr" desc="副本拥有者"/>
-			<column type="dword" desc="副本类型(个人，队伍)"/>
-		</record>
-		<record name="clone_passed_record" cols="4" maxrows="300" save="true" public="false" private="true" desc="已经通过的副本表">
-			<column type="dword" desc="副本原型id"/>
-			<column type="dword" desc="副本难度"/>
-			<column type="dword" desc="星级"/>
-			<column type="dword" desc="通关时间"/>
-		</record>
-		<record name="clone_reset_record" cols="4" maxrows="300" save="true" public="false" private="true" desc="扫荡冷却时间和挑战次数重置次数">
-			<column type="dword" desc="副本原型id"/>
-			<column type="dword" desc="副本难度"/>
-			<column type="dword" desc="冷却时间被重置次数"/>
-			<column type="dword" desc="挑战次数被重置次数"/>
-		</record>
-		<record name="clone_unlock_record" cols="3" maxrows="100" save="true" public="false" private="true" desc="副本解锁表">
-			<column type="dword" desc="副本原型id"/>
-			<column type="string" desc="副本已解锁难度"/>
-			<column type="string" desc="副本解锁条件记录"/>
-		</record>
-		<record name="clone_reward_record" cols="3" maxrows="300" save="true" public="false" private="true" desc="章节通关评分记录">
-			<column type="dword" desc="章节id"/>
-			<column type="byte" desc="模式"/>
-			<column type="byte" desc="评价"/>
-		</record>
-		<record name="clone_get_record" cols="3" maxrows="300" save="true" public="false" private="false" desc="副本获得信息表">
-			<column type="dword" desc="物品类型"/>
-			<column type="string" desc="物品名称"/>
+    <!-- 基本属性 -->
+    <properties>
+        <property name="CloneResetDate" type="double" public="false" private="false" save="true" desc="副本重置日期"/>
+    </properties>
+    <records>
+        <record name="clone_get_record" cols="4" maxrows="300" save="true" public="false" private="false" desc="副本获得信息表">
+            <column type="dword" desc="物品类型" />
+            <column type="string" desc="物品名称" />
+            <column type="dword" desc="物品数量" />
+            <column type="byte" desc="绑定" />
+        </record>
+		<record name="drop_items_rec" cols="4" maxrows="100" save="false" public="false" private="false" need_defined="room" desc="掉落物品记录（只房间记录）">
+			<column type="dword" desc="类型"/>
+			<column type="string" desc="物品config"/>
 			<column type="dword" desc="物品数量"/>
+			<column type="byte" desc="绑定"/>
 		</record>
-		<record name="clone_teams_record" cols="4" maxrows="10" save="false" public="false" private="false" desc="组队副本队友信息">
-			<column type="string" desc="组队成员uid，第一个是队长"/>
-			<column type="byte" desc="职业"/>
-			<column type="dword" desc="战斗力"/>
-			<column type="dword" desc="等级"/>
+		<record name="pickup_items_rec" cols="4" maxrows="100" save="false" public="false" private="false" desc="拾取物品记录">
+			<column type="dword" desc="类型"/>
+			<column type="string" desc="物品config"/>
+			<column type="dword" desc="物品数量"/>
+			<column type="byte" desc="绑定"/>
 		</record>
-		<record name="clone_shop_rec" cols="5" maxrows="100" save="true" public="false" private="true" desc="战场巅峰商店表">
-			<column type="dword" desc="物品编号"/>
-			<column type="string" desc="物品ID"/>
-			<column type="dword" desc="物品剩余个数"/>
-			<column type="dword" desc="消耗"/>
-			<column type="dword" desc="能否刷新"/>
-		</record>
-		<record name="clone_mine_record" cols="3" maxrows="10" save="true" public="false" private="true" desc="宝藏副本信息表">
-			<column type="byte" desc="宝藏副本类型"/>
-			<column type="byte" desc="完成次数"/>
-			<column type="byte" desc="总共可以完成次数"/>
-		</record>
-		<record name="cur_mainhall_clone_record" cols="2" maxrows="50" save="true" public="false" private="true" desc="主城对应当前副本号">
-			<column type="string" desc="主城编号"/>
-			<column type="dword" desc="最近打过的副本"/>
-		</record>
-	</records>
+		<!-- 新副本模块使用 宛俊 -->
+		<record name="owner_clone_info_rec" cols="6" maxrows="600" save="true" public="false" private="true" desc="玩家拥有的副本信息表">
+            <column type="dword" desc="副本原型id" />
+			<column type="dword" desc="剩余进入次数" />
+			<column type="dword" desc="是否开启" />
+			<column type="dword" desc="副本当前进度" />
+			<column type="dword" desc="副本类型，服务器副本有效" />
+            <column type="string" desc="副本唯一UID，服务器副本有效" />
+        </record>
+		<record name="clone_pass_rec" cols="3" maxrows="300" save="true" public="false" private="true" desc="已经通关的副本表">
+            <column type="dword" desc="副本原型id" />
+            <column type="dword" desc="星级" />
+            <column type="dword" desc="通关时间" />
+        </record>
+		<record name="clone_reset_rec" cols="2" maxrows="300" save="true" public="false" private="true" desc="挑战次数重置次数">
+            <column type="dword" desc="副本原型id" />
+            <column type="dword" desc="挑战次数被重置次数" />
+        </record>
+		<record name="clone_follower_rec" cols="5" maxrows="32" save="false" public="false" private="false" desc="跟随进入副本的战友表">
+            <column type="widestr" desc="战友名字" />
+			<column type="dword" desc="战友职业" />
+			<column type="dword" desc="战友职业等级" />
+			<column type="dword" desc="战友职业分支" />
+			<column type="dword" desc="战友状态" />
+        </record>
+		<record name="clone_match_rec" cols="3" maxrows="100" save="false" public="false" private="false" desc="正在匹配的副本表">
+            <column type="dword" desc="副本原型id" />
+			<column type="widestr" desc="主玩家名字" />
+			<column type="int64" desc="报名时间" />
+        </record>
+    </records>
 </object>

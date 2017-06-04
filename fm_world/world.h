@@ -172,7 +172,7 @@ public:
 	void SetUseLightMap(bool value);
 	bool GetUseLightMap() const;
 
-private:
+public:
 	// 设置渲染设备参数
 	bool SetDeviceParam();
 

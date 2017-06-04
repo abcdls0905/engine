@@ -234,6 +234,7 @@ void App::OnRender()
     g_pWorld->Display(0.0F);
 }
 
+#include "../fm_world/world.h"
 bool App::OnMsg(unsigned int msg, size_t param1, size_t param2, int& result)
 {
 	Gui* pGui = (Gui*)g_pCorePtr->LookupEntity("Gui");

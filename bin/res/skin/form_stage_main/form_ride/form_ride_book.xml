@@ -1,104 +1,257 @@
 <?xml version="1.0" encoding="utf-8"?>
 <form>
 	<control name="main_form" entity="Form" script="" init="">
-		<prop ShowGrid="true" Left="50" Top="40" Width="1280" Height="768" ForeColor="0,0,0,0" BackColor="100,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
+		<prop Width="1280" Height="720" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui/dragon_main/new_common/back/hunt_bg_di.jpg"/>
+		<event_prop Name="on_show" Sync="false" DelayTime="0" Loop="false" LoopNumber="0" PlayMode="0" PlayArray="0">
+			<array_prop Name="Array_1" Enabled="true" Sync="true" DelayTime="0" Loop="false" LoopNumber="0">
+				<animation_prop BeginX="141" BeginY="-114" EndX="141" EndY="29" MoveType="5" Time="200" DelayTime="100" EndDelayTime="0" EaseType="10" Name="ease_in_grpbox_hunter_star" ControlName="grpbox_hunter_star" Loop="false" LoopType="0" Relation="true" Enabled="true" LoopNumber="0" EaseStyle="1" SyncChild="true" HideChild="false" EaseAlign="1" StartShow="true" FinishHide="false" DelayShow="true" Use3DMode="true" SyncOffset="true" Type="move" Event="on_show"/>
+				<animation_prop Begin="50" End="255" Time="500" DelayTime="150" EndDelayTime="0" EaseType="10" Name="alpha_groupbox_all_ride" ControlName="groupbox_all_ride" Loop="false" LoopType="0" Relation="true" Enabled="true" LoopNumber="0" EaseStyle="1" SyncChild="true" HideChild="false" EaseAlign="1" StartShow="true" FinishHide="false" DelayShow="true" Use3DMode="true" SyncOffset="true" Type="alpha" Event="on_show"/>
+				<animation_prop BeginX="101" BeginY="720" EndX="101" EndY="601" MoveType="1" Time="300" DelayTime="50" EndDelayTime="0" EaseType="10" Name="ease_in_grpbox_operate" ControlName="grpbox_operate" Loop="false" LoopType="0" Relation="true" Enabled="true" LoopNumber="0" EaseStyle="1" SyncChild="true" HideChild="false" EaseAlign="1" StartShow="true" FinishHide="false" DelayShow="true" Use3DMode="true" SyncOffset="true" Type="move" Event="on_show"/>
+				<animation_prop BeginX="1280" BeginY="0" EndX="855" EndY="0" MoveType="7" Time="300" DelayTime="50" EndDelayTime="0" EaseType="10" Name="ease_in_grpbox_hunt_tech" ControlName="grpbox_hunt_tech" Loop="false" LoopType="0" Relation="true" Enabled="true" LoopNumber="0" EaseStyle="1" SyncChild="true" HideChild="false" EaseAlign="1" StartShow="true" FinishHide="false" DelayShow="true" Use3DMode="true" SyncOffset="true" Type="move" Event="on_show"/>
+				<animation_prop BeginX="0" BeginY="-80" EndX="0" EndY="0" MoveType="5" Time="300" DelayTime="0" EndDelayTime="0" EaseType="1" Name="ease_in_GroupBox1" ControlName="GroupBox1" Loop="false" LoopType="0" Relation="true" Enabled="true" LoopNumber="0" EaseStyle="1" SyncChild="true" HideChild="false" EaseAlign="1" StartShow="true" FinishHide="false" DelayShow="true" Use3DMode="true" SyncOffset="true" Type="move" Event="on_show"/>
+			</array_prop>
+		</event_prop>
 		<control name="groupbox_main" entity="GroupBox" script="" init="">
-			<prop Left="257" Top="105" Width="766" Height="557" BackColor="0,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
-			<control name="Label1" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="58" Top="168" Width="625" Height="355" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_001.png"/>
+			<prop ClipChildren="false" Left="-640" Top="-360" Width="1280" Height="720" BackColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" NoFrame="true" DrawMode="Expand" BackImage="gui/dragon_main/mainfunction/hunt_clone/sl_bjt.jpg"/>
+			<control name="grpbox_hunter_star" entity="GroupBox" script="" init="">
+				<prop ClipChildren="false" Left="141" Top="29" Width="1134" Height="114" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Visible="false" NoFrame="true" AutoSize="true"/>
+				<control name="Label2" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="65" Top="32" Width="504" Height="114" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/dragon_main/mainfunction/hunt_clone/sl_hf.png"/>
+				</control>
+				<control name="lbl_pbar_star_bk" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="276" Top="9999" Width="445" Height="15" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/dragon_main/ride/zuoqi_91.png"/>
+				</control>
+				<control name="pbar_hunter_star" entity="ProgressBar" script="" init="">
+					<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/dragon_main/ride/zuoqi_84.png" ProgressMode="LeftToRight" TextVisible="true" Left="276" Top="9999" Width="445" Height="11" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Font="WNJT_16_S" NoFrame="true" DrawMode="Expand"/>
+				</control>
+				<control name="lbl_hunter" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="232" Top="54" Width="170" Height="44" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/dragon_main/ride/lieren_1.png"/>
+				</control>
+				<control name="lbl_hunter_star" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="187" Top="133" Width="259" Height="51" ShadowColor="0,0,0,0" BackImage="gui/dragon_main/ride/xing0.png"/>
+				</control>
+				<control name="lbl_school" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="48" Top="-9999" Width="126" Height="162" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui/dragon_main/touxiang/role_fangzhan1.png"/>
+				</control>
+				<control name="lbl_hunter_num" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="179" Top="56" Width="44" Height="40" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/dragon_main/mainfunction/hunt_clone/xjlr_1.png"/>
+				</control>
+				<control name="btn_help" entity="Button" script="" init="">
+					<prop NormalImage="gui/dragon_main/new_common/back/help_icon.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="403" Top="49" Width="50" Height="50" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" ClickSound="ui_open"/>
+				</control>
 			</control>
-			<control name="Label2" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="63" Top="208" Width="615" Height="310" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_002.png"/>
+			<control name="groupbox_all_ride" entity="GroupBox" script="" init="">
+				<prop ClipChildren="false" Left="13" Top="133" Width="1254" Height="526" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Visible="false" NoFrame="true" DrawMode="Expand"/>
+				<control name="grpsbox_ride_list" entity="GroupScrollableBox" script="" init="">
+					<prop ScrollSize="17" Left="61" Top="35" Width="758" Height="446" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
+				</control>
+				<control name="groupbox_ride" entity="GroupBox" script="" init="">
+					<prop Left="59" Top="42" Width="282" Height="406" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true"/>
+					<control name="Label1" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="14" Width="254" Height="406" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/dragon_main/mainfunction/hunt_clone/sl_zq_db.png"/>
+					</control>
+					<control name="lbl_pic" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="23" Top="34" Width="236" Height="338" ShadowColor="0,0,0,0" AutoSize="true"/>
+					</control>
+					<control name="cbtn_choose" entity="CheckButton" script="" init="">
+						<prop ClickEvent="true" BoxSize="12" NormalImage="gui/dragon_main/mainfunction/hunt_clone/sl_zq_db_gaoguang.png" CheckedImage="gui/dragon_main/mainfunction/hunt_clone/sl_zq_db_gaoguang.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" MouseDownScale="0.001000" Left="23" Top="34" Width="236" Height="338" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabStop="true" NoFrame="true" AutoSize="true" ClickSound="button_click"/>
+					</control>
+					<control name="lbl_lock" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="14" Width="254" Height="406" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/dragon_main/mainfunction/hunt_clone/sl_zq_db_suo.png"/>
+					</control>
+					<control name="lbl_open_title" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="34" Top="238" Width="80" Height="16" ForeColor="255,223,223,177" ShadowColor="0,0,0,0" Text="@ui_ride_clone_time_title" Font="WNJT_24"/>
+					</control>
+					<control name="lbl_open_time" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="35" Top="269" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WNJT_20"/>
+					</control>
+					<control name="lbl_time_back" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="184" Top="235" Width="58" Height="58" ShadowColor="0,0,0,0" AutoSize="true" BackImage="time"/>
+					</control>
+					<control name="mlttxt_normal_text" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,218,46" LineHeight="25" ScrollSize="17" Transparent="true" Left="35" Top="290" Width="218" Height="46" ForeColor="255,223,223,177" ShadowColor="0,0,0,0" Font="WNJT_20" NoFrame="true"/>
+					</control>
+					<control name="mlttxt_open_text" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,218,64" LineHeight="25" ScrollSize="17" Transparent="true" Left="35" Top="262" Width="218" Height="64" ForeColor="255,223,223,177" ShadowColor="0,0,0,0" Font="WNJT_20" NoFrame="true"/>
+					</control>
+				</control>
+				<control name="lbl_left" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="2" Top="212" Width="42" Height="87" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/dragon_main/new_common/back/common_jiantou_left.png"/>
+				</control>
+				<control name="lbl_right" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="847" Top="229" Width="42" Height="87" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/dragon_main/new_common/back/common_jiantou_right.png"/>
+				</control>
 			</control>
-			<control name="Label3" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="73" Top="213" Width="595" Height="300" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
+			<control name="grpbox_hunt_tech" entity="GroupBox" script="" init="">
+				<prop Left="855" Width="425" Height="720" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Visible="false" NoFrame="true"/>
+				<control name="Label7" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Width="425" Height="720" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/dragon_main/mainfunction/hunt_clone/sl_xxd.png"/>
+				</control>
+				<control name="lbl_hunter_prop" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="13" Top="55" Width="166" Height="38" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Font="WNJT_20_S"/>
+				</control>
+				<control name="lbl_pbar_hunt_bk" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="67" Top="668" Width="230" Height="18" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/dragon_main/mainfunction/hunt_clone/sl_jyt_d.png"/>
+				</control>
+				<control name="pbar_hunt_tech" entity="ProgressBar" script="" init="">
+					<prop Maximum="100" Value="100" WidthGap="2" HeightGap="2" ProgressImage="gui/dragon_main/mainfunction/hunt_clone/sl_jyt.png" ProgressMode="LeftToRight" TextVisible="true" Left="67" Top="668" Width="230" Height="18" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="ExpandH"/>
+				</control>
+				<control name="lbl_hunt_tech" entity="Label" script="" init="">
+					<prop Align="Center" RefCursor="WIN_HELP" Top="619" Width="199" Height="48" ForeColor="255,223,223,177" ShadowColor="0,0,0,0" Text="@ui_ride_hunt_tech" Font="WNJT_26_S" AutoSize="true"/>
+				</control>
+				<control name="lbl_hunt_tech_val" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="137" Top="631" Width="22" Height="16" ForeColor="255,223,223,177" ShadowColor="0,0,0,0" Text="等级:99" Font="WNJT_26_S"/>
+				</control>
+				<control name="imagegrid_hunt_tech" entity="ImageGrid" script="" init="">
+					<prop SelectColor="0,0,255,0" MouseInColor="0,255,255,0" CoverColor="80,255,0,0" LockColor="80,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="-1" RowNum="1" ClomnNum="1" GridHeight="96" GridWidth="96" DrawMouseIn="rect_t" DrawMouseSelect="rect_t" DrawCover="rect_t" DrawLock="rect_t" DrawGridBack="gui/dragon_main/new_common/back/bag_item_box64.png" MouseDownScale="0.900000" MouseDownAlpha="128" HasVScroll="false" Left="320" Top="607" Width="96" Height="96" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="FitWindow" ClickSound="button_click"/>
+				</control>
+				<control name="btn_upgrade" entity="Button" script="" init="">
+					<prop PushEvent="true" OutUpEvent="true" NormalImage="gui/dragon_main/new_common/button/common_empty.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="320" Top="607" Width="96" Height="96" BackColor="255,192,192,192" ShadowColor="0,0,0,0" DataSource="300" ClickSound="button_click"/>
+				</control>
+				<control name="mltxt_hunt_tech_exp" entity="MultiTextBox" script="" init="">
+					<prop TextColor="255,114,244,215" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,78,34" LineHeight="21" HtmlText="+20经验" ScrollSize="17" Left="331" Top="692" Width="78" Height="34" ShadowColor="0,0,0,0" Font="WNJT_18_S" NoFrame="true"/>
+				</control>
+				<control name="lbl_arrow" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="2" Top="393" Width="40" Height="25" ShadowColor="0,0,0,0" Visible="false" AutoSize="true" BackImage="gui/dragon_main/mainfunction/hunt_clone/sl_ljt.png"/>
+				</control>
+				<control name="grpbox_prop" entity="GroupBox" script="" init="">
+					<prop Left="27" Top="73" Width="370" Height="260" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+					<control name="lbl_hp" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="39" Top="55" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_ride_hunt_help" Font="WNJT_22_S"/>
+					</control>
+					<control name="mlttxt_hp" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,190,23" LineHeight="21" ScrollSize="17" Transparent="true" Left="188" Top="54" Width="190" Height="23" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WNJT_20_S"/>
+					</control>
+					<control name="lbl_atk" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="39" Top="87" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_ride_hunt_atk" Font="WNJT_22_S"/>
+					</control>
+					<control name="mlttxt_atk" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,190,23" LineHeight="21" ScrollSize="17" Transparent="true" Left="188" Top="86" Width="190" Height="23" ForeColor="255,255,255,255" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WNJT_20_S"/>
+					</control>
+					<control name="lbl_score" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="39" Top="119" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_ride_hunt_score" Font="WNJT_22_S"/>
+					</control>
+					<control name="mlttxt_score1" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,90,23" LineHeight="21" ScrollSize="17" Transparent="true" Left="188" Top="119" Width="90" Height="23" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DataSource="3" Font="WNJT_20_S"/>
+					</control>
+					<control name="mlttxt_score2" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,90,23" LineHeight="21" ScrollSize="17" Transparent="true" Left="283" Top="119" Width="90" Height="23" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DataSource="2" Font="WNJT_20_S"/>
+					</control>
+					<control name="mlttxt_score3" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,90,23" LineHeight="21" ScrollSize="17" Transparent="true" Left="188" Top="145" Width="90" Height="23" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DataSource="1" Font="WNJT_20_S"/>
+					</control>
+					<control name="mlttxt_score4" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,90,23" LineHeight="21" ScrollSize="17" Transparent="true" Left="283" Top="145" Width="90" Height="23" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WNJT_20_S"/>
+					</control>
+					<control name="lbl_hunt_time" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="39" Top="177" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_ride_hunt_dec_time" Font="WNJT_22_S"/>
+					</control>
+					<control name="mlttxt_hunt_time" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,190,23" LineHeight="21" ScrollSize="17" Transparent="true" Left="188" Top="177" Width="190" Height="23" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WNJT_20_S"/>
+					</control>
+					<control name="lbl_dec_score" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="39" Top="207" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_ride_hunt_dec_score" Font="WNJT_22_S"/>
+					</control>
+					<control name="mlttxt_dec_score" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,190,23" LineHeight="21" ScrollSize="17" Transparent="true" Left="188" Top="206" Width="190" Height="23" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WNJT_20_S"/>
+					</control>
+					<control name="Label3" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="39" Top="9" Width="80" Height="16" ForeColor="255,255,240,171" ShadowColor="0,0,0,0" Text="@ui_ride_hunt_tishi_001" Font="WNJT_24_S"/>
+					</control>
+					<control name="mlttxt_interval" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,190,23" LineHeight="21" ScrollSize="17" Transparent="true" Left="188" Top="235" Width="190" Height="23" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WNJT_20_S"/>
+					</control>
+					<control name="lbl_interval" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="39" Top="237" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_ride_hunt_interval" Font="WNJT_22_S"/>
+					</control>
+				</control>
+				<control name="grpbox_prop_cpy" entity="GroupBox" script="" init="">
+					<prop Left="27" Top="347" Width="370" Height="260" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand"/>
+					<control name="lbl_hp_cpy" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="39" Top="55" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_ride_hunt_help" Font="WNJT_22_S"/>
+					</control>
+					<control name="mlttxt_hp_cpy" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,190,23" LineHeight="21" ScrollSize="17" Transparent="true" Left="188" Top="54" Width="190" Height="23" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WNJT_20_S"/>
+					</control>
+					<control name="lbl_atk_cpy" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="39" Top="87" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_ride_hunt_atk" Font="WNJT_22_S"/>
+					</control>
+					<control name="mlttxt_atk_cpy" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,190,23" LineHeight="21" ScrollSize="17" Transparent="true" Left="188" Top="86" Width="190" Height="23" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WNJT_20_S"/>
+					</control>
+					<control name="lbl_score_cpy" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="39" Top="119" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_ride_hunt_score" Font="WNJT_22_S"/>
+					</control>
+					<control name="mlttxt_score1_cpy" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,90,23" LineHeight="21" ScrollSize="17" Transparent="true" Left="188" Top="119" Width="90" Height="23" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DataSource="3" Font="WNJT_20_S"/>
+					</control>
+					<control name="mlttxt_score2_cpy" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,90,23" LineHeight="21" ScrollSize="17" Transparent="true" Left="283" Top="119" Width="90" Height="23" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DataSource="2" Font="WNJT_20_S"/>
+					</control>
+					<control name="mlttxt_score3_cpy" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,90,23" LineHeight="21" ScrollSize="17" Transparent="true" Left="188" Top="145" Width="90" Height="23" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DataSource="1" Font="WNJT_20_S"/>
+					</control>
+					<control name="mlttxt_score4_cpy" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,90,23" LineHeight="21" ScrollSize="17" Transparent="true" Left="283" Top="145" Width="90" Height="23" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WNJT_20_S"/>
+					</control>
+					<control name="lbl_hunt_time_cpy" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="39" Top="177" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_ride_hunt_dec_time" Font="WNJT_22_S"/>
+					</control>
+					<control name="mlttxt_hunt_time_cpy" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,190,23" LineHeight="21" ScrollSize="17" Transparent="true" Left="188" Top="177" Width="190" Height="23" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WNJT_20_S"/>
+					</control>
+					<control name="lbl_dec_score_cpy" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="39" Top="207" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_ride_hunt_dec_score" Font="WNJT_22_S"/>
+					</control>
+					<control name="mlttxt_dec_score_cpy" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,190,23" LineHeight="21" ScrollSize="17" Transparent="true" Left="188" Top="206" Width="190" Height="23" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WNJT_20_S"/>
+					</control>
+					<control name="mlttxt_interval_cpy" entity="MultiTextBox" script="" init="">
+						<prop TextColor="255,255,255,255" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="0,0,190,23" LineHeight="21" ScrollSize="17" Transparent="true" Left="188" Top="235" Width="190" Height="23" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Font="WNJT_20_S"/>
+					</control>
+					<control name="lbl_interval_cpy" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="39" Top="237" Width="80" Height="16" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="@ui_ride_hunt_interval" Font="WNJT_22_S"/>
+					</control>
+					<control name="Label5" entity="Label" script="" init="">
+						<prop RefCursor="WIN_HELP" Left="39" Top="5" Width="80" Height="16" ForeColor="255,255,240,171" ShadowColor="0,0,0,0" Text="@ui_ride_hunt_tishi_002" Font="WNJT_24_S"/>
+					</control>
+				</control>
+				<control name="lbl_circle" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="329" Top="647" Width="80" Height="16" ShadowColor="0,0,0,0" Particles2d="mg_suns_314"/>
+				</control>
 			</control>
-			<control name="Label4" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="69" Top="10020" Width="603" Height="94" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui/tp2_common/backdrop/decorate_08.png"/>
+			<control name="grpbox_operate" entity="GroupBox" script="" init="">
+				<prop Left="101" Top="601" Width="718" Height="110" BackColor="0,255,255,255" ShadowColor="0,0,0,0" Visible="false" NoFrame="true"/>
+				<control name="btn_ride" entity="Button" script="" init="">
+					<prop NormalImage="gui/dragon_main/mainfunction/hunt_clone/sl_zq.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="270" Top="18" Width="84" Height="74" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" ClickSound="ui_open"/>
+				</control>
+				<control name="btn_honour" entity="Button" script="" init="">
+					<prop NormalImage="gui/dragon_main/mainfunction/hunt_clone/sl_sld.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="498" Top="18" Width="84" Height="74" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" ClickSound="ui_open"/>
+				</control>
+				<control name="btn_right" entity="Button" script="" init="">
+					<prop NormalImage="gui/dragon_main/mainfunction/hunt_clone/sl_lsyl.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="384" Top="18" Width="84" Height="74" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" ClickSound="ui_open"/>
+				</control>
+				<control name="btn_preview" entity="Button" script="" init="">
+					<prop NormalImage="gui/dragon_main/mainfunction/hunt_clone/sl_tj.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="612" Top="18" Width="84" Height="74" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" ClickSound="ui_open"/>
+				</control>
+				<control name="lbl_entry_time_val" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="213" Top="45" Width="80" Height="16" ForeColor="255,223,224,174" ShadowColor="0,0,0,0" Text="5/5" Font="WNJT_24_S"/>
+				</control>
+				<control name="lbl_entry_time" entity="Label" script="" init="">
+					<prop RefCursor="WIN_HELP" Left="16" Top="44" Width="80" Height="16" ForeColor="255,223,224,174" ShadowColor="0,0,0,0" Text="@ui_ride_clone_entry_time" Font="WNJT_24_S"/>
+				</control>
 			</control>
-			<control name="Label5" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="73" Top="484" Width="595" Height="30" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/decorate_03.png"/>
-			</control>
+		</control>
+		<control name="GroupBox1" entity="GroupBox" script="" init="">
+			<prop Width="542" Height="80" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Visible="false"/>
 			<control name="Label6" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="154" Top="154" Width="433" Height="54" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/decorate_10.png"/>
-			</control>
-			<control name="Label7" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="258" Top="139" Width="224" Height="62" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_ride/qishushengji.png"/>
-			</control>
-			<control name="MultiTextBox1" entity="MultiTextBox" script="" init="">
-				<prop TextColor="255,255,255,204" SelectBarColor="0,0,0,0" MouseInBarColor="0,0,0,0" ViewRect="0,0,470,50" LineHeight="17" ScrollSize="17" Left="136" Top="10020" Width="470" Height="50" LineColor="0,0,0,0" ShadowColor="0,0,0,0" Text="MultiTextBox1"/>
-			</control>
-			<control name="groupbox_items_list" entity="GroupScrollableBox" script="" init="">
-				<prop ScrollSize="17" Left="80" Top="257" Width="582" Height="206" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
-				<control name="groupbox_item_0" entity="GroupBox" script="" init="">
-					<prop Left="8" Width="170" Height="195" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_008.png"/>
-					<control name="lbl_image_0" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="49" Top="16" Width="72" Height="72" ShadowColor="0,0,0,0" DataSource="Item_ride_exp_01" DrawMode="FitWindow"/>
-					</control>
-					<control name="lbl_quality_0" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="49" Top="16" Width="72" Height="72" ShadowColor="0,0,0,0" DataSource="Item_ride_exp_01" DrawMode="ExpandTile"/>
-					</control>
-					<control name="lbl_count_0" entity="Label" script="" init="">
-						<prop Align="Right" RefCursor="WIN_HELP" Left="35" Top="70" Width="80" Height="16" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Font="WRYH20"/>
-					</control>
-					<control name="mult_desc_0" entity="MultiTextBox" script="" init="">
-						<prop TextColor="255,255,255,204" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="5,0,110,38" LineHeight="17" ScrollSize="17" Left="30" Top="89" Width="110" Height="38" ShadowColor="0,0,0,0" NoFrame="true"/>
-					</control>
-					<control name="btn_use_0" entity="Button" script="" init="">
-						<prop NormalImage="gui/tp2_common/window/activate_3.png" PushImage="gui/tp2_common/window/activate_4.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="31" Top="131" Width="108" Height="64" ForeColor="255,255,255,201" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_use_ride_book" HintText="WRYH24" AutoSize="true" ClickSound="button_click"/>
-					</control>
-					<control name="lbl_promt_0" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="111" Top="128" Width="30" Height="30" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_common/window/tishi.png"/>
-					</control>
-				</control>
-				<control name="groupbox_item_1" entity="GroupBox" script="" init="">
-					<prop Left="203" Width="170" Height="195" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_008.png"/>
-					<control name="lbl_image_1" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="49" Top="16" Width="72" Height="72" ShadowColor="0,0,0,0" DataSource="Item_ride_exp_02" DrawMode="FitWindow"/>
-					</control>
-					<control name="lbl_quality_1" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="49" Top="16" Width="72" Height="72" ShadowColor="0,0,0,0" DataSource="Item_ride_exp_02" DrawMode="ExpandTile"/>
-					</control>
-					<control name="lbl_count_1" entity="Label" script="" init="">
-						<prop Align="Right" RefCursor="WIN_HELP" Left="35" Top="70" Width="80" Height="16" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Font="WRYH20"/>
-					</control>
-					<control name="mult_desc_1" entity="MultiTextBox" script="" init="">
-						<prop TextColor="255,255,255,204" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="5,0,110,38" LineHeight="17" ScrollSize="17" Left="30" Top="89" Width="110" Height="38" ShadowColor="0,0,0,0" NoFrame="true"/>
-					</control>
-					<control name="btn_use_1" entity="Button" script="" init="">
-						<prop NormalImage="gui/tp2_common/window/activate_3.png" PushImage="gui/tp2_common/window/activate_4.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="31" Top="131" Width="108" Height="64" ForeColor="255,255,255,201" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_use_ride_book" HintText="WRYH24" AutoSize="true" ClickSound="button_click"/>
-					</control>
-					<control name="lbl_promt_1" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="116" Top="128" Width="30" Height="30" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_common/window/tishi.png"/>
-					</control>
-				</control>
-				<control name="groupbox_item_2" entity="GroupBox" script="" init="">
-					<prop Left="398" Width="170" Height="195" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_008.png"/>
-					<control name="lbl_image_2" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="49" Top="16" Width="72" Height="72" ShadowColor="0,0,0,0" DataSource="Item_ride_exp_03" DrawMode="FitWindow"/>
-					</control>
-					<control name="lbl_quality_2" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="49" Top="16" Width="72" Height="72" ShadowColor="0,0,0,0" DataSource="Item_ride_exp_02" DrawMode="ExpandTile"/>
-					</control>
-					<control name="mult_desc_2" entity="MultiTextBox" script="" init="">
-						<prop TextColor="255,255,255,204" SelectBarColor="0,0,0,255" MouseInBarColor="0,255,255,0" ViewRect="5,0,110,38" LineHeight="17" ScrollSize="17" Left="30" Top="89" Width="110" Height="38" ShadowColor="0,0,0,0" NoFrame="true"/>
-					</control>
-					<control name="lbl_count_2" entity="Label" script="" init="">
-						<prop Align="Right" RefCursor="WIN_HELP" Left="35" Top="70" Width="80" Height="16" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Font="WRYH20"/>
-					</control>
-					<control name="btn_use_2" entity="Button" script="" init="">
-						<prop NormalImage="gui/tp2_common/window/activate_3.png" PushImage="gui/tp2_common/window/activate_4.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="31" Top="131" Width="108" Height="64" ForeColor="255,255,255,201" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_use_ride_book" HintText="WRYH24" AutoSize="true" ClickSound="button_click"/>
-					</control>
-					<control name="lbl_promt_2" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="113" Top="128" Width="30" Height="30" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_common/window/tishi.png"/>
-					</control>
-				</control>
-			</control>
-			<control name="lbl_title" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="331" Top="105" Width="80" Height="16" ShadowColor="0,0,0,0"/>
+				<prop RefCursor="WIN_HELP" Width="501" Height="85" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/dragon_main/new_common/button/common_button_come.png"/>
 			</control>
 			<control name="btn_close" entity="Button" script="" init="">
-				<prop NormalImage="gui/tp2_common/window/clos.png" PushImage="gui/tp2_common/window/clos1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="638" Top="148" Width="70" Height="70" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" OutSound="ui_close" ClickSound="ui_close"/>
+				<prop NormalImage="gui/dragon_main/new_common/button/common_button_comeback.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Width="260" Height="82" BackColor="255,192,192,192" ShadowColor="0,0,0,0" TabIndex="100" TabStop="true" AutoSize="true" DrawMode="FitWindow" ClickSound="ui_back"/>
+			</control>
+			<control name="Label4" entity="Label" script="" init="">
+				<prop RefCursor="WIN_HELP" Left="234" Width="190" Height="52" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/dragon_main/new_common/title/shoulie.png"/>
 			</control>
 		</control>
 	</control>

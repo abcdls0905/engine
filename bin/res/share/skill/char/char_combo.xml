@@ -1,55 +1,98 @@
 <?xml version="1.0" encoding="gb2312"?>
-<!-- 备注：1-范围内人数判断  2-目标状态判断  3-自身BUFF判断  4-目标BUFF判断  5-消耗值判断  6-消耗值最大，隔开消耗类型（和技能里编号一样）-->
 <Object>
-	<Property ID="CK_Ns001" Name="刺客普攻" ComboSkill="CK_Ns100_01,1,200,633,333,CK_Ns103_01;CK_Ns101_01,2,200,633,300,CK_Ns103_01;CK_Ns102_01,3,200,600,300,CK_Ns103_01;CK_Ns103_01,4,733,0,733,CK_Ns103_01" TriggerSkill="CK_Ns103_01"/>
-	<Property ID="w_atc_1" Name="战士普攻" ComboSkill="w_at01,1,134,600,234,w_at04;w_at02,2,234,800,334,w_at04;w_at03,3,367,800,467,w_at04;w_at04,4,1000,0,1000,w_at04" TriggerSkill="w_at04"/>
-	<Property ID="monk_atc" Name="功夫" ComboSkill="monk_at01,1,350,2000,300,monk_at04;monk_at02,2,300,760,200,monk_at04;monk_at03,3,300,1000,200,monk_at04;monk_at04,4,850,0,800,monk_at04" EffectReplaceTrigger="2,2,monk_at07" ReplaceCDTime="18000" TriggerSkill="monk_at04"/>
-	<Property ID="monk_atc02" Name="功夫踩" ComboSkill="monk_at05,1,533,667,460,monk_at07;monk_at06,2,600,700,500,monk_at07;monk_at07,3,700,0,600,monk_at07" TriggerSkill="monk_at07"/>
-	<Property ID="killer_at01" Name="拔刀客普攻" ComboSkill="killer_at01a,1,200,2000,100,killer_at01d;killer_at01b,2,200,500,100,killer_at01d;killer_at01c,3,250,500,350,killer_at01d;killer_at01d,4,700,0,800,killer_at01d" EffectReplaceTrigger="2,4,killer_sk04" ReplaceCDTime="18000" TriggerSkill="killer_at01d"/>
-	<Property ID="monk_atc01" Name="功夫群" ComboSkill="monk_at08,1,350,700,300,monk_at11;monk_at09,2,350,700,300,monk_at11;monk_at10,3,650,800,500,monk_at11;monk_at11,4,1000,0,900,monk_at11" TriggerSkill="monk_at11"/>
-	<Property ID="ass_at01" Name="刺客普攻1" ComboSkill="ass_at01a,1,120,2000,150,ass_at01d;ass_at01b,2,120,800,150,ass_at01d;ass_at01c,3,340,800,380,ass_at01d;ass_at01d,4,733,0,533,ass_at01d" EffectReplaceTrigger="2,4,ass_qs03" ReplaceCDTime="18000" TriggerSkill="ass_at01d"/>
-	<Property ID="taoist_atc01" Name="道士普攻" ComboSkill="taoist_at01,1,300,500,200,taoist_at03;taoist_at02,2,250,500,200,taoist_at03;taoist_at03,3,500,0,1500,taoist_at03" TriggerSkill="taoist_at03"/>
-	<Property ID="magicm_at01" Name="幻术师普攻1" ComboSkill="magicm_at01a,1,300,1000,500,magicm_at01c;magicm_at01c,2,166,1000,400,magicm_at01c;magicm_at01b,3,450,0,350,magicm_at01c" EffectReplaceTrigger="3,62,magicm_at02c" TriggerSkill="magicm_at01c"/>
-	<Property ID="magicm_at02" Name="幻术师媚化普攻" ComboSkill="magicm_at02a,1,300,900,500,magicm_at02c;magicm_at02c,2,166,1000,400,magicm_at02c;magicm_at02b,3,500,0,433,magicm_at02c" TriggerSkill="magicm_at02c"/>
-	<Property ID="taoist_atc02" Name="道士普攻" ComboSkill="taoist_sk04,1,600,1500,500,taoist_sk06;taoist_sk05,2,600,700,500,taoist_sk06;taoist_sk06,3,700,0,600,taoist_sk06" TriggerSkill="taoist_sk06"/>
-	<Property ID="ass_qs" Name="刺客擒杀" ComboSkill="ass_qs01,1,600,1500,500,ass_qs03;ass_qs02,2,600,700,500,ass_qs03;ass_qs03,3,700,0,600,ass_qs03" TriggerSkill="ass_qs03"/>
-	<Property ID="killer_at02" Name="拔刀擒杀" ComboSkill="killer_sk04,1,600,1500,500,killer_sk07;killer_sk05,2,600,700,500,killer_sk07;killer_sk06,3,600,600,600,killer_sk07;killer_sk07,4,600,0,600,killer_sk07" TriggerSkill="killer_sk07"/>
-	<Property ID="tamer_at01" Name="驯鹰师普攻" ComboSkill="tamer_at01,1,300,1166,366,tamer_at03;tamer_at02,2,600,1000,266,tamer_at03;tamer_at03,3,733,0,466,tamer_at03" TriggerSkill="tamer_at03"/>
-	<Property ID="hpoenix_at01" Name="烈焰凤凰连招" ComboSkill="hpoenix_at01a,1,430,1200,400,hpoenix_at01c;hpoenix_at01b,2,430,1200,400,hpoenix_at01c;hpoenix_at01c,3,900,0,800,hpoenix_at01c" TriggerSkill="hpoenix_at01c"/>
-	<Property ID="soldier_at01" Name="双子之力普攻" ComboSkill="soldier_at01,1,130,2000,366,soldier_at04;soldier_at02,2,130,1100,366,soldier_at04;soldier_at03,3,334,1000,500,soldier_at04;soldier_at04,4,234,900,700,soldier_at04" TriggerSkill="soldier_at04"/>
-	<Property ID="rikishi_atc" Name="拳师汉克普攻" ComboSkill="rikishi_at01,1,350,2000,250,rikishi_at04;rikishi_at02,2,350,700,250,rikishi_at04;rikishi_at03,3,350,700,250,rikishi_at04;rikishi_at04,4,800,0,600,rikishi_at04" TriggerSkill="rikishi_at04"/>
-	<Property ID="rikishi_qte" Name="汉克QTE" ComboSkill="rikishi_qte01,1,1433,800,1333,rikishi_qte05;rikishi_qte02,2,400,577,300,rikishi_qte05;rikishi_qte03,3,400,577,300,rikishi_qte05;rikishi_qte04,4,400,577,300,rikishi_qte05;rikishi_qte05,5,1000,0,700,rikishi_qte05" TriggerSkill="rikishi_qte05"/>
-	<Property ID="blackman_at01a" Name="气功师连招" ComboSkill="blackman_at01a,1,250,500,166,blackman_at01d;blackman_at01b,2,300,600,200,blackman_at01d;blackman_at01c,3,300,600,333,blackman_at01d;blackman_at01d,4,1000,0,400,blackman_at01d" EffectReplaceTrigger="6,1,blackman_pre" TriggerSkill="blackman_at01d"/>
-	<Property ID="lutanist_at01" Name="游乐师普攻" ComboSkill="lutanist_at01,1,533,733,450,lutanist_at04;lutanist_at02,2,233,733,400,lutanist_at04;lutanist_at03,3,300,800,400,lutanist_at04;lutanist_at04,4,900,0,800,lutanist_at04" TriggerSkill="lutanist_at04"/>
-	<Property ID="azrael_atc" Name="甜心死神普攻" ComboSkill="azrael_at01,1,320,2000,280,azrael_at04;azrael_at02,2,350,700,280,azrael_at04;azrael_at03,3,320,1000,300,azrael_at04;azrael_at04,4,900,0,800,azrael_at04" TriggerSkill="azrael_at04"/>
-	<Property ID="shooter_at01" Name="瘟疫射手普攻" ComboSkill="shooter_at01,1,400,667,333,shooter_at03;shooter_at02,2,433,600,333,shooter_at03;shooter_at03,3,900,0,1000,shooter_at03" TriggerSkill="shooter_at03"/>
-	<Property ID="winebibber_at01" Name="不醉酒仙普通" ComboSkill="winebibber_at01a,1,350,650,300,winebibber_at01c;winebibber_at01b,2,300,400,180,winebibber_at01c;winebibber_at01c,3,700,0,600,winebibber_at01c" TriggerSkill="winebibber_at01c"/>
-	<Property ID="swordman_at01" Name="无极剑客普攻" ComboSkill="swordman_at01,1,300,2000,250,swordman_at04;swordman_at02,2,300,800,250,swordman_at04;swordman_at03,3,400,800,350,swordman_at04;swordman_at04,4,700,0,800,swordman_at04" TriggerSkill="swordman_at04"/>
-	<Property ID="ghost_at01" Name="湮灭女巫-沉睡普攻" ComboSkill="ghost_at01,1,300,933,500,ghost_at03;ghost_at02,2,333,967,450,ghost_at03;ghost_at03,3,533,0,1000,ghost_at03" TriggerSkill="ghost_at03"/>
-	<Property ID="ghost_at06" Name="湮灭女巫-觉醒普攻" ComboSkill="ghost_at04,1,300,1066,333,ghost_at06;ghost_at05,2,400,1167,367,ghost_at06;ghost_at06,3,500,0,1200,ghost_at06" TriggerSkill="ghost_at06"/>
-	<Property ID="marksman_at01" Name="暴力特工-普攻" ComboSkill="marksman_at01,1,266,700,333,marksman_at03;marksman_at02,2,266,800,333,marksman_at03;marksman_at03,3,450,0,800,marksman_at03" TriggerSkill="marksman_at03"/>
-	<Property ID="mahatma_at01" Name="齐天大圣-普攻1" ComboSkill="mahatma_at01,1,100,2000,200,mahatma_at04;mahatma_at02,2,100,800,267,mahatma_at04;mahatma_at03,3,200,900,367,mahatma_at04;mahatma_at04,4,800,0,900,mahatma_at04" EffectReplaceTrigger="3,876,mahatma_at08;3,877,mahatma_at08" TriggerSkill="mahatma_at04"/>
-	<Property ID="captain_atc01" Name="幽灵船长-刀" ComboSkill="captain_at01_1,1,300,2000,300,captain_at04_1;captain_at02_1,2,300,700,300,captain_at04_1;captain_at03_1,3,350,700,300,captain_at04_1;captain_at04_1,4,700,0,600,captain_at04_1" TriggerSkill="captain_at04_1"/>
-	<Property ID="captain_atc02" Name="幽灵船长-枪" ComboSkill="captain_at01_2,1,200,700,150,captain_at03_2;captain_at02_2,2,200,700,150,captain_at03_2;captain_at03_2,3,600,0,500,captain_at03_2" EffectReplaceTrigger="3,882,captain_at04_1" TriggerSkill="captain_at03_2"/>
-	<Property ID="mahatma_at05" Name="齐天大圣-威力普攻" ComboSkill="mahatma_at05,1,133,2000,700,mahatma_at08;mahatma_at06,2,100,900,550,mahatma_at08;mahatma_at07,3,100,900,550,mahatma_at08;mahatma_at08,4,800,0,900,mahatma_at08" TriggerSkill="mahatma_at08"/>
-	<Property ID="fox_at01" Name="御雨狐仙-普攻" ComboSkill="fox_at01,1,353,825,333,fox_at05;fox_at02,2,370,825,229,fox_at05;fox_at03,3,296,525,129,fox_at05;fox_at05,4,400,0,200,fox_at05" TriggerSkill="fox_at05"/>
-	<Property ID="rabbi_at01" Name="平衡法师普攻" ComboSkill="rabbi_at01,1,360,500,250,rabbi_at04;rabbi_at02,2,360,500,300,rabbi_at04;rabbi_at03,3,360,500,300,rabbi_at04;rabbi_at04,4,360,500,300,rabbi_at04" TriggerSkill="rabbi_at04"/>
-	<Property ID="boxer_at01" Name="伏虎拳师近战普攻" ComboSkill="boxer_at01,1,133,2000,220,boxer_at04;boxer_at02,2,133,800,260,boxer_at04;boxer_at03,3,200,900,300,boxer_at04;boxer_at04,4,700,0,700,boxer_at04" EffectReplaceTrigger="3,1037,boxer_at06" TriggerSkill="boxer_at04"/>
-	<Property ID="boxer_at06" Name="伏虎拳师-喷龙掌" ComboSkill="boxer_at05,1,150,500,280,boxer_at06;boxer_at06,2,300,0,300,boxer_at06" TriggerSkill="boxer_at06"/>
-	<Property ID="demon_at01" Name="恶魔之源" ComboSkill="demon_at01,1,300,2000,250,demon_at04;demon_at02,2,300,800,250,demon_at04;demon_at03,3,300,800,250,demon_at04;demon_at04,4,400,0,300,demon_at04" TriggerSkill="demon_at04"/>
-	<Property ID="demon_at06" Name="恶魔攻击" ComboSkill="demon_at05,1,300,800,350,demon_at06;demon_at06,2,300,0,350,demon_at06" TriggerSkill="demon_at06"/>
-	<Property ID="feminine_at01" Name="光辉剑师" ComboSkill="feminine_at01,1,500,2000,400,feminine_at04;feminine_at02,2,500,800,400,feminine_at04;feminine_at03,3,500,800,400,feminine_at04;feminine_at04,4,500,0,433,feminine_at04" EffectReplaceTrigger="3,1119,feminine_at08" TriggerSkill="feminine_at04"/>
-	<Property ID="blackman_at01b" Name="气功师连招" ComboSkill="blackman_pre,1,100,100,100,blackman_pre" TriggerSkill="blackman_pre"/>
-	<Property ID="feminine_at02" Name="光辉剑师快版" ComboSkill="feminine_at05,1,250,2000,200,feminine_at08;feminine_at06,2,250,800,200,feminine_at08;feminine_at07,3,250,800,200,feminine_at08;feminine_at08,4,350,0,300,feminine_at08" TriggerSkill="feminine_at08"/>
-	<Property ID="singed_at01" Name="炼金术士-普攻" ComboSkill="singed_at01,1,533,1000,733,singed_at03;singed_at02,2,567,1000,833,singed_at03;singed_at03,3,1100,0,1100,singed_at03" TriggerSkill="singed_at03"/>
-	<Property ID="icefemale_at01" Name="寒冰天使" ComboSkill="icefemale_at01,1,360,500,300,icefemale_at03;icefemale_at02,2,360,500,300,icefemale_at03;icefemale_at03,3,360,0,300,icefemale_at03" TriggerSkill="icefemale_at03"/>
-	<Property ID="executioner_at01" Name="暮色收割者" ComboSkill="executioner_at01,1,160,2000,160,executioner_at04;executioner_at02,2,160,800,160,executioner_at04;executioner_at03,3,200,800,200,executioner_at04;executioner_at04,4,500,0,500,executioner_at04" TriggerSkill="executioner_at04"/>
-	<Property ID="pike_at01" Name="云龙将军" ComboSkill="pike_at01,1,400,2000,300,pike_at04;pike_at02,2,400,800,300,pike_at04;pike_at03,3,500,800,400,pike_at04;pike_at04,4,600,0,500,pike_at04" TriggerSkill="pike_at04"/>
-	<Property ID="druid_at01" Name="守望精灵" ComboSkill="druid_at01,1,200,800,150,druid_at03;druid_at02,2,200,800,150,druid_at03;druid_at03,3,250,0,150,druid_at03" TriggerSkill="druid_at03"/>
-	<Property ID="druid01_at01" Name="黑熊状态" ComboSkill="druid01_at01,1,400,2000,450,druid01_at03;druid01_at02,2,400,800,450,druid01_at03;druid01_at03,3,700,0,800,druid01_at03" TriggerSkill="druid01_at03"/>
-	<Property ID="druid02_at01" Name="猎豹状态" ComboSkill="druid02_at01,1,250,2000,300,druid02_at03;druid02_at02,2,350,800,300,druid02_at03;druid02_at03,3,350,0,300,druid02_at03" TriggerSkill="druid02_at03"/>
-	<Property ID="druid03_at01" Name="巨鹰状态" ComboSkill="druid03_at01,1,500,800,450,druid03_at02;druid03_at02,2,500,0,450,druid03_at02" TriggerSkill="druid03_at02"/>
-	<Property ID="meatshield_at01" Name="拳师汉克普攻" ComboSkill="meatshield_at01,1,350,2000,250,meatshield_at04;meatshield_at02,2,350,700,250,meatshield_at04;meatshield_at03,3,350,700,250,meatshield_at04;meatshield_at04,4,350,700,250,meatshield_at04" TriggerSkill="rikishi_at04"/>
+	<Property ID="zhanshi_normal" Name="战士普攻连招" ComboSkill="zhanshi_normal_001,1,50,1000,433;zhanshi_normal_002,2,50,1233,467;zhanshi_normal_003,3,50,1200,877" TriggerSkill="zhanshi_normal_001"/>
+	<Property ID="mushi_normal" Name="人类女牧师普攻连招" ComboSkill="mushi_normal_001,1,50,967,700;mushi_normal_002,2,50,967,767;mushi_normal_003,3,50,1100,1100" TriggerSkill="mushi_normal_001"/>
+	<Property ID="zhoushu_normal" Name="咒术师普攻连招" ComboSkill="zhoushu_normal_001,1,50,1150,800;zhoushu_normal_002,2,50,1000,700;zhoushu_normal_003,3,50,1240,1033" TriggerSkill="zhoushu_normal_001"/>
+	<Property ID="gongjian_normal" Name="弓箭手普攻连招" ComboSkill="gongjian_normal_001,1,50,633,566;gongjian_normal_002,2,50,633,566;gongjian_normal_003,3,50,933,900" TriggerSkill="gongjian_normal_001"/>
+	<Property ID="fashi_normal" Name="法师普攻连招" ComboSkill="fashi_normal_001,1,50,900,633;fashi_normal_002,2,50,900,633;fashi_normal_003,3,50,900,833" TriggerSkill="fashi_normal_001"/>
+	<Property ID="bear_normal_001" Name="战士-熊-普攻-连击" ComboSkill="bear_normal_001,1,50,800,700;bear_normal_002,2,50,1233,933" TriggerSkill="bear_normal_001"/>
+	<Property ID="bear_normal_001_2" Name="法师-熊-普攻-连击" ComboSkill="bear_normal_001_2,1,200,900,900;bear_normal_002_2,2,200,944,944" TriggerSkill="bear_normal_001_2"/>
+	<Property ID="bear_normal_001_3" Name="咒术师-熊-普攻-连击" ComboSkill="bear_normal_001_3,1,200,900,900;bear_normal_002_3,2,200,944,944" TriggerSkill="bear_normal_001_3"/>
+	<Property ID="bear_normal_001_4" Name="药师-熊-普攻-连击" ComboSkill="bear_normal_001_4,1,200,900,900;bear_normal_002_4,2,200,944,944" TriggerSkill="bear_normal_001_4"/>
+	<Property ID="bear_normal_001_5" Name="弓箭手-熊-普攻-连击" ComboSkill="bear_normal_001_5,1,200,800,800;bear_normal_002_5,2,200,800,800" TriggerSkill="bear_normal_001_5"/>
+	<Property ID="landbird_normal_001" Name="战士-陆行鸟-普攻-连击" ComboSkill="landbird_normal_001,1,50,800,633;landbird_normal_002,2,50,1233,877" TriggerSkill="landbird_normal_001"/>
+	<Property ID="landbird_normal_001_2" Name="法师-陆行鸟-普攻-连击" ComboSkill="landbird_normal_001_2,1,200,800,800;landbird_normal_002_2,2,200,844,844" TriggerSkill="landbird_normal_001_2"/>
+	<Property ID="landbird_normal_001_3" Name="咒术师-陆行鸟-普攻-连击" ComboSkill="landbird_normal_001_3,1,200,800,800;landbird_normal_002_3,2,200,844,844" TriggerSkill="landbird_normal_001_3"/>
+	<Property ID="landbird_normal_001_4" Name="药师-陆行鸟-普攻-连击" ComboSkill="landbird_normal_001_4,1,200,800,800;landbird_normal_002_4,2,200,844,844" TriggerSkill="landbird_normal_001_4"/>
+	<Property ID="landbird_normal_001_5" Name="弓箭手-陆行鸟-普攻-连击" ComboSkill="landbird_normal_001_5,1,200,666,666;landbird_normal_002_5,2,200,766,766" TriggerSkill="landbird_normal_001_5"/>
+	<Property ID="horse_normal_001_5" Name="弓箭手-马-普攻-连击" ComboSkill="horse_normal_001_5,1,200,666,666;horse_normal_002_5,2,200,766,766" TriggerSkill="horse_normal_001_5"/>
+	<Property ID="horse_normal_001_2" Name="法师-马-普攻-连击" ComboSkill="horse_normal_001_2,1,200,800,800;horse_normal_002_2,2,200,844,844" TriggerSkill="horse_normal_001_2"/>
+	<Property ID="horse_normal_001" Name="战士-马-普攻-连击" ComboSkill="horse_normal_001,1,50,800,633;horse_normal_002,2,50,1233,877" TriggerSkill="horse_normal_001"/>
+	<Property ID="horse_normal_001_4" Name="药师-马-普攻-连击" ComboSkill="horse_normal_001_4,1,200,800,800;horse_normal_002_4,2,200,844,844" TriggerSkill="horse_normal_001_4"/>
+	<Property ID="horse_normal_001_3" Name="咒术师-马-普攻-连击" ComboSkill="horse_normal_001_3,1,200,800,800;horse_normal_002_3,2,200,844,844" TriggerSkill="horse_normal_001_3"/>
+	<Property ID="wolf_normal_001" Name="狼骑-战士普攻连招" ComboSkill="wolf_skill_001,1,50,800,500;wolf_normal_002,2,50,1233,700" TriggerSkill="wolf_skill_001"/>
+	<Property ID="wolf_skill_001_2" Name="法师-狼骑-普攻-连击" ComboSkill="wolf_skill_001_2,1,200,700,700;wolf_normal_002_2,2,200,744,744" TriggerSkill="wolf_skill_001_2"/>
+	<Property ID="wolf_skill_001_3" Name="咒术师-狼骑-普攻-连击" ComboSkill="wolf_skill_001_3,1,200,700,700;wolf_normal_002_3,2,200,744,744" TriggerSkill="wolf_skill_001_3"/>
+	<Property ID="wolf_skill_001_4" Name="药师-狼骑-普攻-连击" ComboSkill="wolf_skill_001_4,1,200,700,700;wolf_normal_002_4,2,200,744,744" TriggerSkill="wolf_skill_001_4"/>
+	<Property ID="xiniu_normal_001" Name="犀牛-战士普攻连招" ComboSkill="xiniu_normal_001,1,50,800,700;xiniu_normal_002,2,50,1233,933" TriggerSkill="xiniu_normal_001"/>
+	<Property ID="xiniu_normal_001_5" Name="弓箭手-犀牛-普攻-连击" ComboSkill="xiniu_normal_001_5,1,200,833,833;xiniu_normal_002_5,2,200,833,833" TriggerSkill="xiniu_normal_001_5"/>
+	<Property ID="xiniu_normal_001_3" Name="咒术师-犀牛-普攻-连击" ComboSkill="xiniu_normal_001_3,1,200,900,900;xiniu_normal_002_3,2,200,944,944" TriggerSkill="xiniu_normal_001_3"/>
+	<Property ID="xiniu_normal_001_2" Name="法师-犀牛-普攻-连击" ComboSkill="xiniu_normal_001_2,1,200,900,900;xiniu_normal_002_2,2,200,944,944" TriggerSkill="xiniu_normal_001_2"/>
+	<Property ID="xiniu_normal_001_4" Name="药师-犀牛-普攻-连击" ComboSkill="xiniu_normal_001_4,1,200,900,900;xiniu_normal_002_4,2,200,944,944" TriggerSkill="xiniu_normal_001_4"/>
+	<Property ID="wolf_skill_001_5" Name="弓箭手-狼骑-普攻-连击" ComboSkill="wolf_skill_001_5,1,200,533,533;wolf_normal_002_5,2,200,533,533" TriggerSkill="wolf_skill_001_5"/>
+	<Property ID="fitzx_normal_001" Name="狮子人战士普攻连招" ComboSkill="fitzx_normal_001,1,50,1066,700;fitzx_normal_002,2,50,1066,666;fitzx_normal_003,3,50,1267,1200" TriggerSkill="fitzx_normal_001"/>
+	<Property ID="aidms_normal_001" Name="男牧师普攻连招" ComboSkill="aidms_normal_001,1,50,1033,500;aidms_normal_002,2,50,1100,733;aidms_normal_003,3,50,1133,1033" TriggerSkill="aidms_normal_001"/>
+	<Property ID="xiniu_normal_001_6" Name="狮子人战士-犀牛-普攻-连击" ComboSkill="xiniu_normal_001_6,1,50,1066,800;xiniu_normal_002_6,2,50,1066,1033" TriggerSkill="xiniu_normal_001_6"/>
+	<Property ID="horse_normal_001_6" Name="狮子人战士-马-普攻-连击" ComboSkill="horse_normal_001_6,1,50,1066,733;horse_normal_002_6,2,50,1066,977" TriggerSkill="horse_normal_001_6"/>
+	<Property ID="landbird_normal_001_6" Name="狮子人战士-陆行鸟-普攻-连击" ComboSkill="landbird_normal_001_6,1,50,1066,733;landbird_normal_002_6,2,50,1066,977" TriggerSkill="landbird_normal_001_6"/>
+	<Property ID="bear_normal_001_6" Name="狮子人战士-熊-普攻-连击" ComboSkill="bear_normal_001_6,1,50,1066,800;bear_normal_002_6,2,50,1066,1033" TriggerSkill="bear_normal_001_6"/>
+	<Property ID="wolf_skill_001_6" Name="狮子人战士-狼骑-普攻-连击" ComboSkill="wolf_skill_001_6,1,50,1066,600;wolf_normal_002_6,2,50,1066,833" TriggerSkill="wolf_skill_001_6"/>
+	<Property ID="xiniu_normal_001_7" Name="牧师-犀牛-普攻-连击" ComboSkill="xiniu_normal_001_7,1,200,900,900;xiniu_normal_002_7,2,200,944,944" TriggerSkill="xiniu_normal_001_7"/>
+	<Property ID="horse_normal_001_7" Name="牧师-马-普攻-连击" ComboSkill="horse_normal_001_7,1,200,800,800;horse_normal_002_7,2,200,844,844" TriggerSkill="horse_normal_001_7"/>
+	<Property ID="landbird_normal_001_7" Name="牧师-陆行鸟-普攻-连击" ComboSkill="landbird_normal_001_7,1,200,800,800;landbird_normal_002_7,2,200,844,844" TriggerSkill="landbird_normal_001_7"/>
+	<Property ID="bear_normal_001_7" Name="牧师-熊-普攻-连击" ComboSkill="bear_normal_001_7,1,50,900,900;bear_normal_002_7,2,50,944,944" TriggerSkill="bear_normal_001_7"/>
+	<Property ID="wolf_skill_001_7" Name="牧师-狼骑-普攻-连击" ComboSkill="wolf_skill_001_7,1,200,700,700;wolf_normal_002_7,2,200,744,744" TriggerSkill="wolf_skill_001_7"/>
+	<Property ID="horse_002_normal_001_3" Name="咒术师-独角兽-普攻-连击" ComboSkill="horse_002_normal_001_3,1,200,800,800;horse_002_normal_002_3,2,200,844,844" TriggerSkill="horse_002_normal_001_3"/>
+	<Property ID="horse_002_normal_001" Name="战士-独角兽-普攻-连击" ComboSkill="horse_002_normal_001,1,50,800,633;horse_002_normal_002,2,50,1233,877" TriggerSkill="horse_002_normal_001"/>
+	<Property ID="horse_002_normal_001_2" Name="法师-独角兽-普攻-连击" ComboSkill="horse_002_normal_001_2,1,200,800,800;horse_002_normal_002_2,2,200,844,844" TriggerSkill="horse_002_normal_001_2"/>
+	<Property ID="horse_002_normal_001_4" Name="药师-独角兽-普攻-连击" ComboSkill="horse_002_normal_001_4,1,200,800,800;horse_002_normal_002_4,2,200,844,844" TriggerSkill="horse_002_normal_001_4"/>
+	<Property ID="horse_002_normal_001_6" Name="狮子人战士-独角兽-普攻-连击" ComboSkill="horse_002_normal_001_6,1,50,1066,733;horse_002_normal_002_6,2,50,1066,977" TriggerSkill="horse_002_normal_001_6"/>
+	<Property ID="horse_002_normal_001_7" Name="牧师-独角兽-普攻-连击" ComboSkill="horse_002_normal_001_7,1,200,800,800;horse_002_normal_002_7,2,200,844,844" TriggerSkill="horse_002_normal_001_7"/>
+	<Property ID="horse_002_normal_001_5" Name="弓箭手-独角兽-普攻-连击" ComboSkill="horse_002_normal_001_5,1,200,666,666;horse_002_normal_002_5,2,200,766,766" TriggerSkill="horse_002_normal_001_5"/>
+	<Property ID="tianfu_gongjian_normal_01" Name="天赋弓箭手普攻连招1级" ComboSkill="tianfu_gongjian_normal_001_01,1,50,633,566;tianfu_gongjian_normal_002_01,2,50,633,566;tianfu_gongjian_normal_003_01,3,50,933,900" TriggerSkill="tianfu_gongjian_normal_001_01"/>
+	<Property ID="tianfu_gongjian_normal_02" Name="天赋弓箭手普攻连招2级" ComboSkill="tianfu_gongjian_normal_001_02,1,50,633,566;tianfu_gongjian_normal_002_02,2,50,633,566;tianfu_gongjian_normal_003_02,3,50,933,900" TriggerSkill="tianfu_gongjian_normal_001_02"/>
+	<Property ID="tianfu_gongjian_normal_03" Name="天赋弓箭手普攻连招3级" ComboSkill="tianfu_gongjian_normal_001_03,1,50,633,566;tianfu_gongjian_normal_002_03,2,50,633,566;tianfu_gongjian_normal_003_03,3,50,933,900" TriggerSkill="tianfu_gongjian_normal_001_03"/>
+	<Property ID="kingkong_normal_001" Name="战士-金刚-普攻-连击" ComboSkill="kingkong_normal_001,1,50,800,700;kingkong_normal_002,2,50,1233,933" TriggerSkill="kingkong_normal_001"/>
+	<Property ID="kingkong_normal_001_5" Name="弓箭手-金刚-普攻-连击" ComboSkill="kingkong_normal_001_5,1,200,800,800;kingkong_normal_002_5,2,200,800,800" TriggerSkill="kingkong_normal_001_5"/>
+	<Property ID="kingkong_normal_001_3" Name="咒术师-金刚-普攻-连击" ComboSkill="kingkong_normal_001_3,1,200,900,900;kingkong_normal_002_3,2,200,944,944" TriggerSkill="kingkong_normal_001_3"/>
+	<Property ID="kingkong_normal_001_2" Name="法师-金刚-普攻-连击" ComboSkill="kingkong_normal_001_2,1,200,900,900;kingkong_normal_002_2,2,200,944,944" TriggerSkill="kingkong_normal_001_2"/>
+	<Property ID="kingkong_normal_001_4" Name="药师-金刚-普攻-连击" ComboSkill="kingkong_normal_001_4,1,200,900,900;kingkong_normal_002_4,2,200,944,944" TriggerSkill="kingkong_normal_001_4"/>
+	<Property ID="kingkong_normal_001_6" Name="狮子人战士-金刚-普攻-连击" ComboSkill="kingkong_normal_001_6,1,50,1066,800;kingkong_normal_002_6,2,50,1066,1033" TriggerSkill="kingkong_normal_001_6"/>
+	<Property ID="kingkong_normal_001_7" Name="牧师-金刚-普攻-连击" ComboSkill="kingkong_normal_001_7,1,50,900,900;kingkong_normal_002_7,2,50,944,944" TriggerSkill="kingkong_normal_001_7"/>
+	<Property ID="horse_003_normal_001_5" Name="弓箭手-骨马-普攻-连击" ComboSkill="horse_003_normal_001_5,1,200,666,666;horse_003_normal_002_5,2,200,766,766" TriggerSkill="horse_003_normal_001_5"/>
+	<Property ID="horse_003_normal_normal_001_2" Name="法师-骨马-普攻-连击" ComboSkill="horse_003_normal_001_2,1,200,800,800;horse_003_normal_002_2,2,200,844,844" TriggerSkill="horse_003_normal_001_2"/>
+	<Property ID="horse_003_normal_normal_001" Name="战士-骨马-普攻-连击" ComboSkill="horse_003_normal_001,1,50,800,633;horse_003_normal_002,2,50,1233,877" TriggerSkill="horse_003_normal_001"/>
+	<Property ID="horse_003_normal_normal_001_4" Name="药师-骨马-普攻-连击" ComboSkill="horse_003_normal_001_4,1,200,800,800;horse_003_normal_002_4,2,200,844,844" TriggerSkill="horse_003_normal_001_4"/>
+	<Property ID="horse_003_normal_normal_001_3" Name="咒术师-骨马-普攻-连击" ComboSkill="horse_003_normal_001_3,1,200,800,800;horse_003_normal_002_3,2,200,844,844" TriggerSkill="horse_003_normal_001_3"/>
+	<Property ID="horse_003_normal_normal_001_6" Name="狮子人战士-骨马-普攻-连击" ComboSkill="horse_003_normal_001_6,1,50,1066,733;horse_003_normal_002_6,2,50,1066,977" TriggerSkill="horse_003_normal_001_6"/>
+	<Property ID="horse_003_normal_normal_001_7" Name="牧师-骨马-普攻-连击" ComboSkill="horse_003_normal_001_7,1,200,800,800;horse_003_normal_002_7,2,200,844,844" TriggerSkill="horse_003_normal_001_7"/>
+	<Property ID="dragon_005_normal_001_2" Name="法师-迅猛龙-普攻-连击" ComboSkill="dragon_005_normal_001_2,1,200,700,700;dragon_005_normal_002_2,2,200,744,744" TriggerSkill="dragon_005_normal_001_2"/>
+	<Property ID="dragon_005_normal_001_3" Name="咒术师-迅猛龙-普攻-连击" ComboSkill="dragon_005_normal_001_3,1,200,700,700;dragon_005_normal_002_3,2,200,744,744" TriggerSkill="dragon_005_normal_001_3"/>
+	<Property ID="dragon_005_normal_001_4" Name="药师-迅猛龙-普攻-连击" ComboSkill="dragon_005_normal_001_4,1,200,700,700;dragon_005_normal_002_4,2,200,744,744" TriggerSkill="dragon_005_normal_001_4"/>
+	<Property ID="dragon_005_normal_001_5" Name="弓箭手-迅猛龙-普攻-连击" ComboSkill="dragon_005_normal_001_5,1,200,533,533;dragon_005_normal_002_5,2,200,533,533" TriggerSkill="dragon_005_normal_001_5"/>
+	<Property ID="dragon_005_normal_001_6" Name="狮子人战士-迅猛龙-普攻-连击" ComboSkill="dragon_005_normal_001_6,1,50,1066,600;dragon_005_normal_002_6,2,50,1066,833" TriggerSkill="dragon_005_normal_001_6"/>
+	<Property ID="dragon_005_normal_001_7" Name="牧师-迅猛龙-普攻-连击" ComboSkill="dragon_005_normal_001_7,1,200,700,700;dragon_005_normal_002_7,2,200,744,744" TriggerSkill="dragon_005_normal_001_7"/>
+	<Property ID="dragon_005_normal_001" Name="战士-迅猛龙-普攻-连击" ComboSkill="dragon_005_normal_001,1,50,800,500;dragon_005_normal_002,2,50,1233,700" TriggerSkill="dragon_005_normal_001"/>
+	<Property ID="dragon_004_normal_001" Name="霸王龙-战士普攻连招" ComboSkill="dragon_004_normal_001,1,50,800,700;dragon_004_normal_002,2,50,1233,933" TriggerSkill="dragon_004_normal_001"/>
+	<Property ID="dragon_004_normal_001_2" Name="法师-霸王龙-普攻-连击" ComboSkill="dragon_004_normal_001_2,1,200,900,900;dragon_004_normal_002_2,2,200,944,944" TriggerSkill="dragon_004_normal_001_2"/>
+	<Property ID="dragon_004_normal_001_3" Name="咒术师-霸王龙-普攻-连击" ComboSkill="dragon_004_normal_001_3,1,200,900,900;dragon_004_normal_002_3,2,200,944,944" TriggerSkill="dragon_004_normal_001_3"/>
+	<Property ID="dragon_004_normal_001_4" Name="药师-霸王龙-普攻-连击" ComboSkill="dragon_004_normal_001_4,1,50,900,800;dragon_004_normal_002_4,2,50,933,800" TriggerSkill="dragon_004_normal_001_4"/>
+	<Property ID="dragon_004_normal_001_5" Name="弓箭手-霸王龙-普攻-连击" ComboSkill="dragon_004_normal_001_5,1,200,833,833;dragon_004_normal_002_5,2,200,833,833" TriggerSkill="dragon_004_normal_001_5"/>
+	<Property ID="dragon_004_normal_001_6" Name="狮子人战士-霸王龙-普攻-连击" ComboSkill="dragon_004_normal_001_6,1,50,1066,800;dragon_004_normal_002_6,2,50,1066,1033" TriggerSkill="dragon_004_normal_001_6"/>
+	<Property ID="dragon_004_normal_001_7" Name="牧师-霸王龙-普攻-连击" ComboSkill="dragon_004_normal_001_7,1,200,900,900;dragon_004_normal_002_7,2,200,944,944" TriggerSkill="dragon_004_normal_001_7"/>
+	<Property ID="tiger_normal_001" Name="剑齿虎-战士普攻连招" ComboSkill="tiger_normal_001,1,50,800,500;tiger_normal_002,2,50,1233,700" TriggerSkill="tiger_normal_001"/>
+	<Property ID="tiger_normal_001_2" Name="法师-剑齿虎-普攻-连击" ComboSkill="tiger_normal_001_2,1,200,700,700;tiger_normal_002_2,2,200,744,744" TriggerSkill="tiger_normal_001_2"/>
+	<Property ID="tiger_normal_001_3" Name="咒术师-剑齿虎-普攻-连击" ComboSkill="tiger_normal_001_3,1,200,700,700;tiger_normal_002_3,2,200,744,744" TriggerSkill="tiger_normal_001_3"/>
+	<Property ID="tiger_normal_001_4" Name="药师-剑齿虎-普攻-连击" ComboSkill="tiger_normal_001_4,1,200,700,700;tiger_normal_002_4,2,200,744,744" TriggerSkill="tiger_normal_001_4"/>
+	<Property ID="tiger_normal_001_6" Name="狮子人战士-剑齿虎-普攻-连击" ComboSkill="tiger_normal_001_6,1,50,1066,600;tiger_normal_002_6,2,50,1066,833" TriggerSkill="tiger_normal_001_6"/>
+	<Property ID="tiger_normal_001_5" Name="弓箭手-剑齿虎-普攻-连击" ComboSkill="tiger_normal_001_5,1,200,533,533;tiger_normal_002_5,2,200,533,533" TriggerSkill="tiger_normal_001_5"/>
+	<Property ID="tiger_normal_001_7" Name="牧师-剑齿虎-普攻-连击" ComboSkill="tiger_normal_001_7,1,200,700,700;tiger_normal_002_7,2,200,744,744" TriggerSkill="tiger_normal_001_7"/>
+	<Property ID="horse_004_normal_001" Name="战士-天马-普攻-连击" ComboSkill="horse_004_normal_001,1,50,800,633;horse_004_normal_002,2,50,1233,877" TriggerSkill="horse_004_normal_001"/>
+	<Property ID="horse_004_normal_001_2" Name="法师-天马-普攻-连击" ComboSkill="horse_004_normal_001_2,1,200,800,800;horse_004_normal_002_2,2,200,844,844" TriggerSkill="horse_004_normal_001_2"/>
+	<Property ID="horse_004_normal_001_3" Name="咒术师-天马-普攻-连击" ComboSkill="horse_004_normal_001_3,1,200,800,800;horse_004_normal_002_3,2,200,844,844" TriggerSkill="horse_004_normal_001_3"/>
+	<Property ID="horse_004_normal_001_4" Name="药师-天马-普攻-连击" ComboSkill="horse_004_normal_001_4,1,200,800,800;horse_004_normal_002_4,2,200,844,844" TriggerSkill="horse_004_normal_001_4"/>
+	<Property ID="horse_004_normal_001_5" Name="弓箭手-天马-普攻-连击" ComboSkill="horse_004_normal_001_5,1,200,666,666;horse_004_normal_002_5,2,200,766,766" TriggerSkill="horse_004_normal_001_5"/>
+	<Property ID="horse_004_normal_001_6" Name="狮子人战士-天马-普攻-连击" ComboSkill="horse_004_normal_001_6,1,50,1066,733;horse_004_normal_002_6,2,50,1066,977" TriggerSkill="horse_004_normal_001_6"/>
+	<Property ID="horse_004_normal_001_7" Name="牧师-天马-普攻-连击" ComboSkill="horse_004_normal_001_7,1,200,800,800;horse_004_normal_002_7,2,200,844,844" TriggerSkill="horse_004_normal_001_7"/>
 </Object>
-
 

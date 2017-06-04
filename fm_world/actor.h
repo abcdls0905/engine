@@ -484,11 +484,17 @@ public:
 
 	// 需要投射影子
 	virtual void SetCastShadow(bool value) { m_bCastShadow = value; }
-	virtual bool GetCastShadow() const { return m_bCastShadow; }
+	virtual bool GetCastShadow() const 
+  { 
+    return m_bCastShadow; 
+  }
 
 	// 需要接受投射影子
 	virtual void SetReceiveShadow(bool value) { m_bReceiveShadow = value; }
-	virtual bool GetReceiveShadow() const { return m_bReceiveShadow; }
+	virtual bool GetReceiveShadow() const 
+  { 
+    return m_bReceiveShadow; 
+  }
 
 private:
 	// 创建特效模型

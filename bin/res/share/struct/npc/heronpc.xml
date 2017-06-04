@@ -1,46 +1,35 @@
-<?xml version="1.0" encoding="gb2312"?>
+<?xml version="1.0" encoding="gb2312" ?>
 <!--英雄类NPC基础属性-->
 <object>
-	  <internals>
-        <property name="VisualRange" type="float" public="true" private="true" save="false" desc="视野半径" />
-      	<property name="Type" type="byte" public="true" private="true" save="false" realtime="" desc="类型: TYPE_NPC" />
+    <internals>
+        <property name="VisualRange" type="float" public="false" private="false" save="false" desc="视野半径" />
+        <property name="Type" type="byte" public="true" private="true" save="false" realtime="" desc="类型: TYPE_NPC" />
     </internals>
     <!-- 基本属性 -->
     <properties>
-        <property name="ConfigID" type="string" public="true" private="true" save="true" desc="NPC ID"/>
-        <property name="Resource" type="string" public="true" private="true" save="false" desc="资源"/>
-        <property name="Level" type="int" public="true" private="true" save="false" realtime="" desc="npc的等级" />
-        <property name="Height" type="float" public="true" private="true" save="false" realtime="" desc="模型高度" />
-        <property name="Scale" type="string" public="true" private="false" save="false" realtime="" desc="模型缩放比例" />
-        <property name="RoleIndex" type="int" public="true" private="true" save="true" desc="角色索引"/>
-        <property name="AutoControl" type="int" public="false" private="false" save="false" desc="自动战斗"/>
-        <property name="Transparency" type="int" public="true" private="false" save="false" realtime="" desc="透明度"/>
+        <property name="RoleIndex" type="dword" public="true" private="true" save="true" desc="角色索引" />
         <property name="FightID" type="string" public="true" private="true" save="false" realtime="" desc="战斗包ID" />
-        <property name="SkillList" type="string" public="true" private="true" save="false" realtime="" desc="战斗包ID" /> 
+        <property name="SkillList" type="string" public="false" private="false" save="false" realtime="" desc="战斗包ID" />
+        <property name="Sex" type="dword" public="true" private="true" save="true" realtime="" desc="战斗包ID" />
+        <property name="SchoolType" type="dword" public="true" private="true" save="false" realtime="" desc="门派" />
+		<property name="HeroNpcType" type="dword" public="true" private="false" save="false" desc="离线玩家类型" />
+		<property name="RefreshPosIndex" type="dword" public="false" private="false" save="false" desc="离线玩家类型" />
+		<property name="StateAction" type="string" public="false" private="false" save="false" realtime="" desc="出生状态动作" />
+		<property name="MinSpringDistance" type="float" public="true" private="true" save="false" realtime="" desc="触发生效距离" />
+		<property name="MaxSpringDistance" type="float" public="true" private="true" save="false" realtime="" desc="触发失效距离" />
+        <property name="FreeAction" type="string" public="false" private="false" save="false" realtime="" desc="Free随机动作" />		
     </properties>
-		<records>
-			<record name="fight_pet_rec" cols="5" maxrows="32" save="true" public="false" private="true" realtime="true" desc="出征宠物列表">
+    <records>
+        <record name="fight_pet_rec" cols="5" maxrows="32" save="true" public="false" private="true" realtime="true" desc="出征宠物列表">
             <column type="string" desc="宠物名称" />
             <column type="dword" desc="宠物分组" />
             <column type="dword" desc="组内index" />
             <column type="dword" desc="容器index" />
             <column type="object" desc="宠物persistid" />
         </record>
-      <record name="fight_rolenpc_rec" cols="5" maxrows="32" save="true" public="false" private="true" realtime="true" desc="出征辅助npc列表">
-        <column type="string" desc="辅助npc名称" />
-        <column type="dword" desc="辅助npc分组" />
-        <column type="dword" desc="组内index" />
-        <column type="dword" desc="容器index" />
-        <column type="object" desc="辅助npc persistid" />
-      </record>
-		</records>
-
+    </records>
     <includes>
-		  <path name="struct\rule\shortcut.xml" desc="技能栏相关属性"/>
-		  <path name="struct\rule\visequip.xml" desc="可视装备"/>
-		  <path name="struct\rule\motion.xml" desc="N移动属性"/>
-		  <path name="struct\rule\commonfighter.xml" desc="战斗相关属性"/>
-		  <path name="struct\rule\common\basectrlprop.xml" desc="控制属性" />
-      <path name="struct\rule\zhenying.xml" desc="阵营"/>
+        <path name="struct\rule\shortcut.xml" desc="技能栏相关属性" />
+        <path name="struct\rule\visequip.xml" desc="可视装备" />
     </includes>
 </object>

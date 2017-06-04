@@ -262,6 +262,7 @@ static result_string get_work_path(const char* exe)
 	return result_string(buf);
 }
 
+
 LRESULT CALLBACK WndProc(HWND hwnd, UINT iMsg, WPARAM wParam, LPARAM lParam)
 {
 	if(g_pCorePtr)

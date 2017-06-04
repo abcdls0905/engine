@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="gb2312"?>
-
 <!--
 	sub_effects 子特效列表
 		多个子特效用逗号隔开
@@ -8,834 +7,251 @@
 		true：同时播放
 		false：顺序播放
 -->
-
 <Object>
-	<Property ID="test_gif" sub_effects="test_gif" is_sync="true" desc=""/>
-
-
-	<Property ID="move_comic_1" sub_effects="move_1" is_sync="true" desc=""/>
-	<Property ID="move_comic_2" sub_effects="move_2,scale_1" is_sync="false" desc=""/>
-	<Property ID="move_comic_3" sub_effects="move_3,rotate_1" is_sync="true" desc=""/>
-	<Property ID="move_comic_4" sub_effects="move_4" is_sync="false" desc=""/>
-	<Property ID="move_comic_5" sub_effects="move_5" is_sync="false" desc=""/>
-	<Property ID="move_comic_6" sub_effects="move_6" is_sync="false" desc=""/>
-	
-	<Property ID="move_bag_1" sub_effects="move_bag_1" is_sync="false" desc="太极熊猫2背包打开动画"/>
-	<Property ID="move_tattoo_bag_1" sub_effects="move_tattoo_bag_1" is_sync="false" desc="符文背包打开动画"/>
-	<Property ID="move_tattoo_bag_2" sub_effects="move_tattoo_bag_2" is_sync="false" desc="符文背包打开动画"/>
-	<Property ID="move_equip_kuang" sub_effects="move_equip_kuang" is_sync="false" desc="太极熊猫2背包打开动画"/>
-	<Property ID="move_ide_1" sub_effects="move_ide_1" is_sync="false" desc="太极熊猫2账号界面打开动画"/>
-	<Property ID="move_ide_2" sub_effects="move_ide_2" is_sync="false" desc="太极熊猫2账号界面打开动画"/>
-	<Property ID="move_account_kuang" sub_effects="move_account_kuang" is_sync="false" desc="太极熊猫2账号打开动画"/>
-	
-	<Property ID="move_round_test_4" sub_effects="move_round_test_4" is_sync="false" desc=""/>
-	<Property ID="move_round_test_3" sub_effects="move_round_test_3" is_sync="false" desc=""/>
-	<Property ID="move_round_test_2" sub_effects="move_round_test_2" is_sync="false" desc=""/>
-	<Property ID="move_round_test_1" sub_effects="move_round_test_1" is_sync="false" desc=""/>
-	
-	<Property ID="sustain_prop_template_1" sub_effects="sustain_prop_template_1" is_sync="false" desc=""/>
-	<Property ID="sustain_prop_2" sub_effects="sustain_prop_2" is_sync="false" desc=""/>
-	<Property ID="sustain_prop_3" sub_effects="sustain_prop_3" is_sync="false" desc=""/>
-	<Property ID="sustain_prop_4" sub_effects="steplevelup_002,sustain_prop_4" is_sync="false" desc=""/>
-	<Property ID="sustain_prop_5" sub_effects="sustain_prop_5" is_sync="false" desc=""/>
-	
-	<Property ID="move_clone_effect_show" sub_effects="move_clone_effect_show" is_sync="false" desc=""/>
-	<Property ID="move_clone_common_skill" sub_effects="move_clone_common_skill" is_sync="false" desc=""/>
-	<Property ID="move_clone_auto_skill" sub_effects="move_clone_auto_skill" is_sync="false" desc=""/>
-	<Property ID="move_clone_exit" sub_effects="move_clone_exit" is_sync="false" desc=""/>
-	<Property ID="move_clone_head" sub_effects="move_clone_head" is_sync="false" desc=""/>
-	<Property ID="move_clone_leave" sub_effects="move_clone_leave" is_sync="false" desc=""/>
-	<Property ID="move_war_leave" sub_effects="move_war_leave" is_sync="false" desc=""/>
-	
-	<Property ID="scale_test_1" sub_effects="scale_test_1" is_sync="false" desc=""/>
-	<Property ID="scale_test_2" sub_effects="scale_test_2" is_sync="false" desc=""/>
-	<Property ID="scale_test_3" sub_effects="scale_test_3" is_sync="false" desc=""/>
-	
-	<Property ID="shake_1" sub_effects="shake_1" is_sync="false" desc=""/>
-	
-	<Property ID="guide_move_joystick" sub_effects="move_joystick_tip" is_sync="true" desc=""/>
-	<Property ID="guide_move_arrow" sub_effects="move_arrow_tip" is_sync="true" desc=""/>
-	
-	<Property ID="guide_move_pet" sub_effects="move_pet_tip" is_sync="true" desc=""/>
-
-	<Property ID="comic_move_111" sub_effects="move_111" is_sync="true" desc=""/>
-	<Property ID="comic_move_121" sub_effects="move_121" is_sync="true" desc=""/>
-	<Property ID="comic_move_131" sub_effects="move_131" is_sync="true" desc=""/>
-	<Property ID="comic_move_splash_up" sub_effects="comic_move_splash_up" is_sync="true" desc=""/>
-	<Property ID="comic_splash_fade_in" sub_effects="comic_splash_fade_in" is_sync="true" desc="开始游戏界面淡入"/>
-	<Property ID="guide_fadeout" sub_effects="guide_fadeout" is_sync="true" desc="引导界面淡出"/>
-	
-	
-	<Property ID="move_in" sub_effects="move_1,scale_1,rotate_1" is_sync="false" desc=""/>
-	<Property ID="move_test" sub_effects="move_1" is_sync="true" desc=""/>
-	<Property ID="zoom_in" sub_effects="scale_1" is_sync="true" desc=""/>
-	<Property ID="fade_in" sub_effects="alpha_fadein" is_sync="true" desc=""/>
-	<Property ID="fade_out" sub_effects="alpha_fadeout" is_sync="true" desc=""/>
-	<Property ID="rotate" sub_effects="rotate_1" is_sync="true" desc=""/>
-	
-	<Property ID="pk_fade_in" sub_effects="pk_alpha_fadein" is_sync="true" desc=""/>
-	<Property ID="pk_fade_out" sub_effects="pk_alpha_fadeout" is_sync="true" desc=""/>
-	
-	<Property ID="horse_race_effect" sub_effects="horse_race_effect_1,horse_race_effect_2" is_sync="false" desc=""/>
-	<Property ID="horse_race_effect_end" sub_effects="horse_race_effect_3" is_sync="false" desc=""/>
-	
-	<Property ID="levelup" sub_effects="levelup" is_sync="true" desc="升级效果"/>
-
-	<Property ID="exercise_spread_right" sub_effects="exercise_out_1,exercise_out_2" is_sync="false" desc="历练条伸出"/>
-	<Property ID="exercise_spread_left" sub_effects="exercise_back_1,exercise_back_2" is_sync="false" desc="历练条缩回"/>
-	
-	<Property ID="spread_left" sub_effects="scale_stretch_out_1,scale_stretch_out_2" is_sync="false" desc="操作条伸出"/>
-	<Property ID="spread_right" sub_effects="scale_stretch_back_1,scale_stretch_back_2" is_sync="false" desc="操作条缩回"/>
-	
-	<Property ID="spread_left_1" sub_effects="scale_stretch_out_1_1,scale_stretch_out_2" is_sync="false" desc="操作条伸出"/>
-	<Property ID="spread_right_1" sub_effects="scale_stretch_back_1,scale_stretch_back_2_2" is_sync="false" desc="操作条缩回"/>
-	
-	<Property ID="spread_vertical_show" sub_effects="spread_vertical_show_1" is_sync="false" desc="垂直方向上的放大"/>
-	<Property ID="spread_vertical_hide" sub_effects="spread_vertical_hide_1" is_sync="false" desc="垂直方向上的缩小"/>
-	<Property ID="function_active_effect" sub_effects="function_active_sound,function_active_effect" is_sync="true" desc="功能按钮开启"/>
 	<Property ID="zoom_show" sub_effects="scale_form_in_1,scale_form_in_2" is_sync="false" desc="窗口弹出"/>
 	<Property ID="zoom_hide" sub_effects="scale_form_out_1,scale_form_out_2" is_sync="false" desc="窗口关闭"/>
-	<Property ID="treasure_rotate" sub_effects="treasure_rotate,treasure_rotate1" is_sync="true" desc="宝藏界面特效旋转"/>
-	<Property ID="talent_rotate" sub_effects="talent_rotate" is_sync="true" desc="天赋界面特效旋转"/>
-	<Property ID="fight_reward_rotate" sub_effects="fight_reward_rotate,fight_reward_scale" is_sync="true" desc="战斗奖励界面旋转"/>
-	<Property ID="fight_reward_sound" sub_effects="fight_reward_sound" is_sync="true" desc="战斗奖励界面翻牌音效"/>
-	<Property ID="waiting_rotate" sub_effects="waiting_rotate" is_sync="true" desc="网络等待特效旋转"/>
-	<Property ID="curtain_move" sub_effects="curtain_move" is_sync="true" desc="拉幕界面运动"/>
+	<Property ID="common_alpha_in" sub_effects="common_alpha_in" is_sync="false" desc="alpha出现"/>
 	<Property ID="blood_alpha" sub_effects="blood_alpha" is_sync="true" desc="玩家血不足屏幕贴花"/>
-	<Property ID="boss_show_shake" sub_effects="boss_show_sound,boss_show_alpha" is_sync="true" desc="BOSS出现效果"/>
 
-	<Property ID="clone_select_award_show" sub_effects="scale_clone_out_1,scale_clone_out_2" is_sync="false" desc=""/>
-	<Property ID="clone_select_award_hide" sub_effects="scale_clone_back_1,scale_clone_back_2" is_sync="false" desc=""/>
-	<Property ID="clone_title" sub_effects="scale_clone_title_1,scale_clone_title_2" is_sync="true" desc="副本奖励标题"/>
-	<Property ID="clone_pass_time" sub_effects="alpha_clone_content" is_sync="true" desc="副本通关时间"/>
-	<Property ID="clone_reward" sub_effects="alpha_clone_content,sound_clone_content" is_sync="true" desc="副本奖励"/>
-	<Property ID="clone_star_back" sub_effects="rotate_clone_star_back_particles2d_2" is_sync="false" desc="副本奖励背景旋转"/>
-	<Property ID="clone_content" sub_effects="sound_reward_001,move_clone_content" is_sync="true" desc="副本道具奖励奖励渐显"/>
-	<Property ID="clone_item" sub_effects="alpha_clone_item" is_sync="false" desc="副本奖励物品渐显"/>
-	<Property ID="form_clone_fail_item_1" sub_effects="form_clone_fail_waiting1,alpha_clone_item" is_sync="false" desc="副本奖励物品渐显"/>
-	<Property ID="form_clone_fail_item_2" sub_effects="form_clone_fail_waiting2,alpha_clone_item" is_sync="false" desc="副本奖励物品渐显"/>
-	<Property ID="form_clone_fail_item_3" sub_effects="form_clone_fail_waiting3,alpha_clone_item" is_sync="false" desc="副本奖励物品渐显"/>
-	<Property ID="clone_btn" sub_effects="sound_thin_001,move_clone_btn" is_sync="true" desc="退出副本按钮"/>
-	<Property ID="clonefail_title" sub_effects="move_clonefail_title,rotate_clonefail_title" is_sync="false" desc="副本失败标题"/>
-	<Property ID="clonefail_content" sub_effects="move_clonefail_content" is_sync="false" desc="副本失败内容"/>
-	<Property ID="clonefail_btn" sub_effects="move_clone_btn,move_clone_btn_loop" is_sync="false" desc="副本失败按钮"/>
-	<Property ID="fight_content" sub_effects="alpha_fight_content" is_sync="false" desc="翻拍内容"/>
-	<Property ID="fight_reward" sub_effects="alpha_fight_content" is_sync="false" desc="翻拍奖励"/>
-	<Property ID="fight_btn" sub_effects="sound_thin_001,move_clone_btn" is_sync="true" desc="翻拍按钮"/>
-	<Property ID="sweep_groupbox" sub_effects="sound_wipe_001,scale_sweep_groupbox1" is_sync="false" desc="扫荡界面"/>
-	<Property ID="sweep_title" sub_effects="alpha_sweep_title" is_sync="false" desc="扫荡界面标题"/>
-	<Property ID="sweep_title_back" sub_effects="rotate_clone_star_back_particles2d_2" is_sync="false" desc="扫荡界面标题背景旋转"/>
-	<Property ID="sweep_reward" sub_effects="alpha_sweep_reward" is_sync="false" desc="扫荡界面奖励内容"/>
-	<Property ID="sweep_item" sub_effects="alpha_sweep_item" is_sync="false" desc="扫荡界面奖励道具"/>
-	<Property ID="warresult_dead" sub_effects="scale_clone_title_1,scale_clone_title_2" is_sync="true" desc="死亡弹出"/>
-	<Property ID="warresult_title" sub_effects="scale_clone_title_1,scale_clone_title_2" is_sync="true" desc="战场结算标题"/>
-	<Property ID="warresult_glory" sub_effects="alpha_clone_item" is_sync="false" desc="战场荣誉"/>
-	<Property ID="warresult_content" sub_effects="alpha_clone_item" is_sync="false" desc="战场内容"/>
-	<Property ID="warresult_btn" sub_effects="sound_thin_001,move_clone_btn" is_sync="true" desc="战场按钮"/>
-	<Property ID="warflagscale1" sub_effects="war_scale1,war_alpha" 	is_sync="true" 	desc="小地图标记"/>
-	<Property ID="warflagscale2" sub_effects="war_scale2,war_alpha" 	is_sync="true" 	desc="小地图标记"/>
-	<Property ID="warnewflag" sub_effects="war_new_flag" 	is_sync="true" 	desc=""/>
-	<Property ID="prop_inc" sub_effects="" is_sync="false" desc="属性+"/>
-	<Property ID="prop_dec" sub_effects="" is_sync="false" desc="属性-"/>
-	<Property ID="prop_sound" sub_effects="sound_prop_change_prop" is_sync="false" desc="战斗力变化声音"/>
-	<Property ID="treasure_texiao1" sub_effects="treasure_texiao_1" is_sync="true" desc="宝藏结果特效1"/>
+	<Property ID="fts_ride_move" sub_effects="fts_result_scale" is_sync="true" desc="驯服成功界面移动特效"/>
+	<Property ID="fts_ride_move_reset" sub_effects="fts_result_reset_scale" is_sync="true" desc="还原驯服成功界面移动特效"/>
+	<Property ID="fts_back_show" sub_effects="hunt_langan_show_1,success_sound" is_sync="true" desc="驯服成功界面背景框出现特效"/>
+	<Property ID="fts_result_show" sub_effects="hunt_quality_alpha_in" is_sync="false" desc="驯服成功界面结果出现特效"/>
+	<Property ID="fts_quality_show" sub_effects="hunt_quality_alpha_in" is_sync="false" desc="驯服成功界面坐骑品质出现特效"/>
+	<Property ID="fts_score_show" sub_effects="fts_score_show_1" is_sync="true" desc="驯服成功界面驯服得分出现特效"/>
+	<Property ID="fts_score_back_rotate" sub_effects="loop_rotate" is_sync="false" desc="驯服成功界面评分背景旋转特效"/>
+	<Property ID="fts_treasure_flash" sub_effects="hunt_alpha_in,hunt_alpha_out" is_sync="false" desc="驯服成功界面宝箱闪现特效"/>
+	<Property ID="fts_award_show" sub_effects="hunt_award_move_in" is_sync="false" desc="驯服成功界面奖励道具出现特效"/>
+	<Property ID="fts_time_show" sub_effects="hunt_time_move_in" is_sync="false" desc="驯服成功界面用时信息出现特效"/>
+	<Property ID="fts_prop_show" sub_effects="hunt_prop_move_in" is_sync="false" desc="驯服成功界面属性信息出现特效"/>
+	<Property ID="fts_btn_giveup_show" sub_effects="hunt_alpha_in" is_sync="false" desc="驯服成功界面放弃按钮出现特效"/>
+	<Property ID="fts_btn_gain_show" sub_effects="hunt_alpha_in" is_sync="false" desc="驯服成功界面获得按钮出现特效"/>
+	<Property ID="npc_hp_alpha_out" sub_effects="hp_alpha_out" is_sync="false" desc="逐渐隐藏"/>
+	<Property ID="hunt_warning" sub_effects="hunt_warning_alpha" is_sync="false" desc="驯服警告"/>
+	<Property ID="hunt_box" sub_effects="hunt_box_alpha" is_sync="false" desc="驯服指针箱子消失"/>
+	<Property ID="frt_ready_time" sub_effects="fts_score_show_1" is_sync="true" desc="驯服界面准备倒计时出现特效"/>
+	<Property ID="hunt_shake_alarm" sub_effects="hunt_shake_alarm" is_sync="false" desc="坐骑驯服抖动预警"/>
+	<Property ID="hunt_swim_alarm_alpha" sub_effects="hunt_swim_alarm_alpha" is_sync="false" desc="坐骑驯服晕眩预警"/>
+	<Property ID="hunt_swim_alarm_right" sub_effects="hunt_swim_alarm_move_right" is_sync="false" desc="坐骑驯服晕眩预警向右移动"/>
+	<Property ID="hunt_swim_alarm_left" sub_effects="hunt_swim_alarm_move_left" is_sync="false" desc="坐骑驯服晕眩预警向左移动"/>
+	<Property ID="hunt_expand_alarm" sub_effects="hunt_expand_alarm" is_sync="false" desc="坐骑驯服扩展预警"/>
+	<Property ID="hunt_cover_alarm" sub_effects="hunt_cover_alarm" is_sync="false" desc="坐骑驯服遮盖预警"/>
+	<Property ID="hunt_awardpunish_alarm" sub_effects="hunt_awardpunish_alarm" is_sync="false" desc="坐骑驯服奖惩预警"/>
+	<Property ID="hunt_cover_play" sub_effects="hunt_cover_play_scale_1,hunt_cover_play_scale_2" is_sync="false" desc="坐骑驯服遮盖效果"/>
+	<Property ID="hunt_score_word" sub_effects="hunt_score_word_move,hunt_score_word_alpha,hunt_score_word_sound" is_sync="true" desc="坐骑积分飘字"/>
+	<Property ID="hunt_ride_cheer" sub_effects="hunt_ride_cheer_move" is_sync="true" desc="干得不错"/>
+	<Property ID="ride_stamina_warning" sub_effects="ride_stamina_warning" is_sync="false" desc="耐力不足警告"/>
+	<Property ID="half_alpha" sub_effects="half_alpha" is_sync="false" desc="渐隐到半透明"/>
+	<Property ID="team_chat_alpha" sub_effects="team_chat_alpha" is_sync="false" desc="渐隐到透明"/>
+	<Property ID="ride_list_delay" sub_effects="ride_list_delay" is_sync="false" desc="什么都不做只等待"/>
+	<Property ID="ride_list_zoom_show" sub_effects="ride_list_zoom_show1" is_sync="false" desc="坐骑头像浮现"/>
+	<Property ID="path_find" sub_effects="path_find" is_sync="false" desc="寻路提示"/>
+	<Property ID="friend_news" sub_effects="friend_news_alpha" is_sync="false" desc="好友消息提示"/>
+	<Property ID="badge_talent" sub_effects="badge_talent_alpha" is_sync="false" desc="纹章套装底图"/>
+	<Property ID="badge_talent_ex" sub_effects="badge_talent_alpha_ex" is_sync="false" desc="纹章套装底图持续"/>
+	<Property ID="arena_red_move_in" sub_effects="arena_red_move_in" is_sync="false" desc="竞技场开始红方信息淡入"/>
+	<Property ID="arena_red_move_out" sub_effects="arena_red_move_out" is_sync="false" desc="竞技场开始红方信息淡出"/>
+	<Property ID="arena_blue_move_in" sub_effects="arena_blue_move_in" is_sync="false" desc="竞技场开始蓝方信息淡入"/>
+	<Property ID="arena_blue_move_out" sub_effects="arena_blue_move_out" is_sync="false" desc="竞技场开始蓝方信息淡出"/>
+	<Property ID="arena_vs_scale_in" sub_effects="arena_scale_1" is_sync="false" desc="竞技场vs信息淡入"/>
+	<Property ID="arena_vs_scale_out" sub_effects="arena_scale_2" is_sync="false" desc="竞技场vs信息淡出"/>
+	<Property ID="arena_count_down" sub_effects="arena_scale_1" is_sync="false" desc="竞技场开始倒计时"/>
+	<Property ID="func_suc_effect" sub_effects="func_alpha_in,func_alpha_out" is_sync="false" desc="通用功能特效（强化成功失败等）"/>
+	<Property ID="ride_tame_effect" sub_effects="ride_func_alpha_in,ride_func_alpha_out" is_sync="false" desc="渐显渐隐"/>
+	<Property ID="area_tip_alpha" sub_effects="area_tip_alpha_in" is_sync="false" desc="区域显示逐渐显示"/>
+	<Property ID="corner_mark_alpha" sub_effects="corner_mark_alpha" is_sync="true" desc="角标闪烁效果"/>
+	<Property ID="function_active_alpha" sub_effects="function_active_alpha" is_sync="false" desc="功能解锁淡出"/>
+	<Property ID="battle_message_kill_scale" sub_effects="battle_message_kill_scale" is_sync="true" desc="驯服成功界面移动特效"/>
+	
+	<!--战斗力和属性改变的Effect-->
+	<Property ID="battle_ability_value_change_1" sub_effects="battle_ability_value_change_1" is_sync="false" desc="战斗力数值变化"/>
+	<Property ID="battle_ability_value_change_2" sub_effects="battle_ability_value_change_2" is_sync="false" desc="战斗力数值变化"/>
+	<Property ID="battle_ability_value_change_3" sub_effects="battle_ability_wait,battle_ability_alpha_change" is_sync="false" desc="战斗力数值先停留后消失"/>
 
+	<Property ID="prop_change_change_1" sub_effects="prop_change_fade_in_1,prop_change_fade_in_2" is_sync="true" desc="属性框渐现"/>
+	<Property ID="prop_change_change_2" sub_effects="prop_change_wait" is_sync="false" desc="属性框等待"/>
+	<Property ID="prop_change_change_3" sub_effects="prop_change_fade_out_1,prop_change_fade_out_2" is_sync="true" desc="属性框渐隐"/>
 	
-	<Property ID="clone_select_award_show" 	sub_effects="scale_clone_out_1,scale_clone_out_2" 	is_sync="false" desc=""/>
-	<Property ID="clone_select_award_hide" 	sub_effects="scale_clone_back_1,scale_clone_back_2" 	is_sync="false" desc=""/>
+	<!--显示主界面和退出主界面的Effect-->
+	<Property ID="form_wait_action_end_1" sub_effects="form_wait_action_end_1" is_sync="false" desc="开场、离场动画等待"/>
+	<Property ID="form_wait_action_end_2" sub_effects="form_wait_action_end_2" is_sync="false" desc="开场、离场动画过渡等待"/>
+	<!--左-->
+	<Property ID="form_left_enter_1" sub_effects="form_left_enter_1,form_enter_fade_in_1" is_sync="true" desc="左侧进场"/>
+	<Property ID="form_left_enter_2" sub_effects="form_left_enter_2,form_enter_fade_in_2" is_sync="true" desc="左侧进场"/>
+	<Property ID="form_left_exit_1" sub_effects="form_left_exit_1,form_exit_fade_out_1" is_sync="true" desc="左侧离场"/>
+	<Property ID="form_left_exit_2" sub_effects="form_left_exit_2,form_exit_fade_out_2" is_sync="true" desc="左侧离场"/>
+	<!--下-->
+	<Property ID="form_down_enter_1" sub_effects="form_down_enter_1,form_enter_fade_in_1" is_sync="true" desc="下侧进场"/>
+	<Property ID="form_down_enter_2" sub_effects="form_down_enter_2,form_enter_fade_in_2" is_sync="true" desc="下侧进场"/>
+	<Property ID="form_down_exit_1" sub_effects="form_down_exit_1,form_exit_fade_out_1" is_sync="true" desc="下侧离场"/>
+	<Property ID="form_down_exit_2" sub_effects="form_down_exit_2,form_exit_fade_out_2" is_sync="true" desc="下侧离场"/>
+	<!--上-->
+	<Property ID="form_up_enter_1" sub_effects="form_up_enter_1,form_enter_fade_in_1" is_sync="true" desc="上侧进场"/>
+	<Property ID="form_up_enter_2" sub_effects="form_up_enter_2,form_enter_fade_in_2" is_sync="true" desc="上侧进场"/>
+	<Property ID="form_up_exit_1" sub_effects="form_up_exit_1,form_exit_fade_out_1" is_sync="true" desc="上侧离场"/>
+	<Property ID="form_up_exit_2" sub_effects="form_up_exit_2,form_exit_fade_out_2" is_sync="true" desc="上侧离场"/>
+	<!--右-->
+	<Property ID="form_right_enter_1" sub_effects="form_right_enter_1,form_enter_fade_in_1" is_sync="true" desc="右侧进场"/>
+	<Property ID="form_right_enter_2" sub_effects="form_right_enter_2,form_enter_fade_in_2" is_sync="true" desc="右侧进场"/>
+	<Property ID="form_right_exit_1" sub_effects="form_right_exit_1,form_exit_fade_out_1" is_sync="true" desc="右侧离场"/>
+	<Property ID="form_right_exit_2" sub_effects="form_right_exit_2,form_exit_fade_out_2" is_sync="true" desc="右侧离场"/>
+	<!--特殊处理：世界boss提示框-->
+	<Property ID="form_fade_enter_1" sub_effects="form_fade_enter_1" is_sync="true" desc="淡入"/>
+	<Property ID="form_fade_exit_2" sub_effects="form_fade_exit_2" is_sync="true" desc="淡出"/>
+	<!--特殊处理：手机状态栏-->
+	<Property ID="phone_status_1_enter_1" sub_effects="phone_status_1_enter,form_enter_fade_in_1" is_sync="true" desc="form_phone_status下侧进场"/>
+	<Property ID="phone_status_1_exit_2" sub_effects="phone_status_1_exit,form_exit_fade_out_2" is_sync="true" desc="form_phone_status下侧离场"/>
+	<Property ID="phone_status_2_enter_1" sub_effects="phone_status_2_enter,form_enter_fade_in_1" is_sync="true" desc="form_phone_status上侧进场"/>
+	<Property ID="phone_status_2_exit_2" sub_effects="phone_status_2_exit,form_exit_fade_out_2" is_sync="true" desc="form_phone_status上侧离场"/>
+	<!--特殊处理：经验条-->
+	<Property ID="exp_1_enter_1" sub_effects="exp_1_enter,form_enter_fade_in_1" is_sync="true" desc="form_player_head_bar->Label1下侧进场"/>
+	<Property ID="exp_1_exit_2" sub_effects="exp_1_exit,form_exit_fade_out_2" is_sync="true" desc="form_player_head_bar->Label1下侧离场"/>
+	<Property ID="exp_2_enter_1" sub_effects="exp_2_enter,form_enter_fade_in_1" is_sync="true" desc="form_player_head_bar->Label2下侧进场"/>
+	<Property ID="exp_2_exit_2" sub_effects="exp_2_exit,form_exit_fade_out_2" is_sync="true" desc="form_player_head_bar->Label2下侧离场"/>
+	<Property ID="exp_3_enter_1" sub_effects="exp_3_enter,form_enter_fade_in_1" is_sync="true" desc="form_player_head_bar->lbl_level下侧进场"/>
+	<Property ID="exp_3_exit_2" sub_effects="exp_3_exit,form_exit_fade_out_2" is_sync="true" desc="form_player_head_bar->lbl_level下侧离场"/>
+	<Property ID="exp_4_enter_1" sub_effects="exp_4_enter,form_enter_fade_in_1" is_sync="true" desc="form_player_head_bar->groupbox_exp下侧进场"/>
+	<Property ID="exp_4_exit_2" sub_effects="exp_4_exit,form_exit_fade_out_2" is_sync="true" desc="form_player_head_bar->groupbox_exp下侧离场"/>
+	<!--特殊处理：头像-->
+	<Property ID="head_bar_enter_1" sub_effects="head_bar_enter_1,form_enter_fade_in_1" is_sync="true" desc="form_player_head_bar->groupbox_player_head上侧进场"/>
+	<Property ID="head_bar_enter_2" sub_effects="head_bar_enter_2,form_enter_fade_in_2" is_sync="true" desc="form_player_head_bar->groupbox_player_head上侧进场"/>
+	<Property ID="head_bar_exit_1" sub_effects="head_bar_exit_1,form_exit_fade_out_1" is_sync="true" desc="form_player_head_bar->groupbox_player_head上侧离场"/>
+	<Property ID="head_bar_exit_2" sub_effects="head_bar_exit_2,form_exit_fade_out_2" is_sync="true" desc="form_player_head_bar->groupbox_player_head上侧离场"/>
+	<!--特殊处理：坐骑-->
+	<Property ID="ride_fight_main_enter_1" sub_effects="ride_fight_main_enter_1,form_enter_fade_in_1" is_sync="true" desc="form_ride_fight->groupbox_main下侧进场"/>
+	<Property ID="ride_fight_main_enter_2" sub_effects="ride_fight_main_enter_2,form_enter_fade_in_2" is_sync="true" desc="form_ride_fight->groupbox_main下侧进场"/>
+	<Property ID="ride_fight_main_exit_1" sub_effects="ride_fight_main_exit_1,form_exit_fade_out_1" is_sync="true" desc="form_ride_fight->groupbox_main下侧离场"/>
+	<Property ID="ride_fight_main_exit_2" sub_effects="ride_fight_main_exit_2,form_exit_fade_out_2" is_sync="true" desc="form_ride_fight->groupbox_main下侧离场"/>
 	
-	<Property ID="clone_star_back" 	sub_effects="rotate_clone_star_back" 	is_sync="false" desc="副本奖励背景旋转"/>
-	<Property ID="clone_content" 	sub_effects="sound_reward_001,move_clone_content" 	is_sync="true" desc="副本道具奖励奖励渐显"/>
-	<Property ID="clone_item" 		sub_effects="alpha_clone_item" 	is_sync="false" desc="副本奖励物品渐显"/>
-	<Property ID="clone_btn" 		sub_effects="sound_thin_001,move_clone_btn" 	is_sync="true" desc="退出副本按钮"/>
+	<Property ID="ride_fight_book_enter_1" sub_effects="phone_status_2_enter,form_enter_fade_in_1" is_sync="true" desc="form_phone_status上侧进场"/>
+	<Property ID="ride_fight_book_exit_2" sub_effects="phone_status_2_exit,form_exit_fade_out_2" is_sync="true" desc="form_phone_status上侧离场"/>
 	
-	<Property ID="move_clone_content" 		sub_effects="move_clone_content" 	is_sync="true" desc="副本通关目标移入"/>
-	<Property ID="move_clone_role" 		sub_effects="move_clone_role" 	is_sync="true" desc="副本通关阵容移入"/>
-	<Property ID="move_clone_star" 		sub_effects="move_clone_star" 	is_sync="true" desc="副本通关星星移入"/>
-	<Property ID="move_clone_exp" 		sub_effects="move_clone_exp" 	is_sync="true" desc="副本通关经验移入"/>
-	<Property ID="scale_clone_star" 		sub_effects="scale_clone_star" 	is_sync="true" desc="副本通关星星缩放"/>
+	<Property ID="main_hall_joystick_begin_1" sub_effects="main_hall_joystick_begin_1" is_sync="false" desc="操作摇杆虚化界面"/>
+	<Property ID="main_hall_joystick_begin_2" sub_effects="main_hall_joystick_begin_2" is_sync="false" desc="操作摇杆虚化界面"/>
+	<Property ID="main_hall_joystick_ended_1" sub_effects="main_hall_joystick_ended_1" is_sync="false" desc="操作摇杆虚化界面"/>
+	<Property ID="main_hall_joystick_ended_2" sub_effects="main_hall_joystick_ended_2" is_sync="false" desc="操作摇杆虚化界面"/>
+	<Property ID="main_hall_joystick_begin" sub_effects="main_hall_joystick_begin" is_sync="false" desc="松开摇杆恢复界面"/>
+	<Property ID="main_hall_joystick_ended" sub_effects="main_hall_joystick_ended" is_sync="false" desc="松开摇杆恢复界面"/>
 	
-	<Property ID="clonefail_title" 		sub_effects="move_clonefail_title,rotate_clonefail_title" 	is_sync="false" desc="副本失败标题"/>
-	<Property ID="clonefail_content" 	sub_effects="move_clonefail_content" 	is_sync="false" desc="副本失败内容"/>
-	<Property ID="clonefail_btn" 		sub_effects="move_clone_btn,move_clone_btn_loop" 	is_sync="false" desc="副本失败按钮"/>
+	<!--登陆界面的Effect-->
+	<Property ID="login_1_1" sub_effects="form_stage_login_move_1_1,form_stage_login_fade_in_1" is_sync="true" desc="form_stage_login->btn_select_server向上移动"/>
+	<Property ID="login_1_2" sub_effects="form_stage_login_move_1_2,form_stage_login_fade_in_2" is_sync="true" desc="form_stage_login->btn_select_server向上移动"/>
+	<Property ID="login_2_1" sub_effects="form_stage_login_move_2_1,form_stage_login_fade_in_1" is_sync="true" desc="form_stage_login->lbl_xuanqu向上移动"/>
+	<Property ID="login_2_2" sub_effects="form_stage_login_move_2_2,form_stage_login_fade_in_2" is_sync="true" desc="form_stage_login->lbl_xuanqu向上移动"/>
+	<Property ID="login_3_1" sub_effects="form_stage_login_move_3_1,form_stage_login_fade_in_1" is_sync="true" desc="form_stage_login->lbl_stage向上移动"/>
+	<Property ID="login_3_2" sub_effects="form_stage_login_move_3_2,form_stage_login_fade_in_2" is_sync="true" desc="form_stage_login->lbl_stage向上移动"/>
 	
-	<Property ID="fight_content" sub_effects="alpha_fight_content" 	is_sync="false" desc="翻拍内容"/>
-	<Property ID="fight_reward" sub_effects="alpha_fight_content" 	is_sync="false" desc="翻拍奖励"/>
-	<Property ID="fight_btn" sub_effects="sound_thin_001,move_clone_btn" 	is_sync="true" desc="翻拍按钮"/>
+	<Property ID="login_4_1" sub_effects="form_stage_login_move_wait_1" is_sync="false" desc="form_stage_login->btn_login向上移动"/>
+	<Property ID="login_4_2" sub_effects="form_stage_login_move_4_1,form_stage_login_fade_in_1" is_sync="true" desc="form_stage_login->btn_login向上移动"/>
+	<Property ID="login_4_3" sub_effects="form_stage_login_move_4_2,form_stage_login_fade_in_2" is_sync="true" desc="form_stage_login->btn_login向上移动"/>
 	
-	<Property ID="sweep_groupbox" sub_effects="sound_wipe_001,scale_sweep_groupbox1" 	is_sync="false" desc="扫荡界面"/>
-	<Property ID="sweep_title" sub_effects="alpha_sweep_title" 	is_sync="false" desc="扫荡界面标题"/>
-	<Property ID="sweep_title_back" sub_effects="rotate_clone_star_back" 	is_sync="false" desc="扫荡界面标题背景旋转"/>
-	<Property ID="sweep_reward" sub_effects="alpha_sweep_reward" 	is_sync="false" desc="扫荡界面奖励内容"/>
-	<Property ID="sweep_item" sub_effects="alpha_sweep_item" 	is_sync="false" desc="扫荡界面奖励道具"/>
+	<Property ID="login_5_1" sub_effects="form_stage_login_move_wait_2" is_sync="false" desc="form_stage_login->ipt_account向上移动"/>
+	<Property ID="login_5_2" sub_effects="form_stage_login_move_5_1,form_stage_login_fade_in_1" is_sync="true" desc="form_stage_login->ipt_account向上移动"/>
+	<Property ID="login_5_3" sub_effects="form_stage_login_move_5_2,form_stage_login_fade_in_2" is_sync="true" desc="form_stage_login->ipt_account向上移动"/>
+	<Property ID="login_6_1" sub_effects="form_stage_login_move_wait_2" is_sync="false" desc="form_stage_login->ipt_password向上移动"/>
+	<Property ID="login_6_2" sub_effects="form_stage_login_move_6_1,form_stage_login_fade_in_1" is_sync="true" desc="form_stage_login->ipt_password向上移动"/>
+	<Property ID="login_6_3" sub_effects="form_stage_login_move_6_2,form_stage_login_fade_in_2" is_sync="true" desc="form_stage_login->ipt_password向上移动"/>
 	
-	<Property ID="warresult_dead" 		sub_effects="scale_clone_title_1,scale_clone_title_2" 	is_sync="true" desc="死亡弹出"/>
-	<Property ID="warresult_title" 		sub_effects="scale_clone_title_1,scale_clone_title_2" 	is_sync="true" desc="战场结算标题"/>
-	<Property ID="warresult_glory" 		sub_effects="alpha_clone_item" 	is_sync="false" desc="战场荣誉"/>
-	<Property ID="warresult_content" 		sub_effects="alpha_clone_item" 	is_sync="false" desc="战场内容"/>
-	<Property ID="warresult_btn" 		sub_effects="sound_thin_001,move_clone_btn" 	is_sync="true" desc="战场按钮"/>
+	<!--FormChatMain -->
+	<Property ID="chat_main_1" sub_effects="chat_main_1,chat_main_1_alpha" is_sync="true" desc="FormChatMain移出"/>
+	<Property ID="chat_main_2" sub_effects="chat_main_2,chat_main_2_alpha" is_sync="true" desc="FormChatMain移回"/>
 	
+	<!--FormRideTips -->
+	<Property ID="ride_tips_1" sub_effects="ride_tips_1" is_sync="false" desc="FormRideTips->groupbox_main移出"/>
 	
-	<Property ID="prop_inc" 	sub_effects="" 	is_sync="false" desc="属性+"/>
-	<Property ID="prop_dec" 	sub_effects="" 	is_sync="false" desc="属性-"/>
-	<Property ID="prop_sound" 	sub_effects="sound_prop_change_prop" 	is_sync="false" desc="战斗力变化声音"/>
+	<!--FormPlayerHeadBar -->
+	<Property ID="player_head_bar_1" sub_effects="player_head_bar_1_1,player_head_bar_1_2" is_sync="false" desc="form_player_head_bar->groupbox_battle_ability先放大后缩小"/>
 	
-	<Property ID="treasure_texiao1" sub_effects="treasure_texiao_1" is_sync="true" desc="宝藏结果特效1"/>	
+	<!--FormMainFunction -->
+	<Property ID="main_function_wait_1" sub_effects="main_function_wait_1" is_sync="false" desc="form_main_function->gb_equip上移"/>
+	
+	<Property ID="main_function_1_1" sub_effects="main_function_1_1,main_function_fade_in_1" is_sync="true" desc="form_main_function->gb_role上移"/>
+	<Property ID="main_function_1_2" sub_effects="main_function_1_2,main_function_fade_in_2" is_sync="true" desc="form_main_function->gb_role上移"/>
 
-	<Property ID="treasure_texiao2" sub_effects="treasure_texiao1_1" is_sync="true" desc="宝藏结果特效2"/>
-	<Property ID="treasure_texiao3" sub_effects="treasure_texiao1_2" is_sync="true" desc="宝藏结果特效3"/>
-	<Property ID="treasure_texiao4" sub_effects="treasure_texiao1_3" is_sync="true" desc="宝藏结果特效4"/>
-	<Property ID="treasure_texiao5" sub_effects="treasure_texiao1_4" is_sync="true" desc="宝藏结果特效5"/>
-	<Property ID="clone_select_open" sub_effects="clone_select_open_1" is_sync="false" desc="关卡选择排行榜打开"/>
-	<Property ID="clone_select_close" sub_effects="clone_select_close_1" is_sync="false" desc="关卡选择排行榜关闭"/>
-	<Property ID="left_show" sub_effects="left_show" is_sync="false" desc="宠物强化打开"/>
-	<Property ID="left_close" sub_effects="left_close" is_sync="false" desc="宠物强化关闭"/>
-	<Property ID="zoom_show_quanping" sub_effects="scale_quanping_in_1" is_sync="false" desc="全屏界面打开效果"/>
-	<Property ID="zoom_hide_quanping" sub_effects="scale_quanping_out_1" is_sync="false" desc="全屏界面关闭效果"/>
-	<Property ID="cloud_close_movie_grpup_move" sub_effects="cloud_close_movie_grpup_move" is_sync="false" desc="cloud_close_movie"/>
-	<Property ID="cloud_close_movie_grpdown_move" sub_effects="cloud_close_movie_grpdown_move" is_sync="false" desc="cloud_close_movie"/>
-	<Property ID="cloud_open_movie_grpup_move" sub_effects="cloud_open_movie_grpup_move,cloud_open_movie_grpup_move_2" is_sync="true" desc="云打开"/>
-	<Property ID="cloud_open_movie_grpdown_move" sub_effects="cloud_open_movie_grpdown_move" is_sync="false" desc="cloud_open_movie"/>
-	<Property ID="skill_upgrade_success" sub_effects="skill_upgrade_success_5,skill_upgrade_success_1,skill_upgrade_success_2,skill_upgrade_success_3,skill_upgrade_success_6" is_sync="false" desc="技能升级成功效果"/>
-	<Property ID="skill_upgrade_success_bk" sub_effects="skill_upgrade_success_4,skill_upgrade_success_3" is_sync="false" desc="技能升级成功效果"/>
-	<Property ID="skill_upgrade_success_up" sub_effects="skill_upgrade_success_up" is_sync="false" desc="技能升级成功效果"/>
-	<Property ID="card_beat" sub_effects="card_beat_1,card_beat_2" is_sync="false" desc="翻拍物品跳动"/>
-	<Property ID="duobaoxingxing" sub_effects="duobaoxingxing_1" is_sync="false" desc="夺宝星星缩放"/>
-	<Property ID="duobaoshengli" sub_effects="duobaoshengli_1,duobaoshengli_2" is_sync="true" desc="夺宝胜利缩放"/>
-	<Property ID="duobaoshenglisound" sub_effects="duobaoshenglisound" is_sync="false" desc="夺宝胜利音效"/>
-	<Property ID="duobaoshibaisound" sub_effects="duobaoshibaisound" is_sync="false" desc="夺宝失败音效"/>
-	<Property ID="duobaopkzoom1" sub_effects="duobaopkzoom1" is_sync="false" desc="夺宝PK动画缩放特效"/>
-	<Property ID="duobaopkzoom2" sub_effects="duobaopkzoom2" is_sync="false" desc="夺宝PK动画缩放特效"/>
-	<Property ID="duobaopkmove1" sub_effects="sound_snatch_001,duobaopkmove1" is_sync="false" desc="夺宝PK动画移动特效"/>
-	<Property ID="duobaopkmove2" sub_effects="duobaopkmove2" is_sync="false" desc="夺宝PK动画移动特效"/>
-	<Property ID="duobaopkalpha" sub_effects="duobaopkalpha" is_sync="false" desc="夺宝PK的Alpha渐变"/>
-	<Property ID="talknextclick" sub_effects="sound_1" is_sync="true" desc="对话界面下一页"/>
-	<Property ID="blkmkt_red_blink" sub_effects="blkmkt_red_blink" is_sync="false" desc="黑市红宝石闪烁"/>
-	<Property ID="blkmkt_blue_blink" sub_effects="blkmkt_blue_blink" is_sync="false" desc="黑市蓝宝石闪烁"/>
-	<Property ID="blkmkt_taiji" sub_effects="blkmkt_taiji_scale,blkmkt_taiji_rotate,blkmkt_taiji_sound" is_sync="true" desc="黑市太极效果"/>
-	<Property ID="blkmkt_melt_particle1" sub_effects="blkmkt_melt_particle1" is_sync="false" desc="黑市熔炼、重铸粒子特效1"/>
-	<Property ID="blkmkt_melt_particle2" sub_effects="blkmkt_melt_particle2" is_sync="false" desc="黑市熔炼、重铸粒子特效2"/>
-	<Property ID="blkmkt_luzi_alpha" sub_effects="blkmkt_luzi_alpha" is_sync="false" desc="黑市八卦炉背景闪烁"/>
-	<Property ID="questalphatabs" sub_effects="alpha_quest_tabs" is_sync="true" desc=""/>
-	<Property ID="questreward" sub_effects="sound_quest_reward" is_sync="true" desc="任务完成音效"/>
-	<Property ID="deprive_back_eff" sub_effects="deprive_back_eff1,deprive_back_eff2" is_sync="false" desc="夺宝界面背景动画"/>
-	<Property ID="deprive_compose_eff" sub_effects="deprive_compose_eff1,deprive_compose_eff2,deprive_compose_sound" is_sync="true" desc="夺宝界面合成动画"/>
-	<Property ID="deprive_blink_eff" sub_effects="deprive_blink_eff1,deprive_blink_eff2" is_sync="false" desc="夺宝界面合成动画(星星)"/>
-	<Property ID="upgradesuccess" sub_effects="success_scale,success_sound" is_sync="true" desc="升级成功"/>
-	<Property ID="upgradesuccessback" sub_effects="success_rotate,success_sound" is_sync="true" desc="升级成功背景"/>
-	<Property ID="upgradesuccesssound" sub_effects="success_sound" is_sync="false" desc="升级成功音效"/>
-	<Property ID="strengthen_blink" sub_effects="strengthen_alpha" is_sync="true" desc="经验条闪烁"/>
-	<Property ID="cap_fadeout" sub_effects="cap_fadeout" is_sync="false" desc="战斗力消失"/>
-	<Property ID="chat_whisper_tips" sub_effects="chat_whisper_tips" is_sync="false" desc="主界面上聊天私聊提示"/>
-	<Property ID="starback_blink" sub_effects="starback_blink" is_sync="false" desc="练星一闪一闪亮吓狗眼"/>
-	<Property ID="boss_time_out" sub_effects="boss_time_out1,boss_time_out2,boss_time_out3,boss_time_out4" is_sync="false" desc="挑战boss倒计时结束"/>
-	<Property ID="gold_ani" sub_effects="gold_ani_sound,gold_ani" is_sync="true" desc="通过物品获取金币成功动画"/>
-	<Property ID="diamond_ani" sub_effects="diamond_ani_sound,diamond_ani" is_sync="true" desc="通过物品获取钻石成功动画"/>
-	<Property ID="click_icon_alpha" sub_effects="click_icon_alpha1,click_icon_alpha2" is_sync="false" desc="点击屏幕后熊掌效果"/>
-	<Property ID="guild_bless_particle" sub_effects="guild_bless_sound,guild_bless_particle1" is_sync="true" desc="公会祈福粒子特效1"/>
-	<Property ID="guild_bless_particle11" sub_effects="guild_bless_particle2" is_sync="true" desc="公会祈福粒子特效2"/>
-	<Property ID="guild_bless_nvshen" sub_effects="guild_bless_scale2,guild_bless_alpha" is_sync="true" desc="公会祈福女神特效"/>
-	<Property ID="war_talk_center" sub_effects="war_talk_center_scale" is_sync="true" desc="战场/组队副本对话按钮弹出"/>
-	<Property ID="war_talk_center_hide" sub_effects="war_talk_center_hide" is_sync="true" desc="战场/组队副本对话按钮弹出"/>
-	<Property ID="prop_detail_open" sub_effects="prop_detail_open" is_sync="true" desc="详细属性打开"/>
-	<Property ID="prop_detail_close" sub_effects="prop_detail_close" is_sync="true" desc="详细属性关闭"/>
-	<!-- 太极熊猫2-战斗界面 -->
-	<Property ID="newCloneGold" sub_effects="newCloneGold" is_sync="true" desc="新副本获得金币动画"/>
-	<Property ID="dark_alpha" sub_effects="dark_alpha" is_sync="true" desc="玩家进入特定区域屏幕变暗"/>
-	<Property ID="light_alpha" sub_effects="light_alpha" is_sync="true" desc="玩家进入特定区域屏幕变亮"/>
-	<Property ID="zd_zjm_active_ec" sub_effects="active_xht1" is_sync="true" desc="消耗条能量条动画"/>
-	<Property ID="zd_zjm_active_rc" sub_effects="active_xht2" is_sync="true" desc="消耗条怒气条动画"/>
-	<Property ID="zd_zjm_active_df" sub_effects="active_xht3" is_sync="true" desc="消耗条护盾条动画"/>
-	<Property ID="zd_zjm_jindu" sub_effects="active_jindu" is_sync="true" desc="消耗条消耗动画"/>
-	<Property ID="zd_zjm_suoding" sub_effects="active_suoding" is_sync="true" desc="锁定目标标示"/>
-	<Property ID="zd_zjm_quan2" sub_effects="active_quan2" is_sync="true" desc=""/>
-	<Property ID="zd_zjm_quan1" sub_effects="active_quan1" is_sync="true" desc=""/>
-	<!-- 太极熊猫2-主界面 -->
-	<Property ID="dt_zjm_glanzk" sub_effects="dating_glanzk" is_sync="true" desc="功能按钮展开动画"/>
-	<Property ID="dt_zjm_glanss" sub_effects="dating_glanss" is_sync="true" desc="功能按钮收缩动画"/>
-	<Property ID="dt_zjm_glanzk_plus" sub_effects="dating_glanzk_plus" is_sync="true" desc="功能按钮展开动画"/>
-	<Property ID="dt_zjm_glanss_plus" sub_effects="dating_glanss_plus" is_sync="true" desc="功能按钮收缩动画"/>
-	<Property ID="form_loading_amt" sub_effects="form_loading_amt" is_sync="true" desc="动画拉幕界面运动"/>
-	<Property ID="form_main_hall_chat_amt" sub_effects="form_main_hall_chat_amt" is_sync="true" desc="聊天信息提示气泡"/>
+	<Property ID="main_function_2_1" sub_effects="main_function_2_1,main_function_fade_in_1" is_sync="true" desc="form_main_function->gb_equip上移"/>
+	<Property ID="main_function_2_2" sub_effects="main_function_2_2,main_function_fade_in_2" is_sync="true" desc="form_main_function->gb_equip上移"/>
 	
-	<!-- 太极熊猫2-抽奖界面 -->
-	<Property ID="form_treasure_effect_alpha_hide" sub_effects="form_treasure_effect_alpha_hide" is_sync="false" desc="groupbox_info_2、groupbox_info_3、groupbox_jl_show_info, groupbox_cs_show_info的翻牌淡入  "/>
-	<Property ID="form_treasure_effect_alpha_show" sub_effects="form_treasure_effect_alpha_show" is_sync="false" desc="groupbox_info_2、groupbox_info_3、groupbox_jl_show_info, groupbox_cs_show_info的翻牌淡出"/>
-	<Property ID="form_treasure_effect_image_compress" sub_effects="form_treasure_effect_image_compress" is_sync="false" desc="图片压缩"/>
-	<Property ID="form_treasure_effect_image_unfold" sub_effects="form_treasure_effect_image_unfold" is_sync="false" desc="图片扩张"/>
-	<Property ID="form_treasure_award_1" sub_effects="form_treasure_award_1" is_sync="false" desc="第一个动画 女神捧灯的"/>
-	<Property ID="form_treasure_award_2" sub_effects="form_treasure_award_2" is_sync="false" desc="卡牌旋转后的动画"/>
-	<Property ID="form_treasure_award_3" sub_effects="form_treasure_award_3" is_sync="false" desc="最后一个弹出头像后面的动画"/>
-	<Property ID="form_treasure_award_4" sub_effects="form_treasure_award_4" is_sync="false" desc="女神捧灯的 循环旋转"/>
-	<Property ID="form_treasure_award_zoom_rotate_1" sub_effects="form_treasure_award_rotate_1, form_treasure_award_zoom_2_1" is_sync="true" desc="原画旋转缩放，注意旋转与缩放的时间要一致"/>
-	<Property ID="form_treasure_award_zoom_rotate_2" sub_effects="form_treasure_award_rotate, form_treasure_award_zoom_2" is_sync="true" desc="卡牌旋转缩放，注意旋转与缩放的时间要一致"/>
-	<Property ID="form_treasure_award_zoom_1" sub_effects="form_treasure_award_zoom_1" is_sync="false" desc="没有使用"/>
-	<Property ID="form_treasure_award_zoom_icon" sub_effects="form_treasure_award_zoom_3, form_treasure_award_zoom_4,form_treasure_award_zoom_4_1" is_sync="false" desc="最后一个弹出头像 弹出动作"/>
-	<Property ID="form_treasure_award_zoom_jp" sub_effects="form_treasure_award_zoom_5,form_treasure_award_zoom_5_1,form_treasure_award_zoom_6" is_sync="false" desc="卡牌的弹出"/>
-	<Property ID="form_treasure_award_zoom_jp_zd" sub_effects="form_treasure_award_zoom_9, form_treasure_award_zoom_10,form_treasure_award_zoom_11,form_treasure_award_zoom_12" is_sync="false" desc="卡牌的震动"/>
-	<Property ID="form_treasure_award_zoom_grp_zd" sub_effects="form_treasure_award_zoom_9_1, form_treasure_award_zoom_10_1, form_treasure_award_zoom_11_1" is_sync="false" desc="卡牌背景的震动"/>
-	<Property ID="form_treasure_award_zoom_yh" sub_effects="form_treasure_award_zoom_7, form_treasure_award_zoom_8" is_sync="false" desc="原画的弹出"/>
-	<Property ID="form_treasure_effect_ds_1" sub_effects="form_treasure_effect_ds_1" is_sync="false" desc="定时，最后一个头像在播放动画多少毫秒后执行弹出动作"/>
-	<Property ID="form_treasure_effect_ds_2" sub_effects="form_treasure_effect_ds_2" is_sync="false" desc="定时，在十连抽中决定下个卡牌等待多久开始旋转"/>
-	<Property ID="curtain_cartoon_up" sub_effects="curtain_move_up_2" is_sync="true" desc="动画拉幕界面运动"/>
-	<Property ID="curtain_cartoon_down" sub_effects="curtain_move_down_2" is_sync="true" desc="动画拉幕界面运动"/>
-	<Property ID="test888" sub_effects="test888" is_sync="true" desc="卡牌1的特效1"/>
-	<Property ID="treasure_card_scale_2" sub_effects="treasure_card_scale_2" is_sync="true" desc="卡牌的缩放特效1"/>
-	<Property ID="treasure_card_effect1_0" sub_effects="treasure_card_move_1,treasure_card_scale_1" is_sync="true" desc="卡牌1的特效1"/>
-	<Property ID="treasure_card_effect1_1" sub_effects="treasure_card_move_2,treasure_card_scale_1" is_sync="true" desc="卡牌2的特效1"/>
-	<Property ID="treasure_card_effect1_2" sub_effects="treasure_card_move_3,treasure_card_scale_1" is_sync="true" desc="卡牌3的特效1"/>
-	<Property ID="treasure_card_effect1_3" sub_effects="treasure_card_move_4,treasure_card_scale_1" is_sync="true" desc="卡牌4的特效1"/>
-	<Property ID="treasure_card_effect1_4" sub_effects="treasure_card_move_5,treasure_card_scale_1" is_sync="true" desc="卡牌5的特效1"/>
-	<Property ID="treasure_card_effect1_5" sub_effects="treasure_card_move_6,treasure_card_scale_1" is_sync="true" desc="卡牌6的特效1"/>
-	<Property ID="treasure_card_effect1_6" sub_effects="treasure_card_move_7,treasure_card_scale_1" is_sync="true" desc="卡牌7的特效1"/>
-	<Property ID="treasure_card_effect1_7" sub_effects="treasure_card_move_8,treasure_card_scale_1" is_sync="true" desc="卡牌8的特效1"/>
-	<Property ID="treasure_card_effect1_8" sub_effects="treasure_card_move_9,treasure_card_scale_1" is_sync="true" desc="卡牌9的特效1"/>
-	<Property ID="treasure_card_effect1_9" sub_effects="treasure_card_move_10,treasure_card_scale_1" is_sync="true" desc="卡牌10的特效1"/>
-	<Property ID="treasure_card_group_scale" sub_effects="treasure_card_scale_3,treasure_card_scale_4" is_sync="false" desc="卡牌group缩放"/>
-	<Property ID="treasure_award_rotate_ring" sub_effects="treasure_award_rotate_ring" is_sync="false" desc="光环旋转"/>
-	<Property ID="treasure_mltbox_move" sub_effects="treasure_mltbox_move" is_sync="false" desc="mltbox 移动"/>
-	<Property ID="form_createrole_1" sub_effects="createrole_alpha_1" is_sync="false" desc="创建角色按钮渐现1"/>
-	<Property ID="form_createrole_2" sub_effects="createrole_alpha_1" is_sync="false" desc="创建角色介绍渐现1"/>
-	<Property ID="form_createrole_3" sub_effects="createrole_scroll_1" is_sync="false" desc="创建角色职业展开1"/>
-	<Property ID="form_createrole_4" sub_effects="createrole_zoom_1" is_sync="false" desc="创建角色名字放大1"/>
-	<Property ID="form_treasure_click_sound" sub_effects="form_treasure_click_sound" is_sync="false" desc="翻牌 点击音效"/>
-	<Property ID="form_treasure_item_sound" sub_effects="form_treasure_item_sound" is_sync="false" desc="翻牌 翻牌物品音效"/>
-	<Property ID="form_treasure_hero_sound" sub_effects="form_treasure_hero_sound" is_sync="false" desc="翻牌 翻牌整卡音效"/>
+	<Property ID="main_function_3_1" sub_effects="main_function_3_1,main_function_fade_in_1" is_sync="true" desc="form_main_function->gb_ride上移"/>
+	<Property ID="main_function_3_2" sub_effects="main_function_3_2,main_function_fade_in_2" is_sync="true" desc="form_main_function->gb_ride上移"/>
 	
-	<!-- 太极熊猫2-抽奖界面 end-->
+	<Property ID="main_function_4_1" sub_effects="main_function_4_1,main_function_fade_in_1" is_sync="true" desc="form_main_function->gb_tattoo上移"/>
+	<Property ID="main_function_4_2" sub_effects="main_function_4_2,main_function_fade_in_2" is_sync="true" desc="form_main_function->gb_tattoo上移"/>
 	
-	<!-- 太极熊猫2-太极技动画 -->
-	<Property ID="form_taichi_skill_effect_1" sub_effects="form_taichi_skill_effect_1" is_sync="false" desc="太极技释放时泼墨动画"/>
-	<Property ID="form_taichi_text_zoom" sub_effects="form_treasure_award_zoom_5_2,form_treasure_award_zoom_5_3,form_treasure_award_zoom_5_4,form_treasure_award_zoom_5_5" is_sync="false" desc="太极技文字出场动画"/>
-	<Property ID="sustain_taichi_text_delay" sub_effects="sustain_taichi_text_delay" is_sync="false" desc="太极技3个字延迟出来特效"/>
+	<Property ID="main_function_5_1" sub_effects="main_function_5_1,main_function_fade_in_1" is_sync="true" desc="form_main_function->gb_hunt上移"/>
+	<Property ID="main_function_5_2" sub_effects="main_function_5_2,main_function_fade_in_2" is_sync="true" desc="form_main_function->gb_hunt上移"/>
 	
-	<!-- 太极熊猫2-角色主界面 -->
-	<Property ID="form_role_npc_rbtn_move" sub_effects="form_role_npc_rbtn_move1,form_role_npc_rbtn_move2" is_sync="false" desc="rbtn 掉落"/>
-	<Property ID="form_role_npc_form_move_in" sub_effects="form_role_npc_form_move_in" is_sync="false" desc="form移入动作"/>
-	<Property ID="form_role_npc_form_move_out" sub_effects="form_role_npc_form_move_out" is_sync="false" desc="form移出动作"/>
+	<Property ID="main_function_6_1" sub_effects="main_function_6_1,main_function_fade_in_1" is_sync="true" desc="form_main_function->gb_clone上移"/>
+	<Property ID="main_function_6_2" sub_effects="main_function_6_2,main_function_fade_in_2" is_sync="true" desc="form_main_function->gb_clone上移"/>
+	
+	<Property ID="main_function_7_1" sub_effects="main_function_7_1,main_function_fade_in_1" is_sync="true" desc="form_main_function->gb_arena上移"/>
+	<Property ID="main_function_7_2" sub_effects="main_function_7_2,main_function_fade_in_2" is_sync="true" desc="form_main_function->gb_arena上移"/>
+	
+	<Property ID="main_function_8_1" sub_effects="main_function_8_1,main_function_fade_in_1" is_sync="true" desc="form_main_function->gb_risk上移"/>
+	<Property ID="main_function_8_2" sub_effects="main_function_8_2,main_function_fade_in_2" is_sync="true" desc="form_main_function->gb_risk上移"/>
+	
+	<!--FormTeamCloneSelect 副本 -->
+	<Property ID="team_clone_select_1_1" sub_effects="team_clone_select_1_1,team_clone_select_1_2" is_sync="false" desc="form_team_clone_select->cb_diff_easy,cb_diff_hard缩放"/>
 
-	<Property ID="form_role_npc_form_move_right_in" sub_effects="form_role_npc_form_move_right_in" is_sync="false" desc="form从左移入动作"/>
-	<Property ID="form_role_npc_form_move_right_out" sub_effects="form_role_npc_form_move_right_out" is_sync="false" desc="form向左移出动作"/>
+	<Property ID="team_clone_select_wait_1" sub_effects="team_clone_select_wait_1" is_sync="false" desc="form_team_clone_select->gb_clone_cell等待"/>
+	<Property ID="team_clone_select_2_1" sub_effects="team_clone_select_2_1,team_clone_select_fade_in_1" is_sync="true" desc="form_team_clone_select->gb_clone_cell位移"/>
+	
+	<Property ID="team_clone_select_3_1" sub_effects="team_clone_select_3_1,team_clone_select_3_2" is_sync="false" desc="form_team_clone_select->rbtn_small,rbtn_middle,rbtn_large缩放"/>
+	
+	<!--FormArenaMain 竞技场 -->
+	<Property ID="arena_main_wait_1" sub_effects="arena_main_wait_1" is_sync="false" desc="form_arena_main->"/>
+	<Property ID="arena_main_1_1" sub_effects="arena_main_wait_2,arena_main_1_1" is_sync="false" desc="form_arena_main->"/>
+	
+	<!--FormGiftPackage 礼包 -->
+	<Property ID="gift_package_wait_1" sub_effects="gift_package_wait_1" is_sync="false" desc="各个奖励框播放动画的间隔"/>
+	
+	<Property ID="gift_package_1_1" sub_effects="gift_package_wait_2" is_sync="true" desc="界面打开时，等待界面动画结束的时间"/>
+	<Property ID="gift_package_1_2" sub_effects="gift_package_1_1" is_sync="true" desc="奖励框的第一段翻转"/>
+	<Property ID="gift_package_1_3" sub_effects="gift_package_1_2,gift_package_1_4" is_sync="true" desc="奖励框的第二段翻转"/>
+	
+	<Property ID="gift_package_2_1" sub_effects="gift_package_wait_2" is_sync="true" desc="界面打开时，等待界面动画结束的时间"/>
+	<Property ID="gift_package_2_2" sub_effects="gift_package_1_3,gift_package_1_5" is_sync="true" desc="奖励框遮罩的第一段翻转"/>
+	
+	<Property ID="gift_package_3_1" sub_effects="gift_package_wait_3,gift_package_1_6" is_sync="false" desc="奖励框容器的渐现"/>
+	
+	<Property ID="gift_package_close" sub_effects="scale_form_out_1,gift_package_form_out_2" is_sync="false" desc="关闭奖励界面"/>
+	
+	<!--FormTameFail 狩猎失败 -->
+	<Property ID="tame_fail_add_exp" sub_effects="tame_fail_add_exp_1,tame_fail_add_exp_2" is_sync="true" desc="经验数字下落"/>
+	
+	<!--FormDailyActivity 福利 -->
+	<Property ID="daily_activity_move_in" sub_effects="daily_activity_move_in" is_sync="true" desc="gb_activity_type上升"/>
+	
+	<!--FormArmyGradeTips 军阶提示 -->
+	<Property ID="army_grade_show" sub_effects="army_grade_show" is_sync="true" desc="gb_activity_type上升"/>
+	<Property ID="army_grade_close" sub_effects="army_grade_close" is_sync="true" desc="gb_activity_type上升"/>
+	
+	<!--FormSkillBar 技能栏 -->
+	<Property ID="skill_bar_camera_tab" sub_effects="skill_bar_camera_tab" is_sync="false" desc=""/>
+	<Property ID="skill_bar_normal_atk" sub_effects="skill_bar_normal_atk" is_sync="false" desc=""/>
+	
+	<Property ID="first_pay_alpha" sub_effects="first_pay_alpha" is_sync="false" desc="首冲"/>
+	<Property ID="package_recommend_alpha" sub_effects="package_recommend_alpha" is_sync="false" desc="推荐礼包"/>
 
-	<Property ID="form_role_npc_form_move_right_in" sub_effects="form_role_npc_form_move_right_in" is_sync="false" desc="form左到原点"/>
-	<Property ID="form_role_npc_form_move_right_out" sub_effects="form_role_npc_form_move_right_out" is_sync="false" desc="form原点到右"/>
-	<Property ID="form_role_npc_form_move_left_in" sub_effects="form_role_npc_form_move_left_in" is_sync="false" desc="form右到原点"/>
-	<Property ID="form_role_npc_form_move_left_out" sub_effects="form_role_npc_form_move_left_out" is_sync="false" desc="form原点到左"/>
+	<Property ID="map_currentscene_alpha" sub_effects="map_currentscene_alpha_1,map_currentscene_alpha_2" is_sync="false" desc="世界地图上当前所在区域地图标识"/>
 	
-	<Property ID="form_role_npc_form_up_in_1" sub_effects="form_role_npc_form_up_in_1" is_sync="false" desc="form从上至下进入动作"/>
-	<Property ID="form_role_npc_form_up_in_2" sub_effects="form_role_npc_form_up_in_2" is_sync="false" desc="form从下至上进入动作"/>
-	<Property ID="form_role_npc_form_up_out_1" sub_effects="form_role_npc_form_up_out_1" is_sync="false" desc="form从上至下离开动作"/>
-	<Property ID="form_role_npc_form_up_out_2" sub_effects="form_role_npc_form_up_out_2" is_sync="false" desc="form从下至上离开动作"/>
-	
-	<Property ID="form_role_npc_page_pos" sub_effects="form_role_npc_page_pos" is_sync="false" desc="调整page位置"/>
-	<Property ID="form_role_npc_rbtn_move_out" sub_effects="form_role_npc_rbtn_move_out" is_sync="false" desc="rbtn组移出"/>
-	<Property ID="form_role_npc_rbtn_move_in" sub_effects="form_role_npc_rbtn_move_in" is_sync="false" desc="rbtn组移入"/>
-	<Property ID="form_bag_move_out" sub_effects="form_bag_move_out" is_sync="false" desc="bag界面移出"/>
-	<Property ID="form_bag_move_in" sub_effects="form_bag_move_in" is_sync="false" desc="bag界面移入"/>
-	<Property ID="form_strength_upgrade_main_out" sub_effects="form_strength_upgrade_main_out" is_sync="false" desc="强化精炼界面移出"/>
-	<Property ID="form_strength_upgrade_main_in" sub_effects="form_strength_upgrade_main_in" is_sync="false" desc="强化精炼界面移入"/>
-	<Property ID="form_strength_upgrade_top_out" sub_effects="form_strength_upgrade_top_out" is_sync="false" desc="强化精炼界面移入"/>
-	<Property ID="form_strength_upgrade_top_in" sub_effects="form_strength_upgrade_top_in" is_sync="false" desc="强化精炼界面移入"/>
-	<Property ID="form_strength_upgrade_bottom_out" sub_effects="form_strength_upgrade_bottom_out" is_sync="false" desc="强化精炼界面移入"/>
-	<Property ID="form_strength_upgrade_bottom_in" sub_effects="form_strength_upgrade_bottom_in" is_sync="false" desc="强化精炼界面移入"/>
-	<Property ID="equip_strengthen_success" sub_effects="sound_strengthen,equip_strengthen_success" is_sync="false" desc="装备强化成功"/>
-	<Property ID="equip_strengthen_success1" sub_effects="equip_strengthen_success_ds_1,equip_strengthen_success_particles2d_2" is_sync="false" desc="装备强化成功"/>
-	<Property ID="equip_strengthen_success2" sub_effects="equip_strengthen_success_ds_1,equip_strengthen_success_particles2d_1" is_sync="false" desc="装备强化成功"/>
-	<Property ID="equip_strengthen_success3" sub_effects="form_role_npc_skill_particles2d" is_sync="false" desc="装备精炼、强化属性解锁动画"/>
-	<Property ID="equip_upgrade_success" sub_effects="equip_upgrade_success" is_sync="false" desc="装备精炼成功"/>
-	<Property ID="equip_upgrade_effect_left" sub_effects="equip_upgrade_effect_big,equip_upgrade_effect_small,equip_upgrade_effect_left_move" is_sync="false" desc="装备精炼左边动画"/>
-	<Property ID="equip_upgrade_effect_centre" sub_effects="equip_upgrade_effect_big,equip_upgrade_effect_small,equip_upgrade_effect_centre_move" is_sync="false" desc="装备精炼中间动画"/>
-	<Property ID="equip_upgrade_effect_right" sub_effects="equip_upgrade_effect_big,equip_upgrade_effect_small,equip_upgrade_effect_right_move" is_sync="false" desc="装备精炼右边动画"/>
-	<Property ID="equip_upgrade_effect_center" sub_effects="sound_upgrade,equip_upgrade_effect_big,equip_upgrade_success_particles2d_1" is_sync="false" desc="装备精炼右边动画"/>
-	<Property ID="auto_skill_set_pos" sub_effects="auto_skill_set_pos" is_sync="false" desc="auto_skill 位置设定"/>
-	<Property ID="btn_pause_set_pos" sub_effects="btn_pause_set_pos" is_sync="false" desc="auto_skill 位置设定"/>
-	<Property ID="auto_skill_move" sub_effects="auto_skill_move" is_sync="false" desc="auto_skill 移动"/>
-	<Property ID="auto_control_move" sub_effects="auto_control_move" is_sync="false" desc="auto_skill 移动"/>
-	<Property ID="form_role_npc_skill_alpha" sub_effects="form_role_npc_skill_alpha" is_sync="false" desc="技能界面渐入显示"/>
-	<Property ID="tattoo_compound_effect_right1" sub_effects="tattoo_compound_effect_big,tattoo_compound_effect_small,tattoo_compound_right_move_1" is_sync="false" desc="符文合成动画"/>
-	<Property ID="tattoo_compound_effect_right2" sub_effects="tattoo_compound_effect_big,tattoo_compound_effect_small,tattoo_compound_right_move_2" is_sync="false" desc="符文合成动画"/>
-	<Property ID="tattoo_compound_effect_right3" sub_effects="tattoo_compound_effect_big,tattoo_compound_effect_small,tattoo_compound_right_move_3" is_sync="false" desc="符文合成动画"/>
-	<Property ID="tattoo_compound_effect_center" sub_effects="sound_upgrade,equip_upgrade_effect_big,equip_upgrade_success_particles2d_1" is_sync="false" desc="符文合成右边动画"/>
-	<Property ID="form_role_npc_modle_bg_rotate" sub_effects="form_role_npc_modle_bg_rotate" is_sync="false" desc="背景图片旋转"/>
-	<!-- 太极熊猫2-角色主界面end -->
-	
-	<!-- 太极熊猫2-活跃度界面按钮点击移出 移入动画 -->
-	<Property ID="form_dayactive_move_out" sub_effects="form_dayactive_move_out" is_sync="false" desc="活动卡牌移出动作"/>
-	<Property ID="form_dayactive_move_in" sub_effects="form_dayactive_move_in" is_sync="false" desc="活动卡牌移入动作"/>
-	<Property ID="dayactive_prop" sub_effects="dayactive_prop" is_sync="false" desc="活跃度进度条动画"/>
-	<Property ID="form_dayactive_1" sub_effects="scale_dayactive_1" is_sync="false" desc="活动卡牌"/>
-	<Property ID="form_dayactive_award" sub_effects="form_dayactive_award" is_sync="false" desc="活动奖品逐个渐显动画"/>
-	<Property ID="form_dayactive_get_award" sub_effects="form_dayactive_get_award" is_sync="false" desc="活跃度界面 领奖特效"/>
-	<Property ID="form_dayactive_get_award_waiting" sub_effects="form_dayactive_get_award_waiting" is_sync="false" desc="活跃度界面 等待"/>
-	
-	<!-- 太极熊猫2-主界面的主界面按钮的移动 -->
-	<!-- 移出动画 -->
-	<Property ID="form_system_up_out" sub_effects="form_system_up_out1,form_system_up_out2" is_sync="false" desc="向上移出"/>
-	<Property ID="form_system_down_out" sub_effects="form_system_down_out1,form_system_down_out2" is_sync="false" desc="向下移出"/>
-	<Property ID="form_system_right_out" sub_effects="form_system_right_out1,form_system_right_out2" is_sync="false" desc="向右移出"/>
-	<Property ID="form_system_left_out" sub_effects="form_system_left_out1,form_system_left_out2" is_sync="false" desc="向左移出"/>
-	<Property ID="form_system_group_right_out" sub_effects="form_system_group_right_out1,form_system_group_right_out2" is_sync="false" desc="组控件向左移出"/>
-	<!-- 移入动画 -->
-	<Property ID="form_system_up_in" sub_effects="form_system_up_in1,form_system_up_in2" is_sync="false" desc="向上移入"/>
-	<Property ID="form_system_down_in" sub_effects="form_system_down_in1,form_system_down_in2" is_sync="false" desc="向下移入"/>
-	<Property ID="form_system_right_in" sub_effects="form_system_right_in1,form_system_right_in2" is_sync="false" desc="向右移入"/>
-	<Property ID="form_system_left_in" sub_effects="form_system_left_in1,form_system_left_in2" is_sync="false" desc="向左移入"/>
-	<Property ID="form_system_group_right_in" sub_effects="form_system_group_right_in1,form_system_group_right_in2" is_sync="false" desc="组控件向左移入"/>
-	<Property ID="form_system_login_up1_in" sub_effects="form_system_login1_up_sound,form_system_login1_up_in1,form_system_login1_up_in2" is_sync="false" desc="登陆界面向上移入"/>
-	<Property ID="form_system_login_up2_in" sub_effects="form_system_login2_up_in1,form_system_login2_up_in2" is_sync="false" desc="登陆界面向上移入"/>
-	<Property ID="form_system_login_up3_in" sub_effects="form_system_login3_up_in1,form_system_login3_up_in2" is_sync="false" desc="登陆界面向上移入"/>
-	<Property ID="form_login_effect_ds_1" sub_effects="form_login_effect_ds_1" is_sync="false" desc="延迟1"/>
-	<Property ID="form_login_effect_ds_2" sub_effects="form_login_effect_ds_2" is_sync="false" desc="延迟2"/>
-	<!-- 快速移出 -->
-	<Property ID="form_system_up_quikly_out" sub_effects="form_system_up_quikly_out" is_sync="true" desc="向上移出"/>
-	<Property ID="form_system_down_quikly_out" sub_effects="form_system_down_quikly_out" is_sync="true" desc="向下移出"/>
-	<Property ID="form_system_right_quikly_out" sub_effects="form_system_right_quikly_out" is_sync="true" desc="向右移出"/>
-	<Property ID="form_system_left_quikly_out" sub_effects="form_system_left_quikly_out" is_sync="true" desc="向左移出"/>
-	<Property ID="form_system_group_right_quikly_out" sub_effects="form_system_group_right_quikly_out" is_sync="true" desc="组控件向左移出"/>
-	<Property ID="btn_click" sub_effects="scale_test_11,scale_test_22" is_sync="false" desc="点击按钮时缩放动画"/>
-	<Property ID="form_role_npc_form_rbtn_in" sub_effects="form_role_npc_form_rbtn_in" is_sync="false" desc="rbtn移入动画"/>
-	<Property ID="form_role_npc_head_down" sub_effects="form_role_npc_head_down_1,form_role_npc_head_down_2" is_sync="false" desc="多角色界面顶部从上至下动作"/>
-	<Property ID="form_role_npc_bottom_up" sub_effects="form_role_npc_bottom_up_1,form_role_npc_bottom_up_2" is_sync="false" desc="多角色界面底部从下至上动作"/>
-	
-	<Property ID="alpha_bag_image_grid" sub_effects="alpha_bag_image_grid" is_sync="false" desc="渐显"/>
-	<Property ID="alpha_role_npc_rbtn" sub_effects="alpha_role_npc_rbtn" is_sync="false" desc="role_npc_rbtn 渐显"/>
-	<Property ID="role_npc_head_scale_1" sub_effects="role_npc_head_scale_1" is_sync="true" desc="界面下面的一排头像 渐显"/>
-	<Property ID="role_npc_head_scale_2" sub_effects="role_npc_head_scale_2" is_sync="true" desc="界面下面的一排头像 渐显"/>
-	<Property ID="scale_role_npc_rbtn" sub_effects="role_npc_head_scale_1,role_npc_head_scale_2" is_sync="false" desc="界面下面的一排头像 渐显"/>
-	<Property ID="scale_lbl_saodang1" sub_effects="scale_lbl_saodang1" is_sync="false" desc=""/>
-	<Property ID="scale_lbl_saodang2" sub_effects="scale_lbl_saodang2" is_sync="false" desc=""/>
-
-	<Property ID="quest_status_change" sub_effects="quest_status_change" is_sync="false" desc="任务状态改变时闪光显示"/>
-	<Property ID="quest_status_change_submit" sub_effects="quest_status_change_submit" is_sync="false" desc="任务状态改变为可提交"/>
-	<Property ID="quest_status_complete_sound" sub_effects="quest_status_complete_sound" is_sync="false" desc="提交任务  音效"/>
-	<Property ID="quest_status_change_sound" sub_effects="quest_status_change_sound" is_sync="false" desc="任务  状态切换音效"/>
-	<Property ID="quest_status_particles2d_1" sub_effects="quest_status_particles2d_1" is_sync="false" desc="接受任务、完成任务 粒子动画1"/>
-	<Property ID="quest_status_particles2d_2" sub_effects="quest_status_particles2d_2" is_sync="false" desc="接受任务、完成任务 粒子动画2"/>
-	
-	<!-- 向下渐隐同时向左移入 -->
-	<Property ID="form_quest_modul_one" sub_effects="form_quest_modul_quest_2, form_quest_modul_1" is_sync="true" desc="任务追踪向下渐隐消失"/>
-	<Property ID="form_quest_modul_two" sub_effects="form_quest_modul_quest_3" is_sync="false" desc="任务追踪向左移入界面"/>
-	<Property ID="form_quest_modul_vanish" sub_effects="form_quest_modul_vanish" is_sync="false" desc="渐隐消失"/>
-	<Property ID="equip_image_grid_scale" sub_effects="equip_image_grid_scale_1,equip_image_grid_scale_2" is_sync="false" desc="多角色界面装备栏显示和右侧按钮显示（二者用的同一种动画）"/>
-	<Property ID="equip_one_grid_scale" sub_effects="equip_image_grid_scale_1,equip_image_grid_scale_2" is_sync="false" desc="多角色界面装备栏显示"/>
-
-	<Property ID="form_quest_modul_chapter_one" sub_effects="form_quest_modul_chapter_2, form_quest_modul_1" is_sync="true" desc="向下渐隐消失"/>
-	<Property ID="form_quest_modul_chapter_two" sub_effects="form_quest_modul_chapter_3" is_sync="false" desc="向左移入界面"/>
-	
-	<Property ID="form_clone_info_form_right_out" sub_effects="form_clone_info_form_right_out" is_sync="false" desc="副本选择信息显示动画，从左往右移动"/>
-	<Property ID="form_clone_select_info_right_out" sub_effects="form_clone_select_sound,form_clone_select_info_right_out" is_sync="true" desc="副本选择信息显示动画，从左往右移动"/>
-	<Property ID="form_clone_select_battle_array_right_out" sub_effects="form_clone_select_battle_array_right_out" is_sync="false" desc="副本选择阵容显示动画，从左往右移动"/>
-		<Property ID="form_clone_right_ino_left_out" sub_effects="form_clone_right_ino_left_out" is_sync="false" desc="副本选择阵容显示动画，从左往右移动"/>
-		<Property ID="form_clone_head_info_drop_out" sub_effects="form_clone_head_info_drop_out" is_sync="false" desc=""/>
-	<Property ID="form_clone_select_drop_out_right_out" sub_effects="form_clone_select_drop_out_right_out" is_sync="false" desc="副本选择阵容显示动画，从左往右移动"/>
-	<Property ID="form_clone_select_role_down_out" sub_effects="form_clone_select_role_down_out" is_sync="false" desc="副本选择显示怪物动画，从上往下移动"/>
-	<Property ID="alpha_btn_auto_battle" sub_effects="alpha_btn_auto_battle" is_sync="false" desc="btn_team_auto 渐显"/>
-	<Property ID="alpha_btn_begin" sub_effects="alpha_btn_begin" is_sync="false" desc="btn_begin 渐显"/>
-	<Property ID="scale_lbl_boss" sub_effects="scale_lbl_boss_sound,scale_lbl_boss" is_sync="false" desc=""/>
-	
-	
-	<!--多角色界面点选动画 -->
-	<Property ID="form_role_npc_dianxuanlv" sub_effects="form_role_npc_dianxuanlv" is_sync="false" desc="多角色界面头像点击填充（绿色）"/>
-	<Property ID="form_role_npc_dianxuanlan" sub_effects="form_role_npc_dianxuanlan" is_sync="false" desc="多角色界面头像点击填充（蓝色）"/>
-	<Property ID="form_role_npc_dianxuanzi" sub_effects="form_role_npc_dianxuanzi" is_sync="false" desc="多角色界面头像点击填充（紫色）"/>
-	<Property ID="form_role_npc_dianxuanch" sub_effects="form_role_npc_dianxuanch" is_sync="false" desc="多角色界面头像点击填充（橙色）"/>
-	<Property ID="form_role_npc_jsxuanzhong" sub_effects="form_role_npc_select_particle" is_sync="false" desc="多角色界面头像选中 粒子动画效果"/>
-	<Property ID="form_role_npc_shengjie1" sub_effects="form_role_npc_shengjie1" is_sync="false" desc="多角色界面升阶按钮周围光圈"/>
-	<Property ID="form_role_npc_shengjie2" sub_effects="form_role_npc_shengjie2" is_sync="false" desc="多角色界面升阶进度条光圈"/>
-	<Property ID="form_role_npc_xsguang" sub_effects="form_role_npc_xsguang" is_sync="false" desc="多角色界面钻石和金币光泽"/>
-	<Property ID="form_role_npc_zbcg" sub_effects="form_role_npc_zbcg_particles2d_2" is_sync="false" desc="多角色界面装备成功"/>
-	<Property ID="form_role_npc_ycdianxuan" sub_effects="form_role_npc_ycdianxuan" is_sync="false" desc="多角色界面右侧按钮点选"/>
-	<Property ID="form_role_npc_head_click" sub_effects="form_role_npc_head_click1" is_sync="false" desc="底部对齐缩放"/>
-	<Property ID="form_role_npc_skill_lbl" sub_effects="form_role_npc_skill_sound,form_role_npc_skill_particles2d" is_sync="false" desc="技能升级动画"/>
-	<Property ID="form_role_npc_head_click" sub_effects="form_role_npc_head_click1" is_sync="false" desc="底部对齐缩放"/>
-	<Property ID="form_role_npc_model_move" sub_effects="form_role_npc_model_move" is_sync="false" desc="太极熊猫2模型移动动画"/>
-	<Property ID="form_role_npc_close_delay" sub_effects="form_role_npc_close_delay" is_sync="false" desc="多角色界面关闭延时"/>
-	<!--经验药界面粒子动画 -->
-	<Property ID="form_add_exp_particle" sub_effects="form_role_npc_skill_particles2d" is_sync="false" desc="经验药界面角色头像动画"/>
-  
-	<!-- boss出现界面动画 -->
-    <Property ID="clone_boss_show_1" sub_effects="clone_boss_show_1" is_sync="false" desc="BOSS出现界面渐显动画"/>
-	<Property ID="clone_boss_show_move_1" sub_effects="clone_boss_show_move_1" is_sync="false" desc="BOSS出现界面  向上移动"/>
-	<Property ID="clone_boss_show_move_2" sub_effects="clone_boss_show_move_2" is_sync="false" desc="BOSS出现界面  向下移动"/>
-	<Property ID="clone_boss_show_3" sub_effects="clone_boss_show_3" is_sync="false" desc="BOSS出现界面  缩小"/>
-	<Property ID="clone_boss_show_4" sub_effects="clone_boss_show_4,clone_boss_show_5" is_sync="true" desc="BOSS出现界面  放大、渐隐"/>
-	<Property ID="clone_boss_show_bg" sub_effects="clone_boss_show_bg" is_sync="true" desc="BOSS出现界面  背景拉伸"/>
-	<Property ID="clone_boss_show_waiting" sub_effects="clone_boss_show_waiting" is_sync="false" desc="BOSS出现界面  等待"/>
-	<Property ID="clone_boss_show_waiting2" sub_effects="clone_boss_show_waiting2" is_sync="false" desc="BOSS出现界面  等待"/>
-    <Property ID="clone_boss_show_6" sub_effects="clone_boss_show_6" is_sync="false" desc="BOSS出现界面  渐隐"/>
-	<!-- boss出现界面动画  end-->
-	
-    <!-- 领取奖励界面 -->
-    <Property ID="gift_package" 	sub_effects="scale_gift_package_1,scale_gift_package_2" is_sync="false" desc="礼包领取"/>
-    <Property ID="form_gift_package_open" sub_effects="form_gift_package_open1_sound2,form_gift_package_open1" is_sync="false" desc="弹出奖励界面"/>
-	<Property ID="form_gift_package_particles2d_1" sub_effects="form_gift_package_particles2d_1" is_sync="false" desc="弹出奖励界面"/>
-	<Property ID="form_gift_package_particles2d_2" sub_effects="form_gift_package_particles2d_2" is_sync="false" desc="弹出奖励界面"/>
-    <Property ID="form_talk_open_talk" sub_effects="form_talk_open_talk" is_sync="false" desc="打开会话界面"/>
-    <Property ID="form_talk_close_talk" sub_effects="form_talk_close_talk" is_sync="false" desc="关闭会话界面"/>
-    <Property ID="form_talk_move_left"  	sub_effects="form_talk_move_left" 			is_sync="false" 	desc="引导会话npc已左入"/>
-    <Property ID="form_talk_move_right"  	sub_effects="form_talk_move_right" 			is_sync="false" 	desc="引导会话npc已右入"/>
-    <Property ID="form_talk_remove_left"  	sub_effects="form_talk_remove_left" 			is_sync="false" 	desc="引导会话npc左移出"/>
-    <Property ID="form_talk_remove_right"  	sub_effects="form_talk_remove_right" 			is_sync="false" 	desc="引导会话npc右移出"/>
-    <Property ID="form_talk_alpha_show"  	sub_effects="form_talk_alpha_show" 			is_sync="false" 	desc="引导会话npc名渐显"/>
-    <Property ID="form_talk_alpha_disappear"  	sub_effects="form_talk_alpha_disappear" 			is_sync="false" 	desc="引导会话npc名消失"/>
-    <Property ID="form_gift_package_grain" sub_effects="form_gift_package_grain" is_sync="false" desc="弹出奖励界面"/>
-    <Property ID="form_gift_package_close" sub_effects="form_gift_package_close1" is_sync="false" desc="关闭奖励界面"/>
-	<Property ID="form_gift_package_delay" sub_effects="form_gift_package_delay" is_sync="false" desc="延迟"/>
-	
-    
-	<!--关卡选择界面特效-->
-	<Property ID="form_clone_select_open_scroll_left"  sub_effects="form_clone_select_open_sound,form_clone_select_open_scroll_left" is_sync="false" desc="关卡选择地图展开"/>
-	<Property ID="form_clone_select_open_scroll_right"  sub_effects="form_clone_select_open_scroll_right" is_sync="false" desc="关卡选择地图展开"/>
-	<Property ID="form_clone_select_map_scroll_left"  sub_effects="form_clone_select_open_sound,form_clone_select_map_scroll_left" is_sync="false" desc="卷轴左转"/>
-	<Property ID="form_clone_select_map_scroll_right"  sub_effects="form_clone_select_open_sound,form_clone_select_map_scroll_right" is_sync="false" desc="卷轴右转"/>
-	<Property ID="form_clone_select_map_dianxuan"  sub_effects="form_clone_select_map_dianxuan" is_sync="false" desc="关卡点选"/>
-	<Property ID="form_clone_select_map_next_left"  sub_effects="form_clone_select_map_next_left" is_sync="false" desc="关卡选择下一章节左移动画"/>
-	<Property ID="form_clone_select_map_next_right"  sub_effects="form_clone_select_map_next_right" is_sync="false" desc="关卡选择下一章节右移动画"/>
-	<Property ID="form_clone_fail_scale_up"  sub_effects="form_clone_fail_sound,form_clone_fail_scale_up" is_sync="false" desc="失败界面弹出现在"/>
-	<Property ID="form_clone_win_star_scale"  sub_effects="form_clone_win_star_scale" is_sync="false" desc="胜利界面标题缩放展现"/>
-	<Property ID="form_clone_win_exp_move" sub_effects="form_clone_win_exp_move" is_sync="true" desc="战队经验从右侧移入"/>
-	<Property ID="form_clone_win_role_move" sub_effects="form_clone_win_role_move" is_sync="true" desc="角色从右侧移入"/>
-	<Property ID="form_clone_win_exp_roll" sub_effects="form_clone_win_exp_roll_sound,form_clone_win_exp_roll" is_sync="true" desc="战队经验值移动"/>
-	<Property ID="form_clone_win_exp_roll_without_sound" sub_effects="form_clone_win_exp_roll" is_sync="true" desc="战队经验值移动  没有音效"/>
-	<Property ID="form_clone_win_exp_roll1" sub_effects="form_clone_win_exp_roll_sound1,form_clone_win_exp_roll" is_sync="true" desc="角色经验值移动"/>
-	<Property ID="form_clone_win_exp_roll1_without_sound" sub_effects="form_clone_win_exp_roll" is_sync="true" desc="角色经验值移动  没有音效"/>
-	<Property ID="form_clone_win_exp_roll_particles2d_1" sub_effects="form_clone_win_exp_roll_particles2d_1" is_sync="true" desc="经验值移动粒子效果"/>
-	<Property ID="form_clone_win_exp_roll_particles2d_2" sub_effects="form_clone_win_exp_roll_particles2d_2" is_sync="true" desc="经验值满格粒子效果"/>
-	<Property ID="form_clone_win_role_levelup" sub_effects="form_clone_win_uplevel_sound,form_clone_win_uplevel_particles2d" is_sync="true" desc="角色升级"/>
-	<Property ID="form_clone_win_team_up_back" sub_effects="form_clone_win_team_up_back" is_sync="false" desc="战队升级背景"/>
-	<Property ID="form_clone_select_box_move" sub_effects="form_clone_select_box_move" is_sync="false" desc="宝箱移入"/>
-	<Property ID="form_clone_select_box_appear" sub_effects="form_clone_select_box_appear" is_sync="false" desc="宝箱渐显"/>
-	<Property ID="form_clone_select_box_hide" sub_effects="form_clone_select_box_hide" is_sync="false" desc="宝箱渐隐"/>
-	<Property ID="form_clone_select_box_scroll" sub_effects="form_clone_select_box_scroll" is_sync="false" desc="宝箱渐入"/>
-	<Property ID="form_scene_fade_out" sub_effects="form_scene_fade_out" is_sync="false" desc="进入副本前屏幕渐黑"/>
-	<Property ID="form_clone_select_cloud_appear" sub_effects="form_clone_select_cloud_appear" is_sync="false" desc="副本云彩渐显"/>
-	<Property ID="form_scene_fade_in" sub_effects="form_scene_fade_in" is_sync="false" desc="进入副本前屏幕建白"/>
-	<Property ID="form_clone_fail_text_scale" sub_effects="form_clone_fail_text_scale" is_sync="false" desc="挑战失败字体动画"/>
-	<Property ID="form_clone_win_back_star_effect2" sub_effects="form_clone_win_back_star_sound1,form_clone_win_back_star_scale,form_clone_win_back_star_alpha" is_sync="true" desc="背景星星2变大渐隐"/>
-	<Property ID="form_clone_win_back_star_effect3" sub_effects="form_clone_win_back_star_sound1,form_clone_win_back_star_scale,form_clone_win_back_star_alpha" is_sync="true" desc="背景星星3变大渐隐"/>
-	<Property ID="form_clone_win_right_info_move" sub_effects="form_clone_win_right_info_move" is_sync="false" desc="胜利界面右边信息移入"/>
-	<Property ID="form_clone_select_left_roller_huitan" sub_effects="form_clone_left_roller_left,form_clone_left_roller_right" is_sync="false" desc="左侧卷轴回弹"/>
-	<Property ID="form_clone_select_right_roller_huitan" sub_effects="form_clone_right_roller_right,form_clone_right_roller_left" is_sync="false" desc="右侧卷轴回弹"/>
-	<Property ID="form_clone_win_btn_scale" sub_effects="form_clone_win_btn_scale" is_sync="false" desc="获胜界面按钮动画"/>
-	<Property ID="scene_goal_up_vanish" sub_effects="scene_goal_move_up,scene_goal_vanish" is_sync="true" desc="副本达成目标消失"/>
-	<Property ID="scene_goal_appear" sub_effects="scene_goal_appear" is_sync="true" desc="副本达成目标渐显"/>
-	
-	<Property ID="form_clone_boss_break_roll" sub_effects="form_clone_boss_break_roll" is_sync="true" desc="BOSS防御条滚动动画"/>
-	<Property ID="form_clone_boss_break_particles2d_1" sub_effects="form_clone_boss_break_particles2d_1" is_sync="true" desc="BOSS防御条滚动动画"/>
-	<Property ID="form_clone_boss_break_particles2d_2" sub_effects="form_clone_boss_break_particles2d_2" is_sync="true" desc="BOSS防御条滚动动画"/>
-	<Property ID="equip_item_up_vanish" sub_effects="equip_item_move_up,equip_item_vanish" is_sync="true" desc="装备消失"/>
-	<Property ID="equip_item_up_vanish2" sub_effects="equip_item_vanish" is_sync="false" desc="装备消失"/>
-	<Property ID="equip_info_effect"  sub_effects="equip_info_effect1,equip_info_effect2,equip_info_effect3,equip_info_effect4" is_sync="false" desc="装备  属性  特效：放大->缩小->上移->渐隐"/>
-	<!--关卡选择界面特效end-->
-	
-	<!-- 数字显示配置 -->
-	<Property ID="show_numeral_move" sub_effects="show_numeral_move" is_sync="false" desc="数字显示配置"/>
-	<Property ID="show_num_move_add_left_top" sub_effects="show_numeral_move_left_top,show_numeral_alpha_show" is_sync=" " desc="左上"/>
-	<Property ID="show_num_move_add_top_center" sub_effects="show_numeral_move_top_center,show_numeral_alpha_show" is_sync="true" desc="上中"/>
-	<Property ID="show_num_move_add_left_bottom" sub_effects="show_numeral_move_left_bottom,show_numeral_alpha_show" is_sync="true" desc="左下"/>
-	<Property ID="show_num_move_add_right_top" sub_effects="show_numeral_move_right_top,show_numeral_alpha_show" is_sync="true" desc="右上"/>
-	<Property ID="show_num_move_add_bottom_center" sub_effects="show_numeral_move_bottom_center,show_numeral_alpha_show" is_sync="true" desc="下中"/>
-	<Property ID="show_num_move_add_right_bottom" sub_effects="show_numeral_move_right_bottom,show_numeral_alpha_show" is_sync="true" desc="右下"/>
-	<Property ID="show_num_move_dec_left_top" sub_effects="show_numeral_move_left_top,show_numeral_alpha_hide" is_sync="true" desc="左上"/>
-	<Property ID="show_num_move_dec_top_center" sub_effects="show_numeral_move_top_center,show_numeral_alpha_hide" is_sync="true" desc="上中"/>
-	<Property ID="show_num_move_dec_left_bottom" sub_effects="show_numeral_move_left_bottom,show_numeral_alpha_hide" is_sync="true" desc="左下"/>
-	<Property ID="show_nume_move_dec_right_top" sub_effects="show_numeral_move_right_top,show_numeral_alpha_hide" is_sync="true" desc="右上"/>
-	<Property ID="show_num_move_dec_bottom_center" sub_effects="show_numeral_move_bottom_center,show_numeral_alpha_hide" is_sync="true" desc="下中"/>
-	<Property ID="show_num_move_right_bottom" sub_effects="show_numeral_move_right_bottom,show_numeral_alpha_hide" is_sync="true" desc="右下"/>
-	<Property ID="show_numeral_ani" sub_effects="show_number_sound,show_number_particles2d" is_sync="true" desc="金钱数字显示动画"/>
-	<Property ID="show_numeral_ani_1" sub_effects="show_number_sound_1,show_number_particles2d_1" is_sync="true" desc="钻石数字显示动画"/>
-	<Property ID="show_numeral_ani_2" sub_effects="show_number_sound_2,show_number_particles2d_2" is_sync="true" desc="绑钻数字显示动画"/>
-	<Property ID="show_numeral_ani1" sub_effects="show_numeral_ani1" is_sync="false" desc="数字显示动画"/>
-	<Property ID="show_numeral_ani2" sub_effects="show_number_change_sound,show_number_particles2d_3" is_sync="false" desc="玩家属性显示动画"/>
-	<Property ID="show_numeral_ani3" sub_effects="show_number_particles2d_4" is_sync="false" desc="战斗力改变动画"/>
-	<!-- 数字显示配置 end -->
-	
-	<!-- 角色进阶 -->
-	<Property ID="role_npc_uplevel_ani" sub_effects="role_npc_uplevel_ani" is_sync="false" desc="角色进阶动画"/>
-	<Property ID="role_npc_uplevel_alpha_add" sub_effects="role_npc_uplevel_alpha_add" is_sync="false" desc="渐显"/>
-	<Property ID="role_npc_uplevel_alpha_reduce" sub_effects="steplevelup_001,role_npc_uplevel_alpha_reduce" is_sync="false" desc="渐隐"/>
-	<Property ID="role_npc_uplevel_white_alpha_add" sub_effects="role_npc_uplevel_white_alpha_add" is_sync="false" desc="白布渐隐"/>
-	<Property ID="role_npc_uplevel_prop_alpha_add" sub_effects="role_npc_uplevel_prop_alpha_add" is_sync="false" desc="渐显"/>
-	<Property ID="role_npc_uplevel_prop_scale" sub_effects="role_npc_uplevel_prop_scale_1,role_npc_uplevel_prop_scale_2" is_sync="false" desc="渐显"/>
-	<!-- 角色进阶 end -->
-
-	<!--蓄力槽-->
-	<Property ID="form_clone_skill_bar_xuli" sub_effects="form_clone_skill_bar_xuli" is_sync="false" desc="蓄力槽"/>
-	<!--蓄力槽 end-->
-	
-	<!-- 组队 -->
-	<Property ID="form_main_team_left_in" sub_effects="form_main_team_left_in" is_sync="false" desc="radiobutton向左移入"/>
-	<Property ID="form_main_team_list_fade_in" sub_effects="form_main_team_alpha_fadein" is_sync="true" desc="列表浮入出现"/>
-	<!-- 组队 end -->
-	
-	<!-- 账号 -->
-	<Property ID="form_role_npc_array_top" sub_effects="form_role_npc_array_top1,form_role_npc_array_top2" is_sync="false" desc="上方groupbox向下掉入"/>
-	<Property ID="form_role_npc_list_left" sub_effects="form_role_npc_list_left" is_sync="true" desc="头像列表向左已出"/>
-	<Property ID="form_role_npc_cbtn_fade_in" sub_effects="form_role_npc_cbtn_fade_in" is_sync="true" desc="右边cbtn浮现"/>
-	<Property ID="form_role_npc_list_zoom_show" sub_effects="form_role_npc_list_zoom_show1,form_role_npc_list_zoom_show2" is_sync="false" desc="头像浮现"/>
-	<Property ID="form_role_npc_zoom_rotate" sub_effects="form_role_npc_zoom_sound1, form_role_npc_zoom_rotate1, form_role_npc_zoom_rotate2" is_sync="true" desc="卡牌旋转缩放，注意旋转与缩放的时间要一致"/>
-	<Property ID="form_role_npc_zoom_particles2d_1" sub_effects="form_role_npc_zoom_particles2d_1" is_sync="true" desc="卡牌旋转缩放，粒子动画"/>
-	<Property ID="form_role_npc_delay" sub_effects="form_role_npc_delay" is_sync="true" desc="什么都不做，等待"/>
-	<Property ID="form_role_npc_delay1" sub_effects="form_role_npc_delay1" is_sync="true" desc="什么都不做，等待"/>
-	<Property ID="form_role_npc_zoom_sound" sub_effects="form_role_npc_zoom_sound" is_sync="true" desc="成功替换主控音效"/>
-	<Property ID="form_role_npc_open_sound" sub_effects="form_role_npc_open_sound" is_sync="true" desc="打开界面"/>
-	<!-- 账号 end -->
-
-	<!-- KOF战场 -->
-	<Property ID="form_kof_ko_zoom_show" sub_effects="form_kof_ko_zoom_show1,form_kof_ko_zoom_show2" is_sync="true" desc="KO图片浮现"/>
-	<Property ID="form_kof_ko_delay" sub_effects="form_kof_ko_delay" is_sync="true" desc="什么都不做，等待"/>
-	<!-- KOF战场 end -->
-
-	<!-- 任务追踪 -->
-	<Property ID="label_spark_begin" sub_effects="form_quest_trace_ds,particles2d_test_1" is_sync="false" desc="开始时的闪光"/>
-	<Property ID="label_spark" sub_effects="particles2d_test_1" is_sync="false" desc="结束时的闪光"/>
-	<Property ID="form_overturn_old" sub_effects="form_overturn_old" is_sync="false" desc="老界面翻转"/>
-	<Property ID="form_overturn_new" sub_effects="form_overturn_new" is_sync="false" desc="新界面翻转"/>
-	<!-- 任务追踪 end -->
-	
-	<!-- 历练 -->
-	<Property ID="exercise_move_left1" sub_effects="exercise_move_leftout" is_sync="true" desc="历练界面1左移"/>
-	<Property ID="exercise_move_left2" sub_effects="exercise_move_leftin" is_sync="true" desc="历练界面2左移"/>
-	<Property ID="exercise_move_right1" sub_effects="exercise_move_rightout" is_sync="true" desc="历练界面右移1"/>
-	<Property ID="exercise_move_right2" sub_effects="exercise_move_rightin" is_sync="true" desc="历练界面右移2"/>
-	<!-- 历练 -->
-	
-	<!-- 任务 -->
-	<Property ID="form_chapter_scale_open_right" sub_effects="form_chapter_scale_open_right" is_sync="false" desc="右对齐展开"/>
-	<Property ID="test_chapter_scale_open_left" sub_effects="test_chapter_scale_open_left" is_sync="false" desc="左对齐展开"/>
-	<Property ID="form_chapter_scale_close_right" sub_effects="form_chapter_scale_close_right" is_sync="false" desc="右对齐关闭"/>
-	<Property ID="test_chapter_scale_close_left" sub_effects="test_chapter_scale_close_left" is_sync="false" desc="左对齐关闭"/>
-	<!-- 任务 end -->
-	
-	<!-- 商店 -->
-	<Property ID="form_pay_left_btn_move" sub_effects="form_pay_left_btn_move" is_sync="false" desc="左向右移动"/>
-	<Property ID="form_pay_left_btn_scale" sub_effects="form_pay_left_btn_scale_1,form_pay_left_btn_scale_2" is_sync="false" desc="左向右移动"/>
-	<Property ID="form_pay_alpha_show" sub_effects="form_pay_alpha_show" is_sync="false" desc="左向右移动"/>
-	<!-- 商店 end-->
-	
-	<!-- 角标数字动画 -->
-	<Property ID="lbl_tips_num" sub_effects="lbl_tips_num_scale,lib_tips_num_restore" is_sync="false" desc="角标数字动画缩放"/>
-	<!-- 角标数字动画 end-->
-	
-	<!-- 历练界面 -->
-	<Property ID="form_exercise_effect_0" sub_effects="form_exercise_scale_1,form_exercise_scale_2" is_sync="false" desc="历练界面浮入表现0"/>
-	<Property ID="form_exercise_effect_1" sub_effects="form_exercise_effect_ds_1,form_exercise_scale_1,form_exercise_scale_2" is_sync="false" desc="历练界面浮入表现1"/>
-	<Property ID="form_exercise_effect_2" sub_effects="form_exercise_effect_ds_2,form_exercise_scale_1,form_exercise_scale_2" is_sync="false" desc="历练界面浮入表现2"/>
-	<Property ID="form_exercise_effect_3" sub_effects="form_exercise_effect_ds_3,form_exercise_scale_1,form_exercise_scale_2" is_sync="false" desc="历练界面浮入表现3"/>
-	<Property ID="form_exercise_effect_4" sub_effects="form_exercise_effect_ds_4,form_exercise_scale_1,form_exercise_scale_2" is_sync="false" desc="历练界面浮入表现4"/>
-	<Property ID="form_exercise_effect_5" sub_effects="form_exercise_effect_ds_5,form_exercise_scale_1,form_exercise_scale_2" is_sync="false" desc="历练界面浮入表现5"/>
-	<!-- 历练界面 end-->
-	
-	<!-- 渐隐 -->
-	<Property ID="form_exersize_vanish" sub_effects="equip_item_vanish" is_sync="false" desc="历练见面渐隐"/>
-	<!-- 渐隐 end-->
-
-	<!-- 黑市特效 -->
-	<Property ID="form_black_market_effect" sub_effects="form_black_market_effect" is_sync="false" desc="黑市选中粒子特效"/>
-	
-	<!-- 数字滚动显示 -->
-	<Property ID="lbl_num_roll" sub_effects="number_roll_show" is_sync="true" desc="数字滚动显示"/>
-	<Property ID="lbl_num_roll_particles2d_1" sub_effects="number_roll_show_particles2d_1" is_sync="true" desc="经验滚动粒子动画显示"/>
-	<Property ID="lbl_num_roll_particles2d_2" sub_effects="number_roll_show_particles2d_2" is_sync="true" desc="经验滚动粒子动画显示"/>
-	<Property ID="lbl_num_roll_particles2d_3" sub_effects="number_roll_show_particles2d_3" is_sync="true" desc="金币滚动粒子动画"/>
-	<Property ID="lbl_num_roll_particles2d_4" sub_effects="number_roll_show_particles2d_4" is_sync="true" desc="金币滚动粒子动画"/>
-	<!-- 数字滚动显示 end-->
-
-	<!-- 拾取物品动画 -->
-	<Property ID="form_pickup_items_move" sub_effects="form_pickup_move_1,form_pickup_move_2,form_pickup_move_3" is_sync="false" desc="拾取物品动画显示"/>
-	<!-- 拾取物品动画 end-->
-	
-	<!-- 上部分掉落效果 -->
-	<Property ID="form_top_down" sub_effects="form_top_down_1,form_top_down_2" is_sync="false" desc="上部分掉落效果"/>
-	<!-- 上部分掉落效果 end-->
-	
-	<!-- 角色进阶动画从右边移入 -->
-	<Property ID="form_npc_uplevel_in" sub_effects="form_npc_uplevel_in" is_sync="false" desc="角色进阶界面打开效果"/>
-	<Property ID="form_npc_uplevel_out" sub_effects="form_npc_uplevel_out" is_sync="false" desc="角色进阶界面关闭效果"/>
-	<Property ID="form_npc_uplevel_right_out" sub_effects="form_npc_uplevel_right_out" is_sync="false" desc="角色进阶界面向右移出"/>
-	<Property ID="form_npc_uplevel_right_in" sub_effects="form_npc_uplevel_right_in" is_sync="false" desc="角色进阶界面向右移入"/>
-	<!-- 角色进阶动画从右边移入 end -->
-	
-	<!-- 使用技能动画 -->
-	<Property ID="skill_particles2d_1" sub_effects="skill_particles2d_1" is_sync="false" desc="普通攻击显示动画"/>
-	<Property ID="skill_particles2d_2" sub_effects="skill_particles2d_2" is_sync="false" desc="快捷技能攻击显示动画"/>
-	<Property ID="skill_particles2d_3" sub_effects="skill_particles2d_3" is_sync="false" desc="释放技能显示动画1"/>
-	<Property ID="skill_particles2d_4" sub_effects="skill_particles2d_4" is_sync="false" desc="释放技能显示动画2"/>
-	<!-- 使用技能动画 end-->
-
-	<!-- 称号界面 -->
-	<Property ID="form_title_delay" sub_effects="form_title_delay" is_sync="true" desc="什么都不做，等待"/>
-	<Property ID="form_title_fade_in" sub_effects="form_title_fade_in" is_sync="true" desc=""/>
-	<!-- 称号界面 end -->
-
-	<Property ID="form_bless_preview_left" sub_effects="form_bless_preview_left" is_sync="false" desc="祈福预览界面左移"/>
-	<Property ID="form_bless_preview_right" sub_effects="form_bless_preview_right" is_sync="false" desc="祈福预览界面右移"/>
-	
-	<!-- 更新界面动画 -->
-	<Property ID="form_update_left_in" sub_effects="form_update_left_in" is_sync="false" desc="角色进阶界面打开效果"/>
-	<Property ID="form_update_left_out" sub_effects="form_update_left_out" is_sync="false" desc="角色进阶界面关闭效果"/>
-	<Property ID="form_update_right_in" sub_effects="form_update_right_in" is_sync="false" desc="角色进阶界面向右移出"/>
-	<Property ID="form_update_right_out" sub_effects="form_update_right_out" is_sync="false" desc="角色进阶界面向右移入"/>
-	<!-- 更新界面动画 end -->
-	
-	<!-- 宝藏界面 渐显动画 -->
-	<Property ID="form_treasure_effect" sub_effects="form_treasure_effect" is_sync="false" desc=""/>
-	<Property ID="form_treasure_sound1" sub_effects="form_treasure_sound1" is_sync="false" desc="宝藏界面  背景音效"/>
-	<Property ID="form_treasure_sound2" sub_effects="form_treasure_sound2" is_sync="false" desc="宝藏界面  单抽音效"/>
-	<Property ID="form_treasure_sound3" sub_effects="form_treasure_sound3" is_sync="false" desc="宝藏界面  十连抽音效"/>
-	<!-- 宝藏界面 渐显动画 end-->
-	
-	<!-- 章节任务进度条动画效果 -->
-	<Property ID="form_chapter_pbar" sub_effects="form_chapter_pbar" is_sync="false" desc="进度条填充效果"/>
-	<Property ID="form_progress_particles2d" sub_effects="form_progress_particles2d" is_sync="false" desc="进度条填充效果"/>
-	<!-- 章节任务进度条动画效果 end-->
-	<Property ID="relic_cmd_effect" sub_effects="relic_cmd_effect,relic_cmd_effect1" is_sync="false" desc="工会战指挥特效"/>
-	
-	<!-- 新副本结算界面动画 -->
-	<Property ID="move_clone_finish" 		sub_effects="move_clone_target_move_2_waiting,move_clone_finish,move_clone_target_move_2_waiting" 	is_sync="true" desc="副本通关奖励移入"/>
-	<Property ID="move_clone_target_move_2_waiting" 		sub_effects="move_clone_target_move_2_waiting" 	is_sync="fasle" desc="副本通关目标2 等待"/>
-	<Property ID="move_clone_target_move_3_waiting" 		sub_effects="form_clone_sound,move_clone_target_move_3_waiting" 	is_sync="fasle" desc="副本通关目标3 等待"/>
-	<Property ID="move_clone_target_move_4_waiting" 		sub_effects="move_clone_target_move_5_waiting" 	is_sync="fasle" desc="评星动画 等待"/>
-	
-	<Property ID="form_clone_target_particle1" 		sub_effects="form_clone_target_sound,form_clone_target_particle" 	is_sync="fasle" desc="副本通关目标粒子特效"/>
-
-	<Property ID="form_clone_win_back_star_effect1" sub_effects="form_clone_win_back_star_scale,form_clone_win_back_star_alpha" is_sync="true" desc="背景星星1变大渐隐"/>
-	<Property ID="form_clone_win_back_star_effect2" sub_effects="form_clone_win_back_star_scale,form_clone_win_back_star_alpha" is_sync="true" desc="背景星星1变大渐隐"/>
-	<Property ID="form_clone_win_back_star_effect3" sub_effects="form_clone_win_back_star_scale,form_clone_win_back_star_alpha" is_sync="true" desc="背景星星1变大渐隐"/>
-	
-	<Property ID="form_clone_win_back_particle" sub_effects="form_clone_win_back_particle" is_sync="true" desc="星星背景粒子特效"/>
-	
-	<Property ID="clone_star_1" sub_effects="scale_clone_star,scale_clone_sound_1,move_clone_target_move_2_waiting" is_sync="true" desc="副本奖励星星1"/>
-	<Property ID="clone_star_2" sub_effects="scale_clone_star,scale_clone_sound_2,move_clone_target_move_2_waiting" is_sync="true" desc="副本奖励星星2"/>
-	<Property ID="clone_star_3" sub_effects="scale_clone_star,scale_clone_sound_3,move_clone_target_move_2_waiting" is_sync="true" desc="副本奖励星星3"/>
-	
-	<Property ID="form_clone_star_boon" sub_effects="form_clone_star_boon,form_clone_star_boon_1" is_sync="true" desc="星星爆炸特效"/>
-	<Property ID="form_clone_light_back" sub_effects="form_clone_light_back,form_clone_light_back_1" is_sync="true" desc="星星 横条光"/>
-	<Property ID="form_background_scale" sub_effects="move_clone_back_waiting,form_background_scale_3" is_sync="false" desc="结算框背景缩放"/>
-	<Property ID="move_clone_back" sub_effects="move_clone_back" is_sync="false" desc="背景展开动画 "/>
-	<Property ID="form_clone_shengli_move" sub_effects="form_clone_shengli_move" is_sync="false" desc="胜利 上移 "/>
-	<Property ID="form_clone_shengli_1" sub_effects="move_clone_target_move_4_waiting,form_clone_shengli_1,form_clone_shengli_2" is_sync="false" desc="胜利 放大 -> 缩小 动画 "/>
-	<Property ID="form_clone_shengli_particle2" sub_effects="form_clone_sound2,move_clone_target_move_4_waiting,form_clone_shengli_particle2" is_sync="false" desc="胜利 背景 爆炸效果 "/>
-	<Property ID="form_clone_win_team_up_text" sub_effects="form_clone_win_team_up_sound,form_clone_win_team_up_text,move_clone_target_move_3_waiting" is_sync="false" desc="战队升级文字"/>
-	<Property ID="form_clone_win_back_alpha" sub_effects="form_clone_win_back_alpha" is_sync="false" desc="战队升级渐隐"/>
-	<Property ID="form_clone_win_team_up_sound" sub_effects="form_clone_win_team_up_sound" is_sync="false" desc="战队升级音效"/>
-	<!-- 新副本结算界面动画 end -->
-	<!--黑幕界面动画-->
-	<Property ID="form_curtain_open_talk" sub_effects="form_curtain_open_talk" is_sync="false" desc="打开会话界面"/>
-    <Property ID="form_curtain_close_talk" sub_effects="form_curtain_close_talk" is_sync="false" desc="关闭会话界面"/>
-	<Property ID="form_curtain_alpha_show" sub_effects="form_curtain_alpha_show" is_sync="false" desc="文字渐现出现"/>
-    <Property ID="form_curtain_alpha_hide" sub_effects="form_curtain_alpha_hide" is_sync="false" desc="文字渐隐消失"/>
-	<!--黑幕界面动画 end-->
-	
-	<!--战斗力飘字界面动画 -->
-	<Property ID="equip_message_particles2d_1" sub_effects="equip_message_sound2,equip_message_particles2d_1" is_sync="false" desc="战斗力飘字粒子动画"/>
-	<Property ID="equip_message_particles2d_2" sub_effects="equip_message_particles2d_2" is_sync="false" desc="战斗力飘字粒子动画"/>
-	<Property ID="equip_message_particles2d_3" sub_effects="equip_message_sound1" is_sync="false" desc="战斗力滚动音效"/>
-	<!--战斗力飘字界面动画 end-->
-	
-	<!--创建角色界面 -->
-	<Property ID="form_createrole_open_alpha" sub_effects="form_createrole_open_alpha" is_sync="false" desc="创建角色界面打开渐显"/>
-	<Property ID="form_createrole_image_move_out" sub_effects="form_createrole_image_move_out" is_sync="false" desc="rolenpc图片移出"/>
-	<Property ID="form_createrole_image_move_in" sub_effects="form_createrole_image_move_in" is_sync="false" desc="rolenpc图片移入"/>
-	<Property ID="form_createrole_alpha_show" sub_effects="form_createrole_alpha_show" is_sync="false" desc="黑幕渐显"/>
-	<Property ID="role_npc_model_show" sub_effects="role_npc_model_show" is_sync="false" desc="rolenpc 模型显示特效"/>
-	<!--创建角色界面 end-->
-	
-	<!--英雄上阵拖拽动画 -->
-	<Property ID="guide_move_pet"  sub_effects="move_pet_tip" is_sync="true" desc=""/>
-	<Property ID="guide_move_pet1"  sub_effects="move_pet_tip1" is_sync="true" desc=""/>
-	<!--英雄上阵拖拽动画 end-->
-	
-	<!--挖宝活动界面动画-->
-	<Property ID="dig_treasure_set_pos" sub_effects="dig_treasure_set_pos" is_sync="fase" desc=""/>
-	<Property ID="dig_treasure_move_1" sub_effects="sound_scatter,dig_treasure_move_1" is_sync="true" desc=""/>
-	<Property ID="dig_treasure_move_2" sub_effects="dig_treasure_move_2" is_sync="fase" desc=""/>
-	<Property ID="dig_treasure_move_3" sub_effects="dig_treasure_move_3" is_sync="fase" desc=""/>
-	<Property ID="dig_treasure_move_4" sub_effects="dig_treasure_move_4" is_sync="fase" desc=""/>
-	<Property ID="dig_treasure_move_5" sub_effects="dig_treasure_move_5" is_sync="fase" desc=""/>
-	<Property ID="dig_treasure_move_6" sub_effects="dig_treasure_move_6" is_sync="fase" desc=""/>
-	<Property ID="dig_treasure_move_7" sub_effects="dig_treasure_move_7" is_sync="fase" desc=""/>
-	<Property ID="dig_treasure_move_8" sub_effects="dig_treasure_move_8" is_sync="fase" desc=""/>
-	
-	<Property ID="dig_treasure_reset_1" sub_effects="sound_assemble,dig_treasure_reset_1" is_sync="true" desc=""/>
-	<Property ID="dig_treasure_reset_2" sub_effects="dig_treasure_reset_2" is_sync="fase" desc=""/>
-	<Property ID="dig_treasure_reset_3" sub_effects="dig_treasure_reset_3" is_sync="fase" desc=""/>
-	<Property ID="dig_treasure_reset_4" sub_effects="dig_treasure_reset_4" is_sync="fase" desc=""/>
-	<Property ID="dig_treasure_reset_5" sub_effects="dig_treasure_reset_5" is_sync="fase" desc=""/>
-	<Property ID="dig_treasure_reset_6" sub_effects="dig_treasure_reset_6" is_sync="fase" desc=""/>
-	<Property ID="dig_treasure_reset_7" sub_effects="dig_treasure_reset_7" is_sync="fase" desc=""/>
-	<Property ID="dig_treasure_reset_8" sub_effects="dig_treasure_reset_8" is_sync="fase" desc=""/>
-	<!--翻转动画-->
-	<Property ID="dig_treasure_overtun_1" sub_effects="sound_roll,dig_treasure_overtun_1" is_sync="true" desc=""/>
-	<Property ID="dig_treasure_overtun_2" sub_effects="dig_treasure_overtun_2" is_sync="fase" desc=""/>
-	<!--粒子特效-->
-	<Property ID="dig_treasure_particle1" sub_effects="dig_treasure_particle1" is_sync="false" desc="挖宝活动粒子特效1"/>
-	<Property ID="dig_treasure_particle2" sub_effects="dig_treasure_particle2" is_sync="false" desc="挖宝活动粒子特效2"/>
-	<!--声音特效-->
-	<Property ID="dig_treasure_sound" sub_effects="dig_treasure_sound" is_sync="false" desc="挖宝活动点击翻牌时的声音"/>
-	<!--挖宝活动界面动画 end-->
-	
-	<!--技能替换帧动画-->
-	<Property ID="form_skill_change" sub_effects="form_skill_change" is_sync="false" desc="技能改变帧动画"/>
-	<Property ID="role_group_change" sub_effects="role_group_change" is_sync="false" desc="副本副将切换冷却动画"/>
-	<!--技能替换帧动画 end-->
-	
-	<!--宝藏获得界面 卡牌动画-->
-	<Property ID="treasure_get_1" sub_effects="treasure_get_1" is_sync="false" desc="宝藏界面卡牌动画"/>
-	<Property ID="treasure_get_2" sub_effects="treasure_get_waiting1,treasure_get_1" is_sync="false" desc="宝藏界面卡牌动画"/>
-	<Property ID="treasure_get_waiting" sub_effects="treasure_get_waiting" is_sync="false" desc="宝藏界面   等待"/>
-	<Property ID="treasure_get_waiting1" sub_effects="treasure_get_waiting1" is_sync="false" desc="宝藏界面   模型动作->出卡牌 间隔"/>
-	<Property ID="treasure_get_waiting2" sub_effects="treasure_get_waiting2" is_sync="false" desc="宝藏界面   模型动作1_>模型动作2 间隔"/>
-	<!--宝藏获得界面 卡牌动画 end-->
-	
-		<!-- 扫荡界面 -->
-	<Property ID="form_clone_saodang_roll" sub_effects="form_clone_saodang_roll" is_sync="false" desc="扫荡界面数值滚动"/>
-	<Property ID="gift_package_and_ds" 	sub_effects="scale_gift_package_1,scale_gift_package_2,form_clone_saodang_pakege_ds" is_sync="false" desc="礼包领取"/>
-	<!-- 扫荡界面 end-->
-	
-	<!-- 英雄召唤界面 动画 -->
-	<Property ID="form_arrange_effect_waiting1" sub_effects="form_arrange_effect_waiting1" is_sync="false" desc="英雄召唤界面   等待1"/>
-	<!-- 英雄召唤界面 动画 -->
-
-	<!-- 逐鹿战场 动画 -->
-	<Property ID="form_war_head_add_score" sub_effects="form_war_head_add_score1, form_war_head_add_score2" is_sync="true" desc="增加积分"/>
-        <Property ID="warmessage_box"		sub_effects="alpha_warmessage1,alpha_warmessage3"  is_sync="false" desc="战场信息提示框"/>
-        <!-- 逐鹿战场 动画 -->
-	
-	<!-- 太极熊猫2自动寻路动画 -->
-	<Property ID="form_guide_new_xunlu" sub_effects="form_guide_new_xunlu" desc="自动寻路动画"/>
-	<Property ID="form_main_hall_xunlu" sub_effects="form_main_hall_xunlu" desc="自动寻路动画"/>
-	<!-- 太极熊猫2自动寻路动画end -->
-	<!-- 公会列表浮入显示 -->
-	<Property ID="form_guide_list_fadein" sub_effects="form_guide_list_fadein" is_sync="false" desc="列表浮入出现"/>
-	<!-- 公会列表浮入显示 end-->
-	<!-- 地图打开音效-->
-	<Property ID="form_ui_open" sub_effects="sound_ui_open" is_sync="true" desc="列表浮入出现"/>
-	<!-- 地图打开音效 end-->
-		
-	<!-- 回城读条动画-->
-	<Property ID="form_tran_time_roll" sub_effects="form_tran_time_roll" is_sync="true" desc="回城读条动画"/>
-	<!-- 回城读条动画end-->
-	<Property ID="quan1"  sub_effects="quan1" is_sync="false" desc=""/>
-	<Property ID="comic_move_boss_left1" sub_effects="comic_move_boss_left1" is_sync="true" desc=""/>
-	<Property ID="comic_move_boss_left2" sub_effects="comic_move_boss_left2" is_sync="true" desc=""/>
-	<Property ID="comic_move_boss_right1" sub_effects="comic_move_boss_right1" is_sync="true" desc=""/>
-	<Property ID="comic_move_boss_right2" sub_effects="comic_move_boss_right2" is_sync="true" desc=""/>
-	<!-- 祭坛重生动画-->
-	<Property ID="artal_effect_1" sub_effects="artal_effect_1" is_sync="false" desc="祭坛动画1"/>
-	<Property ID="artal_effect_2" sub_effects="artal_effect_2" is_sync="false" desc="祭坛动画2"/>
-	<Property ID="artal_effect_3" sub_effects="artal_effect_3" is_sync="false" desc="祭坛动画3"/>
-	<!-- 地宫动画 -->
-	<Property ID="cellar_btn_effect" sub_effects="cellar_btn_effect1,cellar_btn_effect2" is_sync="false" desc="地宫选中动画"/>
-	<!-- 家园动画-->
-	<Property ID="ridehomewin" sub_effects="ridehomewin" is_sync="false" desc="抢夺胜利音效"/>
-	<Property ID="ridehomelost" sub_effects="ridehomelost" is_sync="false" desc="抢夺失败音效"/>
-	<Property ID="ridehome_search_move_to_right" sub_effects="ridehome_search_move_to_right" is_sync="false" desc="抢夺PK动画缩放特效"/>
-	<Property ID="ridehome_search_move_to_left" sub_effects="ridehome_search_move_to_left" is_sync="false" desc="抢夺PK动画缩放特效"/>
-	<Property ID="ridehome_search_move_right1" sub_effects="ridehome_search_move_right1" is_sync="false" desc="抢夺PK动画移动特效"/>
-	<Property ID="ridehome_search_move_left1" sub_effects="ridehome_search_move_left1" is_sync="false" desc="抢夺PK动画移动特效"/>
-	<Property ID="ridehome_search_scale" sub_effects="ridehome_search_scale" is_sync="true" desc="结果由小变大"/>
-	<Property ID="ridehome_search_small" sub_effects="ridehome_search_small" is_sync="false" desc="挑战人物由大变小"/>
-	<Property ID="ridehome_click_effect_begin" sub_effects="ridehome_build_click_sound,ridehome_build_click_up,ridehome_build_click_big" is_sync="true" desc="建筑图标向上并且变大"/>
-	<Property ID="ridehome_click_effect_end" sub_effects="ridehome_build_click_down,ridehome_build_click_small" is_sync="true" desc="建筑图标向下并且变小"/>	
 </Object>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

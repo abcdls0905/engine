@@ -2,57 +2,77 @@
 <object>
     <internals />
     <properties>
-        <property name="GiveGiftTime" type="int64" public="false" private="true" save="true" realtime="" desc="记录赠送礼物的时间" />
-        <property name="GiveGiftCount" type="int" public="false" private="true" save="true" realtime="" desc="记录赠送礼物的次数" />
-        <property name="GetGiftTime" type="int64" public="false" private="true" save="true" realtime="" desc="记录收取礼物的时间" />
-        <property name="GetGiftCount" type="int" public="false" private="true" save="true" realtime="" desc="记录收取礼物的次数" />
-        <property name="GetGiftCountMax" type="int" public="false" private="true" save="true" realtime="" desc="记录每日收取礼物的最大次数" />
-        <property name="GiveGiftCountMax" type="int" public="false" private="true" save="true" realtime="" desc="记录每日收取礼物的最大次数" />
+        <property name="GiveGiftTime" 		type="int64" public="false" private="false" save="true" realtime="" desc="记录赠送礼物的时间" />
+        <property name="GiveGiftCount"      type="dword" public="false" private="false" save="true" realtime="" desc="记录赠送礼物的次数" />
+        <property name="GetGiftTime"        type="int64" public="false" private="false" save="true" realtime="" desc="记录收取礼物的时间" />
+        <property name="GetGiftCount"       type="dword" public="false" private="false" save="true" realtime="" desc="记录收取礼物的次数" />
+        <property name="GetGiftCountMax"    type="dword" public="false" private="false" save="true" realtime="" desc="记录每日收取礼物的最大次数" />
+        <property name="GiveGiftCountMax"   type="dword" public="false" private="false" save="true" realtime="" desc="记录每日收取礼物的最大次数" />
+        <property name="RefuseFriend"       type="dword" public="false" private="false" save="true" realtime="" desc="拒绝被加好友" />
     </properties>
     <records>
-        <record name="friend_rec" cols="7" maxrows="100" save="true" public="false" private="true" desc="推荐好友列表">
-            <column type="string" desc="对方UID" />
-            <column type="widestr" desc="好友名称" />
-            <column type="dword" desc="好友是否在线" />
-            <column type="dword" desc="好友等级" />
-            <column type="dword" desc="好友战斗力" />
-            <column type="int64" desc="赠与体力的时间，用来计算是否能赠送" />
-            <column type="dword" desc="好友头像索引" />
+        <record name="friend_rec" 	cols="6" maxrows="300" save="true" public="false" private="true" desc="好友列表">
+            <column type="string"   desc="对方UID" />
+			<column type="dword"    desc="好友职业" />
+            <column type="widestr"  desc="好友名称" />
+            <column type="dword"    desc="好友是否在线" />
+            <column type="dword"    desc="好友等级" />
+            <column type="dword"    desc="好友战斗力" />
         </record>
-        <record name="recommend_rec" cols="5" maxrows="100" save="false" public="false" private="true" desc="推荐好友列表">
-            <column type="string" desc="对方UID" />
-            <column type="widestr" desc="好友名称" />
-            <column type="dword" desc="好友等级" />
-            <column type="dword" desc="好友战斗力" />
-            <column type="dword" desc="推荐头像索引" />
+		<record name="blacklist_rec" cols="6" maxrows="100" save="true" public="false" private="true" desc="黑名单">
+			<column type="string" 	desc="黑名单UID" />
+			<column type="dword"    desc="黑名单职业" />
+            <column type="widestr"  desc="黑名单名称" />
+            <column type="dword"    desc="黑名单是否在线" />
+            <column type="dword"    desc="黑名单等级" />
+            <column type="dword"    desc="黑名单战斗力" />
         </record>
-        <record name="search_rec" cols="5" maxrows="100" save="false" public="false" private="true" desc="搜索好友结果列表">
-            <column type="string" desc="对方UID" />
-            <column type="widestr" desc="好友名称" />
-            <column type="dword" desc="好友等级" />
-            <column type="dword" desc="好友战斗力" />
-            <column type="dword" desc="查询头像索引" />
+		<record name="enemy_rec" cols="6" maxrows="100" save="true" public="false" private="true" desc="仇人">
+			<column type="string"   desc="仇人UID" />
+			<column type="dword"    desc="仇人职业" />
+            <column type="widestr"  desc="仇人名称" />
+            <column type="dword"    desc="仇人是否在线" />
+            <column type="dword"    desc="仇人等级" />
+            <column type="dword"    desc="仇人战斗力" />
         </record>
-        <record name="gift_rec" cols="7" maxrows="100" save="true" public="false" private="true" desc="好友赠送列表">
-            <column type="string" desc="对方UID" />
-            <column type="widestr" desc="好友名称" />
-            <column type="dword" desc="好友等级" />
-            <column type="dword" desc="好友战斗力" />
-            <column type="dword" desc="赠与体力值" />
-            <column type="int64" desc="赠与时间" />
-            <column type="dword" desc="赠送者头像索引" />
+		<record name="apply_rec" cols="6" maxrows="100" save="true" public="false" private="true" desc="好友申请列表">
+            <column type="string"   desc="对方UID" />
+			<column type="dword"    desc="申请者头像索引" />
+            <column type="widestr"  desc="好友名称" />
+            <column type="dword"    desc="好友等级" />
+            <column type="dword"    desc="好友战斗力" /> 
+            <column type="widestr"  desc="附加信息" />
         </record>
-        <record name="apply_rec" cols="6" maxrows="100" save="true" public="false" private="true" desc="好友邀请列表">
-            <column type="string" desc="对方UID" />
-            <column type="widestr" desc="好友名称" />
-            <column type="dword" desc="好友等级" />
-            <column type="dword" desc="好友战斗力" />
-            <column type="widestr" desc="附加信息" />
-            <column type="dword" desc="申请者头像索引" />
+		<record name="search_rec" cols="5" maxrows="100" save="false" public="false" private="true" desc="搜索好友结果列表">
+            <column type="string"   desc="对方UID" />
+			<column type="dword"    desc="对方职业" />
+            <column type="widestr"  desc="对方名称" />
+            <column type="dword"    desc="对方等级" />
+            <column type="dword"    desc="对方战斗力" />
         </record>
-		
-        <record name="give_rec" cols="1" maxrows="100" save="true" public="false" private="true" desc="已赠送的玩家列表">
-            <column type="string" desc="对方UID" />
+        <record name="recently_rec" cols="6" maxrows="100" save="true" public="false" private="true" desc="最近交互列表">
+            <column type="string"   desc="对方UID" />
+			<column type="dword"    desc="对方职业" />
+            <column type="widestr"  desc="对方名称" />
+            <column type="dword"    desc="对方在线" />
+            <column type="dword"    desc="对方等级" />
+            <column type="dword"    desc="对方战斗力" />
+        </record>
+        <record name="recommend_rec" cols="6" maxrows="100" save="false" public="false" private="true" desc="推荐好友列表">
+            <column type="string"   desc="对方UID" />
+            <column type="widestr"  desc="好友名称" />
+            <column type="dword"    desc="好友等级" />
+            <column type="dword"    desc="好友战斗力" />
+            <column type="dword"    desc="推荐头像索引" />
+            <column type="dword"    desc="门派索引" />
+        </record>
+        <record name="recommend_online_rec" cols="6" maxrows="200" save="false" public="false" private="true" desc="推荐好友列表（结构同上表）">
+            <column type="string"   desc="对方UID" />
+            <column type="widestr"  desc="好友名称" />
+            <column type="dword"    desc="好友等级" />
+            <column type="dword"    desc="好友战斗力" />
+            <column type="dword"    desc="推荐头像索引" />
+            <column type="dword"    desc="门派索引" />
         </record>
     </records>
     <includes />

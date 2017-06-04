@@ -7,6 +7,8 @@
 #include "../visual/i_game_client.h"
 #include "../visual/i_actor.h"
 #include "../visual/i_camera.h"
+#include "../visual/i_world.h"
+#include "../fm_world/world.h"
 #include "../fm_gui/gui.h"
 #include "../fm_gui/gui_input.h"
 #include "helper.h"
@@ -23,6 +25,7 @@
 #include "statemachine/statemachine.h"
 #include "../tools/util_func.h"
 #include "statemachine/util_state.h"
+#include "../fm_world/model.h"
 
 
 const float BIND_HEIGHT = 1.8f;  //摄像机绑定高度
@@ -57,7 +60,8 @@ bool GameControl::Init(const IVarList& args)
 	g_core->AddMsgProc(this, WM_MBUTTONUP);
 	g_core->AddMsgProc(this, WM_KEYDOWN);
 	g_core->AddMsgProc(this, WM_KEYUP);
-	g_core->AddMsgProc(this, WM_MOUSEMOVE);
+  g_core->AddMsgProc(this, WM_MOUSEMOVE);
+  g_core->AddMsgProc(this, WM_SIZE);
 
 	g_core->AddMsgProc(this, FM_TOUCH_BEGIN);
 	g_core->AddMsgProc(this, FM_TOUCH_END);
@@ -78,7 +82,8 @@ bool GameControl::Shut()
 	g_core->RemoveMsgProc(this, WM_MBUTTONUP);
 	g_core->RemoveMsgProc(this, WM_KEYDOWN);
 	g_core->RemoveMsgProc(this, WM_KEYUP);
-	g_core->RemoveMsgProc(this, WM_MOUSEMOVE);
+  g_core->RemoveMsgProc(this, WM_MOUSEMOVE);
+  g_core->RemoveMsgProc(this, WM_SIZE);
 
 	g_core->RemoveMsgProc(this, FM_TOUCH_BEGIN);
 	g_core->RemoveMsgProc(this, FM_TOUCH_END);
@@ -172,7 +177,10 @@ bool GameControl::MsgProc(unsigned int msg, size_t param1, size_t param2, int& r
 
 	switch(msg)
 	{
-
+  case WM_SIZE:
+    {
+      return MsgSize(param1, param2);
+    }
 	case WM_MOUSEMOVE:
 		{
 			return MsgMouseMove(param1, param2);
@@ -378,9 +386,20 @@ bool GameControl::MsgKeyDown(size_t param1, size_t param2)
 
         }
         break;
+	case 'M':
+		{
+			IVisBase* pRole = CHelper::GetPlayer();
+			if (!pRole)
+				break;
+      g_terrain->RemoveVisual(pRole->GetID());
+      SceneObjManager* sceneMgr = (SceneObjManager*)CHelper::GetGlobalEntity(GLOBAL_SCENEMANAGER);
+			sceneMgr->SetPlayer(PERSISTID());
+			break;
+		}
 	case 'N':
     {
-      //测试创建角色
+		//测试创建角色
+		  SceneObjManager* sceneMgr = (SceneObjManager*)CHelper::GetGlobalEntity(GLOBAL_SCENEMANAGER);
       CameraControl* pCameraControl = (CameraControl*)g_core->LookupEntity("CameraControl");
       if (!pCameraControl)
         break;
@@ -394,7 +413,7 @@ bool GameControl::MsgKeyDown(size_t param1, size_t param2)
 
         CVarList result;
         int index = rand() % CHelper::GetActor(pRole)->GetActionCount();
-        const char* szAction = pActor->GetActionName(index);
+        const char* szAction = "pos_0h_stand";//pActor->GetActionName(index);
         pActor->BlendAction(CVarList()<< szAction << false << false, result);
         pActor->SetShowBoundBox(true);
         pCamera->GetCamera()->SetBindID(pRole->GetID());
@@ -404,30 +423,72 @@ bool GameControl::MsgKeyDown(size_t param1, size_t param2)
       }
       IActor* pActor = (IActor*)g_pCore->CreateEntity("Actor");
       pActor->SetContext(g_terrain->GetContext());
-      pActor->CreateFromIni("obj\\player\\monk\\monk_equip_001\\monk_equip_001_elite.ini");
+      pActor->CreateFromIni("obj\\player\\fitxm\\fitxm_equit_001.ini");
       FmVec3 pos = pCamera->GetCamera()->GetPosition();
+      IRenderContext* context = g_render->GetContext();
       pActor->SetCastShadow(true);
+      pActor->SetReceiveShadow(true);
       pActor->SetPosition(pos.x+3, pos.y, pos.z);
 
-      pActor->SetCastShadow(true);
       g_terrain->AddVisualRole("", pActor->GetID());
       g_terrain->SetPlayerID(pActor->GetID());
       g_terrain->RelocateVisual(pActor->GetID(), pos.x+2, pos.y-3, pos.z+2);
 
-      SceneObjManager* sceneMgr = (SceneObjManager*)CHelper::GetGlobalEntity(GLOBAL_SCENEMANAGER);
-      if (sceneMgr)
-      {
-        sceneMgr->SetPlayer(pActor->GetID());
-      }
+      sceneMgr->SetPlayer(pActor->GetID());
+    }
+    break;
+  case 'O':
+    {
+      CameraControl* pCameraControl = (CameraControl*)g_core->LookupEntity("CameraControl");
+      if (!pCameraControl)
+        break;
+      CameraBase* pCamera = pCameraControl->GetActiveCamera();
+      pCamera->GetCamera()->SetPosition(360, 191, -519);
+      break;
+    }
+  case 'Y':
+    {
+      Model* model = (Model*)g_pCore->CreateEntity("Model");
 
-			break;
-		}
+      CameraControl* pCameraControl = (CameraControl*)g_core->LookupEntity("CameraControl");
+      if (!pCameraControl)
+        break;
+      CameraBase* pCamera = pCameraControl->GetActiveCamera();
+      if (!pCamera)
+        break;
+      model->SetContext(g_terrain->GetContext());
+      model->SetModelFile("effect\\common\\common_battle_002b.xmod");
+      model->SetMaterialFile("effect\\common\\common_battle_002b.mtl");
+      model->Load();
+      FmVec3 pos = pCamera->GetCamera()->GetPosition();
+      model->SetPosition(pos.x, pos.y, pos.z);
+      g_terrain->AddVisual("", model->GetID());
+      break;
+    }
 	}
 #endif
 
 	return false;
 }
 
+
+#ifdef _WIN32
+#define LOWORD_WIN(l)           ((WORD)((DWORD_PTR)(l) & 0xffff))
+#define HIWORD_WIN(l)           ((WORD)((DWORD_PTR)(l) >> 16))
+#endif
+
+bool GameControl::MsgSize(size_t param1, size_t param2)
+{
+#ifdef _WIN32
+  int nWidth = LOWORD_WIN(param2); // width of client area
+  int nHeight = HIWORD_WIN(param2); // height of client area
+  World* world = (World*)g_world;
+  world->SetWidth(nWidth);
+  world->SetHeight(nHeight);
+  world->SetDeviceParam();
+#endif
+  return false;
+}
 bool GameControl::MsgKeyUp(size_t param1, size_t param2)
 {
 #ifdef _WIN32

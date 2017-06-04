@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="gb2312"?>
-<!-- 被2011 rel. 2 sp1 (Lonely Knight) 使用XMLSpy vLK编辑的 (http://www.altova.com) by -->
+<!-- 被2012 () 使用XMLSpy v编辑的 (http://www.altova.com) by -->
 <!-- 公会商店相关配置 -->
 <!-- Version-商品配置版本号，当修改了商店配置时需要更新版本号 -->
 <!-- ID-商品唯一标示，不可配置ID重复的商品 -->
 <!-- Item-商品名称 -->
 <!-- Level-兑换该商品需要达到的商店等级 -->
 <!-- Consume-兑换消耗的个人贡献值 -->
-<!-- LimitCount-每日个人兑换个数限制 -->
+<!-- LimitCount-个人可兑换的最大个数限制 -->
+<!-- InitCount - 商店到达可购买等级时的初始可购买商品的个数 -->
+<!-- CountDelta - 商店每升一级，可兑换个数的增量，但最大可兑换个数由LimitCount限定 -->
+<!-- GuildPosition - 可购买此商品的帮会职位 0-帮主 1-副帮主 2-长老 3-骨干 4-帮众 -->
 <Object>
-	<Config Version="10001"/>
-	<Property ID="1" Item="Item_ll1" Level="1" Consume="100" LimitCount="10"/>
-	<Property ID="2" Item="Item_ll2" Level="3" Consume="250" LimitCount="10"/>
-	<Property ID="3" Item="Item_ll3" Level="5" Consume="1200" LimitCount="10"/>
-	<Property ID="4" Item="Item_StepLevel_b" Level="7" Consume="50" LimitCount="20"/>
-	<Property ID="5" Item="Item_JingTieShi" Level="10" Consume="20" LimitCount="15"/>
-	<Property ID="6" Item="Item_StepLevel_g" Level="12" Consume="100" LimitCount="20"/>
-	<Property ID="7" Item="Item_JingTieShi" Level="14" Consume="60" LimitCount="30"/>
-	<Property ID="8" Item="Item_StepLevel_p" Level="16" Consume="150" LimitCount="20"/>
-	<Property ID="9" Item="Item_hs" Level="18" Consume="400" LimitCount="10"/>
-	<Property ID="10" Item="Item_JingTieShi" Level="20" Consume="120" LimitCount="40"/>
-	<Property ID="11" Item="Item_ride_exp_03" Level="22" Consume="400" LimitCount="5"/>
-	<Property ID="12" Item="Item_shengmoshi01" Level="24" Consume="400" LimitCount="5"/>
-	<Property ID="13" Item="Item_cls_002" Level="26" Consume="500" LimitCount="5"/>
-	<Property ID="14" Item="Item_fbxl01" Level="28" Consume="800" LimitCount="5"/>
-	<Property ID="15" Item="Item_fbqh01" Level="30" Consume="1000" LimitCount="5"/>
+	<Config Version="10007"/>
+	<Property ID="101" Item="Item_bx1" Level="1" Consume="50" LimitCount="20" InitCount="5" CountDelta="2" GuildPosition="0,1,2,4" />
+	<Property ID="102" Item="Item_ys1" Level="1" Consume="100" LimitCount="20" InitCount="5" CountDelta="2" GuildPosition="0,1,2,4" />
+	<Property ID="103" Item="Item_guild_chase_01" Level="1" Consume="400" LimitCount="2" InitCount="2" CountDelta="0" GuildPosition="0,1" />
+	<Property ID="104" Item="Tattoo_Green_Exp_001" Level="2" Consume="100" LimitCount="20" InitCount="5" CountDelta="2" GuildPosition="0,1,2,4" />
+	<Property ID="105" Item="Item_bx2" Level="3" Consume="200" LimitCount="10" InitCount="3" CountDelta="1" GuildPosition="0,1,2,4" />
+	<Property ID="106" Item="Item_ys2" Level="3" Consume="300" LimitCount="10" InitCount="3" CountDelta="1" GuildPosition="0,1,2,4" />
+	<Property ID="107" Item="Item_guild_chase_02" Level="3" Consume="600" LimitCount="2" InitCount="2" CountDelta="0" GuildPosition="0,1" />
+	<Property ID="108" Item="Item_hs" Level="4" Consume="200" LimitCount="10" InitCount="4" CountDelta="1" GuildPosition="0,1,2,4" />
+	<Property ID="109" Item="Item_relive" Level="4" Consume="200" LimitCount="10" InitCount="2" CountDelta="1" GuildPosition="0,1,2,4"/>
+	<Property ID="110" Item="Item_bx3" Level="5" Consume="500" LimitCount="10" InitCount="1" CountDelta="1" GuildPosition="0,1,2,4" />
+	<Property ID="111" Item="Item_ys3" Level="5" Consume="600" LimitCount="10" InitCount="1" CountDelta="1" GuildPosition="0,1,2,4" />
+	<Property ID="112" Item="Item_guild_chase_03" Level="5" Consume="800" LimitCount="2" InitCount="2" CountDelta="0" GuildPosition="0,1" />
+	<Property ID="113" Item="Item_neigong_upgrade" Level="6" Consume="600" LimitCount="5" InitCount="1" CountDelta="1" GuildPosition="0,1,2,4" />
+	<Property ID="114" Item="Item_guild_chase_04" Level="8" Consume="1000" LimitCount="2" InitCount="2" CountDelta="0" GuildPosition="0,1" />
 </Object>

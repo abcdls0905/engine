@@ -1005,7 +1005,6 @@ void Render::BeginFrame(unsigned int back_color)
 #endif
 	m_vBackColor = VisUtil_ColorToVector4(back_color);
 
- 
 	m_pRenderDrawOp->SetClearColor( m_vBackColor );
 	m_pRenderDrawOp->SetClearDepth( 1.0F );
 	m_pRenderDrawOp->SetClearStencil( 0 );

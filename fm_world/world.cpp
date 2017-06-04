@@ -259,20 +259,20 @@ void World::Display(float offset_seconds)
 
 	
 
-	// 最后渲染界面
-	if (m_pMainGui)
-	{
-#ifdef PERFORMANCE_DEBUG
-		double dGuiRealizeTime = performance_time();
-#endif
+	  // 最后渲染界面
+	  if (m_pMainGui)
+	  {
+  #ifdef PERFORMANCE_DEBUG
+		  double dGuiRealizeTime = performance_time();
+  #endif
 
-		m_pMainGui->Realize();
+		  m_pMainGui->Realize();
 
-#ifdef PERFORMANCE_DEBUG
-		m_pRender->GetPerformance()->dGuiRealizeTime += 
-			performance_time() - dGuiRealizeTime;
-#endif
-	}
+  #ifdef PERFORMANCE_DEBUG
+		  m_pRender->GetPerformance()->dGuiRealizeTime += 
+			  performance_time() - dGuiRealizeTime;
+  #endif
+	  }
 
 	m_pRender->BeginFrame(m_nBackColor);
 	m_pRender->EndFrame();

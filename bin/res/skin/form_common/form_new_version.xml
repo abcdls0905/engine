@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <form>
 	<control name="main_form" entity="Form" script="" init="">
-		<prop Left="20" Top="30" Width="1280" Height="720" BackColor="151,0,0,0" ShadowColor="0,0,0,0"/>
+		<prop Left="20" Top="30" Width="830" Height="662" BackColor="151,0,0,0" ShadowColor="0,0,0,0" BackImage="gui/dragon_main/new_common/back/common_back2.png"/>
 		<control name="group_version" entity="GroupBox" script="" init="">
-			<prop Left="140" Top="235" Width="1000" Height="250" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="FitWindow" BackImage="gui/tp2_common/backdrop/update_di.png"/>
+			<prop ClipChildren="false" Left="197" Top="267" Width="436" Height="128" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="Expand" BackImage="gui/dragon_main/new_common/back/item_back.png"/>
 			<control name="lbl_notice" entity="Label" script="" init="">
-				<prop Align="Center" RefCursor="WIN_HELP" Left="237" Top="98" Width="526" Height="54" ForeColor="255,255,204,0" ShadowColor="0,0,0,0" Text="@ui_new_version" Font="WRYH36_O_BLACK"/>
-			</control>
-			<control name="Label1" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="375" Top="7" Width="250" Height="52" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/update_up.png"/>
-			</control>
-			<control name="Label2" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="375" Top="190" Width="250" Height="52" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/backdrop/update_down.png"/>
+				<prop Align="Center" RefCursor="WIN_HELP" Left="-45" Top="32" Width="526" Height="54" ForeColor="255,223,223,177" ShadowColor="0,0,0,0" Text="@ui_new_version" Font="WNJT_36"/>
 			</control>
 		</control>
 	</control>

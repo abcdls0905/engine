@@ -1,17 +1,15 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="gb2312"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by  () -->
+<!--´©Í¸NPC»ù´¡ÄÚ²¿ÊôÐÔ-->
 <object>
-    <internals />
-    <properties>
-        <property name="TerrainIsClosed" type="int" public="true" private="false" save="false" realtime="" desc="åœ°å½¢æ•°æ®æ˜¯å¦æ‰“å¼€ï¼Œ0æ˜¯æ‰“å¼€ï¼Œ1æ˜¯å…³é—­" />
-        <property name="TerrainName" type="string" public="false" private="false" save="false" realtime="" desc="åœ°å½¢åç§°" />
-		<property name="TerrainRelateNpc" type="object" public="true" private="false" save="false" realtime="" desc="åœ°å½¢å…³è”NPC"/>
-		<property name="RelateNpcBornAction" type="string" public="true" private="false" save="false" realtime="" desc="åœ°å½¢å…³è”NPCå‡ºç”ŸåŠ¨ä½œ"/>
-		<property name="RelateNpcDeadAction" type="string" public="true" private="false" save="false" realtime="" desc="åœ°å½¢å…³è”NPCæ­»äº¡åŠ¨ä½œ"/>
-		<property name="TerrainNpcLength" type="float" public="true" private="false" save="false" realtime="" desc="åœ°å½¢å…³è”NPCæ­»äº¡åŠ¨ä½œ"/>
-		<property name="TerrainNpcWidth" type="float" public="true" private="false" save="false" realtime="" desc="åœ°å½¢å…³è”NPCæ­»äº¡åŠ¨ä½œ"/>
+	<properties>
+	    <property name="TerrainIsClosed" type="dword" public="true" private="true" save="false" realtime="" desc="µØÐÎÊý¾ÝÊÇ·ñ´ò¿ª£¬0ÊÇ´ò¿ª£¬1ÊÇ¹Ø±Õ" />
+        <property name="DoorInSideArea" type="string" public="false" private="false" save="false" realtime="" desc="ÃÅÄÚµØ±í" />
+		<property name="DynamicTerrainName" type="string" public="false" private="false" save="false" realtime="" desc="¶¯Ì¬µØÐÎÃû³Æ" />
+		<property name="DynamicTerrainIndex" type="int" public="false" private="false" save="false" realtime="" desc="µØÐÎÃû³Æ" />		
+		<property name="ModelUseRadius" type="float" public="false" private="false" save="false" realtime="" desc="Ä£ÐÍ°ë¾¶" />
     </properties>
-    <records />
-    <includes>
-        <path name="struct\npc\npcproperty\fight.xml" desc="NPCæˆ˜æ–—å±žæ€§" />
-    </includes>
+	<!--´ÓÆäËûÎÄ¼þ¼ÓÔØÊôÐÔ-->
+	<includes>
+	</includes>
 </object>

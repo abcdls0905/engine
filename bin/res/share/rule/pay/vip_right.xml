@@ -1,33 +1,23 @@
 <?xml version="1.0" encoding="gb2312"?>
-<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
-<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
-<!-- UnlockItemPackge表示解锁的福利包ID?-->
+<!-- 被2012 () 使用XMLSpy v编辑的 (http://www.altova.com) by -->
+<!-- ?011 rel. 2 sp1 (Lonely Knight) 使用XMLSpy vLK编辑?(http://www.altova.com) by -->
+<!--ID  特权id号
+ValueArray  VIP每级对应的购买次数 vip1 - vipn, 没配置的按最后个配置的级别为准
+1.拍卖行上架数量
+2.拍卖行一键喊话功能
+3.野外打怪金币收益%
+4.野外打怪经验收益%
+5.普通副本额外掉落
+6.英雄副本额外掉落
+7.狩猎次数+1
+8.红名时间扣除速度，百分比值     <Property ID="8" RightName="VipPrivilege008" ValueArray="0" Desc="红名时间扣除速度百分比值"/>	
+-->
 <Object>
-	<Property ID="PhyPower" Name="根据VIP等级增加体力上限" Type="" ValueArray="0,10,20,30,40,50,60,70,80,90,100,110,120,130,140,150"/>
-	<Property ID="StayPower" Name="根据VIP等级增加历练上限" Type="" ValueArray="0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75"/>
-	<Property ID="BlackMarket" Name="根据VIP等级黑市刷新次数" Type="" ValueArray="10,20,30,40,50,60,70,80,90,100,110,120,130,140,150,160"/>
-	<Property ID="ToolBox" Name="根据VIP等级提高普通背包格子数量" Type="" ValueArray="0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75"/>
-	<Property ID="PatchBag" Name="根据VIP等级提高碎片背包格子数量" Type="" ValueArray="0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75"/>
-	<Property ID="BattleWarEntryCount" Name="根据VIP等级设置战场每日可进入次数" Type="" ValueArray="3,3,3,3,3,3,3,4,4,4,4,4,5,5,5,5"/>
-	<Property ID="BattleWarDayCount" Name="根据VIP等级设置每日可进入战场次数" Type="" ValueArray="10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10"/>
-	<Property ID="Goldclone" Name="根据VIP等级设置金币副本每日可进入次数" Type="" ValueArray="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
-	<Property ID="Eliteclone" Name="根据VIP等级设置精英每日可进入次数" Type="" ValueArray="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
-	<Property ID="Surviveclone" Name="根据VIP等级设置生存副本每日可进入次数" Type="" ValueArray="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
-	<!--主意！vip对应的可进入次数不要低于battlewar_config.xml中配置的 BattleWarSurplusCount值-->
-	<Property ID="TeamsCloneTimes" BaseCap="0,4;1,4;2,4;3,4;4,4;5,4;6,4;7,4;8,4;9,4;10,4;11,4;12,4;13,4;14,4;15,4"/>
-	<Property ID="ExpAddRatio" Name="根据VIP等级获得额外的副本经验倍率" ValueArray="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
-	<Property ID="yunbiao" Name="荒野镖客额外参加次数" ValueArray="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"/>
-	<Property ID="duobao" Name="夺宝联盟额外参加次数" ValueArray="0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1"/>
-	<Property ID="Findback" Name="根据VIP等级延长资源找回时间上限" ValueArray="0,0,0,0,0,0,1,1,1,1,1,1,2,2,2,2"/>
-	<Property ID="VipItemGift" AwardeBag="Gold:10000,Item_JingTieShi:10;Item_tl3:2,Item_JingTieShi:20;Equip_P_20GJAP_Shoes:1,sp_Item_Role_12:5,Item_jxd01:5;Equip_P_20GJAP_Helmet:1,Equip_P_20GJAP_Bangle:1,sp_Item_Role_12:5,Item_rolenpc_exp_01:50;Fashion_Wing_1001:1,sp_Item_Role_12:5,Item_jxd02:5;Equip_P_20GJAP_Ring:1,Equip_P_20GJAP_Necklace:1,sp_Item_Role_12:10,Item_rolenpc_exp_02:50;Fashion_Wing_1002:1,Item_fss:40,Item_jxd04:5;Item_fwys_001:50,sp_Item_Role_12:10,Item_rolenpc_exp_03:50;tattoo_center_5_A1:1,sp_Item_Role_12:30,tattoo_gold_5_2:1;Fashion_Wing_1002:1,sp_Item_Role_12:50,tattoo_wood_5_2:1;Equip_O_30GJAD_Necklace:1,Item_hs:100,tattoo_water_5_2:1;Item_fss:100,Fashion_Cloth_1002:1,tattoo_fire_5_2:1,tattoo_soil_5_2:1;tattoo_center_6_A1:1,Fashion_Weapon_1002:1,tattoo_gold_6_1:1;Item_cszbx_001:5,sp_Item_Role_12:60,tattoo_wood_6_1:1,tattoo_water_6_1:1;Fashion_Wing_1003:1,sp_Item_Role_12:70,tattoo_fire_6_1:1,tattoo_soil_6_1:1;tattoo_center_7_A1:1,sp_Item_Role_12:90,Gold:10000000"/>
-	<Property ID="TeamClone" Name="组队副本双倍收益" Type="" ValueArray="0,0,0,1,1,1,1,1,2,2,2,2,2,2,2,2"/>
-	<Property ID="VipLoopQuest" Name="根据VIP等级减少日常任务一键完成消耗" ValueArray="1,1,1,1,1,0.5,0.5,0.25,0.25,0.25,0,0,0,0,0,0"/>
-	<Property ID="SweepRewardLeast" Name="副本扫荡保底权限（V9、V10有效）" ValueArray="0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1"/>
-	<Property ID="AwakeRatio" Name="VIP获得额外的觉醒领悟几率" ValueArray="0,0,0,0,0,0,0,50,100,150,200"/>
-	<Property ID="AutoPayMoreIncExp" Name="自动续费战队经验加成倍率" ValueArray="0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1,0.1"/>
-	<Property ID="AutoPayMoreExpEvery" Name="自动续费野外获取经验上限倍率" ValueArray="1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2"/>
-	<Property ID="AutoPayMoreMonthDiamony" Name="自动续费领取月卡绑钻加成倍率" ValueArray="1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2"/>
-	<Property ID="AutoPayMoreSeasonDiamony" Name="自动续费领取季卡绑钻加成倍率" ValueArray="1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2"/>
-	<Property ID="AutoPayMoreYearDiamony" Name="自动续费领取年卡绑钻加成倍率" ValueArray="1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2"/>
-	<Property ID="AutoPayMoreFuliDiamony" Name="自动续费领取福利卡绑钻加成倍率" ValueArray="1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2,1.2"/>
+	<Property ID="1" RightName="VipPrivilege001" ValueArray="5" Desc="拍卖行上架数量"/>
+	<Property ID="2" RightName="VipPrivilege002" ValueArray="1" Desc="拍卖行一键喊话功能"/>
+	<Property ID="3" RightName="VipPrivilege003" ValueArray="0,5,5,10" Desc="野外打怪金币收益%"/>
+	<Property ID="4" RightName="VipPrivilege004" ValueArray="0,0,5,10" Desc="野外打怪经验收益%"/>
+	<Property ID="5" RightName="VipPrivilege005" ValueArray="0,0,0,0,1" Desc="普通副本额外掉落"/>
+	<Property ID="6" RightName="VipPrivilege006" ValueArray="0,0,0,0,0" Desc="英雄副本额外掉落"/>
+	<Property ID="7" RightName="VipPrivilege007" ValueArray="0,0,0,0,0,1,2" Desc="狩猎次数"/>
 </Object>

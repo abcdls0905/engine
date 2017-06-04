@@ -1,26 +1,24 @@
 <object>
+    <properties>
+        <property name="IsPassGuideSell" type="byte" public="false" private="false" save="true" realtime="" desc="æ˜¯å¦å·²ä½¿ç”¨è¿‡å¼•å¯¼ä¸Šæž¶é“å…·" />
+    </properties>
     <records>
-		<record name="cur_sales_item_rec" cols="7" maxrows="200" save="true" public="false" private="true" desc="µ±Ç°ÊÛÂôµÀ¾ß¼ÇÂ¼">
-			<column type="dword" desc="ÉÌÆ·±àºÅ" />
-            <column type="string" desc="µÀ¾ßConfigID" />
-			<column type="dword" desc="µÀ¾ßÊýÁ¿" />
-			<column type="int64" desc="ÊÛ¼Û" />
-			<column type="byte" desc="µÀ¾ß×´Ì¬" />
-			<column type="string" desc="µÀ¾ßËæ»úÊôÐÔ±àÂë´®" />
-			<column type="int64" desc="ÉÏ¼ÜÊ±¼ä" />
+		<record name="cur_sales_item_rec" cols="6" maxrows="500" save="true" public="false" private="true" desc="å½“å‰å”®å–é“å…·è®°å½•">
+			<column type="dword" desc="å•†å“ç¼–å·" />
+            <column type="string" desc="é“å…·ConfigID" />
+			<column type="dword" desc="é“å…·æ•°é‡" />
+			<column type="int64" desc="å”®ä»·" />
+			<column type="byte" desc="é“å…·çŠ¶æ€" />
+			<column type="string" desc="é“å…·éšæœºå±žæ€§ç¼–ç ä¸²" />
         </record>
-        <record name="purchase_history_rec" cols="3" maxrows="300" save="true" public="false" private="false" desc="¹ºÂò¼ÇÂ¼">
-            <column type="string" desc="µÀ¾ßConfigID" />
-			<column type="dword" desc="µÀ¾ßÊýÁ¿" />
-			<column type="int64"  desc="¹ºÂò¼Û¸ñ" />
-        </record>
-		<record name="sales_history_rec" cols="3" maxrows="300" save="true" public="false" private="false" desc="³öÊÛ¼ÇÂ¼">
-            <column type="string" desc="µÀ¾ßConfigID" />
-			<column type="dword" desc="µÀ¾ßÊýÁ¿" />
-			<column type="int64"  desc="ÊÕÈë£¨³ýË°£©" />
+		<record name="trading_history_rec" cols="7" maxrows="100" save="true" public="false" private="false" desc="äº¤æ˜“è®°å½•">
+            <column type="string" desc="é“å…·ConfigID" />
+			<column type="dword" desc="é“å…·æ•°é‡" />
+			<column type="string" desc="å–å®¶UID" />
+			<column type="string" desc="ä¹°å®¶UID" />
+			<column type="int64"  desc="äº¤æ˜“æ—¶é—´" />
+			<column type="int64"  desc="äº¤æ˜“é¢" />
+			<column type="string" desc="é“å…·éšæœºå±žæ€§ç¼–ç ä¸²" />
         </record>
     </records>
-    <properties>
-    	<property name="AddSalesCount" type="int" public="false" private="true" save="true" realtime="true" desc="Íæ¼ÒÔÚ½»Ò×ÐÐ³öÊÛÀ¸Î»µÄÀ©Õ¹Á¿"/>
-    </properties>
 </object>

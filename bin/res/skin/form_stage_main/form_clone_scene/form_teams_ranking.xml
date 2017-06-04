@@ -1,199 +1,234 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <form>
-	<control name="main_form" entity="Form" script="" init="">
-		<prop ShowGrid="true" Left="13" Top="29" Width="1278" Height="718" BackColor="100,0,0,0" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
-		<control name="groupbox_1" entity="GroupBox" script="" init="">
-			<prop Left="-313" Top="-233" Width="625" Height="465" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" DrawMode="Expand"/>
-			<control name="lbl_1" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="30" Top="40" Width="565" Height="385" ShadowColor="0,0,0,0" DrawMode="ExpandTile" BackImage="gui/tp2_common/backdrop/bg_001.png"/>
-			</control>
-			<control name="Label2" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="35" Top="80" Width="555" Height="340" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_002.png"/>
-			</control>
-			<control name="Label3" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="45" Top="85" Width="535" Height="330" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/backdrop/bg_003.png"/>
-			</control>
-			<control name="lbl_3_right" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="48" Top="387" Width="529" Height="28" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_03.png"/>
-			</control>
-			<control name="groupbox_first_kill" entity="GroupBox" script="" init="">
-				<prop ClipChildren="false" Left="49" Top="93" Width="526" Height="300" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
-				<control name="groupbox_first_kill0" entity="GroupBox" script="" init="">
-					<prop Left="1" Top="-6" Width="525" Height="106" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/nine/tongyongdi.png"/>
-					<control name="lbl_3" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="10" Top="12" Width="82" Height="82" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_main/chat/hall.png"/>
-					</control>
-					<control name="lbl_first_kill_roleindex0" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="13" Top="12" Width="75" Height="82" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
-					</control>
-					<control name="lbl_10" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="102" Top="55" Width="100" Height="30" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="@ui_teams_clone_32" Font="WRYH22_O_BLACK"/>
-					</control>
-					<control name="lbl_first_kill_fight_cap0" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="216" Top="55" Width="150" Height="30" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
-					</control>
-					<control name="lbl_first_kill_level0" entity="Label" script="" init="">
-						<prop Align="Right" RefCursor="WIN_HELP" Left="16" Top="70" Width="70" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK"/>
-					</control>
-					<control name="lbl_first_kill_name0" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="98" Top="21" Width="200" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH24_O_BLACK"/>
-					</control>
-					<control name="lbl_14" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="343" Top="21" Width="160" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="@ui_teams_clone_33" Font="WRYH24_O_BLACK"/>
-					</control>
-					<control name="lbl_first_kill_time_year0" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="340" Top="55" Width="50" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
-					</control>
-					<control name="lbl_16" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="392" Top="55" Width="30" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="@ui_teams_clone_34" Font="WRYH22_O_BLACK"/>
-					</control>
-					<control name="lbl_first_kill_time_month0" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="416" Top="55" Width="30" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
-					</control>
-					<control name="lbl_18" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="440" Top="55" Width="30" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="@ui_teams_clone_35" Font="WRYH22_O_BLACK"/>
-					</control>
-					<control name="lbl_first_kill_time_day0" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="464" Top="55" Width="30" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
-					</control>
-					<control name="lbl_20" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="488" Top="55" Width="30" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="@ui_teams_clone_36" Font="WRYH22_O_BLACK"/>
-					</control>
-				</control>
-				<control name="groupbox_first_kill1" entity="GroupBox" script="" init="">
-					<prop Left="1" Top="104" Width="525" Height="106" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/nine/tongyongdi.png"/>
-					<control name="lbl_4" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="10" Top="12" Width="82" Height="82" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_main/chat/hall.png"/>
-					</control>
-					<control name="lbl_first_kill_roleindex1" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="13" Top="12" Width="75" Height="82" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
-					</control>
-					<control name="lbl_2" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="102" Top="55" Width="100" Height="30" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="@ui_teams_clone_32" Font="WRYH22_O_BLACK"/>
-					</control>
-					<control name="lbl_first_kill_fight_cap1" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="216" Top="55" Width="150" Height="30" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
-					</control>
-					<control name="lbl_first_kill_level1" entity="Label" script="" init="">
-						<prop Align="Right" RefCursor="WIN_HELP" Left="16" Top="70" Width="70" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK"/>
-					</control>
-					<control name="lbl_first_kill_name1" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="98" Top="21" Width="200" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH24_O_BLACK"/>
-					</control>
-					<control name="lbl_8" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="343" Top="21" Width="160" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="@ui_teams_clone_33" Font="WRYH24_O_BLACK"/>
-					</control>
-					<control name="lbl_first_kill_time_year1" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="340" Top="55" Width="50" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
-					</control>
-					<control name="lbl_11" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="392" Top="55" Width="30" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="@ui_teams_clone_34" Font="WRYH22_O_BLACK"/>
-					</control>
-					<control name="lbl_first_kill_time_month1" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="416" Top="55" Width="30" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
-					</control>
-					<control name="lbl_13" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="440" Top="55" Width="30" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="@ui_teams_clone_35" Font="WRYH22_O_BLACK"/>
-					</control>
-					<control name="lbl_first_kill_time_day1" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="464" Top="55" Width="30" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
-					</control>
-					<control name="lbl_17" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="488" Top="55" Width="30" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="@ui_teams_clone_36" Font="WRYH22_O_BLACK"/>
-					</control>
-				</control>
-				<control name="groupbox_first_kill2" entity="GroupBox" script="" init="">
-					<prop Left="1" Top="212" Width="525" Height="106" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui/tp2_common/nine/tongyongdi.png"/>
-					<control name="lbl_6" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="10" Top="12" Width="82" Height="82" ShadowColor="0,0,0,0" DrawMode="FitWindow" BackImage="gui/tp2_main/chat/hall.png"/>
-					</control>
-					<control name="lbl_first_kill_roleindex2" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="13" Top="12" Width="75" Height="82" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
-					</control>
-					<control name="lbl_22" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="102" Top="55" Width="100" Height="30" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="@ui_teams_clone_32" Font="WRYH22_O_BLACK"/>
-					</control>
-					<control name="lbl_first_kill_fight_cap2" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="216" Top="55" Width="150" Height="30" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
-					</control>
-					<control name="lbl_first_kill_level2" entity="Label" script="" init="">
-						<prop Align="Right" RefCursor="WIN_HELP" Left="16" Top="70" Width="70" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK"/>
-					</control>
-					<control name="lbl_first_kill_name2" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="98" Top="21" Width="200" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH24_O_BLACK"/>
-					</control>
-					<control name="lbl_27" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="343" Top="21" Width="160" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="@ui_teams_clone_33" Font="WRYH24_O_BLACK"/>
-					</control>
-					<control name="lbl_first_kill_time_year2" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="340" Top="55" Width="50" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
-					</control>
-					<control name="lbl_29" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="392" Top="55" Width="30" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="@ui_teams_clone_34" Font="WRYH22_O_BLACK"/>
-					</control>
-					<control name="lbl_first_kill_time_month2" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="416" Top="55" Width="30" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
-					</control>
-					<control name="lbl_31" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="440" Top="55" Width="30" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="@ui_teams_clone_35" Font="WRYH22_O_BLACK"/>
-					</control>
-					<control name="lbl_first_kill_time_day2" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="464" Top="55" Width="30" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
-					</control>
-					<control name="lbl_33" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="488" Top="55" Width="30" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="@ui_teams_clone_36" Font="WRYH22_O_BLACK"/>
-					</control>
-				</control>
-			</control>
-			<control name="lbl_clonename_bg" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="111" Top="26" Width="403" Height="54" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui/tp2_common/backdrop/decorate_04.png"/>
-			</control>
-			<control name="lbl_21" entity="Label" script="" init="">
-				<prop Align="Center" RefCursor="WIN_HELP" Left="1054" Top="89" Width="131" Height="16" ShadowColor="0,0,0,0"/>
-			</control>
-			<control name="lbl_clone_name" entity="Label" script="" init="">
-				<prop Align="Center" RefCursor="WIN_HELP" Left="130" Top="34" Width="365" Height="38" ForeColor="255,102,0,0" ShadowColor="0,0,0,0" Font="WRYH30"/>
-			</control>
-			<control name="lbl_23" entity="Label" script="" init="">
-				<prop Align="Center" RefCursor="WIN_HELP" Left="1038" Top="121" Width="163" Height="116" ShadowColor="0,0,0,0" AutoSize="true"/>
-			</control>
-			<control name="btn_close" entity="Button" script="" init="">
-				<prop NormalImage="gui/tp2_common/window/clos.png" PushImage="gui/tp2_common/window/clos1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="535" Top="23" Width="70" Height="70" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true" ClickSound="ui_close"/>
-			</control>
-			<control name="lbl_none_info" entity="Label" script="" init="">
-				<prop Align="Center" RefCursor="WIN_HELP" Left="51" Top="193" Width="523" Height="78" ForeColor="255,244,192,82" ShadowColor="0,0,0,0" Text="@ui_zdfb_zwss" Font="WRYH30_O_BLACK" DrawMode="FitWindow"/>
-			</control>
-			<control name="groupscrollbox_scroll" entity="GroupScrollableBox" script="" init="">
-				<prop ScrollSize="17" Left="49" Top="93" Width="526" Height="300" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
-				<control name="groupbox_ranking_info" entity="GroupBox" script="" init="">
-					<prop ClipChildren="false" Left="1" Top="-6" Width="525" Height="106" ShadowColor="0,0,0,0" Visible="false" DrawMode="Expand" BackImage="gui/tp2_common/nine/team_di_04.png"/>
-					<control name="lbl_ranking_roleindex" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="13" Top="9" Width="75" Height="82" ShadowColor="0,0,0,0" DrawMode="FitWindow"/>
-					</control>
-					<control name="lbl_ranking_num" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="7" Top="6" Width="86" Height="30" ForeColor="255,255,255,0" BackColor="0,0,255,255" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK"/>
-					</control>
-					<control name="lbl_ranking_level" entity="Label" script="" init="">
-						<prop Align="Right" RefCursor="WIN_HELP" Left="16" Top="67" Width="70" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH20_O_BLACK"/>
-					</control>
-					<control name="lbl_ranking_name" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="98" Top="17" Width="200" Height="30" ForeColor="255,0,255,255" ShadowColor="0,0,0,0" Font="WRYH22_O_BLACK"/>
-					</control>
-					<control name="lbl_5" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="98" Top="52" Width="100" Height="30" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Text="@ui_role_npc_tips_11" Font="WRYH20"/>
-					</control>
-					<control name="lbl_ranking_fight_cap" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="196" Top="52" Width="150" Height="30" ForeColor="255,255,255,0" ShadowColor="0,0,0,0" Font="WRYH20"/>
-					</control>
-					<control name="lbl_7" entity="Label" script="" init="">
-						<prop Align="Center" RefCursor="WIN_HELP" Left="343" Top="17" Width="160" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Text="@ui_clone_57" Font="WRYH22"/>
-					</control>
-					<control name="lbl_ranking_hurtnum" entity="Label" script="" init="">
-						<prop Align="Center" RefCursor="WIN_HELP" Left="316" Top="52" Width="200" Height="30" ForeColor="255,0,255,0" ShadowColor="0,0,0,0" Font="WRYH20"/>
-					</control>
-				</control>
-			</control>
-		</control>
-	</control>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop IsGC="true" Left="101" Top="21" Width="1075" Height="702" BackColor="110,0,0,0" ShadowColor="0,0,0,0" />
+        <control name="groupbox_1" entity="GroupBox" script="" init="">
+            <prop Left="-521" Top="-311" Width="1036" Height="686" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" DrawMode="Expand" />
+            <control name="lbl_15" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Top="-16" Width="966" Height="686" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common2\wnd\main_bg1.png" />
+            </control>
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="32" Top="24" Width="902" Height="614" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common2\wnd\main_bg2.png" />
+            </control>
+            <control name="lbl_12" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="9" Top="64" Width="950" Height="92" ShadowColor="0,0,0,0" DrawMode="ExpandV" BackImage="gui\chat\liaotian_bg.jpg" />
+            </control>
+            <control name="lbl_9" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Left="309" Top="-48" Width="361" Height="58" ShadowColor="0,0,0,0" DrawMode="ExpandH" BackImage="gui\common2\wnd\title_1.png" />
+            </control>
+            <control name="groupbox_first_kill" entity="GroupBox" script="" init="">
+                <prop Left="26" Top="10" Width="927" Height="554" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+                <control name="groupbox_first_kill0" entity="GroupBox" script="" init="">
+                    <prop Left="15" Top="23" Width="885" Height="150" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="ExpandH" BackImage="gui\common2\btn\banmenuon_2.png" />
+                    <control name="lbl_3" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="10" Top="14" Width="129" Height="125" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\main\main_new\main_newall.png,1,695,129,125,touxiang" />
+                    </control>
+                    <control name="lbl_first_kill_roleindex0" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="27" Top="5" Width="101" Height="127" ShadowColor="0,0,0,0" AutoSize="true" />
+                    </control>
+                    <control name="lbl_10" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="151" Top="87" Width="126" Height="32" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_teams_clone_32" Font="Title_new2_s" />
+                    </control>
+                    <control name="lbl_first_kill_fight_cap0" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="304" Top="88" Width="190" Height="30" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="99999" Font="num_s" />
+                    </control>
+                    <control name="lbl_first_kill_level0" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="151" Top="40" Width="70" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_symbol_tattoo_1" Font="Title_new2_s" />
+                    </control>
+                    <control name="lbl_first_kill_name0" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="239" Top="40" Width="158" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_the_team08" Font="Title_s" />
+                    </control>
+                    <control name="lbl_14" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="533" Top="32" Width="158" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_teams_clone_33" Font="Title_s" />
+                    </control>
+                    <control name="lbl_first_kill_time_year0" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="520" Top="88" Width="70" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="2014" Font="num_s" />
+                    </control>
+                    <control name="lbl_16" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="592" Top="88" Width="22" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_teams_clone_34" Font="Title_s" />
+                    </control>
+                    <control name="lbl_first_kill_time_month0" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="624" Top="88" Width="30" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="12" Font="num_s" />
+                    </control>
+                    <control name="lbl_18" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="664" Top="88" Width="22" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_teams_clone_35" Font="Title_s" />
+                    </control>
+                    <control name="lbl_first_kill_time_day0" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="704" Top="88" Width="22" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="5" Font="num_s" />
+                    </control>
+                    <control name="lbl_20" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="740" Top="88" Width="22" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_teams_clone_36" Font="Title_s" />
+                    </control>
+                </control>
+                <control name="groupbox_first_kill1" entity="GroupBox" script="" init="">
+                    <prop Left="15" Top="174" Width="885" Height="150" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="ExpandH" BackImage="gui\common2\btn\banmenuon_2.png" />
+                    <control name="lbl_4" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="11" Top="8" Width="129" Height="125" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\main\main_new\main_newall.png,1,695,129,125,touxiang" />
+                    </control>
+                    <control name="lbl_first_kill_roleindex1" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="28" Width="101" Height="127" ShadowColor="0,0,0,0" AutoSize="true" />
+                    </control>
+                    <control name="lbl_2" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="151" Top="99" Width="80" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_teams_clone_32" Font="Title_new2_s" />
+                    </control>
+                    <control name="lbl_first_kill_fight_cap1" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="288" Top="96" Width="80" Height="24" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="99999" Font="num_s" />
+                    </control>
+                    <control name="lbl_first_kill_level1" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="151" Top="40" Width="54" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_symbol_tattoo_1" Font="Title_new2_s" />
+                    </control>
+                    <control name="lbl_first_kill_name1" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="247" Top="40" Width="190" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_the_team08 " Font="Title_s" />
+                    </control>
+                    <control name="lbl_8" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="552" Top="24" Width="142" Height="32" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_teams_clone_33" Font="Title_s" />
+                    </control>
+                    <control name="lbl_first_kill_time_year1" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="520" Top="96" Width="70" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="2014" Font="num_s" />
+                    </control>
+                    <control name="lbl_11" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="592" Top="96" Width="22" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_teams_clone_34" Font="Title_s" />
+                    </control>
+                    <control name="lbl_first_kill_time_month1" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="624" Top="96" Width="30" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="12" Font="num_s" />
+                    </control>
+                    <control name="lbl_13" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="656" Top="96" Width="22" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_teams_clone_35" Font="Title_s" />
+                    </control>
+                    <control name="lbl_first_kill_time_day1" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="683" Top="96" Width="22" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="5" Font="num_s" />
+                    </control>
+                    <control name="lbl_17" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="708" Top="96" Width="22" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_teams_clone_36" Font="Title_s" />
+                    </control>
+                </control>
+                <control name="groupbox_first_kill2" entity="GroupBox" script="" init="">
+                    <prop Left="15" Top="326" Width="885" Height="150" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" DrawMode="ExpandH" BackImage="gui\common2\btn\banmenuon_2.png" />
+                    <control name="lbl_6" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="11" Top="9" Width="129" Height="125" ShadowColor="0,0,0,0" AutoSize="true" DrawMode="FitWindow" BackImage="gui\main\main_new\main_newall.png,1,695,129,125,touxiang" />
+                    </control>
+                    <control name="lbl_first_kill_roleindex2" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="29" Width="101" Height="127" ShadowColor="0,0,0,0" AutoSize="true" />
+                    </control>
+                    <control name="lbl_22" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="150" Top="96" Width="134" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_teams_clone_32" Font="Title_new2_s" />
+                    </control>
+                    <control name="lbl_first_kill_fight_cap2" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="288" Top="96" Width="80" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="99999" Font="num_s" />
+                    </control>
+                    <control name="lbl_first_kill_level2" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="151" Top="33" Width="54" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_symbol_tattoo_1" Font="Title_new2_s" />
+                    </control>
+                    <control name="lbl_first_kill_name2" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="232" Top="32" Width="80" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_the_team08" Font="Title_s" />
+                    </control>
+                    <control name="lbl_27" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="536" Top="32" Width="140" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_teams_clone_33" Font="Title_s" />
+                    </control>
+                    <control name="lbl_first_kill_time_year2" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="520" Top="97" Width="70" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="2014" Font="num_s" />
+                    </control>
+                    <control name="lbl_29" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="592" Top="96" Width="22" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_teams_clone_34" Font="Title_s" />
+                    </control>
+                    <control name="lbl_first_kill_time_month2" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="624" Top="96" Width="30" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="12" Font="num_s" />
+                    </control>
+                    <control name="lbl_31" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="656" Top="96" Width="22" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_teams_clone_35" Font="Title_s" />
+                    </control>
+                    <control name="lbl_first_kill_time_day2" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="683" Top="96" Width="22" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="5" Font="num_s" />
+                    </control>
+                    <control name="lbl_33" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="708" Top="96" Width="22" Height="16" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_teams_clone_36" Font="Title_s" />
+                    </control>
+                </control>
+            </control>
+            <control name="lbl_21" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="24" Top="1208" Width="446" Height="16" ShadowColor="0,0,0,0" Text="@ui_clone_71" />
+            </control>
+            <control name="lbl_clone_name" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="442" Top="-32" Width="107" Height="30" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_clone_72" Font="Title_new_s" AutoSize="true" />
+            </control>
+            <control name="lbl_23" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="344" Top="64" Width="302" Height="86" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\teamclone\quanfushousha_up.jpg" />
+            </control>
+            <control name="btn_close" entity="Button" script="" init="">
+                <prop NormalImage="gui\common2\btn\close.png" PushImage="gui\common2\btn\close.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" MouseDownScale="0.100000" Left="395" Top="-35" Width="82" Height="82" BackColor="255,192,192,192" ShadowColor="0,0,0,0" HAnchor="Center" AutoSize="true" ClickSound="ui_close" />
+            </control>
+            <control name="lbl_none_info" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="343" Top="192" Width="293" Height="51" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui\teamclone\zhanchang_quanbushoucijisha.jpg" />
+            </control>
+            <control name="groupscrollbox_scroll" entity="GroupScrollableBox" script="" init="">
+                <prop ScrollSize="17" Left="48" Top="12300" Width="494" Height="390" LineColor="0,0,0,0" ShadowColor="0,0,0,0" />
+                <control name="groupbox_ranking_info" entity="GroupBox" script="" init="">
+                    <prop Left="16" Top="24" Width="462" Height="110" ShadowColor="0,0,0,0" />
+                    <control name="lbl_ranking_roleindex" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="24" Width="80" Height="86" ShadowColor="0,0,0,0" Text="@ui_clone_73 " />
+                    </control>
+                    <control name="lbl_ranking_num" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="24" Top="72" Width="46" Height="38" ShadowColor="0,0,0,0" Text="@ui_arena_7" />
+                    </control>
+                    <control name="lbl_ranking_level" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="96" Top="32" Width="54" Height="22" ShadowColor="0,0,0,0" Text="@ui_symbol_tattoo_1" />
+                    </control>
+                    <control name="lbl_ranking_name" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="160" Top="32" Width="80" Height="22" ShadowColor="0,0,0,0" Text="@ui_the_team08" />
+                    </control>
+                    <control name="lbl_5" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="96" Top="72" Width="80" Height="16" ShadowColor="0,0,0,0" Text="@ui_arena_31" />
+                    </control>
+                    <control name="lbl_ranking_fight_cap" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="160" Top="72" Width="80" Height="16" ShadowColor="0,0,0,0" Text="99999" />
+                    </control>
+                    <control name="lbl_7" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="348" Top="37" Width="80" Height="16" ShadowColor="0,0,0,0" Text="@ui_clone_74" />
+                    </control>
+                    <control name="lbl_ranking_hurtnum" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="352" Top="72" Width="80" Height="16" ShadowColor="0,0,0,0" Text="9999999" />
+                    </control>
+                </control>
+            </control>
+            <control name="btn_awards" entity="Button" script="" init="">
+                <prop NormalImage="gui\common2\btn\btn01b.png" PushImage="gui\common2\btn\btn01b.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" MouseDownScale="0.150000" Left="736" Top="568" Width="178" Height="64" ForeColor="255,99,57,30" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_teams_clone_41" Font="Title_new_s" DrawMode="ExpandH" />
+            </control>
+            <control name="groupbox_awards_main" entity="GroupBox" script="" init="">
+                <prop Left="184" Top="176" Width="718" Height="366" ShadowColor="0,0,0,0" Visible="false" DrawMode="Expand" BackImage="gui\common2\wnd\tips.png" />
+                <control name="lbl_24" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="32" Top="80" Width="654" Height="206" ShadowColor="0,0,0,0" DrawMode="Expand" BackImage="gui\common2\tips\xialadi01.png" />
+                </control>
+                <control name="lbl_19" entity="Label" script="" init="">
+                    <prop RefCursor="WIN_HELP" Left="296" Top="24" Width="110" Height="30" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_teams_clone_41" Font="Title_new_s" />
+                </control>
+                <control name="groupscrollbox_awards_parent" entity="GroupScrollableBox" script="" init="">
+                    <prop ScrollSize="17" Left="26" Top="40" Width="662" Height="242" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" DrawMode="Expand" />
+                </control>
+                <control name="btn_get_awards" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common2\btn\btn01b.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" MouseDownScale="0.100000" Left="184" Top="288" Width="126" Height="64" ForeColor="255,99,57,30" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_gift_get" Font="Title_new_s" AutoSize="true" DrawMode="ExpandH" />
+                </control>
+                <control name="btn_cancel" entity="Button" script="" init="">
+                    <prop NormalImage="gui\common2\btn\btn01b.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" MouseDownScale="0.100000" Left="416" Top="288" Width="126" Height="64" ForeColor="255,99,57,30" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_gift_14" Font="Title_new_s" AutoSize="true" DrawMode="ExpandH" />
+                </control>
+                <control name="groupbox_award_item" entity="GroupBox" script="" init="">
+                    <prop Left="72" Top="88" Width="85" Height="85" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" DrawMode="FitWindow" BackImage="gui\common2\gird\wupinkuang.png" />
+                    <control name="lbl_award_7" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="-8" Top="-8" Width="102" Height="102" ShadowColor="0,0,0,0" />
+                    </control>
+                    <control name="lbl_award_photo" entity="Label" script="" init="">
+                        <prop ClickEvent="true" RefCursor="WIN_HELP" Left="5" Top="5" Width="75" Height="75" ShadowColor="0,0,0,0" Transparent="false" DrawMode="FitWindow" BackImage="" />
+                    </control>
+                    <control name="lbl_award_name" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Left="3" Top="118" Width="82" Height="21" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_name" Font="Title_s" />
+                    </control>
+                    <control name="lbl_award_cover" entity="Label" script="" init="">
+                        <prop RefCursor="WIN_HELP" Left="-4" Top="-5" Width="95" Height="95" ShadowColor="0,0,0,0" DrawMode="FitWindow" />
+                    </control>
+                    <control name="lbl_award_count" entity="Label" script="" init="">
+                        <prop Align="Center" RefCursor="WIN_HELP" Top="88" Width="86" Height="22" ForeColor="255,255,255,87" ShadowColor="0,0,0,0" Text="2" Font="num_s" />
+                    </control>
+                </control>
+            </control>
+        </control>
+    </control>
 </form>
-

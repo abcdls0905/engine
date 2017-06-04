@@ -850,6 +850,8 @@ private:
 
 		// ÊµÊ±ÒõÓ°
 		bool dynamic_shadow = (pContext->GetEnableDynamicShadow() && GetReceiveShadow());
+//     if (strcmp(m_strName.c_str(), "obj\\player\\monk\\monk_equip_001\\monk_equip_001.xmod") == 0)
+//       dynamic_shadow = true;
 		if (dynamic_shadow)
 		{
 			ITextureSampler* pTexSampler = pContext->GetDynamicShadowRT()->GetTextureSampler();

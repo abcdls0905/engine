@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <object>
     <internals>
-    	<property name="Type" type="byte" public="true" private="true" save="false" realtime="" desc="类型: TYPE_NPC" />
     </internals>
     <properties>
-        <property name="ConfigID" type="string" public="true" private="false" save="false" realtime="" desc="编号" />
-        <property name="Resource" type="string" public="true" private="false" save="false" realtime="" desc="资源" />
-         <property name="CreatorIndex" type="int" public="false" private="false" save="false" realtime="" desc="创建关联编号" /> 
+        <property name="CreatorIndex" type="dword" public="false" private="false" save="false" realtime="" desc="创建关联编号" />
+		<property name="CreatorCondition" type="dword" public="false" private="false" save="false" realtime="" desc="触发条件" />
+		<property name="EnterPlayTime" type="int" public="false" private="false" save="false" realtime="" desc="玩法开始后进入时间(单位秒)" />
+		<property name="EnterTips" type="string" public="false" private="false" save="false" realtime="" desc="玩法开始后进入提示" />
     </properties>
     <records />
-    <includes>
-    </includes>
+    <includes />
 </object>

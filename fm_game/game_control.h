@@ -26,6 +26,7 @@ private:
     bool MsgLButtonUp(size_t param1, size_t param2);
     bool MsgKeyDown(size_t param1, size_t param2);
     bool MsgKeyUp(size_t param1, size_t param2);
+    bool MsgSize(size_t param1, size_t param2);
 
     //平板消息处理
     bool MsgTouchBegin(size_t param1, size_t param2);

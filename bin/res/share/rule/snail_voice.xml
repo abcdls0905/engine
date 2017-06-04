@@ -1,55 +1,56 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<!-- è¢«2012 (Snail) ä½¿ç”¨XMLSpy vsnailgameç¼–è¾‘çš„ (http://www.altova.com) by -->
+<?xml version="1.0" encoding="gb2312" standalone="yes"?>
+<!-- ±»2012 (Snail) Ê¹ÓÃXMLSpy vsnailgame±à¼­µÄ (http://www.altova.com) by -->
 <!-- 
-	IDå­—æ®µä¸ºé¢‘é“å®šä¹‰
-//èŠå¤©ç±»åž‹å®šä¹‰
+	ID×Ö¶ÎÎªÆµµÀ¶¨Òå
+//ÁÄÌìÀàÐÍ¶¨Òå
 enum
 {
-    //ç¦è¨€ä¸€ä¸ªé¢‘é“éƒ½ä¸å‡†è¿›å…¥
+    //½ûÑÔÒ»¸öÆµµÀ¶¼²»×¼½øÈë
     CHATTYPE_INVALID = 0,
-	//ä¸–ç•ŒèŠå¤©
+	//ÊÀ½çÁÄÌì
 	CHATTYPE_WORLD,
-	//ç§èŠ
+	//Ë½ÁÄ
 	CHATTYPE_WHISPER,
-	//ç»„é˜Ÿ
+	//×é¶Ó
 	CHATTYPE_TEAM,
-	//è¡€ç›Ÿ
+	//ÑªÃË
 	CHATTYPE_GUILD,
-	//é™„è¿‘
+	//¸½½ü
 	CHATTYPE_NEAR,
-	//ç³»ç»Ÿ
+	//ÏµÍ³
 	CHATTYPE_SYSTEM,
-	//æ”»åŸŽæˆ˜
+	//¹¥³ÇÕ½
 	CHATTYPE_CASTLE_WAR,
-	//å¢äº‘
+	//Â¬ÔÆ
 	CHATTYPE_LUYUN,
-	//å¤§å›¢é˜Ÿ
+	//´óÍÅ¶Ó
 	CHATTYPE_BIG_TEAM,
-	//GMå¹¿æ’­é¢‘é“
+	//GM¹ã²¥ÆµµÀ
 	CHATTYPE_GM,
-	//ç§èŠå›žæ˜¾
+	//Ë½ÁÄ»ØÏÔ
 	CHATTYPE_WHISPER_SHOWBACK = 24,
 
-	//ä¸è¦è¶…è¿‡32 è¶…è¿‡çš„æœºä¼šå¤±æ•ˆ
+	//²»Òª³¬¹ý32 ³¬¹ýµÄ»ú»áÊ§Ð§
 	CHATTYPE_MAX = 31,
 };
 
-RefUserNum	å‚è€ƒç”¨æˆ·æ•°(å¿…é¡»æ˜¯~99999ä¹‹é—´çš„æ•°å€¼ï¼Œå¦åˆ™åˆ›å»ºå¤±è´¥)ï¼Œç”¨äºŽè´Ÿè½½å¹³è¡¡
-RealAudoFlag	æ˜¯å¦æ”¯æŒå®žæ—¶è¯­éŸ³ 1æ”¯æŒï¼Œ0ä¸æ”¯æŒ
-MaxMsgSaveCount	ä¿å­˜æ¶ˆæ¯æœ€å¤§æ•°é‡ï¼Œ0 æ˜¯ä¸ä¿å­˜æ¶ˆæ¯ 
-MaxMsgSaveTime	ä¿å­˜æ¶ˆæ¯æœ€é•¿æ—¶é—´å•ä½ç§’
-IsTempRoom	æ˜¯å¦æ˜¯ä¸´æ—¶æˆ¿é—´1æ˜¯ï¼Œ0å¦
-LifeTime æˆ¿é—´æœ‰æ•ˆæœŸé™ï¼Œå•ä½æ˜¯ç§’ï¼Œä»Žåˆ›å»ºæˆ¿é—´å¼€å§‹
-
+RefUserNum	²Î¿¼ÓÃ»§Êý(±ØÐëÊÇ~99999Ö®¼äµÄÊýÖµ£¬·ñÔò´´½¨Ê§°Ü)£¬ÓÃÓÚ¸ºÔØÆ½ºâ
+RealAudoFlag	ÊÇ·ñÖ§³ÖÊµÊ±ÓïÒô 1Ö§³Ö£¬0²»Ö§³Ö
+MaxMsgSaveCount	±£´æÏûÏ¢×î´óÊýÁ¿£¬0 ÊÇ²»±£´æÏûÏ¢
+MaxMsgSaveTime	±£´æÏûÏ¢×î³¤Ê±¼äµ¥Î»Ãë
+IsTempRoom	ÊÇ·ñÊÇÁÙÊ±·¿¼ä1ÊÇ£¬0·ñ
+LifeTime ·¿¼äÓÐÐ§ÆÚÏÞ£¬µ¥Î»ÊÇÃë£¬´Ó´´½¨·¿¼ä¿ªÊ¼
+<Base> : 
+	RecordingSystemVolume->Â¼ÒôÊ±ÏµÍ³ÒôÁ¿ ÅäÖÃ·¶Î§ 0~1 0=¾²Òô
+	PlayingSystemVolume->²¥·ÅÊ±ÏµÍ³ÒôÁ¿ ÅäÖÃ·¶Î§ 0~1 
 -->
 <Object>
-	<Base AppID="2001"/>
-	<Property ID="9" desc="ä¸–ç•ŒèŠå¤©" RefUserNum="3000" RealAudoFlag="1" MaxMsgSaveCount="10000000"  MaxMsgSaveTime="1800" IsTempRoom="0" LifeTime="99999999"/>
-	<Property ID="2" desc="ç§èŠ" RefUserNum="2" RealAudoFlag="0" MaxMsgSaveCount="100"  MaxMsgSaveTime="1800" IsTempRoom="1" LifeTime="99999999"/>
-	<Property ID="4" desc="ç»„é˜Ÿ" RefUserNum="5" RealAudoFlag="0" MaxMsgSaveCount="100"  MaxMsgSaveTime="1800" IsTempRoom="1" LifeTime="99999999"/>
-	<Property ID="6" desc="å…¬ä¼š" RefUserNum="100" RealAudoFlag="0" MaxMsgSaveCount="100"  MaxMsgSaveTime="1800" IsTempRoom="0" LifeTime="99999999"/>
-	<Property ID="11" desc="é‡Žå¤–ç»„é˜Ÿ" RefUserNum="5" RealAudoFlag="0" MaxMsgSaveCount="100"  MaxMsgSaveTime="1800" IsTempRoom="1" LifeTime="99999999"/>
-	<Property ID="15" desc="é™„è¿‘" RefUserNum="100" RealAudoFlag="0" MaxMsgSaveCount="100"  MaxMsgSaveTime="1800" IsTempRoom="1" LifeTime="99999999"/>
-	<Property ID="18" desc="é˜µè¥" RefUserNum="1000" RealAudoFlag="0" MaxMsgSaveCount="100"  MaxMsgSaveTime="1800" IsTempRoom="0" LifeTime="99999999"/>
-	<Property ID="52" desc="ç»„é˜Ÿä¿¡æ¯" RefUserNum="5" RealAudoFlag="0" MaxMsgSaveCount="100"  MaxMsgSaveTime="1800" IsTempRoom="1" LifeTime="99999999"/>
+	<Base AppID="2002" RecordingSystemVolume="0.0" PlayingSystemVolume="0.2" />
+	<Property ID="1" desc="ÊÀ½çÁÄÌì" RefUserNum="3000" RealAudoFlag="0" MaxMsgSaveCount="10000000"  MaxMsgSaveTime="1800" IsTempRoom="0" LifeTime="99999999"/>
+	<Property ID="2" desc="Ë½ÁÄ" RefUserNum="2" RealAudoFlag="0" MaxMsgSaveCount="100"  MaxMsgSaveTime="1800" IsTempRoom="1" LifeTime="1800"/>
+	<Property ID="3" desc="×é¶Ó" RefUserNum="5" RealAudoFlag="0" MaxMsgSaveCount="100"  MaxMsgSaveTime="1800" IsTempRoom="1" LifeTime="1800"/>
+	<Property ID="4" desc="¹«»á" RefUserNum="200" RealAudoFlag="0" MaxMsgSaveCount="1000"  MaxMsgSaveTime="1800" IsTempRoom="0" LifeTime="99999999"/>
+	<Property ID="7" desc="ÕóÓª" RefUserNum="100" RealAudoFlag="0" MaxMsgSaveCount="1000"  MaxMsgSaveTime="1800" IsTempRoom="0" LifeTime="99999999"/>
+	<Property ID="8" desc="Õ½³¡" RefUserNum="20" RealAudoFlag="0" MaxMsgSaveCount="1000"  MaxMsgSaveTime="1800" IsTempRoom="1" LifeTime="1800"/>
+	<Property ID="9" desc="¹«»á´ðÌâ" RefUserNum="40" RealAudoFlag="0" MaxMsgSaveCount="1000"  MaxMsgSaveTime="1800" IsTempRoom="1" LifeTime="86400"/>
 </Object>

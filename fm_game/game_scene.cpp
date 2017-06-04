@@ -25,7 +25,7 @@ inline const char* gettexpath(const char* file, char* pre = "map/", const char* 
 // 	{
 // 		sprintf(buf, "%s/%s", pre, file);
 //   }
-  sprintf(buf, "%s/%s", pre, file);
+  sprintf(buf, "%s/%s", "", file);
 	return buf;
 }
 
@@ -101,7 +101,7 @@ bool SceneManager::load_terrain(const char* pstrfile,IScene* pScene, bool can_lo
   ITerrain* pTerrain = (ITerrain*) g_core->GetEntity(terrain_id);
 	g_terrain = pTerrain;
 
-	CHelper::SetPropertyString(pTerrain,"AppendPath","map\\");
+	//CHelper::SetPropertyString(pTerrain,"AppendPath","map\\");
 	pTerrain->SetParameter(zone_scale, chunk_scale, texture_scale,texture_units, alpha_per_unit, collide_per_unit);
 	CHelper::SetPropertyInt(pTerrain,"LightPerUnit",light_per_unit);
 	CHelper::SetPropertyString(pTerrain,"FilePath",pstrfile);
@@ -216,9 +216,9 @@ bool SceneManager::load_terrain(const char* pstrfile,IScene* pScene, bool can_lo
   pTerrain->SetWaterDepth(true);
 
   pTerrain->SetGroundVisible(true);
-  pTerrain->SetCastShadow(true);
 
-  pScene->SetEnableDynamicShadow(true);
+  pTerrain->SetCastShadow(false);
+  pScene->SetEnableDynamicShadow(false);
 
   //加载阴影管理
   //load_shadow_system(pTerrain,pScene);

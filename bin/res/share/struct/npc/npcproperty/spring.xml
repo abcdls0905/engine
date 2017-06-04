@@ -1,44 +1,44 @@
-<?xml version="1.0" encoding="gb2312"?>
+<?xml version="1.0" encoding="gb2312" ?>
 <!-- NPC触发包相关属性 -->
 <object>
     <!-- 基本属性 -->
     <properties>
-        <property name="SpringPackID" type="string" public="false" private="false" save="false" desc="NPC触发包ID列，以逗号分隔"/>
+        <property name="SpringPackID" type="string" public="false" private="false" save="false" desc="NPC触发包ID列，以逗号分隔" />
     </properties>
     <records>
-    <!-- 表记录 -->
+        <!-- 表记录 -->
         <record name="spring_pack_rec" cols="7" maxrows="12" save="false" public="false" private="false" desc="触发方式表记录">
-            <column type="string" desc="触发包ID"/>
-            <column type="byte" desc="触发方式"/>
-            <column type="byte" desc="触发对象类型，0为所有, 1为玩家，2为指定NPC"/>
-            <column type="string" desc="触发对象为NPC时，可指定NPC的ConfigID"/>
-            <column type="byte" desc="触发效果"/>
-            <column type="word" desc="触发次数"/>
-            <column type="int64" desc="上次触发时间"/>
+            <column type="string" desc="触发包ID" />
+            <column type="byte" desc="触发方式" />
+            <column type="byte" desc="触发对象类型，0为所有, 1为玩家，2为指定NPC" />
+            <column type="string" desc="触发对象为NPC时，可指定NPC的ConfigID" />
+            <column type="byte" desc="触发效果" />
+            <column type="word" desc="触发次数" />
+            <column type="int64" desc="上次触发时间" />
         </record>
         <record name="spring_process_rec" cols="5" maxrows="12" save="false" public="false" private="false" desc="触发方式时间记录">
-            <column type="string" desc="触发包ID"/>
-            <column type="object" desc="效果包对象"/>
-            <column type="byte" desc="触发效果"/>
-            <column type="int64" desc="触发时间"/>
-            <column type="int64" desc="触发包有效时间"/>
+            <column type="string" desc="触发包ID" />
+            <column type="object" desc="效果包对象" />
+            <column type="byte" desc="触发效果" />
+            <column type="int64" desc="触发时间" />
+            <column type="int64" desc="触发包有效时间" />
         </record>
         <record name="spring_behavior_process_rec" cols="6" maxrows="12" save="false" public="false" private="false" desc="触发效果时间记录">
-            <column type="string" desc="触发包ID"/>
-            <column type="object" desc="触发效果对象"/>
-            <column type="byte" desc="触发效果ID"/>
-            <column type="word" desc="效果间隔时间"/>
-            <column type="int64" desc="效果有效时间"/>
-            <column type="int64" desc="上次效果执行时间"/>
+            <column type="string" desc="触发包ID" />
+            <column type="object" desc="触发效果对象" />
+            <column type="byte" desc="触发效果ID" />
+            <column type="word" desc="效果间隔时间" />
+            <column type="int64" desc="效果有效时间" />
+            <column type="int64" desc="上次效果执行时间" />
         </record>
         <record name="spring_targets_skill_rec" cols="7" maxrows="10" save="false" public="false" private="false" desc="周边可释放技能目标">
-            <column type="string" desc="技能ID"/>
-            <column type="object" desc="技能npc目标对象"/>
-            <column type="byte" desc="当前释放的技能优先级"/>
-            <column type="byte" desc="技能释放总次数"/>
-            <column type="byte" desc="技能释放当前次数"/>
-            <column type="word" desc="技能释放间隔"/>
-            <column type="int64" desc="上次释放时间"/>
+            <column type="string" desc="技能ID" />
+            <column type="object" desc="技能npc目标对象" />
+            <column type="byte" desc="当前释放的技能优先级" />
+            <column type="byte" desc="技能释放总次数" />
+            <column type="byte" desc="技能释放当前次数" />
+            <column type="word" desc="技能释放间隔" />
+            <column type="int64" desc="上次释放时间" />
         </record>
     </records>
 </object>

@@ -1,25 +1,13 @@
-<?xml version="1.0" encoding="gb2312"?>
-<!--时装系统相关的属性-->
-
+锘�<?xml version="1.0" encoding="utf-8" ?>
 <object>
-	<!-- 基本属性 -->
-	<properties>
-		<property name="FashionShow" type="byte" public="true" private="true" save="true" desc="是否显示时装 0为不显示， 1为显示"/>
-		<property name="FashionCloth" type="string" public="true" private="true" save="false" desc="衣服"/>	
-		<property name="FashionWeapon" type="string" public="true" private="true" save="false" desc="左手武器"/>
-		<property name="FashionIsLockProp" type="int" public="false" private="true" save="true" desc="是否锁定了时装属性"/>
-	</properties>
-	<!-- 表格 -->
-	<records>
-		<record name="fashion_reward_rec" cols="2" maxrows="100" save="true" public="false" private="true" desc="集时装奖励">
-			<column type="dword" desc="奖励id" />
-			<column type="dword" desc="奖励状态" />
-		</record>
-		<record name="fashion_lock_prop_rec" cols="4" maxrows="10" save="true" public="false" private="true" desc="锁定的时装属性">
-			<column type="dword" desc="时装部件类型" />
-			<column type="string" desc="锁定时装的UID" />
-			<column type="string" desc="锁定的属性串" />
-			<column type="string" desc="锁定时装的configid" />
-		</record>
-	</records>
+    <properties>
+		<property name="IsShowFashion" type="dword" public="true" private="true" save="true" realtime="" desc="鏄惁鏄剧ず鏃惰(0-涓嶆樉绀�;1-鏄剧ず)"/>
+		<property name="FashionWeapon" type="string" public="true" private="true" save="true" realtime="" desc="鏃惰姝﹀櫒"/>
+		<property name="FashionCloth" type="string" public="true" private="true" save="true" realtime="" desc="鏃惰琛ｆ湇"/>
+		<property name="FashionHair" type="string" public="true" private="true" save="true" realtime="" desc="鏃惰鍙戝瀷"/>
+		<property name="FashionFace" type="string" public="true" private="true" save="true" realtime="" desc="鏃惰鑴稿瀷"/>
+		<property name="FashionSuitBuff" type="string" public="false" private="false" save="true" realtime="" desc="鏃惰濂楄澧炲姞鐨刡uff"/>
+    </properties>
+    <records>
+    </records>
 </object>

@@ -344,17 +344,6 @@ bool Terrain::Load()
 	return true;
 }
 
-// #include "../visual/i_actor.h"
-// #include "../visual/i_camera.h"
-// extern ICamera* g_test_camera;
-// 
-// /*
-// obj\\player\\azrael\\ass_equip_001\\ass_equip_001_elite_low.ini
-// */
-// 
-// bool test = false;
-// IActor* pActor = NULL;
-
 PERSISTID QueryCustomObject(IEntity* pEntity, const char* name)
 {
 	if (pEntity  == NULL)
@@ -382,21 +371,6 @@ void Terrain::Update(float seconds)
 	m_pCulling->Update(seconds);
 	//m_pWater->Update(seconds);
 	//m_pGrass->Update(seconds);
-
-// 	if (test)
-// 	{
-// 		pActor = (IActor*)g_pCore->CreateEntity("Actor");
-// 		pActor->SetContext(GetContext());
-// 		pActor->CreateFromIni("obj\\player\\monk\\monk_equip_001\\monk_equip_001_elite.ini");
-// 		FmVec3 pos = g_test_camera->GetPosition();
-// 		pActor->SetPosition(pos.x+3, pos.y, pos.z);
-// 
-// 		pActor->SetCastShadow(true);
-// 		AddVisualRole("", pActor->GetID());
-// 		//SetPlayerID(pActor->GetID());
-// 		RelocateVisual(pActor->GetID(), pos.x+2, pos.y-3, pos.z+2);
-// 
-// 	}
 
 	if (m_pBrush)
 	{

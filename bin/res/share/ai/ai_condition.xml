@@ -1,177 +1,48 @@
 <?xml version="1.0" encoding="gb2312"?>
-<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
-<!--
-AI条件类型： 
-
-
-
-	CTE_MY_PROPERTY 		= 1 /**< 自己的属性条件 */
-
-
-
-  	CTE_TARGET_PROPERTY 	= 2 /**< 目标的属性条件 */
-
-
-
-    CTE_FRIEND_PROPERTY 	= 3 /**< 友方的属性条件 */
-
-
-
-    说明：para101  属性名
-
-
-
-    	  para102  类型（1：百分比  2：数值）
-
-
-
-    	  para103  值
-
-
-
-    	  para104  操作符
-
-
-
-
-
-
-
-    	  
-
-
-
-    CTE_MY_BUFF				= 4 /**< 自己的buff条件 */
-
-
-
-    CTE_TARGET_BUFF			= 5 /**< 目标的buff条件 */
-
-
-
-    说明：para101 buffid以逗号隔开，可配置多个
-
-
-
-
-
-
-
-    
-
-
-
-    CTE_TARGET_DISTANCE		= 10/**< 目标距离 */
-
-
-
-    说明：para101 距离
-
-
-
-    	  para102 操作符
-
-
-
-    	  
-
-
-
-    CTE_TARGET_INVALID		= 13/**< 目标丢失 */
-
-
-
-	说明：无需参数
-
-
-
-
-
-
-
-    CTE_AFTER_FIGHT_STATE	= 15/**进入战斗后多长时间*/
-
-
-
-    说明： para101 时间
-
-
-
--->
 <Object>
 	<Property ID="110107b" Name="少于100血" ConditionType="1" para101="HPBase" para102="2" para103="100" para104="&lt;"/>
-	<Property ID="110107a" Name="10米范围内" ConditionType="10" para1001="10" para1002="&lt;="/>
-	<Property ID="110107c" Name="15米范围内" ConditionType="10" para1001="15" para1002="&lt;="/>
-	<Property ID="110107d" Name="小于5m" ConditionType="10" para1001="5" para1002="&lt;="/>
-	<Property ID="110107e" Name="2米开外放技能" ConditionType="10" para1001="2" para1002="&gt;="/>
-	<Property ID="delay" Name="大招延迟（15秒）" ConditionType="15" para1501="15000"/>
-	<Property ID="delay_10" Name="大招延迟（10秒）" ConditionType="15" para1501="10000"/>
-	<Property ID="110107f" Name="6米范围内" ConditionType="10" para1001="6" para1002="&lt;="/>
-	<Property ID="110107g" Name="小于2m" ConditionType="10" para1001="2" para1002="&lt;="/>
-	<Property ID="110107h" Name="小于1m" ConditionType="10" para1001="1" para1002="&lt;="/>
-	<Property ID="110107l" Name="任意距离" ConditionType="10" para1001="0" para1002="&gt;="/>
-	<Property ID="110107j" Name="3米范围内" ConditionType="10" para1001="3" para1002="&lt;="/>
-	<Property ID="110107k" Name="8米范围内" ConditionType="10" para1001="8" para1002="&lt;="/>
-	<Property ID="change_para_1" Name="属性变化" ConditionType="1" para101="HP,MaxHP" para102="1" para103="100" para104="&lt;"/>
-	<Property ID="delay_3" Name="大招延迟" ConditionType="15" para1501="3000"/>
 	<Property ID="110107m" Name="90%血以下" ConditionType="1" para101="HP,MaxHP" para102="1" para103="90" para104="&lt;="/>
-	<Property ID="110107n" Name="4米范围内" ConditionType="10" para1001="4" para1002="&lt;="/>
-	<Property ID="change_para_dodge" Name="属性-格挡" ConditionType="1" para101="Toug" para103="1" para104="=="/>
 	<Property ID="110107x" Name="攻击" ConditionType="1" para101="Level" para102="2" para103="23" para104="&gt;"/>
 	<Property ID="110108a" Name="70%血量以下" ConditionType="1" para101="HP,MaxHP" para102="1" para103="70" para104="&lt;="/>
 	<Property ID="110108b" Name="70%血量以上" ConditionType="1" para101="HP,MaxHP" para102="1" para103="70" para104="&gt;"/>
-	<Property ID="delay_5" Name="大招延迟5秒" ConditionType="15" para1501="5000"/>
-	<Property ID="delay_10_1" Name="大招延迟10秒" ConditionType="15" para1501="10000"/>
 	<Property ID="110108c" Name="80%血量以下" ConditionType="1" para101="HP,MaxHP" para102="1" para103="80" para104="&lt;="/>
 	<Property ID="110108d" Name="50%血量以下" ConditionType="1" para101="HP,MaxHP" para102="1" para103="50" para104="&lt;="/>
 	<Property ID="110108e" Name="20%血量以下" ConditionType="1" para101="HP,MaxHP" para102="1" para103="20" para104="&lt;="/>
-	<Property ID="delay_60" Name="大招延迟（60秒）" ConditionType="15" para1501="60000"/>
 	<Property ID="110108f" Name="1%血量以下" ConditionType="1" para101="HP,MaxHP" para102="1" para103="1" para104="&lt;="/>
-	<Property ID="delay_22" Name="大招延迟22秒" ConditionType="15" para1501="22000"/>
 	<Property ID="110108g" Name="25%血量以上" ConditionType="1" para101="HP,MaxHP" para102="1" para103="25" para104="&gt;="/>
 	<Property ID="110108h" Name="30%血量以上" ConditionType="1" para101="HP,MaxHP" para102="1" para103="30" para104="&gt;="/>
-	<Property ID="delay_40" Name="延迟40秒" ConditionType="15" para1501="40000"/>
-	<Property ID="delay_87" Name="延时87秒" ConditionType="15" para1501="87000"/>
+	<Property ID="110108l" Name="10%血量以下" ConditionType="1" para101="HP,MaxHP" para102="1" para103="10" para104="&lt;="/>
+	<Property ID="delay" Name="大招延迟" ConditionType="15" para1501="15000"/>
+	<Property ID="delay_3" Name="大招延迟" ConditionType="15" para1501="3000"/>
+	<Property ID="delay_5" Name="大招延迟" ConditionType="15" para1501="5000"/>
+	<Property ID="delay_8" Name="延迟8秒" ConditionType="15" para1501="8000"/>
+	<Property ID="delay_10" Name="大招延迟（10秒）" ConditionType="15" para1501="10000"/>
+	<Property ID="delay_10_1" Name="大招延迟" ConditionType="15" para1501="10000"/>
+	<Property ID="delay_11" Name="延迟11秒" ConditionType="15" para1501="11000"/>
+	<Property ID="delay_15" Name="延迟15秒" ConditionType="15" para1501="15000"/>
+	<Property ID="delay_18" Name="延迟18秒" ConditionType="15" para1501="18000"/>
+	<Property ID="delay_20" Name="延迟20秒" ConditionType="15" para1501="20000"/>
+	<Property ID="delay_22" Name="大招延迟" ConditionType="15" para1501="22000"/>
 	<Property ID="delay_30" Name="延时30秒" ConditionType="15" para1501="30000"/>
-	<Property ID="110108i" Name="30%血量以下" ConditionType="1" para101="HP,MaxHP" para102="1" para103="30" para104="&lt;="/>
-	<Property ID="110108j" Name="5米范围外" ConditionType="10" para1001="5" para1002="&gt;="/>
-	<Property ID="110108k" Name="5米开外放技能" ConditionType="10" para1001="5" para1002="&gt;="/>
-	<Property ID="delay_7" Name="大招延迟（7秒）" ConditionType="15" para1501="7000"/>
-	<Property ID="110108l" Name="25%血量以下" ConditionType="1" para101="HP,MaxHP" para102="1" para103="25" para104="&lt;="/>
-	<Property ID="110108m" Name="75%血量以下" ConditionType="1" para101="HP,MaxHP" para102="1" para103="75" para104="&lt;="/>
-	<Property ID="110109a" Name="判断自身BUFF" ConditionType="4" para101="BUFFID"/>
-	<Property ID="110109b" Name="判断目标BUFF" ConditionType="5" para101="BUFFID"/>
-	<Property ID="soldier_001" Name="双子之力ai-buff判断" ConditionType="4" para101="buff_soldier_sk01" para401="buff_soldier_sk01"/>
-	<Property ID="lutanist_001" Name="游乐师-魔状态buff判断" ConditionType="4" para401="buff_lutanist_sk05"/>
-	<Property ID="lutanist_002" Name="友方血量低于60%" ConditionType="3" para301="HP,MaxHP" para302="1" para303="60" para304="&lt;="/>
-	<Property ID="lutanist_003" Name="游乐师-仙切魔血量判断1" ConditionType="1" para101="HP,MaxHP" para102="1" para103="80" para104="&gt;="/>
-	<Property ID="lutanist_004" Name="游乐师-仙切魔血量判断2" ConditionType="3" para301="HP,MaxHP" para302="1" para303="80" para304="&gt;="/>
-	<Property ID="magicm_001" Name="幻术师buff判断" ConditionType="4" para401="buff_magicm_sk04"/>
-	<Property ID="110107i" Name="3米外" ConditionType="10" para1001="3" para1002="&gt;="/>
-	<Property ID="shooter_001" Name="瘟疫buff" ConditionType="5" para501="buff_shooter_sk01"/>
-	<Property ID="lutanist_005" Name="自身血量低于60%" ConditionType="1" para101="HP,MaxHP" para102="1" para103="60" para104="&lt;="/>
-	<Property ID="delay_20" Name="大招延迟（20秒）" ConditionType="15" para1501="20000"/>
-	<Property ID="110108d2" Name="50%血量以上" ConditionType="1" para101="HP,MaxHP" para102="1" para103="50" para104="&gt;"/>
-	<Property ID="110107o" Name="2米范围内" ConditionType="10" para1001="2" para1002="&lt;="/>
-	<Property ID="delay_15" Name="大招延迟（15秒）" ConditionType="15" para1501="15000"/>
-	<Property ID="blackman_001" Name="满怒气释放特殊招式" ConditionType="1" para101="RC" para102="2" para103="100" para104="=="/>
-	<Property ID="ghost_001" Name="满怒气释放特殊招式" ConditionType="1" para101="RC" para102="2" para103="1000" para104="=="/>
-	<Property ID="marksman_pet01" Name="炸弹-爆炸延迟2s" ConditionType="15" para1501="2000"/>
-	<Property ID="mahatma_001" Name="齐天大圣存在AP-buff" ConditionType="5" para501="buff_mahatma_sk05a"/>
-	<Property ID="mahatma_002" Name="齐天大圣存在AD-buff" ConditionType="5" para501="buff_mahatma_sk05b"/>
-	<Property ID="mahatma_003" Name="齐天大圣AD大" ConditionType="1" para101="ADTotal,APTotal" para102="1" para103="100" para104="&gt;="/>
-	<Property ID="mahatma_004" Name="齐天大圣AP大" ConditionType="1" para101="APTotal,ADTotal" para102="1" para103="100" para104="&gt;"/>
-	<Property ID="taoist_001" Name="友方血量低于60%" ConditionType="3" para301="HP,MaxHP" para302="1" para303="70" para304="&lt;="/>
-	<Property ID="captain_001" Name="幽灵船长切刀判断BUFF" ConditionType="4" para401="buff_captain_sk06"/>
-	<Property ID="110108n" Name="90%血量以下" ConditionType="1" para101="HP,MaxHP" para102="1" para103="90" para104="&lt;="/>
-	<Property ID="110108o" Name="60%血量以下" ConditionType="1" para101="HP,MaxHP" para102="1" para103="60" para104="&lt;="/>
-	<Property ID="110108p" Name="40%血量以下" ConditionType="1" para101="HP,MaxHP" para102="1" para103="40" para104="&lt;="/>
-	<Property ID="110108q" Name="10%血量以下" ConditionType="1" para101="HP,MaxHP" para102="1" para103="10" para104="&lt;="/>
-	<Property ID="zym838_boss_01a" Name="蛮牛战斗姿态" ConditionType="4" para401="buff_mon_shu_0028a_02"/>
-	<Property ID="zym838_boss_01b" Name="蛮牛防御姿态" ConditionType="4" para401="buff_mon_shu_0028a_03"/>
-	<Property ID="zym838_boss_01c" Name="蛮牛狂暴姿态" ConditionType="4" para401="buff_mon_shu_0028a_04"/>
-	<Property ID="demon_001" Name="怒气大于等于500" ConditionType="1" para101="RC" para102="2" para103="500" para104="&gt;="/>
-	<Property ID="delay_1" Name="延迟1秒" ConditionType="15" para1501="1000"/>
+	<Property ID="delay_40" Name="延迟40秒" ConditionType="15" para1501="40000"/>
+	<Property ID="delay_60" Name="大招延迟（60秒）" ConditionType="15" para1501="60000"/>
+	<Property ID="delay_87" Name="延时87秒" ConditionType="15" para1501="87000"/>
+	<Property ID="change_para_1" Name="属性变化" ConditionType="1" para101="HP,MaxHP" para102=",比如HP,MaxHP)" para103="100" para104="&lt;"/>
+	<Property ID="change_para_dodge" Name="属性-格挡" ConditionType="1" para101="Toug" para103="1" para104="=="/>
+	<Property ID="110108j" Name="80%血量以上" ConditionType="1" para101="HP,MaxHP" para102="1" para103="80" para104="&gt;"/>
+	<Property ID="110108k" Name="50%血量以上" ConditionType="1" para101="HP,MaxHP" para102="1" para103="50" para104="&gt;"/>
+	<Property ID="110108m" Name="30%血量以下" ConditionType="1" para101="HP,MaxHP" para102="1" para103="30" para104="&lt;"/>
+	<Property ID="110108ee" Name="20%血量以下" ConditionType="1" para101="HP,MaxHP" para102="3" para103="20" para104="&lt;="/>
+	<Property ID="110108mm" Name="30%血量以下" ConditionType="1" para101="HP,MaxHP" para102="3" para103="30" para104="&lt;"/>
+	<Property ID="delay_6" Name="大招延迟" ConditionType="15" para1501="6000"/>
+	<Property ID="delay_480" Name="延迟8分钟" ConditionType="15" para1501="480000"/>
+	<Property ID="bodybroken_1" Name="部位存在" ConditionType="16" para1601="demo_test__link_1"/>
+	<Property ID="range_1" Name="10米范围内有玩家目标" ConditionType="17" para1701="10"/>
+	<Property ID="range_5m" Name="5米范围内有玩家目标" ConditionType="17" para1701="5"/>
+	<Property ID="range_3.5m" Name="3.5米范围内有玩家目标" ConditionType="17" para1701="3.5"/>
+	<Property ID="range_15m" Name="15米范围内有玩家目标" ConditionType="17" para1701="15"/>
+	<Property ID="range_all_35m" Name="3.5米范围内有玩家目标" ConditionType="17" para10="3.5"/>
+	<Property ID="range_50m" Name="50米范围内有玩家目标" ConditionType="17" para1701="50"/>
+	<Property ID="delay_7" Name="延迟7秒" ConditionType="15" para1501="7000"/>
 </Object>
-
 

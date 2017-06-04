@@ -16,6 +16,7 @@
 // gl es ´íÎó¼ì²âº¯Êı
 inline bool TestErr(const char* ident)
 {
+  return false;
 	int err = glGetError();	
 	if(err == GL_NO_ERROR)
 		return false;

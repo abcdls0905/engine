@@ -1,411 +1,388 @@
 <?xml version="1.0" encoding="gb2312"?>
-<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
 <Object>
-	<Property ID="CK_Ns100_01" Name="普通攻击1" HitRangeType="2" HitRangeCylinder=",2,0,180,,"/>
-	<Property ID="CK_Ns101_01" Name="普通攻击2" HitRangeType="2" HitRangeCylinder=",2,0,180,,"/>
-	<Property ID="CK_Ns102_01" Name="普通攻击3" HitRangeType="2" HitRangeCylinder=",2,0,180,,"/>
-	<Property ID="CK_Ns103_01" Name="普通攻击4" HitRangeType="3" HitRangeRectangular=",3.5,2,3,1"/>
-	<Property ID="CK_Sk100_01" Name="技能1" HitRangeType="2" HitRangeCylinder=",3,0,360,,"/>
-	<Property ID="CK_Sk101_01" Name="技能2" HitRangeType="2" HitRangeCylinder=",2,0,360,,"/>
-	<Property ID="CK_Sk102_01" Name="技能3" HitRangeType="2" HitRangeCylinder=",2,0,360,," HitRangeBall=",,,,,,,," HitRangeBallistic=",,,,,,,,,,,,,,"/>
-	<Property ID="CK_Sk103_01" Name="技能4" HitRangeType="2" HitRangeCylinder=",7,0,360,,"/>
-	<Property ID="w_at01r" Name="斩击-1" HitRangeType="2" HitRangeCylinder=",2.5,0,120,,"/>
-	<Property ID="w_at02r" Name="斩击-2" HitRangeType="2" HitRangeCylinder=",2.75,0,120,,"/>
-	<Property ID="w_at03r" Name="斩击-3" HitRangeType="2" HitRangeCylinder=",3,0,120,,"/>
-	<Property ID="w_sk03r" Name="英勇之跃" HitRangeType="2" HitRangeCylinder=",2.5,0,360,,"/>
-	<Property ID="w_sk02r" Name="无畏冲锋" HitRangeType="2" HitRangeCylinder=",3,,120,,"/>
-	<Property ID="w_sk04r" Name="誓死旋风" HitRangeType="2" HitRangeCylinder=",2.5,0,360,,"/>
-	<Property ID="w_at04r" Name="斩击-4" HitRangeType="2" HitRangeCylinder=",3,0,120,,"/>
-	<Property ID="w_sk01r" Name="爆裂斩" HitRangeType="2" HitRangeCylinder=",3.25,0,180,,"/>
-	<Property ID="w_sk01r_1" Name="爆裂斩_二段" HitRangeType="3" HitRangeRectangular="2.75,5.5,2,,0"/>
-	<Property ID="CK_Sk101_01A" Name="腾云坠地" HitRangeType="2" HitRangeCylinder=",3,0,360,10," HitRangeBall=",,,,,,,," HitRangeBallistic=",,,,,,,,,,,,,,"/>
-	<Property ID="skill_test" HitRangeType="2" HitRangeCylinder=",3,0,360,,"/>
-	<Property ID="monk_at01r" Name="功夫-1" HitRangeType="2" HitRangeCylinder="0,3,0,120,,"/>
-	<Property ID="monk_at02r" Name="功夫-2" HitRangeType="2" HitRangeCylinder="0,3,,120,,"/>
-	<Property ID="monk_at03r" Name="功夫-3" HitRangeType="2" HitRangeCylinder="0,3,0,120,,0"/>
-	<Property ID="monk_at04r" Name="功夫-4" HitRangeType="2" HitRangeCylinder=",4.5,0,180,,"/>
-	<Property ID="monk_sk01r" Name="葫顶踢" HitRangeType="3" HitRangeRectangular="0,2,2,,0"/>
-	<Property ID="monk_sk02r" Name="般若转" HitRangeType="2" HitRangeCylinder=",4,0,120,," HitRangeCylinderAwake="0,0.5,0,0,0,0"/>
-	<Property ID="monk_sk03r_1" Name="翻滚" HitRangeType="2" HitRangeCylinder=",1.5,0,360,,"/>
-	<Property ID="monk_sk03r_2" Name="后空踢" HitRangeType="3" HitRangeRectangular="1.125,2.25,2,,0"/>
-	<Property ID="monk_sk01r2" Name="葫顶踢" HitRangeType="3" HitRangeRectangular="2.5,5,2,,0"/>
-	<Property ID="monk_sk04r" Name="万物归一" HitRangeType="2" HitRangeCylinder=",3,,180,0,0"/>
-	<Property ID="monk_sk04r1" Name="万物归一" HitRangeType="2" HitRangeCylinder=",4,,180,,"/>
-	<Property ID="skill_weapon_bing" Name="冰属性武器" HitRangeType="0"/>
-	<Property ID="skill_weapon_dian" Name="电属性武器" HitRangeType="0"/>
-	<Property ID="item_tili_001" Name="少量体力恢复" HitRangeType="0"/>
-	<Property ID="item_tili_002" Name="中量体力恢复" HitRangeType="0"/>
-	<Property ID="item_tili_003" Name="大量体力恢复" HitRangeType="0"/>
-	<Property ID="item_naili_001" Name="少量耐力恢复" HitRangeType="0"/>
-	<Property ID="item_naili_002" Name="中量耐力恢复" HitRangeType="0"/>
-	<Property ID="item_naili_003" Name="大量耐力恢复" HitRangeType="0"/>
-	<Property ID="item_jinbi_001" Name="获取少量金币" HitRangeType="0"/>
-	<Property ID="item_jinbi_002" Name="获取中量金币" HitRangeType="0"/>
-	<Property ID="item_jinbi_003" Name="获取大量金币" HitRangeType="0"/>
-	<Property ID="item_yuntie_001" Name="获取少量陨铁" HitRangeType="0"/>
-	<Property ID="item_yuntie_002" Name="获取中量陨铁" HitRangeType="0"/>
-	<Property ID="item_yuntie_003" Name="获取大量陨铁" HitRangeType="0"/>
-	<Property ID="item_zuanshi_001" Name="获取少量钻石" HitRangeType="0"/>
-	<Property ID="item_zuanshi_002" Name="获取中量钻石" HitRangeType="0"/>
-	<Property ID="item_zuanshi_003" Name="获取大量钻石" HitRangeType="0"/>
-	<Property ID="skill_fire_001" Name="火元素伤害范围" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="nor" HitRangeType="2" HitRangeCylinder=",3,,120,,"/>
-	<Property ID="monk_sk01rb" Name="葫顶踢" HitRangeType="2" HitRangeCylinder=",3,,360,360,360"/>
-	<Property ID="pet_skill_001" HitRangeType="2" HitRangeCylinder=",5,,360,,"/>
-	<Property ID="pet_skill_002" HitRangeType="0"/>
-	<Property ID="pet_skill_003" HitRangeType="0"/>
-	<Property ID="pet_skill_004" HitRangeType="0"/>
-	<Property ID="pet_skill_005" HitRangeType="0"/>
-	<Property ID="pet_skill_006" HitRangeType="0"/>
-	<Property ID="pet_skill_007" HitRangeType="2" HitRangeCylinder=",2.5,0,360,,"/>
-	<Property ID="pet_skill_008" HitRangeType="0"/>
-	<Property ID="pet_skill_009" HitRangeType="0"/>
-	<Property ID="pet_skill_010" HitRangeType="0"/>
-	<Property ID="pet_skill_011" HitRangeType="0"/>
-	<Property ID="pet_skill_012" HitRangeType="0"/>
-	<Property ID="pet_skill_013" HitRangeType="2" HitRangeCylinder=",5,,360,,"/>
-	<Property ID="pet_skill_014" HitRangeType="0"/>
-	<Property ID="pet_skill_015" HitRangeType="0"/>
-	<Property ID="pet_skill_016" HitRangeType="0"/>
-	<Property ID="pet_skill_017" HitRangeType="0"/>
-	<Property ID="pet_skill_018" HitRangeType="0"/>
-	<Property ID="pet_skill_019" HitRangeType="2" HitRangeCylinder=",7,0,360,,"/>
-	<Property ID="pet_skill_020" HitRangeType="0"/>
-	<Property ID="pet_skill_021" HitRangeType="0"/>
-	<Property ID="pet_skill_022" HitRangeType="2" HitRangeCylinder=",5,,360,,"/>
-	<Property ID="pet_skill_023" HitRangeType="0"/>
-	<Property ID="pet_skill_024" HitRangeType="0"/>
-	<Property ID="pet_skill_025" HitRangeType="2" HitRangeCylinder=",5,,360,,"/>
-	<Property ID="pet_skill_026" HitRangeType="2" HitRangeCylinder=",4,0,360,,"/>
-	<Property ID="pet_skill_027" HitRangeType="2" HitRangeCylinder=",5,,360,,"/>
-	<Property ID="pet_skill_028" HitRangeType="0"/>
-	<Property ID="pet_skill_029" HitRangeType="0"/>
-	<Property ID="pet_skill_030" HitRangeType="2" HitRangeCylinder=",5,,360,,"/>
-	<Property ID="monk_sk05r" Name="棍扫六合" HitRangeType="2" HitRangeCylinder=",2,,180,,"/>
-	<Property ID="monk_sk02r_2" Name="般若转" HitRangeType="2" HitRangeCylinder=",3.5,,360,,"/>
-	<Property ID="monk_at08r" Name="功夫群-1、2、3" HitRangeType="2" HitRangeCylinder=",3.5,,180,,"/>
-	<Property ID="monk_at11r" Name="功夫-4" HitRangeType="2" HitRangeCylinder=",4,,180,,"/>
-	<Property ID="ass_at01a" Name="普通攻击1a" HitRangeType="3" HitRangeRectangular="1.1,2.2,1.5,,"/>
-	<Property ID="ass_at01b" Name="普通攻击1b" HitRangeType="3" HitRangeRectangular="1.1,2.2,2,,"/>
-	<Property ID="ass_at01c" Name="普通攻击1c" HitRangeType="3" HitRangeRectangular="1.5,3,2.5,,"/>
-	<Property ID="ass_at01d" Name="普通攻击1d" HitRangeType="3" HitRangeRectangular="1.5,3,2,0,0"/>
-	<Property ID="ass_sk02a" Name="樱花落" HitRangeType="3" HitRangeRectangular="1.5,3,2.5,,"/>
-	<Property ID="ass_sk02b" Name="樱花落" HitRangeType="2" HitRangeCylinder=",3.2,0,360,,"/>
-	<Property ID="ass_sk03" Name="影流刃" HitRangeType="2" HitRangeCylinder=",7,0,360,,"/>
-	<Property ID="ass_sk01" Name="杀人" HitRangeType="2" HitRangeCylinder="3,3,,360,,"/>
-	<Property ID="ass_sk04" Name="跃祸" HitRangeType="2" HitRangeCylinder=",3,0,360,,"/>
-	<Property ID="taoist_at01r" Name="道士普攻1" HitRangeType="2" UseTargetCenter="0" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="monk_at12r" Name="倒地" HitRangeType="2" HitRangeCylinder="1,4,0,360,,"/>
-	<Property ID="monk_at13r" Name="倒地" HitRangeType="2" HitRangeCylinder=",3,,180,,"/>
-	<Property ID="ass_sk05r" Name="跃祸" HitRangeType="2" HitRangeCylinder="0,20,,360,,"/>
-	<Property ID="taiji_z0001r" HitRangeType="2" HitRangeCylinder=",10,,360,,"/>
-	<Property ID="ass_qs01" Name="擒杀群" HitRangeType="2" HitCount="99" HitRangeCylinder="0,3,0,360,,"/>
-	<Property ID="magicm_at01a" Name="普攻1a" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="magicm_at01b" Name="普攻1b" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="magicm_at01c" Name="普攻1c" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="taoist_sk01r" Name="雷电击" HitRangeType="2" UseTargetCenter="0" HitRangeCylinder=",8,,360,,"/>
-	<Property ID="taoist_sk02r" Name="七星阵" HitRangeType="2" UseTargetCenter="0" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="taoist_sk02r_1" Name="七星阵" HitRangeType="2" UseTargetCenter="0" HitRangeCylinder=",3,,360,,"/>
-	<Property ID="taoist_sk03r" Name="道法自然" HitRangeType="2" UseTargetCenter="0" HitRangeCylinder=",4,,360,,"/>
-	<Property ID="magicm_sk02a" Name="影中狱" HitRangeType="3" HitRangeRectangular="0.5,1,3,,"/>
-	<Property ID="magicm_sk02b" Name="追影" HitRangeType="2" HitRangeCylinder="0,3,0,360,,"/>
-	<Property ID="magicm_sk03" Name="幻影三叠" HitRangeType="2" HitRangeCylinder=",8,0,360,,"/>
-	<Property ID="magicm_sk01" Name="幻羽纷飞" HitRangeType="2" HitRangeCylinder=",6,0,90,,"/>
-	<Property ID="killer_at01a" Name="普通攻击1a" HitRangeType="2" HitRangeCylinder=",3,0,120,,"/>
-	<Property ID="killer_at01b" Name="普通攻击1b" HitRangeType="2" HitRangeCylinder=",3,0,120,,"/>
-	<Property ID="killer_at01c" Name="普通攻击1c" HitRangeType="2" HitRangeCylinder=",3,0,120,,"/>
-	<Property ID="killer_at01d" Name="普通攻击1d" HitRangeType="2" HitRangeCylinder=",4,0,180,,"/>
-	<Property ID="taoist_sk04r" Name="擒杀技" HitRangeType="2" UseTargetCenter="0" HitRangeCylinder=",10,,360,,"/>
-	<Property ID="taoist_sk04r_1" Name="擒杀技" HitRangeType="5" UseTargetCenter="0"/>
-	<Property ID="killer_sk02a" Name="拔刀技" HitRangeType="2" HitRangeCylinder=",5,0,119,," HitRangeCylinderAwake="0,0.5,0,0,0,0"/>
-	<Property ID="killer_sk02b" Name="拔刀技" HitRangeType="2" HitRangeCylinder=",5,0,120,," HitRangeCylinderAwake="0,0.5,0,0,0,0"/>
-	<Property ID="killer_sk03" Name="终结技" HitRangeType="2" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="killer_sk01a" Name="冲锋技" HitRangeType="3" HitRangeRectangular="0,7,2,,"/>
-	<Property ID="magicm_sk02c" Name="幻影归位" HitRangeType="2" HitRangeCylinder=",8,0,360,,"/>
-	<Property ID="magicm_at02a" Name="普攻2a" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="magicm_at02b" Name="普攻2b" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="magicm_at02c" Name="普攻2c" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="magicm_sk04" Name="媚化" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="magicm_sk05" Name="幻影复仇" HitRangeType="2" HitRangeCylinder=",4,,360,,"/>
-	<Property ID="killer_sk01b" Name="冲锋技" HitRangeType="5"/>
-	<Property ID="killer_sk04a" Name="擒杀" HitRangeType="2" HitRangeCylinder=",2,,360,,"/>
-	<Property ID="tamer_at01" Name="驯鹰师普攻1" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="tamer_at02" Name="驯鹰师普攻2" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="tamer_at03" Name="驯鹰师普攻3" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="tamer_sk01" Name="巨鹰之怒" HitRangeType="3" HitRangeRectangular="4,8,1,,"/>
-	<Property ID="tamer_sk02" Name="自由之翼" HitRangeType="2" HitRangeCylinder=",5,0,360,,"/>
-	<Property ID="tamer_sk03" Name="群鹰乱舞" HitRangeType="2" HitRangeCylinder=",4.5,0,360,," HitRangeCylinderAwake="0,0.7,0,0,0,0"/>
-	<Property ID="hpoenix_at01a" Name="普攻1a" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="hpoenix_at01b" Name="普攻1b" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="hpoenix_at01c" Name="普攻1c" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="hpoenix_sk02" Name="凤翼天翔" HitRangeType="3" HitRangeRectangular="3,6,2,,"/>
-	<Property ID="hpoenix_sk01" Name="烈焰炙烤" HitRangeType="3" HitRangeRectangular="5,10,2,,"/>
-	<Property ID="taiji_z0002r" Name="太极技1龙卷风" HitRangeType="2" HitRangeCylinder=",1.5,,360,,"/>
-	<Property ID="taiji_z0003r" HitRangeType="2" HitRangeCylinder=",10,,360,,"/>
-	<Property ID="taiji_z0004r" HitRangeType="2" HitRangeCylinder=",,,,,,"/>
-	<Property ID="taiji_z0005r" HitRangeType="2" HitRangeCylinder=",,,,,,"/>
-	<Property ID="taiji_z0006r" HitRangeType="2" HitRangeCylinder=",,,,,,"/>
-	<Property ID="hpoenix_sk03" Name="涅槃重生" HitRangeType="2" HitRangeCylinder=",2,0,360,,"/>
-	<Property ID="hpoenix_sk03a" Name="涅槃重生变身凤凰蛋" HitRangeType="2" HitRangeCylinder=",5,0,360,,"/>
-	<Property ID="soldier_at01" Name="普攻1" HitRangeType="2" HitRangeCylinder=",2.4,0,120,60,"/>
-	<Property ID="soldier_at02" Name="普攻2" HitRangeType="2" HitRangeCylinder=",2.4,0,120,300,"/>
-	<Property ID="soldier_at03" Name="普攻3" HitRangeType="2" HitRangeCylinder=",2.4,0,120,,"/>
-	<Property ID="soldier_at04" Name="普攻4" HitRangeType="3" HitRangeRectangular="1.8,3.6,2,,"/>
-	<Property ID="soldier_sk01" Name="排外·护" HitRangeType="2" HitRangeCylinder=",3,0,360,,"/>
-	<Property ID="soldier_sk02" Name="排外·伤" HitRangeType="2" HitRangeCylinder=",3,0,360,,"/>
-	<Property ID="soldier_sk03" Name="护主" HitRangeType="2" HitRangeCylinder=",1,,,,"/>
-	<Property ID="soldier_sk04" Name="舍己" HitRangeType="2" HitRangeCylinder=",4,0,360,," HitRangeCylinderAwake="0,0.5,0,0,0,0"/>
-	<Property ID="rikishi_at01r" Name="拳" HitRangeType="2" HitRangeCylinder=",2.5,,120,,"/>
-	<Property ID="rikishi_sk01r" Name="狂野冲击" HitRangeType="3" HitRangeRectangular="1,2,1.5,," HitRangeRectangularAwake="0.15,0.3,0,0,0"/>
-	<Property ID="rikishi_sk01r_1" Name="狂野冲击" HitRangeType="2" HitRangeCylinder=",2.5,,360,," HitRangeCylinderAwake="0,0.3,0,0,0,0"/>
-	<Property ID="rikishi_sk04r" Name="汉克之怒" HitRangeType="0"/>
-	<Property ID="rikishi_sk03r" Name="狂暴打击（狂暴状态）" HitRangeType="2" HitRangeCylinder=",5,,360,,"/>
-	<Property ID="skill_caiji001r" Name="采集技能" HitRangeType="2" HitRangeCylinder=",10,,360,,"/>
-	<Property ID="rikishi_sk02r" Name="狂暴打击" HitRangeType="2" HitRangeCylinder=",2,,120,,"/>
-	<Property ID="rikishi_sk02rb" Name="狂暴打击-地板" HitRangeType="2" HitRangeCylinder=",3,,360,,"/>
-	<Property ID="rikishi_qte01r" Name="QTE第一下" HitRangeType="2" HitRangeCylinder=",2,,360,,"/>
-	<Property ID="rikishi_qte02r" Name="QTE踩" HitRangeType="2" HitRangeCylinder=",2,,360,,"/>
-	<Property ID="blackman_at01a" Name="普通攻击1a" HitRangeType="3" UseTargetCenter="0" HitRangeRectangular="3,6,1,,"/>
-	<Property ID="blackman_at01b" Name="普通攻击1b" HitRangeType="3" HitRangeRectangular="3,6,1,,"/>
-	<Property ID="blackman_at01c" Name="普通攻击1c" HitRangeType="3" HitRangeRectangular="3,6,1,,"/>
-	<Property ID="blackman_at01d" Name="普通攻击1d" HitRangeType="3" HitRangeRectangular="3,6,1,,"/>
-	<Property ID="blackman_sk02" Name="回天(牵引）" HitRangeType="2" HitRangeCylinder=",4.5,0,360,," HitRangeCylinderAwake="0,0.5,0,0,0,0"/>
-	<Property ID="blackman_sk03" Name="气功师大招" HitRangeType="3" HitRangeRectangular="5,10,2,,"/>
-	<Property ID="lutanist_at01" Name="弹琴1" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="lutanist_sk01" Name="仙乐曲" HitRangeType="2" HitRangeCylinder=",8,0,360,,"/>
-	<Property ID="lutanist_sk02" Name="魔音飘渺" HitRangeType="2" HitRangeCylinder=",8,0,60,,"/>
-	<Property ID="lutanist_sk03" Name="琵琶颂歌" HitRangeType="2" HitRangeCylinder=",8,,360,,"/>
-	<Property ID="lutanist_sk04" Name="仙曲境" HitRangeType="3" HitRangeRectangular="4,8,3,,"/>
-	<Property ID="lutanist_sk05" Name="调频" HitRangeType="2" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="blackman_pre" Name="气功师普攻变特殊" HitRangeType="2" HitRangeCylinder=",0.5,0,360,,"/>
-	<Property ID="blackman_sk01a" Name="气功师冲锋" HitRangeType="3" HitRangeRectangular="1,2,1.5,,"/>
-	<Property ID="blackman_sk02b" Name="回天(击飞）" HitRangeType="2" HitRangeCylinder=",3,0,360,," HitRangeCylinderAwake="0,0.5,0,0,0,0"/>
-	<Property ID="azrael_at01r" Name="普攻1" HitRangeType="2" HitRangeCylinder=",2,,180,,"/>
-	<Property ID="azrael_at02r" Name="普攻2" HitRangeType="2" HitRangeCylinder=",2,,180,,"/>
-	<Property ID="azrael_at03r" Name="普攻3" HitRangeType="2" HitRangeCylinder=",2,,180,,"/>
-	<Property ID="azrael_at04r" Name="普攻4" HitRangeType="3" HitRangeRectangular="1.5,3,2,,"/>
-	<Property ID="azrael_sk01r" Name="旋风斩" HitRangeType="2" HitRangeCylinder=",2.5,,360,,"/>
-	<Property ID="azrael_sk02r" Name="死神之怒" HitRangeType="2" HitRangeCylinder=",2,,360,,"/>
-	<Property ID="azrael_sk03r" Name="无情铁手" HitRangeType="2" HitRangeCylinder=",4,,360,," HitRangeCylinderAwake="0,0.5,0,0,0,0"/>
-	<Property ID="shooter_at01" Name="普攻1" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="shooter_at02" Name="普攻2" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="shooter_at03" Name="普攻3" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="shooter_sk01" Name="瘟疫之箭" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="shooter_sk02a" Name="邪恶之力-丧尸" HitRangeType="2" HitCount="1" HitRangeCylinder=",8,0,360,,"/>
-	<Property ID="shooter_sk02b" Name="邪恶之力-爆炸" HitRangeType="2" UseTargetCenter="1" HitCount="99" HitRangeCylinder=",2.5,,360,," HitRangeCylinderAwake="0,1,0,0,0,0"/>
-	<Property ID="shooter_sk03" Name="恶灵神箭诀" HitRangeType="2" HitRangeCylinder=",0.5,0,360,,"/>
-	<Property ID="shooter_zombie" Name="丧尸" HitRangeType="2" HitRangeCylinder="1,2,0,90,,"/>
-	<Property ID="winebibber_at01a" Name="不醉酒仙普攻1a" HitRangeType="2" HitRangeCylinder=",2,0,360,,"/>
-	<Property ID="winebibber_at01b" Name="不醉酒仙普攻1b" HitRangeType="2" HitRangeCylinder=",2,0,360,,"/>
-	<Property ID="winebibber_at01c" Name="不醉酒仙普攻1c" HitRangeType="2" HitRangeCylinder=",3,0,360,,"/>
-	<Property ID="winebibber_sk01" Name="不醉酒仙喝酒" HitRangeType="2" HitRangeCylinder=",3,0,360,,"/>
-	<Property ID="winebibber_sk02a" Name="不醉酒仙跳跃" HitRangeType="2" HitRangeCylinder=",2.5,0,360,,"/>
-	<Property ID="winebibber_sk02b" Name="不醉酒仙喷酒" HitRangeType="2" HitRangeCylinder=",6,0,120,,"/>
-	<Property ID="winebibber_sk03" Name="不醉酒仙扔酒坛" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="ass_qs02" Name="擒杀单" HitRangeType="2" HitCount="1" HitRangeCylinder="0,3,0,360,,"/>
-	<Property ID="rikishi_sk04r_2" Name="汉克之怒伤害" HitRangeType="2" HitCount="99" HitRangeCylinder=",4,,360,,"/>
-	<Property ID="swordman_at01r" Name="普攻1" HitRangeType="2" HitRangeCylinder=",3,,120,,"/>
-	<Property ID="swordman_at02r" Name="普攻2" HitRangeType="2" HitRangeCylinder=",3,,120,,"/>
-	<Property ID="swordman_at03r" Name="普攻3" HitRangeType="2" HitRangeCylinder=",3,,180,,"/>
-	<Property ID="swordman_at04r" Name="普攻4" HitRangeType="2" HitRangeCylinder=",3.5,,180,,"/>
-	<Property ID="swordman_pre" Name="普攻4" HitRangeType="2" HitRangeCylinder=",,,,,,"/>
-	<Property ID="swordman_sk01r" Name="万剑穿心" HitRangeType="2" HitRangeCylinder="3,3,,360,,"/>
-	<Property ID="swordman_sk02r" Name="剑冲飞天" HitRangeType="3" HitRangeRectangular="2,3,1.5,,,"/>
-	<Property ID="swordman_sk02rb" Name="剑冲飞天2段" HitRangeType="2" HitRangeCylinder=",3,,120,,"/>
-	<Property ID="swordman_sk03r" Name="无极剑舞" HitRangeType="2" HitRangeCylinder=",4,,360,,"/>
-	<Property ID="swordman_sk03rb" Name="无极剑舞2段" HitRangeType="2" HitRangeCylinder="3,4,,360,,"/>
-	<Property ID="ghost_at01" Name="普攻1" HitRangeType="2" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="ghost_at02" Name="普攻2" HitRangeType="2" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="ghost_at03" Name="普攻3" HitRangeType="2" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="ghost_at04" Name="觉醒-普攻1" HitRangeType="3" HitRangeRectangular="3,6,2,,"/>
-	<Property ID="ghost_at05" Name="觉醒-普攻2" HitRangeType="3" HitRangeRectangular="3,6,2,,"/>
-	<Property ID="ghost_at06" Name="觉醒-普攻3" HitRangeType="3" HitRangeRectangular="3.5,7,2.5,,"/>
-	<Property ID="ghost_sk01" Name="渴望" HitRangeType="2" HitRangeCylinder=",7,,360,," HitRangeCylinderAwake="0,1,0,0,0,0"/>
-	<Property ID="ghost_sk02a" Name="绝望-单" HitRangeType="2" HitCount="1" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="ghost_sk02b" Name="绝望-群" HitRangeType="2" HitCount="99" HitRangeCylinder=",3,,360,,"/>
-	<Property ID="ghost_sk03a" Name="无望-小群" HitRangeType="2" HitCount="1" HitRangeCylinder="3,3,,360,,"/>
-	<Property ID="ghost_sk03b" Name="无望-大群" HitRangeType="2" HitCount="99" HitRangeCylinder="4,4.5,,360,,"/>
-	<Property ID="ghost_sk04" Name="觉醒" HitRangeType="2" HitRangeCylinder=",3,,360,,"/>
-	<Property ID="ghost_sk05" Name="恶魔渴望" HitRangeType="2" HitRangeCylinder=",8,,360,," HitRangeCylinderAwake="0,1,0,0,0,0"/>
-	<Property ID="ghost_sk06a" Name="恶魔绝望-单" HitRangeType="2" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="ghost_sk06b" Name="恶魔绝望-群" HitRangeType="2" HitRangeCylinder=",3,,360,,"/>
-	<Property ID="ghost_sk07a" Name="恶魔无望-单手" HitRangeType="3" HitRangeRectangular="3,6,3,,"/>
-	<Property ID="ghost_sk07b" Name="恶魔无望-双手" HitRangeType="2" HitRangeCylinder="4,4,,360,,"/>
-	<Property ID="swordman_sk02rb_2" Name="剑冲飞天2段" HitRangeType="2" HitRangeCylinder=",4,,120,,"/>
-	<Property ID="pet_skill_031" HitRangeType="2" HitRangeCylinder=",5,,360,,"/>
-	<Property ID="winebibber_sk03a" Name="酒坛爆炸特效" HitRangeType="2" HitCount="99" HitRangeCylinder=",1,0,360,," HitRangeCylinderAwake="0,0.5,0,0,0,0"/>
-	<Property ID="pet_skill_032" Name="血色盛宴" HitRangeType="2" HitRangeCylinder=",5,0,360,,"/>
-	<Property ID="marksman_at01" Name="普攻1" HitRangeType="2" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="marksman_at02" Name="普攻2" HitRangeType="2" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="marksman_at03a" Name="普攻3单" HitRangeType="2" HitCount="1" HitRangeCylinder=",0.5,,360,,"/>
-	<Property ID="marksman_at03b" Name="普攻3群" HitRangeType="2" HitCount="99" HitRangeCylinder=",3,,360,,"/>
-	<Property ID="marksman_sk01" Name="电磁弹" HitRangeType="2" HitRangeCylinder=",1.5,,360,,"/>
-	<Property ID="marksman_sk02" Name="爆破" HitRangeType="2" HitRangeCylinder=",2.5,,360,,"/>
-	<Property ID="monk_sk05r_2" Name="棍扫六合冲锋" HitRangeType="3" HitRangeRectangular="1,2,1.5,,"/>
-	<Property ID="marksman_sk03" Name="埋雷" HitRangeType="2" HitRangeCylinder=",5,,360,,"/>
-	<Property ID="marksman_sk04" Name="位移" HitRangeType="2" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="marksman_sk05a" Name="轰炸指令1" HitRangeType="3" HitRangeRectangular="0,2,3,,"/>
-	<Property ID="marksman_sk05b" Name="轰炸指令2" HitRangeType="3" HitRangeRectangular="2,2,3,,"/>
-	<Property ID="marksman_sk05c" Name="轰炸指令3" HitRangeType="3" HitRangeRectangular="3,2,3,,"/>
-	<Property ID="marksman_sk05d" Name="轰炸指令4" HitRangeType="3" HitRangeRectangular="4,2,3,,"/>
-	<Property ID="marksman_sk05e" Name="轰炸指令5" HitRangeType="3" HitRangeRectangular="5,2,3,,"/>
-	<Property ID="skill_wind_001" Name="风元素伤害范围" HitRangeType="2" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="hpoenix_sk04a" Name="凤翼天翔" HitRangeType="2" HitRangeCylinder="1,1,0,360,,"/>
-	<Property ID="hpoenix_sk04b" Name="凤翼天翔" HitRangeType="3" HitRangeRectangular="3,1,3,,"/>
-	<Property ID="hpoenix_sk04c" Name="凤翼天翔" HitRangeType="3" HitRangeRectangular="5,2,6,,"/>
-	<Property ID="hpoenix_sk04d" Name="凤翼天翔" HitRangeType="3" HitRangeRectangular="7,2,8,,"/>
-	<Property ID="pet_skill_033" Name="致命闪现" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="marksman_pet01" Name="炸弹-吸怪" HitRangeType="2" HitRangeCylinder=",3,0,360,,"/>
-	<Property ID="marksman_pet02" Name="炸弹-爆炸" HitRangeType="2" HitRangeCylinder=",2,0,360,,"/>
-	<Property ID="rikishi_sk02rb_2" Name="狂暴打击-地板" HitRangeType="3" HitRangeRectangular="3,3,2.5,,"/>
-	<Property ID="rikishi_sk02rb_3" Name="狂暴打击-地板" HitRangeType="3" HitRangeRectangular="4,3,2.5,,"/>
-	<Property ID="captain_at01r" Name="刀砍-1" HitRangeType="2" HitRangeCylinder=",,,,,,"/>
-	<Property ID="captain_at02r" Name="刀砍-2" HitRangeType="2" HitRangeCylinder=",,,,,,"/>
-	<Property ID="captain_at03r" Name="刀砍-3" HitRangeType="2" HitRangeCylinder=",,,,,,"/>
-	<Property ID="captain_at04r" Name="刀砍-4" HitRangeType="2" HitRangeCylinder=",,,,,,"/>
-	<Property ID="mahatma_at01" Name="大圣普攻1" HitRangeType="2" HitRangeCylinder=",3,,120,,"/>
-	<Property ID="mahatma_at02" Name="大圣普攻2" HitRangeType="2" HitRangeCylinder=",3,,120,,"/>
-	<Property ID="mahatma_at03" Name="大圣普攻3" HitRangeType="2" HitRangeCylinder=",3.5,,360,,"/>
-	<Property ID="mahatma_at04a" Name="大圣普攻4-抡圆" HitRangeType="2" HitRangeCylinder=",3,,,,"/>
-	<Property ID="mahatma_at04b" Name="大圣普攻4-砸下" HitRangeType="3" HitRangeRectangular="2.2,4.5,2,,"/>
-	<Property ID="mahatma_sk01" Name="突进" HitRangeType="3" HitRangeRectangular="2.5,5,1.5,,"/>
-	<Property ID="mahatma_sk02" Name="瞬身" HitRangeType="2" HitRangeCylinder=",6,,360,,"/>
-	<Property ID="mahatma_sk03a" Name="毫毛1" HitRangeType="3" HitRangeRectangular="0.75,1.5,2,,"/>
-	<Property ID="mahatma_sk03b" Name="毫毛2" HitRangeType="3" HitRangeRectangular="2.25,1.5,2,,"/>
-	<Property ID="mahatma_sk03c" Name="毫毛3" HitRangeType="3" HitRangeRectangular="3.75,1.5,2,,"/>
-	<Property ID="mahatma_sk03d" Name="毫毛4" HitRangeType="3" HitRangeRectangular="5.25,1.5,2,,"/>
-	<Property ID="mahatma_sk04" Name="神针" HitRangeType="2" HitRangeCylinder="3,2,,360,," HitRangeCylinderAwake="0,0.5,0,0,0,0"/>
-	<Property ID="mahatma_sk05" Name="神猴降世" HitRangeType="2" HitRangeCylinder=",3,,360,,"/>
-	<Property ID="mahatma_at05" Name="威力普攻1" HitRangeType="2" HitRangeCylinder=",7,,120,,"/>
-	<Property ID="mahatma_at06" Name="威力普攻2" HitRangeType="2" HitRangeCylinder=",7,,120,,"/>
-	<Property ID="mahatma_at07" Name="威力普攻3" HitRangeType="2" HitRangeCylinder=",7,,120,,"/>
-	<Property ID="mahatma_at08" Name="威力普攻4" HitRangeType="3" HitRangeRectangular="4,8,3,,"/>
-	<Property ID="mahatma_sk06" Name="意扫乾坤" HitRangeType="2" HitRangeCylinder=",4,,360,,"/>
-	<Property ID="mahatma_sk07" Name="灭世" HitRangeType="3" HitRangeRectangular="3.5,7,3,,"/>
-	<Property ID="pet_skill_034" Name="菩提逍遥遁" HitRangeType="2" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="captain_sk01r" Name="幽灵痛击" HitRangeType="2" HitRangeCylinder=",3,,90,,"/>
-	<Property ID="captain_sk02r" Name="幽灵审判" HitRangeType="3" HitRangeRectangular="1,2,1,," HitRangeRectangularAwake="0.15,0.3,0,0,0"/>
-	<Property ID="captain_sk02br" Name="幽灵审判(洪流)" HitRangeType="3" HitRangeRectangular="4,8,4,,"/>
-	<Property ID="captain_sk03r" Name="幽灵转世" HitRangeType="2" HitRangeCylinder=",4,,360,,"/>
-	<Property ID="captain_at01_2r" Name="枪-1" HitRangeType="2" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="captain_at02_2r" Name="枪-2" HitRangeType="2" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="captain_at03_2r" Name="枪-3" HitRangeType="2" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="captain_sk04r" Name="幽灵痛击（枪）" HitRangeType="2" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="captain_sk05r" Name="幽灵审判（枪）" HitRangeType="2" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="captain_sk06r" Name="幽灵转世（枪）" HitRangeType="2" HitRangeCylinder=",4,,360,,"/>
-	<Property ID="fox_at01_rag1" Name="狐仙普攻1" HitRangeType="2" HitRangeCylinder="0,1,0,360,,"/>
-	<Property ID="fox_at02_rag1" Name="狐仙普攻2" HitRangeType="2" HitRangeCylinder="0,1,0,360,,"/>
-	<Property ID="fox_at03_rag1" Name="狐仙普攻3" HitRangeType="2" HitRangeCylinder="0,1,0,360,,"/>
-	<Property ID="fox_at04_rag1" Name="狐仙普攻4" HitRangeType="2" HitRangeCylinder="0,0.5,0,360,,"/>
-	<Property ID="rabbi_at01r" Name="平衡普攻1" HitRangeType="2" UseTargetCenter="0" HitRangeCylinder=",,,,,,"/>
-	<Property ID="rabbi_sk01r" Name="乾坤法珠" HitRangeType="2" UseTargetCenter="0" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="rabbi_sk01br" Name="乾坤法珠" HitRangeType="2" UseTargetCenter="0" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="rabbi_sk02r" Name="空间置换" HitRangeType="2" UseTargetCenter="0" HitRangeCylinder=",,,,,,"/>
-	<Property ID="rabbi_sk02br" Name="空间置换" HitRangeType="2" UseTargetCenter="0" HitRangeCylinder=",5,,360,,"/>
-	<Property ID="rabbi_sk03r" Name="驱使念力" HitRangeType="2" UseTargetCenter="0" HitRangeCylinder=",5,,360,,"/>
-	<Property ID="rabbi_sk03br" Name="驱使念力" HitRangeType="2" UseTargetCenter="0" HitRangeCylinder=",8,,360,,"/>
-	<Property ID="fox_sk01_rag1" Name="雨隐" HitRangeType="2" HitRangeCylinder="0,1.8,0,360,,"/>
-	<Property ID="fox_sk02_rag1" Name="后跳" HitRangeType="2" HitRangeCylinder="0,2,0,360,,"/>
-	<Property ID="rabbi_pet01r" Name="法球攻击" HitRangeType="2" UseTargetCenter="0" HitRangeCylinder=",5,,360,,"/>
-	<Property ID="fox_sk02_rag2" Name="后跳" HitRangeType="3" HitRangeRectangular="2,6,1,0,0"/>
-	<Property ID="fox_sk03_rag1" Name="雨牢" HitRangeType="2" HitRangeCylinder="0,4.5,0,360,,"/>
-	<Property ID="fox_sk03_rag2" Name="雨牢" HitRangeType="2" HitRangeCylinder=",,,,,,"/>
-	<Property ID="fox_sk04_rag1" Name="雨龙" HitRangeType="3" HitRangeRectangular="0,1,1,,"/>
-	<Property ID="fox_sk04_rag2" Name="雨龙" HitRangeType="3" HitRangeRectangular="0,1,1,,"/>
-	<Property ID="fox_sk04_rag3" Name="雨龙" HitRangeType="3" HitRangeRectangular="0,1,1.3,,"/>
-	<Property ID="blackman_sk01b" Name="气功师冲锋2" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="boxer_at01" Name="普攻1" HitRangeType="2" HitRangeCylinder=",3,,120,,"/>
-	<Property ID="boxer_at02" Name="普攻2" HitRangeType="2" HitRangeCylinder=",3,,180,,"/>
-	<Property ID="boxer_at03a" Name="普攻3a" HitRangeType="3" HitRangeRectangular="1.5,3,2,,"/>
-	<Property ID="boxer_at03b" Name="普攻3b" HitRangeType="3" HitRangeRectangular="2,4,3,,"/>
-	<Property ID="boxer_at04" Name="普攻4" HitRangeType="2" UseTargetCenter="0" HitRangeCylinder="2,2,,360,,"/>
-	<Property ID="boxer_sk01" Name="金玉溃" HitRangeType="2" HitRangeCylinder="1,2,,360,,"/>
-	<Property ID="boxer_sk02" Name="极段雷神杀一式" HitRangeType="3" HitRangeRectangular="1.5,3,2,,"/>
-	<Property ID="boxer_sk03" Name="极段雷神杀二式" HitRangeType="3" HitRangeRectangular="1.5,3,2,,"/>
-	<Property ID="boxer_sk04" Name="极段雷神杀三式" HitRangeType="3" HitRangeRectangular="1.5,3,2.5,,"/>
-	<Property ID="boxer_sk05" Name="苍龙背水" HitRangeType="2" HitRangeCylinder=",6,,360,,"/>
-	<Property ID="boxer_at05" Name="喷龙掌1" HitRangeType="3" HitRangeRectangular="4,8,1,,"/>
-	<Property ID="boxer_at06" Name="喷龙掌2" HitRangeType="3" HitRangeRectangular="4,8,1,,"/>
-	<Property ID="pet_skill_038" Name="变龙回天" HitRangeType="2" HitRangeCylinder=",5,0,360,,"/>
-	<Property ID="demon_at01" Name="普攻1" HitRangeType="2" HitRangeCylinder=",3,,180,,"/>
-	<Property ID="demon_at02" Name="普攻2" HitRangeType="2" HitRangeCylinder=",3,,180,,"/>
-	<Property ID="demon_at03" Name="普攻3" HitRangeType="2" HitRangeCylinder=",3,,180,,"/>
-	<Property ID="demon_at04" Name="普攻4" HitRangeType="2" HitRangeCylinder=",3,,180,,"/>
-	<Property ID="demon_sk01" Name="烈焰斩" HitRangeType="2" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="demon_sk02" Name="恶魔之吻" HitRangeType="3" HitRangeRectangular="1,2,1.5,,"/>
-	<Property ID="demon_sk03" Name="恶魔之舞" HitRangeType="2" HitRangeCylinder=",2,,360,,"/>
-	<Property ID="demon_sk04" Name="恶魔降临" HitRangeType="2" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="demon_at05" Name="恶魔普攻1" HitRangeType="2" UseTargetCenter="1" HitCount="99" HitRangeCylinder=",1.5,,360,,"/>
-	<Property ID="demon_at06" Name="恶魔普攻2" HitRangeType="2" UseTargetCenter="1" HitCount="99" HitRangeCylinder=",1.5,,360,,"/>
-	<Property ID="demon_sk05" Name="恶魔烈焰斩" HitRangeType="3" HitRangeRectangular="2,8,2,,"/>
-	<Property ID="demon_sk06" Name="恶魔煞气" HitRangeType="2" HitRangeCylinder=",3,,360,," HitRangeCylinderAwake="0,0.5,0,0,0,0"/>
-	<Property ID="demon_sk07" Name="恶魔之握" HitRangeType="2" HitRangeCylinder=",6,,360,," HitRangeCylinderAwake="0,0.5,0,0,0,0"/>
-	<Property ID="feminine_at01r" Name="普攻1" HitRangeType="2" HitRangeCylinder=",3,,180,,,"/>
-	<Property ID="feminine_at02r" Name="普攻2" HitRangeType="2" HitRangeCylinder=",3,,360,,,"/>
-	<Property ID="feminine_at03r" Name="普攻3" HitRangeType="2" HitRangeCylinder=",3,,180,,"/>
-	<Property ID="feminine_at04r" Name="普攻4" HitRangeType="2" HitRangeCylinder=",3,,360,,"/>
-	<Property ID="feminine_sk01r" Name="嗜血杀戮" HitRangeType="2" HitRangeCylinder=",4,,180,,"/>
-	<Property ID="feminine_sk03r" Name="嗜血之舞" HitRangeType="2" HitRangeCylinder=",2,,360,,"/>
-	<Property ID="feminine_sk04r" Name="嗜血之舞" HitRangeType="2" HitRangeCylinder="1.5,4,,360,,"/>
-	<Property ID="feminine_sk05r" Name="嗜血怒火" HitRangeType="2" HitRangeCylinder=",3,,180,,"/>
-	<Property ID="feminine_sk06r" Name="嗜血怒火" HitRangeType="2" HitRangeCylinder=",,,,,,"/>
-	<Property ID="singed_at01_rag1" Name="炼金普攻1" HitRangeType="2" HitRangeCylinder="0,3,0,130,,"/>
-	<Property ID="singed_at02_rag1" Name="炼金普攻2" HitRangeType="2" HitRangeCylinder="0,3,0,180,,"/>
-	<Property ID="singed_at03_rag1" Name="炼金普攻3" HitRangeType="2" HitRangeCylinder="2,2,0,360,,"/>
-	<Property ID="singed_sk01_rag1" Name="钩子" HitRangeType="2" HitRangeCylinder="0,1,0,360,,"/>
-	<Property ID="singed_sk02_rag1" Name="毒水" HitRangeType="2" HitRangeCylinder="0,3,0,360,," HitRangeCylinderAwake="0,0.3,0,0,0,0"/>
-	<Property ID="singed_sk03_rag1" Name="化合物" HitRangeType="2" HitRangeCylinder="0,4,0,360,,"/>
-	<Property ID="singed_sk04_rag1" Name="化合物" HitRangeType="2" HitRangeCylinder="0,4,0,360,,"/>
-	<Property ID="singed_sk05_rag1" Name="化合物" HitRangeType="2" HitRangeCylinder="0,4,0,360,,"/>
-	<Property ID="singed_sk06_rag1" Name="化合物" HitRangeType="2" HitRangeCylinder="0,4,0,360,,"/>
-	<Property ID="icefemale_at01r" Name="寒冰天使普攻1" HitRangeType="2" UseTargetCenter="0" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="pet_skill_041" Name="冰霜涅槃" HitRangeType="2" HitRangeCylinder=",5,0,360,,"/>
-	<Property ID="icefemale_sk04r" Name="冰锥" HitRangeType="2" UseTargetCenter="0" HitRangeCylinder=",5,,90,,"/>
-	<Property ID="icefemale_sk05r" Name="冰锥" HitRangeType="2" UseTargetCenter="0" HitRangeCylinder=",4,,360,,"/>
-	<Property ID="zhenying_shenen_skill1" Name="挥砍" HitRangeType="2" HitRangeCylinder="0,6,0,120,,"/>
-	<Property ID="zhenying_shenen_skill2" Name="盾击" HitRangeType="2" HitRangeCylinder="2.5,5,0,360,,"/>
-	<Property ID="zhenying_shenen_skill3" Name="回旋斩" HitRangeType="3" HitRangeRectangular="5.5,11,12,,"/>
-	<Property ID="zhenying_shenen_skill4" Name="沉元震" HitRangeType="2" HitRangeCylinder="0,10,0,360,,"/>
-	<Property ID="zhenying_alice_skill1" Name="雷殛" HitRangeType="3" HitRangeRectangular="4.5,9,1,,"/>
-	<Property ID="zhenying_alice_skill2" Name="阵营变身2技能范围" HitRangeType="2" HitRangeCylinder="0,1,0,360,,"/>
-	<Property ID="yuxue2_skill01" Name="潮汐喷吐" HitRangeType="2" HitRangeCylinder=",1,0,360,,"/>
-	<Property ID="yuxue2_skill02" Name="潮汐波纹" HitRangeType="2" HitRangeCylinder="0,9,0,35,,"/>
-	<Property ID="yuxue2_skill03" Name="甩尾" HitRangeType="2" HitRangeCylinder="0,1,0,360,,"/>
-	<Property ID="yuxue2_skill04" Name="穿梭" HitRangeType="2" HitRangeCylinder="0,0.1,0,360,,"/>
-	<Property ID="yuxue2_skill06" Name="海浪拍击1" HitRangeType="2" HitRangeCylinder="0,2,0,360,,"/>
-	<Property ID="yuxue2_skill07" Name="海浪奔袭" HitRangeType="2" HitRangeCylinder="0,4,0,360,,"/>
-	<Property ID="yuxue2_skill05" Name="海浪喷涌" HitRangeType="3" HitRangeRectangular="6,12,2,,"/>
-	<Property ID="yuxue2_skill06a" Name="海浪拍击2" HitRangeType="2" HitRangeCylinder="3,3.5,0,360,,"/>
-	<Property ID="executioner_at01r" Name="普攻1" HitRangeType="2" HitRangeCylinder=",3,,180,,"/>
-	<Property ID="executioner_at02r" Name="普攻2" HitRangeType="2" HitRangeCylinder=",3,,180,,"/>
-	<Property ID="executioner_at03r" Name="普攻3" HitRangeType="2" HitRangeCylinder=",3,,180,,"/>
-	<Property ID="executioner_at04r" Name="普攻4" HitRangeType="2" HitRangeCylinder=",3,,360,,"/>
-	<Property ID="executioner_sk01r" Name="净魂利刃" HitRangeType="3" HitRangeRectangular="4,8,1,,"/>
-	<Property ID="executioner_sk02r" Name="暮色降临" HitRangeType="2" HitRangeCylinder=",3,,360,," HitRangeCylinderAwake="0,0.4,0,0,0,0"/>
-	<Property ID="executioner_sk03r" Name="断喉索命" HitRangeType="2" HitRangeCylinder=",2,,360,,"/>
-	<Property ID="icefemale_sk03r" Name="驱使念力" HitRangeType="2" UseTargetCenter="0" HitRangeCylinder=",5,,360,," HitRangeCylinderAwake="0,0.5,0,0,0,0"/>
-	<Property ID="pike_at01r" Name="普攻1" HitRangeType="2" HitRangeCylinder=",6,,60,,"/>
-	<Property ID="pike_at02r" Name="普攻2" HitRangeType="2" HitRangeCylinder=",6,,60,,"/>
-	<Property ID="pike_at03r" Name="普攻3" HitRangeType="2" HitRangeCylinder=",6,,60,,"/>
-	<Property ID="pike_at04r" Name="普攻4" HitRangeType="2" HitRangeCylinder=",6,,60,,"/>
-	<Property ID="pike_sk01r" Name="长矛飞掷" HitRangeType="2" HitCount="99" HitRangeCylinder=",3,,360,,"/>
-	<Property ID="pike_sk02rb" Name="跳跃一击" HitRangeType="2" HitRangeCylinder=",6,,120,,"/>
-	<Property ID="pike_sk03r" HitRangeType="2" HitRangeCylinder=",6,,180,,"/>
-	<Property ID="druid01_sk01r" Name="雷霆咆哮" HitRangeType="2" HitRangeCylinder=",6,,360,,"/>
-	<Property ID="druid01_sk02r" Name="三连拍" HitRangeType="2" HitRangeCylinder=",6,,360,,"/>
-	<Property ID="druid02_sk01ra" Name="豹冲锋" HitRangeType="3" HitRangeRectangular="1,2,1,,"/>
-	<Property ID="druid02_sk01rb" Name="豹冲锋2" HitRangeType="2" HitRangeCylinder=",3,,360,,"/>
-	<Property ID="druid02_sk02r" Name="野性撕咬" HitRangeType="2" HitRangeCylinder=",8,,360,,"/>
-	<Property ID="meatshield_at01r" Name="普攻1" HitRangeType="2" HitRangeCylinder=",4,,120,,"/>
-	<Property ID="meatshield_at02r" Name="普攻2" HitRangeType="2" HitRangeCylinder=",4,,120,,"/>
-	<Property ID="meatshield_at03r" Name="普攻3" HitRangeType="2" HitRangeCylinder=",4,,180,,"/>
-	<Property ID="meatshield_at04r" Name="普攻4" HitRangeType="2" HitRangeCylinder=",4,,120,,"/>
-	<Property ID="meatshield_sk01r" Name="阴阳咒" HitRangeType="2" HitRangeCylinder=",4,,180,0,"/>
-	<Property ID="meatshield_sk01br" Name="阴阳咒" HitRangeType="2" HitRangeCylinder=",1,,360,,"/>
-	<Property ID="meatshield_sk02r" Name="阴阳突进" HitRangeType="3" HitRangeRectangular=",,,,,"/>
-	<Property ID="meatshield_sk02br" Name="阴阳突进" HitRangeType="2" HitRangeCylinder=",4,,360,,"/>
-	<Property ID="meatshield_sk03r" Name="阴阳牵引" HitRangeType="2" HitRangeCylinder=",6,,360,," HitRangeCylinderAwake="0,0.3,0,0,0,0"/>
-	<Property ID="meatshield_sk03br" Name="阴阳牵引" HitRangeType="2" HitRangeCylinder=",3,,360,,"/>
+	<Property ID="zhanshi_normal_001" Name="战士普攻1" HitRangeType="2" HitRangeCylinder=",6,0,240,3,,,"/>
+	<Property ID="zhanshi_normal_002" Name="战士普攻2" HitRangeType="3" HitRangeRectangular="2,8,5,5,,,"/>
+	<Property ID="zhanshi_normal_003" Name="战士普攻3" HitRangeType="3" HitRangeRectangular="3,7,6,5,,,"/>
+	<Property ID="zhanshi_normal_004" Name="战士普攻4" HitRangeType="3" HitRangeRectangular="2,6,4,3,,,"/>
+	<Property ID="zhanshi_skill_001" Name="螺旋拔刀" HitRangeType="2" HitRangeCylinder=",5,0,360,3,,,"/>
+	<Property ID="zhanshi_skill_002" Name="金刚不坏" HitRangeType="2" HitRangeCylinder=",8,0,360,8,,,"/>
+	<Property ID="zhanshi_skill_003" Name="立定跳远" HitRangeType="3" HitRangeRectangular="6,12,6,5,,,"/>
+	<Property ID="zhanshi_skill_008,"/>
+	<Property ID="zhanshi_skill_004" Name="刀光剑影" HitRangeType="2" HitRangeCylinder=",6,,180,10,,,"/>
+	<Property ID="zhanshi_skill_005" Name="金刚不坏二段" HitRangeType="3" HitRangeRectangular="5,10,5,5,,,"/>
+	<Property ID="zhanshi_skill_006" HitRangeType="2" HitRangeCylinder=",6,,360,98,,,"/>
+	<Property ID="zhanshi_skill_007" HitRangeType="2" HitRangeCylinder=",6,,360,98,,,"/>
+	<Property ID="zhanshi_skill_001_1" HitRangeType="2" HitRangeCylinder=",5,0,360,4,,,"/>
+	<Property ID="xiniu_normal_001" Name="犀牛普攻" HitRangeType="3" HitRangeRectangular="3,8,9,3,,,"/>
+	<Property ID="xiniu_skill_001" Name="激怒" HitRangeType="0"/>
+	<Property ID="xiniu_skill_002" Name="地震波" HitRangeType="2" HitRangeCylinder=",2,,360.000000,3,,,"/>
+	<Property ID="skill_jump_001" Name="跳跃" HitRangeType="0"/>
+	<Property ID="fashi_normal_001" Name="法师普攻" HitRangeType="2" HitRangeCylinder=",1,0,360,3,,,"/>
+	<Property ID="fashi_skill_001" HitRangeType="2" HitRangeCylinder="0,5,0,360,6,,,"/>
+	<Property ID="fashi_skill_002" HitRangeType="0"/>
+	<Property ID="fashi_skill_003" HitRangeType="2" HitRangeCylinder=",3,0,360,3,,,"/>
+	<Property ID="fashi_skill_004" HitRangeType="2" HitRangeCylinder=",8,0,360,6,,,"/>
+	<Property ID="fashi_skill_005" HitRangeType="2" HitRangeCylinder=",5,0,360,3,,,"/>
+	<Property ID="fashi_skill_006,"/>
+	<Property ID="fashi_skill_007" HitRangeType="2" HitRangeCylinder=",10,,,,,,"/>
+	<Property ID="dragon_skill_001" Name="龙火术" HitRangeType="2" HitRangeCylinder="2,16,0,75,12,,,-0.01"/>
+	<Property ID="dragon_skill_002" Name="龙陨术" HitRangeType="2" HitRangeCylinder="0,3,0,360,4,,,"/>
+	<Property ID="wolf_skill_001" Name="爪击" HitRangeType="2" HitRangeCylinder=",5,0,120,3,,,"/>
+	<Property ID="wolf_skill_002" Name="捕猎" HitRangeType="0"/>
+	<Property ID="mushi_normal_001" HitRangeType="2" HitRangeCylinder=",1,0,360,2,,,"/>
+	<Property ID="mushi_skill_001" HitRangeType="0"/>
+	<Property ID="mushi_skill_002" HitRangeType="2" HitRangeCylinder=",1,0,360,4,,,"/>
+	<Property ID="mushi_skill_003" HitRangeType="0"/>
+	<Property ID="mushi_skill_004" HitRangeType="0"/>
+	<Property ID="mushi_skill_005" HitRangeType="2" HitRangeCylinder=",6,0,360,4,,,"/>
+	<Property ID="mushi_skill_006" HitRangeType="2" HitRangeCylinder=",3,0,360,4,,,"/>
+	<Property ID="mushi_normal_002" HitRangeType="2" HitRangeCylinder=",1,0,360,2,,,"/>
+	<Property ID="mushi_normal_003" HitRangeType="2" HitRangeCylinder=",1,0,360,2,,,"/>
+	<Property ID="mushi_skill_008" HitRangeType="2" HitRangeCylinder=",10,0,360,6,,,"/>
+	<Property ID="zhoushu_normal_001" HitRangeType="2" HitRangeCylinder=",1,0,360,3,,,"/>
+	<Property ID="zhoushu_normal_002" HitRangeType="2" HitRangeCylinder=",1,0,360,3,,,"/>
+	<Property ID="zhoushu_normal_003" HitRangeType="2" HitRangeCylinder=",1,0,360,3,,,"/>
+	<Property ID="zhoushu_skill_001" HitRangeType="2" HitRangeCylinder=",8,0,360,5,,,"/>
+	<Property ID="zhoushu_skill_002" HitRangeType="2" HitRangeCylinder=",1,0,360,3,,,"/>
+	<Property ID="zhoushu_skill_003" HitRangeType="2" HitRangeCylinder=",3,0,360,3,,,"/>
+	<Property ID="zhoushu_skill_004" HitRangeType="2" HitRangeCylinder=",4,0,360,13,,,"/>
+	<Property ID="zhoushu_skill_005" HitRangeType="2" HitRangeCylinder=",5,0,360,3,,,"/>
+	<Property ID="zhoushu_skill_006" HitRangeType="2" HitRangeCylinder=",1,0,360,3,,,"/>
+	<Property ID="zhoushu_skill_007" HitRangeType="2" HitRangeCylinder=",1,0,360,3,,,"/>
+	<Property ID="horse_skill_001" HitRangeType="0"/>
+	<Property ID="horse_normal_001" HitRangeType="2" HitRangeCylinder="0,5,0,180,3,,,"/>
+	<Property ID="horse_normal_001_4" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="wolf_skill_001_4" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="xiniu_normal_001_4" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="dragon3_skillrang_001" HitRangeType="2" HitRangeCylinder="0,9,,360,4,,,"/>
+	<Property ID="xiniu_normal_001_2" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="xiniu_normal_001_3" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_normal_001_3" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="wolf_normal_001_3" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="gongjian_normal_001" HitRangeType="2" HitRangeCylinder=",1,0,360,2,,,"/>
+	<Property ID="gongjian_normal_002" HitRangeType="2" HitRangeCylinder=",1,0,360,2,,,"/>
+	<Property ID="gongjian_normal_003" HitRangeType="2" HitRangeCylinder=",1,0,360,2,,,"/>
+	<Property ID="gongjian_skill_001" HitRangeType="3" HitRangeRectangular="15,30,5,4,,,"/>
+	<Property ID="gongjian_skill_002" HitRangeType="2" HitRangeCylinder=",1,0,360,2,,,"/>
+	<Property ID="gongjian_skill_003" HitRangeType="2" HitRangeCylinder=",4,0,360,2,,,"/>
+	<Property ID="gongjian_skill_004" HitRangeType="2" HitRangeCylinder="0,10,0,360,20,,,"/>
+	<Property ID="gongjian_skill_005" HitRangeType="2" HitRangeCylinder=",8,0,360,5,,,"/>
+	<Property ID="gongjian_skill_006" HitRangeType="2" HitRangeCylinder=",6,0,360,3,,,"/>
+	<Property ID="fashi_normal_002" Name="法师普攻" HitRangeType="2" HitRangeCylinder=",1,0,360,3,,,"/>
+	<Property ID="fashi_normal_003" Name="法师普攻" HitRangeType="2" HitRangeCylinder=",1,0,360,3,,,"/>
+	<Property ID="xiniu_normal_001_5" Name="弓箭手-犀牛普攻" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="wolf_skill_001_5" Name="弓箭手-狼骑普攻" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_normal_001_5" Name="弓箭手-马普攻" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_normal_001_2" Name="法师-马普攻" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="landbird_normal_001" Name="战士-陆行鸟普攻" HitRangeType="2" HitRangeCylinder="0,5.000000,,180.000000,88,,,"/>
+	<Property ID="landbird_normal_001_3" Name="咒术师-陆行鸟-普攻" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="landbird_normal_001_4" Name="牧师-陆行鸟普攻" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="landbird_normal_001_2" Name="法师-陆行鸟普攻" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="landbird_normal_001_5" Name="弓箭手-陆行鸟普攻" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="bear_normal_001" Name="战士-熊普攻" HitRangeType="2" HitRangeCylinder="0,5.000000,0,180.000000,88,,,"/>
+	<Property ID="bear_normal_001_2" Name="法师-熊普攻" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="bear_normal_001_3" Name="咒术师-熊普攻" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="bear_normal_001_4" Name="牧师-熊普攻" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="bear_normal_001_5" Name="弓箭手-熊普攻" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="xiniu_normal_002" Name="犀牛普攻第二段" HitRangeType="3" HitRangeRectangular="4,7,8,3,,,"/>
+	<Property ID="wolf_normal_002" Name="狼骑普攻第二段" HitRangeType="3" HitRangeRectangular="3,6,3,5,,,"/>
+	<Property ID="horse_normal_002" Name="马普攻第二段" HitRangeType="3" HitRangeRectangular="3,6,3,5,,,"/>
+	<Property ID="bear_normal_002" Name="熊普攻第二段" HitRangeType="3" HitRangeRectangular="3,6,3,5,,,"/>
+	<Property ID="landbird_normal_002" Name="陆行鸟普攻第二段" HitRangeType="3" HitRangeRectangular="3,6,3,5,,,"/>
+	<Property ID="xiniu_normal_002_3" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="xiniu_normal_002_4" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="xiniu_normal_002_5" Name="弓箭手-犀牛普攻第二式" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="xiniu_normal_002_2" Name="法师普攻第二式" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="wolf_normal_002_3" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="wolf_normal_002_4" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="wolf_normal_002_5" Name="弓箭手-狼骑普攻" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="wolf_normal_002_2" Name="法师普攻第二式" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="horse_normal_002_3" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_normal_002_4" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_normal_002_5" Name="弓箭手-普攻" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_normal_002_2" Name="法师普攻第二式" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="bear_normal_002_3" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="bear_normal_002_4" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="bear_normal_002_5" Name="弓箭手-普攻第二式" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="bear_normal_002_2" Name="法师普攻第二式" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="landbird_normal_002_3" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="landbird_normal_002_4" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="landbird_normal_002_5" Name="弓箭手-普攻第二式" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="landbird_normal_002_2" Name="法师普攻第二式" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="dragon3_normal_001" Name="雷龙普攻范围" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,4,,,"/>
+	<Property ID="zhanshi_skill_004_1" Name="刀光剑影砸地" HitRangeType="3" HitRangeRectangular="13,24,8,3,,,"/>
+	<Property ID="zhanshi_skill_003_1" Name="立定跳远落地" HitRangeType="2" HitRangeCylinder=",6,0,360,5,,,"/>
+	<Property ID="eagle_normal_001" Name="狮鹫普攻" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,3,,,"/>
+	<Property ID="fitzx_normal_001" HitRangeType="2" HitRangeCylinder=",5,0,240,3,,,"/>
+	<Property ID="fitzx_normal_002" HitRangeType="2" HitRangeCylinder=",5,0,180,3,,,"/>
+	<Property ID="fitzx_normal_003" HitRangeType="2" HitRangeCylinder=",5,0,260,3,,,"/>
+	<Property ID="fitzx_skill_001" HitRangeType="2" HitRangeCylinder="3,4.5,0,360,4,,,"/>
+	<Property ID="fitzx_skill_002" HitRangeType="2" HitRangeCylinder=",8,0,360,8,,,"/>
+	<Property ID="fitzx_skill_003" HitRangeType="2" HitRangeCylinder=",8,0,360,4,,,"/>
+	<Property ID="fitzx_skill_004" HitRangeType="3" HitRangeRectangular="4,12,4,5,,,"/>
+	<Property ID="fitzx_skill_005" HitRangeType="3" HitRangeRectangular="5,10,5,4,,,"/>
+	<Property ID="fitzx_skill_001_1" HitRangeType="2" HitRangeCylinder="3,6.5,0,360,4,,,"/>
+	<Property ID="item_skill_001" HitRangeType="0"/>
+	<Property ID="aidms_normal_001" HitRangeType="2" HitRangeCylinder=",1,0,360,3,,,"/>
+	<Property ID="aidms_normal_002" HitRangeType="2" HitRangeCylinder=",1,0,360,3,,,"/>
+	<Property ID="aidms_normal_003" HitRangeType="2" HitRangeCylinder=",1,0,360,3,,,"/>
+	<Property ID="aidms_skill_001" HitRangeType="2" HitRangeCylinder=",1,0,360,3,,,"/>
+	<Property ID="aidms_skill_002" HitRangeType="0"/>
+	<Property ID="aidms_skill_003" HitRangeType="2" HitRangeCylinder=",1,0,360,3,,,"/>
+	<Property ID="aidms_skill_004" HitRangeType="2" HitRangeCylinder=",1,0,360,3,,,"/>
+	<Property ID="aidms_skill_005" HitRangeType="2" HitRangeCylinder=",6,0,360,4,,,"/>
+	<Property ID="aidms_skill_006" HitRangeType="2" HitRangeCylinder=",3,0,360,3,,,"/>
+	<Property ID="xiniu_normal_001_pre" Name="犀牛普攻冲锋" HitRangeType="2" HitRangeCylinder="0,6.5,0,200,2.5,,,"/>
+	<Property ID="landbird_skill_001" HitRangeType="0"/>
+	<Property ID="landbird_normal_001_6" Name="狮子战士-陆行鸟普攻" HitRangeType="2" HitRangeCylinder="0,6.5,,360,2.5,,,"/>
+	<Property ID="landbird_normal_001_7" Name="男牧师-陆行鸟普攻" HitRangeType="2" HitRangeCylinder="0,1.5,,360,1,,,"/>
+	<Property ID="xiniu_normal_001_6" Name="狮子战士-犀牛普攻" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,2.5,,,"/>
+	<Property ID="xiniu_normal_001_7" Name="男牧师-犀牛普攻" HitRangeType="2" HitRangeCylinder="0,1.5,0,140,1,,,"/>
+	<Property ID="wolf_skill_001_6" Name="狮子战士-狼骑普攻" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,2.5,,,"/>
+	<Property ID="wolf_skill_001_7" Name="男牧师-狼骑普攻第二式" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="wolf_normal_002_6" Name="狮子战士-狼骑普攻" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,2.5,,,"/>
+	<Property ID="wolf_normal_002_7" Name="男牧师-狼骑普攻第二式" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="landbird_normal_002_7" Name="男牧师-陆行鸟普攻" HitRangeType="2" HitRangeCylinder="0,1.5,,360,1,,,"/>
+	<Property ID="landbird_normal_002_6" Name="狮子战士-陆行鸟普攻" HitRangeType="2" HitRangeCylinder="0,6.5,,240,2.5,,,"/>
+	<Property ID="horse_normal_001_6" Name="狮子战士-马普攻" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,2.5,,,"/>
+	<Property ID="horse_normal_001_7" Name="男牧师-马普攻" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_normal_002_6" Name="狮子战士-马普攻" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,2.5,,,"/>
+	<Property ID="horse_normal_002_7" Name="男牧师-马普攻" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="bear_normal_001_6" Name="狮子战士-马普攻" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,2.5,,,"/>
+	<Property ID="bear_normal_001_7" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="bear_normal_002_6" Name="狮子战士-马普攻" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,2.5,,,"/>
+	<Property ID="bear_normal_002_7" Name="男牧师-马普攻" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="xiniu_normal_002_6" Name="狮子战士-犀牛普攻" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,2.5,,,"/>
+	<Property ID="xiniu_normal_002_7" Name="男牧师-犀牛普攻" HitRangeType="2" HitRangeCylinder="0,1.5,0,140,1,,,"/>
+	<Property ID="fitzx_skill_004_1" HitRangeType="3" HitRangeRectangular="11,22,5,5,,,"/>
+	<Property ID="skill_chuansong_001" Name="回城" HitRangeType="0"/>
+	<Property ID="xiniu_skill_002_1" Name="地震波二段" HitRangeType="2" HitRangeCylinder="2,5,,360.000000,3,,,"/>
+	<Property ID="aidms_skill_007" HitRangeType="2" HitRangeCylinder=",1,0,360,3,,,"/>
+	<Property ID="aidms_skill_008" HitRangeType="2" HitRangeCylinder=",10,0,360,6,,,"/>
+	<Property ID="gongjian_skill_003_1" HitRangeType="2" HitRangeCylinder=",6,0,360,2,,,"/>
+	<Property ID="bear_skill_001" HitRangeType="0"/>
+	<Property ID="landbird_normal_003_2" Name="法师普攻第三式" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="bear_normal_003_2" Name="法师普攻第三式" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="horse_normal_003_2" Name="法师普攻第三式" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="wolf_normal_003_2" Name="法师普攻第三式" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="xiniu_normal_003_2" Name="法师普攻第三式" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="wenzhang_skill_001" HitRangeType="2" HitRangeCylinder=",10,0,360,5,,,"/>
+	<Property ID="wenzhang_skill_002" HitRangeType="2" HitRangeCylinder=",10,0,360,5,,,"/>
+	<Property ID="wenzhang_skill_003" HitRangeType="0"/>
+	<Property ID="wenzhang_skill_004" HitRangeType="2" HitRangeCylinder=",10,0,360,5,,,"/>
+	<Property ID="wenzhang_skill_005" HitRangeType="0"/>
+	<Property ID="horse_normal_003_3" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="wolf_normal_003_3" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="xiniu_normal_003_3" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="bear_normal_003_3" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="landbird_normal_003_3" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="zhanshi_skill_004_2" Name="刀光剑影第二次命中" HitRangeType="3" HitRangeRectangular="5.5,11,6,3,,,"/>
+	<Property ID="fashi_skill_001_1" HitRangeType="2" HitRangeCylinder="0,7,0,360,8,,,"/>
+	<Property ID="horse_normal_003_4" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,5,,,"/>
+	<Property ID="wolf_normal_003_4" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,5,,,"/>
+	<Property ID="xiniu_normal_003_4" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,5,,,"/>
+	<Property ID="bear_normal_003_4" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,5,,,"/>
+	<Property ID="landbird_normal_003_4" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,5,,,"/>
+	<Property ID="landbird_normal_003_5" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="bear_normal_003_5" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="xiniu_normal_003_5" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="wolf_normal_003_5" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_normal_003_5" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_normal_003_7" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="wolf_normal_003_7" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="xiniu_normal_003_7" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="bear_normal_003_7" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="landbird_normal_003_7" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="dragon_skill_004" Name="群星陨落" HitRangeType="2" HitRangeCylinder="0,7,0,360,6,,,"/>
+	<Property ID="horse_skill_002" Name="独角兽" HitRangeType="2" HitRangeCylinder=",8,0,360,4,,,"/>
+	<Property ID="horse_002_normal_001" Name="熊猫战士-独角兽-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,6.5,0,240,2.5,,,"/>
+	<Property ID="horse_002_normal_001_4" Name="女牧师-独角兽-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_002_normal_001_2" Name="法师-独角兽-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_002_normal_001_3" Name="咒术师-独角兽-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_002_normal_001_6" Name="狮子战士-独角兽-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,5,,,"/>
+	<Property ID="horse_002_normal_001_7" Name="男牧师-独角兽-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,140,1,,,"/>
+	<Property ID="horse_002_normal_001_5" Name="弓箭手-独角兽-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_002_normal_002_6" Name="狮子战士-独角兽-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,5,,,"/>
+	<Property ID="horse_002_normal_002_7" Name="男牧师-独角兽-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_002_normal_002_3" Name="咒术师-独角兽-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_002_normal_002_4" Name="女牧师-独角兽-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_002_normal_002_5" Name="弓箭手-独角兽-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_002_normal_002_2" Name="法师-独角兽-普攻-第二段" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="horse_002_normal_002" Name="熊猫战士-独角兽-普攻-第二段" HitRangeType="3" HitRangeRectangular="3,6,3,5,,,"/>
+	<Property ID="horse_002_normal_003_7" Name="男牧师-独角兽-普攻-第三式" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_002_normal_003_5" Name="弓箭手-独角兽-普攻-第三式" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_002_normal_003_4" Name="女牧师-独角兽-普攻-第三式" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,5,,,"/>
+	<Property ID="horse_002_normal_003_3" Name="咒术师-独角兽-普攻-第三式" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_002_normal_003_2" Name="法师-独角兽-普攻-第三式" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="gongjian_ride_normal_003_5" Name="弓箭手-独角兽-普攻-第三式" HitRangeType="2" HitRangeCylinder="0,0.5,0,360,3,,,"/>
+	<Property ID="wolf_skill_003" Name="隐身" HitRangeType="0"/>
+	<Property ID="xunfu_xiniu_normal_001" Name="犀牛普攻" HitRangeType="2" HitRangeCylinder="0,3,0,240,2.5,,,"/>
+	<Property ID="xunfu_horse_normal_001" Name="驯服-马" HitRangeType="2" HitRangeCylinder=",8,0,360,3,,,"/>
+	<Property ID="boss_jiachong_007_rang1" Name="静电圈1" HitRangeType="2" HitRangeCylinder="0,38,32,360,3,,,"/>
+	<Property ID="boss_jiachong_007_rang3" Name="静电圈3" HitRangeType="2" HitRangeCylinder="0,33,27,360,3,,,"/>
+	<Property ID="boss_jiachong_007_rang5" Name="静电圈5" HitRangeType="2" HitRangeCylinder="0,29,23,360,3,,,"/>
+	<Property ID="boss_jiachong_007_rang7" Name="静电圈7" HitRangeType="2" HitRangeCylinder="0,24.5,18.5,360,3,,,"/>
+	<Property ID="boss_jiachong_007_rang9" Name="静电圈9" HitRangeType="2" HitRangeCylinder="0,18.5,12.5,360,3,,,"/>
+	<Property ID="boss_jiachong_007_rang10" Name="静电圈6" HitRangeType="2" HitRangeCylinder="0,17,11,360,3,,,"/>
+	<Property ID="boss_jiachong_007_rang2" Name="静电圈2" HitRangeType="2" HitRangeCylinder="0,35.5,29.5,360,3,,,"/>
+	<Property ID="boss_jiachong_007_rang4" Name="静电圈4" HitRangeType="2" HitRangeCylinder="0,31,25,360,3,,,"/>
+	<Property ID="boss_jiachong_007_rang6" Name="静电圈6" HitRangeType="2" HitRangeCylinder="0,27,21,360,3,,,"/>
+	<Property ID="boss_jiachong_007_rang8" Name="静电圈8" HitRangeType="2" HitRangeCylinder="0,20.5,16.5,360,3,,,"/>
+	<Property ID="boss_jiachong_007_rangb" Name="最后一掌" HitRangeType="2" HitRangeCylinder="7.5,7.5,0,360,3,,,"/>
+	<Property ID="boss_jiachong_007_ranga1" Name="内静电圈1" HitRangeType="2" HitRangeCylinder="0,5.2,0,360,3,,,"/>
+	<Property ID="boss_jiachong_007_ranga3" Name="内静电圈3" HitRangeType="2" HitRangeCylinder="0,9.2,6.5,360,3,,,"/>
+	<Property ID="boss_jiachong_007_ranga5" Name="内静电圈5" HitRangeType="2" HitRangeCylinder="0,11,8,360,3,,,"/>
+	<Property ID="boss_jiachong_007_ranga7" Name="内静电圈7" HitRangeType="2" HitRangeCylinder="0,11,8,360,3,,,"/>
+	<Property ID="boss_jiachong_007_ranga9" Name="内静电圈9" HitRangeType="2" HitRangeCylinder="0,3,0,360,3,,,"/>
+	<Property ID="boss_jiachong_007_ranga2" Name="内静电圈2" HitRangeType="2" HitRangeCylinder="0,7.2,4.5,360,3,,,"/>
+	<Property ID="boss_jiachong_007_ranga4" Name="内静电圈4" HitRangeType="2" HitRangeCylinder="0,10,8,360,3,,,"/>
+	<Property ID="boss_jiachong_007_ranga6" Name="内静电圈6" HitRangeType="2" HitRangeCylinder="0,11,8,360,3,,,"/>
+	<Property ID="boss_jiachong_007_ranga8" Name="内静电圈8" HitRangeType="2" HitRangeCylinder="0,7,4,360,3,,,"/>
+	<Property ID="xiniu_normal_003" Name="犀牛普攻第三段" HitRangeType="3" HitRangeRectangular="3,7,9,3,,,"/>
+	<Property ID="wolf_normal_003" Name="狼骑普攻第三段" HitRangeType="2" HitRangeCylinder=",6.5,,240,5,,,"/>
+	<Property ID="horse_normal_003" Name="马普攻第三段" HitRangeType="2" HitRangeCylinder=",6.5,,240,5,,,"/>
+	<Property ID="bear_normal_003" Name="熊普攻第三段" HitRangeType="2" HitRangeCylinder=",6.5,,240,5,,,"/>
+	<Property ID="landbird_normal_003" Name="陆行鸟普攻第三段" HitRangeType="2" HitRangeCylinder="0,6.5,0,240,5,,,"/>
+	<Property ID="horse_002_normal_003" Name="独角兽普攻第三段" HitRangeType="2" HitRangeCylinder="0,6.5,0,240,5,,,"/>
+	<Property ID="fitzx_normal_004" HitRangeType="3" HitRangeRectangular="3,6,6,3,,,"/>
+	<Property ID="dragon_skill_005" Name="龙火术" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,4,,,"/>
+	<Property ID="skill_chixuhuixue_001" Name="持续回血" HitRangeType="0"/>
+	<Property ID="xiniu_skill_003" Name="无畏冲锋" HitRangeType="2" HitRangeCylinder=",3,,360.000000,3,,,"/>
+	<Property ID="xiniu_skill_004" Name="无畏冲锋取消" HitRangeType="0"/>
+	<Property ID="horse_skill_003" Name="骨马" HitRangeType="2" HitRangeCylinder=",3,0,360,3,,,"/>
+	<Property ID="ride_xunmenglong_001" HitRangeType="0"/>
+	<Property ID="fenghuang_skill_001" HitRangeType="2" HitRangeCylinder=",7,0,360,5,,,"/>
+	<Property ID="fenghuang_skill_002" HitRangeType="0"/>
+	<Property ID="horse_skill_004" Name="天马" HitRangeType="0"/>
+	<Property ID="horse_skill_005" Name="天马" HitRangeType="0"/>
+	<Property ID="ride_longj_001" HitRangeType="2" HitRangeCylinder=",6,0,360,6,,,"/>
+	<Property ID="ride_longj_002" HitRangeType="2" HitRangeCylinder=",6,0,360,6,,,"/>
+	<Property ID="ride_longj_003" HitRangeType="2" HitRangeCylinder=",6,0,360,6,,,"/>
+	<Property ID="ride_longj_004" HitRangeType="2" HitRangeCylinder=",6,0,360,6,,,"/>
+	<Property ID="kingkong_skill_001_1" HitRangeType="2" HitRangeCylinder=",7,0,360,6,,,"/>
+	<Property ID="horse_003_normal_001" Name="熊猫战士-骨马-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,6.5,0,240,2.5,,,"/>
+	<Property ID="horse_003_normal_001_4" Name="女牧师-骨马-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_003_normal_001_2" Name="法师-骨马-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_003_normal_001_3" Name="咒术师-骨马-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_003_normal_001_6" Name="狮子战士-骨马-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,5,,,"/>
+	<Property ID="horse_003_normal_001_7" Name="男牧师-骨马-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,140,1,,,"/>
+	<Property ID="horse_003_normal_001_5" Name="弓箭手-骨马-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_003_normal_002_6" Name="狮子战士-骨马-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,5,,,"/>
+	<Property ID="horse_003_normal_002_7" Name="男牧师-骨马-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_003_normal_002_3" Name="咒术师-骨马-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_003_normal_002_4" Name="女牧师-骨马-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_003_normal_002_5" Name="弓箭手-骨马-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_003_normal_002_2" Name="法师-骨马-普攻-第二段" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="horse_003_normal_002" Name="熊猫战士-骨马-普攻-第二段" HitRangeType="3" HitRangeRectangular="3,6,3,5,,,"/>
+	<Property ID="horse_003_normal_003_7" Name="男牧师-骨马-普攻-第三段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_003_normal_003_5" Name="弓箭手-骨马-普攻-第三段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_003_normal_003_4" Name="女牧师-骨马-普攻-第三段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,5,,,"/>
+	<Property ID="horse_003_normal_003_3" Name="咒术师-骨马-普攻-第三段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_003_normal_003_2" Name="法师-骨马-普攻-第三段" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="dragon_005_normal_001" Name="熊猫战士-骨马-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,6.5,0,240,2.5,,,"/>
+	<Property ID="dragon_005_normal_001_4" Name="女牧师-骨马-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="dragon_005_normal_001_2" Name="法师-骨马-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="dragon_005_normal_001_3" Name="咒术师-骨马-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="dragon_005_normal_001_6" Name="狮子战士-骨马-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,5,,,"/>
+	<Property ID="dragon_005_normal_001_7" Name="男牧师-骨马-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,140,1,,,"/>
+	<Property ID="dragon_005_normal_001_5" Name="弓箭手-骨马-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="dragon_005_normal_002_6" Name="狮子战士-骨马-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,5,,,"/>
+	<Property ID="dragon_005_normal_002_7" Name="男牧师-骨马-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="dragon_005_normal_002_3" Name="咒术师-骨马-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="dragon_005_normal_002_4" Name="女牧师-骨马-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="dragon_005_normal_002_5" Name="弓箭手-骨马-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="dragon_005_normal_002_2" Name="法师-骨马-普攻-第二段" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="dragon_005_normal_002" Name="熊猫战士-骨马-普攻-第二段" HitRangeType="3" HitRangeRectangular="3,6,3,5,,,"/>
+	<Property ID="dragon_005_normal_003_7" Name="男牧师-骨马-普攻-第三段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="dragon_005_normal_003_5" Name="弓箭手-骨马-普攻-第三段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="dragon_005_normal_003_4" Name="女牧师-骨马-普攻-第三段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,5,,,"/>
+	<Property ID="dragon_005_normal_003_3" Name="咒术师-骨马-普攻-第三段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="dragon_005_normal_003_2" Name="法师-骨马-普攻-第三段" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="kingkong_normal_001" Name="熊猫战士-金刚-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,6.5,0,240,2.5,,,"/>
+	<Property ID="kingkong_normal_001_4" Name="女牧师-金刚-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="kingkong_normal_001_2" Name="法师-金刚-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="kingkong_normal_001_3" Name="咒术师-金刚-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="kingkong_normal_001_6" Name="狮子战士-金刚-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,5,,,"/>
+	<Property ID="kingkong_normal_001_7" Name="男牧师-金刚-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,140,1,,,"/>
+	<Property ID="kingkong_normal_001_5" Name="弓箭手-金刚-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="kingkong_normal_002_6" Name="狮子战士-金刚-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,5,,,"/>
+	<Property ID="kingkong_normal_002_7" Name="男牧师-金刚-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="kingkong_normal_002_3" Name="咒术师-金刚-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="kingkong_normal_002_4" Name="女牧师-金刚-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="kingkong_normal_002_5" Name="弓箭手-金刚-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="kingkong_normal_002_2" Name="法师-金刚-普攻-第二段" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="kingkong_normal_002" Name="熊猫战士-金刚-普攻-第二段" HitRangeType="3" HitRangeRectangular="3,6,3,5,,,"/>
+	<Property ID="kingkong_normal_003_7" Name="男牧师-金刚-普攻-第三段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="kingkong_normal_003_5" Name="弓箭手-金刚-普攻-第三段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="kingkong_normal_003_4" Name="女牧师-金刚-普攻-第三段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,5,,,"/>
+	<Property ID="kingkong_normal_003_3" Name="咒术师-金刚-普攻-第三段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="kingkong_normal_003_2" Name="法师-金刚-普攻-第三段" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="skill_zhuiji_001" HitRangeType="0"/>
+	<Property ID="ride_xunmenglong_001A" HitRangeType="2" HitRangeCylinder=",4,0,360,3,,,"/>
+	<Property ID="kingkong_skill_001_2" HitRangeType="2" HitRangeCylinder=",4,0,360,4,,,"/>
+	<Property ID="dragon_skill_007_1" HitRangeType="2" HitRangeCylinder=",5,0,360,6,,,"/>
+	<Property ID="tiger_skill_001" HitRangeType="2" HitRangeCylinder=",3,0,360,5,,,"/>
+	<Property ID="ride_bawanglong_001" HitRangeType="2" HitRangeCylinder="4,8,0,360,12,,,"/>
+	<Property ID="dragon_004_normal_001" Name="战士-霸王龙-普攻-第一段" HitRangeType="3" HitRangeRectangular="3,8,9,3,,,"/>
+	<Property ID="dragon_004_normal_001_2" Name="法师-霸王龙-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="dragon_004_normal_001_3" Name="咒术师-霸王龙-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="dragon_004_normal_001_4" Name="女牧师-霸王龙-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="dragon_004_normal_001_5" Name="弓箭手-霸王龙-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="dragon_004_normal_001_6" Name="狮子战士-霸王龙-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,2.5,,,"/>
+	<Property ID="dragon_004_normal_001_7" Name="男牧师-霸王龙-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,140,1,,,"/>
+	<Property ID="dragon_004_normal_002" Name="战士-霸王龙-普攻-第二段" HitRangeType="3" HitRangeRectangular="4,7,8,3,,,"/>
+	<Property ID="dragon_004_normal_002_2" Name="法师-霸王龙-普攻-第二段" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="dragon_004_normal_002_3" Name="咒术师-霸王龙-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="dragon_004_normal_002_4" Name="女牧师-霸王龙-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="dragon_004_normal_002_5" Name="弓箭手-霸王龙-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="dragon_004_normal_002_6" Name="狮子战士-霸王龙-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,2.5,,,"/>
+	<Property ID="dragon_004_normal_002_7" Name="男牧师-霸王龙-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,140,1,,,"/>
+	<Property ID="dragon_004_normal_003" Name="战士-霸王龙-普攻-第三段" HitRangeType="3" HitRangeRectangular="3,7,9,3,,,"/>
+	<Property ID="dragon_004_normal_003_2" Name="法师-霸王龙-普攻-第三段" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="dragon_004_normal_003_3" Name="咒术师-霸王龙-普攻-第三段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="dragon_004_normal_003_4" Name="女牧师-霸王龙-普攻-第三段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,5,,,"/>
+	<Property ID="dragon_004_normal_003_5" Name="弓箭手-霸王龙-普攻-第三段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="dragon_004_normal_003_6" Name="狮子战士-霸王龙-普攻-第三段" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,2.5,,,"/>
+	<Property ID="dragon_004_normal_003_7" Name="男牧师-霸王龙-普攻-第三段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="tiger_normal_001" Name="战士-剑齿虎-普攻-第一段" HitRangeType="2" HitRangeCylinder=",5,0,120,3,,,"/>
+	<Property ID="tiger_normal_001_2" Name="法师-剑齿虎-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="tiger_normal_001_3" Name="咒术师-剑齿虎-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="tiger_normal_001_4" Name="女牧师-剑齿虎-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="tiger_normal_001_5" Name="弓箭手-剑齿虎-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="tiger_normal_001_6" Name="狮子战士-剑齿虎-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,2.5,,,"/>
+	<Property ID="tiger_normal_001_7" Name="男牧师-剑齿虎-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="tiger_normal_002" Name="战士-剑齿虎-普攻-第二段" HitRangeType="3" HitRangeRectangular="3,6,3,5,,,"/>
+	<Property ID="tiger_normal_002_2" Name="法师-剑齿虎-普攻-第二段" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="tiger_normal_002_3" Name="咒术师-剑齿虎-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="tiger_normal_002_4" Name="女牧师-剑齿虎-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="tiger_normal_002_5" Name="弓箭手-剑齿虎-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="tiger_normal_002_6" Name="狮子战士-剑齿虎-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,2.5,,,"/>
+	<Property ID="tiger_normal_002_7" Name="男牧师-剑齿虎-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="tiger_normal_003" Name="战士-剑齿虎-普攻-第三段" HitRangeType="2" HitRangeCylinder=",6.5,,240,5,,,"/>
+	<Property ID="tiger_normal_003_2" Name="法师-剑齿虎-普攻-第三段" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="tiger_normal_003_3" Name="咒术师-剑齿虎-普攻-第三段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="tiger_normal_003_4" Name="女牧师-剑齿虎-普攻-第三段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,5,,,"/>
+	<Property ID="tiger_normal_003_5" Name="弓箭手-剑齿虎-普攻-第三段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="tiger_normal_003_6" Name="狮子战士-剑齿虎-普攻-第三段" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,2.5,,,"/>
+	<Property ID="tiger_normal_003_7" Name="男牧师-剑齿虎-普攻-第三段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_004_normal_001" Name="战士-天马-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,5,0,180,3,,,"/>
+	<Property ID="horse_004_normal_001_2" Name="法师-天马-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_004_normal_001_3" Name="咒术师-天马-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_004_normal_001_4" Name="女牧师-天马-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_004_normal_001_5" Name="弓箭手-天马-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_004_normal_001_6" Name="狮子战士-天马-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,2.5,,,"/>
+	<Property ID="horse_004_normal_001_7" Name="男牧师-天马-普攻-第一段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_004_normal_002" Name="战士-天马-普攻-第二段" HitRangeType="3" HitRangeRectangular="3,6,3,5,,,"/>
+	<Property ID="horse_004_normal_002_2" Name="法师-天马-普攻-第二段" HitRangeType="2" HitRangeCylinder=",1.5,0,360,1,,,"/>
+	<Property ID="horse_004_normal_002_3" Name="咒术师-天马-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_004_normal_002_4" Name="女牧师-天马-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_004_normal_002_5" Name="弓箭手-天马-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_004_normal_002_6" Name="狮子战士-天马-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,6.5,0,360,2.5,,,"/>
+	<Property ID="horse_004_normal_002_7" Name="男牧师-天马-普攻-第二段" HitRangeType="2" HitRangeCylinder="0,1.5,0,360,1,,,"/>
+	<Property ID="horse_skill_007" HitRangeType="2" HitRangeCylinder=",8,0,360,5,,,"/>
+	<Property ID="tiger_skill_002" HitRangeType="2" HitRangeCylinder=",10,0,360,6,,,"/>
+	<Property ID="zhanshi_normal_005" Name="战士普攻冲锋" HitRangeType="2" HitRangeCylinder=",3,0,360,3,,,"/>
+	<Property ID="fitzx_normal_005" HitRangeType="2" HitRangeCylinder=",3,0,360,3,,,"/>
+	<Property ID="skill_killself_001" Name="自杀" HitRangeType="0"/>
 </Object>
-
 

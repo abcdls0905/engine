@@ -1,285 +1,68 @@
-<?xml version="1.0" encoding="gb2312"?>
-<!-- ±»2011 rel. 2 sp1 (TeaM DJiNN) Ê¹ÓÃXMLSpy vTeaM DJiNN±à¼­µÄ (http://www.altova.com) by -->
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ç¼–è¾‘ä½¿ç”¨ XMLSpy v2006 U (http://www.altova.com) ç”± any (any) -->
+<!-- è¢«2012 () ä½¿ç”¨XMLSpy vç¼–è¾‘çš„ (http://www.altova.com) by -->
 <!--
-
-	AddCapitalType£º
-
-    CAPITAL_CHARGE_DIAMOND  = 0,    // $ 0 = ³äÖµ×êÊ¯
-    CAPITAL_GOLD            = 1,    // $ 1 = ½ð±Ò
-    CAPITAL_DIAMOND         = 2,    // $ 2 = ×êÊ¯
-    CAPITAL_BIND_DIAMOND    = 3,    // $ 3 = °ó¶¨×êÊ¯
-    CAPITAL_SKYOUTIRON      = 4,    // $ 4 = ÔÉÌú
-    CAPITAL_ICESTONE        = 5,    // $ 5 = ±ù¾§Ê¯
-    CAPITAL_REPUTATION      = 6,    // $ 6 = ÉùÍû
-    CAPITAL_GLORY           = 7,    // $ 7 = ÈÙÓþÖµ
-    CAPITAL_DFL             = 8,    // $ 8 = áÛ·åÁî
-    CAPITAL_YZZZ            = 9,    // $ 9 = ÓÂÕßÖ®Ö¤
-
-
-	AddNpcConfigID: NPCµÄconfigID
-	AddPropertyType:1,ÌåÁ¦£»2£¬ÀúÁ·£»3£¬VIP¾­Ñé+ÀÛ³ä¼ÆÊý£»4£¬Ôö¼Ó¾­Ñé£»5£¬Ôö¼ÓÒ°¹Ö¾­Ñé£»7,ÖÜÆÚ¿¨³ÖÓÐ×´Ì¬±ä¸ü£»8£¬³ÆºÅ£»9,´¿VIP¾­Ñé£»10£¬¹«»á¹±Ï×
-					19 Ôö¼ÓµØ¹¬BOSS´ÎÊý;20Ôö¼ÓµØ¹¬¾«Ó¢¹Ö´ÎÊý; 21Ôö¼ÓµØ¹¬²É¼¯´ÎÊý;
-
+	ID = -1 åŽé¢è®°å½•å„ä¸ªå±žæ€§çš„Index
+	ID = 0	åŽé¢è®°å½•å„ä¸ªå±žæ€§çš„ç±»åž‹
+	AddCapitalTypeï¼š1ï¼Œé»„é‡‘ï¼›2ï¼Œé’»çŸ³ï¼›3ï¼Œç»‘å®šé’»çŸ³ï¼›4ï¼ŒæŠ€èƒ½ç‚¹ï¼›5ï¼Œå£°æœ›ç‚¹; 6,ç«žæŠ€åœºè£èª‰å€¼ï¼›7ï¼Œç¬¦å°èƒ½é‡  8,æ™¶çŸ³  9ï¼Œè¡€ç›Ÿè´¡çŒ® 10,è¿›é˜¶çŸ³ 11,æŠ¢å•ä»»åŠ¡é›‡ä½£å€¼ 12,æˆ˜åœºè£èª‰ç‚¹ 13,å¤©èµ‹ç‚¹
+	AddNpcConfigID: NPCçš„configID
+	AddPropertyType:1,ä½“åŠ›ï¼›2ï¼ŒåŽ†ç»ƒï¼›3ï¼ŒVIPç»éªŒï¼›4,å¢žåŠ å…¬ä¼šèµ„é‡‘ï¼›5,å¢žåŠ å…¬ä¼šè´¡çŒ®åº¦ï¼›6,ç™¾åˆ†æ¯”å¢žåŠ HPï¼›7,ç™¾åˆ†æ¯”å¢žåŠ MPï¼›8,å¢žåŠ åŒå€ç»éªŒæ—¶é—´ï¼›9,ä¸è®¡ç®—ç´¯è®¡å……å€¼çš„vipç»éªŒ; 10,å¢žåŠ ç»éªŒ  11å‡çº¢åæ—¶é—´
+	AddNpcJudge: NPCæ˜¯å¦éšæœºå˜å¼‚
+	AddNpcPercent: NPCå˜å¼‚å¢žåŠ æ¦‚çŽ‡
+	AddNpcProperty: NPCå˜å¼‚æ¡ç›®(çš®è‚¤ã€ç‰¹æ•ˆã€å¤§å°)
+	AddCardTypeï¼šå¡ç±»åž‹
+	AddPropertySourceï¼šæ¥æº (1 ç»éªŒæ¥æºä¸ºæ´»è·ƒåº¦)
 -->
 <Object>
-	<Property ID="-1" Name="0" AddCapitalType="1" AddCapitalAmount="2" AddPropertyType="3" AddPropertyAmount="4" AddNpcConfigID="5" AddBufferID="6" AddMaxDistance="7" ExclusionID="8"/>
-	<Property ID="0" Name="6" AddCapitalType="2" AddCapitalAmount="2" AddPropertyType="2" AddPropertyAmount="2" AddNpcConfigID="6" AddBufferID="6" AddMaxDistance="4" ExclusionID="6"/>
-	<Property ID="1" Name="add50000Gold" AddCapitalType="1" AddCapitalAmount="5000"/>
+	<Property ID="-1" Name="0" AddCapitalType="1" AddCapitalAmount="2" AddPropertyType="3" AddPropertyAmount="4" AddNpcConfigID="5" AddNpcJudge="6" AddNpcPercent="7" AddNpcProperty="8" AddCardType="9" AddPropertySource="10"/>
+	<Property ID="0" Name="6" AddCapitalType="2" AddCapitalAmount="2" AddPropertyType="2" AddPropertyAmount="2" AddNpcConfigID="6" AddNpcJudge="2" AddNpcPercent="2" AddNpcProperty="6" AddCardType="2" AddPropertySource="2"/>
 	<Property ID="2" Name="add150000Gold" AddCapitalType="1" AddCapitalAmount="15000"/>
-	<Property ID="3" Name="add250000Gold" AddCapitalType="1" AddCapitalAmount="25000"/>
-	<Property ID="7" Name="add10Diamon" AddCapitalType="3" AddCapitalAmount="10"/>
-	<Property ID="8" Name="add50Diamon" AddCapitalType="3" AddCapitalAmount="50"/>
-	<Property ID="9" Name="add100Diamon" AddCapitalType="3" AddCapitalAmount="100"/>
-	<Property ID="10" Name="add20000Gold" AddCapitalType="1" AddCapitalAmount="20000"/>
-	<Property ID="11" Name="add80000Gold" AddCapitalType="1" AddCapitalAmount="80000"/>
-	<Property ID="12" Name="add100000Gold" AddCapitalType="1" AddCapitalAmount="100000"/>
-	<Property ID="13" Name="add120000Gold" AddCapitalType="1" AddCapitalAmount="120000"/>
-	<Property ID="14" Name="add150000Gold" AddCapitalType="1" AddCapitalAmount="150000"/>
-	<Property ID="15" Name="add180000Gold" AddCapitalType="1" AddCapitalAmount="180000"/>
-	<Property ID="16" Name="add200000Gold" AddCapitalType="1" AddCapitalAmount="200000"/>
-	<Property ID="17" Name="add220000Gold" AddCapitalType="1" AddCapitalAmount="220000"/>
-	<Property ID="18" Name="add250000Gold" AddCapitalType="1" AddCapitalAmount="250000"/>
-	<Property ID="19" Name="add300000Gold" AddCapitalType="1" AddCapitalAmount="300000"/>
-	<Property ID="20" Name="add50000Gold" AddCapitalType="1" AddCapitalAmount="50000"/>
-	<Property ID="37" Name="add100000Gold" AddCapitalType="1" AddCapitalAmount="100000"/>
-	<Property ID="38" Name="add200000Gold" AddCapitalType="1" AddCapitalAmount="200000"/>
-	<Property ID="39" Name="add400000Gold" AddCapitalType="1" AddCapitalAmount="400000"/>
-	<Property ID="40" Name="add600000Gold" AddCapitalType="1" AddCapitalAmount="600000"/>
-	<Property ID="41" Name="add800000Gold" AddCapitalType="1" AddCapitalAmount="800000"/>
-	<Property ID="42" Name="add1000000Gold" AddCapitalType="1" AddCapitalAmount="1000000"/>
-	<Property ID="43" Name="add1200000Gold" AddCapitalType="1" AddCapitalAmount="1200000"/>
-	<Property ID="44" Name="add1400000Gold" AddCapitalType="1" AddCapitalAmount="1400000"/>
-	<Property ID="45" Name="add1600000Gold" AddCapitalType="1" AddCapitalAmount="1600000"/>
-	<Property ID="46" Name="add2000000Gold" AddCapitalType="1" AddCapitalAmount="2000000"/>
-	<Property ID="47" Name="add3000000Gold" AddCapitalType="1" AddCapitalAmount="3000000"/>
-	<Property ID="48" Name="add5000000Gold" AddCapitalType="1" AddCapitalAmount="5000000"/>
-	<Property ID="49" Name="add10000000Gold" AddCapitalType="1" AddCapitalAmount="10000000"/>
-	<Property ID="50" Name="ÌåÁ¦µ¤£¨Ð¡£©" AddPropertyType="1" AddPropertyAmount="5"/>
-	<Property ID="51" Name="ÌåÁ¦µ¤£¨ÖÐ£©" AddPropertyType="1" AddPropertyAmount="10"/>
-	<Property ID="52" Name="ÌåÁ¦µ¤£¨´ó£©" AddPropertyType="1" AddPropertyAmount="25"/>
-	<Property ID="53" Name="ÀúÁ·µ¤£¨Ð¡£©" AddPropertyType="2" AddPropertyAmount="5"/>
-	<Property ID="54" Name="ÀúÁ·µ¤£¨ÖÐ£©" AddPropertyType="2" AddPropertyAmount="10"/>
-	<Property ID="55" Name="ÀúÁ·µ¤£¨´ó£©" AddPropertyType="2" AddPropertyAmount="25"/>
-	<Property ID="56" Name="5000" AddCapitalType="1" AddCapitalAmount="5000"/>
-	<Property ID="57" Name="10000" AddCapitalType="1" AddCapitalAmount="10000"/>
-	<Property ID="58" Name="20000" AddCapitalType="1" AddCapitalAmount="20000"/>
-	<Property ID="59" Name="50000" AddCapitalType="1" AddCapitalAmount="50000"/>
-	<Property ID="60" Name="70000" AddCapitalType="1" AddCapitalAmount="70000"/>
-	<Property ID="61" Name="100000" AddCapitalType="1" AddCapitalAmount="100000"/>
-	<Property ID="62" Name="120000" AddCapitalType="1" AddCapitalAmount="120000"/>
-	<Property ID="63" Name="150000" AddCapitalType="1" AddCapitalAmount="150000"/>
-	<Property ID="64" Name="170000" AddCapitalType="1" AddCapitalAmount="170000"/>
-	<Property ID="65" Name="200000" AddCapitalType="1" AddCapitalAmount="200000"/>
-	<Property ID="66" Name="220000" AddCapitalType="1" AddCapitalAmount="220000"/>
-	<Property ID="67" Name="250000" AddCapitalType="1" AddCapitalAmount="250000"/>
-	<Property ID="68" Name="270000" AddCapitalType="1" AddCapitalAmount="270000"/>
-	<Property ID="69" Name="300000" AddCapitalType="1" AddCapitalAmount="300000"/>
-	<Property ID="70" Name="350000" AddCapitalType="1" AddCapitalAmount="350000"/>
-	<Property ID="71" Name="400000" AddCapitalType="1" AddCapitalAmount="400000"/>
-	<Property ID="75" Name="1z" AddCapitalType="3" AddCapitalAmount="1"/>
-	<Property ID="76" Name="10z" AddCapitalType="3" AddCapitalAmount="10"/>
-	<Property ID="77" Name="20z" AddCapitalType="3" AddCapitalAmount="20"/>
-	<Property ID="78" Name="30z" AddCapitalType="3" AddCapitalAmount="30"/>
-	<Property ID="79" Name="50z" AddCapitalType="3" AddCapitalAmount="50"/>
-	<Property ID="80" Name="100z" AddCapitalType="3" AddCapitalAmount="100"/>
-	<Property ID="81" Name="200z" AddCapitalType="3" AddCapitalAmount="200"/>
-	<Property ID="82" Name="250z" AddCapitalType="3" AddCapitalAmount="250"/>
-	<Property ID="83" Name="300z" AddCapitalType="3" AddCapitalAmount="300"/>
-	<Property ID="84" Name="400z" AddCapitalType="3" AddCapitalAmount="400"/>
-	<Property ID="85" Name="500z" AddCapitalType="3" AddCapitalAmount="500"/>
-	<Property ID="87" Name="1000z" AddCapitalType="3" AddCapitalAmount="1000"/>
-	<Property ID="88" Name="120z" AddCapitalType="3" AddCapitalAmount="120"/>
-	<Property ID="94" Name="vip¾­Ñéµ¤" AddPropertyType="3" AddPropertyAmount="50"/>
-	<Property ID="95" Name="vip¾­Ñéµ¤10" AddPropertyType="3" AddPropertyAmount="1"/>
-	<Property ID="96" Name="ÓÂÕßÖ®Ö¤" AddCapitalType="9" AddCapitalAmount="1"/>
-	<Property ID="97" Name="vip¾­Ñéµ¤100" AddPropertyType="3" AddPropertyAmount="10"/>
-	<Property ID="98" Name="vip¾­Ñéµ¤1000" AddPropertyType="3" AddPropertyAmount="100"/>
-	<Property ID="99" Name="vip¾­Ñéµ¤10000" AddPropertyType="3" AddPropertyAmount="1000"/>
-	<Property ID="100" Name="80z" AddCapitalType="3" AddCapitalAmount="80"/>
-	<Property ID="101" Name="150z" AddCapitalType="3" AddCapitalAmount="150"/>
-	<Property ID="102" Name="vip¾­Ñéµ¤60" AddPropertyType="3" AddPropertyAmount="6"/>
-	<Property ID="103" Name="vip¾­Ñéµ¤300" AddPropertyType="3" AddPropertyAmount="30"/>
-	<Property ID="104" Name="vip¾­Ñéµ¤980" AddPropertyType="3" AddPropertyAmount="98"/>
-	<Property ID="105" Name="vip¾­Ñéµ¤1980" AddPropertyType="3" AddPropertyAmount="198"/>
-	<Property ID="106" Name="vip¾­Ñéµ¤3280" AddPropertyType="3" AddPropertyAmount="328"/>
-	<Property ID="107" Name="vip¾­Ñéµ¤6480" AddPropertyType="3" AddPropertyAmount="648"/>
-	<Property ID="108" Name="Ð¡ÐÍ½ÇÉ«¾­Ñé" AddPropertyType="4" AddPropertyAmount="500"/>
-	<Property ID="109" Name="ÖÐÐÍ½ÇÉ«¾­Ñé" AddPropertyType="4" AddPropertyAmount="3000"/>
-	<Property ID="110" Name="175¾§Ê¯" AddCapitalType="5" AddCapitalAmount="175"/>
-	<Property ID="111" Name="´óÐÍ½ÇÉ«¾­Ñé" AddPropertyType="4" AddPropertyAmount="10000"/>
-	<Property ID="112" Name="¹±Ï×Ö¤£¨50£©" AddPropertyType="10" AddPropertyAmount="50"/>
-	<Property ID="113" Name="¹±Ï×Ö¤£¨200£©" AddPropertyType="10" AddPropertyAmount="200"/>
-	<Property ID="114" Name="¹±Ï×Ö¤£¨400£©" AddPropertyType="10" AddPropertyAmount="400"/>
-	<Property ID="115" Name="¹±Ï×Ö¤£¨2000£©" AddPropertyType="10" AddPropertyAmount="2000"/>
-	<Property ID="116" Name="¾­Ñé±¶Ôöµ¤" AddPropertyType="5" AddPropertyAmount="1"/>
-	<Property ID="117" Name="¾­Ñé±¶Ôöµ¤" AddPropertyType="5" AddPropertyAmount="1"/>
-	<Property ID="118" Name="¾­Ñé±¶Ôöµ¤" AddPropertyType="5" AddPropertyAmount="1"/>
-	<Property ID="119" Name="¾­Ñé±¶Ôöµ¤" AddPropertyType="5" AddPropertyAmount="1"/>
-	<Property ID="120" Name="45Íò½ð±Ò" AddCapitalType="1" AddCapitalAmount="450000"/>
-	<Property ID="121" Name="50Íò½ð±Ò" AddCapitalType="1" AddCapitalAmount="500000"/>
-	<Property ID="122" Name="×êÊ¯£¨60£©" AddCapitalType="2" AddCapitalAmount="60"/>
-	<Property ID="123" Name="×êÊ¯£¨300£©" AddCapitalType="2" AddCapitalAmount="300"/>
-	<Property ID="124" Name="×êÊ¯£¨980£©" AddCapitalType="2" AddCapitalAmount="980"/>
-	<Property ID="125" Name="×êÊ¯£¨1980£©" AddCapitalType="2" AddCapitalAmount="1980"/>
-	<Property ID="126" Name="×êÊ¯£¨3280£©" AddCapitalType="2" AddCapitalAmount="3280"/>
-	<Property ID="127" Name="×êÊ¯£¨6480£©" AddCapitalType="2" AddCapitalAmount="6480"/>
-	<Property ID="128" Name="×êÊ¯£¨10£©" AddCapitalType="2" AddCapitalAmount="10"/>
-	<Property ID="129" Name="×êÊ¯£¨100£©" AddCapitalType="2" AddCapitalAmount="100"/>
-	<Property ID="130" Name="×êÊ¯£¨1000£©" AddCapitalType="2" AddCapitalAmount="1000"/>
-	<Property ID="131" Name="¾»»êÊ¯£¨50£©" AddPropertyType="6" AddPropertyAmount="1"/>
-	<Property ID="132" Name="¾»»êÊ¯£¨100£©" AddPropertyType="6" AddPropertyAmount="1"/>
-	<Property ID="133" Name="¾»»êÊ¯£¨100£©" AddPropertyType="6" AddPropertyAmount="1"/>
-	<Property ID="134" Name="×êÊ¯£¨1£©" AddCapitalType="2" AddCapitalAmount="1"/>
-	<Property ID="135" Name="ÔÂ¿¨µÀ¾ß" AddPropertyType="7" AddPropertyAmount="1"/>
-	<Property ID="136" Name="¼¾¿¨µÀ¾ß" AddPropertyType="7" AddPropertyAmount="2"/>
-	<Property ID="137" Name="Äê¿¨µÀ¾ß" AddPropertyType="7" AddPropertyAmount="3"/>
-	<Property ID="138" Name="¸£Àû¿¨µÀ¾ß" AddPropertyType="7" AddPropertyAmount="7"/>
-	<Property ID="139" Name="ÉÁ±ÜºÏ¼Á" AddPropertyType="5" AddPropertyAmount="1" AddBufferID="buff_yaoshui01" AddMaxDistance="30" ExclusionID="buff_yaoshui02,buff_yaoshui03,buff_yaoshui04,buff_yaoshui11"/>
-	<Property ID="140" Name="±©»÷ºÏ¼Á" AddPropertyType="5" AddPropertyAmount="1" AddBufferID="buff_yaoshui02" AddMaxDistance="30" ExclusionID="buff_yaoshui01,buff_yaoshui03,buff_yaoshui04,buff_yaoshui11"/>
-	<Property ID="141" Name="ÉËº¦¼Ó³ÉºÏ¼Á" AddPropertyType="5" AddPropertyAmount="1" AddBufferID="buff_yaoshui03" AddMaxDistance="30" ExclusionID="buff_yaoshui01,buff_yaoshui02,buff_yaoshui04,buff_yaoshui11"/>
-	<Property ID="142" Name="ÎüÑªºÏ¼Á" AddPropertyType="5" AddPropertyAmount="1" AddBufferID="buff_yaoshui04" AddMaxDistance="30" ExclusionID="buff_yaoshui01,buff_yaoshui02,buff_yaoshui03,buff_yaoshui11"/>
-	<Property ID="143" Name="³ÆºÅµÀ¾ß" AddPropertyType="8" AddPropertyAmount="104"/>
-	<Property ID="144" Name="µÍ¼¶vip¾­Ñé¿¨[60]" AddPropertyType="9" AddPropertyAmount="6"/>
-	<Property ID="145" Name="µÍ¼¶vip¾­Ñé¿¨[80]" AddPropertyType="9" AddPropertyAmount="8"/>
-	<Property ID="146" Name="µÍ¼¶vip¾­Ñé¿¨[300]" AddPropertyType="9" AddPropertyAmount="30"/>
-	<Property ID="147" Name="µÍ¼¶vip¾­Ñé¿¨[680]" AddPropertyType="9" AddPropertyAmount="68"/>
-	<Property ID="148" Name="µÍ¼¶vip¾­Ñé¿¨[980]" AddPropertyType="9" AddPropertyAmount="98"/>
-	<Property ID="149" Name="µÍ¼¶vip¾­Ñé¿¨[1980]" AddPropertyType="9" AddPropertyAmount="198"/>
-	<Property ID="150" Name="µÍ¼¶vip¾­Ñé¿¨[3280]" AddPropertyType="9" AddPropertyAmount="328"/>
-	<Property ID="151" Name="µÍ¼¶vip¾­Ñé¿¨[6480]" AddPropertyType="9" AddPropertyAmount="648"/>
-	<Property ID="152" Name="ÉùÍû£¨1£©" AddCapitalType="6" AddCapitalAmount="1"/>
-	<Property ID="153" Name="ÉùÍû£¨10£©" AddCapitalType="6" AddCapitalAmount="10"/>
-	<Property ID="154" Name="ÉùÍû£¨100£©" AddCapitalType="6" AddCapitalAmount="100"/>
-	<Property ID="155" Name="ÈÙÓþ£¨1£©" AddCapitalType="7" AddCapitalAmount="1"/>
-	<Property ID="156" Name="ÈÙÓþ£¨10£©" AddCapitalType="7" AddCapitalAmount="10"/>
-	<Property ID="157" Name="ÈÙÓþ£¨30£©" AddCapitalType="7" AddCapitalAmount="30"/>
-	<Property ID="158" Name="áÛ·åÁî£¨1£©" AddCapitalType="8" AddCapitalAmount="1"/>
-	<Property ID="159" Name="áÛ·åÁî£¨5£©" AddCapitalType="8" AddCapitalAmount="5"/>
-	<Property ID="160" Name="áÛ·åÁî£¨10£©" AddCapitalType="8" AddCapitalAmount="10"/>
-	<Property ID="161" Name="»îÔ¾¶È£¨1£©" AddPropertyType="11" AddPropertyAmount="1"/>
-	<Property ID="162" Name="»îÔ¾¶È£¨5£©" AddPropertyType="11" AddPropertyAmount="5"/>
-	<Property ID="163" Name="»îÔ¾¶È£¨10£©" AddPropertyType="11" AddPropertyAmount="10"/>
-	<Property ID="164" Name="ÔªÏü½Ú³ÆºÅ" AddPropertyType="8" AddPropertyAmount="109"/>
-	<Property ID="165" Name="ÆïÊõ¾­ÑéÊé£¨100£©" AddPropertyType="12" AddPropertyAmount="100"/>
-	<Property ID="166" Name="ÆïÊõ¾­ÑéÊé£¨500£©" AddPropertyType="12" AddPropertyAmount="500"/>
-	<Property ID="167" Name="ÆïÊõ¾­ÑéÊé£¨1000£©" AddPropertyType="12" AddPropertyAmount="1000"/>
-	<Property ID="168" Name="²Ô÷ë½ð¾«" AddPropertyType="13" AddNpcConfigID="mount_tiger_001"/>
-	<Property ID="169" Name="±©×ßÒ÷ÓÎÊ¹" AddPropertyType="8" AddPropertyAmount="110"/>
-	<Property ID="170" Name="Õû¹Æ´ïÈË" AddPropertyType="8" AddPropertyAmount="111"/>
-	<Property ID="171" Name="Ô¡ÑªÉ³³¡ÃÅÆ±" AddPropertyType="30" AddPropertyAmount="1"/>
-	<Property ID="172" Name="×é¶Ó¸±±¾ÃÅÆ±" AddPropertyType="31" AddPropertyAmount="1"/>
-	<Property ID="173" Name="¶á±¦ÁªÃËÃÅÆ±" AddPropertyType="32" AddPropertyAmount="1"/>
-	<Property ID="174" Name="»ÄÒ°¿ñì­ÃÅÆ±" AddPropertyType="33" AddPropertyAmount="1"/>
-	<Property ID="175" Name="ÊÀ½çBOSSÃÅÆ±" AddPropertyType="34" AddPropertyAmount="1"/>
-	<Property ID="176" Name="Ï¡ÓÐBOSSÃÅÆ±" AddPropertyType="35" AddPropertyAmount="1"/>
-	<Property ID="177" Name="À¶É«Ñý¼§" AddPropertyType="13" AddNpcConfigID="mount_bird_001"/>
-	<Property ID="178" Name="ÁÒÑæ¼²·ç" AddPropertyType="13" AddNpcConfigID="mount_bird_001a"/>
-	<Property ID="179" Name="³àÑ×Á÷»ð" AddPropertyType="13" AddNpcConfigID="mount_tiger_001a"/>
-	<Property ID="180" Name="¶¾Ã¢Ä§Áé" AddPropertyType="13" AddNpcConfigID="mount_scorpion_001"/>
-	<Property ID="181" Name="Ð¥ÁÖÀ×»¢" AddPropertyType="13" AddNpcConfigID="mount_tiger_002"/>
-	<Property ID="182" Name="Ô¡ÑªÑ«ÕÂ" AddPropertyType="15" AddPropertyAmount="1"/>
-	<Property ID="183" Name="Ä§×åÖ®Ñª£¨1£©" AddCapitalType="12" AddCapitalAmount="1"/>
-	<Property ID="184" Name="Ä§×åÖ®Ñª£¨10£©" AddCapitalType="12" AddCapitalAmount="10"/>
-	<Property ID="185" Name="Ä§×åÖ®Ñª£¨20£©" AddCapitalType="12" AddCapitalAmount="20"/>
-	<Property ID="186" Name="Ä§×åÖ®Ñª£¨40£©" AddCapitalType="12" AddCapitalAmount="40"/>
-	<Property ID="187" Name="Ä§×åÖ®Ñª£¨100£©" AddCapitalType="12" AddCapitalAmount="100"/>
-	<Property ID="188" Name="¾ü¹¦Ñ«ÕÂ£¨10£©" AddPropertyType="14" AddPropertyAmount="10"/>
-	<Property ID="189" Name="¾ü¹¦Ñ«ÕÂ£¨100£©" AddPropertyType="14" AddPropertyAmount="100"/>
-	<Property ID="190" Name="¾ü¹¦Ñ«ÕÂ£¨500£©" AddPropertyType="14" AddPropertyAmount="500"/>
-	<Property ID="191" Name="¾ü¹¦Ñ«ÕÂ£¨1000£©" AddPropertyType="14" AddPropertyAmount="1000"/>
-	<Property ID="192" Name="¾ü¹¦Ñ«ÕÂ£¨5000£©" AddPropertyType="14" AddPropertyAmount="5000"/>
-	<Property ID="193" Name="add1Gold" AddCapitalType="1" AddCapitalAmount="1"/>
-	<Property ID="194" Name="ÕÕÒ¹ÄæÁÛ" AddPropertyType="13" AddNpcConfigID="mount_dragon_001"/>
-	<Property ID="195" Name="±ùÆÇ²×Áé" AddPropertyType="13" AddNpcConfigID="mount_dragon_001a"/>
-	<Property ID="196" Name="ÄÉ¹þ¿ËºÃÉùÒô" AddPropertyType="8" AddPropertyAmount="118"/>
-	<Property ID="197" Name="ÈçÒâ³Ë»Æ" AddPropertyType="13" AddNpcConfigID="mount_horse_001"/>
-	<Property ID="198" Name="ÃÎ÷ÊÌúÆï" AddPropertyType="13" AddNpcConfigID="mount_horse_001a"/>
-	<Property ID="199" Name="±ÌÓñ÷è÷ë" AddPropertyType="13" AddNpcConfigID="mount_kirin_001"/>
-	<Property ID="200" Name="Ê·Ç°¾ÞÊÞ" AddPropertyType="13" AddNpcConfigID="mount_trex_001"/>
-	<Property ID="201" Name="½¨ÉèÖ¤£¨100£©" AddPropertyType="16" AddPropertyAmount="100"/>
-	<Property ID="202" Name="½¨ÉèÖ¤£¨500£©" AddPropertyType="16" AddPropertyAmount="500"/>
-	<Property ID="203" Name="½¨ÉèÖ¤£¨1000£©" AddPropertyType="16" AddPropertyAmount="1000"/>
-	<Property ID="204" Name="ÀÍ¶¯½Ú³ÆºÅ" AddPropertyType="8" AddPropertyAmount="119"/>
-	<Property ID="205" Name="¶ùÍ¯½Ú³ÆºÅ" AddPropertyType="8" AddPropertyAmount="120"/>
-	<Property ID="206" Name="Ä§×åÖ®Ñª£¨60£©" AddCapitalType="12" AddCapitalAmount="60"/>
-	<Property ID="207" Name="ÂÒÊÀºÀÃÅ" AddPropertyType="8" AddPropertyAmount="121"/>
-	<Property ID="208" Name="¾ÞÐÍ¾­ÑéÒ©" AddPropertyType="4" AddPropertyAmount="100000"/>
-	<Property ID="209" Name="·è¿ñµÄÍÃ×Ó" AddPropertyType="13" AddNpcConfigID="mount_rabbit_001"/>
-	<Property ID="210" Name="µØ¸¿Ìì½û" AddPropertyType="13" AddNpcConfigID="mount_dragon_002"/>
-	<Property ID="211" Name="±ÌÓñ½ð±ë" AddPropertyType="13" AddNpcConfigID="mount_tiger_003"/>
-	<Property ID="212" Name="²À¹íÊ¬Áú" AddPropertyType="13" AddNpcConfigID="mount_trex_002"/>
-	<Property ID="213" Name="ÕóÓªµãÊý£¨1£©" AddCapitalType="13" AddCapitalAmount="1"/>
-	<Property ID="214" Name="ÕóÓªµãÊý£¨10£©" AddCapitalType="13" AddCapitalAmount="10"/>
-	<Property ID="215" Name="ÕóÓªµãÊý£¨20£©" AddCapitalType="13" AddCapitalAmount="20"/>
-	<Property ID="216" Name="ÕóÓªµãÊý£¨40£©" AddCapitalType="13" AddCapitalAmount="40"/>
-	<Property ID="217" Name="ÕóÓªµãÊý£¨60£©" AddCapitalType="13" AddCapitalAmount="60"/>
-	<Property ID="218" Name="ÕóÓªµãÊý£¨100£©" AddCapitalType="13" AddCapitalAmount="100"/>
-	<Property ID="219" Name="ÄæË®º®½­òÔ" AddPropertyType="13" AddNpcConfigID="mount_horse_002"/>
-	<Property ID="220" Name="±ùºÓÌ¤ÆÆ" AddPropertyType="13" AddNpcConfigID="mount_horse_003"/>
-	<Property ID="221" Name="°Ôº£´ó·ç" AddPropertyType="13" AddNpcConfigID="mount_scorpion_002"/>
-	<Property ID="222" Name="½ðôá»ªëÐ" AddPropertyType="13" AddNpcConfigID="mount_bird_002"/>
-	<Property ID="223" Name="½ðÉ«Ñ¸½Ý" AddPropertyType="13" AddNpcConfigID="mount_bird_001b"/>
-	<Property ID="224" Name="´óÄ®»ÄÀÇ" AddPropertyType="13" AddNpcConfigID="mount_tiger_001b"/>
-	<Property ID="225" Name="ÇåÁ¹Å®Éñ" AddPropertyType="8" AddPropertyAmount="124"/>
-	<Property ID="226" Name="ÊÀ½ç¼ûÖ¤Õß" AddPropertyType="8" AddPropertyAmount="125"/>
-	<Property ID="227" Name="ÐÒÔË±Ò£¨1£©" AddPropertyType="18" AddPropertyAmount="1"/>
-	<Property ID="228" Name="ÐÒÔË±Ò£¨10£©" AddPropertyType="18" AddPropertyAmount="10"/>
-	<Property ID="229" Name="ÐÒÔË±Ò£¨100£©" AddPropertyType="18" AddPropertyAmount="100"/>
-	<Property ID="230" Name="¼ÒÔ°±Ò£¨10£©" AddPropertyType="17" AddPropertyAmount="10"/>
-	<Property ID="231" Name="¼ÒÔ°±Ò£¨100£©" AddPropertyType="17" AddPropertyAmount="100"/>
-	<Property ID="232" Name="¼ÒÔ°±Ò£¨1000£©" AddPropertyType="17" AddPropertyAmount="1000"/>
-	<Property ID="233" Name="ÄÉ¹þ¿Ë¾ü»ê" AddPropertyType="8" AddPropertyAmount="126"/>
-	<Property ID="234" Name="°®µÄÐÅÍ½" AddPropertyType="8" AddPropertyAmount="127"/>
-	<Property ID="235" Name="24K´¿Ë§" AddPropertyType="8" AddPropertyAmount="128"/>
-	<Property ID="236" Name="36D¾øÃÀ" AddPropertyType="8" AddPropertyAmount="129"/>
-	<Property ID="237" Name="Íò·òÄªµ±" AddPropertyType="8" AddPropertyAmount="130"/>
-	<Property ID="238" Name="Ö»ÊÖÕÚÌì" AddPropertyType="8" AddPropertyAmount="131"/>
-	<Property ID="239" Name="¶À¹ÂÇó°Ü" AddPropertyType="8" AddPropertyAmount="132"/>
-	<Property ID="240" Name="ÄæÌìºî" AddPropertyType="8" AddPropertyAmount="133"/>
-	<Property ID="241" Name="µ¶·æÄ§Ð«" AddPropertyType="13" AddNpcConfigID="mount_scorpion_003"/>
-	<Property ID="242" Name="Õ½Õù¿ñÏ¬" AddPropertyType="13" AddNpcConfigID="mount_rhino_001"/>
-	<Property ID="243" Name="½ðÅÆ´óÉñ" AddPropertyType="8" AddPropertyAmount="136"/>
-	<Property ID="244" Name="ÒøÅÆÊ¥ÊÖ" AddPropertyType="8" AddPropertyAmount="137"/>
-	<Property ID="245" Name="Í­ÅÆÍõÕß" AddPropertyType="8" AddPropertyAmount="138"/>
-	<Property ID="246" Name="Îå»·³¬ÈË" AddPropertyType="8" AddPropertyAmount="139"/>
-	<Property ID="247" Name="°ÂÔËÏÈ·æ" AddPropertyType="8" AddPropertyAmount="135"/>
-	<Property ID="248" Name="Ôö¼ÓµØ¹¬BOSS´ÎÊý" AddPropertyType="19" AddPropertyAmount="1"/>
-	<Property ID="249" Name="Ôö¼ÓµØ¹¬¾«Ó¢¹Ö´ÎÊý" AddPropertyType="20" AddPropertyAmount="1"/>
-	<Property ID="250" Name="Ôö¼ÓµØ¹¬²É¼¯´ÎÊý" AddPropertyType="21" AddPropertyAmount="1"/>
-	<Property ID="251" Name="½ðÅÆ¾­¼ÍÈË" AddPropertyType="8" AddPropertyAmount="140"/>
-	<Property ID="252" Name="ºé»ÄÉÙÅ®" AddPropertyType="8" AddPropertyAmount="141"/>
-	<Property ID="253" Name="ÀäÄ®ÉÙÄê" AddPropertyType="8" AddPropertyAmount="142"/>
-	<Property ID="254" Name="ÌÒÀîÂúÌìÏÂ" AddPropertyType="8" AddPropertyAmount="144"/>
-	<Property ID="255" Name="²¨Èû¶¬" AddPropertyType="13" AddNpcConfigID="mount_horse_004"/>
-	<Property ID="256" Name="°¢²¨ÂÞ" AddPropertyType="13" AddNpcConfigID="mount_horse_005"/>
-	<Property ID="257" Name="Îä×°µÄÍÃ×Ó" AddPropertyType="13" AddNpcConfigID="mount_rabbit_002"/>
-	<Property ID="258" Name="Ô¶¹ÅÁúöù" AddPropertyType="13" AddNpcConfigID="mount_dragon_003"/>
-	<Property ID="259" Name="»¨ºÃÔÂÔ²" AddPropertyType="8" AddPropertyAmount="145"/>
-	<Property ID="260" Name="G20·å»á" AddPropertyType="8" AddPropertyAmount="146"/>
-	<Property ID="261" Name="Ê¢ÊÀÁª»¶" AddPropertyType="8" AddPropertyAmount="147"/>
-	<Property ID="262" Name="ÒÆËÙºÏ¼Á" AddPropertyType="5" AddPropertyAmount="1" AddBufferID="buff_yaoshui11" AddMaxDistance="10" ExclusionID="buff_yaoshui01,buff_yaoshui02,buff_yaoshui03,buff_yaoshui04"/>
-	<Property ID="263" Name="ÃØ¾³ÆæÓö" AddPropertyType="8" AddPropertyAmount="148"/>
-	<Property ID="264" Name="¹Ç»Ò¼¶¹ó×å" AddPropertyType="8" AddPropertyAmount="149"/>
-	<Property ID="265" Name="è­è²¼¶¾«Ó¢" AddPropertyType="8" AddPropertyAmount="150"/>
-	<Property ID="266" Name="²»ÇüÓÂÊ¿" AddPropertyType="8" AddPropertyAmount="151"/>
-	<Property ID="267" Name="ÍòÊ¥½Ú" AddPropertyType="8" AddPropertyAmount="152"/>
-	<Property ID="268" Name="µØÓüÐÐÕß" AddPropertyType="13" AddNpcConfigID="mount_dragon_004"/>
-	<Property ID="269" Name="ÓÄÚ¤·ï»Ë" AddPropertyType="13" AddNpcConfigID="mount_phoenix_001"/>
-	<Property ID="270" Name="ÄÏ¹Ï´¬" AddPropertyType="13" AddNpcConfigID="mount_ship_001"/>
-	<Property ID="271" Name="³àÑæÑÇÁú" AddPropertyType="13" AddNpcConfigID="mount_dragon_001b"/>
-	<Property ID="272" Name="±ÌÓñ²ÔÁú" AddPropertyType="13" AddNpcConfigID="mount_dragon_001c"/>
-	<Property ID="273" Name="Ô¡ÑªÍ³Áì" AddPropertyType="8" AddPropertyAmount="159"/>
-	<Property ID="274" Name="¸ç²¼ÁÖÍ³Áì" AddPropertyType="8" AddPropertyAmount="160"/>
-	<Property ID="275" Name="ÉÍ½ðÁÔÈË" AddPropertyType="8" AddPropertyAmount="161"/>
-	<Property ID="276" Name="Õ½ÎÞ²»Ê¤" AddPropertyType="8" AddPropertyAmount="162"/>
-	<Property ID="277" Name="¶á±¦¿ñÈË" AddPropertyType="8" AddPropertyAmount="163"/>
-	<Property ID="278" Name="½ðÅÆK¸è´ïÈË" AddPropertyType="8" AddPropertyAmount="156"/>
-	<Property ID="279" Name="ÒøÅÆK¸è´ïÈË" AddPropertyType="8" AddPropertyAmount="157"/>
-	<Property ID="280" Name="Í­ÅÆK¸è´ïÈË" AddPropertyType="8" AddPropertyAmount="158"/>
-	<Property ID="282" Name="ÖÜÄê»Æ½ð¹ó×å" AddPropertyType="8" AddPropertyAmount="164"/>
-	<Property ID="283" Name="ÖÜÄê°×½ð¹ó×å" AddPropertyType="8" AddPropertyAmount="165"/>
-	<Property ID="284" Name="ÖÜÄê×êÊ¯¹ó×å" AddPropertyType="8" AddPropertyAmount="166"/>
-	<Property ID="285" Name="ÖÜÄêÖÁ×ð¹ó×å" AddPropertyType="8" AddPropertyAmount="167"/>
-	<Property ID="286" Name="Ê¥µ®¿ñ»¶" AddPropertyType="8" AddPropertyAmount="168"/>
-	<Property ID="287" Name="Ì¤Ñ©Éñ÷ç" AddPropertyType="13" AddNpcConfigID="mount_elk_001"/>
+	<Property ID="132" Name="HP30%" AddPropertyType="6" AddPropertyAmount="15"/>
+	<Property ID="133" Name="HP100%" AddPropertyType="6" AddPropertyAmount="100"/>
+	<Property ID="134" Name="MP30%" AddPropertyType="7" AddPropertyAmount="15"/>
+	<Property ID="135" Name="MP100%" AddPropertyType="7" AddPropertyAmount="100"/>
+	<Property ID="136" Name=" å¢žåŠ åŒå€ç»éªŒ1å°æ—¶" AddPropertyType="8" AddPropertyAmount="60"/>
+	<Property ID="137" Name="å¢žåŠ 5ç‚¹é¾™çº¹ç‚¹" AddCapitalType="13" AddCapitalAmount="5"/>
+	<Property ID="138" Name="5ä¸‡é‡‘å¸" AddCapitalType="1" AddCapitalAmount="50000"/>
+	<Property ID="139" Name="500ç»“æ™¶" AddCapitalType="8" AddCapitalAmount="500"/>
+	<Property ID="140" Name="1000ç»‘é’»" AddCapitalType="3" AddCapitalAmount="1000"/>
+	<Property ID="141" Name="1ä¸‡é‡‘å¸" AddCapitalType="1" AddCapitalAmount="10000"/>
+	<Property ID="142" Name="3ä¸‡é‡‘å¸" AddCapitalType="1" AddCapitalAmount="30000"/>
+	<Property ID="143" Name="8ä¸‡é‡‘å¸" AddCapitalType="1" AddCapitalAmount="80000"/>
+	<Property ID="144" Name="5ç»‘é’»" AddCapitalType="3" AddCapitalAmount="5"/>
+	<Property ID="145" Name="10ç»‘é’»" AddCapitalType="3" AddCapitalAmount="10"/>
+	<Property ID="146" Name="25ç»‘é’»" AddCapitalType="3" AddCapitalAmount="25"/>
+	<Property ID="147" Name="50ç»‘é’»" AddCapitalType="3" AddCapitalAmount="50"/>
+	<Property ID="148" Name="5000é‡‘å¸" AddCapitalType="1" AddCapitalAmount="5000"/>
+	<Property ID="149" Name="15000é‡‘å¸" AddCapitalType="1" AddCapitalAmount="15000"/>
+	<Property ID="150" Name="2ä¸‡é‡‘å¸" AddCapitalType="1" AddCapitalAmount="20000"/>
+	<Property ID="151" Name="300é’»çŸ³" AddCapitalType="2" AddCapitalAmount="300"/>
+	<Property ID="152" Name="å¹½çµç‹¼" AddNpcConfigID="ride_wolf_003" AddNpcJudge="0" AddNpcProperty="0,0,0"/>
+	<Property ID="153" Name="å¹½çµç‹¼" AddNpcConfigID="ride_wolf_003" AddNpcJudge="1" AddNpcPercent="1500"/>
+	<Property ID="154" Name="100ç»‘é’»" AddCapitalType="3" AddCapitalAmount="100"/>
+	<Property ID="155" Name="120ç»‘é’»" AddCapitalType="3" AddCapitalAmount="120"/>
+	<Property ID="156" Name="140ç»‘é’»" AddCapitalType="3" AddCapitalAmount="140"/>
+	<Property ID="157" Name="é“æ‹³é‡‘åˆš" AddNpcConfigID="ride_kingkong_001" AddNpcJudge="0" AddNpcProperty="0,0,0"/>
+	<Property ID="158" Name="å¹½å†¥æˆ˜é©¬" AddNpcConfigID="ride_horse_003" AddNpcJudge="0" AddNpcProperty="0,0,0"/>
+	<Property ID="159" Name="è¿…çŒ›é¾™" AddNpcConfigID="ride_dragon_005" AddNpcJudge="0" AddNpcProperty="0,0,0"/>
+	<Property ID="160" Name="æœˆå¡" AddCardType="1"/>
+	<Property ID="161" Name="å­£å¡" AddCardType="2"/>
+	<Property ID="162" Name="å¹´å¡" AddCardType="3"/>
+	<Property ID="163" Name="æœˆå¡å‡çº§å­£å¡" AddCardType="5"/>
+	<Property ID="164" Name="æœˆå¡å‡çº§å¹´å¡" AddCardType="6"/>
+	<Property ID="165" Name="å­£å¡å‡çº§å¹´å¡" AddCardType="7"/>
+	<Property ID="166" Name="ä¸€å—é’±ç»éªŒ" AddPropertyType="3" AddPropertyAmount="1"/>
+	<Property ID="167" Name="ä¸€å—é’±ç»éªŒ(ä¸è®¡ç®—ç´¯è®¡å……å€¼)" AddPropertyType="9" AddPropertyAmount="1"/>
+	<Property ID="168" Name="20ç»“æ™¶" AddCapitalType="8" AddCapitalAmount="20"/>
+	<Property ID="169" Name="50ç»“æ™¶" AddCapitalType="8" AddCapitalAmount="50"/>
+	<Property ID="170" Name="100ç»“æ™¶" AddCapitalType="8" AddCapitalAmount="100"/>
+	<Property ID="171" Name="å¢žåŠ 1ç‚¹é¾™çº¹ç‚¹" AddCapitalType="13" AddCapitalAmount="1"/>
+	<Property ID="172" Name="å¢žåŠ 1wäººç‰©ç»éªŒ" AddPropertyType="10" AddPropertyAmount="5000" AddPropertySource="1"/>
+	<Property ID="173" Name="å‡å°‘çº¢åæ—¶é—´" AddPropertyType="11" AddPropertyAmount="-3600000"/>
+	<Property ID="174" Name="å¤©é©¬" AddNpcConfigID="ride_horse_004" AddNpcJudge="0" AddNpcProperty="0,0,0"/>
+	<Property ID="175" Name="éœ¸çŽ‹é¾™" AddNpcConfigID="ride_dragon_004" AddNpcJudge="0" AddNpcProperty="0,0,0"/>
+	<Property ID="176" Name="66ç»‘é’»" AddCapitalType="3" AddCapitalAmount="66"/>
+	<Property ID="177" Name="88ç»‘é’»" AddCapitalType="3" AddCapitalAmount="88"/>
+	<Property ID="178" Name="å‰‘é½¿è™Ž" AddNpcConfigID="ride_horse_004" AddNpcJudge="0" AddNpcProperty="0,0,0"/>
+	<Property ID="179" Name="å‡¤å‡°" AddNpcConfigID="ride_Phoenix_001" AddNpcJudge="0" AddNpcProperty="0,0,0"/>
 </Object>

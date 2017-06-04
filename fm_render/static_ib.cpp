@@ -80,7 +80,8 @@ bool CStaticIB::Create(int format, const void* pdata, unsigned int size)
 	glBufferData(GL_ELEMENT_ARRAY_BUFFER, m_nSize, pData, GL_STATIC_DRAW);
 
 	CORE_FREE(pData, m_nSize);
-	int err = glGetError();
+  //int err = glGetError();
+  int err = 0;
 
 	if (err != GL_NO_ERROR)
 	{

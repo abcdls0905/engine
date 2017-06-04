@@ -8,7 +8,7 @@
 	<Property ID="pet_12" Name="Å­Ñ×î¿°í" UseLimitType="2" SelfEquipageName="RoleIndex" SelfEquipageValue="1" TargetEquipageConfigID="ConfigID" TargetEquipageName="pet_22" TargetCompareNotation="=="/>
 	<Property ID="pet_23" Name="ÉñÅ£î¿°í" UseLimitType="2" SelfEquipageName="RoleIndex" SelfEquipageValue="1" TargetEquipageConfigID="ConfigID" TargetEquipageName="pet_21" TargetCompareNotation="=="/>
 	<Property ID="pet_21" Name="±ùÅÚÉñ¹êî¿°í" UseLimitType="2" SelfEquipageName="RoleIndex" SelfEquipageValue="1" TargetEquipageConfigID="ConfigID" TargetEquipageName="pet_23" TargetCompareNotation="=="/>
-	<Property ID="pet_9" Name="±ùËª¾ÞÁúî¿°í" UseLimitType="2" SelfEquipageName="RoleIndex" SelfEquipageValue="1" TargetEquipageConfigID="ConfigID" TargetEquipageName="pet_10" TargetCompareNotation="=="/>
+	<Property ID="pet_9" Name="±ùËª¾ÞÁúî¿°í" UseLimitType="4" SelfEquipageName="RoleIndex" SelfEquipageValue="1" TargetEquipageConfigID="ConfigID" TargetEquipageName="pet_10" TargetCompareNotation="=="/>
 	<Property ID="pet_10" Name="ºÚ°µ¾ÞÁúî¿°í" UseLimitType="2" SelfEquipageName="RoleIndex" SelfEquipageValue="1" TargetEquipageConfigID="ConfigID" TargetEquipageName="pet_9" TargetCompareNotation="=="/>
 	<Property ID="pet_11" Name="ÉúÃü¾ÞÁúî¿°í" UseLimitType="2" SelfEquipageName="RoleIndex" SelfEquipageValue="1" TargetEquipageConfigID="ConfigID" TargetEquipageName="pet_20" TargetCompareNotation="=="/>
 	<Property ID="pet_20" Name="Å®ÎÏî¿°í" UseLimitType="2" SelfEquipageName="RoleIndex" SelfEquipageValue="1" TargetEquipageConfigID="ConfigID" TargetEquipageName="pet_11" TargetCompareNotation="=="/>
@@ -16,11 +16,10 @@
 	<Property ID="pet_14" Name="±ùËª·ï»Ëî¿°í" UseLimitType="2" SelfEquipageName="RoleIndex" SelfEquipageValue="1" TargetEquipageConfigID="ConfigID" TargetEquipageName="pet_13" TargetCompareNotation="=="/>
 	<Property ID="pet_19" Name="äÎÃð·¨Ê¦î¿°í" UseLimitType="2" SelfEquipageName="RoleIndex" SelfEquipageValue="1" TargetEquipageConfigID="ConfigID" TargetEquipageName="pet_18" TargetCompareNotation="=="/>
 	<Property ID="pet_18" Name="¶¾É·î¿°í" UseLimitType="2" SelfEquipageName="RoleIndex" SelfEquipageValue="1" TargetEquipageConfigID="ConfigID" TargetEquipageName="pet_19" TargetCompareNotation="=="/>
-	<Property ID="ganzhu_1" Name="¸ÏÖí" UseLimitType="3" SelfBuffEquipConfigID="ConfigID" SelfBuffEquipName="buff_ganzhu_skill_3" SelfBuffCompareNotation="=="/>
-	<Property ID="ganzhu_2" Name="¸ÏÖí" UseLimitType="3" SelfBuffEquipConfigID="ConfigID" SelfBuffEquipName="buff_ganzhu2_skill_3" SelfBuffCompareNotation="=="/>
-	<Property ID="ganzhu_3" Name="¸ÏÖí" UseLimitType="3" SelfBuffEquipConfigID="ConfigID" SelfBuffEquipName="buff_ganzhu3_skill_3" SelfBuffCompareNotation="=="/>
-	<Property ID="debuff_phoenix_skill_05" Name="½¹·ÙÒ×ÉË" UseLimitType="4" TargetBuffCompareNotation="==" TargetLimitBuffID="buff_hpoenix_sk02"/>
-	<Property ID="debuff_shooter_skill_05" Name="ÎÁÒßÉäÊÖ-ÎÁÒßBUFF¶îÍâÉËº¦" UseLimitType="4" TargetBuffCompareNotation="==" TargetLimitBuffID="buff_shooter_skill_04"/>
+	<Property ID="PC_JY_wd_tjj02_1" Name="ÐéÕÐ»÷ÆÆÕÐ¼ÜÄ¿±êµÄÏÞÖÆ" UseLimitType="4" TargetBuffCompareNotation="==" TargetLimitBuffID="test_parry"/>
+	<Property ID="PC_JY_ty_notparry_1" Name="¾ÅÒõÍ¨ÓÃÄ¿±ê²»´æÔÚÕÐ¼Übuff" UseLimitType="2" TargetEquipageConfigID="InParry" TargetEquipageName="1" TargetCompareNotation="!=" TargetBuffCompareNotation="&gt;=" TargetLimitBuffID="test_parry"/>
+	<Property ID="limit_buff_xj_yxzy_001" Name="Ä¿±ê²»´æÔÚbuff_xj_yxzy_11_3" UseLimitType="4" TargetBuffCompareNotation="!=" TargetLimitBuffID="buff_xj_yxzy_11_3"/>
+	<Property ID="limit_buff_xj_yxzy_002" Name="Ä¿±ê²»´æÔÚbuff_xj_yxzy_13_2" UseLimitType="4" TargetBuffCompareNotation="!=" TargetLimitBuffID="buff_xj_yxzy_13_2"/>
 </Object>
 
 

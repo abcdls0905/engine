@@ -442,7 +442,8 @@ void Form::Paint(float seconds)
 	}
 
 	// 必须在此
-	if ((!GetNoFrame()) && (!HasBackImage()))
+  //ls test
+	if ((!GetNoFrame()) && (!HasBackImage()) && false)
 	{
 		// 画边框线
 		int x1 = InnerGetAbsLeft();

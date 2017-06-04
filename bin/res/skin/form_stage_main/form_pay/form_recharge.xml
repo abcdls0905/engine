@@ -1,166 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" ?>
 <form>
-	<control name="main_form" entity="Form" script="" init="">
-		<prop Left="37" Top="37" Width="1280" Height="720" BackColor="100,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" DrawMode="Expand"/>
-		<control name="groupbox_main" entity="GroupBox" script="" init="">
-			<prop ClipChildren="false" Left="229" Top="41" Width="822" Height="638" BackColor="0,255,255,255" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" Visible="false" NoFrame="true"/>
-			<control name="Label4" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="-331" Top="-183" Width="733" Height="494" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" DrawMode="Expand" BackImage="gui/tp2_common/nine/tankuang.png"/>
-			</control>
-			<control name="lbl_1" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="-563" Top="-360" Width="546" Height="664" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" AutoSize="true" DrawMode="FitWindow" BackImage="gui/xm2_main/pay/sc_sishen.png"/>
-			</control>
-			<control name="Label1" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="-139" Top="-126" Width="543" Height="437" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" AutoSize="true" BackImage="gui/xm2_main/pay/sc-ditu.png"/>
-			</control>
-			<control name="lbl_3" entity="Label" script="" init="">
-				<prop Align="Center" RefCursor="WIN_HELP" Left="-132" Top="-198" Width="619" Height="119" ForeColor="255,204,255,255" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" AutoSize="true" BackImage="gui/xm2_main/pay/sc_biaoti.png"/>
-			</control>
-			<control name="lbl_fp_item_name_0" entity="Label" script="" init="">
-				<prop Align="Center" RefCursor="WIN_HELP" Left="-97" Top="174" Width="64" Height="15" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Font="WRYH18_O_BLACK"/>
-			</control>
-			<control name="lbl_fp_item_name_1" entity="Label" script="" init="">
-				<prop Align="Center" RefCursor="WIN_HELP" Left="3" Top="174" Width="64" Height="15" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Font="WRYH18_O_BLACK"/>
-			</control>
-			<control name="lbl_fp_item_name_2" entity="Label" script="" init="">
-				<prop Align="Center" RefCursor="WIN_HELP" Left="103" Top="174" Width="64" Height="15" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Font="WRYH18_O_BLACK"/>
-			</control>
-			<control name="lbl_fp_item_name_3" entity="Label" script="" init="">
-				<prop Align="Center" RefCursor="WIN_HELP" Left="203" Top="174" Width="64" Height="15" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Font="WRYH18_O_BLACK"/>
-			</control>
-			<control name="lbl_fp_item_name_4" entity="Label" script="" init="">
-				<prop Align="Center" RefCursor="WIN_HELP" Left="303" Top="174" Width="64" Height="15" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Font="WRYH18_O_BLACK"/>
-			</control>
-			<control name="btn_recharge" entity="Button" script="" init="">
-				<prop NormalImage="gui/xm2_main/pay/chongzhi.png" PushImage="gui/xm2_main/pay/chongzhi1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="154" Top="223" Width="208" Height="65" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Font="WRYH28_O_BLACK" TabIndex="100" TabStop="true" DrawMode="FitWindow" ClickSound="ui_open"/>
-			</control>
-			<control name="Label2" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="186" Top="-112" Width="205" Height="179" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" AutoSize="true" BackImage="gui/xm2_main/pay/sc_sishen1.png"/>
-			</control>
-			<control name="imggrid_1stpay_gift" entity="ImageGrid" script="" init="">
-				<prop SelectColor="0,0,255,0" MouseInColor="0,255,255,0" CoverColor="80,255,0,0" LockColor="80,255,255,0" CoolColor="100,0,0,0" ViewRect="0,0,32,32" MaxSize="1" RowNum="5" ClomnNum="1" GridHeight="76" GridWidth="76" GridsPos="10,0;110,0;210,0; 310 ,0;410 ,0;510 ,0" DrawMouseIn="RECT" DrawMouseSelect="RECT" DrawCover="RECT" DrawLock="RECT" DrawGridBack="gui/tp2_common/window/active_17.png" MouseDownScale="0.980000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" HasVScroll="false" Left="-113" Top="88" Width="494" Height="78" BackColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" NoFrame="true"/>
-			</control>
-			<control name="lbl_2" entity="Label" script="" init="">
-				<prop Align="Center" RefCursor="WIN_HELP" Left="-121" Top="-96" Width="369" Height="111" ForeColor="255,204,255,255" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" AutoSize="true" BackImage="gui/xm2_main/pay/sc_biaoti1.png"/>
-			</control>
-			<control name="btn_close" entity="Button" script="" init="">
-				<prop NormalImage="gui/tp2_common/window/clos.png" PushImage="gui/tp2_common/window/clos1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="341" Top="-200" Width="70" Height="70" BackColor="255,192,192,192" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" TabStop="true" AutoSize="true" ClickSound="ui_close"/>
-			</control>
-			<control name="Label3" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="37" Top="-3" Width="189" Height="54" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" AutoSize="true" BackImage="gui/xm2_main/pay/sc_name.png"/>
-			</control>
-			<control name="groupbox_start" entity="GroupBox" script="" init="">
-				<prop ClipChildren="false" Left="-115" Top="146" Width="100" Height="22" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Visible="false" NoFrame="true"/>
-				<control name="lbl_start" entity="Label" script="" init="">
-					<prop RefCursor="WIN_HELP" Left="20" Width="17" Height="17" ForeColor="0,0,0,0" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/roles/xing3.png"/>
-				</control>
-			</control>
-			<control name="lbl_particle2" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="296" Top="88" Width="78" Height="78" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Particles2d="particleeffects_009j"/>
-			</control>
-			<control name="lbl_particle1" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="296" Top="88" Width="78" Height="78" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center"/>
-			</control>
-			<control name="lbl_particle3_cpy" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="-4" Top="88" Width="78" Height="78" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Particles2d="particleeffects_009k"/>
-			</control>
-			<control name="lbl_particle3_cpy_cpy" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="-104" Top="88" Width="78" Height="78" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Particles2d="particleeffects_009k"/>
-			</control>
-			<control name="lbl_particle3_cpy2" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="196" Top="88" Width="78" Height="78" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Particles2d="particleeffects_009k"/>
-			</control>
-			<control name="lbl_particle3" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="96" Top="88" Width="78" Height="78" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Particles2d="particleeffects_009k"/>
-			</control>
-			<control name="lbl_recharge_particle_3" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="189" Top="192" Width="416" Height="65" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Particles2d="particleeffects_005h"/>
-			</control>
-			<control name="lbl_recharge_particle_4" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="-339" Top="10" Width="416" Height="65" ShadowColor="0,0,0,0" VAnchor="Center" HAnchor="Center" Particles2d="particleeffects_005g"/>
-			</control>
-			<control name="Label6" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="619" Top="525" Width="100" Height="100" ShadowColor="0,0,0,0" Particles2d="particleeffects_020d"/>
-			</control>
-			<control name="Label5" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="578" Top="486" Width="177" Height="200" ShadowColor="0,0,0,0" AutoSize="true" BackImage="guide_click"/>
-			</control>
-		</control>
-		<control name="grp_gift_show" entity="GroupBox" script="" init="">
-			<prop Left="40" Top="15" Width="1200" Height="690" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
-			<control name="Label7" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="410" Width="790" Height="690" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/chongzhi/beijing.jpg"/>
-			</control>
-			<control name="image_people" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Width="470" Height="690" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/chongzhi/renwu_1.jpg"/>
-			</control>
-			<control name="lbl_vip" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="458" Top="236" Width="630" Height="145" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/chongzhi/neirong_1.png"/>
-			</control>
-			<control name="btn_pay" entity="Button" script="" init="">
-				<prop NormalImage="gui/tp2_common/window/cancel.png" PushImage="gui/tp2_common/window/cancel1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="917" Top="494" Width="150" Height="60" ForeColor="255,255,255,204" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Text="@ui_pay_pay" Font="WRYH24" AutoSize="true"/>
-			</control>
-			<control name="title" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="312" Top="82" Width="860" Height="135" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/chongzhi/biaoti_1.png"/>
-			</control>
-			<control name="close" entity="Button" script="" init="">
-				<prop NormalImage="gui/tp2_common/window/clos.png" PushImage="gui/tp2_common/window/clos1.png" FocusBlendColor="255,255,255,255" PushBlendColor="255,255,255,255" DisableBlendColor="255,255,255,255" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" Left="1056" Top="154" Width="70" Height="70" BackColor="255,192,192,192" ShadowColor="0,0,0,0" AutoSize="true"/>
-			</control>
-			<control name="grp_show_pay" entity="GroupBox" script="" init="">
-				<prop Left="385" Top="591" Width="790" Height="80" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
-				<control name="pay_1" entity="Label" script="" init="">
-					<prop Align="Right" RefCursor="WIN_HELP" Left="140" Top="10" Width="80" Height="48" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="68" Font="chongzi"/>
-				</control>
-				<control name="pay_2" entity="Label" script="" init="">
-					<prop Align="Right" RefCursor="WIN_HELP" Left="545" Top="10" Width="80" Height="48" ForeColor="255,255,255,255" ShadowColor="0,0,0,0" Text="22" Font="chongzi"/>
-				</control>
-				<control name="Label8" entity="Label" script="" init="">
-					<prop RefCursor="WIN_HELP" Top="28" Width="130" Height="35" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/chongzhi/yuanjia.png"/>
-				</control>
-				<control name="Label10" entity="Label" script="" init="">
-					<prop RefCursor="WIN_HELP" Left="230" Top="26" Width="46" Height="42" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/chongzhi/yuan.png"/>
-				</control>
-				<control name="Label11" entity="Label" script="" init="">
-					<prop RefCursor="WIN_HELP" Left="625" Top="26" Width="46" Height="42" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/chongzhi/yuan.png"/>
-				</control>
-				<control name="Label12" entity="Label" script="" init="">
-					<prop RefCursor="WIN_HELP" Left="87" Top="33" Width="191" Height="24" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/chongzhi/heng.png"/>
-				</control>
-				<control name="Label9" entity="Label" script="" init="">
-					<prop RefCursor="WIN_HELP" Left="296" Top="29" Width="262" Height="35" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/chongzhi/zaichong.png"/>
-				</control>
-			</control>
-			<control name="grp_item" entity="GroupBox" script="" init="">
-				<prop Left="472" Top="393" Width="598" Height="100" BackColor="0,255,255,255" LineColor="0,0,0,0" ShadowColor="0,0,0,0"/>
-				<control name="grp_gift_item" entity="GroupBox" script="" init="">
-					<prop Width="100" Height="100" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true"/>
-					<control name="lbl_gift_kuang" entity="Label" script="" init="">
-						<prop Transparent="false" ClickEvent="true" RefCursor="WIN_HELP" Left="9" Top="9" Width="82" Height="82" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_common/window/item.png"/>
-					</control>
-					<control name="lbl_gift_item" entity="Label" script="" init="">
-						<prop Transparent="false" ClickEvent="true" RefCursor="WIN_HELP" Left="14" Top="14" Width="72" Height="72" ShadowColor="0,0,0,0"/>
-					</control>
-					<control name="lbl_gift_color" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="14" Top="14" Width="72" Height="72" ShadowColor="0,0,0,0"/>
-					</control>
-					<control name="lbl_gift_count" entity="Label" script="" init="">
-						<prop Align="Right" RefCursor="WIN_HELP" Left="46" Top="61" Width="37" Height="21" ForeColor="255,255,255,204" ShadowColor="0,0,0,0" Font="WRYH18_O_BLACK"/>
-					</control>
-					<control name="lbl_gift_name" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="3" Top="107" Width="80" Height="16" ShadowColor="0,0,0,0" Text="Label13"/>
-					</control>
-					<control name="lbl_gift_particle" entity="Label" script="" init="">
-						<prop RefCursor="WIN_HELP" Left="10" Top="45" Width="80" Height="16" ShadowColor="0,0,0,0" Particles2d="particleeffects_002g"/>
-					</control>
-				</control>
-			</control>
-			<control name="vip_gift_get" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="464" Top="488" Width="490" Height="75" ShadowColor="0,0,0,0" AutoSize="true" BackImage="gui/tp2_main/chongzhi/libao_1.png"/>
-			</control>
-			<control name="Label13" entity="Label" script="" init="">
-				<prop RefCursor="WIN_HELP" Left="903" Top="433" Width="177" Height="200" ShadowColor="0,0,0,0" AutoSize="true" BackImage="guide_click"/>
-			</control>
-		</control>
-	</control>
+    <control name="main_form" entity="Form" script="" init="">
+        <prop IsGC="true" Left="13" Top="37" Width="920" Height="582" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" />
+        <control name="groupbox_main" entity="GroupBox" script="" init="">
+            <prop Width="932" Height="574" BackColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" AutoSize="true" />
+            <control name="imagegrid_first_pay" entity="ImageGrid" script="" init="">
+                <prop SelectColor="0,0,255,0" MouseInColor="0,255,255,255" CoverColor="0,255,0,0" LockColor="0,255,255,255" CoolColor="0,0,0,0" ViewRect="0,0,380,75" MaxSize="-1" RowNum="1" ClomnNum="4" ShowEmpty="false" GridHeight="90" GridWidth="90" GridsPos="35,15;165,15;259,15;355,15" DrawMouseIn="" DrawMouseSelect="" DrawCover="" DrawLock="" DrawGridBack="gui\common2\gird\wupinkuang.png" GridBackOffsetX="-5" GridBackOffsetY="-5" GridCoverOffsetX="-8" GridCoverOffsetY="-8" MouseDownScale="0.980000" MouseDownOffsetX="2" MouseDownOffsetY="2" MouseDownAlpha="128" HasVScroll="false" Left="405" Top="312" Width="463" Height="134" BackColor="0,255,255,255" BlendColor="0,255,255,255" ShadowColor="0,0,0,0" NoFrame="true" />
+            </control>
+            <control name="lbl_2" entity="Label" script="" init="">
+                <prop RefCursor="WIN_HELP" Width="932" Height="574" ShadowColor="0,0,0,0" TestTrans="true" AutoSize="true" BackImage="gui\pay\shouchong_bg.png" />
+            </control>
+            <control name="btn_recharge" entity="Button" script="" init="">
+                <prop NormalImage="gui\pay\qianquchongzhi.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" MouseDownScale="0.150000" Left="530" Top="468" Width="180" Height="70" ForeColor="255,99,57,30" BackColor="255,192,192,192" ShadowColor="0,0,0,0" Font="Title_new_s" TabIndex="100" TabStop="true" AutoSize="true" DrawMode="FitWindow" ClickSound="ui_open" />
+            </control>
+            <control name="lbl_1" entity="Label" script="" init="">
+                <prop Align="Center" RefCursor="WIN_HELP" Left="341" Top="-1" Width="255" Height="58" ForeColor="255,99,57,30" ShadowColor="0,0,0,0" Text="@ui_rechargefirst" Font="Title_new_s" AutoSize="true" />
+            </control>
+            <control name="btn_close" entity="Button" script="" init="">
+                <prop NormalImage="gui\common2\btn\close.png" PushImage="gui\common2\btn\close.png" NormalColor="0,0,0,0" FocusColor="0,0,0,0" PushColor="0,0,0,0" DisableColor="0,0,0,0" MouseDownScale="0.150000" Left="841" Top="18" Width="82" Height="82" BackColor="0,192,192,192" ShadowColor="0,0,0,0" TabStop="true" NoFrame="true" AutoSize="true" DrawMode="FitWindow" ClickSound="ui_close" />
+            </control>
+        </control>
+    </control>
 </form>
-

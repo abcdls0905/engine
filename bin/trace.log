@@ -1,4 +1,4 @@
-[2017-02-04 22:40:42.076] 
+[2017-06-04 02:19:58.193] 
 [GPU Info]
 PVRVFrame 9.8 - None (Host : Intel(R) HD Graphics 4600) (SDK Build: 3.3@2850019)
 Imagination Technologies (Host: Intel)
@@ -13,21 +13,21 @@ TextureFloat16Supported:true
 TextureFloat32Supported:false
 TextureFloat16LinearSupported:false
 TextureFloat32LinearSupported:true
-TextureFloat16ColorBufferSupported:false
-TextureFloat32ColorBufferSupported:false
+TextureFloat16ColorBufferSupported:true
+TextureFloat32ColorBufferSupported:true
 BinaryShaderSupported:true
 DepthTextureSupported:true
-Texture3DSupported:false
+Texture3DSupported:true
 TextureNPOTSupported:false
 TextureFilterAnisotropicSupported:true
 TextureRGSupported:true
 Depth24Stencil8Supported:true
 Stencil1Supported:false
 Stencil4Supported:false
-RGB888_RGBA8888Supported:false
-RGBA8888Supported:false
-Depth24Supported:false
-Depth32Supported:false
+RGB888_RGBA8888Supported:true
+RGBA8888Supported:true
+Depth24Supported:true
+Depth32Supported:true
 FboRenderMipMap:false
 VertexFloat16Supported:false
 ShadowSamplersSupported:false
@@ -37,7 +37,7 @@ SRGBSupported:false
 DiscardFrameBufferSupported:true
 PartnerGPU:false
 
-[2017-02-04 22:40:42.076] TextureMaxSize:16384
+[2017-06-04 02:19:58.194] TextureMaxSize:16384
 FragmentTextureSamplerMaxNum:32
 VertexTextureSamplerMaxNum:32
 CombindTextureSamplerMaxNum:32
@@ -46,27 +46,333 @@ FragmentUniformVectorsMaxNum:1024
 VertexUniformVectorsMaxNum:1024
 VertexAttribsMaxNum:16
 
-[2017-02-04 22:40:42.076] [Extensions]
-[2017-02-04 22:40:42.086] GL_APPLE_copy_texture_levels GL_APPLE_texture_2D_limited_npot GL_EXT_blend_minmax GL_EXT_debug_marker GL_EXT_discard_framebuffer GL_EXT_draw_buffers GL_EXT_multi_draw_arrays GL_EXT_multisampled_render_to_texture GL_EXT_occlusion_query_boolean GL_EXT_shader_texture_lod GL_ GL_EXT_texture_filter_anisotropic GL_EXT_texture_format_BGRA8888 GL_EXT_texture_rg GL_EXT_texture_storage GL_EXT_texture_type_2_10_10_10_REV GL_IMG_multisampled_render_to_texture GL_IMG_program_binary GL_IMG_read_format GL_IMG_shader_binary GL_IMG_texture_compression_pvrtc GL_IMG_texture_compression_pvrtc2 GL_IMG_texture_env_enhanced_fixed_function GL_IMG_texture_format_BGRA8888 GL_IMG_texture_npot GL_IMG_texture_stream GL_IMG_texture_stream2 GL_IMG_uniform_buffer_object GL_IMG_user_clip_plane GL_IMG_vertex_array_object GL_KHR_debug GL_KHR_blend_equation_advanced GL_OES_blend_equation_separate GL_OES_blend_func_separate GL_OES_blend_subtract GL_OES_byte_coordinates GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_depth_texture_cube_map GL_OES_draw_texture GL_OES_EGL_image_external GL_OES_egl_sync GL_OES_element_index_uint GL_OES_extended_matrix_palette GL_OES_fixed_point GL_OES_fragment_precision_high GL_OES_framebuffer_object GL_OES_get_program_binary GL_OES_mapbuffer GL_OES_matrix_get GL_OES_matrix_palette GL_OES_packed_depth_stencil GL_OES_point_size_array GL_OES_point_sprite GL_OES_query_matrix GL_OES_read_format GL_OES_required_internalformat GL_OES_sample_shading GL_OES_sample_variables GL_OES_shader_image_atomic GL_OES_shader_multisample_interpolation GL_OES_single_precision GL_OES_standard_derivatives GL_OES_stencil_wrap GL_OES_texture_cube_map GL_OES_texture_env_crossbar GL_OES_texture_float GL_OES_texture_half_float GL_OES_texture_mirrored_repeat GL_OES_texture_stencil8 GL_OES_texture_storage_multisample_2d_array GL_OES_vertex_array_object 
-[2017-02-04 22:40:42.086] [DeviceSize] 1268X756
-[2017-02-04 22:40:42.086] ColorBufferBit: R:8 G:8 B:8 A:8
+[2017-06-04 02:19:58.195] [Extensions]
+[2017-06-04 02:19:58.195] GL_APPLE_copy_texture_levels GL_APPLE_texture_2D_limited_npot GL_EXT_blend_minmax GL_EXT_debug_marker GL_EXT_discard_framebuffer GL_EXT_draw_buffers GL_EXT_multi_draw_arrays GL_EXT_multisampled_render_to_texture GL_EXT_occlusion_query_boolean GL_EXT_shader_texture_lod GL_ GL_EXT_texture_filter_anisotropic GL_EXT_texture_format_BGRA8888 GL_EXT_texture_rg GL_EXT_texture_storage GL_EXT_texture_type_2_10_10_10_REV GL_IMG_multisampled_render_to_texture GL_IMG_program_binary GL_IMG_read_format GL_IMG_shader_binary GL_IMG_texture_compression_pvrtc GL_IMG_texture_compression_pvrtc2 GL_IMG_texture_env_enhanced_fixed_function GL_IMG_texture_format_BGRA8888 GL_IMG_texture_npot GL_IMG_texture_stream GL_IMG_texture_stream2 GL_IMG_uniform_buffer_object GL_IMG_user_clip_plane GL_IMG_vertex_array_object GL_KHR_debug GL_KHR_blend_equation_advanced GL_OES_blend_equation_separate GL_OES_blend_func_separate GL_OES_blend_subtract GL_OES_byte_coordinates GL_OES_compressed_ETC1_RGB8_texture GL_OES_depth_texture GL_OES_depth_texture_cube_map GL_OES_draw_texture GL_OES_EGL_image_external GL_OES_egl_sync GL_OES_element_index_uint GL_OES_extended_matrix_palette GL_OES_fixed_point GL_OES_fragment_precision_high GL_OES_framebuffer_object GL_OES_get_program_binary GL_OES_mapbuffer GL_OES_matrix_get GL_OES_matrix_palette GL_OES_packed_depth_stencil GL_OES_point_size_array GL_OES_point_sprite GL_OES_query_matrix GL_OES_read_format GL_OES_required_internalformat GL_OES_sample_shading GL_OES_sample_variables GL_OES_shader_image_atomic GL_OES_shader_multisample_interpolation GL_OES_single_precision GL_OES_standard_derivatives GL_OES_stencil_wrap GL_OES_texture_cube_map GL_OES_texture_env_crossbar GL_OES_texture_float GL_OES_texture_half_float GL_OES_texture_mirrored_repeat GL_OES_texture_stencil8 GL_OES_texture_storage_multisample_2d_array GL_OES_vertex_array_object 
+[2017-06-04 02:19:58.196] [DeviceSize] 1280X768
+[2017-06-04 02:19:58.197] ColorBufferBit: R:8 G:8 B:8 A:8
 DepthBufferBit: 24
 StencilBufferBit: 8
 
-[2017-02-04 22:40:42.086] Game Init
-[2017-02-04 22:40:42.316] (CEntFactory::Create)class AnimationManger not found
-[2017-02-04 22:40:42.326] (CDesignLoader::LoadXmlResFile)open file failed
-[2017-02-04 22:40:42.326] skin\res_font.xml
-[2017-02-04 22:40:42.326] (CDesignLoader::LoadXmlResFile)open file failed
-[2017-02-04 22:40:42.326] skin\res_sound.xml
-[2017-02-04 22:40:42.326] Game Init End
-[2017-02-04 22:40:42.326] Scene::EnableRealizeTempDepthStencilRT
-[2017-02-04 22:40:42.336] Scene::SetEnableRealizTempDepthRT
-[2017-02-04 22:40:42.376] (CTexLoader::Load)texture e:\SVNPro\engine\trunk\bin\res\map//tex\default_base.dds not found
-[2017-02-04 22:40:42.376] (CTexLoader::Load)texture e:\SVNPro\engine\trunk\bin\res\map//tex\default_blend.dds not found
-[2017-02-04 22:40:42.816] (CTexLoader::Load)texture e:\SVNPro\engine\trunk\bin\res\map//tex\water\waternormalmap2.dds not found
-[2017-02-04 22:40:42.816] [Device Warning] Cann't support TEX_FORMAT_RGBA8888_UNORM!
-[2017-02-04 22:40:42.816] (CTexLoader::Load)texture e:\SVNPro\engine\trunk\bin\res\map// not found
-[2017-02-04 22:40:42.816] StageLoigin enter
-[2017-02-04 22:40:44.106] (load_tex)texture line_0009.dds not found
-[2017-02-04 22:40:44.786] (CTexLoader::Load)texture e:\SVNPro\engine\trunk\bin\res\map//tex\model\line_0009.dds not found
+[2017-06-04 02:19:58.198] Game Init
+[2017-06-04 02:19:58.266] (CEntFactory::Create)class AnimationManger not found
+[2017-06-04 02:19:58.268] (CDesignLoader::LoadXmlResFile)open file failed
+[2017-06-04 02:19:58.268] skin\res_font.xml
+[2017-06-04 02:19:58.269] (CDesignLoader::LoadXmlResFile)open file failed
+[2017-06-04 02:19:58.269] skin\res_sound.xml
+[2017-06-04 02:19:58.270] Game Init End
+[2017-06-04 02:19:58.270] Scene::EnableRealizeTempDepthStencilRT
+[2017-06-04 02:19:58.271] Scene::SetEnableRealizTempDepthRT
+[2017-06-04 02:19:58.310] (CTexLoader::Load)texture E:\SVNPro\engine\bin\res\ not found
+[2017-06-04 02:19:58.311] (SunGlow::LoadTexture)create flare texture failed
+[2017-06-04 02:19:58.311] 
+[2017-06-04 02:20:19.811] StageLoigin enter
+[2017-06-04 02:20:20.833] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.834] lf1_field_1
+[2017-06-04 02:20:20.834] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_3_3.alphamap
+[2017-06-04 02:20:20.835] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.836] brick02
+[2017-06-04 02:20:20.837] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_3_3.alphamap
+[2017-06-04 02:20:20.837] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.838] dirt01
+[2017-06-04 02:20:20.839] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_3_3.alphamap
+[2017-06-04 02:20:20.841] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.841] lf1_field_1
+[2017-06-04 02:20:20.842] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_2_2.alphamap
+[2017-06-04 02:20:20.843] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.844] brick02
+[2017-06-04 02:20:20.844] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_2_2.alphamap
+[2017-06-04 02:20:20.845] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.846] dirt01
+[2017-06-04 02:20:20.847] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_2_2.alphamap
+[2017-06-04 02:20:20.848] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.849] lf1_field_1
+[2017-06-04 02:20:20.850] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_2_3.alphamap
+[2017-06-04 02:20:20.850] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.851] brick02
+[2017-06-04 02:20:20.852] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_2_3.alphamap
+[2017-06-04 02:20:20.853] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.853] dirt01
+[2017-06-04 02:20:20.854] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_2_3.alphamap
+[2017-06-04 02:20:20.857] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.861] lf1_field_1
+[2017-06-04 02:20:20.862] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_2_4.alphamap
+[2017-06-04 02:20:20.863] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.863] brick02
+[2017-06-04 02:20:20.864] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_2_4.alphamap
+[2017-06-04 02:20:20.865] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.866] dirt01
+[2017-06-04 02:20:20.867] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_2_4.alphamap
+[2017-06-04 02:20:20.895] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.896] lf1_field_1
+[2017-06-04 02:20:20.897] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_3_4.alphamap
+[2017-06-04 02:20:20.897] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.909] brick02
+[2017-06-04 02:20:20.910] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_3_4.alphamap
+[2017-06-04 02:20:20.911] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.911] dirt01
+[2017-06-04 02:20:20.912] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_3_4.alphamap
+[2017-06-04 02:20:20.966] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.967] lf1_field_1
+[2017-06-04 02:20:20.967] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_4_2.alphamap
+[2017-06-04 02:20:20.968] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.968] brick02
+[2017-06-04 02:20:20.969] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_4_2.alphamap
+[2017-06-04 02:20:20.969] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.970] dirt01
+[2017-06-04 02:20:20.970] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_4_2.alphamap
+[2017-06-04 02:20:20.973] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.973] lf1_field_1
+[2017-06-04 02:20:20.974] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_4_4.alphamap
+[2017-06-04 02:20:20.974] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.975] brick02
+[2017-06-04 02:20:20.976] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_4_4.alphamap
+[2017-06-04 02:20:20.977] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.978] dirt01
+[2017-06-04 02:20:20.978] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_4_4.alphamap
+[2017-06-04 02:20:20.980] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.980] lf1_field_1
+[2017-06-04 02:20:20.981] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_1_1.alphamap
+[2017-06-04 02:20:20.982] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.983] brick02
+[2017-06-04 02:20:20.983] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_1_1.alphamap
+[2017-06-04 02:20:20.984] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:20.984] dirt01
+[2017-06-04 02:20:20.985] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_1_1.alphamap
+[2017-06-04 02:20:21.002] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.003] lf1_field_1
+[2017-06-04 02:20:21.003] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_1_2.alphamap
+[2017-06-04 02:20:21.004] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.004] brick02
+[2017-06-04 02:20:21.005] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_1_2.alphamap
+[2017-06-04 02:20:21.006] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.007] dirt01
+[2017-06-04 02:20:21.007] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_1_2.alphamap
+[2017-06-04 02:20:21.009] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.010] lf1_field_1
+[2017-06-04 02:20:21.011] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_1_3.alphamap
+[2017-06-04 02:20:21.012] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.013] brick02
+[2017-06-04 02:20:21.014] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_1_3.alphamap
+[2017-06-04 02:20:21.015] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.016] dirt01
+[2017-06-04 02:20:21.017] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_1_3.alphamap
+[2017-06-04 02:20:21.018] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.019] lf1_field_1
+[2017-06-04 02:20:21.019] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_1_4.alphamap
+[2017-06-04 02:20:21.020] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.020] brick02
+[2017-06-04 02:20:21.021] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_1_4.alphamap
+[2017-06-04 02:20:21.021] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.021] dirt01
+[2017-06-04 02:20:21.022] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_1_4.alphamap
+[2017-06-04 02:20:21.040] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.041] lf1_field_1
+[2017-06-04 02:20:21.041] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_1_5.alphamap
+[2017-06-04 02:20:21.042] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.042] brick02
+[2017-06-04 02:20:21.043] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_1_5.alphamap
+[2017-06-04 02:20:21.043] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.044] dirt01
+[2017-06-04 02:20:21.044] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_1_5.alphamap
+[2017-06-04 02:20:21.046] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.046] lf1_field_1
+[2017-06-04 02:20:21.047] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_2_1.alphamap
+[2017-06-04 02:20:21.047] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.048] brick02
+[2017-06-04 02:20:21.048] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_2_1.alphamap
+[2017-06-04 02:20:21.048] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.049] dirt01
+[2017-06-04 02:20:21.049] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_2_1.alphamap
+[2017-06-04 02:20:21.051] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.051] lf1_field_1
+[2017-06-04 02:20:21.052] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_2_5.alphamap
+[2017-06-04 02:20:21.052] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.052] brick02
+[2017-06-04 02:20:21.053] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_2_5.alphamap
+[2017-06-04 02:20:21.053] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.053] dirt01
+[2017-06-04 02:20:21.054] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_2_5.alphamap
+[2017-06-04 02:20:21.055] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.056] lf1_field_1
+[2017-06-04 02:20:21.056] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_3_1.alphamap
+[2017-06-04 02:20:21.057] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.057] brick02
+[2017-06-04 02:20:21.058] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_3_1.alphamap
+[2017-06-04 02:20:21.058] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.058] dirt01
+[2017-06-04 02:20:21.059] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_3_1.alphamap
+[2017-06-04 02:20:21.060] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.061] lf1_field_1
+[2017-06-04 02:20:21.061] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_3_5.alphamap
+[2017-06-04 02:20:21.062] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.062] brick02
+[2017-06-04 02:20:21.062] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_3_5.alphamap
+[2017-06-04 02:20:21.066] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.066] lf1_field_1
+[2017-06-04 02:20:21.067] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_4_1.alphamap
+[2017-06-04 02:20:21.067] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.068] brick02
+[2017-06-04 02:20:21.068] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_4_1.alphamap
+[2017-06-04 02:20:21.068] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.069] dirt01
+[2017-06-04 02:20:21.070] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_4_1.alphamap
+[2017-06-04 02:20:21.071] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.072] lf1_field_1
+[2017-06-04 02:20:21.073] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_4_5.alphamap
+[2017-06-04 02:20:21.074] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.074] brick02
+[2017-06-04 02:20:21.075] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_4_5.alphamap
+[2017-06-04 02:20:21.075] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.075] dirt01
+[2017-06-04 02:20:21.076] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_4_5.alphamap
+[2017-06-04 02:20:21.078] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.078] lf1_field_1
+[2017-06-04 02:20:21.079] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_5_1.alphamap
+[2017-06-04 02:20:21.080] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.081] brick02
+[2017-06-04 02:20:21.081] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_5_1.alphamap
+[2017-06-04 02:20:21.082] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.083] dirt01
+[2017-06-04 02:20:21.084] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_5_1.alphamap
+[2017-06-04 02:20:21.102] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.103] lf1_field_1
+[2017-06-04 02:20:21.104] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_5_2.alphamap
+[2017-06-04 02:20:21.105] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.106] brick02
+[2017-06-04 02:20:21.107] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_5_2.alphamap
+[2017-06-04 02:20:21.108] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.109] dirt01
+[2017-06-04 02:20:21.110] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_5_2.alphamap
+[2017-06-04 02:20:21.113] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.114] lf1_field_1
+[2017-06-04 02:20:21.114] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_5_5.alphamap
+[2017-06-04 02:20:21.115] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.116] brick02
+[2017-06-04 02:20:21.116] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_5_5.alphamap
+[2017-06-04 02:20:21.117] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.117] dirt01
+[2017-06-04 02:20:21.118] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_5_5.alphamap
+[2017-06-04 02:20:21.119] (CAlphaLoader::Create)texture not found
+[2017-06-04 02:20:21.120] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_5_5.alphamap
+[2017-06-04 02:20:21.170] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.173] lf1_field_1
+[2017-06-04 02:20:21.176] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_0_0.alphamap
+[2017-06-04 02:20:21.177] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.179] brick02
+[2017-06-04 02:20:21.181] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_0_0.alphamap
+[2017-06-04 02:20:21.183] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.185] dirt01
+[2017-06-04 02:20:21.187] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_0_0.alphamap
+[2017-06-04 02:20:21.196] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.197] lf1_field_1
+[2017-06-04 02:20:21.198] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_0_1.alphamap
+[2017-06-04 02:20:21.200] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.201] brick02
+[2017-06-04 02:20:21.204] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_0_1.alphamap
+[2017-06-04 02:20:21.205] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.207] dirt01
+[2017-06-04 02:20:21.208] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_0_1.alphamap
+[2017-06-04 02:20:21.231] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.232] lf1_field_1
+[2017-06-04 02:20:21.232] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_0_2.alphamap
+[2017-06-04 02:20:21.234] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.235] brick02
+[2017-06-04 02:20:21.235] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_0_2.alphamap
+[2017-06-04 02:20:21.236] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.237] dirt01
+[2017-06-04 02:20:21.238] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_0_2.alphamap
+[2017-06-04 02:20:21.240] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.241] lf1_field_1
+[2017-06-04 02:20:21.242] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_0_3.alphamap
+[2017-06-04 02:20:21.243] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.244] brick02
+[2017-06-04 02:20:21.244] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_0_3.alphamap
+[2017-06-04 02:20:21.245] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.246] dirt01
+[2017-06-04 02:20:21.247] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_0_3.alphamap
+[2017-06-04 02:20:21.248] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.249] lf1_field_1
+[2017-06-04 02:20:21.250] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_0_4.alphamap
+[2017-06-04 02:20:21.250] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.251] brick02
+[2017-06-04 02:20:21.252] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_0_4.alphamap
+[2017-06-04 02:20:21.252] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.253] dirt01
+[2017-06-04 02:20:21.253] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_0_4.alphamap
+[2017-06-04 02:20:21.257] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.258] lf1_field_1
+[2017-06-04 02:20:21.258] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_0_5.alphamap
+[2017-06-04 02:20:21.259] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.259] brick02
+[2017-06-04 02:20:21.259] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_0_5.alphamap
+[2017-06-04 02:20:21.260] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.260] dirt01
+[2017-06-04 02:20:21.261] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_0_5.alphamap
+[2017-06-04 02:20:21.262] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.262] lf1_field_1
+[2017-06-04 02:20:21.263] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_1_0.alphamap
+[2017-06-04 02:20:21.263] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.263] brick02
+[2017-06-04 02:20:21.264] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_1_0.alphamap
+[2017-06-04 02:20:21.264] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.265] dirt01
+[2017-06-04 02:20:21.265] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_1_0.alphamap
+[2017-06-04 02:20:21.285] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.286] lf1_field_1
+[2017-06-04 02:20:21.286] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_4_0.alphamap
+[2017-06-04 02:20:21.287] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.288] brick02
+[2017-06-04 02:20:21.288] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_4_0.alphamap
+[2017-06-04 02:20:21.289] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.289] dirt01
+[2017-06-04 02:20:21.290] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_4_0.alphamap
+[2017-06-04 02:20:21.291] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.291] lf1_field_1
+[2017-06-04 02:20:21.291] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_5_0.alphamap
+[2017-06-04 02:20:21.292] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.292] brick02
+[2017-06-04 02:20:21.292] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_5_0.alphamap
+[2017-06-04 02:20:21.293] (CAlphaLoader::Create)blend tex not found
+[2017-06-04 02:20:21.293] dirt01
+[2017-06-04 02:20:21.294] E:\SVNPro\engine\bin\res\ter/west_terrain_backup/zone_5_0.alphamap
+[2017-06-04 02:20:23.330] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.331] (CTexLoader::Load)texture E:\SVNPro\engine\bin\res\/tex\model\ao.bmp not found
+[2017-06-04 02:20:23.332] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.333] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.334] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.336] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.338] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.338] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.339] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.340] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.342] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.347] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.348] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.349] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.350] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.351] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.426] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.428] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.430] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.431] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.432] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.433] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.434] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.435] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.436] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.437] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.438] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.439] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.439] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.441] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.442] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.443] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.444] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.445] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.446] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:23.446] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:24.524] (CTexLoader::Load)texture E:\SVNPro\engine\bin\res\map/tex/particles/p_tj3_002.dds not found
+[2017-06-04 02:20:51.727] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:51.728] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:51.729] (load_tex)texture ao.bmp not found
+[2017-06-04 02:20:53.598] (load_tex)texture ao.bmp not found

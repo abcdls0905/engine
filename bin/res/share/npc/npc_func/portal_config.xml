@@ -1,96 +1,36 @@
 <?xml version="1.0" encoding="gb2312"?>
-<!--VisualRange 场景对象默认视野范围-->
-<!--FindPathType 场景寻路类型（0普通寻路1kynapse寻路2动态网格寻路）-->
-<!--NPCCollide 玩家寻路考虑与NPC等其他网络对象的碰撞-->
-<!--ClientVisualRange客户端迷雾表现半径-->
 <Object>
-	<Property ID="-1" Name="1" TargetSceneID="2" TargetX="3" TargetY="4" TargetZ="5" TargetO="6" LevelLimit="7" ZhenYingWuShuPos="8" ZhenYingBloodPos="9" Des="程序调用不可删"/>
-	<Property ID="0" Name="7" TargetSceneID="2" TargetX="4" TargetY="4" TargetZ="4" TargetO="4" LevelLimit="2" ZhenYingWuShuPos="6" ZhenYingBloodPos="6" Des="7"/>
-	<Property ID="1" Name="2to301" TargetSceneID="51" TargetX="95" TargetY="25" TargetZ="-65" TargetO="-0.8" LevelLimit="1"/>
-	<Property ID="2" Name="301to2" TargetSceneID="2" TargetX="-41.46" TargetY="21.46" TargetZ="30.17" TargetO="-1.57" LevelLimit="1"/>
-	<Property ID="3" Name="301to3" TargetSceneID="51" TargetX="95" TargetY="25" TargetZ="-65" TargetO="0" LevelLimit="1"/>
-	<Property ID="4" Name="2to301" TargetSceneID="301" TargetX="55.90" TargetY="12.76" TargetZ="52.79" TargetO="-2.434" LevelLimit="4" Des="主城通往野外场景01"/>
-	<Property ID="5" Name="301to2" TargetSceneID="2" TargetX="-41.46" TargetY="21.46" TargetZ="30.17" TargetO="-1.57" LevelLimit="1" Des="野外场景01回主城"/>
-	<Property ID="6" Name="301to302" TargetSceneID="302" TargetX="-104.349" TargetY="16.111" TargetZ="7.001" TargetO="1.570" LevelLimit="15" Des="野外301-野外302"/>
-	<Property ID="7" Name="302to301" TargetSceneID="301" TargetX="45.721642" TargetY="10.047227" TargetZ="-36.971977" TargetO="-0.475002" LevelLimit="4" Des="野外302-野外301"/>
-	<Property ID="10" Name="2to201" TargetSceneID="201" TargetX="67.946739" TargetY="33.868000" TargetZ="-60.002728" TargetO="1.553358" LevelLimit="1" Des="参与运镖活动"/>
-	<Property ID="11" Name="2to201" TargetSceneID="201" TargetX="-73.303856" TargetY="33.869003" TargetZ="-56.828476" TargetO="1.553358" LevelLimit="1" Des="参与运镖活动"/>
-	<Property ID="12" Name="2to302" TargetSceneID="302" TargetX="-98.231735" TargetY="16.238468" TargetZ="-0.038614" TargetO="-1.570004" LevelLimit="15" Des="参与抢BOSS活动"/>
-	<Property ID="8" Name="home2to304" TargetSceneID="304" TargetX="3.33" TargetY="17.04" TargetZ="-38.22" TargetO="-0.463" LevelLimit="35" Des="临冬壁垒-野外304"/>
-	<Property ID="9" Name="303to301" TargetSceneID="301" TargetX="-48.02" TargetY="10.08" TargetZ="-51.97" TargetO="0.927" LevelLimit="4" Des="野外303-野外301"/>
-	<Property ID="13" Name="2to3" TargetSceneID="3" TargetX="-15.28" TargetY="45" TargetZ="59.29" TargetO="2.23" LevelLimit="35" Des="不冕城前往临冬壁垒"/>
-	<Property ID="14" Name="3to2" TargetSceneID="2" TargetX="12.96" TargetY="25.31" TargetZ="47.69" TargetO="-1.66" LevelLimit="1" Des="临冬壁垒前往不冕城"/>
-	<Property ID="15" Name="301to303" TargetSceneID="303" TargetX="23.96" TargetY="14.34" TargetZ="-82.15" TargetO="-1.57" LevelLimit="25" Des="野外301-野外303"/>
-	<Property ID="16" Name="303to3" TargetSceneID="3" TargetX="-24.615429" TargetY="47.410847" TargetZ="11.600997" TargetO="0.835001" LevelLimit="35" Des="野外3前往临冬壁垒"/>
-	<Property ID="17" Name="302to303" TargetSceneID="303" TargetX="69.92" TargetY="11.67" TargetZ="-4.02" TargetO="-0.42" LevelLimit="25" Des="野外302-野外303"/>
-	<Property ID="18" Name="303to302" TargetSceneID="302" TargetX="111.587" TargetY="16.152" TargetZ="6.090" TargetO="-1.553" LevelLimit="15" Des="野外303-野外302"/>
-	<Property ID="19" Name="304to305" TargetSceneID="305" TargetX="61.520004" TargetY="20.545" TargetZ="60.654999" TargetO="-2.79" LevelLimit="45" Des="野外304-野外305"/>
-	<Property ID="20" Name="305to304" TargetSceneID="304" TargetX="-55.82" TargetY="16.85" TargetZ="3.63" TargetO="0.257" LevelLimit="35" Des="野外305-野外304"/>
-	<Property ID="21" Name="304to306" TargetSceneID="306" TargetX="5.56" TargetY="17.30" TargetZ="88.10" TargetO="-1.807" LevelLimit="55" Des="野外304-野外306"/>
-	<Property ID="22" Name="305to306" TargetSceneID="306" TargetX="78.81" TargetY="22.32" TargetZ="3.97" TargetO="-1.73" LevelLimit="55" Des="野外305-野外306"/>
-	<Property ID="23" Name="306to304" TargetSceneID="304" TargetX="-46.51" TargetY="16.85" TargetZ="6.40" TargetO="-0.548" LevelLimit="45" Des="野外306-野外304"/>
-	<Property ID="24" Name="306to305" TargetSceneID="305" TargetX="-16.91" TargetY="20.42" TargetZ="-9.25" TargetO="0.674" LevelLimit="35" Des="野外306-野外305"/>
-	<Property ID="25" Name="701to300" TargetSceneID="300" TargetX="16.52" TargetY="18.54" TargetZ="5.95" TargetO="-0.425" LevelLimit="1" Des="战役701通往新手野外"/>
-	<Property ID="26" Name="702to300" TargetSceneID="300" TargetX="47.11" TargetY="22.34" TargetZ="-19.85" TargetO="3.075" LevelLimit="1" Des="战役702通往新手野外"/>
-	<Property ID="27" Name="703to2" TargetSceneID="2" TargetX="17.58" TargetY="30.53" TargetZ="25.60" TargetO="-1.57" LevelLimit="1" Des="战役703通往新手野外"/>
-	<Property ID="28" Name="307to305" TargetSceneID="305" TargetX="88.145531" TargetY="16.138041" TargetZ="5.628378" TargetO="-1.36" LevelLimit="65" Des="野外307-野外305"/>
-	<Property ID="29" Name="307to306" TargetSceneID="306" TargetX="-75.819595" TargetY="19.091999" TargetZ="11.273218" TargetO="0.855" LevelLimit="65" Des="野外307-野外306"/>
-	<Property ID="30" Name="305to307" TargetSceneID="307" TargetX="-28.675892" TargetY="15.257772" TargetZ="49.236" TargetO="-2.355" LevelLimit="65" Des="野外305-野外307"/>
-	<Property ID="31" Name="306to307" TargetSceneID="307" TargetX="38.478" TargetY="15.211" TargetZ="45.223" TargetO="2.55" LevelLimit="65" Des="野外306-野外307"/>
-	<Property ID="32" Name="2to202" TargetSceneID="202" TargetX="8.659959" TargetY="21.011002" TargetZ="29.608698" TargetO="-1.570796" LevelLimit="1" Des="赛马活动"/>
-	<Property ID="33" Name="3to350" TargetSceneID="350" LevelLimit="36" ZhenYingWuShuPos="60.055878,14.676231,-64.054161,-0.770006" ZhenYingBloodPos="-71.234932,14.645956,66.012642,2.380008" Des="凛冬壁垒to阵营1"/>
-	<Property ID="34" Name="350to3" TargetSceneID="3" TargetX="22.722422" TargetY="36.059299" TargetZ="57.090324" TargetO="0.790001" LevelLimit="36" Des="终焉群岛前往临冬壁垒"/>
-	<Property ID="35" Name="350to352" TargetSceneID="352" LevelLimit="36" ZhenYingWuShuPos="-36.736534,27.564001,42.702091,2.142134" ZhenYingBloodPos="28.206285,29.785002,-23.610224,-0.707542" Des="终焉群岛to边境之地"/>
-	<Property ID="36" Name="352to350" TargetSceneID="350" TargetX="-80.14" TargetY="16.95" TargetZ="-75.72" TargetO="0.482" LevelLimit="36" Des="边境之地to终焉群岛"/>
-	<Property ID="37" Name="306to308" TargetSceneID="308" TargetX="-68.366982" TargetY="24.292496" TargetZ="12.429806" TargetO="0.785" Des="放逐之地to潮汐之环"/>
-	<Property ID="38" Name="308to306" TargetSceneID="306" TargetX="-12.569857" TargetY="18.872648" TargetZ="-53.113014" TargetO="0.544999" Des="潮汐之环to放逐之地"/>
-	<Property ID="39" Name="301to231" TargetSceneID="231" TargetX="22.70" TargetY="40.96" TargetZ="20.44" TargetO="0.00" LevelLimit="50" Des="野外301to地宫231"/>
-	<Property ID="40" Name="231to232" TargetSceneID="232" TargetX="25.01" TargetY="27.01" TargetZ="3.66" TargetO="-2.355" LevelLimit="50" Des="地宫231to地宫232"/>
-	<Property ID="41" Name="231to301" TargetSceneID="301" TargetX="-14.83" TargetY="10.09" TargetZ="-60.21" TargetO="0.00" LevelLimit="1" Des="地宫231to野外301"/>
-	<Property ID="42" Name="232to233" TargetSceneID="233" TargetX="-1.42" TargetY="21.97" TargetZ="13.75" TargetO="-2.394" LevelLimit="50" Des="地宫232to地宫233"/>
-	<Property ID="43" Name="232to231" TargetSceneID="231" TargetX="37.89" TargetY="47.59" TargetZ="-0.25" TargetO="0.197" LevelLimit="50" Des="地宫232to地宫231"/>
-	<Property ID="44" Name="233to234" TargetSceneID="234" TargetX="17.84" TargetY="24.15" TargetZ="72.78" TargetO="0.749" LevelLimit="50" Des="地宫233to地宫234"/>
-	<Property ID="45" Name="233to232" TargetSceneID="232" TargetX="-23.98" TargetY="12.50" TargetZ="35.83" TargetO="-0.855" LevelLimit="50" Des="地宫233to地宫232"/>
-	<Property ID="46" Name="233to240" TargetSceneID="240" TargetX="-2.36" TargetY="22.32" TargetZ="-34.06" TargetO="0.00" LevelLimit="50" Des="地宫233to地宫240"/>
-	<Property ID="47" Name="234to233" TargetSceneID="233" TargetX="-16.43" TargetY="31.81" TargetZ="-47.44" TargetO="-0.784" LevelLimit="50" Des="地宫234to地宫233"/>
-	<Property ID="48" Name="234to235" TargetSceneID="235" TargetX="-40.86" TargetY="34.09" TargetZ="-15.18" TargetO="0.904" LevelLimit="50" Des="地宫234to地宫235"/>
-	<Property ID="49" Name="234to236" TargetSceneID="236" TargetX="1.76" TargetY="20.51" TargetZ="-34.45" TargetO="-0.749" LevelLimit="50" Des="地宫234to地宫236"/>
-	<Property ID="50" Name="234to237" TargetSceneID="237" TargetX="-3.22" TargetY="54.11" TargetZ="13.08" TargetO="-1.945" LevelLimit="50" Des="地宫234to地宫237"/>
-	<Property ID="51" Name="235to234" TargetSceneID="234" TargetX="89.17" TargetY="25.19" TargetZ="48.89" TargetO="-0.804" LevelLimit="50" Des="地宫235to地宫234"/>
-	<Property ID="52" Name="236to234" TargetSceneID="234" TargetX="77.68" TargetY="25.19" TargetZ="37.35" TargetO="-0.775" LevelLimit="50" Des="地宫236to地宫234"/>
-	<Property ID="53" Name="237to239" TargetSceneID="239" TargetX="85.33" TargetY="21.77" TargetZ="36.13" TargetO="-2.365" LevelLimit="50" Des="地宫237to地宫238"/>
-	<Property ID="54" Name="237to234" TargetSceneID="234" TargetX="49.26" TargetY="27.85" TargetZ="11.06" TargetO="0.725" LevelLimit="50" Des="地宫237to地宫234"/>
-	<Property ID="55" Name="238to239" TargetSceneID="239" TargetX="99.15" TargetY="21.76" TargetZ="0.72" TargetO="-1.544" LevelLimit="50" Des="地宫238to地宫239"/>
-	<Property ID="56" Name="238to237" TargetSceneID="237" TargetX="-24.71" TargetY="64.14" TargetZ="-46.05" TargetO="-0.10" LevelLimit="50" Des="地宫238to地宫237"/>
-	<Property ID="57" Name="239to237" TargetSceneID="237" TargetX="-18.28" TargetY="64.29" TargetZ="-48.14" TargetO="-0.40" LevelLimit="50" Des="地宫239to地宫237"/>
-	<Property ID="58" Name="306to241" TargetSceneID="241" TargetX="-3.16" TargetY="24.82" TargetZ="-45.25" TargetO="0.625" LevelLimit="55" Des="野外6to地宫241"/>
-	<Property ID="59" Name="241to306" TargetSceneID="306" TargetX="39.71" TargetY="17.30" TargetZ="58.74" TargetO="-2.365" LevelLimit="55" Des="地宫241to野外6"/>
-	<Property ID="60" Name="241to242" TargetSceneID="242" TargetX="15.66" TargetY="19.23" TargetZ="-16.09" TargetO="-0.744" LevelLimit="55" Des="地宫241to地宫242"/>
-	<Property ID="61" Name="242to241" TargetSceneID="241" TargetX="-20.90" TargetY="22.70" TargetZ="4.10" TargetO="-0.65" LevelLimit="55" Des="地宫242to地宫241"/>
-	<Property ID="62" Name="242to243" TargetSceneID="243" TargetX="-46.02" TargetY="25.16" TargetZ="-11.74" TargetO="0.98" LevelLimit="55" Des="地宫242to地宫243"/>
-	<Property ID="63" Name="243to242" TargetSceneID="242" TargetX="6.44" TargetY="19.23" TargetZ="22.66" TargetO="-3.135" LevelLimit="55" Des="地宫243to地宫242"/>
-	<Property ID="64" Name="243to244" TargetSceneID="244" TargetX="33.22" TargetY="24.45" TargetZ="24.96" TargetO="-2.27" LevelLimit="55" Des="地宫243to地宫244"/>
-	<Property ID="65" Name="244to243" TargetSceneID="243" TargetX="-5.16" TargetY="29.26" TargetZ="-26.31" TargetO="-2.988" LevelLimit="55" Des="地宫244to地宫243"/>
-	<Property ID="66" Name="244to245" TargetSceneID="245" TargetX="68.95" TargetY="34.06" TargetZ="-1.02" TargetO="-1.57" LevelLimit="55" Des="地宫244to地宫245"/>
-	<Property ID="67" Name="245to244" TargetSceneID="244" TargetX="-33.28" TargetY="25.20" TargetZ="-28.28" TargetO="0.875" LevelLimit="55" Des="地宫245to地宫244"/>
-	<Property ID="68" Name="246to307" TargetSceneID="309" TargetX="51.43" TargetY="11.48" TargetZ="53.84" TargetO="-1.585" LevelLimit="50" Des="地宫246to野外309"/>
-	<Property ID="69" Name="246to247" TargetSceneID="247" TargetX="-5.866997" TargetY="26.289" TargetZ="-19.334" TargetO="-0.195" LevelLimit="50" Des="地宫246to地宫247"/>
-	<Property ID="70" Name="247to246" TargetSceneID="246" TargetX="-53.986229" TargetY="10.34588" TargetZ="-40.888287" TargetO="0.845" LevelLimit="50" Des="地宫247to地宫246"/>
-	<Property ID="71" Name="247to248" TargetSceneID="248" TargetX="-32.017807" TargetY="18.971085" TargetZ="-26.318348" TargetO="0.88" LevelLimit="50" Des="地宫247to地宫248"/>
-	<Property ID="72" Name="248to247" TargetSceneID="247" TargetX="4.789837" TargetY="20.908052" TargetZ="36.045467" TargetO="3.14" LevelLimit="50" Des="地宫248to地宫247"/>
-	<Property ID="73" Name="248to249" TargetSceneID="249" TargetX="67.358459" TargetY="17.514597" TargetZ="26.109411" TargetO="-2.44" LevelLimit="50" Des="地宫248to地宫249"/>
-	<Property ID="74" Name="249to248" TargetSceneID="248" TargetX="-67.9619" TargetY="17.799067" TargetZ="-29.283" TargetO="-0.724" LevelLimit="50" Des="地宫249to地宫248"/>
-	<Property ID="75" Name="249to250" TargetSceneID="250" TargetX="-3.685047" TargetY="18.893692" TargetZ="-31.969095" TargetO="0.61" LevelLimit="50" Des="地宫249to地宫250"/>
-	<Property ID="76" Name="250to249" TargetSceneID="249" TargetX="-14.955141" TargetY="17.568996" TargetZ="-16.415737" TargetO="0.825" LevelLimit="50" Des="地宫250to地宫249"/>
-	<Property ID="77" Name="307to246" TargetSceneID="246" TargetX="50.030128" TargetY="10.38944" TargetZ="59.363541" TargetO="-2.025011" LevelLimit="50" Des="野外309to地宫246"/>
-	<Property ID="78" Name="2to4" TargetSceneID="4" TargetX="16.65" TargetY="24.10" TargetZ="-22.84" TargetO="2.240" LevelLimit="50" Des="不冕城to拜索斯"/>
-	<Property ID="79" Name="3to4" TargetSceneID="4" TargetX="53.42" TargetY="14.33" TargetZ="-13.41" TargetO="2.334" LevelLimit="50" Des="凛冬壁垒to拜索斯"/>
-	<Property ID="80" Name="4to2" TargetSceneID="2" TargetX="7.56" TargetY="38.92" TargetZ="-25.23" TargetO="-0.055" LevelLimit="1" Des="拜索斯to不冕城"/>
-	<Property ID="81" Name="4to3" TargetSceneID="3" TargetX="27.09" TargetY="44.93" TargetZ="0.70" TargetO="0.714" LevelLimit="35" Des="拜索斯to凛冬壁垒"/>
-	<Property ID="82" Name="4to309" TargetSceneID="309" TargetX="44.40123" TargetY="18.711897" TargetZ="1.302011" TargetO="-0.860013" LevelLimit="50" Des="拜索斯to野外309"/>
-	<Property ID="83" Name="309to4" TargetSceneID="4" TargetX="55.27" TargetY="17.75" TargetZ="-46.25" TargetO="-0.815" LevelLimit="50" Des="野外309to拜索斯"/>
-	<Property ID="84" Name="4to308" TargetSceneID="308" TargetX="63.97" TargetY="24.66" TargetZ="21.36" TargetO="-0.517" LevelLimit="75" Des="拜索斯to野外308"/>
-	<Property ID="85" Name="308to4" TargetSceneID="4" TargetX="18.92" TargetY="36.29" TargetZ="-45.87" TargetO="2.369" LevelLimit="50" Des="野外308to拜索斯"/>
-	<Property ID="86" Name="352to4" TargetSceneID="4" TargetX="37.21" TargetY="27.73" TargetZ="-58.35" TargetO="-0.790" LevelLimit="50" Des="边境之地to拜索斯"/>
-	<Property ID="87" Name="4to352" TargetSceneID="352" TargetX="-41.30" TargetY="30.26" TargetZ="-27.62" TargetO="0.824" LevelLimit="50" Des="拜索斯to边境之地"/>
+	<Property ID="-1" Name="1" TargetSceneID="2" TargetX="3" TargetY="4" TargetZ="5" TargetO="6" Des="程序调用不可删"/>
+	<Property ID="portal_002" Name="protal_to_yd" TargetSceneID="1" TargetX="56" TargetY="10" TargetZ="-21" TargetO="2.66"/>
+	<Property ID="0" Name="7" TargetSceneID="2" TargetX="4" TargetY="4" TargetZ="4" TargetO="4" Des="7"/>
+	<Property ID="portal_001" Name="protal_to_jlg" TargetSceneID="53" TargetX="41" TargetY="16" TargetZ="61" TargetO="2.66"/>
+	<Property ID="portal_003" Name="protal_to_amzt" TargetSceneID="101" TargetX="12" TargetY="12" TargetZ="82" TargetO="2.66"/>
+	<Property ID="test_xunlu" Name="test_xunlu" TargetSceneID="1" TargetX="-253.33" TargetY="69.63" TargetZ="-243.86" TargetO="3.14"/>
+	<Property ID="por_cb_yd0001" Name="protal_to_yd1" TargetSceneID="1001" TargetX="-110.60" TargetY="22.08" TargetZ="-162.64" TargetO="0.61"/>
+	<Property ID="por_cb_yd0002" Name="protal_to_yd2" TargetSceneID="1001" TargetX="-76.99" TargetY="22.20" TargetZ="-162.96" TargetO="5.44"/>
+	<Property ID="por_cb_yd0003" Name="protal_to_yd3" TargetSceneID="1001" TargetX="-12.93" TargetY="21.83" TargetZ="-126.94" TargetO="1.57"/>
+	<Property ID="por_cb_yd0004" Name="protal_to_yd4" TargetSceneID="1001" TargetX="4.45" TargetY="22.35" TargetZ="-150.24" TargetO="6.12"/>
+	<Property ID="por_cb_yd0005" Name="protal_to_yd5" TargetSceneID="1001" TargetX="-132.19" TargetY="22.08" TargetZ="-246.46" TargetO="2.97"/>
+	<Property ID="por_cb_yd0006" Name="protal_to_yd6" TargetSceneID="1001" TargetX="-109.65" TargetY="22.20" TargetZ="-262.16" TargetO="4.47"/>
+	<Property ID="por_cb_yd0007" Name="protal_to_yd7" TargetSceneID="1001" TargetX="-114.41" TargetY="34.31" TargetZ="-49.67" TargetO="6.22"/>
+	<Property ID="por_cb_yd0008" Name="protal_to_yd8" TargetSceneID="1001" TargetX="-200.59" TargetY="34.31" TargetZ="-143.6" TargetO="4.43"/>
+	<Property ID="fight_cz_001" Name="task_battlecity" TargetSceneID="104" TargetX="-280.6" TargetY="33.65" TargetZ="31.56" TargetO="2.58"/>
+	<Property ID="fight_cz_002" Name="剧情攻城战2" TargetSceneID="1" TargetX="-249" TargetY="69.8" TargetZ="-223" TargetO="-0.47"/>
+	<Property ID="togld001" Name="togld" TargetSceneID="1" TargetX="-210.79" TargetY="21.93" TargetZ="-172.24" TargetO="1.58"/>
+	<Property ID="toydc001" Name="toydc" TargetSceneID="4" TargetX="163.29" TargetY="24.91" TargetZ="297.93" TargetO="1.32"/>
+	<Property ID="toydc002" Name="toydc02" TargetSceneID="8" TargetX="-689.56" TargetY="15.33" TargetZ="301.09" TargetO="0.08"/>
+	<Property ID="rw_east_door1_cs" Name="任务2031传送包" TargetSceneID="8" TargetX="-118" TargetY="99" TargetZ="380" TargetO="0.67"/>
+	<Property ID="rw_east_door2_cs" Name="任务2042传送包" TargetSceneID="8" TargetX="-397.73" TargetY="40.72" TargetZ="-219.36" TargetO="0"/>
+	<Property ID="rw_west_door_cross" Name="西方传送门" TargetSceneID="8" TargetX="226.11" TargetY="24.52" TargetZ="345.52" TargetO="0"/>
+	<Property ID="rw_east_door_cross" Name="东方传送门" TargetSceneID="4" TargetX="-579" TargetY="105" TargetZ="-279" TargetO="0"/>
+	<Property ID="rw_xfn_yy_10" Name="引导战场西方传送门" TargetSceneID="4" TargetX="328" TargetY="41" TargetZ="109" TargetO="0"/>
+	<Property ID="rw_xfn_yy_11" Name="西方引导战场传送门" TargetSceneID="5" TargetX="-9" TargetY="64" TargetZ="-8" TargetO="0"/>
+	<Property ID="rw_dfn_yy_10" Name="引导战场东方传送门" TargetSceneID="8" TargetX="-357" TargetY="99" TargetZ="261" TargetO="0"/>
+	<Property ID="rw_dfn_yy_11" Name="东方引导战场传送门" TargetSceneID="5" TargetX="-248" TargetY="64" TargetZ="-241" TargetO="0"/>
+	<Property ID="rw_west_door_01" Name="任务8165传送包" TargetSceneID="4" TargetX="-138" TargetY="125" TargetZ="-292" TargetO="-1.45"/>
+	<Property ID="east_door_test" Name="西方大世界至中立场景传送包" TargetSceneID="10" TargetX="134" TargetY="50" TargetZ="-376" TargetO="0"/>
+	<Property ID="west_door_dust" Name="中立场景传至西方大世界送包" TargetSceneID="4" TargetX="318" TargetY="152" TargetZ="-251" TargetO="0"/>
+	<Property ID="dust_door_east" TargetSceneID="8" TargetX="-632" TargetY="50.64" TargetZ="-319"/>
+	<Property ID="east_door_dust" TargetSceneID="10" TargetX="203" TargetY="50.89" TargetZ="-386"/>
 </Object>
+

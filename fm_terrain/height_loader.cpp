@@ -1015,7 +1015,9 @@ bool CHeightLoader::Create(bool async)
 		{
 			chunk_info_t* chunk = m_Chunk.pChunks + r * m_nChunkCols + c;
 			CTerrainChunk* pChunk = m_pOwner->GetChunk(r, c);
-			
+
+      //ls test water
+      //pChunk->SetWaterIndex(c);
 			if (!pChunk->Build(chunk->vMin, chunk->vMax, chunk->fErrors, 
 				m_nLodLevels))
 			{

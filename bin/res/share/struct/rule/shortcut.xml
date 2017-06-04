@@ -1,37 +1,35 @@
-<?xml version="1.0" encoding="gb2312"?>
+<?xml version="1.0" encoding="gb2312" ?>
 <!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by  () -->
 <!--快捷栏相关相定义-->
-<object>	
-	<records>
-		<record name="shortcut_skill_rec" cols="5" maxrows="7" save="true" public="true" private="true" realtime="true" desc="QWER 技能快捷栏表">
-			<column type="dword" desc="序号"/>
-			<column type="string" desc="参数1, 表示的类型"/>
-			<column type="string" desc="参数2 " />
-			<column type="string" desc="参数3 " />
-			<column type="dword" desc="觉醒等级"/>
-		</record>
-    <record name="taichi_skill_source_rec" cols="3" maxrows="4" save="false" public="false" private="true" realtime="true" desc="太极技来源表">
-      <column type="dword" desc="太极技在快捷栏中的id"/>
-      <column type="string" desc="技能ID"/>
-      <column type="object" desc="role npc id" />
-    </record>
-		<record name="copy_shortcut_skill_rec" cols="4" maxrows="7" save="false" public="false" private="false" realtime="false" desc="QWER 技能快捷栏表">
-			<column type="dword" desc="序号"/>
-			<column type="string" desc="参数1, 表示的类型"/>
-			<column type="string" desc="参数2 " />
-			<column type="string" desc="参数3 " />
-		</record>
-		<record name="skill_replace_rec" cols="10" maxrows="8" save="false" public="false" private="false" realtime="false" desc="技能栏技能替换表">
-			<column type="string" desc="原技能id"/>
-			<column type="string" desc="替换成的技能id"/>
-			<column type="string" desc="替换结束后还原成的技能ID"/>
-			<column type="int64" desc="执行替换操作的时间"/>
-			<column type="int64" desc="正常还原时间"/>
-			<column type="int64" desc="新技能操作等待时间"/>
-			<column type="dword" desc="替换类型"/>
-			<column type="dword" desc="替换阶段"/>
-			<column type="string" desc="bufferID"/>
-			<column type="string" desc="特殊条件存在时，替换结束后还原成的技能ID，跟第三列两个只还原一个"/>
-		</record>
-	</records>
+<object>
+    <properties>
+    </properties>
+    <records>
+        <record name="shortcut_skill_rec" cols="4" maxrows="16" save="true" public="false" private="true" realtime="false" desc="QWER 技能快捷栏表">
+            <column type="word" desc="序号" />
+            <column type="string" desc="参数1, 表示的类型" />
+            <column type="string" desc="技能configid（如果可以放道具图标，也可以是道具configid）" />
+            <column type="word" desc="图标显示状态标志" />
+        </record>
+        <record name="shortcut_skill_full_rec" cols="6" maxrows="16" save="true" public="false" private="false" realtime="false" desc="shortcut_skill_rec表的备份表，用于在变身，上坐骑或其他玩法时服务端逻辑备份当前快捷栏信息的表">
+            <column type="word" desc="序号" />
+            <column type="string" desc="技能ID" />
+            <column type="word" desc="图标显示状态标志 " />
+            <column type="word" desc="设置为该图标显示状态标志的原因" />
+            <column type="string" desc="技能替换ID" />
+            <column type="word" desc="设置当前技能替换ID的原因" />
+        </record>
+		<record name="replace_skill_rec" cols="6" maxrows="30" save="true" public="false" private="false" realtime="false" desc="技能栏替换列表">
+            <column type="string" desc="参数1 被替换的技能ID" />
+            <column type="string" desc="参数2 替换成的技能ID" />
+            <column type="string" desc="参数3 替换结束之后还原的技能ID" />
+			<column type="int64" desc="参数4 执行换的时间，实现延迟替换" />
+			<column type="int64" desc="参数5 正常还原时间，添加时算好" />
+			<column type="word" desc="参数6 替换阶段" />
+        </record>
+        <record name="shortcut_skill_lock_rec" cols="2" maxrows="16" save="true" public="false" private="true" realtime="false" desc="技能栏位解锁表">
+            <column type="word" desc="参数1 技能图标位置" />
+            <column type="word" desc="参数2 技能锁定/解锁状态。0:默认状态，1:锁定状态，2:已解锁状态。3:引导副本中临时解锁状态。在1锁定状态下不能使用该技能" />
+        </record>
+    </records>
 </object>

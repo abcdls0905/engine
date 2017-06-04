@@ -1,32 +1,26 @@
-<?xml version="1.0" encoding="gb2312"?>
+<?xml version="1.0" encoding="gb2312" ?>
 <!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by  () -->
 <!--场景副本属性-->
 <object>
-	<!-- 基本属性 -->
-	<properties>
-		<property name="CloneSceneID" type="int" public="true" private="false" save="false" desc="副本场景编号"/>
-		<property name="CloneDifficulty" type="int" public="true" private="false" save="false" desc="副本难度(0-初级 1-中级 2-高级)"/>
-		<property name="PassStageTime" type="int64" public="false" private="false" save="false" desc="通关时间" />
-		<property name="ScenePlayer" type="object" public="false" private="false" save="false" desc="副本中的玩家对象（用于本地副本）"/>
-	</properties>
-	<records>
-		<record name="clone_mines_borns_dec" cols="5" maxrows="5000" save="false" public="false" private="false" desc="夺宝副本矿石出生点">
-		  <column type="word" desc="GroupID"/>
-		  <column type="float" desc="x位置"/>
-		  <column type="float" desc="y位置"/>
-		  <column type="float" desc="z位置"/>
-		  <column type="object" desc="矿石NPC"/>
-		</record>
-		<record name="clone_mines_gain_player_rec" cols="2" maxrows="100" save="false" public="false" private="false" desc="夺宝副本矿石出生点">
-		  <column type="word" desc="GroupID"/>
-		  <column type="object" desc="获得最高品质矿石的player"/>
-		</record>
-		<record name="festival_loc_rec" cols="5" maxrows="1500" save="false" public="false" private="false" desc="春节活动鞭炮刷新位置">
-		  <column type="word" desc="GroupID"/>
-		  <column type="float" desc="x位置"/>
-		  <column type="float" desc="y位置"/>
-		  <column type="float" desc="z位置"/>
-		  <column type="object" desc="鞭炮NPC"/>
-		</record>
-	</records>
+    <!-- 基本属性 -->
+    <properties>
+        <property name="CloneSceneID" type="dword" public="false" private="false" save="false" desc="副本场景编号" />
+        <property name="CloneDifficulty" type="dword" public="false" private="false" save="false" desc="副本难度(0-初级 1-中级 2-高级)" />
+        <property name="PassStageTime" type="int64" public="false" private="false" save="false" desc="通关时间" />
+        <property name="ScenePlayer" type="object" public="false" private="false" save="false" desc="副本中的玩家对象（用于本地副本）" />
+		
+		<property name="NpcBeKilledCount" type="dword" public="false" private="false" save="false" desc="副本场景NPC被击杀总数" />
+    </properties>
+    <records>
+		<record name="clone_record_team_list" cols="5" maxrows="10" save="false" public="false" private="false" desc="组队副本队友信息">
+            <column type="string" desc="组队成员uid，第一个是队长" />
+            <column type="dword" desc="是否生存" />
+            <column type="dword" desc="RoleIndex" />
+            <column type="dword" desc="Level" />
+            <column type="dword" desc="FightCap" />
+        </record>
+		<record name="clone_pull_player_rec" cols="1" maxrows="128" save="false" public="false" private="false" desc="尝试拉入副本的玩家名字表">
+            <column type="widestr" desc="玩家名字" />
+        </record>
+    </records>
 </object>

@@ -1,25 +1,11 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <object>
     <internals />
     <properties>
-        <property name="FightGroup" type="dword" public="false" private="true" save="true" realtime="" desc="当前战斗组" />
-		 <property name="PropEffect" type="string" public="false" private="true" save="false" realtime="" desc="属性提升效果"/>
-		 <property name="CantChangePet" type="dword" public="false" private="true" save="false" realtime="" desc="不能切换宠物"/>
+		<property name="Pet" type="object" public="false" private="false" save="true" desc="主宠物对象"/>
+        <property name="PetName" type="widestr" public="fasle" private="false" save="true" realtime="" desc="宠物名字" />
     </properties>
     <records>
-        <record name="sold_pet_rec" cols="4" maxrows="4" save="true" public="false" private="true" desc="出售宠物列表">
-            <column type="string" desc="宠物名称" />
-            <column type="dword" desc="刷新数量" />
-            <column type="word" desc="是否已经购买" />
-            <column type="word" desc="是否是丹药" />
-        </record>
-        <record name="fight_pet_rec" cols="5" maxrows="32" save="true" public="false" private="true" realtime="" desc="出征宠物列表">
-            <column type="string" desc="宠物名称" />
-            <column type="dword" desc="宠物分组" />
-            <column type="dword" desc="组内index" />
-            <column type="dword" desc="容器index" />
-            <column type="object" desc="宠物persistid" />
-        </record>
     </records>
     <includes />
 </object>

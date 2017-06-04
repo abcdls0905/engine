@@ -38,7 +38,7 @@ bool WinFreeCamera::Init(const IVarList& args)
 	// 允许键盘控制运动
 	CHelper::SetCustomBool(pEntity, "allow_wasd", true);
 	// 运动速度
-	CHelper::SetCustomFloat(pEntity, "move_speed", 20.0f);
+	CHelper::SetCustomFloat(pEntity, "move_speed", 40.0f);
 	// 拖拽速度
 	CHelper::SetCustomFloat(pEntity, "drag_speed", 0.5f);
 	// 旋转速度

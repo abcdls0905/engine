@@ -53,6 +53,7 @@ static int isnormal(double x)
 }
 #endif
 
+//ls test
 #if defined(_MSC_VER)
 static double copysign(double x, double y)
 {

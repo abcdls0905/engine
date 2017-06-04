@@ -1,227 +1,418 @@
 <?xml version="1.0" encoding="gb2312"?>
 <Object>
-	<Property ID="Buff_CK_Sk102_01_1" Name="雾闪加速"/>
-	<Property ID="Buff_CK_Sk101_01B_1" Name="腾云加速" FuncNo="115"/>
-	<Property ID="Buff_TY_001" Name="晕眩"/>
-	<Property ID="Buff_TY_002" Name="麻痹"/>
-	<Property ID="Buff_break_001" Name="破防"/>
-	<Property ID="Buff_CK_Sk103_01a" Name="流萤无敌开启" EventType="1" TargetType="2" FuncNo="623" ActionFloat="floatcombating"/>
-	<Property ID="Buff_huoyan_001" Name="灼烧" EventType="3" TargetType="2" FuncNo="99" HPPercent="-10"/>
-	<Property ID="buff_weapon_bing001" Name="武器冰冻"/>
-	<Property ID="buff_pet_skill_011" Name="风影加速"/>
-	<Property ID="buff_pet_skill_010" Name="生命汲取吸血" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="6" ModifyAbsorbPercentRatio="1" AbsorbEffectName="buff_pet_skill_010"/>
-	<Property ID="buff_pet_skill_009" Name="治愈回血" EventType="1" TargetType="0" FuncNo="614" HPPercent="20" BufferFunctionType="2" FunctionSearchRadius="5" FunctionRelationType="0,1,2" FunctionTargetType="0,1,5" ReturnHPPercent="4" MofifyReturnPercentRatio="1"/>
-	<Property ID="buff_pet_skill_002" Name="无懈可击免伤" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="65" ModifyImmunityPercentRatio="5"/>
-	<Property ID="buff_pet_skill_001" Name="天神下凡霸体" EventType="1" TargetType="2" FuncNo="666" ImmuneType="2"/>
-	<Property ID="buff_pet_skill_012" Name="嘲讽" EventType="1" TargetType="0" FuncNo="105" TauntSearchRadius="4.5" TauntTimes="5500" TauntRelationType="3" TauntTargetType="0,1,5" TauntBuffID="buff_pet_skill_012a" TauntAddRadius="0.5" TauntAddTimes="300"/>
-	<Property ID="Buff_Gin_Sk102_01_1" EventType="3" TargetType="2" FuncNo="5" IsHealFormula="0" HealFormula="100" HealTargetType="1"/>
-	<Property ID="Buff_Gin_Sk102_02_1" EventType="3" TargetType="2" FuncNo="5" IsHealFormula="0" HealFormula="95" HealTargetType="1"/>
-	<Property ID="Buff_Gin_Sk102_03_1" EventType="3" TargetType="2" FuncNo="5" IsHealFormula="0" HealFormula="95" HealTargetType="1"/>
-	<Property ID="Buff_Gin_Sk102_04_1" EventType="3" TargetType="2" FuncNo="5" IsHealFormula="0" HealFormula="95" HealTargetType="1"/>
-	<Property ID="Buff_Gin_Sk102_05_1" EventType="3" TargetType="2" FuncNo="601" IsHealFormula="0" HealFormula="95" HealTargetType="1"/>
-	<Property ID="Buff_Gin_Sk102_06_1" EventType="3" TargetType="2" FuncNo="5" IsHealFormula="0" HealFormula="95" HealTargetType="1"/>
-	<Property ID="Buff_Gin_Sk102_07_1" EventType="3" TargetType="2" FuncNo="5" IsHealFormula="0" HealFormula="95" HealTargetType="1"/>
-	<Property ID="Buff_Gin_Sk102_08_1" EventType="3" TargetType="2" FuncNo="5" IsHealFormula="0" HealFormula="95" HealTargetType="1"/>
-	<Property ID="Buff_Gin_Sk102_09_1" EventType="3" TargetType="2" FuncNo="5" IsHealFormula="0" HealFormula="95" HealTargetType="1"/>
-	<Property ID="Buff_Gin_Sk102_10_1" EventType="3" TargetType="2" FuncNo="5" IsHealFormula="0" HealFormula="95" HealTargetType="1"/>
-	<Property ID="Buff_Gin_Sk103_01A_1" EventType="1" TargetType="2" FuncNo="826" PRebound="100" ReboundDamageType="1"/>
-	<Property ID="Buff_Gin_Sk103_02A" EventType="1" TargetType="3" FuncNo="826" PRebound="100" ReboundDamageType="1"/>
-	<Property ID="Buff_Gin_Sk103_03A" EventType="1" TargetType="3" FuncNo="826" PRebound="100" ReboundDamageType="1"/>
-	<Property ID="Buff_Gin_Sk103_04A" EventType="1" TargetType="3" FuncNo="826" PRebound="100" ReboundDamageType="1"/>
-	<Property ID="Buff_Gin_Sk103_05A" EventType="1" TargetType="3" FuncNo="826" PRebound="100" ReboundDamageType="1"/>
-	<Property ID="Buff_Gin_Sk103_06A" EventType="1" TargetType="3" FuncNo="826" PRebound="100" ReboundDamageType="1"/>
-	<Property ID="Buff_Gin_Sk103_07A" EventType="1" TargetType="3" FuncNo="826" PRebound="100" ReboundDamageType="1"/>
-	<Property ID="Buff_Gin_Sk103_08A" EventType="1" TargetType="3" FuncNo="826" PRebound="100" ReboundDamageType="1"/>
-	<Property ID="Buff_Gin_Sk103_09A" EventType="1" TargetType="3" FuncNo="826" PRebound="100" ReboundDamageType="1"/>
-	<Property ID="Buff_Gin_Sk103_10A" EventType="1" TargetType="3" FuncNo="826" PRebound="100" ReboundDamageType="1"/>
-	<Property ID="Buff_Gin_Sk103_01B"/>
-	<Property ID="Buff_Gin_Sk103_02B"/>
-	<Property ID="Buff_Gin_Sk103_03B"/>
-	<Property ID="Buff_Gin_Sk103_04B"/>
-	<Property ID="Buff_Gin_Sk103_05B"/>
-	<Property ID="Buff_Gin_Sk103_06B"/>
-	<Property ID="Buff_Gin_Sk103_07B"/>
-	<Property ID="Buff_Gin_Sk103_08B"/>
-	<Property ID="Buff_Gin_Sk103_09B"/>
-	<Property ID="Buff_Gin_Sk103_10B"/>
-	<Property ID="Buff_Gin_Sk104_01" EventType="10" TargetType="2" FuncNo="809" AbsorbDamageType="1" AbsorbValueType="0" CanAbsorbDamageAllValue="6000" UseSkillID="Gin_Sk100_01"/>
-	<Property ID="Buff_Gin_Sk105_01" EventType="10" TargetType="3" FuncNo="803" PRebound="100" ReboundDamageType="1"/>
-	<Property ID="Buff_Gin_Sk205_01"/>
-	<Property ID="Buff_Gin_Sk205_02"/>
-	<Property ID="Buff_Gin_Sk205_03"/>
-	<Property ID="Buff_Gin_Sk205_04"/>
-	<Property ID="Buff_Gin_Sk205_05"/>
-	<Property ID="Buff_Gin_Sk205_06"/>
-	<Property ID="Buff_Gin_Sk205_07"/>
-	<Property ID="Buff_Gin_Sk205_08"/>
-	<Property ID="Buff_Gin_Sk205_09"/>
-	<Property ID="Buff_Gin_Sk205_10"/>
-	<Property ID="Buff_Battle_skill_003_1" EventType="1" TargetType="2" FuncNo="513" TransFormAction="fi_3h_moment_s_01" BeginFrame="15" EndFrame="20" TransFormDistance="15" ShortMoveSwitch="1" TransFixDestPoint="1" TransFixDestX="240" TransFixDestY="10" TransFixDestZ="-60" TotalFrame="32" TransThrough="1"/>
-	<Property ID="Buff_Gin_Sk102_01_2" EventType="1" TargetType="2" FuncNo="105" Attribute="MaxHP" IsFormula="1" Formula="@MaxHP*1.3" AllowNegative="0" ModifyObjPropName="MaxHP" ModifyObjPropFormula="@MaxHP*1.3" ModifyObjPropRatio="100" ModifyObjPropType="0"/>
-	<Property ID="Buff_Gin_Sk102_01_3" EventType="2" TargetType="2" FuncNo="106" Attribute="HP" IsFormula="1" Formula="@HP + (@MaxHP - @MaxHP/1.3)" AllowNegative="0" CancelModifyObjPropName="MaxHP" CancelModifyObjType="0"/>
-	<Property ID="Buff_Gin_Sk102_01_4" EventType="1" TargetType="2" FuncNo="105" ModifyObjPropName="HP" ModifyObjPropFormula="@HP*1.3" ModifyObjPropRatio="100" ModifyObjPropType="0"/>
-	<Property ID="Buff_Gin_Sk102_01_5" EventType="2" TargetType="2" FuncNo="106" ModifyObjPropName="HP" ModifyObjPropFormula="@HP + (@MaxHP - @MaxHP/1.3)" ModifyObjPropRatio="100" ModifyObjPropType="1" CancelModifyObjPropName="HP" CancelModifyObjType="0"/>
-	<Property ID="Buff_Gin_Sk103_01A_2" EventType="2" TargetType="2" FuncNo="827"/>
-	<Property ID="Buff_Gin_Sk100_01"/>
-	<Property ID="Buff_Gin_Sk100_01A"/>
-	<Property ID="buff_pet_skill_008" Name="生存法则回血" EventType="3" TargetType="0" FuncNo="610" LostHPPercent="4" ModifyLostHPPercentRatio="1"/>
-	<Property ID="buff_pet_skill_005" Name="英勇击杀加攻击" EventType="5" TargetType="0" FuncNo="612" SustainAttackBufferID="buff_pet_skill_005A" ModifyBufferTimeRatio="500"/>
-	<Property ID="buff_pet_skill_006A" EventType="8" TargetType="0" FuncNo="611" HPPercent="30" AdvanceHPPercent="30" AttackPercent="45" ModifyAdvenceHPPercentRatio="2" ModifyAttackPercentRatio="3"/>
-	<Property ID="buff_pet_skill_006B" EventType="2" TargetType="0" FuncNo="611"/>
-	<Property ID="buff_pet_skill_013A" Name="生命链接分担伤害" EventType="1" TargetType="4" FuncNo="615" SharedDamagePercent="25" ModifyShareDamagePercentRatio="4"/>
-	<Property ID="buff_pet_skill_013B" EventType="1" TargetType="0" FuncNo="21" LinkType="1" LinkPetID="role_npc_base" LinkBufferID="buff_pet_skill_013a" ModifyLinkBufferTimeRatio="1000"/>
-	<Property ID="buff_pet_skill_014a" Name="沉默" EventType="1" TargetType="0" FuncNo="614" BufferFunctionType="1" FunctionSearchRadius="3" FunctionRelationType="3" FunctionTargetType="0,1,5" ModifySinkSearchRadiusRatio="0.3" SinkBufferID="control_buff_pet_skill_014" ModifySinkBufferTimeRatio="200"/>
-	<Property ID="buff_pet_skill_003" Name="伤害加深" EventType="17" TargetType="0" FuncNo="618" BreakEffectType="0" BreakEffectBase="1.5" BreakEffectImprove="0.1"/>
-	<Property ID="buff_pet_skill_004" Name="破防斩" EventType="17" TargetType="0" FuncNo="618" BreakEffectType="1" BreakEffectBase="0.5" BreakEffectImprove="0.1"/>
-	<Property ID="buff_pet_tongyong_001" Name="武神链接主角" EventType="1" TargetType="0"/>
-	<Property ID="buff_pet_skill_013C" EventType="2" TargetType="0" FuncNo="21" LinkType="2" LinkPetID="role_npc_base" LinkEffectName="buff_pet_skill_013"/>
-	<Property ID="buff_pet_skill_015" Name="剑客变身" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\pet\boss_shu_003.ini" ChangeModelSkillID="ws_skill_27_1; ;ws_skill_27_2;ws_skill_27_3; " ChangeModelScale="1.25" ChangeModelAction="born_001" ChangeModelEffect="common_change_002"/>
-	<Property ID="buff_zc_001"/>
-	<Property ID="buff_zc_002" EventType="3" TargetType="0" FuncNo="99" HPPercent="10" BufferFunctionType="2" FunctionSearchRadius="99" FunctionRelationType="0" FunctionTargetType="0" ReturnHPPercent="10"/>
-	<Property ID="buff_zc_003" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="80"/>
-	<Property ID="buff_pet_skill_016" Name="增加攻击力" EventType="8" TargetType="2" FuncNo="611" AdvanceHPPercent="100" AttackPercent="30" ModifyAdvenceHPPercentRatio="0" ModifyAttackPercentRatio="6"/>
-	<Property ID="buff_pet_skill_017" Name="大圣变身" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\pet\pet_shu_019.ini" ChangeModelSkillID="ws_skill_31_1c; ;ws_skill_31_2;ws_skill_31_3; " ChangeModelScale="1.25" ChangeModelAction="born_001" ChangeModelEffect="common_change_002"/>
-	<Property ID="buff_pet_skill_018" Name="模糊" EventType="1" TargetType="0" FuncNo="107" ChangePropName="Transparency" ChangePropValue="122" ChangeModelPath="ini\npc\boss\boss_shu_003.ini" ChangeModelSkillID="ws_skill_27_1;ws_skill_27_2;ws_skill_27_3; ; "/>
-	<Property ID="buff_pet_skill_018a" Name="模糊" EventType="2" TargetType="0" FuncNo="107" ChangePropName="Transparency" ChangePropValue="255" ChangeModelPath="ini\npc\boss\boss_shu_003.ini" ChangeModelSkillID="ws_skill_27_1;ws_skill_27_2;ws_skill_27_3; ; "/>
-	<Property ID="buff_pet_skill_015A" Name="剑客变身A" ChangeModelPath="ini\npc\boss\boss_shu_003.ini" ChangeModelSkillID="ws_skill_27_1;ws_skill_27_2;ws_skill_27_3; ; "/>
-	<Property ID="buff_pet_skill_016A" Name="巨人变身A" EventType="3" TargetType="0" FuncNo="614" HPPercent="2" BufferFunctionType="2" FunctionSearchRadius="4" FunctionRelationType="0" FunctionTargetType="0" ReturnHPPercent="1" MofifyReturnPercentRatio="0.2" ChangeModelPath="ini\npc\pet\pet_shu_021.ini" ChangeModelSkillID="ws_skill_29_1;ws_skill_29_2;ws_skill_29_3; ; "/>
-	<Property ID="buff_pet_skill_017A" Name="大圣变身A" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="30" ModifyImmunityPercentRatio="5" ChangeModelPath="ini\npc\pet\pet_shu_019.ini" ChangeModelSkillID="ws_skill_30_1;ws_skill_30_2;ws_skill_30_3; ; "/>
-	<Property ID="buff_pet_skill_015A1" EventType="3" TargetType="0" FuncNo="305" ConsumeBreak="5" BreakBufferConfig="breakTest" BreakBufferSportConfig="Buff_break_001" BreakType="0" FirmDamagePercent="25" DamagePercentRatio="5"/>
-	<Property ID="buff_fs_sk_003" Name="法师护盾" EventType="1" TargetType="2" FuncNo="630"/>
-	<Property ID="buff_csshxs_sk01" Name="测试伤害吸收" EventType="1" TargetType="2" FuncNo="622" AbsorbDamageFormula="@MaxHP/50" DestroyAddBuffer2="buff_taoist_sk02"/>
-	<Property ID="buff_ty_003" Name="开启无视碰撞" EventType="1" TargetType="2" FuncNo="107" Attribute="CanCrossNPC " AttributeIncValue="1" ChangePropName="CanCrossNPC" ChangePropValue="1" ChangeModelPath="ini\npc\boss\boss_shu_003.ini" ChangeModelSkillID="ws_skill_27_1;ws_skill_27_2;ws_skill_27_3; ; "/>
-	<Property ID="buff_ty_004" Name="关闭无视碰撞" EventType="2" TargetType="2" FuncNo="107" Attribute="CanCrossNPC " AttributeIncValue="0" ChangePropName="CanCrossNPC" ChangePropValue="0" ChangeModelPath="ini\npc\boss\boss_shu_003.ini" ChangeModelSkillID="ws_skill_27_1;ws_skill_27_2;ws_skill_27_3; ; "/>
-	<Property ID="buff_taiji_0002" Name="太极技2-伤害反弹" EventType="10" TargetType="3" FuncNo="601" PRebound="100" ReBoundEffectName="monk_sj01a"/>
-	<Property ID="buff_hpoenix_sk03" Name="凤凰变蛋" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\npc\hpoenix_equip_001a.ini" ChangeModelSkillID="hpoenix_at01a;hpoenix_sk01;hpoenix_sk04;hpoenix_sk03;1;1" ChangeModelScale="1.2" ChangeModelAction="born_001" ChangeModelEffect="skill_hpoenix_sk03_003c"/>
-	<Property ID="buff_hpoenix_sk03b" Name="凤凰变蛋吸收伤害" EventType="1" TargetType="2" FuncNo="622" AbsorbDamageFormula="@RC*@MaxHP*0.00033+@RC*@APTotal*0.0066" DestroyAddBuffer2="buff_hpoenix_sk03c"/>
-	<Property ID="buff_hpoenix_sk03c" Name="凤凰变身成功回血" EventType="1" TargetType="0" FuncNo="610" LostHPPercent="100"/>
-	<Property ID="buff_hpoenix_sk03d" Name="凤凰变身成功清除怒气" EventType="2" TargetType="2" FuncNo="100" Attribute="RC" AttributeIncValue="-1000"/>
-	<Property ID="buff_soldier_sk01" Name="双子之护伤害反弹" EventType="10" TargetType="3" FuncNo="601" PRebound="40" ReBoundEffectName="buff_soldier_sk01a" BoundSkillLevelRatio="0.2"/>
-	<Property ID="buff_soldier_sk02" Name="双子之力伤害光环" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaAD="@ADTotal*1.9"/>
-	<Property ID="buff_soldier_sk04" Name="双子之力嘲讽" EventType="1" TargetType="0" FuncNo="105" TauntSearchRadius="4" TauntTimes="3500" TauntRelationType="3" TauntTargetType="0,1,4,5" TauntBuffID="control_buff_soldier_sk04"/>
-	<Property ID="buff_soldier_sk01a" Name="双子之护反弹切光环" EventType="1" TargetType="2" FuncNo="626" Iconpath="gui\xm2_main\heedbar\soldier_003.png" SillId="soldier_sk01"/>
-	<Property ID="buff_soldier_sk02a" Name="双子之护光环切反弹" EventType="1" TargetType="2" FuncNo="626" Iconpath="gui\xm2_main\heedbar\soldier_002.png" SillId="soldier_sk01"/>
-	<Property ID="buff_test001" Name="测试流血" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaAD="@MaxHP*0.05"/>
-	<Property ID="buff_test002" Name="测试设置属性判断1" EventType="1" TargetType="0" FuncNo="111" DeductBloodFormulaAD="@MaxHP*0.05" AddDataName="marke" AddDataValue="1"/>
-	<Property ID="buff_test003" Name="测试设置属性判断2" EventType="1" TargetType="0" FuncNo="111" DeductBloodFormulaAD="@MaxHP*0.05" AddDataName="marke" AddDataValue="2"/>
-	<Property ID="buff_hpoenix_sk03f" Name="凤凰变身伤害buff" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaAP="@MaxHP*0.02"/>
-	<Property ID="buff_test004" Name="测试转移伤害" EventType="1" TargetType="4" FuncNo="615" SharedDamagePercent="50"/>
-	<Property ID="buff_tongyong_sk04" Name="石化受到攻击后移除BUFF" EventType="10" TargetType="2" FuncNo="15" BuffConfigID="buff_test003"/>
-	<Property ID="buff_azrael_sk02" Name="分身分担伤害" EventType="1" TargetType="4" FuncNo="615" SharedDamagePercent="50"/>
-	<Property ID="buff_pet_skill_019" Name="净化" EventType="1" TargetType="0" FuncNo="16" BuffLimitLifeTime="60000"/>
-	<Property ID="buff_pet_skill_020A" Name="镇守子buff" EventType="18" TargetType="0" FuncNo="602" ImmunityPercent="100"/>
-	<Property ID="buff_pet_skill_020B" Name="哪吒法身提高生命" EventType="1" TargetType="2" FuncNo="640" ModifyType="2" IniModifyName="MaxHP" SkillLevelModifyRatio="40000" SkillLevelFixValue="-40000"/>
-	<Property ID="buff_pet_skill_021" Name="死亡波动" EventType="5" TargetType="2" FuncNo="614" BufferFunctionType="2" FunctionSearchRadius="10" FunctionRelationType="0" FunctionTargetType="0" ReturnHPPercent="5" MofifyReturnPercentRatio="1"/>
-	<Property ID="buff_pet_skill_023a" Name="开启免疫破防" EventType="1" TargetType="2" FuncNo="631" CanImmunityBreak="1"/>
-	<Property ID="buff_pet_skill_023b" Name="关闭免疫破防" EventType="2" TargetType="2" FuncNo="631" CanImmunityBreak="0"/>
-	<Property ID="buff_pet_skill_023c" Name="变身幽灵船长" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\pet\boss_shu_010_1.ini" ChangeModelSkillID="ws_skill_35_4; ;ws_skill_35_2;ws_skill_35_3; " ChangeModelScale="1.25" ChangeModelAction="born_001" ChangeModelEffect="common_change_002" ChangeModelTime="25" PetConfigID="pet_35"/>
-	<Property ID="buff_pet_skill_025" Name="未暴击加时间" EventType="21" TargetType="2" FuncNo="643" PromoteBufferID="buff_pet_skill_025;buff_pet_tongyong_001,pet_36" PromoteValue="1000"/>
-	<Property ID="buff_pet_skill_025a" Name="开启暴击伤害" EventType="1" TargetType="2" FuncNo="699" AdvancePropName="CritDam" AdvanceFixValue="5" AdvanceSkillRatio="5" AdvanceEvoRatio="5"/>
-	<Property ID="buff_pet_skill_025b" Name="关闭暴击伤害" EventType="2" TargetType="2" FuncNo="699" AdvancePropName="CritDam"/>
-	<Property ID="buff_pet_skill_028" Name="反弹伤害" EventType="10" TargetType="3" FuncNo="601" PRebound="20" BoundSkillLevelRatio="4" BoundAttackType="1"/>
-	<Property ID="buff_pet_skill_027" Name="囚禁减伤" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="30" ModifyImmunityPercentRatio="10"/>
-	<Property ID="buff_pet_skill_027A" Name="减速效果" EventType="1" TargetType="0" FuncNo="664" SlowActivePetID="pet_skill_027" SlowFixValue="0.9" SlowEvoRatio="0.1" TriggerEffectPoint="0.1" EffectBufferID="control_buff_pet_skill_027_2" SlowSkilPetlID="pet_skill_027"/>
-	<Property ID="buff_pet_skill_027B" Name="减速恢复" EventType="2" TargetType="0" FuncNo="664" SlowActivePetID="pet_skill_027"/>
-	<Property ID="buff_pet_skill_027_2" Name="晕眩" EventType="2" TargetType="0" FuncNo="664" SlowActivePetID="pet_39"/>
-	<Property ID="buff_pet_skill_015B" Name="剑客加攻击" EventType="1" TargetType="0" FuncNo="613" NormalAttackFixPercent="40" NormalAttackSkillLevelRatio="5" NormalAttackPetEvoRatio="3"/>
-	<Property ID="buff_pet_skill_015B1" Name="剑客加攻击" EventType="2" TargetType="0" FuncNo="613" NormalAttackFixPercent="40" NormalAttackSkillLevelRatio="5" NormalAttackPetEvoRatio="3"/>
-	<Property ID="buff_pet_skill_027_1" Name="半透明" EventType="1" TargetType="2" FuncNo="107" ChangePropValue="60"/>
-	<Property ID="buff_pet_skill_029" Name="减少cd"/>
-	<Property ID="buff_pet_skill_030A" Name="加攻击" EventType="1" TargetType="2" FuncNo="700" AdvanceAttackPercentFixValue="15" AdvanceAttackPercentRatio="3"/>
-	<Property ID="buff_pet_skill_030B" Name="关闭" EventType="2" TargetType="2" FuncNo="700"/>
-	<Property ID="buff_pet_skill_030C" Name="免疫伤害" EventType="18" TargetType="2" FuncNo="700" LifePercentFixValue="80" LifePercentRatio="-3"/>
-	<Property ID="buff_shooter_sk01" Name="瘟疫-掉血" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaAP="@APTotal*0.35"/>
-	<Property ID="buff_shooter_sk02" Name="丧尸" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="ini\npc\npc\shooter_zombie.ini" ChangeModelSkillID="shooter_zombie;1;1;1;1;1" ChangeModelScale="1" ChangeModelAction="shooter_zombie_0003" SkillSequenceID="shooter_zombie_ai"/>
-	<Property ID="buff_winebibber_sk01" Name="不醉酒仙喝酒吸收伤害" EventType="1" TargetType="2" FuncNo="622" AbsorbDamageFormula="@MaxHP*0.05+@ADTotal*1.0"/>
-	<Property ID="buff_winebibber_sk01b" Name="不醉酒仙喝酒回复怒气" EventType="1" TargetType="2" FuncNo="113" ReplyType="2" DistanceTime="70" ReplyValueType="2" EnergyValue="30" TotalReplyEnergy="450"/>
-	<Property ID="buff_lutanist_sk01" Name="仙乐曲-吸收伤害" EventType="1" TargetType="2" FuncNo="622" AbsorbDamageFormula="@MaxHP*0.05+@APTotal*1"/>
-	<Property ID="buff_magicm_sk05" Name="蝴蝶的盛宴" EventType="3" TargetType="0" FuncNo="1" BuffID="buff_magicm_sk07" BuffTargetRatio="80"/>
-	<Property ID="buff_magicm_sk07" Name="蝴蝶的盛宴-伤害" EventType="1" TargetType="0" FuncNo="109" DeductBloodFormulaAP="@APTotal*0.85+17"/>
-	<Property ID="buff_test005" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="50" AbsorbEffectName="buff_pet_tongyong_001" AbsorbRestoreType="2" AbsorbRestorePercent="50"/>
-	<Property ID="buff_test006" Name="测试吸血" EventType="3" TargetType="0" FuncNo="605" AbsorbRateConfirmValue="@MaxHP*0.01" AbsorbEffect="buff_pet_tongyong_001" RestoreType="2" RestoreValue="@MaxHP*0.001"/>
-	<Property ID="buff_ghost_sk01" Name="沉睡吸血" EventType="3" TargetType="0" FuncNo="605" AbsorbRateConfirmValue="@APTotal*0.6" AbsorbEffect="buff_pet_tongyong_001" RestoreType="2" RestorePercent="5"/>
-	<Property ID="buff_ghost_sk04" Name="化身恶魔" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\npc\ghostawake.ini" ChangeModelSkillID="ghost_at06;ghost_sk05;ghost_sk06;ghost_sk07;1;1" ChangeModelScale="1.2" ChangeModelAction="ghostawake_0007" SkillSequenceID="ghostawake_ai" ChangeFshion="1" HideWeapon="1"/>
-	<Property ID="buff_pet_skill_031A" Name="对目标造成伤害" EventTargetRelationType="3" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaAD="@AttackBase*0.78" DeductBloodFormulaRadio="0.05"/>
-	<Property ID="buff_pet_skill_031B" Name="扣目标破防值" EventTargetRelationType="3" EventType="3" TargetType="0" FuncNo="305" ConsumeBreak="5" BreakBufferConfig="breakTest" BreakBufferSportConfig="Buff_break_001" BreakType="0" AddBreakValue="0.9"/>
-	<Property ID="buff_ghost_sk05" Name="觉醒吸血" EventType="3" TargetType="0" FuncNo="605" AbsorbRateConfirmValue="@APTotal*3" AbsorbEffect="buff_pet_tongyong_001"/>
-	<Property ID="buff_pet_skill_031C" Name="给自己加破防值" EventType="3" TargetType="0" FuncNo="305" ConsumeBreak="-4" BreakBufferConfig="breakTest" BreakBufferSportConfig="Buff_break_001" BreakType="0" AddBreakValue="-0.25"/>
-	<Property ID="buff_pet_skill_032" Name="血色盛宴" EventType="9" TargetType="0" FuncNo="603" AbsorbPercent="15" ModifyAbsorbPercentRatio="1"/>
-	<Property ID="buff_pet_skill_003b" Name="伤害加深关闭" EventType="2" TargetType="0" FuncNo="618"/>
-	<Property ID="buff_hpoenix_sk03e" Name="凤凰变蛋霸体7秒" EventType="1" TargetType="0" FuncNo="1" BuffID="buff_hpbati_001" DeductBloodFormulaAP="@MaxHP*0.02"/>
-	<Property ID="buff_monk_sk04" Name="免疫伤害" EventType="18" TargetType="0" FuncNo="602" ImmunityPercent="30" ModifyImmunityPercentRatio="0.5"/>
-	<Property ID="buff_marksman_pet" Name="神枪游侠炸弹拉怪" EventType="1" TargetType="2" FuncNo="102" TriggerSkillConfigID="marksman_pet01"/>
-	<Property ID="buff_marksman_pet1" Name="神枪游侠炸弹爆破" EventType="2" TargetType="2" FuncNo="102" TriggerSkillConfigID="marksman_pet02"/>
-	<Property ID="buff_marksman_pet2" Name="炸弹内套" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_marksman_pet2"/>
-	<Property ID="buff_winebibber_sk01c" Name="给自己加破防值" EventType="3" TargetType="2" FuncNo="305" ConsumeBreak="-2" BreakBufferConfig="breakTest" BreakBufferSportConfig="Buff_break_001" BreakType="0"/>
-	<Property ID="buff_captain_sk06" Name="幽灵转世（枪）" EventType="1" TargetType="2" FuncNo="622" AbsorbDamageFormula="@ADTotal*20" AbsorbFullEffect="skill_captain_sk06_002" AbsorbFullReplaceSkill="captain_sk01,captain_sk02,captain_sk02,captain_sk03,captain_at04_1" NewReplaceSkillAddCD="0,0;0,0;0,0;0.001,20000"/>
-	<Property ID="buff_captain_sk05" Name="幽灵审判（枪）流血" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaAD="@ADTotal*0.5"/>
-	<Property ID="buff_pet_42_mahatma" Name="齐天大圣分身-反伤" EventType="10" TargetType="3" FuncNo="601" PRebound="70" ReBoundEffectName="buff_soldier_sk01a"/>
-	<Property ID="buff_captain_sk02mbA" Name="洪流计时" EventType="2" TargetType="0" FuncNo="665" AnotherBufferID="control_buff_captain_sk02mbB" SlowSkilPetlID="pet_skill_027"/>
-	<Property ID="buff_pet_skill_035A" Name="幽灵的馈赠" EventType="1" TargetType="2" FuncNo="701" CanImmunityBreak="1"/>
-	<Property ID="buff_pet_skill_035B" Name="幽灵的馈赠关闭" EventType="2" TargetType="2" FuncNo="701"/>
-	<Property ID="buff_rabbi_sk03b" Name="平衡法师伤害光环" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaAP="@APTotal*1.9"/>
-	<Property ID="buff_rabbi_sk02b" Name="活水盾" EventType="10" TargetType="2" FuncNo="99" HPFirmValue="@MaxHP*0.005+@APTotal*0.3" HPEffectID="common_addblood_001" BufferMaxHPFirm="@MaxHP*0.01*5+@APTotal*0.3*5" DeductBloodFormulaAP="@APTotal*1.9"/>
-	<Property ID="buff_rabbi_sk02b_2" Name="活水盾-免伤" EventType="18" TargetType="0" FuncNo="602" ImmunityPercent="40"/>
-	<Property ID="buff_rabbi_sk03" Name="驱使念力-BUFF结束友放加血" EventTargetRelationType="0,1,2" EventTargetClassType="0,5" EventType="2" TargetType="0" FuncNo="99" HPFirmValue="@MaxHP*0.08+@APTotal*1.5" HPEffectID="common_addblood_001"/>
-	<Property ID="buff_pet_skill_037" Name="灵魂出窍-加血" EventType="3" TargetType="0" FuncNo="99" HPPercent="3"/>
-	<Property ID="buff_pet_skill_037_2" Name="灵魂出窍-隐身" EventType="1" TargetType="0" FuncNo="115" HideTarget="1"/>
-	<Property ID="buff_pet_skill_037_3" Name="灵魂出窍-隐身（关闭）" EventType="2" TargetType="0" FuncNo="115" HideTarget="0"/>
-	<Property ID="buff_pet_skill_037_4" Name="灵魂出窍-攻击目标清BUFF" EventType="8" TargetType="2" FuncNo="15" Condition="10027" BuffConfigID="buff_pet_skill_037"/>
-	<Property ID="buff_rabbi_pet01" Name="法球攻击-回复主人血量" EventType="9" TargetType="0" FuncNo="603" BuffConfigID="buff_pet_skill_037" AbsorbPercent="100" AbsorbEffectName="common_addblood_001"/>
-	<Property ID="buff_fox_diaoxue_2_ad1" Name="伤害光环" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaAP="@APTotal*1.9" IsAbsoluteDamage="1"/>
-	<Property ID="buff_fox_yulao_2_ad1" Name="雨牢" EventType="2" TargetType="0" FuncNo="665" IsLeaveHaloAddBuffer="1" LeaveHaloAddBufferID="control_buff_fox_yulao_3"/>
-	<Property ID="buff_fox_yulong_3_ad1" Name="三连伤害" EventType="1" TargetType="0" FuncNo="109" DeductBloodFormulaAP="@APTotal*10"/>
-	<Property ID="buff_fox_yulong_4_ad1" Name="大招伤害" EventType="1" TargetType="0" FuncNo="109" DeductBloodFormulaAP="@APTotal*5"/>
-	<Property ID="buff_pet_skill_036_ad1" Name="急速冷却" EventType="1" TargetType="0" FuncNo="614" BufferFunctionType="1" FunctionSearchRadius="3" FunctionRelationType="3" FunctionTargetType="0" ModifySinkSearchRadiusRatio="0.3" SinkBufferID="buff_pet_skill_036b" ModifySinkBufferTimeRatio="200"/>
-	<Property ID="buff_rabbi_sk03a" Name="驱使念力伤害光环" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaAP="@APTotal*1"/>
-	<Property ID="buff_fox_yulong_3_ad2" Name="三连破防-30" EventType="1" TargetType="0" FuncNo="305" ConsumeBreak="30" BreakBufferConfig="breakTest" BreakBufferSportConfig="Buff_break_001" BreakType="0" BossBreakRate="60"/>
-	<Property ID="buff_boxer_sk01c" Name="金玉溃-反伤" EventType="10" TargetType="3" FuncNo="601" PRebound="30" ReBoundEffectName="buff_soldier_sk01a" BoundAttackType="2"/>
-	<Property ID="buff_boxer_sk05a" Name="苍龙背水-气场判断" EventType="2" TargetType="0" FuncNo="665" AnotherBufferID="buff_boxer_sk05" IsLeaveHaloAddBuffer="1" LeaveHaloAddBufferID="buff_boxer_sk05b"/>
-	<Property ID="buff_demon_sk04" Name="恶魔降临" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\npc\demonawake.ini" ChangeModelSkillID="demon_at06;demon_sk05;demon_sk06;1;1;1" ChangeModelScale="1" ChangeModelAction="demonawake_0006" SkillSequenceID="demonawake_ai" ChangeFshion="1" HideWeapon="1"/>
-	<Property ID="buff_pet_skill_022" Name="魔·镇魂曲" EventType="1" TargetType="2" FuncNo="666" ImmuneType="1"/>
-	<Property ID="buff_demon_sk01" Name="恶魔火焰" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaAP="@APTotal*0.3"/>
-	<Property ID="buff_demon_sk03" Name="恶魔之舞-额外伤害" EventType="1" TargetType="0" FuncNo="109" DeductBloodFormulaAP="@APTotal*7.5"/>
-	<Property ID="buff_pet_skill_039A" EventType="3" TargetType="0" FuncNo="664" Attribute="Dodge" AttributeIncValue="-2" ChangePropName="Toug" ChangePropValue="-2"/>
-	<Property ID="buff_tianfu_002" Name="散失" EventType="1" TargetType="0" FuncNo="118" RestoreEnergyPercent="-1" RestoreBeatTime="100" ResstoreTotalTime="100" ResstoreSkillAddPercent="-1"/>
-	<Property ID="buff_tianfu_003" Name="破军" EventType="1" TargetType="0" FuncNo="305" ConsumeBreak="1" BreakBufferConfig="breakTest" BreakBufferSportConfig="Buff_break_001" BreakType="0" AddBreakValue="1"/>
-	<Property ID="buff_tianfu_004" Name="回春" EventType="1" TargetType="2" FuncNo="703" TalentBaseAddHP="10" TalentLevelAddHP="10"/>
-	<Property ID="buff_tianfu_008" Name="清明" EventType="1" TargetType="2" FuncNo="704" TalentSkillCDValue="0" TalentLevelDecCD="0"/>
-	<Property ID="buff_singed_02_ad1" Name="爆炸" EventType="1" TargetType="0" FuncNo="109" DeductBloodFormulaHoly="@MaxHP*0.10"/>
-	<Property ID="buff_singed_03_ad1" Name="霸体回血" EventType="1" TargetType="0" FuncNo="99" HPPercent="15" HPEffectID="common_addblood_001"/>
-	<Property ID="buff_singed_04_ad1" Name="破防" EventType="1" TargetType="0" FuncNo="305" ConsumeBreak="50" BreakBufferConfig="breakTest" BreakBufferSportConfig="Buff_break_001" BreakType="0"/>
-	<Property ID="buff_alice_zhenying03ad" Name="阵营—回血" EventType="1" TargetType="2" FuncNo="99" HPPercent="3" HPEffectID="common_addblood_001"/>
-	<Property ID="buff_alice_zhenying04ad" Name="阵营—免伤" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="50"/>
-	<Property ID="buff_singed_tj_ad1" Name="毒伤" EventType="1" TargetType="0" FuncNo="705"/>
-	<Property ID="buff_pet_skill_042" Name="冰霜涅槃" EventType="10" TargetType="3" FuncNo="601" PRebound="20" BoundSkillLevelRatio="4" BoundAttackType="2"/>
-	<Property ID="buff_pet_skill_042A" Name="冰霜涅槃-使攻击方减速" EventType="10" TargetType="3" FuncNo="1" BuffID="control_buff_pet_skill_042A"/>
-	<Property ID="buff_yuxue2_skill03ad" Name="浴血变身灼烧光环" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaHoly="$MaxHP*0.01"/>
-	<Property ID="buff_yuxue2_skill04ad" Name="浴血变身牢笼雷霆" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaHoly="$MaxHP*0.02"/>
-	<Property ID="buff_yuxue2_skill03bd" Name="浴血变身灼烧光环2" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaHoly="$MaxHP*0.04"/>
-	<Property ID="buff_yuxue2_skill04ada" Name="浴血变身牢笼雷霆2" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaHoly="$MaxHP*0.06"/>
-	<Property ID="pet_skill_043A" Name="烛龙之怒-增加攻击力" EventType="8" TargetType="2" FuncNo="611" AdvanceHPPercent="100" AttackPercent="30" ModifyAdvenceHPPercentRatio="0" ModifyAttackPercentRatio="4"/>
-	<Property ID="pet_skill_043B" Name="烛龙之怒-免疫反弹" EventType="1" TargetType="2" FuncNo="706"/>
-	<Property ID="pet_skill_043C" Name="烛龙之怒-免疫反弹关闭" EventType="2" TargetType="2" FuncNo="706"/>
-	<Property ID="buff_icefemale_sk03d" Name="寒冰风暴-免疫40%伤害" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="40"/>
-	<Property ID="buff_pike_sk03" Name="兵墙-免疫伤害" EventType="18" TargetType="0" FuncNo="602" ImmunityPercent="100"/>
-	<Property ID="buff_pet_skill_044" Name="无尽怒火" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_pet_skill_044b"/>
-	<Property ID="buff_weapon_bing002" Name="红装冰冻效果" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="-50"/>
-	<Property ID="Buff_Poison_002" Name="增加攻击力" EventType="8" TargetType="2" FuncNo="611" AdvanceHPPercent="100" AttackPercent="-20"/>
-	<Property ID="buff_druid_sk01" Name="黑熊形态" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\npc\druid01.ini" ChangeModelSkillID="druid01_at03;druid01_sk01;druid01_sk02;druid01_sk03;1;1" ChangeModelScale="1" ChangeModelAction="druid01_0010" SkillSequenceID="demonawake_ai" ChangeFshion="1" HideWeapon="1"/>
-	<Property ID="buff_druid_sk02" Name="猎豹形态" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\npc\druid02.ini" ChangeModelSkillID="druid02_at03;druid02_sk01;druid02_sk02;druid01_sk03;1;1" ChangeModelScale="1" ChangeModelAction="druid02_0010" SkillSequenceID="demonawake_ai" ChangeFshion="1" HideWeapon="1"/>
-	<Property ID="buff_druid_sk03" Name="巨鹰形态" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="ini\npc\npc\druid03.ini" ChangeModelSkillID="druid03_at01;druid03_sk01;druid03_sk02;druid01_sk03;1;1" ChangeModelScale="1" ChangeModelAction="druid03_0010" SkillSequenceID="demonawake_ai" ChangeFshion="1" HideWeapon="1"/>
-	<Property ID="buff_digong_zhuoshao1ad" Name="地宫变身灼烧光环" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaHoly="$MaxHP*2"/>
-	<Property ID="buff_digong_laolong1ad" Name="地宫变身牢笼雷霆" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaHoly="$MaxHP*3"/>
-	<Property ID="buff_digong_zhuoshao2ad" Name="地宫变身灼烧光环2" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaHoly="$MaxHP*0.3"/>
-	<Property ID="buff_digong_laolong2ad" Name="地宫变身牢笼雷霆2" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaHoly="$MaxHP*0.5"/>
-	<Property ID="buff_druid02_sk01" Name="流血" EventType="3" TargetType="0" FuncNo="109" DeductBloodFormulaAD="@APTotal*1.5"/>
-	<Property ID="buff_pet_skill_045a" Name="回血" EventType="3" TargetType="0" FuncNo="614" BufferFunctionType="2" FunctionSearchRadius="1" FunctionRelationType="0,1,2" FunctionTargetType="0,5" ReturnHPPercent="1.2" MofifyReturnPercentRatio="0.2"/>
-	<Property ID="buff_druid01_sk01" Name="雷霆咆哮-免疫20%伤害" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="20"/>
-	<Property ID="buff_druid01_sk02" Name="雷霆咆哮-减少攻击力" EventType="8" TargetType="2" FuncNo="611" AdvanceHPPercent="100" AttackPercent="-20"/>
-	<Property ID="buff_meatshield_sk01" Name="增加攻击力" EventType="8" TargetType="2" FuncNo="611" AdvanceHPPercent="100" AttackPercent="-20"/>
-	<Property ID="buff_meatshield_sk01b" Name="受到的伤害增加" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="-30"/>
-	<Property ID="buff_meatshield_sk01d" Name="嘲讽" EventType="1" TargetType="2" FuncNo="105" TauntTimes="2000" TauntRelationType="3" TauntTargetType="0,1,4,5" TauntBuffID="control_buff_meatshield_sk01c"/>
-	<Property ID="buff_meatshield_sk02" Name="护盾-免疫30%伤害" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="30"/>
-	<Property ID="buff_pet_skill_046a" Name="减少伤害" EventType="1" TargetType="0" FuncNo="602" ImmunityPercent="40" ModifyImmunityPercentRatio="2"/>
+	<Property ID="buff_ride_cancle_001" Name="强制下坐骑" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="333" CanRideOff="0"/>
+	<Property ID="buff_dead" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="20"/>
+	<Property ID="Buff_test_ts01e_1" Name="弹射-关闭" EventTargetRelationType="7" EventTargetClassType="1" EventType="2" TargetType="0" FuncNo="624" ChainRange="10" ChainEffect="test_lianjie" ChainSpeed="100" ChainMaxTimes="10" ChainRepeat="0" ChainRandom="1"/>
+	<Property ID="Buff_test_lj01e_1" Name="链接-治疗" EventTargetRelationType="7" EventTargetClassType="1" EventType="1" TargetType="0" FuncNo="99" HPPercent="5"/>
+	<Property ID="Buff_TT_rl_tra01e_1" Name="战士变身" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="619" ChangeModelPath="obj\player\b_char\b_wudang04\b_player_zs001_1.ini" ChangeModelSkillID="TT_rl_zst01_1;TT_rl_zst02_1;TT_rl_zst03_1;TT_rl_zs05_1;TT_rl_zst04_1" ChangeModelScale="1.3" ChangeModelAction="TT_rl_zs02_1" ChangeModelEffect="tt_player_zs002a"/>
+	<Property ID="Buff_TT_rl_tra01e_2" Name="变身恢复50%血量" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="50"/>
+	<Property ID="Buff_TT_jl_tra01e_1" Name="弓箭手变身" EventType="1" TargetType="2" FuncNo="619" ChangeModelPath="obj\player\g_char\g_wudang04\g_player_zs001_1.ini" ChangeModelSkillID="TT_jl_xst01_1;TT_jl_xst02_1;TT_jl_xst03_1;TT_jl_xs05_1;TT_jl_xst04_1" ChangeModelScale="1.5"/>
+	<Property ID="Buff_TT_jl_tra01e_2" Name="变身恢复50%血量" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="50"/>
+	<Property ID="Buff_TT_rl_zs07e_1" Name="每秒恢复1%血量" EventType="1" TargetType="0" FuncNo="614" BufferFunctionType="2" ReturnHPPercent="1"/>
+	<Property ID="Buff_TT_jl_xs04e_1" Name="灼烧-持续" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="99" HPPercent="-0.5"/>
+	<Property ID="Buff_all_hmp01e_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="0" FuncNo="99" HPPercent="5"/>
+	<Property ID="Buff_all_hmp01e_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="0" FuncNo="110" MPPercent="5"/>
+	<Property ID="Buff_TT_rl_sqs04e_1_tb0" EventTargetRelationType="8" EventTargetClassType="33" EventType="10" TargetType="3" FuncNo="601" PRebound="10" ReBoundEffectName="tt_player_qs04_3"/>
+	<Property ID="Buff_TT_rl_sqs04e_1_tb1" EventTargetRelationType="8" EventTargetClassType="33" EventType="10" TargetType="3" FuncNo="601" PRebound="20" ReBoundEffectName="tt_player_qs04_3"/>
+	<Property ID="Buff_all_hp01e_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPFirmValue="2000"/>
+	<Property ID="Buff_all_mp01e_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="110" MPFirmValue="200"/>
+	<Property ID="Buff_test_zd01e_1" Name="中断技能" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="119" EffectRatioParam="0"/>
+	<Property ID="Buff_TT_rl_sqs03e_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="119"/>
+	<Property ID="Buff_TT_rl_sqs04e_2_tb0" EventTargetRelationType="8" EventTargetClassType="18" EventType="10" TargetType="3" FuncNo="601" PRebound="10" ReBoundEffectName="tt_player_qs04_3"/>
+	<Property ID="Buff_TT_rl_sqs04e_2_tb1" EventTargetRelationType="8" EventTargetClassType="18" EventType="10" TargetType="3" FuncNo="601" PRebound="10" ReBoundEffectName="tt_player_qs04_3"/>
+	<Property ID="buff_ride_xiniu001" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="1" BuffID="buff_ride_xiniu002"/>
+	<Property ID="buff_ride_xiniu001_1" Name="移除加速" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="2" FuncNo="111" bufferID="buff_ride_xiniu002" layerCount="10"/>
+	<Property ID="buff_ride_feilong001_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="16" CatchKeepTime="20000" CatchType="1"/>
+	<Property ID="buff_ride_feilong001_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="16" CatchKeepTime="0" CatchType="0"/>
+	<Property ID="buff_ride_cooldown_001" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="333"/>
+	<Property ID="buff_mushi_001" Name="毒奶粉加血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_mushi_skill_003"/>
+	<Property ID="buff_mushi_002B" Name="关闭清除技能" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="mushi_skill_007" ModifyShortCutNewSkillID="mushi_skill_001"/>
+	<Property ID="buff_mushi_003" Name="毒奶粉加血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="16"/>
+	<Property ID="buff_mushi_005" Name="蔓延持续毒素伤害" EventTargetRelationType="0" EventTargetClassType="0"/>
+	<Property ID="buff_mushi_006" Name="毒奶粉扣血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_mushi_skill_002"/>
+	<Property ID="buff_mushi_007" Name="毒奶粉扣血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="-6" HPFirmValue="-20"/>
+	<Property ID="buff_mushi_005_1" Name="蔓延锁定目标" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="125" SetLockedTargetFlag="1"/>
+	<Property ID="buff_mushi_005_2" Name="蔓延取消锁定" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="0" FuncNo="125" SetLockedTargetFlag="0"/>
+	<Property ID="buff_ride_dragon001" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="16" CatchType="0"/>
+	<Property ID="buff_mushi_010" Name="蔓延二段掉血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="-1" HPFirmValue="-20"/>
+	<Property ID="buff_horse_001" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="637" CancelRadius="99"/>
+	<Property ID="buff_horse_001_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="636" RideAreaID="2" RideAreaBuffer="buff_horse_002"/>
+	<Property ID="buff_horse_002" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="6" FuncNo="1" BuffID="buff_ride_cooldown_001"/>
+	<Property ID="buff_horse_speedup_001" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="6" FuncNo="1" BuffID="buff_run_001"/>
+	<Property ID="buff_horse_001_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="636" RideAreaID="0"/>
+	<Property ID="buff_mushi_012" Name="花骨朵加血" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_mushi_skill_001"/>
+	<Property ID="buff_mushi_014" Name="花骨朵扣血" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_mushi_skill_002"/>
+	<Property ID="buff_mushi_015" Name="蔓延二段掉血强化版" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="-1.5" HPFirmValue="-40"/>
+	<Property ID="buff_mushi_012A" Name="花骨朵加血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_mushi_skill_001"/>
+	<Property ID="buff_mushi_002A" Name="毒奶粉叠层数替换技能" EventTargetRelationType="0" EventTargetClassType="0" EventType="33" TargetType="2" FuncNo="126" ModifyShortCutBuffID="buff_mushi_002" ModifyShortCutBuffLays="5" ModifyShortCutOldSkillID="mushi_skill_001" ModifyShortCutNewSkillID="mushi_skill_007" ModifyShortCutStatusValue="3"/>
+	<Property ID="buff_mushi_014A" Name="花骨朵扣血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_mushi_skill_002"/>
+	<Property ID="buff_zhoushu_003_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="zhoushu_skill_002" ModifyShortCutNewSkillID="zhoushu_skill_005"/>
+	<Property ID="buff_zhoushu_003_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="zhoushu_skill_005" ModifyShortCutNewSkillID="zhoushu_skill_002"/>
+	<Property ID="buff_zhoushu_001_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="632" ParrySkillCount="0"/>
+	<Property ID="buff_zhanshi_001" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="3" FuncNo="601" PRebound="30"/>
+	<Property ID="buff_zhanshi_001_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="50"/>
+	<Property ID="buff_zhanshi_002" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="99" EffectRatioParam="20" HPPercent="5"/>
+	<Property ID="buff_zhanshi_003" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="622" FixedAbsorb="0" PercentAbsorb="0.1"/>
+	<Property ID="buff_zhanshi_005" Name="嘲讽" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="628" AttackIntervalTime="800"/>
+	<Property ID="buff_zhanshi_006" Name="伤害积蓄" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="630"/>
+	<Property ID="buff_zhanshi_006_1" Name="释放积蓄伤害" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="0" FuncNo="631" AttackRadius="6" MaxHitCount="99"/>
+	<Property ID="buff_zhanshi_005_1" Name="取消嘲讽" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="629"/>
+	<Property ID="buff_zhanshi_006_2" Name="播放爆炸特效" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_zhanshi_007"/>
+	<Property ID="buff_zhanshi_008" Name="受击击退" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" EffectRatioParam="0"/>
+	<Property ID="buff_zhanshi_009" EventTargetRelationType="0" EventTargetClassType="0"/>
+	<Property ID="buff_zhanshi_001_2" EventTargetRelationType="5" EventTargetClassType="1" EventType="1" TargetType="2" FuncNo="127" ParryFrontPreAction="attack_1h_s_02b" ParryFrontStandAction="attack_1h_s_02" ParryFrontRunAction="attack_1h_s_02c" ParryFrontKeepTime="5" ParryFrontType="1" ParryFrontSkillID="zhanshi_skill_005" ParryFrontNormalSkillID="zhanshi_normal_004"/>
+	<Property ID="buff_fitzx_001" EventTargetRelationType="5" EventTargetClassType="1" EventType="1" TargetType="2" FuncNo="127" ParryFrontPreAction="attack_6h_s_02a" ParryFrontEffectName="fitzx_skill_002" ParryFrontStandAction="attack_6h_s_02b" ParryFrontRunAction="attack_6h_s_02d" ParryFrontKeepTime="5" ParryFrontType="1" ParryFrontSkillID="fitzx_skill_005" ParryFrontNormalSkillID="fitzx_normal_004"/>
+	<Property ID="buff_zhoushu_001_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="632" ParrySkillCount="1" ParrySkillBuffer="buff_zhoushu_003"/>
+	<Property ID="buff_fashi_002_2" Name="关闭格挡" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="632" ParrySkillCount="0"/>
+	<Property ID="buff_fashi_002_1" Name="开启格挡" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="632" ParrySkillCount="1" ParrySkillBuffer="buff_fashi_003"/>
+	<Property ID="buff_fashi_003_1" Name="开启替换技能" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="fashi_skill_002" ModifyShortCutNewSkillID="fashi_skill_005"/>
+	<Property ID="buff_fashi_003_2" Name="关闭还原技能" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="fashi_skill_005" ModifyShortCutNewSkillID="fashi_skill_002"/>
+	<Property ID="buff_fashi_001" Name="冰块破碎" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_fashi_005"/>
+	<Property ID="buff_gongjian_001A" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="-1" HPFirmValue="-60"/>
+	<Property ID="buff_aidms_001" Name="技能1加血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="0" HPFormulaValue="buff_mushi_skill_003"/>
+	<Property ID="buff_aidms_002B" Name="关闭清除技能" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="mushi_skill_007" ModifyShortCutNewSkillID="mushi_skill_001"/>
+	<Property ID="buff_aidms_003" Name="技能1加血强化版" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="16"/>
+	<Property ID="buff_aidms_005" Name="技能2持续伤害" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="0" FuncNo="99" HPPercent="1" HPFirmValue="-50"/>
+	<Property ID="buff_aidms_006" Name="技能1扣血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_mushi_skill_002"/>
+	<Property ID="buff_aidms_007" Name="技能1扣血强化版" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="-6" HPFirmValue="-20"/>
+	<Property ID="buff_aidms_005_1" Name="技能2锁定目标" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="125" SetLockedTargetFlag="1"/>
+	<Property ID="buff_aidms_005_2" Name="技能2取消锁定" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="0" FuncNo="125" SetLockedTargetFlag="0"/>
+	<Property ID="buff_aidms_010" Name="技能2二段伤害" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="-1" HPFirmValue="-20"/>
+	<Property ID="buff_aidms_012" Name="技能4加血" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_mushi_skill_001"/>
+	<Property ID="buff_aidms_014" Name="技能4扣血" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_mushi_skill_002"/>
+	<Property ID="buff_aidms_015" Name="技能2二段持续掉血强化版" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="99" HPPercent="-2" HPFirmValue="-40"/>
+	<Property ID="buff_aidms_012A" Name="技能4加血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_mushi_skill_001"/>
+	<Property ID="buff_aidms_014A" Name="技能4扣血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_mushi_skill_002"/>
+	<Property ID="buff_zhoushu_001_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="125" SetLockedTargetFlag="1"/>
+	<Property ID="buff_zhoushu_001_4" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="125" SetLockedTargetFlag="0"/>
+	<Property ID="buff_zhanshi_010" Name="必暴击" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="107"/>
+	<Property ID="buff_ride_xiniu005" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="100"/>
+	<Property ID="buff_aidms_016" Name="技能2三段强力伤害" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="-1.5" HPFirmValue="-40"/>
+	<Property ID="buff_fashi_003_3" Name="清除玄冰盾特效" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_fashi_006"/>
+	<Property ID="buff_zhoushu_003_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_zhoushu_006"/>
+	<Property ID="buff_zhanshi_011" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="1" BuffID="buff_zhanshi_012"/>
+	<Property ID="buff_tianfu_fitxm_001_1" EventTargetRelationType="5" EventTargetClassType="1" EventType="1" TargetType="2" FuncNo="127" ParryFrontPreAction="attack_1h_s_02b" ParryFrontStandAction="attack_1h_s_02" ParryFrontRunAction="attack_1h_s_02c" ParryFrontKeepTime="5.1" ParryFrontType="1" ParryFrontSkillID="tianfu_zhanshi_skill_005_01" ParryFrontNormalSkillID="zhanshi_normal_004"/>
+	<Property ID="buff_tianfu_fitxm_001_2" EventTargetRelationType="5" EventTargetClassType="1" EventType="1" TargetType="2" FuncNo="127" ParryFrontPreAction="attack_1h_s_02b" ParryFrontStandAction="attack_1h_s_02" ParryFrontRunAction="attack_1h_s_02c" ParryFrontKeepTime="5.2" ParryFrontType="1" ParryFrontSkillID="tianfu_zhanshi_skill_005_02" ParryFrontNormalSkillID="zhanshi_normal_004"/>
+	<Property ID="buff_tianfu_fitxm_001_3" EventTargetRelationType="5" EventTargetClassType="1" EventType="1" TargetType="2" FuncNo="127" ParryFrontPreAction="attack_1h_s_02b" ParryFrontStandAction="attack_1h_s_02" ParryFrontRunAction="attack_1h_s_02c" ParryFrontKeepTime="5.3" ParryFrontType="1" ParryFrontSkillID="tianfu_zhanshi_skill_005_03" ParryFrontNormalSkillID="zhanshi_normal_004"/>
+	<Property ID="buff_tianfu_fitzx_001_1" EventTargetRelationType="5" EventTargetClassType="1" EventType="1" TargetType="2" FuncNo="127" ParryFrontPreAction="attack_6h_s_02a" ParryFrontEffectName="fitzx_skill_002" ParryFrontStandAction="attack_6h_s_02b" ParryFrontRunAction="attack_6h_s_02d" ParryFrontKeepTime="5.1" ParryFrontType="1" ParryFrontSkillID="tianfu_fitzx_skill_005_01" ParryFrontNormalSkillID="fitzx_normal_004"/>
+	<Property ID="buff_tianfu_fitzx_001_2" EventTargetRelationType="5" EventTargetClassType="1" EventType="1" TargetType="2" FuncNo="127" ParryFrontPreAction="attack_6h_s_02a" ParryFrontEffectName="fitzx_skill_002" ParryFrontStandAction="attack_6h_s_02b" ParryFrontRunAction="attack_6h_s_02d" ParryFrontKeepTime="5.2" ParryFrontType="1" ParryFrontSkillID="tianfu_fitzx_skill_005_02" ParryFrontNormalSkillID="fitzx_normal_004"/>
+	<Property ID="buff_tianfu_fitzx_001_3" EventTargetRelationType="5" EventTargetClassType="1" EventType="1" TargetType="2" FuncNo="127" ParryFrontPreAction="attack_6h_s_02a" ParryFrontEffectName="fitzx_skill_002" ParryFrontStandAction="attack_6h_s_02b" ParryFrontRunAction="attack_6h_s_02d" ParryFrontKeepTime="5.3" ParryFrontType="1" ParryFrontSkillID="tianfu_fitzx_skill_005_03" ParryFrontNormalSkillID="fitzx_normal_004"/>
+	<Property ID="buff_tianfu_mushi_001_1a" Name="毒奶粉加血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="0" HPFormulaValue="tianfu_buff_mushi_skill_001_1"/>
+	<Property ID="buff_tianfu_mushi_001_2a" Name="毒奶粉加血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="0" HPFormulaValue="tianfu_buff_mushi_skill_001_2"/>
+	<Property ID="buff_tianfu_mushi_001_3a" Name="毒奶粉加血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="0" HPFormulaValue="tianfu_buff_mushi_skill_001_3"/>
+	<Property ID="buff_tianfu_mushi_001_1b" Name="毒奶粉扣血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="-3.18" HPFirmValue="-10"/>
+	<Property ID="buff_tianfu_mushi_001_2b" Name="毒奶粉扣血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="-3.36" HPFirmValue="-10"/>
+	<Property ID="buff_tianfu_mushi_001_3b" Name="毒奶粉扣血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="-3.54" HPFirmValue="-10"/>
+	<Property ID="buff_bear_roar_effect" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="611" AttackPercent="50"/>
+	<Property ID="buff_bear_skill_grass" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="636" RideAreaID="2" RideAreaBuffer="buff_bear_roar_grass_main"/>
+	<Property ID="buff_tianfu_zhanshi_006_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="35" TargetType="2" FuncNo="1" EffectRatioParam="0" BuffID="buff_tianfu_zhanshi_006_1a"/>
+	<Property ID="buff_tianfu_zhanshi_006_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="35" TargetType="2" FuncNo="1" EffectRatioParam="0" BuffID="buff_tianfu_zhanshi_006_2a"/>
+	<Property ID="buff_tianfu_zhanshi_006_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="35" TargetType="2" FuncNo="1" EffectRatioParam="0" BuffID="buff_tianfu_zhanshi_006_3a"/>
+	<Property ID="buff_tianfu_zhanshi_008_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="14" TargetType="2" FuncNo="1" BuffID="buff_tianfu_zhanshi_008_1a"/>
+	<Property ID="buff_tianfu_zhanshi_008_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="14" TargetType="2" FuncNo="1" BuffID="buff_tianfu_zhanshi_008_2a"/>
+	<Property ID="buff_tianfu_zhanshi_008_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="14" TargetType="2" FuncNo="1" BuffID="buff_tianfu_zhanshi_008_3a"/>
+	<Property ID="buff_tianfu_zhanshi_008_1a" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="622" FixedAbsorb="0" PercentAbsorb="0.0025"/>
+	<Property ID="buff_tianfu_zhanshi_008_2a" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="622" FixedAbsorb="0" PercentAbsorb="0.005"/>
+	<Property ID="buff_tianfu_zhanshi_008_3a" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="622" FixedAbsorb="0" PercentAbsorb="0.0075"/>
+	<Property ID="buff_tianfu_zhanshi_008_1a_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="622" FixedAbsorb="0" PercentAbsorb="0"/>
+	<Property ID="buff_tianfu_gongjian_007_1_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="35" TargetType="2" FuncNo="1" BuffID="buff_tianfu_gongjian_007_1a"/>
+	<Property ID="buff_tianfu_gongjian_007_2_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="35" TargetType="2" FuncNo="1" BuffID="buff_tianfu_gongjian_007_2a"/>
+	<Property ID="buff_tianfu_gongjian_007_3_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="35" TargetType="2" FuncNo="1" BuffID="buff_tianfu_gongjian_007_3a"/>
+	<Property ID="buff_tianfu_gongjian_007_1_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="36" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_gongjian_007_1a"/>
+	<Property ID="buff_tianfu_gongjian_007_2_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="36" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_gongjian_007_2a"/>
+	<Property ID="buff_tianfu_gongjian_007_3_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="36" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_gongjian_007_3a"/>
+	<Property ID="buff_tianfu_gongjian_008_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="35" TargetType="2" FuncNo="1" BuffID="buff_tianfu_gongjian_008_1a"/>
+	<Property ID="buff_tianfu_gongjian_008_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="35" TargetType="2" FuncNo="1" BuffID="buff_tianfu_gongjian_008_2a"/>
+	<Property ID="buff_tianfu_gongjian_008_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="35" TargetType="2" FuncNo="1" BuffID="buff_tianfu_gongjian_008_3a"/>
+	<Property ID="buff_tianfu_gongjian_008_1a" EventTargetRelationType="0" EventTargetClassType="0" EventType="14" TargetType="2" FuncNo="1" BuffID="buff_tianfu_gongjian_008_1b"/>
+	<Property ID="buff_tianfu_gongjian_008_2a" EventTargetRelationType="0" EventTargetClassType="0" EventType="14" TargetType="2" FuncNo="1" BuffID="buff_tianfu_gongjian_008_2b"/>
+	<Property ID="buff_tianfu_gongjian_008_3a" EventTargetRelationType="0" EventTargetClassType="0" EventType="14" TargetType="2" FuncNo="1" BuffID="buff_tianfu_gongjian_008_3b"/>
+	<Property ID="buff_tianfu_gongjian_008_1_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="36" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_gongjian_008_1a"/>
+	<Property ID="buff_tianfu_gongjian_008_2_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="36" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_gongjian_008_2a"/>
+	<Property ID="buff_tianfu_gongjian_008_3_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="36" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_gongjian_008_3a"/>
+	<Property ID="buff_tianfu_gongjian_008_1_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_gongjian_008_1a"/>
+	<Property ID="buff_tianfu_gongjian_008_2_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_gongjian_008_2a"/>
+	<Property ID="buff_tianfu_gongjian_008_3_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_gongjian_008_3a"/>
+	<Property ID="buff_tianfu_gongjian_009_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="2" FuncNo="1" BuffID="buff_tianfu_gongjian_009_1a"/>
+	<Property ID="buff_tianfu_gongjian_009_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="2" FuncNo="1" BuffID="buff_tianfu_gongjian_009_2a"/>
+	<Property ID="buff_tianfu_gongjian_009_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="2" FuncNo="1" BuffID="buff_tianfu_gongjian_009_3a"/>
+	<Property ID="buff_tianfu_gongjian_009_1a" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="5" FuncNo="99" HPPercent="-0.01" HPFirmValue="0" HPMaxFormula="buff_tianfu_gongjian_009_1a"/>
+	<Property ID="buff_tianfu_gongjian_009_2a" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="5" FuncNo="99" HPPercent="-0.02" HPMaxFormula="buff_tianfu_gongjian_009_1a"/>
+	<Property ID="buff_tianfu_nai_003_01_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="35" TargetType="2" FuncNo="1" BuffID="buff_tianfu_nai_003_01a"/>
+	<Property ID="buff_tianfu_nai_003_02_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="35" TargetType="2" FuncNo="1" BuffID="buff_tianfu_nai_003_02a"/>
+	<Property ID="buff_tianfu_nai_003_03_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="35" TargetType="2" FuncNo="1" BuffID="buff_tianfu_nai_003_03a"/>
+	<Property ID="buff_tianfu_nai_003_01_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="36" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_nai_003_01a"/>
+	<Property ID="buff_tianfu_nai_003_02_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="36" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_nai_003_02a"/>
+	<Property ID="buff_tianfu_nai_003_03_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="36" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_nai_003_03a"/>
+	<Property ID="buff_tianfu_nai_005_01" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="0.3"/>
+	<Property ID="buff_tianfu_nai_005_02" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="0.6"/>
+	<Property ID="buff_tianfu_nai_005_03" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="0.9"/>
+	<Property ID="buff_tianfu_nai_007_01_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="37" TargetType="2" FuncNo="1" BuffID="buff_tianfu_nai_007_01a"/>
+	<Property ID="buff_tianfu_nai_007_02_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="37" TargetType="2" FuncNo="1" BuffID="buff_tianfu_nai_007_02a"/>
+	<Property ID="buff_tianfu_nai_007_03_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="37" TargetType="2" FuncNo="1" BuffID="buff_tianfu_nai_007_03a"/>
+	<Property ID="buff_tianfu_nai_007_01_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="38" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_nai_007_01a"/>
+	<Property ID="buff_tianfu_nai_007_02_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="38" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_nai_007_02a"/>
+	<Property ID="buff_tianfu_nai_007_03_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="38" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_nai_007_03a"/>
+	<Property ID="buff_tianfu_nai_008_01" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="1" Condition="8" BuffID="buff_tianfu_nai_008_01a"/>
+	<Property ID="buff_tianfu_nai_008_02" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="1" Condition="8" EffectRatioParam="0" BuffID="buff_tianfu_nai_008_02a"/>
+	<Property ID="buff_tianfu_nai_008_03" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="1" Condition="8" BuffID="buff_tianfu_nai_008_03a"/>
+	<Property ID="buff_tianfu_nai_008_01a" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="610" LostHPPercent="0.001"/>
+	<Property ID="buff_tianfu_nai_008_02a" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="610" LostHPPercent="0.002"/>
+	<Property ID="buff_tianfu_nai_008_03a" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="610" LostHPPercent="0.003"/>
+	<Property ID="buff_eagle_skill_001_eff" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="113" SkillID="eagle_skill_003"/>
+	<Property ID="buff_tianfu_fashi_006_01b" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="114" EffectRatioParam="1" SkillIDList="tianfu_zhoushu_skill_004_01"/>
+	<Property ID="buff_tianfu_fashi_006_02b" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="114" EffectRatioParam="2" SkillIDList="tianfu_zhoushu_skill_004_02"/>
+	<Property ID="buff_tianfu_fashi_006_03b" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="114" EffectRatioParam="3" SkillIDList="tianfu_zhoushu_skill_004_03"/>
+	<Property ID="buff_tianfu_fashi_007_01" EventTargetRelationType="0" EventTargetClassType="0" EventType="37" TargetType="2" FuncNo="1" BuffID="buff_tianfu_fashi_007_01b"/>
+	<Property ID="buff_tianfu_fashi_007_02" EventTargetRelationType="0" EventTargetClassType="0" EventType="37" TargetType="2" FuncNo="1" BuffID="buff_tianfu_fashi_007_02b"/>
+	<Property ID="buff_tianfu_fashi_007_03" EventTargetRelationType="0" EventTargetClassType="0" EventType="37" TargetType="2" FuncNo="1" BuffID="buff_tianfu_fashi_007_03b"/>
+	<Property ID="buff_tianfu_fashi_007_01b" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="5" FuncNo="1" BuffID="buff_tianfu_fashi_007_01a"/>
+	<Property ID="buff_tianfu_fashi_007_02b" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="5" FuncNo="1" BuffID="buff_tianfu_fashi_007_02a"/>
+	<Property ID="buff_tianfu_fashi_007_03b" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="5" FuncNo="1" BuffID="buff_tianfu_fashi_007_03a"/>
+	<Property ID="buff_tianfu_fashi_007_01_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="38" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_fashi_007_01b"/>
+	<Property ID="buff_tianfu_fashi_007_02_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="38" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_fashi_007_02b"/>
+	<Property ID="buff_tianfu_fashi_007_03_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="38" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_fashi_007_03b"/>
+	<Property ID="buff_tianfu_fashi_008_01" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="5" FuncNo="99" HPPercent="-1" HPMaxFormula="tianfu_buff_fashi_skill_004_1"/>
+	<Property ID="buff_tianfu_fashi_008_02" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="5" FuncNo="99" HPPercent="-1" HPMaxFormula="tianfu_buff_fashi_skill_004_2"/>
+	<Property ID="buff_tianfu_fashi_008_03" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="5" FuncNo="99" HPPercent="-1" HPMaxFormula="tianfu_buff_fashi_skill_004_3"/>
+	<Property ID="buff_tianfu_fashi_009_01" EventTargetRelationType="0" EventTargetClassType="0" EventType="37" TargetType="2" FuncNo="1" BuffID="buff_tianfu_fashi_009_01a"/>
+	<Property ID="buff_tianfu_fashi_009_02" EventTargetRelationType="0" EventTargetClassType="0" EventType="37" TargetType="2" FuncNo="1" BuffID="buff_tianfu_fashi_009_02a"/>
+	<Property ID="buff_tianfu_fashi_009_03" EventTargetRelationType="0" EventTargetClassType="0" EventType="37" TargetType="2" FuncNo="1" BuffID="buff_tianfu_fashi_009_03a"/>
+	<Property ID="buff_tianfu_fashi_009_01a" EventTargetRelationType="0" EventTargetClassType="0" EventType="14" TargetType="2" FuncNo="1" BuffID="buff_tianfu_fashi_009_01b"/>
+	<Property ID="buff_tianfu_fashi_009_02a" EventTargetRelationType="0" EventTargetClassType="0" EventType="14" TargetType="2" FuncNo="1" BuffID="buff_tianfu_fashi_009_02b"/>
+	<Property ID="buff_tianfu_fashi_009_03a" EventTargetRelationType="0" EventTargetClassType="0" EventType="14" TargetType="2" FuncNo="1" BuffID="buff_tianfu_fashi_009_03b"/>
+	<Property ID="buff_tianfu_fashi_009_01_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="38" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_fashi_009_01a"/>
+	<Property ID="buff_tianfu_fashi_009_02_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="38" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_fashi_009_02a"/>
+	<Property ID="buff_tianfu_fashi_009_03_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="38" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_fashi_009_03a"/>
+	<Property ID="buff_tianfu_fashi_010_01" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="1" BuffID="buff_tianfu_fashi_010_01a" HPDamageCondition="30"/>
+	<Property ID="buff_tianfu_fashi_010_02" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="1" BuffID="buff_tianfu_fashi_010_02a" HPDamageCondition="30"/>
+	<Property ID="buff_tianfu_fashi_010_03" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="1" BuffID="buff_tianfu_fashi_010_03a" HPDamageCondition="30"/>
+	<Property ID="buff_tianfu_fashi_010_01a" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="1.5"/>
+	<Property ID="buff_tianfu_fashi_010_02a" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="3"/>
+	<Property ID="buff_tianfu_fashi_010_03a" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="4.5"/>
+	<Property ID="buff_tianfu_fashi_011_01a_1" Name="开启格挡1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="632" ParrySkillCount="1" ParrySkillBuffer="buff_tianfu_fashi_011_01"/>
+	<Property ID="buff_tianfu_fashi_011_02a_1" Name="开启格挡2" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="632" ParrySkillCount="1" ParrySkillBuffer="buff_tianfu_fashi_011_02"/>
+	<Property ID="buff_tianfu_fashi_011_03a_1" Name="开启格挡3" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="632" ParrySkillCount="1" ParrySkillBuffer="buff_tianfu_fashi_011_03"/>
+	<Property ID="buff_tianfu_fashi_011_01_1" Name="开启替换技能1（女）" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="tianfu_fashi_skill_002_01" ModifyShortCutNewSkillID="tianfu_fashi_skill_005_01"/>
+	<Property ID="buff_tianfu_fashi_011_02_1" Name="开启替换技能2（女）" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="tianfu_fashi_skill_002_02" ModifyShortCutNewSkillID="tianfu_fashi_skill_005_02"/>
+	<Property ID="buff_tianfu_fashi_011_03_1" Name="开启替换技能3（女）" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="tianfu_fashi_skill_002_03" ModifyShortCutNewSkillID="tianfu_fashi_skill_005_03"/>
+	<Property ID="buff_tianfu_fashi_011_01_2" Name="关闭替换技能1（女）" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="tianfu_fashi_skill_005_01" ModifyShortCutNewSkillID="tianfu_fashi_skill_002_01"/>
+	<Property ID="buff_tianfu_fashi_011_02_2" Name="关闭替换技能2（女）" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="tianfu_fashi_skill_005_02" ModifyShortCutNewSkillID="tianfu_fashi_skill_002_02"/>
+	<Property ID="buff_tianfu_fashi_011_03_2" Name="关闭替换技能3（女）" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="tianfu_fashi_skill_005_03" ModifyShortCutNewSkillID="tianfu_fashi_skill_002_03"/>
+	<Property ID="buff_tianfu_fashi_012_01a" Name="开启格挡1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="632" ParrySkillCount="1" ParrySkillBuffer="buff_tianfu_fashi_012_01"/>
+	<Property ID="buff_tianfu_fashi_012_02a" Name="开启格挡2" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="632" ParrySkillCount="1" ParrySkillBuffer="buff_tianfu_fashi_012_02"/>
+	<Property ID="buff_tianfu_fashi_012_03a" Name="开启格挡3" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="632" ParrySkillCount="1" ParrySkillBuffer="buff_tianfu_fashi_012_03"/>
+	<Property ID="buff_tianfu_fashi_012_01_1" Name="开启替换技能1（男）" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="tianfu_zhoushu_skill_002_01" ModifyShortCutNewSkillID="tianfu_zhoushu_skill_005_01"/>
+	<Property ID="buff_tianfu_fashi_012_02_1" Name="开启替换技能2（男）" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="tianfu_zhoushu_skill_002_02" ModifyShortCutNewSkillID="tianfu_zhoushu_skill_005_02"/>
+	<Property ID="buff_tianfu_fashi_012_03_1" Name="开启替换技能3（男）" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="tianfu_zhoushu_skill_002_03" ModifyShortCutNewSkillID="tianfu_zhoushu_skill_005_03"/>
+	<Property ID="buff_tianfu_fashi_012_01_2" Name="关闭替换技能1（男）" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="tianfu_zhoushu_skill_005_01" ModifyShortCutNewSkillID="tianfu_zhoushu_skill_002_01"/>
+	<Property ID="buff_tianfu_fashi_012_02_2" Name="关闭替换技能2（男）" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="tianfu_zhoushu_skill_005_02" ModifyShortCutNewSkillID="tianfu_zhoushu_skill_002_02"/>
+	<Property ID="buff_tianfu_fashi_012_03_2" Name="关闭替换技能3（男）" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="tianfu_zhoushu_skill_005_03" ModifyShortCutNewSkillID="tianfu_zhoushu_skill_002_03"/>
+	<Property ID="buff_tianfu_fashi_006_01a" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="114" EffectRatioParam="1" SkillIDList="tianfu_fashi_skill_001_01"/>
+	<Property ID="buff_tianfu_fashi_006_02a" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="114" EffectRatioParam="2" SkillIDList="tianfu_fashi_skill_001_02"/>
+	<Property ID="buff_tianfu_fashi_006_03a" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="114" EffectRatioParam="3" SkillIDList="tianfu_fashi_skill_001_03"/>
+	<Property ID="buff_zhuangbei_001" Name="普攻触发暴击与暴击伤害" EventTargetRelationType="0" EventTargetClassType="0" EventType="23" TargetType="2" FuncNo="1" EffectRatioParam="15" BuffID="buff_zhuangbei_001a"/>
+	<Property ID="buff_zhuangbei_002a_1" EventTargetRelationType="8" EventTargetClassType="2" EventType="1" TargetType="2" FuncNo="642" BufferCurseType="1" BufferCurseDefaultRate="20"/>
+	<Property ID="buff_zhuangbei_002a_2" EventType="2" TargetType="2" FuncNo="642" BufferCurseType="0"/>
+	<Property ID="buff_zhuangbei_003" EventTargetRelationType="0" EventTargetClassType="0" EventType="14" TargetType="2" FuncNo="1" BuffID="buff_zhuangbei_003a"/>
+	<Property ID="buff_wenzhang_001a" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_wenzhang_001"/>
+	<Property ID="buff_wenzhang_001b" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_wenzhang_001b"/>
+	<Property ID="buff_wenzhang_002a" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" EffectRatioParam="10" BuffID="buff_wenzhang_002c"/>
+	<Property ID="buff_wenzhang_003" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="612"/>
+	<Property ID="buff_wenzhang_003a_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="0" HPFormulaValue="buff_wenzhang_004a"/>
+	<Property ID="buff_wenzhang_003a_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_wenzhang_003b"/>
+	<Property ID="buff_wenzhang_004b" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_wenzhang_004b"/>
+	<Property ID="buff_wenzhang_004_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="1" EffectRatioParam="20" BuffID="buff_wenzhang_004c"/>
+	<Property ID="buff_wenzhang_004_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="1" Condition="10" BuffID="buff_wenzhang_004a"/>
+	<Property ID="buff_wenzhang_004_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="8" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_wenzhang_004a"/>
+	<Property ID="buff_wenzhang_004_4" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_wenzhang_004a"/>
+	<Property ID="buff_wenzhang_005" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="2" FuncNo="1" EffectRatioParam="20" BuffID="buff_wenzhang_005b"/>
+	<Property ID="buff_wenzhang_005a" EventTargetRelationType="0" EventTargetClassType="0" EventType="6" TargetType="2" FuncNo="114" EffectRatioParam="30"/>
+	<Property ID="buff_zhuangbei_002_2" Name="普攻触发额外伤害" EventTargetRelationType="0" EventTargetClassType="0" EventType="23" TargetType="5" FuncNo="99" HPFirmValue="-50"/>
+	<Property ID="buff_zhuangbei_004" EventTargetRelationType="0" EventTargetClassType="0" EventType="4" TargetType="2" FuncNo="4" TargetSearchRadius="8" TargetRelation="8" TargetClassType="3" TargetBuffID="buff_zhuangbei_004a"/>
+	<Property ID="buff_zhuangbei_005" EventTargetRelationType="0" EventTargetClassType="0" EventType="4" TargetType="2" FuncNo="4" TargetSearchRadius="8" TargetRelation="8" TargetClassType="3" TargetBuffID="buff_zhuangbei_005a"/>
+	<Property ID="buff_zhuangbei_002_1" Name="普攻触发易伤" EventTargetRelationType="0" EventTargetClassType="0" EventType="23" TargetType="0" FuncNo="1" BuffID="buff_zhuangbei_002a"/>
+	<Property ID="buff_zhuangbei_006" EventTargetRelationType="0" EventTargetClassType="0" EventType="4" TargetType="2" FuncNo="4" TargetSearchRadius="8" TargetRelation="8" TargetClassType="3" TargetBuffID="buff_zhuangbei_006a"/>
+	<Property ID="buff_zhuangbei_007" EventTargetRelationType="0" EventTargetClassType="0" EventType="4" TargetType="2" FuncNo="4" TargetSearchRadius="8" TargetRelation="8" TargetClassType="3" TargetBuffID="buff_zhuangbei_007a"/>
+	<Property ID="buff_zhuangbei_004a" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" TargetRelation="0" TargetClassType="0" HPFirmValue="-20000"/>
+	<Property ID="buff_zhuangbei_005a" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" TargetRelation="0" TargetClassType="0" HPPercent="-1" HPFirmValue="0"/>
+	<Property ID="buff_horse_004_1" Name="群体治疗" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="5" HPFirmValue="0"/>
+	<Property ID="buff_tianfu_zhanshi_006_1a" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="1" EffectRatioParam="0.3" BuffID="buff_tianfu_zhanshi_006_1b"/>
+	<Property ID="buff_tianfu_zhanshi_006_2a" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="1" EffectRatioParam="0.6" BuffID="buff_tianfu_zhanshi_006_2b"/>
+	<Property ID="buff_tianfu_zhanshi_006_3a" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="1" EffectRatioParam="0.9" BuffID="buff_tianfu_zhanshi_006_3b"/>
+	<Property ID="buff_tianfu_zhanshi_005_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="35" TargetType="2" FuncNo="1" EffectRatioParam="0" BuffID="buff_tianfu_zhanshi_005_1a"/>
+	<Property ID="buff_tianfu_zhanshi_005_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="35" TargetType="2" FuncNo="1" EffectRatioParam="0" BuffID="buff_tianfu_zhanshi_005_2a"/>
+	<Property ID="buff_tianfu_zhanshi_005_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="35" TargetType="2" FuncNo="1" EffectRatioParam="0" BuffID="buff_tianfu_zhanshi_005_3a"/>
+	<Property ID="buff_tianfu_zhanshi_006_1b" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" EffectRatioParam="0" BuffID="buff_tianfu_zhanshi_006_1c"/>
+	<Property ID="buff_tianfu_zhanshi_006_2b" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" EffectRatioParam="0" BuffID="buff_tianfu_zhanshi_006_2c"/>
+	<Property ID="buff_tianfu_zhanshi_006_3b" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" EffectRatioParam="0" BuffID="buff_tianfu_zhanshi_006_3c"/>
+	<Property ID="buff_tianfu_zhanshi_008_1a_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_tianfu_zhanshi_008_1b" FixedAbsorb="0" PercentAbsorb="0.25"/>
+	<Property ID="buff_tianfu_zhanshi_008_2a_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_tianfu_zhanshi_008_2b" FixedAbsorb="0" PercentAbsorb="0.5"/>
+	<Property ID="buff_tianfu_zhanshi_008_3a_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_tianfu_zhanshi_008_3b" FixedAbsorb="0" PercentAbsorb="0.75"/>
+	<Property ID="buff_tianfu_zhanshi_006_1_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="36" TargetType="2" FuncNo="15" EffectRatioParam="0" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_zhanshi_006_1a"/>
+	<Property ID="buff_tianfu_zhanshi_006_2_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="36" TargetType="2" FuncNo="15" EffectRatioParam="0" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_zhanshi_006_2a"/>
+	<Property ID="buff_tianfu_zhanshi_006_3_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="36" TargetType="2" FuncNo="15" EffectRatioParam="0" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_zhanshi_006_3a"/>
+	<Property ID="buff_tianfu_zhanshi_005_1_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="36" TargetType="2" FuncNo="15" EffectRatioParam="0" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_zhanshi_005_1a"/>
+	<Property ID="buff_tianfu_zhanshi_005_2_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="36" TargetType="2" FuncNo="15" EffectRatioParam="0" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_zhanshi_005_2a"/>
+	<Property ID="buff_tianfu_zhanshi_005_3_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="36" TargetType="2" FuncNo="15" EffectRatioParam="0" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_zhanshi_005_3a"/>
+	<Property ID="buff_tianfu_fashi_009_01b" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_tianfu_fashi_009_01c"/>
+	<Property ID="buff_tianfu_fashi_009_02b" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_tianfu_fashi_009_02c"/>
+	<Property ID="buff_tianfu_fashi_009_03b" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_tianfu_fashi_009_03c"/>
+	<Property ID="buff_tianfu_fashi_010_01a_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_tianfu_fashi_010_01b"/>
+	<Property ID="buff_tianfu_fashi_010_02a_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_tianfu_fashi_010_02b"/>
+	<Property ID="buff_tianfu_fashi_010_03a_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_tianfu_fashi_010_03b"/>
+	<Property ID="buff_tianfu_gongjian_008_1b" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_tianfu_gongjian_008_1c"/>
+	<Property ID="buff_tianfu_gongjian_008_2b" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_tianfu_gongjian_008_2c"/>
+	<Property ID="buff_tianfu_gongjian_008_3b" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_tianfu_gongjian_008_3c"/>
+	<Property ID="buff_tianfu_gongjian_009_1a_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_tianfu_gongjian_009_1b"/>
+	<Property ID="buff_tianfu_gongjian_009_2a_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_tianfu_gongjian_009_2b"/>
+	<Property ID="buff_tianfu_gongjian_009_3a_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_tianfu_gongjian_009_3b"/>
+	<Property ID="buff_tianfu_nai_008_01a_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_tianfu_nai_008_01b"/>
+	<Property ID="buff_tianfu_nai_008_02a_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_tianfu_nai_008_02b"/>
+	<Property ID="buff_tianfu_nai_008_03a_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_tianfu_nai_008_03b"/>
+	<Property ID="buff_tianfu_nai_009_01a" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_tianfu_nai_009_01a_1"/>
+	<Property ID="buff_tianfu_nai_009_02a" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_tianfu_nai_009_02a_1"/>
+	<Property ID="buff_tianfu_nai_009_03a" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_tianfu_nai_009_03a_1"/>
+	<Property ID="buff_tianfu_nai_009_01a_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_tianfu_nai_009_01a_1"/>
+	<Property ID="buff_tianfu_nai_009_02a_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_tianfu_nai_009_02a_1"/>
+	<Property ID="buff_tianfu_nai_009_03a_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_tianfu_nai_009_03a_1"/>
+	<Property ID="buff_tianfu_nai_010_01a" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_tianfu_nai_010_01a_1"/>
+	<Property ID="buff_tianfu_nai_010_02a" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_tianfu_nai_010_02a_1"/>
+	<Property ID="buff_tianfu_nai_010_03a" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_tianfu_nai_010_03a_1"/>
+	<Property ID="buff_tianfu_nai_010_01a_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_tianfu_nai_010_01a_1"/>
+	<Property ID="buff_tianfu_nai_010_02a_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_tianfu_nai_010_02a_1"/>
+	<Property ID="buff_tianfu_nai_010_03a_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_tianfu_nai_010_03a_1"/>
+	<Property ID="buff_battle5v5_firedamage_001_ad1" Name="灼烧效果" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" EffectRatioParam="100" HPPercent="-10"/>
+	<Property ID="buff_battle5v5_heal_001_ad1" Name="治疗20" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" EffectRatioParam="100" HPPercent="20"/>
+	<Property ID="buff_battle5v5_clearcd_001_ad1" Name="清除随机坐骑cd" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="115" EffectRatioParam="100"/>
+	<Property ID="buff_zhuangbei_008" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="2" FuncNo="1" EffectRatioParam="5" BuffID="buff_zhuangbei_008a"/>
+	<Property ID="buff_zhuangbei_009" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="2" FuncNo="1" EffectRatioParam="5" BuffID="buff_zhuangbei_009a"/>
+	<Property ID="buff_zhuangbei_010" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="2" FuncNo="1" EffectRatioParam="5" BuffID="buff_zhuangbei_010a"/>
+	<Property ID="buff_tianfu_fashi_011_01_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_tianfu_fashi_005_01"/>
+	<Property ID="buff_tianfu_fashi_011_02_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_tianfu_fashi_005_02"/>
+	<Property ID="buff_tianfu_fashi_011_03_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_tianfu_fashi_005_03"/>
+	<Property ID="buff_tianfu_fashi_008_01a" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="5" FuncNo="99" HPPercent="-3" HPMaxFormula="tianfu_buff_fashi_skill_004_1a"/>
+	<Property ID="buff_tianfu_fashi_008_02a" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="5" FuncNo="99" HPPercent="-3" HPMaxFormula="tianfu_buff_fashi_skill_004_2a"/>
+	<Property ID="buff_tianfu_fashi_008_03a" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="5" FuncNo="99" HPPercent="-3" HPMaxFormula="tianfu_buff_fashi_skill_004_3a"/>
+	<Property ID="buff_tianfu_gongjian_009_3a" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="5" FuncNo="99" HPPercent="-0.03" HPMaxFormula="buff_tianfu_gongjian_009_1a"/>
+	<Property ID="buff_wolf_002" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_wolf_002a"/>
+	<Property ID="buff_wolf_002a_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="650" BufferRoleAlpha="125"/>
+	<Property ID="buff_wolf_002a_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="650" BufferRoleAlpha="255"/>
+	<Property ID="buff_wolf_002a_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="6" TargetType="2" FuncNo="1" BuffID="buff_wolf_002b"/>
+	<Property ID="buff_wolf_002b_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="651" BufferRoleDamage="4.2"/>
+	<Property ID="buff_wolf_002b_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="651"/>
+	<Property ID="buff_ride_dragon003_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="651"/>
+	<Property ID="buff_ride_dragon003_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="651"/>
+	<Property ID="buff_battle5v5_base_002_ad1" Name="治疗10%" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="99" EffectRatioParam="100" HPPercent="10"/>
+	<Property ID="buff_battle5v5_visual_002_ad1" Name="显影" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="651"/>
+	<Property ID="buff_battle5v5_visual_002_ad2" Name="显影" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="651"/>
+	<Property ID="buff_battle5v5_ridedown_002_ad1" Name="显影" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="651"/>
+	<Property ID="buff_battle5v5_ridedown_002_ad2" Name="显影" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="651"/>
+	<Property ID="buff_battle5v5_ridedown_002_ad3" Name="强制下坐骑" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="333"/>
+	<Property ID="buff_zhuangbei_011" EventTargetRelationType="0" EventTargetClassType="0" EventType="14" TargetType="2" FuncNo="4" EffectRatioParam="15" TargetSearchRadius="8" TargetRelation="8" TargetClassType="3" TargetBuffID="buff_zhuangbei_011a"/>
+	<Property ID="buff_zhuangbei_011a" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" TargetRelation="0" TargetClassType="0" HPFirmValue="-667"/>
+	<Property ID="buff_zhuangbei_012" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="4" EffectRatioParam="5" TargetSearchRadius="8" TargetRelation="8" TargetClassType="3" TargetBuffID="buff_zhuangbei_012a"/>
+	<Property ID="buff_zhuangbei_012a" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" TargetRelation="0" TargetClassType="0" HPFirmValue="-467"/>
+	<Property ID="buff_zhuangbei_013" EventTargetRelationType="0" EventTargetClassType="0" EventType="20" TargetType="2" FuncNo="1" BuffID="buff_zhuangbei_013a"/>
+	<Property ID="buff_zhuangbei_014" EventTargetRelationType="0" EventTargetClassType="0" EventType="15" TargetType="2" FuncNo="1" BuffID="buff_zhuangbei_014a"/>
+	<Property ID="buff_tianfu_fashi_007_01_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_fashi_007_01b"/>
+	<Property ID="buff_tianfu_fashi_007_02_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_fashi_007_02b"/>
+	<Property ID="buff_tianfu_fashi_007_03_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_fashi_007_03b"/>
+	<Property ID="buff_tianfu_fashi_009_01_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_fashi_009_01a"/>
+	<Property ID="buff_tianfu_fashi_009_02_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_fashi_009_02a"/>
+	<Property ID="buff_tianfu_fashi_009_03_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_fashi_009_03a"/>
+	<Property ID="buff_tianfu_nai_003_01_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_nai_003_01a"/>
+	<Property ID="buff_tianfu_nai_003_02_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_nai_003_02a"/>
+	<Property ID="buff_tianfu_nai_003_03_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_nai_003_03a"/>
+	<Property ID="buff_tianfu_nai_007_01_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_nai_007_01a"/>
+	<Property ID="buff_tianfu_nai_007_02_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_nai_007_02a"/>
+	<Property ID="buff_tianfu_nai_007_03_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_nai_007_03a"/>
+	<Property ID="buff_tianfu_gongjian_007_1_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_gongjian_007_1a"/>
+	<Property ID="buff_tianfu_gongjian_007_2_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_gongjian_007_2a"/>
+	<Property ID="buff_tianfu_gongjian_007_3_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_gongjian_007_3a"/>
+	<Property ID="buff_tianfu_zhanshi_005_1_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" EffectRatioParam="0" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_zhanshi_005_1a"/>
+	<Property ID="buff_tianfu_zhanshi_005_2_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" EffectRatioParam="0" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_zhanshi_005_2a"/>
+	<Property ID="buff_tianfu_zhanshi_005_3_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" EffectRatioParam="0" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_zhanshi_005_3a"/>
+	<Property ID="buff_tianfu_zhanshi_006_1_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" EffectRatioParam="0" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_zhanshi_006_1a"/>
+	<Property ID="buff_tianfu_zhanshi_006_2_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" EffectRatioParam="0" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_zhanshi_006_2a"/>
+	<Property ID="buff_tianfu_zhanshi_006_3_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" EffectRatioParam="0" RemoveBufferType="3" RemoveBufferValue="buff_tianfu_zhanshi_006_3a"/>
+	<Property ID="buff_wolf_003" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="333"/>
+	<Property ID="buff_wolf_002a_4" EventTargetRelationType="0" EventTargetClassType="0" EventType="36" TargetType="2" FuncNo="650" BufferRoleAlpha="255"/>
+	<Property ID="buff_battle5v5_jumpspeed_001_ad1" Name="强制跳跃" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="130" ForceJumpDistance="0.5"/>
+	<Property ID="buff_battle5v5_jumpspeed_001_ad2" Name="强制跳跃" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="130" ForceJumpDistance="0"/>
+	<Property ID="buff_zhanshi_001_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="127"/>
+	<Property ID="buff_fitzx_001_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="fitzx_normal_001" ModifyShortCutNewSkillID="fitzx_normal_004"/>
+	<Property ID="buff_fitzx_001_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="fitzx_normal_004" ModifyShortCutNewSkillID="fitzx_normal_001"/>
+	<Property ID="buff_battle5v5_jumpspeed_001_ad3" Name="强制跳跃" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_battle5v5_jumpspeed_002"/>
+	<Property ID="buff_zhanshi_001_4" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="zhanshi_normal_001" ModifyShortCutNewSkillID="zhanshi_normal_004"/>
+	<Property ID="buff_zhanshi_001_5" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="zhanshi_normal_004" ModifyShortCutNewSkillID="zhanshi_normal_001"/>
+	<Property ID="buff_battle5v5_clearcd_002_ad1" Name="清除技能cd" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="114" EffectRatioParam="100" CanClearAllCD="1"/>
+	<Property ID="buff_chixuhuixue_2_effect" Name="百分比回血" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="99" HPPercent="5"/>
+	<Property ID="buff_horse_005_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="630"/>
+	<Property ID="buff_horse_005_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="631" StoreHurtSelf="1" StoreHurtRate="0.3"/>
+	<Property ID="buff_ride_dragon004_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="eagle_skill_001" ModifyShortCutNewSkillID="eagle_skill_003"/>
+	<Property ID="buff_ride_dragon004_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="eagle_skill_003" ModifyShortCutNewSkillID="eagle_skill_001"/>
+	<Property ID="ride_beidong_004A" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="0" HPFormulaValue="buff_mushi_qiehuan_001"/>
+	<Property ID="buff_horse_006" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="2" FuncNo="603" AbsorbPercent="50"/>
+	<Property ID="buff_fenghuang_002_1" Name="涅槃启动" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="622" FixedAbsorb="0" PercentAbsorb="0.5" AbsorbCurDamage="1" AbsorbShowUI="1" AbsorbBuffer="buff_fenghuang_005" AbsorbEndBuffer="buff_fenghuang_003" AbsorbForceFallDown="1"/>
+	<Property ID="buff_fenghuang_003" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="6" FuncNo="99" HPPercent="100"/>
+	<Property ID="ride_beidong_003_2" Name="冰冻陷阱" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" EffectRatioParam="25" NPCConfigID="trap_npc_001" NPCCreateCount="1" NPCTargetPosType="1" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="3"/>
+	<Property ID="ride_beidong_003_3" Name="晕眩陷阱" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" EffectRatioParam="25" NPCConfigID="trap_npc_003" NPCCreateCount="1" NPCTargetPosType="1" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="3"/>
+	<Property ID="ride_beidong_003_4" Name="沉默陷阱" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" EffectRatioParam="25" NPCConfigID="trap_npc_004" NPCCreateCount="1" NPCTargetPosType="1" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="3"/>
+	<Property ID="ride_beidong_003_1" Name="陷阱(冰冻、减速、晕眩、沉默)" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="2" EffectRatioParam="0" NPCConfigID="trap_npc_001,25,trap_npc_002,25,trap_npc_003,25,trap_npc_004,25" NPCCreateCount="1" NPCTargetPosType="1" IsLimitNPCCreateNumber="1" NPCCreateNumberLimit="3"/>
+	<Property ID="buff_kingkong_002" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_kingkong_002"/>
+	<Property ID="buff_kingkong_003" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="1" BuffID="buff_kingkong_001"/>
+	<Property ID="buff_zhuangbei_015" EventTargetRelationType="8" EventTargetClassType="3" EventType="8" TargetType="5" FuncNo="1" BuffID="buff_zhuangbei_015a"/>
+	<Property ID="buff_zhuangbei_015a" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="99" HPFirmValue="-500"/>
+	<Property ID="buff_zhuangbei_016" EventTargetRelationType="0" EventTargetClassType="0" EventType="5" TargetType="2" FuncNo="99" HPPercent="2"/>
+	<Property ID="buff_zhuangbei_017" EventTargetRelationType="0" EventTargetClassType="0" EventType="20" TargetType="2" FuncNo="1" BuffID="buff_zhuangbei_017a"/>
+	<Property ID="buff_zhuangbei_018" EventTargetRelationType="0" EventTargetClassType="0" EventType="5" TargetType="2" FuncNo="110" MPPercent="1"/>
+	<Property ID="buff_zhuangbei_019" EventTargetRelationType="0" EventTargetClassType="0" EventType="14" TargetType="2" FuncNo="1" BuffID="buff_zhuangbei_019a"/>
+	<Property ID="ride_beidong_004" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="1" BuffID="ride_beidong_004B"/>
+	<Property ID="buff_ride_landbird_001" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="30"/>
+	<Property ID="buff_ride_landbird_003" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="123" ModifyCDSkillID="landbird_skill_001" ModifyCDDeltaTime="-1000"/>
+	<Property ID="buff_ride_landbird_002_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="1" BuffID="buff_ride_landbird_004"/>
+	<Property ID="buff_ride_landbird_002_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_ride_landbird_004"/>
+	<Property ID="buff_ride_dragon005_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="125" SetLockedTargetFlag="1"/>
+	<Property ID="buff_ride_dragon005_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="125" SetLockedTargetFlag="0"/>
+	<Property ID="buff_mushi_001_ride" Name="坐骑闪电链加血" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="0" FuncNo="99" HPPercent="0" HPFirmValue="0" HPFormulaValue="buff_mushi_001_ride"/>
+	<Property ID="buff_wenzhang_006" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="1" EffectRatioParam="20" BuffID="buff_wenzhang_006a"/>
+	<Property ID="buff_wenzhang_007" EventTargetRelationType="0" EventTargetClassType="0" EventType="3" TargetType="2" FuncNo="99" HPPercent="1"/>
+	<Property ID="buff_wenzhang_008" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="2" FuncNo="1" EffectRatioParam="10" BuffID="buff_wenzhang_008a"/>
+	<Property ID="buff_wenzhang_009" EventTargetRelationType="0" EventTargetClassType="0" EventType="10" TargetType="2" FuncNo="1" EffectRatioParam="30" BuffID="buff_wenzhang_009a"/>
+	<Property ID="buff_wenzhang_011" EventTargetRelationType="0" EventTargetClassType="0" EventType="20" TargetType="2" FuncNo="1" EffectRatioParam="30" BuffID="buff_wenzhang_011a"/>
+	<Property ID="buff_wenzhang_006a" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="601" PRebound="10"/>
+	<Property ID="buff_wenzhang_010" EventTargetRelationType="0" EventTargetClassType="0" EventType="9" TargetType="2" FuncNo="1" EffectRatioParam="6" BuffID="buff_wenzhang_010a"/>
+	<Property ID="buff_wenzhang_006a_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_wenzhang_006b"/>
+	<Property ID="buff_wenzhang_008a" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_wenzhang_008b"/>
+	<Property ID="buff_wenzhang_009a" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_wenzhang_009b"/>
+	<Property ID="buff_wenzhang_011a" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_wenzhang_011b"/>
+	<Property ID="buff_wenzhang_010a" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="1"/>
+	<Property ID="buff_wenzhang_010a_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_wenzhang_010b"/>
+	<Property ID="buff_horse_007_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="horse_skill_004" ModifyShortCutNewSkillID="horse_skill_006"/>
+	<Property ID="buff_horse_007_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="126" ModifyShortCutOldSkillID="horse_skill_006" ModifyShortCutNewSkillID="horse_skill_004"/>
+	<Property ID="buff_fitzx_006" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="20"/>
+	<Property ID="buff_dragon_floor_006A" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="50"/>
+	<Property ID="buff_fenghuang_002_2" Name="涅槃触发" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="622" FixedAbsorb="0" PercentAbsorb="0.5" AbsorbCurDamage="1" AbsorbShowUI="1" AbsorbBuffer="buff_fenghuang_005" AbsorbEndBuffer="buff_fenghuang_003" AbsorbForceFallDown="0"/>
+	<Property ID="buff_fenghuang_002_3" Name="涅槃结束回血" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="622" FixedAbsorb="0" PercentAbsorb="0.5" AbsorbCurDamage="1" AbsorbShowUI="1" AbsorbBuffer="buff_fenghuang_005" AbsorbEndBuffer="buff_fenghuang_003"/>
+	<Property ID="buff_fenghuang_002_4" Name="涅槃期间受到伤害减少66%" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="66"/>
+	<Property ID="buff_fenghuang_002_5" Name="涅槃期间免疫控制" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_fenghuang_004"/>
+	<Property ID="buff_fenghuang_005_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="20"/>
+	<Property ID="buff_fenghuang_005_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_fenghuang_002"/>
+	<Property ID="buff_fenghuang_005_3" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_fenghuang_004"/>
+	<Property ID="buff_ride_tiger_003" EventTargetRelationType="0" EventTargetClassType="0" EventType="18" TargetType="2" FuncNo="602" ImmunityPercent="50"/>
+	<Property ID="buff_ride_dragon006" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="138" ChangeStaminaPercent="-0.8"/>
+	<Property ID="buff_fenghuang_002_6" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="138" ChangeStaminaPercent="0.5"/>
+	<Property ID="buff_fenghuang_002_7" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="138" ChangeStaminaPercent="0.5"/>
+	<Property ID="buff_fenghuang_006_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="10"/>
+	<Property ID="buff_fenghuang_006_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_fenghuang_007"/>
+	<Property ID="buff_fenghuang_008" EventTargetRelationType="0" EventTargetClassType="0" EventType="38" TargetType="2" FuncNo="1" BuffID="buff_fenghuang_005"/>
+	<Property ID="buff_fenghuang_002_8" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="135" InterChangeSwitchSelf="1" InterBornFlyState="1"/>
+	<Property ID="buff_fenghuang_002_9" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="2" FuncNo="135" InterChangeSwitchSelf="1" InterBornFlyState="1"/>
+	<Property ID="buff_wenzhang_004c_1" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="99" HPPercent="0" HPFormulaValue="buff_wenzhang_004"/>
+	<Property ID="buff_wenzhang_004c_2" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="1" BuffID="buff_wenzhang_004d"/>
+	<Property ID="buff_horse_004_2" Name="群体回蓝" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="2" FuncNo="110" MPPercent="50"/>
+	<Property ID="buff_fenghuang_002_10" EventTargetRelationType="0" EventTargetClassType="0" EventType="1" TargetType="6" FuncNo="1" BuffID="buff_fenghuang_009"/>
+	<Property ID="buff_fenghuang_002_11" EventTargetRelationType="0" EventTargetClassType="0" EventType="2" TargetType="6" FuncNo="15" RemoveBufferType="3" RemoveBufferValue="buff_fenghuang_009"/>
 </Object>
-
 

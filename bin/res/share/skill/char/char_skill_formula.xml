@@ -1,45 +1,368 @@
 <?xml version="1.0" encoding="gb2312"?>
-<!-- 被2011 rel. 2 sp1 (TeaM DJiNN) 使用XMLSpy vTeaM DJiNN编辑的 (http://www.altova.com) by -->
 <Object>
-	<Property ID="CK_Ns100_01" Name="普通攻击1" FormulaType="2" DamageCategory="1" Ratio="0.1" Formula="1"/>
-	<Property ID="CK_Ns101_01" Name="普通攻击2" FormulaType="2" DamageCategory="1" Ratio="0.1" Formula="10"/>
-	<Property ID="CK_Ns102_01" Name="普通攻击3" FormulaType="2" DamageCategory="1" Ratio="0.1" Formula="10"/>
-	<Property ID="CK_Ns103_01" Name="普通攻击4" FormulaType="2" DamageCategory="1" Ratio="0.1" Formula="20"/>
-	<Property ID="CK_Sk100_01" Name="技能1" FormulaType="2" DamageCategory="1" Ratio="1" Formula="10"/>
-	<Property ID="CK_Sk101_01" Name="技能2" FormulaType="2" DamageCategory="1" Ratio="0.1" Formula="10"/>
-	<Property ID="CK_Sk102_01" Name="技能3" FormulaType="2" DamageCategory="1" Ratio="0.1" Formula="10"/>
-	<Property ID="CK_Sk103_01" Name="技能4" FormulaType="2" DamageCategory="1" Ratio="0.1" Formula="2"/>
-	<Property ID="gin_at01f" Name="普攻1" FormulaType="2" DamageCategory="1" Formula="R[8,12]"/>
-	<Property ID="gin_at02f" Name="普攻2" FormulaType="2" DamageCategory="1" Formula="R[15,18]"/>
-	<Property ID="gin_at03f" Name="普攻3" FormulaType="2" DamageCategory="1" Formula="R[28,32]"/>
-	<Property ID="gin_sk01f" Name="旋风转" FormulaType="2" DamageCategory="1" Formula="R[3,5]"/>
-	<Property ID="gin_sk03f" Name="跳斩" FormulaType="2" DamageCategory="1" Formula="R[48,52]"/>
-	<Property ID="w_at01f" Name="普攻123" FormulaType="2" DamageCategory="1" Formula="R[4,6]"/>
-	<Property ID="w_at04f" Name="普攻4" FormulaType="2" DamageCategory="1" Formula="R[8,12]"/>
-	<Property ID="w_sk01f_1" Name="爆裂斩01" FormulaType="2" DamageCategory="1" Formula="R[8,12]"/>
-	<Property ID="w_sk01f_2" Name="爆裂斩02" FormulaType="2" DamageCategory="1" Formula="R[24,36]"/>
-	<Property ID="w_sk03f" Name="跳斩" FormulaType="2" DamageCategory="1" Formula="R[16,24]"/>
-	<Property ID="w_sk04f_1" Name="旋风斩01" FormulaType="2" DamageCategory="1" Formula="R[16,24]"/>
-	<Property ID="w_sk04f_2" Name="旋风斩02" FormulaType="2" DamageCategory="1" Formula="R[48,72]"/>
-	<Property ID="CK_Sk101_01A" Name="腾云坠地" FormulaType="2" DamageCategory="1" Ratio="0.1" Formula="4"/>
-	<Property ID="skill_test" FormulaType="2" DamageCategory="1" Ratio="0.1" Formula="10"/>
-	<Property ID="skill_weapon_bing" Name="冰属性武器" FormulaType="2" DamageCategory="1"/>
-	<Property ID="skill_weapon_dian" Name="电属性武器" FormulaType="2" DamageCategory="1"/>
-	<Property ID="pet_skill_001" FormulaType="2" DamageCategory="1" Ratio="0.1" Formula="1"/>
-	<Property ID="pet_skill_002" FormulaType="2" DamageCategory="1" Ratio="0.1" Formula="10"/>
-	<Property ID="pet_skill_003" FormulaType="2" DamageCategory="1" Ratio="0.1" Formula="10"/>
-	<Property ID="pet_skill_004" FormulaType="2" DamageCategory="1" Ratio="0.1" Formula="20"/>
-	<Property ID="pet_skill_005" FormulaType="2" DamageCategory="1" Ratio="1" Formula="10"/>
-	<Property ID="pet_skill_006" FormulaType="2" DamageCategory="1" Ratio="0.1" Formula="10"/>
-	<Property ID="pet_skill_007" FormulaType="2" DamageCategory="1" Ratio="0.1" Formula="10"/>
-	<Property ID="pet_skill_008" FormulaType="2" DamageCategory="1" Ratio="0.1" Formula="2"/>
-	<Property ID="pet_skill_009" FormulaType="2" DamageCategory="1" Ratio="0.1" Formula="1"/>
-	<Property ID="pet_skill_010" FormulaType="2" DamageCategory="1" Ratio="0.1" Formula="10"/>
-	<Property ID="pet_skill_011" FormulaType="2" DamageCategory="1" Ratio="0.1" Formula="10"/>
-	<Property ID="pet_skill_012" FormulaType="2" DamageCategory="1" Ratio="0.1" Formula="20"/>
-	<Property ID="pet_skill_013" FormulaType="2" DamageCategory="1" Ratio="1" Formula="10"/>
-	<Property ID="pet_skill_014" FormulaType="2" DamageCategory="1" Ratio="0.1" Formula="10"/>
-	<Property ID="pet_skill_015" FormulaType="2" DamageCategory="1" Ratio="0.1" Formula="10"/>
+	<Property ID="gongjian_skill_001" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;70"/>
+	<Property ID="gongjian_skill_002" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;70"/>
+	<Property ID="gongjian_skill_003" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;70"/>
+	<Property ID="gongjian_skill_004" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;70"/>
+	<Property ID="gongjian_skill_005" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;70"/>
+	<Property ID="gongjian_skill_006" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;70"/>
+	<Property ID="fashi_normal_002" Name="法师普攻第二下" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="50;60"/>
+	<Property ID="fashi_normal_003" Name="法师普攻第三下" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="50;60"/>
+	<Property ID="xiniu_normal_001_5" Name="弓箭手-犀牛普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="wolf_skill_002" Name="捕猎" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="90;110"/>
+	<Property ID="wolf_skill_001_5" Name="弓箭手-狼骑普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_normal_001_5" Name="弓箭手-马普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_normal_001_2" Name="法师-马普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="bear_normal_001_2" Name="法师-熊普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="bear_normal_001_3" Name="咒术师-熊普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="bear_normal_001_4" Name="牧师-熊普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="bear_normal_001_5" Name="弓箭手-熊普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="bear_normal_001" Name="战士-熊普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="landbird_normal_001_2" Name="法师-陆行鸟普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="landbird_normal_001_3" Name="咒术师-陆行鸟普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="landbird_normal_001_4" Name="牧师-陆行鸟普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="landbird_normal_001_5" Name="弓箭手-陆行鸟普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="landbird_normal_001" Name="战士-陆行鸟普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="xiniu_normal_002" Name="战士-犀牛普攻第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="wolf_normal_002" Name="战士-狼骑普攻第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_normal_002" Name="战士-马普攻第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="bear_normal_002" Name="战士-熊普攻第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="landbird_normal_002" Name="战士-陆行鸟普攻第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="dragon3_normal_001" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="18;20"/>
+	<Property ID="dragon3_skill_001" FormulaType="1" DamageCategory="2" Ratio="1" Formula="P1" Src1="4" Prop1="80;100"/>
+	<Property ID="zhanshi_normal_001" Name="战士普攻1" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;70"/>
+	<Property ID="dragon_skill_003" Name="龙爪功" A2A="0" A2F="1" SelectType="3" RangeDistMax="50.000000" RangeTurnAngle="360.000000" HitTargetRelationType="8" HitTargetType="35" ServerHitCount="99" HitTargetNonDamageRelationType="0" HitTargetNonDamageType="0" DamageDetectionType="0" HitTime="400" ExtraHitTimes="200,200,200,200" ShowType="0"/>
+	<Property ID="horse_normal_001" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_skill_001" DamageCategory="1" Ratio="1" Formula="1"/>
+	<Property ID="horse_normal_001_4" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_normal_001_3" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="xiniu_normal_001_4" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="xiniu_normal_001_3" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="xiniu_normal_001_2" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="wolf_skill_001_4" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="wolf_skill_001_3" Name="咒术师普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="wolf_skill_001_2" Name="法师普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="xiniu_normal_002_4" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="xiniu_normal_002_3" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="xiniu_normal_002_2" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="xiniu_normal_002_5" Name="弓箭手-犀牛普攻第二式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="wolf_normal_002_5" Name="弓箭手-狼骑普攻第二式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="wolf_normal_002_4" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="wolf_normal_002_3" Name="咒术师普攻第二式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="wolf_normal_002_2" Name="法师普攻第二式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_normal_002_5" Name="弓箭手-马普攻第二式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_normal_002_2" Name="法师-马普攻第二式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_normal_002_4" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_normal_002_3" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="bear_normal_002_2" Name="法师-熊普攻第二式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="bear_normal_002_3" Name="咒术师-熊普攻第二式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="bear_normal_002_4" Name="药师-熊-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="bear_normal_002_5" Name="弓箭手-熊普攻第二式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="landbird_normal_002_2" Name="法师-陆行鸟普攻第二式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="landbird_normal_002_3" Name="咒术师-陆行鸟普攻第二式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="landbird_normal_002_4" Name="牧师-陆行鸟普攻第二式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="landbird_normal_002_5" Name="弓箭手-陆行鸟普攻第二式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="eagle_normal_001" Name="狮鹫普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="26;28"/>
+	<Property ID="fitzx_normal_001" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="30;40"/>
+	<Property ID="fitzx_normal_002" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="30;40"/>
+	<Property ID="fitzx_normal_003" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="30;40"/>
+	<Property ID="fitzx_skill_001" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="30;40"/>
+	<Property ID="fitzx_skill_002" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="30;40"/>
+	<Property ID="fitzx_skill_003" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="30;40"/>
+	<Property ID="fitzx_skill_004" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="30;40"/>
+	<Property ID="fitzx_skill_005" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="30;40"/>
+	<Property ID="item_skill_001" FormulaType="1" DamageCategory="1" Ratio="1" Formula="1" Src1="4" Prop1="1"/>
+	<Property ID="aidms_normal_001" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;70"/>
+	<Property ID="aidms_normal_002" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;70"/>
+	<Property ID="aidms_normal_003" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;70"/>
+	<Property ID="aidms_skill_001" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;70"/>
+	<Property ID="aidms_skill_002" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;70"/>
+	<Property ID="aidms_skill_003" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;70"/>
+	<Property ID="aidms_skill_004" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;70"/>
+	<Property ID="aidms_skill_005" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;70"/>
+	<Property ID="aidms_skill_006" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;70"/>
+	<Property ID="landbird_skill_001" DamageCategory="1" Ratio="1" Formula="1"/>
+	<Property ID="landbird_normal_001_6" Name="狮子战士-陆行鸟普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="landbird_normal_001_7" Name="男牧师-陆行鸟普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="xiniu_normal_001_6" Name="狮子战士-犀牛普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="xiniu_normal_001_7" Name="男牧师-犀牛普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="zhanshi_skill_001" Name="爆裂突刺" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="xiniu_normal_001" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="xiniu_skill_001" DamageCategory="1" Ratio="1" Formula="1"/>
+	<Property ID="xiniu_skill_002" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="340;380"/>
+	<Property ID="skill_jump_001" Name="跳跃"/>
+	<Property ID="zhanshi_skill_002" Name="防守" DamageCategory="1" Ratio="0"/>
+	<Property ID="zhanshi_skill_003" Name="冲锋" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="120;150"/>
+	<Property ID="zhanshi_skill_004" Name="嘲讽" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="280;300"/>
+	<Property ID="zhanshi_skill_005" Name="治疗" DamageCategory="1" Ratio="0"/>
+	<Property ID="zhanshi_skill_006" Name="怒吼" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="380;400"/>
+	<Property ID="zhanshi_skill_007" Name="护盾" DamageCategory="1" Ratio="0"/>
+	<Property ID="fashi_normal_001" Name="法师普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="50;60"/>
+	<Property ID="fashi_skill_001" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;80"/>
+	<Property ID="Copy_dragon_skill_001" Name="龙火术" EventTargetRelationType="0" EventTargetClassType="0"/>
+	<Property ID="dragon_skill_001" Name="龙火术" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="18;20"/>
+	<Property ID="dragon_skill_002" Name="龙陨术" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="50;60"/>
+	<Property ID="wolf_skill_001" Name="爪击" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="mushi_normal_001" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="50;60"/>
+	<Property ID="mushi_skill_001" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="mushi_skill_002" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="100;120"/>
+	<Property ID="mushi_skill_003" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="120;130"/>
+	<Property ID="mushi_skill_004" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="50;60"/>
+	<Property ID="mushi_skill_005" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;80"/>
+	<Property ID="mushi_skill_006" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="mushi_normal_002" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="50;60"/>
+	<Property ID="mushi_normal_003" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="50;60"/>
+	<Property ID="fashi_skill_002" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;80"/>
+	<Property ID="fashi_skill_003" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;80"/>
+	<Property ID="fashi_skill_004" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;80"/>
+	<Property ID="fashi_skill_005" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;80"/>
+	<Property ID="fashi_skill_006" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;80"/>
+	<Property ID="fashi_skill_007" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;80"/>
+	<Property ID="mushi_skill_008" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="90;120"/>
+	<Property ID="zhoushu_normal_001" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="50;60"/>
+	<Property ID="zhoushu_normal_002" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="50;60"/>
+	<Property ID="zhoushu_normal_003" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="50;60"/>
+	<Property ID="zhoushu_skill_001" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="50;60"/>
+	<Property ID="zhoushu_skill_002" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="50;60"/>
+	<Property ID="zhoushu_skill_003" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="50;60"/>
+	<Property ID="zhoushu_skill_004" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="50;60"/>
+	<Property ID="zhoushu_skill_005" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="50;60"/>
+	<Property ID="zhoushu_skill_006" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="50;60"/>
+	<Property ID="zhoushu_skill_007" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="50;60"/>
+	<Property ID="gongjian_normal_001" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;70"/>
+	<Property ID="gongjian_normal_002" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;70"/>
+	<Property ID="gongjian_normal_003" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="30;40"/>
+	<Property ID="wolf_skill_001_6" Name="狮子战士-狼骑普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="wolf_skill_001_7" Name="男牧师-狼骑普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="wolf_normal_002_6" Name="狮子战士-狼骑普攻第二式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="wolf_normal_002_7" Name="男牧师-狼骑普攻第二式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="landbird_normal_002_6" Name="狮子战士-陆行鸟普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="landbird_normal_002_7" Name="男牧师-陆行鸟普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="bear_normal_001_6" Name="狮子战士-熊普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="bear_normal_001_7" Name="男牧师-熊普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="bear_normal_002_6" Name="狮子战士-熊普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="bear_normal_002_7" Name="男牧师-熊普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="xiniu_normal_002_6" Name="狮子战士-犀牛普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_normal_001_7" Name="男牧师-马普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_normal_001_6" Name="狮子战士-马普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_normal_002_6" Name="狮子战士-马普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="xiniu_normal_002_7" Name="男牧师-犀牛普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_normal_002_7" Name="男牧师-马普攻" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="skill_chuansong_001" Name="回城"/>
+	<Property ID="xiniu_normal_001_pre" Name="犀牛普攻冲锋" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="aidms_skill_008" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="60;70"/>
+	<Property ID="bear_skill_001" DamageCategory="1" Ratio="1" Formula="1"/>
+	<Property ID="xiniu_normal_003_2" Name="犀牛-法师第三式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="wolf_normal_003_2" Name="法师普攻第三式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_normal_003_2" Name="法师-马普攻第三式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="bear_normal_003_2" Name="法师-熊普攻第三式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="landbird_normal_003_2" Name="法师-陆行鸟普攻第三式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="wenzhang_skill_001" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="1;1"/>
+	<Property ID="wenzhang_skill_002" FormulaType="1" DamageCategory="1" Ratio="1" Formula="(P1/0.1)*0.02" Src1="0" Prop1="LostHPRatio"/>
+	<Property ID="wenzhang_skill_003" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="1;1"/>
+	<Property ID="wenzhang_skill_004" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="1;1"/>
+	<Property ID="wenzhang_skill_005" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="1;1"/>
+	<Property ID="bear_normal_003_3" Name="咒术师-熊-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="landbird_normal_003_3" Name="咒术师-陆行鸟-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="wolf_normal_003_3" Name="咒术师-狼骑-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_normal_003_3" Name="咒术师-马-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="xiniu_normal_003_3" Name="咒术师-犀牛-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="bear_normal_003_5" Name="弓箭手-熊-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="landbird_normal_003_5" Name="弓箭手-陆行鸟-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="wolf_normal_003_5" Name="弓箭手-狼骑-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_normal_003_5" Name="弓箭手-马-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="xiniu_normal_003_5" Name="弓箭手-犀牛-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="bear_normal_003_4" Name="药师-熊普攻第三式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="landbird_normal_003_4" Name="药师-陆行鸟普攻第三式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="wolf_normal_003_4" Name="药师普攻第三式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_normal_003_4" Name="药师-马普攻第三式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="xiniu_normal_003_4" Name="药师-犀牛普攻第三式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="bear_normal_003_7" Name="男牧师-熊普攻第三式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="landbird_normal_003_7" Name="男牧师-陆行鸟普攻第三式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="wolf_normal_003_7" Name="男牧师普攻第三式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_normal_003_7" Name="男牧师-马普攻第三式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="xiniu_normal_003_7" Name="男牧师-犀牛普攻第三式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_002_normal_001_4" Name="女牧师-独角兽-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_002_normal_001_3" Name="咒术师-独角兽-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_002_normal_001_2" Name="法师-独角兽-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_002_normal_001_5" Name="弓箭手-独角兽-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_002_normal_001_7" Name="男牧师-独角兽-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_002_normal_001_6" Name="狮子战士-独角兽-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_002_normal_001" Name="熊猫战士-独角兽-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_002_normal_002_4" Name="女牧师-独角兽-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_002_normal_002_3" Name="咒术师-独角兽-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_002_normal_002_2" Name="法师-独角兽-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_002_normal_002_5" Name="弓箭手-独角兽-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_002_normal_002_7" Name="男牧师-独角兽-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_002_normal_002_6" Name="狮子战士-独角兽-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_002_normal_002" Name="熊猫战士-独角兽-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_002_normal_003_4" Name="女牧师-独角兽-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_002_normal_003_3" Name="咒术师-独角兽-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_002_normal_003_2" Name="法师-独角兽-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_002_normal_003_5" Name="弓箭手-独角兽-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_002_normal_003_7" Name="男牧师-独角兽-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_002_normal_003_6" Name="狮子战士-独角兽-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_002_normal_003" Name="熊猫战士-独角兽-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="buff_mushi_skill_001" FormulaType="1" DamageCategory="1" Ratio="1" Formula="0.328*(P1*P2+P3)" Src1="11" Prop1="Atk" Src2="15" Prop2="Ratio" Src3="15" Prop3="ExtraValue"/>
+	<Property ID="buff_mushi_skill_002" FormulaType="1" DamageCategory="1" Ratio="1" Formula="0-0.2*(P1*P2+P3)" Src1="11" Prop1="Atk" Src2="15" Prop2="Ratio" Src3="15" Prop3="ExtraValue"/>
+	<Property ID="tianfu_buff_mushi_skill_001_1" FormulaType="1" DamageCategory="1" Ratio="1" Formula="1.003*(P1*P2+P3)" Src1="11" Prop1="Atk" Src2="15" Prop2="Ratio" Src3="15" Prop3="ExtraValue"/>
+	<Property ID="tianfu_buff_mushi_skill_001_2" FormulaType="1" DamageCategory="1" Ratio="1" Formula="1.006*(P1*P2+P3)" Src1="11" Prop1="Atk" Src2="15" Prop2="Ratio" Src3="15" Prop3="ExtraValue"/>
+	<Property ID="tianfu_buff_mushi_skill_001_3" FormulaType="1" DamageCategory="1" Ratio="1" Formula="1.009*(P1*P2+P3)" Src1="11" Prop1="Atk" Src2="15" Prop2="Ratio" Src3="15" Prop3="ExtraValue"/>
+	<Property ID="buff_wenzhang_001b" FormulaType="1" DamageCategory="1" Ratio="1" Formula="0-P1" Src1="11" Prop1="Atk" Src2="15" Prop2="0" Src3="15" Prop3="0"/>
+	<Property ID="buff_wenzhang_001" FormulaType="1" DamageCategory="1" Ratio="1" Formula="0-(0.2*P1)" Src1="11" Prop1="Atk" Src2="15" Prop2="0" Src3="15" Prop3="0"/>
+	<Property ID="buff_wenzhang_004b" FormulaType="1" DamageCategory="1" Ratio="1" Formula="2*P1" Src1="11" Prop1="Atk" Src2="15" Prop2="0" Src3="15" Prop3="0"/>
+	<Property ID="tianfu_buff_fashi_skill_004_1" FormulaType="1" DamageCategory="1" Ratio="1" Formula="0.05*P1" Src1="11" Prop1="Atk" Src2="15" Src3="15"/>
+	<Property ID="tianfu_buff_fashi_skill_004_2" FormulaType="1" DamageCategory="1" Ratio="1" Formula="0.1*P1" Src1="11" Prop1="Atk" Src2="15" Src3="15"/>
+	<Property ID="tianfu_buff_fashi_skill_004_3" FormulaType="1" DamageCategory="1" Ratio="1" Formula="0.15*P1" Src1="11" Prop1="Atk" Src2="15" Src3="15"/>
+	<Property ID="tianfu_buff_fashi_skill_004_1a" FormulaType="1" DamageCategory="1" Ratio="1" Formula="0.15*P1" Src1="11" Prop1="Atk" Src2="15" Src3="15"/>
+	<Property ID="tianfu_buff_fashi_skill_004_2a" FormulaType="1" DamageCategory="1" Ratio="1" Formula="0.3*P1" Src1="11" Prop1="Atk" Src2="15" Src3="15"/>
+	<Property ID="tianfu_buff_fashi_skill_004_3a" FormulaType="1" DamageCategory="1" Ratio="1" Formula="0.45*P1" Src1="11" Prop1="Atk" Src2="15" Src3="15"/>
+	<Property ID="buff_tianfu_gongjian_009_1a" FormulaType="1" DamageCategory="1" Ratio="1" Formula="1.5*P1" Src1="11" Prop1="Atk" Src2="15" Src3="15"/>
+	<Property ID="buff_tianfu_nai_009_01a_1" FormulaType="1" DamageCategory="1" Ratio="1" Formula="0.328*(P1*P2+P3)+100" Src1="11" Prop1="Atk" Src2="15" Prop2="Ratio" Src3="15" Prop3="ExtraValue"/>
+	<Property ID="buff_tianfu_nai_009_02a_1" FormulaType="1" DamageCategory="1" Ratio="1" Formula="0.328*(P1*P2+P3)+200" Src1="11" Prop1="Atk" Src2="15" Prop2="Ratio" Src3="15" Prop3="ExtraValue"/>
+	<Property ID="buff_tianfu_nai_009_03a_1" FormulaType="1" DamageCategory="1" Ratio="1" Formula="0.328*(P1*P2+P3)+300" Src1="11" Prop1="Atk" Src2="15" Prop2="Ratio" Src3="15" Prop3="ExtraValue"/>
+	<Property ID="buff_tianfu_nai_010_01a_1" FormulaType="1" DamageCategory="1" Ratio="1" Formula="0-0.2*(P1*P2+P3)" Src1="11" Prop1="Atk" Src2="15" Prop2="Ratio" Src3="15" Prop3="ExtraValue"/>
+	<Property ID="buff_tianfu_nai_010_02a_1" FormulaType="1" DamageCategory="1" Ratio="1" Formula="0-0.2*(P1*P2+P3)" Src1="11" Prop1="Atk" Src2="15" Prop2="Ratio" Src3="15" Prop3="ExtraValue"/>
+	<Property ID="buff_tianfu_nai_010_03a_1" FormulaType="1" DamageCategory="1" Ratio="1" Formula="0-0.2*(P1*P2+P3)" Src1="11" Prop1="Atk" Src2="15" Prop2="Ratio" Src3="15" Prop3="ExtraValue"/>
+	<Property ID="buff_wenzhang_005" FormulaType="1" DamageCategory="1" Ratio="1" Formula="0-(0.3*P1)" Src1="11" Prop1="Atk" Src2="15" Prop2="0" Src3="15" Prop3="0"/>
+	<Property ID="buff_mushi_skill_003" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1*P2+P3" Src1="11" Prop1="Atk" Src2="15" Prop2="Ratio" Src3="15" Prop3="ExtraValue"/>
+	<Property ID="wenzhang_skill_003a" FormulaType="1" DamageCategory="1" Ratio="1" Formula="((1-P1/100)/0.1)*0.02" Src1="0" Prop1="HPRatio"/>
+	<Property ID="buff_wenzhang_004" FormulaType="1" Ratio="1" Formula="0.05*P1" Src1="11" Prop1="Atk"/>
+	<Property ID="horse_normal_003_6" Name="狮子战士-马普攻第三式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="xiniu_normal_003_6" Name="狮子战士-犀牛普攻第三式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="bear_normal_003_6" Name="狮子战士-熊普攻第三式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="wolf_normal_003_6" Name="狮子战士-狼骑普攻第三式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="landbird_normal_003_6" Name="狮子战士-陆行鸟普攻第三式" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="xiniu_normal_003" Name="战士-犀牛普攻第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="wolf_normal_003" Name="战士-狼骑普攻第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_normal_003" Name="战士-马普攻第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="bear_normal_003" Name="战士-熊普攻第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="landbird_normal_003" Name="战士-陆行鸟普攻第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="skill_chixuhuixue_001" Name="持续回血" DamageCategory=""/>
+	<Property ID="buff_wenzhang_004a" FormulaType="1" DamageCategory="1" Ratio="1" Formula="0-(0.1*P1)" Src1="2" Prop1="HP"/>
+	<Property ID="buff_mushi_qiehuan_001" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1*3" Src1="11" Prop1="Atk"/>
+	<Property ID="horse_003_normal_001_4" Name="女牧师-骨马-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_003_normal_001_3" Name="咒术师-骨马-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_003_normal_001_2" Name="法师-骨马-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_003_normal_001_5" Name="弓箭手-骨马-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_003_normal_001_7" Name="男牧师-骨马-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_003_normal_001_6" Name="狮子战士-骨马-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_003_normal_001" Name="熊猫战士-骨马-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_003_normal_002_4" Name="女牧师-骨马-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_003_normal_002_3" Name="咒术师-骨马-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_003_normal_002_2" Name="法师-骨马-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_003_normal_002_5" Name="弓箭手-骨马-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_003_normal_002_7" Name="男牧师-骨马-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_003_normal_002_6" Name="狮子战士-骨马-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_003_normal_002" Name="熊猫战士-骨马-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_003_normal_003_4" Name="女牧师-骨马-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_003_normal_003_3" Name="咒术师-骨马-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_003_normal_003_2" Name="法师-骨马-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_003_normal_003_5" Name="弓箭手-骨马-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_003_normal_003_7" Name="男牧师-骨马-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_003_normal_003_6" Name="狮子战士-骨马-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_003_normal_003" Name="熊猫战士-骨马-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="kingkong_normal_001_4" Name="女牧师-金刚-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="kingkong_normal_001_3" Name="咒术师-金刚-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="kingkong_normal_001_2" Name="法师-金刚-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="kingkong_normal_001_5" Name="弓箭手-金刚-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="kingkong_normal_001_7" Name="男牧师-金刚-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="kingkong_normal_001_6" Name="狮子战士-金刚-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="kingkong_normal_001" Name="熊猫战士-金刚-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="kingkong_normal_002_4" Name="女牧师-金刚-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="kingkong_normal_002_3" Name="咒术师-金刚-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="kingkong_normal_002_2" Name="法师-金刚-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="kingkong_normal_002_5" Name="弓箭手-金刚-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="kingkong_normal_002_7" Name="男牧师-金刚-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="kingkong_normal_002_6" Name="狮子战士-金刚-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="kingkong_normal_002" Name="熊猫战士-金刚-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="kingkong_normal_003_4" Name="女牧师-金刚-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="kingkong_normal_003_3" Name="咒术师-金刚-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="kingkong_normal_003_2" Name="法师-金刚-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="kingkong_normal_003_5" Name="弓箭手-金刚-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="kingkong_normal_003_7" Name="男牧师-金刚-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="kingkong_normal_003_6" Name="狮子战士-金刚-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="kingkong_normal_003" Name="熊猫战士-金刚-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_005_normal_001_4" Name="女牧师-迅猛龙-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_005_normal_001_3" Name="咒术师-迅猛龙-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_005_normal_001_2" Name="法师-迅猛龙-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_005_normal_001_5" Name="弓箭手-迅猛龙-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_005_normal_001_7" Name="男牧师-迅猛龙-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="dragon_005_normal_001_6" Name="狮子战士-迅猛龙-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="dragon_005_normal_001" Name="熊猫战士-迅猛龙-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_005_normal_002_4" Name="女牧师-迅猛龙-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_005_normal_002_3" Name="咒术师-迅猛龙-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_005_normal_002_2" Name="法师-迅猛龙-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_005_normal_002_5" Name="弓箭手-迅猛龙-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_005_normal_002_7" Name="男牧师-迅猛龙-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="dragon_005_normal_002_6" Name="狮子战士-迅猛龙-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="dragon_005_normal_002" Name="熊猫战士-迅猛龙-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_005_normal_003_4" Name="女牧师-迅猛龙-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_005_normal_003_3" Name="咒术师-迅猛龙-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_005_normal_003_2" Name="法师-迅猛龙-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_005_normal_003_5" Name="弓箭手-迅猛龙-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_005_normal_003_7" Name="男牧师-迅猛龙-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="dragon_005_normal_003_6" Name="狮子战士-迅猛龙-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="dragon_005_normal_003" Name="熊猫战士-迅猛龙-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="buff_kingkong_003" FormulaType="1" DamageCategory="1" Ratio="1" Formula="3*P1" Src1="11" Prop1="Atk" Src2="15" Prop2="Ratio" Src3="15" Prop3="ExtraValue"/>
+	<Property ID="buff_kingkong_002" FormulaType="1" DamageCategory="1" Ratio="1" Formula="0-(3*P1)" Src1="11" Prop1="Atk"/>
+	<Property ID="buff_mushi_001_ride" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1*P2+P3" Src1="11" Prop1="Atk" Src2="15" Prop2="Ratio" Src3="15" Prop3="ExtraValue"/>
+	<Property ID="dragon_004_normal_001" Name="战士-霸王龙-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="dragon_004_normal_001_2" Name="法师-霸王龙-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_004_normal_001_3" Name="咒术师-霸王龙-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_004_normal_001_4" Name="女牧师-霸王龙-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_004_normal_001_5" Name="弓箭手-霸王龙-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_004_normal_001_6" Name="狮子战士-霸王龙-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="dragon_004_normal_001_7" Name="男牧师-霸王龙-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="dragon_004_normal_002" Name="战士-霸王龙-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="dragon_004_normal_002_2" Name="法师-霸王龙-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_004_normal_002_3" Name="咒术师-霸王龙-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_004_normal_002_4" Name="女牧师-霸王龙-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_004_normal_002_5" Name="弓箭手-霸王龙-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_004_normal_002_6" Name="狮子战士-霸王龙-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="dragon_004_normal_002_7" Name="男牧师-霸王龙-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="dragon_004_normal_003" Name="战士-霸王龙-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="dragon_004_normal_003_2" Name="犀牛-霸王龙-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_004_normal_003_3" Name="咒术师-犀牛-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_004_normal_003_4" Name="药师-霸王龙-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_004_normal_003_5" Name="弓箭手-霸王龙-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="dragon_004_normal_003_6" Name="狮子战士-霸王龙-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="dragon_004_normal_003_7" Name="男牧师-霸王龙-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="tiger_normal_001" Name="战士-剑齿虎-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="tiger_normal_001_2" Name="法师-剑齿虎-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="tiger_normal_001_3" Name="咒术师-剑齿虎-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="tiger_normal_001_4" Name="女牧师-剑齿虎-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="tiger_normal_001_5" Name="弓箭手-剑齿虎-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="tiger_normal_001_6" Name="狮子战士-剑齿虎-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="tiger_normal_001_7" Name="男牧师-剑齿虎-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="tiger_normal_002" Name="战士-剑齿虎-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="tiger_normal_002_2" Name="法师-剑齿虎-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="tiger_normal_002_3" Name="咒术师-剑齿虎-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="tiger_normal_002_4" Name="女牧师-剑齿虎-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="tiger_normal_002_5" Name="弓箭手-剑齿虎-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="tiger_normal_002_6" Name="狮子战士-剑齿虎-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="tiger_normal_002_7" Name="男牧师-剑齿虎-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="tiger_normal_003" Name="战士-剑齿虎-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="tiger_normal_003_2" Name="法师-剑齿虎-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="tiger_normal_003_3" Name="咒术师-剑齿虎-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="tiger_normal_003_4" Name="药师-剑齿虎-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="tiger_normal_003_5" Name="弓箭手-剑齿虎-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="tiger_normal_003_6" Name="狮子战士-剑齿虎-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="tiger_normal_003_7" Name="男牧师-剑齿虎-普攻-第三段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_004_normal_001" Name="战士-天马-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_004_normal_001_2" Name="法师-天马-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_004_normal_001_3" Name="咒术师-天马-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_004_normal_001_4" Name="女牧师-天马-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_004_normal_001_5" Name="弓箭手-天马-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_004_normal_001_6" Name="狮子战士-天马-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_004_normal_001_7" Name="男牧师-天马-普攻-第一段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_004_normal_002" Name="战士-天马-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_004_normal_002_2" Name="法师-天马-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_004_normal_002_3" Name="咒术师-天马-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_004_normal_002_4" Name="女牧师-天马-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_004_normal_002_5" Name="弓箭手-天马-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="70;80"/>
+	<Property ID="horse_004_normal_002_6" Name="狮子战士-天马-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="horse_004_normal_002_7" Name="男牧师-天马-普攻-第二段" FormulaType="1" DamageCategory="1" Ratio="1" Formula="P1" Src1="4" Prop1="80;90"/>
+	<Property ID="buff_fenghuang_002" FormulaType="1" Ratio="0" Formula="0.5*P1" Src1="0" Prop1="MaxHP"/>
 </Object>
-
 

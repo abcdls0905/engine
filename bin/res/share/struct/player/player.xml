@@ -1,396 +1,233 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <object>
 	<internals>
-		<property name="Name" type="widestr" public="true" private="true" save="true" desc=""/>
-		<property name="CollideRadius" type="float" public="true" private="true" save="true" desc=""/>
-		<property name="VisualRange" type="float" public="false" private="true" save="false" desc="视野半径"/>
+		<property name="Name" type="widestr" public="true" private="true" save="true" realtime="true" desc=""/>
+		<property name="VisualRange" type="float" public="false" private="false" save="false" desc="视野半径"/>
 		<property name="Type" type="byte" public="true" private="true" save="false" desc="类型: TYPE_PLAYER"/>
-		<property name="RandSeed" type="byte" public="false" private="true" save="false" realtime="true" desc="类型: TYPE_PLAYER"/>
-		<property name="GameMaster" type="byte" public="false" private="true" save="false" realtime="" desc="GM权限"/>
-		<property name="AccountID" type="int" public="false" private="true" save="false" realtime="" desc="玩家账号ID"/>
+		<property name="GameMaster" type="byte" public="false" private="false" save="false" realtime="" desc="GM权限"/>
+		<property name="CollideRadius" type="float" public="true" private="true" save="true" need_defined="member" desc=""/>
+		<property name="AccountID" type="dword" public="false" private="true" save="false" realtime="" need_defined="member" desc="玩家账号ID"/>
 		<property name="Account" type="string" public="false" private="true" save="false" realtime="" desc="玩家账号"/>
-		<property name="Uid" type="string" public="false" private="true" save="true" desc=""/>
-		<property name="AccountInfo" type="string" public="false" private="true" save="false" realtime="" desc="账号防沉迷信息"/>
+		<property name="Uid" type="string" public="true" private="true" save="false" realtime="" desc="角色唯一标示"/>
+		<property name="Address" type="string" public="false" private="true" save="false" realtime="" desc="玩家登陆的ip"/>
 	</internals>
 	<properties>
-		<property name="RoleIndex" type="int" public="true" private="true" save="true" realtime="" desc="角色索引 1：电枪，2：艾达....."/>
-		<property name="LoginTime" type="int64" public="false" private="true" save="true" realtime="" desc="角色本次进入游戏的时间"/>
-		<property name="LogoutTime" type="int64" public="false" private="true" save="true" realtime="" desc="角色本次离开游戏的时间"/>
+        <property name="CollideRadius" type="float" public="true" private="true" save="true" need_defined="room" desc=""/>
+		<property name="RoleIndex" type="dword" public="true" private="true" save="true" realtime="" desc="角色索引 1：电枪，2：艾达....."/>
+		<property name="ServerID" type="dword" public="false" private="true" save="false" realtime="false" desc="服务器编号"/>
+		<property name="FirstLoginFlag" type="byte" public="false" private="false" save="true" realtime="" desc="是否是新创建的角色"/>
+		<property name="FirstDayLoginFlag" type="byte" public="false" private="false" save="false" realtime="" desc="每日首次登陆,每日首次登陆提示"/>
+		<property name="LoginTime" type="int64" public="false" private="false" save="true" realtime="" desc="角色本次进入游戏的时间"/>
+		<property name="LogoutTime" type="int64" public="false" private="false" save="true" realtime="" desc="角色本次离开游戏的时间"/>
 		<property name="EntrySceneTime" type="int64" public="false" private="false" save="false" realtime="" desc="角色进入场景的时间"/>
 		<property name="LeaveSceneTime" type="int64" public="false" private="false" save="false" realtime="" desc="角色退出场景的时间"/>
 		<property name="ClientDeviceId" type="string" public="false" private="false" save="false" realtime="" desc="角色本次登陆的客户端设备号"/>
-		<property name="Level" type="int" public="true" private="true" save="true" realtime="" desc="等级"/>
-		<property name="RoleMaxLevel" type="int" public="false" private="true" save="false" realtime="" desc="最高等级"/>
-		<property name="PlayerExp" type="int" public="false" private="true" save="true" realtime="" desc="当前经验值"/>
-		<property name="PlayerExpMulti" type="float" public="false" private="false" save="false" realtime="" desc="打怪获得经验的倍率"/>
-		<property name="PlayerExpMultiAdd" type="float" public="false" private="false" save="false" realtime="" desc="打怪获得经验的倍率"/>
-		<property name="PlayerUpgradeExp" type="int" public="false" private="true" save="false" realtime="" desc="升级需求经验值"/>
-		<property name="DailyExpLastTime" type="int64" public="false" private="true" save="true" realtime="" desc="每日打怪经验上次刷新时间"/>
-		<property name="DailyTotalExp" type="int" public="true" private="true" save="true" realtime="" desc="每日打怪获得经验总数"/>
-		<property name="DailySurplusExp" type="int" public="true" private="true" save="true" realtime="" desc="每日打怪获得经验剩余"/>
-		<property name="DailyIncExpItem" type="string" public="false" private="true" save="true" realtime="" desc="每日打怪经验单道具"/>
-		<property name="UseIncExpItemTime" type="int64" public="false" private="true" save="true" realtime="" desc="使用增加野怪经验道具时间"/>
-		<property name="IncItemUsing" type="int" public="true" private="true" save="false" realtime="" desc="使用增加野怪经验道具时间"/>
-		<property name="SilenceTick" type="int" public="false" private="false" save="true" realtime="false" desc="禁言的时间"/>
-		<property name="AutoControl" type="int" public="false" private="true" save="false" realtime="" desc="当前是否在自动控制中"/>
-		<property name="BattleAbility" type="int" public="true" private="true" save="true" realtime="" desc="战斗力"/>
-		<property name="TopBattleAbility" type="int" public="false" private="true" save="true" realtime="" desc="角色历史最高战斗力"/>
-		<property name="Fatigue" type="dword" public="false" private="true" save="false" realtime="" desc="疲劳值"/>
-		<property name="IsDeprived" type="dword" public="false" private="true" save="true" realtime="" desc="是否进行过碎片抢夺"/>
-		<property name="GuideStep" type="dword" public="false" private="true" save="true" realtime="true" desc="引导索引（记录引导步数）"/>
-		<property name="GuideIndex" type="dword" public="false" private="true" save="true" realtime="true" desc="引导子索引（记录引导子步数）"/>
-		<property name="GuideSections" type="string" public="false" private="true" save="true" realtime="true" desc="记录触发式引导已触发步骤"/>
-		<property name="IsPauseForGuide" type="dword" public="false" private="true" save="false" realtime="true" desc="是否暂停以便引导"/>
-		<property name="BattleWarSpeekWord" type="widestr" public="false" private="true" save="true" realtime="" desc="战场自定义留言"/>
-		<property name="CloneSpeekWord" type="widestr" public="false" private="true" save="true" realtime="" desc="副本自定义留言"/>
-		<property name="Transparency" type="int" public="true" private="true" save="false" realtime="" desc="透明度"/>
-		<property name="RoleNpcMain" type="object" public="true" private="true" save="false" realtime="true" desc="已经创建在场景上的主控RoleNpc"/>
-		<property name="RoleNpcExt1" type="object" public="false" private="true" save="false" realtime="true" desc="已经创建在场景上的附属RoleNpc1"/>
-		<property name="RoleNpcExt2" type="object" public="false" private="true" save="false" realtime="true" desc="已经创建在场景上的附属RoleNpc2"/>
-		<property name="RoleNpcMainId" type="string" public="false" private="true" save="true" realtime="" desc="主控RoleNpc的configid"/>
-		<property name="RoleNpcExt1Id" type="string" public="false" private="true" save="true" realtime="" desc="附属RoleNpc1的configid"/>
-		<property name="RoleNpcExt2Id" type="string" public="false" private="true" save="true" realtime="" desc="附属RoleNpc2的configid"/>
-    <property name="PvpState" type="int" public="true" private="true" save="true" realtime="true" desc="PVP状态(和平，正常，红名等)"/>
-    <property name="PvpStateSave" type="int" public="false" private="false" save="true" realtime="false" desc="进入阵营场景前的PVP状态"/>
-    <property name="ArrestValue" type="int" public="true" private="true" save="true" realtime="true" desc="红名模块中用到的通缉值"/>
-		<property name="ArrestValueFlag" type="int" public="true" private="true" save="true" realtime="true" desc="红名模块中用到的杀戮值标记"/>
-		<property name="TempArrsetValueFlag" type="int" public="true" private="true" save="false" realtime="" desc="夺宝联盟临时红名可被攻击"/>
-		<property name="DescArrestTimes" type="int" public="false" private="false" save="true" realtime="" desc="杀戮值消减丹使用时间"/>
-		<property name="PlayerPosiXOld" type="float" public="false" private="true" save="true" realtime="" desc="传送到活动前坐标X"/>
-		<property name="PlayerPosiYOld" type="float" public="false" private="true" save="true" realtime="" desc="传送到活动前坐标Y"/>
-		<property name="PlayerPosiZOld" type="float" public="false" private="true" save="true" realtime="" desc="传送到活动前坐标Z"/>
-		<property name="PlayerPosiOOld" type="float" public="false" private="true" save="true" realtime="" desc="传送到活动前坐标O"/>
-		<property name="PlayerSceneIDOld" type="int" public="false" private="true" save="true" realtime="" desc="传送到活动前场景"/>
-		<property name="ActivityRefreshTimes" type="int" public="false" private="false" save="true" realtime="" desc="野外活动刷新次数"/>
-		<property name="ActivityGoodsIndex" type="int" public="false" private="true" save="true" realtime="true" desc="选择的镖车"/>
-		<property name="ActivityId" type="int" public="false" private="true" save="true" realtime="true" desc="选择的活动"/>
-		<property name="ActivityTimes" type="int" public="false" private="true" save="true" realtime="true" desc="当日参加活动次数"/>
-		<property name="TitleId" type="int" public="true" private="true" save="true" realtime="true" desc="当前称号"/>
-		<property name="NewTitleNum" type="int" public="false" private="true" save="true" realtime="true" desc="新获得的称号数量"/>
-		<property name="NewTitleStr" type="string" public="false" private="true" save="true" realtime="true" desc="新获得的称号id串"/>
-		<property name="ChatCount" type="int" public="false" private="true" save="true" realtime="true" desc="今日聊天次数"/>
-		<property name="ChatNearCount" type="int" public="false" private="true" save="true" realtime="true" desc="今日附近频道聊天次数"/>
-		<property name="ActivityState" type="int" public="false" private="true" save="true" realtime="true" desc="选择的活动状态"/>
-		<property name="ActivityIdTime" type="int64" public="false" private="true" save="true" realtime="true" desc="进入活动的时间"/>
-		<property name="ActivityCangoObj" type="object" public="false" private="true" save="true" realtime="true" desc="自己的镖车"/>
-		<property name="ChangeNameTimes" type="int" public="false" private="true" save="true" realtime="true" desc="改名次数"/>
-		<property name="ChangeNameMoment" type="int64" public="false" private="true" save="true" realtime="true" desc="改名时刻"/>
-		<property name="CurArea" type="int" public="false" private="true" save="true" realtime="" desc="玩家位置"/>
-		<property name="BeTaunted" type="byte" public="false" private="true" save="false" desc="是否被嘲讽"/>
-		<property name="DigTreasureID" type="dword" public="false" private="true" save="true" desc="挖宝宝藏位置id"/>
-		<property name="DigTreasureExchangeCount" type="int" public="false" private="true" save="true" desc="挖宝交换次数"/>
-		<property name="DigTreasureData" type="string" public="false" private="false" save="true" desc="挖宝随机宝藏id"/>
-		<property name="CloneTeamDrop" type="int" public="false" private="true" save="true" realtime="true" desc="组队副本掉落概率倍数"/>
-		<property name="CloneTeamDropNum" type="int" public="false" private="true" save="true" realtime="true" desc="组队副本掉落个数倍数"/>
-		<property name="PvpBeAttacker" type="object" public="true" private="true" save="false" realtime="" desc="PvP时开红攻击自己的对象"/>
-		<property name="ServerID" type="int" public="false" private="true" save="false" realtime="false" desc="服务器编号"/>
-		<property name="GWBIceStone" type="int64" public="false" private="false" save="false" realtime="false" desc="世界boss战场中用到的冰晶石"/>
-		<property name="GWBDiamond" type="int64" public="false" private="false" save="false" realtime="false" desc="世界boss战场中用到的钻石"/>
-		<property name="RoleNpcExtFight" type="int" public="false" private="true" save="false" realtime="false" desc="出战辅助阵容"/>
-		<property name="GroupSceneChangeTime" type="int64" public="false" private="true" save="true" realtime="false" desc="野外切换分线的时间"/>
-		<property name="WorldBossDamageRk" type="int" public="false" private="false" save="false" realtime="" desc="世界BOSS伤害名次"/>
-		<property name="LastScenetype" type="int" public="false" private="false" save="false" realtime="" desc="玩家上次所在场景索引"/>
-		<property name="TranSportCool" type="int64" public="false" private="true" save="true" realtime="false" desc="玩家野外传送回城CD时间"/>
-		<property name="TaiChiGroup" type="int" public="false" private="true" save="false" realtime="true" desc="野外记录辅助阵容"/>
-		<property name="PKState" type="int" public="true" private="true" save="false" realtime="true" desc="切磋状态"/>
-		<property name="AgainstPlayer" type="object" public="false" private="true" save="false" realtime="true" desc="切磋敌对对象"/>
-		<property name="TeamBusyState" type="int" public="false" private="false" save="false" realtime="" desc="队伍忙碌状态"/>
-		<property name="FreeReliveTimes" type="int" public="false" private="false" save="true" realtime="" desc="当天已使用免费复活次数"/>
-		<property name="ChargeReliveTimes" type="int" public="false" private="false" save="true" realtime="" desc="当天已使用收费复活次数"/>
-		<property name="LastFreeReliveTime" type="int64" public="false" private="false" save="true" realtime="" desc="上次使用免费复活的时间"/>
-		<property name="TeamCloneAward" type="int" publib="false" private="false" save="true" realtime="" desc="是否组队副本双倍收益"/>
-		<property name="TeamCloneDuals" type="int" publib="true" private="true" save="true" realtime="" desc="组队副本双倍收益次数"/>
-		<property name="TeamCloneVideoTape" type="int" publib="false" private="true" save="false" realtime="" desc="太极战场 巅峰对决是否开启录像功能"/>
-		<property name="IsDoneMelt" type="int" public="false" private="true" save="true" realtime="" desc="是否进行过黑市熔炼的操作"/>
-		<property name="TopRankRoleNpcIndex" type="int" public="false" private="false" save="true" realtime="" desc="英雄排行榜最高战力值roleindex"/>
-		<property name="TopRankRoleNpcValue" type="int" public="false" private="false" save="true" realtime="" desc="英雄排行榜最高战力值"/>
-		<property name="SecondPassword" type="string" public="false" private="false" save="true" desc="二级密码"/>
-		<property name="SPWEmpty" type="byte" public="false" private="true" save="true" desc="二级密码是否为空"/>
-		<property name="SecondPasswordLimit" type="byte" public="false" private="true" save="true" desc="二级密码输入限制次数"/>
-		<property name="SPWAutoLock" type="byte" public="false" private="true" save="true" desc="二级密码是否下线锁定"/>
-		<property name="SPWResetWaitTime" type="double" public="false" private="true" save="true" desc="二级密码重置等待时间"/>
-		<property name="HorseRacePoint" type="int" public="true" private="true" save="true" realtime="true" desc="赛马活动玩家激活的点"/>
-		<property name="DatabaseVersion" type="int" public="false" private="false" save="true" desc="角色数据库版本号，用于确定属性和表格状态"/>
-		<property name="OpenServerDay" type="int" public="false" private="true" save="false" realtime="true" desc="开服天数"/>
-		<property name="MilitaryRankValue" type="byte" public="true" private="true" save="true" desc="军衔"/>
-		<property name="MilitaryExpValue" type="int" public="false" private="true" save="true" desc="军功"/>
-		<property name="HaveKillEliteBoss" type="int" public="false" private="true" save="true" desc="玩家当天是否击杀过稀有BOSS"/>
-		<property name="MilitaryQueningNum" type="int" public="false" private="true" save="true" desc="军衔系统影响的属性的淬炼次数"/>
-		<property name="MilitaryOnAdd" type="byte" public="true" private="true" save="true" desc="玩家是否激活军衔"/>
-		<property name="AwakeID" type="int" public="false" private="true" save="true" realtime="true" desc="觉醒ID"/>
-		<property name="AwakeTime" type="int" public="false" private="true" save="true" realtime="true" desc="觉醒次数"/>
-		<property name="AwakeExp" type="int64" public="false" private="true" save="true" realtime="true" desc="灵性,觉醒经验"/>
-		<property name="AwakeUnlockNum" type="int" public="false" private="true" save="true" realtime="true" desc="觉醒已解锁数量"/>
-		<property name="IsTavernRefreshSucs" type="int" public="false" private="true" save="true" realtime="true" desc="酒馆是否发生刷新"/>
-		<property name="yszl_state" type="int" public="false" private="true" save="true" realtime="true" desc="酒馆是否发生刷新"/>
-		<property name="LastBroadcastTime" type="int64" public="false" private="false" save="true" realtime="false" desc="上次全服广播通告玩家上线时间 "/>
-		<property name="TalentModifyFlag" type="int" public="false" private="false" save="true" realtime="false" desc="天赋修理标记 "/>
-		<property name="CellarProfit" type="int" public="false" private="true" save="true" realtime="false" desc="地宫收益"/>
-		<property name="CellarProfitTotal" type="int" public="false" private="true" save="true" realtime="false" desc="地宫收益累计次数"/>
-		<property name="ArtalResetCount" type="int" public="false" private="true" save="true" realtime="false" desc="祭坛限时物品表重置次数 "/>
-		<property name="ArtalRewriteTime" type="string" public="false" private="true" save="true" realtime="false" desc="天赋修理标记 "/>
-		<property name="CellarSaveHP" type="int" public="false" private="false" save="true" realtime="false" desc="地宫保存血量"/>
-		<property name="OnlineTime" type="int" public="false" private="true" save="true" desc="今日在线时长"/>
-		<property name="BuyDiamondToday" type="int" public="false" private="true" save="true" desc="买了多少钻石"/>
-		<property name="UsePhyPower" type="int" public="false" private="true" save="true" desc="今天使用了多少体力"/>
-		<property name="FreeDrawTime" type="int" public="false" private="true" save="true" desc="转盘免费次数"/>
-		<property name="BigDrawOpen" type="int" public="false" private="true" save="true" desc="转盘活动是否开启"/>
-		<property name="DiamondDrawTime" type="int" public="false" private="true" save="true" desc="钻石抽奖次数"/>
-		<property name="DiamondDrawExpend" type="int64" public="false" private="true" save="true" desc="累计使用了多少钻石用于钻石转盘抽奖"/>
-		<property name="DiamondDrawExtraTime" type="int" public="false" private="true" save="true" desc="钻石转盘抽奖额外奖励次数（已经得到多少次满**钻 额外送道具的奖励）"/>
-		<property name="FunctionDrawLock" type="int" public="false" private="true" save="true" desc="是否锁定功能转盘"/>
-		<property name="FunctionDrawExtraNum" type="int" public="false" private="true" save="true" desc="功能转盘多倍奖励数"/>
-		<property name="HighGrade" type="int" public="false" private="true" save="true" desc="是否必得优质奖励"/>
-		<property name="HighGrade" type="int" public="false" private="true" save="true" desc="是否必得优质奖励"/>
-  </properties>
-  <records>
-    <record name="capital_rec" cols="3" maxrows="30" save="true" public="false" private="true" desc="资产表">
-      <column type="string" desc="资产名称"/>
-      <column type="byte" desc="资产类型"/>
-      <column type="int64" desc="资产数量"/>
-    </record>
-    <record name="function_rec" cols="4" maxrows="100" save="true" public="false" private="true" desc="功能开启表">
-      <column type="string" desc="功能名称"/>
-      <column type="byte" desc="是否开启"/>
-      <column type="dword" desc="需要等级"/>
-      <column type="dword" desc="需要引导步数"/>
-    </record>
-    <record name="treasure_rec" cols="4" maxrows="5" save="true" public="false" private="true" desc="藏宝图配置表">
-      <column type="byte" desc="藏宝图类型"/>
-      <column type="int64" desc="免费开启冷却起始时间"/>
-      <column type="byte" desc="每天免费开启次数"/>
-      <column type="byte" desc="开启次数"/>
-    </record>
-    <record name="apply_sports_rec" cols="4" maxrows="1" save="false" public="false" private="true" desc="申请进行挑战的信息表格">
-      <column type="dword" desc="挑战类型(竞技场、夺宝)"/>
-      <column type="widestr" desc="挑战对象的名称"/>
-      <column type="dword" desc="挑战对象的类型(NPC或者player)"/>
-      <column type="string" desc="抢夺碎片名称"/>
-    </record>
-    <record name="invite_play_rec" cols="5" maxrows="500" save="false" public="false" private="true" desc="玩家邀请信息表">
-      <column type="string" desc="邀请人uid"/>
-      <column type="widestr" desc="邀请人名字"/>
-      <column type="dword" desc="邀请的活动类型"/>
-      <column type="dword" desc="邀请的活动子类型"/>
-      <column type="widestr" desc="公会名字"/>
-    </record>
-    <record name="title_rec" cols="1" maxrows="128" save="true" public="false" private="true" desc="称号表">
-      <column type="word" desc="称号编号"/>
-    </record>
-    <record name="chat_shield_rec" cols="2" maxrows="128" save="true" public="false" private="true" desc="屏蔽聊天玩家表">
-      <column type="widestr" desc="被屏蔽玩家名字"/>
-      <column type="string" desc="对方UID"/>
-    </record>
-    <record name="clone_grade_star_rec" cols="6" maxrows="3" save="false" public="false" private="true" desc="副本评分表">
-      <column type="dword" desc="副本配置索引"/>
-      <column type="byte" desc="主类型"/>
-      <column type="byte" desc="子类型"/>
-      <column type="string" desc="配置数据"/>
-      <column type="dword" desc="完成数量"/>
-      <column type="byte" desc="目标状态"/>
-    </record>
-    <record name="activity_rec" cols="5" maxrows="32" save="true" public="false" private="true" desc="完成活动表">
-      <column type="dword" desc="活动ID"/>
-      <column type="dword" desc="剩余次数"/>
-      <column type="int64" desc="活动刷新时间"/>
-      <column type="dword" desc="是否开启"/>
-      <column type="dword" desc="最大次数"/>
-    </record>
-    <record name="active_role_npc_rec" cols="3" maxrows="32" save="true" public="false" private="true" desc="激活的rolenpc表">
-      <column type="string" desc="configid"/>
-    </record>
-    <record name="achieve_progress" cols="3" maxrows="10000" save="true" public="false" private="true" desc="成就进度表">
-      <column type="dword" desc="成就ID"/>
-      <column type="dword" desc="当前完成次数"/>
-      <column type="byte" desc="是否已发奖"/>
-    </record>
-    <record name="activity_get_rec" cols="3" maxrows="1000" save="true" public="false" private="true" desc="活动中获得的物品表">
-      <column type="dword" desc="活动ID"/>
-      <column type="string" desc="获得的掉落物品config"/>
-      <column type="dword" desc="获得的掉落物品数量"/>
-    </record>
-    <record name="role_npc_modify_prop" cols="3" maxrows="1000" save="false" public="true" private="true" desc="主控NPC辅助NPC对主角的属性影响">
-      <column type="string" desc="RoleNPC的ConfigID"/>
-      <column type="string" desc="修改的属性名"/>
-      <column type="dword" desc="修改的属性值"/>
-    </record>
-    <record name="find_battle_fb_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="战役副本资源找回表">
-      <column type="int64" desc="记录时间"/>
-      <column type="dword" desc="剩余次数"/>
-    </record>
-    <record name="find_group_fb_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="组队副本资源找回表">
-      <column type="int64" desc="记录时间"/>
-      <column type="dword" desc="剩余次数"/>
-    </record>
-    <record name="find_carry_goods_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="运镖资源找回表">
-      <column type="int64" desc="记录时间"/>
-      <column type="dword" desc="剩余次数"/>
-    </record>
-    <record name="find_attack_boss_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="世界BOSS资源找回表">
-      <column type="int64" desc="记录时间"/>
-      <column type="dword" desc="剩余次数"/>
-    </record>
-    <record name="find_dig_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="挖宝活动资源找回表">
-      <column type="int64" desc="记录时间"/>
-      <column type="dword" desc="剩余次数"/>
-    </record>
-    <record name="find_struggle_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="夺宝活动资源找回表">
-      <column type="int64" desc="记录时间"/>
-      <column type="dword" desc="剩余次数"/>
-    </record>
-    <record name="find_treasure_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="藏宝副本资源找回表">
-      <column type="int64" desc="记录时间"/>
-      <column type="dword" desc="剩余次数"/>
-    </record>
-    <record name="find_battlefield_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="实时战场资源找回表">
-      <column type="int64" desc="记录时间"/>
-      <column type="dword" desc="剩余次数"/>
-    </record>
-    <record name="find_racing_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="赛马活动资源找回表">
-      <column type="int64" desc="记录时间"/>
-      <column type="dword" desc="剩余次数"/>
-    </record>
-    <record name="find_wangzhe_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="王者对决资源找回表">
-      <column type="int64" desc="记录时间"/>
-      <column type="dword" desc="剩余次数"/>
-    </record>
-    <record name="find_battlefield_25v25_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="25v25战场资源找回表">
-      <column type="int64" desc="记录时间"/>
-      <column type="dword" desc="剩余次数"/>
-    </record>
-    <record name="player_damage_npc_rec" cols="2" maxrows="1000" save="false" public="false" private="false" desc="照成伤害的npc表">
-      <column type="object" desc="被攻击的npc"/>
-      <column type="dword" desc="npc是否是首次攻击"/>
-    </record>
-    <record name="diamond_buy_count_rec" cols="4" maxrows="20" save="true" public="false" private="true" desc="钻石可以购买额外次数表">
-      <column type="byte" desc="活动ID"/>
-      <column type="byte" desc="当前购买的次数"/>
-      <column type="byte" desc="当天剩余次数"/>
-      <column type="int64" desc="上次购买时间"/>
-    </record>
-    <record name="player_hate_rec" cols="7" maxrows="1000" save="true" public="false" private="true" desc="仇敌列表">
-      <column type="byte" desc="是否在线"/>
-      <column type="string" desc="被击杀场景"/>
-      <column type="widestr" desc="仇敌名字"/>
-      <column type="int64" desc="仇敌战斗力"/>
-      <column type="byte" desc="仇敌等级"/>
-      <column type="byte" desc="仇敌角色索引"/>
-      <column type="string" desc="仇敌UID"/>
-    </record>
-    <record name="fetter_rec" cols="1" maxrows="400" save="true" public="false" private="true" desc="羁绊开启表">
-      <column type="string" desc="key"/>
-    </record>
-    <record name="cooldown_rec" cols="4" maxrows="16" save="false" public="false" private="true" desc="冷却表">
-      <column type="dword" desc="冷却分类ID"/>
-      <column type="int64" desc="冷却开始时间，现实64位时间数据"/>
-      <column type="int64" desc="冷却结束时间，现实64位时间数据"/>
-      <column type="word" desc="冷却大分类ID,更上一层的分类"/>
-    </record>
-    <record name="treasure_double_gain_rec" cols="4" maxrows="30" save="true" public="false" private="true" desc="藏宝副本双倍收益次数表">
-      <column type="byte" desc="副本类型"/>
-      <column type="byte" desc="双倍收益次数"/>
-      <column type="dword" desc="剩余购买次数"/>
-      <column type="int64" desc="数据刷新时间"/>
-    </record>
-    <record name="second_psw_rec" cols="2" maxrows="128" save="true" public="false" private="true" desc="二级密码表">
-      <column type="byte" desc="功能名称" />
-      <column type="byte" desc="是否设置密码" />
-    </record>
-    <record name="add_teammate_buff_rec" cols="4" maxrows="10" save="true" public="false" private="true" desc="团队buff列表">
-      <column type="string" desc="BuffID"/>
-      <column type="int64" desc="Buff加的最初始的时间，系统时间"/>
-      <column type="int64" desc="Buff剩余有效时间"/>
-      <column type="string" desc="互斥buffID"/>
-    </record>
-    <record name="quickly_reply_rec" cols="2" maxrows="5" save="true" public="false" private="true" desc="玩家快速回复表">
-      <column type="widestr" desc="快速回复的内容"/>
-      <column type="byte" desc="玩家是否修改"/>
-    </record>
-    <record name="military_prop_rec" cols="5" maxrows="100" save="true" public="false" private="true" desc="军衔属性表">
-      <column type="dword" desc="ID"/>
-      <column type="string" desc="属性名称"/>
-      <column type="dword" desc="开启条件"/>
-      <column type="float" desc="淬炼实际增量"/>
-      <column type="float" desc="淬炼预期增量"/>
-    </record>
-    <record name="title_limit_time_rec" cols="2" maxrows="10" save="true" public="false" private="true" desc="限时称号表">
-      <column type="word" desc="称号编号"/>
-      <column type="int64" desc="获得称号时间"/>
-    </record>
-    <record name="shop_item_one_off_rec" cols="4" maxrows="50" save="true" public="false" private="true" desc="战场商店物品一次性购买表">
-      <column type="dword" desc="记录ID"/>
-      <column type="string"  desc="物品所属商店" />
-      <column type="string" desc="物品ID" />
-      <column type="dword" desc="物品剩余个数"/>
-    </record>
-    <record name="AwakeRec" cols="3" maxrows="32" save="true" public="false" private="true" desc="觉醒表">
-      <column type="DWORD" desc="觉醒ID"/>
-      <column type="DWORD" desc="觉醒等级"/>
-      <column type="DWORD" desc="觉醒槽位"/>
-    </record>
-    <record name="kill_player_zheny_rec" cols="2" maxrows="50" save="true" public="false" private="true" desc="阵营活动中被击杀的玩家记录表">
-      <column type="string" desc="被击杀玩家的UID"/>
-      <column type="int64" desc="击杀时间"/>
-    </record>
-    <record name="artal_storm_rec" cols="3" maxrows="32" save="true" public="false" private="true" desc="祭坛限量商品表">
-      <column type="string" desc="物品ID"/>
-      <column type="int" desc="每日可兑换的最大数量"/>
-    </record>
-	<record name="compound_rec" cols="2" maxrows="30" save="true" public="false" private="true" desc="随机道具次数表">
-      <column type="int" desc="可合成类型"/>
-      <column type="int" desc="可合成的次数"/>
-    </record>
-  </records>
-  <includes>
-    <!-- <path name="struct\player\player_fight.xml" desc="玩家战斗相关属性"/> -->
-    <path name="struct\rule\guild_data.xml" desc="玩家公会相关属性"/>
-    <!--<path name="struct\rule\shortcut.xml" desc="技能栏相关属性"/> -->
-    <path name="struct\player\friend.xml" desc="好友"/>
-    <path name="struct\player\team.xml" desc="队伍"/>
-    <path name="struct\player\moba.xml" desc="荣耀峡谷"/>
-    <path name="struct\player\systemmail.xml" desc="系统邮件"/>
-    <path name="struct\player\phypower.xml" desc="体力系统"/>
-    <path name="struct\player\staypower.xml" desc="耐力系统"/>
-    <path name="struct\player\exercise.xml" desc="历练系统"/>
-    <path name="struct\player\resettimer.xml" desc="整点重置"/>
-    <!--<path name="struct\player\staratlas.xml" desc="星图系统"/>-->
-    <path name="struct\rule\motion.xml" desc="移动"/>
-    <!--<path name="struct\rule\request.xml" desc="玩家间的请求"/>-->
-    <!--<path name="struct\rule\visequip.xml" desc="可视装备"/>-->
-    <!--<path name="struct\rule\isexchange.xml" desc="交易"/>-->
-    <path name="struct\rule\doselect.xml" desc="执行选择"/>
-    <path name="struct\rule\unenthrall.xml" desc="防沉迷相关属性"/>
-    <path name="struct\rule\post.xml" desc="邮寄系统相关属性"/>
-    <path name="struct\rule\clone_scene.xml" desc="玩家拥有的副本场景信息"/>
-    <path name="struct\player\asynwait.xml" desc="异步等待"/>
-    <path name="struct\quest\quest.xml" desc="任务相关"/>
-    <!--<path name="struct\player\pet.xml" desc="宠物相关"/>-->
-    <path name="struct\player\rolenpc.xml" desc="辅助npc相关"/>
-    <!--<path name="struct\rule\common\basectrlprop.xml" desc="控制属性"/>-->
-    <path name="struct\rule\back_stage.xml" desc="后台管理模块玩家属性表格定义"/>
-    <path name="struct\player\pay.xml" desc="支付相关属性定义"/>
-    <path name="struct\player\gift.xml" desc="礼包相关"/>
-    <path name="struct\player\invest.xml" desc="投资计划"/>
-    <path name="struct\player\festival.xml" desc="节日活动"/>
-    <path name="struct\rule\containercapcity.xml" desc="容器容量相关"/>
-    <path name="struct\rule\war\battle_war.xml" desc="战场相关"/>
-    <path name="struct\rule\war\battle_war_plays.xml" desc="战场玩法"/>
-    <path name="struct\rule\war\battle_team.xml" desc="战队玩法"/>
-    <!--<path name="struct\player\w1activity.xml" desc="W1手机专属活动相关"/>-->
-    <path name="struct\rule\common\state.xml" desc="通用状态属性"/>
-    <path name="struct\player\dayactivtity.xml" desc="每日活跃度"/>
-    <path name="struct\player\trading_platform.xml" desc="交易行"/>
-    <path name="struct\player\voice_module.xml" desc="语音聊天"/>
-    <path name="struct\player\activtity.xml" desc="玩家活动"/>
-    <path name="struct\rule\fight_verify.xml" desc="战斗验证相关属性"/>
-    <path name="struct\player\ride.xml" desc="坐骑相关"/>
-    <path name="struct\player\ridehome.xml" desc="坐骑家园相关"/>
-    <path name="struct\player\kof.xml" desc="kof玩法相关"/>
-    <path name="struct\rule\zhenying.xml" desc="阵营"/>
-    <path name="struct\rule\zhenyingplayer.xml" desc="阵营玩家专有属性"/>
-    <path name="struct\player\starsoul.xml" desc="星魂相关"/>
-    <path name="struct\player\zhenying_war.xml" desc="阵营战相关"/>
-    <path name="struct\player\wing.xml" desc="翅膀相关"/>
-    <path name="struct\achievement\achievement.xml" desc="成就相关" />
-  </includes>
+		<property name="ClientDeviceCId" type="string" public="false" private="false" save="false" realtime="" desc="角色本次登陆的客户端设备号,IOS设备唯一值，苹果充值风控使用"/>
+		<property name="IOSDeviceToken" type="string" public="false" private="false" save="false" realtime="" desc="IOS推送Token值"/>
+		<property name="Level" type="dword" public="true" private="true" save="true" realtime="true" desc="等级"/>
+		<property name="PlayerExp" type="int64" public="false" private="true" save="true" realtime="" desc="当前经验值"/>
+		<property name="PlayerUpgradeExp" type="int64" public="false" private="true" save="false" realtime="" desc="升级需求经验值"/>
+		<property name="SilenceTick" type="dword" public="false" private="false" save="true" realtime="false" desc="禁言的时间"/>
+		<property name="BattleAbility" type="dword" public="true" private="true" save="true" realtime="" desc="战斗力"/>
+		<property name="MaxBattleAbility" type="dword" public="false" private="true" save="true" realtime="" desc="最高战斗力"/>
+		<property name="Fatigue" type="dword" public="false" private="false" save="true" realtime="" desc="疲劳值"/>
+		<property name="IsDeprived" type="dword" public="false" private="false" save="true" realtime="" desc="是否进行过碎片抢夺"/>
+		<property name="Transparency" type="dword" public="true" private="true" save="false" realtime="" desc="透明度"/>
+		<property name="Sex" type="dword" public="true" private="true" save="true" realtime="" desc="性别"/>
+		<property name="Tail" type="string" public="true" private="true" save="true" realtime="" desc="尾巴"/>
+		<property name="Face" type="string" public="true" private="true" save="true" realtime="" desc="脸型"/>
+		<property name="Hair" type="string" public="true" private="true" save="true" realtime="" desc="发型"/>
+		<property name="Body" type="string" public="true" private="true" save="true" Desc="皮肤"/>
+		<property name="HairColor" type="string" public="true" private="true" save="true" Desc="发色"/>
+		<property name="SkinColor" type="string" public="true" private="true" save="true" Desc="肤色-包括脸部和皮肤的颜色"/>
+		<property name="RoleCamp" type="dword" public="true" private="true" save="true" realtime="false" desc="阵营"/>
+		<property name="SchoolType" type="dword" public="true" private="true" save="true" realtime="true" desc="职业"/>
+		<property name="Class" type="dword" public="false" private="false" save="true" realtime="" desc="职业"/>
+		<property name="ClassType" type="dword" public="false" private="false" save="true" realtime="" desc="职业类别  1力量;2敏捷;3智力"/>
+		<property name="LastObject" type="object" public="true" private="true" save="false" realtime="true" desc="当前选择的对象" />
+		<property name="AutoRotateMode" type="byte" public="true" private="true" save="false" realtime="" desc="当前的自动转向模式" />
+		<property name="InFlyChase" type="byte" public="false" private="true" save="false" realtime="" desc="是否正在飞行追击中"/>
+		<property name="PartnerID" type="string" public="false" private="false" save="true" realtime="" desc="运营商ID（玩家下线时保存，供极效查询）"/>
+		<property name="GuildIMId" type="int64" public="false" private="true" save="true" realtime="true" desc="玩家公会语音组"/>
+		<property name="TempRoomIMId" type="int64" public="false" private="true" save="true" realtime="true" desc="玩家临时组队语音组"/>
+		<property name="PlayerDisconnect" type="byte" public="false" private="false" save="false" realtime="" desc="玩家掉线标记"/>
+		<property name="PlayerSafty" type="dword" public="true" private="true" save="true" realtime="" desc="玩家进入安全区"/>
+		<property name="QieCuoUid" type="int64" public="true" private="true" save="false" realtime="" desc="玩家一场切磋的UID"/>
+		<property name="QieCuoFighting" type="byte" public="true" private="true" save="false" realtime="" desc="玩家处于切磋战斗阶段"/>
+		<property name="Revive" type="dword" public="false" private="true" save="true" realtime="" desc="玩家复活次数"/>
+		<property name="ActivePoint" type="dword" public="false" private="true" save="true" realtime="" desc="活跃度"/>
+		<property name="AtpFlagStr" type="string" public="false" private="true" save="true" realtime="" desc="活跃度奖励标记"/>
+		<property name="LastAtpResetTime" type="dword" public="false" private="false" save="true" realtime="" desc="活跃度重置时间(天)"/>
+		<property name="PlayID" type="dword" public="false" private="false" save="true" realtime="" desc="玩法ID"/>
+		<property name="ReplaceCost" type="byte" public="false" private="false" save="false" realtime="" desc="是否开启黄金代替绑金消费"/>
+		<property name="ChangeModel" type="string" public="true" private="true" save="false" realtime="" desc="变身属性格式资源；时间"/>
+		<property name="LinkHuntModel" type="string" public="true" private="true" save="false" realtime="" desc="狩猎属性"/>
+		<property name="SchoolTypeLevel" type="dword" public="true" private="true" save="true" realtime="true" desc="转职等级"/>
+		<property name="AIControl" type="byte" public="false" private="true" save="false" realtime="true" desc="是否被AI控制中"/>
+		<property name="State" type="string" public="false" private="true" save="false" desc="动态状态"/>
+		<property name="CloneRoomId" type="dword" public="false" private="false" save="false" realtime="" desc="副本房间ID"/>
+		<property name="ForceVersion" type="int" public="false" private="false" save="true" realtime="" desc="势力版号"/>
+		<property name="RandCampAward" type="int" public="false" private="false" save="true" realtime="" desc="随机选择阵营的奖励标示"/>
+		<property name="AmuletLevel" type="dword" public="false" private="true" save="true" realtime="" desc="护身符等级" />
+		<property name="AmuletStage" type="dword" public="false" private="true" save="true" realtime="" desc="护身符层数" />
+		<property name="AmuletActivate" type="byte" public="false" private="true" save="true" realtime="" desc="护身符是否激活" />
+		<property name="IsShowWing" type="byte" public="true" private="true" save="true" desc="是否显示翅膀" />
+		<property name="BeautifulSuitLevel" type="int" public="true" private="true" save="true" realtime="" desc="靓装等级，客户端特效显示用"/>
+		<property name="DayMaxGlory" type="int" public="false" private="false" save="true" realtime="" desc="每日击杀获得荣誉值上限"/>
+		<property name="LastFightTime" type="int64" public="false" private="false" save="true" realtime="" desc="最近一次玩家在世界中敌对阵营玩家时间"/>
+		<property name="TBAddBuffId" type="string" public="false" private="false" save="true" desc="增加buff的id" />
+		<property name="TBAddSkillId" type="string" public="false" private="false" save="true" desc="增加skill的id" />
+		<property name="LastRefreshDataTime" type="int" public="false" private="false" save="true" realtime="" desc="最近一次每日数据刷新的时间"/>
+		<property name="EveryDayChatCount" type="int" public="false" private="true" save="true" realtime="" desc="每日聊天次数"/>
+		<property name="DailyExpAdd" type="dword" public="true" private="true" save="true" desc="每日增加的经验(自己阵营中)" />
+		<property name="GuildHistoryDevote" type="int64" public="false" private="true" save="true" realtime="" desc="累计获得贡献(自身贡献就是货币)"/>
+		<property name="HistoryBattleGlory" type="int64" public="false" private="true" save="true" realtime="" desc="累计获得战场荣誉点"/>
+		<property name="DailyExpAddTarget" type="dword" public="true" private="true" save="true" desc="每日增加的经验(敌对阵营中)" />
+		<property name="DailyKillEnemyCounts" type="dword" public="false" private="false" save="true" desc="每日击杀敌方阵营玩家的数量" />
+		<property name="ResetKillEnemyDate" type="double" public="false" private="false" save="true" desc="最近一次重置每日击杀敌方阵营玩家数量的时间" />
+		<property name="GuildBossBuyCount" type="dword" public="true" private="true" save="true" desc="公会BOSS购买次数" />
+		<property name="GuildBossTimes" type="dword" public="true" private="true" save="true" desc="公会BOSS进入次数" />
+		<property name="GuildBossBuyTimes" type="dword" public="true" private="true" save="true" desc="公会BOSS购买进入次数" />
+		<property name="HaveForgeItem" type="int" public="false" private="true" save="true" desc="是否可以用强化保护卷轴" />
+		<property name="ActivityDropRatio" type="float" public="false" private="false" save="false" desc="活动掉率" />
+		<property name="ChangeNameMoment" type="int64" public="false" private="false" save="true" realtime="true" desc="改名时刻"/>
+		<property name="ReceiveSupportNum" type="dword" public="false" private="false" save="true" desc="收到点赞数"/>
+		<property name="GiveSupportNum" type="dword" public="false" private="false" save="true" desc="给出点赞数"/>
+		<property name="SupportNumAccountTime" type="int64" public="false" private="false" save="true" desc="点赞结算时间"/>
+		<property name="LastReadTime" type="int64" public="false" private="false" save="true" desc="上次阅读战报的时间"/>
+		<!--快捷键-->
+	  <property name="ShortcutKey" type="string" public="false" private="true" save="true" realtime="" desc="快捷键修改" />
+	  <property name="ShortcutKeyMac" type="string" public="false" private="true" save="true" realtime="" desc="Mac版快捷键修改" />
+
+	</properties>
+	<records>
+		<record name="player_capital_rec" cols="3" maxrows="64" save="true" public="false" private="true" desc="资产表">
+			<column type="string" desc="资产名称"/>
+			<column type="byte" desc="资产类型"/>
+			<column type="int64" desc="资产数量"/>
+		</record>
+		
+		<record name="safe_lock_rec" cols="5" maxrows="64" save="true" public="false" private="false" desc="安全锁密码表">
+			<column type="widestr" desc="安全锁密码"/>
+			<column type="dword" desc="安全锁开启标志"/>
+			<column type="dword" desc="每天3次修改密码错误机会"/>
+			<column type="dword" desc="每天3次解锁密码错误机会"/>
+			<column type="dword" desc="选择锁定品质范围"/>
+		</record>
+		<record name="request_rec" cols="5" maxrows="30" save="false" public="false" private="false" desc="添加请求者表(记录当前玩家所发送过的所有请求)">
+			<column type="byte" desc="请求索引"/>
+			<column type="widestr" desc="请求者姓名"/>
+			<column type="byte" desc="请求类型"/>
+			<column type="byte" desc="请求时间"/>
+			<column type="byte" desc="请求状态"/>
+		</record>
+		<record name="apply_sports_rec" cols="4" maxrows="1" save="false" public="false" private="false" desc="申请进行挑战的信息表格">
+			<column type="dword" desc="挑战类型(竞技场、夺宝)"/>
+			<column type="widestr" desc="挑战对象的名称"/>
+			<column type="dword" desc="挑战对象的类型(NPC或者player)"/>
+			<column type="string" desc="抢夺碎片名称"/>
+		</record>
+		<!-- 由原先的附加于装备改为附加于玩家-->
+		<record name="player_damage_npc_rec" cols="1" maxrows="50" save="false" public="false" private="false" desc="大世界战斗boss表">
+			<column type="object" desc="boss对象"/>
+		</record>
+		<!-- 势力关系表 -->
+		<record name="ForceRec" cols="2" maxrows="128" save="true" public="false" private="true" desc="势力关系表">
+			<column type="word" desc="势力ID"/>
+			<column type="word" desc="关系"/>
+		</record>
+		<record name="atp_flag_rec" cols="3" maxrows="128" save="true" public="false" private="true" desc="活动玩法当前次数">
+			<column type="dword" desc="玩法ID"/>
+			<column type="dword" desc="次数"/>
+			<column type="dword" desc="成功增加活跃度"/>
+		</record>
+		<record name="use_role_rec" cols="4" maxrows="5" save="true" public="false" private="true" desc="最近使用角色">
+            <column type="byte" desc="角色编号" />
+            <column type="int64" desc="更换时间" />
+            <column type="dword" desc="战力" />
+            <column type="string" desc="Photo" />
+        </record>
+        <record name="fighting_capacity_rec" cols="2" maxrows="64" save="true" public="false" private="true" desc="战斗力来源记录表">
+            <column type="byte" desc="战斗力来源类型" />
+            <column type="dword" desc="战力值" />
+        </record>
+		<record name="RedeemFuncAwardRec" cols="7" maxrows="128" save="true" public="false" private="true" desc="奖励赎回状态表">
+			<column type="byte"  desc="赎回功能类型" />
+            <column type="dword" desc="赎回功能昨天剩余的值" />
+			<column type="dword" desc="赎回功能昨天总共的值" />
+			<column type="dword" desc="赎回功能今天剩余的值" />
+			<column type="dword" desc="赎回功能今天总共的值" />
+			<column type="int64" desc="更新时间" />
+			<column type="byte"  desc="赎回状态" />
+        </record>
+		<record name="kill_enemy_time_rec" cols="2" maxrows="128" save="true" public="false" private="false" desc="击杀敌方阵营玩家时间表(击杀排行榜用到了这个)">
+            <column type="string" desc="被杀者的UID" />
+            <column type="int64" desc="击杀的时间" />
+        </record>
+		<record name="exp_get_rec" cols="3" maxrows="128" save="true" public="false" private="true" desc="每日经验获取记录表">
+			<column type="dword" desc="经验来源"/>
+			<column type="dword" desc="经验来源子类型"/>
+			<column type="int64" desc="经验值"/>
+		</record>
+		<record name="battle_report_support_rec" cols="1" maxrows="500" save="true" public="false" private="true" desc="点赞记录表">
+            <column type="dword" desc="荣誉战报的ID" />
+        </record>
+	</records>
+	<includes>
+		<path name="struct\player\friend.xml" desc="好友"/>
+		<path name="struct\player\ride.xml" desc="坐骑"/>
+		<path name="struct\player\systemmail.xml" desc="系统邮件"/>
+		<path name="struct\player\exercise.xml" desc="历练系统"/>
+		<path name="struct\player\resettimer.xml" desc="整点重置"/>
+		<path name="struct\player\asynwait.xml" desc="异步等待"/>
+		<path name="struct\player\pet.xml" desc="宠物相关"/>
+        <path name="struct\player\pokemon.xml" desc="宠物精灵" />
+        <path name="struct\player\pk.xml" desc="pk相关"/>
+		<path name="struct\player\pay.xml" desc="支付相关属性定义"/>
+		<path name="struct\player\gift.xml" desc="礼包相关"/>
+		<path name="struct\player\game_activity.xml" desc="游戏活动"/>
+		<path name="struct\player\team.xml" desc="队伍"/>
+		<path name="struct\player\invite.xml" desc="邀请"/>
+		<path name="struct\player\trading_platform.xml" desc="交易行"/>
+		<path name="struct\player\worship.xml" desc="排行崇拜"/>
+		<path name="struct\player\title.xml" desc="称号爵位相关"/>
+		<path name="struct\player\marry.xml" desc="结婚相关"/>
+		<path name="struct\player\speed_verify.xml" desc="防加速挂相关"/>
+		<path name="struct\ai\state_machine.xml" desc="状态机相关"/>
+		<path name="struct\ai\ai_patrol.xml" desc="ai巡逻"/>
+		<path name="struct\ai\ai_motion.xml" desc="移动"/>
+		<path name="struct\rule\auto_set.xml" desc="自动挂机设置"/>
+		<path name="struct\rule\request.xml" desc="玩家间的请求"/>
+		<path name="struct\rule\visequip.xml" desc="可视装备"/>
+		<path name="struct\rule\visfashion.xml" desc="时装相关"/>
+		<path name="struct\rule\isexchange.xml" desc="当面交易"/>
+		<path name="struct\rule\unenthrall.xml" desc="防沉迷相关属性"/>
+		<path name="struct\rule\clone_scene.xml" desc="玩家拥有的副本场景信息"/>
+		<path name="struct\rule\guild\guild.xml" desc="玩家公会相关属性"/>
+		<path name="struct\rule\shortcut.xml" desc="技能栏相关属性"/>
+		<path name="struct\rule\back_stage.xml" desc="后台管理模块玩家属性表格定义"/>
+		<path name="struct\rule\war\battle_war.xml" desc="战场相关"/>
+		<path name="struct\rule\action.xml" desc="玩法互斥"/>
+		<path name="struct\task\common_activity.xml" desc="通用活动"/>
+		<path name="struct\task\task.xml" desc="任务"/>
+		<path name="struct\task\option_talk.xml" desc="对话树"/>
+		<path name="struct\task\task_logic.xml" desc="任务(项目)"/>
+		<path name="struct\rule\fighter_data.xml" desc="战斗相关属性"/>
+		<path name="struct\rule\summon.xml" desc="召唤相关属性"/>
+		<path name="struct\rule\talent\talent_info.xml" desc="天赋相关属性"/>
+		<path name="struct\rule\temp_room.xml" desc="临时房间相关"/>
+		<path name="struct\player\voice_module.xml" desc="语音频道管理"/>
+		<path name="struct\player\duel.xml" desc="切磋"/>
+		<path name="struct\player\clergy.xml" desc="牧师职业玩法相关"/>
+		<path name="struct\player\guide.xml" desc="引导相关"/>
+		<path name="struct\player\carrier.xml" desc="载具相关"/>
+		<path name="struct\player\daily_activity.xml" desc="活跃度相关"/>
+		<path name="struct\player\rpg.xml" desc="RPG副本玩法相关"/>
+		<path name="struct\common\trigger_guid.xml" desc="触发器guid" />
+		<path name="struct\rule\talent\talent_badge_info.xml" desc="纹章孔属性"/>
+		<path name="struct\player\retrieve.xml" desc="自动回收装备"/>
+		<path name="struct\player\ride_hurt.xml" desc="快速狩猎副本玩法相关"/>
+		<path name="struct\rule\war\dragon_war.xml" desc="龙城争霸玩法相关"/>
+		<path name="struct\player\climb_tower.xml" desc="爬塔副本玩法相关"/>
+	</includes>
 </object>
