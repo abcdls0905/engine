@@ -1579,6 +1579,7 @@ void CModelPlayer::SetShaderConstValue(IShaderProgram* pShader, const MatInfo* i
 	FmVec4 height_fog_color = pContext->GetVector4(IRenderContext::V_HEIGHTFOG_CURRENT);
 	
 	ShaderManager::Inst().SetShaderValue3f(c_vLightDir, light_dir.x, light_dir.y, light_dir.z);
+
 	ShaderManager::Inst().SetShaderValueMat4(c_mtxViewInverse, mtxViewInverse);
 
 	//SetShaderValue4f(pShader, "c_LightAmbient", 0.5,0.5,0.5,0.5);

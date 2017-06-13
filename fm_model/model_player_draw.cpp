@@ -1753,6 +1753,7 @@ void CModelPlayer::DrawMaterial(node_material_t* pMat, model_node_t* pNode, MatI
 
 	FmVec4* bone_matrices;
 
+  //ls test
 	if (pNode->nType == FXNODE_TYPE_SKIN)
 	{
 		bone_matrices = CreateBoneMatrices(pMat);
