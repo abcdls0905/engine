@@ -765,10 +765,12 @@ void CTerrainPainter::DrawChunksShader(render_zone_t* zones,
 		ITexture* pLightTex = pTexLightMap->GetTexture();
 
 		// 是否使用光贴图
-		bool light_map = (!dynamic_shadow)&&m_pRender->GetUseLightMap() && (pLightTex != NULL) && (!pLight->GetIsNull()) && pLightTex->IsReady();
+    //ls test
+    //bool light_map = (!dynamic_shadow)&&m_pRender->GetUseLightMap() && (pLightTex != NULL) && (!pLight->GetIsNull()) && pLightTex->IsReady();
+    bool light_map = m_pRender->GetUseLightMap() && (pLightTex != NULL) && (!pLight->GetIsNull()) && pLightTex->IsReady();
 
 		// 非动态光照不能使用法线贴图
-		bool use_normal = enable_normalmap && (!light_map);
+    bool use_normal = enable_normalmap && (!light_map);
 		// 扫描每个chunk并渲染
 		size_t render_zone_chunk_num = render_zone->nChunkNum;
 
@@ -856,8 +858,9 @@ void CTerrainPainter::DrawChunksShader(render_zone_t* zones,
 			// 平滑剪裁
 			bool smooth_clip = smooth_horizon 
 				&& (max_distance >= far_clip_distance);
-			bool use_shadow = dynamic_shadow 
-				&& (min_distance < shadow_distance);
+      //ls test
+      bool use_shadow = dynamic_shadow 
+        && (min_distance < shadow_distance);
 			bool use_prelight = prelight && (min_distance < light_distance);
 			bool has_normal = (pNormalTex != NULL);
 
