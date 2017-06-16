@@ -211,6 +211,11 @@ void main()
     //mediump vec2 tex_uv = (oPos.xy + 0.5) * c_PixelSize;
 	mediump vec2 tex_uv = (vec2(0.5, 0.5) * (oTexCoordShadow.xy / oTexCoordShadow.w)) + vec2(0.5, 0.5);
     mediump vec4 shadowInten = texture2D(tex_Shadow, tex_uv);
+    if (shadowInten.x < 0.99)
+    {
+        shadowInten.x = 0.25;
+    }
+    //oDepth.x = light space depth;
 
     #if defined(PRELIGHT)
      mediump vec4 prelight = texture2D(tex_Prelight,tex_uv) * 2.0;
@@ -349,6 +354,7 @@ void main()
    
    #if defined(SHADOWEDMAP)
      specular.xyz *= shadowInten.x;
+     oColor.xyz *= shadowInten.x;
    #endif
    
    #if defined(FOGLINEAR)||defined(FOGEXP)
@@ -374,5 +380,5 @@ void main()
 	oColor.xyz = oColor.xyz * (1.0 - hDelta) + c_HeightFogColor.xyz * hDelta;
 #endif
    
-  gl_FragColor = oColor;
+  gl_FragColor = oColor*vec4(0.75, 0.75, 0.75, 1.0);
 }
