@@ -211,10 +211,10 @@ void main()
     //mediump vec2 tex_uv = (oPos.xy + 0.5) * c_PixelSize;
 	mediump vec2 tex_uv = (vec2(0.5, 0.5) * (oTexCoordShadow.xy / oTexCoordShadow.w)) + vec2(0.5, 0.5);
     mediump vec4 shadowInten = texture2D(tex_Shadow, tex_uv);
-    if (shadowInten.x < 0.99)
-    {
-        shadowInten.x = 0.25;
-    }
+    //if (shadowInten.x < 0.99)
+    //{
+    //    shadowInten.x = 0.25;
+    //}
     //oDepth.x = light space depth;
 
     #if defined(PRELIGHT)
@@ -381,4 +381,7 @@ void main()
 #endif
    
   gl_FragColor = oColor*vec4(0.75, 0.75, 0.75, 1.0);
+   #if defined(SHADOWEDMAP)
+    //gl_FragColor = shadowInten;
+   #endif
 }
