@@ -214,7 +214,8 @@ public:
 
 	// 获得阴影图渲染目标
 	IColorRT* GetShadowMapRT(int index);
-	IDepthTex* GetShadowMapDS(int index);
+  IDepthTex* GetShadowMapDS(int index);
+  virtual IDepthRT* GetDepthRT();
 
 	// 获得屏幕空间动态阴影结果图
 	IColorRT* GetDynamicShadowRT();
@@ -493,6 +494,7 @@ private:
 	IColorRT* m_pShadowMapRT[MAX_SHADOWMAP_NUM];
 	IDepthTex* m_pShadowMapDS[MAX_SHADOWMAP_NUM];
 	IColorRT* m_pShadowRT;
+  IDepthRT* m_pDepthRT;
 
 	TArrayPod<layer_data_t*, 1, TContextAlloc> m_Layers;
 	TStringPod<char, PERSISTID, TStringTraits<char>, 

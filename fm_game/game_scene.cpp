@@ -168,7 +168,7 @@ bool SceneManager::load_terrain(const char* pstrfile,IScene* pScene, bool can_lo
 
 	PERSISTID particle_man_id = g_scene->Create("ParticleManager");
 	IParticleManager* pParticleMan = (IParticleManager*)g_core->GetEntity(particle_man_id);
-	pParticleMan->SetTexturePath("map/tex/particles/");
+	pParticleMan->SetTexturePath("tex/particles/");
 	g_scene->AddObject(particle_man_id, 100);
 	g_scene->GetContext()->SetUnique(g_core->GetEntity(particle_man_id));
 	//加载水面相关
@@ -217,8 +217,8 @@ bool SceneManager::load_terrain(const char* pstrfile,IScene* pScene, bool can_lo
 
   pTerrain->SetGroundVisible(true);
 
-  pTerrain->SetCastShadow(false);
-  pScene->SetEnableDynamicShadow(false);
+  pTerrain->SetCastShadow(true);
+  pScene->SetEnableDynamicShadow(true);
 
   //加载阴影管理
   //load_shadow_system(pTerrain,pScene);

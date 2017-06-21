@@ -209,18 +209,21 @@ void main()
   
 #if defined(SHADOWEDMAP)
     //mediump vec2 tex_uv = (oPos.xy + 0.5) * c_PixelSize;
-	mediump vec2 tex_uv = (vec2(0.5, 0.5) * (oTexCoordShadow.xy / oTexCoordShadow.w)) + vec2(0.5, 0.5);
+    mediump vec4 temp = oTexCoordShadow/oTexCoordShadow.w;
+	  mediump vec2 tex_uv = (vec2(0.5, 0.5) * temp.xy) + vec2(0.5, 0.5);
     mediump vec4 shadowInten = texture2D(tex_Shadow, tex_uv);
-    //if (shadowInten.x < 0.99)
-    //{
-    //    shadowInten.x = 0.25;
-    //}
-    //oDepth.x = light space depth;
+    
+    shadowInten.x = 1.0;
+    if (oTexCoordShadow.w > 0.0 && temp.z > shadowInten.z)
+    {
+      //discard;
+      shadowInten.x = 0.5;
+    }
 
     #if defined(PRELIGHT)
-     mediump vec4 prelight = texture2D(tex_Prelight,tex_uv) * 2.0;
+      mediump vec4 prelight = texture2D(tex_Prelight,tex_uv) * 2.0;
     #endif
-#endif  
+#endif
 
 #if defined(SPECULAR)
     mediump vec3 nor = normalize(oNor);

@@ -55,8 +55,7 @@ void main()
    
 
 #ifdef DEPTH
-   UV = UV*c_uvScaleRT;
-   mediump float zvalue  = getlinerdepth(tex_depth , UV )/c_DepthParam.w;
+   mediump float zvalue  = texture2D(tex_depth , UV ).z;
    mediump vec4 oColor = vec4(zvalue,zvalue,zvalue,1.0);
 #else      
    UV = UV*c_uvScaleRT;

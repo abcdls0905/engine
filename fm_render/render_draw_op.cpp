@@ -291,6 +291,12 @@ void CRenderDrawOp::Print()
 
 }
 
+void CRenderDrawOp::SaveDepthMap()
+{
+#ifdef _DEBUG
+#endif
+}
+
 unsigned int CRenderDrawOp::DrawModeToGLDrawMode(IRenderDrawOp::DRAW_MODE draw_mode)
 {
 	unsigned int tDrawMode = 0;

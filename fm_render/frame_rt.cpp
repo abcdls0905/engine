@@ -361,7 +361,8 @@ bool CFrameRT::inSetDepthTex(IDepthTex* pDepthTex)
 	fm_int nrbo;
 	// ±£´æ¾ÉµÄrbo
 	glGetIntegerv(GL_RENDERBUFFER_BINDING, &nrbo);
-    glBindRenderbuffer(GL_RENDERBUFFER, m_pColorTex->GetRenderTex());
+  //glBindRenderbuffer(GL_RENDERBUFFER, m_pColorTex->GetRenderTex());
+  glBindRenderbuffer(GL_RENDERBUFFER, pDepthTex->GetRenderTex());
 	m_pDepthTex = pDepthTex;
 	glFramebufferRenderbuffer(GL_FRAMEBUFFER, GL_DEPTH_ATTACHMENT, GL_RENDERBUFFER, pDepthTex->GetRenderTex());
 	if(TestErr("SetDepthTex glFramebufferRenderbuffer GL_DEPTH_ATTACHMENT"))

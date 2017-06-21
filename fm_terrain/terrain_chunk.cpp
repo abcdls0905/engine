@@ -2981,11 +2981,12 @@ void CTerrainChunk::UseTexture()
 	if (pContext->GetEnableDynamicShadow())
 	{
 		IColorRT* pShadowRT = pContext->GetDynamicShadowRT();
-		
-		if (pShadowRT)
+		IDepthRT* pDepthRT = pContext->GetDepthRT();
+
+		if (pDepthRT)
 		{
-			pShaderOp->SetTexture2D(m_pChunkShaderHandle->tex_ShadowHandle, pShadowRT->GetTexture());
-			pShadowRT->GetTextureSampler()->SetTextureUVWrapMode(ITextureSampler::TWM_CLAMP_TO_EDGE, ITextureSampler::TWM_CLAMP_TO_EDGE);
+			pShaderOp->SetTexture2D(m_pChunkShaderHandle->tex_ShadowHandle, pDepthRT->GetTexture());
+			pDepthRT->GetTextureSampler()->SetTextureUVWrapMode(ITextureSampler::TWM_CLAMP_TO_EDGE, ITextureSampler::TWM_CLAMP_TO_EDGE);
 		}
 	}
 

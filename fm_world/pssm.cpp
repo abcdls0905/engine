@@ -309,7 +309,8 @@ void PSSM::GenerateShadowMap()
 			IColorRT* pShadowRT = m_pContext->GetDynamicShadowRT();
 
 			m_pShadowSceneView[i]->SetColorRT(pShadowRT);
-			m_pShadowSceneView[i]->SetDepthTex(m_pContext->GetShadowMapDS(0));
+			//m_pShadowSceneView[i]->SetDepthTex(m_pContext->GetShadowMapDS(0));
+      m_pShadowSceneView[i]->SetDepthRT(m_pContext->GetDepthRT());
 		}
 
 		object_t* p = m_pObjects;

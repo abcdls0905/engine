@@ -815,6 +815,8 @@ public:
 	virtual void SetVB(fm_uint vb) = 0;
 	// set ib
 	virtual void SetIB(fm_uint ib) = 0;
+
+  virtual void SaveDepthMap() = 0;
 };
 
 

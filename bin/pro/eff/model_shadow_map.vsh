@@ -27,7 +27,7 @@ attribute mediump vec4 iDiffuse;
 varying mediump vec2 oTex0;
 #endif
 
-//varying mediump float oDepth;
+varying mediump float oDepth;
 
 //cbPerScene
 uniform mediump mat4 c_mtxWVP;
@@ -75,7 +75,6 @@ void main(void)
 	oTex0 = iTex0;
 #endif
 
-	//oDepth = max(oPos.z, 0.0);
+	//oDepth = max(oPos.z/oPos.w, 0.0);
+	oDepth = oPos.z/oPos.w;
 }
-
-

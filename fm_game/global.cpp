@@ -14,3 +14,4 @@ GameControl* g_gamecontrol = 0;
 
 int g_mouse_pos_x = 0;	//鼠标位置X
 int g_mouse_pos_y = 0;	//鼠标位置Y
+bool testsave = false;

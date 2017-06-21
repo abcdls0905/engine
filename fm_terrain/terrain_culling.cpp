@@ -1258,7 +1258,8 @@ bool CTerrainCulling::RefreshShadowMapCollects()
 				continue;
 			}
 
-			if (!(pVisBase->GetCastShadow()))
+      //ls test 产生阴影
+			if (!(pVisBase->GetCastShadow()) && false)
 			{
 				// 不需要投影的物体
 				continue;

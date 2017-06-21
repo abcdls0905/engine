@@ -272,6 +272,7 @@ void CSceneView::DrawReflectionSceneAfter()
 	}
 }
 
+//ls test
 // 绘制投影场景
 void CSceneView::DrawProjectionSceneBefore()
 {
@@ -323,6 +324,10 @@ void CSceneView::DrawProjectionSceneAfter()
 	}
 
 	m_pRender->UsedFrameRT(m_pTempFrameRT);
+
+  if (m_pDepthRT)
+    m_pRender->GetContext()->SetDebugDepthRT(m_pDepthRT);
+
 	m_pTempFrameRT = NULL;
 }
 

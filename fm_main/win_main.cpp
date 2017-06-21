@@ -299,7 +299,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT iMsg, WPARAM wParam, LPARAM lParam)
 int WinMainProc(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, 
 	int iCmdShow)
 {
-#ifdef _DEBUG
+#ifdef _DEBUG11
   AllocConsole();
   freopen("CONOUT$","w+t",stdout);
   freopen("CONIN$","r+t",stdin);

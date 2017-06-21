@@ -859,8 +859,7 @@ void CTerrainPainter::DrawChunksShader(render_zone_t* zones,
 			bool smooth_clip = smooth_horizon 
 				&& (max_distance >= far_clip_distance);
       //ls test
-      bool use_shadow = dynamic_shadow 
-        && (min_distance < shadow_distance);
+      bool use_shadow = dynamic_shadow && (min_distance < shadow_distance);
 			bool use_prelight = prelight && (min_distance < light_distance);
 			bool has_normal = (pNormalTex != NULL);
 

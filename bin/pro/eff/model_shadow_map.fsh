@@ -4,7 +4,7 @@ uniform mediump sampler2D tex_Diffuse;
 varying mediump vec2 oTex0;
 #endif
 
-//varying mediump float oDepth;
+varying mediump float oDepth;
 
 mediump vec4 EncodeFloatRGB(mediump float v) 
 {
@@ -28,6 +28,7 @@ void main (void)
 #endif
 
 	//gl_FragColor = EncodeFloatRGB(oDepth / 1024.0);
-	gl_FragColor = vec4(0.5, 1.0, 1.0, 1.0);
+	//gl_FragColor = vec4(0.5, 1.0, 1.0, 1.0);
+	gl_FragColor = vec4(oDepth, oDepth, oDepth, 1.0);
 }
 

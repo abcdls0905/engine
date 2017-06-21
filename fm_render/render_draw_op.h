@@ -278,6 +278,7 @@ public:
 	virtual void SetIB(fm_uint ib);
 
 	void Print();
+  virtual void SaveDepthMap();
 private:
     //提供一次draw的数据内容
 	void  CaptureDrawCall();

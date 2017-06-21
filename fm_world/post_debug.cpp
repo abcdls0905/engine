@@ -24,8 +24,8 @@ CPostDebug::CPostDebug()
 	m_leftup = FmVec2(0.0,0.75);
 	m_rightbottom = FmVec2(0.25,1.0);
 	
-	//m_leftup = FmVec2(0.0,0.0);
-	//m_rightbottom = FmVec2(0.5,0.5);
+// 	m_leftup = FmVec2(0.0,0.0);
+// 	m_rightbottom = FmVec2(0.5,0.5);
 
 	m_pTexColor = NULL;
 	m_pTexDepth = NULL;
@@ -290,7 +290,12 @@ void CPostDebug::UpDataVertByScreenPos(FmVec2 leftup_pos,FmVec2 rightbottom_pos)
 	//A
 	m_vert[0].pos = PRJ_TO_SCR_POS(leftup_pos)+FmVec2(0.0,size.y * 2.0f);
 	//B
-	m_vert[1].pos = PRJ_TO_SCR_POS(leftup_pos)+FmVec2(size.x*2,size.y * 2.0f);
+  m_vert[1].pos = PRJ_TO_SCR_POS(leftup_pos)+FmVec2(size.x*2,size.y * 2.0f);
+  int x = 0;
+  m_vert[0].pos = FmVec2(-1.0, 1.0);
+  m_vert[1].pos = FmVec2(0.0, 1.0);
+  m_vert[2].pos = FmVec2(-1.0, 0.0);
+  m_vert[3].pos = FmVec2(0.0, 0.0);
 }
 
 

@@ -94,12 +94,14 @@ CContext::CContext(Render* pRender)
 	m_nShadowMapSize = 1024;
 	m_nShadowMapCount = 1;
 	m_nShadowMapIndex = -1;
-	m_fShadowDistance = 10.f;
+  //m_fShadowDistance = 10.f;
+  m_fShadowDistance = 66.f;
 	m_fMaxLightDistance = 0.0f;
 	m_fCameraDistance = 1000.0f;
 	m_fShadowExpandPercent = 0.001F;
 	m_bShadowMapReusable = false;
-	m_pShadowRT = NULL;
+  m_pShadowRT = NULL;
+  m_pDepthRT = NULL;
 	m_vShadowLightDir = FmVec3(0.0F, 0.0F, 0.0F);
 
 	m_vAdjustingRect = FmVec4(-2.0f, 5.0f, 5.0f, 10.0f);
@@ -1240,6 +1242,10 @@ bool CContext::CreateShadowMapRT()
 		return true;
 	}
 
+  m_pDepthRT = m_pRender->CreateDepthRT(m_nShadowMapSize, 
+    m_nShadowMapSize / 2,
+    TEX_FORMAT_D_DEFAULT, RT_TYPE_DEVICE);
+
 	m_pShadowRT = m_pRender->CreateColorRT(m_nShadowMapSize, 
 		m_nShadowMapSize / 2, TEX_FORMAT_RGB565_UNORM, RT_TYPE_DEVICE);
 
@@ -1841,6 +1847,11 @@ IDepthTex* CContext::GetShadowMapDS(int index)
 	}
 
 	return m_pShadowMapDS[index];
+}
+
+IDepthRT* CContext::GetDepthRT()
+{
+  return m_pDepthRT;
 }
 
 IColorRT* CContext::GetDynamicShadowRT()

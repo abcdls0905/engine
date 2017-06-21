@@ -706,6 +706,9 @@ bool Model::Create()
 		m_pModelPlayer->LoadMaterial(m_strMaterialFile.c_str(), m_bAsyncLoad);
 	}
 
+  SetCastShadow(true);
+  SetReceiveShadow(true);
+
 	return true;
 }
 

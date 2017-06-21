@@ -16,6 +16,8 @@
 #include "../public/portable.h"
 #include "render.h"
 
+#include "../fm_game/global.h"
+
 #define performance_time Port_GetPerformanceTime
 
 CSceneView* CSceneView::NewInstance(ISceneView::SCENE_VIEW_TYPE scene_view_type,const char* pstrIdent,Render* pRender)

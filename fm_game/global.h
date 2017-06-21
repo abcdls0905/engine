@@ -28,3 +28,5 @@ extern GameControl* g_gamecontrol;
 
 extern int g_mouse_pos_x;
 extern int g_mouse_pos_y;
+
+extern bool testsave;

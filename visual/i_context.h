@@ -264,7 +264,8 @@ public:
 
 	// 获得阴影图渲染目标
 	virtual IColorRT* GetShadowMapRT(int index) = 0;
-	virtual IDepthTex* GetShadowMapDS(int index) = 0;
+  virtual IDepthTex* GetShadowMapDS(int index) = 0;
+  virtual IDepthRT* GetDepthRT() = 0;
 
 	// 获得屏幕空间动态阴影结果图
 	virtual IColorRT* GetDynamicShadowRT() = 0;
